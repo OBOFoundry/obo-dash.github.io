@@ -1,1 +1,0 @@
-sh odk.sh obodash
