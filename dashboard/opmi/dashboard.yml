@@ -1,0 +1,45 @@
+changed: true
+date: '2020-11-03'
+namespace: opmi
+results:
+  FP1 Open:
+    status: PASS
+  FP11 Locus of Authority:
+    status: PASS
+  FP12 Naming Conventions:
+    status: PASS
+  FP16 Maintenance:
+    comment: Missing version IRI to check date
+    status: ERROR
+  FP2 Common Format:
+    status: PASS
+  FP3 URIs:
+    status: PASS
+  FP4 Versioning:
+    comment: Missing version IRI
+    status: ERROR
+  FP5 Scope:
+    comment: Missing domain (scope)
+    status: ERROR
+  FP6 Textual Definitions:
+    comment: 8 duplicate definitions. 4 multiple definitions. 210 missing definitions.
+      See ROBOT Report for details.
+    status: ERROR
+  FP7 Relations:
+    comment: 9 non-RO properties used.
+    file: fp7
+    status: INFO
+  FP8 Documented:
+    status: PASS
+  FP9 Plurality of Users:
+    comment: Missing usages
+    status: ERROR
+  ROBOT Report:
+    comment: 13 errors, 214 warnings, 22 info messages.
+    file: robot_report
+    status: ERROR
+sha256_hash: b5ed1e38f110b8c46f67357d2857dae94c67965b4d02382b83aed7e4123207bb
+summary:
+  comment: 6 errors
+  status: ERROR
+version: null

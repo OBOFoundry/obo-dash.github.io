@@ -1,0 +1,47 @@
+changed: true
+date: '2020-11-03'
+namespace: txpo
+results:
+  FP1 Open:
+    comment: Registry license 'http://creativecommons.org/licenses/by/3.0/' is not
+      a valid open license. License should use property 'http://purl.org/dc/terms/license'.
+      Ontology license 'http://creativecommons.org/licenses/by/4.0/' does not match
+      regsitry license 'http://creativecommons.org/licenses/by/3.0/'.
+    status: ERROR
+  FP11 Locus of Authority:
+    status: PASS
+  FP12 Naming Conventions:
+    comment: 2 duplicate labels. See ROBOT Report for details.
+    status: ERROR
+  FP16 Maintenance:
+    status: PASS
+  FP2 Common Format:
+    status: PASS
+  FP3 URIs:
+    status: PASS
+  FP4 Versioning:
+    status: PASS
+  FP5 Scope:
+    status: PASS
+  FP6 Textual Definitions:
+    comment: 4 duplicate definitions. 1781 missing definitions. See ROBOT Report for
+      details.
+    status: ERROR
+  FP7 Relations:
+    comment: 41 non-RO properties used.
+    file: fp7
+    status: INFO
+  FP8 Documented:
+    status: PASS
+  FP9 Plurality of Users:
+    comment: Missing usages
+    status: ERROR
+  ROBOT Report:
+    comment: 7 errors, 2144 warnings, 112 info messages.
+    file: robot_report
+    status: ERROR
+sha256_hash: d491c081d709345f8efc6ddaf2fca04dd150efa8ecc2683856ec7c2f2b225b4e
+summary:
+  comment: 5 errors
+  status: ERROR
+version: http://purl.obolibrary.org/obo/txpo/releases/2020-03-03/txpo.owl

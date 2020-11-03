@@ -1,0 +1,47 @@
+changed: true
+date: '2020-11-03'
+namespace: ohd
+results:
+  FP1 Open:
+    comment: Missing ontology license.
+    status: ERROR
+  FP11 Locus of Authority:
+    status: PASS
+  FP12 Naming Conventions:
+    status: PASS
+  FP16 Maintenance:
+    comment: Version IRI does not have date information
+    status: INFO
+  FP2 Common Format:
+    status: PASS
+  FP3 URIs:
+    status: PASS
+  FP4 Versioning:
+    comment: Version IRI 'http://purl.obolibrary.org/obo/2016-06-27/ohd-inferred.owl'
+      is not in recommended format
+    status: WARN
+  FP5 Scope:
+    status: PASS
+  FP6 Textual Definitions:
+    comment: 2 multiple definitions. 25 missing definitions. See ROBOT Report for
+      details.
+    status: ERROR
+  FP7 Relations:
+    comment: 6 non-RO properties used.
+    file: fp7
+    status: INFO
+  FP8 Documented:
+    comment: homepage URL (https://purl.obolibrary.org/obo/ohd/home) does not resolve
+    status: ERROR
+  FP9 Plurality of Users:
+    comment: Missing usages
+    status: ERROR
+  ROBOT Report:
+    comment: 5 errors, 55 warnings, 74 info messages.
+    file: robot_report
+    status: ERROR
+sha256_hash: 0d97ea12080d77bdeb2fc24505676b15ed2dd0427fb5500a9e03a14b64954f91
+summary:
+  comment: 5 errors
+  status: ERROR
+version: http://purl.obolibrary.org/obo/2016-06-27/ohd-inferred.owl

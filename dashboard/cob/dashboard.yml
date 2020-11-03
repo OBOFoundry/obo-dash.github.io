@@ -1,4 +1,5 @@
-date: '2020-10-26'
+changed: true
+date: '2020-11-03'
 namespace: cob
 results:
   FP1 Open:
@@ -20,17 +21,23 @@ results:
   FP5 Scope:
     status: PASS
   FP6 Textual Definitions:
-    status: PASS
+    comment: 78 missing definitions. See ROBOT Report for details.
+    status: WARN
   FP7 Relations:
-    status: PASS
+    comment: 8 labels match RO labels. 12 non-RO properties used.
+    file: fp7
+    status: ERROR
   FP8 Documented:
     status: PASS
   FP9 Plurality of Users:
     comment: Missing usages
     status: ERROR
   ROBOT Report:
-    status: PASS
+    comment: 78 warnings, 0 info messages.
+    file: robot_report
+    status: WARN
+sha256_hash: 2c2c84e43b6be65be27d7a519c05192f50e9b3bb9d46c48863f6f15fa8767282
 summary:
-  comment: 3 errors
+  comment: 4 errors
   status: ERROR
 version: null

@@ -1,0 +1,47 @@
+changed: true
+date: '2020-11-03'
+namespace: clo
+results:
+  FP1 Open:
+    comment: Missing ontology license.
+    status: ERROR
+  FP11 Locus of Authority:
+    status: PASS
+  FP12 Naming Conventions:
+    comment: 109 duplicate labels. 8029 multiple labels. See ROBOT Report for details.
+    status: ERROR
+  FP16 Maintenance:
+    comment: Missing version IRI to check date
+    status: ERROR
+  FP2 Common Format:
+    status: PASS
+  FP3 URIs:
+    status: PASS
+  FP4 Versioning:
+    comment: Missing version IRI
+    status: ERROR
+  FP5 Scope:
+    comment: Missing domain (scope)
+    status: ERROR
+  FP6 Textual Definitions:
+    comment: 512 duplicate definitions. 760 multiple definitions. 39133 missing definitions.
+      See ROBOT Report for details.
+    status: ERROR
+  FP7 Relations:
+    comment: 16 non-RO properties used.
+    file: fp7
+    status: INFO
+  FP8 Documented:
+    status: PASS
+  FP9 Plurality of Users:
+    comment: Missing usages
+    status: ERROR
+  ROBOT Report:
+    comment: 9425 errors, 43010 warnings, 470 info messages.
+    file: robot_report
+    status: ERROR
+sha256_hash: f3720f76d126fed208d1be440b3054eb2c72381e9514692b4625a0b4b1f32dbc
+summary:
+  comment: 8 errors
+  status: ERROR
+version: null

@@ -1,0 +1,46 @@
+changed: true
+date: '2020-11-03'
+namespace: cido
+results:
+  FP1 Open:
+    status: PASS
+  FP11 Locus of Authority:
+    status: PASS
+  FP12 Naming Conventions:
+    comment: 4 multiple labels. See ROBOT Report for details.
+    status: ERROR
+  FP16 Maintenance:
+    comment: Missing version IRI to check date
+    status: ERROR
+  FP2 Common Format:
+    status: PASS
+  FP3 URIs:
+    status: PASS
+  FP4 Versioning:
+    comment: Missing version IRI
+    status: ERROR
+  FP5 Scope:
+    comment: Missing domain (scope)
+    status: ERROR
+  FP6 Textual Definitions:
+    comment: 18 duplicate definitions. 12 multiple definitions. 104 missing definitions.
+      See ROBOT Report for details.
+    status: ERROR
+  FP7 Relations:
+    comment: 1 labels match RO labels. 50 non-RO properties used.
+    file: fp7
+    status: ERROR
+  FP8 Documented:
+    status: PASS
+  FP9 Plurality of Users:
+    comment: Missing usages
+    status: ERROR
+  ROBOT Report:
+    comment: 34 errors, 106 warnings, 6 info messages.
+    file: robot_report
+    status: ERROR
+sha256_hash: 266570bd6d80e4759aa38871f76c8826eab506367ef62abc494dae2a832accb4
+summary:
+  comment: 8 errors
+  status: ERROR
+version: null

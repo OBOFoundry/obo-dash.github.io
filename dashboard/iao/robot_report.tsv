@@ -1,0 +1,57 @@
+Level	Rule Name	Subject	Property	Value
+WARN	annotation_whitespace	datum label	curator note	<9/22/11 BP: changed the rdfs:label for this class from 'label' to 'datum label' to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum. >
+WARN	annotation_whitespace	definition	editor note	<2012-04-05: Barry SmithThe official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions' is terrible.Can you fix to something like:A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.Alan RuttenbergYour proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. On the specifics of the proposed definition:We don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with. @en>
+WARN	annotation_whitespace	expand expression to	example of usage	"<ObjectProperty: RO_0002104Label: has plasma membrane partAnnotations: IAO_0000424 \""http://purl.obolibrary.org/obo/BFO_0000051 some (http://purl.org/obo/owl/GO#GO_0005886 and http://purl.obolibrary.org/obo/BFO_0000051 some ?Y)\""@en>"
+WARN	annotation_whitespace	expand assertion to	example of usage	"<ObjectProperty: RO???Label: spatially disjoint fromAnnotations: expand_assertion_to \""DisjointClasses: (http://purl.obolibrary.org/obo/BFO_0000051 some ?X) (http://purl.obolibrary.org/obo/BFO_0000051 some ?Y)\""@en>"
+WARN	annotation_whitespace	associating information with a centrally registered identifier in its registry	example of usage	Articles in Pubmed are reviewed by curators who add MESH terms to the Pubmed records in order to categorize them better and improve the ability to search for them. 
+WARN	annotation_whitespace	centrally registered identifier	editor note	<Alan, IAO call 20101124: potentially the CRID denotes the instance it was associated with during creation. @en>
+WARN	annotation_whitespace	centrally registered identifier registry	example of usage	PubMed is a CRID registry. It has a dataset of PubMed identifiers associated with journal articles. @en
+WARN	annotation_whitespace	looking up a centrally registered identifier	example of usage	Going to the PubMed website and entering a PubMed ID in order to retrieve the Pubmed information associated with that ID. 
+WARN	annotation_whitespace	has ID range allocated to	example of usage	"<Datatype: idrange:1Annotations: 'has ID range allocated to': \""Chris Mungall\""EquivalentTo: xsd:integer[> 2151 , <= 2300]@en>"
+WARN	annotation_whitespace	conflict of interest textual entity	example of usage	<SD [an author] is a Merck employee and Merck is the sponsor of this study. [Taken from 'Effects of obstructive sleep apnoea risk on postoperative respiratory complications: protocol for a hospital-based registry study' Shin et al. 2016 (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4735131/)] @en>
+WARN	annotation_whitespace	related work textual entity	example of usage	<Excerpt from Žitnik and Zupan. Bioinformatics. 2015 Jun 15; 31(12): i230–i239. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4542780/):Our work presented here is similar in spirit to our recently developed methodology for data fusion via collective matrix factorization (Žitnik and Zupan, 2015).@en>
+WARN	duplicate_exact_synonym	author summary section	alternative term	summary@en
+WARN	duplicate_exact_synonym	conclusion section	alternative term	summary@en
+WARN	missing_definition	has measurement value	definition	
+WARN	missing_definition	time trigger	definition	
+WARN	missing_definition	has measurement unit label	definition	
+WARN	missing_definition	contour plot	definition	
+WARN	missing_definition	has curation status	definition	
+WARN	missing_definition	has x coordinate value	definition	
+WARN	missing_definition	has z coordinate value	definition	
+WARN	missing_definition	has y coordinate value	definition	
+WARN	missing_definition	has coordinate unit label	definition	
+WARN	missing_definition	first order logic expression	definition	
+WARN	missing_definition	email address	definition	
+WARN	missing_definition	time stamped measurement datum	definition	
+WARN	missing_definition	ontology module	definition	
+WARN	missing_definition	taxonomic bridge ontology module	definition	
+WARN	missing_definition	ontology module subsetted by expressivity	definition	
+WARN	missing_definition	ontology module subsetted by OWL profile	definition	
+WARN	missing_definition	EL++ ontology module	definition	
+INFO	lowercase_definition	obsolete_unit of measure	definition	a unit of measure is the quality of some material entity compared to which another quality is some multiple of.
+INFO	lowercase_definition	obsolete_specifically denotes	definition	"c specifically denotes r =def 
+r is a portion of reality
+& c is a particular quality
+& c depends specifically on some independent continuant b 
+& b acquired c as the result of the achievement of an objective to enable pointing to r repeatedly. 
+
+Marked means there is a changed or additional quality of the bearer - the  quality is the information carrier.
+
+Case 1
+Memory trace as mark created when reading some description of some friend. The trace can denote.
+
+Case 2
+Pattern of ink arrayed on paper as mark when writing down a friend's name
+
+Case 3
+Pattern of magnetic domains on scattered pieces of a hard disk platter as mark when saving a file."
+INFO	lowercase_definition	is quality measurement of	definition	m is a quality measurement of q at t. When q is a quality, there is a measurement process p that has specified output m, a measurement datum, that is about q@en
+INFO	lowercase_definition	denoted by	definition	inverse of the relation 'denotes'@en
+INFO	lowercase_definition	is duration of	definition	relates a process to a time-measurement-datum that represents the duration of the process@en
+INFO	lowercase_definition	is quality measured as	definition	inverse of the relation of is quality measurement of@en
+INFO	lowercase_definition	quality is specified as	definition	inverse of the relation of is quality specification of@en
+INFO	lowercase_definition	obsolete_establishing a CRID registry	definition	a planned process with the objective to establish a system that allows to refer to specific entities of a certain kind and store information about them, by establishing a CRID registry and plan specifications for the process of 1) assigning a CRID and 2) looking up a CRID.
+INFO	lowercase_definition	has time stamp	definition	relates a time stamped measurement datum to the time measurement datum that denotes the time when the measurement was taken@en
+INFO	lowercase_definition	has measurement datum	definition	relates a time stamped measurement datum to the measurement datum that was measured@en
+INFO	lowercase_definition	retired from use as of	definition	relates a class of CRID to the date after which further instances should not be made, according to the central authority
