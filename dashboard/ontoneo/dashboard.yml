@@ -1,11 +1,29 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-07'
 namespace: ontoneo
 results:
-  FP1 Open:
+  FP01 Open:
     comment: License should use property 'http://purl.org/dc/terms/license'. Ontology
       license 'http://creativecommons.org/licenses/by/4.0/' does not match regsitry
       license 'http://creativecommons.org/licenses/by/3.0/'.
+    status: ERROR
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    status: PASS
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    status: PASS
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    comment: homepage URL (ontoneo.com) does not resolve
+    status: ERROR
+  FP09 Plurality of Users:
+    comment: Missing usages
     status: ERROR
   FP11 Locus of Authority:
     status: PASS
@@ -15,30 +33,20 @@ results:
   FP16 Maintenance:
     comment: last version (2017-03-04) is over three year(s) old
     status: ERROR
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    status: PASS
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    status: PASS
-  FP7 Relations:
-    status: PASS
-  FP8 Documented:
-    comment: homepage URL (ontoneo.com) does not resolve
-    status: ERROR
-  FP9 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
   ROBOT Report:
     comment: 5 errors, 0 warnings, 0 info messages.
     file: robot_report
+    results:
+      ERROR: 5
+      INFO: 0
+      WARN: 0
     status: ERROR
 sha256_hash: 7039b9dd800dc5680d5595d563a82c6bd184e44b9b73efc431e30c0a17ba6b54
 summary:
   comment: 6 errors
   status: ERROR
+  summary_count:
+    ERROR: 6
+    INFO: 0
+    WARN: 0
 version: http://purl.obolibrary.org/obo/ontoneo/releases/2017-03-04/ontoneo.owl

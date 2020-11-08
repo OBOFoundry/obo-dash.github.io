@@ -1,8 +1,27 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-07'
 namespace: eco
 results:
-  FP1 Open:
+  FP01 Open:
+    status: PASS
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    status: PASS
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 2 missing definitions. See ROBOT Report for details.
+    status: WARN
+  FP07 Relations:
+    comment: 2 non-RO properties used.
+    file: fp7
+    status: INFO
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
     status: PASS
   FP11 Locus of Authority:
     status: PASS
@@ -10,31 +29,20 @@ results:
     status: PASS
   FP16 Maintenance:
     status: PASS
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    status: PASS
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    comment: 2 missing definitions. See ROBOT Report for details.
-    status: WARN
-  FP7 Relations:
-    comment: 2 non-RO properties used.
-    file: fp7
-    status: INFO
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    status: PASS
   ROBOT Report:
-    comment: 42 warnings, 2 info messages.
+    comment: 42 warnings, 659 info messages.
     file: robot_report
+    results:
+      ERROR: 0
+      INFO: 659
+      WARN: 42
     status: WARN
-sha256_hash: 35d4c0bc2dc84a5a86c9ebf6ae68bf868a8b741efb143a2bac59755c5bc71b64
+sha256_hash: 245d3088d4b229b8e1820f813f9b472c676a0a0af3425efc0b3888401a660039
 summary:
   comment: 2 warnings
   status: WARN
-version: http://purl.obolibrary.org/obo/eco/releases/2020-09-11/eco.owl
+  summary_count:
+    ERROR: 0
+    INFO: 1
+    WARN: 2
+version: http://purl.obolibrary.org/obo/eco/releases/2020-09-11/eco-base.owl

@@ -1,10 +1,33 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-08'
 namespace: fobi
 results:
-  FP1 Open:
+  FP01 Open:
     comment: Ontology license 'http://creativecommons.org/licenses/by/4.0/' does not
       match regsitry license 'http://creativecommons.org/licenses/by/3.0/'.
+    status: ERROR
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    comment: Version IRI 'http://purl.obolibrary.org/obo/fobi/fobi.owl' is not in
+      recommended format
+    status: WARN
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 637 missing definitions. See ROBOT Report for details.
+    status: WARN
+  FP07 Relations:
+    comment: 1 labels match RO labels. 3 non-RO properties used.
+    file: fp7
+    status: ERROR
+  FP08 Documented:
+    comment: Missing homepage
+    status: ERROR
+  FP09 Plurality of Users:
+    comment: Missing usages
     status: ERROR
   FP11 Locus of Authority:
     status: PASS
@@ -13,35 +36,20 @@ results:
   FP16 Maintenance:
     comment: Version IRI does not have date information
     status: INFO
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    comment: Version IRI 'http://purl.obolibrary.org/obo/fobi/fobi.owl' is not in
-      recommended format
-    status: WARN
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    comment: 637 missing definitions. See ROBOT Report for details.
-    status: WARN
-  FP7 Relations:
-    comment: 1 labels match RO labels. 3 non-RO properties used.
-    file: fp7
-    status: ERROR
-  FP8 Documented:
-    comment: Missing homepage
-    status: ERROR
-  FP9 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
   ROBOT Report:
     comment: 2 errors, 637 warnings, 2 info messages.
     file: robot_report
+    results:
+      ERROR: 2
+      INFO: 2
+      WARN: 637
     status: ERROR
 sha256_hash: 49df0776f7e8cda4fc90e570066722e1e1a1ee170963ebef9ccbfb9e11711789
 summary:
   comment: 5 errors
   status: ERROR
+  summary_count:
+    ERROR: 5
+    INFO: 1
+    WARN: 2
 version: http://purl.obolibrary.org/obo/fobi/fobi.owl

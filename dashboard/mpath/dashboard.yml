@@ -1,9 +1,27 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-07'
 namespace: mpath
 results:
-  FP1 Open:
+  FP01 Open:
     comment: Missing ontology license.
+    status: ERROR
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    status: PASS
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 85 missing definitions. See ROBOT Report for details.
+    status: WARN
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
     status: ERROR
   FP11 Locus of Authority:
     status: PASS
@@ -12,30 +30,20 @@ results:
     status: ERROR
   FP16 Maintenance:
     status: PASS
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    status: PASS
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    comment: 85 missing definitions. See ROBOT Report for details.
-    status: WARN
-  FP7 Relations:
-    status: PASS
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
   ROBOT Report:
     comment: 23 errors, 148 warnings, 76 info messages.
     file: robot_report
+    results:
+      ERROR: 23
+      INFO: 76
+      WARN: 148
     status: ERROR
 sha256_hash: d20c3079f2fa02755bd62575645054445277e3156afebb2c3d456f7a084276fe
 summary:
   comment: 4 errors
   status: ERROR
+  summary_count:
+    ERROR: 4
+    INFO: 0
+    WARN: 1
 version: http://purl.obolibrary.org/obo/mpath/2020-05-19/mpath.owl

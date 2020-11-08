@@ -1,9 +1,30 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-07'
 namespace: micro
 results:
-  FP1 Open:
+  FP01 Open:
     comment: Missing ontology license.
+    status: ERROR
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    comment: Missing version IRI
+    status: ERROR
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 2061 missing definitions. See ROBOT Report for details.
+    status: WARN
+  FP07 Relations:
+    comment: 1 labels match RO labels. 77 non-RO properties used.
+    file: fp7
+    status: ERROR
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
     status: ERROR
   FP11 Locus of Authority:
     status: PASS
@@ -14,33 +35,20 @@ results:
   FP16 Maintenance:
     comment: Missing version IRI to check date
     status: ERROR
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    comment: Missing version IRI
-    status: ERROR
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    comment: 2061 missing definitions. See ROBOT Report for details.
-    status: WARN
-  FP7 Relations:
-    comment: 1 labels match RO labels. 77 non-RO properties used.
-    file: fp7
-    status: ERROR
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
   ROBOT Report:
     comment: 13 errors, 2632 warnings, 1151 info messages.
     file: robot_report
+    results:
+      ERROR: 13
+      INFO: 1151
+      WARN: 2632
     status: ERROR
 sha256_hash: ef21dbfab755143a9c390ad274d4e1405f344f6a8dbfbd749de09af0b4b54910
 summary:
   comment: 7 errors
   status: ERROR
+  summary_count:
+    ERROR: 7
+    INFO: 0
+    WARN: 1
 version: null

@@ -1,9 +1,29 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-07'
 namespace: aro
 results:
-  FP1 Open:
+  FP01 Open:
     comment: Missing ontology license.
+    status: ERROR
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    comment: Missing version IRI
+    status: ERROR
+  FP05 Scope:
+    comment: Missing domain (scope)
+    status: ERROR
+  FP06 Textual Definitions:
+    comment: 325 duplicate definitions. See ROBOT Report for details.
+    status: ERROR
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
     status: ERROR
   FP11 Locus of Authority:
     status: PASS
@@ -12,32 +32,20 @@ results:
   FP16 Maintenance:
     comment: Missing version IRI to check date
     status: ERROR
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    comment: Missing version IRI
-    status: ERROR
-  FP5 Scope:
-    comment: Missing domain (scope)
-    status: ERROR
-  FP6 Textual Definitions:
-    comment: 325 duplicate definitions. See ROBOT Report for details.
-    status: ERROR
-  FP7 Relations:
-    status: PASS
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
   ROBOT Report:
     comment: 328 errors, 40 warnings, 459 info messages.
     file: robot_report
+    results:
+      ERROR: 328
+      INFO: 459
+      WARN: 40
     status: ERROR
 sha256_hash: f6f296607ab0a4902f910d643b6d02c809c51b5c79a7f70f81a917cc99b4bd1a
 summary:
   comment: 7 errors
   status: ERROR
+  summary_count:
+    ERROR: 7
+    INFO: 0
+    WARN: 0
 version: null

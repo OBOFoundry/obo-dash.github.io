@@ -1,9 +1,28 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-07'
 namespace: apo
 results:
-  FP1 Open:
+  FP01 Open:
     comment: Missing ontology license.
+    status: ERROR
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    status: PASS
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 2 duplicate definitions. 36 missing definitions. See ROBOT Report for
+      details.
+    status: ERROR
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
     status: ERROR
   FP11 Locus of Authority:
     status: PASS
@@ -12,31 +31,20 @@ results:
     status: ERROR
   FP16 Maintenance:
     status: PASS
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    status: PASS
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    comment: 2 duplicate definitions. 36 missing definitions. See ROBOT Report for
-      details.
-    status: ERROR
-  FP7 Relations:
-    status: PASS
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
   ROBOT Report:
     comment: 9 errors, 69 warnings, 4 info messages.
     file: robot_report
+    results:
+      ERROR: 9
+      INFO: 4
+      WARN: 69
     status: ERROR
 sha256_hash: 58f603a9a83c3994e03157cf52070b709e81e5458c923f701164c3a0afb25213
 summary:
   comment: 5 errors
   status: ERROR
+  summary_count:
+    ERROR: 5
+    INFO: 0
+    WARN: 0
 version: http://purl.obolibrary.org/obo/apo/releases/2020-03-10/apo.owl

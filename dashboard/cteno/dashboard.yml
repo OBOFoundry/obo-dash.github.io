@@ -1,9 +1,27 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-07'
 namespace: cteno
 results:
-  FP1 Open:
+  FP01 Open:
     comment: Missing ontology license.
+    status: ERROR
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    status: PASS
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 135 missing definitions. See ROBOT Report for details.
+    status: WARN
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
     status: ERROR
   FP11 Locus of Authority:
     status: PASS
@@ -12,30 +30,20 @@ results:
   FP16 Maintenance:
     comment: last version (2016-10-19) is over three year(s) old
     status: ERROR
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    status: PASS
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    comment: 135 missing definitions. See ROBOT Report for details.
-    status: WARN
-  FP7 Relations:
-    status: PASS
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
   ROBOT Report:
     comment: 9 errors, 135 warnings, 1 info messages.
     file: robot_report
+    results:
+      ERROR: 9
+      INFO: 1
+      WARN: 135
     status: ERROR
 sha256_hash: ba13033301422dd3e6cdb52855fc98d1ffaa010951507921416a7a4453d2a43e
 summary:
   comment: 4 errors
   status: ERROR
+  summary_count:
+    ERROR: 4
+    INFO: 0
+    WARN: 1
 version: http://purl.obolibrary.org/obo/cteno/releases/2016-10-19/cteno.owl

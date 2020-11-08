@@ -1,9 +1,30 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-07'
 namespace: geno
 results:
-  FP1 Open:
+  FP01 Open:
     comment: Ontology license 'unspecified' does not match regsitry license 'https://creativecommons.org/licenses/by-sa/2.0/'.
+    status: ERROR
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    status: PASS
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 6 duplicate definitions. 83 missing definitions. See ROBOT Report for
+      details.
+    status: ERROR
+  FP07 Relations:
+    comment: 85 non-RO properties used.
+    file: fp7
+    status: INFO
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
     status: ERROR
   FP11 Locus of Authority:
     status: PASS
@@ -12,33 +33,20 @@ results:
     status: ERROR
   FP16 Maintenance:
     status: PASS
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    status: PASS
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    comment: 6 duplicate definitions. 83 missing definitions. See ROBOT Report for
-      details.
-    status: ERROR
-  FP7 Relations:
-    comment: 85 non-RO properties used.
-    file: fp7
-    status: INFO
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
   ROBOT Report:
-    comment: 26 errors, 91 warnings, 11 info messages.
+    comment: 26 errors, 91 warnings, 29 info messages.
     file: robot_report
+    results:
+      ERROR: 26
+      INFO: 29
+      WARN: 91
     status: ERROR
-sha256_hash: 3cdb59d31dfdcca246d58e4f763871bcf2406289b90c1e8bb964a88dfadfd940
+sha256_hash: 9c4fb0432eea2a450203ec1ce914496a297cca229c8723eb76cdc45947c73280
 summary:
   comment: 5 errors
   status: ERROR
-version: http://purl.obolibrary.org/obo/geno/releases/2020-03-08/geno.owl
+  summary_count:
+    ERROR: 5
+    INFO: 1
+    WARN: 0
+version: http://purl.obolibrary.org/obo/geno/releases/2020-03-08/geno-base.owl

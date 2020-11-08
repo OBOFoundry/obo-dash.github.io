@@ -1,8 +1,25 @@
 changed: true
-date: '2020-11-02'
+date: '2020-11-07'
 namespace: bfo
 results:
-  FP1 Open:
+  FP01 Open:
+    status: PASS
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    status: PASS
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 1 missing definitions. See ROBOT Report for details.
+    status: WARN
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
     status: PASS
   FP11 Locus of Authority:
     status: PASS
@@ -11,29 +28,20 @@ results:
   FP16 Maintenance:
     comment: last version (2019-08-26) is over one year(s) old
     status: INFO
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    status: PASS
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    comment: 1 missing definitions. See ROBOT Report for details.
-    status: WARN
-  FP7 Relations:
-    status: PASS
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    status: PASS
   ROBOT Report:
     comment: 2 errors, 53 warnings, 19 info messages.
     file: robot_report
+    results:
+      ERROR: 2
+      INFO: 19
+      WARN: 53
     status: ERROR
 sha256_hash: ca399c2b8b79f4d12b296d5c4ea4c00940e1f82cee7d1a50ddc292aa4f6c4666
 summary:
   comment: 1 errors
   status: ERROR
+  summary_count:
+    ERROR: 1
+    INFO: 1
+    WARN: 1
 version: http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl

@@ -1,9 +1,26 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-07'
 namespace: ddanat
 results:
-  FP1 Open:
+  FP01 Open:
     comment: Missing ontology license.
+    status: ERROR
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    status: PASS
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    status: PASS
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
     status: ERROR
   FP11 Locus of Authority:
     status: PASS
@@ -11,29 +28,20 @@ results:
     status: PASS
   FP16 Maintenance:
     status: PASS
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    status: PASS
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    status: PASS
-  FP7 Relations:
-    status: PASS
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
   ROBOT Report:
     comment: 3 errors, 2 warnings, 1 info messages.
     file: robot_report
+    results:
+      ERROR: 3
+      INFO: 1
+      WARN: 2
     status: ERROR
 sha256_hash: d0cf6e11b3d67575a1d578f8c2f57b567960b5946db0bc4043666c2d51f770a5
 summary:
   comment: 3 errors
   status: ERROR
+  summary_count:
+    ERROR: 3
+    INFO: 0
+    WARN: 0
 version: http://purl.obolibrary.org/obo/ddanat/releases/2020-04-13/ddanat.owl

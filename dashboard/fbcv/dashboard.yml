@@ -1,8 +1,28 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-07'
 namespace: fbcv
 results:
-  FP1 Open:
+  FP01 Open:
+    status: PASS
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    status: PASS
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 36 duplicate definitions. 17 missing definitions. See ROBOT Report for
+      details.
+    status: ERROR
+  FP07 Relations:
+    comment: 1 non-RO properties used.
+    file: fp7
+    status: INFO
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
     status: PASS
   FP11 Locus of Authority:
     status: PASS
@@ -10,26 +30,20 @@ results:
     status: PASS
   FP16 Maintenance:
     status: PASS
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    status: PASS
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    status: PASS
-  FP7 Relations:
-    status: PASS
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    status: PASS
   ROBOT Report:
-    status: PASS
-sha256_hash: 18b763a9397cee0c5b191c512a20343d7cf3cad79cd7e74603953153c3f868c4
+    comment: 36 errors, 265 warnings, 120 info messages.
+    file: robot_report
+    results:
+      ERROR: 36
+      INFO: 120
+      WARN: 265
+    status: ERROR
+sha256_hash: 321434770395467a7fbf4faa3a3c9c312c54d9399e5f23dfc62e400aa606ef7d
 summary:
-  comment: ''
-  status: PASS
-version: http://purl.obolibrary.org/obo/fbcv/releases/2020-10-20/fbcv.owl
+  comment: 2 errors
+  status: ERROR
+  summary_count:
+    ERROR: 2
+    INFO: 1
+    WARN: 0
+version: http://purl.obolibrary.org/obo/fbcv/releases/2020-10-20/fbcv-base.owl

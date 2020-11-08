@@ -1,8 +1,27 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-07'
 namespace: dpo
 results:
-  FP1 Open:
+  FP01 Open:
+    status: PASS
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    status: PASS
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 4 missing definitions. See ROBOT Report for details.
+    status: WARN
+  FP07 Relations:
+    comment: 1 non-RO properties used.
+    file: fp7
+    status: INFO
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
     status: PASS
   FP11 Locus of Authority:
     status: PASS
@@ -10,26 +29,20 @@ results:
     status: PASS
   FP16 Maintenance:
     status: PASS
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    status: PASS
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    status: PASS
-  FP7 Relations:
-    status: PASS
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    status: PASS
   ROBOT Report:
-    status: PASS
-sha256_hash: a6ebc5f15f5ae19f323ee37f9a3ea4a7a5218e522e035186075ae6a9ad4f7aa9
+    comment: 5 warnings, 0 info messages.
+    file: robot_report
+    results:
+      ERROR: 0
+      INFO: 0
+      WARN: 5
+    status: WARN
+sha256_hash: b1e9bcb654538e78a0d408d66bdaadd525c9238370c286f2119538af776b1b93
 summary:
-  comment: ''
-  status: PASS
-version: http://purl.obolibrary.org/obo/dpo/releases/2020-10-20/dpo.owl
+  comment: 2 warnings
+  status: WARN
+  summary_count:
+    ERROR: 0
+    INFO: 1
+    WARN: 2
+version: http://purl.obolibrary.org/obo/dpo/releases/2020-10-20/dpo-base.owl

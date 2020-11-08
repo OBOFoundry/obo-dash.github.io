@@ -1,9 +1,27 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-07'
 namespace: hao
 results:
-  FP1 Open:
+  FP01 Open:
     comment: Missing ontology license.
+    status: ERROR
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    status: PASS
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 5 duplicate definitions. See ROBOT Report for details.
+    status: ERROR
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
     status: ERROR
   FP11 Locus of Authority:
     status: PASS
@@ -13,30 +31,20 @@ results:
   FP16 Maintenance:
     comment: last version (2018-04-26) is over two year(s) old
     status: WARN
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    status: PASS
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    comment: 5 duplicate definitions. See ROBOT Report for details.
-    status: ERROR
-  FP7 Relations:
-    status: PASS
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
   ROBOT Report:
     comment: 118 errors, 82 warnings, 21 info messages.
     file: robot_report
+    results:
+      ERROR: 118
+      INFO: 21
+      WARN: 82
     status: ERROR
 sha256_hash: 6368dd1f7300d0ab36762d1e2aefcc2b5760eee883ac3b335053e931f9625da5
 summary:
   comment: 5 errors
   status: ERROR
+  summary_count:
+    ERROR: 5
+    INFO: 0
+    WARN: 1
 version: http://purl.obolibrary.org/obo/hao/2018-04-26/hao.owl

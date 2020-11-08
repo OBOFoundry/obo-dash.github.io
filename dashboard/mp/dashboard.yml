@@ -1,9 +1,29 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-07'
 namespace: mp
 results:
-  FP1 Open:
+  FP01 Open:
     status: PASS
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    comment: Version IRI 'http://purl.obolibrary.org/obo/mp/releases/2020-11-05' is
+      not in recommended format
+    status: WARN
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 178 missing definitions. See ROBOT Report for details.
+    status: WARN
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
+    status: ERROR
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
@@ -11,32 +31,20 @@ results:
   FP16 Maintenance:
     comment: Version IRI does not have date information
     status: INFO
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    comment: Version IRI 'http://purl.obolibrary.org/obo/mp/releases/2020-07-09' is
-      not in recommended format
-    status: WARN
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    comment: 177 missing definitions. See ROBOT Report for details.
-    status: WARN
-  FP7 Relations:
-    status: PASS
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
   ROBOT Report:
-    comment: 177 warnings, 12968 info messages.
+    comment: 180 warnings, 13062 info messages.
     file: robot_report
+    results:
+      ERROR: 0
+      INFO: 13062
+      WARN: 180
     status: WARN
-sha256_hash: 04c3619cb346418d466c454ea8777012a321a49e92e259bd89f69e42a8c1a14a
+sha256_hash: 255f62a7988411d592f5ea412ddfed217f5b669a9c1616c1999232d202e0d386
 summary:
   comment: 1 errors
   status: ERROR
-version: http://purl.obolibrary.org/obo/mp/releases/2020-07-09
+  summary_count:
+    ERROR: 1
+    INFO: 1
+    WARN: 3
+version: http://purl.obolibrary.org/obo/mp/releases/2020-11-05

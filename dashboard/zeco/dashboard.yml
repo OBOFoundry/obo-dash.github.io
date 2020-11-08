@@ -1,43 +1,48 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-08'
 namespace: zeco
 results:
-  FP1 Open:
+  FP01 Open:
     comment: Ontology license 'cc-by' does not match regsitry license 'http://creativecommons.org/licenses/by/3.0/'.
+    status: ERROR
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    status: PASS
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 42 missing definitions. See ROBOT Report for details.
+    status: WARN
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
     status: ERROR
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
-    comment: Version IRI does not have date information
-    status: INFO
-  FP2 Common Format:
     status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    comment: Version IRI 'http://purl.obolibrary.org/obo/zeco/releases/2020-04-08'
-      is not in recommended format
-    status: WARN
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    comment: 42 missing definitions. See ROBOT Report for details.
-    status: WARN
-  FP7 Relations:
-    status: PASS
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
   ROBOT Report:
     comment: 43 warnings, 1 info messages.
     file: robot_report
+    results:
+      ERROR: 0
+      INFO: 1
+      WARN: 43
     status: WARN
-sha256_hash: 756d0953d8e21c652960979f2a06627bde073b863a363b7307fd97a95ee7bd88
+sha256_hash: fe608e86f42308fe5d08e4474267e582167ed8206472d9b9d0bbad7e9915c11b
 summary:
   comment: 2 errors
   status: ERROR
-version: http://purl.obolibrary.org/obo/zeco/releases/2020-04-08
+  summary_count:
+    ERROR: 2
+    INFO: 0
+    WARN: 2
+version: http://purl.obolibrary.org/obo/zeco/releases/2020-04-08/zeco-base.owl

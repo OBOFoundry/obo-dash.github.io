@@ -1,41 +1,49 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-07'
 namespace: mf
 results:
-  FP1 Open:
+  FP01 Open:
     comment: License should use property 'http://purl.org/dc/terms/license'.
     status: WARN
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    status: PASS
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 10 multiple definitions. 7 missing definitions. See ROBOT Report for
+      details.
+    status: ERROR
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
+    status: ERROR
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
     status: PASS
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    status: PASS
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    comment: 10 multiple definitions. 7 missing definitions. See ROBOT Report for
-      details.
-    status: ERROR
-  FP7 Relations:
-    status: PASS
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
   ROBOT Report:
     comment: 12 errors, 12 warnings, 5 info messages.
     file: robot_report
+    results:
+      ERROR: 12
+      INFO: 5
+      WARN: 12
     status: ERROR
 sha256_hash: d9c7676beb159e06076f90aed57fe9f0469ea1974b5961160754571a0d970d98
 summary:
   comment: 3 errors
   status: ERROR
+  summary_count:
+    ERROR: 3
+    INFO: 0
+    WARN: 1
 version: http://purl.obolibrary.org/obo/MF/2020-08-07/MF.owl

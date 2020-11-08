@@ -1,10 +1,31 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-07'
 namespace: obcs
 results:
-  FP1 Open:
+  FP01 Open:
     comment: Ontology license 'http://creativecommons.org/licenses/by/4.0/' does not
       match regsitry license 'http://creativecommons.org/licenses/by/3.0/'.
+    status: ERROR
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    status: PASS
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 2 duplicate definitions. 2 multiple definitions. 1 missing definitions.
+      See ROBOT Report for details.
+    status: ERROR
+  FP07 Relations:
+    comment: 3 non-RO properties used.
+    file: fp7
+    status: INFO
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
     status: ERROR
   FP11 Locus of Authority:
     status: PASS
@@ -13,33 +34,20 @@ results:
   FP16 Maintenance:
     comment: last version (2018-02-22) is over two year(s) old
     status: WARN
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    status: PASS
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    comment: 2 duplicate definitions. 2 multiple definitions. 1 missing definitions.
-      See ROBOT Report for details.
-    status: ERROR
-  FP7 Relations:
-    comment: 3 non-RO properties used.
-    file: fp7
-    status: INFO
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
   ROBOT Report:
     comment: 5 errors, 49 warnings, 6 info messages.
     file: robot_report
+    results:
+      ERROR: 5
+      INFO: 6
+      WARN: 49
     status: ERROR
 sha256_hash: 0b368de33670b3affe6d9cf0d5202aea2d64a8a16b03a9301b3197dbba1dbdc1
 summary:
   comment: 4 errors
   status: ERROR
+  summary_count:
+    ERROR: 4
+    INFO: 1
+    WARN: 1
 version: http://purl.obolibrary.org/obo/obcs/2018-02-22/obcs.owl

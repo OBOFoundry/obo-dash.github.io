@@ -1,9 +1,27 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-07'
 namespace: plana
 results:
-  FP1 Open:
+  FP01 Open:
     comment: Missing ontology license.
+    status: ERROR
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    status: PASS
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 14 duplicate definitions. See ROBOT Report for details.
+    status: ERROR
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
     status: ERROR
   FP11 Locus of Authority:
     status: PASS
@@ -11,34 +29,21 @@ results:
     comment: 4 duplicate labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
-    comment: Version IRI does not have date information
-    status: INFO
-  FP2 Common Format:
     status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    comment: Version IRI 'http://purl.obolibrary.org/obo/plana/releases/2020-10-20'
-      is not in recommended format
-    status: WARN
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    comment: 14 duplicate definitions. See ROBOT Report for details.
-    status: ERROR
-  FP7 Relations:
-    status: PASS
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
   ROBOT Report:
-    comment: 24 errors, 20 warnings, 116 info messages.
+    comment: 21 errors, 71 warnings, 291 info messages.
     file: robot_report
+    results:
+      ERROR: 21
+      INFO: 291
+      WARN: 71
     status: ERROR
-sha256_hash: b28e376e1fdd51698c5481984469d4c58901cf1ab4431af31598c49c9148849e
+sha256_hash: c5510e32ed7aa4ecdbb72f53e18aede9806b6328ef7b59e71b4df78f7f3c107f
 summary:
   comment: 5 errors
   status: ERROR
-version: http://purl.obolibrary.org/obo/plana/releases/2020-10-20
+  summary_count:
+    ERROR: 5
+    INFO: 0
+    WARN: 0
+version: http://purl.obolibrary.org/obo/plana/releases/2020-11-05/plana-base.owl

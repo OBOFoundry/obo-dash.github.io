@@ -1,9 +1,30 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-07'
 namespace: mfmo
 results:
-  FP1 Open:
+  FP01 Open:
     comment: Missing ontology license.
+    status: ERROR
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    status: PASS
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 2 duplicate definitions. 2 multiple definitions. 120 missing definitions.
+      See ROBOT Report for details.
+    status: ERROR
+  FP07 Relations:
+    comment: 1 labels match RO labels. 7 non-RO properties used.
+    file: fp7
+    status: ERROR
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
     status: ERROR
   FP11 Locus of Authority:
     status: PASS
@@ -13,33 +34,20 @@ results:
   FP16 Maintenance:
     comment: last version (2013-11-16) is over three year(s) old
     status: ERROR
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    status: PASS
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    comment: 2 duplicate definitions. 2 multiple definitions. 120 missing definitions.
-      See ROBOT Report for details.
-    status: ERROR
-  FP7 Relations:
-    comment: 1 labels match RO labels. 7 non-RO properties used.
-    file: fp7
-    status: ERROR
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
   ROBOT Report:
     comment: 13 errors, 154 warnings, 34 info messages.
     file: robot_report
+    results:
+      ERROR: 13
+      INFO: 34
+      WARN: 154
     status: ERROR
 sha256_hash: 730e4e358c9dccd365943a8bbff6aee596c04a078a96071d5ddf2078983b2c83
 summary:
   comment: 7 errors
   status: ERROR
+  summary_count:
+    ERROR: 7
+    INFO: 0
+    WARN: 0
 version: http://purl.obolibrary.org/obo/mfmo/2013-11-16/mfmo.owl

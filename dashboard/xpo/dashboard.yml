@@ -1,9 +1,26 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-08'
 namespace: xpo
 results:
-  FP1 Open:
+  FP01 Open:
     status: PASS
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    status: PASS
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    status: PASS
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
+    status: ERROR
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
@@ -11,29 +28,20 @@ results:
     status: ERROR
   FP16 Maintenance:
     status: PASS
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    status: PASS
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    status: PASS
-  FP7 Relations:
-    status: PASS
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
   ROBOT Report:
-    comment: 27 errors, 4 warnings, 10 info messages.
+    comment: 26 errors, 2 warnings, 19976 info messages.
     file: robot_report
+    results:
+      ERROR: 26
+      INFO: 19976
+      WARN: 2
     status: ERROR
-sha256_hash: 359b3fb4bc35378d89f4bf4713367849c427cf3971cde339490b329cbd449e07
+sha256_hash: ed8901b7e2cdce342d75a332cd0c4def088e2d52ebbd2d30a9dada7e250626be
 summary:
   comment: 3 errors
   status: ERROR
-version: http://purl.obolibrary.org/obo/xpo/releases/2020-07-04/xpo.owl
+  summary_count:
+    ERROR: 3
+    INFO: 0
+    WARN: 0
+version: http://purl.obolibrary.org/obo/xpo/releases/2020-07-04/xpo-base.owl

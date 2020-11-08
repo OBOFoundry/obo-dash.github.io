@@ -1,40 +1,48 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-08'
 namespace: hp
 results:
-  FP1 Open:
+  FP01 Open:
     comment: Registry license 'https://hpo.jax.org/app/license' is not a valid open
       license.
     status: WARN
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    status: PASS
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 2770 missing definitions. See ROBOT Report for details.
+    status: WARN
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    status: PASS
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
     status: PASS
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    status: PASS
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    comment: 2770 missing definitions. See ROBOT Report for details.
-    status: WARN
-  FP7 Relations:
-    status: PASS
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    status: PASS
   ROBOT Report:
     comment: 2773 warnings, 1 info messages.
     file: robot_report
+    results:
+      ERROR: 0
+      INFO: 1
+      WARN: 2773
     status: WARN
-sha256_hash: f1496f442d796d0ef887aea69dffa51ddb247d64adaf40499e20472fd21aaf61
+sha256_hash: b1fa78429862bdbe841518020a76e17e3c834da916472f940cb15964701d9da1
 summary:
   comment: 3 warnings
   status: WARN
-version: http://purl.obolibrary.org/obo/hp/releases/2020-10-12/hp.owl
+  summary_count:
+    ERROR: 0
+    INFO: 0
+    WARN: 3
+version: http://purl.obolibrary.org/obo/hp/releases/2020-10-12/hp-base.owl

@@ -1,10 +1,31 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-07'
 namespace: maxo
 results:
-  FP1 Open:
+  FP01 Open:
     comment: Ontology license 'https://creativecommons.org/licenses/by/4.0/' does
       not match regsitry license 'http://creativecommons.org/licenses/by/3.0/'.
+    status: ERROR
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    status: PASS
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 2 duplicate definitions. 4 multiple definitions. 120 missing definitions.
+      See ROBOT Report for details.
+    status: ERROR
+  FP07 Relations:
+    comment: 3 non-RO properties used.
+    file: fp7
+    status: INFO
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
     status: ERROR
   FP11 Locus of Authority:
     status: PASS
@@ -13,33 +34,20 @@ results:
     status: ERROR
   FP16 Maintenance:
     status: PASS
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    status: PASS
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    comment: 2 duplicate definitions. 4 multiple definitions. 120 missing definitions.
-      See ROBOT Report for details.
-    status: ERROR
-  FP7 Relations:
-    comment: 3 non-RO properties used.
-    file: fp7
-    status: INFO
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
   ROBOT Report:
-    comment: 52 errors, 131 warnings, 35 info messages.
+    comment: 52 errors, 131 warnings, 421 info messages.
     file: robot_report
+    results:
+      ERROR: 52
+      INFO: 421
+      WARN: 131
     status: ERROR
-sha256_hash: de10e0f3351e0c9db33f15a0903fbf2dfc74e6e0d0107988f4bfb554e91712af
+sha256_hash: 188aa64bdaf4ef650b2ecbc063f4dc51ae2325c6937e186546c5a67f872376a0
 summary:
   comment: 5 errors
   status: ERROR
-version: http://purl.obolibrary.org/obo/maxo/releases/2020-10-26/maxo.owl
+  summary_count:
+    ERROR: 5
+    INFO: 1
+    WARN: 0
+version: http://purl.obolibrary.org/obo/maxo/releases/2020-10-26/maxo-base.owl

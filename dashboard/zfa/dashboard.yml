@@ -1,40 +1,48 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-07'
 namespace: zfa
 results:
-  FP1 Open:
+  FP01 Open:
     comment: Ontology license 'cc-by' does not match regsitry license 'http://creativecommons.org/licenses/by/3.0/'.
     status: ERROR
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    status: PASS
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 19 duplicate definitions. 322 missing definitions. See ROBOT Report for
+      details.
+    status: ERROR
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    status: PASS
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
     status: PASS
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    status: PASS
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    comment: 19 duplicate definitions. 322 missing definitions. See ROBOT Report for
-      details.
-    status: ERROR
-  FP7 Relations:
-    status: PASS
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    status: PASS
   ROBOT Report:
     comment: 21 errors, 476 warnings, 1 info messages.
     file: robot_report
+    results:
+      ERROR: 21
+      INFO: 1
+      WARN: 476
     status: ERROR
 sha256_hash: 39558c60454cfb5be046caf83b75e2d63b1ed2f693dc21136fea925b9350a48c
 summary:
   comment: 3 errors
   status: ERROR
+  summary_count:
+    ERROR: 3
+    INFO: 0
+    WARN: 0
 version: http://purl.obolibrary.org/obo/zfa/releases/2020-04-14/zfa.owl

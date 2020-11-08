@@ -1,9 +1,31 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-07'
 namespace: rs
 results:
-  FP1 Open:
+  FP01 Open:
     comment: Missing ontology license.
+    status: ERROR
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    comment: Version IRI 'http://purl.obolibrary.org/obo/rs/6.107/rs.owl' is not in
+      recommended format
+    status: WARN
+  FP05 Scope:
+    comment: Missing domain (scope)
+    status: ERROR
+  FP06 Textual Definitions:
+    comment: 40 duplicate definitions. 4680 missing definitions. See ROBOT Report
+      for details.
+    status: ERROR
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
     status: ERROR
   FP11 Locus of Authority:
     status: PASS
@@ -13,34 +35,20 @@ results:
   FP16 Maintenance:
     comment: Version IRI does not have date information
     status: INFO
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    comment: Version IRI 'http://purl.obolibrary.org/obo/rs/6.107/rs.owl' is not in
-      recommended format
-    status: WARN
-  FP5 Scope:
-    comment: Missing domain (scope)
-    status: ERROR
-  FP6 Textual Definitions:
-    comment: 40 duplicate definitions. 4680 missing definitions. See ROBOT Report
-      for details.
-    status: ERROR
-  FP7 Relations:
-    status: PASS
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
   ROBOT Report:
     comment: 47 errors, 4680 warnings, 4 info messages.
     file: robot_report
+    results:
+      ERROR: 47
+      INFO: 4
+      WARN: 4680
     status: ERROR
 sha256_hash: 8279dc0f6f58d9f08416d40e82f0e1ea1e903ac4101e8629ef1343b8d29c8458
 summary:
   comment: 6 errors
   status: ERROR
+  summary_count:
+    ERROR: 6
+    INFO: 1
+    WARN: 1
 version: http://purl.obolibrary.org/obo/rs/6.107/rs.owl

@@ -1,8 +1,25 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-07'
 namespace: doid
 results:
-  FP1 Open:
+  FP01 Open:
+    status: PASS
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    status: PASS
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 2625 missing definitions. See ROBOT Report for details.
+    status: WARN
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
     status: PASS
   FP11 Locus of Authority:
     status: PASS
@@ -10,29 +27,20 @@ results:
     status: PASS
   FP16 Maintenance:
     status: PASS
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    status: PASS
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    comment: 2626 missing definitions. See ROBOT Report for details.
-    status: WARN
-  FP7 Relations:
-    status: PASS
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    status: PASS
   ROBOT Report:
-    comment: 2628 warnings, 1 info messages.
+    comment: 2627 warnings, 1 info messages.
     file: robot_report
+    results:
+      ERROR: 0
+      INFO: 1
+      WARN: 2627
     status: WARN
-sha256_hash: 83cf9250def240ca40ca3632aa83d5d9299eebd69d0c25c401170cb6e2a40ba9
+sha256_hash: 5234ccff3dfaf22c22d9e5dc888baae47f6b303ea1be953c0c98f1e598e6e603
 summary:
   comment: 2 warnings
   status: WARN
-version: http://purl.obolibrary.org/obo/doid/releases/2020-10-15/doid.owl
+  summary_count:
+    ERROR: 0
+    INFO: 0
+    WARN: 2
+version: http://purl.obolibrary.org/obo/doid/releases/2020-11-03/doid.owl

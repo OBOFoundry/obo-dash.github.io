@@ -1,10 +1,31 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-07'
 namespace: ogms
 results:
-  FP1 Open:
+  FP01 Open:
     comment: 'Ontology license ''url: http://creativecommons.org/licenses/by/4.0/''
       does not match regsitry license ''http://creativecommons.org/licenses/by/4.0/''.'
+    status: ERROR
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    comment: Version IRI 'https://github.com/OGMS/ogms/releases/tag/2020-07-06' is
+      not in recommended format
+    status: WARN
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 7 duplicate definitions. 8 missing definitions. See ROBOT Report for
+      details.
+    status: ERROR
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
     status: ERROR
   FP11 Locus of Authority:
     status: PASS
@@ -13,33 +34,20 @@ results:
   FP16 Maintenance:
     comment: Version IRI does not have date information
     status: INFO
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    comment: Version IRI 'https://github.com/OGMS/ogms/releases/tag/2020-07-06' is
-      not in recommended format
-    status: WARN
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    comment: 7 duplicate definitions. 8 missing definitions. See ROBOT Report for
-      details.
-    status: ERROR
-  FP7 Relations:
-    status: PASS
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
   ROBOT Report:
     comment: 7 errors, 10 warnings, 0 info messages.
     file: robot_report
+    results:
+      ERROR: 7
+      INFO: 0
+      WARN: 10
     status: ERROR
 sha256_hash: 18078f9776626d231b3c1c82808021d11806e494359eed568e3c42a652e1d30c
 summary:
   comment: 4 errors
   status: ERROR
+  summary_count:
+    ERROR: 4
+    INFO: 1
+    WARN: 1
 version: https://github.com/OGMS/ogms/releases/tag/2020-07-06

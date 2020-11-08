@@ -1,10 +1,32 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-07'
 namespace: sepio
 results:
-  FP1 Open:
+  FP01 Open:
     comment: License should use property 'http://purl.org/dc/terms/license'.
     status: WARN
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    comment: Version IRI 'http://purl.obolibrary.org/obo/sepio-v20170929.owl' is not
+      in recommended format
+    status: WARN
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 55 missing definitions. See ROBOT Report for details.
+    status: WARN
+  FP07 Relations:
+    comment: 1 labels match RO labels. 63 non-RO properties used.
+    file: fp7
+    status: ERROR
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
+    status: ERROR
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
@@ -12,34 +34,20 @@ results:
   FP16 Maintenance:
     comment: Version IRI does not have date information
     status: INFO
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    comment: Version IRI 'http://purl.obolibrary.org/obo/sepio-v20170929.owl' is not
-      in recommended format
-    status: WARN
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    comment: 55 missing definitions. See ROBOT Report for details.
-    status: WARN
-  FP7 Relations:
-    comment: 1 labels match RO labels. 63 non-RO properties used.
-    file: fp7
-    status: ERROR
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
   ROBOT Report:
     comment: 7 errors, 55 warnings, 2 info messages.
     file: robot_report
+    results:
+      ERROR: 7
+      INFO: 2
+      WARN: 55
     status: ERROR
 sha256_hash: 1da32efefb4c09a93bab5464b620b1562d96b0add1dc8a738db4de53c5885149
 summary:
   comment: 3 errors
   status: ERROR
+  summary_count:
+    ERROR: 3
+    INFO: 1
+    WARN: 3
 version: http://purl.obolibrary.org/obo/sepio-v20170929.owl

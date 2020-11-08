@@ -1,8 +1,25 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-07'
 namespace: gecko
 results:
-  FP1 Open:
+  FP01 Open:
+    status: PASS
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    status: PASS
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 2 missing definitions. See ROBOT Report for details.
+    status: WARN
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
     status: PASS
   FP11 Locus of Authority:
     status: PASS
@@ -10,29 +27,20 @@ results:
     status: PASS
   FP16 Maintenance:
     status: PASS
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    status: PASS
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    comment: 2 missing definitions. See ROBOT Report for details.
-    status: WARN
-  FP7 Relations:
-    status: PASS
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    status: PASS
   ROBOT Report:
     comment: 2 warnings, 0 info messages.
     file: robot_report
+    results:
+      ERROR: 0
+      INFO: 0
+      WARN: 2
     status: WARN
 sha256_hash: efcd4ebb9f5140808d9c34a9ebe97b9cb0deb6009bdc64a816c673d3c6c9ace8
 summary:
   comment: 2 warnings
   status: WARN
+  summary_count:
+    ERROR: 0
+    INFO: 0
+    WARN: 2
 version: http://purl.obolibrary.org/obo/gecko/releases/2020-09-18/gecko.owl

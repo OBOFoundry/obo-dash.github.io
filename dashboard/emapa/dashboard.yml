@@ -1,10 +1,27 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-07'
 namespace: emapa
 results:
-  FP1 Open:
+  FP01 Open:
     comment: Missing ontology license.
     status: ERROR
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    status: PASS
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 7633 missing definitions. See ROBOT Report for details.
+    status: WARN
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    status: PASS
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
@@ -12,29 +29,20 @@ results:
     status: ERROR
   FP16 Maintenance:
     status: PASS
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    status: PASS
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    comment: 7633 missing definitions. See ROBOT Report for details.
-    status: WARN
-  FP7 Relations:
-    status: PASS
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    status: PASS
   ROBOT Report:
     comment: 17 errors, 7685 warnings, 4 info messages.
     file: robot_report
+    results:
+      ERROR: 17
+      INFO: 4
+      WARN: 7685
     status: ERROR
 sha256_hash: 7962703e0c4f737a14956b73259e7a5bcea2b69a3fe47ef283745502ca7ec38e
 summary:
   comment: 3 errors
   status: ERROR
+  summary_count:
+    ERROR: 3
+    INFO: 0
+    WARN: 1
 version: http://purl.obolibrary.org/obo/emapa/releases/2020-02-12/emapa.owl

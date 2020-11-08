@@ -1,8 +1,25 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-07'
 namespace: fypo
 results:
-  FP1 Open:
+  FP01 Open:
+    status: PASS
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    status: PASS
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 2 missing definitions. See ROBOT Report for details.
+    status: WARN
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
     status: PASS
   FP11 Locus of Authority:
     status: PASS
@@ -10,29 +27,20 @@ results:
     status: PASS
   FP16 Maintenance:
     status: PASS
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    status: PASS
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    comment: 2 missing definitions. See ROBOT Report for details.
-    status: WARN
-  FP7 Relations:
-    status: PASS
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    status: PASS
   ROBOT Report:
-    comment: 10 warnings, 1 info messages.
+    comment: 12 warnings, 1 info messages.
     file: robot_report
+    results:
+      ERROR: 0
+      INFO: 1
+      WARN: 12
     status: WARN
-sha256_hash: 3f9106e1cef9c92f40359f702093614825f9136a62e30bf9925f7d918deb0db9
+sha256_hash: a10d908ec7e58c7c7a693bb3078c52adc0cf7cb69ca80518fe1c6965bd6748c3
 summary:
   comment: 2 warnings
   status: WARN
-version: http://purl.obolibrary.org/obo/fypo/releases/2020-10-20/fypo.owl
+  summary_count:
+    ERROR: 0
+    INFO: 0
+    WARN: 2
+version: http://purl.obolibrary.org/obo/fypo/releases/2020-11-05/fypo-base.owl

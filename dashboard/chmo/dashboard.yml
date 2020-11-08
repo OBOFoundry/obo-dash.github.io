@@ -1,9 +1,30 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-07'
 namespace: chmo
 results:
-  FP1 Open:
+  FP01 Open:
     status: PASS
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    comment: Missing version IRI
+    status: ERROR
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 42 missing definitions. See ROBOT Report for details.
+    status: WARN
+  FP07 Relations:
+    comment: 6 non-RO properties used.
+    file: fp7
+    status: INFO
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
+    status: ERROR
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
@@ -11,33 +32,20 @@ results:
   FP16 Maintenance:
     comment: Missing version IRI to check date
     status: ERROR
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    comment: Missing version IRI
-    status: ERROR
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    comment: 42 missing definitions. See ROBOT Report for details.
-    status: WARN
-  FP7 Relations:
-    comment: 6 non-RO properties used.
-    file: fp7
-    status: INFO
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
   ROBOT Report:
     comment: 42 warnings, 0 info messages.
     file: robot_report
+    results:
+      ERROR: 0
+      INFO: 0
+      WARN: 42
     status: WARN
 sha256_hash: 581c0f19866cd12bb814da1be53338b0348f4e1b6031a55aa4474bece1cd0954
 summary:
   comment: 3 errors
   status: ERROR
+  summary_count:
+    ERROR: 3
+    INFO: 1
+    WARN: 2
 version: null

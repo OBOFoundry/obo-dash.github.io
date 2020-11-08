@@ -1,39 +1,47 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-07'
 namespace: gno
 results:
-  FP1 Open:
+  FP01 Open:
     status: PASS
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    status: PASS
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 1 missing definitions. See ROBOT Report for details.
+    status: WARN
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
+    status: ERROR
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
     status: PASS
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    status: PASS
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    comment: 1 missing definitions. See ROBOT Report for details.
-    status: WARN
-  FP7 Relations:
-    status: PASS
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
   ROBOT Report:
     comment: 1 warnings, 5786 info messages.
     file: robot_report
+    results:
+      ERROR: 0
+      INFO: 5786
+      WARN: 1
     status: WARN
 sha256_hash: eed394c11431e6c7d58d0f360bb90f975c5897f65cee5713545f0390c5a0d9e6
 summary:
   comment: 1 errors
   status: ERROR
+  summary_count:
+    ERROR: 1
+    INFO: 0
+    WARN: 2
 version: http://purl.obolibrary.org/obo/gno/2020-10-13/gno.owl

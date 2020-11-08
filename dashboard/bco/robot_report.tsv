@@ -1,6 +1,6 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	missing_ontology_description	obo:bco.owl	dc11:description	
-ERROR	missing_ontology_title	obo:bco.owl	dc11:title	
+ERROR	missing_ontology_description	obo:bco/bco-base.owl	dc11:description	
+ERROR	missing_ontology_title	obo:bco/bco-base.owl	dc11:title	
 WARN	annotation_whitespace	material target of observation	IAO:0000112	An lizard observed in the field that is not collected but whose location is recorded in a field notebook. 
 WARN	equivalent_pair	taxonomic identification process	owl:equivalentClass	<http://rs.tdwg.org/dwc/terms/Identification>
 WARN	missing_definition	taxonomic inventory metadata preferred name	IAO:0000115	
@@ -11,3 +11,4 @@ WARN	missing_definition	of organism	IAO:0000115
 WARN	missing_definition	member of taxon	IAO:0000115	
 WARN	missing_obsolete_label	derives from by planned process	rdfs:label	derives from by planned process@en
 WARN	missing_obsolete_label	is derived into by planned process	rdfs:label	is derived into by planned process@en
+INFO	missing_superclass	taxonomic inventory process	rdfs:subClassOf	

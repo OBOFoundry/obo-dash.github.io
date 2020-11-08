@@ -1,9 +1,29 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-07'
 namespace: caro
 results:
-  FP1 Open:
+  FP01 Open:
     comment: Missing ontology license.
+    status: ERROR
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    comment: Version IRI 'http://purl.obolibrary.org/obo/caro/2.0/beta/caro.owl' is
+      not in recommended format
+    status: WARN
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 3 missing definitions. See ROBOT Report for details.
+    status: WARN
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
     status: ERROR
   FP11 Locus of Authority:
     status: PASS
@@ -12,32 +32,20 @@ results:
   FP16 Maintenance:
     comment: Version IRI does not have date information
     status: INFO
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    comment: Version IRI 'http://purl.obolibrary.org/obo/caro/2.0/beta/caro.owl' is
-      not in recommended format
-    status: WARN
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    comment: 3 missing definitions. See ROBOT Report for details.
-    status: WARN
-  FP7 Relations:
-    status: PASS
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
   ROBOT Report:
     comment: 5 errors, 16 warnings, 8 info messages.
     file: robot_report
+    results:
+      ERROR: 5
+      INFO: 8
+      WARN: 16
     status: ERROR
 sha256_hash: b328557522abaef9e1bb58df4947c0d3608db4eb5cc126816630860c45ead89f
 summary:
   comment: 3 errors
   status: ERROR
+  summary_count:
+    ERROR: 3
+    INFO: 1
+    WARN: 2
 version: http://purl.obolibrary.org/obo/caro/2.0/beta/caro.owl

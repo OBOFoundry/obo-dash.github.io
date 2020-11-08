@@ -1,41 +1,49 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-07'
 namespace: phipo
 results:
-  FP1 Open:
+  FP01 Open:
     status: PASS
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    status: PASS
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 23 missing definitions. See ROBOT Report for details.
+    status: WARN
+  FP07 Relations:
+    comment: 1 non-RO properties used.
+    file: fp7
+    status: INFO
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
+    status: ERROR
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
     status: PASS
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    status: PASS
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    comment: 23 missing definitions. See ROBOT Report for details.
-    status: WARN
-  FP7 Relations:
-    comment: 1 non-RO properties used.
-    file: fp7
-    status: INFO
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
   ROBOT Report:
     comment: 25 warnings, 3 info messages.
     file: robot_report
+    results:
+      ERROR: 0
+      INFO: 3
+      WARN: 25
     status: WARN
-sha256_hash: 6232ccf1ddcf04018a1f17c3ec2a06a438503f968ca0ba89f5c3dcf9f853ff9a
+sha256_hash: 265e31b364ad8977c8935e57aa0178cb8933357be17195c45140a65907000e57
 summary:
   comment: 1 errors
   status: ERROR
-version: http://purl.obolibrary.org/obo/phipo/releases/2020-10-22/phipo.owl
+  summary_count:
+    ERROR: 1
+    INFO: 1
+    WARN: 2
+version: http://purl.obolibrary.org/obo/phipo/releases/2020-10-22/phipo-base.owl

@@ -1,41 +1,49 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-07'
 namespace: bto
 results:
-  FP1 Open:
+  FP01 Open:
     status: PASS
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    status: PASS
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 958 duplicate definitions. 1047 missing definitions. See ROBOT Report
+      for details.
+    status: ERROR
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    comment: homepage URL (http://www.brenda-enzymes.org) does not resolve
+    status: ERROR
+  FP09 Plurality of Users:
+    comment: Missing usages
+    status: ERROR
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
     status: PASS
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    status: PASS
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    comment: 958 duplicate definitions. 1047 missing definitions. See ROBOT Report
-      for details.
-    status: ERROR
-  FP7 Relations:
-    status: PASS
-  FP8 Documented:
-    comment: homepage URL (http://www.brenda-enzymes.org) does not resolve
-    status: ERROR
-  FP9 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
   ROBOT Report:
     comment: 958 errors, 1112 warnings, 78 info messages.
     file: robot_report
+    results:
+      ERROR: 958
+      INFO: 78
+      WARN: 1112
     status: ERROR
-sha256_hash: 4a1f3a78116150d1d95cdc287de04a107f0016d1e0353ab95f07d6c37e55a288
+sha256_hash: 942329b837fcf9ae71f38bc5b05e7e96ea2b476fae19ac74406b8c5a75cdb9ec
 summary:
   comment: 4 errors
   status: ERROR
-version: http://purl.obolibrary.org/obo/bto/releases/2020-05-02/bto.owl
+  summary_count:
+    ERROR: 4
+    INFO: 0
+    WARN: 0
+version: http://purl.obolibrary.org/obo/bto/releases/2020-05-02/bto-base.owl

@@ -1,9 +1,27 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-07'
 namespace: fovt
 results:
-  FP1 Open:
+  FP01 Open:
     comment: Missing ontology license.
+    status: ERROR
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    comment: Missing version IRI
+    status: ERROR
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    status: PASS
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
     status: ERROR
   FP11 Locus of Authority:
     status: PASS
@@ -12,30 +30,20 @@ results:
   FP16 Maintenance:
     comment: Missing version IRI to check date
     status: ERROR
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    comment: Missing version IRI
-    status: ERROR
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    status: PASS
-  FP7 Relations:
-    status: PASS
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
   ROBOT Report:
     comment: 3 errors, 0 warnings, 0 info messages.
     file: robot_report
+    results:
+      ERROR: 3
+      INFO: 0
+      WARN: 0
     status: ERROR
-sha256_hash: a05b5adb832df6ff3aad6fabc25ca9ef70175edcf0492c0a16fb80f8c647945d
+sha256_hash: 44b2bd13de663152fbab260ec5ef44505cf531fb670fd526f630f2b42d909433
 summary:
   comment: 5 errors
   status: ERROR
+  summary_count:
+    ERROR: 5
+    INFO: 0
+    WARN: 0
 version: null

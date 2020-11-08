@@ -1,8 +1,28 @@
 changed: true
-date: '2020-11-03'
+date: '2020-11-07'
 namespace: obi
 results:
-  FP1 Open:
+  FP01 Open:
+    status: PASS
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    status: PASS
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 24 duplicate definitions. 3 missing definitions. See ROBOT Report for
+      details.
+    status: ERROR
+  FP07 Relations:
+    comment: 27 non-RO properties used.
+    file: fp7
+    status: INFO
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
     status: PASS
   FP11 Locus of Authority:
     status: PASS
@@ -10,32 +30,20 @@ results:
     status: PASS
   FP16 Maintenance:
     status: PASS
-  FP2 Common Format:
-    status: PASS
-  FP3 URIs:
-    status: PASS
-  FP4 Versioning:
-    status: PASS
-  FP5 Scope:
-    status: PASS
-  FP6 Textual Definitions:
-    comment: 24 duplicate definitions. 3 missing definitions. See ROBOT Report for
-      details.
-    status: ERROR
-  FP7 Relations:
-    comment: 27 non-RO properties used.
-    file: fp7
-    status: INFO
-  FP8 Documented:
-    status: PASS
-  FP9 Plurality of Users:
-    status: PASS
   ROBOT Report:
-    comment: 25 errors, 256 warnings, 378 info messages.
+    comment: 25 errors, 256 warnings, 1088 info messages.
     file: robot_report
+    results:
+      ERROR: 25
+      INFO: 1088
+      WARN: 256
     status: ERROR
-sha256_hash: 01c8c466dedc045cb66427c955671d0be870bde488c29d44d933e56b8a5c320a
+sha256_hash: f3257809a1c3382a1b7ba2c304198135a5d867ca9b424d058eb8a733d938be47
 summary:
   comment: 2 errors
   status: ERROR
-version: http://purl.obolibrary.org/obo/obi/2020-08-24/obi.owl
+  summary_count:
+    ERROR: 2
+    INFO: 1
+    WARN: 0
+version: http://purl.obolibrary.org/obo/obi/2020-08-26/obi-base.owl
