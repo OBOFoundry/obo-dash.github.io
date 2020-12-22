@@ -13,6 +13,7 @@ ERROR	duplicate_definition	cell-cell junction	IAO:0000115	A cell junction that f
 ERROR	duplicate_definition	intercellular junction	IAO:0000115	A cell junction that forms a connection between two or more cells in a multicellular organism; excludes direct cytoplasmic junctions such as ring canals.
 ERROR	duplicate_definition	incision	IAO:0000115	A breach of the epidermis made with a defined edge or point.
 ERROR	duplicate_definition	point incision	IAO:0000115	A breach of the epidermis made with a defined edge or point.
+ERROR	missing_label	foaf:depiction	rdfs:label	
 ERROR	missing_ontology_description	obo:plana/plana-base.owl	dc11:description	
 ERROR	duplicate_label	ventral region of plug fragment	rdfs:label	ventral region of plug fragment
 ERROR	duplicate_label	ventral region of plug fragment	rdfs:label	ventral region of plug fragment
@@ -20,77 +21,94 @@ ERROR	duplicate_label	dorsal region of plug fragment	rdfs:label	dorsal region of
 ERROR	duplicate_label	dorsal region of plug fragment	rdfs:label	dorsal region of plug fragment
 ERROR	missing_ontology_license	obo:plana/plana-base.owl	dc:license	
 ERROR	missing_ontology_title	obo:plana/plana-base.owl	dc11:title	
-WARN	duplicate_exact_synonym	photoreceptor neuron	oboInOwl:hasExactSynonym	photosensitive cell
-WARN	duplicate_exact_synonym	eye cell	oboInOwl:hasExactSynonym	photosensitive cell
-WARN	duplicate_exact_synonym	photoreceptor neuron	oboInOwl:hasExactSynonym	photoreceptor cell
-WARN	duplicate_exact_synonym	eye cell	oboInOwl:hasExactSynonym	photoreceptor cell
-WARN	duplicate_exact_synonym	inner longitudinal muscle cell	oboInOwl:hasExactSynonym	inner longitudinal muscle layer
-WARN	duplicate_exact_synonym	pharynx inner longitudinal muscle cell	oboInOwl:hasExactSynonym	inner longitudinal muscle layer
-WARN	duplicate_exact_synonym	pharynx outer epithelium	oboInOwl:hasExactSynonym	epithelial pharynx lining
-WARN	duplicate_exact_synonym	pharynx inner epithelium	oboInOwl:hasExactSynonym	epithelial pharynx lining
-WARN	duplicate_exact_synonym	cephalic ganglia	oboInOwl:hasExactSynonym	bi-lobed cephalic ganglia
-WARN	duplicate_exact_synonym	cephalic ganglia lobe	oboInOwl:hasExactSynonym	bi-lobed cephalic ganglia
-WARN	duplicate_exact_synonym	cephalic ganglia	oboInOwl:hasExactSynonym	bi-lobed brain
-WARN	duplicate_exact_synonym	cephalic ganglia lobe	oboInOwl:hasExactSynonym	bi-lobed brain
-WARN	duplicate_label_synonym	neural progenitor cell	oboInOwl:hasExactSynonym	neural progenitor cell
-WARN	duplicate_label_synonym	epidermis	oboInOwl:hasExactSynonym	epidermis
-WARN	duplicate_label_synonym	longitudinal muscle cell	oboInOwl:hasExactSynonym	longitudinal muscle cell
-WARN	duplicate_label_synonym	oogonial stem cell	oboInOwl:hasExactSynonym	oogonial stem cell
-WARN	duplicate_label_synonym	pharynx musculature	oboInOwl:hasExactSynonym	pharynx musculature
-WARN	duplicate_label_synonym	pharynx inner nerve plexus	oboInOwl:hasExactSynonym	pharynx inner nerve plexus
-WARN	duplicate_label_synonym	postpharyngeal region	oboInOwl:hasExactSynonym	postpharyngeal region
-WARN	duplicate_label_synonym	pharynx epithelial cell	oboInOwl:hasExactSynonym	pharynx epithelial cell
-WARN	duplicate_label_synonym	cephalic ganglia primordium	oboInOwl:hasExactSynonym	cephalic ganglia primordium
-WARN	duplicate_label_synonym	dorsal region of head fragment	oboInOwl:hasExactSynonym	dorsal region of head fragment
-WARN	duplicate_label_synonym	ventral region of head fragment	oboInOwl:hasExactSynonym	ventral region of head fragment
-WARN	duplicate_label_synonym	anterior region of head fragment	oboInOwl:hasExactSynonym	anterior region of head fragment
-WARN	duplicate_label_synonym	posterior region of head fragment	oboInOwl:hasExactSynonym	posterior region of head fragment
-WARN	duplicate_label_synonym	dorsal region of trunk fragment	oboInOwl:hasExactSynonym	dorsal region of trunk fragment
-WARN	duplicate_label_synonym	ventral region of trunk fragment	oboInOwl:hasExactSynonym	ventral region of trunk fragment
-WARN	duplicate_label_synonym	anterior region of trunk fragment	oboInOwl:hasExactSynonym	anterior region of trunk fragment
-WARN	duplicate_label_synonym	posterior region of trunk fragment	oboInOwl:hasExactSynonym	posterior region of trunk fragment
-WARN	duplicate_label_synonym	dorsal region of tail fragment	oboInOwl:hasExactSynonym	dorsal region of tail fragment
-WARN	duplicate_label_synonym	ventral region of tail fragment	oboInOwl:hasExactSynonym	ventral region of tail fragment
-WARN	duplicate_label_synonym	anterior region of tail fragment	oboInOwl:hasExactSynonym	anterior region of tail fragment
-WARN	duplicate_label_synonym	posterior region of tail fragment	oboInOwl:hasExactSynonym	posterior region of tail fragment
-WARN	duplicate_label_synonym	dorsal region of prepharyngeal fragment	oboInOwl:hasExactSynonym	dorsal region of prepharyngeal fragment
-WARN	duplicate_label_synonym	ventral region of prepharyngeal fragment	oboInOwl:hasExactSynonym	ventral region of prepharyngeal fragment
-WARN	duplicate_label_synonym	anterior region of prepharyngeal fragment	oboInOwl:hasExactSynonym	anterior region of prepharyngeal fragment
-WARN	duplicate_label_synonym	posterior region of prepharyngeal fragment	oboInOwl:hasExactSynonym	posterior region of prepharyngeal fragment
-WARN	duplicate_label_synonym	dorsal region of postpharyngeal fragment	oboInOwl:hasExactSynonym	dorsal region of postpharyngeal fragment
-WARN	duplicate_label_synonym	ventral region of postpharyngeal fragment	oboInOwl:hasExactSynonym	ventral region of postpharyngeal fragment
-WARN	duplicate_label_synonym	anterior region of postpharyngeal fragment	oboInOwl:hasExactSynonym	anterior region of postpharyngeal fragment
-WARN	duplicate_label_synonym	posterior region of postpharyngeal fragment	oboInOwl:hasExactSynonym	posterior region of postpharyngeal fragment
-WARN	duplicate_label_synonym	dorsal region of anterior fragment	oboInOwl:hasExactSynonym	dorsal region of anterior fragment
-WARN	duplicate_label_synonym	ventral region of anterior fragment	oboInOwl:hasExactSynonym	ventral region of anterior fragment
-WARN	duplicate_label_synonym	anterior region of anterior fragment	oboInOwl:hasExactSynonym	anterior region of anterior fragment
-WARN	duplicate_label_synonym	posterior region of anterior fragment	oboInOwl:hasExactSynonym	posterior region of anterior fragment
-WARN	duplicate_label_synonym	dorsal region of posterior fragment	oboInOwl:hasExactSynonym	dorsal region of posterior fragment
-WARN	duplicate_label_synonym	ventral region of posterior fragment	oboInOwl:hasExactSynonym	ventral region of posterior fragment
-WARN	duplicate_label_synonym	anterior region of posterior fragment	oboInOwl:hasExactSynonym	anterior region of posterior fragment
-WARN	duplicate_label_synonym	posterior region of posterior fragment	oboInOwl:hasExactSynonym	posterior region of posterior fragment
-WARN	duplicate_label_synonym	dorsal region of lateral fragment	oboInOwl:hasExactSynonym	dorsal region of lateral fragment
-WARN	duplicate_label_synonym	ventral region of lateral fragment	oboInOwl:hasExactSynonym	ventral region of lateral fragment
-WARN	duplicate_label_synonym	anterior region of lateral fragment	oboInOwl:hasExactSynonym	anterior region of lateral fragment
-WARN	duplicate_label_synonym	posterior region of lateral fragment	oboInOwl:hasExactSynonym	posterior region of lateral fragment
-WARN	duplicate_label_synonym	dorsal region of longitudinal fragment	oboInOwl:hasExactSynonym	dorsal region of longitudinal fragment
-WARN	duplicate_label_synonym	ventral region of longitudinal fragment	oboInOwl:hasExactSynonym	ventral region of longitudinal fragment
-WARN	duplicate_label_synonym	anterior region of longitudinal fragment	oboInOwl:hasExactSynonym	anterior region of longitudinal fragment
-WARN	duplicate_label_synonym	posterior region of longitudinal fragment	oboInOwl:hasExactSynonym	posterior region of longitudinal fragment
-WARN	duplicate_label_synonym	dorsal region of plug fragment	oboInOwl:hasExactSynonym	dorsal region of plug fragment
-WARN	duplicate_label_synonym	ventral region of plug fragment	oboInOwl:hasExactSynonym	ventral region of plug fragment
-WARN	duplicate_label_synonym	anterior region of plug fragment	oboInOwl:hasExactSynonym	anterior region of plug fragment
-WARN	duplicate_label_synonym	posterior region of plug fragment	oboInOwl:hasExactSynonym	posterior region of plug fragment
-WARN	duplicate_label_synonym	anterior region of wedge fragment	oboInOwl:hasExactSynonym	anterior region of wedge fragment
-WARN	duplicate_label_synonym	posterior region of wedge fragment	oboInOwl:hasExactSynonym	posterior region of wedge fragment
-WARN	duplicate_label_synonym	pharynx circular muscle cell	oboInOwl:hasExactSynonym	pharynx circular muscle cell
-WARN	invalid_xref	optic chiasm	oboInOwl:hasDbXref	C90609
-WARN	invalid_xref	gastrodermal plexus	oboInOwl:hasDbXref	doi.org/10.1002/jmor.1051550208
-WARN	invalid_xref	neuropil	oboInOwl:hasDbXref	C12617
-WARN	invalid_xref	nerve plexus	oboInOwl:hasDbXref	C12929
-WARN	invalid_xref	blastema	oboInOwl:hasDbXref	
-WARN	invalid_xref	basal lamina of epidermis	oboInOwl:hasDbXref	C32186
-WARN	invalid_xref	genital atrium	oboInOwl:hasDbXref	<PMID: 22074376>
+WARN	duplicate_exact_synonym	photoreceptor neuron	has_exact_synonym	photosensitive cell
+WARN	duplicate_exact_synonym	eye cell	has_exact_synonym	photosensitive cell
+WARN	duplicate_exact_synonym	photoreceptor neuron	has_exact_synonym	photoreceptor cell
+WARN	duplicate_exact_synonym	eye cell	has_exact_synonym	photoreceptor cell
+WARN	duplicate_exact_synonym	inner longitudinal muscle cell	has_exact_synonym	inner longitudinal muscle layer
+WARN	duplicate_exact_synonym	pharynx inner longitudinal muscle cell	has_exact_synonym	inner longitudinal muscle layer
+WARN	duplicate_exact_synonym	pharynx outer epithelium	has_exact_synonym	epithelial pharynx lining
+WARN	duplicate_exact_synonym	pharynx inner epithelium	has_exact_synonym	epithelial pharynx lining
+WARN	duplicate_exact_synonym	cephalic ganglia	has_exact_synonym	bi-lobed cephalic ganglia
+WARN	duplicate_exact_synonym	cephalic ganglia lobe	has_exact_synonym	bi-lobed cephalic ganglia
+WARN	duplicate_exact_synonym	cephalic ganglia	has_exact_synonym	bi-lobed brain
+WARN	duplicate_exact_synonym	cephalic ganglia lobe	has_exact_synonym	bi-lobed brain
+WARN	duplicate_label_synonym	neural progenitor cell	has_exact_synonym	neural progenitor cell
+WARN	duplicate_label_synonym	epidermis	has_exact_synonym	epidermis
+WARN	duplicate_label_synonym	longitudinal muscle cell	has_exact_synonym	longitudinal muscle cell
+WARN	duplicate_label_synonym	oogonial stem cell	has_exact_synonym	oogonial stem cell
+WARN	duplicate_label_synonym	pharynx musculature	has_exact_synonym	pharynx musculature
+WARN	duplicate_label_synonym	pharynx inner nerve plexus	has_exact_synonym	pharynx inner nerve plexus
+WARN	duplicate_label_synonym	postpharyngeal region	has_exact_synonym	postpharyngeal region
+WARN	duplicate_label_synonym	pharynx epithelial cell	has_exact_synonym	pharynx epithelial cell
+WARN	duplicate_label_synonym	cephalic ganglia primordium	has_exact_synonym	cephalic ganglia primordium
+WARN	duplicate_label_synonym	dorsal region of head fragment	has_exact_synonym	dorsal region of head fragment
+WARN	duplicate_label_synonym	ventral region of head fragment	has_exact_synonym	ventral region of head fragment
+WARN	duplicate_label_synonym	anterior region of head fragment	has_exact_synonym	anterior region of head fragment
+WARN	duplicate_label_synonym	posterior region of head fragment	has_exact_synonym	posterior region of head fragment
+WARN	duplicate_label_synonym	dorsal region of trunk fragment	has_exact_synonym	dorsal region of trunk fragment
+WARN	duplicate_label_synonym	ventral region of trunk fragment	has_exact_synonym	ventral region of trunk fragment
+WARN	duplicate_label_synonym	anterior region of trunk fragment	has_exact_synonym	anterior region of trunk fragment
+WARN	duplicate_label_synonym	posterior region of trunk fragment	has_exact_synonym	posterior region of trunk fragment
+WARN	duplicate_label_synonym	dorsal region of tail fragment	has_exact_synonym	dorsal region of tail fragment
+WARN	duplicate_label_synonym	ventral region of tail fragment	has_exact_synonym	ventral region of tail fragment
+WARN	duplicate_label_synonym	anterior region of tail fragment	has_exact_synonym	anterior region of tail fragment
+WARN	duplicate_label_synonym	posterior region of tail fragment	has_exact_synonym	posterior region of tail fragment
+WARN	duplicate_label_synonym	dorsal region of prepharyngeal fragment	has_exact_synonym	dorsal region of prepharyngeal fragment
+WARN	duplicate_label_synonym	ventral region of prepharyngeal fragment	has_exact_synonym	ventral region of prepharyngeal fragment
+WARN	duplicate_label_synonym	anterior region of prepharyngeal fragment	has_exact_synonym	anterior region of prepharyngeal fragment
+WARN	duplicate_label_synonym	posterior region of prepharyngeal fragment	has_exact_synonym	posterior region of prepharyngeal fragment
+WARN	duplicate_label_synonym	dorsal region of postpharyngeal fragment	has_exact_synonym	dorsal region of postpharyngeal fragment
+WARN	duplicate_label_synonym	ventral region of postpharyngeal fragment	has_exact_synonym	ventral region of postpharyngeal fragment
+WARN	duplicate_label_synonym	anterior region of postpharyngeal fragment	has_exact_synonym	anterior region of postpharyngeal fragment
+WARN	duplicate_label_synonym	posterior region of postpharyngeal fragment	has_exact_synonym	posterior region of postpharyngeal fragment
+WARN	duplicate_label_synonym	dorsal region of anterior fragment	has_exact_synonym	dorsal region of anterior fragment
+WARN	duplicate_label_synonym	ventral region of anterior fragment	has_exact_synonym	ventral region of anterior fragment
+WARN	duplicate_label_synonym	anterior region of anterior fragment	has_exact_synonym	anterior region of anterior fragment
+WARN	duplicate_label_synonym	posterior region of anterior fragment	has_exact_synonym	posterior region of anterior fragment
+WARN	duplicate_label_synonym	dorsal region of posterior fragment	has_exact_synonym	dorsal region of posterior fragment
+WARN	duplicate_label_synonym	ventral region of posterior fragment	has_exact_synonym	ventral region of posterior fragment
+WARN	duplicate_label_synonym	anterior region of posterior fragment	has_exact_synonym	anterior region of posterior fragment
+WARN	duplicate_label_synonym	posterior region of posterior fragment	has_exact_synonym	posterior region of posterior fragment
+WARN	duplicate_label_synonym	dorsal region of lateral fragment	has_exact_synonym	dorsal region of lateral fragment
+WARN	duplicate_label_synonym	ventral region of lateral fragment	has_exact_synonym	ventral region of lateral fragment
+WARN	duplicate_label_synonym	anterior region of lateral fragment	has_exact_synonym	anterior region of lateral fragment
+WARN	duplicate_label_synonym	posterior region of lateral fragment	has_exact_synonym	posterior region of lateral fragment
+WARN	duplicate_label_synonym	dorsal region of longitudinal fragment	has_exact_synonym	dorsal region of longitudinal fragment
+WARN	duplicate_label_synonym	ventral region of longitudinal fragment	has_exact_synonym	ventral region of longitudinal fragment
+WARN	duplicate_label_synonym	anterior region of longitudinal fragment	has_exact_synonym	anterior region of longitudinal fragment
+WARN	duplicate_label_synonym	posterior region of longitudinal fragment	has_exact_synonym	posterior region of longitudinal fragment
+WARN	duplicate_label_synonym	dorsal region of plug fragment	has_exact_synonym	dorsal region of plug fragment
+WARN	duplicate_label_synonym	ventral region of plug fragment	has_exact_synonym	ventral region of plug fragment
+WARN	duplicate_label_synonym	anterior region of plug fragment	has_exact_synonym	anterior region of plug fragment
+WARN	duplicate_label_synonym	posterior region of plug fragment	has_exact_synonym	posterior region of plug fragment
+WARN	duplicate_label_synonym	anterior region of wedge fragment	has_exact_synonym	anterior region of wedge fragment
+WARN	duplicate_label_synonym	posterior region of wedge fragment	has_exact_synonym	posterior region of wedge fragment
+WARN	duplicate_label_synonym	pharynx circular muscle cell	has_exact_synonym	pharynx circular muscle cell
+WARN	missing_definition	has_relational_adjective	IAO:0000115	
+WARN	missing_definition	synonym typically used in the context of human anatomy	IAO:0000115	
+WARN	missing_definition	synonym typically used in the context of vertebrate anatomy	IAO:0000115	
+WARN	missing_definition	namespace-id-rule	IAO:0000115	
+WARN	missing_definition	synonym_type_property	IAO:0000115	
+WARN	missing_definition	has_broad_synonym	IAO:0000115	
+WARN	missing_definition	database_cross_reference	IAO:0000115	
+WARN	missing_definition	has_exact_synonym	IAO:0000115	
+WARN	missing_definition	has_narrow_synonym	IAO:0000115	
+WARN	missing_definition	has_obo_format_version	IAO:0000115	
+WARN	missing_definition	has_obo_namespace	IAO:0000115	
+WARN	missing_definition	has_related_synonym	IAO:0000115	
+WARN	missing_definition	has_scope	IAO:0000115	
+WARN	missing_definition	has_synonym_type	IAO:0000115	
+WARN	missing_definition	shorthand	IAO:0000115	
+WARN	missing_definition	treat-xrefs-as-genus-differentia	IAO:0000115	
+WARN	missing_definition	foaf:depiction	IAO:0000115	
+WARN	invalid_xref	optic chiasm	database_cross_reference	C90609
+WARN	invalid_xref	gastrodermal plexus	database_cross_reference	doi.org/10.1002/jmor.1051550208
+WARN	invalid_xref	neuropil	database_cross_reference	C12617
+WARN	invalid_xref	nerve plexus	database_cross_reference	C12929
+WARN	invalid_xref	blastema	database_cross_reference	
+WARN	invalid_xref	basal lamina of epidermis	database_cross_reference	C32186
+WARN	invalid_xref	genital atrium	database_cross_reference	<PMID: 22074376>
 INFO	lowercase_definition	pharynx progenitor cell	IAO:0000115	foxA1+ neoblasts and their post-mitotic, differentiating daughters required for maintenance and regeneration of the pharynx.
 INFO	lowercase_definition	circular muscle progenitor cell	IAO:0000115	piwi-1+, nkx1-1+ progenitor neoblasts required for specification of circular muscle fibers.
 INFO	lowercase_definition	longitudinal muscle progenitor cell	IAO:0000115	piwi-1+, myoD+, snail-1+ progenitor neoblasts required for specification and creation of longitudinal muscle fibers.
@@ -180,21 +198,3 @@ INFO	lowercase_definition	protonephridial lumen	IAO:0000115	lumen which is part 
 INFO	lowercase_definition	testis lumen	IAO:0000115	lumen which is part of the testis
 INFO	lowercase_definition	ovary lumen	IAO:0000115	lumen which is part of the ovary
 INFO	lowercase_definition	flame cell lumen	IAO:0000115	lumen which is part of the flame cell
-INFO	lowercase_definition	longitudinal fragment	IAO:0000115	a fragment derived from an amputation parallel to the midline.
-INFO	lowercase_definition	anterior photoreceptor neuron	IAO:0000115	photoreceptor neuron is contained in the anterior region of the eye
-INFO	lowercase_definition	posterior photoreceptor neuron	IAO:0000115	photoreceptor neuron is contained in the posterior region of the eye
-INFO	lowercase_definition	lateral muscle cell	IAO:0000115	muscle cell is contained in the lateral region
-INFO	lowercase_definition	anterior muscle cell	IAO:0000115	muscle cell is contained in the anterior region
-INFO	lowercase_definition	posterior muscle cell	IAO:0000115	muscle cell is contained in the posterior region
-INFO	lowercase_definition	head blastema	IAO:0000115	blastema which develops into head region
-INFO	lowercase_definition	tail blastema	IAO:0000115	blastema which develops into tail region
-INFO	lowercase_definition	regenerating head fragment	IAO:0000115	a head fragment that is regenerating
-INFO	lowercase_definition	regenerating trunk fragment	IAO:0000115	a trunk fragment that is regenerating
-INFO	lowercase_definition	regenerating tail fragment	IAO:0000115	a tail fragment that is regenerating
-INFO	lowercase_definition	regenerating prepharyngeal fragment	IAO:0000115	a prepharyngeal fragment that is regenerating
-INFO	lowercase_definition	regenerating postpharyngeal fragment	IAO:0000115	a postpharyngeal fragment that is regenerating
-INFO	lowercase_definition	regenerating anterior fragment	IAO:0000115	a anterior fragment that is regenerating
-INFO	lowercase_definition	regenerating posterior fragment	IAO:0000115	a posterior fragment that is regenerating
-INFO	lowercase_definition	regenerating lateral fragment	IAO:0000115	a lateral fragment that is regenerating
-INFO	lowercase_definition	regenerating longitudinal fragment	IAO:0000115	a longitudinal fragment that is regenerating
-INFO	lowercase_definition	regenerating plug fragment	IAO:0000115	a plug fragment that is regenerating

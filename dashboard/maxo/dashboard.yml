@@ -1,5 +1,51 @@
-changed: true
-date: '2020-11-07'
+base_generated: false
+base_prefixes:
+- MAXO
+changed: false
+date: '2020-12-22'
+metrics:
+  'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 8356
+    Declaration: 1510
+    EquivalentClasses: 550
+    SubClassOf: 677
+  'Axioms: Number of axioms': 11093
+  'Entities: % of entities reused': '100.00'
+  'Entities: Number of annotation properties': 20
+  'Entities: Number of classes': 1489
+  'Entities: Number of data properties': 0
+  'Entities: Number of individuals': 0
+  'Entities: Number of object properties': 6
+  'Entities: Number of unsatisfiable classes': 0
+  'Info: Breakdown of OWL class expressions used':
+    Class: 4491
+    ObjectIntersectionOf: 550
+    ObjectSomeValuesFrom: 869
+  'Info: Does the ontology fall under OWL 2 DL?': false
+  'Info: Experimental OBO score':
+    _impact: 0.0
+    _reuse: 1.0
+  'Info: How many ontologies use it?': 0
+  'Info: Logical consistency': true
+  'Info: Syntax': RDF/XML Syntax
+  'Info: Usage of namespaces in axioms':
+    BFO: 320
+    CHEBI: 396
+    FOODON: 100
+    HP: 68
+    IAO: 973
+    NBO: 18
+    NCIT: 2
+    OBI: 13
+    RO: 446
+    UBERON: 393
+    dc: 1
+    dc11: 1022
+    obo: 3611
+    oboInOwl: 5614
+    owl: 36
+    rdfs: 1122
+mirror_from: http://purl.obolibrary.org/obo/maxo/maxo-base.owl
 namespace: maxo
 results:
   FP01 Open:
@@ -15,7 +61,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 2 duplicate definitions. 4 multiple definitions. 120 missing definitions.
+    comment: 4 duplicate definitions. 2 multiple definitions. 119 missing definitions.
       See ROBOT Report for details.
     status: ERROR
   FP07 Relations:
@@ -30,19 +76,20 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 6 multiple labels. See ROBOT Report for details.
+    comment: 2 duplicate labels. 4 multiple labels. 1 missing labels. See ROBOT Report
+      for details.
     status: ERROR
   FP16 Maintenance:
     status: PASS
   ROBOT Report:
-    comment: 52 errors, 131 warnings, 421 info messages.
+    comment: 53 errors, 152 warnings, 457 info messages.
     file: robot_report
     results:
-      ERROR: 52
-      INFO: 421
-      WARN: 131
+      ERROR: 53
+      INFO: 457
+      WARN: 152
     status: ERROR
-sha256_hash: 188aa64bdaf4ef650b2ecbc063f4dc51ae2325c6937e186546c5a67f872376a0
+sha256_hash: 768c99882653b8163ae7d23d6def86731e1d8453fdb098c24ea93330fec812ec
 summary:
   comment: 5 errors
   status: ERROR
@@ -50,4 +97,4 @@ summary:
     ERROR: 5
     INFO: 1
     WARN: 0
-version: http://purl.obolibrary.org/obo/maxo/releases/2020-10-26/maxo-base.owl
+version: http://purl.obolibrary.org/obo/maxo/releases/2020-12-10/maxo-base.owl

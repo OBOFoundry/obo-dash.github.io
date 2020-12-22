@@ -1,5 +1,70 @@
-changed: true
-date: '2020-11-08'
+base_generated: false
+base_prefixes:
+- UBERON
+changed: false
+date: '2020-12-22'
+metrics:
+  'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 171866
+    Declaration: 14958
+    DisjointClasses: 602
+    DisjointObjectProperties: 1
+    EquivalentClasses: 6284
+    InverseObjectProperties: 11
+    ObjectPropertyDomain: 5
+    ObjectPropertyRange: 3
+    SubAnnotationPropertyOf: 41
+    SubClassOf: 25308
+    SubObjectPropertyOf: 85
+    SubPropertyChainOf: 40
+    SymmetricObjectProperty: 3
+    TransitiveObjectProperty: 26
+  'Axioms: Number of axioms': 219233
+  'Entities: % of entities reused': '7.23'
+  'Entities: Number of annotation properties': 183
+  'Entities: Number of classes': 14649
+  'Entities: Number of data properties': 0
+  'Entities: Number of individuals': 0
+  'Entities: Number of object properties': 147
+  'Entities: Number of unsatisfiable classes': 0
+  'Info: Breakdown of OWL class expressions used':
+    Class: 86541
+    ObjectIntersectionOf: 6514
+    ObjectMaxCardinality: 49
+    ObjectMinCardinality: 57
+    ObjectSomeValuesFrom: 23628
+    ObjectUnionOf: 113
+  'Info: Does the ontology fall under OWL 2 DL?': false
+  'Info: Experimental OBO score':
+    _impact: 0.33
+    _reuse: 0.072
+  'Info: How many ontologies use it?': 58
+  'Info: Logical consistency': true
+  'Info: Syntax': RDF/XML Syntax
+  'Info: Usage of namespaces in axioms':
+    BFO: 13399
+    BSPO: 596
+    CHEBI: 60
+    CL: 601
+    ENVO: 14
+    FBbt: 2
+    GO: 658
+    IAO: 13746
+    NBO: 23
+    NCBITaxon: 1504
+    PATO: 178
+    PR: 23
+    RO: 8876
+    UBERON: 82754
+    dc11: 307
+    foaf: 1886
+    obo: 8180
+    oboInOwl: 203879
+    owl: 2071
+    rdf: 1
+    rdfs: 16371
+    xsd: 7265
+mirror_from: http://purl.obolibrary.org/obo/uberon/uberon-base.owl
 namespace: uberon
 results:
   FP01 Open:
@@ -13,11 +78,13 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 309 duplicate definitions. 2584 missing definitions. See ROBOT Report
+    comment: 312 duplicate definitions. 2736 missing definitions. See ROBOT Report
       for details.
     status: ERROR
   FP07 Relations:
-    status: PASS
+    comment: 2 labels match RO labels. 56 non-RO properties used.
+    file: fp7
+    status: ERROR
   FP08 Documented:
     status: PASS
   FP09 Plurality of Users:
@@ -25,24 +92,24 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 4 duplicate labels. See ROBOT Report for details.
+    comment: 4 duplicate labels. 5 missing labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
     status: PASS
   ROBOT Report:
-    comment: 389 errors, 3810 warnings, 3566 info messages.
+    comment: 397 errors, 3962 warnings, 3609 info messages.
     file: robot_report
     results:
-      ERROR: 389
-      INFO: 3566
-      WARN: 3810
+      ERROR: 397
+      INFO: 3609
+      WARN: 3962
     status: ERROR
 sha256_hash: 544863dac5d7092c50cd02b24ceb5d24928312f9625bae2672388cff491ad8ea
 summary:
-  comment: 3 errors
+  comment: 4 errors
   status: ERROR
   summary_count:
-    ERROR: 3
+    ERROR: 4
     INFO: 0
     WARN: 0
 version: http://purl.obolibrary.org/obo/uberon/releases/2020-09-16/uberon-base.owl

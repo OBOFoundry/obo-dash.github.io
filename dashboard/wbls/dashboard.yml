@@ -1,5 +1,48 @@
-changed: true
-date: '2020-11-08'
+base_generated: false
+base_prefixes:
+- WBls
+- WBls
+changed: false
+date: '2020-12-22'
+metrics:
+  'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 5276
+    Declaration: 808
+    EquivalentClasses: 19
+    SubClassOf: 2142
+    SubObjectPropertyOf: 1
+    TransitiveObjectProperty: 2
+  'Axioms: Number of axioms': 8248
+  'Entities: % of entities reused': '4.18'
+  'Entities: Number of annotation properties': 28
+  'Entities: Number of classes': 779
+  'Entities: Number of data properties': 0
+  'Entities: Number of individuals': 0
+  'Entities: Number of object properties': 3
+  'Entities: Number of unsatisfiable classes': 0
+  'Info: Breakdown of OWL class expressions used':
+    Class: 5120
+    ObjectIntersectionOf: 19
+    ObjectSomeValuesFrom: 1367
+    ObjectUnionOf: 19
+  'Info: Does the ontology fall under OWL 2 DL?': false
+  'Info: Experimental OBO score':
+    _impact: 0.011
+    _reuse: 0.042
+  'Info: How many ontologies use it?': 2
+  'Info: Logical consistency': true
+  'Info: Syntax': RDF/XML Syntax
+  'Info: Usage of namespaces in axioms':
+    BFO: 734
+    IAO: 785
+    RO: 640
+    WBls: 5120
+    dc: 1
+    dc11: 2
+    oboInOwl: 4482
+    owl: 6
+    rdfs: 806
+mirror_from: http://purl.obolibrary.org/obo/wbls/wbls-base.owl
 namespace: wbls
 results:
   FP01 Open:
@@ -13,7 +56,8 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    status: PASS
+    comment: 13 missing definitions. See ROBOT Report for details.
+    status: WARN
   FP07 Relations:
     status: PASS
   FP08 Documented:
@@ -27,19 +71,19 @@ results:
   FP16 Maintenance:
     status: PASS
   ROBOT Report:
-    comment: '{0} info messages.'
+    comment: 13 warnings, 1 info messages.
     file: robot_report
     results:
       ERROR: 0
       INFO: 1
-      WARN: 0
-    status: INFO
-sha256_hash: 5290973e193d44380884c9d00acfd5424b1c1a58586269b67d4f3dfb03edee55
+      WARN: 13
+    status: WARN
+sha256_hash: 26df88c2c5cc51f4295458e15519448840b65d0ce363159580f99b6fcbc3c79c
 summary:
-  comment: 1 info messages
-  status: INFO
+  comment: 2 warnings
+  status: WARN
   summary_count:
     ERROR: 0
-    INFO: 1
-    WARN: 0
-version: http://purl.obolibrary.org/obo/wbls/releases/2020-09-21/wbls-base.owl
+    INFO: 0
+    WARN: 2
+version: http://purl.obolibrary.org/obo/wbls/releases/2020-12-15/wbls-base.owl

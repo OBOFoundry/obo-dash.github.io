@@ -12,11 +12,11 @@
       <div class="report_summary"><table class="table">
       <tr><th><b>Level</b></th><th><b>Number of errors</b></th></tr>
       
-      <tr><td>ERROR</td><td>26</td></tr>
+      <tr><td>ERROR</td><td>55</td></tr>
       
-      <tr><td>WARN</td><td>91</td></tr>
+      <tr><td>WARN</td><td>159</td></tr>
       
-      <tr><td>INFO</td><td>29</td></tr>
+      <tr><td>INFO</td><td>60</td></tr>
       
       </table></div>
       <h3>Error breakdown</h3>
@@ -25,19 +25,23 @@
       
       <tr><td>duplicate_definition</td><td>6</td></tr>
       
-      <tr><td>misused_obsolete_label</td><td>16</td></tr>
+      <tr><td>misused_obsolete_label</td><td>17</td></tr>
       
-      <tr><td>multiple_labels</td><td>4</td></tr>
+      <tr><td>duplicate_label</td><td>2</td></tr>
       
-      <tr><td>annotation_whitespace</td><td>2</td></tr>
+      <tr><td>multiple_definitions</td><td>2</td></tr>
       
-      <tr><td>missing_definition</td><td>83</td></tr>
+      <tr><td>multiple_labels</td><td>28</td></tr>
+      
+      <tr><td>annotation_whitespace</td><td>3</td></tr>
+      
+      <tr><td>missing_definition</td><td>150</td></tr>
       
       <tr><td>invalid_xref</td><td>6</td></tr>
       
-      <tr><td>lowercase_definition</td><td>11</td></tr>
+      <tr><td>lowercase_definition</td><td>38</td></tr>
       
-      <tr><td>missing_superclass</td><td>18</td></tr>
+      <tr><td>missing_superclass</td><td>22</td></tr>
       
       </table></div>
       <p style="text-align:center; margin-top:-15px;">
@@ -955,6 +959,1086 @@
             
               <td>
               
+                <a href="http://robot.obolibrary.org/report_queries/misused_obsolete_label">misused_obsolete_label</a>
+              
+              </td>
+            
+              <td>
+              
+                obsolete_formed as result of
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+              
+              </td>
+            
+              <td>
+              
+                obsolete_formed as result of@en
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>24</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/duplicate_label">duplicate_label</a>
+              
+              </td>
+            
+              <td>
+              
+                reference
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+              
+              </td>
+            
+              <td>
+              
+                reference
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>25</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/duplicate_label">duplicate_label</a>
+              
+              </td>
+            
+              <td>
+              
+                reference
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+              
+              </td>
+            
+              <td>
+              
+                reference
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>26</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/multiple_definitions">multiple_definitions</a>
+              
+              </td>
+            
+              <td>
+              
+                specifically dependent continuant
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                <b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1 i &lt; j n, ci and cj share no common parts, are such that for each 1 i n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])@en>
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>27</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/multiple_definitions">multiple_definitions</a>
+              
+              </td>
+            
+              <td>
+              
+                specifically dependent continuant
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                <b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])@en>
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>28</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/multiple_labels">multiple_labels</a>
+              
+              </td>
+            
+              <td>
+              
+                continuant
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+              
+              </td>
+            
+              <td>
+              
+                continuant
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>29</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/multiple_labels">multiple_labels</a>
+              
+              </td>
+            
+              <td>
+              
+                continuant
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+              
+              </td>
+            
+              <td>
+              
+                continuant@en
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>30</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/multiple_labels">multiple_labels</a>
+              
+              </td>
+            
+              <td>
+              
+                occurrent
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+              
+              </td>
+            
+              <td>
+              
+                occurrent
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>31</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/multiple_labels">multiple_labels</a>
+              
+              </td>
+            
+              <td>
+              
+                occurrent
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+              
+              </td>
+            
+              <td>
+              
+                occurrent@en
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>32</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/multiple_labels">multiple_labels</a>
+              
+              </td>
+            
+              <td>
+              
+                independent continuant
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+              
+              </td>
+            
+              <td>
+              
+                independent continuant
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>33</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/multiple_labels">multiple_labels</a>
+              
+              </td>
+            
+              <td>
+              
+                independent continuant
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+              
+              </td>
+            
+              <td>
+              
+                independent continuant@en
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>34</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/multiple_labels">multiple_labels</a>
+              
+              </td>
+            
+              <td>
+              
+                process
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+              
+              </td>
+            
+              <td>
+              
+                process
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>35</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/multiple_labels">multiple_labels</a>
+              
+              </td>
+            
+              <td>
+              
+                process
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+              
+              </td>
+            
+              <td>
+              
+                process@en
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>36</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/multiple_labels">multiple_labels</a>
+              
+              </td>
+            
+              <td>
+              
+                disposition
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+              
+              </td>
+            
+              <td>
+              
+                disposition
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>37</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/multiple_labels">multiple_labels</a>
+              
+              </td>
+            
+              <td>
+              
+                disposition
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+              
+              </td>
+            
+              <td>
+              
+                disposition@en
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>38</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/multiple_labels">multiple_labels</a>
+              
+              </td>
+            
+              <td>
+              
+                realizable entity
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+              
+              </td>
+            
+              <td>
+              
+                realizable entity
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>39</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/multiple_labels">multiple_labels</a>
+              
+              </td>
+            
+              <td>
+              
+                realizable entity
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+              
+              </td>
+            
+              <td>
+              
+                realizable entity@en
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>40</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/multiple_labels">multiple_labels</a>
+              
+              </td>
+            
+              <td>
+              
+                quality
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+              
+              </td>
+            
+              <td>
+              
+                quality
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>41</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/multiple_labels">multiple_labels</a>
+              
+              </td>
+            
+              <td>
+              
+                quality
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+              
+              </td>
+            
+              <td>
+              
+                quality@en
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>42</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/multiple_labels">multiple_labels</a>
+              
+              </td>
+            
+              <td>
+              
+                specifically dependent continuant
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+              
+              </td>
+            
+              <td>
+              
+                specifically dependent continuant
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>43</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/multiple_labels">multiple_labels</a>
+              
+              </td>
+            
+              <td>
+              
+                specifically dependent continuant
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+              
+              </td>
+            
+              <td>
+              
+                specifically dependent continuant@en
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>44</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/multiple_labels">multiple_labels</a>
+              
+              </td>
+            
+              <td>
+              
+                role
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+              
+              </td>
+            
+              <td>
+              
+                role
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>45</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/multiple_labels">multiple_labels</a>
+              
+              </td>
+            
+              <td>
+              
+                role
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+              
+              </td>
+            
+              <td>
+              
+                role@en
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>46</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/multiple_labels">multiple_labels</a>
+              
+              </td>
+            
+              <td>
+              
+                generically dependent continuant
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+              
+              </td>
+            
+              <td>
+              
+                generically dependent continuant
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>47</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/multiple_labels">multiple_labels</a>
+              
+              </td>
+            
+              <td>
+              
+                generically dependent continuant
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+              
+              </td>
+            
+              <td>
+              
+                generically dependent continuant@en
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>48</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/multiple_labels">multiple_labels</a>
+              
+              </td>
+            
+              <td>
+              
+                material entity
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+              
+              </td>
+            
+              <td>
+              
+                material entity
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>49</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/multiple_labels">multiple_labels</a>
+              
+              </td>
+            
+              <td>
+              
+                material entity
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+              
+              </td>
+            
+              <td>
+              
+                material entity@en
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>50</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
                 <a href="http://robot.obolibrary.org/report_queries/multiple_labels">multiple_labels</a>
               
               </td>
@@ -985,7 +2069,7 @@
             
           
           <tr class="table-danger">
-            <td>24</td>
+            <td>51</td>
             
               <td>
               
@@ -1025,7 +2109,7 @@
             
           
           <tr class="table-danger">
-            <td>25</td>
+            <td>52</td>
             
               <td>
               
@@ -1065,7 +2149,7 @@
             
           
           <tr class="table-danger">
-            <td>26</td>
+            <td>53</td>
             
               <td>
               
@@ -1104,1116 +2188,36 @@
           
             
           
-          <tr class="table-warning">
-            <td>27</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/annotation_whitespace">annotation_whitespace</a>
-              
-              </td>
-            
-              <td>
-              
-                obsolete_approximates_sequence
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000116">IAO:0000116</a>
-              
-              </td>
-            
-              <td>
-              
-                Created subproperties 'approximates_sequence' and 'resolves to sequence'. Genotypes and other sequence variant artifacts are not always expected to completely specify a sequence, but rather provide some approximation based on available knowledge. The 'resolves_to_sequence' property can be used when the sequence variant artifact is able to completely resolve a sequence, and the 'approximates_sequence' property can be used when it does not. 
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>28</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/annotation_whitespace">annotation_whitespace</a>
-              
-              </td>
-            
-              <td>
-              
-                obsolete_resolves_to_sequence
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000116">IAO:0000116</a>
-              
-              </td>
-            
-              <td>
-              
-                Created subproperties 'approximates_sequence' and 'resolves to sequence'. Genotypes and other sequence variant artifacts are not always expected to completely specify a sequence, but rather provide some approximation based on available knowledge. The 'resolves_to_sequence' property can be used when the sequence variant artifact is able to completely resolve a sequence, and the 'approximates_sequence' property can be used when it does not. 
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>29</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                gene trap insertion
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>30</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                taxonomic group
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>31</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                mus musculus strain
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>32</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                danio rerio strain
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>33</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                hemizygous
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>34</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                heterozygous
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>35</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                homozygous
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>36</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                unspecified zygosity
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>37</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                heritable
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>38</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                non-heritable
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>39</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                unspecified life cycle stage
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>40</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                is_genotype_of
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>41</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                obsolete_approximates_sequence
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>42</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                obsolete_resolves_to_sequence
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>43</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                is_sequence_of
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>44</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                is_subject_of
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>45</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                obsolete_is_specified_by
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>46</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                biological process
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>47</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                is_variant_part_of
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>48</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                is_reference_part_of
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>49</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                disomic zygosity
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>50</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                aneusomic zygosity
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>51</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                trisomic homozygous
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>52</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                trisomic heterozygous
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>53</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                simple heterozygous
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
+          <tr class="table-danger">
             <td>54</td>
             
               <td>
               
-                WARN
+                ERROR
               
               </td>
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+                <a href="http://robot.obolibrary.org/report_queries/multiple_labels">multiple_labels</a>
               
               </td>
             
               <td>
               
-                expression construct
+                information content entity
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
               
               </td>
             
               <td>
               
-                
+                information content entity
 
               
               </td>
@@ -2224,36 +2228,36 @@
           
             
           
-          <tr class="table-warning">
+          <tr class="table-danger">
             <td>55</td>
             
               <td>
               
-                WARN
+                ERROR
               
               </td>
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+                <a href="http://robot.obolibrary.org/report_queries/multiple_labels">multiple_labels</a>
               
               </td>
             
               <td>
               
-                wild-type gene
+                information content entity
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
               
               </td>
             
               <td>
               
-                
+                information content entity@en
 
               
               </td>
@@ -2275,25 +2279,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+                <a href="http://robot.obolibrary.org/report_queries/annotation_whitespace">annotation_whitespace</a>
               
               </td>
             
               <td>
               
-                gene knockdown reagent
+                obsolete_approximates_sequence
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000116">IAO:0000116</a>
               
               </td>
             
               <td>
               
-                
+                Created subproperties 'approximates_sequence' and 'resolves to sequence'. Genotypes and other sequence variant artifacts are not always expected to completely specify a sequence, but rather provide some approximation based on available knowledge. The 'resolves_to_sequence' property can be used when the sequence variant artifact is able to completely resolve a sequence, and the 'approximates_sequence' property can be used when it does not. 
 
               
               </td>
@@ -2315,25 +2319,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+                <a href="http://robot.obolibrary.org/report_queries/annotation_whitespace">annotation_whitespace</a>
               
               </td>
             
               <td>
               
-                zebrafish phenotype
+                obsolete_resolves_to_sequence
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000116">IAO:0000116</a>
               
               </td>
             
               <td>
               
-                
+                Created subproperties 'approximates_sequence' and 'resolves to sequence'. Genotypes and other sequence variant artifacts are not always expected to completely specify a sequence, but rather provide some approximation based on available knowledge. The 'resolves_to_sequence' property can be used when the sequence variant artifact is able to completely resolve a sequence, and the 'approximates_sequence' property can be used when it does not. 
 
               
               </td>
@@ -2355,26 +2359,26 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+                <a href="http://robot.obolibrary.org/report_queries/annotation_whitespace">annotation_whitespace</a>
               
               </td>
             
               <td>
               
-                hemizygous X-linked
+                chromosome band
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000119">IAO:0000119</a>
               
               </td>
             
               <td>
               
-                
-
+                <a href="http://ghr.nlm.nih.gov/handbook/howgeneswork/genelocation"><http://ghr.nlm.nih.gov/handbook/howgeneswork/genelocation and http://people.rit.edu/rhrsbi/GeneticsPages/Handouts/ChromosomeNomenclature.pdf, both of which define the nomenclature for the banding hierarchy we use here:chromosome > arm > region > band > sub-bandNote that an alternate nomenclature for this hierarchy is here (http://www.ncbi.nlm.nih.gov/Class/MLACourse/Original8Hour/Genetics/chrombanding.html):chromosome > arm > band > sub-band > sub-sub-band>
+</a>
               
               </td>
             
@@ -2401,7 +2405,7 @@
             
               <td>
               
-                hemizygous Y-linked
+                Both strands
               
               </td>
             
@@ -2441,7 +2445,7 @@
             
               <td>
               
-                hemizygous insertion-linked
+                Positive strand
               
               </td>
             
@@ -2481,7 +2485,7 @@
             
               <td>
               
-                chromosome sub-band
+                Negative strand
               
               </td>
             
@@ -2521,7 +2525,7 @@
             
               <td>
               
-                chromosomal band intensity
+                Stranded position
               
               </td>
             
@@ -2561,7 +2565,7 @@
             
               <td>
               
-                gpos
+                begin
               
               </td>
             
@@ -2601,7 +2605,7 @@
             
               <td>
               
-                gneg
+                end
               
               </td>
             
@@ -2641,7 +2645,7 @@
             
               <td>
               
-                gvar
+                location
               
               </td>
             
@@ -2681,7 +2685,7 @@
             
               <td>
               
-                gpos100
+                position
               
               </td>
             
@@ -2721,7 +2725,7 @@
             
               <td>
               
-                gpos75
+                is part of
               
               </td>
             
@@ -2761,7 +2765,7 @@
             
               <td>
               
-                gpos50
+                has part
               
               </td>
             
@@ -2801,7 +2805,7 @@
             
               <td>
               
-                gpos25
+                molecular entity
               
               </td>
             
@@ -2841,7 +2845,7 @@
             
               <td>
               
-                has_staining_intensity
+                nucleic acid
               
               </td>
             
@@ -2881,7 +2885,7 @@
             
               <td>
               
-                gpos66
+                cell
               
               </td>
             
@@ -2921,7 +2925,7 @@
             
               <td>
               
-                gpos33
+                environmental system
               
               </td>
             
@@ -2961,7 +2965,7 @@
             
               <td>
               
-                reporter region
+                gene trap insertion
               
               </td>
             
@@ -3001,7 +3005,7 @@
             
               <td>
               
-                has_sex_agnostic_part
+                taxonomic group
               
               </td>
             
@@ -3041,7 +3045,7 @@
             
               <td>
               
-                is_mutant_allele_of
+                mus musculus strain
               
               </td>
             
@@ -3081,7 +3085,7 @@
             
               <td>
               
-                is_sequence_part_of
+                danio rerio strain
               
               </td>
             
@@ -3121,7 +3125,7 @@
             
               <td>
               
-                faldo properties
+                hemizygous
               
               </td>
             
@@ -3161,7 +3165,7 @@
             
               <td>
               
-                ObsoleteDataProperty
+                heterozygous
               
               </td>
             
@@ -3201,7 +3205,7 @@
             
               <td>
               
-                DNA sequence
+                homozygous
               
               </td>
             
@@ -3241,7 +3245,7 @@
             
               <td>
               
-                RNA sequence
+                unspecified zygosity
               
               </td>
             
@@ -3281,7 +3285,7 @@
             
               <td>
               
-                amino acid sequence
+                heritable
               
               </td>
             
@@ -3321,7 +3325,7 @@
             
               <td>
               
-                has_inferred_phenotype
+                non-heritable
               
               </td>
             
@@ -3361,7 +3365,7 @@
             
               <td>
               
-                obsolete_has_regulatory_part
+                unspecified life cycle stage
               
               </td>
             
@@ -3401,7 +3405,7 @@
             
               <td>
               
-                has_asserted_phenotype
+                is_genotype_of
               
               </td>
             
@@ -3441,7 +3445,7 @@
             
               <td>
               
-                is_regulatory_part_of
+                obsolete_approximates_sequence
               
               </td>
             
@@ -3481,7 +3485,7 @@
             
               <td>
               
-                phenotypic inheritance process
+                obsolete_resolves_to_sequence
               
               </td>
             
@@ -3521,7 +3525,7 @@
             
               <td>
               
-                biological sequence unit
+                is_sequence_of
               
               </td>
             
@@ -3561,7 +3565,7 @@
             
               <td>
               
-                DNA residue
+                is_subject_of
               
               </td>
             
@@ -3601,7 +3605,7 @@
             
               <td>
               
-                RNA residue
+                obsolete_is_specified_by
               
               </td>
             
@@ -3641,7 +3645,7 @@
             
               <td>
               
-                amino acid residue
+                biological process
               
               </td>
             
@@ -3681,7 +3685,7 @@
             
               <td>
               
-                related_condition
+                is_variant_part_of
               
               </td>
             
@@ -3721,7 +3725,7 @@
             
               <td>
               
-                inferred_to_cause_condition
+                is_reference_part_of
               
               </td>
             
@@ -3761,7 +3765,7 @@
             
               <td>
               
-                inferred_to_contribute_to_condition
+                disomic zygosity
               
               </td>
             
@@ -3801,7 +3805,7 @@
             
               <td>
               
-                inferred_to_correlate_with_condition
+                aneusomic zygosity
               
               </td>
             
@@ -3841,7 +3845,7 @@
             
               <td>
               
-                genotype-phenotype association
+                trisomic homozygous
               
               </td>
             
@@ -3881,7 +3885,7 @@
             
               <td>
               
-                knockdown reagent targeted gene complement
+                trisomic heterozygous
               
               </td>
             
@@ -3921,7 +3925,7 @@
             
               <td>
               
-                pathogenic_for_condition
+                simple heterozygous
               
               </td>
             
@@ -3961,7 +3965,7 @@
             
               <td>
               
-                likely_pathogenic_for_condition
+                expression construct
               
               </td>
             
@@ -4001,7 +4005,7 @@
             
               <td>
               
-                benign_for_condition
+                wild-type gene
               
               </td>
             
@@ -4041,7 +4045,7 @@
             
               <td>
               
-                likely_benign_for_condition
+                gene knockdown reagent
               
               </td>
             
@@ -4081,7 +4085,7 @@
             
               <td>
               
-                has_uncertain_significance_for_condition
+                zebrafish phenotype
               
               </td>
             
@@ -4121,7 +4125,7 @@
             
               <td>
               
-                is_candidate_variant_for
+                hemizygous X-linked
               
               </td>
             
@@ -4161,7 +4165,7 @@
             
               <td>
               
-                proabalistic_quantifier
+                hemizygous Y-linked
               
               </td>
             
@@ -4201,7 +4205,7 @@
             
               <td>
               
-                oryzias latipes strain
+                hemizygous insertion-linked
               
               </td>
             
@@ -4241,7 +4245,7 @@
             
               <td>
               
-                mixin
+                chromosome sub-band
               
               </td>
             
@@ -4281,7 +4285,7 @@
             
               <td>
               
-                on strand
+                chromosomal band intensity
               
               </td>
             
@@ -4321,7 +4325,7 @@
             
               <td>
               
-                gene symbol
+                gpos
               
               </td>
             
@@ -4361,7 +4365,7 @@
             
               <td>
               
-                reporter
+                gneg
               
               </td>
             
@@ -4401,7 +4405,7 @@
             
               <td>
               
-                selectable marker
+                gvar
               
               </td>
             
@@ -4441,7 +4445,7 @@
             
               <td>
               
-                selectable marker region
+                gpos100
               
               </td>
             
@@ -4481,7 +4485,7 @@
             
               <td>
               
-                mosaic
+                gpos75
               
               </td>
             
@@ -4515,26 +4519,26 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/invalid_xref">invalid_xref</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                background genome
+                gpos50
               
               </td>
             
               <td>
               
-                <a href="http://www.geneontology.org/formats/oboInOwl#hasDbXref">oboInOwl:hasDbXref</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/OBI_genetic"><http://purl.obolibrary.org/obo/OBI_genetic population background information>
-</a>
+                
+
               
               </td>
             
@@ -4555,26 +4559,26 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/invalid_xref">invalid_xref</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                gene allele
+                gpos25
               
               </td>
             
               <td>
               
-                <a href="http://www.geneontology.org/formats/oboInOwl#hasDbXref">oboInOwl:hasDbXref</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/SO_0001023"><http://purl.obolibrary.org/obo/SO_0001023 ! allele>
-</a>
+                
+
               
               </td>
             
@@ -4595,26 +4599,26 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/invalid_xref">invalid_xref</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                obsolete sequence feature collection
+                has_staining_intensity
               
               </td>
             
               <td>
               
-                <a href="http://www.geneontology.org/formats/oboInOwl#hasDbXref">oboInOwl:hasDbXref</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/SO_sequence"><perhaps not same as SO:sequence collection, as here we explicitly include features that can have an extent of zero (and SO:sequence collection is a collection of regions that have an extent of at least one)>
-</a>
+                
+
               
               </td>
             
@@ -4635,26 +4639,26 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/invalid_xref">invalid_xref</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                variant genome
+                gpos66
               
               </td>
             
               <td>
               
-                <a href="http://www.geneontology.org/formats/oboInOwl#hasDbXref">oboInOwl:hasDbXref</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/SO_0001506"><http://purl.obolibrary.org/obo/SO_0001506 ! variant_genome (definition of SO term here is too vague to know if has same meaning as GENO class here)>
-</a>
+                
+
               
               </td>
             
@@ -4675,26 +4679,26 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/invalid_xref">invalid_xref</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                gene part
+                gpos33
               
               </td>
             
               <td>
               
-                <a href="http://www.geneontology.org/formats/oboInOwl#hasDbXref">oboInOwl:hasDbXref</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/SO_0000831"><http://purl.obolibrary.org/obo/SO_0000831 (gene member region)>
-</a>
+                
+
               
               </td>
             
@@ -4715,26 +4719,26 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/invalid_xref">invalid_xref</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                obsolete sequence feature collection
+                reporter region
               
               </td>
             
               <td>
               
-                <a href="http://www.geneontology.org/formats/oboInOwl#hasDbXref">oboInOwl:hasDbXref</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/SO_0001260"><http://purl.obolibrary.org/obo/SO_0001260 ! sequence_collection>
-</a>
+                
+
               
               </td>
             
@@ -4744,24 +4748,24 @@
           
             
           
-          <tr class="table-info">
+          <tr class="table-warning">
             <td>118</td>
             
               <td>
               
-                INFO
+                WARN
               
               </td>
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/lowercase_definition">lowercase_definition</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                obsolete sequence feature collection
+                has_sex_agnostic_part
               
               </td>
             
@@ -4773,7 +4777,7 @@
             
               <td>
               
-                a collection more than one sequence features (ie a collection of discontinuous sequence features)
+                
 
               
               </td>
@@ -4784,24 +4788,24 @@
           
             
           
-          <tr class="table-info">
+          <tr class="table-warning">
             <td>119</td>
             
               <td>
               
-                INFO
+                WARN
               
               </td>
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/lowercase_definition">lowercase_definition</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                human population
+                is_mutant_allele_of
               
               </td>
             
@@ -4813,7 +4817,7 @@
             
               <td>
               
-                a population of homo sapiens grouped together in virtue of their sharing some commonality (either an inherent attribute or an externally assigned role)
+                
 
               
               </td>
@@ -4824,24 +4828,24 @@
           
             
           
-          <tr class="table-info">
+          <tr class="table-warning">
             <td>120</td>
             
               <td>
               
-                INFO
+                WARN
               
               </td>
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/lowercase_definition">lowercase_definition</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                obsolete sequence feature collection attribute
+                is_sequence_part_of
               
               </td>
             
@@ -4853,7 +4857,7 @@
             
               <td>
               
-                sequence attribute that can inhere only in a collection of more than one sequence features
+                
 
               
               </td>
@@ -4864,24 +4868,24 @@
           
             
           
-          <tr class="table-info">
+          <tr class="table-warning">
             <td>121</td>
             
               <td>
               
-                INFO
+                WARN
               
               </td>
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/lowercase_definition">lowercase_definition</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                obsolete dominant inheritance
+                faldo properties
               
               </td>
             
@@ -4893,7 +4897,7 @@
             
               <td>
               
-                disposition inhering in a genetic locus variant that is realized in its inheritance by some offspring such that at least a partial variant-associated phenotype is apparent in heterozygotes
+                
 
               
               </td>
@@ -4904,24 +4908,24 @@
           
             
           
-          <tr class="table-info">
+          <tr class="table-warning">
             <td>122</td>
             
               <td>
               
-                INFO
+                WARN
               
               </td>
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/lowercase_definition">lowercase_definition</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                obsolete_is_phenotype_of_genotype
+                ObsoleteDataProperty
               
               </td>
             
@@ -4933,7 +4937,7 @@
             
               <td>
               
-                shortcut relation used to link a phenotype directly to a genotype of an organism
+                
 
               
               </td>
@@ -4944,698 +4948,18 @@
           
             
           
-          <tr class="table-info">
+          <tr class="table-warning">
             <td>123</td>
             
               <td>
               
-                INFO
+                WARN
               
               </td>
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/lowercase_definition">lowercase_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                aneusomic
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                a sequence attribute of a chromosome or chromosomal region that has been abnormally duplicated or lost, as the result of a non-disjunction event or unbalanced translocation.
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-info">
-            <td>124</td>
-            
-              <td>
-              
-                INFO
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/lowercase_definition">lowercase_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                homoplasmic
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                an allelic state where a single allele exists at a particular location in the organellar genome (mitochondrial or plastid) of a cell/organism.
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-info">
-            <td>125</td>
-            
-              <td>
-              
-                INFO
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/lowercase_definition">lowercase_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                heteroplasmic
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                an allelic state where more than one type of allele exists at a particular location in the organellar genome (mitochondrial or plastid) of a cell/organism.
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-info">
-            <td>126</td>
-            
-              <td>
-              
-                INFO
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/lowercase_definition">lowercase_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                has_zygosity
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                a relation to link a single locus complement to its zygosity.
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-info">
-            <td>127</td>
-            
-              <td>
-              
-                INFO
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/lowercase_definition">lowercase_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                is_targeted_by
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                relation between an molecular agent and its molecular target
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-info">
-            <td>128</td>
-            
-              <td>
-              
-                INFO
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/lowercase_definition">lowercase_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                obsolete gametic
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                a quality inhering in a feature in virtue of its presence only in the genome of gametes (germ cells).
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-info">
-            <td>129</td>
-            
-              <td>
-              
-                INFO
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_superclass">missing_superclass</a>
-              
-              </td>
-            
-              <td>
-              
-                genomic variation complement
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">rdfs:subClassOf</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-info">
-            <td>130</td>
-            
-              <td>
-              
-                INFO
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_superclass">missing_superclass</a>
-              
-              </td>
-            
-              <td>
-              
-                reference sequence
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">rdfs:subClassOf</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-info">
-            <td>131</td>
-            
-              <td>
-              
-                INFO
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_superclass">missing_superclass</a>
-              
-              </td>
-            
-              <td>
-              
-                variant single locus complement
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">rdfs:subClassOf</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-info">
-            <td>132</td>
-            
-              <td>
-              
-                INFO
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_superclass">missing_superclass</a>
-              
-              </td>
-            
-              <td>
-              
-                reference allele
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">rdfs:subClassOf</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-info">
-            <td>133</td>
-            
-              <td>
-              
-                INFO
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_superclass">missing_superclass</a>
-              
-              </td>
-            
-              <td>
-              
-                danio rerio gene
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">rdfs:subClassOf</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-info">
-            <td>134</td>
-            
-              <td>
-              
-                INFO
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_superclass">missing_superclass</a>
-              
-              </td>
-            
-              <td>
-              
-                homo sapiens gene
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">rdfs:subClassOf</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-info">
-            <td>135</td>
-            
-              <td>
-              
-                INFO
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_superclass">missing_superclass</a>
-              
-              </td>
-            
-              <td>
-              
-                mus musculus gene
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">rdfs:subClassOf</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-info">
-            <td>136</td>
-            
-              <td>
-              
-                INFO
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_superclass">missing_superclass</a>
-              
-              </td>
-            
-              <td>
-              
-                transgene part
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">rdfs:subClassOf</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-info">
-            <td>137</td>
-            
-              <td>
-              
-                INFO
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_superclass">missing_superclass</a>
-              
-              </td>
-            
-              <td>
-              
-                extrachromosomal replicon
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">rdfs:subClassOf</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-info">
-            <td>138</td>
-            
-              <td>
-              
-                INFO
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_superclass">missing_superclass</a>
-              
-              </td>
-            
-              <td>
-              
-                allele
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">rdfs:subClassOf</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-info">
-            <td>139</td>
-            
-              <td>
-              
-                INFO
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_superclass">missing_superclass</a>
-              
-              </td>
-            
-              <td>
-              
-                gene part
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">rdfs:subClassOf</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-info">
-            <td>140</td>
-            
-              <td>
-              
-                INFO
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_superclass">missing_superclass</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
@@ -5647,7 +4971,7 @@
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">rdfs:subClassOf</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
@@ -5664,18 +4988,18 @@
           
             
           
-          <tr class="table-info">
-            <td>141</td>
+          <tr class="table-warning">
+            <td>124</td>
             
               <td>
               
-                INFO
+                WARN
               
               </td>
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_superclass">missing_superclass</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
@@ -5687,7 +5011,7 @@
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">rdfs:subClassOf</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
@@ -5704,18 +5028,18 @@
           
             
           
-          <tr class="table-info">
-            <td>142</td>
+          <tr class="table-warning">
+            <td>125</td>
             
               <td>
               
-                INFO
+                WARN
               
               </td>
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_superclass">missing_superclass</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
@@ -5727,7 +5051,7 @@
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">rdfs:subClassOf</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
@@ -5744,30 +5068,30 @@
           
             
           
-          <tr class="table-info">
-            <td>143</td>
+          <tr class="table-warning">
+            <td>126</td>
             
               <td>
               
-                INFO
+                WARN
               
               </td>
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_superclass">missing_superclass</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                variant genomic genotype
+                has_inferred_phenotype
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">rdfs:subClassOf</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
@@ -5784,18 +5108,178 @@
           
             
           
-          <tr class="table-info">
-            <td>144</td>
+          <tr class="table-warning">
+            <td>127</td>
             
               <td>
               
-                INFO
+                WARN
               
               </td>
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_superclass">missing_superclass</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                obsolete_has_regulatory_part
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>128</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                has_asserted_phenotype
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>129</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                is_regulatory_part_of
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>130</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                phenotypic inheritance process
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>131</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
@@ -5807,7 +5291,7 @@
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">rdfs:subClassOf</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
@@ -5824,30 +5308,550 @@
           
             
           
-          <tr class="table-info">
+          <tr class="table-warning">
+            <td>132</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                DNA residue
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>133</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                RNA residue
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>134</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                amino acid residue
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>135</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                related_condition
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>136</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                inferred_to_cause_condition
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>137</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                inferred_to_contribute_to_condition
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>138</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                inferred_to_correlate_with_condition
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>139</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                genotype-phenotype association
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>140</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                knockdown reagent targeted gene complement
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>141</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                pathogenic_for_condition
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>142</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                likely_pathogenic_for_condition
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>143</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                benign_for_condition
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>144</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                likely_benign_for_condition
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
             <td>145</td>
             
               <td>
               
-                INFO
+                WARN
               
               </td>
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_superclass">missing_superclass</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                allelic genotype
+                has_uncertain_significance_for_condition
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">rdfs:subClassOf</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
@@ -5864,30 +5868,2190 @@
           
             
           
-          <tr class="table-info">
+          <tr class="table-warning">
             <td>146</td>
             
               <td>
               
-                INFO
+                WARN
               
               </td>
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_superclass">missing_superclass</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                diplotype
+                is_candidate_variant_for
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">rdfs:subClassOf</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>147</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                proabalistic_quantifier
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>148</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                oryzias latipes strain
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>149</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                mixin
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>150</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                on strand
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>151</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                gene symbol
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>152</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                reporter
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>153</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                selectable marker
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>154</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                selectable marker region
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>155</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                mosaic
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>156</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                human phenotypic abnormality
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>157</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                human life cycle stage
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>158</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                data about an ontology part
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>159</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                mammalian phenotype
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>160</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Mus musculus
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>161</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Viruses
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>162</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Danio rerio
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>163</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Oryzias latipes
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>164</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Homo sapiens
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>165</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                reagent role
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>166</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                organism
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>167</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                female
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>168</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                male
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>169</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                phenotypic sex
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>170</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                has role
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>171</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                derives from
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>172</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                starts during
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>173</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                ends during
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>174</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                phenotype of
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>175</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                temporally related to
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>176</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                is member of
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>177</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                input of
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>178</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                output of
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>179</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                obsolete_formed as result of
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>180</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                is subsequence of
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>181</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                enhancer
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>182</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                simple_sequence_length_variation
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>183</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                sequence_length_variation
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>184</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                engineered_foreign_gene
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>185</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                RNAi_reagent
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>186</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                centromere
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>187</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                junction
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>188</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                engineered_region
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>189</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                structural_alteration
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>190</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                regulatory_region
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>191</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                T_to_C_transition
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>192</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                C_to_G_transversion
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>193</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                life cycle stage
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>194</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                anatomical entity
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>195</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Phenotype
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>196</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                abnormal(ly) malformed endocardium cell
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>197</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                abnormal(ly) absent dorso-rostral cluster
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>198</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                abnormal(ly) disrupted diencephalon development
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>199</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                abnormal(ly) disrupted neutrophil aggregation
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>200</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                abnormal(ly) absent adaxial cell
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             

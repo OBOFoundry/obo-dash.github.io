@@ -1,5 +1,59 @@
-changed: true
-date: '2020-11-07'
+base_generated: false
+base_prefixes:
+- PATO
+changed: false
+date: '2020-12-22'
+metrics:
+  'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 16715
+    Declaration: 2840
+    DisjointClasses: 65
+    EquivalentClasses: 312
+    ObjectPropertyDomain: 11
+    ObjectPropertyRange: 9
+    SubAnnotationPropertyOf: 10
+    SubClassOf: 2081
+    SubObjectPropertyOf: 4
+    TransitiveObjectProperty: 3
+  'Axioms: Number of axioms': 22050
+  'Entities: % of entities reused': '2.70'
+  'Entities: Number of annotation properties': 41
+  'Entities: Number of classes': 2777
+  'Entities: Number of data properties': 0
+  'Entities: Number of individuals': 0
+  'Entities: Number of object properties': 27
+  'Entities: Number of unsatisfiable classes': 0
+  'Info: Breakdown of OWL class expressions used':
+    Class: 8027
+    ObjectComplementOf: 1
+    ObjectExactCardinality: 2
+    ObjectIntersectionOf: 320
+    ObjectMinCardinality: 2
+    ObjectSomeValuesFrom: 348
+  'Info: Does the ontology fall under OWL 2 DL?': false
+  'Info: Experimental OBO score':
+    _dashboard: 0.933
+    _formula: (3*impact+2*dashboard+1*reuse)/6
+    _impact: 0.438
+    _reuse: 0.027
+    oboscore: 0.534
+  'Info: How many ontologies use it?': 77
+  'Info: Logical consistency': true
+  'Info: Syntax': RDF/XML Syntax
+  'Info: Usage of namespaces in axioms':
+    BFO: 18
+    CARO: 2
+    CL: 9
+    GO: 9
+    IAO: 1986
+    PATO: 8005
+    RO: 442
+    dc11: 22
+    obo: 396
+    oboInOwl: 12210
+    owl: 978
+    rdfs: 2842
+mirror_from: http://purl.obolibrary.org/obo/pato/pato-base.owl
 namespace: pato
 results:
   FP01 Open:
@@ -13,10 +67,12 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 19 missing definitions. See ROBOT Report for details.
+    comment: 48 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
-    status: PASS
+    comment: 1 labels match RO labels. 20 non-RO properties used.
+    file: fp7
+    status: ERROR
   FP08 Documented:
     status: PASS
   FP09 Plurality of Users:
@@ -28,19 +84,19 @@ results:
   FP16 Maintenance:
     status: PASS
   ROBOT Report:
-    comment: 19 warnings, 32 info messages.
+    comment: 48 warnings, 40 info messages.
     file: robot_report
     results:
       ERROR: 0
-      INFO: 32
-      WARN: 19
+      INFO: 40
+      WARN: 48
     status: WARN
 sha256_hash: 051a2fefaba437473313bea12172af1e4cedb9cc61db1b63ddb1f9b1c2868ca2
 summary:
-  comment: 2 warnings
-  status: WARN
+  comment: 1 errors
+  status: ERROR
   summary_count:
-    ERROR: 0
+    ERROR: 1
     INFO: 0
     WARN: 2
 version: http://purl.obolibrary.org/obo/pato/releases/2020-08-02/pato-base.owl

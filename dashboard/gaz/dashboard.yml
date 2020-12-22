@@ -1,47 +1,78 @@
-changed: true
-date: '2020-11-07'
+base_generated: true
+base_prefixes:
+- GAZ
+changed: false
+failure: inconsistent_ontology
+metrics:
+  'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 3542458
+    ClassAssertion: 94591
+    DataPropertyDomain: 1
+    DataPropertyRange: 1
+    Declaration: 677549
+    DisjointClasses: 134
+    DisjointUnion: 1
+    EquivalentClasses: 969
+    FunctionalDataProperty: 1
+    FunctionalObjectProperty: 1
+    InverseFunctionalObjectProperty: 1
+    InverseObjectProperties: 1
+    ObjectPropertyAssertion: 793503
+    SubAnnotationPropertyOf: 28
+    SubClassOf: 20211
+    SubObjectPropertyOf: 122
+    SubPropertyChainOf: 30
+    SymmetricObjectProperty: 1
+    TransitiveObjectProperty: 6
+  'Axioms: Number of axioms': 5129609
+  'Entities: % of entities reused': '0.96'
+  'Entities: Number of annotation properties': 108
+  'Entities: Number of classes': 16807
+  'Entities: Number of data properties': 1
+  'Entities: Number of individuals': 661037
+  'Entities: Number of object properties': 141
+  'Entities: Number of unsatisfiable classes': -1
+  'Info: Breakdown of OWL class expressions used':
+    Class: 155599
+    DataMinCardinality: 1
+    ObjectAllValuesFrom: 6
+    ObjectComplementOf: 26
+    ObjectIntersectionOf: 1654
+    ObjectMaxCardinality: 5
+    ObjectMinCardinality: 38
+    ObjectSomeValuesFrom: 4771
+    ObjectUnionOf: 288
+  'Info: Does the ontology fall under OWL 2 DL?': false
+  'Info: Logical consistency': false
+  'Info: Syntax': RDF/XML Syntax
+  'Info: Usage of namespaces in axioms':
+    BFO: 2244
+    CARO: 11
+    CHEBI: 3867
+    ENVO: 112255
+    FAO: 6
+    FOODON: 1672
+    GAZ: 2372739
+    GENEPIO: 2
+    GO: 185
+    IAO: 528273
+    NCBITaxon: 655
+    OBI: 29
+    PATO: 1864
+    PCO: 43
+    PO: 252
+    RO: 793266
+    UBERON: 4440
+    dc: 11
+    dc11: 620
+    foaf: 10
+    obo: 3456
+    oboInOwl: 2345107
+    owl: 1740
+    prefix_unknown: 15
+    rdfs: 670935
+    schema: 5
+    xsd: 7
+mirror_from: http://purl.obolibrary.org/obo/gaz.owl
 namespace: gaz
-results:
-  FP01 Open:
-    comment: Missing ontology license.
-    status: ERROR
-  FP02 Common Format:
-    status: PASS
-  FP03 URIs:
-    status: PASS
-  FP04 Versioning:
-    comment: Missing version IRI
-    status: ERROR
-  FP05 Scope:
-    comment: Missing domain (scope)
-    status: ERROR
-  FP06 Textual Definitions:
-    comment: ROBOT Report could not be generated
-    status: INFO
-  FP07 Relations:
-    status: PASS
-  FP08 Documented:
-    status: PASS
-  FP09 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
-  FP11 Locus of Authority:
-    status: PASS
-  FP12 Naming Conventions:
-    comment: ROBOT Report could not be generated
-    status: INFO
-  FP16 Maintenance:
-    comment: Missing version IRI to check date
-    status: ERROR
-  ROBOT Report:
-    comment: ROBOT Report could not be generated.
-    status: INFO
 sha256_hash: 38bf07c661a7f939ec162800b0fe9a338a90ad2d5b6ae09c3c5be00aa3b5f90d
-summary:
-  comment: 5 errors
-  status: ERROR
-  summary_count:
-    ERROR: 5
-    INFO: 3
-    WARN: 0
-version: null

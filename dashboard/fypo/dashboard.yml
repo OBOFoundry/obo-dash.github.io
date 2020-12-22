@@ -1,5 +1,54 @@
-changed: true
-date: '2020-11-07'
+base_generated: false
+base_prefixes:
+- FYPO
+changed: false
+date: '2020-12-22'
+metrics:
+  'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 75642
+    Declaration: 9441
+    DisjointClasses: 1
+    EquivalentClasses: 5741
+    SubAnnotationPropertyOf: 2
+    SubClassOf: 9101
+    TransitiveObjectProperty: 1
+  'Axioms: Number of axioms': 99929
+  'Entities: % of entities reused': '19.95'
+  'Entities: Number of annotation properties': 36
+  'Entities: Number of classes': 9392
+  'Entities: Number of data properties': 0
+  'Entities: Number of individuals': 0
+  'Entities: Number of object properties': 19
+  'Entities: Number of unsatisfiable classes': 0
+  'Info: Breakdown of OWL class expressions used':
+    Class: 53976
+    ObjectIntersectionOf: 6390
+    ObjectSomeValuesFrom: 20951
+  'Info: Does the ontology fall under OWL 2 DL?': false
+  'Info: Experimental OBO score':
+    _impact: 0.0
+    _reuse: 0.199
+  'Info: How many ontologies use it?': 0
+  'Info: Logical consistency': true
+  'Info: Syntax': RDF/XML Syntax
+  'Info: Usage of namespaces in axioms':
+    BFO: 5958
+    BTO: 209
+    CHEBI: 1715
+    CL: 749
+    FYPO: 32771
+    GO: 10020
+    IAO: 7755
+    PATO: 8009
+    PR: 27
+    RO: 10247
+    SO: 425
+    dc11: 436
+    obo: 3662
+    oboInOwl: 91919
+    owl: 303
+    rdfs: 9990
+mirror_from: http://purl.obolibrary.org/obo/fypo/fypo-base.owl
 namespace: fypo
 results:
   FP01 Open:
@@ -13,10 +62,12 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 2 missing definitions. See ROBOT Report for details.
+    comment: 31 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
-    status: PASS
+    comment: 1 labels match RO labels. 7 non-RO properties used.
+    file: fp7
+    status: ERROR
   FP08 Documented:
     status: PASS
   FP09 Plurality of Users:
@@ -28,19 +79,19 @@ results:
   FP16 Maintenance:
     status: PASS
   ROBOT Report:
-    comment: 12 warnings, 1 info messages.
+    comment: 31 warnings, 2 info messages.
     file: robot_report
     results:
       ERROR: 0
-      INFO: 1
-      WARN: 12
+      INFO: 2
+      WARN: 31
     status: WARN
-sha256_hash: a10d908ec7e58c7c7a693bb3078c52adc0cf7cb69ca80518fe1c6965bd6748c3
+sha256_hash: 016fe0f8a1fa1a0c34eaadb74abefb43ff30a4b7812584b7720a01e009fbd1a6
 summary:
-  comment: 2 warnings
-  status: WARN
+  comment: 1 errors
+  status: ERROR
   summary_count:
-    ERROR: 0
+    ERROR: 1
     INFO: 0
     WARN: 2
-version: http://purl.obolibrary.org/obo/fypo/releases/2020-11-05/fypo-base.owl
+version: http://purl.obolibrary.org/obo/fypo/releases/2020-12-17/fypo-base.owl

@@ -1,5 +1,54 @@
-changed: true
-date: '2020-11-07'
+base_generated: false
+base_prefixes:
+- ECOCORE
+changed: false
+date: '2020-12-22'
+metrics:
+  'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 623
+    Declaration: 224
+    DisjointClasses: 1
+    EquivalentClasses: 35
+    SubClassOf: 185
+  'Axioms: Number of axioms': 1068
+  'Entities: % of entities reused': '25.00'
+  'Entities: Number of annotation properties': 10
+  'Entities: Number of classes': 207
+  'Entities: Number of data properties': 0
+  'Entities: Number of individuals': 0
+  'Entities: Number of object properties': 9
+  'Entities: Number of unsatisfiable classes': 0
+  'Info: Breakdown of OWL class expressions used':
+    Class: 663
+    ObjectAllValuesFrom: 1
+    ObjectIntersectionOf: 12
+    ObjectSomeValuesFrom: 54
+    ObjectUnionOf: 1
+  'Info: Does the ontology fall under OWL 2 DL?': true
+  'Info: Experimental OBO score':
+    _impact: 0.011
+    _reuse: 0.25
+  'Info: How many ontologies use it?': 2
+  'Info: Logical consistency': true
+  'Info: Syntax': RDF/XML Syntax
+  'Info: Usage of namespaces in axioms':
+    BFO: 24
+    CARO: 1
+    ECOCORE: 540
+    ENVO: 9
+    GO: 18
+    IAO: 379
+    NCBITaxon: 14
+    OBI: 12
+    PATO: 24
+    PCO: 10
+    PO: 9
+    RO: 51
+    UBERON: 11
+    obo: 4
+    oboInOwl: 67
+    rdfs: 191
+mirror_from: http://purl.obolibrary.org/obo/ecocore/ecocore-base.owl
 namespace: ecocore
 results:
   FP01 Open:
@@ -14,7 +63,8 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 2 multiple definitions. 2 missing definitions. See ROBOT Report for details.
+    comment: 2 multiple definitions. 16 missing definitions. See ROBOT Report for
+      details.
     status: ERROR
   FP07 Relations:
     status: PASS
@@ -26,19 +76,19 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 2 multiple labels. See ROBOT Report for details.
+    comment: 2 multiple labels. 2 missing labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
     status: PASS
   ROBOT Report:
-    comment: 24 errors, 2 warnings, 25 info messages.
+    comment: 9 errors, 16 warnings, 26 info messages.
     file: robot_report
     results:
-      ERROR: 24
-      INFO: 25
-      WARN: 2
+      ERROR: 9
+      INFO: 26
+      WARN: 16
     status: ERROR
-sha256_hash: 8a790cacd42b1769c405e1ee233bd6b35d85216c0d2c95e1bdf7172a296849f7
+sha256_hash: 56367eca5f77302a80013fd3004ea41f66321772bd60736a5574a9f1e55099fa
 summary:
   comment: 5 errors
   status: ERROR
@@ -46,4 +96,4 @@ summary:
     ERROR: 5
     INFO: 0
     WARN: 0
-version: http://purl.obolibrary.org/obo/ecocore/releases/2020-05-18/ecocore-base.owl
+version: http://purl.obolibrary.org/obo/ecocore/releases/2020-12-18/ecocore-base.owl

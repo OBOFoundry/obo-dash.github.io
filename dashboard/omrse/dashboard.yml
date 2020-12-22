@@ -1,5 +1,90 @@
-changed: true
-date: '2020-11-07'
+base_generated: true
+base_prefixes:
+- OMRSE
+changed: false
+date: '2020-12-22'
+metrics:
+  'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 4103
+    AnnotationPropertyRangeOf: 1
+    AsymmetricObjectProperty: 8
+    ClassAssertion: 22
+    DataPropertyDomain: 6
+    DataPropertyRange: 6
+    Declaration: 770
+    DifferentIndividuals: 2
+    DisjointClasses: 25
+    EquivalentClasses: 53
+    EquivalentObjectProperties: 37
+    FunctionalDataProperty: 4
+    FunctionalObjectProperty: 6
+    InverseObjectProperties: 22
+    IrrefexiveObjectProperty: 6
+    ObjectPropertyDomain: 29
+    ObjectPropertyRange: 29
+    SubAnnotationPropertyOf: 2
+    SubClassOf: 762
+    SubDataPropertyOf: 4
+    SubObjectPropertyOf: 45
+    SubPropertyChainOf: 2
+    TransitiveObjectProperty: 4
+  'Axioms: Number of axioms': 5948
+  'Entities: % of entities reused': '64.88'
+  'Entities: Number of annotation properties': 84
+  'Entities: Number of classes': 586
+  'Entities: Number of data properties': 7
+  'Entities: Number of individuals': 23
+  'Entities: Number of object properties': 75
+  'Entities: Number of unsatisfiable classes': 0
+  'Info: Breakdown of OWL class expressions used':
+    Class: 2502
+    DataExactCardinality: 6
+    DataMinCardinality: 1
+    ObjectAllValuesFrom: 29
+    ObjectComplementOf: 10
+    ObjectExactCardinality: 2
+    ObjectIntersectionOf: 106
+    ObjectMinCardinality: 3
+    ObjectOneOf: 4
+    ObjectSomeValuesFrom: 318
+    ObjectUnionOf: 23
+  'Info: Does the ontology fall under OWL 2 DL?': false
+  'Info: Experimental OBO score':
+    _impact: 0.08
+    _reuse: 0.649
+  'Info: How many ontologies use it?': 14
+  'Info: Logical consistency': true
+  'Info: Syntax': RDF/XML Syntax
+  'Info: Usage of namespaces in axioms':
+    APOLLO_SV: 6
+    BFO: 523
+    FMA: 17
+    GAZ: 3
+    GO: 6
+    IAO: 4042
+    NCBITaxon: 34
+    OAE: 13
+    OBI: 162
+    OGMS: 18
+    OMIABIS: 25
+    OMRSE: 993
+    OOSTT: 22
+    PATO: 6
+    PCO: 3
+    RO: 296
+    UO: 10
+    dc: 3
+    dc11: 223
+    foaf: 4
+    obo: 6
+    oboInOwl: 172
+    owl: 107
+    prefix_unknown: 5
+    protege: 1
+    rdf: 1
+    rdfs: 940
+    xsd: 6
+mirror_from: http://purl.obolibrary.org/obo/omrse.owl
 namespace: omrse
 results:
   FP01 Open:
@@ -14,8 +99,9 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: ROBOT Report could not be generated
-    status: INFO
+    comment: 2 multiple definitions. 86 missing definitions. See ROBOT Report for
+      details.
+    status: ERROR
   FP07 Relations:
     comment: 6 non-RO properties used.
     file: fp7
@@ -28,20 +114,25 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: ROBOT Report could not be generated
-    status: INFO
+    comment: 3 missing labels. See ROBOT Report for details.
+    status: ERROR
   FP16 Maintenance:
     comment: Missing version IRI to check date
     status: ERROR
   ROBOT Report:
-    comment: ROBOT Report could not be generated.
-    status: INFO
-sha256_hash: 67eaafb8b03b679b129b27bc9964e471b9741b2f7f0fedce6fa829a760f62458
+    comment: 33 errors, 97 warnings, 18 info messages.
+    file: robot_report
+    results:
+      ERROR: 33
+      INFO: 18
+      WARN: 97
+    status: ERROR
+sha256_hash: 575dd7e8c6a5b61591a3e1d77595a3b480578e2be62df17ab845361dd513b425
 summary:
-  comment: 3 errors
+  comment: 6 errors
   status: ERROR
   summary_count:
-    ERROR: 3
-    INFO: 4
+    ERROR: 6
+    INFO: 1
     WARN: 0
 version: null

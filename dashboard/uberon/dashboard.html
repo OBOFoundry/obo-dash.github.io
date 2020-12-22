@@ -9,15 +9,16 @@
             <div class="col-md-8">
                 <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/uberon.html">uberon</a></h1>
                 <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/uberon/releases/2020-09-16/uberon-base.owl</p>
-                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: 2020-11-08</p>
-                <p class="lead" style="margin-top:-15px;"><a href="dashboard.yml">View YAML</a></p>
+                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: 2020-12-22</p>
+                <p class="lead" style="margin-top:-15px;"><a href="dashboard.yml">View dashboard results as YAML</a></p>
+                <h3>Error Breakdown</h3>
                 
                 
                     
                         
                     
                     <div class="alert alert-danger">
-                        <center><h3>ERROR - 3 errors</h3></center>
+                        <center><h3>ERROR - 4 errors</h3></center>
                     </div>
                 
                 <table class="table">
@@ -142,7 +143,7 @@
                                 <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>309 duplicate definitions. 2584 missing definitions. See ROBOT Report for details.</td>
+                                <td>312 duplicate definitions. 2736 missing definitions. See ROBOT Report for details.</td>
                             
                             
                                 <td></td>
@@ -158,14 +159,14 @@
                                 
                                 
                             
-                            <td class="table-success" style="text-align:center;">
-                                <img src="../assets/check.svg" height="15px">
+                            <td class="table-danger" style="text-align:center;">
+                                <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td></td>
+                                <td>2 labels match RO labels. 56 non-RO properties used.</td>
                             
                             
-                                <td></td>
+                                <td><a href="fp7.html">View Report</a></td>
                             
                         </tr>
                     
@@ -242,7 +243,7 @@
                                 <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>4 duplicate labels. See ROBOT Report for details.</td>
+                                <td>4 duplicate labels. 5 missing labels. See ROBOT Report for details.</td>
                             
                             
                                 <td></td>
@@ -282,7 +283,7 @@
                                 <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>389 errors, 3810 warnings, 3566 info messages.</td>
+                                <td>397 errors, 3962 warnings, 3609 info messages.</td>
                             
                             
                                 <td><a href="robot_report.html">View Report</a></td>
@@ -291,6 +292,249 @@
                     
                     <tr>
                 </table>
+                <h3>Ontology metrics</h3>
+                
+                <div class="info">
+                    <table class="table">
+                        <tr>
+                            <th>Metric</th>
+                            <th>Values</th>
+                        </tr>
+                        
+                        
+                            <tr>
+                                <td>Axioms: Breakdown of axiom types</td>
+                                
+                                
+                                    <td><ul>
+                                        
+                                        <li>AnnotationAssertion: 171866</li>
+                                        
+                                        <li>Declaration: 14958</li>
+                                        
+                                        <li>DisjointClasses: 602</li>
+                                        
+                                        <li>DisjointObjectProperties: 1</li>
+                                        
+                                        <li>EquivalentClasses: 6284</li>
+                                        
+                                        <li>InverseObjectProperties: 11</li>
+                                        
+                                        <li>ObjectPropertyDomain: 5</li>
+                                        
+                                        <li>ObjectPropertyRange: 3</li>
+                                        
+                                        <li>SubAnnotationPropertyOf: 41</li>
+                                        
+                                        <li>SubClassOf: 25308</li>
+                                        
+                                        <li>SubObjectPropertyOf: 85</li>
+                                        
+                                        <li>SubPropertyChainOf: 40</li>
+                                        
+                                        <li>SymmetricObjectProperty: 3</li>
+                                        
+                                        <li>TransitiveObjectProperty: 26</li>
+                                        
+                                    </ul></td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>Axioms: Number of axioms</td>
+                                
+                                
+                                    <td>219233</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>Entities: % of entities reused</td>
+                                
+                                
+                                    <td>7.23</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>Entities: Number of annotation properties</td>
+                                
+                                
+                                    <td>183</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>Entities: Number of classes</td>
+                                
+                                
+                                    <td>14649</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>Entities: Number of data properties</td>
+                                
+                                
+                                    <td>0</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>Entities: Number of individuals</td>
+                                
+                                
+                                    <td>0</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>Entities: Number of object properties</td>
+                                
+                                
+                                    <td>147</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>Entities: Number of unsatisfiable classes</td>
+                                
+                                
+                                    <td>0</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>Info: Breakdown of OWL class expressions used</td>
+                                
+                                
+                                    <td><ul>
+                                        
+                                        <li>Class: 86541</li>
+                                        
+                                        <li>ObjectIntersectionOf: 6514</li>
+                                        
+                                        <li>ObjectMaxCardinality: 49</li>
+                                        
+                                        <li>ObjectMinCardinality: 57</li>
+                                        
+                                        <li>ObjectSomeValuesFrom: 23628</li>
+                                        
+                                        <li>ObjectUnionOf: 113</li>
+                                        
+                                    </ul></td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>Info: Does the ontology fall under OWL 2 DL?</td>
+                                
+                                
+                                    <td>False</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>Info: Experimental OBO score</td>
+                                
+                                
+                                    <td><ul>
+                                        
+                                        <li>_dashboard: 0.62</li>
+                                        
+                                        <li>_formula: (3*impact+2*dashboard+1*reuse)/6</li>
+                                        
+                                        <li>_impact: 0.33</li>
+                                        
+                                        <li>_reuse: 0.072</li>
+                                        
+                                        <li>oboscore: 0.384</li>
+                                        
+                                    </ul></td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>Info: How many ontologies use it?</td>
+                                
+                                
+                                    <td>58</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>Info: Logical consistency</td>
+                                
+                                
+                                    <td>True</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>Info: Syntax</td>
+                                
+                                
+                                    <td>RDF/XML Syntax</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>Info: Usage of namespaces in axioms</td>
+                                
+                                
+                                    <td><ul>
+                                        
+                                        <li>BFO: 13399</li>
+                                        
+                                        <li>BSPO: 596</li>
+                                        
+                                        <li>CHEBI: 60</li>
+                                        
+                                        <li>CL: 601</li>
+                                        
+                                        <li>ENVO: 14</li>
+                                        
+                                        <li>FBbt: 2</li>
+                                        
+                                        <li>GO: 658</li>
+                                        
+                                        <li>IAO: 13746</li>
+                                        
+                                        <li>NBO: 23</li>
+                                        
+                                        <li>NCBITaxon: 1504</li>
+                                        
+                                        <li>PATO: 178</li>
+                                        
+                                        <li>PR: 23</li>
+                                        
+                                        <li>RO: 8876</li>
+                                        
+                                        <li>UBERON: 82754</li>
+                                        
+                                        <li>dc11: 307</li>
+                                        
+                                        <li>foaf: 1886</li>
+                                        
+                                        <li>obo: 8180</li>
+                                        
+                                        <li>oboInOwl: 203879</li>
+                                        
+                                        <li>owl: 2071</li>
+                                        
+                                        <li>rdf: 1</li>
+                                        
+                                        <li>rdfs: 16371</li>
+                                        
+                                        <li>xsd: 7265</li>
+                                        
+                                    </ul></td>
+                                
+                            </tr>
+                        
+                        <tr>
+                    </table>
+                </div>
             </div>
         </div>
     </div>

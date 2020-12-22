@@ -1,4 +1,6 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	duplicate_definition	altered fraction of non-constricted cells	IAO:0000115	population growth phenotype
+ERROR	duplicate_definition	altered cell division during cell population growth	IAO:0000115	population growth phenotype
 ERROR	duplicate_definition	altered cell circularity	IAO:0000115	Cell circularity is defined as (2*pi*cell area/(cell perimeter)^2).
 ERROR	duplicate_definition	altered cell circularity variability	IAO:0000115	Cell circularity is defined as (2*pi*cell area/(cell perimeter)^2).
 ERROR	duplicate_definition	presence of acid-fast stain	IAO:0000115	An acid-fast stain phenotype where a cell or cells that have been stained, typically with carbolfuchsin, are not easily decolorized by acid--alcohol.
@@ -55,9 +57,6 @@ WARN	missing_definition	decreased cell circularity	IAO:0000115
 WARN	missing_definition	increased cell circularity	IAO:0000115	
 WARN	missing_definition	decreased cell circularity variability	IAO:0000115	
 WARN	missing_definition	increased cell circularity variability	IAO:0000115	
-WARN	missing_definition	altered cell aspect ratio	IAO:0000115	
-WARN	missing_definition	decreased cell aspect ratio	IAO:0000115	
-WARN	missing_definition	increased cell aspect ratio	IAO:0000115	
 WARN	missing_definition	altered cell aspect ratio variability	IAO:0000115	
 WARN	missing_definition	decreased cell aspect ratio variability	IAO:0000115	
 WARN	missing_definition	increased cell aspect ratio variability	IAO:0000115	
@@ -74,17 +73,16 @@ WARN	missing_definition	altered cell population growth rate	IAO:0000115
 WARN	missing_definition	decreased cell population growth rate	IAO:0000115	
 WARN	missing_definition	increased cell population growth rate	IAO:0000115	
 WARN	missing_definition	cell morphology variability	IAO:0000115	
-WARN	missing_definition	altered cell perimeter	IAO:0000115	
+WARN	missing_definition	altered cell perimeter length	IAO:0000115	
 WARN	missing_definition	decreased cell perimeter	IAO:0000115	
 WARN	missing_definition	increased cell perimeter	IAO:0000115	
-WARN	missing_definition	altered cell perimeter variability	IAO:0000115	
-WARN	missing_definition	decreased cell perimeter variability	IAO:0000115	
-WARN	missing_definition	increased cell perimeter variability	IAO:0000115	
+WARN	missing_definition	altered cell perimeter length variability	IAO:0000115	
+WARN	missing_definition	decreased cell perimeter length variability	IAO:0000115	
+WARN	missing_definition	increased cell perimeter length variability	IAO:0000115	
 WARN	missing_definition	altered cell population phenotype	IAO:0000115	
 WARN	missing_definition	altered cell population growth yield	IAO:0000115	
 WARN	missing_definition	decreased cell population growth yield	IAO:0000115	
 WARN	missing_definition	increased cell population growth yield	IAO:0000115	
-WARN	missing_definition	altered fraction of non-constricted cells	IAO:0000115	
 WARN	missing_definition	decreased fraction of non-constricted cells	IAO:0000115	
 WARN	missing_definition	increased fraction of non-constricted cells	IAO:0000115	
 WARN	missing_definition	altered fraction of cells with one nucleoid	IAO:0000115	
@@ -93,23 +91,54 @@ WARN	missing_definition	increased fraction of cells with one nucleoid	IAO:000011
 WARN	missing_definition	altered fraction of cells with two nucleoids	IAO:0000115	
 WARN	missing_definition	decreased fraction of cells with two nucleoids	IAO:0000115	
 WARN	missing_definition	increased fraction of cells with two nucleoids	IAO:0000115	
-WARN	missing_definition	altered correlation between the degrees of constriction of the nucleoid and the cell	IAO:0000115	
-WARN	missing_definition	decreased correlation between the degrees of constriction of the nucleoid and the cell	IAO:0000115	
-WARN	missing_definition	increased correlation between the degrees of constriction of the nucleoid and the cell	IAO:0000115	
+WARN	missing_definition	altered correlation between nucleoid and cell constriction during cell division	IAO:0000115	
+WARN	missing_definition	decreased correlation between nucleoid and cell constriction during cell division	IAO:0000115	
+WARN	missing_definition	increased correlation between nucleoid and cell constriction during cell division	IAO:0000115	
 WARN	missing_definition	altered degree of nucleoid constriction at the onset of cell constriction	IAO:0000115	
 WARN	missing_definition	decreased degree of nucleoid constriction at the onset of cell constriction	IAO:0000115	
 WARN	missing_definition	increased degree of nucleoid constriction at the onset of cell constriction	IAO:0000115	
+WARN	missing_definition	cell diameter phenotype	IAO:0000115	
 WARN	missing_definition	presence of cell length variability	IAO:0000115	
-WARN	missing_definition	presence of cell width variability	IAO:0000115	
+WARN	missing_definition	cell area phenotype	IAO:0000115	
+WARN	missing_definition	presence of cell diameter variability	IAO:0000115	
+WARN	missing_definition	cell length phenotype	IAO:0000115	
 WARN	missing_definition	presence of cell area variability	IAO:0000115	
+WARN	missing_definition	cell perimeter length phenotype	IAO:0000115	
 WARN	missing_definition	presence of cell volume variability	IAO:0000115	
+WARN	missing_definition	cell surface area phenotype	IAO:0000115	
 WARN	missing_definition	presence of cell surface area variability	IAO:0000115	
-WARN	missing_definition	presence of cell perimeter variability	IAO:0000115	
-WARN	missing_definition	presence of surface-area-to-volume ratio variability	IAO:0000115	
+WARN	missing_definition	cell volume phenotype	IAO:0000115	
+WARN	missing_definition	presence of cell perimeter length variability	IAO:0000115	
+WARN	missing_definition	cell surface area-to-volume ratio phenotype	IAO:0000115	
+WARN	missing_definition	presence of cell surface area-to-volume ratio variability	IAO:0000115	
 WARN	missing_definition	presence of cell circularity variability	IAO:0000115	
-WARN	missing_definition	presence of cell aspect variability	IAO:0000115	
+WARN	missing_definition	presence of cell aspect ratio variability	IAO:0000115	
 WARN	missing_definition	presence of cell division ratio variability	IAO:0000115	
 WARN	missing_definition	presence of nucleoid area variability	IAO:0000115	
+WARN	missing_definition	nucleoid area phenotype	IAO:0000115	
+WARN	missing_definition	cell population growth yield phenotype	IAO:0000115	
+WARN	missing_definition	nucleoid constriction during cell division phenotype	IAO:0000115	
+WARN	missing_definition	altered nucleoid constriction during cell division	IAO:0000115	
+WARN	missing_definition	correlation between nucleoid and cell constriction phenotype	IAO:0000115	
+WARN	missing_definition	cell division during cell population growth phenotype	IAO:0000115	
+WARN	missing_definition	altered nucleoid number phenotype	IAO:0000115	
+WARN	missing_definition	timing of cell constriction phenotype	IAO:0000115	
+WARN	missing_definition	timing of nucleoid separation phenotype	IAO:0000115	
+WARN	missing_definition	altered timing of cell constriction	IAO:0000115	
+WARN	missing_definition	altered timing of nucleoid separation	IAO:0000115	
+WARN	missing_definition	decreased relative timing of cell constriction	IAO:0000115	
+WARN	missing_definition	increased relative timing of cell constriction	IAO:0000115	
+WARN	missing_definition	cell length variability phenotype	IAO:0000115	
+WARN	missing_definition	cell diameter variability phenotype	IAO:0000115	
+WARN	missing_definition	cell area variability phenotype	IAO:0000115	
+WARN	missing_definition	cell volume variability phenotype	IAO:0000115	
+WARN	missing_definition	cell surface area variability phenotype	IAO:0000115	
+WARN	missing_definition	cell perimeter length variability phenotype	IAO:0000115	
+WARN	missing_definition	cell surface area-to-volume ratio variability phenotype	IAO:0000115	
+WARN	missing_definition	cell circularity variability phenotype	IAO:0000115	
+WARN	missing_definition	cell aspect ratio variability phenotype	IAO:0000115	
+WARN	missing_definition	nucleoid area variability phenotype	IAO:0000115	
+WARN	missing_definition	cell division ratio variability phenotype	IAO:0000115	
 WARN	missing_definition	response to oxidative stress phenotype	IAO:0000115	
 WARN	missing_definition	viable but nonculturable cell	IAO:0000115	
 WARN	missing_definition	increased mucoidy	IAO:0000115	
@@ -149,7 +178,6 @@ WARN	missing_definition	altered resistance to a chelator	IAO:0000115
 WARN	missing_definition	decreased resistance to a chelator	IAO:0000115	
 WARN	missing_definition	increased resistance to a chelator	IAO:0000115	
 WARN	missing_definition	abolished resistance to a chelator	IAO:0000115	
-WARN	missing_definition	cell size variability within a cell population phenotype	IAO:0000115	
 WARN	missing_definition	altered cell size variability within a cell population	IAO:0000115	
 WARN	missing_definition	presence of cell population growth	IAO:0000115	
 WARN	missing_definition	absence of cell population growth	IAO:0000115	
@@ -170,31 +198,3 @@ WARN	missing_definition	increased population growth at high temperature	IAO:0000
 WARN	missing_definition	decreased population growth at high temperature	IAO:0000115	
 WARN	missing_definition	abolished population growth at high temperature	IAO:0000115	
 WARN	missing_definition	presence of population growth at low temperature	IAO:0000115	
-WARN	missing_definition	absence of population growth at low temperature	IAO:0000115	
-WARN	missing_definition	altered population growth at low temperature	IAO:0000115	
-WARN	missing_definition	increased population growth at low temperature	IAO:0000115	
-WARN	missing_definition	decreased population growth at low temperature	IAO:0000115	
-WARN	missing_definition	abolished population growth at low temperature	IAO:0000115	
-WARN	missing_definition	presence of organic nitrogen source utilization	IAO:0000115	
-WARN	missing_definition	absence of organic nitrogen source utilization	IAO:0000115	
-WARN	missing_definition	altered cell length	IAO:0000115	
-WARN	missing_definition	altered cell length variability	IAO:0000115	
-WARN	missing_definition	altered cell diameter	IAO:0000115	
-WARN	missing_definition	altered cell width variability	IAO:0000115	
-WARN	missing_definition	increased cell length variability	IAO:0000115	
-WARN	missing_definition	decreased cell length variability	IAO:0000115	
-WARN	missing_definition	decreased cell width variability	IAO:0000115	
-WARN	missing_definition	increased cell width variability	IAO:0000115	
-WARN	missing_definition	altered cell area	IAO:0000115	
-WARN	missing_definition	altered cell area variability	IAO:0000115	
-WARN	missing_definition	decreased cell area	IAO:0000115	
-WARN	missing_definition	increased cell area	IAO:0000115	
-WARN	missing_definition	decreased cell area variability	IAO:0000115	
-WARN	missing_definition	increased cell area variability	IAO:0000115	
-WARN	missing_definition	altered cell volume	IAO:0000115	
-WARN	missing_definition	altered cell volume variability	IAO:0000115	
-WARN	missing_definition	decreased cell volume variability	IAO:0000115	
-WARN	missing_definition	increased cell volume variability	IAO:0000115	
-WARN	missing_definition	altered cell surface area	IAO:0000115	
-WARN	missing_definition	decreased cell surface area	IAO:0000115	
-WARN	missing_definition	increased cell surface area	IAO:0000115	

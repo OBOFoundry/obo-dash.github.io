@@ -21,6 +21,8 @@ ERROR	multiple_definitions	COVID-19 diagnostic process by chest imaging	IAO:0000
 ERROR	multiple_definitions	COVID-19 diagnostic process by chest imaging	IAO:0000115	COVID-19 diagnostic process by thoracic imaging
 ERROR	multiple_definitions	COVID-19 diagnostic process by chest radiography	IAO:0000115	A COVID-19 diagnostic process that is performed by chest radiography (CXR)
 ERROR	multiple_definitions	COVID-19 diagnostic process by chest radiography	IAO:0000115	COVID-19 diagnostic process by thoracic imaging
+ERROR	multiple_definitions	ORF3a-G251V	IAO:0000115	<ORF3a:G251V>
+ERROR	multiple_definitions	ORF3a-G251V	IAO:0000115	"<ORF3a:G251V is an ann-changing SNP variant that occurs at G26144T	at ORF3a protein of SARS-CoV-2 virus. It is a signature variation in SARS-CoV clade V.>"
 ERROR	multiple_definitions	human coronavirus patient	IAO:0000115	Hong Yu, Oliver He
 ERROR	multiple_definitions	human coronavirus patient	IAO:0000115	a human patient who is infected with coronavirus
 ERROR	multiple_definitions	human SARS patient	IAO:0000115	Hong Yu, Oliver He
@@ -33,6 +35,8 @@ ERROR	multiple_labels	Chinese label	rdfs:label	Chinese label
 ERROR	multiple_labels	Chinese label	rdfs:label	Chinese label@en
 ERROR	multiple_labels	FDA EUA laboratory	rdfs:label	FDA EUA laboratory
 ERROR	multiple_labels	FDA EUA laboratory	rdfs:label	FDA EUA laboratory@en
+WARN	duplicate_exact_synonym	SARS-CoV-2 clade V virus	IAO:0000118	SARS-CoV-2 type B.2 virus
+WARN	duplicate_exact_synonym	SARS-CoV-2 clade O virus	IAO:0000118	SARS-CoV-2 type B.2 virus
 WARN	duplicate_exact_synonym	coronaviral RTC proofreading	IAO:0000118	Coronaviral replication-transcription complex (RTC) proofreading
 WARN	duplicate_exact_synonym	SARS-CoV-2 RTC proofreading	IAO:0000118	Coronaviral replication-transcription complex (RTC) proofreading
 WARN	missing_definition	SARS-CoV disease (process)	IAO:0000115	
@@ -129,7 +133,7 @@ WARN	missing_definition	SARS-CoV-2 E protein synthesis	IAO:0000115
 WARN	missing_definition	SARS-CoV-2 M protein synthesis	IAO:0000115	
 WARN	missing_definition	SARS-CoV-2 N protein synthesis	IAO:0000115	
 WARN	missing_definition	hydrolysis of angiotensin II into angiotension by ACE2	IAO:0000115	
-WARN	missing_definition	causal relation with phenotype as subject	IAO:0000115	
+WARN	missing_definition	causal relation related to phenotype	IAO:0000115	
 WARN	missing_definition	phenotype has causal agent	IAO:0000115	
 WARN	missing_definition	disease susceptibly severe with comorbidity	IAO:0000115	
 WARN	missing_definition	causal process for agent	IAO:0000115	
@@ -139,8 +143,14 @@ WARN	missing_definition	SARS-CoV-2 RNA	IAO:0000115
 WARN	missing_definition	ligand role	IAO:0000115	
 WARN	missing_definition	receptor role	IAO:0000115	
 WARN	missing_definition	enzyme activator role	IAO:0000115	
+WARN	missing_definition	rs12242C	IAO:0000115	
+WARN	missing_definition	human SNP variant	IAO:0000115	
+WARN	missing_definition	cleavage of angiotensin into angiotension II by ACE	IAO:0000115	
 INFO	lowercase_definition	COVID-19 disease (process)	IAO:0000115	a coronavirus disease process that is induced by SARS-CoV-2
 INFO	lowercase_definition	catalyzed by	IAO:0000115	a subproperty of 'enabled by' that represents a relation between a protein and an enzyme where the protein is catalyzed by the enzyme in a catalytic reaction
+INFO	lowercase_definition	SARS-CoV-2 clade O virus	IAO:0000115	"a SARS-CoV-2 virus that belongs to clade O, which stands for \""Other\"", meaning it is not G, GH, GR, L, S, or V."
+INFO	lowercase_definition	process capable of inducing phenotype	IAO:0000115	a causal relation between a process and a phenotype where the process is capable of inducing the phenotype.
+INFO	lowercase_definition	agent capable of inducing phenotype	IAO:0000115	a causal relation between a material entity and a phenotype where the material agent is capable of inducing the phenotype.
 INFO	lowercase_definition	human coronavirus patient	IAO:0000115	a human patient who is infected with coronavirus
 INFO	lowercase_definition	human SARS patient	IAO:0000115	a human patient who is infected with SARS coronavirus
 INFO	lowercase_definition	human MERS patient	IAO:0000115	a human patient who is infected with MERS coronavirus

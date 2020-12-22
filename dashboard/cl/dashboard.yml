@@ -1,5 +1,60 @@
-changed: true
-date: '2020-11-07'
+base_generated: false
+base_prefixes:
+- CL
+changed: false
+date: '2020-12-22'
+metrics:
+  'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 12754
+    Declaration: 3493
+    DisjointClasses: 36
+    EquivalentClasses: 1382
+    SubAnnotationPropertyOf: 4
+    SubClassOf: 3119
+    SubObjectPropertyOf: 2
+  'Axioms: Number of axioms': 20790
+  'Entities: % of entities reused': '32.06'
+  'Entities: Number of annotation properties': 39
+  'Entities: Number of classes': 3426
+  'Entities: Number of data properties': 0
+  'Entities: Number of individuals': 0
+  'Entities: Number of object properties': 30
+  'Entities: Number of unsatisfiable classes': 0
+  'Info: Breakdown of OWL class expressions used':
+    Class: 15369
+    ObjectAllValuesFrom: 10
+    ObjectComplementOf: 11
+    ObjectIntersectionOf: 1397
+    ObjectSomeValuesFrom: 3640
+    ObjectUnionOf: 4
+  'Info: Does the ontology fall under OWL 2 DL?': false
+  'Info: Experimental OBO score':
+    _impact: 0.267
+    _reuse: 0.321
+  'Info: How many ontologies use it?': 47
+  'Info: Logical consistency': true
+  'Info: Syntax': RDF/XML Syntax
+  'Info: Usage of namespaces in axioms':
+    BFO: 1091
+    CHEBI: 2
+    CL: 11083
+    GO: 931
+    IAO: 2021
+    NCBITaxon: 74
+    PATO: 113
+    PR: 1520
+    RO: 1289
+    SIO: 1
+    UBERON: 1597
+    dc: 1
+    dc11: 46
+    obo: 481
+    oboInOwl: 10952
+    owl: 129
+    rdf: 4
+    rdfs: 2909
+    xsd: 943
+mirror_from: http://purl.obolibrary.org/obo/cl/cl-base.owl
 namespace: cl
 results:
   FP01 Open:
@@ -13,10 +68,12 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 373 missing definitions. See ROBOT Report for details.
+    comment: 399 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
-    status: PASS
+    comment: 7 non-RO properties used.
+    file: fp7
+    status: INFO
   FP08 Documented:
     status: PASS
   FP09 Plurality of Users:
@@ -28,19 +85,19 @@ results:
   FP16 Maintenance:
     status: PASS
   ROBOT Report:
-    comment: 373 warnings, 293 info messages.
+    comment: 400 warnings, 296 info messages.
     file: robot_report
     results:
       ERROR: 0
-      INFO: 293
-      WARN: 373
+      INFO: 296
+      WARN: 400
     status: WARN
-sha256_hash: 2e2bc494a185d79da7963dc1950f19eb343804ad3b8df80feba05322c7df4e17
+sha256_hash: 7783aba0dcfd504ede35a3b46bd7f060c4fea7f623be06c443a5230c05ad4d39
 summary:
   comment: 2 warnings
   status: WARN
   summary_count:
     ERROR: 0
-    INFO: 0
+    INFO: 1
     WARN: 2
-version: http://purl.obolibrary.org/obo/cl/releases/2020-10-20/cl-base.owl
+version: http://purl.obolibrary.org/obo/cl/releases/2020-11-11/cl-base.owl

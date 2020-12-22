@@ -1,5 +1,71 @@
-changed: true
-date: '2020-11-07'
+base_generated: false
+base_prefixes:
+- ENVO
+changed: false
+date: '2020-12-22'
+metrics:
+  'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 19771
+    ClassAssertion: 46
+    Declaration: 4205
+    DisjointClasses: 17
+    DisjointUnion: 1
+    EquivalentClasses: 687
+    FunctionalObjectProperty: 1
+    InverseFunctionalObjectProperty: 1
+    ObjectPropertyAssertion: 36
+    SubAnnotationPropertyOf: 22
+    SubClassOf: 5261
+  'Axioms: Number of axioms': 30048
+  'Entities: % of entities reused': '12.44'
+  'Entities: Number of annotation properties': 76
+  'Entities: Number of classes': 4016
+  'Entities: Number of data properties': 0
+  'Entities: Number of individuals': 44
+  'Entities: Number of object properties': 72
+  'Entities: Number of unsatisfiable classes': 0
+  'Info: Breakdown of OWL class expressions used':
+    Class: 17588
+    ObjectAllValuesFrom: 1
+    ObjectComplementOf: 23
+    ObjectIntersectionOf: 1206
+    ObjectMaxCardinality: 3
+    ObjectMinCardinality: 35
+    ObjectSomeValuesFrom: 3467
+    ObjectUnionOf: 255
+  'Info: Does the ontology fall under OWL 2 DL?': false
+  'Info: Experimental OBO score':
+    _impact: 0.153
+    _reuse: 0.124
+  'Info: How many ontologies use it?': 27
+  'Info: Logical consistency': true
+  'Info: Syntax': RDF/XML Syntax
+  'Info: Usage of namespaces in axioms':
+    BFO: 1128
+    CARO: 2
+    CHEBI: 485
+    ENVO: 16297
+    FAO: 4
+    FOODON: 5
+    GO: 18
+    IAO: 3897
+    NCBITaxon: 90
+    OBI: 15
+    PATO: 649
+    PCO: 26
+    PO: 19
+    RO: 2419
+    UBERON: 94
+    dc: 2
+    dc11: 596
+    foaf: 1
+    obo: 111
+    oboInOwl: 14046
+    owl: 441
+    prefix_unknown: 15
+    rdfs: 4657
+    xsd: 5
+mirror_from: http://purl.obolibrary.org/obo/envo/envo-base.owl
 namespace: envo
 results:
   FP01 Open:
@@ -15,15 +81,14 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 307 missing definitions. See ROBOT Report for details.
+    comment: 340 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
-    comment: 5 non-RO properties used.
+    comment: 6 non-RO properties used.
     file: fp7
     status: INFO
   FP08 Documented:
-    comment: homepage URL (http://environmentontology.org/) does not resolve
-    status: ERROR
+    status: PASS
   FP09 Plurality of Users:
     status: PASS
   FP11 Locus of Authority:
@@ -33,19 +98,19 @@ results:
   FP16 Maintenance:
     status: PASS
   ROBOT Report:
-    comment: 350 warnings, 209 info messages.
+    comment: 385 warnings, 211 info messages.
     file: robot_report
     results:
       ERROR: 0
-      INFO: 209
-      WARN: 350
+      INFO: 211
+      WARN: 385
     status: WARN
 sha256_hash: 0c5816dbb8a2fe137fda6c379cedc69e0e065718f197bd819bbc9956f2db3888
 summary:
-  comment: 2 errors
+  comment: 1 errors
   status: ERROR
   summary_count:
-    ERROR: 2
+    ERROR: 1
     INFO: 1
     WARN: 2
 version: http://purl.obolibrary.org/obo/envo/releases/2020-06-22/envo-base.owl

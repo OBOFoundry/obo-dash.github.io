@@ -1,5 +1,41 @@
-changed: true
-date: '2020-11-07'
+base_generated: true
+base_prefixes:
+- MOD
+changed: false
+date: '2020-12-22'
+metrics:
+  'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 35075
+    Declaration: 2117
+    SubAnnotationPropertyOf: 14
+    SubClassOf: 3730
+    TransitiveObjectProperty: 4
+  'Axioms: Number of axioms': 40940
+  'Entities: % of entities reused': '1.79'
+  'Entities: Number of annotation properties': 32
+  'Entities: Number of classes': 2081
+  'Entities: Number of data properties': 0
+  'Entities: Number of individuals': 0
+  'Entities: Number of object properties': 4
+  'Entities: Number of unsatisfiable classes': 0
+  'Info: Breakdown of OWL class expressions used':
+    Class: 9541
+    ObjectSomeValuesFrom: 112
+  'Info: Does the ontology fall under OWL 2 DL?': true
+  'Info: Experimental OBO score':
+    _impact: 0.017
+    _reuse: 0.018
+  'Info: How many ontologies use it?': 3
+  'Info: Logical consistency': true
+  'Info: Syntax': RDF/XML Syntax
+  'Info: Usage of namespaces in axioms':
+    IAO: 2086
+    MOD: 9541
+    obo: 148
+    oboInOwl: 39274
+    owl: 73
+    rdfs: 20724
+mirror_from: http://purl.obolibrary.org/obo/mod.owl
 namespace: mod
 results:
   FP01 Open:
@@ -10,11 +46,12 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Missing version IRI
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 292 duplicate definitions. See ROBOT Report for details.
+    comment: 297 duplicate definitions. See ROBOT Report for details.
     status: ERROR
   FP07 Relations:
     status: PASS
@@ -27,24 +64,25 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 4 duplicate labels. See ROBOT Report for details.
+    comment: 14 duplicate labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
-    status: PASS
+    comment: Missing version IRI to check date
+    status: ERROR
   ROBOT Report:
-    comment: 299 errors, 17270 warnings, 320 info messages.
+    comment: 314 errors, 18890 warnings, 326 info messages.
     file: robot_report
     results:
-      ERROR: 299
-      INFO: 320
-      WARN: 17270
+      ERROR: 314
+      INFO: 326
+      WARN: 18890
     status: ERROR
-sha256_hash: f69ec7f4504a2cfab01751945e616e036337e9bac760ed05588fe7e213a1f1f1
+sha256_hash: 581573d9a792dab72a1bf28443b5ea92f2c9a0b98111405f829651a4e707205e
 summary:
-  comment: 6 errors
+  comment: 8 errors
   status: ERROR
   summary_count:
-    ERROR: 6
+    ERROR: 8
     INFO: 0
     WARN: 0
-version: http://purl.obolibrary.org/obo/mod/releases/2020-04-14/mod.owl
+version: null

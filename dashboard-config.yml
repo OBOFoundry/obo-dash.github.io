@@ -1,20 +1,100 @@
 title: "OBO Dashboard"
 description: "Dashboard for OBO Foundry ontologies."
 obo_score_weights:
-  no_base: 5
-  overall_error: 1
-  overall_warning: 0.5
-  overall_info: 0.1
-  report_errors: 0.05
-  report_warning: 0.01
-  report_info: 0.005
+  no_base:
+    impact_factor: 5
+    max_impact: 5
+  overall_error:
+    impact_factor: 5
+    max_impact: 20
+  overall_warning:
+    impact_factor: 0.5
+    max_impact: 10
+  overall_info:
+    impact_factor: 0.1
+    max_impact: 5
+  report_errors:
+    impact_factor: 0.05
+    max_impact: 10
+  report_warning:
+    impact_factor: 0.01
+    max_impact: 5
+  report_info:
+    impact_factor: 0.005
+    max_impact: 3
+  impact:
+    impact_factor: 3
+    max_impact: 3 
+  dashboard:
+    impact_factor: 2
+    max_impact: 2
+  reuse:
+    impact_factor: 1
+    max_impact: 1
 ontologies:
   registry: "https://raw.githubusercontent.com/OBOFoundry/OBOFoundry.github.io/master/registry/ontologies.yml"
 prefer_base: True
 profile:
   baseprofile: "https://raw.githubusercontent.com/ontodev/robot/master/robot-core/src/main/resources/report_profile.txt"
 report_truncation_limit: 600
-redownload_after_hours: 30
+redownload_after_hours: 1000
+force_regenerate_dashboard_after_hours: 1500
+dashboard_report_timeout_seconds: 3600
+robot_opts: -vv
 environment:
   ROBOT_JAR: /tools/robot.jar
   ROBOT: robot
+skip_existing: False
+robot_additional_prefixes:
+  COVOC: "http://purl.obolibrary.org/obo/COVOC_"
+  AMPHX: "http://purl.obolibrary.org/obo/AMPHX_"
+  EFO: "http://www.ebi.ac.uk/efo/EFO_"
+  NCIT_ALT: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#
+  hymao: http://api.hymao.org/api/figure/fig_
+  bh_faldo: http://biohackathon.org/resource/faldo#
+  SBO: http://biomodels.net/SBO/SBO_
+  BIRDGENE: http://birdgenenames.org/cgnc/GeneReport?id=
+  dbpedia: http://dbpedia.org/resource/
+  dictyGene: http://dictybase.org/gene/DDB_
+  edam: http://edamontology.org/
+  edam: http://edamontology.org#
+  NDFRT: http://evs.nci.nih.gov/ftp1/NDF-RT/NDF-RT.owl#
+  FBgn: http://flybase.org/reports/FBgn
+  HGNC: http://identifiers.org/hgnc/
+  MAMO: http://identifiers.org/mamo/MAMO_
+  mamo: http://identifiers.org/mamo#
+  NCBIGENE: http://identifiers.org/ncbigene/
+  ISNI: http://isni.org/isni/
+  OARCSFIG: http://oarcs-api.speciesfilegroup.org/api/figure/fig_
+  OWLAPIERROR: http://org.semanticweb.owlapi/error#
+  protege: http://protege.stanford.edu/plugins/owl/protege#
+  MESH: http://purl.bioontology.org/ontology/MESH/
+  NCBITAXONN: http://purl.bioontology.org/ontology/NCBITAXON/
+  CREDIT: http://purl.org/credit/ontology#CREDIT_
+  oban: http://purl.org/oban/
+  fma: http://purl.org/sig/ont/fma/fma
+  rgd: http://rgd.mcw.edu/rgdweb/report/gene/main.html?id=
+  CHEMINF: http://semanticscience.org/resource/CHEMINF_
+  SIO: http://semanticscience.org/resource/SIO_
+  wikimedia: http://upload.wikimedia.org/wikipedia/commons/
+  vivoweb: http://vivoweb.org/ontology/core#
+  webarchive: http://web.archive.org/web/
+  BAO: http://www.bioassayontology.org/bao#BAO_
+  KISAO: http://www.biomodels.net/kisao/KISAO#KISAO_
+  ebicellline: http://www.ebi.ac.uk/cellline#
+  efo: http://www.ebi.ac.uk/efo/
+  SWO: http://www.ebi.ac.uk/swo/
+  EGGENE: http://www.ecogene.org/gene/EG
+  ENSEMBLEID: http://www.ensembl.org/id/
+  ENSEMBLEGENOMEID: http://www.ensemblgenomes.org/id/
+  GENENAMES: http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=
+  MGI: "http://www.informatics.jax.org/marker/MGI:"
+  ISNI: http://www.isni.org/
+  NCBIGENE: http://www.ncbi.nlm.nih.gov/gene/
+  SPOMBE: http://www.pombase.org/spombe/result/
+  WBGene: http://www.wormbase.org/species/c_elegans/gene/WBGene
+  yeastgenome: http://www.yeastgenome.org/locus/
+  ZFIN_GENE: http://zfin.org/action/marker/view/ZDB-GENE-
+  CIDO: "http://purl.obolibrary.org/obo/CIDO_"
+  dbpedia: "http://dbpedia.org/resource/"
+  EFO: "http://www.ebi.ac.uk/efo/EFO_"

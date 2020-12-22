@@ -1,5 +1,57 @@
-changed: true
-date: '2020-11-08'
+base_generated: false
+base_prefixes:
+- WBPhenotype
+- WBPhenotype
+changed: false
+date: '2020-12-22'
+metrics:
+  'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 12839
+    Declaration: 3500
+    EquivalentClasses: 953
+    SubAnnotationPropertyOf: 1
+    SubClassOf: 3002
+    SubObjectPropertyOf: 1
+    SubPropertyChainOf: 1
+  'Axioms: Number of axioms': 20297
+  'Entities: % of entities reused': '24.44'
+  'Entities: Number of annotation properties': 31
+  'Entities: Number of classes': 3458
+  'Entities: Number of data properties': 0
+  'Entities: Number of individuals': 0
+  'Entities: Number of object properties': 14
+  'Entities: Number of unsatisfiable classes': 0
+  'Info: Breakdown of OWL class expressions used':
+    Class: 13448
+    ObjectIntersectionOf: 1080
+    ObjectSomeValuesFrom: 3039
+  'Info: Does the ontology fall under OWL 2 DL?': false
+  'Info: Experimental OBO score':
+    _impact: 0.011
+    _reuse: 0.244
+  'Info: How many ontologies use it?': 2
+  'Info: Logical consistency': true
+  'Info: Syntax': RDF/XML Syntax
+  'Info: Usage of namespaces in axioms':
+    BFO: 1061
+    CARO: 100
+    CHEBI: 286
+    CL: 18
+    GO: 938
+    IAO: 2692
+    PATO: 1874
+    RO: 1898
+    UBERON: 4
+    WBPhenotype: 9604
+    WBbt: 543
+    WBls: 81
+    dc: 1
+    dc11: 2
+    obo: 100
+    oboInOwl: 10024
+    owl: 63
+    rdfs: 2720
+mirror_from: http://purl.obolibrary.org/obo/wbphenotype/wbphenotype-base.owl
 namespace: wbphenotype
 results:
   FP01 Open:
@@ -13,7 +65,8 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    status: PASS
+    comment: 15 missing definitions. See ROBOT Report for details.
+    status: WARN
   FP07 Relations:
     status: PASS
   FP08 Documented:
@@ -23,23 +76,24 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    status: PASS
+    comment: 4 missing labels. See ROBOT Report for details.
+    status: ERROR
   FP16 Maintenance:
     status: PASS
   ROBOT Report:
-    comment: '{0} info messages.'
+    comment: 4 errors, 15 warnings, 4 info messages.
     file: robot_report
     results:
-      ERROR: 0
-      INFO: 3
-      WARN: 0
-    status: INFO
-sha256_hash: 9fe2a7c7d1ea4f777184c8b96e2322b60d043aa4ff76bce9b4360e336e9b4477
+      ERROR: 4
+      INFO: 4
+      WARN: 15
+    status: ERROR
+sha256_hash: 8097a794038c67c8011433fe52deb0e440af70aa281360bea156718bb9755d04
 summary:
-  comment: 1 info messages
-  status: INFO
+  comment: 2 errors
+  status: ERROR
   summary_count:
-    ERROR: 0
-    INFO: 1
-    WARN: 0
-version: http://purl.obolibrary.org/obo/wbphenotype/releases/2020-09-21/wbphenotype-base.owl
+    ERROR: 2
+    INFO: 0
+    WARN: 1
+version: http://purl.obolibrary.org/obo/wbphenotype/releases/2020-12-15/wbphenotype-base.owl

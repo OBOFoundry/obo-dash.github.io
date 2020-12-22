@@ -1,5 +1,50 @@
-changed: true
-date: '2020-11-07'
+base_generated: false
+base_prefixes:
+- NBO
+changed: false
+date: '2020-12-22'
+metrics:
+  'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 4816
+    Declaration: 1048
+    DisjointClasses: 18
+    EquivalentClasses: 153
+    SubClassOf: 1066
+  'Axioms: Number of axioms': 7101
+  'Entities: % of entities reused': '11.69'
+  'Entities: Number of annotation properties': 20
+  'Entities: Number of classes': 1016
+  'Entities: Number of data properties': 0
+  'Entities: Number of individuals': 0
+  'Entities: Number of object properties': 13
+  'Entities: Number of unsatisfiable classes': 0
+  'Info: Breakdown of OWL class expressions used':
+    Class: 3714
+    ObjectIntersectionOf: 150
+    ObjectSomeValuesFrom: 323
+    ObjectUnionOf: 2
+  'Info: Does the ontology fall under OWL 2 DL?': true
+  'Info: Experimental OBO score':
+    _impact: 0.08
+    _reuse: 0.117
+  'Info: How many ontologies use it?': 14
+  'Info: Logical consistency': true
+  'Info: Syntax': RDF/XML Syntax
+  'Info: Usage of namespaces in axioms':
+    BFO: 79
+    CHEBI: 30
+    GO: 135
+    IAO: 761
+    NBO: 3398
+    PATO: 129
+    RO: 20
+    UBERON: 22
+    dc11: 801
+    obo: 237
+    oboInOwl: 2302
+    owl: 2
+    rdfs: 969
+mirror_from: http://purl.obolibrary.org/obo/nbo/nbo-base.owl
 namespace: nbo
 results:
   FP01 Open:
@@ -14,11 +59,13 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 12 duplicate definitions. 2 multiple definitions. 170 missing definitions.
+    comment: 12 duplicate definitions. 2 multiple definitions. 178 missing definitions.
       See ROBOT Report for details.
     status: ERROR
   FP07 Relations:
-    status: PASS
+    comment: 6 non-RO properties used.
+    file: fp7
+    status: INFO
   FP08 Documented:
     status: PASS
   FP09 Plurality of Users:
@@ -27,17 +74,17 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 2 duplicate labels. See ROBOT Report for details.
+    comment: 2 duplicate labels. 2 missing labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
     status: PASS
   ROBOT Report:
-    comment: 20 errors, 194 warnings, 605 info messages.
+    comment: 22 errors, 206 warnings, 605 info messages.
     file: robot_report
     results:
-      ERROR: 20
+      ERROR: 22
       INFO: 605
-      WARN: 194
+      WARN: 206
     status: ERROR
 sha256_hash: de66aae68882704c998dade9db05f9ab1d4e16618912622418f9a826adce882b
 summary:
@@ -45,6 +92,6 @@ summary:
   status: ERROR
   summary_count:
     ERROR: 5
-    INFO: 0
+    INFO: 1
     WARN: 0
 version: http://purl.obolibrary.org/obo/nbo/releases/2020-02-10/nbo-base.owl

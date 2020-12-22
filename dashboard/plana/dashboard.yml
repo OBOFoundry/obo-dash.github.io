@@ -1,5 +1,52 @@
-changed: true
-date: '2020-11-07'
+base_generated: false
+base_prefixes:
+- PLANA
+changed: false
+date: '2020-12-22'
+metrics:
+  'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 6379
+    Declaration: 770
+    EquivalentClasses: 175
+    SubAnnotationPropertyOf: 2
+    SubClassOf: 2611
+  'Axioms: Number of axioms': 9937
+  'Entities: % of entities reused': '17.40'
+  'Entities: Number of annotation properties': 55
+  'Entities: Number of classes': 700
+  'Entities: Number of data properties': 0
+  'Entities: Number of individuals': 0
+  'Entities: Number of object properties': 18
+  'Entities: Number of unsatisfiable classes': 0
+  'Info: Breakdown of OWL class expressions used':
+    Class: 6464
+    ObjectIntersectionOf: 194
+    ObjectSomeValuesFrom: 2319
+  'Info: Does the ontology fall under OWL 2 DL?': false
+  'Info: Experimental OBO score':
+    _impact: 0.006
+    _reuse: 0.174
+  'Info: How many ontologies use it?': 1
+  'Info: Logical consistency': true
+  'Info: Syntax': RDF/XML Syntax
+  'Info: Usage of namespaces in axioms':
+    BFO: 422
+    BSPO: 131
+    GO: 96
+    IAO: 651
+    PATO: 6
+    PLANA: 6206
+    RO: 1888
+    UBERON: 49
+    dc11: 4
+    foaf: 3
+    obo: 239
+    oboInOwl: 5289
+    owl: 3
+    prefix_unknown: 1
+    rdfs: 888
+    skos: 1
+mirror_from: http://purl.obolibrary.org/obo/plana/plana-base.owl
 namespace: plana
 results:
   FP01 Open:
@@ -14,7 +61,8 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 14 duplicate definitions. See ROBOT Report for details.
+    comment: 14 duplicate definitions. 17 missing definitions. See ROBOT Report for
+      details.
     status: ERROR
   FP07 Relations:
     status: PASS
@@ -26,19 +74,19 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 4 duplicate labels. See ROBOT Report for details.
+    comment: 4 duplicate labels. 1 missing labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
     status: PASS
   ROBOT Report:
-    comment: 21 errors, 71 warnings, 291 info messages.
+    comment: 22 errors, 88 warnings, 291 info messages.
     file: robot_report
     results:
-      ERROR: 21
+      ERROR: 22
       INFO: 291
-      WARN: 71
+      WARN: 88
     status: ERROR
-sha256_hash: c5510e32ed7aa4ecdbb72f53e18aede9806b6328ef7b59e71b4df78f7f3c107f
+sha256_hash: 61d21215ec32878b228e7f2e0414ff2e823ecda8bacb58d16100d10237c6ad1c
 summary:
   comment: 5 errors
   status: ERROR
@@ -46,4 +94,4 @@ summary:
     ERROR: 5
     INFO: 0
     WARN: 0
-version: http://purl.obolibrary.org/obo/plana/releases/2020-11-05/plana-base.owl
+version: http://purl.obolibrary.org/obo/plana/releases/2020-12-09/plana-base.owl

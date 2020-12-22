@@ -9,7 +9,7 @@
 # we therefore map the whole repo (../..) to a docker volume.
 #
 # See README-editors.md for more details.
-docker run -e ROBOT_JAVA_ARGS='-Xmx4G' -e JAVA_OPTS='-Xmx4G' \
+docker run -e ROBOT_JAVA_ARGS='-Xmx17G' -e JAVA_OPTS='-Xmx17G' \
   -v $PWD/dashboard:/tools/OBO-Dashboard/dashboard \
   -v $PWD/dashboard-config.yml:/tools/OBO-Dashboard/dashboard-config.yml \
   -v $PWD/ontologies:/tools/OBO-Dashboard/build/ontologies \

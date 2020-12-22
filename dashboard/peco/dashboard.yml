@@ -1,5 +1,68 @@
-changed: true
-date: '2020-11-07'
+base_generated: true
+base_prefixes:
+- PECO
+changed: false
+date: '2020-12-22'
+metrics:
+  'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 15319
+    Declaration: 3181
+    DisjointClasses: 9
+    EquivalentClasses: 239
+    FunctionalObjectProperty: 1
+    InverseObjectProperties: 28
+    ObjectPropertyDomain: 21
+    ObjectPropertyRange: 23
+    ReflexiveObjectProperty: 1
+    Rule: 16
+    SubClassOf: 5298
+    SubObjectPropertyOf: 128
+    SubPropertyChainOf: 44
+    SymmetricObjectProperty: 2
+    TransitiveObjectProperty: 12
+  'Axioms: Number of axioms': 24322
+  'Entities: % of entities reused': '82.58'
+  'Entities: Number of annotation properties': 25
+  'Entities: Number of classes': 3121
+  'Entities: Number of data properties': 0
+  'Entities: Number of individuals': 0
+  'Entities: Number of object properties': 124
+  'Entities: Number of unsatisfiable classes': 0
+  'Info: Breakdown of OWL class expressions used':
+    Class: 14424
+    ObjectIntersectionOf: 249
+    ObjectMinCardinality: 2
+    ObjectSomeValuesFrom: 1524
+    ObjectUnionOf: 2
+  'Info: Does the ontology fall under OWL 2 DL?': false
+  'Info: Experimental OBO score':
+    _impact: 0.028
+    _reuse: 0.826
+  'Info: How many ontologies use it?': 5
+  'Info: Logical consistency': true
+  'Info: Syntax': RDF/XML Syntax
+  'Info: Usage of namespaces in axioms':
+    BFO: 318
+    CARO: 11
+    CHEBI: 8390
+    ENVO: 704
+    EO: 1148
+    FOODON: 22
+    GO: 21
+    IAO: 2862
+    NCBITaxon: 872
+    PATO: 126
+    PCO: 31
+    PECO: 2276
+    RO: 1609
+    obo: 480
+    oboInOwl: 17058
+    owl: 1202
+    prefix_unknown: 3
+    rdf: 12
+    rdfs: 2527
+    xsd: 11
+mirror_from: http://purl.obolibrary.org/obo/peco.owl
 namespace: peco
 results:
   FP01 Open:
@@ -14,7 +77,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 7 duplicate definitions. 20 multiple definitions. 37 missing definitions.
+    comment: 7 duplicate definitions. 22 multiple definitions. 33 missing definitions.
       See ROBOT Report for details.
     status: ERROR
   FP07 Relations:
@@ -30,22 +93,21 @@ results:
     comment: 2 multiple labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
-    comment: last version (2018-08-15) is over two year(s) old
-    status: WARN
+    status: PASS
   ROBOT Report:
-    comment: 32 errors, 56 warnings, 1 info messages.
+    comment: 34 errors, 52 warnings, 0 info messages.
     file: robot_report
     results:
-      ERROR: 32
-      INFO: 1
-      WARN: 56
+      ERROR: 34
+      INFO: 0
+      WARN: 52
     status: ERROR
-sha256_hash: 6f310364fcf603fc851dc86adc2b6ac35a25f8c6e9943b375907712890328c08
+sha256_hash: d7c131c7b5e1cd5c3a1570300aaaebbb2845d19632b9a98028aaed4614be74a5
 summary:
   comment: 5 errors
   status: ERROR
   summary_count:
     ERROR: 5
     INFO: 0
-    WARN: 1
-version: http://purl.obolibrary.org/obo/peco/releases/2018-08-15/peco.owl
+    WARN: 0
+version: http://purl.obolibrary.org/obo/peco/releases/2020-08-21/peco.owl
