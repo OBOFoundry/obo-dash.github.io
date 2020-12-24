@@ -2,7 +2,7 @@ base_generated: false
 base_prefixes:
 - PLANA
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 6379
@@ -11,7 +11,7 @@ metrics:
     SubAnnotationPropertyOf: 2
     SubClassOf: 2611
   'Axioms: Number of axioms': 9937
-  'Entities: % of entities reused': '17.40'
+  'Entities: % of entities reused': 17.4
   'Entities: Number of annotation properties': 55
   'Entities: Number of classes': 700
   'Entities: Number of data properties': 0
@@ -24,8 +24,11 @@ metrics:
     ObjectSomeValuesFrom: 2319
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.766
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.006
     _reuse: 0.174
+    oboscore: 0.287
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -46,6 +49,9 @@ metrics:
     prefix_unknown: 1
     rdfs: 888
     skos: 1
+  'Info: Which ontologies use it?':
+  - plana
+  - planp
 mirror_from: http://purl.obolibrary.org/obo/plana/plana-base.owl
 namespace: plana
 results:

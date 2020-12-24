@@ -2,7 +2,7 @@ base_generated: false
 base_prefixes:
 - ECO
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 12362
@@ -15,7 +15,7 @@ metrics:
     SubAnnotationPropertyOf: 9
     SubClassOf: 1643
   'Axioms: Number of axioms': 17011
-  'Entities: % of entities reused': '2.51'
+  'Entities: % of entities reused': 2.51
   'Entities: Number of annotation properties': 42
   'Entities: Number of classes': 1826
   'Entities: Number of data properties': 0
@@ -30,8 +30,11 @@ metrics:
     ObjectUnionOf: 2
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
+    _dashboard: 0.953
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.011
     _reuse: 0.025
+    oboscore: 0.327
   'Info: How many ontologies use it?': 2
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -47,6 +50,10 @@ metrics:
     owl: 41
     rdfs: 2170
     xsd: 301
+  'Info: Which ontologies use it?':
+  - eco
+  - doid
+  - mro
 mirror_from: http://purl.obolibrary.org/obo/eco/eco-base.owl
 namespace: eco
 results:

@@ -3,7 +3,7 @@ base_prefixes:
 - NCBITaxon
 - NCBITaxon
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 9064816
@@ -11,7 +11,7 @@ metrics:
     SubAnnotationPropertyOf: 15
     SubClassOf: 2241108
   'Axioms: Number of axioms': 13547076
-  'Entities: % of entities reused': '0.00'
+  'Entities: % of entities reused': 0.0
   'Entities: Number of annotation properties': 29
   'Entities: Number of classes': 2241110
   'Entities: Number of data properties': 0
@@ -22,9 +22,12 @@ metrics:
     Class: 6723326
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _impact: 0.364
+    _dashboard: 0.747
+    _formula: (3*impact+2*dashboard+1*reuse)/6
+    _impact: 0.369
     _reuse: 0.0
-  'Info: How many ontologies use it?': 64
+    oboscore: 0.433
+  'Info: How many ontologies use it?': 65
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -33,6 +36,73 @@ metrics:
     obo: 1973415
     oboInOwl: 5121769
     rdfs: 2241139
+  'Info: Which ontologies use it?':
+  - iceo
+  - pr
+  - go
+  - genepio
+  - omrse
+  - fbbt
+  - opl
+  - ovae
+  - ncbitaxon
+  - mro
+  - oostt
+  - vo
+  - doid
+  - ecocore
+  - ontoneo
+  - psdo
+  - mco
+  - ero
+  - cido
+  - cteno
+  - ornaseq
+  - po
+  - fobi
+  - txpo
+  - uberon
+  - mp
+  - ido
+  - caro
+  - htn
+  - ohmi
+  - obi
+  - dideo
+  - ino
+  - flopo
+  - agro
+  - ecto
+  - cto
+  - obcs
+  - obib
+  - hsapdv
+  - pso
+  - apollo_sv
+  - cob
+  - ogsf
+  - gsso
+  - envo
+  - geno
+  - micro
+  - ohd
+  - ohpi
+  - pco
+  - peco
+  - mondo
+  - fao
+  - stato
+  - cl
+  - ogg
+  - eupath
+  - chiro
+  - opmi
+  - foodon
+  - upheno
+  - to
+  - ico
+  - clo
+  - omiabis
 mirror_from: http://purl.obolibrary.org/obo/ncbitaxon.owl
 namespace: ncbitaxon
 results:

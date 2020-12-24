@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - UPHENO
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 690426
@@ -30,7 +30,7 @@ metrics:
     SymmetricObjectProperty: 9
     TransitiveObjectProperty: 58
   'Axioms: Number of axioms': 1156547
-  'Entities: % of entities reused': '99.99'
+  'Entities: % of entities reused': 99.99
   'Entities: Number of annotation properties': 331
   'Entities: Number of classes': 137909
   'Entities: Number of data properties': 1
@@ -52,8 +52,11 @@ metrics:
     ObjectUnionOf: 201
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.741
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.057
     _reuse: 1.0
+    oboscore: 0.442
   'Info: How many ontologies use it?': 10
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -107,6 +110,18 @@ metrics:
     rdf: 594
     rdfs: 152498
     xsd: 5689
+  'Info: Which ontologies use it?':
+  - mondo
+  - cido
+  - ro
+  - ohmi
+  - mp
+  - geno
+  - upheno
+  - htn
+  - doid
+  - ontoneo
+  - mfmo
 mirror_from: http://purl.obolibrary.org/obo/upheno.owl
 namespace: upheno
 results:

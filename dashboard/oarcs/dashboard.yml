@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - OARCS
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1083
@@ -12,7 +12,7 @@ metrics:
     SubClassOf: 564
     TransitiveObjectProperty: 1
   'Axioms: Number of axioms': 2947
-  'Entities: % of entities reused': '53.06'
+  'Entities: % of entities reused': 53.06
   'Entities: Number of annotation properties': 14
   'Entities: Number of classes': 308
   'Entities: Number of data properties': 0
@@ -24,8 +24,11 @@ metrics:
     ObjectSomeValuesFrom: 581
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
+    _dashboard: 0.797
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.0
     _reuse: 0.531
+    oboscore: 0.354
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -40,6 +43,8 @@ metrics:
     obo: 5
     oboInOwl: 863
     rdfs: 320
+  'Info: Which ontologies use it?':
+  - oarcs
 mirror_from: http://purl.obolibrary.org/obo/oarcs.owl
 namespace: oarcs
 results:

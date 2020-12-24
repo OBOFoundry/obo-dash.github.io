@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - PECO
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 15319
@@ -21,7 +21,7 @@ metrics:
     SymmetricObjectProperty: 2
     TransitiveObjectProperty: 12
   'Axioms: Number of axioms': 24322
-  'Entities: % of entities reused': '82.58'
+  'Entities: % of entities reused': 82.58
   'Entities: Number of annotation properties': 25
   'Entities: Number of classes': 3121
   'Entities: Number of data properties': 0
@@ -36,8 +36,11 @@ metrics:
     ObjectUnionOf: 2
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.728
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.028
     _reuse: 0.826
+    oboscore: 0.394
   'Info: How many ontologies use it?': 5
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -62,6 +65,13 @@ metrics:
     rdf: 12
     rdfs: 2527
     xsd: 11
+  'Info: Which ontologies use it?':
+  - agro
+  - mco
+  - pso
+  - foodon
+  - to
+  - peco
 mirror_from: http://purl.obolibrary.org/obo/peco.owl
 namespace: peco
 results:

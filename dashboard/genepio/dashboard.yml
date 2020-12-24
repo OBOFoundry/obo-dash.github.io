@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - GENEPIO
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 23098
@@ -25,7 +25,7 @@ metrics:
     SymmetricObjectProperty: 1
     TransitiveObjectProperty: 9
   'Axioms: Number of axioms': 36101
-  'Entities: % of entities reused': '81.00'
+  'Entities: % of entities reused': 81.0
   'Entities: Number of annotation properties': 68
   'Entities: Number of classes': 4842
   'Entities: Number of data properties': 5
@@ -47,8 +47,11 @@ metrics:
     ObjectUnionOf: 21
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.666
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.023
     _reuse: 0.81
+    oboscore: 0.369
   'Info: How many ontologies use it?': 4
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -118,6 +121,12 @@ metrics:
     rdfs: 5917
     skos: 1
     xsd: 37
+  'Info: Which ontologies use it?':
+  - genepio
+  - ornaseq
+  - fideo
+  - eupath
+  - foodon
 mirror_from: http://purl.obolibrary.org/obo/genepio.owl
 namespace: genepio
 results:

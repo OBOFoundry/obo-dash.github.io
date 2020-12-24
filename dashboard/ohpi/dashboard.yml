@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - OHPI
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 110434
@@ -30,7 +30,7 @@ metrics:
     SymmetricObjectProperty: 7
     TransitiveObjectProperty: 45
   'Axioms: Number of axioms': 160504
-  'Entities: % of entities reused': '81.99'
+  'Entities: % of entities reused': 81.99
   'Entities: Number of annotation properties': 197
   'Entities: Number of classes': 11292
   'Entities: Number of data properties': 0
@@ -51,8 +51,11 @@ metrics:
     ObjectUnionOf: 45
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.783
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.0
     _reuse: 0.82
+    oboscore: 0.398
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -92,6 +95,8 @@ metrics:
     rdf: 26
     rdfs: 13107
     xsd: 740
+  'Info: Which ontologies use it?':
+  - ohpi
 mirror_from: http://purl.obolibrary.org/obo/ohpi.owl
 namespace: ohpi
 results:

@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - OBA
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 60497
@@ -15,7 +15,7 @@ metrics:
     SubPropertyChainOf: 4
     TransitiveObjectProperty: 3
   'Axioms: Number of axioms': 143595
-  'Entities: % of entities reused': '56.30'
+  'Entities: % of entities reused': 56.3
   'Entities: Number of annotation properties': 34
   'Entities: Number of classes': 17116
   'Entities: Number of data properties': 0
@@ -29,8 +29,11 @@ metrics:
     ObjectUnionOf: 99
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
+    _dashboard: 0.711
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.017
     _reuse: 0.563
+    oboscore: 0.339
   'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -56,6 +59,11 @@ metrics:
     prefix_unknown: 7
     rdfs: 17035
     xsd: 498
+  'Info: Which ontologies use it?':
+  - oba
+  - mondo
+  - go
+  - fovt
 mirror_from: http://purl.obolibrary.org/obo/oba.owl
 namespace: oba
 results:

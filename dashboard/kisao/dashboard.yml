@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - KISAO
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 2307
@@ -21,7 +21,7 @@ metrics:
     SubObjectPropertyOf: 2
     SymmetricObjectProperty: 1
   'Axioms: Number of axioms': 3768
-  'Entities: % of entities reused': '6.15'
+  'Entities: % of entities reused': 6.15
   'Entities: Number of annotation properties': 18
   'Entities: Number of classes': 385
   'Entities: Number of data properties': 2
@@ -43,8 +43,11 @@ metrics:
     ObjectUnionOf: 4
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
+    _dashboard: 0.748
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.0
     _reuse: 0.062
+    oboscore: 0.26
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -58,6 +61,8 @@ metrics:
     rdfs: 1298
     skos: 652
     xsd: 61
+  'Info: Which ontologies use it?':
+  - kisao
 mirror_from: http://purl.obolibrary.org/obo/kisao.owl
 namespace: kisao
 results:

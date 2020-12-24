@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - GNO
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 934633
@@ -10,7 +10,7 @@ metrics:
     Declaration: 110884
     SubClassOf: 118336
   'Axioms: Number of axioms': 1163858
-  'Entities: % of entities reused': '0.01'
+  'Entities: % of entities reused': 0.01
   'Entities: Number of annotation properties': 22
   'Entities: Number of classes': 110866
   'Entities: Number of data properties': 0
@@ -21,8 +21,11 @@ metrics:
     Class: 347543
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.86
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.006
     _reuse: 0.0
+    oboscore: 0.29
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -32,6 +35,9 @@ metrics:
     oboInOwl: 6133
     owl: 6423
     rdfs: 110897
+  'Info: Which ontologies use it?':
+  - pr
+  - gno
 mirror_from: http://purl.obolibrary.org/obo/gno.owl
 namespace: gno
 results:

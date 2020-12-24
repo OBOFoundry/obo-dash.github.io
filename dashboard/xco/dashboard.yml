@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - XCO
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 4787
@@ -10,7 +10,7 @@ metrics:
     SubClassOf: 818
     TransitiveObjectProperty: 2
   'Axioms: Number of axioms': 6322
-  'Entities: % of entities reused': '5.30'
+  'Entities: % of entities reused': 5.3
   'Entities: Number of annotation properties': 22
   'Entities: Number of classes': 690
   'Entities: Number of data properties': 0
@@ -22,8 +22,11 @@ metrics:
     ObjectSomeValuesFrom: 49
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
+    _dashboard: 0.784
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.011
     _reuse: 0.053
+    oboscore: 0.276
   'Info: How many ontologies use it?': 2
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -37,6 +40,10 @@ metrics:
     oboInOwl: 3996
     owl: 16
     rdfs: 698
+  'Info: Which ontologies use it?':
+  - xco
+  - genepio
+  - agro
 mirror_from: http://purl.obolibrary.org/obo/xco.owl
 namespace: xco
 results:

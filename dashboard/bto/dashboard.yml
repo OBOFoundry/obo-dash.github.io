@@ -2,7 +2,7 @@ base_generated: false
 base_prefixes:
 - BTO
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 34809
@@ -10,7 +10,7 @@ metrics:
     SubAnnotationPropertyOf: 4
     SubClassOf: 7543
   'Axioms: Number of axioms': 48820
-  'Entities: % of entities reused': '0.63'
+  'Entities: % of entities reused': 0.63
   'Entities: Number of annotation properties': 30
   'Entities: Number of classes': 6428
   'Entities: Number of data properties': 0
@@ -22,8 +22,11 @@ metrics:
     ObjectSomeValuesFrom: 2879
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.646
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.023
     _reuse: 0.006
+    oboscore: 0.228
   'Info: How many ontologies use it?': 4
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -36,6 +39,12 @@ metrics:
     oboInOwl: 28340
     owl: 51
     rdfs: 6512
+  'Info: Which ontologies use it?':
+  - genepio
+  - opl
+  - fypo
+  - eupath
+  - bto
 mirror_from: http://purl.obolibrary.org/obo/bto/bto-base.owl
 namespace: bto
 results:

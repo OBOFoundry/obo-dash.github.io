@@ -2,7 +2,7 @@ base_generated: false
 base_prefixes:
 - COB
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 143
@@ -21,7 +21,7 @@ metrics:
     SubPropertyChainOf: 1
     TransitiveObjectProperty: 1
   'Axioms: Number of axioms': 493
-  'Entities: % of entities reused': '100.00'
+  'Entities: % of entities reused': 100.0
   'Entities: Number of annotation properties': 13
   'Entities: Number of classes': 130
   'Entities: Number of data properties': 5
@@ -38,8 +38,11 @@ metrics:
     ObjectUnionOf: 2
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
+    _dashboard: 0.779
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.0
     _reuse: 1.0
+    oboscore: 0.426
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -66,6 +69,8 @@ metrics:
     rdfs: 124
     skos: 5
     xsd: 4
+  'Info: Which ontologies use it?':
+  - cob
 mirror_from: http://purl.obolibrary.org/obo/cob/cob-base.owl
 namespace: cob
 results:

@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - GEO
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1176
@@ -25,7 +25,7 @@ metrics:
     SubPropertyChainOf: 2
     TransitiveObjectProperty: 6
   'Axioms: Number of axioms': 1579
-  'Entities: % of entities reused': '72.41'
+  'Entities: % of entities reused': 72.41
   'Entities: Number of annotation properties': 56
   'Entities: Number of classes': 91
   'Entities: Number of data properties': 1
@@ -43,8 +43,11 @@ metrics:
     ObjectUnionOf: 1
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.736
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.04
     _reuse: 0.724
+    oboscore: 0.386
   'Info: How many ontologies use it?': 7
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -64,6 +67,15 @@ metrics:
     rdf: 2
     rdfs: 305
     xsd: 1
+  'Info: Which ontologies use it?':
+  - genepio
+  - omiabis
+  - obib
+  - apollo_sv
+  - oostt
+  - ico
+  - hancestro
+  - geo
 mirror_from: http://purl.obolibrary.org/obo/geo.owl
 namespace: geo
 results:

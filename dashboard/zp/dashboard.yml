@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - ZP
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 221972
@@ -21,7 +21,7 @@ metrics:
     SymmetricObjectProperty: 4
     TransitiveObjectProperty: 36
   'Axioms: Number of axioms': 433967
-  'Entities: % of entities reused': '29.80'
+  'Entities: % of entities reused': 29.8
   'Entities: Number of annotation properties': 142
   'Entities: Number of classes': 53038
   'Entities: Number of data properties': 0
@@ -39,8 +39,11 @@ metrics:
     ObjectUnionOf: 12
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
+    _dashboard: 0.783
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.011
     _reuse: 0.298
+    oboscore: 0.316
   'Info: How many ontologies use it?': 2
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -69,6 +72,10 @@ metrics:
     rdf: 58
     rdfs: 59810
     xsd: 391
+  'Info: Which ontologies use it?':
+  - zp
+  - geno
+  - upheno
 mirror_from: http://purl.obolibrary.org/obo/zp.owl
 namespace: zp
 results:

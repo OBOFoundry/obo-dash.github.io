@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - MPIO
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 647
@@ -13,7 +13,7 @@ metrics:
     SubClassOf: 51
     SubObjectPropertyOf: 13
   'Axioms: Number of axioms': 871
-  'Entities: % of entities reused': '91.67'
+  'Entities: % of entities reused': 91.67
   'Entities: Number of annotation properties': 58
   'Entities: Number of classes': 51
   'Entities: Number of data properties': 0
@@ -27,8 +27,11 @@ metrics:
     ObjectSomeValuesFrom: 29
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
+    _dashboard: 0.792
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.006
     _reuse: 0.917
+    oboscore: 0.42
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -54,6 +57,9 @@ metrics:
     prefix_unknown: 5
     protege: 1
     rdfs: 142
+  'Info: Which ontologies use it?':
+  - mpio
+  - dideo
 mirror_from: http://purl.obolibrary.org/obo/mpio.owl
 namespace: mpio
 results:

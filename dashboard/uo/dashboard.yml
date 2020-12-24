@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - UO
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1331
@@ -10,7 +10,7 @@ metrics:
     EquivalentClasses: 333
     SubClassOf: 780
   'Axioms: Number of axioms': 3306
-  'Entities: % of entities reused': '6.36'
+  'Entities: % of entities reused': 6.36
   'Entities: Number of annotation properties': 4
   'Entities: Number of classes': 597
   'Entities: Number of data properties': 0
@@ -26,9 +26,12 @@ metrics:
     ObjectUnionOf: 44
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _impact: 0.159
+    _dashboard: 0.639
+    _formula: (3*impact+2*dashboard+1*reuse)/6
+    _impact: 0.165
     _reuse: 0.064
-  'Info: How many ontologies use it?': 28
+    oboscore: 0.306
+  'Info: How many ontologies use it?': 29
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -37,6 +40,37 @@ metrics:
     obo: 118
     prefix_unknown: 400
     rdfs: 933
+  'Info: Which ontologies use it?':
+  - genepio
+  - omrse
+  - oostt
+  - vo
+  - psdo
+  - geo
+  - ero
+  - cido
+  - duo
+  - uo
+  - htn
+  - ohmi
+  - obi
+  - dideo
+  - agro
+  - obib
+  - obcs
+  - cheminf
+  - apollo_sv
+  - ohpi
+  - stato
+  - eupath
+  - ms
+  - opmi
+  - foodon
+  - dron
+  - one
+  - ico
+  - omiabis
+  - iao
 mirror_from: http://purl.obolibrary.org/obo/uo.owl
 namespace: uo
 results:

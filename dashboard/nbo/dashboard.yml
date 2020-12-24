@@ -2,7 +2,7 @@ base_generated: false
 base_prefixes:
 - NBO
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 4816
@@ -11,7 +11,7 @@ metrics:
     EquivalentClasses: 153
     SubClassOf: 1066
   'Axioms: Number of axioms': 7101
-  'Entities: % of entities reused': '11.69'
+  'Entities: % of entities reused': 11.69
   'Entities: Number of annotation properties': 20
   'Entities: Number of classes': 1016
   'Entities: Number of data properties': 0
@@ -25,8 +25,11 @@ metrics:
     ObjectUnionOf: 2
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
+    _dashboard: 0.737
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.08
     _reuse: 0.117
+    oboscore: 0.305
   'Info: How many ontologies use it?': 14
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -44,6 +47,22 @@ metrics:
     oboInOwl: 2302
     owl: 2
     rdfs: 969
+  'Info: Which ontologies use it?':
+  - oba
+  - mondo
+  - mfoem
+  - ecto
+  - planp
+  - uberon
+  - apollo_sv
+  - mp
+  - nbo
+  - mfomd
+  - upheno
+  - xpo
+  - hp
+  - maxo
+  - mf
 mirror_from: http://purl.obolibrary.org/obo/nbo/nbo-base.owl
 namespace: nbo
 results:

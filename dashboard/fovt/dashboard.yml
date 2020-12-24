@@ -2,7 +2,7 @@ base_generated: false
 base_prefixes:
 - FOVT
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 103
@@ -10,7 +10,7 @@ metrics:
     EquivalentClasses: 5
     SubClassOf: 28
   'Axioms: Number of axioms': 184
-  'Entities: % of entities reused': '100.00'
+  'Entities: % of entities reused': 100.0
   'Entities: Number of annotation properties': 9
   'Entities: Number of classes': 40
   'Entities: Number of data properties': 0
@@ -23,8 +23,11 @@ metrics:
     ObjectSomeValuesFrom: 5
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.95
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.0
     _reuse: 1.0
+    oboscore: 0.483
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML
@@ -39,6 +42,8 @@ metrics:
     oboInOwl: 21
     prefix_unknown: 61
     rdfs: 28
+  'Info: Which ontologies use it?':
+  - fovt
 mirror_from: http://purl.obolibrary.org/obo/fovt/fovt-base.owl
 namespace: fovt
 results:

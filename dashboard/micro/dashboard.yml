@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - MICRO
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 222364
@@ -26,7 +26,7 @@ metrics:
     SymmetricObjectProperty: 6
     TransitiveObjectProperty: 69
   'Axioms: Number of axioms': 269683
-  'Entities: % of entities reused': '88.30'
+  'Entities: % of entities reused': 88.3
   'Entities: Number of annotation properties': 107
   'Entities: Number of classes': 17287
   'Entities: Number of data properties': 15
@@ -50,8 +50,11 @@ metrics:
     ObjectUnionOf: 584
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.658
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.006
     _reuse: 0.883
+    oboscore: 0.369
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -85,6 +88,9 @@ metrics:
     protege: 1
     rdfs: 18279
     xsd: 68
+  'Info: Which ontologies use it?':
+  - mco
+  - micro
 mirror_from: http://purl.obolibrary.org/obo/micro.owl
 namespace: micro
 results:

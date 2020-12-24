@@ -3,7 +3,7 @@ base_prefixes:
 - FBbi
 - FBbi
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 3706
@@ -22,7 +22,7 @@ metrics:
     SymmetricObjectProperty: 2
     TransitiveObjectProperty: 14
   'Axioms: Number of axioms': 5493
-  'Entities: % of entities reused': '20.23'
+  'Entities: % of entities reused': 20.23
   'Entities: Number of annotation properties': 42
   'Entities: Number of classes': 649
   'Entities: Number of data properties': 0
@@ -38,8 +38,11 @@ metrics:
     ObjectUnionOf: 1
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
+    _dashboard: 0.689
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.0
     _reuse: 0.202
+    oboscore: 0.263
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -60,6 +63,8 @@ metrics:
     rdf: 12
     rdfs: 812
     xsd: 9
+  'Info: Which ontologies use it?':
+  - fbbi
 mirror_from: http://purl.obolibrary.org/obo/fbbi.owl
 namespace: fbbi
 results:

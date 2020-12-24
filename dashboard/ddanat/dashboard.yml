@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - DDANAT
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 711
@@ -10,7 +10,7 @@ metrics:
     SubClassOf: 350
     TransitiveObjectProperty: 1
   'Axioms: Number of axioms': 1218
-  'Entities: % of entities reused': '15.72'
+  'Entities: % of entities reused': 15.72
   'Entities: Number of annotation properties': 21
   'Entities: Number of classes': 134
   'Entities: Number of data properties': 0
@@ -22,8 +22,11 @@ metrics:
     ObjectSomeValuesFrom: 221
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
+    _dashboard: 0.798
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.006
     _reuse: 0.157
+    oboscore: 0.295
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -34,6 +37,9 @@ metrics:
     oboInOwl: 562
     owl: 4
     rdfs: 160
+  'Info: Which ontologies use it?':
+  - go
+  - ddanat
 mirror_from: http://purl.obolibrary.org/obo/ddanat.owl
 namespace: ddanat
 results:

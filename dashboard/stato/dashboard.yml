@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - STATO
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 8317
@@ -27,7 +27,7 @@ metrics:
     SubPropertyChainOf: 1
     TransitiveObjectProperty: 6
   'Axioms: Number of axioms': 11674
-  'Entities: % of entities reused': '43.74'
+  'Entities: % of entities reused': 43.74
   'Entities: Number of annotation properties': 45
   'Entities: Number of classes': 889
   'Entities: Number of data properties': 7
@@ -50,9 +50,12 @@ metrics:
     ObjectUnionOf: 78
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _impact: 0.045
+    _dashboard: 0.719
+    _formula: (3*impact+2*dashboard+1*reuse)/6
+    _impact: 0.051
     _reuse: 0.437
-  'Info: How many ontologies use it?': 8
+    oboscore: 0.338
+  'Info: How many ontologies use it?': 9
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -81,6 +84,17 @@ metrics:
     rdf: 2
     rdfs: 1093
     xsd: 45
+  'Info: Which ontologies use it?':
+  - genepio
+  - stato
+  - obcs
+  - gecko
+  - psdo
+  - apollo_sv
+  - eupath
+  - sepio
+  - pco
+  - dideo
 mirror_from: http://purl.obolibrary.org/obo/stato.owl
 namespace: stato
 results:
@@ -103,8 +117,7 @@ results:
     file: fp7
     status: ERROR
   FP08 Documented:
-    comment: homepage URL (http://stato-ontology.org/) does not resolve
-    status: ERROR
+    status: PASS
   FP09 Plurality of Users:
     comment: Missing usages
     status: ERROR
@@ -125,10 +138,10 @@ results:
     status: ERROR
 sha256_hash: e0a1c7850da428f714f799b37b3a1c79634e97fcec785f222d8475bbe17c5cac
 summary:
-  comment: 6 errors
+  comment: 5 errors
   status: ERROR
   summary_count:
-    ERROR: 6
+    ERROR: 5
     INFO: 0
     WARN: 1
 version: null

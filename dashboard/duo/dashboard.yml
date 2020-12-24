@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - DUO
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 2856
@@ -27,7 +27,7 @@ metrics:
     SubPropertyChainOf: 2
     TransitiveObjectProperty: 4
   'Axioms: Number of axioms': 3858
-  'Entities: % of entities reused': '91.87'
+  'Entities: % of entities reused': 91.87
   'Entities: Number of annotation properties': 69
   'Entities: Number of classes': 303
   'Entities: Number of data properties': 4
@@ -48,8 +48,11 @@ metrics:
     ObjectUnionOf: 2
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.742
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.006
     _reuse: 0.919
+    oboscore: 0.404
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -74,6 +77,9 @@ metrics:
     rdf: 2
     rdfs: 521
     xsd: 4
+  'Info: Which ontologies use it?':
+  - ico
+  - duo
 mirror_from: http://purl.obolibrary.org/obo/duo.owl
 namespace: duo
 results:

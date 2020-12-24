@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - CVDO
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1768
@@ -21,7 +21,7 @@ metrics:
     SubPropertyChainOf: 3
     TransitiveObjectProperty: 16
   'Axioms: Number of axioms': 3319
-  'Entities: % of entities reused': '53.28'
+  'Entities: % of entities reused': 53.28
   'Entities: Number of annotation properties': 27
   'Entities: Number of classes': 518
   'Entities: Number of data properties': 0
@@ -39,8 +39,11 @@ metrics:
     ObjectUnionOf: 49
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.702
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.011
     _reuse: 0.533
+    oboscore: 0.328
   'Info: How many ontologies use it?': 2
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -56,6 +59,10 @@ metrics:
     oboInOwl: 13
     owl: 2
     rdfs: 584
+  'Info: Which ontologies use it?':
+  - ontoneo
+  - genepio
+  - cvdo
 mirror_from: http://purl.obolibrary.org/obo/cvdo.owl
 namespace: cvdo
 results:

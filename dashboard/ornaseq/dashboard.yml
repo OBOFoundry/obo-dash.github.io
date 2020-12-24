@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - ORNASEQ
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 866
@@ -12,7 +12,7 @@ metrics:
     SubObjectPropertyOf: 5
     TransitiveObjectProperty: 1
   'Axioms: Number of axioms': 1223
-  'Entities: % of entities reused': '90.96'
+  'Entities: % of entities reused': 90.96
   'Entities: Number of annotation properties': 13
   'Entities: Number of classes': 164
   'Entities: Number of data properties': 0
@@ -24,8 +24,11 @@ metrics:
     ObjectSomeValuesFrom: 6
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.836
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.0
     _reuse: 0.91
+    oboscore: 0.43
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -51,6 +54,8 @@ metrics:
     owl: 2
     rdf: 1
     rdfs: 204
+  'Info: Which ontologies use it?':
+  - ornaseq
 mirror_from: http://purl.obolibrary.org/obo/ornaseq.owl
 namespace: ornaseq
 results:

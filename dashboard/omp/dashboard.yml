@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - OMP
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 16069
@@ -15,7 +15,7 @@ metrics:
     SubObjectPropertyOf: 8
     TransitiveObjectProperty: 12
   'Axioms: Number of axioms': 21529
-  'Entities: % of entities reused': '15.83'
+  'Entities: % of entities reused': 15.83
   'Entities: Number of annotation properties': 70
   'Entities: Number of classes': 2286
   'Entities: Number of data properties': 0
@@ -28,8 +28,11 @@ metrics:
     ObjectSomeValuesFrom: 262
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
+    _dashboard: 0.708
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.017
     _reuse: 0.158
+    oboscore: 0.271
   'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -45,6 +48,11 @@ metrics:
     oboInOwl: 13295
     owl: 56
     rdfs: 3081
+  'Info: Which ontologies use it?':
+  - eupath
+  - genepio
+  - omp
+  - mco
 mirror_from: http://purl.obolibrary.org/obo/omp.owl
 namespace: omp
 results:
@@ -66,8 +74,7 @@ results:
   FP07 Relations:
     status: PASS
   FP08 Documented:
-    comment: homepage URL (http://microbialphenotypes.org) does not resolve
-    status: ERROR
+    status: PASS
   FP09 Plurality of Users:
     comment: Missing usages
     status: ERROR
@@ -88,10 +95,10 @@ results:
     status: ERROR
 sha256_hash: 54c4d19a79dc425a7975fd8681bcd873ab204e8178df6767bace5e6b80e7c662
 summary:
-  comment: 6 errors
+  comment: 5 errors
   status: ERROR
   summary_count:
-    ERROR: 6
+    ERROR: 5
     INFO: 0
     WARN: 0
 version: http://purl.obolibrary.org/obo/omp/releases/2020-12-04/omp.owl

@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - PORO
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 3471
@@ -21,7 +21,7 @@ metrics:
     SymmetricObjectProperty: 2
     TransitiveObjectProperty: 10
   'Axioms: Number of axioms': 6013
-  'Entities: % of entities reused': '37.03'
+  'Entities: % of entities reused': 37.03
   'Entities: Number of annotation properties': 33
   'Entities: Number of classes': 922
   'Entities: Number of data properties': 0
@@ -38,8 +38,11 @@ metrics:
     ObjectUnionOf: 9
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.733
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.0
     _reuse: 0.37
+    oboscore: 0.306
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -62,6 +65,8 @@ metrics:
     owl: 89
     rdfs: 1583
     xsd: 3
+  'Info: Which ontologies use it?':
+  - poro
 mirror_from: http://purl.obolibrary.org/obo/poro.owl
 namespace: poro
 results:

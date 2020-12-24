@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - CMO
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 14719
@@ -10,7 +10,7 @@ metrics:
     SubClassOf: 3717
     TransitiveObjectProperty: 1
   'Axioms: Number of axioms': 21504
-  'Entities: % of entities reused': '0.55'
+  'Entities: % of entities reused': 0.55
   'Entities: Number of annotation properties': 12
   'Entities: Number of classes': 3054
   'Entities: Number of data properties': 0
@@ -22,8 +22,11 @@ metrics:
     ObjectSomeValuesFrom: 8
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.679
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.028
     _reuse: 0.006
+    oboscore: 0.241
   'Info: How many ontologies use it?': 5
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML
@@ -33,6 +36,13 @@ metrics:
     owl: 29
     prefix_unknown: 5463
     rdfs: 3158
+  'Info: Which ontologies use it?':
+  - cmo
+  - opmi
+  - gecko
+  - ontoneo
+  - eupath
+  - ohmi
 mirror_from: http://purl.obolibrary.org/obo/cmo.owl
 namespace: cmo
 results:

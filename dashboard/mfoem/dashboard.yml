@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - MFOEM
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 2628
@@ -19,7 +19,7 @@ metrics:
     SubPropertyChainOf: 1
     TransitiveObjectProperty: 5
   'Axioms: Number of axioms': 4150
-  'Entities: % of entities reused': '70.49'
+  'Entities: % of entities reused': 70.49
   'Entities: Number of annotation properties': 74
   'Entities: Number of classes': 614
   'Entities: Number of data properties': 0
@@ -36,8 +36,11 @@ metrics:
     ObjectSomeValuesFrom: 92
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
+    _dashboard: 0.743
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.006
     _reuse: 0.705
+    oboscore: 0.368
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -58,6 +61,9 @@ metrics:
     prefix_unknown: 50
     protege: 1
     rdfs: 860
+  'Info: Which ontologies use it?':
+  - mondo
+  - mfoem
 mirror_from: http://purl.obolibrary.org/obo/mfoem.owl
 namespace: mfoem
 results:

@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - SEPIO
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1231
@@ -25,7 +25,7 @@ metrics:
     SymmetricObjectProperty: 3
     TransitiveObjectProperty: 2
   'Axioms: Number of axioms': 1827
-  'Entities: % of entities reused': '59.60'
+  'Entities: % of entities reused': 59.6
   'Entities: Number of annotation properties': 48
   'Entities: Number of classes': 132
   'Entities: Number of data properties': 24
@@ -40,8 +40,11 @@ metrics:
     ObjectUnionOf: 10
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.775
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.0
     _reuse: 0.596
+    oboscore: 0.358
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -67,6 +70,8 @@ metrics:
     prov: 13
     rdfs: 368
     xsd: 6
+  'Info: Which ontologies use it?':
+  - sepio
 mirror_from: http://purl.obolibrary.org/obo/sepio.owl
 namespace: sepio
 results:

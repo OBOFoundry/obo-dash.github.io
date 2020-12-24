@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - CHIRO
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 81987
@@ -13,7 +13,7 @@ metrics:
     SubObjectPropertyOf: 1
     TransitiveObjectProperty: 3
   'Axioms: Number of axioms': 113005
-  'Entities: % of entities reused': '100.00'
+  'Entities: % of entities reused': 100.0
   'Entities: Number of annotation properties': 35
   'Entities: Number of classes': 13286
   'Entities: Number of data properties': 0
@@ -26,8 +26,11 @@ metrics:
     ObjectSomeValuesFrom: 1421
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.748
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.0
     _reuse: 1.0
+    oboscore: 0.416
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -47,6 +50,8 @@ metrics:
     owl: 420
     prefix_unknown: 12
     rdfs: 13987
+  'Info: Which ontologies use it?':
+  - chiro
 mirror_from: http://purl.obolibrary.org/obo/chiro.owl
 namespace: chiro
 results:

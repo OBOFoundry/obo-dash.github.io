@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - FOODON
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 177784
@@ -20,7 +20,7 @@ metrics:
     SymmetricObjectProperty: 2
     TransitiveObjectProperty: 6
   'Axioms: Number of axioms': 245672
-  'Entities: % of entities reused': '21.70'
+  'Entities: % of entities reused': 21.7
   'Entities: Number of annotation properties': 57
   'Entities: Number of classes': 29073
   'Entities: Number of data properties': 0
@@ -38,8 +38,11 @@ metrics:
     ObjectUnionOf: 79
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.579
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.068
     _reuse: 0.217
+    oboscore: 0.263
   'Info: How many ontologies use it?': 12
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -79,6 +82,20 @@ metrics:
     rdf: 2
     rdfs: 41125
     schema: 187
+  'Info: Which ontologies use it?':
+  - to
+  - mondo
+  - genepio
+  - fideo
+  - agro
+  - fobi
+  - pso
+  - eupath
+  - envo
+  - foodon
+  - doid
+  - maxo
+  - peco
 mirror_from: http://purl.obolibrary.org/obo/foodon.owl
 namespace: foodon
 results:

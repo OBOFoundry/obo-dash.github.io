@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - OVAE
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 17488
@@ -21,7 +21,7 @@ metrics:
     SymmetricObjectProperty: 3
     TransitiveObjectProperty: 29
   'Axioms: Number of axioms': 24046
-  'Entities: % of entities reused': '65.76'
+  'Entities: % of entities reused': 65.76
   'Entities: Number of annotation properties': 109
   'Entities: Number of classes': 1555
   'Entities: Number of data properties': 2
@@ -43,8 +43,11 @@ metrics:
     ObjectUnionOf: 86
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.729
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.0
     _reuse: 0.658
+    oboscore: 0.353
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -74,6 +77,8 @@ metrics:
     rdf: 1
     rdfs: 2578
     xsd: 912
+  'Info: Which ontologies use it?':
+  - ovae
 mirror_from: http://purl.obolibrary.org/obo/ovae.owl
 namespace: ovae
 results:

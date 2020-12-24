@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - CLO
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 344066
@@ -23,7 +23,7 @@ metrics:
     SymmetricObjectProperty: 1
     TransitiveObjectProperty: 13
   'Axioms: Number of axioms': 513090
-  'Entities: % of entities reused': '7.49'
+  'Entities: % of entities reused': 7.49
   'Entities: Number of annotation properties': 192
   'Entities: Number of classes': 44874
   'Entities: Number of data properties': 1
@@ -42,8 +42,11 @@ metrics:
     ObjectUnionOf: 26
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.576
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.057
     _reuse: 0.075
+    oboscore: 0.233
   'Info: How many ontologies use it?': 10
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -81,6 +84,18 @@ metrics:
     rdf: 3
     rdfs: 126474
     xsd: 5
+  'Info: Which ontologies use it?':
+  - geno
+  - txpo
+  - mco
+  - obib
+  - ero
+  - dideo
+  - ncro
+  - ohpi
+  - obi
+  - omit
+  - clo
 mirror_from: http://purl.obolibrary.org/obo/clo.owl
 namespace: clo
 results:

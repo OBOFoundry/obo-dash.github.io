@@ -3,7 +3,7 @@ base_prefixes:
 - FBdv
 - FBdv
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1220
@@ -14,7 +14,7 @@ metrics:
     SubObjectPropertyOf: 2
     TransitiveObjectProperty: 1
   'Axioms: Number of axioms': 2124
-  'Entities: % of entities reused': '20.82'
+  'Entities: % of entities reused': 20.82
   'Entities: Number of annotation properties': 43
   'Entities: Number of classes': 216
   'Entities: Number of data properties': 0
@@ -27,8 +27,11 @@ metrics:
     ObjectSomeValuesFrom: 424
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.932
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.017
     _reuse: 0.208
+    oboscore: 0.354
   'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -42,6 +45,11 @@ metrics:
     oboInOwl: 826
     owl: 13
     rdfs: 436
+  'Info: Which ontologies use it?':
+  - dpo
+  - fbdv
+  - upheno
+  - fbcv
 mirror_from: http://purl.obolibrary.org/obo/fbdv/fbdv-base.owl
 namespace: fbdv
 results:

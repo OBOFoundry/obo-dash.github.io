@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - VO
 changed: false
-date: '2020-12-22'
+date: '2020-12-24'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 34543
@@ -20,7 +20,7 @@ metrics:
     SymmetricObjectProperty: 2
     TransitiveObjectProperty: 15
   'Axioms: Number of axioms': 57204
-  'Entities: % of entities reused': '13.84'
+  'Entities: % of entities reused': 13.84
   'Entities: Number of annotation properties': 97
   'Entities: Number of classes': 6671
   'Entities: Number of data properties': 0
@@ -38,8 +38,11 @@ metrics:
     ObjectUnionOf: 202
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
+    _dashboard: 0.571
+    _formula: (3*impact+2*dashboard+1*reuse)/6
     _impact: 0.062
     _reuse: 0.138
+    oboscore: 0.244
   'Info: How many ontologies use it?': 11
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -72,6 +75,19 @@ metrics:
     rdf: 1
     rdfs: 14223
     xsd: 6
+  'Info: Which ontologies use it?':
+  - ovae
+  - cido
+  - cto
+  - oae
+  - vo
+  - apollo_sv
+  - eupath
+  - ogsf
+  - ohpi
+  - opmi
+  - clo
+  - ontoneo
 mirror_from: http://purl.obolibrary.org/obo/vo.owl
 namespace: vo
 results:
