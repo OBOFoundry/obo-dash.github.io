@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - OAE
 changed: false
-date: '2020-12-24'
+date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 51601
@@ -39,10 +39,12 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.654
-    _formula: (3*impact+2*dashboard+1*reuse)/6
+    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
     _impact: 0.085
+    _impact_external: 0
     _reuse: 0.24
-    oboscore: 0.3
+    oboscore: 0.2
+  'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 15
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -70,22 +72,22 @@ metrics:
     rdfs: 10534
     xsd: 5
   'Info: Which ontologies use it?':
-  - ovae
-  - cido
-  - genepio
-  - omrse
-  - obib
-  - cto
-  - oae
-  - vo
-  - apollo_sv
-  - ogsf
-  - gsso
-  - opmi
   - sepio
-  - ico
+  - oae
+  - opmi
+  - obib
   - dideo
+  - vo
+  - ogsf
+  - cto
+  - omrse
+  - gsso
+  - genepio
+  - ovae
   - ontoneo
+  - cido
+  - apollo_sv
+  - ico
 mirror_from: http://purl.obolibrary.org/obo/oae.owl
 namespace: oae
 results:

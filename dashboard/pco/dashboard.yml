@@ -2,7 +2,7 @@ base_generated: false
 base_prefixes:
 - PCO
 changed: false
-date: '2020-12-24'
+date: '2021-01-01'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 338
@@ -30,10 +30,12 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.795
-    _formula: (3*impact+2*dashboard+1*reuse)/6
+    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
     _impact: 0.131
+    _impact_external: 0
     _reuse: 0.53
-    oboscore: 0.419
+    oboscore: 0.279
+  'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 23
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -56,30 +58,30 @@ metrics:
     prefix_unknown: 14
     rdfs: 97
   'Info: Which ontologies use it?':
-  - dpo
-  - genepio
-  - omrse
-  - ecocore
-  - ero
-  - caro
-  - ohmi
-  - agro
+  - sepio
   - obib
-  - apollo_sv
+  - mpio
+  - dpo
+  - omrse
+  - ohmi
   - cob
   - envo
-  - geno
-  - sepio
-  - pco
-  - bco
-  - peco
-  - mondo
-  - gecko
-  - eupath
-  - upheno
-  - mpio
-  - opmi
   - omiabis
+  - geno
+  - apollo_sv
+  - opmi
+  - gecko
+  - ero
+  - eupath
+  - mondo
+  - upheno
+  - agro
+  - caro
+  - pco
+  - ecocore
+  - genepio
+  - peco
+  - bco
 mirror_from: http://purl.obolibrary.org/obo/pco/pco-base.owl
 namespace: pco
 results:

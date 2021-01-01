@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - NCIT
 changed: false
-date: '2020-12-24'
+date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 2222815
@@ -33,11 +33,13 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.796
-    _formula: (3*impact+2*dashboard+1*reuse)/6
-    _impact: 0.097
+    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+    _impact: 0.102
+    _impact_external: 0
     _reuse: 0.0
-    oboscore: 0.314
-  'Info: How many ontologies use it?': 17
+    oboscore: 0.211
+  'Info: How many externally documented uses?': 0
+  'Info: How many ontologies use it?': 18
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -52,24 +54,25 @@ metrics:
     rdf: 19
     rdfs: 159678
   'Info: Which ontologies use it?':
-  - mondo
-  - genepio
-  - ornaseq
-  - ecto
-  - obib
-  - cto
-  - planp
-  - txpo
-  - aro
-  - eupath
-  - ncit
-  - gsso
-  - opmi
   - foodon
-  - ico
+  - ons
   - clo
-  - maxo
+  - opmi
+  - txpo
+  - ecto
+  - ornaseq
+  - eupath
   - mco
+  - obib
+  - ncit
+  - mondo
+  - cto
+  - aro
+  - maxo
+  - gsso
+  - genepio
+  - ico
+  - planp
 mirror_from: http://purl.obolibrary.org/obo/ncit.owl
 namespace: ncit
 results:

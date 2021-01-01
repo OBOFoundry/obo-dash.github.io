@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - OGMS
 changed: false
-date: '2020-12-24'
+date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1347
@@ -28,11 +28,13 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
     _dashboard: 0.74
-    _formula: (3*impact+2*dashboard+1*reuse)/6
-    _impact: 0.227
+    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+    _impact: 0.233
+    _impact_external: 0
     _reuse: 0.584
-    oboscore: 0.458
-  'Info: How many ontologies use it?': 40
+    oboscore: 0.307
+  'Info: How many externally documented uses?': 0
+  'Info: How many ontologies use it?': 41
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -50,47 +52,48 @@ metrics:
     protege: 1
     rdfs: 356
   'Info: Which ontologies use it?':
-  - ovae
-  - genepio
-  - omrse
-  - oae
-  - oostt
-  - vo
-  - psdo
-  - ontoneo
-  - ogms
-  - ero
-  - cido
-  - mfoem
-  - ornaseq
-  - txpo
-  - cvdo
-  - ido
-  - htn
-  - obi
-  - dideo
-  - mf
-  - mfmo
-  - agro
-  - obib
-  - cto
-  - apollo_sv
-  - cob
-  - ogsf
-  - mfomd
-  - gsso
-  - ohpi
-  - ohd
-  - mondo
-  - stato
   - ro
+  - ido
+  - obib
+  - ohd
+  - mpio
+  - psdo
+  - cto
+  - omrse
+  - gsso
+  - cob
+  - oae
+  - omiabis
+  - cvdo
+  - oostt
+  - apollo_sv
+  - ons
+  - ogms
   - gecko
   - dron
-  - eupath
   - opmi
-  - mpio
+  - ero
+  - ornaseq
+  - eupath
+  - mfoem
+  - dideo
+  - mf
+  - ogsf
+  - ohpi
+  - mondo
+  - mfmo
+  - ontoneo
+  - cido
+  - agro
+  - txpo
+  - htn
+  - mfomd
+  - vo
+  - obi
+  - stato
+  - genepio
+  - ovae
   - ico
-  - omiabis
 mirror_from: http://purl.obolibrary.org/obo/ogms.owl
 namespace: ogms
 results:

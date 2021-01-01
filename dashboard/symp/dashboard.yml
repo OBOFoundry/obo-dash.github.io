@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - SYMP
 changed: false
-date: '2020-12-24'
+date: '2021-01-01'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 4064
@@ -21,10 +21,12 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.788
-    _formula: (3*impact+2*dashboard+1*reuse)/6
+    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
     _impact: 0.034
+    _impact_external: 0.25
     _reuse: 0.025
-    oboscore: 0.284
+    oboscore: 0.273
+  'Info: How many externally documented uses?': 1
   'Info: How many ontologies use it?': 6
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -36,13 +38,13 @@ metrics:
     owl: 99
     rdfs: 1021
   'Info: Which ontologies use it?':
-  - cido
-  - genepio
   - symp
-  - aro
-  - eupath
   - doid
+  - eupath
+  - aro
+  - genepio
   - ontoneo
+  - cido
 mirror_from: http://purl.obolibrary.org/obo/symp.owl
 namespace: symp
 results:

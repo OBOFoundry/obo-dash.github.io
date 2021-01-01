@@ -9,7 +9,7 @@
             <div class="col-md-8">
                 <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/bfo.html">bfo</a></h1>
                 <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl</p>
-                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: 2020-12-23</p>
+                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: 2020-12-31</p>
                 <p class="lead" style="margin-top:-15px;"><a href="dashboard.yml">View dashboard results as YAML</a></p>
                 <h3>Error Breakdown</h3>
                 
@@ -414,15 +414,25 @@
                                         
                                         <li>_dashboard: 0.887</li>
                                         
-                                        <li>_formula: (3*impact+2*dashboard+1*reuse)/6</li>
+                                        <li>_formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9</li>
                                         
-                                        <li>_impact: 0.75</li>
+                                        <li>_impact: 0.756</li>
+                                        
+                                        <li>_impact_external: 0.25</li>
                                         
                                         <li>_reuse: 0.393</li>
                                         
-                                        <li>oboscore: 0.736</li>
+                                        <li>oboscore: 0.576</li>
                                         
                                     </ul></td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>Info: How many externally documented uses?</td>
+                                
+                                
+                                    <td>1</td>
                                 
                             </tr>
                         
@@ -430,7 +440,7 @@
                                 <td>Info: How many ontologies use it?</td>
                                 
                                 
-                                    <td>132</td>
+                                    <td>133</td>
                                 
                             </tr>
                         
@@ -478,7 +488,7 @@
                                 <td>Info: Which ontologies use it?</td>
                                 
                                 
-                                    <td>['fypo', 'psdo', 'mco', 'ico', 'cheminf', 'mondo', 'pdumdv', 'omiabis', 'zfs', 'ovae', 'mro', 'oae', 'ogg', 'fbbt', 'hsapdv', 'pco', 'bfo', 'iao', 'ppo', 'peco', 'hao', 'ohd', 'cto', 'ecocore', 'wbphenotype', 'maxo', 'caro', 'iceo', 'omrse', 'cvdo', 'ero', 'apollo_sv', 'ncro', 'dpo', 'ino', 'omo', 'stato', 'pso', 'rxno', 'cro', 'chmo', 'chiro', 'mfomd', 'txpo', 'flopo', 'mpio', 'mfmo', 'nbo', 'one', 'planp', 'geno', 'cteno', 'dideo', 'mp', 'xco', 'ogsf', 'xao', 'omit', 'zfa', 'pr', 'mmusdv', 'cdao', 'fideo', 'dron', 'ogms', 'eupath', 'clao', 'mop', 'gsso', 'eco', 'ido', 'ro', 'geo', 'htn', 'sepio', 'exo', 'olatdv', 'agro', 'poro', 'go', 'foodon', 'bto', 'envo', 'cl', 'phipo', 'amphx', 'to', 'oostt', 'obib', 'obcs', 'ornaseq', 'wbbt', 'obi', 'plana', 'vo', 'fao', 'bspo', 'clo', 'fbcv', 'bco', 'upheno', 'ecao', 'gecko', 'micro', 'oarcs', 'ms', 'swo', 'opl', 'cob', 'mf', 'duo', 'chebi', 'mfoem', 'ohpi', 'omp', 'genepio', 'clyh', 'ontoneo', 'xpo', 'wbls', 'oba', 'uberon', 'ohmi', 'zeco', 'opmi', 'hp', 'fbdv', 'zp', 'miapa', 'cido', 'fbbi', 'po', 'pato']</td>
+                                    <td>['flopo', 'fbcv', 'caro', 'mfmo', 'omrse', 'clyh', 'ontoneo', 'hp', 'bco', 'vo', 'stato', 'duo', 'wbphenotype', 'ero', 'ncro', 'pso', 'geo', 'bto', 'zp', 'maxo', 'mmusdv', 'txpo', 'htn', 'mro', 'cl', 'amphx', 'geno', 'ovae', 'ogg', 'ornaseq', 'fbbi', 'phipo', 'wbbt', 'cido', 'cheminf', 'xco', 'ohmi', 'opmi', 'opl', 'mondo', 'go', 'eco', 'ecocore', 'mf', 'ohd', 'wbls', 'mfoem', 'hsapdv', 'xpo', 'uberon', 'agro', 'exo', 'chebi', 'ohpi', 'ino', 'upheno', 'obcs', 'dron', 'ons', 'zfs', 'pdumdv', 'poro', 'miapa', 'cob', 'chmo', 'ogsf', 'swo', 'fideo', 'clo', 'micro', 'po', 'to', 'ido', 'rxno', 'oarcs', 'cdao', 'bfo', 'fbbt', 'zeco', 'pr', 'iceo', 'psdo', 'planp', 'foodon', 'omp', 'fypo', 'olatdv', 'iao', 'nbo', 'hao', 'dideo', 'ecao', 'obi', 'ppo', 'dpo', 'cto', 'oostt', 'eupath', 'chiro', 'oba', 'peco', 'bspo', 'zfa', 'mop', 'pco', 'cro', 'cteno', 'sepio', 'plana', 'one', 'obib', 'omiabis', 'mfomd', 'ico', 'gecko', 'apollo_sv', 'clao', 'ro', 'gsso', 'xao', 'fao', 'ogms', 'fbdv', 'cvdo', 'genepio', 'mpio', 'mp', 'omit', 'omo', 'pato', 'mco', 'envo', 'oae', 'ms']</td>
                                 
                             </tr>
                         

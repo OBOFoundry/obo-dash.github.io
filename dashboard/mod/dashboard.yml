@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - MOD
 changed: false
-date: '2020-12-24'
+date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 35075
@@ -24,10 +24,12 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
     _dashboard: 0.584
-    _formula: (3*impact+2*dashboard+1*reuse)/6
+    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
     _impact: 0.017
+    _impact_external: 0
     _reuse: 0.018
-    oboscore: 0.206
+    oboscore: 0.137
+  'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -39,10 +41,10 @@ metrics:
     owl: 73
     rdfs: 20724
   'Info: Which ontologies use it?':
-  - pr
+  - mp
   - mod
   - upheno
-  - mp
+  - pr
 mirror_from: http://purl.obolibrary.org/obo/mod.owl
 namespace: mod
 results:

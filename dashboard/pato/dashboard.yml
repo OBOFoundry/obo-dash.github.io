@@ -2,7 +2,7 @@ base_generated: false
 base_prefixes:
 - PATO
 changed: false
-date: '2020-12-24'
+date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 16715
@@ -33,11 +33,13 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.933
-    _formula: (3*impact+2*dashboard+1*reuse)/6
-    _impact: 0.443
+    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+    _impact: 0.449
+    _impact_external: 0.25
     _reuse: 0.027
-    oboscore: 0.537
-  'Info: How many ontologies use it?': 78
+    oboscore: 0.443
+  'Info: How many externally documented uses?': 1
+  'Info: How many ontologies use it?': 79
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -54,85 +56,86 @@ metrics:
     owl: 978
     rdfs: 2842
   'Info: Which ontologies use it?':
-  - clo
-  - go
-  - dpo
-  - plana
-  - vo
-  - cl
-  - dideo
-  - xpo
-  - agro
-  - apollo_sv
-  - oba
-  - obcs
-  - ero
-  - mp
-  - pato
-  - cto
-  - htn
-  - mco
-  - obib
-  - dron
-  - poro
-  - cido
-  - ecto
-  - pco
-  - fbbt
-  - zp
-  - oostt
-  - planp
-  - genepio
-  - mondo
-  - phipo
-  - flopo
-  - pso
-  - ohmi
-  - wbphenotype
-  - cteno
-  - cob
-  - foodon
-  - geo
-  - uberon
-  - upheno
-  - obi
-  - envo
-  - caro
-  - cheminf
-  - ohpi
-  - ppo
-  - fideo
-  - nbo
-  - mfmo
-  - psdo
-  - omp
-  - gecko
-  - omiabis
-  - omrse
-  - opmi
-  - gsso
-  - hp
-  - fovt
-  - one
-  - ontoneo
-  - peco
-  - geno
-  - duo
-  - iao
-  - ovae
-  - ro
-  - txpo
-  - oae
-  - micro
-  - ico
   - to
-  - stato
-  - uo
-  - ogsf
-  - eupath
+  - ro
+  - peco
+  - pato
+  - obib
+  - dpo
+  - psdo
+  - cto
+  - mp
+  - omrse
+  - ohmi
+  - gsso
   - fypo
-  - ecocore
+  - cob
+  - planp
+  - envo
+  - oae
+  - ecto
+  - omiabis
+  - pso
+  - ero
+  - oostt
+  - go
+  - uberon
+  - zp
+  - geno
+  - obcs
+  - apollo_sv
+  - xpo
+  - cl
+  - duo
+  - fideo
+  - ons
+  - gecko
+  - dron
+  - oba
+  - opmi
+  - plana
+  - eupath
+  - ohpi
+  - dideo
+  - phipo
+  - ogsf
+  - uo
+  - mondo
+  - flopo
+  - mfmo
+  - nbo
+  - upheno
+  - cteno
+  - omp
+  - cido
+  - ontoneo
+  - wbphenotype
   - ms
+  - foodon
+  - agro
+  - clo
+  - micro
+  - htn
+  - poro
+  - txpo
+  - caro
+  - mco
+  - pco
+  - vo
+  - ppo
+  - ovae
+  - obi
+  - ecocore
+  - cheminf
+  - stato
+  - fovt
+  - hp
+  - iao
+  - genepio
+  - fbbt
+  - one
+  - geo
+  - ico
 mirror_from: http://purl.obolibrary.org/obo/pato/pato-base.owl
 namespace: pato
 results:

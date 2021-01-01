@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - IDO
 changed: false
-date: '2020-12-24'
+date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 2929
@@ -39,10 +39,12 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.767
-    _formula: (3*impact+2*dashboard+1*reuse)/6
+    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
     _impact: 0.102
+    _impact_external: 0
     _reuse: 0.343
-    oboscore: 0.364
+    oboscore: 0.243
+  'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 18
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -67,25 +69,25 @@ metrics:
     protege: 1
     rdfs: 775
   'Info: Which ontologies use it?':
-  - ino
-  - iceo
-  - cido
-  - genepio
-  - opl
-  - obib
-  - vo
-  - ohmi
-  - ohpi
+  - doid
+  - micro
+  - ogms
+  - htn
+  - mfomd
   - eupath
   - ido
-  - mfomd
-  - gsso
-  - micro
-  - htn
-  - doid
-  - obi
   - dideo
-  - ogms
+  - obib
+  - ohpi
+  - opl
+  - vo
+  - obi
+  - ino
+  - ohmi
+  - gsso
+  - genepio
+  - iceo
+  - cido
 mirror_from: http://purl.obolibrary.org/obo/ido.owl
 namespace: ido
 results:

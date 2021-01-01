@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - STATO
 changed: false
-date: '2020-12-24'
+date: '2021-01-01'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 8317
@@ -51,11 +51,13 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.719
-    _formula: (3*impact+2*dashboard+1*reuse)/6
-    _impact: 0.051
+    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+    _impact: 0.057
+    _impact_external: 0
     _reuse: 0.437
-    oboscore: 0.338
-  'Info: How many ontologies use it?': 9
+    oboscore: 0.227
+  'Info: How many externally documented uses?': 0
+  'Info: How many ontologies use it?': 10
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -85,16 +87,17 @@ metrics:
     rdfs: 1093
     xsd: 45
   'Info: Which ontologies use it?':
-  - genepio
-  - stato
-  - obcs
-  - gecko
-  - psdo
-  - apollo_sv
-  - eupath
+  - ons
   - sepio
+  - gecko
+  - eupath
   - pco
   - dideo
+  - psdo
+  - stato
+  - genepio
+  - obcs
+  - apollo_sv
 mirror_from: http://purl.obolibrary.org/obo/stato.owl
 namespace: stato
 results:

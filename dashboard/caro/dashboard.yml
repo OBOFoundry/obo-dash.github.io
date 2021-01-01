@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - CARO
 changed: false
-date: '2020-12-24'
+date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 40191
@@ -40,10 +40,12 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.784
-    _formula: (3*impact+2*dashboard+1*reuse)/6
+    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
     _impact: 0.233
+    _impact_external: 0
     _reuse: 0.657
-    oboscore: 0.487
+    oboscore: 0.325
+  'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 41
   'Info: Logical consistency': true
   'Info: Syntax': OWL Functional Syntax
@@ -67,48 +69,48 @@ metrics:
     rdf: 5
     rdfs: 1679
   'Info: Which ontologies use it?':
-  - cob
-  - oarcs
+  - to
+  - ro
+  - pato
+  - ido
   - ohd
-  - phipo
+  - dpo
   - mp
+  - ohmi
+  - cob
+  - envo
+  - fbbi
+  - omiabis
+  - bspo
+  - pso
+  - aeo
+  - zp
+  - go
+  - opmi
+  - oba
   - ohpi
-  - ovae
+  - phipo
+  - mondo
+  - flopo
+  - mfmo
+  - upheno
+  - cteno
+  - wbphenotype
+  - cido
+  - oarcs
+  - foodon
+  - agro
+  - clo
+  - htn
+  - poro
+  - caro
+  - pco
+  - ecocore
   - po
   - opl
-  - flopo
-  - wbphenotype
-  - pco
-  - aeo
-  - upheno
-  - ido
-  - pato
-  - omiabis
-  - ro
-  - poro
-  - cido
-  - mfmo
-  - oba
-  - pso
+  - ovae
   - peco
-  - cteno
-  - agro
   - bco
-  - to
-  - fbbi
-  - dpo
-  - clo
-  - ohmi
-  - mondo
-  - caro
-  - zp
-  - opmi
-  - ecocore
-  - envo
-  - bspo
-  - foodon
-  - go
-  - htn
 mirror_from: http://purl.obolibrary.org/obo/caro.owl
 namespace: caro
 results:

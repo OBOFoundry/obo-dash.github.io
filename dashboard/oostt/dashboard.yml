@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - OOSTT
 changed: false
-date: '2020-12-24'
+date: '2021-01-01'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 4467
@@ -50,10 +50,12 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.735
-    _formula: (3*impact+2*dashboard+1*reuse)/6
+    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
     _impact: 0.011
+    _impact_external: 0
     _reuse: 0.589
-    oboscore: 0.349
+    oboscore: 0.232
+  'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 2
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -85,9 +87,9 @@ metrics:
     vivoweb: 6
     xsd: 4
   'Info: Which ontologies use it?':
+  - omrse
   - oostt
   - ico
-  - omrse
 mirror_from: http://purl.obolibrary.org/obo/oostt.owl
 namespace: oostt
 results:

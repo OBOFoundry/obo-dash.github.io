@@ -2,7 +2,7 @@ base_generated: false
 base_prefixes:
 - ECOCORE
 changed: false
-date: '2020-12-24'
+date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 623
@@ -27,10 +27,12 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
     _dashboard: 0.793
-    _formula: (3*impact+2*dashboard+1*reuse)/6
+    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
     _impact: 0.011
+    _impact_external: 0
     _reuse: 0.25
-    oboscore: 0.312
+    oboscore: 0.208
+  'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 2
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -52,8 +54,8 @@ metrics:
     oboInOwl: 67
     rdfs: 191
   'Info: Which ontologies use it?':
-  - pco
   - ecocore
+  - pco
   - foodon
 mirror_from: http://purl.obolibrary.org/obo/ecocore/ecocore-base.owl
 namespace: ecocore

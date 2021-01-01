@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - CHEBI
 changed: false
-date: '2020-12-23'
+date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 2104592
@@ -25,11 +25,13 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
     _dashboard: 0.891
-    _formula: (3*impact+2*dashboard+1*reuse)/6
-    _impact: 0.398
+    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+    _impact: 0.403
+    _impact_external: 0.25
     _reuse: 0.0
-    oboscore: 0.496
-  'Info: How many ontologies use it?': 70
+    oboscore: 0.416
+  'Info: How many externally documented uses?': 2
+  'Info: How many ontologies use it?': 71
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -42,77 +44,78 @@ metrics:
     owl: 18498
     rdfs: 136700
   'Info: Which ontologies use it?':
-  - eupath
-  - mop
-  - cto
-  - gsso
-  - cob
-  - ido
-  - fypo
-  - wbphenotype
-  - maxo
-  - psdo
-  - caro
-  - iceo
-  - mco
-  - fobi
-  - chebi
-  - agro
-  - ohpi
-  - apollo_sv
-  - go
-  - ecto
-  - envo
-  - foodon
-  - doid
-  - cl
-  - dpo
-  - ncro
-  - ino
-  - omp
-  - phipo
-  - genepio
-  - pso
-  - stato
-  - rxno
-  - ico
-  - to
-  - chmo
   - cheminf
-  - fideo
-  - chiro
-  - txpo
-  - mondo
-  - obcs
-  - obib
-  - ornaseq
-  - oba
-  - omiabis
-  - nbo
-  - uberon
-  - obi
-  - vo
-  - geno
-  - ohmi
-  - cteno
-  - dideo
-  - mp
-  - opmi
-  - ovae
-  - poro
-  - xco
-  - ogsf
-  - hp
-  - zp
+  - eupath
+  - caro
   - clo
+  - ecto
+  - chiro
   - fbcv
-  - omit
-  - cido
-  - pr
-  - upheno
+  - fideo
   - micro
-  - dron
+  - ohmi
+  - to
+  - oba
+  - opmi
   - peco
+  - xco
+  - ido
+  - rxno
+  - vo
+  - hp
+  - mondo
+  - go
+  - mop
+  - cteno
+  - stato
+  - uberon
+  - agro
+  - wbphenotype
+  - ncro
+  - chebi
+  - ohpi
+  - ino
+  - pr
+  - pso
+  - obib
+  - iceo
+  - omiabis
+  - psdo
+  - obcs
+  - upheno
+  - zp
+  - dron
+  - foodon
+  - ico
+  - omp
+  - fypo
+  - ons
+  - fobi
+  - apollo_sv
+  - nbo
+  - maxo
+  - gsso
+  - dideo
+  - poro
+  - genepio
+  - txpo
+  - cl
+  - cob
+  - chmo
+  - mp
+  - geno
+  - ovae
+  - obi
+  - omit
+  - doid
+  - dpo
+  - cto
+  - ogsf
+  - ornaseq
+  - mco
+  - phipo
+  - envo
+  - cido
 mirror_from: http://purl.obolibrary.org/obo/chebi.owl
 namespace: chebi
 results:

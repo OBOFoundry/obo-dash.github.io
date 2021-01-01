@@ -2,6 +2,7 @@ oboscore:
   dashboard_score_max_impact:
     dashboard: 2
     impact: 3
+    impact_external: 3
     no_base: 5
     overall_error: 20
     overall_info: 5
@@ -13,6 +14,7 @@ oboscore:
   dashboard_score_weights:
     dashboard: 2
     impact: 3
+    impact_external: 3
     no_base: 5
     overall_error: 5
     overall_info: 0.1
@@ -26,7 +28,7 @@ ontologies:
   base_prefixes:
   - AEO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1278
@@ -46,10 +48,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.748
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.518
-      oboscore: 0.336
+      oboscore: 0.224
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -115,7 +119,7 @@ ontologies:
   base_prefixes:
   - AGRO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 9106
@@ -168,10 +172,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.741
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.813
-      oboscore: 0.383
+      oboscore: 0.255
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -260,7 +266,7 @@ ontologies:
   base_prefixes:
   - AMPHX
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 571
@@ -280,10 +286,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.76
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.052
-      oboscore: 0.262
+      oboscore: 0.175
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -351,7 +359,7 @@ ontologies:
   base_prefixes:
   - APO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 3780
@@ -371,10 +379,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.738
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.473
-      oboscore: 0.325
+      oboscore: 0.217
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -441,7 +451,7 @@ ontologies:
   base_prefixes:
   - APOLLO_SV
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 11061
@@ -491,10 +501,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.722
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.08
+      _impact_external: 0
       _reuse: 0.687
-      oboscore: 0.395
+      oboscore: 0.263
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 14
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -539,21 +551,21 @@ ontologies:
       rdfs: 2316
       xsd: 4
     'Info: Which ontologies use it?':
-    - omiabis
-    - genepio
-    - iao
-    - one
-    - oostt
-    - cido
-    - apollo_sv
-    - obib
-    - cheminf
-    - dideo
     - duo
+    - dron
+    - omiabis
+    - eupath
+    - obib
+    - dideo
     - mpio
     - omrse
-    - dron
-    - eupath
+    - cheminf
+    - oostt
+    - iao
+    - one
+    - genepio
+    - cido
+    - apollo_sv
   mirror_from: http://purl.obolibrary.org/obo/apollo_sv.owl
   namespace: apollo_sv
   results:
@@ -613,7 +625,7 @@ ontologies:
   base_prefixes:
   - ARO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 19797
@@ -633,10 +645,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.623
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.011
+      _impact_external: 0
       _reuse: 0.009
-      oboscore: 0.215
+      oboscore: 0.143
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 2
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -653,9 +667,9 @@ ontologies:
       oboInOwl: 13979
       rdfs: 4568
     'Info: Which ontologies use it?':
+    - genepio
     - iceo
     - aro
-    - genepio
   mirror_from: http://purl.obolibrary.org/obo/aro.owl
   namespace: aro
   results:
@@ -710,7 +724,7 @@ ontologies:
   base_prefixes:
   - BCO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 456
@@ -740,10 +754,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.826
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.006
+      _impact_external: 0
       _reuse: 0.748
-      oboscore: 0.403
+      oboscore: 0.269
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 1
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -817,7 +833,7 @@ ontologies:
   base_prefixes:
   - BFO
   changed: false
-  date: '2020-12-23'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 463
@@ -838,11 +854,13 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.887
-      _formula: (3*impact+2*dashboard+1*reuse)/6
-      _impact: 0.75
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+      _impact: 0.756
+      _impact_external: 0.25
       _reuse: 0.393
-      oboscore: 0.736
-    'Info: How many ontologies use it?': 132
+      oboscore: 0.576
+    'Info: How many externally documented uses?': 1
+    'Info: How many ontologies use it?': 133
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -854,139 +872,140 @@ ontologies:
       owl: 1
       rdfs: 110
     'Info: Which ontologies use it?':
-    - fypo
-    - psdo
-    - mco
-    - ico
-    - cheminf
-    - mondo
-    - pdumdv
-    - omiabis
-    - zfs
-    - ovae
-    - mro
-    - oae
-    - ogg
-    - fbbt
-    - hsapdv
-    - pco
-    - bfo
-    - iao
-    - ppo
-    - peco
-    - hao
-    - ohd
-    - cto
-    - ecocore
-    - wbphenotype
-    - maxo
-    - caro
-    - iceo
-    - omrse
-    - cvdo
-    - ero
-    - apollo_sv
-    - ncro
-    - dpo
-    - ino
-    - omo
-    - stato
-    - pso
-    - rxno
-    - cro
-    - chmo
-    - chiro
-    - mfomd
-    - txpo
     - flopo
-    - mpio
-    - mfmo
-    - nbo
-    - one
-    - planp
-    - geno
-    - cteno
-    - dideo
-    - mp
-    - xco
-    - ogsf
-    - xao
-    - omit
-    - zfa
-    - pr
-    - mmusdv
-    - cdao
-    - fideo
-    - dron
-    - ogms
-    - eupath
-    - clao
-    - mop
-    - gsso
-    - eco
-    - ido
-    - ro
-    - geo
-    - htn
-    - sepio
-    - exo
-    - olatdv
-    - agro
-    - poro
-    - go
-    - foodon
-    - bto
-    - envo
-    - cl
-    - phipo
-    - amphx
-    - to
-    - oostt
-    - obib
-    - obcs
-    - ornaseq
-    - wbbt
-    - obi
-    - plana
-    - vo
-    - fao
-    - bspo
-    - clo
     - fbcv
-    - bco
-    - upheno
-    - ecao
-    - gecko
-    - micro
-    - oarcs
-    - ms
-    - swo
-    - opl
-    - cob
-    - mf
-    - duo
-    - chebi
-    - mfoem
-    - ohpi
-    - omp
-    - genepio
+    - caro
+    - mfmo
+    - omrse
     - clyh
     - ontoneo
-    - xpo
-    - wbls
-    - oba
-    - uberon
-    - ohmi
-    - zeco
-    - opmi
     - hp
-    - fbdv
+    - bco
+    - vo
+    - stato
+    - duo
+    - wbphenotype
+    - ero
+    - ncro
+    - pso
+    - geo
+    - bto
     - zp
-    - miapa
-    - cido
+    - maxo
+    - mmusdv
+    - txpo
+    - htn
+    - mro
+    - cl
+    - amphx
+    - geno
+    - ovae
+    - ogg
+    - ornaseq
     - fbbi
+    - phipo
+    - wbbt
+    - cido
+    - cheminf
+    - xco
+    - ohmi
+    - opmi
+    - opl
+    - mondo
+    - go
+    - eco
+    - ecocore
+    - mf
+    - ohd
+    - wbls
+    - mfoem
+    - hsapdv
+    - xpo
+    - uberon
+    - agro
+    - exo
+    - chebi
+    - ohpi
+    - ino
+    - upheno
+    - obcs
+    - dron
+    - ons
+    - zfs
+    - pdumdv
+    - poro
+    - miapa
+    - cob
+    - chmo
+    - ogsf
+    - swo
+    - fideo
+    - clo
+    - micro
     - po
+    - to
+    - ido
+    - rxno
+    - oarcs
+    - cdao
+    - bfo
+    - fbbt
+    - zeco
+    - pr
+    - iceo
+    - psdo
+    - planp
+    - foodon
+    - omp
+    - fypo
+    - olatdv
+    - iao
+    - nbo
+    - hao
+    - dideo
+    - ecao
+    - obi
+    - ppo
+    - dpo
+    - cto
+    - oostt
+    - eupath
+    - chiro
+    - oba
+    - peco
+    - bspo
+    - zfa
+    - mop
+    - pco
+    - cro
+    - cteno
+    - sepio
+    - plana
+    - one
+    - obib
+    - omiabis
+    - mfomd
+    - ico
+    - gecko
+    - apollo_sv
+    - clao
+    - ro
+    - gsso
+    - xao
+    - fao
+    - ogms
+    - fbdv
+    - cvdo
+    - genepio
+    - mpio
+    - mp
+    - omit
+    - omo
     - pato
+    - mco
+    - envo
+    - oae
+    - ms
   mirror_from: http://purl.obolibrary.org/obo/bfo.owl
   namespace: bfo
   results:
@@ -1037,7 +1056,7 @@ ontologies:
   base_prefixes:
   - BSPO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1259
@@ -1067,10 +1086,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.787
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.08
+      _impact_external: 0
       _reuse: 0.173
-      oboscore: 0.331
+      oboscore: 0.221
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 14
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -1085,21 +1106,21 @@ ontologies:
       owl: 7
       rdfs: 283
     'Info: Which ontologies use it?':
-    - micro
-    - mondo
-    - hp
-    - plana
-    - cido
-    - zp
-    - mp
-    - cteno
-    - opmi
-    - upheno
-    - ohpi
-    - ovae
-    - bspo
     - oae
+    - micro
+    - opmi
+    - plana
+    - ohpi
+    - bspo
+    - ovae
+    - mondo
+    - mp
+    - zp
+    - hp
     - uberon
+    - upheno
+    - cteno
+    - cido
   mirror_from: http://purl.obolibrary.org/obo/bspo.owl
   namespace: bspo
   results:
@@ -1153,7 +1174,7 @@ ontologies:
   base_prefixes:
   - BTO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 34809
@@ -1174,10 +1195,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.646
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.023
+      _impact_external: 0
       _reuse: 0.006
-      oboscore: 0.228
+      oboscore: 0.152
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 4
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -1191,11 +1214,11 @@ ontologies:
       owl: 51
       rdfs: 6512
     'Info: Which ontologies use it?':
-    - genepio
-    - opl
-    - fypo
-    - eupath
     - bto
+    - eupath
+    - opl
+    - genepio
+    - fypo
   mirror_from: http://purl.obolibrary.org/obo/bto/bto-base.owl
   namespace: bto
   results:
@@ -1248,7 +1271,7 @@ ontologies:
   base_prefixes:
   - CARO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 40191
@@ -1286,10 +1309,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.784
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.233
+      _impact_external: 0
       _reuse: 0.657
-      oboscore: 0.487
+      oboscore: 0.325
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 41
     'Info: Logical consistency': true
     'Info: Syntax': OWL Functional Syntax
@@ -1313,48 +1338,48 @@ ontologies:
       rdf: 5
       rdfs: 1679
     'Info: Which ontologies use it?':
-    - cob
-    - oarcs
+    - to
+    - ro
+    - pato
+    - ido
     - ohd
-    - phipo
+    - dpo
     - mp
+    - ohmi
+    - cob
+    - envo
+    - fbbi
+    - omiabis
+    - bspo
+    - pso
+    - aeo
+    - zp
+    - go
+    - opmi
+    - oba
     - ohpi
-    - ovae
+    - phipo
+    - mondo
+    - flopo
+    - mfmo
+    - upheno
+    - cteno
+    - wbphenotype
+    - cido
+    - oarcs
+    - foodon
+    - agro
+    - clo
+    - htn
+    - poro
+    - caro
+    - pco
+    - ecocore
     - po
     - opl
-    - flopo
-    - wbphenotype
-    - pco
-    - aeo
-    - upheno
-    - ido
-    - pato
-    - omiabis
-    - ro
-    - poro
-    - cido
-    - mfmo
-    - oba
-    - pso
+    - ovae
     - peco
-    - cteno
-    - agro
     - bco
-    - to
-    - fbbi
-    - dpo
-    - clo
-    - ohmi
-    - mondo
-    - caro
-    - zp
-    - opmi
-    - ecocore
-    - envo
-    - bspo
-    - foodon
-    - go
-    - htn
   mirror_from: http://purl.obolibrary.org/obo/caro.owl
   namespace: caro
   results:
@@ -1409,7 +1434,7 @@ ontologies:
   base_prefixes:
   - CDAO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 640
@@ -1457,10 +1482,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.717
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.006
+      _impact_external: 0
       _reuse: 0.342
-      oboscore: 0.299
+      oboscore: 0.199
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 1
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -1476,8 +1503,8 @@ ontologies:
       rdfs: 317
       xsd: 10
     'Info: Which ontologies use it?':
-    - cdao
     - miapa
+    - cdao
   mirror_from: http://purl.obolibrary.org/obo/cdao.owl
   namespace: cdao
   results:
@@ -1533,7 +1560,7 @@ ontologies:
   base_prefixes:
   - CHEBI
   changed: false
-  date: '2020-12-23'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 2104592
@@ -1556,11 +1583,13 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.891
-      _formula: (3*impact+2*dashboard+1*reuse)/6
-      _impact: 0.398
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+      _impact: 0.403
+      _impact_external: 0.25
       _reuse: 0.0
-      oboscore: 0.496
-    'Info: How many ontologies use it?': 70
+      oboscore: 0.416
+    'Info: How many externally documented uses?': 2
+    'Info: How many ontologies use it?': 71
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -1573,77 +1602,78 @@ ontologies:
       owl: 18498
       rdfs: 136700
     'Info: Which ontologies use it?':
-    - eupath
-    - mop
-    - cto
-    - gsso
-    - cob
-    - ido
-    - fypo
-    - wbphenotype
-    - maxo
-    - psdo
-    - caro
-    - iceo
-    - mco
-    - fobi
-    - chebi
-    - agro
-    - ohpi
-    - apollo_sv
-    - go
-    - ecto
-    - envo
-    - foodon
-    - doid
-    - cl
-    - dpo
-    - ncro
-    - ino
-    - omp
-    - phipo
-    - genepio
-    - pso
-    - stato
-    - rxno
-    - ico
-    - to
-    - chmo
     - cheminf
-    - fideo
-    - chiro
-    - txpo
-    - mondo
-    - obcs
-    - obib
-    - ornaseq
-    - oba
-    - omiabis
-    - nbo
-    - uberon
-    - obi
-    - vo
-    - geno
-    - ohmi
-    - cteno
-    - dideo
-    - mp
-    - opmi
-    - ovae
-    - poro
-    - xco
-    - ogsf
-    - hp
-    - zp
+    - eupath
+    - caro
     - clo
+    - ecto
+    - chiro
     - fbcv
-    - omit
-    - cido
-    - pr
-    - upheno
+    - fideo
     - micro
-    - dron
+    - ohmi
+    - to
+    - oba
+    - opmi
     - peco
+    - xco
+    - ido
+    - rxno
+    - vo
+    - hp
+    - mondo
+    - go
+    - mop
+    - cteno
+    - stato
+    - uberon
+    - agro
+    - wbphenotype
+    - ncro
+    - chebi
+    - ohpi
+    - ino
+    - pr
+    - pso
+    - obib
+    - iceo
+    - omiabis
+    - psdo
+    - obcs
+    - upheno
+    - zp
+    - dron
+    - foodon
+    - ico
+    - omp
+    - fypo
+    - ons
+    - fobi
+    - apollo_sv
+    - nbo
+    - maxo
+    - gsso
+    - dideo
+    - poro
+    - genepio
+    - txpo
+    - cl
+    - cob
+    - chmo
+    - mp
+    - geno
+    - ovae
+    - obi
+    - omit
+    - doid
+    - dpo
+    - cto
+    - ogsf
+    - ornaseq
+    - mco
+    - phipo
+    - envo
+    - cido
   mirror_from: http://purl.obolibrary.org/obo/chebi.owl
   namespace: chebi
   results:
@@ -1693,7 +1723,7 @@ ontologies:
   base_prefixes:
   - CHEMINF
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 4254
@@ -1744,10 +1774,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.749
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.439
-      oboscore: 0.323
+      oboscore: 0.215
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -1832,7 +1864,7 @@ ontologies:
   base_prefixes:
   - CHIRO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 81987
@@ -1857,10 +1889,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.748
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 1.0
-      oboscore: 0.416
+      oboscore: 0.277
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -1933,7 +1967,7 @@ ontologies:
   base_prefixes:
   - CHMO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 21096
@@ -1960,10 +1994,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.785
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.028
+      _impact_external: 0
       _reuse: 0.06
-      oboscore: 0.286
+      oboscore: 0.19
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 5
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -1983,10 +2019,10 @@ ontologies:
       rdfs: 3049
     'Info: Which ontologies use it?':
     - micro
-    - genepio
-    - dideo
     - chmo
+    - dideo
     - obi
+    - genepio
     - ico
   mirror_from: http://purl.obolibrary.org/obo/chmo.owl
   namespace: chmo
@@ -2042,7 +2078,7 @@ ontologies:
   base_prefixes:
   - CIDO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 70379
@@ -2088,10 +2124,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.72
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.965
-      oboscore: 0.401
+      oboscore: 0.267
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -2202,7 +2240,7 @@ ontologies:
   base_prefixes:
   - CIO
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 185
@@ -2236,10 +2274,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.748
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.312
-      oboscore: 0.301
+      oboscore: 0.201
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -2304,7 +2344,7 @@ ontologies:
   base_prefixes:
   - CL
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 12754
@@ -2332,10 +2372,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.934
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.273
+      _impact_external: 0.25
       _reuse: 0.321
-      oboscore: 0.501
+      oboscore: 0.418
+    'Info: How many externally documented uses?': 2
     'Info: How many ontologies use it?': 48
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -2360,55 +2402,55 @@ ontologies:
       rdfs: 2909
       xsd: 943
     'Info: Which ontologies use it?':
-    - cob
-    - mp
-    - dideo
-    - ohpi
-    - opl
-    - flopo
-    - wbphenotype
-    - hp
-    - aeo
-    - obib
-    - upheno
-    - clyh
-    - ido
-    - obi
-    - obcs
-    - ornaseq
-    - pato
-    - uberon
-    - omiabis
     - ro
-    - geno
+    - pato
+    - ido
+    - obib
+    - dpo
+    - psdo
+    - mp
+    - ohmi
+    - gsso
+    - fypo
+    - cob
+    - doid
+    - omiabis
+    - clyh
+    - pr
+    - aeo
+    - zp
     - go
-    - txpo
+    - amphx
+    - uberon
+    - geno
+    - obcs
     - cl
-    - poro
-    - mco
-    - cido
+    - oba
+    - ornaseq
+    - eupath
+    - ohpi
+    - dideo
+    - mondo
+    - flopo
     - ino
     - mfmo
-    - oba
-    - psdo
+    - upheno
     - cteno
-    - stato
-    - fbbt
-    - doid
-    - fypo
-    - pr
-    - dpo
-    - clo
-    - ohmi
-    - ico
-    - micro
-    - mondo
-    - caro
-    - zp
-    - gsso
     - ontoneo
-    - eupath
-    - amphx
+    - cido
+    - wbphenotype
+    - clo
+    - micro
+    - txpo
+    - poro
+    - caro
+    - mco
+    - obi
+    - stato
+    - hp
+    - opl
+    - fbbt
+    - ico
   mirror_from: http://purl.obolibrary.org/obo/cl/cl-base.owl
   namespace: cl
   results:
@@ -2460,7 +2502,7 @@ ontologies:
   base_prefixes:
   - CLAO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 4699
@@ -2482,10 +2524,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.759
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 1.0
-      oboscore: 0.42
+      oboscore: 0.28
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -2552,7 +2596,7 @@ ontologies:
   base_prefixes:
   - CLO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 344066
@@ -2593,10 +2637,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.576
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.057
+      _impact_external: 0
       _reuse: 0.075
-      oboscore: 0.233
+      oboscore: 0.155
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 10
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -2635,17 +2681,17 @@ ontologies:
       rdfs: 126474
       xsd: 5
     'Info: Which ontologies use it?':
-    - geno
+    - clo
+    - ncro
+    - ero
     - txpo
     - mco
     - obib
-    - ero
     - dideo
-    - ncro
     - ohpi
     - obi
     - omit
-    - clo
+    - geno
   mirror_from: http://purl.obolibrary.org/obo/clo.owl
   namespace: clo
   results:
@@ -2704,7 +2750,7 @@ ontologies:
   base_prefixes:
   - CLYH
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 512
@@ -2724,10 +2770,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.79
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 1.0
-      oboscore: 0.43
+      oboscore: 0.287
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -2795,7 +2843,7 @@ ontologies:
   base_prefixes:
   - CMO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 14719
@@ -2816,11 +2864,13 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.679
-      _formula: (3*impact+2*dashboard+1*reuse)/6
-      _impact: 0.028
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+      _impact: 0.034
+      _impact_external: 0
       _reuse: 0.006
-      oboscore: 0.241
-    'Info: How many ontologies use it?': 5
+      oboscore: 0.163
+    'Info: How many externally documented uses?': 0
+    'Info: How many ontologies use it?': 6
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML
     'Info: Usage of namespaces in axioms':
@@ -2830,12 +2880,13 @@ ontologies:
       prefix_unknown: 5463
       rdfs: 3158
     'Info: Which ontologies use it?':
-    - cmo
+    - ons
     - opmi
     - gecko
-    - ontoneo
     - eupath
     - ohmi
+    - cmo
+    - ontoneo
   mirror_from: http://purl.obolibrary.org/obo/cmo.owl
   namespace: cmo
   results:
@@ -2889,7 +2940,7 @@ ontologies:
   base_prefixes:
   - COB
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 143
@@ -2926,10 +2977,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.779
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 1.0
-      oboscore: 0.426
+      oboscore: 0.284
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -3012,7 +3065,7 @@ ontologies:
   base_prefixes:
   - CRO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 906
@@ -3042,10 +3095,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.792
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.47
-      oboscore: 0.342
+      oboscore: 0.228
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -3115,7 +3170,7 @@ ontologies:
   base_prefixes:
   - CTENO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 2068
@@ -3150,10 +3205,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.727
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.809
-      oboscore: 0.377
+      oboscore: 0.251
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -3230,7 +3287,7 @@ ontologies:
   base_prefixes:
   - CTO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 3112
@@ -3258,10 +3315,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.743
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 1.0
-      oboscore: 0.414
+      oboscore: 0.276
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -3351,7 +3410,7 @@ ontologies:
   base_prefixes:
   - CVDO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1768
@@ -3389,10 +3448,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.702
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.011
+      _impact_external: 0
       _reuse: 0.533
-      oboscore: 0.328
+      oboscore: 0.219
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 2
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -3409,8 +3470,8 @@ ontologies:
       owl: 2
       rdfs: 584
     'Info: Which ontologies use it?':
-    - ontoneo
     - genepio
+    - ontoneo
     - cvdo
   mirror_from: http://purl.obolibrary.org/obo/cvdo.owl
   namespace: cvdo
@@ -3467,7 +3528,7 @@ ontologies:
   base_prefixes:
   - DDANAT
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 711
@@ -3488,10 +3549,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.798
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.006
+      _impact_external: 0
       _reuse: 0.157
-      oboscore: 0.295
+      oboscore: 0.197
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 1
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -3555,7 +3618,7 @@ ontologies:
   base_prefixes:
   - DDPHENO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 5942
@@ -3574,10 +3637,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.938
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.022
-      oboscore: 0.316
+      oboscore: 0.211
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -3639,7 +3704,7 @@ ontologies:
   base_prefixes:
   - DIDEO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 6381
@@ -3687,10 +3752,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.732
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.011
+      _impact_external: 0
       _reuse: 0.799
-      oboscore: 0.383
+      oboscore: 0.255
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 2
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -3736,8 +3803,8 @@ ontologies:
       xsd: 4
     'Info: Which ontologies use it?':
     - fideo
-    - mpio
     - dideo
+    - mpio
   mirror_from: http://purl.obolibrary.org/obo/dideo.owl
   namespace: dideo
   results:
@@ -3795,7 +3862,7 @@ ontologies:
   base_prefixes:
   - DOID
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 139755
@@ -3823,10 +3890,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.89
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.125
+      _impact_external: 0.25
       _reuse: 0.319
-      oboscore: 0.412
+      oboscore: 0.358
+    'Info: How many externally documented uses?': 1
     'Info: How many ontologies use it?': 22
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -3856,29 +3925,29 @@ ontologies:
       rdfs: 21089
       skos: 256
     'Info: Which ontologies use it?':
-    - clo
-    - vo
-    - apollo_sv
-    - ero
-    - htn
     - obib
-    - cido
-    - genepio
-    - aro
-    - ohmi
     - omit
-    - ohpi
+    - ohmi
     - gsso
-    - ontoneo
     - doid
-    - cvdo
-    - duo
-    - txpo
     - oae
-    - ico
+    - cvdo
+    - apollo_sv
+    - duo
     - ncro
+    - ero
     - eupath
+    - ohpi
+    - aro
+    - ontoneo
+    - cido
+    - clo
+    - txpo
+    - htn
     - mfomd
+    - vo
+    - genepio
+    - ico
   mirror_from: http://purl.obolibrary.org/obo/doid.owl
   namespace: doid
   results:
@@ -3929,7 +3998,7 @@ ontologies:
   - FBcv
   - FBcv
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1022
@@ -3958,10 +4027,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.841
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0.25
       _reuse: 0.526
-      oboscore: 0.368
+      oboscore: 0.329
+    'Info: How many externally documented uses?': 1
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -4042,7 +4113,7 @@ ontologies:
   base_prefixes:
   - DRON
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 698024
@@ -4078,10 +4149,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.797
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.062
+      _impact_external: 0
       _reuse: 0.004
-      oboscore: 0.297
+      oboscore: 0.198
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 11
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -4108,18 +4181,18 @@ ontologies:
       rdfs: 586641
       xsd: 21288
     'Info: Which ontologies use it?':
+    - fideo
     - micro
-    - cto
-    - cido
-    - apollo_sv
-    - obib
     - opmi
+    - dron
+    - eupath
+    - obib
     - dideo
     - mpio
-    - dron
-    - fideo
-    - eupath
+    - cto
     - ohmi
+    - cido
+    - apollo_sv
   mirror_from: http://purl.obolibrary.org/obo/dron.owl
   namespace: dron
   results:
@@ -4168,7 +4241,7 @@ ontologies:
   base_prefixes:
   - DUO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 2856
@@ -4215,10 +4288,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.742
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.006
+      _impact_external: 0
       _reuse: 0.919
-      oboscore: 0.404
+      oboscore: 0.269
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 1
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -4244,8 +4319,8 @@ ontologies:
       rdfs: 521
       xsd: 4
     'Info: Which ontologies use it?':
-    - ico
     - duo
+    - ico
   mirror_from: http://purl.obolibrary.org/obo/duo.owl
   namespace: duo
   results:
@@ -4300,7 +4375,7 @@ ontologies:
   base_prefixes:
   - ECAO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1392
@@ -4320,10 +4395,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.802
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 1.0
-      oboscore: 0.434
+      oboscore: 0.289
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -4389,7 +4466,7 @@ ontologies:
   base_prefixes:
   - ECO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 12362
@@ -4418,10 +4495,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.953
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.011
+      _impact_external: 0.25
       _reuse: 0.025
-      oboscore: 0.327
+      oboscore: 0.302
+    'Info: How many externally documented uses?': 2
     'Info: How many ontologies use it?': 2
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -4492,7 +4571,7 @@ ontologies:
   base_prefixes:
   - ECOCORE
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 623
@@ -4517,10 +4596,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.793
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.011
+      _impact_external: 0
       _reuse: 0.25
-      oboscore: 0.312
+      oboscore: 0.208
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 2
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -4542,8 +4623,8 @@ ontologies:
       oboInOwl: 67
       rdfs: 191
     'Info: Which ontologies use it?':
-    - pco
     - ecocore
+    - pco
     - foodon
   mirror_from: http://purl.obolibrary.org/obo/ecocore/ecocore-base.owl
   namespace: ecocore
@@ -4598,7 +4679,7 @@ ontologies:
   base_prefixes:
   - ECTO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 7684
@@ -4620,10 +4701,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.662
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.006
+      _impact_external: 0
       _reuse: 0.49
-      oboscore: 0.305
+      oboscore: 0.204
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 1
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -4645,8 +4728,8 @@ ontologies:
       oboInOwl: 2565
       rdfs: 2566
     'Info: Which ontologies use it?':
-    - mondo
     - ecto
+    - mondo
   mirror_from: http://purl.obolibrary.org/obo/ecto/ecto-base.owl
   namespace: ecto
   results:
@@ -4701,7 +4784,7 @@ ontologies:
   base_prefixes:
   - EMAPA
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 28139
@@ -4722,10 +4805,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.736
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0.25
       _reuse: 0.007
-      oboscore: 0.246
+      oboscore: 0.248
+    'Info: How many externally documented uses?': 1
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -4789,7 +4874,7 @@ ontologies:
   base_prefixes:
   - ENVO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 19771
@@ -4823,10 +4908,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.89
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.153
+      _impact_external: 0.5
       _reuse: 0.124
-      oboscore: 0.394
+      oboscore: 0.429
+    'Info: How many externally documented uses?': 3
     'Info: How many ontologies use it?': 27
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -4856,34 +4943,34 @@ ontologies:
       rdfs: 4657
       xsd: 5
     'Info: Which ontologies use it?':
-    - dpo
-    - genepio
-    - ecocore
-    - cido
-    - uberon
-    - htn
-    - ohmi
-    - obi
-    - mfmo
-    - agro
-    - ecto
-    - obib
-    - apollo_sv
-    - cob
-    - gsso
-    - envo
-    - geno
-    - micro
-    - pco
-    - peco
-    - mondo
-    - ro
-    - eupath
-    - chiro
-    - upheno
-    - foodon
     - to
+    - ro
+    - obib
+    - dpo
+    - ohmi
+    - gsso
+    - cob
+    - envo
+    - ecto
+    - chiro
+    - uberon
+    - geno
+    - apollo_sv
     - opmi
+    - eupath
+    - mondo
+    - mfmo
+    - upheno
+    - cido
+    - foodon
+    - agro
+    - micro
+    - htn
+    - pco
+    - obi
+    - ecocore
+    - genepio
+    - peco
   mirror_from: http://purl.obolibrary.org/obo/envo/envo-base.owl
   namespace: envo
   results:
@@ -4937,7 +5024,7 @@ ontologies:
   base_prefixes:
   - ERO
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 21921
@@ -4976,11 +5063,13 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.618
-      _formula: (3*impact+2*dashboard+1*reuse)/6
-      _impact: 0.062
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+      _impact: 0.068
+      _impact_external: 0
       _reuse: 0.51
-      oboscore: 0.322
-    'Info: How many ontologies use it?': 11
+      oboscore: 0.217
+    'Info: How many externally documented uses?': 0
+    'Info: How many ontologies use it?': 12
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -5014,18 +5103,19 @@ ontologies:
       vivoweb: 94
       xsd: 63
     'Info: Which ontologies use it?':
-    - ero
-    - genepio
-    - obib
-    - cto
-    - apollo_sv
-    - oostt
-    - eupath
-    - ogsf
+    - ons
     - sepio
-    - ico
+    - ero
+    - eupath
+    - obib
     - dideo
+    - ogsf
+    - cto
+    - oostt
+    - genepio
     - ontoneo
+    - apollo_sv
+    - ico
   mirror_from: http://purl.obolibrary.org/obo/ero.owl
   namespace: ero
   results:
@@ -5083,7 +5173,7 @@ ontologies:
   base_prefixes:
   - EUPATH
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 11188
@@ -5132,10 +5222,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.927
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.006
+      _impact_external: 0.5
       _reuse: 0.555
-      oboscore: 0.405
+      oboscore: 0.436
+    'Info: How many externally documented uses?': 3
     'Info: How many ontologies use it?': 1
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -5245,7 +5337,7 @@ ontologies:
   base_prefixes:
   - EXO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1012
@@ -5268,10 +5360,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.798
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 1.0
-      oboscore: 0.433
+      oboscore: 0.288
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML
@@ -5332,7 +5426,7 @@ ontologies:
   base_prefixes:
   - FAO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 619
@@ -5353,10 +5447,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.796
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.017
+      _impact_external: 0
       _reuse: 0.196
-      oboscore: 0.306
+      oboscore: 0.204
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 3
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -5372,8 +5468,8 @@ ontologies:
       xsd: 10
     'Info: Which ontologies use it?':
     - foodon
-    - go
     - envo
+    - go
     - fao
   mirror_from: http://purl.obolibrary.org/obo/fao/fao-base.owl
   namespace: fao
@@ -5428,7 +5524,7 @@ ontologies:
   - FBbi
   - FBbi
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 3706
@@ -5464,10 +5560,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.689
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.202
-      oboscore: 0.263
+      oboscore: 0.176
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -5545,7 +5643,7 @@ ontologies:
   - FBbt
   - FBbt
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 99608
@@ -5569,10 +5667,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.72
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.017
+      _impact_external: 0.25
       _reuse: 0.031
-      oboscore: 0.254
+      oboscore: 0.252
+    'Info: How many externally documented uses?': 2
     'Info: How many ontologies use it?': 3
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -5591,10 +5691,10 @@ ontologies:
       owl: 885
       rdfs: 15877
     'Info: Which ontologies use it?':
-    - dpo
-    - uberon
-    - upheno
     - fbbt
+    - uberon
+    - dpo
+    - upheno
   mirror_from: http://purl.obolibrary.org/obo/fbbt/fbbt-base.owl
   namespace: fbbt
   results:
@@ -5646,7 +5746,7 @@ ontologies:
   - FBcv
   - FBcv
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 7083
@@ -5676,10 +5776,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.692
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.017
+      _impact_external: 0.25
       _reuse: 0.115
-      oboscore: 0.258
+      oboscore: 0.256
+    'Info: How many externally documented uses?': 1
     'Info: How many ontologies use it?': 3
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -5696,10 +5798,10 @@ ontologies:
       owl: 179
       rdfs: 1504
     'Info: Which ontologies use it?':
+    - fbcv
+    - apollo_sv
     - dpo
     - upheno
-    - apollo_sv
-    - fbcv
   mirror_from: http://purl.obolibrary.org/obo/fbcv/fbcv-base.owl
   namespace: fbcv
   results:
@@ -5755,7 +5857,7 @@ ontologies:
   - FBdv
   - FBdv
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1220
@@ -5780,10 +5882,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.932
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.017
+      _impact_external: 0
       _reuse: 0.208
-      oboscore: 0.354
+      oboscore: 0.236
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 3
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -5798,10 +5902,10 @@ ontologies:
       owl: 13
       rdfs: 436
     'Info: Which ontologies use it?':
-    - dpo
-    - fbdv
     - upheno
+    - fbdv
     - fbcv
+    - dpo
   mirror_from: http://purl.obolibrary.org/obo/fbdv/fbdv-base.owl
   namespace: fbdv
   results:
@@ -5854,7 +5958,7 @@ ontologies:
   base_prefixes:
   - FIDEO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1572
@@ -5879,10 +5983,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.74
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 1.0
-      oboscore: 0.413
+      oboscore: 0.276
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -5958,7 +6064,7 @@ ontologies:
   base_prefixes:
   - FLOPO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 61515
@@ -6000,10 +6106,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.634
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.006
+      _impact_external: 0
       _reuse: 0.173
-      oboscore: 0.243
+      oboscore: 0.162
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 1
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -6029,8 +6137,8 @@ ontologies:
       rdfs: 30124
       xsd: 21
     'Info: Which ontologies use it?':
-    - flopo
     - foodon
+    - flopo
   mirror_from: http://purl.obolibrary.org/obo/flopo.owl
   namespace: flopo
   results:
@@ -6086,7 +6194,7 @@ ontologies:
   base_prefixes:
   - FMA
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 284070
@@ -6108,10 +6216,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.694
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.062
+      _impact_external: 0
       _reuse: 0.0
-      oboscore: 0.262
+      oboscore: 0.175
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 11
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -6122,18 +6232,18 @@ ontologies:
       oboInOwl: 203970
       rdfs: 78989
     'Info: Which ontologies use it?':
-    - fma
-    - omrse
+    - micro
     - obib
+    - dideo
+    - ohd
     - vo
     - cvdo
-    - apollo_sv
+    - omrse
     - oostt
-    - micro
-    - ohd
-    - ico
-    - dideo
+    - fma
     - ontoneo
+    - apollo_sv
+    - ico
   mirror_from: http://purl.obolibrary.org/obo/fma.owl
   namespace: fma
   results:
@@ -6186,7 +6296,7 @@ ontologies:
   base_prefixes:
   - FOBI
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 6808
@@ -6213,10 +6323,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.688
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.48
-      oboscore: 0.309
+      oboscore: 0.206
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -6291,7 +6403,7 @@ ontologies:
   base_prefixes:
   - FOODON
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 177784
@@ -6328,11 +6440,13 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.579
-      _formula: (3*impact+2*dashboard+1*reuse)/6
-      _impact: 0.068
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+      _impact: 0.074
+      _impact_external: 0
       _reuse: 0.217
-      oboscore: 0.263
-    'Info: How many ontologies use it?': 12
+      oboscore: 0.177
+    'Info: How many externally documented uses?': 0
+    'Info: How many ontologies use it?': 13
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -6372,18 +6486,19 @@ ontologies:
       rdfs: 41125
       schema: 187
     'Info: Which ontologies use it?':
-    - to
-    - mondo
-    - genepio
-    - fideo
-    - agro
-    - fobi
-    - pso
-    - eupath
-    - envo
     - foodon
+    - ons
+    - envo
     - doid
+    - agro
+    - fideo
+    - to
+    - fobi
+    - eupath
+    - pso
+    - mondo
     - maxo
+    - genepio
     - peco
   mirror_from: http://purl.obolibrary.org/obo/foodon.owl
   namespace: foodon
@@ -6440,7 +6555,7 @@ ontologies:
   base_prefixes:
   - FOVT
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 103
@@ -6462,10 +6577,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.95
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 1.0
-      oboscore: 0.483
+      oboscore: 0.322
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML
@@ -6525,7 +6642,7 @@ ontologies:
   base_prefixes:
   - FYPO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 75642
@@ -6550,10 +6667,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.937
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0.25
       _reuse: 0.199
-      oboscore: 0.345
+      oboscore: 0.314
+    'Info: How many externally documented uses?': 1
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -6668,6 +6787,7 @@ ontologies:
       ObjectSomeValuesFrom: 4771
       ObjectUnionOf: 288
     'Info: Does the ontology fall under OWL 2 DL?': false
+    'Info: How many externally documented uses?': 0
     'Info: Logical consistency': false
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -6705,7 +6825,7 @@ ontologies:
   base_prefixes:
   - GECKO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 955
@@ -6726,10 +6846,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.94
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0.25
       _reuse: 1.0
-      oboscore: 0.48
+      oboscore: 0.403
+    'Info: How many externally documented uses?': 1
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -6804,7 +6926,7 @@ ontologies:
   base_prefixes:
   - GENEPIO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 23098
@@ -6850,10 +6972,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.666
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.023
+      _impact_external: 0
       _reuse: 0.81
-      oboscore: 0.369
+      oboscore: 0.246
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 4
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -6924,11 +7048,11 @@ ontologies:
       skos: 1
       xsd: 37
     'Info: Which ontologies use it?':
-    - genepio
-    - ornaseq
-    - fideo
-    - eupath
     - foodon
+    - fideo
+    - ornaseq
+    - eupath
+    - genepio
   mirror_from: http://purl.obolibrary.org/obo/genepio.owl
   namespace: genepio
   results:
@@ -6984,7 +7108,7 @@ ontologies:
   base_prefixes:
   - GENO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1796
@@ -7024,10 +7148,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.753
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.006
+      _impact_external: 0
       _reuse: 0.386
-      oboscore: 0.318
+      oboscore: 0.212
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 1
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -7121,7 +7247,7 @@ ontologies:
   base_prefixes:
   - GEO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1176
@@ -7163,10 +7289,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.736
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.04
+      _impact_external: 0
       _reuse: 0.724
-      oboscore: 0.386
+      oboscore: 0.257
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 7
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -7187,14 +7315,14 @@ ontologies:
       rdfs: 305
       xsd: 1
     'Info: Which ontologies use it?':
-    - genepio
-    - omiabis
-    - obib
-    - apollo_sv
-    - oostt
-    - ico
-    - hancestro
     - geo
+    - omiabis
+    - hancestro
+    - obib
+    - oostt
+    - genepio
+    - apollo_sv
+    - ico
   mirror_from: http://purl.obolibrary.org/obo/geo.owl
   namespace: geo
   results:
@@ -7251,7 +7379,7 @@ ontologies:
   base_prefixes:
   - GNO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 934633
@@ -7271,10 +7399,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.86
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.006
+      _impact_external: 0
       _reuse: 0.0
-      oboscore: 0.29
+      oboscore: 0.193
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 1
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -7285,8 +7415,8 @@ ontologies:
       owl: 6423
       rdfs: 110897
     'Info: Which ontologies use it?':
-    - pr
     - gno
+    - pr
   mirror_from: http://purl.obolibrary.org/obo/gno.owl
   namespace: gno
   results:
@@ -7337,7 +7467,7 @@ ontologies:
   base_prefixes:
   - GO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 406814
@@ -7367,11 +7497,13 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.849
-      _formula: (3*impact+2*dashboard+1*reuse)/6
-      _impact: 0.489
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+      _impact: 0.494
+      _impact_external: 0.25
       _reuse: 0.073
-      oboscore: 0.54
-    'Info: How many ontologies use it?': 86
+      oboscore: 0.445
+    'Info: How many externally documented uses?': 1
+    'Info: How many ontologies use it?': 87
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -7402,93 +7534,94 @@ ontologies:
       rdfs: 58606
       xsd: 1397
     'Info: Which ontologies use it?':
-    - fbbi
-    - obcs
-    - pato
-    - htn
-    - mfoem
-    - ecto
-    - cteno
-    - ppo
-    - iceo
-    - opl
-    - txpo
-    - eupath
-    - ecocore
-    - chiro
-    - cl
-    - xpo
-    - apollo_sv
-    - fbdv
-    - mp
-    - mco
-    - dron
-    - pco
-    - mondo
-    - wbphenotype
-    - foodon
-    - uberon
-    - ino
-    - envo
-    - ohpi
+    - obib
     - psdo
+    - iceo
+    - fbbi
+    - chiro
+    - geno
+    - obcs
+    - apollo_sv
+    - ornaseq
+    - mfoem
+    - mondo
+    - cteno
+    - wbphenotype
+    - clo
+    - mco
+    - vo
+    - opl
+    - pato
+    - ido
+    - mpio
+    - dpo
+    - omit
+    - gsso
+    - cob
+    - envo
+    - cl
+    - opmi
+    - gecko
+    - dron
+    - plana
+    - mf
+    - ino
+    - mfmo
+    - cido
+    - cheminf
+    - ico
+    - ro
+    - oae
+    - ecto
+    - omiabis
+    - pr
+    - zp
+    - go
+    - amphx
+    - xpo
+    - ons
+    - fideo
+    - ncro
+    - ero
+    - phipo
+    - ogsf
+    - flopo
+    - upheno
+    - ontoneo
+    - foodon
+    - micro
+    - htn
+    - mfomd
+    - caro
+    - pco
+    - obi
+    - po
+    - genepio
+    - peco
+    - to
+    - mp
+    - omrse
+    - ohmi
+    - fypo
+    - fbdv
+    - pso
+    - clyh
+    - uberon
+    - oba
+    - eupath
+    - ohpi
+    - dideo
     - nbo
     - omp
-    - ido
-    - ontoneo
-    - peco
-    - mpio
-    - ro
-    - ico
-    - to
-    - clo
-    - go
-    - vo
-    - ero
-    - obib
-    - amphx
-    - phipo
-    - flopo
-    - omit
-    - obi
-    - caro
-    - cheminf
-    - mfmo
-    - gecko
-    - opmi
-    - omrse
-    - mro
-    - oae
-    - micro
-    - ncro
-    - stato
-    - ogsf
-    - ornaseq
-    - dpo
-    - pr
-    - plana
     - agro
-    - oba
+    - txpo
     - poro
-    - cido
-    - zp
-    - fbbt
-    - mf
-    - pso
-    - genepio
-    - ohmi
-    - cob
-    - upheno
-    - po
-    - fideo
+    - mro
+    - ppo
+    - ecocore
+    - stato
     - hp
-    - gsso
-    - omiabis
-    - geno
-    - clyh
-    - dideo
-    - fypo
-    - mfomd
+    - fbbt
   mirror_from: http://purl.obolibrary.org/obo/go/go-base.owl
   namespace: go
   results:
@@ -7541,7 +7674,7 @@ ontologies:
   base_prefixes:
   - GSSO
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 79302
@@ -7563,10 +7696,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.64
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 1.0
-      oboscore: 0.38
+      oboscore: 0.253
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -7668,7 +7803,7 @@ ontologies:
   base_prefixes:
   - HANCESTRO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 949
@@ -7687,10 +7822,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.859
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.011
+      _impact_external: 0
       _reuse: 0.436
-      oboscore: 0.364
+      oboscore: 0.243
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 2
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -7705,9 +7842,9 @@ ontologies:
       prefix_unknown: 4
       rdfs: 597
     'Info: Which ontologies use it?':
+    - foodon
     - hancestro
     - genepio
-    - foodon
   mirror_from: http://purl.obolibrary.org/obo/hancestro.owl
   namespace: hancestro
   results:
@@ -7758,7 +7895,7 @@ ontologies:
   base_prefixes:
   - HAO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 10293
@@ -7784,10 +7921,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.677
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.524
-      oboscore: 0.313
+      oboscore: 0.209
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -7858,7 +7997,7 @@ ontologies:
   base_prefixes:
   - HOM
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 398
@@ -7878,10 +8017,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.748
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.233
-      oboscore: 0.288
+      oboscore: 0.192
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -7945,7 +8086,7 @@ ontologies:
   base_prefixes:
   - HP
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 115128
@@ -7970,11 +8111,13 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.935
-      _formula: (3*impact+2*dashboard+1*reuse)/6
-      _impact: 0.102
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+      _impact: 0.108
+      _impact_external: 0.25
       _reuse: 0.122
-      oboscore: 0.383
-    'Info: How many ontologies use it?': 18
+      oboscore: 0.341
+    'Info: How many externally documented uses?': 1
+    'Info: How many ontologies use it?': 19
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -7999,25 +8142,26 @@ ontologies:
       rdf: 12
       rdfs: 19191
     'Info: Which ontologies use it?':
-    - mondo
-    - cido
-    - genepio
-    - hp
+    - foodon
+    - ons
+    - doid
+    - opmi
     - txpo
+    - htn
+    - chiro
+    - eupath
+    - mondo
+    - obi
+    - hp
     - ohmi
     - aro
-    - eupath
-    - gsso
-    - chiro
-    - geno
-    - foodon
-    - htn
-    - doid
-    - obi
-    - opmi
-    - ontoneo
     - maxo
+    - geno
+    - genepio
     - upheno
+    - ontoneo
+    - cido
+    - gsso
   mirror_from: http://purl.obolibrary.org/obo/hp/hp-base.owl
   namespace: hp
   results:
@@ -8069,7 +8213,7 @@ ontologies:
   base_prefixes:
   - HSAPDV
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 2055
@@ -8092,10 +8236,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.748
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 1.0
-      oboscore: 0.416
+      oboscore: 0.277
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -8162,7 +8308,7 @@ ontologies:
   base_prefixes:
   - HTN
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 7070
@@ -8210,10 +8356,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.746
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.979
-      oboscore: 0.412
+      oboscore: 0.275
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -8307,7 +8455,7 @@ ontologies:
   base_prefixes:
   - IAO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 2654
@@ -8354,11 +8502,13 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.836
-      _formula: (3*impact+2*dashboard+1*reuse)/6
-      _impact: 0.932
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+      _impact: 0.938
+      _impact_external: 0
       _reuse: 0.324
-      oboscore: 0.799
-    'Info: How many ontologies use it?': 164
+      oboscore: 0.534
+    'Info: How many externally documented uses?': 0
+    'Info: How many ontologies use it?': 165
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -8381,171 +8531,172 @@ ontologies:
       rdfs: 470
       xsd: 4
     'Info: Which ontologies use it?':
-    - go
-    - pr
-    - oae
-    - ncbitaxon
-    - hao
-    - omp
-    - mro
-    - oostt
-    - ncit
-    - mco
-    - amphx
-    - ero
-    - duo
-    - phipo
-    - poro
-    - symp
-    - uberon
-    - mp
-    - caro
-    - ohmi
-    - obi
-    - dideo
-    - chebi
-    - maxo
-    - ppo
-    - flopo
-    - ecto
-    - ncro
-    - pw
-    - cob
-    - ogsf
-    - geno
-    - micro
-    - mmusdv
-    - peco
-    - xco
-    - mondo
-    - clao
-    - gecko
-    - xao
-    - nbo
-    - foodon
-    - to
-    - opmi
-    - dpo
-    - genepio
-    - iceo
-    - ovae
-    - cdao
-    - zfs
-    - emapa
-    - zeco
-    - bto
-    - vo
-    - hancestro
-    - psdo
-    - ontoneo
-    - rs
-    - cido
-    - cteno
-    - ornaseq
-    - fobi
-    - txpo
-    - nomen
-    - cvdo
-    - cro
-    - ido
-    - fypo
-    - mpath
-    - oarcs
-    - hom
-    - ino
-    - plana
-    - planp
-    - obcs
-    - chmo
-    - ddpheno
-    - envo
-    - sepio
-    - apo
-    - ohd
-    - omo
-    - bco
-    - gno
-    - fideo
-    - so
-    - mpio
-    - omiabis
-    - vto
-    - opl
-    - fbbt
-    - aro
-    - geo
-    - mfoem
-    - trans
-    - clyh
-    - miapa
-    - htn
-    - taxrank
-    - mf
-    - mfmo
-    - eco
-    - oba
-    - fbdv
-    - agro
-    - fma
-    - cto
-    - obib
-    - cheminf
-    - apollo_sv
-    - mfomd
-    - ohpi
-    - pco
-    - wbbt
-    - stato
-    - ecao
-    - ogg
-    - eupath
-    - chiro
-    - upheno
-    - ms
-    - hp
-    - one
-    - tto
-    - fbcv
-    - omrse
-    - pato
-    - bspo
-    - doid
-    - ecocore
-    - ogms
-    - ma
-    - zp
-    - po
-    - cio
-    - wbphenotype
-    - vt
-    - xpo
-    - swo
-    - omit
-    - wbls
-    - pdumdv
-    - rxno
-    - aeo
     - hsapdv
-    - pso
-    - mod
+    - obib
+    - tto
+    - psdo
+    - iceo
+    - planp
+    - doid
     - fbbi
-    - mmo
-    - gsso
-    - olatdv
-    - zfa
-    - ddanat
-    - fao
-    - mop
-    - mi
-    - ro
+    - chiro
     - spd
-    - cl
-    - fovt
-    - bfo
-    - dron
-    - ico
+    - cvdo
+    - olatdv
+    - geno
+    - obcs
+    - apollo_sv
+    - duo
+    - ecao
+    - ogms
+    - ddanat
+    - ornaseq
+    - mfoem
+    - mondo
+    - cteno
+    - wbphenotype
+    - vto
+    - ms
     - clo
+    - xco
+    - mco
+    - vo
+    - ovae
+    - zfs
+    - opl
+    - sepio
+    - fobi
+    - pato
+    - ido
+    - ohd
+    - mpio
+    - dpo
+    - wbbt
+    - cto
+    - omit
+    - gsso
+    - swo
+    - cob
+    - emapa
+    - clao
+    - envo
+    - ddpheno
+    - oostt
+    - cl
+    - opmi
+    - gecko
+    - dron
+    - plana
+    - mf
+    - ncit
+    - omo
+    - mi
+    - ino
+    - mfmo
+    - cido
+    - oarcs
+    - gno
+    - hancestro
+    - cro
+    - cheminf
+    - fovt
+    - rs
+    - ma
+    - symp
+    - ico
+    - cdao
+    - bfo
+    - ro
+    - miapa
+    - oae
+    - ecto
+    - omiabis
+    - bspo
+    - pr
+    - aeo
+    - trans
+    - go
+    - amphx
+    - fma
+    - zp
+    - pdumdv
+    - xpo
+    - ons
+    - fideo
+    - ncro
+    - taxrank
+    - mpath
+    - ero
+    - phipo
+    - ogsf
+    - flopo
+    - nomen
+    - maxo
+    - upheno
+    - ontoneo
+    - foodon
+    - bto
+    - micro
+    - htn
+    - mfomd
+    - caro
+    - chmo
+    - pco
+    - vt
+    - wbls
+    - obi
+    - po
+    - rxno
+    - genepio
+    - ncbitaxon
+    - so
+    - peco
+    - fao
+    - bco
+    - to
+    - mop
+    - hom
+    - mp
+    - omrse
+    - ohmi
+    - pw
+    - fypo
+    - apo
+    - fbcv
+    - fbdv
+    - eco
+    - ogg
+    - zfa
+    - pso
+    - clyh
+    - uberon
+    - mmo
+    - oba
+    - eupath
+    - ohpi
+    - dideo
+    - mod
+    - chebi
+    - mmusdv
+    - aro
+    - nbo
+    - omp
+    - agro
+    - txpo
+    - hao
+    - poro
+    - zeco
+    - mro
+    - ppo
+    - ecocore
+    - stato
+    - cio
+    - hp
     - iao
+    - fbbt
+    - one
+    - geo
+    - xao
   mirror_from: http://purl.obolibrary.org/obo/iao.owl
   namespace: iao
   results:
@@ -8600,7 +8751,7 @@ ontologies:
   base_prefixes:
   - ICEO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 65196
@@ -8633,10 +8784,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.655
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.779
-      oboscore: 0.348
+      oboscore: 0.232
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -8723,7 +8876,7 @@ ontologies:
   base_prefixes:
   - ICO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 7313
@@ -8772,11 +8925,13 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.781
-      _formula: (3*impact+2*dashboard+1*reuse)/6
-      _impact: 0.017
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+      _impact: 0.023
+      _impact_external: 0
       _reuse: 0.663
-      oboscore: 0.379
-    'Info: How many ontologies use it?': 3
+      oboscore: 0.255
+    'Info: How many externally documented uses?': 0
+    'Info: How many ontologies use it?': 4
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -8818,10 +8973,11 @@ ontologies:
       rdfs: 1535
       xsd: 11
     'Info: Which ontologies use it?':
-    - ico
-    - genepio
+    - ons
     - opmi
     - obib
+    - genepio
+    - ico
   mirror_from: http://purl.obolibrary.org/obo/ico.owl
   namespace: ico
   results:
@@ -8879,7 +9035,7 @@ ontologies:
   base_prefixes:
   - IDO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 2929
@@ -8916,10 +9072,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.767
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.102
+      _impact_external: 0
       _reuse: 0.343
-      oboscore: 0.364
+      oboscore: 0.243
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 18
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -8944,25 +9102,25 @@ ontologies:
       protege: 1
       rdfs: 775
     'Info: Which ontologies use it?':
-    - ino
-    - iceo
-    - cido
-    - genepio
-    - opl
-    - obib
-    - vo
-    - ohmi
-    - ohpi
+    - doid
+    - micro
+    - ogms
+    - htn
+    - mfomd
     - eupath
     - ido
-    - mfomd
-    - gsso
-    - micro
-    - htn
-    - doid
-    - obi
     - dideo
-    - ogms
+    - obib
+    - ohpi
+    - opl
+    - vo
+    - obi
+    - ino
+    - ohmi
+    - gsso
+    - genepio
+    - iceo
+    - cido
   mirror_from: http://purl.obolibrary.org/obo/ido.owl
   namespace: ido
   results:
@@ -9017,7 +9175,7 @@ ontologies:
   base_prefixes:
   - INO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 2748
@@ -9047,10 +9205,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.731
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.017
+      _impact_external: 0
       _reuse: 0.628
-      oboscore: 0.357
+      oboscore: 0.238
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 3
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -9075,10 +9235,10 @@ ontologies:
       owl: 1
       rdfs: 571
     'Info: Which ontologies use it?':
-    - ohmi
-    - ino
-    - dideo
     - ohpi
+    - ohmi
+    - dideo
+    - ino
   mirror_from: http://purl.obolibrary.org/obo/ino.owl
   namespace: ino
   results:
@@ -9137,7 +9297,7 @@ ontologies:
   base_prefixes:
   - KISAO
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 2307
@@ -9179,10 +9339,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.748
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.062
-      oboscore: 0.26
+      oboscore: 0.173
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -9258,7 +9420,7 @@ ontologies:
   base_prefixes:
   - MA
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 12215
@@ -9279,10 +9441,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.743
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0.25
       _reuse: 0.006
       oboscore: 0.249
+    'Info: How many externally documented uses?': 1
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -9346,7 +9510,7 @@ ontologies:
   base_prefixes:
   - MAMO
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 456
@@ -9372,10 +9536,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.748
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.19
-      oboscore: 0.281
+      oboscore: 0.187
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': OWL/XML Syntax
@@ -9440,7 +9606,7 @@ ontologies:
   base_prefixes:
   - MAXO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 8356
@@ -9462,10 +9628,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.735
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 1.0
-      oboscore: 0.412
+      oboscore: 0.274
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -9545,7 +9713,7 @@ ontologies:
   base_prefixes:
   - MCO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 39543
@@ -9572,10 +9740,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.741
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.76
-      oboscore: 0.374
+      oboscore: 0.249
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -9659,7 +9829,7 @@ ontologies:
   base_prefixes:
   - MF
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1997
@@ -9694,10 +9864,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.787
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.028
+      _impact_external: 0
       _reuse: 0.814
-      oboscore: 0.412
+      oboscore: 0.275
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 5
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -9718,12 +9890,12 @@ ontologies:
       protege: 1
       rdfs: 588
     'Info: Which ontologies use it?':
-    - mondo
-    - mfoem
     - gecko
     - mfomd
-    - gsso
+    - mfoem
     - mf
+    - mondo
+    - gsso
   mirror_from: http://purl.obolibrary.org/obo/mf.owl
   namespace: mf
   results:
@@ -9776,7 +9948,7 @@ ontologies:
   base_prefixes:
   - MFMO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 4356
@@ -9821,10 +9993,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.726
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.825
-      oboscore: 0.38
+      oboscore: 0.253
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -9910,7 +10084,7 @@ ontologies:
   base_prefixes:
   - MFOEM
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 2628
@@ -9945,10 +10119,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.743
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.006
+      _impact_external: 0
       _reuse: 0.705
-      oboscore: 0.368
+      oboscore: 0.245
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 1
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -9970,8 +10146,8 @@ ontologies:
       protege: 1
       rdfs: 860
     'Info: Which ontologies use it?':
-    - mondo
     - mfoem
+    - mondo
   mirror_from: http://purl.obolibrary.org/obo/mfoem.owl
   namespace: mfoem
   results:
@@ -10026,7 +10202,7 @@ ontologies:
   base_prefixes:
   - MFOMD
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 5739
@@ -10061,10 +10237,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.734
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.011
+      _impact_external: 0
       _reuse: 0.865
-      oboscore: 0.394
+      oboscore: 0.263
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 2
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -10089,8 +10267,8 @@ ontologies:
       protege: 1
       rdfs: 1264
     'Info: Which ontologies use it?':
-    - mondo
     - gsso
+    - mondo
     - mfomd
   mirror_from: http://purl.obolibrary.org/obo/mfomd.owl
   namespace: mfomd
@@ -10145,7 +10323,7 @@ ontologies:
   base_prefixes:
   - MI
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 11247
@@ -10167,10 +10345,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.696
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.017
+      _impact_external: 0
       _reuse: 0.031
-      oboscore: 0.246
+      oboscore: 0.164
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 3
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -10182,9 +10362,9 @@ ontologies:
       owl: 178
       rdfs: 1810
     'Info: Which ontologies use it?':
-    - ino
-    - iceo
     - genepio
+    - iceo
+    - ino
     - mi
   mirror_from: http://purl.obolibrary.org/obo/mi.owl
   namespace: mi
@@ -10238,7 +10418,7 @@ ontologies:
   base_prefixes:
   - MIAPA
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1422
@@ -10288,10 +10468,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.736
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.921
-      oboscore: 0.399
+      oboscore: 0.266
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -10370,7 +10552,7 @@ ontologies:
   base_prefixes:
   - MICRO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 222364
@@ -10419,10 +10601,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.658
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.006
+      _impact_external: 0
       _reuse: 0.883
-      oboscore: 0.369
+      oboscore: 0.246
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 1
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -10516,7 +10700,7 @@ ontologies:
   base_prefixes:
   - MMO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 4647
@@ -10536,10 +10720,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.728
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.006
+      _impact_external: 0
       _reuse: 0.038
-      oboscore: 0.252
+      oboscore: 0.168
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 1
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -10608,7 +10794,7 @@ ontologies:
   base_prefixes:
   - MMUSDV
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1023
@@ -10631,10 +10817,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.748
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 1.0
-      oboscore: 0.416
+      oboscore: 0.277
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -10699,7 +10887,7 @@ ontologies:
   base_prefixes:
   - MOD
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 35075
@@ -10721,10 +10909,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.584
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.017
+      _impact_external: 0
       _reuse: 0.018
-      oboscore: 0.206
+      oboscore: 0.137
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 3
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -10736,10 +10926,10 @@ ontologies:
       owl: 73
       rdfs: 20724
     'Info: Which ontologies use it?':
-    - pr
+    - mp
     - mod
     - upheno
-    - mp
+    - pr
   mirror_from: http://purl.obolibrary.org/obo/mod.owl
   namespace: mod
   results:
@@ -10795,7 +10985,7 @@ ontologies:
   base_prefixes:
   - MONDO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 471275
@@ -10841,10 +11031,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.836
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.017
+      _impact_external: 0.25
       _reuse: 0.418
-      oboscore: 0.357
+      oboscore: 0.321
+    'Info: How many externally documented uses?': 1
     'Info: How many ontologies use it?': 3
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -10891,9 +11083,9 @@ ontologies:
       xsd: 35406
     'Info: Which ontologies use it?':
     - ohmi
+    - opmi
     - gecko
     - mondo
-    - opmi
   mirror_from: http://purl.obolibrary.org/obo/mondo.owl
   namespace: mondo
   results:
@@ -10943,7 +11135,7 @@ ontologies:
   base_prefixes:
   - MOP
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 15270
@@ -10968,10 +11160,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.798
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.017
+      _impact_external: 0
       _reuse: 0.027
-      oboscore: 0.279
+      oboscore: 0.186
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 3
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -11045,7 +11239,7 @@ ontologies:
   base_prefixes:
   - MP
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 360401
@@ -11088,10 +11282,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.836
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.034
+      _impact_external: 0
       _reuse: 0.659
-      oboscore: 0.405
+      oboscore: 0.27
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 6
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -11132,12 +11328,12 @@ ontologies:
       rdfs: 45877
       xsd: 4164
     'Info: Which ontologies use it?':
-    - ero
     - txpo
-    - mp
-    - geno
+    - ero
     - chiro
+    - mp
     - upheno
+    - geno
     - ontoneo
   mirror_from: http://purl.obolibrary.org/obo/mp.owl
   namespace: mp
@@ -11192,7 +11388,7 @@ ontologies:
   base_prefixes:
   - MPATH
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 4632
@@ -11213,10 +11409,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.715
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.034
+      _impact_external: 0
       _reuse: 0.026
-      oboscore: 0.26
+      oboscore: 0.173
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 6
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -11228,13 +11426,13 @@ ontologies:
       owl: 51
       rdfs: 1027
     'Info: Which ontologies use it?':
-    - zp
-    - cido
-    - mp
-    - upheno
     - mpath
+    - mp
+    - zp
     - hp
+    - upheno
     - ontoneo
+    - cido
   mirror_from: http://purl.obolibrary.org/obo/mpath.owl
   namespace: mpath
   results:
@@ -11287,7 +11485,7 @@ ontologies:
   base_prefixes:
   - MPIO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 647
@@ -11313,10 +11511,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.792
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.006
+      _impact_external: 0
       _reuse: 0.917
-      oboscore: 0.42
+      oboscore: 0.28
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 1
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -11343,8 +11543,8 @@ ontologies:
       protege: 1
       rdfs: 142
     'Info: Which ontologies use it?':
-    - mpio
     - dideo
+    - mpio
   mirror_from: http://purl.obolibrary.org/obo/mpio.owl
   namespace: mpio
   results:
@@ -11397,7 +11597,7 @@ ontologies:
   base_prefixes:
   - MRO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 200597
@@ -11422,10 +11622,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.889
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0.25
       _reuse: 0.003
-      oboscore: 0.297
+      oboscore: 0.281
+    'Info: How many externally documented uses?': 1
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -11500,7 +11702,7 @@ ontologies:
   base_prefixes:
   - MS
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 33214
@@ -11528,10 +11730,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.662
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.011
+      _impact_external: 0
       _reuse: 0.525
-      oboscore: 0.314
+      oboscore: 0.209
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 2
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -11548,9 +11752,9 @@ ontologies:
       owl: 1260
       rdfs: 7625
     'Info: Which ontologies use it?':
-    - cto
-    - ms
     - chmo
+    - ms
+    - cto
   mirror_from: http://purl.obolibrary.org/obo/ms.owl
   namespace: ms
   results:
@@ -11607,7 +11811,7 @@ ontologies:
   base_prefixes:
   - NBO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 4816
@@ -11631,10 +11835,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.737
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.08
+      _impact_external: 0
       _reuse: 0.117
-      oboscore: 0.305
+      oboscore: 0.203
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 14
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -11653,21 +11859,21 @@ ontologies:
       owl: 2
       rdfs: 969
     'Info: Which ontologies use it?':
-    - oba
-    - mondo
-    - mfoem
     - ecto
-    - planp
-    - uberon
-    - apollo_sv
-    - mp
-    - nbo
     - mfomd
-    - upheno
+    - oba
     - xpo
-    - hp
-    - maxo
+    - mfoem
     - mf
+    - mondo
+    - mp
+    - hp
+    - uberon
+    - maxo
+    - nbo
+    - upheno
+    - apollo_sv
+    - planp
   mirror_from: http://purl.obolibrary.org/obo/nbo/nbo-base.owl
   namespace: nbo
   results:
@@ -11724,7 +11930,7 @@ ontologies:
   - NCBITaxon
   - NCBITaxon
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 9064816
@@ -11744,11 +11950,13 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.747
-      _formula: (3*impact+2*dashboard+1*reuse)/6
-      _impact: 0.369
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+      _impact: 0.375
+      _impact_external: 0
       _reuse: 0.0
-      oboscore: 0.433
-    'Info: How many ontologies use it?': 65
+      oboscore: 0.291
+    'Info: How many externally documented uses?': 0
+    'Info: How many ontologies use it?': 66
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -11758,72 +11966,73 @@ ontologies:
       oboInOwl: 5121769
       rdfs: 2241139
     'Info: Which ontologies use it?':
-    - iceo
-    - pr
-    - go
-    - genepio
+    - hsapdv
+    - to
+    - fobi
+    - ido
+    - obib
+    - ohd
+    - psdo
+    - cto
+    - mp
     - omrse
-    - fbbt
+    - ohmi
+    - gsso
+    - cob
+    - iceo
+    - doid
+    - envo
+    - ecto
+    - chiro
+    - ogg
+    - omiabis
+    - pso
+    - pr
+    - oostt
+    - go
+    - uberon
+    - geno
+    - obcs
+    - ico
+    - apollo_sv
+    - cl
+    - ons
+    - opmi
+    - ncbitaxon
+    - ero
+    - ornaseq
+    - eupath
+    - ohpi
+    - dideo
+    - ogsf
+    - mondo
+    - flopo
+    - ino
+    - upheno
+    - cteno
+    - ontoneo
+    - cido
+    - foodon
+    - agro
+    - clo
+    - micro
+    - htn
+    - txpo
+    - caro
+    - mco
+    - pco
+    - mro
     - opl
     - ovae
-    - ncbitaxon
-    - mro
-    - oostt
     - vo
-    - doid
-    - ecocore
-    - ontoneo
-    - psdo
-    - mco
-    - ero
-    - cido
-    - cteno
-    - ornaseq
-    - po
-    - fobi
-    - txpo
-    - uberon
-    - mp
-    - ido
-    - caro
-    - htn
-    - ohmi
     - obi
-    - dideo
-    - ino
-    - flopo
-    - agro
-    - ecto
-    - cto
-    - obcs
-    - obib
-    - hsapdv
-    - pso
-    - apollo_sv
-    - cob
-    - ogsf
-    - gsso
-    - envo
-    - geno
-    - micro
-    - ohd
-    - ohpi
-    - pco
-    - peco
-    - mondo
-    - fao
+    - ecocore
+    - po
     - stato
-    - cl
-    - ogg
-    - eupath
-    - chiro
-    - opmi
-    - foodon
-    - upheno
-    - to
-    - ico
-    - clo
-    - omiabis
+    - genepio
+    - fbbt
+    - peco
+    - fao
   mirror_from: http://purl.obolibrary.org/obo/ncbitaxon.owl
   namespace: ncbitaxon
   results:
@@ -11876,7 +12085,7 @@ ontologies:
   base_prefixes:
   - NCIT
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 2222815
@@ -11907,11 +12116,13 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.796
-      _formula: (3*impact+2*dashboard+1*reuse)/6
-      _impact: 0.097
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+      _impact: 0.102
+      _impact_external: 0
       _reuse: 0.0
-      oboscore: 0.314
-    'Info: How many ontologies use it?': 17
+      oboscore: 0.211
+    'Info: How many externally documented uses?': 0
+    'Info: How many ontologies use it?': 18
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -11926,24 +12137,25 @@ ontologies:
       rdf: 19
       rdfs: 159678
     'Info: Which ontologies use it?':
-    - mondo
-    - genepio
-    - ornaseq
-    - ecto
-    - obib
-    - cto
-    - planp
-    - txpo
-    - aro
-    - eupath
-    - ncit
-    - gsso
-    - opmi
     - foodon
-    - ico
+    - ons
     - clo
-    - maxo
+    - opmi
+    - txpo
+    - ecto
+    - ornaseq
+    - eupath
     - mco
+    - obib
+    - ncit
+    - mondo
+    - cto
+    - aro
+    - maxo
+    - gsso
+    - genepio
+    - ico
+    - planp
   mirror_from: http://purl.obolibrary.org/obo/ncit.owl
   namespace: ncit
   results:
@@ -11994,7 +12206,7 @@ ontologies:
   base_prefixes:
   - NCRO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 8750
@@ -12027,10 +12239,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.692
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.011
+      _impact_external: 0
       _reuse: 0.191
-      oboscore: 0.268
+      oboscore: 0.179
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 2
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -12053,8 +12267,8 @@ ontologies:
       rdfs: 3720
     'Info: Which ontologies use it?':
     - genepio
-    - omit
     - ncro
+    - omit
   mirror_from: http://purl.obolibrary.org/obo/ncro.owl
   namespace: ncro
   results:
@@ -12109,7 +12323,7 @@ ontologies:
   base_prefixes:
   - NOMEN
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 751
@@ -12135,10 +12349,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.697
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0.25
       _reuse: 0.026
-      oboscore: 0.237
+      oboscore: 0.241
+    'Info: How many externally documented uses?': 1
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -12204,7 +12420,7 @@ ontologies:
   base_prefixes:
   - OAE
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 51601
@@ -12241,10 +12457,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.654
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.085
+      _impact_external: 0
       _reuse: 0.24
-      oboscore: 0.3
+      oboscore: 0.2
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 15
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -12272,22 +12490,22 @@ ontologies:
       rdfs: 10534
       xsd: 5
     'Info: Which ontologies use it?':
-    - ovae
-    - cido
-    - genepio
-    - omrse
-    - obib
-    - cto
-    - oae
-    - vo
-    - apollo_sv
-    - ogsf
-    - gsso
-    - opmi
     - sepio
-    - ico
+    - oae
+    - opmi
+    - obib
     - dideo
+    - vo
+    - ogsf
+    - cto
+    - omrse
+    - gsso
+    - genepio
+    - ovae
     - ontoneo
+    - cido
+    - apollo_sv
+    - ico
   mirror_from: http://purl.obolibrary.org/obo/oae.owl
   namespace: oae
   results:
@@ -12345,7 +12563,7 @@ ontologies:
   base_prefixes:
   - OARCS
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1083
@@ -12368,10 +12586,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.797
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.531
-      oboscore: 0.354
+      oboscore: 0.236
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -12439,7 +12659,7 @@ ontologies:
   base_prefixes:
   - OBA
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 60497
@@ -12467,10 +12687,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.711
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.017
+      _impact_external: 0
       _reuse: 0.563
-      oboscore: 0.339
+      oboscore: 0.226
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 3
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -12497,10 +12719,10 @@ ontologies:
       rdfs: 17035
       xsd: 498
     'Info: Which ontologies use it?':
-    - oba
-    - mondo
     - go
     - fovt
+    - oba
+    - mondo
   mirror_from: http://purl.obolibrary.org/obo/oba.owl
   namespace: oba
   results:
@@ -12556,7 +12778,7 @@ ontologies:
   base_prefixes:
   - OBCS
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 5575
@@ -12600,11 +12822,13 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.736
-      _formula: (3*impact+2*dashboard+1*reuse)/6
-      _impact: 0.017
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+      _impact: 0.023
+      _impact_external: 0
       _reuse: 0.729
-      oboscore: 0.375
-    'Info: How many ontologies use it?': 3
+      oboscore: 0.252
+    'Info: How many externally documented uses?': 0
+    'Info: How many ontologies use it?': 4
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -12630,10 +12854,11 @@ ontologies:
       rdfs: 975
       xsd: 12
     'Info: Which ontologies use it?':
-    - obcs
-    - eupath
-    - cido
+    - ons
     - chmo
+    - eupath
+    - obcs
+    - cido
   mirror_from: http://purl.obolibrary.org/obo/obcs.owl
   namespace: obcs
   results:
@@ -12690,7 +12915,7 @@ ontologies:
   base_prefixes:
   - OBI
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 20768
@@ -12735,11 +12960,13 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.734
-      _formula: (3*impact+2*dashboard+1*reuse)/6
-      _impact: 0.409
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+      _impact: 0.415
+      _impact_external: 0.25
       _reuse: 0.139
-      oboscore: 0.472
-    'Info: How many ontologies use it?': 72
+      oboscore: 0.4
+    'Info: How many externally documented uses?': 2
+    'Info: How many ontologies use it?': 73
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -12774,79 +13001,80 @@ ontologies:
       rdfs: 3266
       xsd: 9
     'Info: Which ontologies use it?':
-    - clo
-    - go
-    - pr
-    - dpo
-    - vo
-    - agro
-    - apollo_sv
-    - obcs
-    - ogms
-    - maxo
-    - ero
-    - swo
-    - mp
-    - cto
-    - mco
-    - htn
-    - obib
-    - rxno
-    - dron
-    - cido
-    - ecto
-    - oostt
-    - genepio
-    - mondo
-    - ohmi
-    - foodon
-    - cob
-    - geo
-    - upheno
-    - omit
-    - obi
-    - envo
-    - ohpi
-    - cheminf
-    - psdo
-    - ppo
-    - fideo
-    - gecko
-    - iceo
-    - ido
-    - omiabis
-    - omrse
-    - opmi
-    - opl
     - sepio
-    - gsso
-    - one
-    - ontoneo
-    - doid
-    - geno
-    - duo
+    - to
+    - ido
+    - obib
+    - ohd
     - mpio
-    - iao
-    - mro
-    - ogg
-    - ovae
+    - dpo
+    - psdo
+    - cto
+    - mp
+    - omrse
+    - omit
+    - ohmi
+    - gsso
+    - swo
+    - cob
+    - iceo
+    - doid
+    - eco
+    - envo
     - oae
-    - txpo
-    - micro
+    - ecto
+    - ogg
+    - omiabis
+    - pr
+    - oostt
+    - go
+    - geno
+    - obcs
+    - apollo_sv
+    - ons
+    - duo
+    - fideo
+    - ncro
+    - gecko
+    - dron
+    - ogms
+    - opmi
+    - ornaseq
     - eupath
+    - ohpi
+    - dideo
+    - ero
+    - ogsf
+    - mondo
+    - maxo
+    - upheno
+    - ontoneo
+    - cido
+    - foodon
+    - agro
+    - clo
+    - micro
+    - htn
+    - txpo
+    - mfomd
+    - chmo
+    - mco
+    - mro
+    - opl
+    - ppo
+    - vo
+    - obi
+    - ecocore
+    - cheminf
+    - stato
+    - iao
+    - rxno
+    - genepio
+    - ovae
+    - one
+    - geo
     - ico
     - bco
-    - ncro
-    - chmo
-    - eco
-    - ohd
-    - ogsf
-    - dideo
-    - stato
-    - mfomd
-    - to
-    - ecocore
-    - ornaseq
   mirror_from: http://purl.obolibrary.org/obo/obi/obi-base.owl
   namespace: obi
   results:
@@ -12900,7 +13128,7 @@ ontologies:
   base_prefixes:
   - OBIB
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 11748
@@ -12948,11 +13176,13 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.846
-      _formula: (3*impact+2*dashboard+1*reuse)/6
-      _impact: 0.011
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+      _impact: 0.017
+      _impact_external: 0.5
       _reuse: 0.701
-      oboscore: 0.404
-    'Info: How many ontologies use it?': 2
+      oboscore: 0.438
+    'Info: How many externally documented uses?': 3
+    'Info: How many ontologies use it?': 3
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -13002,9 +13232,10 @@ ontologies:
       vivoweb: 5
       xsd: 6
     'Info: Which ontologies use it?':
+    - ons
     - eupath
-    - ico
     - obib
+    - ico
   mirror_from: http://purl.obolibrary.org/obo/obib.owl
   namespace: obib
   results:
@@ -13057,7 +13288,7 @@ ontologies:
   base_prefixes:
   - OGG
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1067483
@@ -13095,10 +13326,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.587
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.045
+      _impact_external: 0
       _reuse: 0.003
-      oboscore: 0.219
+      oboscore: 0.146
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 8
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -13116,15 +13349,15 @@ ontologies:
       owl: 2
       rdfs: 88728
     'Info: Which ontologies use it?':
-    - ino
-    - iceo
-    - ovae
-    - vo
+    - clo
     - txpo
     - ogg
     - ohpi
+    - vo
     - ohmi
-    - clo
+    - ino
+    - ovae
+    - iceo
   mirror_from: http://purl.obolibrary.org/obo/ogg.owl
   namespace: ogg
   results:
@@ -13182,7 +13415,7 @@ ontologies:
   base_prefixes:
   - OGMS
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1347
@@ -13208,11 +13441,13 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.74
-      _formula: (3*impact+2*dashboard+1*reuse)/6
-      _impact: 0.227
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+      _impact: 0.233
+      _impact_external: 0
       _reuse: 0.584
-      oboscore: 0.458
-    'Info: How many ontologies use it?': 40
+      oboscore: 0.307
+    'Info: How many externally documented uses?': 0
+    'Info: How many ontologies use it?': 41
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -13230,47 +13465,48 @@ ontologies:
       protege: 1
       rdfs: 356
     'Info: Which ontologies use it?':
-    - ovae
-    - genepio
-    - omrse
-    - oae
-    - oostt
-    - vo
-    - psdo
-    - ontoneo
-    - ogms
-    - ero
-    - cido
-    - mfoem
-    - ornaseq
-    - txpo
-    - cvdo
-    - ido
-    - htn
-    - obi
-    - dideo
-    - mf
-    - mfmo
-    - agro
-    - obib
-    - cto
-    - apollo_sv
-    - cob
-    - ogsf
-    - mfomd
-    - gsso
-    - ohpi
-    - ohd
-    - mondo
-    - stato
     - ro
+    - ido
+    - obib
+    - ohd
+    - mpio
+    - psdo
+    - cto
+    - omrse
+    - gsso
+    - cob
+    - oae
+    - omiabis
+    - cvdo
+    - oostt
+    - apollo_sv
+    - ons
+    - ogms
     - gecko
     - dron
-    - eupath
     - opmi
-    - mpio
+    - ero
+    - ornaseq
+    - eupath
+    - mfoem
+    - dideo
+    - mf
+    - ogsf
+    - ohpi
+    - mondo
+    - mfmo
+    - ontoneo
+    - cido
+    - agro
+    - txpo
+    - htn
+    - mfomd
+    - vo
+    - obi
+    - stato
+    - genepio
+    - ovae
     - ico
-    - omiabis
   mirror_from: http://purl.obolibrary.org/obo/ogms.owl
   namespace: ogms
   results:
@@ -13327,7 +13563,7 @@ ontologies:
   base_prefixes:
   - OGSF
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 2984
@@ -13374,10 +13610,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.739
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.867
-      oboscore: 0.391
+      oboscore: 0.261
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -13467,7 +13705,7 @@ ontologies:
   base_prefixes:
   - OHD
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 7336
@@ -13513,10 +13751,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.731
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.912
-      oboscore: 0.396
+      oboscore: 0.264
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -13598,7 +13838,7 @@ ontologies:
   base_prefixes:
   - OHMI
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 7135
@@ -13642,11 +13882,13 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.778
-      _formula: (3*impact+2*dashboard+1*reuse)/6
-      _impact: 0.0
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+      _impact: 0.006
+      _impact_external: 0
       _reuse: 0.615
-      oboscore: 0.362
-    'Info: How many ontologies use it?': 0
+      oboscore: 0.243
+    'Info: How many externally documented uses?': 0
+    'Info: How many ontologies use it?': 1
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -13688,6 +13930,7 @@ ontologies:
       skos: 6
       xsd: 2
     'Info: Which ontologies use it?':
+    - ons
     - ohmi
   mirror_from: http://purl.obolibrary.org/obo/ohmi.owl
   namespace: ohmi
@@ -13743,7 +13986,7 @@ ontologies:
   base_prefixes:
   - OHPI
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 110434
@@ -13793,10 +14036,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.783
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.82
-      oboscore: 0.398
+      oboscore: 0.265
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -13894,7 +14139,7 @@ ontologies:
   base_prefixes:
   - OLATDV
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 273
@@ -13917,10 +14162,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.748
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 1.0
-      oboscore: 0.416
+      oboscore: 0.277
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -13984,7 +14231,7 @@ ontologies:
   base_prefixes:
   - OMIABIS
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 3544
@@ -14028,11 +14275,13 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.737
-      _formula: (3*impact+2*dashboard+1*reuse)/6
-      _impact: 0.062
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+      _impact: 0.068
+      _impact_external: 0
       _reuse: 0.768
-      oboscore: 0.405
-    'Info: How many ontologies use it?': 11
+      oboscore: 0.272
+    'Info: How many externally documented uses?': 0
+    'Info: How many ontologies use it?': 12
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -14062,18 +14311,19 @@ ontologies:
       owl: 17
       rdfs: 697
     'Info: Which ontologies use it?':
+    - ons
+    - omiabis
+    - ornaseq
+    - eupath
+    - obib
+    - obi
+    - cto
+    - omrse
+    - genepio
     - ontoneo
     - cido
-    - genepio
-    - ornaseq
-    - omrse
-    - obib
-    - cto
     - apollo_sv
-    - eupath
     - ico
-    - obi
-    - omiabis
   mirror_from: http://purl.obolibrary.org/obo/omiabis.owl
   namespace: omiabis
   results:
@@ -14130,7 +14380,7 @@ ontologies:
   base_prefixes:
   - OMIT
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 216562
@@ -14164,10 +14414,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.664
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.017
+      _impact_external: 0
       _reuse: 0.035
-      oboscore: 0.236
+      oboscore: 0.157
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 3
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -14194,10 +14446,10 @@ ontologies:
       protege: 1
       rdfs: 151468
     'Info: Which ontologies use it?':
-    - txpo
     - genepio
-    - omit
     - mco
+    - txpo
+    - omit
   mirror_from: http://purl.obolibrary.org/obo/omit.owl
   namespace: omit
   results:
@@ -14257,7 +14509,7 @@ ontologies:
   base_prefixes:
   - OMO
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 368
@@ -14281,10 +14533,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.95
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0.25
       _reuse: 1.0
-      oboscore: 0.483
+      oboscore: 0.406
+    'Info: How many externally documented uses?': 1
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -14341,7 +14595,7 @@ ontologies:
   base_prefixes:
   - OMP
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 16069
@@ -14368,10 +14622,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.708
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.017
+      _impact_external: 0
       _reuse: 0.158
-      oboscore: 0.271
+      oboscore: 0.181
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 3
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -14388,10 +14644,10 @@ ontologies:
       owl: 56
       rdfs: 3081
     'Info: Which ontologies use it?':
-    - eupath
     - genepio
-    - omp
+    - eupath
     - mco
+    - omp
   mirror_from: http://purl.obolibrary.org/obo/omp.owl
   namespace: omp
   results:
@@ -14445,7 +14701,7 @@ ontologies:
   base_prefixes:
   - OMRSE
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 4103
@@ -14494,11 +14750,13 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.722
-      _formula: (3*impact+2*dashboard+1*reuse)/6
-      _impact: 0.08
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+      _impact: 0.085
+      _impact_external: 0
       _reuse: 0.649
-      oboscore: 0.389
-    'Info: How many ontologies use it?': 14
+      oboscore: 0.261
+    'Info: How many externally documented uses?': 0
+    'Info: How many ontologies use it?': 15
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -14531,21 +14789,22 @@ ontologies:
       rdfs: 940
       xsd: 6
     'Info: Which ontologies use it?':
-    - ontoneo
-    - genepio
-    - omrse
-    - obib
-    - cto
-    - gecko
-    - apollo_sv
-    - ohd
-    - oostt
-    - eupath
-    - gsso
+    - ons
     - opmi
+    - gecko
     - htn
-    - ico
     - omiabis
+    - eupath
+    - obib
+    - ohd
+    - cto
+    - omrse
+    - oostt
+    - gsso
+    - genepio
+    - ontoneo
+    - apollo_sv
+    - ico
   mirror_from: http://purl.obolibrary.org/obo/omrse.owl
   namespace: omrse
   results:
@@ -14602,7 +14861,7 @@ ontologies:
   base_prefixes:
   - ONE
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 2781
@@ -14649,10 +14908,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.748
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 1.0
-      oboscore: 0.416
+      oboscore: 0.277
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -14729,8 +14990,8 @@ ontologies:
 - base_generated: true
   base_prefixes:
   - ONS
-  changed: true
-  date: '2020-12-29'
+  changed: false
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 41132
@@ -14775,10 +15036,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.741
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 1.0
-      oboscore: 0.414
+      oboscore: 0.276
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -14881,7 +15144,7 @@ ontologies:
   base_prefixes:
   - ONTONEO
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 14876
@@ -14928,10 +15191,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.748
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 1.0
-      oboscore: 0.416
+      oboscore: 0.277
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -15032,7 +15297,7 @@ ontologies:
   base_prefixes:
   - OOSTT
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 4467
@@ -15080,10 +15345,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.735
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.011
+      _impact_external: 0
       _reuse: 0.589
-      oboscore: 0.349
+      oboscore: 0.232
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 2
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -15115,9 +15382,9 @@ ontologies:
       vivoweb: 6
       xsd: 4
     'Info: Which ontologies use it?':
+    - omrse
     - oostt
     - ico
-    - omrse
   mirror_from: http://purl.obolibrary.org/obo/oostt.owl
   namespace: oostt
   results:
@@ -15174,7 +15441,7 @@ ontologies:
   base_prefixes:
   - OPL
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 3888
@@ -15212,10 +15479,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.8
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.011
+      _impact_external: 0
       _reuse: 0.453
-      oboscore: 0.348
+      oboscore: 0.232
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 2
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -15291,7 +15560,7 @@ ontologies:
   base_prefixes:
   - OPMI
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 26242
@@ -15341,10 +15610,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.72
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.011
+      _impact_external: 0
       _reuse: 0.857
-      oboscore: 0.388
+      oboscore: 0.259
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 2
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -15391,8 +15662,8 @@ ontologies:
       xsd: 5
     'Info: Which ontologies use it?':
     - cto
-    - opmi
     - cido
+    - opmi
   mirror_from: http://purl.obolibrary.org/obo/opmi.owl
   namespace: opmi
   results:
@@ -15449,7 +15720,7 @@ ontologies:
   base_prefixes:
   - ORNASEQ
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 866
@@ -15472,10 +15743,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.836
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.91
-      oboscore: 0.43
+      oboscore: 0.287
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -15555,7 +15828,7 @@ ontologies:
   base_prefixes:
   - OVAE
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 17488
@@ -15597,10 +15870,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.729
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.658
-      oboscore: 0.353
+      oboscore: 0.235
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -15690,7 +15965,7 @@ ontologies:
   base_prefixes:
   - PATO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 16715
@@ -15721,11 +15996,13 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.933
-      _formula: (3*impact+2*dashboard+1*reuse)/6
-      _impact: 0.443
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+      _impact: 0.449
+      _impact_external: 0.25
       _reuse: 0.027
-      oboscore: 0.537
-    'Info: How many ontologies use it?': 78
+      oboscore: 0.443
+    'Info: How many externally documented uses?': 1
+    'Info: How many ontologies use it?': 79
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -15742,85 +16019,86 @@ ontologies:
       owl: 978
       rdfs: 2842
     'Info: Which ontologies use it?':
-    - clo
-    - go
-    - dpo
-    - plana
-    - vo
-    - cl
-    - dideo
-    - xpo
-    - agro
-    - apollo_sv
-    - oba
-    - obcs
-    - ero
-    - mp
-    - pato
-    - cto
-    - htn
-    - mco
-    - obib
-    - dron
-    - poro
-    - cido
-    - ecto
-    - pco
-    - fbbt
-    - zp
-    - oostt
-    - planp
-    - genepio
-    - mondo
-    - phipo
-    - flopo
-    - pso
-    - ohmi
-    - wbphenotype
-    - cteno
-    - cob
-    - foodon
-    - geo
-    - uberon
-    - upheno
-    - obi
-    - envo
-    - caro
-    - cheminf
-    - ohpi
-    - ppo
-    - fideo
-    - nbo
-    - mfmo
-    - psdo
-    - omp
-    - gecko
-    - omiabis
-    - omrse
-    - opmi
-    - gsso
-    - hp
-    - fovt
-    - one
-    - ontoneo
-    - peco
-    - geno
-    - duo
-    - iao
-    - ovae
-    - ro
-    - txpo
-    - oae
-    - micro
-    - ico
     - to
-    - stato
-    - uo
-    - ogsf
-    - eupath
+    - ro
+    - peco
+    - pato
+    - obib
+    - dpo
+    - psdo
+    - cto
+    - mp
+    - omrse
+    - ohmi
+    - gsso
     - fypo
-    - ecocore
+    - cob
+    - planp
+    - envo
+    - oae
+    - ecto
+    - omiabis
+    - pso
+    - ero
+    - oostt
+    - go
+    - uberon
+    - zp
+    - geno
+    - obcs
+    - apollo_sv
+    - xpo
+    - cl
+    - duo
+    - fideo
+    - ons
+    - gecko
+    - dron
+    - oba
+    - opmi
+    - plana
+    - eupath
+    - ohpi
+    - dideo
+    - phipo
+    - ogsf
+    - uo
+    - mondo
+    - flopo
+    - mfmo
+    - nbo
+    - upheno
+    - cteno
+    - omp
+    - cido
+    - ontoneo
+    - wbphenotype
     - ms
+    - foodon
+    - agro
+    - clo
+    - micro
+    - htn
+    - poro
+    - txpo
+    - caro
+    - mco
+    - pco
+    - vo
+    - ppo
+    - ovae
+    - obi
+    - ecocore
+    - cheminf
+    - stato
+    - fovt
+    - hp
+    - iao
+    - genepio
+    - fbbt
+    - one
+    - geo
+    - ico
   mirror_from: http://purl.obolibrary.org/obo/pato/pato-base.owl
   namespace: pato
   results:
@@ -15872,7 +16150,7 @@ ontologies:
   base_prefixes:
   - PCO
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 338
@@ -15900,10 +16178,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.795
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.131
+      _impact_external: 0
       _reuse: 0.53
-      oboscore: 0.419
+      oboscore: 0.279
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 23
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -15926,30 +16206,30 @@ ontologies:
       prefix_unknown: 14
       rdfs: 97
     'Info: Which ontologies use it?':
-    - dpo
-    - genepio
-    - omrse
-    - ecocore
-    - ero
-    - caro
-    - ohmi
-    - agro
+    - sepio
     - obib
-    - apollo_sv
+    - mpio
+    - dpo
+    - omrse
+    - ohmi
     - cob
     - envo
-    - geno
-    - sepio
-    - pco
-    - bco
-    - peco
-    - mondo
-    - gecko
-    - eupath
-    - upheno
-    - mpio
-    - opmi
     - omiabis
+    - geno
+    - apollo_sv
+    - opmi
+    - gecko
+    - ero
+    - eupath
+    - mondo
+    - upheno
+    - agro
+    - caro
+    - pco
+    - ecocore
+    - genepio
+    - peco
+    - bco
   mirror_from: http://purl.obolibrary.org/obo/pco/pco-base.owl
   namespace: pco
   results:
@@ -16010,7 +16290,7 @@ ontologies:
   base_prefixes:
   - PDUMDV
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 151
@@ -16033,10 +16313,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.748
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 1.0
-      oboscore: 0.416
+      oboscore: 0.277
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -16100,7 +16382,7 @@ ontologies:
   base_prefixes:
   - PECO
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 15319
@@ -16135,10 +16417,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.728
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.028
+      _impact_external: 0
       _reuse: 0.826
-      oboscore: 0.394
+      oboscore: 0.263
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 5
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -16164,11 +16448,11 @@ ontologies:
       rdfs: 2527
       xsd: 11
     'Info: Which ontologies use it?':
+    - foodon
+    - to
     - agro
     - mco
     - pso
-    - foodon
-    - to
     - peco
   mirror_from: http://purl.obolibrary.org/obo/peco.owl
   namespace: peco
@@ -16223,7 +16507,7 @@ ontologies:
   base_prefixes:
   - PHIPO
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 6512
@@ -16245,10 +16529,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.936
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.201
-      oboscore: 0.345
+      oboscore: 0.23
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -16321,7 +16607,7 @@ ontologies:
   base_prefixes:
   - PLANA
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 6379
@@ -16344,10 +16630,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.766
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.006
+      _impact_external: 0
       _reuse: 0.174
-      oboscore: 0.287
+      oboscore: 0.192
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 1
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -16424,7 +16712,7 @@ ontologies:
   base_prefixes:
   - PLANP
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 2029
@@ -16445,10 +16733,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.847
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.481
-      oboscore: 0.362
+      oboscore: 0.242
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -16516,7 +16806,7 @@ ontologies:
   base_prefixes:
   - PO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 18941
@@ -16553,10 +16843,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.836
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.085
+      _impact_external: 0.5
       _reuse: 0.094
-      oboscore: 0.337
+      oboscore: 0.391
+    'Info: How many externally documented uses?': 4
     'Info: How many ontologies use it?': 15
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -16577,22 +16869,22 @@ ontologies:
       rdfs: 3028
       xsd: 11
     'Info: Which ontologies use it?':
-    - po
-    - go
-    - flopo
-    - envo
-    - ppo
+    - foodon
+    - to
     - agro
+    - envo
     - micro
     - opmi
-    - pso
     - oba
-    - genepio
-    - mondo
-    - to
     - eupath
-    - foodon
+    - pso
+    - ppo
+    - mondo
     - ecocore
+    - flopo
+    - po
+    - go
+    - genepio
   mirror_from: http://purl.obolibrary.org/obo/po.owl
   namespace: po
   results:
@@ -16642,7 +16934,7 @@ ontologies:
   base_prefixes:
   - PORO
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 3471
@@ -16679,10 +16971,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.733
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.37
-      oboscore: 0.306
+      oboscore: 0.204
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -16762,7 +17056,7 @@ ontologies:
   base_prefixes:
   - PPO
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 3561
@@ -16801,10 +17095,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.784
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.532
-      oboscore: 0.35
+      oboscore: 0.233
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -16886,7 +17182,7 @@ ontologies:
   base_prefixes:
   - PR
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 2596910
@@ -16918,11 +17214,13 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.941
-      _formula: (3*impact+2*dashboard+1*reuse)/6
-      _impact: 0.199
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+      _impact: 0.205
+      _impact_external: 0.25
       _reuse: 0.307
-      oboscore: 0.464
-    'Info: How many ontologies use it?': 35
+      oboscore: 0.395
+    'Info: How many externally documented uses?': 2
+    'Info: How many ontologies use it?': 36
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -16958,42 +17256,43 @@ ontologies:
       rgd: 33372
       yeastgenome: 28423
     'Info: Which ontologies use it?':
-    - clo
-    - go
-    - pr
-    - vo
-    - chiro
-    - cl
-    - dideo
-    - oba
-    - obcs
-    - mp
-    - htn
     - obib
-    - dron
-    - cido
-    - genepio
-    - mondo
-    - ohmi
-    - cteno
-    - cob
-    - uberon
-    - upheno
-    - omit
-    - obi
-    - ino
     - psdo
+    - mp
+    - omit
+    - ohmi
+    - fypo
+    - iceo
+    - cob
+    - chiro
+    - pr
+    - go
+    - uberon
+    - obcs
+    - cl
+    - ons
+    - ncro
+    - opmi
+    - dron
+    - oba
+    - eupath
+    - dideo
+    - mondo
+    - ino
+    - upheno
+    - cteno
+    - cido
+    - clo
+    - micro
+    - txpo
+    - htn
+    - mro
+    - vo
+    - obi
+    - stato
     - cheminf
     - hp
-    - opmi
-    - iceo
-    - mro
-    - txpo
-    - micro
-    - ncro
-    - stato
-    - eupath
-    - fypo
+    - genepio
   mirror_from: http://purl.obolibrary.org/obo/pr.owl
   namespace: pr
   results:
@@ -17042,7 +17341,7 @@ ontologies:
   base_prefixes:
   - PSDO
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 9952
@@ -17093,10 +17392,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.843
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.943
-      oboscore: 0.438
+      oboscore: 0.292
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -17181,7 +17482,7 @@ ontologies:
   base_prefixes:
   - PSO
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 8309
@@ -17217,10 +17518,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.793
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 1.0
-      oboscore: 0.431
+      oboscore: 0.287
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -17299,7 +17602,7 @@ ontologies:
   base_prefixes:
   - PW
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 16234
@@ -17319,10 +17622,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.696
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.006
+      _impact_external: 0
       _reuse: 0.009
-      oboscore: 0.236
+      oboscore: 0.158
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 1
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -17334,8 +17639,8 @@ ontologies:
       owl: 43
       rdfs: 2660
     'Info: Which ontologies use it?':
-    - pw
     - ino
+    - pw
   mirror_from: http://purl.obolibrary.org/obo/pw.owl
   namespace: pw
   results:
@@ -17392,7 +17697,7 @@ ontologies:
   base_prefixes:
   - RO
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 3440
@@ -17433,11 +17738,13 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.862
-      _formula: (3*impact+2*dashboard+1*reuse)/6
-      _impact: 0.682
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+      _impact: 0.688
+      _impact_external: 0.25
       _reuse: 0.143
-      oboscore: 0.652
-    'Info: How many ontologies use it?': 120
+      oboscore: 0.52
+    'Info: How many externally documented uses?': 2
+    'Info: How many ontologies use it?': 121
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -17462,127 +17769,128 @@ ontologies:
       rdfs: 943
       xsd: 13
     'Info: Which ontologies use it?':
-    - go
-    - pr
-    - oae
-    - hao
-    - omp
-    - mro
-    - oostt
-    - mco
-    - amphx
-    - ero
-    - duo
-    - phipo
-    - poro
-    - uberon
-    - mp
-    - caro
-    - ohmi
-    - obi
-    - dideo
-    - chebi
-    - maxo
-    - ppo
-    - flopo
-    - ecto
-    - ncro
-    - ogsf
-    - geno
-    - micro
-    - mmusdv
-    - peco
-    - xco
-    - mondo
-    - gecko
-    - xao
-    - nbo
-    - foodon
-    - to
-    - opmi
-    - dpo
-    - genepio
+    - hsapdv
+    - obib
+    - psdo
     - iceo
+    - planp
+    - doid
+    - fbbi
+    - chiro
+    - olatdv
+    - geno
+    - obcs
+    - apollo_sv
+    - duo
+    - ecao
+    - ornaseq
+    - mondo
+    - cteno
+    - wbphenotype
+    - ms
+    - clo
+    - xco
+    - mco
+    - vo
     - ovae
     - zfs
-    - zeco
-    - bto
-    - vo
-    - psdo
-    - ontoneo
-    - cido
-    - cteno
-    - ornaseq
-    - txpo
-    - cro
-    - ido
-    - fypo
-    - oarcs
-    - ino
-    - plana
-    - planp
-    - obcs
-    - envo
-    - sepio
-    - bco
-    - fideo
-    - mpio
-    - omiabis
     - opl
-    - fbbt
-    - aro
-    - geo
-    - clyh
-    - htn
-    - mfmo
-    - oba
-    - fbdv
-    - agro
-    - obib
-    - cto
-    - cheminf
-    - apollo_sv
-    - ohpi
-    - pco
-    - wbbt
-    - stato
-    - ecao
-    - ogg
-    - eupath
-    - chiro
-    - upheno
-    - ms
-    - hp
-    - one
-    - fbcv
-    - omrse
+    - sepio
     - pato
-    - bspo
-    - doid
-    - ecocore
-    - zp
-    - po
-    - wbphenotype
-    - xpo
-    - swo
+    - ido
+    - mpio
+    - dpo
+    - wbbt
+    - cto
     - omit
-    - wbls
-    - pdumdv
-    - hsapdv
-    - pso
-    - fbbi
     - gsso
-    - olatdv
-    - zfa
-    - fao
-    - mop
-    - ro
+    - swo
+    - envo
+    - oostt
     - cl
-    - fovt
+    - opmi
+    - gecko
     - dron
+    - plana
+    - ino
+    - mfmo
+    - cido
+    - oarcs
+    - cro
+    - cheminf
+    - fovt
     - ico
-    - clo
+    - ro
+    - oae
+    - ecto
+    - omiabis
+    - bspo
+    - pr
+    - zp
+    - go
+    - amphx
+    - pdumdv
+    - xpo
+    - ons
+    - fideo
+    - ncro
+    - ero
+    - phipo
+    - ogsf
+    - flopo
+    - maxo
+    - upheno
+    - ontoneo
+    - foodon
+    - bto
+    - micro
+    - htn
+    - caro
+    - pco
+    - wbls
+    - obi
+    - po
+    - genepio
+    - peco
+    - fao
+    - bco
+    - to
+    - mop
+    - mp
+    - omrse
+    - ohmi
+    - fypo
+    - fbdv
+    - fbcv
+    - ogg
+    - zfa
+    - pso
+    - clyh
+    - uberon
+    - oba
+    - eupath
+    - ohpi
+    - dideo
+    - chebi
+    - mmusdv
+    - aro
+    - nbo
+    - omp
+    - agro
+    - txpo
+    - hao
+    - poro
+    - zeco
+    - mro
+    - ppo
+    - ecocore
+    - stato
+    - hp
     - iao
+    - fbbt
+    - one
+    - geo
+    - xao
   mirror_from: http://purl.obolibrary.org/obo/ro/ro-base.owl
   namespace: ro
   results:
@@ -17633,7 +17941,7 @@ ontologies:
   base_prefixes:
   - RS
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 28490
@@ -17653,10 +17961,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.67
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.004
-      oboscore: 0.224
+      oboscore: 0.149
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -17726,7 +18036,7 @@ ontologies:
   base_prefixes:
   - RXNO
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 4679
@@ -17753,10 +18063,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.748
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.006
+      _impact_external: 0
       _reuse: 0.304
-      oboscore: 0.303
+      oboscore: 0.202
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 1
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -17828,7 +18140,7 @@ ontologies:
   base_prefixes:
   - SBO
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1496
@@ -17848,10 +18160,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.748
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.01
-      oboscore: 0.251
+      oboscore: 0.167
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -17914,7 +18228,7 @@ ontologies:
   base_prefixes:
   - SEPIO
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1231
@@ -17953,10 +18267,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.775
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.596
-      oboscore: 0.358
+      oboscore: 0.238
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -18040,7 +18356,7 @@ ontologies:
   base_prefixes:
   - SO
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 18809
@@ -18067,11 +18383,13 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.685
-      _formula: (3*impact+2*dashboard+1*reuse)/6
-      _impact: 0.142
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+      _impact: 0.148
+      _impact_external: 0
       _reuse: 0.069
-      oboscore: 0.311
-    'Info: How many ontologies use it?': 25
+      oboscore: 0.209
+    'Info: How many externally documented uses?': 0
+    'Info: How many ontologies use it?': 26
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -18082,32 +18400,33 @@ ontologies:
       owl: 338
       rdfs: 3585
     'Info: Which ontologies use it?':
+    - obib
+    - psdo
+    - mp
+    - omit
+    - ohmi
+    - fypo
+    - doid
     - pr
     - go
-    - genepio
-    - mro
-    - doid
-    - psdo
-    - ero
-    - cido
-    - ornaseq
-    - mp
-    - fypo
-    - ohmi
-    - obi
-    - omit
-    - oba
-    - ncro
-    - obib
-    - obcs
-    - ogsf
     - geno
+    - obcs
+    - ons
+    - ncro
+    - ero
+    - oba
+    - ornaseq
+    - eupath
+    - ogsf
     - mondo
+    - upheno
+    - cido
+    - clo
+    - mro
+    - obi
     - stato
     - so
-    - eupath
-    - upheno
-    - clo
+    - genepio
   mirror_from: http://purl.obolibrary.org/obo/so.owl
   namespace: so
   results:
@@ -18161,7 +18480,7 @@ ontologies:
   base_prefixes:
   - SPD
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 4425
@@ -18182,10 +18501,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.73
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.028
-      oboscore: 0.248
+      oboscore: 0.165
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -18253,7 +18574,7 @@ ontologies:
   base_prefixes:
   - STATO
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 8317
@@ -18302,11 +18623,13 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.719
-      _formula: (3*impact+2*dashboard+1*reuse)/6
-      _impact: 0.051
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+      _impact: 0.057
+      _impact_external: 0
       _reuse: 0.437
-      oboscore: 0.338
-    'Info: How many ontologies use it?': 9
+      oboscore: 0.227
+    'Info: How many externally documented uses?': 0
+    'Info: How many ontologies use it?': 10
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -18336,16 +18659,17 @@ ontologies:
       rdfs: 1093
       xsd: 45
     'Info: Which ontologies use it?':
-    - genepio
-    - stato
-    - obcs
-    - gecko
-    - psdo
-    - apollo_sv
-    - eupath
+    - ons
     - sepio
+    - gecko
+    - eupath
     - pco
     - dideo
+    - psdo
+    - stato
+    - genepio
+    - obcs
+    - apollo_sv
   mirror_from: http://purl.obolibrary.org/obo/stato.owl
   namespace: stato
   results:
@@ -18400,7 +18724,7 @@ ontologies:
   base_prefixes:
   - SWO
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 7692
@@ -18439,10 +18763,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.793
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.011
+      _impact_external: 0
       _reuse: 0.416
-      oboscore: 0.339
+      oboscore: 0.226
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 2
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -18465,8 +18791,8 @@ ontologies:
       xsd: 3
     'Info: Which ontologies use it?':
     - swo
-    - miapa
     - ero
+    - miapa
   mirror_from: http://purl.obolibrary.org/obo/swo.owl
   namespace: swo
   results:
@@ -18522,7 +18848,7 @@ ontologies:
   base_prefixes:
   - SYMP
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 4064
@@ -18541,10 +18867,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.788
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.034
+      _impact_external: 0.25
       _reuse: 0.025
-      oboscore: 0.284
+      oboscore: 0.273
+    'Info: How many externally documented uses?': 1
     'Info: How many ontologies use it?': 6
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -18556,13 +18884,13 @@ ontologies:
       owl: 99
       rdfs: 1021
     'Info: Which ontologies use it?':
-    - cido
-    - genepio
     - symp
-    - aro
-    - eupath
     - doid
+    - eupath
+    - aro
+    - genepio
     - ontoneo
+    - cido
   mirror_from: http://purl.obolibrary.org/obo/symp.owl
   namespace: symp
   results:
@@ -18613,7 +18941,7 @@ ontologies:
   base_prefixes:
   - TAXRANK
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 330
@@ -18632,10 +18960,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.738
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.011
+      _impact_external: 0
       _reuse: 0.184
-      oboscore: 0.282
+      oboscore: 0.188
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 2
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -18701,7 +19031,7 @@ ontologies:
   base_prefixes:
   - TO
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 35725
@@ -18740,10 +19070,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.731
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0.25
       _reuse: 0.707
-      oboscore: 0.361
+      oboscore: 0.324
+    'Info: How many externally documented uses?': 2
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -18824,7 +19156,7 @@ ontologies:
   base_prefixes:
   - TRANS
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 151
@@ -18843,10 +19175,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.949
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.028
+      _impact_external: 0.25
       _reuse: 0.352
-      oboscore: 0.389
+      oboscore: 0.343
+    'Info: How many externally documented uses?': 1
     'Info: How many ontologies use it?': 5
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -18859,12 +19193,12 @@ ontologies:
       owl: 4
       rdfs: 44
     'Info: Which ontologies use it?':
-    - cido
-    - genepio
-    - trans
+    - doid
     - ido
     - ohpi
-    - doid
+    - trans
+    - genepio
+    - cido
   mirror_from: http://purl.obolibrary.org/obo/trans.owl
   namespace: trans
   results:
@@ -18913,7 +19247,7 @@ ontologies:
   base_prefixes:
   - TTO
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 258920
@@ -18933,10 +19267,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.684
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.001
-      oboscore: 0.228
+      oboscore: 0.152
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -19003,7 +19339,7 @@ ontologies:
   base_prefixes:
   - TXPO
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 48787
@@ -19036,10 +19372,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.69
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.411
-      oboscore: 0.298
+      oboscore: 0.199
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -19137,7 +19475,7 @@ ontologies:
   base_prefixes:
   - UBERON
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 171866
@@ -19172,11 +19510,13 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.62
-      _formula: (3*impact+2*dashboard+1*reuse)/6
-      _impact: 0.335
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+      _impact: 0.341
+      _impact_external: 0.75
       _reuse: 0.072
-      oboscore: 0.386
-    'Info: How many ontologies use it?': 59
+      oboscore: 0.509
+    'Info: How many externally documented uses?': 10
+    'Info: How many ontologies use it?': 60
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -19203,66 +19543,67 @@ ontologies:
       rdfs: 16371
       xsd: 7265
     'Info: Which ontologies use it?':
-    - ovae
-    - go
-    - genepio
-    - opl
-    - oae
-    - aro
-    - vo
-    - doid
-    - ecocore
-    - ontoneo
-    - psdo
-    - mco
-    - amphx
-    - zp
-    - cido
-    - cteno
-    - ornaseq
-    - poro
-    - ero
+    - hsapdv
     - fobi
-    - clyh
-    - txpo
-    - uberon
-    - wbphenotype
-    - mp
     - ido
-    - ohmi
-    - obi
-    - dideo
+    - obib
+    - psdo
+    - mp
     - omit
-    - maxo
-    - mfmo
+    - ohmi
+    - gsso
+    - doid
+    - envo
+    - oae
+    - omiabis
+    - clyh
+    - zp
+    - go
+    - amphx
+    - uberon
+    - geno
+    - apollo_sv
+    - cl
+    - ons
+    - ecao
+    - ncro
+    - gecko
+    - opmi
     - oba
     - plana
-    - ppo
-    - agro
-    - ncro
-    - obib
-    - hsapdv
-    - apollo_sv
-    - gsso
-    - envo
-    - geno
-    - micro
-    - ohpi
-    - mondo
-    - stato
-    - gecko
-    - cl
-    - ecao
-    - fovt
+    - ornaseq
     - eupath
+    - ohpi
+    - dideo
+    - ero
+    - mondo
+    - aro
+    - maxo
+    - mfmo
     - nbo
+    - cteno
+    - ontoneo
+    - cido
     - upheno
-    - opmi
+    - wbphenotype
     - foodon
-    - hp
-    - ico
+    - agro
     - clo
-    - omiabis
+    - micro
+    - txpo
+    - poro
+    - mco
+    - vo
+    - opl
+    - ppo
+    - obi
+    - ecocore
+    - stato
+    - hp
+    - fovt
+    - genepio
+    - ovae
+    - ico
   mirror_from: http://purl.obolibrary.org/obo/uberon/uberon-base.owl
   namespace: uberon
   results:
@@ -19316,7 +19657,7 @@ ontologies:
   base_prefixes:
   - UO
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1331
@@ -19341,11 +19682,13 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.639
-      _formula: (3*impact+2*dashboard+1*reuse)/6
-      _impact: 0.165
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+      _impact: 0.17
+      _impact_external: 0
       _reuse: 0.064
-      oboscore: 0.306
-    'Info: How many ontologies use it?': 29
+      oboscore: 0.206
+    'Info: How many externally documented uses?': 0
+    'Info: How many ontologies use it?': 30
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -19355,36 +19698,37 @@ ontologies:
       prefix_unknown: 400
       rdfs: 933
     'Info: Which ontologies use it?':
-    - genepio
-    - omrse
-    - oostt
-    - vo
-    - psdo
-    - geo
-    - ero
-    - cido
-    - duo
-    - uo
-    - htn
-    - ohmi
-    - obi
-    - dideo
-    - agro
     - obib
-    - obcs
-    - cheminf
-    - apollo_sv
-    - ohpi
-    - stato
-    - eupath
-    - ms
-    - opmi
-    - foodon
-    - dron
-    - one
-    - ico
+    - psdo
+    - omrse
+    - ohmi
     - omiabis
+    - oostt
+    - obcs
+    - apollo_sv
+    - ons
+    - duo
+    - opmi
+    - ero
+    - dron
+    - eupath
+    - ohpi
+    - dideo
+    - uo
+    - cido
+    - ms
+    - foodon
+    - agro
+    - htn
+    - vo
+    - obi
+    - stato
+    - cheminf
     - iao
+    - genepio
+    - one
+    - geo
+    - ico
   mirror_from: http://purl.obolibrary.org/obo/uo.owl
   namespace: uo
   results:
@@ -19439,7 +19783,7 @@ ontologies:
   base_prefixes:
   - UPHENO
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 690426
@@ -19490,10 +19834,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.741
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.057
+      _impact_external: 0.25
       _reuse: 1.0
-      oboscore: 0.442
+      oboscore: 0.378
+    'Info: How many externally documented uses?': 1
     'Info: How many ontologies use it?': 10
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -19548,17 +19894,17 @@ ontologies:
       rdfs: 152498
       xsd: 5689
     'Info: Which ontologies use it?':
-    - mondo
-    - cido
-    - ro
-    - ohmi
-    - mp
-    - geno
-    - upheno
-    - htn
     - doid
-    - ontoneo
+    - ro
+    - htn
+    - mondo
+    - mp
+    - ohmi
     - mfmo
+    - upheno
+    - geno
+    - ontoneo
+    - cido
   mirror_from: http://purl.obolibrary.org/obo/upheno.owl
   namespace: upheno
   results:
@@ -19614,7 +19960,7 @@ ontologies:
   base_prefixes:
   - VO
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 34543
@@ -19651,11 +19997,13 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.571
-      _formula: (3*impact+2*dashboard+1*reuse)/6
-      _impact: 0.062
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+      _impact: 0.068
+      _impact_external: 0
       _reuse: 0.138
-      oboscore: 0.244
-    'Info: How many ontologies use it?': 11
+      oboscore: 0.165
+    'Info: How many externally documented uses?': 0
+    'Info: How many ontologies use it?': 12
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -19688,18 +20036,19 @@ ontologies:
       rdfs: 14223
       xsd: 6
     'Info: Which ontologies use it?':
-    - ovae
-    - cido
-    - cto
-    - oae
-    - vo
-    - apollo_sv
-    - eupath
-    - ogsf
-    - ohpi
-    - opmi
+    - ons
     - clo
+    - oae
+    - opmi
+    - eupath
+    - ohpi
+    - vo
+    - ogsf
+    - cto
+    - ovae
     - ontoneo
+    - cido
+    - apollo_sv
   mirror_from: http://purl.obolibrary.org/obo/vo.owl
   namespace: vo
   results:
@@ -19759,7 +20108,7 @@ ontologies:
   base_prefixes:
   - VT
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 21326
@@ -19779,10 +20128,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.733
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.011
+      _impact_external: 0
       _reuse: 0.006
-      oboscore: 0.251
+      oboscore: 0.167
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 2
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -19853,7 +20204,7 @@ ontologies:
   base_prefixes:
   - VTO
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 654881
@@ -19873,10 +20224,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.84
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0.25
       _reuse: 0.001
-      oboscore: 0.28
+      oboscore: 0.27
+    'Info: How many externally documented uses?': 1
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -19943,7 +20296,7 @@ ontologies:
   - WBbt
   - WBbt
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 33159
@@ -19966,10 +20319,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.739
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.011
+      _impact_external: 0.25
       _reuse: 0.005
-      oboscore: 0.253
+      oboscore: 0.252
+    'Info: How many externally documented uses?': 1
     'Info: How many ontologies use it?': 2
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -19985,9 +20340,9 @@ ontologies:
       owl: 794
       rdfs: 7390
     'Info: Which ontologies use it?':
+    - wbphenotype
     - wbbt
     - upheno
-    - wbphenotype
   mirror_from: http://purl.obolibrary.org/obo/wbbt/wbbt-base.owl
   namespace: wbbt
   results:
@@ -20041,7 +20396,7 @@ ontologies:
   - WBls
   - WBls
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 5276
@@ -20066,10 +20421,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.989
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.011
+      _impact_external: 0.25
       _reuse: 0.042
-      oboscore: 0.342
+      oboscore: 0.311
+    'Info: How many externally documented uses?': 1
     'Info: How many ontologies use it?': 2
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -20084,9 +20441,9 @@ ontologies:
       owl: 6
       rdfs: 806
     'Info: Which ontologies use it?':
+    - wbphenotype
     - wbls
     - upheno
-    - wbphenotype
   mirror_from: http://purl.obolibrary.org/obo/wbls/wbls-base.owl
   namespace: wbls
   results:
@@ -20137,7 +20494,7 @@ ontologies:
   - WBPhenotype
   - WBPhenotype
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 12839
@@ -20162,10 +20519,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.891
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.011
+      _impact_external: 0.25
       _reuse: 0.244
-      oboscore: 0.343
+      oboscore: 0.312
+    'Info: How many externally documented uses?': 2
     'Info: How many ontologies use it?': 2
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -20189,9 +20548,9 @@ ontologies:
       owl: 63
       rdfs: 2720
     'Info: Which ontologies use it?':
-    - geno
-    - upheno
     - wbphenotype
+    - upheno
+    - geno
   mirror_from: http://purl.obolibrary.org/obo/wbphenotype/wbphenotype-base.owl
   namespace: wbphenotype
   results:
@@ -20242,7 +20601,7 @@ ontologies:
   base_prefixes:
   - XAO
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 10898
@@ -20264,10 +20623,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.949
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.006
+      _impact_external: 0.25
       _reuse: 0.025
-      oboscore: 0.323
+      oboscore: 0.299
+    'Info: How many externally documented uses?': 1
     'Info: How many ontologies use it?': 1
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -20283,8 +20644,8 @@ ontologies:
       owl: 47
       rdfs: 1802
     'Info: Which ontologies use it?':
-    - xao
     - xpo
+    - xao
   mirror_from: http://purl.obolibrary.org/obo/xao.owl
   namespace: xao
   results:
@@ -20333,7 +20694,7 @@ ontologies:
   base_prefixes:
   - XCO
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 4787
@@ -20354,10 +20715,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.784
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.011
+      _impact_external: 0
       _reuse: 0.053
-      oboscore: 0.276
+      oboscore: 0.184
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 2
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -20372,9 +20735,9 @@ ontologies:
       owl: 16
       rdfs: 698
     'Info: Which ontologies use it?':
-    - xco
     - genepio
     - agro
+    - xco
   mirror_from: http://purl.obolibrary.org/obo/xco.owl
   namespace: xco
   results:
@@ -20435,7 +20798,7 @@ ontologies:
   base_prefixes:
   - XPO
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 50499
@@ -20456,10 +20819,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.807
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.084
-      oboscore: 0.283
+      oboscore: 0.189
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -20529,7 +20894,7 @@ ontologies:
   base_prefixes:
   - ZECO
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 298
@@ -20549,10 +20914,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.885
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.0
+      _impact_external: 0
       _reuse: 0.153
-      oboscore: 0.321
+      oboscore: 0.214
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -20619,7 +20986,7 @@ ontologies:
   base_prefixes:
   - ZFA
   changed: false
-  date: '2020-12-24'
+  date: '2020-12-31'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 21239
@@ -20646,10 +21013,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.742
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.011
+      _impact_external: 0.25
       _reuse: 0.027
-      oboscore: 0.257
+      oboscore: 0.255
+    'Info: How many externally documented uses?': 1
     'Info: How many ontologies use it?': 2
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -20664,8 +21033,8 @@ ontologies:
       owl: 125
       rdfs: 3293
     'Info: Which ontologies use it?':
-    - zp
     - zfa
+    - zp
     - upheno
   mirror_from: http://purl.obolibrary.org/obo/zfa.owl
   namespace: zfa
@@ -20718,7 +21087,7 @@ ontologies:
   base_prefixes:
   - ZFS
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 235
@@ -20741,10 +21110,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.788
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.017
+      _impact_external: 0
       _reuse: 0.289
-      oboscore: 0.319
+      oboscore: 0.213
+    'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 3
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -20758,8 +21129,8 @@ ontologies:
       rdfs: 68
     'Info: Which ontologies use it?':
     - zfs
-    - zp
     - zfa
+    - zp
     - upheno
   mirror_from: http://purl.obolibrary.org/obo/zfs.owl
   namespace: zfs
@@ -20812,7 +21183,7 @@ ontologies:
   base_prefixes:
   - ZP
   changed: false
-  date: '2020-12-24'
+  date: '2021-01-01'
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 221972
@@ -20850,10 +21221,12 @@ ontologies:
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.783
-      _formula: (3*impact+2*dashboard+1*reuse)/6
+      _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
       _impact: 0.011
+      _impact_external: 0.25
       _reuse: 0.298
-      oboscore: 0.316
+      oboscore: 0.294
+    'Info: How many externally documented uses?': 1
     'Info: How many ontologies use it?': 2
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
@@ -20884,8 +21257,8 @@ ontologies:
       xsd: 391
     'Info: Which ontologies use it?':
     - zp
-    - geno
     - upheno
+    - geno
   mirror_from: http://purl.obolibrary.org/obo/zp.owl
   namespace: zp
   results:

@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - BFO
 changed: false
-date: '2020-12-23'
+date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 463
@@ -23,11 +23,13 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
     _dashboard: 0.887
-    _formula: (3*impact+2*dashboard+1*reuse)/6
-    _impact: 0.75
+    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+    _impact: 0.756
+    _impact_external: 0.25
     _reuse: 0.393
-    oboscore: 0.736
-  'Info: How many ontologies use it?': 132
+    oboscore: 0.576
+  'Info: How many externally documented uses?': 1
+  'Info: How many ontologies use it?': 133
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -39,139 +41,140 @@ metrics:
     owl: 1
     rdfs: 110
   'Info: Which ontologies use it?':
-  - fypo
-  - psdo
-  - mco
-  - ico
-  - cheminf
-  - mondo
-  - pdumdv
-  - omiabis
-  - zfs
-  - ovae
-  - mro
-  - oae
-  - ogg
-  - fbbt
-  - hsapdv
-  - pco
-  - bfo
-  - iao
-  - ppo
-  - peco
-  - hao
-  - ohd
-  - cto
-  - ecocore
-  - wbphenotype
-  - maxo
-  - caro
-  - iceo
-  - omrse
-  - cvdo
-  - ero
-  - apollo_sv
-  - ncro
-  - dpo
-  - ino
-  - omo
-  - stato
-  - pso
-  - rxno
-  - cro
-  - chmo
-  - chiro
-  - mfomd
-  - txpo
   - flopo
-  - mpio
-  - mfmo
-  - nbo
-  - one
-  - planp
-  - geno
-  - cteno
-  - dideo
-  - mp
-  - xco
-  - ogsf
-  - xao
-  - omit
-  - zfa
-  - pr
-  - mmusdv
-  - cdao
-  - fideo
-  - dron
-  - ogms
-  - eupath
-  - clao
-  - mop
-  - gsso
-  - eco
-  - ido
-  - ro
-  - geo
-  - htn
-  - sepio
-  - exo
-  - olatdv
-  - agro
-  - poro
-  - go
-  - foodon
-  - bto
-  - envo
-  - cl
-  - phipo
-  - amphx
-  - to
-  - oostt
-  - obib
-  - obcs
-  - ornaseq
-  - wbbt
-  - obi
-  - plana
-  - vo
-  - fao
-  - bspo
-  - clo
   - fbcv
-  - bco
-  - upheno
-  - ecao
-  - gecko
-  - micro
-  - oarcs
-  - ms
-  - swo
-  - opl
-  - cob
-  - mf
-  - duo
-  - chebi
-  - mfoem
-  - ohpi
-  - omp
-  - genepio
+  - caro
+  - mfmo
+  - omrse
   - clyh
   - ontoneo
-  - xpo
-  - wbls
-  - oba
-  - uberon
-  - ohmi
-  - zeco
-  - opmi
   - hp
-  - fbdv
+  - bco
+  - vo
+  - stato
+  - duo
+  - wbphenotype
+  - ero
+  - ncro
+  - pso
+  - geo
+  - bto
   - zp
-  - miapa
-  - cido
+  - maxo
+  - mmusdv
+  - txpo
+  - htn
+  - mro
+  - cl
+  - amphx
+  - geno
+  - ovae
+  - ogg
+  - ornaseq
   - fbbi
+  - phipo
+  - wbbt
+  - cido
+  - cheminf
+  - xco
+  - ohmi
+  - opmi
+  - opl
+  - mondo
+  - go
+  - eco
+  - ecocore
+  - mf
+  - ohd
+  - wbls
+  - mfoem
+  - hsapdv
+  - xpo
+  - uberon
+  - agro
+  - exo
+  - chebi
+  - ohpi
+  - ino
+  - upheno
+  - obcs
+  - dron
+  - ons
+  - zfs
+  - pdumdv
+  - poro
+  - miapa
+  - cob
+  - chmo
+  - ogsf
+  - swo
+  - fideo
+  - clo
+  - micro
   - po
+  - to
+  - ido
+  - rxno
+  - oarcs
+  - cdao
+  - bfo
+  - fbbt
+  - zeco
+  - pr
+  - iceo
+  - psdo
+  - planp
+  - foodon
+  - omp
+  - fypo
+  - olatdv
+  - iao
+  - nbo
+  - hao
+  - dideo
+  - ecao
+  - obi
+  - ppo
+  - dpo
+  - cto
+  - oostt
+  - eupath
+  - chiro
+  - oba
+  - peco
+  - bspo
+  - zfa
+  - mop
+  - pco
+  - cro
+  - cteno
+  - sepio
+  - plana
+  - one
+  - obib
+  - omiabis
+  - mfomd
+  - ico
+  - gecko
+  - apollo_sv
+  - clao
+  - ro
+  - gsso
+  - xao
+  - fao
+  - ogms
+  - fbdv
+  - cvdo
+  - genepio
+  - mpio
+  - mp
+  - omit
+  - omo
   - pato
+  - mco
+  - envo
+  - oae
+  - ms
 mirror_from: http://purl.obolibrary.org/obo/bfo.owl
 namespace: bfo
 results:

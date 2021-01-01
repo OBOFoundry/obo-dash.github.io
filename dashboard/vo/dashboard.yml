@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - VO
 changed: false
-date: '2020-12-24'
+date: '2021-01-01'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 34543
@@ -39,11 +39,13 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
     _dashboard: 0.571
-    _formula: (3*impact+2*dashboard+1*reuse)/6
-    _impact: 0.062
+    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+    _impact: 0.068
+    _impact_external: 0
     _reuse: 0.138
-    oboscore: 0.244
-  'Info: How many ontologies use it?': 11
+    oboscore: 0.165
+  'Info: How many externally documented uses?': 0
+  'Info: How many ontologies use it?': 12
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -76,18 +78,19 @@ metrics:
     rdfs: 14223
     xsd: 6
   'Info: Which ontologies use it?':
-  - ovae
-  - cido
-  - cto
-  - oae
-  - vo
-  - apollo_sv
-  - eupath
-  - ogsf
-  - ohpi
-  - opmi
+  - ons
   - clo
+  - oae
+  - opmi
+  - eupath
+  - ohpi
+  - vo
+  - ogsf
+  - cto
+  - ovae
   - ontoneo
+  - cido
+  - apollo_sv
 mirror_from: http://purl.obolibrary.org/obo/vo.owl
 namespace: vo
 results:

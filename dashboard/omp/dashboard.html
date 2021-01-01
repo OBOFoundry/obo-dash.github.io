@@ -9,7 +9,7 @@
             <div class="col-md-8">
                 <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/omp.html">omp</a></h1>
                 <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/omp/releases/2020-12-04/omp.owl</p>
-                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: 2020-12-24</p>
+                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: 2021-01-01</p>
                 <p class="lead" style="margin-top:-15px;"><a href="dashboard.yml">View dashboard results as YAML</a></p>
                 <h3>Error Breakdown</h3>
                 
@@ -426,15 +426,25 @@
                                         
                                         <li>_dashboard: 0.708</li>
                                         
-                                        <li>_formula: (3*impact+2*dashboard+1*reuse)/6</li>
+                                        <li>_formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9</li>
                                         
                                         <li>_impact: 0.017</li>
                                         
+                                        <li>_impact_external: 0</li>
+                                        
                                         <li>_reuse: 0.158</li>
                                         
-                                        <li>oboscore: 0.271</li>
+                                        <li>oboscore: 0.181</li>
                                         
                                     </ul></td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>Info: How many externally documented uses?</td>
+                                
+                                
+                                    <td>0</td>
                                 
                             </tr>
                         
@@ -498,7 +508,7 @@
                                 <td>Info: Which ontologies use it?</td>
                                 
                                 
-                                    <td>['eupath', 'genepio', 'omp', 'mco']</td>
+                                    <td>['genepio', 'eupath', 'mco', 'omp']</td>
                                 
                             </tr>
                         

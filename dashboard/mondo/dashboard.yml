@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - MONDO
 changed: false
-date: '2020-12-24'
+date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 471275
@@ -48,10 +48,12 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.836
-    _formula: (3*impact+2*dashboard+1*reuse)/6
+    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
     _impact: 0.017
+    _impact_external: 0.25
     _reuse: 0.418
-    oboscore: 0.357
+    oboscore: 0.321
+  'Info: How many externally documented uses?': 1
   'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -98,9 +100,9 @@ metrics:
     xsd: 35406
   'Info: Which ontologies use it?':
   - ohmi
+  - opmi
   - gecko
   - mondo
-  - opmi
 mirror_from: http://purl.obolibrary.org/obo/mondo.owl
 namespace: mondo
 results:

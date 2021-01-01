@@ -2,7 +2,7 @@ base_generated: false
 base_prefixes:
 - OBI
 changed: false
-date: '2020-12-24'
+date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 20768
@@ -47,11 +47,13 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.734
-    _formula: (3*impact+2*dashboard+1*reuse)/6
-    _impact: 0.409
+    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+    _impact: 0.415
+    _impact_external: 0.25
     _reuse: 0.139
-    oboscore: 0.472
-  'Info: How many ontologies use it?': 72
+    oboscore: 0.4
+  'Info: How many externally documented uses?': 2
+  'Info: How many ontologies use it?': 73
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -86,79 +88,80 @@ metrics:
     rdfs: 3266
     xsd: 9
   'Info: Which ontologies use it?':
-  - clo
-  - go
-  - pr
-  - dpo
-  - vo
-  - agro
-  - apollo_sv
-  - obcs
-  - ogms
-  - maxo
-  - ero
-  - swo
-  - mp
-  - cto
-  - mco
-  - htn
-  - obib
-  - rxno
-  - dron
-  - cido
-  - ecto
-  - oostt
-  - genepio
-  - mondo
-  - ohmi
-  - foodon
-  - cob
-  - geo
-  - upheno
-  - omit
-  - obi
-  - envo
-  - ohpi
-  - cheminf
-  - psdo
-  - ppo
-  - fideo
-  - gecko
-  - iceo
-  - ido
-  - omiabis
-  - omrse
-  - opmi
-  - opl
   - sepio
-  - gsso
-  - one
-  - ontoneo
-  - doid
-  - geno
-  - duo
+  - to
+  - ido
+  - obib
+  - ohd
   - mpio
-  - iao
-  - mro
-  - ogg
-  - ovae
+  - dpo
+  - psdo
+  - cto
+  - mp
+  - omrse
+  - omit
+  - ohmi
+  - gsso
+  - swo
+  - cob
+  - iceo
+  - doid
+  - eco
+  - envo
   - oae
-  - txpo
-  - micro
+  - ecto
+  - ogg
+  - omiabis
+  - pr
+  - oostt
+  - go
+  - geno
+  - obcs
+  - apollo_sv
+  - ons
+  - duo
+  - fideo
+  - ncro
+  - gecko
+  - dron
+  - ogms
+  - opmi
+  - ornaseq
   - eupath
+  - ohpi
+  - dideo
+  - ero
+  - ogsf
+  - mondo
+  - maxo
+  - upheno
+  - ontoneo
+  - cido
+  - foodon
+  - agro
+  - clo
+  - micro
+  - htn
+  - txpo
+  - mfomd
+  - chmo
+  - mco
+  - mro
+  - opl
+  - ppo
+  - vo
+  - obi
+  - ecocore
+  - cheminf
+  - stato
+  - iao
+  - rxno
+  - genepio
+  - ovae
+  - one
+  - geo
   - ico
   - bco
-  - ncro
-  - chmo
-  - eco
-  - ohd
-  - ogsf
-  - dideo
-  - stato
-  - mfomd
-  - to
-  - ecocore
-  - ornaseq
 mirror_from: http://purl.obolibrary.org/obo/obi/obi-base.owl
 namespace: obi
 results:

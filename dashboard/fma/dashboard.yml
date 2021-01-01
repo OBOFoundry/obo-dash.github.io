@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - FMA
 changed: false
-date: '2020-12-24'
+date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 284070
@@ -24,10 +24,12 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
     _dashboard: 0.694
-    _formula: (3*impact+2*dashboard+1*reuse)/6
+    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
     _impact: 0.062
+    _impact_external: 0
     _reuse: 0.0
-    oboscore: 0.262
+    oboscore: 0.175
+  'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 11
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -38,18 +40,18 @@ metrics:
     oboInOwl: 203970
     rdfs: 78989
   'Info: Which ontologies use it?':
-  - fma
-  - omrse
+  - micro
   - obib
+  - dideo
+  - ohd
   - vo
   - cvdo
-  - apollo_sv
+  - omrse
   - oostt
-  - micro
-  - ohd
-  - ico
-  - dideo
+  - fma
   - ontoneo
+  - apollo_sv
+  - ico
 mirror_from: http://purl.obolibrary.org/obo/fma.owl
 namespace: fma
 results:

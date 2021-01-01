@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - ERO
 changed: false
-date: '2020-12-24'
+date: '2021-01-01'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 21921
@@ -41,11 +41,13 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.618
-    _formula: (3*impact+2*dashboard+1*reuse)/6
-    _impact: 0.062
+    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+    _impact: 0.068
+    _impact_external: 0
     _reuse: 0.51
-    oboscore: 0.322
-  'Info: How many ontologies use it?': 11
+    oboscore: 0.217
+  'Info: How many externally documented uses?': 0
+  'Info: How many ontologies use it?': 12
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -79,18 +81,19 @@ metrics:
     vivoweb: 94
     xsd: 63
   'Info: Which ontologies use it?':
-  - ero
-  - genepio
-  - obib
-  - cto
-  - apollo_sv
-  - oostt
-  - eupath
-  - ogsf
+  - ons
   - sepio
-  - ico
+  - ero
+  - eupath
+  - obib
   - dideo
+  - ogsf
+  - cto
+  - oostt
+  - genepio
   - ontoneo
+  - apollo_sv
+  - ico
 mirror_from: http://purl.obolibrary.org/obo/ero.owl
 namespace: ero
 results:

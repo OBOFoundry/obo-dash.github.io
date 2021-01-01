@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - UO
 changed: false
-date: '2020-12-24'
+date: '2021-01-01'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1331
@@ -27,11 +27,13 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.639
-    _formula: (3*impact+2*dashboard+1*reuse)/6
-    _impact: 0.165
+    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+    _impact: 0.17
+    _impact_external: 0
     _reuse: 0.064
-    oboscore: 0.306
-  'Info: How many ontologies use it?': 29
+    oboscore: 0.206
+  'Info: How many externally documented uses?': 0
+  'Info: How many ontologies use it?': 30
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -41,36 +43,37 @@ metrics:
     prefix_unknown: 400
     rdfs: 933
   'Info: Which ontologies use it?':
-  - genepio
-  - omrse
-  - oostt
-  - vo
-  - psdo
-  - geo
-  - ero
-  - cido
-  - duo
-  - uo
-  - htn
-  - ohmi
-  - obi
-  - dideo
-  - agro
   - obib
-  - obcs
-  - cheminf
-  - apollo_sv
-  - ohpi
-  - stato
-  - eupath
-  - ms
-  - opmi
-  - foodon
-  - dron
-  - one
-  - ico
+  - psdo
+  - omrse
+  - ohmi
   - omiabis
+  - oostt
+  - obcs
+  - apollo_sv
+  - ons
+  - duo
+  - opmi
+  - ero
+  - dron
+  - eupath
+  - ohpi
+  - dideo
+  - uo
+  - cido
+  - ms
+  - foodon
+  - agro
+  - htn
+  - vo
+  - obi
+  - stato
+  - cheminf
   - iao
+  - genepio
+  - one
+  - geo
+  - ico
 mirror_from: http://purl.obolibrary.org/obo/uo.owl
 namespace: uo
 results:

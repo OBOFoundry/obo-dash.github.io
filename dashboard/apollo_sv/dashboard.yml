@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - APOLLO_SV
 changed: false
-date: '2020-12-24'
+date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 11061
@@ -52,10 +52,12 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.722
-    _formula: (3*impact+2*dashboard+1*reuse)/6
+    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
     _impact: 0.08
+    _impact_external: 0
     _reuse: 0.687
-    oboscore: 0.395
+    oboscore: 0.263
+  'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 14
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -100,21 +102,21 @@ metrics:
     rdfs: 2316
     xsd: 4
   'Info: Which ontologies use it?':
-  - omiabis
-  - genepio
-  - iao
-  - one
-  - oostt
-  - cido
-  - apollo_sv
-  - obib
-  - cheminf
-  - dideo
   - duo
+  - dron
+  - omiabis
+  - eupath
+  - obib
+  - dideo
   - mpio
   - omrse
-  - dron
-  - eupath
+  - cheminf
+  - oostt
+  - iao
+  - one
+  - genepio
+  - cido
+  - apollo_sv
 mirror_from: http://purl.obolibrary.org/obo/apollo_sv.owl
 namespace: apollo_sv
 results:

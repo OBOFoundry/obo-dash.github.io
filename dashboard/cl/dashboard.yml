@@ -2,7 +2,7 @@ base_generated: false
 base_prefixes:
 - CL
 changed: false
-date: '2020-12-24'
+date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 12754
@@ -30,10 +30,12 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.934
-    _formula: (3*impact+2*dashboard+1*reuse)/6
+    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
     _impact: 0.273
+    _impact_external: 0.25
     _reuse: 0.321
-    oboscore: 0.501
+    oboscore: 0.418
+  'Info: How many externally documented uses?': 2
   'Info: How many ontologies use it?': 48
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -58,55 +60,55 @@ metrics:
     rdfs: 2909
     xsd: 943
   'Info: Which ontologies use it?':
-  - cob
-  - mp
-  - dideo
-  - ohpi
-  - opl
-  - flopo
-  - wbphenotype
-  - hp
-  - aeo
-  - obib
-  - upheno
-  - clyh
-  - ido
-  - obi
-  - obcs
-  - ornaseq
-  - pato
-  - uberon
-  - omiabis
   - ro
-  - geno
+  - pato
+  - ido
+  - obib
+  - dpo
+  - psdo
+  - mp
+  - ohmi
+  - gsso
+  - fypo
+  - cob
+  - doid
+  - omiabis
+  - clyh
+  - pr
+  - aeo
+  - zp
   - go
-  - txpo
+  - amphx
+  - uberon
+  - geno
+  - obcs
   - cl
-  - poro
-  - mco
-  - cido
+  - oba
+  - ornaseq
+  - eupath
+  - ohpi
+  - dideo
+  - mondo
+  - flopo
   - ino
   - mfmo
-  - oba
-  - psdo
+  - upheno
   - cteno
-  - stato
-  - fbbt
-  - doid
-  - fypo
-  - pr
-  - dpo
-  - clo
-  - ohmi
-  - ico
-  - micro
-  - mondo
-  - caro
-  - zp
-  - gsso
   - ontoneo
-  - eupath
-  - amphx
+  - cido
+  - wbphenotype
+  - clo
+  - micro
+  - txpo
+  - poro
+  - caro
+  - mco
+  - obi
+  - stato
+  - hp
+  - opl
+  - fbbt
+  - ico
 mirror_from: http://purl.obolibrary.org/obo/cl/cl-base.owl
 namespace: cl
 results:

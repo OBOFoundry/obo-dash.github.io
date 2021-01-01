@@ -2,7 +2,7 @@ base_generated: false
 base_prefixes:
 - HP
 changed: false
-date: '2020-12-24'
+date: '2021-01-01'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 115128
@@ -27,11 +27,13 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.935
-    _formula: (3*impact+2*dashboard+1*reuse)/6
-    _impact: 0.102
+    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+    _impact: 0.108
+    _impact_external: 0.25
     _reuse: 0.122
-    oboscore: 0.383
-  'Info: How many ontologies use it?': 18
+    oboscore: 0.341
+  'Info: How many externally documented uses?': 1
+  'Info: How many ontologies use it?': 19
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -56,25 +58,26 @@ metrics:
     rdf: 12
     rdfs: 19191
   'Info: Which ontologies use it?':
-  - mondo
-  - cido
-  - genepio
-  - hp
+  - foodon
+  - ons
+  - doid
+  - opmi
   - txpo
+  - htn
+  - chiro
+  - eupath
+  - mondo
+  - obi
+  - hp
   - ohmi
   - aro
-  - eupath
-  - gsso
-  - chiro
-  - geno
-  - foodon
-  - htn
-  - doid
-  - obi
-  - opmi
-  - ontoneo
   - maxo
+  - geno
+  - genepio
   - upheno
+  - ontoneo
+  - cido
+  - gsso
 mirror_from: http://purl.obolibrary.org/obo/hp/hp-base.owl
 namespace: hp
 results:

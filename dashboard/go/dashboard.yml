@@ -2,7 +2,7 @@ base_generated: false
 base_prefixes:
 - GO
 changed: false
-date: '2020-12-24'
+date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 406814
@@ -32,11 +32,13 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
     _dashboard: 0.849
-    _formula: (3*impact+2*dashboard+1*reuse)/6
-    _impact: 0.489
+    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+    _impact: 0.494
+    _impact_external: 0.25
     _reuse: 0.073
-    oboscore: 0.54
-  'Info: How many ontologies use it?': 86
+    oboscore: 0.445
+  'Info: How many externally documented uses?': 1
+  'Info: How many ontologies use it?': 87
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -67,93 +69,94 @@ metrics:
     rdfs: 58606
     xsd: 1397
   'Info: Which ontologies use it?':
-  - fbbi
-  - obcs
-  - pato
-  - htn
-  - mfoem
-  - ecto
-  - cteno
-  - ppo
-  - iceo
-  - opl
-  - txpo
-  - eupath
-  - ecocore
-  - chiro
-  - cl
-  - xpo
-  - apollo_sv
-  - fbdv
-  - mp
-  - mco
-  - dron
-  - pco
-  - mondo
-  - wbphenotype
-  - foodon
-  - uberon
-  - ino
-  - envo
-  - ohpi
+  - obib
   - psdo
+  - iceo
+  - fbbi
+  - chiro
+  - geno
+  - obcs
+  - apollo_sv
+  - ornaseq
+  - mfoem
+  - mondo
+  - cteno
+  - wbphenotype
+  - clo
+  - mco
+  - vo
+  - opl
+  - pato
+  - ido
+  - mpio
+  - dpo
+  - omit
+  - gsso
+  - cob
+  - envo
+  - cl
+  - opmi
+  - gecko
+  - dron
+  - plana
+  - mf
+  - ino
+  - mfmo
+  - cido
+  - cheminf
+  - ico
+  - ro
+  - oae
+  - ecto
+  - omiabis
+  - pr
+  - zp
+  - go
+  - amphx
+  - xpo
+  - ons
+  - fideo
+  - ncro
+  - ero
+  - phipo
+  - ogsf
+  - flopo
+  - upheno
+  - ontoneo
+  - foodon
+  - micro
+  - htn
+  - mfomd
+  - caro
+  - pco
+  - obi
+  - po
+  - genepio
+  - peco
+  - to
+  - mp
+  - omrse
+  - ohmi
+  - fypo
+  - fbdv
+  - pso
+  - clyh
+  - uberon
+  - oba
+  - eupath
+  - ohpi
+  - dideo
   - nbo
   - omp
-  - ido
-  - ontoneo
-  - peco
-  - mpio
-  - ro
-  - ico
-  - to
-  - clo
-  - go
-  - vo
-  - ero
-  - obib
-  - amphx
-  - phipo
-  - flopo
-  - omit
-  - obi
-  - caro
-  - cheminf
-  - mfmo
-  - gecko
-  - opmi
-  - omrse
-  - mro
-  - oae
-  - micro
-  - ncro
-  - stato
-  - ogsf
-  - ornaseq
-  - dpo
-  - pr
-  - plana
   - agro
-  - oba
+  - txpo
   - poro
-  - cido
-  - zp
-  - fbbt
-  - mf
-  - pso
-  - genepio
-  - ohmi
-  - cob
-  - upheno
-  - po
-  - fideo
+  - mro
+  - ppo
+  - ecocore
+  - stato
   - hp
-  - gsso
-  - omiabis
-  - geno
-  - clyh
-  - dideo
-  - fypo
-  - mfomd
+  - fbbt
 mirror_from: http://purl.obolibrary.org/obo/go/go-base.owl
 namespace: go
 results:

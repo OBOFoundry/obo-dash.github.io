@@ -9,7 +9,7 @@
             <div class="col-md-8">
                 <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/symp.html">symp</a></h1>
                 <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/symp/releases/2020-08-04/symp.owl</p>
-                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: 2020-12-24</p>
+                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: 2021-01-01</p>
                 <p class="lead" style="margin-top:-15px;"><a href="dashboard.yml">View dashboard results as YAML</a></p>
                 <h3>Error Breakdown</h3>
                 
@@ -410,15 +410,25 @@
                                         
                                         <li>_dashboard: 0.788</li>
                                         
-                                        <li>_formula: (3*impact+2*dashboard+1*reuse)/6</li>
+                                        <li>_formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9</li>
                                         
                                         <li>_impact: 0.034</li>
                                         
+                                        <li>_impact_external: 0.25</li>
+                                        
                                         <li>_reuse: 0.025</li>
                                         
-                                        <li>oboscore: 0.284</li>
+                                        <li>oboscore: 0.273</li>
                                         
                                     </ul></td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>Info: How many externally documented uses?</td>
+                                
+                                
+                                    <td>1</td>
                                 
                             </tr>
                         
@@ -472,7 +482,7 @@
                                 <td>Info: Which ontologies use it?</td>
                                 
                                 
-                                    <td>['cido', 'genepio', 'symp', 'aro', 'eupath', 'doid', 'ontoneo']</td>
+                                    <td>['symp', 'doid', 'eupath', 'aro', 'genepio', 'ontoneo', 'cido']</td>
                                 
                             </tr>
                         

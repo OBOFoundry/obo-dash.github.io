@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - NCRO
 changed: false
-date: '2020-12-24'
+date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 8750
@@ -35,10 +35,12 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.692
-    _formula: (3*impact+2*dashboard+1*reuse)/6
+    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
     _impact: 0.011
+    _impact_external: 0
     _reuse: 0.191
-    oboscore: 0.268
+    oboscore: 0.179
+  'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 2
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -61,8 +63,8 @@ metrics:
     rdfs: 3720
   'Info: Which ontologies use it?':
   - genepio
-  - omit
   - ncro
+  - omit
 mirror_from: http://purl.obolibrary.org/obo/ncro.owl
 namespace: ncro
 results:

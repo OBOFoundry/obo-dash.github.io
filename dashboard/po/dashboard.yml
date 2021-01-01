@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - PO
 changed: false
-date: '2020-12-24'
+date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 18941
@@ -39,10 +39,12 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
     _dashboard: 0.836
-    _formula: (3*impact+2*dashboard+1*reuse)/6
+    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
     _impact: 0.085
+    _impact_external: 0.5
     _reuse: 0.094
-    oboscore: 0.337
+    oboscore: 0.391
+  'Info: How many externally documented uses?': 4
   'Info: How many ontologies use it?': 15
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -63,22 +65,22 @@ metrics:
     rdfs: 3028
     xsd: 11
   'Info: Which ontologies use it?':
-  - po
-  - go
-  - flopo
-  - envo
-  - ppo
+  - foodon
+  - to
   - agro
+  - envo
   - micro
   - opmi
-  - pso
   - oba
-  - genepio
-  - mondo
-  - to
   - eupath
-  - foodon
+  - pso
+  - ppo
+  - mondo
   - ecocore
+  - flopo
+  - po
+  - go
+  - genepio
 mirror_from: http://purl.obolibrary.org/obo/po.owl
 namespace: po
 results:

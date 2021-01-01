@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - DOID
 changed: false
-date: '2020-12-24'
+date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 139755
@@ -30,10 +30,12 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.89
-    _formula: (3*impact+2*dashboard+1*reuse)/6
+    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
     _impact: 0.125
+    _impact_external: 0.25
     _reuse: 0.319
-    oboscore: 0.412
+    oboscore: 0.358
+  'Info: How many externally documented uses?': 1
   'Info: How many ontologies use it?': 22
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -63,29 +65,29 @@ metrics:
     rdfs: 21089
     skos: 256
   'Info: Which ontologies use it?':
-  - clo
-  - vo
-  - apollo_sv
-  - ero
-  - htn
   - obib
-  - cido
-  - genepio
-  - aro
-  - ohmi
   - omit
-  - ohpi
+  - ohmi
   - gsso
-  - ontoneo
   - doid
-  - cvdo
-  - duo
-  - txpo
   - oae
-  - ico
+  - cvdo
+  - apollo_sv
+  - duo
   - ncro
+  - ero
   - eupath
+  - ohpi
+  - aro
+  - ontoneo
+  - cido
+  - clo
+  - txpo
+  - htn
   - mfomd
+  - vo
+  - genepio
+  - ico
 mirror_from: http://purl.obolibrary.org/obo/doid.owl
 namespace: doid
 results:

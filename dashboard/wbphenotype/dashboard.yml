@@ -3,7 +3,7 @@ base_prefixes:
 - WBPhenotype
 - WBPhenotype
 changed: false
-date: '2020-12-24'
+date: '2021-01-01'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 12839
@@ -28,10 +28,12 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.891
-    _formula: (3*impact+2*dashboard+1*reuse)/6
+    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
     _impact: 0.011
+    _impact_external: 0.25
     _reuse: 0.244
-    oboscore: 0.343
+    oboscore: 0.312
+  'Info: How many externally documented uses?': 2
   'Info: How many ontologies use it?': 2
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -55,9 +57,9 @@ metrics:
     owl: 63
     rdfs: 2720
   'Info: Which ontologies use it?':
-  - geno
-  - upheno
   - wbphenotype
+  - upheno
+  - geno
 mirror_from: http://purl.obolibrary.org/obo/wbphenotype/wbphenotype-base.owl
 namespace: wbphenotype
 results:

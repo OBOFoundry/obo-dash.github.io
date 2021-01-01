@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - OMIT
 changed: false
-date: '2020-12-24'
+date: '2021-01-01'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 216562
@@ -36,10 +36,12 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.664
-    _formula: (3*impact+2*dashboard+1*reuse)/6
+    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
     _impact: 0.017
+    _impact_external: 0
     _reuse: 0.035
-    oboscore: 0.236
+    oboscore: 0.157
+  'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -66,10 +68,10 @@ metrics:
     protege: 1
     rdfs: 151468
   'Info: Which ontologies use it?':
-  - txpo
   - genepio
-  - omit
   - mco
+  - txpo
+  - omit
 mirror_from: http://purl.obolibrary.org/obo/omit.owl
 namespace: omit
 results:

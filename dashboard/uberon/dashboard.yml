@@ -2,7 +2,7 @@ base_generated: false
 base_prefixes:
 - UBERON
 changed: false
-date: '2020-12-24'
+date: '2021-01-01'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 171866
@@ -37,11 +37,13 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.62
-    _formula: (3*impact+2*dashboard+1*reuse)/6
-    _impact: 0.335
+    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+    _impact: 0.341
+    _impact_external: 0.75
     _reuse: 0.072
-    oboscore: 0.386
-  'Info: How many ontologies use it?': 59
+    oboscore: 0.509
+  'Info: How many externally documented uses?': 10
+  'Info: How many ontologies use it?': 60
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -68,66 +70,67 @@ metrics:
     rdfs: 16371
     xsd: 7265
   'Info: Which ontologies use it?':
-  - ovae
-  - go
-  - genepio
-  - opl
-  - oae
-  - aro
-  - vo
-  - doid
-  - ecocore
-  - ontoneo
-  - psdo
-  - mco
-  - amphx
-  - zp
-  - cido
-  - cteno
-  - ornaseq
-  - poro
-  - ero
+  - hsapdv
   - fobi
-  - clyh
-  - txpo
-  - uberon
-  - wbphenotype
-  - mp
   - ido
-  - ohmi
-  - obi
-  - dideo
+  - obib
+  - psdo
+  - mp
   - omit
-  - maxo
-  - mfmo
+  - ohmi
+  - gsso
+  - doid
+  - envo
+  - oae
+  - omiabis
+  - clyh
+  - zp
+  - go
+  - amphx
+  - uberon
+  - geno
+  - apollo_sv
+  - cl
+  - ons
+  - ecao
+  - ncro
+  - gecko
+  - opmi
   - oba
   - plana
-  - ppo
-  - agro
-  - ncro
-  - obib
-  - hsapdv
-  - apollo_sv
-  - gsso
-  - envo
-  - geno
-  - micro
-  - ohpi
-  - mondo
-  - stato
-  - gecko
-  - cl
-  - ecao
-  - fovt
+  - ornaseq
   - eupath
+  - ohpi
+  - dideo
+  - ero
+  - mondo
+  - aro
+  - maxo
+  - mfmo
   - nbo
+  - cteno
+  - ontoneo
+  - cido
   - upheno
-  - opmi
+  - wbphenotype
   - foodon
-  - hp
-  - ico
+  - agro
   - clo
-  - omiabis
+  - micro
+  - txpo
+  - poro
+  - mco
+  - vo
+  - opl
+  - ppo
+  - obi
+  - ecocore
+  - stato
+  - hp
+  - fovt
+  - genepio
+  - ovae
+  - ico
 mirror_from: http://purl.obolibrary.org/obo/uberon/uberon-base.owl
 namespace: uberon
 results:

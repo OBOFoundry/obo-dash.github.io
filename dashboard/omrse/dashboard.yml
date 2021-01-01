@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - OMRSE
 changed: false
-date: '2020-12-24'
+date: '2021-01-01'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 4103
@@ -51,11 +51,13 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.722
-    _formula: (3*impact+2*dashboard+1*reuse)/6
-    _impact: 0.08
+    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+    _impact: 0.085
+    _impact_external: 0
     _reuse: 0.649
-    oboscore: 0.389
-  'Info: How many ontologies use it?': 14
+    oboscore: 0.261
+  'Info: How many externally documented uses?': 0
+  'Info: How many ontologies use it?': 15
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -88,21 +90,22 @@ metrics:
     rdfs: 940
     xsd: 6
   'Info: Which ontologies use it?':
-  - ontoneo
-  - genepio
-  - omrse
-  - obib
-  - cto
-  - gecko
-  - apollo_sv
-  - ohd
-  - oostt
-  - eupath
-  - gsso
+  - ons
   - opmi
+  - gecko
   - htn
-  - ico
   - omiabis
+  - eupath
+  - obib
+  - ohd
+  - cto
+  - omrse
+  - oostt
+  - gsso
+  - genepio
+  - ontoneo
+  - apollo_sv
+  - ico
 mirror_from: http://purl.obolibrary.org/obo/omrse.owl
 namespace: omrse
 results:
