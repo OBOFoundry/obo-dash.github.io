@@ -33,6 +33,33 @@ obo_score_weights:
     max_impact: 1
 ontologies:
   registry: "https://raw.githubusercontent.com/OBOFoundry/OBOFoundry.github.io/master/registry/ontologies.yml"
+  custom:
+    - id: dpo
+      base_ns:
+        - http://purl.obolibrary.org/obo/FBcv_
+        - http://purl.obolibrary.org/obo/fbcv#
+    - id: hsapdv
+      base_ns:
+        - http://purl.obolibrary.org/obo/HsapDv_
+    - id: mmusdv
+      base_ns:
+        - http://purl.obolibrary.org/obo/MmusDv_
+    - id: olatdv
+      base_ns:
+        - http://purl.obolibrary.org/obo/OlatDv_
+    - id: omo
+      base_ns:
+        - http://purl.obolibrary.org/obo/IAO_
+        - http://purl.obolibrary.org/obo/iao#
+    - id: ontoneo
+      base_ns: 
+        - http://purl.bioontology.org/OntONeo/ONTONEO_
+    - id: pdumdv
+      base_ns:
+        - http://purl.obolibrary.org/obo/PdumDv_
+    - id: exo
+      base_ns:
+        - http://purl.obolibrary.org/obo/ExO_
 prefer_base: True
 profile:
   baseprofile: "https://raw.githubusercontent.com/ontodev/robot/master/robot-core/src/main/resources/report_profile.txt"
