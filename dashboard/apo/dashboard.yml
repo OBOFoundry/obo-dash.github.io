@@ -1,8 +1,8 @@
 base_generated: true
 base_prefixes:
 - APO
+- APOALT
 changed: false
-date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 3780
@@ -10,7 +10,7 @@ metrics:
     SubAnnotationPropertyOf: 5
     SubClassOf: 306
   'Axioms: Number of axioms': 4738
-  'Entities: % of entities reused': 47.3
+  'Entities: % of entities reused': 46.38
   'Entities: Number of annotation properties': 28
   'Entities: Number of classes': 619
   'Entities: Number of data properties': 0
@@ -21,21 +21,21 @@ metrics:
     Class: 1231
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.738
-    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+    _dashboard: 0.735
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
-    _reuse: 0.473
-    oboscore: 0.217
+    _reuse: 0.464
+    oboscore: 0.367
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     APO: 954
+    APOALT: 11
     IAO: 871
     YPO: 276
-    obo: 11
     oboInOwl: 2563
     owl: 311
     rdfs: 389
@@ -56,7 +56,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 2 duplicate definitions. 36 missing definitions. See ROBOT Report for
+    comment: 2 duplicate definitions. 41 missing definitions. See ROBOT Report for
       details.
     status: ERROR
   FP07 Relations:
@@ -69,17 +69,17 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 4 duplicate labels. See ROBOT Report for details.
+    comment: 4 duplicate labels. 5 missing labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
     status: PASS
   ROBOT Report:
-    comment: 9 errors, 69 warnings, 4 info messages.
+    comment: 14 errors, 74 warnings, 4 info messages.
     file: robot_report
     results:
-      ERROR: 9
+      ERROR: 14
       INFO: 4
-      WARN: 69
+      WARN: 74
     status: ERROR
 sha256_hash: 58f603a9a83c3994e03157cf52070b709e81e5458c923f701164c3a0afb25213
 summary:

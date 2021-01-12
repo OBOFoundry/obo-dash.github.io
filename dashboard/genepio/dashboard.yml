@@ -1,8 +1,8 @@
 base_generated: true
 base_prefixes:
 - GENEPIO
+- GENEPIOALT
 changed: false
-date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 23098
@@ -48,13 +48,13 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.666
-    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
-    _impact: 0.023
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.034
     _impact_external: 0
     _reuse: 0.81
-    oboscore: 0.246
+    oboscore: 0.35
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 4
+  'Info: How many ontologies use it?': 6
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -110,12 +110,13 @@ metrics:
     TRANS: 23
     UBERON: 1107
     UO: 454
+    UOALT: 4
     VT: 3
     XCO: 3
     dc: 3
     dc11: 73
     foaf: 1
-    obo: 35
+    obo: 31
     oboInOwl: 5815
     owl: 118
     prefix_unknown: 19
@@ -124,11 +125,13 @@ metrics:
     skos: 1
     xsd: 37
   'Info: Which ontologies use it?':
-  - foodon
-  - fideo
-  - ornaseq
   - eupath
+  - fideo
+  - foodon
   - genepio
+  - hso
+  - maxo
+  - ornaseq
 mirror_from: http://purl.obolibrary.org/obo/genepio.owl
 namespace: genepio
 results:

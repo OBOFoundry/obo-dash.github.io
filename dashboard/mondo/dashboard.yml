@@ -1,8 +1,8 @@
 base_generated: true
 base_prefixes:
 - MONDO
+- MONDOALT
 changed: false
-date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 471275
@@ -27,7 +27,7 @@ metrics:
     SymmetricObjectProperty: 8
     TransitiveObjectProperty: 45
   'Axioms: Number of axioms': 609264
-  'Entities: % of entities reused': 41.81
+  'Entities: % of entities reused': 41.69
   'Entities: Number of annotation properties': 113
   'Entities: Number of classes': 41349
   'Entities: Number of data properties': 0
@@ -47,14 +47,14 @@ metrics:
     ObjectUnionOf: 174
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.836
-    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
-    _impact: 0.017
+    _dashboard: 0.772
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.023
     _impact_external: 0.25
-    _reuse: 0.418
-    oboscore: 0.321
+    _reuse: 0.417
+    oboscore: 0.398
   'Info: How many externally documented uses?': 1
-  'Info: How many ontologies use it?': 3
+  'Info: How many ontologies use it?': 4
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -62,9 +62,12 @@ metrics:
     BSPO: 376
     CARO: 198
     CHEBI: 5881
+    CHEBIALT: 336
     CL: 3160
+    CLALT: 191
     ECTO: 1001
     ENVO: 2742
+    ENVOALT: 18
     FOODON: 676
     GO: 25284
     HGNC: 14380
@@ -74,23 +77,27 @@ metrics:
     MFOEM: 3
     MFOMD: 13
     MONDO: 127181
+    MONDOALT: 3623
     NBO: 13
+    NCBITAXONALT: 1154
     NCBITaxon: 5109
     NCIT: 75
     OBA: 2
     OBI: 19
     OGMS: 8
     PATO: 1171
+    PATOALT: 59
     PCO: 25
     PO: 59
     PR: 727
     RO: 26269
     SO: 4058
+    SOALT: 35
     UBERON: 49370
     UPHENO: 3
     dc: 7638
     dc11: 206
-    obo: 6080
+    obo: 664
     oboInOwl: 577483
     owl: 2258
     prefix_unknown: 33
@@ -99,10 +106,11 @@ metrics:
     skos: 87185
     xsd: 35406
   'Info: Which ontologies use it?':
-  - ohmi
-  - opmi
   - gecko
   - mondo
+  - ohmi
+  - ons
+  - opmi
 mirror_from: http://purl.obolibrary.org/obo/mondo.owl
 namespace: mondo
 results:
@@ -117,10 +125,12 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 7022 missing definitions. See ROBOT Report for details.
+    comment: 7067 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
-    status: PASS
+    comment: 10 non-RO properties used.
+    file: fp7
+    status: INFO
   FP08 Documented:
     status: PASS
   FP09 Plurality of Users:
@@ -128,23 +138,24 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    status: PASS
+    comment: 26 missing labels. See ROBOT Report for details.
+    status: ERROR
   FP16 Maintenance:
     status: PASS
   ROBOT Report:
-    comment: 4 errors, 10322 warnings, 146 info messages.
+    comment: 30 errors, 10367 warnings, 146 info messages.
     file: robot_report
     results:
-      ERROR: 4
+      ERROR: 30
       INFO: 146
-      WARN: 10322
+      WARN: 10367
     status: ERROR
 sha256_hash: 4e5092551eeae7487548197d2a5f6f541fb2ba4de262cd99b9645a0981632afa
 summary:
-  comment: 1 errors
+  comment: 2 errors
   status: ERROR
   summary_count:
-    ERROR: 1
-    INFO: 0
+    ERROR: 2
+    INFO: 1
     WARN: 1
 version: http://purl.obolibrary.org/obo/mondo/releases/2020-12-18/mondo.owl

@@ -9,7 +9,7 @@
             <div class="col-md-8">
                 <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/zfs.html">zfs</a></h1>
                 <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/zfs/releases/2020-03-10/zfs.owl</p>
-                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: 2021-01-01</p>
+                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: </p>
                 <p class="lead" style="margin-top:-15px;"><a href="dashboard.yml">View dashboard results as YAML</a></p>
                 <h3>Error Breakdown</h3>
                 
@@ -18,7 +18,7 @@
                         
                     
                     <div class="alert alert-danger">
-                        <center><h3>ERROR - 3 errors</h3></center>
+                        <center><h3>ERROR - 4 errors</h3></center>
                     </div>
                 
                 <table class="table">
@@ -143,7 +143,7 @@
                                 <img src="../assets/warning.svg" height="15px">
                             </td>
                             
-                                <td>54 missing definitions. See ROBOT Report for details.</td>
+                                <td>56 missing definitions. See ROBOT Report for details.</td>
                             
                             
                                 <td></td>
@@ -239,11 +239,11 @@
                                 
                                 
                             
-                            <td class="table-success" style="text-align:center;">
-                                <img src="../assets/check.svg" height="15px">
+                            <td class="table-danger" style="text-align:center;">
+                                <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td></td>
+                                <td>1 missing labels. See ROBOT Report for details.</td>
                             
                             
                                 <td></td>
@@ -283,7 +283,7 @@
                                 <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>3 errors, 54 warnings, 1 info messages.</td>
+                                <td>4 errors, 56 warnings, 1 info messages.</td>
                             
                             
                                 <td><a href="robot_report.html">View Report</a></td>
@@ -336,7 +336,7 @@
                                 <td>Entities: % of entities reused</td>
                                 
                                 
-                                    <td>28.95</td>
+                                    <td>26.32</td>
                                 
                             </tr>
                         
@@ -416,17 +416,17 @@
                                 
                                     <td><ul>
                                         
-                                        <li>_dashboard: 0.788</li>
+                                        <li>_dashboard: 0.737</li>
                                         
-                                        <li>_formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9</li>
+                                        <li>_formula: (1*impact+1*dashboard)/2</li>
                                         
                                         <li>_impact: 0.017</li>
                                         
                                         <li>_impact_external: 0</li>
                                         
-                                        <li>_reuse: 0.289</li>
+                                        <li>_reuse: 0.263</li>
                                         
-                                        <li>oboscore: 0.213</li>
+                                        <li>oboscore: 0.377</li>
                                         
                                     </ul></td>
                                 
@@ -478,7 +478,7 @@
                                         
                                         <li>ZFS: 344</li>
                                         
-                                        <li>obo: 4</li>
+                                        <li>ZFSALT: 4</li>
                                         
                                         <li>oboInOwl: 182</li>
                                         
@@ -492,7 +492,7 @@
                                 <td>Info: Which ontologies use it?</td>
                                 
                                 
-                                    <td>['zfs', 'zfa', 'zp', 'upheno']</td>
+                                    <td>['upheno', 'zfa', 'zfs', 'zp']</td>
                                 
                             </tr>
                         

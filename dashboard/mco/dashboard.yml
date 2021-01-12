@@ -1,8 +1,8 @@
 base_generated: true
 base_prefixes:
 - MCO
+- MCOALT
 changed: false
-date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 39543
@@ -29,11 +29,11 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
     _dashboard: 0.741
-    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
     _reuse: 0.76
-    oboscore: 0.249
+    oboscore: 0.37
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
@@ -41,12 +41,14 @@ metrics:
   'Info: Usage of namespaces in axioms':
     BFO: 352
     CHEBI: 14152
+    CHEBIALT: 1140
     CL: 3
     CLO: 2
     GO: 14
     IAO: 2482
     MCO: 3030
     MICRO: 90
+    NCBITAXONALT: 8
     NCBITaxon: 80
     NCIT: 337
     OBI: 30
@@ -58,7 +60,7 @@ metrics:
     UBERON: 14
     dc11: 6
     foaf: 1
-    obo: 1511
+    obo: 363
     oboInOwl: 56864
     owl: 2
     prefix_unknown: 170

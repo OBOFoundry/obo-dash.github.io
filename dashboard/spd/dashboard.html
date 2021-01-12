@@ -9,7 +9,7 @@
             <div class="col-md-8">
                 <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/spd.html">spd</a></h1>
                 <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/spd/1.0/spd.owl</p>
-                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: 2021-01-01</p>
+                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: </p>
                 <p class="lead" style="margin-top:-15px;"><a href="dashboard.yml">View dashboard results as YAML</a></p>
                 <h3>Error Breakdown</h3>
                 
@@ -18,7 +18,7 @@
                         
                     
                     <div class="alert alert-danger">
-                        <center><h3>ERROR - 5 errors</h3></center>
+                        <center><h3>ERROR - 6 errors</h3></center>
                     </div>
                 
                 <table class="table">
@@ -143,7 +143,7 @@
                                 <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>7 duplicate definitions. See ROBOT Report for details.</td>
+                                <td>7 duplicate definitions. 4 missing definitions. See ROBOT Report for details.</td>
                             
                             
                                 <td></td>
@@ -159,14 +159,14 @@
                                 
                                 
                             
-                            <td class="table-success" style="text-align:center;">
-                                <img src="../assets/check.svg" height="15px">
+                            <td class="table-danger" style="text-align:center;">
+                                <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td></td>
+                                <td>3 labels match RO labels. 1 non-RO properties used.</td>
                             
                             
-                                <td></td>
+                                <td><a href="fp7.html">View Report</a></td>
                             
                         </tr>
                     
@@ -283,7 +283,7 @@
                                 <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>14 errors, 75 warnings, 1 info messages.</td>
+                                <td>14 errors, 79 warnings, 1 info messages.</td>
                             
                             
                                 <td><a href="robot_report.html">View Report</a></td>
@@ -332,7 +332,7 @@
                                 <td>Entities: % of entities reused</td>
                                 
                                 
-                                    <td>2.8</td>
+                                    <td>2.34</td>
                                 
                             </tr>
                         
@@ -412,17 +412,17 @@
                                 
                                     <td><ul>
                                         
-                                        <li>_dashboard: 0.73</li>
+                                        <li>_dashboard: 0.729</li>
                                         
-                                        <li>_formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9</li>
+                                        <li>_formula: (1*impact+1*dashboard)/2</li>
                                         
                                         <li>_impact: 0.0</li>
                                         
                                         <li>_impact_external: 0</li>
                                         
-                                        <li>_reuse: 0.028</li>
+                                        <li>_reuse: 0.023</li>
                                         
-                                        <li>oboscore: 0.165</li>
+                                        <li>oboscore: 0.364</li>
                                         
                                     </ul></td>
                                 
@@ -470,7 +470,7 @@
                                         
                                         <li>SPD: 3214</li>
                                         
-                                        <li>obo: 589</li>
+                                        <li>SPDALT: 589</li>
                                         
                                         <li>oboInOwl: 3599</li>
                                         

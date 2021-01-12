@@ -1,8 +1,8 @@
 base_generated: true
 base_prefixes:
 - PECO
+- PECOALT
 changed: false
-date: '2021-01-01'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 15319
@@ -21,7 +21,7 @@ metrics:
     SymmetricObjectProperty: 2
     TransitiveObjectProperty: 12
   'Axioms: Number of axioms': 24322
-  'Entities: % of entities reused': 82.58
+  'Entities: % of entities reused': 82.55
   'Entities: Number of annotation properties': 25
   'Entities: Number of classes': 3121
   'Entities: Number of data properties': 0
@@ -37,11 +37,11 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.728
-    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.028
     _impact_external: 0
     _reuse: 0.826
-    oboscore: 0.263
+    oboscore: 0.378
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 5
   'Info: Logical consistency': true
@@ -50,7 +50,9 @@ metrics:
     BFO: 318
     CARO: 11
     CHEBI: 8390
+    CHEBIALT: 474
     ENVO: 704
+    ENVOALT: 4
     EO: 1148
     FOODON: 22
     GO: 21
@@ -59,8 +61,8 @@ metrics:
     PATO: 126
     PCO: 31
     PECO: 2276
+    PECOALT: 2
     RO: 1609
-    obo: 480
     oboInOwl: 17058
     owl: 1202
     prefix_unknown: 3
@@ -68,12 +70,12 @@ metrics:
     rdfs: 2527
     xsd: 11
   'Info: Which ontologies use it?':
-  - foodon
-  - to
   - agro
+  - foodon
   - mco
-  - pso
   - peco
+  - pso
+  - to
 mirror_from: http://purl.obolibrary.org/obo/peco.owl
 namespace: peco
 results:
@@ -89,11 +91,13 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 7 duplicate definitions. 22 multiple definitions. 33 missing definitions.
+    comment: 7 duplicate definitions. 22 multiple definitions. 34 missing definitions.
       See ROBOT Report for details.
     status: ERROR
   FP07 Relations:
-    status: PASS
+    comment: 1 labels match RO labels.
+    file: fp7
+    status: ERROR
   FP08 Documented:
     status: PASS
   FP09 Plurality of Users:
@@ -107,19 +111,19 @@ results:
   FP16 Maintenance:
     status: PASS
   ROBOT Report:
-    comment: 34 errors, 52 warnings, 0 info messages.
+    comment: 34 errors, 53 warnings, 0 info messages.
     file: robot_report
     results:
       ERROR: 34
       INFO: 0
-      WARN: 52
+      WARN: 53
     status: ERROR
 sha256_hash: d7c131c7b5e1cd5c3a1570300aaaebbb2845d19632b9a98028aaed4614be74a5
 summary:
-  comment: 5 errors
+  comment: 6 errors
   status: ERROR
   summary_count:
-    ERROR: 5
+    ERROR: 6
     INFO: 0
     WARN: 0
 version: http://purl.obolibrary.org/obo/peco/releases/2020-08-21/peco.owl

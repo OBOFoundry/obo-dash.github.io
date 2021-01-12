@@ -1,39 +1,39 @@
 base_generated: true
 base_prefixes:
 - OMP
+- OMPALT
 changed: false
-date: '2021-01-01'
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 16069
-    Declaration: 2417
+    AnnotationAssertion: 16140
+    Declaration: 2431
     EquivalentClasses: 121
     ObjectPropertyDomain: 6
     ObjectPropertyRange: 9
     SubAnnotationPropertyOf: 36
-    SubClassOf: 2851
+    SubClassOf: 2867
     SubObjectPropertyOf: 8
     TransitiveObjectProperty: 12
-  'Axioms: Number of axioms': 21529
-  'Entities: % of entities reused': 15.83
+  'Axioms: Number of axioms': 21630
+  'Entities: % of entities reused': 12.58
   'Entities: Number of annotation properties': 70
-  'Entities: Number of classes': 2286
+  'Entities: Number of classes': 2300
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 61
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 8368
+    Class: 8414
     ObjectIntersectionOf: 121
     ObjectSomeValuesFrom: 262
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.708
-    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+    _dashboard: 0.686
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.017
     _impact_external: 0
-    _reuse: 0.158
-    oboscore: 0.181
+    _reuse: 0.126
+    oboscore: 0.352
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
@@ -42,17 +42,18 @@ metrics:
     BFO: 12
     CHEBI: 20
     GO: 447
-    IAO: 2323
-    OMP: 7124
+    IAO: 2324
+    OMP: 7170
+    OMPALT: 349
     PATO: 777
     RO: 138
-    obo: 352
-    oboInOwl: 13295
+    obo: 3
+    oboInOwl: 13351
     owl: 56
-    rdfs: 3081
+    rdfs: 3095
   'Info: Which ontologies use it?':
-  - genepio
   - eupath
+  - genepio
   - mco
   - omp
 mirror_from: http://purl.obolibrary.org/obo/omp.owl
@@ -70,11 +71,13 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 8 duplicate definitions. 182 missing definitions. See ROBOT Report for
+    comment: 8 duplicate definitions. 254 missing definitions. See ROBOT Report for
       details.
     status: ERROR
   FP07 Relations:
-    status: PASS
+    comment: 2 labels match RO labels. 36 non-RO properties used.
+    file: fp7
+    status: ERROR
   FP08 Documented:
     status: PASS
   FP09 Plurality of Users:
@@ -83,24 +86,24 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 23 duplicate labels. See ROBOT Report for details.
+    comment: 23 duplicate labels. 28 missing labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
     status: PASS
   ROBOT Report:
-    comment: 34 errors, 250 warnings, 5 info messages.
+    comment: 62 errors, 324 warnings, 13 info messages.
     file: robot_report
     results:
-      ERROR: 34
-      INFO: 5
-      WARN: 250
+      ERROR: 62
+      INFO: 13
+      WARN: 324
     status: ERROR
-sha256_hash: 54c4d19a79dc425a7975fd8681bcd873ab204e8178df6767bace5e6b80e7c662
+sha256_hash: 3873be49417bfc220f606aabb79325975d2d0ea5eb00c1ff5dd4cea91b2d8ae8
 summary:
-  comment: 5 errors
+  comment: 6 errors
   status: ERROR
   summary_count:
-    ERROR: 5
+    ERROR: 6
     INFO: 0
     WARN: 0
-version: http://purl.obolibrary.org/obo/omp/releases/2020-12-04/omp.owl
+version: http://purl.obolibrary.org/obo/omp/releases/2021-01-08/omp.owl

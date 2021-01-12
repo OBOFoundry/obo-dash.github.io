@@ -1,9 +1,9 @@
 base_generated: true
 base_prefixes:
 - FBbi
+- FBBIALT
 - FBbi
 changed: false
-date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 3706
@@ -22,7 +22,7 @@ metrics:
     SymmetricObjectProperty: 2
     TransitiveObjectProperty: 14
   'Axioms: Number of axioms': 5493
-  'Entities: % of entities reused': 20.23
+  'Entities: % of entities reused': 20.1
   'Entities: Number of annotation properties': 42
   'Entities: Number of classes': 649
   'Entities: Number of data properties': 0
@@ -38,12 +38,12 @@ metrics:
     ObjectUnionOf: 1
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.689
-    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+    _dashboard: 0.688
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
-    _reuse: 0.202
-    oboscore: 0.176
+    _reuse: 0.201
+    oboscore: 0.344
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
@@ -51,6 +51,7 @@ metrics:
   'Info: Usage of namespaces in axioms':
     BFO: 138
     CARO: 9
+    FBBIALT: 2
     FBbi: 2079
     GO: 21
     IAO: 650
@@ -58,7 +59,6 @@ metrics:
     dc: 5
     dc11: 3
     foaf: 3
-    obo: 2
     oboInOwl: 2160
     owl: 218
     prefix_unknown: 3
@@ -82,7 +82,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 454 missing definitions. See ROBOT Report for details.
+    comment: 455 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     comment: 1 non-RO properties used.
@@ -96,17 +96,17 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 3 duplicate labels. See ROBOT Report for details.
+    comment: 3 duplicate labels. 1 missing labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
     status: PASS
   ROBOT Report:
-    comment: 6 errors, 561 warnings, 46 info messages.
+    comment: 7 errors, 562 warnings, 46 info messages.
     file: robot_report
     results:
-      ERROR: 6
+      ERROR: 7
       INFO: 46
-      WARN: 561
+      WARN: 562
     status: ERROR
 sha256_hash: 7db5258bed1d0a77b7de070f3ef39e95da5251caf0e2336c2ca383f04815f47e
 summary:

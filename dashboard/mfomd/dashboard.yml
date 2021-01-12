@@ -1,8 +1,8 @@
 base_generated: true
 base_prefixes:
 - MFOMD
+- MFOMDALT
 changed: false
-date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 5739
@@ -37,11 +37,11 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
     _dashboard: 0.734
-    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.011
     _impact_external: 0
     _reuse: 0.865
-    oboscore: 0.263
+    oboscore: 0.372
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 2
   'Info: Logical consistency': true
@@ -49,6 +49,7 @@ metrics:
   'Info: Usage of namespaces in axioms':
     BFO: 304
     DOID: 678
+    DOIDALT: 33
     GO: 738
     IAO: 2418
     IDO: 2
@@ -60,7 +61,7 @@ metrics:
     dc: 1
     dc11: 42
     foaf: 2
-    obo: 53
+    obo: 20
     oboInOwl: 2446
     owl: 76
     prefix_unknown: 53
@@ -68,8 +69,8 @@ metrics:
     rdfs: 1264
   'Info: Which ontologies use it?':
   - gsso
-  - mondo
   - mfomd
+  - mondo
 mirror_from: http://purl.obolibrary.org/obo/mfomd.owl
 namespace: mfomd
 results:

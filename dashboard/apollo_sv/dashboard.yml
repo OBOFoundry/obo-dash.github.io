@@ -1,8 +1,8 @@
 base_generated: true
 base_prefixes:
 - APOLLO_SV
+- APOLLO_SVALT
 changed: false
-date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 11061
@@ -52,13 +52,13 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.722
-    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
-    _impact: 0.08
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.085
     _impact_external: 0
     _reuse: 0.687
-    oboscore: 0.263
+    oboscore: 0.403
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 14
+  'Info: How many ontologies use it?': 15
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -77,7 +77,8 @@ metrics:
     GO: 191
     IAO: 6821
     NBO: 3
-    NCBITaxon: 1642
+    NCBITAXONALT: 256
+    NCBITaxon: 1658
     OAE: 4
     OBI: 354
     OGMS: 59
@@ -93,30 +94,31 @@ metrics:
     dc: 1
     dc11: 68
     foaf: 4
-    obo: 659
+    obo: 403
     oboInOwl: 3032
     owl: 112
-    prefix_unknown: 51
+    prefix_unknown: 35
     protege: 1
     rdf: 3
     rdfs: 2316
     xsd: 4
   'Info: Which ontologies use it?':
-  - duo
-  - dron
-  - omiabis
-  - eupath
-  - obib
-  - dideo
-  - mpio
-  - omrse
-  - cheminf
-  - oostt
-  - iao
-  - one
-  - genepio
-  - cido
   - apollo_sv
+  - cheminf
+  - cido
+  - dideo
+  - dron
+  - duo
+  - eupath
+  - genepio
+  - iao
+  - maxo
+  - mpio
+  - obib
+  - omiabis
+  - omrse
+  - one
+  - oostt
 mirror_from: http://purl.obolibrary.org/obo/apollo_sv.owl
 namespace: apollo_sv
 results:
@@ -163,7 +165,7 @@ results:
       INFO: 52
       WARN: 109
     status: ERROR
-sha256_hash: a98fa3d1a83aafe600e02e4c5272048eab87fd124695d2bd0da9ff593ad07c12
+sha256_hash: e0ee30aa277b75d0c3bd3b6702812cab463b43c92a3d47da99ed822400947167
 summary:
   comment: 5 errors
   status: ERROR

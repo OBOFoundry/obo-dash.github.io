@@ -1,8 +1,8 @@
 base_generated: true
 base_prefixes:
 - CARO
+- CAROALT
 changed: false
-date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 40191
@@ -21,7 +21,7 @@ metrics:
     SubPropertyChainOf: 5
     TransitiveObjectProperty: 4
   'Axioms: Number of axioms': 40769
-  'Entities: % of entities reused': 65.65
+  'Entities: % of entities reused': 64.89
   'Entities: Number of annotation properties': 63
   'Entities: Number of classes': 158
   'Entities: Number of data properties': 0
@@ -39,21 +39,23 @@ metrics:
     ObjectUnionOf: 3
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.784
-    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
-    _impact: 0.233
+    _dashboard: 0.733
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.237
     _impact_external: 0
-    _reuse: 0.657
-    oboscore: 0.325
+    _reuse: 0.649
+    oboscore: 0.485
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 41
+  'Info: How many ontologies use it?': 42
   'Info: Logical consistency': true
   'Info: Syntax': OWL Functional Syntax
   'Info: Usage of namespaces in axioms':
     BFO: 314
     CARO: 435
+    CAROALT: 4
     CHEBI: 2
     CL: 2
+    FBBTALT: 6
     GO: 5
     IAO: 5174
     NCBITaxon: 8
@@ -62,55 +64,56 @@ metrics:
     RO: 149
     dc11: 5
     foaf: 1
-    obo: 11
+    obo: 1
     oboInOwl: 40526
     owl: 249
     prefix_unknown: 7
     rdf: 5
     rdfs: 1679
   'Info: Which ontologies use it?':
-  - to
-  - ro
-  - pato
-  - ido
-  - ohd
-  - dpo
-  - mp
-  - ohmi
+  - aeo
+  - agro
+  - bco
+  - bspo
+  - caro
+  - cido
+  - clo
   - cob
+  - cteno
+  - dpo
+  - ecocore
   - envo
   - fbbi
-  - omiabis
-  - bspo
-  - pso
-  - aeo
-  - zp
-  - go
-  - opmi
-  - oba
-  - ohpi
-  - phipo
-  - mondo
   - flopo
-  - mfmo
-  - upheno
-  - cteno
-  - wbphenotype
-  - cido
-  - oarcs
   - foodon
-  - agro
-  - clo
+  - go
   - htn
-  - poro
-  - caro
-  - pco
-  - ecocore
-  - po
+  - ido
+  - maxo
+  - mfmo
+  - mondo
+  - mp
+  - oarcs
+  - oba
+  - ohd
+  - ohmi
+  - ohpi
+  - omiabis
   - opl
+  - opmi
   - ovae
+  - pato
+  - pco
   - peco
-  - bco
+  - phipo
+  - po
+  - poro
+  - pso
+  - ro
+  - to
+  - upheno
+  - wbphenotype
+  - zp
 mirror_from: http://purl.obolibrary.org/obo/caro.owl
 namespace: caro
 results:
@@ -128,7 +131,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 3 missing definitions. See ROBOT Report for details.
+    comment: 5 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     status: PASS
@@ -140,24 +143,25 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    status: PASS
+    comment: 2 missing labels. See ROBOT Report for details.
+    status: ERROR
   FP16 Maintenance:
     comment: Version IRI does not have date information
     status: INFO
   ROBOT Report:
-    comment: 5 errors, 16 warnings, 8 info messages.
+    comment: 7 errors, 18 warnings, 8 info messages.
     file: robot_report
     results:
-      ERROR: 5
+      ERROR: 7
       INFO: 8
-      WARN: 16
+      WARN: 18
     status: ERROR
 sha256_hash: b328557522abaef9e1bb58df4947c0d3608db4eb5cc126816630860c45ead89f
 summary:
-  comment: 3 errors
+  comment: 4 errors
   status: ERROR
   summary_count:
-    ERROR: 3
+    ERROR: 4
     INFO: 1
     WARN: 2
 version: http://purl.obolibrary.org/obo/caro/2.0/beta/caro.owl

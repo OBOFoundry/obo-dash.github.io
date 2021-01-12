@@ -1,8 +1,8 @@
 base_generated: false
 base_prefixes:
 - HP
+- HPALT
 changed: false
-date: '2021-01-01'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 115128
@@ -12,7 +12,7 @@ metrics:
     SubClassOf: 19707
     SubPropertyChainOf: 1
   'Axioms: Number of axioms': 159026
-  'Entities: % of entities reused': 12.2
+  'Entities: % of entities reused': 12.15
   'Entities: Number of annotation properties': 44
   'Entities: Number of classes': 17934
   'Entities: Number of data properties': 0
@@ -27,11 +27,11 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.935
-    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
-    _impact: 0.108
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.107
     _impact_external: 0.25
-    _reuse: 0.122
-    oboscore: 0.341
+    _reuse: 0.121
+    oboscore: 0.521
   'Info: How many externally documented uses?': 1
   'Info: How many ontologies use it?': 19
   'Info: Logical consistency': true
@@ -43,6 +43,7 @@ metrics:
     CL: 392
     GO: 820
     HP: 61814
+    HPALT: 15
     IAO: 12940
     MPATH: 294
     NBO: 147
@@ -52,32 +53,32 @@ metrics:
     UBERON: 7449
     dc: 1
     dc11: 2927
-    obo: 35
+    obo: 20
     oboInOwl: 107819
     owl: 292
     rdf: 12
     rdfs: 19191
   'Info: Which ontologies use it?':
-  - foodon
-  - ons
-  - doid
-  - opmi
-  - txpo
-  - htn
+  - aro
   - chiro
+  - cido
+  - doid
   - eupath
+  - foodon
+  - genepio
+  - geno
+  - gsso
+  - hp
+  - htn
+  - maxo
   - mondo
   - obi
-  - hp
   - ohmi
-  - aro
-  - maxo
-  - geno
-  - genepio
-  - upheno
+  - ons
   - ontoneo
-  - cido
-  - gsso
+  - opmi
+  - txpo
+  - upheno
 mirror_from: http://purl.obolibrary.org/obo/hp/hp-base.owl
 namespace: hp
 results:

@@ -1,8 +1,8 @@
 base_generated: false
 base_prefixes:
 - FAO
+- FAOALT
 changed: false
-date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 619
@@ -23,11 +23,11 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
     _dashboard: 0.796
-    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.017
     _impact_external: 0
     _reuse: 0.196
-    oboscore: 0.204
+    oboscore: 0.407
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
@@ -43,10 +43,10 @@ metrics:
     rdfs: 131
     xsd: 10
   'Info: Which ontologies use it?':
-  - foodon
   - envo
-  - go
   - fao
+  - foodon
+  - go
 mirror_from: http://purl.obolibrary.org/obo/fao/fao-base.owl
 namespace: fao
 results:

@@ -1,8 +1,8 @@
 base_generated: true
 base_prefixes:
 - OBCS
+- OBCSALT
 changed: false
-date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 5575
@@ -46,11 +46,11 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.736
-    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.023
     _impact_external: 0
     _reuse: 0.729
-    oboscore: 0.252
+    oboscore: 0.38
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 4
   'Info: Logical consistency': true
@@ -78,11 +78,11 @@ metrics:
     rdfs: 975
     xsd: 12
   'Info: Which ontologies use it?':
-  - ons
   - chmo
+  - cido
   - eupath
   - obcs
-  - cido
+  - ons
 mirror_from: http://purl.obolibrary.org/obo/obcs.owl
 namespace: obcs
 results:

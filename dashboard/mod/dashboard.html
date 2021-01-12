@@ -9,7 +9,7 @@
             <div class="col-md-8">
                 <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/mod.html">mod</a></h1>
                 <p class="lead"><b>Version</b>: None</p>
-                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: 2020-12-31</p>
+                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: </p>
                 <p class="lead" style="margin-top:-15px;"><a href="dashboard.yml">View dashboard results as YAML</a></p>
                 <h3>Error Breakdown</h3>
                 
@@ -18,7 +18,7 @@
                         
                     
                     <div class="alert alert-danger">
-                        <center><h3>ERROR - 8 errors</h3></center>
+                        <center><h3>ERROR - 9 errors</h3></center>
                     </div>
                 
                 <table class="table">
@@ -143,7 +143,7 @@
                                 <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>297 duplicate definitions. See ROBOT Report for details.</td>
+                                <td>297 duplicate definitions. 14 missing definitions. See ROBOT Report for details.</td>
                             
                             
                                 <td></td>
@@ -159,14 +159,14 @@
                                 
                                 
                             
-                            <td class="table-success" style="text-align:center;">
-                                <img src="../assets/check.svg" height="15px">
+                            <td class="table-danger" style="text-align:center;">
+                                <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td></td>
+                                <td>3 labels match RO labels. 1 non-RO properties used.</td>
                             
                             
-                                <td></td>
+                                <td><a href="fp7.html">View Report</a></td>
                             
                         </tr>
                     
@@ -243,7 +243,7 @@
                                 <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>14 duplicate labels. See ROBOT Report for details.</td>
+                                <td>14 duplicate labels. 1 missing labels. See ROBOT Report for details.</td>
                             
                             
                                 <td></td>
@@ -283,7 +283,7 @@
                                 <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>314 errors, 18890 warnings, 326 info messages.</td>
+                                <td>315 errors, 18949 warnings, 330 info messages.</td>
                             
                             
                                 <td><a href="robot_report.html">View Report</a></td>
@@ -308,13 +308,13 @@
                                 
                                     <td><ul>
                                         
-                                        <li>AnnotationAssertion: 35075</li>
+                                        <li>AnnotationAssertion: 35158</li>
                                         
-                                        <li>Declaration: 2117</li>
+                                        <li>Declaration: 2124</li>
                                         
                                         <li>SubAnnotationPropertyOf: 14</li>
                                         
-                                        <li>SubClassOf: 3730</li>
+                                        <li>SubClassOf: 3734</li>
                                         
                                         <li>TransitiveObjectProperty: 4</li>
                                         
@@ -326,7 +326,7 @@
                                 <td>Axioms: Number of axioms</td>
                                 
                                 
-                                    <td>40940</td>
+                                    <td>41034</td>
                                 
                             </tr>
                         
@@ -334,7 +334,7 @@
                                 <td>Entities: % of entities reused</td>
                                 
                                 
-                                    <td>1.79</td>
+                                    <td>0.94</td>
                                 
                             </tr>
                         
@@ -350,7 +350,7 @@
                                 <td>Entities: Number of classes</td>
                                 
                                 
-                                    <td>2081</td>
+                                    <td>2088</td>
                                 
                             </tr>
                         
@@ -392,9 +392,9 @@
                                 
                                     <td><ul>
                                         
-                                        <li>Class: 9541</li>
+                                        <li>Class: 9556</li>
                                         
-                                        <li>ObjectSomeValuesFrom: 112</li>
+                                        <li>ObjectSomeValuesFrom: 157</li>
                                         
                                     </ul></td>
                                 
@@ -416,15 +416,15 @@
                                         
                                         <li>_dashboard: 0.584</li>
                                         
-                                        <li>_formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9</li>
+                                        <li>_formula: (1*impact+1*dashboard)/2</li>
                                         
                                         <li>_impact: 0.017</li>
                                         
                                         <li>_impact_external: 0</li>
                                         
-                                        <li>_reuse: 0.018</li>
+                                        <li>_reuse: 0.009</li>
                                         
-                                        <li>oboscore: 0.137</li>
+                                        <li>oboscore: 0.3</li>
                                         
                                     </ul></td>
                                 
@@ -468,17 +468,17 @@
                                 
                                     <td><ul>
                                         
-                                        <li>IAO: 2086</li>
+                                        <li>IAO: 2093</li>
                                         
-                                        <li>MOD: 9541</li>
+                                        <li>MOD: 9556</li>
                                         
-                                        <li>obo: 148</li>
+                                        <li>MODALT: 193</li>
                                         
-                                        <li>oboInOwl: 39274</li>
+                                        <li>oboInOwl: 39353</li>
                                         
-                                        <li>owl: 73</li>
+                                        <li>owl: 74</li>
                                         
-                                        <li>rdfs: 20724</li>
+                                        <li>rdfs: 20775</li>
                                         
                                     </ul></td>
                                 
@@ -488,7 +488,7 @@
                                 <td>Info: Which ontologies use it?</td>
                                 
                                 
-                                    <td>['mp', 'mod', 'upheno', 'pr']</td>
+                                    <td>['mod', 'mp', 'pr', 'upheno']</td>
                                 
                             </tr>
                         

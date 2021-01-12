@@ -1,78 +1,79 @@
 base_generated: true
 base_prefixes:
 - SO
+- SOALT
 changed: false
-date: '2021-01-01'
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 18809
-    Declaration: 2757
+    AnnotationAssertion: 18899
+    Declaration: 2767
     DisjointClasses: 2
     EquivalentClasses: 220
     SubAnnotationPropertyOf: 14
-    SubClassOf: 3051
+    SubClassOf: 3069
     SubObjectPropertyOf: 9
     SymmetricObjectProperty: 4
     TransitiveObjectProperty: 7
-  'Axioms: Number of axioms': 24873
-  'Entities: % of entities reused': 6.89
+  'Axioms: Number of axioms': 24991
+  'Entities: % of entities reused': 4.55
   'Entities: Number of annotation properties': 41
-  'Entities: Number of classes': 2666
+  'Entities: Number of classes': 2676
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 50
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 9446
+    Class: 9492
     ObjectIntersectionOf: 220
     ObjectSomeValuesFrom: 863
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.685
-    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
-    _impact: 0.148
+    _dashboard: 0.679
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.147
     _impact_external: 0
-    _reuse: 0.069
-    oboscore: 0.209
+    _reuse: 0.045
+    oboscore: 0.413
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 26
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    IAO: 2779
-    SO: 9349
-    obo: 1059
-    oboInOwl: 15250
+    IAO: 2789
+    SO: 9395
+    SOALT: 962
+    obo: 97
+    oboInOwl: 15320
     owl: 338
-    rdfs: 3585
+    rdfs: 3605
   'Info: Which ontologies use it?':
-  - obib
-  - psdo
-  - mp
-  - omit
-  - ohmi
-  - fypo
-  - doid
-  - pr
-  - go
-  - geno
-  - obcs
-  - ons
-  - ncro
-  - ero
-  - oba
-  - ornaseq
-  - eupath
-  - ogsf
-  - mondo
-  - upheno
   - cido
   - clo
-  - mro
-  - obi
-  - stato
-  - so
+  - doid
+  - ero
+  - eupath
+  - fypo
   - genepio
+  - geno
+  - go
+  - mondo
+  - mp
+  - mro
+  - ncro
+  - oba
+  - obcs
+  - obi
+  - obib
+  - ogsf
+  - ohmi
+  - omit
+  - ons
+  - ornaseq
+  - pr
+  - psdo
+  - so
+  - stato
+  - upheno
 mirror_from: http://purl.obolibrary.org/obo/so.owl
 namespace: so
 results:
@@ -88,11 +89,13 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 50 duplicate definitions. 5 missing definitions. See ROBOT Report for
+    comment: 50 duplicate definitions. 39 missing definitions. See ROBOT Report for
       details.
     status: ERROR
   FP07 Relations:
-    status: PASS
+    comment: 3 labels match RO labels. 47 non-RO properties used.
+    file: fp7
+    status: ERROR
   FP08 Documented:
     status: PASS
   FP09 Plurality of Users:
@@ -101,24 +104,24 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 16 duplicate labels. See ROBOT Report for details.
+    comment: 16 duplicate labels. 4 missing labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
     status: PASS
   ROBOT Report:
-    comment: 69 errors, 262 warnings, 89 info messages.
+    comment: 73 errors, 296 warnings, 89 info messages.
     file: robot_report
     results:
-      ERROR: 69
+      ERROR: 73
       INFO: 89
-      WARN: 262
+      WARN: 296
     status: ERROR
-sha256_hash: d406e524c5528373ab2a251c8348b3506a33286fe2692f8fb3ea6843b1555ea7
+sha256_hash: c74c1c6826e0f900f8ccaf98ef88f43e16db24e2333098d93e7d2c9df10c049e
 summary:
-  comment: 5 errors
+  comment: 6 errors
   status: ERROR
   summary_count:
-    ERROR: 5
+    ERROR: 6
     INFO: 0
     WARN: 0
-version: http://purl.obolibrary.org/obo/so/2020-12-18/so.owl
+version: http://purl.obolibrary.org/obo/so/2020-12-30/so.owl

@@ -1,8 +1,8 @@
 base_generated: true
 base_prefixes:
 - CLO
+- CLOALT
 changed: false
-date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 344066
@@ -43,11 +43,11 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.576
-    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
-    _impact: 0.057
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.056
     _impact_external: 0
     _reuse: 0.075
-    oboscore: 0.155
+    oboscore: 0.316
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 10
   'Info: Logical consistency': true
@@ -57,11 +57,13 @@ metrics:
     CARO: 24
     CHEBI: 61
     CL: 35607
+    CLALT: 285
     CLO: 297389
     DOID: 8863
     EFO: 10777
     GO: 1720
     IAO: 110763
+    NCBITAXONALT: 8
     NCBITaxon: 35302
     NCIT: 66
     NCIT_ALT: 106
@@ -69,16 +71,18 @@ metrics:
     OGG: 170
     PATO: 26259
     PR: 1201
+    PRALT: 5
     RO: 36303
     SIO: 45
     SO: 16
     UBERON: 9958
+    UBERONALT: 76
     VO: 2
     dc11: 133
     ebicellline: 85
     efo: 152
     foaf: 3402
-    obo: 17821
+    obo: 17447
     oboInOwl: 13525
     owl: 19
     prefix_unknown: 22253
@@ -88,16 +92,16 @@ metrics:
     xsd: 5
   'Info: Which ontologies use it?':
   - clo
-  - ncro
-  - ero
-  - txpo
-  - mco
-  - obib
   - dideo
-  - ohpi
-  - obi
-  - omit
+  - ero
   - geno
+  - mco
+  - ncro
+  - obi
+  - obib
+  - ohpi
+  - omit
+  - txpo
 mirror_from: http://purl.obolibrary.org/obo/clo.owl
 namespace: clo
 results:

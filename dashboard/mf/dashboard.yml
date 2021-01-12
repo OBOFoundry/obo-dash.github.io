@@ -1,8 +1,8 @@
 base_generated: true
 base_prefixes:
 - MF
+- MFALT
 changed: false
-date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1997
@@ -37,11 +37,11 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
     _dashboard: 0.787
-    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.028
     _impact_external: 0
     _reuse: 0.814
-    oboscore: 0.275
+    oboscore: 0.408
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 5
   'Info: Logical consistency': true
@@ -64,11 +64,11 @@ metrics:
     rdfs: 588
   'Info: Which ontologies use it?':
   - gecko
-  - mfomd
-  - mfoem
-  - mf
-  - mondo
   - gsso
+  - mf
+  - mfoem
+  - mfomd
+  - mondo
 mirror_from: http://purl.obolibrary.org/obo/mf.owl
 namespace: mf
 results:

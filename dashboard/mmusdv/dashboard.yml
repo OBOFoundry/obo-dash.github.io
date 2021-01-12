@@ -1,8 +1,7 @@
 base_generated: true
 base_prefixes:
-- MMUSDV
+- MmusDv
 changed: false
-date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1023
@@ -24,12 +23,12 @@ metrics:
     ObjectSomeValuesFrom: 196
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.748
-    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+    _dashboard: 0.739
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
     _reuse: 1.0
-    oboscore: 0.277
+    oboscore: 0.369
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
@@ -37,8 +36,9 @@ metrics:
   'Info: Usage of namespaces in axioms':
     BFO: 112
     IAO: 124
+    MMUSDVALT: 216
     RO: 91
-    obo: 937
+    obo: 721
     oboInOwl: 654
     owl: 9
     rdfs: 199
@@ -60,7 +60,8 @@ results:
     comment: Missing domain (scope)
     status: ERROR
   FP06 Textual Definitions:
-    status: PASS
+    comment: 1 missing definitions. See ROBOT Report for details.
+    status: WARN
   FP07 Relations:
     status: PASS
   FP08 Documented:
@@ -75,12 +76,12 @@ results:
   FP16 Maintenance:
     status: PASS
   ROBOT Report:
-    comment: 3 errors, 0 warnings, 0 info messages.
+    comment: 7 errors, 12 warnings, 24 info messages.
     file: robot_report
     results:
-      ERROR: 3
-      INFO: 0
-      WARN: 0
+      ERROR: 7
+      INFO: 24
+      WARN: 12
     status: ERROR
 sha256_hash: 1c3dab8c54d51dc57f09880c2613fd5a3e6e4888de424bc6b8efc7e4d3adcc91
 summary:
@@ -89,5 +90,5 @@ summary:
   summary_count:
     ERROR: 4
     INFO: 0
-    WARN: 0
+    WARN: 1
 version: http://purl.obolibrary.org/obo/mmusdv/releases/2020-03-10/mmusdv.owl

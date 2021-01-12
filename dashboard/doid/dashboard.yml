@@ -1,40 +1,40 @@
 base_generated: true
 base_prefixes:
 - DOID
+- DOIDALT
 changed: false
-date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 139755
-    Declaration: 19088
+    AnnotationAssertion: 140154
+    Declaration: 19125
     DisjointClasses: 26
     EquivalentClasses: 730
     SubAnnotationPropertyOf: 29
-    SubClassOf: 27841
+    SubClassOf: 27931
     SubObjectPropertyOf: 34
     SymmetricObjectProperty: 4
     TransitiveObjectProperty: 7
-  'Axioms: Number of axioms': 187514
-  'Entities: % of entities reused': 31.86
+  'Axioms: Number of axioms': 188040
+  'Entities: % of entities reused': 31.65
   'Entities: Number of annotation properties': 73
-  'Entities: Number of classes': 18927
+  'Entities: Number of classes': 18964
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 89
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 77347
-    ObjectIntersectionOf: 986
-    ObjectSomeValuesFrom: 7529
+    Class: 77565
+    ObjectIntersectionOf: 988
+    ObjectSomeValuesFrom: 7556
     ObjectUnionOf: 16
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.89
-    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
-    _impact: 0.125
+    _dashboard: 0.786
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.124
     _impact_external: 0.25
-    _reuse: 0.319
-    oboscore: 0.358
+    _reuse: 0.317
+    oboscore: 0.455
   'Info: How many externally documented uses?': 1
   'Info: How many ontologies use it?': 22
   'Info: Logical consistency': true
@@ -42,52 +42,54 @@ metrics:
   'Info: Usage of namespaces in axioms':
     CHEBI: 1620
     CL: 1392
-    DOID: 49756
+    DOID: 49947
+    DOIDALT: 1744
     ECO: 38
     FOODON: 190
-    GENO: 2443
-    HP: 1652
-    IAO: 10962
-    IDO: 2749
+    GENO: 2469
+    HP: 1651
+    IAO: 11005
+    IDO: 2775
     NCBITaxon: 3564
     OBI: 5
-    RO: 2438
+    RO: 2437
     SO: 7333
-    SYMP: 3662
+    SOALT: 675
+    SYMP: 3665
     TRANS: 94
-    UBERON: 4800
+    UBERON: 4799
     UPHENO: 2
     dc: 1
-    dc11: 7591
-    obo: 3207
-    oboInOwl: 116312
-    owl: 2627
-    rdfs: 21089
-    skos: 256
+    dc11: 7616
+    obo: 791
+    oboInOwl: 116676
+    owl: 2626
+    rdfs: 21126
+    skos: 252
   'Info: Which ontologies use it?':
-  - obib
-  - omit
-  - ohmi
-  - gsso
-  - doid
-  - oae
-  - cvdo
   - apollo_sv
-  - duo
-  - ncro
-  - ero
-  - eupath
-  - ohpi
   - aro
-  - ontoneo
   - cido
   - clo
-  - txpo
-  - htn
-  - mfomd
-  - vo
+  - cvdo
+  - doid
+  - duo
+  - ero
+  - eupath
   - genepio
+  - gsso
+  - htn
   - ico
+  - mfomd
+  - ncro
+  - oae
+  - obib
+  - ohmi
+  - ohpi
+  - omit
+  - ontoneo
+  - txpo
+  - vo
 mirror_from: http://purl.obolibrary.org/obo/doid.owl
 namespace: doid
 results:
@@ -102,10 +104,12 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 2605 missing definitions. See ROBOT Report for details.
+    comment: 2625 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
-    status: PASS
+    comment: 12 non-RO properties used.
+    file: fp7
+    status: INFO
   FP08 Documented:
     status: PASS
   FP09 Plurality of Users:
@@ -113,23 +117,24 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    status: PASS
+    comment: 15 missing labels. See ROBOT Report for details.
+    status: ERROR
   FP16 Maintenance:
     status: PASS
   ROBOT Report:
-    comment: 2607 warnings, 1 info messages.
+    comment: 15 errors, 2627 warnings, 3 info messages.
     file: robot_report
     results:
-      ERROR: 0
-      INFO: 1
-      WARN: 2607
-    status: WARN
-sha256_hash: 03f1aa33290fcd84674f7b50640d6053e8e7b7b3891dcb15f075c13ab256ef07
+      ERROR: 15
+      INFO: 3
+      WARN: 2627
+    status: ERROR
+sha256_hash: b9837244954463bf4fb0d4375b5ae2cf8a7c3431161566d712363919098bca40
 summary:
-  comment: 2 warnings
-  status: WARN
+  comment: 2 errors
+  status: ERROR
   summary_count:
-    ERROR: 0
-    INFO: 0
-    WARN: 2
-version: http://purl.obolibrary.org/obo/doid/releases/2020-12-02/doid.owl
+    ERROR: 2
+    INFO: 1
+    WARN: 1
+version: http://purl.obolibrary.org/obo/doid/releases/2020-12-22/doid.owl

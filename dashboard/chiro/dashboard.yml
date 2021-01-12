@@ -1,8 +1,8 @@
 base_generated: true
 base_prefixes:
 - CHIRO
+- CHIROALT
 changed: false
-date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 81987
@@ -13,7 +13,7 @@ metrics:
     SubObjectPropertyOf: 1
     TransitiveObjectProperty: 3
   'Axioms: Number of axioms': 113005
-  'Entities: % of entities reused': 100.0
+  'Entities: % of entities reused': 99.93
   'Entities: Number of annotation properties': 35
   'Entities: Number of classes': 13286
   'Entities: Number of data properties': 0
@@ -27,11 +27,11 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.748
-    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
-    _reuse: 1.0
-    oboscore: 0.277
+    _reuse: 0.999
+    oboscore: 0.374
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
@@ -39,15 +39,17 @@ metrics:
   'Info: Usage of namespaces in axioms':
     BFO: 192
     CHEBI: 3608
+    CHEBIALT: 6
+    CHIROALT: 440
     ENVO: 222
     GO: 8067
     HP: 37
     IAO: 11683
     MP: 37279
+    MPALT: 10
     NCBITaxon: 18
     PR: 46
     RO: 805
-    obo: 456
     oboInOwl: 70608
     owl: 420
     prefix_unknown: 12

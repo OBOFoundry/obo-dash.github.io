@@ -1,8 +1,7 @@
 base_generated: true
 base_prefixes:
-- PDUMDV
+- PdumDv
 changed: false
-date: '2021-01-01'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 151
@@ -25,11 +24,11 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
     _dashboard: 0.748
-    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
     _reuse: 1.0
-    oboscore: 0.277
+    oboscore: 0.374
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
@@ -37,8 +36,9 @@ metrics:
   'Info: Usage of namespaces in axioms':
     BFO: 24
     IAO: 24
+    PDUMDVALT: 2
     RO: 2
-    obo: 101
+    obo: 99
     oboInOwl: 132
     rdfs: 50
   'Info: Which ontologies use it?':
@@ -74,11 +74,11 @@ results:
   FP16 Maintenance:
     status: PASS
   ROBOT Report:
-    comment: 3 errors, 0 warnings, 0 info messages.
+    comment: 3 errors, 0 warnings, 1 info messages.
     file: robot_report
     results:
       ERROR: 3
-      INFO: 0
+      INFO: 1
       WARN: 0
     status: ERROR
 sha256_hash: 64b37e6ffceeea6781a9823f0ffe8cbaf216830de2df0c73104e77c39d0558eb

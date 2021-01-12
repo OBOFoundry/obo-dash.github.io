@@ -1,8 +1,8 @@
 base_generated: true
 base_prefixes:
 - UPHENO
+- UPHENOALT
 changed: false
-date: '2021-01-01'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 690426
@@ -53,11 +53,11 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.741
-    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
-    _impact: 0.057
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.056
     _impact_external: 0.25
     _reuse: 1.0
-    oboscore: 0.378
+    oboscore: 0.399
   'Info: How many externally documented uses?': 1
   'Info: How many ontologies use it?': 10
   'Info: Logical consistency': true
@@ -65,39 +65,57 @@ metrics:
   'Info: Usage of namespaces in axioms':
     BFO: 143520
     BSPO: 4027
+    BSPOALT: 4
     CARO: 669
+    CAROALT: 4
     CHEBI: 20010
+    CHEBIALT: 1467
     CL: 13499
+    CLALT: 342
     ENVO: 7
+    FBBTALT: 18
+    FBCVALT: 53
     FBbt: 90030
     FBcv: 1174
     FBdv: 1222
     FBgn: 28
     GENENAMES: 828
     GO: 129188
+    GOALT: 34
     HP: 63257
+    HPALT: 15
+    HSAPDVALT: 45
     IAO: 117476
     MGI: 801
     MOD: 17
     MP: 58203
     MPATH: 2284
+    MPATHALT: 105
     NBO: 2801
+    NBOALT: 122
     NCBIGENE: 4
+    NCBITAXONALT: 19
     NCBITaxon: 4636
     OBI: 8
     PATO: 174427
+    PATOALT: 329
     PCO: 55
     PR: 8106
+    PRALT: 797
     RO: 208674
     SIO: 1
     SO: 806
     UBERON: 124822
+    UBERONALT: 63
     UPHENO: 24237
     VT: 12091
+    WBBTALT: 4
+    WBPHENOTYPEALT: 3
     WBPhenotype: 11119
     WBbt: 1735
     WBls: 525
     ZFA: 83913
+    ZFAALT: 6
     ZFIN_GENE: 60
     ZFS: 2179
     ZP: 205421
@@ -105,7 +123,7 @@ metrics:
     dc: 12
     dc11: 6878
     foaf: 1404
-    obo: 18405
+    obo: 14975
     oboInOwl: 561408
     owl: 5063
     prefix_unknown: 32
@@ -113,17 +131,17 @@ metrics:
     rdfs: 152498
     xsd: 5689
   'Info: Which ontologies use it?':
+  - cido
   - doid
-  - ro
+  - geno
   - htn
+  - mfmo
   - mondo
   - mp
   - ohmi
-  - mfmo
-  - upheno
-  - geno
   - ontoneo
-  - cido
+  - ro
+  - upheno
 mirror_from: http://purl.obolibrary.org/obo/upheno.owl
 namespace: upheno
 results:

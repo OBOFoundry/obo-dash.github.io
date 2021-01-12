@@ -1,11 +1,11 @@
 base_generated: true
 base_prefixes:
 - OOSTT
+- OOSTTALT
 changed: false
-date: '2021-01-01'
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 4467
+    AnnotationAssertion: 4469
     AsymmetricObjectProperty: 5
     ClassAssertion: 24
     DataPropertyDomain: 5
@@ -27,7 +27,7 @@ metrics:
     SubObjectPropertyOf: 49
     SubPropertyChainOf: 2
     TransitiveObjectProperty: 4
-  'Axioms: Number of axioms': 6463
+  'Axioms: Number of axioms': 6465
   'Entities: % of entities reused': 58.91
   'Entities: Number of annotation properties': 70
   'Entities: Number of classes': 660
@@ -49,29 +49,29 @@ metrics:
     ObjectUnionOf: 8
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.735
-    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+    _dashboard: 0.785
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.011
     _impact_external: 0
     _reuse: 0.589
-    oboscore: 0.232
+    oboscore: 0.398
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 2
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     APOLLO_SV: 4
-    BFO: 487
+    BFO: 486
     ERO: 5
     FMA: 17
     GAZ: 3
     GEO: 6
-    IAO: 4416
+    IAO: 4422
     NCBITaxon: 81
     OBI: 228
     OGMS: 8
     OMRSE: 206
-    OOSTT: 1400
+    OOSTT: 1395
     PATO: 6
     RO: 330
     UO: 10
@@ -79,17 +79,17 @@ metrics:
     dc11: 36
     foaf: 4
     obo: 22
-    oboInOwl: 92
-    owl: 91
+    oboInOwl: 93
+    owl: 92
     prefix_unknown: 5
     protege: 1
     rdfs: 970
     vivoweb: 6
     xsd: 4
   'Info: Which ontologies use it?':
+  - ico
   - omrse
   - oostt
-  - ico
 mirror_from: http://purl.obolibrary.org/obo/oostt.owl
 namespace: oostt
 results:
@@ -101,12 +101,11 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    comment: Missing version IRI
-    status: ERROR
+    status: PASS
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 6 duplicate definitions. 11 missing definitions. See ROBOT Report for
+    comment: 6 duplicate definitions. 10 missing definitions. See ROBOT Report for
       details.
     status: ERROR
   FP07 Relations:
@@ -123,22 +122,21 @@ results:
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
-    comment: Missing version IRI to check date
-    status: ERROR
+    status: PASS
   ROBOT Report:
-    comment: 15 errors, 11 warnings, 13 info messages.
+    comment: 15 errors, 10 warnings, 13 info messages.
     file: robot_report
     results:
       ERROR: 15
       INFO: 13
-      WARN: 11
+      WARN: 10
     status: ERROR
-sha256_hash: 86e4007606012f4f361de68a30156bbbd09ceab3dbfa06818988266ff2a11d0e
+sha256_hash: 95892d9bbbc72d7c6a36c86bdfd760e5ff4578cc4186c6f22297b5d91126c89d
 summary:
-  comment: 5 errors
+  comment: 3 errors
   status: ERROR
   summary_count:
-    ERROR: 5
+    ERROR: 3
     INFO: 1
     WARN: 1
-version: null
+version: http://purl.obolibrary.org/obo/oostt//2021-01-08/oostt.owl

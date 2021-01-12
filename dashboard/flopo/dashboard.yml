@@ -1,8 +1,8 @@
 base_generated: true
 base_prefixes:
 - FLOPO
+- FLOPOALT
 changed: false
-date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 61515
@@ -44,11 +44,11 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.634
-    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.006
     _impact_external: 0
     _reuse: 0.173
-    oboscore: 0.162
+    oboscore: 0.32
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
@@ -59,15 +59,18 @@ metrics:
     CL: 10
     FLOPO: 48052
     GO: 120
+    GOALT: 30
     IAO: 4603
     NCBITaxon: 33
     PATO: 31292
+    PATOALT: 405
     PO: 31141
+    POALT: 42
     RO: 24467
     dc: 5
     dc11: 34
     foaf: 3
-    obo: 488
+    obo: 11
     oboInOwl: 34522
     owl: 2358
     prefix_unknown: 3
@@ -75,8 +78,8 @@ metrics:
     rdfs: 30124
     xsd: 21
   'Info: Which ontologies use it?':
-  - foodon
   - flopo
+  - foodon
 mirror_from: http://purl.obolibrary.org/obo/flopo.owl
 namespace: flopo
 results:

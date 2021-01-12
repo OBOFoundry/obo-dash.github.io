@@ -9,7 +9,7 @@
             <div class="col-md-8">
                 <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/peco.html">peco</a></h1>
                 <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/peco/releases/2020-08-21/peco.owl</p>
-                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: 2021-01-01</p>
+                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: </p>
                 <p class="lead" style="margin-top:-15px;"><a href="dashboard.yml">View dashboard results as YAML</a></p>
                 <h3>Error Breakdown</h3>
                 
@@ -18,7 +18,7 @@
                         
                     
                     <div class="alert alert-danger">
-                        <center><h3>ERROR - 5 errors</h3></center>
+                        <center><h3>ERROR - 6 errors</h3></center>
                     </div>
                 
                 <table class="table">
@@ -143,7 +143,7 @@
                                 <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>7 duplicate definitions. 22 multiple definitions. 33 missing definitions. See ROBOT Report for details.</td>
+                                <td>7 duplicate definitions. 22 multiple definitions. 34 missing definitions. See ROBOT Report for details.</td>
                             
                             
                                 <td></td>
@@ -159,14 +159,14 @@
                                 
                                 
                             
-                            <td class="table-success" style="text-align:center;">
-                                <img src="../assets/check.svg" height="15px">
+                            <td class="table-danger" style="text-align:center;">
+                                <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td></td>
+                                <td>1 labels match RO labels.</td>
                             
                             
-                                <td></td>
+                                <td><a href="fp7.html">View Report</a></td>
                             
                         </tr>
                     
@@ -283,7 +283,7 @@
                                 <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>34 errors, 52 warnings, 0 info messages.</td>
+                                <td>34 errors, 53 warnings, 0 info messages.</td>
                             
                             
                                 <td><a href="robot_report.html">View Report</a></td>
@@ -354,7 +354,7 @@
                                 <td>Entities: % of entities reused</td>
                                 
                                 
-                                    <td>82.58</td>
+                                    <td>82.55</td>
                                 
                             </tr>
                         
@@ -442,7 +442,7 @@
                                         
                                         <li>_dashboard: 0.728</li>
                                         
-                                        <li>_formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9</li>
+                                        <li>_formula: (1*impact+1*dashboard)/2</li>
                                         
                                         <li>_impact: 0.028</li>
                                         
@@ -450,7 +450,7 @@
                                         
                                         <li>_reuse: 0.826</li>
                                         
-                                        <li>oboscore: 0.263</li>
+                                        <li>oboscore: 0.378</li>
                                         
                                     </ul></td>
                                 
@@ -500,7 +500,11 @@
                                         
                                         <li>CHEBI: 8390</li>
                                         
+                                        <li>CHEBIALT: 474</li>
+                                        
                                         <li>ENVO: 704</li>
+                                        
+                                        <li>ENVOALT: 4</li>
                                         
                                         <li>EO: 1148</li>
                                         
@@ -518,9 +522,9 @@
                                         
                                         <li>PECO: 2276</li>
                                         
-                                        <li>RO: 1609</li>
+                                        <li>PECOALT: 2</li>
                                         
-                                        <li>obo: 480</li>
+                                        <li>RO: 1609</li>
                                         
                                         <li>oboInOwl: 17058</li>
                                         
@@ -542,7 +546,7 @@
                                 <td>Info: Which ontologies use it?</td>
                                 
                                 
-                                    <td>['foodon', 'to', 'agro', 'mco', 'pso', 'peco']</td>
+                                    <td>['agro', 'foodon', 'mco', 'peco', 'pso', 'to']</td>
                                 
                             </tr>
                         

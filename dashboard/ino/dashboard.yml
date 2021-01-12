@@ -1,8 +1,8 @@
 base_generated: true
 base_prefixes:
 - INO
+- INOALT
 changed: false
-date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 2748
@@ -32,11 +32,11 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
     _dashboard: 0.731
-    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.017
     _impact_external: 0
     _reuse: 0.628
-    oboscore: 0.238
+    oboscore: 0.374
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
@@ -50,6 +50,8 @@ metrics:
     IDO: 17
     INO: 690
     MI: 323
+    MIALT: 1
+    NCBITAXONALT: 7
     NCBITaxon: 15
     OGG: 8
     PR: 2
@@ -57,15 +59,15 @@ metrics:
     RO: 408
     dc11: 50
     foaf: 5
-    obo: 56
+    obo: 48
     oboInOwl: 700
     owl: 1
     rdfs: 571
   'Info: Which ontologies use it?':
-  - ohpi
-  - ohmi
   - dideo
   - ino
+  - ohmi
+  - ohpi
 mirror_from: http://purl.obolibrary.org/obo/ino.owl
 namespace: ino
 results:

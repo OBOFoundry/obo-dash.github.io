@@ -8,8 +8,8 @@
             <div class="col-md-2"></div>
             <div class="col-md-8">
                 <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/doid.html">doid</a></h1>
-                <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/doid/releases/2020-12-02/doid.owl</p>
-                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: 2020-12-31</p>
+                <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/doid/releases/2020-12-22/doid.owl</p>
+                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: </p>
                 <p class="lead" style="margin-top:-15px;"><a href="dashboard.yml">View dashboard results as YAML</a></p>
                 <h3>Error Breakdown</h3>
                 
@@ -17,8 +17,8 @@
                     
                         
                     
-                    <div class="alert alert-warning">
-                        <center><h3>WARN - 2 warnings</h3></center>
+                    <div class="alert alert-danger">
+                        <center><h3>ERROR - 2 errors</h3></center>
                     </div>
                 
                 <table class="table">
@@ -143,7 +143,7 @@
                                 <img src="../assets/warning.svg" height="15px">
                             </td>
                             
-                                <td>2605 missing definitions. See ROBOT Report for details.</td>
+                                <td>2625 missing definitions. See ROBOT Report for details.</td>
                             
                             
                                 <td></td>
@@ -159,14 +159,14 @@
                                 
                                 
                             
-                            <td class="table-success" style="text-align:center;">
-                                <img src="../assets/check.svg" height="15px">
+                            <td class="table-info" style="text-align:center;">
+                                <img src="../assets/info.svg" height="15px">
                             </td>
                             
-                                <td></td>
+                                <td>12 non-RO properties used.</td>
                             
                             
-                                <td></td>
+                                <td><a href="fp7.html">View Report</a></td>
                             
                         </tr>
                     
@@ -239,11 +239,11 @@
                                 
                                 
                             
-                            <td class="table-success" style="text-align:center;">
-                                <img src="../assets/check.svg" height="15px">
+                            <td class="table-danger" style="text-align:center;">
+                                <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td></td>
+                                <td>15 missing labels. See ROBOT Report for details.</td>
                             
                             
                                 <td></td>
@@ -279,11 +279,11 @@
                                 
                                 
                             
-                            <td class="table-warning" style="text-align:center;">
-                                <img src="../assets/warning.svg" height="15px">
+                            <td class="table-danger" style="text-align:center;">
+                                <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>2607 warnings, 1 info messages.</td>
+                                <td>15 errors, 2627 warnings, 3 info messages.</td>
                             
                             
                                 <td><a href="robot_report.html">View Report</a></td>
@@ -308,9 +308,9 @@
                                 
                                     <td><ul>
                                         
-                                        <li>AnnotationAssertion: 139755</li>
+                                        <li>AnnotationAssertion: 140154</li>
                                         
-                                        <li>Declaration: 19088</li>
+                                        <li>Declaration: 19125</li>
                                         
                                         <li>DisjointClasses: 26</li>
                                         
@@ -318,7 +318,7 @@
                                         
                                         <li>SubAnnotationPropertyOf: 29</li>
                                         
-                                        <li>SubClassOf: 27841</li>
+                                        <li>SubClassOf: 27931</li>
                                         
                                         <li>SubObjectPropertyOf: 34</li>
                                         
@@ -334,7 +334,7 @@
                                 <td>Axioms: Number of axioms</td>
                                 
                                 
-                                    <td>187514</td>
+                                    <td>188040</td>
                                 
                             </tr>
                         
@@ -342,7 +342,7 @@
                                 <td>Entities: % of entities reused</td>
                                 
                                 
-                                    <td>31.86</td>
+                                    <td>31.65</td>
                                 
                             </tr>
                         
@@ -358,7 +358,7 @@
                                 <td>Entities: Number of classes</td>
                                 
                                 
-                                    <td>18927</td>
+                                    <td>18964</td>
                                 
                             </tr>
                         
@@ -400,11 +400,11 @@
                                 
                                     <td><ul>
                                         
-                                        <li>Class: 77347</li>
+                                        <li>Class: 77565</li>
                                         
-                                        <li>ObjectIntersectionOf: 986</li>
+                                        <li>ObjectIntersectionOf: 988</li>
                                         
-                                        <li>ObjectSomeValuesFrom: 7529</li>
+                                        <li>ObjectSomeValuesFrom: 7556</li>
                                         
                                         <li>ObjectUnionOf: 16</li>
                                         
@@ -426,17 +426,17 @@
                                 
                                     <td><ul>
                                         
-                                        <li>_dashboard: 0.89</li>
+                                        <li>_dashboard: 0.786</li>
                                         
-                                        <li>_formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9</li>
+                                        <li>_formula: (1*impact+1*dashboard)/2</li>
                                         
-                                        <li>_impact: 0.125</li>
+                                        <li>_impact: 0.124</li>
                                         
                                         <li>_impact_external: 0.25</li>
                                         
-                                        <li>_reuse: 0.319</li>
+                                        <li>_reuse: 0.317</li>
                                         
-                                        <li>oboscore: 0.358</li>
+                                        <li>oboscore: 0.455</li>
                                         
                                     </ul></td>
                                 
@@ -484,49 +484,53 @@
                                         
                                         <li>CL: 1392</li>
                                         
-                                        <li>DOID: 49756</li>
+                                        <li>DOID: 49947</li>
+                                        
+                                        <li>DOIDALT: 1744</li>
                                         
                                         <li>ECO: 38</li>
                                         
                                         <li>FOODON: 190</li>
                                         
-                                        <li>GENO: 2443</li>
+                                        <li>GENO: 2469</li>
                                         
-                                        <li>HP: 1652</li>
+                                        <li>HP: 1651</li>
                                         
-                                        <li>IAO: 10962</li>
+                                        <li>IAO: 11005</li>
                                         
-                                        <li>IDO: 2749</li>
+                                        <li>IDO: 2775</li>
                                         
                                         <li>NCBITaxon: 3564</li>
                                         
                                         <li>OBI: 5</li>
                                         
-                                        <li>RO: 2438</li>
+                                        <li>RO: 2437</li>
                                         
                                         <li>SO: 7333</li>
                                         
-                                        <li>SYMP: 3662</li>
+                                        <li>SOALT: 675</li>
+                                        
+                                        <li>SYMP: 3665</li>
                                         
                                         <li>TRANS: 94</li>
                                         
-                                        <li>UBERON: 4800</li>
+                                        <li>UBERON: 4799</li>
                                         
                                         <li>UPHENO: 2</li>
                                         
                                         <li>dc: 1</li>
                                         
-                                        <li>dc11: 7591</li>
+                                        <li>dc11: 7616</li>
                                         
-                                        <li>obo: 3207</li>
+                                        <li>obo: 791</li>
                                         
-                                        <li>oboInOwl: 116312</li>
+                                        <li>oboInOwl: 116676</li>
                                         
-                                        <li>owl: 2627</li>
+                                        <li>owl: 2626</li>
                                         
-                                        <li>rdfs: 21089</li>
+                                        <li>rdfs: 21126</li>
                                         
-                                        <li>skos: 256</li>
+                                        <li>skos: 252</li>
                                         
                                     </ul></td>
                                 
@@ -536,7 +540,7 @@
                                 <td>Info: Which ontologies use it?</td>
                                 
                                 
-                                    <td>['obib', 'omit', 'ohmi', 'gsso', 'doid', 'oae', 'cvdo', 'apollo_sv', 'duo', 'ncro', 'ero', 'eupath', 'ohpi', 'aro', 'ontoneo', 'cido', 'clo', 'txpo', 'htn', 'mfomd', 'vo', 'genepio', 'ico']</td>
+                                    <td>['apollo_sv', 'aro', 'cido', 'clo', 'cvdo', 'doid', 'duo', 'ero', 'eupath', 'genepio', 'gsso', 'htn', 'ico', 'mfomd', 'ncro', 'oae', 'obib', 'ohmi', 'ohpi', 'omit', 'ontoneo', 'txpo', 'vo']</td>
                                 
                             </tr>
                         

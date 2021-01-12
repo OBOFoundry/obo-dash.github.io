@@ -1,8 +1,8 @@
 base_generated: true
 base_prefixes:
 - FMA
+- FMAALT
 changed: false
-date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 284070
@@ -11,7 +11,7 @@ metrics:
     SubObjectPropertyOf: 3
     TransitiveObjectProperty: 1
   'Axioms: Number of axioms': 484774
-  'Entities: % of entities reused': 0.02
+  'Entities: % of entities reused': 0.01
   'Entities: Number of annotation properties': 9
   'Entities: Number of classes': 78977
   'Entities: Number of data properties': 0
@@ -23,35 +23,35 @@ metrics:
     ObjectSomeValuesFrom: 42734
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.694
-    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+    _dashboard: 0.693
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.062
     _impact_external: 0
     _reuse: 0.0
-    oboscore: 0.175
+    oboscore: 0.377
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 11
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     FMA: 322393
+    FMAALT: 42748
     IAO: 1119
-    obo: 42748
     oboInOwl: 203970
     rdfs: 78989
   'Info: Which ontologies use it?':
+  - apollo_sv
+  - cvdo
+  - dideo
+  - fma
+  - ico
   - micro
   - obib
-  - dideo
   - ohd
-  - vo
-  - cvdo
   - omrse
-  - oostt
-  - fma
   - ontoneo
-  - apollo_sv
-  - ico
+  - oostt
+  - vo
 mirror_from: http://purl.obolibrary.org/obo/fma.owl
 namespace: fma
 results:
@@ -67,11 +67,13 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 8 duplicate definitions. 77859 missing definitions. See ROBOT Report
+    comment: 8 duplicate definitions. 77866 missing definitions. See ROBOT Report
       for details.
     status: ERROR
   FP07 Relations:
-    status: PASS
+    comment: 7 non-RO properties used.
+    file: fp7
+    status: INFO
   FP08 Documented:
     status: PASS
   FP09 Plurality of Users:
@@ -84,12 +86,12 @@ results:
   FP16 Maintenance:
     status: PASS
   ROBOT Report:
-    comment: 11 errors, 77874 warnings, 17 info messages.
+    comment: 11 errors, 77881 warnings, 17 info messages.
     file: robot_report
     results:
       ERROR: 11
       INFO: 17
-      WARN: 77874
+      WARN: 77881
     status: ERROR
 sha256_hash: 1e668769399c36a5a6692d9edc83d8b8ae2bf6217f493cb32cf94b008f0b3126
 summary:
@@ -97,6 +99,6 @@ summary:
   status: ERROR
   summary_count:
     ERROR: 4
-    INFO: 0
+    INFO: 1
     WARN: 0
 version: http://purl.obolibrary.org/obo/fma/releases/2020-04-13/fma.owl

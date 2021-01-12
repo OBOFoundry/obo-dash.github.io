@@ -9,7 +9,7 @@
             <div class="col-md-8">
                 <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/xao.html">xao</a></h1>
                 <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/xao/releases/2020-06-26/xao.owl</p>
-                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: 2020-12-31</p>
+                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: </p>
                 <p class="lead" style="margin-top:-15px;"><a href="dashboard.yml">View dashboard results as YAML</a></p>
                 <h3>Error Breakdown</h3>
                 
@@ -17,8 +17,8 @@
                     
                         
                     
-                    <div class="alert alert-info">
-                        <center><h3>INFO - 1 info messages</h3></center>
+                    <div class="alert alert-danger">
+                        <center><h3>ERROR - 3 errors</h3></center>
                     </div>
                 
                 <table class="table">
@@ -139,11 +139,11 @@
                                 
                                 
                             
-                            <td class="table-success" style="text-align:center;">
-                                <img src="../assets/check.svg" height="15px">
+                            <td class="table-warning" style="text-align:center;">
+                                <img src="../assets/warning.svg" height="15px">
                             </td>
                             
-                                <td></td>
+                                <td>6 missing definitions. See ROBOT Report for details.</td>
                             
                             
                                 <td></td>
@@ -159,14 +159,14 @@
                                 
                                 
                             
-                            <td class="table-success" style="text-align:center;">
-                                <img src="../assets/check.svg" height="15px">
+                            <td class="table-danger" style="text-align:center;">
+                                <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td></td>
+                                <td>3 labels match RO labels.</td>
                             
                             
-                                <td></td>
+                                <td><a href="fp7.html">View Report</a></td>
                             
                         </tr>
                     
@@ -239,11 +239,11 @@
                                 
                                 
                             
-                            <td class="table-success" style="text-align:center;">
-                                <img src="../assets/check.svg" height="15px">
+                            <td class="table-danger" style="text-align:center;">
+                                <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td></td>
+                                <td>4 missing labels. See ROBOT Report for details.</td>
                             
                             
                                 <td></td>
@@ -279,11 +279,11 @@
                                 
                                 
                             
-                            <td class="table-info" style="text-align:center;">
-                                <img src="../assets/info.svg" height="15px">
+                            <td class="table-danger" style="text-align:center;">
+                                <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>{0} info messages.</td>
+                                <td>4 errors, 6 warnings, 2 info messages.</td>
                             
                             
                                 <td><a href="robot_report.html">View Report</a></td>
@@ -334,7 +334,7 @@
                                 <td>Entities: % of entities reused</td>
                                 
                                 
-                                    <td>2.49</td>
+                                    <td>2.05</td>
                                 
                             </tr>
                         
@@ -414,17 +414,17 @@
                                 
                                     <td><ul>
                                         
-                                        <li>_dashboard: 0.949</li>
+                                        <li>_dashboard: 0.792</li>
                                         
-                                        <li>_formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9</li>
+                                        <li>_formula: (1*impact+1*dashboard)/2</li>
                                         
                                         <li>_impact: 0.006</li>
                                         
                                         <li>_impact_external: 0.25</li>
                                         
-                                        <li>_reuse: 0.025</li>
+                                        <li>_reuse: 0.02</li>
                                         
-                                        <li>oboscore: 0.299</li>
+                                        <li>oboscore: 0.399</li>
                                         
                                     </ul></td>
                                 
@@ -476,11 +476,11 @@
                                         
                                         <li>XAO: 15513</li>
                                         
+                                        <li>XAOALT: 3296</li>
+                                        
                                         <li>dc: 2</li>
                                         
                                         <li>dc11: 2</li>
-                                        
-                                        <li>obo: 3296</li>
                                         
                                         <li>oboInOwl: 9196</li>
                                         
@@ -496,7 +496,7 @@
                                 <td>Info: Which ontologies use it?</td>
                                 
                                 
-                                    <td>['xpo', 'xao']</td>
+                                    <td>['xao', 'xpo']</td>
                                 
                             </tr>
                         

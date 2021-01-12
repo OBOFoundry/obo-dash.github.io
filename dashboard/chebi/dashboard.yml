@@ -1,121 +1,122 @@
 base_generated: true
 base_prefixes:
 - CHEBI
+- CHEBIALT
 changed: false
-date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 2104592
-    Declaration: 155153
+    AnnotationAssertion: 2107612
+    Declaration: 155389
     InverseObjectProperties: 1
     SubAnnotationPropertyOf: 6
-    SubClassOf: 288048
+    SubClassOf: 288545
     TransitiveObjectProperty: 2
-  'Axioms: Number of axioms': 2547802
-  'Entities: % of entities reused': 0.03
+  'Axioms: Number of axioms': 2551555
+  'Entities: % of entities reused': 0.02
   'Entities: Number of annotation properties': 37
-  'Entities: Number of classes': 155106
+  'Entities: Number of classes': 155342
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 10
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 731202
-    ObjectSomeValuesFrom: 84718
+    Class: 732432
+    ObjectSomeValuesFrom: 84810
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.891
-    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
-    _impact: 0.403
+    _dashboard: 0.89
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.401
     _impact_external: 0.25
     _reuse: 0.0
-    oboscore: 0.416
+    oboscore: 0.645
   'Info: How many externally documented uses?': 2
   'Info: How many ontologies use it?': 71
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 3848
-    CHEBI: 731202
-    IAO: 86762
-    RO: 40055
-    obo: 892957
-    oboInOwl: 1545844
+    BFO: 3855
+    CHEBI: 732432
+    CHEBIALT: 40897
+    IAO: 86844
+    RO: 40084
+    obo: 853345
+    oboInOwl: 1548127
     owl: 18498
-    rdfs: 136700
+    rdfs: 136935
   'Info: Which ontologies use it?':
-  - cheminf
-  - eupath
-  - caro
-  - clo
-  - ecto
-  - chiro
-  - fbcv
-  - fideo
-  - micro
-  - ohmi
-  - to
-  - oba
-  - opmi
-  - peco
-  - xco
-  - ido
-  - rxno
-  - vo
-  - hp
-  - mondo
-  - go
-  - mop
-  - cteno
-  - stato
-  - uberon
   - agro
-  - wbphenotype
-  - ncro
-  - chebi
-  - ohpi
-  - ino
-  - pr
-  - pso
-  - obib
-  - iceo
-  - omiabis
-  - psdo
-  - obcs
-  - upheno
-  - zp
-  - dron
-  - foodon
-  - ico
-  - omp
-  - fypo
-  - ons
-  - fobi
   - apollo_sv
-  - nbo
-  - maxo
-  - gsso
-  - dideo
-  - poro
-  - genepio
-  - txpo
-  - cl
-  - cob
+  - caro
+  - chebi
+  - cheminf
+  - chiro
   - chmo
-  - mp
-  - geno
-  - ovae
-  - obi
-  - omit
+  - cido
+  - cl
+  - clo
+  - cob
+  - cteno
+  - cto
+  - dideo
   - doid
   - dpo
-  - cto
-  - ogsf
-  - ornaseq
-  - mco
-  - phipo
+  - dron
+  - ecto
   - envo
-  - cido
+  - eupath
+  - fbcv
+  - fideo
+  - fobi
+  - foodon
+  - fypo
+  - genepio
+  - geno
+  - go
+  - gsso
+  - hp
+  - iceo
+  - ico
+  - ido
+  - ino
+  - maxo
+  - mco
+  - micro
+  - mondo
+  - mop
+  - mp
+  - nbo
+  - ncro
+  - oba
+  - obcs
+  - obi
+  - obib
+  - ogsf
+  - ohmi
+  - ohpi
+  - omiabis
+  - omit
+  - omp
+  - ons
+  - opmi
+  - ornaseq
+  - ovae
+  - peco
+  - phipo
+  - poro
+  - pr
+  - psdo
+  - pso
+  - rxno
+  - stato
+  - to
+  - txpo
+  - uberon
+  - upheno
+  - vo
+  - wbphenotype
+  - xco
+  - zp
 mirror_from: http://purl.obolibrary.org/obo/chebi.owl
 namespace: chebi
 results:
@@ -127,7 +128,7 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    comment: Version IRI 'http://purl.obolibrary.org/obo/chebi/194/chebi.owl' is not
+    comment: Version IRI 'http://purl.obolibrary.org/obo/chebi/195/chebi.owl' is not
       in recommended format
     status: WARN
   FP05 Scope:
@@ -136,7 +137,9 @@ results:
     comment: ROBOT Report could not be generated
     status: INFO
   FP07 Relations:
-    status: PASS
+    comment: 8 non-RO properties used.
+    file: fp7
+    status: INFO
   FP08 Documented:
     status: PASS
   FP09 Plurality of Users:
@@ -152,12 +155,12 @@ results:
   ROBOT Report:
     comment: ROBOT Report could not be generated.
     status: INFO
-sha256_hash: 9ab71fcae8ddff165e209a0c43fd0c041bb34255628324f6d7b3919740717687
+sha256_hash: 062137238e5845d3aedc94427fde2684d56a7cd94e851bba24f4d628c7abcbfe
 summary:
   comment: 1 errors
   status: ERROR
   summary_count:
     ERROR: 1
-    INFO: 4
+    INFO: 5
     WARN: 1
-version: http://purl.obolibrary.org/obo/chebi/194/chebi.owl
+version: http://purl.obolibrary.org/obo/chebi/195/chebi.owl

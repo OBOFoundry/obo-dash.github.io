@@ -1,8 +1,8 @@
 base_generated: true
 base_prefixes:
 - BSPO
+- BSPOALT
 changed: false
-date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1259
@@ -18,7 +18,7 @@ metrics:
     SymmetricObjectProperty: 3
     TransitiveObjectProperty: 16
   'Axioms: Number of axioms': 1967
-  'Entities: % of entities reused': 17.3
+  'Entities: % of entities reused': 16.03
   'Entities: Number of annotation properties': 25
   'Entities: Number of classes': 147
   'Entities: Number of data properties': 0
@@ -32,41 +32,44 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.787
-    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
-    _impact: 0.08
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.09
     _impact_external: 0
-    _reuse: 0.173
-    oboscore: 0.221
+    _reuse: 0.16
+    oboscore: 0.439
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 14
+  'Info: How many ontologies use it?': 16
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     BFO: 18
     BSPO: 1265
+    BSPOALT: 6
     CARO: 27
     IAO: 166
     RO: 133
-    obo: 9
+    obo: 3
     oboInOwl: 1000
     owl: 7
     rdfs: 283
   'Info: Which ontologies use it?':
-  - oae
-  - micro
-  - opmi
-  - plana
-  - ohpi
   - bspo
-  - ovae
+  - cido
+  - cteno
+  - hp
+  - hso
+  - maxo
+  - micro
   - mondo
   - mp
-  - zp
-  - hp
+  - oae
+  - ohpi
+  - opmi
+  - ovae
+  - plana
   - uberon
   - upheno
-  - cteno
-  - cido
+  - zp
 mirror_from: http://purl.obolibrary.org/obo/bspo.owl
 namespace: bspo
 results:
@@ -82,10 +85,10 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 40 missing definitions. See ROBOT Report for details.
+    comment: 42 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
-    comment: 53 non-RO properties used.
+    comment: 54 non-RO properties used.
     file: fp7
     status: INFO
   FP08 Documented:
@@ -100,12 +103,12 @@ results:
   FP16 Maintenance:
     status: PASS
   ROBOT Report:
-    comment: 3 errors, 45 warnings, 23 info messages.
+    comment: 3 errors, 47 warnings, 24 info messages.
     file: robot_report
     results:
       ERROR: 3
-      INFO: 23
-      WARN: 45
+      INFO: 24
+      WARN: 47
     status: ERROR
 sha256_hash: 561068ea21847a08c4d7138332349b6c80414337cb37ce2490bf58ace7b23630
 summary:

@@ -9,7 +9,7 @@
             <div class="col-md-8">
                 <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/mi.html">mi</a></h1>
                 <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/mi/releases/2020-04-13/mi.owl</p>
-                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: 2020-12-31</p>
+                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: </p>
                 <p class="lead" style="margin-top:-15px;"><a href="dashboard.yml">View dashboard results as YAML</a></p>
                 <h3>Error Breakdown</h3>
                 
@@ -18,7 +18,7 @@
                         
                     
                     <div class="alert alert-danger">
-                        <center><h3>ERROR - 5 errors</h3></center>
+                        <center><h3>ERROR - 6 errors</h3></center>
                     </div>
                 
                 <table class="table">
@@ -143,7 +143,7 @@
                                 <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>17 duplicate definitions. See ROBOT Report for details.</td>
+                                <td>17 duplicate definitions. 18 missing definitions. See ROBOT Report for details.</td>
                             
                             
                                 <td></td>
@@ -159,14 +159,14 @@
                                 
                                 
                             
-                            <td class="table-success" style="text-align:center;">
-                                <img src="../assets/check.svg" height="15px">
+                            <td class="table-danger" style="text-align:center;">
+                                <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td></td>
+                                <td>3 labels match RO labels. 1 non-RO properties used.</td>
                             
                             
-                                <td></td>
+                                <td><a href="fp7.html">View Report</a></td>
                             
                         </tr>
                     
@@ -243,7 +243,7 @@
                                 <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>8 duplicate labels. See ROBOT Report for details.</td>
+                                <td>8 duplicate labels. 3 missing labels. See ROBOT Report for details.</td>
                             
                             
                                 <td></td>
@@ -283,7 +283,7 @@
                                 <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>28 errors, 380 warnings, 36 info messages.</td>
+                                <td>31 errors, 398 warnings, 40 info messages.</td>
                             
                             
                                 <td><a href="robot_report.html">View Report</a></td>
@@ -334,7 +334,7 @@
                                 <td>Entities: % of entities reused</td>
                                 
                                 
-                                    <td>3.09</td>
+                                    <td>1.73</td>
                                 
                             </tr>
                         
@@ -414,17 +414,17 @@
                                 
                                     <td><ul>
                                         
-                                        <li>_dashboard: 0.696</li>
+                                        <li>_dashboard: 0.693</li>
                                         
-                                        <li>_formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9</li>
+                                        <li>_formula: (1*impact+1*dashboard)/2</li>
                                         
                                         <li>_impact: 0.017</li>
                                         
                                         <li>_impact_external: 0</li>
                                         
-                                        <li>_reuse: 0.031</li>
+                                        <li>_reuse: 0.017</li>
                                         
-                                        <li>oboscore: 0.164</li>
+                                        <li>oboscore: 0.355</li>
                                         
                                     </ul></td>
                                 
@@ -472,7 +472,7 @@
                                         
                                         <li>MI: 4646</li>
                                         
-                                        <li>obo: 80</li>
+                                        <li>MIALT: 80</li>
                                         
                                         <li>oboInOwl: 11161</li>
                                         

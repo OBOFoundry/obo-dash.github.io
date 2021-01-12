@@ -1,8 +1,8 @@
 base_generated: true
 base_prefixes:
 - CMO
+- CMOALT
 changed: false
-date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 14719
@@ -23,11 +23,11 @@ metrics:
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.679
-    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.034
     _impact_external: 0
     _reuse: 0.006
-    oboscore: 0.163
+    oboscore: 0.357
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 6
   'Info: Logical consistency': true
@@ -39,13 +39,13 @@ metrics:
     prefix_unknown: 5463
     rdfs: 3158
   'Info: Which ontologies use it?':
-  - ons
-  - opmi
-  - gecko
-  - eupath
-  - ohmi
   - cmo
+  - eupath
+  - gecko
+  - ohmi
+  - ons
   - ontoneo
+  - opmi
 mirror_from: http://purl.obolibrary.org/obo/cmo.owl
 namespace: cmo
 results:

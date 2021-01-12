@@ -1,8 +1,8 @@
 base_generated: true
 base_prefixes:
 - ZFA
+- ZFAALT
 changed: false
-date: '2020-12-31'
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 21239
@@ -16,7 +16,7 @@ metrics:
     SymmetricObjectProperty: 1
     TransitiveObjectProperty: 3
   'Axioms: Number of axioms': 36534
-  'Entities: % of entities reused': 2.67
+  'Entities: % of entities reused': 2.61
   'Entities: Number of annotation properties': 31
   'Entities: Number of classes': 3219
   'Entities: Number of data properties': 0
@@ -28,12 +28,12 @@ metrics:
     ObjectSomeValuesFrom: 8831
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.742
-    _formula: (3*impact+2*dashboard+1*reuse+3*impact_external)/9
+    _dashboard: 0.691
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.011
     _impact_external: 0.25
-    _reuse: 0.027
-    oboscore: 0.255
+    _reuse: 0.026
+    oboscore: 0.351
   'Info: How many externally documented uses?': 1
   'Info: How many ontologies use it?': 2
   'Info: Logical consistency': true
@@ -43,15 +43,15 @@ metrics:
     IAO: 2881
     RO: 6702
     ZFA: 21039
+    ZFAALT: 4
     ZFS: 6232
-    obo: 4
     oboInOwl: 18824
     owl: 125
     rdfs: 3293
   'Info: Which ontologies use it?':
+  - upheno
   - zfa
   - zp
-  - upheno
 mirror_from: http://purl.obolibrary.org/obo/zfa.owl
 namespace: zfa
 results:
@@ -67,7 +67,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 19 duplicate definitions. 322 missing definitions. See ROBOT Report for
+    comment: 19 duplicate definitions. 324 missing definitions. See ROBOT Report for
       details.
     status: ERROR
   FP07 Relations:
@@ -79,23 +79,24 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    status: PASS
+    comment: 1 missing labels. See ROBOT Report for details.
+    status: ERROR
   FP16 Maintenance:
     status: PASS
   ROBOT Report:
-    comment: 21 errors, 476 warnings, 1 info messages.
+    comment: 22 errors, 478 warnings, 1 info messages.
     file: robot_report
     results:
-      ERROR: 21
+      ERROR: 22
       INFO: 1
-      WARN: 476
+      WARN: 478
     status: ERROR
 sha256_hash: 39558c60454cfb5be046caf83b75e2d63b1ed2f693dc21136fea925b9350a48c
 summary:
-  comment: 3 errors
+  comment: 4 errors
   status: ERROR
   summary_count:
-    ERROR: 3
+    ERROR: 4
     INFO: 0
     WARN: 0
 version: http://purl.obolibrary.org/obo/zfa/releases/2020-04-14/zfa.owl
