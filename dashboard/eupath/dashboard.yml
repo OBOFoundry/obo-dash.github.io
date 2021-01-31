@@ -2,116 +2,119 @@ base_generated: true
 base_prefixes:
 - EUPATH
 - EUPATHALT
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 11188
+    AnnotationAssertion: 14436
     AnnotationPropertyRangeOf: 1
-    AsymmetricObjectProperty: 4
-    ClassAssertion: 85
+    AsymmetricObjectProperty: 3
+    ClassAssertion: 90
     DataPropertyDomain: 4
     DataPropertyRange: 3
-    Declaration: 2501
+    Declaration: 3659
     DifferentIndividuals: 2
-    DisjointClasses: 16
-    EquivalentClasses: 116
-    EquivalentObjectProperties: 24
+    DisjointClasses: 18
+    EquivalentClasses: 139
+    EquivalentObjectProperties: 3
     FunctionalDataProperty: 2
-    FunctionalObjectProperty: 5
+    FunctionalObjectProperty: 4
     InverseObjectProperties: 16
-    IrrefexiveObjectProperty: 3
+    IrrefexiveObjectProperty: 2
     ObjectPropertyDomain: 28
     ObjectPropertyRange: 27
-    SubAnnotationPropertyOf: 8
-    SubClassOf: 2888
+    SubAnnotationPropertyOf: 7
+    SubClassOf: 4221
     SubDataPropertyOf: 1
     SubObjectPropertyOf: 21
     TransitiveObjectProperty: 7
-  'Axioms: Number of axioms': 16950
-  'Entities: % of entities reused': 55.55
-  'Entities: Number of annotation properties': 72
-  'Entities: Number of classes': 2273
+  'Axioms: Number of axioms': 22694
+  'Entities: % of entities reused': 64.01
+  'Entities: Number of annotation properties': 71
+  'Entities: Number of classes': 3430
   'Entities: Number of data properties': 4
-  'Entities: Number of individuals': 82
+  'Entities: Number of individuals': 85
   'Entities: Number of object properties': 65
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 8752
+    Class: 12975
     DataAllValuesFrom: 1
     DataMinCardinality: 2
-    ObjectAllValuesFrom: 32
+    ObjectAllValuesFrom: 58
     ObjectComplementOf: 3
     ObjectExactCardinality: 2
-    ObjectHasValue: 7
-    ObjectIntersectionOf: 272
+    ObjectHasValue: 5
+    ObjectIntersectionOf: 536
     ObjectMinCardinality: 2
-    ObjectOneOf: 4
-    ObjectSomeValuesFrom: 840
-    ObjectUnionOf: 28
+    ObjectOneOf: 3
+    ObjectSomeValuesFrom: 1327
+    ObjectUnionOf: 27
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.927
+    _dashboard: 0.817
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.006
     _impact_external: 0.5
-    _reuse: 0.555
-    oboscore: 0.467
+    _reuse: 0.64
+    oboscore: 0.411
   'Info: How many externally documented uses?': 3
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    APOLLO_SV: 2
-    BFO: 509
+    APOLLO_SV: 5
+    BFO: 588
     BTO: 4
-    CHEBI: 287
+    CHEBI: 615
+    CIDO: 2
     CL: 30
     CMO: 11
-    DOID: 573
+    DOID: 571
     DRON: 19
-    EFO: 30
-    ENVO: 447
+    EFO: 28
+    ENVO: 453
     ERO: 10
-    EUPATH: 3218
+    EUPATH: 3803
     FOODON: 8
-    GAZ: 11
+    GAZ: 9
     GENEPIO: 4
-    GO: 45
-    HP: 254
-    IAO: 8928
-    IDO: 21
-    NCBITaxon: 391
-    NCIT: 19
+    GO: 57
+    HP: 247
+    IAO: 11117
+    IDO: 24
+    MOD: 4
+    NCBITaxon: 2794
+    NCIT: 13
     OBCS: 11
-    OBI: 1854
+    OBI: 2411
     OBIB: 12
-    OGMS: 103
+    OGMS: 106
     OMIABIS: 1
     OMP: 2
-    OMRSE: 54
+    OMRSE: 55
     OPL: 13
-    PATO: 83
+    OPMI: 2
+    PATO: 84
     PCO: 16
     PDRO: 3
     PO: 8
-    PR: 6
-    RO: 319
+    PR: 233
+    RO: 427
     SO: 57
-    STATO: 67
+    STATO: 69
     SYMP: 34
-    UBERON: 499
-    UO: 139
+    UBERON: 507
+    UO: 172
     VO: 2
     dc: 3
     dc11: 314
     foaf: 2
     obo: 14
-    oboInOwl: 59
-    owl: 285
-    prefix_unknown: 16
+    oboInOwl: 55
+    owl: 376
+    prefix_unknown: 2
     protege: 2
     rdf: 4
-    rdfs: 2581
+    rdfs: 3752
     xsd: 7
   'Info: Which ontologies use it?':
   - eupath
@@ -130,7 +133,8 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    status: PASS
+    comment: 48 missing definitions. See ROBOT Report for details.
+    status: WARN
   FP07 Relations:
     comment: 1 non-RO properties used.
     file: fp7
@@ -142,23 +146,24 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    status: PASS
+    comment: 2 duplicate labels. See ROBOT Report for details.
+    status: ERROR
   FP16 Maintenance:
     status: PASS
   ROBOT Report:
-    comment: '{0} info messages.'
+    comment: 2 errors, 48 warnings, 419 info messages.
     file: robot_report
     results:
-      ERROR: 0
-      INFO: 420
-      WARN: 0
-    status: INFO
-sha256_hash: 38e9dd92e48123e08eaa46ebfeb73525fbf18dfe59138545963b8d865bc09e77
+      ERROR: 2
+      INFO: 419
+      WARN: 48
+    status: ERROR
+sha256_hash: 855c3e0cfb4e1dfb90b7f7619f37532bcc8d5660da00b1552fddb85627bc7456
 summary:
-  comment: 2 info messages
-  status: INFO
+  comment: 2 errors
+  status: ERROR
   summary_count:
-    ERROR: 0
-    INFO: 2
-    WARN: 0
-version: http://purl.obolibrary.org/obo/eupath/2020-10-15/eupath.owl
+    ERROR: 2
+    INFO: 1
+    WARN: 1
+version: http://purl.obolibrary.org/obo/eupath/2021-01-08/eupath.owl

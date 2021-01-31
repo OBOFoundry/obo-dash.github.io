@@ -1,5 +1,9 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	multiple_equivalent_classes	decreased protein phosphorylation during vegetative growth	owl:equivalentClass	db84073f-e69c-44a8-978c-3e0df7bc7057genid20974
+ERROR	multiple_equivalent_classes	decreased protein phosphorylation during vegetative growth	owl:equivalentClass	db84073f-e69c-44a8-978c-3e0df7bc7057genid20983
 WARN	annotation_whitespace	cortical endoplasmic reticulum detached from plasma membrane	has_exact_synonym	cortical endoplasmic reticulum dissociated from plasma membrane 
+WARN	duplicate_exact_synonym	decreased protein localization to late endosome	has_exact_synonym	decreased protein localization to PVE
+WARN	duplicate_exact_synonym	abolished protein localization to late endosome	has_exact_synonym	decreased protein localization to PVE
 WARN	missing_definition	part_of	definition	
 WARN	missing_definition	has_part	definition	
 WARN	missing_definition	occurs in	definition	
@@ -31,5 +35,7 @@ WARN	missing_definition	has_obo_namespace	definition
 WARN	missing_definition	has_related_synonym	definition	
 WARN	missing_definition	in_subset	definition	
 WARN	missing_definition	shorthand	definition	
+WARN	duplicate_scoped_synonym	small mitochondria with decreased mitochondrial volume	has_exact_synonym	small mitochondria with decreased mitochondrial volume
+WARN	duplicate_scoped_synonym	small mitochondria with decreased mitochondrial volume	has_related_synonym	small mitochondria with decreased mitochondrial volume
 INFO	lowercase_definition	has_output	definition	<p has output c if either: p has direct output c or p has output input c. Implies that if p happens, c always ensues.>
 INFO	missing_superclass	phenotype	rdfs:subClassOf	

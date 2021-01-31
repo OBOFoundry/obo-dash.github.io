@@ -1,117 +1,86 @@
-base_generated: true
+base_generated: false
 base_prefixes:
 - MONDO
 - MONDOALT
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 471275
-    AsymmetricObjectProperty: 1
-    ClassAssertion: 64
-    Declaration: 41840
-    DifferentIndividuals: 2
-    DisjointClasses: 393
-    EquivalentClasses: 13292
-    FunctionalObjectProperty: 3
-    InverseObjectProperties: 55
-    IrrefexiveObjectProperty: 3
-    ObjectPropertyAssertion: 36
-    ObjectPropertyDomain: 77
-    ObjectPropertyRange: 81
-    ReflexiveObjectProperty: 1
-    Rule: 20
-    SubAnnotationPropertyOf: 35
-    SubClassOf: 81632
-    SubObjectPropertyOf: 301
-    SubPropertyChainOf: 100
-    SymmetricObjectProperty: 8
-    TransitiveObjectProperty: 45
-  'Axioms: Number of axioms': 609264
-  'Entities: % of entities reused': 41.69
-  'Entities: Number of annotation properties': 113
-  'Entities: Number of classes': 41349
+    AnnotationAssertion: 381839
+    Declaration: 30279
+    DisjointClasses: 81
+    EquivalentClasses: 7463
+    SubAnnotationPropertyOf: 32
+    SubClassOf: 47744
+    SubObjectPropertyOf: 2
+    SubPropertyChainOf: 7
+    TransitiveObjectProperty: 1
+  'Axioms: Number of axioms': 467448
+  'Entities: % of entities reused': 19.38
+  'Entities: Number of annotation properties': 85
+  'Entities: Number of classes': 30172
   'Entities: Number of data properties': 0
-  'Entities: Number of individuals': 62
-  'Entities: Number of object properties': 325
+  'Entities: Number of individuals': 0
+  'Entities: Number of object properties': 29
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 247151
-    ObjectAllValuesFrom: 10
-    ObjectComplementOf: 13
-    ObjectHasSelf: 1
-    ObjectIntersectionOf: 13360
-    ObjectMaxCardinality: 22
-    ObjectMinCardinality: 30
-    ObjectOneOf: 4
-    ObjectSomeValuesFrom: 35083
-    ObjectUnionOf: 174
+    Class: 148602
+    ObjectIntersectionOf: 7449
+    ObjectSomeValuesFrom: 17004
+    ObjectUnionOf: 14
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.772
+    _dashboard: 0.737
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.023
-    _impact_external: 0.25
-    _reuse: 0.417
-    oboscore: 0.398
-  'Info: How many externally documented uses?': 1
+    _impact: 0.022
+    _impact_external: 0.5
+    _reuse: 0.194
+    oboscore: 0.38
+  'Info: How many externally documented uses?': 5
   'Info: How many ontologies use it?': 4
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 8075
-    BSPO: 376
-    CARO: 198
-    CHEBI: 5881
-    CHEBIALT: 336
-    CL: 3160
-    CLALT: 191
-    ECTO: 1001
-    ENVO: 2742
-    ENVOALT: 18
-    FOODON: 676
-    GO: 25284
-    HGNC: 14380
-    HP: 5517
-    IAO: 29338
-    MF: 63
+    BFO: 82
+    CARO: 135
+    CHEBI: 121
+    CL: 574
+    ECTO: 109
+    ENVO: 42
+    FOODON: 41
+    GO: 1096
+    HGNC: 10161
+    HP: 2117
+    IAO: 17350
+    MF: 20
     MFOEM: 3
     MFOMD: 13
-    MONDO: 127181
-    MONDOALT: 3623
+    MONDO: 127251
+    MONDOALT: 1745
     NBO: 13
-    NCBITAXONALT: 1154
-    NCBITaxon: 5109
+    NCBITaxon: 1598
     NCIT: 75
     OBA: 2
-    OBI: 19
-    OGMS: 8
-    PATO: 1171
-    PATOALT: 59
-    PCO: 25
-    PO: 59
-    PR: 727
-    RO: 26269
-    SO: 4058
-    SOALT: 35
-    UBERON: 49370
-    UPHENO: 3
-    dc: 7638
-    dc11: 206
-    obo: 664
-    oboInOwl: 577483
-    owl: 2258
-    prefix_unknown: 33
-    rdf: 6
-    rdfs: 46464
-    skos: 87185
-    xsd: 35406
+    PATO: 336
+    PO: 3
+    PR: 59
+    RO: 16396
+    SO: 25
+    UBERON: 4766
+    dc11: 111
+    obo: 5
+    oboInOwl: 523176
+    owl: 2082
+    rdf: 3
+    rdfs: 28663
+    skos: 88140
+    xsd: 35149
   'Info: Which ontologies use it?':
   - gecko
   - mondo
   - ohmi
   - ons
   - opmi
-mirror_from: http://purl.obolibrary.org/obo/mondo.owl
+mirror_from: http://purl.obolibrary.org/obo/mondo/mondo-base.owl
 namespace: mondo
 results:
   FP01 Open:
@@ -125,7 +94,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 7067 missing definitions. See ROBOT Report for details.
+    comment: 7328 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     comment: 10 non-RO properties used.
@@ -138,19 +107,19 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 26 missing labels. See ROBOT Report for details.
+    comment: 251 missing labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
     status: PASS
   ROBOT Report:
-    comment: 30 errors, 10367 warnings, 146 info messages.
+    comment: 256 errors, 10636 warnings, 146 info messages.
     file: robot_report
     results:
-      ERROR: 30
+      ERROR: 256
       INFO: 146
-      WARN: 10367
+      WARN: 10636
     status: ERROR
-sha256_hash: 4e5092551eeae7487548197d2a5f6f541fb2ba4de262cd99b9645a0981632afa
+sha256_hash: 6d8ae936c7c021ffa5e8e3af0e9b623032e73a1a6b81799100a6b3880955d4f0
 summary:
   comment: 2 errors
   status: ERROR
@@ -158,4 +127,4 @@ summary:
     ERROR: 2
     INFO: 1
     WARN: 1
-version: http://purl.obolibrary.org/obo/mondo/releases/2020-12-18/mondo.owl
+version: http://purl.obolibrary.org/obo/mondo/releases/2021-01-15/mondo-base.owl

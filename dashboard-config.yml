@@ -61,10 +61,10 @@ prefer_base: True
 profile:
   baseprofile: "https://raw.githubusercontent.com/ontodev/robot/master/robot-core/src/main/resources/report_profile.txt"
 report_truncation_limit: 600
-redownload_after_hours: 10000
-force_regenerate_dashboard_after_hours: 15000
-dashboard_report_timeout_seconds: 3600
-robot_opts: -vv
+redownload_after_hours: 500
+force_regenerate_dashboard_after_hours: 1500
+dashboard_report_timeout_seconds: 7200
+robot_opts: -v
 environment:
   ROBOT_JAR: /tools/robot.jar
   ROBOT: robot
