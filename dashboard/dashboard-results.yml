@@ -1574,6 +1574,81 @@ ontologies:
       INFO: 1
       WARN: 2
   version: http://purl.obolibrary.org/obo/cdao/2019-06-26/cdao.owl
+- base_generated: false
+  base_prefixes:
+  - CDNO
+  - CDNOALT
+  changed: true
+  metrics:
+    'Axioms: Breakdown of axiom types':
+      Declaration: 3
+    'Axioms: Number of axioms': 3
+    'Entities: % of entities reused': 100.0
+    'Entities: Number of annotation properties': 4
+    'Entities: Number of classes': 0
+    'Entities: Number of data properties': 0
+    'Entities: Number of individuals': 0
+    'Entities: Number of object properties': 0
+    'Entities: Number of unsatisfiable classes': 0
+    'Info: Breakdown of OWL class expressions used': {}
+    'Info: Does the ontology fall under OWL 2 DL?': false
+    'Info: Experimental OBO score':
+      _dashboard: 0.9
+      _formula: (1*impact+1*dashboard)/2
+      _impact: 0.0
+      _impact_external: 0
+      _reuse: 1.0
+      oboscore: 0.45
+    'Info: How many externally documented uses?': 0
+    'Info: How many ontologies use it?': 0
+    'Info: Logical consistency': true
+    'Info: Syntax': RDF/XML Syntax
+    'Info: Usage of namespaces in axioms':
+      dc: 1
+      dc11: 2
+    'Info: Which ontologies use it?':
+    - cdno
+  mirror_from: http://purl.obolibrary.org/obo/cdno/cdno-base.owl
+  namespace: cdno
+  results:
+    FP01 Open:
+      comment: Ontology license 'https://creativecommons.org/licenses/unspecified'
+        does not match regsitry license 'https://creativecommons.org/licenses/by/3.0/'.
+      status: ERROR
+    FP02 Common Format:
+      status: PASS
+    FP03 URIs:
+      status: PASS
+    FP04 Versioning:
+      status: PASS
+    FP05 Scope:
+      status: PASS
+    FP06 Textual Definitions:
+      status: PASS
+    FP07 Relations:
+      status: PASS
+    FP08 Documented:
+      status: PASS
+    FP09 Plurality of Users:
+      comment: Missing usages
+      status: ERROR
+    FP11 Locus of Authority:
+      status: PASS
+    FP12 Naming Conventions:
+      status: PASS
+    FP16 Maintenance:
+      status: PASS
+    ROBOT Report:
+      status: PASS
+  sha256_hash: 2b69f35a3b66fab64cec625a567635996daf7b595b358e4c928d9aa89dbc3fb4
+  summary:
+    comment: 2 errors
+    status: ERROR
+    summary_count:
+      ERROR: 2
+      INFO: 0
+      WARN: 0
+  version: http://purl.obolibrary.org/obo/cdno/releases/2021-02-06/cdno-base.owl
 - base_generated: true
   base_prefixes:
   - CHEBI
@@ -9479,11 +9554,136 @@ ontologies:
       WARN: 0
   version: null
 - base_generated: true
-  changed: false
-  failure: failed_robot_base
+  base_prefixes:
+  - LABO
+  - LABOALT
+  changed: true
+  metrics:
+    'Axioms: Breakdown of axiom types':
+      AnnotationAssertion: 1404
+      DataPropertyDomain: 2
+      DataPropertyRange: 1
+      Declaration: 248
+      DisjointClasses: 24
+      EquivalentClasses: 25
+      FunctionalObjectProperty: 1
+      InverseObjectProperties: 12
+      IrrefexiveObjectProperty: 1
+      ObjectPropertyDomain: 15
+      ObjectPropertyRange: 15
+      SubAnnotationPropertyOf: 2
+      SubClassOf: 214
+      SubDataPropertyOf: 1
+      SubObjectPropertyOf: 16
+      SubPropertyChainOf: 1
+      TransitiveObjectProperty: 2
+    'Axioms: Number of axioms': 1984
+    'Entities: % of entities reused': 68.63
+    'Entities: Number of annotation properties': 46
+    'Entities: Number of classes': 169
+    'Entities: Number of data properties': 2
+    'Entities: Number of individuals': 0
+    'Entities: Number of object properties': 33
+    'Entities: Number of unsatisfiable classes': 31
+    'Info: Breakdown of OWL class expressions used':
+      Class: 779
+      DataExactCardinality: 2
+      DataMinCardinality: 2
+      ObjectAllValuesFrom: 2
+      ObjectExactCardinality: 23
+      ObjectIntersectionOf: 42
+      ObjectMaxCardinality: 4
+      ObjectMinCardinality: 2
+      ObjectSomeValuesFrom: 86
+      ObjectUnionOf: 4
+    'Info: Does the ontology fall under OWL 2 DL?': false
+    'Info: Experimental OBO score':
+      _dashboard: 0.707
+      _formula: (1*impact+1*dashboard)/2
+      _impact: 0.0
+      _impact_external: 0.25
+      _reuse: 0.686
+      oboscore: 0.353
+    'Info: How many externally documented uses?': 1
+    'Info: How many ontologies use it?': 0
+    'Info: Logical consistency': true
+    'Info: Syntax': RDF/XML Syntax
+    'Info: Usage of namespaces in axioms':
+      BFO: 323
+      IAO: 1169
+      LABO: 321
+      NCBITaxon: 7
+      OBI: 143
+      OGMS: 22
+      OMIABIS: 14
+      OPMI: 25
+      PDRO: 20
+      RO: 67
+      dc: 2
+      dc11: 16
+      foaf: 2
+      obo: 14
+      oboInOwl: 5
+      owl: 12
+      prefix_unknown: 6
+      protege: 1
+      rdf: 2
+      rdfs: 438
+    'Info: Which ontologies use it?':
+    - labo
   mirror_from: http://purl.obolibrary.org/obo/labo.owl
   namespace: labo
-  sha256_hash: ca11cd782175f7bb026b90d11a456f89ca8653f2e24c9f4dd9a1f11af1d5ee4c
+  results:
+    FP01 Open:
+      comment: Missing ontology license.
+      status: ERROR
+    FP02 Common Format:
+      status: PASS
+    FP03 URIs:
+      status: PASS
+    FP04 Versioning:
+      comment: Version IRI 'http://purl.obolibrary.org/obo/2020-02-06/labo.owl' is
+        not in recommended format
+      status: WARN
+    FP05 Scope:
+      status: PASS
+    FP06 Textual Definitions:
+      comment: 2 duplicate definitions. 30 multiple definitions. 21 missing definitions.
+        See ROBOT Report for details.
+      status: ERROR
+    FP07 Relations:
+      comment: 5 non-RO properties used.
+      file: fp7
+      status: INFO
+    FP08 Documented:
+      status: PASS
+    FP09 Plurality of Users:
+      status: PASS
+    FP11 Locus of Authority:
+      status: PASS
+    FP12 Naming Conventions:
+      comment: 30 multiple labels. See ROBOT Report for details.
+      status: ERROR
+    FP16 Maintenance:
+      comment: Version IRI does not have date information
+      status: INFO
+    ROBOT Report:
+      comment: 66 errors, 21 warnings, 17 info messages.
+      file: robot_report
+      results:
+        ERROR: 66
+        INFO: 17
+        WARN: 21
+      status: ERROR
+  sha256_hash: 0cbbe03dca3897f4ef4a44dd17897c84c516fe15f6a41b152aaa43bccbf429ed
+  summary:
+    comment: 4 errors
+    status: ERROR
+    summary_count:
+      ERROR: 4
+      INFO: 2
+      WARN: 1
+  version: http://purl.obolibrary.org/obo/2020-02-06/labo.owl
 - base_generated: true
   base_prefixes:
   - MA
@@ -16530,11 +16730,146 @@ ontologies:
       WARN: 0
   version: http://purl.obolibrary.org/obo/pco/releases/2020-08-26/pco-base.owl
 - base_generated: true
-  changed: false
-  failure: failed_robot_base
+  base_prefixes:
+  - PDRO
+  - PDROALT
+  changed: true
+  metrics:
+    'Axioms: Breakdown of axiom types':
+      AnnotationAssertion: 2334
+      AsymmetricObjectProperty: 2
+      DataPropertyDomain: 2
+      DataPropertyRange: 1
+      Declaration: 404
+      DisjointClasses: 24
+      EquivalentClasses: 27
+      EquivalentObjectProperties: 1
+      FunctionalObjectProperty: 2
+      InverseObjectProperties: 13
+      IrrefexiveObjectProperty: 1
+      ObjectPropertyDomain: 18
+      ObjectPropertyRange: 18
+      SubAnnotationPropertyOf: 2
+      SubClassOf: 419
+      SubDataPropertyOf: 1
+      SubObjectPropertyOf: 21
+      TransitiveObjectProperty: 2
+    'Axioms: Number of axioms': 3292
+    'Entities: % of entities reused': 57.63
+    'Entities: Number of annotation properties': 54
+    'Entities: Number of classes': 310
+    'Entities: Number of data properties': 4
+    'Entities: Number of individuals': 0
+    'Entities: Number of object properties': 38
+    'Entities: Number of unsatisfiable classes': 0
+    'Info: Breakdown of OWL class expressions used':
+      Class: 1370
+      DataExactCardinality: 2
+      DataMinCardinality: 1
+      ObjectAllValuesFrom: 12
+      ObjectComplementOf: 1
+      ObjectExactCardinality: 13
+      ObjectIntersectionOf: 50
+      ObjectMinCardinality: 2
+      ObjectSomeValuesFrom: 156
+      ObjectUnionOf: 17
+    'Info: Does the ontology fall under OWL 2 DL?': false
+    'Info: Experimental OBO score':
+      _dashboard: 0.639
+      _formula: (1*impact+1*dashboard)/2
+      _impact: 0.022
+      _impact_external: 0
+      _reuse: 0.576
+      oboscore: 0.331
+    'Info: How many externally documented uses?': 0
+    'Info: How many ontologies use it?': 4
+    'Info: Logical consistency': true
+    'Info: Syntax': RDF/XML Syntax
+    'Info: Usage of namespaces in axioms':
+      BFO: 390
+      CHEBI: 8
+      DRON: 36
+      IAO: 1733
+      NCBITaxon: 14
+      OBI: 176
+      OGMS: 25
+      OMIABIS: 28
+      OMRSE: 80
+      OPMI: 25
+      PATO: 36
+      PDRO: 631
+      RO: 100
+      UO: 15
+      dc: 2
+      dc11: 17
+      foaf: 2
+      obo: 13
+      oboInOwl: 101
+      owl: 20
+      prefix_unknown: 3
+      protege: 1
+      rdf: 1
+      rdfs: 790
+    'Info: Which ontologies use it?':
+    - cto
+    - eupath
+    - gecko
+    - labo
+    - pdro
   mirror_from: http://purl.obolibrary.org/obo/pdro.owl
   namespace: pdro
-  sha256_hash: f725a9ade2ce38a59424c8a0c9b7a7b863a1f1f1b8cfbe911f0501fc3ff77d14
+  results:
+    FP01 Open:
+      comment: Missing ontology license.
+      status: ERROR
+    FP02 Common Format:
+      status: PASS
+    FP03 URIs:
+      status: PASS
+    FP04 Versioning:
+      comment: Version IRI 'http://purl.obolibrary.org/obo/2020-02-05/pdro.owl' is
+        not in recommended format
+      status: WARN
+    FP05 Scope:
+      status: PASS
+    FP06 Textual Definitions:
+      comment: 268 multiple definitions. 17 missing definitions. See ROBOT Report
+        for details.
+      status: ERROR
+    FP07 Relations:
+      comment: 2 non-RO properties used.
+      file: fp7
+      status: INFO
+    FP08 Documented:
+      status: PASS
+    FP09 Plurality of Users:
+      comment: Missing usages
+      status: ERROR
+    FP11 Locus of Authority:
+      status: PASS
+    FP12 Naming Conventions:
+      comment: 284 multiple labels. See ROBOT Report for details.
+      status: ERROR
+    FP16 Maintenance:
+      comment: Version IRI does not have date information
+      status: INFO
+    ROBOT Report:
+      comment: 556 errors, 25 warnings, 37 info messages.
+      file: robot_report
+      results:
+        ERROR: 556
+        INFO: 37
+        WARN: 25
+      status: ERROR
+  sha256_hash: b545b97a9879b041c93e64cae9c634f02a7aeb8727258ad2a8b4d7b49514e4e4
+  summary:
+    comment: 5 errors
+    status: ERROR
+    summary_count:
+      ERROR: 5
+      INFO: 2
+      WARN: 1
+  version: http://purl.obolibrary.org/obo/2020-02-05/pdro.owl
 - base_generated: true
   base_prefixes:
   - PdumDv
