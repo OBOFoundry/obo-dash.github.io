@@ -5,54 +5,55 @@ base_prefixes:
 changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 8356
-    Declaration: 1510
-    EquivalentClasses: 550
-    SubClassOf: 677
-  'Axioms: Number of axioms': 11093
-  'Entities: % of entities reused': 30.68
+    AnnotationAssertion: 9027
+    Declaration: 1647
+    EquivalentClasses: 586
+    SubClassOf: 774
+  'Axioms: Number of axioms': 12034
+  'Entities: % of entities reused': 29.89
   'Entities: Number of annotation properties': 20
-  'Entities: Number of classes': 1489
+  'Entities: Number of classes': 1625
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
-  'Entities: Number of object properties': 6
+  'Entities: Number of object properties': 7
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 4491
-    ObjectIntersectionOf: 550
-    ObjectSomeValuesFrom: 869
+    Class: 5048
+    ObjectIntersectionOf: 705
+    ObjectSomeValuesFrom: 1047
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.735
+    _dashboard: 0.731
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.0
+    _impact: 0.006
     _impact_external: 0
-    _reuse: 0.307
-    oboscore: 0.367
+    _reuse: 0.299
+    oboscore: 0.368
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 0
+  'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 320
-    CHEBI: 396
-    FOODON: 100
+    BFO: 348
+    CHEBI: 508
+    FOODON: 104
     HP: 68
-    IAO: 973
-    MAXO: 3608
+    IAO: 1086
+    MAXO: 4103
     MAXOALT: 1
     NBO: 18
     NCIT: 2
-    OBI: 13
-    RO: 446
-    UBERON: 393
+    OBI: 14
+    PR: 28
+    RO: 474
+    UBERON: 435
     dc: 1
-    dc11: 1022
-    obo: 2
-    oboInOwl: 5614
-    owl: 36
-    rdfs: 1122
+    dc11: 1122
+    oboInOwl: 5977
+    owl: 43
+    rdfs: 1237
   'Info: Which ontologies use it?':
+  - ecto
   - maxo
 mirror_from: http://purl.obolibrary.org/obo/maxo/maxo-base.owl
 namespace: maxo
@@ -70,11 +71,11 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 4 duplicate definitions. 2 multiple definitions. 119 missing definitions.
-      See ROBOT Report for details.
+    comment: 6 multiple definitions. 123 missing definitions. See ROBOT Report for
+      details.
     status: ERROR
   FP07 Relations:
-    comment: 3 non-RO properties used.
+    comment: 4 non-RO properties used.
     file: fp7
     status: INFO
   FP08 Documented:
@@ -85,20 +86,21 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 2 duplicate labels. 4 multiple labels. 1 missing labels. See ROBOT Report
-      for details.
+    comment: 10 multiple labels. 1 missing labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
     status: PASS
+  FP20 Responsiveness:
+    status: PASS
   ROBOT Report:
-    comment: 53 errors, 152 warnings, 457 info messages.
+    comment: 62 errors, 125 warnings, 488 info messages.
     file: robot_report
     results:
-      ERROR: 53
-      INFO: 457
-      WARN: 152
+      ERROR: 62
+      INFO: 488
+      WARN: 125
     status: ERROR
-sha256_hash: 768c99882653b8163ae7d23d6def86731e1d8453fdb098c24ea93330fec812ec
+sha256_hash: d33ab9d3c02caea3f086f1df893e7b7b031b6a467e9c0f8098450bc2fb576d59
 summary:
   comment: 5 errors
   status: ERROR
@@ -106,4 +108,4 @@ summary:
     ERROR: 5
     INFO: 1
     WARN: 0
-version: http://purl.obolibrary.org/obo/maxo/releases/2020-12-10/maxo-base.owl
+version: http://purl.obolibrary.org/obo/maxo/releases/2021-03-22/maxo-base.owl

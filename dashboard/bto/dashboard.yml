@@ -2,50 +2,49 @@ base_generated: false
 base_prefixes:
 - BTO
 - BTOALT
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 34809
-    Declaration: 6464
+    AnnotationAssertion: 35236
+    Declaration: 6515
     SubAnnotationPropertyOf: 4
-    SubClassOf: 7543
-  'Axioms: Number of axioms': 48820
+    SubClassOf: 7588
+  'Axioms: Number of axioms': 49343
   'Entities: % of entities reused': 0.57
   'Entities: Number of annotation properties': 30
-  'Entities: Number of classes': 6428
+  'Entities: Number of classes': 6478
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
-  'Entities: Number of object properties': 9
+  'Entities: Number of object properties': 10
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 21514
-    ObjectSomeValuesFrom: 2879
+    Class: 21654
+    ObjectSomeValuesFrom: 2898
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.646
+    _dashboard: 0.645
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.023
+    _impact: 0.017
     _impact_external: 0
     _reuse: 0.006
-    oboscore: 0.335
+    oboscore: 0.331
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 4
+  'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 1834
-    BTO: 21514
-    BTOALT: 8
-    IAO: 5384
-    RO: 1054
-    oboInOwl: 28340
-    owl: 51
-    rdfs: 6512
+    BFO: 1841
+    BTO: 21654
+    BTOALT: 9
+    IAO: 5433
+    RO: 1066
+    oboInOwl: 28703
+    owl: 57
+    rdfs: 6570
   'Info: Which ontologies use it?':
   - bto
   - eupath
   - fypo
-  - genepio
   - opl
 mirror_from: http://purl.obolibrary.org/obo/bto/bto-base.owl
 namespace: bto
@@ -61,11 +60,13 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 958 duplicate definitions. 1071 missing definitions. See ROBOT Report
+    comment: 961 duplicate definitions. 1073 missing definitions. See ROBOT Report
       for details.
     status: ERROR
   FP07 Relations:
-    status: PASS
+    comment: 1 non-RO properties used.
+    file: fp7
+    status: INFO
   FP08 Documented:
     comment: homepage URL (http://www.brenda-enzymes.org) does not resolve
     status: ERROR
@@ -75,23 +76,26 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    status: PASS
+    comment: 4 duplicate labels. See ROBOT Report for details.
+    status: ERROR
   FP16 Maintenance:
     status: PASS
+  FP20 Responsiveness:
+    status: PASS
   ROBOT Report:
-    comment: 958 errors, 1136 warnings, 78 info messages.
+    comment: 965 errors, 1143 warnings, 78 info messages.
     file: robot_report
     results:
-      ERROR: 958
+      ERROR: 965
       INFO: 78
-      WARN: 1136
+      WARN: 1143
     status: ERROR
-sha256_hash: 942329b837fcf9ae71f38bc5b05e7e96ea2b476fae19ac74406b8c5a75cdb9ec
+sha256_hash: 075254d489c12be02f7d42e59bfcbb0fbce1acae4a7a1105dda603c92853f69a
 summary:
-  comment: 4 errors
+  comment: 5 errors
   status: ERROR
   summary_count:
-    ERROR: 4
-    INFO: 0
+    ERROR: 5
+    INFO: 1
     WARN: 0
-version: http://purl.obolibrary.org/obo/bto/releases/2020-05-02/bto-base.owl
+version: http://purl.obolibrary.org/obo/bto/releases/2021-02-09/bto-base.owl

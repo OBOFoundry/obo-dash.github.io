@@ -5,65 +5,66 @@ base_prefixes:
 changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 12924
-    Declaration: 3539
+    AnnotationAssertion: 13265
+    Declaration: 3640
     DisjointClasses: 36
-    EquivalentClasses: 1406
-    SubAnnotationPropertyOf: 6
-    SubClassOf: 3142
+    EquivalentClasses: 1428
+    SubAnnotationPropertyOf: 7
+    SubClassOf: 3293
     SubObjectPropertyOf: 2
-  'Axioms: Number of axioms': 21055
-  'Entities: % of entities reused': 31.9
-  'Entities: Number of annotation properties': 42
-  'Entities: Number of classes': 3469
+  'Axioms: Number of axioms': 21671
+  'Entities: % of entities reused': 32.03
+  'Entities: Number of annotation properties': 46
+  'Entities: Number of classes': 3564
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
-  'Entities: Number of object properties': 30
+  'Entities: Number of object properties': 32
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 15534
+    Class: 16006
     ObjectAllValuesFrom: 10
     ObjectComplementOf: 11
-    ObjectIntersectionOf: 1421
-    ObjectSomeValuesFrom: 3675
+    ObjectIntersectionOf: 1442
+    ObjectSomeValuesFrom: 3817
     ObjectUnionOf: 4
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.934
+    _dashboard: 0.932
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.258
+    _impact: 0.263
     _impact_external: 0.25
-    _reuse: 0.319
-    oboscore: 0.596
+    _reuse: 0.32
+    oboscore: 0.598
   'Info: How many externally documented uses?': 2
-  'Info: How many ontologies use it?': 46
+  'Info: How many ontologies use it?': 47
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 1107
+    BFO: 1125
     CHEBI: 2
-    CL: 11208
-    CLALT: 426
-    GO: 932
-    IAO: 2050
-    NCBITaxon: 81
-    PATO: 113
-    PATOALT: 10
-    PR: 1523
+    CL: 11511
+    CLALT: 428
+    GO: 952
+    IAO: 2113
+    NCBITaxon: 107
+    PATO: 129
+    PATOALT: 2
+    PR: 1563
     PRALT: 2
-    RO: 1305
+    RO: 1437
     SIO: 1
-    UBERON: 1626
+    UBERON: 1693
     UBERONALT: 6
     dc: 1
-    dc11: 60
+    dc11: 88
+    foaf: 2
     obo: 51
-    oboInOwl: 11071
+    oboInOwl: 11329
     owl: 130
     prefix_unknown: 3
     rdf: 4
-    rdfs: 2944
-    xsd: 943
+    rdfs: 3007
+    xsd: 945
   'Info: Which ontologies use it?':
   - aeo
   - amphx
@@ -100,6 +101,7 @@ metrics:
   - ohmi
   - ohpi
   - omiabis
+  - one
   - opl
   - ornaseq
   - pato
@@ -142,15 +144,17 @@ results:
     status: PASS
   FP16 Maintenance:
     status: PASS
+  FP20 Responsiveness:
+    status: PASS
   ROBOT Report:
-    comment: 400 warnings, 308 info messages.
+    comment: 400 warnings, 331 info messages.
     file: robot_report
     results:
       ERROR: 0
-      INFO: 308
+      INFO: 331
       WARN: 400
     status: WARN
-sha256_hash: 5620999fad12df9420b0e216a69f1862bafde8142b35b4cb1fd98734d97db054
+sha256_hash: 65e104a62579f7b86f4987790a44ab34b5fd8bf683c7cbb3d6d1b2f45b43d97f
 summary:
   comment: 2 warnings
   status: WARN
@@ -158,4 +162,4 @@ summary:
     ERROR: 0
     INFO: 1
     WARN: 2
-version: http://purl.obolibrary.org/obo/cl/releases/2021-01-22/cl-base.owl
+version: http://purl.obolibrary.org/obo/cl/releases/2021-04-22/cl-base.owl

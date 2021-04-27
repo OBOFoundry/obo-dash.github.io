@@ -6,8 +6,8 @@ base_prefixes:
 changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 7381
-    Declaration: 1446
+    AnnotationAssertion: 7405
+    Declaration: 1447
     DisjointClasses: 1
     EquivalentClasses: 126
     FunctionalObjectProperty: 1
@@ -18,7 +18,7 @@ metrics:
     SubObjectPropertyOf: 3
     SubPropertyChainOf: 4
     TransitiveObjectProperty: 5
-  'Axioms: Number of axioms': 10081
+  'Axioms: Number of axioms': 10106
   'Entities: % of entities reused': 10.1
   'Entities: Number of annotation properties': 86
   'Entities: Number of classes': 1351
@@ -32,12 +32,12 @@ metrics:
     ObjectSomeValuesFrom: 54
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.68
+    _dashboard: 0.679
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.017
     _impact_external: 0.25
     _reuse: 0.101
-    oboscore: 0.349
+    oboscore: 0.348
   'Info: How many externally documented uses?': 1
   'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
@@ -48,15 +48,15 @@ metrics:
     FBCVALT: 110
     FBcv: 3665
     FBdv: 3
-    IAO: 1192
+    IAO: 1197
     RO: 30
     cc: 1
     dc: 1
-    dc11: 4
+    dc11: 5
     obo: 12
-    oboInOwl: 5680
+    oboInOwl: 5695
     owl: 183
-    rdfs: 1554
+    rdfs: 1558
   'Info: Which ontologies use it?':
   - apollo_sv
   - dpo
@@ -76,7 +76,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 35 duplicate definitions. 12 multiple definitions. 111 missing definitions.
+    comment: 34 duplicate definitions. 12 multiple definitions. 113 missing definitions.
       See ROBOT Report for details.
     status: ERROR
   FP07 Relations:
@@ -90,20 +90,22 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 2 duplicate labels. 22 multiple labels. 75 missing labels. See ROBOT
+    comment: 2 duplicate labels. 24 multiple labels. 76 missing labels. See ROBOT
       Report for details.
     status: ERROR
   FP16 Maintenance:
     status: PASS
+  FP20 Responsiveness:
+    status: PASS
   ROBOT Report:
-    comment: 146 errors, 366 warnings, 203 info messages.
+    comment: 148 errors, 368 warnings, 203 info messages.
     file: robot_report
     results:
-      ERROR: 146
+      ERROR: 148
       INFO: 203
-      WARN: 366
+      WARN: 368
     status: ERROR
-sha256_hash: 20c241f6125516e56e78f99f075b8c8ecfad4a32c8309c2f16e66c8940cdc937
+sha256_hash: 67b1f8346a5020682b08eb8af8b5bbf82fea8633f2f0f86b373914ed7f3a45eb
 summary:
   comment: 4 errors
   status: ERROR
@@ -111,4 +113,4 @@ summary:
     ERROR: 4
     INFO: 0
     WARN: 0
-version: http://purl.obolibrary.org/obo/fbcv/releases/2021-01-14/fbcv-base.owl
+version: http://purl.obolibrary.org/obo/fbcv/releases/2021-03-11/fbcv-base.owl

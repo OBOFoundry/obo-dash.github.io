@@ -5,80 +5,81 @@ base_prefixes:
 changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 381839
-    Declaration: 30279
-    DisjointClasses: 81
-    EquivalentClasses: 7463
+    AnnotationAssertion: 377880
+    Declaration: 30342
+    DisjointClasses: 80
+    EquivalentClasses: 7407
     SubAnnotationPropertyOf: 32
-    SubClassOf: 47744
+    SubClassOf: 47459
     SubObjectPropertyOf: 2
     SubPropertyChainOf: 7
     TransitiveObjectProperty: 1
-  'Axioms: Number of axioms': 467448
-  'Entities: % of entities reused': 19.38
+  'Axioms: Number of axioms': 463210
+  'Entities: % of entities reused': 19.22
   'Entities: Number of annotation properties': 85
-  'Entities: Number of classes': 30172
+  'Entities: Number of classes': 30235
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 29
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 148602
-    ObjectIntersectionOf: 7449
-    ObjectSomeValuesFrom: 17004
+    Class: 147918
+    ObjectIntersectionOf: 7393
+    ObjectSomeValuesFrom: 16878
     ObjectUnionOf: 14
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.737
+    _dashboard: 0.692
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.022
+    _impact: 0.028
     _impact_external: 0.5
-    _reuse: 0.194
-    oboscore: 0.38
+    _reuse: 0.192
+    oboscore: 0.36
   'Info: How many externally documented uses?': 5
-  'Info: How many ontologies use it?': 4
+  'Info: How many ontologies use it?': 5
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 82
-    CARO: 135
-    CHEBI: 121
-    CL: 574
+    BFO: 84
+    CARO: 134
+    CHEBI: 109
+    CL: 577
     ECTO: 109
     ENVO: 42
-    FOODON: 41
-    GO: 1096
-    HGNC: 10161
-    HP: 2117
-    IAO: 17350
+    FOODON: 2
+    GO: 1100
+    HGNC: 10184
+    HP: 2082
+    IAO: 17594
     MF: 20
     MFOEM: 3
     MFOMD: 13
-    MONDO: 127251
-    MONDOALT: 1745
+    MONDO: 126693
+    MONDOALT: 1743
     NBO: 13
-    NCBITaxon: 1598
+    NCBITaxon: 1549
     NCIT: 75
     OBA: 2
     PATO: 336
     PO: 3
-    PR: 59
-    RO: 16396
+    PR: 60
+    RO: 16308
     SO: 25
-    UBERON: 4766
+    UBERON: 4743
     dc11: 111
-    obo: 5
-    oboInOwl: 523176
-    owl: 2082
-    rdf: 3
-    rdfs: 28663
-    skos: 88140
-    xsd: 35149
+    obo: 2
+    oboInOwl: 513381
+    owl: 2336
+    rdf: 2
+    rdfs: 29016
+    skos: 88187
+    xsd: 34984
   'Info: Which ontologies use it?':
+  - duo
   - gecko
+  - ico
   - mondo
   - ohmi
-  - ons
   - opmi
 mirror_from: http://purl.obolibrary.org/obo/mondo/mondo-base.owl
 namespace: mondo
@@ -94,8 +95,9 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 7328 missing definitions. See ROBOT Report for details.
-    status: WARN
+    comment: 2 duplicate definitions. 7213 missing definitions. See ROBOT Report for
+      details.
+    status: ERROR
   FP07 Relations:
     comment: 10 non-RO properties used.
     file: fp7
@@ -107,24 +109,26 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 251 missing labels. See ROBOT Report for details.
+    comment: 252 missing labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
     status: PASS
+  FP20 Responsiveness:
+    status: PASS
   ROBOT Report:
-    comment: 256 errors, 10636 warnings, 146 info messages.
+    comment: 262 errors, 8984 warnings, 145 info messages.
     file: robot_report
     results:
-      ERROR: 256
-      INFO: 146
-      WARN: 10636
+      ERROR: 262
+      INFO: 145
+      WARN: 8984
     status: ERROR
-sha256_hash: 6d8ae936c7c021ffa5e8e3af0e9b623032e73a1a6b81799100a6b3880955d4f0
+sha256_hash: 0634e89e8e624622bb7b293422a84a98081c717676ed56db5915e842e3353e99
 summary:
-  comment: 2 errors
+  comment: 3 errors
   status: ERROR
   summary_count:
-    ERROR: 2
+    ERROR: 3
     INFO: 1
-    WARN: 1
-version: http://purl.obolibrary.org/obo/mondo/releases/2021-01-15/mondo-base.owl
+    WARN: 0
+version: http://purl.obolibrary.org/obo/mondo/releases/2021-04-07/mondo-base.owl

@@ -2,81 +2,81 @@ base_generated: false
 base_prefixes:
 - OBI
 - OBIALT
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 20768
-    ClassAssertion: 280
+    AnnotationAssertion: 23700
+    ClassAssertion: 244
     DataPropertyDomain: 3
     DataPropertyRange: 1
-    Declaration: 3717
+    Declaration: 4351
     DisjointClasses: 21
-    EquivalentClasses: 822
+    EquivalentClasses: 885
     InverseObjectProperties: 5
     ObjectPropertyAssertion: 10
     ObjectPropertyDomain: 19
     ObjectPropertyRange: 17
     SubAnnotationPropertyOf: 4
-    SubClassOf: 4146
+    SubClassOf: 5344
     SubDataPropertyOf: 1
     SubObjectPropertyOf: 29
     SymmetricObjectProperty: 1
     TransitiveObjectProperty: 1
-  'Axioms: Number of axioms': 29845
-  'Entities: % of entities reused': 13.91
+  'Axioms: Number of axioms': 34636
+  'Entities: % of entities reused': 13.89
   'Entities: Number of annotation properties': 53
-  'Entities: Number of classes': 3341
+  'Entities: Number of classes': 3974
   'Entities: Number of data properties': 5
-  'Entities: Number of individuals': 242
+  'Entities: Number of individuals': 243
   'Entities: Number of object properties': 72
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 15350
+    Class: 19079
     DataMinCardinality: 3
     DataSomeValuesFrom: 5
     ObjectAllValuesFrom: 78
     ObjectComplementOf: 11
     ObjectExactCardinality: 5
-    ObjectHasValue: 97
-    ObjectIntersectionOf: 1899
+    ObjectHasValue: 99
+    ObjectIntersectionOf: 3512
     ObjectMaxCardinality: 1
     ObjectMinCardinality: 3
     ObjectOneOf: 1
-    ObjectSomeValuesFrom: 4162
+    ObjectSomeValuesFrom: 6654
     ObjectUnionOf: 97
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.734
+    _dashboard: 0.733
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.418
+    _impact: 0.397
     _impact_external: 0.25
     _reuse: 0.139
-    oboscore: 0.576
+    oboscore: 0.565
   'Info: How many externally documented uses?': 2
-  'Info: How many ontologies use it?': 74
+  'Info: How many ontologies use it?': 71
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 1554
-    CHEBI: 175
+    BFO: 2208
+    CHEBI: 449
     CHMO: 10
-    CL: 82
+    CL: 189
     CLO: 38
     ENVO: 3
     GAZ: 2
-    GO: 461
+    GO: 473
     HP: 2
-    IAO: 17649
+    IAO: 20067
     IDO: 8
-    NCBITaxon: 65
-    OBI: 16212
+    NCBITaxon: 66
+    OBI: 20245
     OGMS: 28
     OMIABIS: 5
-    PATO: 44
-    PR: 43
-    RO: 1011
+    PATO: 53
+    PR: 136
+    RO: 1976
     SO: 25
-    UBERON: 205
+    UBERON: 220
     UO: 84
     dc: 2
     dc11: 82
@@ -85,7 +85,7 @@ metrics:
     owl: 124
     protege: 1
     rdf: 3
-    rdfs: 3266
+    rdfs: 3813
     xsd: 9
   'Info: Which ontologies use it?':
   - agro
@@ -104,14 +104,11 @@ metrics:
   - duo
   - eco
   - ecocore
-  - ecto
   - envo
-  - ero
   - eupath
   - fideo
   - foodon
   - gecko
-  - genepio
   - geno
   - geo
   - go
@@ -122,12 +119,11 @@ metrics:
   - iceo
   - ico
   - ido
+  - labo
   - maxo
   - mco
   - mfomd
   - micro
-  - mondo
-  - mp
   - mpio
   - mro
   - ncro
@@ -145,17 +141,18 @@ metrics:
   - omit
   - omrse
   - one
-  - ons
-  - ontoneo
   - oostt
   - opl
   - opmi
   - ornaseq
   - ovae
+  - pdro
   - ppo
   - pr
   - psdo
+  - rbo
   - rxno
+  - scdo
   - sepio
   - stato
   - swo
@@ -195,15 +192,17 @@ results:
     status: ERROR
   FP16 Maintenance:
     status: PASS
+  FP20 Responsiveness:
+    status: PASS
   ROBOT Report:
-    comment: 100 errors, 348 warnings, 1101 info messages.
+    comment: 100 errors, 356 warnings, 1163 info messages.
     file: robot_report
     results:
       ERROR: 100
-      INFO: 1101
-      WARN: 348
+      INFO: 1163
+      WARN: 356
     status: ERROR
-sha256_hash: f3257809a1c3382a1b7ba2c304198135a5d867ca9b424d058eb8a733d938be47
+sha256_hash: b30aab7387ef64daee225542b68360fe9854f6e5e97b0f080ce6fcee2bd9b63c
 summary:
   comment: 3 errors
   status: ERROR
@@ -211,4 +210,4 @@ summary:
     ERROR: 3
     INFO: 1
     WARN: 0
-version: http://purl.obolibrary.org/obo/obi/2020-08-26/obi-base.owl
+version: http://purl.obolibrary.org/obo/obi/2021-04-06/obi-base.owl

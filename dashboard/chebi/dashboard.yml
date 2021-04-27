@@ -2,48 +2,48 @@ base_generated: true
 base_prefixes:
 - CHEBI
 - CHEBIALT
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 2107612
-    Declaration: 155389
+    AnnotationAssertion: 2131602
+    Declaration: 156145
     InverseObjectProperties: 1
     SubAnnotationPropertyOf: 6
-    SubClassOf: 288545
+    SubClassOf: 290463
     TransitiveObjectProperty: 2
-  'Axioms: Number of axioms': 2551555
+  'Axioms: Number of axioms': 2578219
   'Entities: % of entities reused': 0.02
   'Entities: Number of annotation properties': 37
-  'Entities: Number of classes': 155342
+  'Entities: Number of classes': 156098
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 10
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 732432
-    ObjectSomeValuesFrom: 84810
+    Class: 737024
+    ObjectSomeValuesFrom: 85429
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.89
+    _dashboard: 0.579
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.401
+    _impact: 0.408
     _impact_external: 0.25
     _reuse: 0.0
-    oboscore: 0.645
+    oboscore: 0.493
   'Info: How many externally documented uses?': 2
-  'Info: How many ontologies use it?': 71
+  'Info: How many ontologies use it?': 73
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 3855
-    CHEBI: 732432
-    CHEBIALT: 40897
-    IAO: 86844
-    RO: 40084
-    obo: 853345
-    oboInOwl: 1548127
-    owl: 18498
-    rdfs: 136935
+    BFO: 3867
+    CHEBI: 737024
+    CHEBIALT: 41114
+    IAO: 87213
+    RO: 40474
+    obo: 858021
+    oboInOwl: 1571685
+    owl: 18507
+    rdfs: 137684
   'Info: Which ontologies use it?':
   - agro
   - apollo_sv
@@ -70,7 +70,6 @@ metrics:
   - fobi
   - foodon
   - fypo
-  - genepio
   - geno
   - go
   - gsso
@@ -97,17 +96,20 @@ metrics:
   - omiabis
   - omit
   - omp
-  - ons
+  - one
   - opmi
   - ornaseq
   - ovae
+  - pdro
   - peco
   - phipo
   - poro
   - pr
   - psdo
   - pso
+  - rbo
   - rxno
+  - scdo
   - stato
   - to
   - txpo
@@ -128,14 +130,15 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    comment: Version IRI 'http://purl.obolibrary.org/obo/chebi/195/chebi.owl' is not
+    comment: Version IRI 'http://purl.obolibrary.org/obo/chebi/198/chebi.owl' is not
       in recommended format
     status: WARN
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: ROBOT Report could not be generated
-    status: INFO
+    comment: 1050 duplicate definitions. 87284 missing definitions. See ROBOT Report
+      for details.
+    status: ERROR
   FP07 Relations:
     comment: 8 non-RO properties used.
     file: fp7
@@ -147,20 +150,27 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: ROBOT Report could not be generated
-    status: INFO
+    comment: 3 missing labels. See ROBOT Report for details.
+    status: ERROR
   FP16 Maintenance:
     comment: Version IRI does not have date information
     status: INFO
+  FP20 Responsiveness:
+    status: PASS
   ROBOT Report:
-    comment: ROBOT Report could not be generated.
-    status: INFO
-sha256_hash: 062137238e5845d3aedc94427fde2684d56a7cd94e851bba24f4d628c7abcbfe
+    comment: 1056 errors, 89211 warnings, 285 info messages.
+    file: robot_report
+    results:
+      ERROR: 1056
+      INFO: 285
+      WARN: 89211
+    status: ERROR
+sha256_hash: f69e25263f248185ed9ddd9db9d0ab0a8b65b759b2c3258f098b089a12d7605d
 summary:
-  comment: 1 errors
+  comment: 4 errors
   status: ERROR
   summary_count:
-    ERROR: 1
-    INFO: 5
+    ERROR: 4
+    INFO: 2
     WARN: 1
-version: http://purl.obolibrary.org/obo/chebi/195/chebi.owl
+version: http://purl.obolibrary.org/obo/chebi/198/chebi.owl

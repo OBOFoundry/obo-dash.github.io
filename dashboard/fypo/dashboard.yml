@@ -5,55 +5,55 @@ base_prefixes:
 changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 76311
-    Declaration: 9510
+    AnnotationAssertion: 77721
+    Declaration: 9634
     DisjointClasses: 1
-    EquivalentClasses: 5774
+    EquivalentClasses: 5835
     SubAnnotationPropertyOf: 2
-    SubClassOf: 9154
+    SubClassOf: 9269
     TransitiveObjectProperty: 1
-  'Axioms: Number of axioms': 100753
-  'Entities: % of entities reused': 19.81
+  'Axioms: Number of axioms': 102463
+  'Entities: % of entities reused': 19.65
   'Entities: Number of annotation properties': 36
-  'Entities: Number of classes': 9461
+  'Entities: Number of classes': 9585
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 19
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 54316
-    ObjectIntersectionOf: 6433
-    ObjectSomeValuesFrom: 21086
+    Class: 54967
+    ObjectIntersectionOf: 6498
+    ObjectSomeValuesFrom: 21325
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.89
+    _dashboard: 0.845
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0.25
-    _reuse: 0.198
-    oboscore: 0.445
+    _reuse: 0.196
+    oboscore: 0.422
   'Info: How many externally documented uses?': 1
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 6007
-    BTO: 209
-    CHEBI: 1723
-    CL: 752
-    FYPO: 32960
-    FYPOALT: 197
-    GO: 10096
-    IAO: 7826
-    PATO: 8056
+    BFO: 6005
+    BTO: 211
+    CHEBI: 1731
+    CL: 754
+    FYPO: 33394
+    FYPOALT: 198
+    GO: 10210
+    IAO: 7944
+    PATO: 8202
     PR: 27
-    RO: 10323
-    SO: 429
-    dc11: 556
-    obo: 3482
-    oboInOwl: 92605
-    owl: 314
-    rdfs: 10084
+    RO: 10428
+    SO: 438
+    dc11: 786
+    obo: 3532
+    oboInOwl: 94267
+    owl: 321
+    rdfs: 10246
   'Info: Which ontologies use it?':
   - fypo
 mirror_from: http://purl.obolibrary.org/obo/fypo/fypo-base.owl
@@ -70,8 +70,9 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 31 missing definitions. See ROBOT Report for details.
-    status: WARN
+    comment: 4 duplicate definitions. 31 missing definitions. See ROBOT Report for
+      details.
+    status: ERROR
   FP07 Relations:
     comment: 1 labels match RO labels. 7 non-RO properties used.
     file: fp7
@@ -86,20 +87,22 @@ results:
     status: PASS
   FP16 Maintenance:
     status: PASS
+  FP20 Responsiveness:
+    status: PASS
   ROBOT Report:
-    comment: 2 errors, 36 warnings, 2 info messages.
+    comment: 4 errors, 34 warnings, 2 info messages.
     file: robot_report
     results:
-      ERROR: 2
+      ERROR: 4
       INFO: 2
-      WARN: 36
+      WARN: 34
     status: ERROR
-sha256_hash: ebb147300bb01a13c007a008773dfc180ee01f1e2cfff0aa4a3ea84464516c68
+sha256_hash: b9e1deeac2f05e5f7fe7f66279b180198a8a8e5ea92f4c62e1a73bbce82450a9
 summary:
-  comment: 2 errors
+  comment: 3 errors
   status: ERROR
   summary_count:
-    ERROR: 2
+    ERROR: 3
     INFO: 0
-    WARN: 1
-version: http://purl.obolibrary.org/obo/fypo/releases/2021-01-27/fypo-base.owl
+    WARN: 0
+version: http://purl.obolibrary.org/obo/fypo/releases/2021-04-26/fypo-base.owl

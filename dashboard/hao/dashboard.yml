@@ -2,53 +2,53 @@ base_generated: true
 base_prefixes:
 - HAO
 - HAOALT
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 10293
+    AnnotationAssertion: 10337
     ClassAssertion: 5528
-    Declaration: 5318
+    Declaration: 5333
     DisjointClasses: 1
-    EquivalentClasses: 1
+    EquivalentClasses: 2
     ReflexiveObjectProperty: 4
-    SubClassOf: 4820
+    SubClassOf: 4844
     TransitiveObjectProperty: 4
-  'Axioms: Number of axioms': 25969
-  'Entities: % of entities reused': 52.42
+  'Axioms: Number of axioms': 26053
+  'Entities: % of entities reused': 52.28
   'Entities: Number of annotation properties': 16
-  'Entities: Number of classes': 2533
+  'Entities: Number of classes': 2548
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 2764
   'Entities: Number of object properties': 6
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 17707
-    ObjectIntersectionOf: 1
-    ObjectSomeValuesFrom: 5127
-  'Info: Does the ontology fall under OWL 2 DL?': true
+    Class: 17772
+    ObjectIntersectionOf: 2
+    ObjectSomeValuesFrom: 5140
+  'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.677
+    _dashboard: 0.681
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
-    _reuse: 0.524
-    oboscore: 0.339
+    _reuse: 0.523
+    oboscore: 0.341
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 1822
-    HAO: 14942
-    IAO: 2454
+    BFO: 1831
+    HAO: 15007
+    IAO: 2469
     OBO_REL: 4
     RO: 6
     foaf: 5530
     hymao: 8292
-    obo: 544
-    oboInOwl: 10188
+    obo: 548
+    oboInOwl: 10216
     owl: 83
-    rdfs: 2598
+    rdfs: 2613
   'Info: Which ontologies use it?':
   - hao
 mirror_from: http://purl.obolibrary.org/obo/hao.owl
@@ -78,25 +78,26 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 108 duplicate labels. See ROBOT Report for details.
+    comment: 110 duplicate labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
-    comment: last version (2018-04-26) is over two year(s) old
-    status: WARN
+    status: PASS
+  FP20 Responsiveness:
+    status: PASS
   ROBOT Report:
-    comment: 118 errors, 82 warnings, 21 info messages.
+    comment: 120 errors, 82 warnings, 23 info messages.
     file: robot_report
     results:
-      ERROR: 118
-      INFO: 21
+      ERROR: 120
+      INFO: 23
       WARN: 82
     status: ERROR
-sha256_hash: 6368dd1f7300d0ab36762d1e2aefcc2b5760eee883ac3b335053e931f9625da5
+sha256_hash: 976a0d0a8ca5c5b65c044729e1fdf4d86ddad00114b84e8753a635cbf6e96ac8
 summary:
   comment: 5 errors
   status: ERROR
   summary_count:
     ERROR: 5
     INFO: 0
-    WARN: 1
-version: http://purl.obolibrary.org/obo/hao/2018-04-26/hao.owl
+    WARN: 0
+version: http://purl.obolibrary.org/obo/hao/2021-03-05/hao.owl

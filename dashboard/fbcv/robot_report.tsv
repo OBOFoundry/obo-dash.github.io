@@ -9,7 +9,6 @@ ERROR	duplicate_definition	quinacrine mustard	textual definition	No description.
 ERROR	duplicate_definition	ICR 170	textual definition	No description.
 ERROR	duplicate_definition	aminopterin	textual definition	No description.
 ERROR	duplicate_definition	H3BO3	textual definition	No description.
-ERROR	duplicate_definition	sodium bisulphite	textual definition	No description.
 ERROR	duplicate_definition	diepoxybutane	textual definition	No description.
 ERROR	duplicate_definition	diepoxyoctane	textual definition	No description.
 ERROR	duplicate_definition	1,2:5,6-dibenzanthracene	textual definition	No description.
@@ -106,6 +105,7 @@ ERROR	missing_label	CHEBI:50102	label
 ERROR	missing_label	CHEBI:51052	label	
 ERROR	missing_label	CHEBI:67107	label	
 ERROR	missing_label	CHEBI:67142	label	
+ERROR	missing_label	dc11:source	label	
 ERROR	missing_label	oboInOwl:created_by	label	
 ERROR	missing_label	oboInOwl:creation_date	label	
 ERROR	missing_label	oboInOwl:id	label	
@@ -139,6 +139,8 @@ ERROR	multiple_labels	textual definition	label	textual definition
 ERROR	multiple_labels	has ontology root term	label	has ontology root term
 ERROR	multiple_labels	has ontology root term	label	has ontology root term@en
 ERROR	multiple_labels	has ontology root term	label	preferred_root
+ERROR	multiple_labels	term replaced by	label	term replaced by
+ERROR	multiple_labels	term replaced by	label	term replaced by@en
 ERROR	multiple_labels	inheres in	label	inheres in@en
 ERROR	multiple_labels	inheres in	label	inheres_in
 ERROR	multiple_labels	has member	label	has member
@@ -198,3 +200,521 @@ WARN	equivalent_pair	CHEBI:27919	owl:equivalentClass	<http://purl.obolibrary.org
 WARN	equivalent_pair	CHEBI:28262	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000578>
 WARN	equivalent_pair	CHEBI:28534	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000545>
 WARN	equivalent_pair	CHEBI:28741	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000557>
+WARN	equivalent_pair	CHEBI:28775	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000585>
+WARN	equivalent_pair	CHEBI:28830	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000815>
+WARN	equivalent_pair	CHEBI:28876	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000596>
+WARN	equivalent_pair	CHEBI:28901	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000814>
+WARN	equivalent_pair	CHEBI:28954	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000583>
+WARN	equivalent_pair	CHEBI:29865	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000574>
+WARN	equivalent_pair	CHEBI:30969	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000581>
+WARN	equivalent_pair	CHEBI:33118	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000555>
+WARN	equivalent_pair	CHEBI:34699	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000527>
+WARN	equivalent_pair	CHEBI:34873	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000735>
+WARN	equivalent_pair	CHEBI:35299	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000562>
+WARN	equivalent_pair	CHEBI:35702	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000580>
+WARN	equivalent_pair	CHEBI:35807	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000593>
+WARN	equivalent_pair	CHEBI:37595	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000543>
+WARN	equivalent_pair	CHEBI:37598	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000813>
+WARN	equivalent_pair	CHEBI:46790	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000570>
+WARN	equivalent_pair	CHEBI:50102	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000592>
+WARN	equivalent_pair	CHEBI:51052	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000569>
+WARN	equivalent_pair	CHEBI:67107	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000563>
+WARN	equivalent_pair	CHEBI:67142	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000548>
+WARN	missing_definition	CHEBI:13941	textual definition	
+WARN	missing_definition	CHEBI:16842	textual definition	
+WARN	missing_definition	CHEBI:16991	textual definition	
+WARN	missing_definition	CHEBI:17967	textual definition	
+WARN	missing_definition	CHEBI:19024	textual definition	
+WARN	missing_definition	CHEBI:19032	textual definition	
+WARN	missing_definition	CHEBI:19363	textual definition	
+WARN	missing_definition	CHEBI:19508	textual definition	
+WARN	missing_definition	CHEBI:19579	textual definition	
+WARN	missing_definition	CHEBI:20552	textual definition	
+WARN	missing_definition	CHEBI:20553	textual definition	
+WARN	missing_definition	CHEBI:20787	textual definition	
+WARN	missing_definition	CHEBI:21183	textual definition	
+WARN	missing_definition	CHEBI:21184	textual definition	
+WARN	missing_definition	CHEBI:21759	textual definition	
+WARN	missing_definition	CHEBI:22025	textual definition	
+WARN	missing_definition	CHEBI:22526	textual definition	
+WARN	missing_definition	CHEBI:23359	textual definition	
+WARN	missing_definition	CHEBI:23414	textual definition	
+WARN	missing_definition	CHEBI:23704	textual definition	
+WARN	missing_definition	CHEBI:23705	textual definition	
+WARN	missing_definition	CHEBI:23994	textual definition	
+WARN	missing_definition	CHEBI:23995	textual definition	
+WARN	missing_definition	CHEBI:24431	textual definition	
+WARN	missing_definition	CHEBI:24564	textual definition	
+WARN	missing_definition	CHEBI:24565	textual definition	
+WARN	missing_definition	CHEBI:24624	textual definition	
+WARN	missing_definition	CHEBI:24835	textual definition	
+WARN	missing_definition	CHEBI:24859	textual definition	
+WARN	missing_definition	CHEBI:25234	textual definition	
+WARN	missing_definition	CHEBI:25255	textual definition	
+WARN	missing_definition	CHEBI:25434	textual definition	
+WARN	missing_definition	CHEBI:25813	textual definition	
+WARN	missing_definition	CHEBI:25814	textual definition	
+WARN	missing_definition	CHEBI:25816	textual definition	
+WARN	missing_definition	CHEBI:25818	textual definition	
+WARN	missing_definition	CHEBI:25829	textual definition	
+WARN	missing_definition	CHEBI:26491	textual definition	
+WARN	missing_definition	CHEBI:26709	textual definition	
+WARN	missing_definition	CHEBI:26800	textual definition	
+WARN	missing_definition	CHEBI:27090	textual definition	
+WARN	missing_definition	CHEBI:27292	textual definition	
+WARN	missing_definition	CHEBI:27504	textual definition	
+WARN	missing_definition	CHEBI:27561	textual definition	
+WARN	missing_definition	CHEBI:27666	textual definition	
+WARN	missing_definition	CHEBI:27732	textual definition	
+WARN	missing_definition	CHEBI:27789	textual definition	
+WARN	missing_definition	CHEBI:27899	textual definition	
+WARN	missing_definition	CHEBI:27919	textual definition	
+WARN	missing_definition	CHEBI:28262	textual definition	
+WARN	missing_definition	CHEBI:28534	textual definition	
+WARN	missing_definition	CHEBI:28741	textual definition	
+WARN	missing_definition	CHEBI:28775	textual definition	
+WARN	missing_definition	CHEBI:28830	textual definition	
+WARN	missing_definition	CHEBI:28876	textual definition	
+WARN	missing_definition	CHEBI:28901	textual definition	
+WARN	missing_definition	CHEBI:28954	textual definition	
+WARN	missing_definition	CHEBI:29865	textual definition	
+WARN	missing_definition	CHEBI:30969	textual definition	
+WARN	missing_definition	CHEBI:33118	textual definition	
+WARN	missing_definition	CHEBI:34699	textual definition	
+WARN	missing_definition	CHEBI:34873	textual definition	
+WARN	missing_definition	CHEBI:35299	textual definition	
+WARN	missing_definition	CHEBI:35702	textual definition	
+WARN	missing_definition	CHEBI:35807	textual definition	
+WARN	missing_definition	CHEBI:37595	textual definition	
+WARN	missing_definition	CHEBI:37598	textual definition	
+WARN	missing_definition	CHEBI:46790	textual definition	
+WARN	missing_definition	CHEBI:50102	textual definition	
+WARN	missing_definition	CHEBI:51052	textual definition	
+WARN	missing_definition	CHEBI:67107	textual definition	
+WARN	missing_definition	CHEBI:67142	textual definition	
+WARN	missing_definition	precursor	textual definition	
+WARN	missing_definition	temporal qualifier	textual definition	
+WARN	missing_definition	phenotypic class	textual definition	
+WARN	missing_definition	expression array	textual definition	
+WARN	missing_definition	population of Drosophila	textual definition	
+WARN	missing_definition	population of cells	textual definition	
+WARN	missing_definition	has_age	textual definition	
+WARN	missing_definition	substage_of	textual definition	
+WARN	missing_definition	has role	textual definition	
+WARN	missing_definition	BrainName official abbreviation	textual definition	
+WARN	missing_definition	BRAND NAME	textual definition	
+WARN	missing_definition	FORMULA	textual definition	
+WARN	missing_definition	INN	textual definition	
+WARN	missing_definition	IUPAC NAME	textual definition	
+WARN	missing_definition	InChI	textual definition	
+WARN	missing_definition	InChIKey	textual definition	
+WARN	missing_definition	SMILES	textual definition	
+WARN	missing_definition	conditionality	textual definition	
+WARN	missing_definition	has role	textual definition	
+WARN	missing_definition	Systematic synonym	textual definition	
+WARN	missing_definition	description	textual definition	
+WARN	missing_definition	dc11:source	textual definition	
+WARN	missing_definition	title	textual definition	
+WARN	missing_definition	license	textual definition	
+WARN	missing_definition	subset_property	textual definition	
+WARN	missing_definition	synonym_type_property	textual definition	
+WARN	missing_definition	consider	textual definition	
+WARN	missing_definition	oboInOwl:created_by	textual definition	
+WARN	missing_definition	oboInOwl:creation_date	textual definition	
+WARN	missing_definition	has_alternative_id	textual definition	
+WARN	missing_definition	has_broad_synonym	textual definition	
+WARN	missing_definition	database_cross_reference	textual definition	
+WARN	missing_definition	has_exact_synonym	textual definition	
+WARN	missing_definition	has_narrow_synonym	textual definition	
+WARN	missing_definition	has_obo_format_version	textual definition	
+WARN	missing_definition	has_obo_namespace	textual definition	
+WARN	missing_definition	has_related_synonym	textual definition	
+WARN	missing_definition	has_scope	textual definition	
+WARN	missing_definition	oboInOwl:id	textual definition	
+WARN	missing_definition	in_subset	textual definition	
+WARN	missing_definition	shorthand	textual definition	
+WARN	duplicate_scoped_synonym	abnormal touch perception	has_exact_synonym	touch perception defective
+WARN	duplicate_scoped_synonym	abnormal touch perception	has_related_synonym	touch perception defective
+WARN	missing_obsolete_label	death certificate	label	death certificate
+WARN	missing_obsolete_label	In transgenic Drosophila (intraspecific)	label	In transgenic Drosophila (intraspecific)
+WARN	missing_obsolete_label	Whole-organism transient assay (intraspecific)	label	Whole-organism transient assay (intraspecific)
+WARN	missing_obsolete_label	temporal stage qualifier	label	temporal stage qualifier
+WARN	missing_obsolete_label	monophasic	label	monophasic
+WARN	missing_obsolete_label	relative temporal qualifier	label	relative temporal qualifier
+WARN	missing_obsolete_label	absolute temporal qualifier	label	absolute temporal qualifier
+WARN	missing_obsolete_label	postage stamp	label	postage stamp
+WARN	missing_obsolete_label	Baylor TE recombination mapping kit stock	label	Baylor TE recombination mapping kit stock
+WARN	missing_obsolete_label	penetrance qualifier	label	penetrance qualifier
+WARN	missing_obsolete_label	penetrance complete	label	penetrance complete
+WARN	missing_obsolete_label	penetrance incomplete	label	penetrance incomplete
+WARN	missing_obsolete_label	penetrance percent	label	penetrance percent
+WARN	missing_obsolete_label	expressivity qualifier	label	expressivity qualifier
+WARN	missing_obsolete_label	expressivity complete	label	expressivity complete
+WARN	missing_obsolete_label	expressivity incomplete	label	expressivity incomplete
+WARN	missing_obsolete_label	expressivity high	label	expressivity high
+WARN	missing_obsolete_label	expressivity low	label	expressivity low
+WARN	missing_obsolete_label	recessive visible allele recombination mapping stock	label	recessive visible allele recombination mapping stock
+WARN	missing_obsolete_label	dominant visible allele recombination mapping stock	label	dominant visible allele recombination mapping stock
+WARN	missing_obsolete_label	SNP recombination mapping stock	label	SNP recombination mapping stock
+WARN	missing_obsolete_label	transposable element mutagenesis stock	label	transposable element mutagenesis stock
+WARN	missing_obsolete_label	compartment	label	compartment
+WARN	missing_obsolete_label	anterior compartment	label	anterior compartment
+WARN	missing_obsolete_label	compartment boundary	label	compartment boundary
+WARN	missing_obsolete_label	anterior/posterior compartment boundary	label	anterior/posterior compartment boundary
+WARN	missing_obsolete_label	dorsal/ventral compartment boundary	label	dorsal/ventral compartment boundary
+WARN	missing_obsolete_label	dorsal compartment	label	dorsal compartment
+WARN	missing_obsolete_label	posterior compartment	label	posterior compartment
+WARN	missing_obsolete_label	ventral compartment	label	ventral compartment
+WARN	missing_obsolete_label	deficiency kit stock	label	deficiency kit stock
+WARN	missing_obsolete_label	transposase source for transposable element mutagenesis	label	transposase source for transposable element mutagenesis
+WARN	missing_obsolete_label	ammunition source for transposable element mutagenesis	label	ammunition source for transposable element mutagenesis
+WARN	missing_obsolete_label	contralateral	label	contralateral
+WARN	missing_obsolete_label	ipsilateral	label	ipsilateral
+WARN	missing_obsolete_label	gene expression qualifier	label	gene expression qualifier
+WARN	missing_obsolete_label	embryonic expression pattern	label	embryonic expression pattern
+WARN	missing_obsolete_label	maternal pattern	label	maternal pattern
+WARN	missing_obsolete_label	archive	label	archive
+WARN	missing_obsolete_label	balancer stock	label	balancer stock
+WARN	missing_obsolete_label	pair of homologous balancers	label	pair of homologous balancers
+WARN	missing_obsolete_label	recessive lethal balancer	label	recessive lethal balancer
+WARN	missing_obsolete_label	balancer for chromosome 1	label	balancer for chromosome 1
+WARN	missing_obsolete_label	balancer for chromosome 2	label	balancer for chromosome 2
+WARN	missing_obsolete_label	balancer for chromosome 3	label	balancer for chromosome 3
+WARN	missing_obsolete_label	pair of balancers for chromosome 2	label	pair of balancers for chromosome 2
+WARN	missing_obsolete_label	pair of balancers for chromosome 3	label	pair of balancers for chromosome 3
+WARN	missing_obsolete_label	dominant male sterile balancer	label	dominant male sterile balancer
+WARN	missing_obsolete_label	dominant female sterile balancer	label	dominant female sterile balancer
+WARN	missing_obsolete_label	dominant female sterile balancer for chromosome 2	label	dominant female sterile balancer for chromosome 2
+WARN	missing_obsolete_label	early	label	early
+WARN	missing_obsolete_label	dominant female sterile balancer for chromosome 3	label	dominant female sterile balancer for chromosome 3
+WARN	missing_obsolete_label	dominant male sterile balancer for chromosome 2	label	dominant male sterile balancer for chromosome 2
+WARN	missing_obsolete_label	late	label	late
+WARN	missing_obsolete_label	mid	label	mid
+WARN	missing_obsolete_label	n day	label	n day
+WARN	missing_obsolete_label	n hr	label	n hr
+WARN	missing_obsolete_label	dominant male sterile balancer for chromosome 3	label	dominant male sterile balancer for chromosome 3
+WARN	missing_obsolete_label	recessive lethal balancer for chromosome 1	label	recessive lethal balancer for chromosome 1
+WARN	missing_obsolete_label	recessive lethal balancer for chromosome 2	label	recessive lethal balancer for chromosome 2
+WARN	missing_obsolete_label	advertisement	label	advertisement
+WARN	missing_obsolete_label	booklet	label	booklet
+WARN	missing_obsolete_label	computer file	label	computer file
+WARN	missing_obsolete_label	demonstration	label	demonstration
+WARN	missing_obsolete_label	jigsaw puzzle	label	jigsaw puzzle
+WARN	missing_obsolete_label	microscope slides	label	microscope slides
+WARN	missing_obsolete_label	recording	label	recording
+WARN	missing_obsolete_label	slides	label	slides
+WARN	missing_obsolete_label	T-shirt	label	T-shirt
+WARN	missing_obsolete_label	tactile diagram	label	tactile diagram
+WARN	missing_obsolete_label	automatic genome annotation	label	automatic genome annotation
+WARN	missing_obsolete_label	recessive lethal balancer for chromosome 3	label	recessive lethal balancer for chromosome 3
+WARN	missing_obsolete_label	extracted wild-type chromosome 1	label	extracted wild-type chromosome 1
+WARN	missing_obsolete_label	extracted wild-type chromosome 2	label	extracted wild-type chromosome 2
+WARN	missing_obsolete_label	extracted wild-type chromosome 3	label	extracted wild-type chromosome 3
+WARN	missing_obsolete_label	extracted wild-type chromosome 4	label	extracted wild-type chromosome 4
+WARN	missing_obsolete_label	extracted wild-type chromosome Y	label	extracted wild-type chromosome Y
+WARN	missing_obsolete_label	isogenic chromosome 1	label	isogenic chromosome 1
+WARN	missing_obsolete_label	isogenic chromosome 2	label	isogenic chromosome 2
+WARN	missing_obsolete_label	isogenic chromosome 3	label	isogenic chromosome 3
+WARN	missing_obsolete_label	isogenic chromosome 4	label	isogenic chromosome 4
+WARN	missing_obsolete_label	P-element transposase source for transposable element mutagenesis	label	P-element transposase source for transposable element mutagenesis
+WARN	missing_obsolete_label	hobo transposase source for transposable element mutagenesis	label	hobo transposase source for transposable element mutagenesis
+WARN	missing_obsolete_label	piggyBac transposase source for transposable element mutagenesis	label	piggyBac transposase source for transposable element mutagenesis
+WARN	missing_obsolete_label	minos transposase source for transposable element mutagenesis	label	minos transposase source for transposable element mutagenesis
+WARN	missing_obsolete_label	polyphasic	label	polyphasic
+WARN	missing_obsolete_label	P-element ammunition for transposable element mutagenesis	label	P-element ammunition for transposable element mutagenesis
+WARN	missing_obsolete_label	hobo ammunition for transposable element mutagenesis	label	hobo ammunition for transposable element mutagenesis
+WARN	missing_obsolete_label	fully	label	fully
+WARN	missing_obsolete_label	good	label	good
+WARN	missing_obsolete_label	dosage compensation defective	label	dosage compensation defective
+WARN	missing_obsolete_label	tumorigenic	label	tumorigenic
+WARN	missing_obsolete_label	piggyBac ammunition for transposable element mutagenesis	label	piggyBac ammunition for transposable element mutagenesis
+WARN	missing_obsolete_label	synthetic	label	synthetic
+WARN	missing_obsolete_label	in vitro construct - other	label	in vitro construct - other
+WARN	missing_obsolete_label	minos ammunition for transposable element mutagenesis	label	minos ammunition for transposable element mutagenesis
+WARN	missing_obsolete_label	unclassified chemical	label	unclassified chemical
+WARN	missing_obsolete_label	dominant temperature-sensitive lethal balancer	label	dominant temperature-sensitive lethal balancer
+WARN	missing_obsolete_label	allele assay method	label	allele assay method
+WARN	missing_obsolete_label	In transgenic Drosophila	label	In transgenic Drosophila
+WARN	missing_obsolete_label	Whole-organism transient assay	label	Whole-organism transient assay
+WARN	missing_obsolete_label	Drosophila cell culture	label	Drosophila cell culture
+WARN	missing_obsolete_label	In transgenic Drosophila (allele of one drosophilid species in genome of another drosophilid)	label	In transgenic Drosophila (allele of one drosophilid species in genome of another drosophilid)
+WARN	missing_obsolete_label	Whole-organism transient assay (allele from one drosophilid species assayed in another drosophilid)	label	Whole-organism transient assay (allele from one drosophilid species assayed in another drosophilid)
+WARN	missing_obsolete_label	In transgenic Drosophila (allele of foreign species in genome of drosophilid)	label	In transgenic Drosophila (allele of foreign species in genome of drosophilid)
+WARN	missing_obsolete_label	Whole-organism transient assay (allele of foreign species assayed in drosophilid)	label	Whole-organism transient assay (allele of foreign species assayed in drosophilid)
+WARN	missing_obsolete_label	stock descriptor	label	stock descriptor
+WARN	missing_obsolete_label	extracted wild-type chromosome	label	extracted wild-type chromosome
+WARN	missing_obsolete_label	laboratory stock	label	laboratory stock
+WARN	missing_obsolete_label	selected wild-type stock	label	selected wild-type stock
+WARN	missing_obsolete_label	wild-type stock	label	wild-type stock
+WARN	missing_obsolete_label	isogenic stock	label	isogenic stock
+WARN	missing_obsolete_label	dominant temperature-sensitive lethal balancer for chromosome 2	label	dominant temperature-sensitive lethal balancer for chromosome 2
+WARN	missing_obsolete_label	dominant temperature-sensitive lethal balancer for chromosome 3	label	dominant temperature-sensitive lethal balancer for chromosome 3
+WARN	missing_obsolete_label	DrosDel Project deficiency core kit stock	label	DrosDel Project deficiency core kit stock
+WARN	missing_obsolete_label	Bloomington Stock Center deficiency kit stock	label	Bloomington Stock Center deficiency kit stock
+WARN	missing_obsolete_label	Exelixis deficiency kit stock	label	Exelixis deficiency kit stock
+WARN	missing_obsolete_label	duplication kit stock	label	duplication kit stock
+WARN	missing_obsolete_label	Cambridge 2 duplication kit stock	label	Cambridge 2 duplication kit stock
+WARN	missing_obsolete_label	Bloomington duplication kit stock	label	Bloomington duplication kit stock
+WARN	missing_obsolete_label	Gene Disruption Project stock	label	Gene Disruption Project stock
+WARN	missing_obsolete_label	sequenced strain	label	sequenced strain
+WARN	missing_obsolete_label	Golic gene replacement kit stock	label	Golic gene replacement kit stock
+WARN	missing_obsolete_label	Golic laboratory gene replacement kit stock	label	Golic laboratory gene replacement kit stock
+WARN	missing_obsolete_label	stock by cytotype	label	stock by cytotype
+WARN	missing_obsolete_label	H cytotype stock	label	H cytotype stock
+WARN	missing_obsolete_label	hobo family transposable element insertions present	label	hobo family transposable element insertions present
+WARN	missing_obsolete_label	hobo family transposable element insertions absent	label	hobo family transposable element insertions absent
+WARN	missing_obsolete_label	P cytotype stock	label	P cytotype stock
+WARN	missing_obsolete_label	P-element family transposable element insertions absent	label	P-element family transposable element insertions absent
+WARN	missing_obsolete_label	P-element family transposable element insertions present	label	P-element family transposable element insertions present
+WARN	missing_obsolete_label	mapping stock	label	mapping stock
+WARN	missing_obsolete_label	visible allele recombination mapping stock	label	visible allele recombination mapping stock
+WARN	missing_obsolete_label	meeting report	label	meeting report
+WARN	missing_obsolete_label	Vienna Drosophila RNAi Center	label	Vienna Drosophila RNAi Center
+WARN	missing_obsolete_label	frozen specimen	label	frozen specimen
+WARN	missing_obsolete_label	mutant stock	label	mutant stock
+WARN	missing_obsolete_label	DrosDel Project deficiency stock	label	DrosDel Project deficiency stock
+WARN	missing_obsolete_label	deficiency stock	label	deficiency stock
+WARN	missing_obsolete_label	inbred line	label	inbred line
+WARN	missing_obsolete_label	isofemale line	label	isofemale line
+WARN	missing_obsolete_label	recently collected stock	label	recently collected stock
+WARN	missing_obsolete_label	transposable element-containing stock	label	transposable element-containing stock
+WARN	missing_obsolete_label	duplication stock	label	duplication stock
+WARN	missing_obsolete_label	conference proceedings	label	conference proceedings
+WARN	missing_obsolete_label	sequenced whole genome stock	label	sequenced whole genome stock
+WARN	missing_obsolete_label	phiC31 based integration system	label	phiC31 based integration system
+WARN	missing_obsolete_label	phiC31 docking site stock	label	phiC31 docking site stock
+WARN	missing_obsolete_label	multi-female collection	label	multi-female collection
+WARN	missing_obsolete_label	gene descriptor	label	gene descriptor
+WARN	missing_obsolete_label	polymorphism assay	label	polymorphism assay
+WARN	missing_obsolete_label	RFLP	label	RFLP
+WARN	missing_obsolete_label	DNA sequence variant	label	DNA sequence variant
+WARN	missing_obsolete_label	endocytosis defective	label	endocytosis defective
+WARN	missing_obsolete_label	exocytosis defective	label	exocytosis defective
+WARN	missing_obsolete_label	lethal - all die before end of embryonic stage	label	lethal - all die before end of embryonic stage@en
+WARN	missing_obsolete_label	living stock	label	living stock
+WARN	missing_obsolete_label	molecular extract	label	molecular extract
+WARN	missing_obsolete_label	preserved specimen	label	preserved specimen
+WARN	missing_obsolete_label	E cytotype stock	label	E cytotype stock
+WARN	missing_obsolete_label	M cytotype stock	label	M cytotype stock
+WARN	missing_obsolete_label	genomic DNA	label	genomic DNA
+WARN	missing_obsolete_label	ethanol-preserved specimen	label	ethanol-preserved specimen
+WARN	missing_obsolete_label	pinned specimen	label	pinned specimen
+WARN	missing_obsolete_label	fluorescent balancer	label	fluorescent balancer
+WARN	missing_obsolete_label	lacZ balancer	label	lacZ balancer
+WARN	missing_obsolete_label	laboratory wild-type stock	label	laboratory wild-type stock
+WARN	missing_obsolete_label	collection	label	collection
+WARN	missing_obsolete_label	stock center collection	label	stock center collection
+WARN	missing_obsolete_label	laboratory collection	label	laboratory collection
+WARN	missing_obsolete_label	Saxton laboratory	label	Saxton laboratory
+WARN	missing_obsolete_label	Garcia-Bellido laboratory	label	Garcia-Bellido laboratory
+WARN	missing_obsolete_label	Nusslein-Volhard laboratory	label	Nusslein-Volhard laboratory
+WARN	missing_obsolete_label	Carpenter laboratory	label	Carpenter laboratory
+WARN	missing_obsolete_label	Artavanis laboratory	label	Artavanis laboratory
+WARN	missing_obsolete_label	Exelixis Drosophila Stock Collection at Harvard Medical School	label	Exelixis Drosophila Stock Collection at Harvard Medical School
+WARN	missing_obsolete_label	Bloomington Drosophila Stock Center	label	Bloomington Drosophila Stock Center
+WARN	missing_obsolete_label	San Diego Drosophila Species Stock Center	label	San Diego Drosophila Species Stock Center
+WARN	missing_obsolete_label	Szeged Drosophila Stock Centre	label	Szeged Drosophila Stock Centre
+WARN	missing_obsolete_label	Drosophila Genetic Resource Center	label	Drosophila Genetic Resource Center
+INFO	lowercase_definition	part_of	textual definition	a core relation that holds between a part and its whole@en
+INFO	lowercase_definition	has_part	textual definition	a core relation that holds between a whole and its part@en
+INFO	lowercase_definition	preceded_by	textual definition	<x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en>
+INFO	lowercase_definition	precedes	textual definition	<x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en>
+INFO	lowercase_definition	0-10% egg length	textual definition	0-10% of egg length from the posterior tip of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	0-20% egg length	textual definition	0-20% of egg length from the posterior tip of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	0-30% egg length	textual definition	0-30% of egg length from the posterior tip of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	0-40% egg length	textual definition	0-40% of egg length from the posterior tip of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	0-50% egg length	textual definition	0-50% of egg length from the posterior tip of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	0-60% egg length	textual definition	0-60% of egg length from the posterior tip of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	0-70% egg length	textual definition	0-70% of egg length from the posterior tip of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	0-80% egg length	textual definition	0-80% of egg length from the posterior tip of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	0-90% egg length	textual definition	0-90% of egg length from the posterior tip of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	10% egg length	textual definition	10% of egg length from the posterior tip of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	10-100% egg length	textual definition	10-100% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	10-20% egg length	textual definition	10-20% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	10-30% egg length	textual definition	10-30% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	10-40% egg length	textual definition	10-40% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	10-50% egg length	textual definition	10-50% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	10-60% egg length	textual definition	10-60% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	10-70% egg length	textual definition	10-70% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	10-80% egg length	textual definition	10-80% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	10-90% egg length	textual definition	10-90% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	20% egg length	textual definition	20% of egg length from the posterior tip of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	20-100% egg length	textual definition	20-100% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	20-30% egg length	textual definition	20-30% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	20-40% egg length	textual definition	20-40% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	20-50% egg length	textual definition	20-50% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	20-60% egg length	textual definition	20-60% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	20-70% egg length	textual definition	20-70% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	20-80% egg length	textual definition	20-80% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	20-90% egg length	textual definition	20-90% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	30% egg length	textual definition	30% of egg length from the posterior tip of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	30-100% egg length	textual definition	30-100% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	30-40% egg length	textual definition	30-40% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	30-50% egg length	textual definition	30-50% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	30-60% egg length	textual definition	30-60% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	30-70% egg length	textual definition	30-70% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	30-80% egg length	textual definition	30-80% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	30-90% egg length	textual definition	30-90% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	40% egg length	textual definition	40% of egg length from the posterior tip of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	40-100% egg length	textual definition	40-100% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	40-50% egg length	textual definition	40-50% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	40-60% egg length	textual definition	40-60% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	40-70% egg length	textual definition	40-70% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	40-80% egg length	textual definition	40-80% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	40-90% egg length	textual definition	40-90% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	50% egg length	textual definition	50% of egg length from the posterior tip of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	50-100% egg length	textual definition	50-100% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	50-60% egg length	textual definition	50-60% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	50-70% egg length	textual definition	50-70% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	50-80% egg length	textual definition	50-80% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	50-90% egg length	textual definition	50-90% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	60% egg length	textual definition	60% of egg length from the posterior tip of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	60-100% egg length	textual definition	60-100% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	60-80% egg length	textual definition	60-80% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	60-90% egg length	textual definition	60-90% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	70% egg length	textual definition	70% of egg length from the posterior tip of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	70-100% egg length	textual definition	70-100% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	70-80% egg length	textual definition	70-80% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	70-90% egg length	textual definition	70-90% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	80% egg length	textual definition	80% of egg length from the posterior tip of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	80-90% egg length	textual definition	80-90% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	90% egg length	textual definition	90% of egg length from the posterior tip of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	90-100% egg length	textual definition	90-100% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	alkylating agent	textual definition	.
+INFO	lowercase_definition	intercalating agent	textual definition	.
+INFO	lowercase_definition	enzyme inhibitor	textual definition	.
+INFO	lowercase_definition	60-70% egg length	textual definition	60-70% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	80-100% egg length	textual definition	80-100% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	inheres in	textual definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	inheres in part of	textual definition	q inheres in part of w if and only if there exists some p such that q inheres in p and p part of w.
+INFO	lowercase_definition	has member	textual definition	has member is a mereological relation between a collection and an item.
+INFO	lowercase_definition	towards	textual definition	q towards e2 if and only if q is a relational quality such that q inheres-in some e, and e != e2 and q is dependent on e2
+INFO	missing_superclass	CHEBI:13941	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:16842	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:16991	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:17967	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:19024	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:19032	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:19363	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:19508	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:19579	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:20552	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:20553	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:20787	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:21183	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:21184	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:21759	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:22025	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:22526	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:23359	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:23414	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:23704	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:23705	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:23994	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:23995	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:24431	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:24564	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:24565	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:24624	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:24835	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:24859	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:25234	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:25255	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:25434	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:25813	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:25814	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:25816	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:25818	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:25829	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:26491	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:26709	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:26800	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:27090	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:27292	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:27504	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:27561	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:27666	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:27732	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:27789	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:27899	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:27919	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:28262	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:28534	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:28741	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:28775	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:28830	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:28876	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:28901	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:28954	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:29865	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:30969	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:33118	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:34699	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:34873	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:35299	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:35702	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:35807	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:37595	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:37598	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:46790	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:50102	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:51052	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:67107	rdfs:subClassOf	
+INFO	missing_superclass	CHEBI:67142	rdfs:subClassOf	
+INFO	missing_superclass	FlyBase CV	rdfs:subClassOf	
+INFO	missing_superclass	alkylating agent	rdfs:subClassOf	
+INFO	missing_superclass	intercalating agent	rdfs:subClassOf	
+INFO	missing_superclass	enzyme inhibitor	rdfs:subClassOf	
+INFO	missing_superclass	heat sensitive amorphic allele	rdfs:subClassOf	
+INFO	missing_superclass	temperature conditional amorphic allele - genetic evidence	rdfs:subClassOf	
+INFO	missing_superclass	temperature conditional amorphic allele	rdfs:subClassOf	
+INFO	missing_superclass	cold sensitive amorphic allele - genetic evidence	rdfs:subClassOf	
+INFO	missing_superclass	heat sensitive amorphic allele - genetic evidence	rdfs:subClassOf	
+INFO	missing_superclass	cold sensitive amorphic allele - molecular evidence	rdfs:subClassOf	
+INFO	missing_superclass	heat sensitive amorphic allele - molecular evidence	rdfs:subClassOf	
+INFO	missing_superclass	temperature conditional amorphic allele - molecular evidence	rdfs:subClassOf	
+INFO	missing_superclass	temperature conditional loss of function allele	rdfs:subClassOf	
+INFO	missing_superclass	heat sensitive loss of function allele	rdfs:subClassOf	
+INFO	missing_superclass	cold sensitive loss of function allele	rdfs:subClassOf	
+INFO	missing_superclass	temperature conditional gain of function allele	rdfs:subClassOf	
+INFO	missing_superclass	heat sensitive gain of function allele	rdfs:subClassOf	
+INFO	missing_superclass	cold sensitive gain of function allele	rdfs:subClassOf	
+INFO	missing_superclass	temperature conditional hypomorphic allele	rdfs:subClassOf	
+INFO	missing_superclass	heat sensitive hypomorphic allele	rdfs:subClassOf	
+INFO	missing_superclass	cold sensitive hypomorphic allele	rdfs:subClassOf	
+INFO	missing_superclass	temperature conditional hypomorphic allele - genetic evidence	rdfs:subClassOf	
+INFO	missing_superclass	cold sensitive hypomorphic allele - genetic evidence	rdfs:subClassOf	
+INFO	missing_superclass	heat sensitive hypomorphic allele - genetic evidence	rdfs:subClassOf	
+INFO	missing_superclass	temperature conditional hypomorphic allele - molecular evidence	rdfs:subClassOf	
+INFO	missing_superclass	cold sensitive hypomorphic allele - molecular evidence	rdfs:subClassOf	
+INFO	missing_superclass	heat sensitive hypomorphic allele - molecular evidence	rdfs:subClassOf	
+INFO	missing_superclass	temperature conditional antimorphic allele	rdfs:subClassOf	
+INFO	missing_superclass	heat sensitive antimorphic allele	rdfs:subClassOf	
+INFO	missing_superclass	cold sensitive antimorphic allele	rdfs:subClassOf	
+INFO	missing_superclass	temperature conditional antimorphic allele - genetic evidence	rdfs:subClassOf	
+INFO	missing_superclass	cold sensitive antimorphic allele - genetic evidence	rdfs:subClassOf	
+INFO	missing_superclass	heat sensitive antimorphic allele - genetic evidence	rdfs:subClassOf	
+INFO	missing_superclass	temperature conditional antimorphic allele - molecular evidence	rdfs:subClassOf	
+INFO	missing_superclass	cold sensitive antimorphic allele - molecular evidence	rdfs:subClassOf	
+INFO	missing_superclass	heat sensitive antimorphic allele - molecular evidence	rdfs:subClassOf	
+INFO	missing_superclass	temperature conditional neomorphic allele	rdfs:subClassOf	
+INFO	missing_superclass	heat sensitive neomorphic allele	rdfs:subClassOf	
+INFO	missing_superclass	cold sensitive neomorphic allele	rdfs:subClassOf	
+INFO	missing_superclass	temperature conditional neomorphic allele - genetic evidence	rdfs:subClassOf	
+INFO	missing_superclass	cold sensitive neomorphic allele - genetic evidence	rdfs:subClassOf	
+INFO	missing_superclass	heat sensitive neomorphic allele - genetic evidence	rdfs:subClassOf	
+INFO	missing_superclass	temperature conditional neomorphic allele - molecular evidence	rdfs:subClassOf	
+INFO	missing_superclass	cold sensitive neomorphic allele - molecular evidence	rdfs:subClassOf	
+INFO	missing_superclass	heat sensitive neomorphic allele - molecular evidence	rdfs:subClassOf	
+INFO	missing_superclass	temperature conditional hypermorphic allele	rdfs:subClassOf	
+INFO	missing_superclass	heat sensitive hypermorphic allele	rdfs:subClassOf	
+INFO	missing_superclass	cold sensitive hypermorphic allele	rdfs:subClassOf	
+INFO	missing_superclass	temperature conditional hypermorphic allele - genetic evidence	rdfs:subClassOf	
+INFO	missing_superclass	cold sensitive hypermorphic allele - genetic evidence	rdfs:subClassOf	
+INFO	missing_superclass	heat sensitive hypermorphic allele - genetic evidence	rdfs:subClassOf	
+INFO	missing_superclass	temperature conditional hypermorphic allele - molecular evidence	rdfs:subClassOf	
+INFO	missing_superclass	cold sensitive hypermorphic allele - molecular evidence	rdfs:subClassOf	
+INFO	missing_superclass	heat sensitive hypermorphic allele - molecular evidence	rdfs:subClassOf	
+INFO	missing_superclass	cold sensitive amorphic allele	rdfs:subClassOf	
+INFO	missing_superclass	population of Drosophila	rdfs:subClassOf	
+INFO	missing_superclass	population of cells	rdfs:subClassOf	

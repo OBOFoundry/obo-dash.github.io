@@ -5,54 +5,53 @@ base_prefixes:
 changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 200385
-    Declaration: 54994
-    EquivalentClasses: 18618
+    AnnotationAssertion: 251555
+    Declaration: 46020
+    EquivalentClasses: 25494
     SubAnnotationPropertyOf: 1
-    SubClassOf: 73680
+    SubClassOf: 50653
     SubObjectPropertyOf: 17
-  'Axioms: Number of axioms': 347695
-  'Entities: % of entities reused': 32.62
+  'Axioms: Number of axioms': 373740
+  'Entities: % of entities reused': 0.18
   'Entities: Number of annotation properties': 23
-  'Entities: Number of classes': 54953
+  'Entities: Number of classes': 45979
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 21
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 295069
-    ObjectIntersectionOf: 18620
-    ObjectSomeValuesFrom: 37532
+    Class: 274399
+    ObjectIntersectionOf: 25496
+    ObjectSomeValuesFrom: 76280
     ObjectUnionOf: 1
-  'Info: Does the ontology fall under OWL 2 DL?': false
+  'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
     _dashboard: 0.889
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0.25
-    _reuse: 0.326
+    _reuse: 0.002
     oboscore: 0.445
   'Info: How many externally documented uses?': 1
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
-  'Info: Syntax': RDF/XML
+  'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 17998
+    BFO: 24989
     ECO: 23
     GO: 243
-    IAO: 54833
-    MRO: 264181
-    NCBITaxon: 18555
-    OBI: 18594
-    PR: 12766
-    RO: 18710
+    IAO: 75409
+    MRO: 340082
+    NCBITaxon: 25420
+    OBI: 25477
+    PR: 14005
+    RO: 25586
     SO: 5
     dc: 1
     dc11: 3
     obo: 4
-    owl: 17933
-    prefix_unknown: 71947
-    rdfs: 37127
+    owl: 78
+    rdfs: 46012
   'Info: Which ontologies use it?':
   - mro
 mirror_from: http://purl.obolibrary.org/obo/mro.owl
@@ -69,7 +68,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 37001 missing definitions. See ROBOT Report for details.
+    comment: 45884 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     comment: 3 non-RO properties used.
@@ -85,15 +84,17 @@ results:
     status: PASS
   FP16 Maintenance:
     status: PASS
+  FP20 Responsiveness:
+    status: PASS
   ROBOT Report:
-    comment: 37032 warnings, 0 info messages.
+    comment: 45917 warnings, 0 info messages.
     file: robot_report
     results:
       ERROR: 0
       INFO: 0
-      WARN: 37032
+      WARN: 45917
     status: WARN
-sha256_hash: 708be63b9c6416cd30ee6b73898aff4ab22ac71eb589801b48380c01137f097c
+sha256_hash: 9f3e481981e83c4e7515b5355523f3ee95bef64af9b8829a7fbf2d4feef47e10
 summary:
   comment: 2 warnings
   status: WARN
@@ -101,4 +102,4 @@ summary:
     ERROR: 0
     INFO: 1
     WARN: 2
-version: http://purl.obolibrary.org/obo/mro/2021-01-25/mro.owl
+version: http://purl.obolibrary.org/obo/mro/2021-04-15/mro.owl

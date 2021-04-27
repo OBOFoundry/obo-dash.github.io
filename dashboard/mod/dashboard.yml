@@ -2,47 +2,47 @@ base_generated: true
 base_prefixes:
 - MOD
 - MODALT
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 35158
-    Declaration: 2124
+    AnnotationAssertion: 35359
+    Declaration: 2134
     SubAnnotationPropertyOf: 14
-    SubClassOf: 3734
+    SubClassOf: 3725
     TransitiveObjectProperty: 4
-  'Axioms: Number of axioms': 41034
+  'Axioms: Number of axioms': 41236
   'Entities: % of entities reused': 0.94
   'Entities: Number of annotation properties': 32
-  'Entities: Number of classes': 2088
+  'Entities: Number of classes': 2098
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 4
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 9556
-    ObjectSomeValuesFrom: 157
+    Class: 9548
+    ObjectSomeValuesFrom: 156
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.584
+    _dashboard: 0.586
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.017
     _impact_external: 0
     _reuse: 0.009
-    oboscore: 0.3
+    oboscore: 0.301
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    IAO: 2093
-    MOD: 9556
-    MODALT: 193
-    oboInOwl: 39353
-    owl: 74
-    rdfs: 20775
+    IAO: 2103
+    MOD: 9548
+    MODALT: 192
+    oboInOwl: 39511
+    owl: 121
+    rdfs: 20877
   'Info: Which ontologies use it?':
+  - eupath
   - mod
-  - mp
   - pr
   - upheno
 mirror_from: http://purl.obolibrary.org/obo/mod.owl
@@ -61,7 +61,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 297 duplicate definitions. 14 missing definitions. See ROBOT Report for
+    comment: 246 duplicate definitions. 14 missing definitions. See ROBOT Report for
       details.
     status: ERROR
   FP07 Relations:
@@ -77,20 +77,22 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 14 duplicate labels. 1 missing labels. See ROBOT Report for details.
+    comment: 4 duplicate labels. 1 missing labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
     comment: Missing version IRI to check date
     status: ERROR
+  FP20 Responsiveness:
+    status: PASS
   ROBOT Report:
-    comment: 315 errors, 18949 warnings, 330 info messages.
+    comment: 254 errors, 19087 warnings, 281 info messages.
     file: robot_report
     results:
-      ERROR: 315
-      INFO: 330
-      WARN: 18949
+      ERROR: 254
+      INFO: 281
+      WARN: 19087
     status: ERROR
-sha256_hash: ccad90de9f545be78e6e658d37a5316562b7e1c28a7397fb9bc889a6613dbc64
+sha256_hash: a83952ab72d587017d95505ca06219ca6fa82f1d1ca17536ad63a2765d29f569
 summary:
   comment: 9 errors
   status: ERROR
