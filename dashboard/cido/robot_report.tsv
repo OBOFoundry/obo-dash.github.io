@@ -7,6 +7,8 @@ ERROR	duplicate_definition	COVID-19 diagnostic process by chest imaging	IAO:0000
 ERROR	duplicate_definition	COVID-19 diagnostic process by chest radiography	IAO:0000115	COVID-19 diagnostic process by thoracic imaging
 ERROR	duplicate_definition	chemical effective in vivo against virus	IAO:0000115	An object property that represents a relation between a chemical entity and a virus where the chemical has an effective role against viral infection in vivo
 ERROR	duplicate_definition	drug effective in vivo against virus	IAO:0000115	An object property that represents a relation between a chemical entity and a virus where the chemical has an effective role against viral infection in vivo
+ERROR	duplicate_definition	SARS-CoV-2 clade GR	IAO:0000115	A SARS-CoV-2 clade G variant virus that carries the combination of Spike D614G and Nucleocapsid RG203KR mutations.
+ERROR	duplicate_definition	SARS-CoV-2 GRY (B.1.1.7)	IAO:0000115	A SARS-CoV-2 clade G variant virus that carries the combination of Spike D614G and Nucleocapsid RG203KR mutations.
 ERROR	duplicate_definition	modulation of host response to SARS-CoV infection	IAO:0000115	A process that modulates host response to SARS-CoV viral infection
 ERROR	duplicate_definition	modulation of host response to MERS-CoV infection	IAO:0000115	A process that modulates host response to SARS-CoV viral infection
 ERROR	duplicate_definition	interruption to SARS-CoV cell invasion	IAO:0000115	A process that interrupts SARS-CoV viral entry to host cell
@@ -17,12 +19,14 @@ ERROR	duplicate_definition	interruption to viral infection	IAO:0000115	A process
 ERROR	duplicate_definition	interruption to coronaviral infection	IAO:0000115	A process that interrupts a viral infection in host
 ERROR	duplicate_definition	experimental drug substance	IAO:0000115	A drug substance that is experinentallly proven to be effective against SARS-CoV-2 infection, where the experiment can be done either in vivo or in vitro. The in vitro study is typically conducted using cell line cells.
 ERROR	duplicate_definition	COVID-19 drug substance	IAO:0000115	A drug substance that is experinentallly proven to be effective against SARS-CoV-2 infection, where the experiment can be done either in vivo or in vitro. The in vitro study is typically conducted using cell line cells.
+ERROR	duplicate_definition	COVID-19 diagnostic process by ELISA serological assay	IAO:0000115	A COVID-19 diagnostic process that uses an serological assay that tests the serum from the blood specimen by an Enzyme Linked Immunosorbent Assay (ELISA) screening test
+ERROR	duplicate_definition	COVID-19 ELISA serological diagnostic assay	IAO:0000115	A COVID-19 diagnostic process that uses an serological assay that tests the serum from the blood specimen by an Enzyme Linked Immunosorbent Assay (ELISA) screening test
 ERROR	multiple_definitions	COVID-19 diagnostic process by chest imaging	IAO:0000115	A COVID-19 diagnostic process that is performed by chest imaging. Thoracic imaging with chest radiography (CXR) and computed tomography (CT) are key tools for pulmonary disease diagnosis and management.
 ERROR	multiple_definitions	COVID-19 diagnostic process by chest imaging	IAO:0000115	COVID-19 diagnostic process by thoracic imaging
 ERROR	multiple_definitions	COVID-19 diagnostic process by chest radiography	IAO:0000115	A COVID-19 diagnostic process that is performed by chest radiography (CXR)
 ERROR	multiple_definitions	COVID-19 diagnostic process by chest radiography	IAO:0000115	COVID-19 diagnostic process by thoracic imaging
-ERROR	multiple_definitions	ORF3a-G251V	IAO:0000115	<ORF3a:G251V>
-ERROR	multiple_definitions	ORF3a-G251V	IAO:0000115	"<ORF3a:G251V is an ann-changing SNP variant that occurs at G26144T	at ORF3a protein of SARS-CoV-2 virus. It is a signature variation in SARS-CoV clade V.>"
+ERROR	multiple_definitions	NS3-G251V	IAO:0000115	<ORF3a:G251V>
+ERROR	multiple_definitions	NS3-G251V	IAO:0000115	an ann-changing SNP variant that occurs at G26144T at ORF3a protein of SARS-CoV-2 virus. It is a signature variation in SARS-CoV clade V.
 ERROR	multiple_definitions	human coronavirus patient	IAO:0000115	Hong Yu, Oliver He
 ERROR	multiple_definitions	human coronavirus patient	IAO:0000115	a human patient who is infected with coronavirus
 ERROR	multiple_definitions	human SARS patient	IAO:0000115	Hong Yu, Oliver He
@@ -37,6 +41,8 @@ ERROR	multiple_labels	FDA EUA laboratory	rdfs:label	FDA EUA laboratory
 ERROR	multiple_labels	FDA EUA laboratory	rdfs:label	FDA EUA laboratory@en
 WARN	duplicate_exact_synonym	SARS-CoV-2 clade V virus	IAO:0000118	SARS-CoV-2 type B.2 virus
 WARN	duplicate_exact_synonym	SARS-CoV-2 clade O virus	IAO:0000118	SARS-CoV-2 type B.2 virus
+WARN	duplicate_exact_synonym	SARS-CoV-2 clade GR	IAO:0000118	SARS-CoV-2 type B.1.1 virus
+WARN	duplicate_exact_synonym	SARS-CoV-2 GRY (B.1.1.7)	IAO:0000118	SARS-CoV-2 type B.1.1 virus
 WARN	duplicate_exact_synonym	coronaviral RTC proofreading	IAO:0000118	Coronaviral replication-transcription complex (RTC) proofreading
 WARN	duplicate_exact_synonym	SARS-CoV-2 RTC proofreading	IAO:0000118	Coronaviral replication-transcription complex (RTC) proofreading
 WARN	missing_definition	SARS-CoV disease (process)	IAO:0000115	
@@ -144,11 +150,28 @@ WARN	missing_definition	ligand role	IAO:0000115
 WARN	missing_definition	receptor role	IAO:0000115	
 WARN	missing_definition	enzyme activator role	IAO:0000115	
 WARN	missing_definition	rs12242C	IAO:0000115	
+WARN	missing_definition	coronavirus entry in endosome	IAO:0000115	
 WARN	missing_definition	human SNP variant	IAO:0000115	
 WARN	missing_definition	cleavage of angiotensin into angiotension II by ACE	IAO:0000115	
+WARN	missing_definition	coronavirus survival in host cell	IAO:0000115	
+WARN	missing_definition	coronavirus survival in lysosome	IAO:0000115	
+WARN	missing_definition	SARS-CoV-2 S-ACE2 binding	IAO:0000115	
+WARN	missing_definition	endocytosis inhibitor role	IAO:0000115	
+WARN	missing_definition	clathrin-mediated endocytosis inhibitor role	IAO:0000115	
+WARN	missing_definition	papain-like protease inhibitor role	IAO:0000115	
+WARN	missing_definition	CRISPR-based diagnotic assay for SARS-CoV-2	IAO:0000115	
+WARN	missing_definition	angiotensin II binding to angiotensin II type 1 receptor	IAO:0000115	
+WARN	missing_definition	SARS-CoV-2 clade GV	IAO:0000115	
+WARN	missing_definition	S-H69del	IAO:0000115	
+WARN	missing_definition	S-V70del	IAO:0000115	
+WARN	missing_definition	S-Y144del	IAO:0000115	
+WARN	missing_definition	S-N501Y	IAO:0000115	
+WARN	missing_definition	N-G204R	IAO:0000115	
+WARN	missing_definition	S-A222V	IAO:0000115	
 INFO	lowercase_definition	COVID-19 disease (process)	IAO:0000115	a coronavirus disease process that is induced by SARS-CoV-2
 INFO	lowercase_definition	catalyzed by	IAO:0000115	a subproperty of 'enabled by' that represents a relation between a protein and an enzyme where the protein is catalyzed by the enzyme in a catalytic reaction
 INFO	lowercase_definition	SARS-CoV-2 clade O virus	IAO:0000115	"a SARS-CoV-2 virus that belongs to clade O, which stands for \""Other\"", meaning it is not G, GH, GR, L, S, or V."
+INFO	lowercase_definition	NS3-G251V	IAO:0000115	an ann-changing SNP variant that occurs at G26144T at ORF3a protein of SARS-CoV-2 virus. It is a signature variation in SARS-CoV clade V.
 INFO	lowercase_definition	process capable of inducing phenotype	IAO:0000115	a causal relation between a process and a phenotype where the process is capable of inducing the phenotype.
 INFO	lowercase_definition	agent capable of inducing phenotype	IAO:0000115	a causal relation between a material entity and a phenotype where the material agent is capable of inducing the phenotype.
 INFO	lowercase_definition	human coronavirus patient	IAO:0000115	a human patient who is infected with coronavirus

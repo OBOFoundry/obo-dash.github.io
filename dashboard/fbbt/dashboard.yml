@@ -6,53 +6,51 @@ base_prefixes:
 changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 100896
-    Declaration: 13634
+    AnnotationAssertion: 101795
+    Declaration: 13752
     DisjointClasses: 60
-    EquivalentClasses: 4349
+    EquivalentClasses: 4375
     SubAnnotationPropertyOf: 49
-    SubClassOf: 32024
-  'Axioms: Number of axioms': 151012
-  'Entities: % of entities reused': 2.72
+    SubClassOf: 32111
+  'Axioms: Number of axioms': 152142
+  'Entities: % of entities reused': 2.78
   'Entities: Number of annotation properties': 85
-  'Entities: Number of classes': 13514
+  'Entities: Number of classes': 13637
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 38
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 91723
-    ObjectIntersectionOf: 4349
-    ObjectSomeValuesFrom: 28185
+    Class: 92113
+    ObjectIntersectionOf: 4375
+    ObjectSomeValuesFrom: 28238
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.72
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.022
     _impact_external: 0.25
-    _reuse: 0.027
+    _reuse: 0.028
     oboscore: 0.371
   'Info: How many externally documented uses?': 2
   'Info: How many ontologies use it?': 4
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 8334
+    BFO: 8420
     CARO: 2
     CL: 2
     FBBTALT: 103
-    FBbt: 88628
-    FBgn: 894
-    GO: 1277
-    IAO: 13023
+    FBbt: 88943
+    FBgn: 927
+    GO: 1308
+    IAO: 13147
     NCBITaxon: 3
-    PATO: 917
-    RO: 19783
-    dc: 1
-    dc11: 4
-    oboInOwl: 94172
-    owl: 890
-    rdfs: 16030
+    PATO: 928
+    RO: 19750
+    oboInOwl: 94989
+    owl: 902
+    rdfs: 16158
   'Info: Which ontologies use it?':
   - caro
   - dpo
@@ -73,7 +71,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 469 duplicate definitions. 426 missing definitions. See ROBOT Report
+    comment: 462 duplicate definitions. 426 missing definitions. See ROBOT Report
       for details.
     status: ERROR
   FP07 Relations:
@@ -88,15 +86,17 @@ results:
     status: PASS
   FP16 Maintenance:
     status: PASS
+  FP20 Responsiveness:
+    status: PASS
   ROBOT Report:
-    comment: 469 errors, 1969 warnings, 3324 info messages.
+    comment: 462 errors, 2005 warnings, 3330 info messages.
     file: robot_report
     results:
-      ERROR: 469
-      INFO: 3324
-      WARN: 1969
+      ERROR: 462
+      INFO: 3330
+      WARN: 2005
     status: ERROR
-sha256_hash: c8317cbf9ba85b2243da984d727bb747fc6c7377dc76abc30b85cbbc4d437c86
+sha256_hash: f41251d8465213d3df8089d25284892135774fd5d4c41445fdf9c0dd47d4d56c
 summary:
   comment: 2 errors
   status: ERROR
@@ -104,4 +104,4 @@ summary:
     ERROR: 2
     INFO: 0
     WARN: 0
-version: http://purl.obolibrary.org/obo/fbbt/releases/2021-01-14/fbbt-base.owl
+version: http://purl.obolibrary.org/obo/fbbt/releases/2021-03-11/fbbt-base.owl

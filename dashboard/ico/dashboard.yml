@@ -2,127 +2,127 @@ base_generated: true
 base_prefixes:
 - ICO
 - ICOALT
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 7313
+    AnnotationAssertion: 7252
+    AnnotationPropertyRangeOf: 1
     AsymmetricObjectProperty: 5
-    ClassAssertion: 31
+    ClassAssertion: 29
     DataPropertyAssertion: 1
     DataPropertyDomain: 5
     DataPropertyRange: 6
-    Declaration: 1223
+    Declaration: 1177
     DifferentIndividuals: 2
-    DisjointClasses: 22
-    EquivalentClasses: 105
-    EquivalentObjectProperties: 36
+    DisjointClasses: 21
+    EquivalentClasses: 109
+    EquivalentObjectProperties: 3
     FunctionalDataProperty: 4
     FunctionalObjectProperty: 5
-    InverseObjectProperties: 27
+    InverseObjectProperties: 28
     IrrefexiveObjectProperty: 6
-    ObjectPropertyDomain: 34
-    ObjectPropertyRange: 35
+    ObjectPropertyDomain: 36
+    ObjectPropertyRange: 37
     SubAnnotationPropertyOf: 7
-    SubClassOf: 1247
-    SubDataPropertyOf: 4
+    SubClassOf: 1214
     SubObjectPropertyOf: 66
     SubPropertyChainOf: 6
     TransitiveObjectProperty: 14
-  'Axioms: Number of axioms': 10204
-  'Entities: % of entities reused': 66.29
-  'Entities: Number of annotation properties': 80
-  'Entities: Number of classes': 1016
-  'Entities: Number of data properties': 7
+  'Axioms: Number of axioms': 10034
+  'Entities: % of entities reused': 73.04
+  'Entities: Number of annotation properties': 86
+  'Entities: Number of classes': 963
+  'Entities: Number of data properties': 6
   'Entities: Number of individuals': 26
-  'Entities: Number of object properties': 96
+  'Entities: Number of object properties': 97
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 4057
+    Class: 3955
     DataExactCardinality: 6
     DataMinCardinality: 2
-    ObjectAllValuesFrom: 21
+    ObjectAllValuesFrom: 23
     ObjectComplementOf: 3
     ObjectExactCardinality: 1
-    ObjectIntersectionOf: 175
+    ObjectIntersectionOf: 182
     ObjectMinCardinality: 2
-    ObjectOneOf: 4
-    ObjectSomeValuesFrom: 415
-    ObjectUnionOf: 16
+    ObjectOneOf: 3
+    ObjectSomeValuesFrom: 436
+    ObjectUnionOf: 18
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.781
+    _dashboard: 0.738
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.023
+    _impact: 0.017
     _impact_external: 0
-    _reuse: 0.663
-    oboscore: 0.402
+    _reuse: 0.73
+    oboscore: 0.378
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 4
+  'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 539
+    APOLLO_SV: 22
+    BFO: 537
     CHEBI: 25
     CHMO: 5
     CL: 15
-    DOID: 3
-    DUO: 140
+    DUO: 123
     ERO: 2
     FMA: 17
-    GAZ: 4
+    GAZ: 5
     GEO: 2
     GO: 2
-    IAO: 6519
-    ICO: 1238
-    NCBITaxon: 55
+    IAO: 6727
+    ICO: 855
+    MONDO: 3
+    NCBITaxon: 54
     NCIT: 4
     OAE: 2
-    OBI: 1321
+    OBI: 1371
     OBIB: 2
-    OGMS: 24
-    OMIABIS: 15
+    OGMS: 25
+    OMIABIS: 17
     OMRSE: 47
     OOSTT: 4
-    PATO: 22
-    RO: 367
+    PATO: 32
+    RO: 322
     SIO: 2
     UBERON: 204
     UO: 10
-    dc11: 87
-    foaf: 5
+    dc: 1
+    dc11: 86
+    foaf: 6
     obo: 28
-    oboInOwl: 190
-    owl: 123
-    prefix_unknown: 74
+    oboInOwl: 208
+    owl: 122
+    prefix_unknown: 69
     protege: 1
     rdf: 3
-    rdfs: 1535
-    xsd: 11
+    rdfs: 1459
+    skos: 7
+    xsd: 6
   'Info: Which ontologies use it?':
-  - genepio
   - ico
   - obib
-  - ons
   - opmi
+  - scdo
 mirror_from: http://purl.obolibrary.org/obo/ico.owl
 namespace: ico
 results:
   FP01 Open:
-    comment: License should use property 'http://purl.org/dc/terms/license'.
-    status: WARN
+    status: PASS
   FP02 Common Format:
     status: PASS
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    comment: Version IRI 'http://purl.obolibrary.org/obo/2020-08-27/ico.owl' is not
-      in recommended format
-    status: WARN
+    comment: Missing version IRI
+    status: ERROR
   FP05 Scope:
     comment: Missing domain (scope)
     status: ERROR
   FP06 Textual Definitions:
-    comment: 10 missing definitions. See ROBOT Report for details.
+    comment: 8 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     comment: 3 non-RO properties used.
@@ -138,22 +138,24 @@ results:
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
-    comment: Version IRI does not have date information
-    status: INFO
+    comment: Missing version IRI to check date
+    status: ERROR
+  FP20 Responsiveness:
+    status: PASS
   ROBOT Report:
-    comment: 2 errors, 10 warnings, 3 info messages.
+    comment: 8 warnings, 5 info messages.
     file: robot_report
     results:
-      ERROR: 2
-      INFO: 3
-      WARN: 10
-    status: ERROR
-sha256_hash: e773654d446cc8f4e828f9ed90b7c86864f9cb1f909d78f957f1b11b094888eb
+      ERROR: 0
+      INFO: 5
+      WARN: 8
+    status: WARN
+sha256_hash: 20f467e6e1bbe3bd9b4a184b7f0cf4f4d77e3793bf2caa7ddb6c99623d68810a
 summary:
-  comment: 3 errors
+  comment: 4 errors
   status: ERROR
   summary_count:
-    ERROR: 3
-    INFO: 2
-    WARN: 3
-version: http://purl.obolibrary.org/obo/2020-08-27/ico.owl
+    ERROR: 4
+    INFO: 1
+    WARN: 2
+version: null

@@ -2,59 +2,57 @@ base_generated: false
 base_prefixes:
 - NBO
 - NBOALT
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 4816
     Declaration: 1048
     DisjointClasses: 18
     EquivalentClasses: 153
-    SubClassOf: 1066
-  'Axioms: Number of axioms': 7101
-  'Entities: % of entities reused': 11.12
-  'Entities: Number of annotation properties': 20
-  'Entities: Number of classes': 1016
+    SubClassOf: 1067
+  'Axioms: Number of axioms': 7102
+  'Entities: % of entities reused': 11.29
+  'Entities: Number of annotation properties': 22
+  'Entities: Number of classes': 1017
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
-  'Entities: Number of object properties': 13
+  'Entities: Number of object properties': 12
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 3714
+    Class: 3717
     ObjectIntersectionOf: 150
     ObjectSomeValuesFrom: 323
     ObjectUnionOf: 2
-  'Info: Does the ontology fall under OWL 2 DL?': true
+  'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.737
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.079
+    _impact: 0.089
     _impact_external: 0
-    _reuse: 0.111
-    oboscore: 0.408
+    _reuse: 0.113
+    oboscore: 0.413
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 14
+  'Info: How many ontologies use it?': 16
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     BFO: 79
     CHEBI: 30
-    CHEBIALT: 3
-    GO: 135
+    GO: 137
     IAO: 761
-    NBO: 3398
+    NBO: 3399
     NBOALT: 139
     PATO: 129
-    PATOALT: 14
-    RO: 20
+    RO: 116
     UBERON: 22
-    UBERONALT: 79
     dc11: 801
-    obo: 2
+    obo: 1
     oboInOwl: 2302
     owl: 2
     rdfs: 969
   'Info: Which ontologies use it?':
   - apollo_sv
+  - dpo
   - ecto
   - hp
   - maxo
@@ -66,6 +64,7 @@ metrics:
   - nbo
   - oba
   - planp
+  - scdo
   - uberon
   - upheno
   - xpo
@@ -103,15 +102,17 @@ results:
     status: ERROR
   FP16 Maintenance:
     status: PASS
+  FP20 Responsiveness:
+    status: PASS
   ROBOT Report:
-    comment: 22 errors, 206 warnings, 605 info messages.
+    comment: 22 errors, 206 warnings, 604 info messages.
     file: robot_report
     results:
       ERROR: 22
-      INFO: 605
+      INFO: 604
       WARN: 206
     status: ERROR
-sha256_hash: de66aae68882704c998dade9db05f9ab1d4e16618912622418f9a826adce882b
+sha256_hash: 707f01555a01f34af14d8b57cc8edcadf7fcac91e5e7aaa79325940290afe90c
 summary:
   comment: 5 errors
   status: ERROR
@@ -119,4 +120,4 @@ summary:
     ERROR: 5
     INFO: 1
     WARN: 0
-version: http://purl.obolibrary.org/obo/nbo/releases/2020-02-10/nbo-base.owl
+version: http://purl.obolibrary.org/obo/nbo/releases/2021-02-15/nbo-base.owl

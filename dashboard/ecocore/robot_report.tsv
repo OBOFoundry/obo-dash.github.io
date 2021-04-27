@@ -1,11 +1,11 @@
 Level	Rule Name	Subject	Property	Value
 ERROR	missing_label	ENVO:01000063	rdfs:label	
 ERROR	missing_label	UBERON:0007197	rdfs:label	
-ERROR	missing_ontology_description	obo:ecocore/ecocore-base.owl	dc11:description	
+ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/ecocore/ecocore-base.owl	dc11:description	
 ERROR	multiple_definitions	sequentially hermaphroditic	definition	Sequential hermaphroditism occurs when the individual changes sex at some point in its life.
 ERROR	multiple_definitions	sequentially hermaphroditic	definition	a reproductive quality inhering in the bearer by virtue of the bearer changing sex at some point in its life
-ERROR	missing_ontology_license	obo:ecocore/ecocore-base.owl	dc:license	
-ERROR	missing_ontology_title	obo:ecocore/ecocore-base.owl	dc11:title	
+ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/ecocore/ecocore-base.owl	dc:license	
+ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/ecocore/ecocore-base.owl	dc11:title	
 ERROR	multiple_labels	secondary consumer	rdfs:label	A predator that eats primary consumers or herbivores
 ERROR	multiple_labels	secondary consumer	rdfs:label	secondary consumer
 WARN	missing_definition	crepuscular	definition	
@@ -48,5 +48,9 @@ INFO	lowercase_definition	aerobe	definition	an organism that can survive and gro
 INFO	lowercase_definition	prototroph	definition	an organism capable of producing all amino acids required for its growth
 INFO	lowercase_definition	auxotroph	definition	an organism that is unable to synthesize a particular organic compound required for its growth
 INFO	lowercase_definition	coprophage	definition	a decomposer which obtains nutrition by consuming feces
-INFO	missing_superclass	abnormal Entity (BFO)	rdfs:subClassOf	
+INFO	lowercase_definition	facultative anaerobe	definition	an anaerobe that makes ATP by aerobic respiration if oxygen is present, but is capable of switching to fermentation if oxygen is absent.
+INFO	lowercase_definition	obligate anaerobe	definition	an anaerobe that cannot grow in the presence of oxygen
+INFO	lowercase_definition	obligate aerobe	definition	an aerobe that requires oxygen to grow
+INFO	lowercase_definition	microaerophile	definition	an aerobe that can grow at oxygen levels lower than what is present in the atmosphere
+INFO	lowercase_definition	aerotolerant anaerobe	definition	an anaerobe that can tolerate low levels of oxygen
 INFO	missing_superclass	ENVO:01000063	rdfs:subClassOf	
