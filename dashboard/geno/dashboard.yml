@@ -2,7 +2,7 @@ base_generated: false
 base_prefixes:
 - GENO
 - GENOALT
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1796
@@ -41,14 +41,14 @@ metrics:
     ObjectUnionOf: 15
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.753
+    _dashboard: 0.752
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.006
+    _impact: 0.011
     _impact_external: 0
     _reuse: 0.386
-    oboscore: 0.38
+    oboscore: 0.382
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 1
+  'Info: How many ontologies use it?': 2
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -60,6 +60,7 @@ metrics:
     GENO: 1259
     GO: 3
     HP: 2
+    HsapDv: 2
     IAO: 1040
     MP: 2
     NCBIGENE: 8
@@ -77,13 +78,13 @@ metrics:
     dc: 6
     dc11: 2
     oban: 8
-    obo: 2
     oboInOwl: 53
     owl: 51
     rdf: 25
     rdfs: 734
     xsd: 18
   'Info: Which ontologies use it?':
+  - cido
   - doid
   - geno
 mirror_from: http://purl.obolibrary.org/obo/geno/geno-base.owl
@@ -119,6 +120,9 @@ results:
     comment: 2 duplicate labels. 28 multiple labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
+    comment: last version (2020-03-08) is over one year(s) old
+    status: INFO
+  FP20 Responsiveness:
     status: PASS
   ROBOT Report:
     comment: 55 errors, 159 warnings, 60 info messages.
@@ -134,6 +138,6 @@ summary:
   status: ERROR
   summary_count:
     ERROR: 5
-    INFO: 1
+    INFO: 2
     WARN: 0
 version: http://purl.obolibrary.org/obo/geno/releases/2020-03-08/geno-base.owl

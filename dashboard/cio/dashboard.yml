@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - CIO
 - CIOALT
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 185
@@ -57,8 +57,7 @@ mirror_from: http://purl.obolibrary.org/obo/cio.owl
 namespace: cio
 results:
   FP01 Open:
-    comment: Registry license 'https://www.gnu.org/licenses/gpl-3.0.en.html' is not
-      a valid open license. Missing ontology license.
+    comment: Missing ontology license.
     status: ERROR
   FP02 Common Format:
     status: PASS
@@ -85,6 +84,8 @@ results:
   FP16 Maintenance:
     comment: last version (2015-03-10) is over three year(s) old
     status: ERROR
+  FP20 Responsiveness:
+    status: PASS
   ROBOT Report:
     comment: 5 errors, 0 warnings, 1 info messages.
     file: robot_report

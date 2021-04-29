@@ -2,7 +2,7 @@ base_generated: false
 base_prefixes:
 - COB
 - COBALT
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 143
@@ -21,7 +21,7 @@ metrics:
     SubPropertyChainOf: 1
     TransitiveObjectProperty: 1
   'Axioms: Number of axioms': 493
-  'Entities: % of entities reused': 100.0
+  'Entities: % of entities reused': 45.56
   'Entities: Number of annotation properties': 13
   'Entities: Number of classes': 130
   'Entities: Number of data properties': 5
@@ -40,12 +40,12 @@ metrics:
   'Info: Experimental OBO score':
     _dashboard: 0.779
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.0
+    _impact: 0.006
     _impact_external: 0
-    _reuse: 1.0
-    oboscore: 0.39
+    _reuse: 0.456
+    oboscore: 0.393
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 0
+  'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -53,6 +53,7 @@ metrics:
     CARO: 6
     CHEBI: 17
     CL: 6
+    COB: 446
     ENVO: 6
     GO: 8
     IAO: 27
@@ -65,7 +66,6 @@ metrics:
     PR: 2
     dc: 1
     dc11: 2
-    obo: 446
     owl: 13
     rdf: 3
     rdfs: 124
@@ -73,6 +73,7 @@ metrics:
     xsd: 4
   'Info: Which ontologies use it?':
   - cob
+  - foodon
 mirror_from: http://purl.obolibrary.org/obo/cob/cob-base.owl
 namespace: cob
 results:
@@ -106,6 +107,8 @@ results:
   FP16 Maintenance:
     comment: Missing version IRI to check date
     status: ERROR
+  FP20 Responsiveness:
+    status: PASS
   ROBOT Report:
     comment: 4 errors, 138 warnings, 0 info messages.
     file: robot_report

@@ -5,43 +5,43 @@ base_prefixes:
 changed: false
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 1331
-    Declaration: 862
-    EquivalentClasses: 333
-    SubClassOf: 780
-  'Axioms: Number of axioms': 3306
-  'Entities: % of entities reused': 6.36
+    AnnotationAssertion: 1363
+    Declaration: 881
+    EquivalentClasses: 348
+    SubClassOf: 791
+  'Axioms: Number of axioms': 3383
+  'Entities: % of entities reused': 6.22
   'Entities: Number of annotation properties': 4
-  'Entities: Number of classes': 597
+  'Entities: Number of classes': 607
   'Entities: Number of data properties': 0
-  'Entities: Number of individuals': 261
+  'Entities: Number of individuals': 270
   'Entities: Number of object properties': 2
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 2638
+    Class: 2697
     ObjectAllValuesFrom: 44
-    ObjectIntersectionOf: 72
-    ObjectOneOf: 261
-    ObjectSomeValuesFrom: 72
+    ObjectIntersectionOf: 78
+    ObjectOneOf: 270
+    ObjectSomeValuesFrom: 78
     ObjectUnionOf: 44
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.639
+    _dashboard: 0.633
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.175
+    _impact: 0.162
     _impact_external: 0
-    _reuse: 0.064
-    oboscore: 0.407
+    _reuse: 0.062
+    oboscore: 0.398
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 31
+  'Info: How many ontologies use it?': 29
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     PATO: 96
-    UO: 3064
-    obo: 118
-    prefix_unknown: 400
-    rdfs: 933
+    UO: 3141
+    obo: 124
+    prefix_unknown: 413
+    rdfs: 952
   'Info: Which ontologies use it?':
   - agro
   - apollo_sv
@@ -50,15 +50,12 @@ metrics:
   - dideo
   - dron
   - duo
-  - ero
   - eupath
   - foodon
-  - genepio
   - geo
   - htn
   - iao
   - ico
-  - maxo
   - ms
   - obcs
   - obi
@@ -66,12 +63,13 @@ metrics:
   - ohmi
   - ohpi
   - omiabis
-  - omrse
   - one
-  - ons
   - oostt
   - opmi
+  - pdro
   - psdo
+  - rbo
+  - scdo
   - stato
   - uo
   - vo
@@ -91,7 +89,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 288 missing definitions. See ROBOT Report for details.
+    comment: 289 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     status: PASS
@@ -108,15 +106,17 @@ results:
   FP16 Maintenance:
     comment: Missing version IRI to check date
     status: ERROR
+  FP20 Responsiveness:
+    status: PASS
   ROBOT Report:
-    comment: 153 errors, 290 warnings, 2 info messages.
+    comment: 165 errors, 291 warnings, 2 info messages.
     file: robot_report
     results:
-      ERROR: 153
+      ERROR: 165
       INFO: 2
-      WARN: 290
+      WARN: 291
     status: ERROR
-sha256_hash: f6d97d0aaac74e6745b1e8d6834fcc954f846a15a5b3d5a1a607088cc2eadb0d
+sha256_hash: 1b77de1b10f488a15e9e1b62df231adcb434a981356d1e6d6105b71707c3e891
 summary:
   comment: 6 errors
   status: ERROR

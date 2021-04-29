@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - BFO
 - BFOALT
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 463
@@ -24,12 +24,12 @@ metrics:
   'Info: Experimental OBO score':
     _dashboard: 0.887
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.763
+    _impact: 0.749
     _impact_external: 0.25
     _reuse: 0.393
-    oboscore: 0.825
+    oboscore: 0.818
   'Info: How many externally documented uses?': 1
-  'Info: How many ontologies use it?': 135
+  'Info: How many ontologies use it?': 134
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -72,7 +72,6 @@ metrics:
   - eco
   - ecocore
   - envo
-  - ero
   - eupath
   - exo
   - fao
@@ -85,7 +84,6 @@ metrics:
   - foodon
   - fypo
   - gecko
-  - genepio
   - geno
   - geo
   - go
@@ -101,6 +99,7 @@ metrics:
   - ico
   - ido
   - ino
+  - labo
   - maxo
   - mco
   - mf
@@ -137,8 +136,6 @@ metrics:
   - omp
   - omrse
   - one
-  - ons
-  - ontoneo
   - oostt
   - opl
   - opmi
@@ -146,6 +143,7 @@ metrics:
   - ovae
   - pato
   - pco
+  - pdro
   - pdumdv
   - peco
   - phipo
@@ -157,6 +155,7 @@ metrics:
   - pr
   - psdo
   - pso
+  - rbo
   - ro
   - rxno
   - sepio
@@ -206,6 +205,8 @@ results:
   FP16 Maintenance:
     comment: last version (2019-08-26) is over one year(s) old
     status: INFO
+  FP20 Responsiveness:
+    status: PASS
   ROBOT Report:
     comment: 2 errors, 53 warnings, 19 info messages.
     file: robot_report

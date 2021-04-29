@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - HANCESTRO
 - HANCESTROALT
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 957
@@ -29,12 +29,12 @@ metrics:
   'Info: Experimental OBO score':
     _dashboard: 0.908
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.011
+    _impact: 0.006
     _impact_external: 0.5
     _reuse: 0.436
-    oboscore: 0.46
+    oboscore: 0.457
   'Info: How many externally documented uses?': 3
-  'Info: How many ontologies use it?': 2
+  'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -54,7 +54,6 @@ metrics:
     rdfs: 599
   'Info: Which ontologies use it?':
   - foodon
-  - genepio
   - hancestro
 mirror_from: http://purl.obolibrary.org/obo/hancestro.owl
 namespace: hancestro
@@ -85,6 +84,8 @@ results:
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
+    status: PASS
+  FP20 Responsiveness:
     status: PASS
   ROBOT Report:
     comment: 314 warnings, 0 info messages.

@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - NCIT
 - NCITALT
-changed: true
+changed: false
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 2295734
@@ -32,9 +32,12 @@ metrics:
     ObjectUnionOf: 99
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.581
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.106
     _impact_external: 0
     _reuse: 0.0
+    oboscore: 0.343
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 19
   'Info: Logical consistency': true
@@ -87,8 +90,9 @@ results:
     comment: Missing domain (scope)
     status: ERROR
   FP06 Textual Definitions:
-    comment: ROBOT Report could not be generated
-    status: INFO
+    comment: 6543 duplicate definitions. 33320 missing definitions. See ROBOT Report
+      for details.
+    status: ERROR
   FP07 Relations:
     comment: 97 non-RO properties used.
     file: fp7
@@ -101,19 +105,26 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: ROBOT Report could not be generated
-    status: INFO
+    comment: 1604 duplicate labels. 2 missing labels. See ROBOT Report for details.
+    status: ERROR
   FP16 Maintenance:
     status: PASS
+  FP20 Responsiveness:
+    status: PASS
   ROBOT Report:
-    comment: ROBOT Report could not be generated.
-    status: INFO
+    comment: 12701 errors, 79723 warnings, 354 info messages.
+    file: robot_report
+    results:
+      ERROR: 12701
+      INFO: 354
+      WARN: 79723
+    status: ERROR
 sha256_hash: 592679567106ee20725ee1245191416952596281563f64ce5bff243f1c465372
 summary:
-  comment: 3 errors
+  comment: 6 errors
   status: ERROR
   summary_count:
-    ERROR: 3
-    INFO: 4
+    ERROR: 6
+    INFO: 1
     WARN: 0
-version: http://purl.obolibrary.org/obo/ncit/releases/2020-07-17/ncit.owl
+version: http://purl.obolibrary.org/obo/ncit/releases/2021-03-10/ncit.owl

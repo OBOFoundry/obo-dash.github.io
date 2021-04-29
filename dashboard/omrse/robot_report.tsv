@@ -1,10 +1,11 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	multiple_equivalent_classes	admission process	owl:equivalentClass	8d79b771-73df-4288-b557-488730073f4bgenid464
-ERROR	multiple_equivalent_classes	admission process	owl:equivalentClass	8d79b771-73df-4288-b557-488730073f4bgenid465
-ERROR	deprecated_property_reference	obsolete is-aggregate-of	owl:equivalentProperty	<http://purl.obolibrary.org/obo/BFO_0000075>
+ERROR	missing_label	OMIABIS:0000008	rdfs:label	
+ERROR	missing_label	OMIABIS:0000009	rdfs:label	
+ERROR	missing_label	OMIABIS:0000048	rdfs:label	
 ERROR	missing_label	OMRSE:00002028	rdfs:label	
 ERROR	missing_label	OMRSE:00002046	rdfs:label	
 ERROR	missing_label	OMRSE:00002047	rdfs:label	
+ERROR	missing_label	PCO:0000020	rdfs:label	
 ERROR	deprecated_class_reference	blank node	owl:someValuesFrom	<http://purl.obolibrary.org/obo/OMRSE_00000098>
 ERROR	deprecated_class_reference	blank node	owl:someValuesFrom	<http://purl.obolibrary.org/obo/OMRSE_00000100>
 ERROR	deprecated_class_reference	blank node	owl:someValuesFrom	<http://purl.obolibrary.org/obo/OMRSE_00000133>
@@ -27,10 +28,8 @@ ERROR	deprecated_class_reference	obsolete OMB racial identity datum	rdfs:subClas
 ERROR	deprecated_class_reference	obsolete OMB racial identity datum	rdfs:subClassOf	<http://purl.obolibrary.org/obo/OMRSE_00000182>
 ERROR	deprecated_class_reference	obsolete OMB racial identity datum	rdfs:subClassOf	<http://purl.obolibrary.org/obo/OMRSE_00000183>
 ERROR	deprecated_class_reference	obsolete OMB racial identity datum	rdfs:subClassOf	<http://purl.obolibrary.org/obo/OMRSE_00000184>
-ERROR	missing_ontology_description	obo:omrse.owl	dc11:description	
-ERROR	multiple_definitions	aggregate of organizations	IAO:0000115	An aggregate of organizations that have some feature in common, but is not itself an organization.@en
-ERROR	multiple_definitions	aggregate of organizations	IAO:0000115	An object aggregate that is not itself an organization and whose members are only organizations that have some feature in common@en
-ERROR	missing_ontology_title	obo:omrse.owl	dc11:title	
+ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/omrse/omrse-base.owl	dc11:description	
+ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/omrse/omrse-base.owl	dc11:title	
 WARN	annotation_whitespace	human social role	IAO:0000117	"Mathias Brochhausen
 @en"
 WARN	annotation_whitespace	human health care role	IAO:0000115	A role in human social processes that is realized by health care processes such as seeking or providing treatment for disease and injury, diagnosing disease and injury, or undergoing diagnosis. @en
@@ -38,12 +37,16 @@ WARN	annotation_whitespace	health care provider role	IAO:0000117	"Mathias Brochh
 @en"
 WARN	annotation_whitespace	obsolete aggregate of geopoli organizations	IAO:0000117	"William R. Hogan
 @en"
+WARN	missing_definition	OMIABIS:0000008	IAO:0000115	
+WARN	missing_definition	OMIABIS:0000009	IAO:0000115	
+WARN	missing_definition	OMIABIS:0000048	IAO:0000115	
 WARN	missing_definition	party to a legal entity	IAO:0000115	
 WARN	missing_definition	party to a legal proceeding	IAO:0000115	
 WARN	missing_definition	party to a legal agreement	IAO:0000115	
 WARN	missing_definition	party to a marriage contract	IAO:0000115	
 WARN	missing_definition	party to a power of attorney	IAO:0000115	
 WARN	missing_definition	person health care provider role	IAO:0000115	
+WARN	missing_definition	is-aggregate-of	IAO:0000115	
 WARN	missing_definition	intravenous drug user	IAO:0000115	
 WARN	missing_definition	material entity role	IAO:0000115	
 WARN	missing_definition	organism role	IAO:0000115	
@@ -124,7 +127,7 @@ WARN	missing_definition	ISO 639-2/B code	IAO:0000115
 WARN	missing_definition	ISO 639-2/T code	IAO:0000115	
 WARN	missing_definition	OMRSE:00002028	IAO:0000115	
 WARN	missing_definition	higher education program	IAO:0000115	
-WARN	missing_obsolete_label	obsolete is-aggregate-of	rdfs:label	is-aggregate-of
+WARN	missing_definition	PCO:0000020	IAO:0000115	
 WARN	missing_obsolete_label	is-component-of-aggregate	rdfs:label	is-component-of-aggregate
 WARN	missing_obsolete_label	questions asking process	rdfs:label	questions asking process@en
 WARN	missing_obsolete_label	material information bearer of question text plus answer set	rdfs:label	material information bearer of question text plus answer set@en

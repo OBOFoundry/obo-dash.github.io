@@ -5,47 +5,47 @@ base_prefixes:
 changed: false
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 50499
-    Declaration: 21795
-    EquivalentClasses: 19966
-  'Axioms: Number of axioms': 92260
+    AnnotationAssertion: 50743
+    Declaration: 21896
+    EquivalentClasses: 20061
+  'Axioms: Number of axioms': 92700
   'Entities: % of entities reused': 8.41
-  'Entities: Number of annotation properties': 7
-  'Entities: Number of classes': 21782
+  'Entities: Number of annotation properties': 8
+  'Entities: Number of classes': 21883
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 9
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 109783
-    ObjectIntersectionOf: 28097
-    ObjectSomeValuesFrom: 68055
+    Class: 110273
+    ObjectIntersectionOf: 28201
+    ObjectSomeValuesFrom: 68349
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.807
+    _dashboard: 0.815
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
     _reuse: 0.084
-    oboscore: 0.404
+    oboscore: 0.407
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 26462
-    GO: 7947
-    IAO: 19967
-    NBO: 16
-    PATO: 40039
-    RO: 41602
-    XAO: 21848
-    XPO: 39932
+    BFO: 26563
+    GO: 7968
+    IAO: 20062
+    NBO: 13
+    PATO: 40231
+    RO: 41795
+    XAO: 21938
+    XPO: 40122
     dc: 1
     dc11: 2
-    oboInOwl: 10563
+    oboInOwl: 10622
     owl: 1
-    rdfs: 19971
+    rdfs: 20061
   'Info: Which ontologies use it?':
   - xpo
 mirror_from: http://purl.obolibrary.org/obo/xpo/xpo-base.owl
@@ -73,19 +73,21 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 2 duplicate labels. 10 multiple labels. See ROBOT Report for details.
+    comment: 10 duplicate labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
     status: PASS
+  FP20 Responsiveness:
+    status: PASS
   ROBOT Report:
-    comment: 26 errors, 2 warnings, 19976 info messages.
+    comment: 10 errors, 2 warnings, 20072 info messages.
     file: robot_report
     results:
-      ERROR: 26
-      INFO: 19976
+      ERROR: 10
+      INFO: 20072
       WARN: 2
     status: ERROR
-sha256_hash: ed8901b7e2cdce342d75a332cd0c4def088e2d52ebbd2d30a9dada7e250626be
+sha256_hash: 3dd7ecbed7365ac4d24a6d78b84346968720ae0e58ee59584a3db2cbea268334
 summary:
   comment: 3 errors
   status: ERROR
@@ -93,4 +95,4 @@ summary:
     ERROR: 3
     INFO: 0
     WARN: 0
-version: http://purl.obolibrary.org/obo/xpo/releases/2020-07-04/xpo-base.owl
+version: http://purl.obolibrary.org/obo/xpo/releases/2021-03-05/xpo-base.owl

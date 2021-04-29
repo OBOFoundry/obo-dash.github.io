@@ -12,7 +12,7 @@ metrics:
     SubAnnotationPropertyOf: 99
     SubClassOf: 12367
   'Axioms: Number of axioms': 108833
-  'Entities: % of entities reused': 100.0
+  'Entities: % of entities reused': 24.24
   'Entities: Number of annotation properties': 289
   'Entities: Number of classes': 10641
   'Entities: Number of data properties': 0
@@ -25,12 +25,12 @@ metrics:
   'Info: Experimental OBO score':
     _dashboard: 0.64
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.0
+    _impact: 0.006
     _impact_external: 0
-    _reuse: 1.0
-    oboscore: 0.32
+    _reuse: 0.242
+    oboscore: 0.323
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 0
+  'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -42,6 +42,7 @@ metrics:
     ENVO: 112
     GAZ: 738
     GO: 624
+    GSSO: 33461
     HP: 23
     IAO: 12247
     IDO: 8
@@ -63,7 +64,6 @@ metrics:
     dc11: 1358
     fma: 980
     foaf: 1
-    obo: 33461
     oboInOwl: 22326
     owl: 5
     prefix_unknown: 32304
@@ -73,6 +73,7 @@ metrics:
     xsd: 4
   'Info: Which ontologies use it?':
   - gsso
+  - scdo
 mirror_from: http://purl.obolibrary.org/obo/gsso.owl
 namespace: gsso
 results:
@@ -110,6 +111,8 @@ results:
   FP16 Maintenance:
     comment: Version IRI does not have date information
     status: INFO
+  FP20 Responsiveness:
+    status: PASS
   ROBOT Report:
     comment: 743 errors, 25 warnings, 30 info messages.
     file: robot_report

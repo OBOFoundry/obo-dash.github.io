@@ -5,59 +5,59 @@ base_prefixes:
 changed: false
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 115128
-    Declaration: 17993
-    EquivalentClasses: 6190
+    AnnotationAssertion: 116683
+    Declaration: 18363
+    EquivalentClasses: 6188
     SubAnnotationPropertyOf: 7
-    SubClassOf: 19707
+    SubClassOf: 20117
     SubPropertyChainOf: 1
-  'Axioms: Number of axioms': 159026
-  'Entities: % of entities reused': 12.15
-  'Entities: Number of annotation properties': 44
-  'Entities: Number of classes': 17934
+  'Axioms: Number of axioms': 161359
+  'Entities: % of entities reused': 11.91
+  'Entities: Number of annotation properties': 48
+  'Entities: Number of classes': 18302
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 16
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 84361
-    ObjectIntersectionOf: 8048
-    ObjectSomeValuesFrom: 20824
+    Class: 85544
+    ObjectIntersectionOf: 8047
+    ObjectSomeValuesFrom: 20820
     ObjectUnionOf: 48
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.935
+    _dashboard: 0.885
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.107
+    _impact: 0.101
     _impact_external: 0.25
-    _reuse: 0.121
-    oboscore: 0.521
+    _reuse: 0.119
+    oboscore: 0.493
   'Info: How many externally documented uses?': 1
-  'Info: How many ontologies use it?': 19
+  'Info: How many ontologies use it?': 18
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 8014
+    BFO: 8013
     BSPO: 4
     CHEBI: 749
     CL: 392
-    GO: 820
-    HP: 61814
-    HPALT: 15
-    IAO: 12940
-    MPATH: 294
+    GO: 821
+    HP: 63003
+    HPALT: 16
+    HsapDv: 20
+    IAO: 13329
+    MPATH: 293
     NBO: 147
-    PATO: 12553
+    PATO: 12548
     PR: 123
-    RO: 12505
-    UBERON: 7449
-    dc: 1
-    dc11: 2927
-    obo: 20
-    oboInOwl: 107819
-    owl: 292
+    RO: 12501
+    UBERON: 7448
+    dc: 3
+    dc11: 3291
+    oboInOwl: 108448
+    owl: 302
     rdf: 12
-    rdfs: 19191
+    rdfs: 19689
   'Info: Which ontologies use it?':
   - aro
   - chiro
@@ -65,7 +65,6 @@ metrics:
   - doid
   - eupath
   - foodon
-  - genepio
   - geno
   - gsso
   - hp
@@ -74,9 +73,9 @@ metrics:
   - mondo
   - obi
   - ohmi
-  - ons
-  - ontoneo
+  - one
   - opmi
+  - scdo
   - txpo
   - upheno
 mirror_from: http://purl.obolibrary.org/obo/hp/hp-base.owl
@@ -95,12 +94,13 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 2805 missing definitions. See ROBOT Report for details.
+    comment: 2783 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     status: PASS
   FP08 Documented:
-    status: PASS
+    comment: homepage URL (http://www.human-phenotype-ontology.org/) does not resolve
+    status: ERROR
   FP09 Plurality of Users:
     status: PASS
   FP11 Locus of Authority:
@@ -109,20 +109,22 @@ results:
     status: PASS
   FP16 Maintenance:
     status: PASS
+  FP20 Responsiveness:
+    status: PASS
   ROBOT Report:
-    comment: 2808 warnings, 3 info messages.
+    comment: 2786 warnings, 3 info messages.
     file: robot_report
     results:
       ERROR: 0
       INFO: 3
-      WARN: 2808
+      WARN: 2786
     status: WARN
-sha256_hash: 8dc7a4128a3a0b0c2a2f5a72ea7c1a829c8a7dda367836e0ffe9161085763a37
+sha256_hash: 45b88c0f1c9591397e63ad35994df1a0376f856092917b54ef665f0003a35b87
 summary:
-  comment: 3 warnings
-  status: WARN
+  comment: 1 errors
+  status: ERROR
   summary_count:
-    ERROR: 0
+    ERROR: 1
     INFO: 0
     WARN: 3
-version: http://purl.obolibrary.org/obo/hp/releases/2020-12-07/hp-base.owl
+version: http://purl.obolibrary.org/obo/hp/releases/2021-04-13/hp-base.owl
