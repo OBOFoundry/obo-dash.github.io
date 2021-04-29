@@ -2,12 +2,12 @@ base_generated: true
 base_prefixes:
 - CARO
 - CAROALT
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 40191
+    AnnotationAssertion: 40190
     AnnotationPropertyDomain: 3
-    Declaration: 251
+    Declaration: 250
     DisjointClasses: 58
     DisjointUnion: 1
     EquivalentClasses: 25
@@ -20,7 +20,7 @@ metrics:
     SubObjectPropertyOf: 16
     SubPropertyChainOf: 5
     TransitiveObjectProperty: 4
-  'Axioms: Number of axioms': 40769
+  'Axioms: Number of axioms': 40767
   'Entities: % of entities reused': 64.89
   'Entities: Number of annotation properties': 63
   'Entities: Number of classes': 158
@@ -29,7 +29,7 @@ metrics:
   'Entities: Number of object properties': 37
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 719
+    Class: 718
     ObjectAllValuesFrom: 3
     ObjectComplementOf: 6
     ObjectExactCardinality: 5
@@ -41,12 +41,12 @@ metrics:
   'Info: Experimental OBO score':
     _dashboard: 0.733
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.237
+    _impact: 0.229
     _impact_external: 0
     _reuse: 0.649
-    oboscore: 0.485
+    oboscore: 0.481
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 42
+  'Info: How many ontologies use it?': 41
   'Info: Logical consistency': true
   'Info: Syntax': OWL Functional Syntax
   'Info: Usage of namespaces in axioms':
@@ -65,11 +65,11 @@ metrics:
     dc11: 5
     foaf: 1
     obo: 1
-    oboInOwl: 40526
+    oboInOwl: 40525
     owl: 249
     prefix_unknown: 7
     rdf: 5
-    rdfs: 1679
+    rdfs: 1678
   'Info: Which ontologies use it?':
   - aeo
   - agro
@@ -84,15 +84,14 @@ metrics:
   - ecocore
   - envo
   - fbbi
+  - fbbt
   - flopo
   - foodon
   - go
   - htn
   - ido
-  - maxo
   - mfmo
   - mondo
-  - mp
   - oarcs
   - oba
   - ohd
@@ -148,6 +147,8 @@ results:
   FP16 Maintenance:
     comment: Version IRI does not have date information
     status: INFO
+  FP20 Responsiveness:
+    status: PASS
   ROBOT Report:
     comment: 7 errors, 18 warnings, 8 info messages.
     file: robot_report

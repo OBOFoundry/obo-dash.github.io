@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - CLO
 - CLOALT
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 344066
@@ -93,7 +93,6 @@ metrics:
   'Info: Which ontologies use it?':
   - clo
   - dideo
-  - ero
   - geno
   - mco
   - ncro
@@ -101,6 +100,7 @@ metrics:
   - obib
   - ohpi
   - omit
+  - one
   - txpo
 mirror_from: http://purl.obolibrary.org/obo/clo.owl
 namespace: clo
@@ -139,6 +139,8 @@ results:
   FP16 Maintenance:
     comment: Missing version IRI to check date
     status: ERROR
+  FP20 Responsiveness:
+    status: PASS
   ROBOT Report:
     comment: 9425 errors, 43010 warnings, 470 info messages.
     file: robot_report

@@ -2,7 +2,7 @@ base_generated: true
 base_prefixes:
 - MPATH
 - MPATHALT
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 4632
@@ -24,12 +24,12 @@ metrics:
   'Info: Experimental OBO score':
     _dashboard: 0.715
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.04
+    _impact: 0.028
     _impact_external: 0
     _reuse: 0.024
-    oboscore: 0.378
+    oboscore: 0.371
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 7
+  'Info: How many ontologies use it?': 5
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -42,10 +42,8 @@ metrics:
   'Info: Which ontologies use it?':
   - cido
   - hp
-  - maxo
   - mp
   - mpath
-  - ontoneo
   - upheno
   - zp
 mirror_from: http://purl.obolibrary.org/obo/mpath.owl
@@ -80,6 +78,8 @@ results:
     comment: 20 duplicate labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
+    status: PASS
+  FP20 Responsiveness:
     status: PASS
   ROBOT Report:
     comment: 23 errors, 150 warnings, 76 info messages.

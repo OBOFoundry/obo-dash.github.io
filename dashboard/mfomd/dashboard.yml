@@ -2,32 +2,32 @@ base_generated: true
 base_prefixes:
 - MFOMD
 - MFOMDALT
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 5739
+    AnnotationAssertion: 5762
     AnnotationPropertyRangeOf: 1
     ClassAssertion: 18
-    Declaration: 1028
+    Declaration: 1036
     DifferentIndividuals: 2
     DisjointClasses: 21
     EquivalentClasses: 5
     InverseObjectProperties: 2
     SubAnnotationPropertyOf: 13
-    SubClassOf: 932
+    SubClassOf: 940
     SubObjectPropertyOf: 2
     SubPropertyChainOf: 1
     TransitiveObjectProperty: 5
-  'Axioms: Number of axioms': 7769
-  'Entities: % of entities reused': 86.47
+  'Axioms: Number of axioms': 7808
+  'Entities: % of entities reused': 86.58
   'Entities: Number of annotation properties': 100
-  'Entities: Number of classes': 872
+  'Entities: Number of classes': 880
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 18
   'Entities: Number of object properties': 41
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 2801
+    Class: 2825
     ObjectAllValuesFrom: 1
     ObjectComplementOf: 1
     ObjectIntersectionOf: 1
@@ -36,37 +36,37 @@ metrics:
     ObjectSomeValuesFrom: 22
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.734
+    _dashboard: 0.733
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.011
     _impact_external: 0
-    _reuse: 0.865
+    _reuse: 0.866
     oboscore: 0.372
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 2
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 304
+    BFO: 306
     DOID: 678
     DOIDALT: 33
     GO: 738
-    IAO: 2418
+    IAO: 2432
     IDO: 2
     MF: 313
     MFOMD: 524
     NBO: 44
-    OBI: 6
-    OGMS: 308
+    OBI: 5
+    OGMS: 326
     dc: 1
     dc11: 42
     foaf: 2
-    obo: 20
+    obo: 25
     oboInOwl: 2446
     owl: 76
     prefix_unknown: 53
     protege: 1
-    rdfs: 1264
+    rdfs: 1273
   'Info: Which ontologies use it?':
   - gsso
   - mfomd
@@ -102,6 +102,9 @@ results:
     comment: 7 duplicate labels. 1 missing labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
+    comment: last version (2020-04-26) is over one year(s) old
+    status: INFO
+  FP20 Responsiveness:
     status: PASS
   ROBOT Report:
     comment: 13 errors, 81 warnings, 35 info messages.
@@ -117,6 +120,6 @@ summary:
   status: ERROR
   summary_count:
     ERROR: 5
-    INFO: 0
+    INFO: 1
     WARN: 0
 version: http://purl.obolibrary.org/obo/MFOMD/2020-04-26/MFOMD.owl

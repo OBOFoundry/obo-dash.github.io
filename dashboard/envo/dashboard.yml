@@ -2,7 +2,7 @@ base_generated: false
 base_prefixes:
 - ENVO
 - ENVOALT
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 19771
@@ -37,12 +37,12 @@ metrics:
   'Info: Experimental OBO score':
     _dashboard: 0.89
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.164
+    _impact: 0.168
     _impact_external: 0.75
     _reuse: 0.118
-    oboscore: 0.527
+    oboscore: 0.529
   'Info: How many externally documented uses?': 6
-  'Info: How many ontologies use it?': 29
+  'Info: How many ontologies use it?': 30
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -83,22 +83,23 @@ metrics:
   - envo
   - eupath
   - foodon
-  - genepio
   - geno
   - gsso
   - hso
   - htn
-  - maxo
   - mfmo
   - micro
   - mondo
   - obi
   - obib
   - ohmi
+  - one
   - opmi
   - pco
   - peco
+  - rbo
   - ro
+  - scdo
   - to
   - uberon
   - upheno
@@ -133,6 +134,8 @@ results:
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
+    status: PASS
+  FP20 Responsiveness:
     status: PASS
   ROBOT Report:
     comment: 385 warnings, 211 info messages.

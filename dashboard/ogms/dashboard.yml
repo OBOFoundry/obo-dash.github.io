@@ -5,52 +5,52 @@ base_prefixes:
 changed: false
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 1347
+    AnnotationAssertion: 1370
     AnnotationPropertyRangeOf: 1
     ClassAssertion: 18
-    Declaration: 260
+    Declaration: 268
     DifferentIndividuals: 2
     DisjointClasses: 19
     EquivalentClasses: 4
     SubAnnotationPropertyOf: 2
-    SubClassOf: 182
-  'Axioms: Number of axioms': 1835
-  'Entities: % of entities reused': 58.36
+    SubClassOf: 190
+  'Axioms: Number of axioms': 1874
+  'Entities: % of entities reused': 57.4
   'Entities: Number of annotation properties': 63
-  'Entities: Number of classes': 184
+  'Entities: Number of classes': 192
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 18
   'Entities: Number of object properties': 0
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 607
+    Class: 631
     ObjectOneOf: 4
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.74
+    _dashboard: 0.739
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.232
+    _impact: 0.223
     _impact_external: 0
-    _reuse: 0.584
-    oboscore: 0.486
+    _reuse: 0.574
+    oboscore: 0.481
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 41
+  'Info: How many ontologies use it?': 40
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 245
-    IAO: 1193
+    BFO: 247
+    IAO: 1207
     IDO: 2
-    OBI: 6
-    OGMS: 296
+    OBI: 5
+    OGMS: 314
     dc: 1
     dc11: 41
     foaf: 2
-    obo: 7
+    obo: 12
     oboInOwl: 57
     owl: 3
     protege: 1
-    rdfs: 356
+    rdfs: 365
   'Info: Which ontologies use it?':
   - agro
   - apollo_sv
@@ -60,19 +60,17 @@ metrics:
   - cvdo
   - dideo
   - dron
-  - ero
   - eupath
   - gecko
-  - genepio
   - gsso
   - htn
   - ico
   - ido
+  - labo
   - mf
   - mfmo
   - mfoem
   - mfomd
-  - mondo
   - mpio
   - oae
   - obi
@@ -83,14 +81,15 @@ metrics:
   - ohpi
   - omiabis
   - omrse
-  - ons
-  - ontoneo
+  - one
   - oostt
   - opmi
   - ornaseq
   - ovae
+  - pdro
   - psdo
   - ro
+  - scdo
   - stato
   - txpo
   - vo
@@ -106,14 +105,14 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    comment: Version IRI 'https://github.com/OGMS/ogms/releases/tag/2020-07-06' is
+    comment: Version IRI 'https://github.com/OGMS/ogms/releases/tag/2021-04-20' is
       not in recommended format
     status: WARN
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 7 duplicate definitions. 8 missing definitions. See ROBOT Report for
-      details.
+    comment: 6 duplicate definitions. 2 multiple definitions. 8 missing definitions.
+      See ROBOT Report for details.
     status: ERROR
   FP07 Relations:
     status: PASS
@@ -129,15 +128,17 @@ results:
   FP16 Maintenance:
     comment: Version IRI does not have date information
     status: INFO
+  FP20 Responsiveness:
+    status: PASS
   ROBOT Report:
-    comment: 7 errors, 10 warnings, 0 info messages.
+    comment: 8 errors, 10 warnings, 1 info messages.
     file: robot_report
     results:
-      ERROR: 7
-      INFO: 0
+      ERROR: 8
+      INFO: 1
       WARN: 10
     status: ERROR
-sha256_hash: 18078f9776626d231b3c1c82808021d11806e494359eed568e3c42a652e1d30c
+sha256_hash: a825895d1e85f99804e69c7e1006f8b33c2cac8162f1edde7d9f795f5fdaf148
 summary:
   comment: 4 errors
   status: ERROR
@@ -145,4 +146,4 @@ summary:
     ERROR: 4
     INFO: 1
     WARN: 1
-version: https://github.com/OGMS/ogms/releases/tag/2020-07-06
+version: https://github.com/OGMS/ogms/releases/tag/2021-04-20

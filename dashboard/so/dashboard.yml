@@ -2,58 +2,56 @@ base_generated: true
 base_prefixes:
 - SO
 - SOALT
-changed: true
+changed: false
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 18902
-    Declaration: 2767
+    AnnotationAssertion: 19065
+    Declaration: 2781
     DisjointClasses: 2
     EquivalentClasses: 220
     SubAnnotationPropertyOf: 14
-    SubClassOf: 3069
+    SubClassOf: 3081
     SubObjectPropertyOf: 9
     SymmetricObjectProperty: 4
     TransitiveObjectProperty: 7
-  'Axioms: Number of axioms': 24994
-  'Entities: % of entities reused': 4.55
+  'Axioms: Number of axioms': 25183
+  'Entities: % of entities reused': 4.53
   'Entities: Number of annotation properties': 41
-  'Entities: Number of classes': 2676
+  'Entities: Number of classes': 2690
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 50
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 9492
+    Class: 9530
     ObjectIntersectionOf: 220
     ObjectSomeValuesFrom: 863
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
     _dashboard: 0.679
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.14
+    _impact: 0.134
     _impact_external: 0
     _reuse: 0.045
-    oboscore: 0.41
+    oboscore: 0.407
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 25
+  'Info: How many ontologies use it?': 24
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    IAO: 2789
-    SO: 9395
+    IAO: 2805
+    SO: 9433
     SOALT: 962
     obo: 97
-    oboInOwl: 15320
-    owl: 339
-    rdfs: 3607
+    oboInOwl: 15423
+    owl: 342
+    rdfs: 3662
   'Info: Which ontologies use it?':
   - cido
   - clo
   - doid
-  - ero
   - eupath
   - fypo
-  - genepio
   - geno
   - go
   - mondo
@@ -66,10 +64,11 @@ metrics:
   - ogsf
   - ohmi
   - omit
-  - ons
+  - one
   - ornaseq
   - pr
   - psdo
+  - scdo
   - so
   - stato
   - upheno
@@ -107,15 +106,17 @@ results:
     status: ERROR
   FP16 Maintenance:
     status: PASS
+  FP20 Responsiveness:
+    status: PASS
   ROBOT Report:
-    comment: 73 errors, 297 warnings, 89 info messages.
+    comment: 73 errors, 300 warnings, 89 info messages.
     file: robot_report
     results:
       ERROR: 73
       INFO: 89
-      WARN: 297
+      WARN: 300
     status: ERROR
-sha256_hash: 3eabb8f7c771e3700e4cf4dc74d63b9e0735d24fd424f66306833aac65526f4b
+sha256_hash: 9101e8fd328a08b6daeab25bdbab679e9fd2ac32b4b9a0891adb48ae1d0db75f
 summary:
   comment: 6 errors
   status: ERROR
@@ -123,4 +124,4 @@ summary:
     ERROR: 6
     INFO: 0
     WARN: 0
-version: http://purl.obolibrary.org/obo/so/2021-01-27/so.owl
+version: http://purl.obolibrary.org/obo/so/2021-04-27/so.owl

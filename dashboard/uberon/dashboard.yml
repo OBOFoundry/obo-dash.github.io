@@ -5,70 +5,70 @@ base_prefixes:
 changed: false
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 171866
-    Declaration: 14958
-    DisjointClasses: 602
+    AnnotationAssertion: 172970
+    Declaration: 15143
+    DisjointClasses: 603
     DisjointObjectProperties: 1
-    EquivalentClasses: 6284
+    EquivalentClasses: 6322
     InverseObjectProperties: 11
     ObjectPropertyDomain: 5
     ObjectPropertyRange: 3
-    SubAnnotationPropertyOf: 41
-    SubClassOf: 25308
+    SubAnnotationPropertyOf: 42
+    SubClassOf: 25501
     SubObjectPropertyOf: 85
     SubPropertyChainOf: 40
     SymmetricObjectProperty: 3
     TransitiveObjectProperty: 26
-  'Axioms: Number of axioms': 219233
-  'Entities: % of entities reused': 7.23
-  'Entities: Number of annotation properties': 183
-  'Entities: Number of classes': 14649
+  'Axioms: Number of axioms': 220755
+  'Entities: % of entities reused': 7.16
+  'Entities: Number of annotation properties': 184
+  'Entities: Number of classes': 14833
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 147
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 86541
-    ObjectIntersectionOf: 6514
+    Class: 87234
+    ObjectIntersectionOf: 6552
     ObjectMaxCardinality: 49
     ObjectMinCardinality: 57
-    ObjectSomeValuesFrom: 23628
+    ObjectSomeValuesFrom: 23707
     ObjectUnionOf: 113
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.62
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.345
+    _impact: 0.318
     _impact_external: 0.75
     _reuse: 0.072
-    oboscore: 0.482
+    oboscore: 0.469
   'Info: How many externally documented uses?': 10
-  'Info: How many ontologies use it?': 61
+  'Info: How many ontologies use it?': 57
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 13399
-    BSPO: 596
+    BFO: 13424
+    BSPO: 613
     CHEBI: 60
     CL: 601
     ENVO: 14
     FBbt: 2
     GO: 658
-    IAO: 13746
+    IAO: 13806
     NBO: 23
-    NCBITaxon: 1504
+    NCBITaxon: 1510
     PATO: 178
     PR: 23
-    RO: 8876
-    UBERON: 82754
-    dc11: 307
+    RO: 8915
+    UBERON: 83438
+    dc11: 305
     foaf: 1886
-    obo: 8180
-    oboInOwl: 203879
-    owl: 2071
+    obo: 8183
+    oboInOwl: 205205
+    owl: 2075
     rdf: 1
-    rdfs: 16371
-    xsd: 7265
+    rdfs: 16566
+    xsd: 7398
   'Info: Which ontologies use it?':
   - agro
   - amphx
@@ -84,13 +84,11 @@ metrics:
   - ecao
   - ecocore
   - envo
-  - ero
   - eupath
   - fobi
   - foodon
   - fovt
   - gecko
-  - genepio
   - geno
   - go
   - gsso
@@ -115,8 +113,7 @@ metrics:
   - ohpi
   - omiabis
   - omit
-  - ons
-  - ontoneo
+  - one
   - opl
   - opmi
   - ornaseq
@@ -131,7 +128,6 @@ metrics:
   - upheno
   - vo
   - wbphenotype
-  - zp
 mirror_from: http://purl.obolibrary.org/obo/uberon/uberon-base.owl
 namespace: uberon
 results:
@@ -146,7 +142,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 312 duplicate definitions. 2736 missing definitions. See ROBOT Report
+    comment: 312 duplicate definitions. 2858 missing definitions. See ROBOT Report
       for details.
     status: ERROR
   FP07 Relations:
@@ -164,15 +160,17 @@ results:
     status: ERROR
   FP16 Maintenance:
     status: PASS
+  FP20 Responsiveness:
+    status: PASS
   ROBOT Report:
-    comment: 397 errors, 3962 warnings, 3609 info messages.
+    comment: 397 errors, 4090 warnings, 3635 info messages.
     file: robot_report
     results:
       ERROR: 397
-      INFO: 3609
-      WARN: 3962
+      INFO: 3635
+      WARN: 4090
     status: ERROR
-sha256_hash: 544863dac5d7092c50cd02b24ceb5d24928312f9625bae2672388cff491ad8ea
+sha256_hash: 81792ca58fa0f546b10926ddb751377803b98cfedd6a555958af5a7048f5c243
 summary:
   comment: 4 errors
   status: ERROR
@@ -180,4 +178,4 @@ summary:
     ERROR: 4
     INFO: 0
     WARN: 0
-version: http://purl.obolibrary.org/obo/uberon/releases/2020-09-16/uberon-base.owl
+version: http://purl.obolibrary.org/obo/uberon/releases/2021-02-13/uberon-base.owl
