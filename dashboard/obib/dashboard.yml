@@ -49,14 +49,14 @@ metrics:
     ObjectUnionOf: 56
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.899
+    _dashboard: 0.949
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.011
+    _impact: 0.017
     _impact_external: 0.5
     _reuse: 0.712
-    oboscore: 0.455
+    oboscore: 0.483
   'Info: How many externally documented uses?': 3
-  'Info: How many ontologies use it?': 2
+  'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -110,13 +110,12 @@ metrics:
   - eupath
   - ico
   - obib
+  - ons
 mirror_from: http://purl.obolibrary.org/obo/obib.owl
 namespace: obib
 results:
   FP01 Open:
-    comment: Ontology license 'http://creativecommons.org/licenses/by/4.0/' does not
-      match regsitry license 'http://creativecommons.org/licenses/by/3.0/'.
-    status: ERROR
+    status: PASS
   FP02 Common Format:
     status: PASS
   FP03 URIs:
@@ -147,10 +146,10 @@ results:
     status: PASS
 sha256_hash: 07eb2d49ef32e0aeb1c73987d872289c35fc0a863f0a26659633c48e146a50a1
 summary:
-  comment: 1 errors
-  status: ERROR
+  comment: 1 info messages
+  status: INFO
   summary_count:
-    ERROR: 1
+    ERROR: 0
     INFO: 1
     WARN: 0
 version: http://purl.obolibrary.org/obo/obib/2021-02-02/obib.owl

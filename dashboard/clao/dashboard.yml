@@ -1,18 +1,18 @@
-base_generated: true
+base_generated: false
 base_prefixes:
 - CLAO
 - CLAOALT
 changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 4699
+    AnnotationAssertion: 4702
     AsymmetricObjectProperty: 1
-    Declaration: 1213
+    Declaration: 1216
     SubClassOf: 1656
     TransitiveObjectProperty: 1
-  'Axioms: Number of axioms': 7570
-  'Entities: % of entities reused': 1.4
-  'Entities: Number of annotation properties': 14
+  'Axioms: Number of axioms': 7576
+  'Entities: % of entities reused': 1.72
+  'Entities: Number of annotation properties': 18
   'Entities: Number of classes': 1201
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
@@ -23,12 +23,12 @@ metrics:
     ObjectSomeValuesFrom: 446
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.759
+    _dashboard: 0.814
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
-    _reuse: 0.014
-    oboscore: 0.38
+    _reuse: 0.017
+    oboscore: 0.407
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
@@ -38,11 +38,12 @@ metrics:
     CLAO: 4513
     IAO: 912
     dc11: 377
+    obo: 3
     oboInOwl: 2157
-    rdfs: 1264
+    rdfs: 1267
   'Info: Which ontologies use it?':
   - clao
-mirror_from: http://purl.obolibrary.org/obo/clao.owl
+mirror_from: http://purl.obolibrary.org/obo/clao/clao-base.owl
 namespace: clao
 results:
   FP01 Open:
@@ -53,13 +54,11 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    comment: Version IRI 'http://purl.obolibrary.org/obo/2020-05-16/CLAO.owl' is not
-      in recommended format
-    status: WARN
+    status: PASS
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 290 missing definitions. See ROBOT Report for details.
+    comment: 301 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     status: PASS
@@ -73,24 +72,23 @@ results:
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
-    comment: Version IRI does not have date information
-    status: INFO
+    status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 2 errors, 290 warnings, 1 info messages.
+    comment: 2 errors, 301 warnings, 1 info messages.
     file: robot_report
     results:
       ERROR: 2
       INFO: 1
-      WARN: 290
+      WARN: 301
     status: ERROR
-sha256_hash: b7e3d4e2c95e3704a8871185f8ac068d5e92b8d555a1c52b139b84112ec942ff
+sha256_hash: f428f0c59b0f8b13d921c49402e5f3e6ed3c28da3d841f726d73d969ad37c211
 summary:
   comment: 3 errors
   status: ERROR
   summary_count:
     ERROR: 3
-    INFO: 1
-    WARN: 2
-version: http://purl.obolibrary.org/obo/2020-05-16/CLAO.owl
+    INFO: 0
+    WARN: 1
+version: http://purl.obolibrary.org/obo/clao/releases/2021-05-30/clao-base.owl

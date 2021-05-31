@@ -1,6 +1,195 @@
 base_generated: true
-changed: false
-failure: failed_robot_base
+base_prefixes:
+- GENEPIO
+- GENEPIOALT
+changed: true
+metrics:
+  'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 24293
+    AsymmetricObjectProperty: 3
+    ClassAssertion: 511
+    DataPropertyAssertion: 75
+    DataPropertyDomain: 4
+    DataPropertyRange: 13
+    Declaration: 6354
+    DifferentIndividuals: 4
+    DisjointClasses: 32
+    EquivalentClasses: 20
+    FunctionalObjectProperty: 1
+    InverseObjectProperties: 10
+    IrrefexiveObjectProperty: 3
+    ObjectPropertyAssertion: 747
+    ObjectPropertyDomain: 1
+    ObjectPropertyRange: 3
+    SubAnnotationPropertyOf: 6
+    SubClassOf: 6382
+    SubDataPropertyOf: 7
+    SubObjectPropertyOf: 15
+    SubPropertyChainOf: 9
+    SymmetricObjectProperty: 1
+    TransitiveObjectProperty: 9
+  'Axioms: Number of axioms': 38503
+  'Entities: % of entities reused': 82.24
+  'Entities: Number of annotation properties': 69
+  'Entities: Number of classes': 5270
+  'Entities: Number of data properties': 29
+  'Entities: Number of individuals': 925
+  'Entities: Number of object properties': 62
+  'Entities: Number of unsatisfiable classes': 0
+  'Info: Breakdown of OWL class expressions used':
+    Class: 18697
+    DataAllValuesFrom: 5
+    DataExactCardinality: 5
+    DataHasValue: 1
+    DataMaxCardinality: 1
+    DataSomeValuesFrom: 19
+    ObjectAllValuesFrom: 1
+    ObjectExactCardinality: 30
+    ObjectHasValue: 1
+    ObjectIntersectionOf: 27
+    ObjectMaxCardinality: 15
+    ObjectMinCardinality: 3
+    ObjectSomeValuesFrom: 229
+    ObjectUnionOf: 21
+  'Info: Does the ontology fall under OWL 2 DL?': false
+  'Info: Experimental OBO score':
+    _dashboard: 0.666
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.033
+    _impact_external: 0
+    _reuse: 0.822
+    oboscore: 0.35
+  'Info: How many externally documented uses?': 0
+  'Info: How many ontologies use it?': 6
+  'Info: Logical consistency': true
+  'Info: Syntax': RDF/XML
+  'Info: Usage of namespaces in axioms':
+    APOLLO_SV: 127
+    ARO: 168
+    BAO: 2
+    BFO: 337
+    BTO: 4
+    CHEBI: 2875
+    CHMO: 29
+    CVDO: 2
+    DOID: 756
+    EFO: 152
+    ENVO: 978
+    EO: 26
+    EPO: 3
+    ERO: 19
+    ExO: 17
+    FIX: 2
+    FLU: 2
+    FOODON: 2914
+    GAZ: 3295
+    GENEPIO: 4207
+    GEO: 6
+    GO: 17
+    HANCESTRO: 978
+    HP: 519
+    IAO: 11929
+    ICO: 3
+    IDO: 99
+    MESH: 10
+    MI: 17
+    MMO: 2
+    NCBITaxon: 323
+    NCIT: 970
+    NCIT_ALT: 2
+    NCRO: 2
+    OAE: 2
+    OBI: 787
+    OGMS: 15
+    OMIABIS: 2
+    OMIT: 43
+    OMP: 4
+    OMRSE: 2
+    PATO: 144
+    PCO: 35
+    PECO: 26
+    PO: 76
+    PR: 4
+    RO: 931
+    SIO: 63
+    SO: 30
+    STATO: 167
+    SYMP: 9
+    TRANS: 23
+    UBERON: 1108
+    UO: 733
+    UOALT: 4
+    VT: 3
+    XCO: 3
+    dc: 3
+    dc11: 95
+    foaf: 1
+    obo: 19
+    oboInOwl: 5833
+    owl: 126
+    prefix_unknown: 198
+    rdf: 109
+    rdfs: 6358
+    skos: 2
+    xsd: 53
+  'Info: Which ontologies use it?':
+  - eupath
+  - fideo
+  - foodon
+  - genepio
+  - hso
+  - ons
+  - ornaseq
 mirror_from: http://purl.obolibrary.org/obo/genepio.owl
 namespace: genepio
-sha256_hash: b0877dec3d2513c3cd3f9237a1fbe33e6a201c8a4ea7fdd42f9ebbacd865b80c
+results:
+  FP01 Open:
+    status: PASS
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    status: PASS
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 43 duplicate definitions. 389 missing definitions. See ROBOT Report for
+      details.
+    status: ERROR
+  FP07 Relations:
+    comment: 1 non-RO properties used.
+    file: fp7
+    status: INFO
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
+    status: ERROR
+  FP11 Locus of Authority:
+    status: PASS
+  FP12 Naming Conventions:
+    comment: 2 duplicate labels. 2 multiple labels. 13 missing labels. See ROBOT Report
+      for details.
+    status: ERROR
+  FP16 Maintenance:
+    status: PASS
+  FP20 Responsiveness:
+    status: PASS
+  ROBOT Report:
+    comment: 63 errors, 487 warnings, 59 info messages.
+    file: robot_report
+    results:
+      ERROR: 63
+      INFO: 59
+      WARN: 487
+    status: ERROR
+sha256_hash: 9f24ded8411c56df82cdef549e28d1b14163d4e3164ce1d38ebbdbdbe84f9128
+summary:
+  comment: 4 errors
+  status: ERROR
+  summary_count:
+    ERROR: 4
+    INFO: 1
+    WARN: 0
+version: http://purl.obolibrary.org/obo/genepio/releases/2021-05-24/genepio.owl

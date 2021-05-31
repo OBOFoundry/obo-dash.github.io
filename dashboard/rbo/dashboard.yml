@@ -5,56 +5,61 @@ base_prefixes:
 changed: false
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 454
-    ClassAssertion: 19
-    Declaration: 197
-    SubClassOf: 138
-  'Axioms: Number of axioms': 808
+    AnnotationAssertion: 618
+    ClassAssertion: 24
+    DataPropertyDomain: 1
+    DataPropertyRange: 1
+    Declaration: 261
+    SubClassOf: 219
+  'Axioms: Number of axioms': 1124
   'Entities: % of entities reused': 100.0
   'Entities: Number of annotation properties': 20
-  'Entities: Number of classes': 157
-  'Entities: Number of data properties': 0
-  'Entities: Number of individuals': 19
-  'Entities: Number of object properties': 4
+  'Entities: Number of classes': 214
+  'Entities: Number of data properties': 3
+  'Entities: Number of individuals': 24
+  'Entities: Number of object properties': 3
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 452
-    ObjectSomeValuesFrom: 1
+    Class: 647
+    DataHasValue: 60
+    ObjectIntersectionOf: 30
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.838
+    _dashboard: 0.834
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
     _reuse: 1.0
-    oboscore: 0.419
+    oboscore: 0.417
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 10
-    CHEBI: 9
-    CHMO: 2
-    ENVO: 13
-    IAO: 264
-    OBI: 13
+    BFO: 13
+    CHEBI: 10
+    CHMO: 3
+    COB: 31
+    DOID: 2
+    ENVO: 18
+    IAO: 384
+    OBI: 17
     PATO: 5
-    RO: 4
-    UO: 2
+    RO: 2
+    UO: 6
     dc: 1
     dc11: 4
-    obo: 430
-    oboInOwl: 55
-    rdfs: 154
+    obo: 646
+    oboInOwl: 46
+    rdfs: 210
+    xsd: 31
   'Info: Which ontologies use it?':
   - rbo
 mirror_from: http://purl.obolibrary.org/obo/rbo/rbo-base.owl
 namespace: rbo
 results:
   FP01 Open:
-    comment: Missing ontology license.
-    status: ERROR
+    status: PASS
   FP02 Common Format:
     status: PASS
   FP03 URIs:
@@ -64,10 +69,12 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 55 missing definitions. See ROBOT Report for details.
+    comment: 58 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
-    status: PASS
+    comment: 2 non-RO properties used.
+    file: fp7
+    status: INFO
   FP08 Documented:
     status: PASS
   FP09 Plurality of Users:
@@ -76,25 +83,26 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    status: PASS
+    comment: 2 missing labels. See ROBOT Report for details.
+    status: ERROR
   FP16 Maintenance:
     status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 1 errors, 68 warnings, 2 info messages.
+    comment: 2 errors, 90 warnings, 7 info messages.
     file: robot_report
     results:
-      ERROR: 1
-      INFO: 2
-      WARN: 68
+      ERROR: 2
+      INFO: 7
+      WARN: 90
     status: ERROR
-sha256_hash: 9914aace63764efabf7672fb6737c1708d2e633e68a3e2c1b749251d34434c49
+sha256_hash: 9ceeac1d045021acbcba85673eff24a77772208ea53b128380b1412eeea25ac7
 summary:
   comment: 3 errors
   status: ERROR
   summary_count:
     ERROR: 3
-    INFO: 0
+    INFO: 1
     WARN: 1
-version: http://purl.obolibrary.org/obo/rbo/releases/2021-02-26/rbo-base.owl
+version: http://purl.obolibrary.org/obo/rbo/releases/2021-05-21/rbo-base.owl

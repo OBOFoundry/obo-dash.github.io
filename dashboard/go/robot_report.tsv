@@ -5,6 +5,7 @@ ERROR	missing_label	OBA:0000001	rdfs:label
 ERROR	missing_label	PATO:0000001	rdfs:label	
 ERROR	missing_label	SO:0000673	rdfs:label	
 ERROR	missing_label	SO:0000833	rdfs:label	
+ERROR	deprecated_class_reference	GO:0019012	owl:disjointWith	<http://purl.obolibrary.org/obo/CL_0000000>
 WARN	equivalent_pair	BFO:0000023	owl:equivalentClass	<http://purl.obolibrary.org/obo/CHEBI_50906>
 WARN	equivalent_pair	CHEBI:17843	owl:equivalentClass	<http://purl.obolibrary.org/obo/SO_0000253>
 WARN	equivalent_pair	CHEBI:18111	owl:equivalentClass	<http://purl.obolibrary.org/obo/SO_0000252>
@@ -90,20 +91,18 @@ WARN	missing_definition	causally upstream of or within	definition
 WARN	missing_definition	causally downstream of or within	definition	
 WARN	missing_definition	has intermediate	definition	
 WARN	missing_definition	results in movement of	definition	
-WARN	missing_definition	directly regulates	definition	
 WARN	missing_definition	results_in_assembly_of	definition	
 WARN	missing_definition	results_in_disassembly_of	definition	
 WARN	missing_definition	results in remodeling of	definition	
-WARN	missing_definition	results_in_organization_of	definition	
+WARN	missing_definition	results in organization of	definition	
 WARN	missing_definition	process has causal agent	definition	
-WARN	missing_definition	directly positively regulates	definition	
-WARN	missing_definition	directly negatively regulates	definition	
 WARN	missing_definition	produces	definition	
 WARN	missing_definition	produced by	definition	
 WARN	missing_definition	has primary input or output	definition	
 WARN	missing_definition	has primary output	definition	
 WARN	missing_definition	has primary input	definition	
 WARN	missing_definition	acts on population of	definition	
+WARN	missing_definition	results in fusion of	definition	
 WARN	missing_definition	SO:0000673	definition	
 WARN	missing_definition	SO:0000833	definition	
 WARN	missing_definition	label approved by the SynGO project	definition	
@@ -126,6 +125,7 @@ WARN	missing_definition	shorthand	definition
 INFO	lowercase_definition	cyclic nucleotide-dependent protein kinase activity	definition	<cNMP-dependent catalysis of the reaction: ATP + a protein = ADP + a phosphoprotein.>
 INFO	lowercase_definition	cAMP-dependent protein kinase activity	definition	<cAMP-dependent catalysis of the reaction: ATP + a protein = ADP + a phosphoprotein.>
 INFO	lowercase_definition	cGMP-dependent protein kinase activity	definition	<cGMP dependent catalysis of the reaction: ATP + a protein = ADP + a phosphoprotein.>
+INFO	lowercase_definition	4-hydroxy-3-all-trans-hexaprenylbenzoate oxygenase activity	definition	4-hydroxy-3-all-trans-hexaprenylbenzoate + 2 H+ + O2 + 2 reduced [2Fe-2S]-[ferredoxin] = 3,4-dihydroxy-5-all-trans-hexaprenylbenzoate + H2O + 2 oxidized [2Fe-2S]-[ferredoxin].
 INFO	missing_superclass	alpha-glucoside transport	rdfs:subClassOf	
 INFO	missing_superclass	regulation of DNA recombination	rdfs:subClassOf	
 INFO	missing_superclass	regulation of mitotic recombination	rdfs:subClassOf	
@@ -141,6 +141,7 @@ INFO	missing_superclass	argininosuccinate metabolic process	rdfs:subClassOf
 INFO	missing_superclass	ribosomal large subunit export from nucleus	rdfs:subClassOf	
 INFO	missing_superclass	ribosomal small subunit export from nucleus	rdfs:subClassOf	
 INFO	missing_superclass	fatty-acyl-CoA binding	rdfs:subClassOf	
+INFO	missing_superclass	cell cycle checkpoint signaling	rdfs:subClassOf	
 INFO	missing_superclass	regulation of cyclin-dependent protein serine/threonine kinase activity	rdfs:subClassOf	
 INFO	missing_superclass	G1/S transition of mitotic cell cycle	rdfs:subClassOf	
 INFO	missing_superclass	G2/M transition of mitotic cell cycle	rdfs:subClassOf	
@@ -194,7 +195,6 @@ INFO	missing_superclass	endonucleolytic cleavage involved in rRNA processing	rdf
 INFO	missing_superclass	nucleotide-excision repair, DNA duplex unwinding	rdfs:subClassOf	
 INFO	missing_superclass	DNA synthesis involved in DNA repair	rdfs:subClassOf	
 INFO	missing_superclass	double-strand break repair via single-strand annealing, removal of nonhomologous ends	rdfs:subClassOf	
+INFO	missing_superclass	nuclear membrane fusion	rdfs:subClassOf	
 INFO	missing_superclass	karyogamy involved in conjugation with cellular fusion	rdfs:subClassOf	
 INFO	missing_superclass	karyogamy involved in conjugation with mutual genetic exchange	rdfs:subClassOf	
-INFO	missing_superclass	cell morphogenesis involved in conjugation with cellular fusion	rdfs:subClassOf	
-INFO	missing_superclass	response to pheromone regulating pheromone-induced unidirectional conjugation	rdfs:subClassOf	
