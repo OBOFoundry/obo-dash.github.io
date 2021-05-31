@@ -5,71 +5,70 @@ base_prefixes:
 changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 19771
+    AnnotationAssertion: 21075
     ClassAssertion: 46
-    Declaration: 4205
+    Declaration: 4399
     DisjointClasses: 17
     DisjointUnion: 1
-    EquivalentClasses: 687
-    FunctionalObjectProperty: 1
+    EquivalentClasses: 694
     InverseFunctionalObjectProperty: 1
     ObjectPropertyAssertion: 36
-    SubAnnotationPropertyOf: 22
-    SubClassOf: 5261
-  'Axioms: Number of axioms': 30048
-  'Entities: % of entities reused': 11.84
-  'Entities: Number of annotation properties': 76
-  'Entities: Number of classes': 4016
+    SubAnnotationPropertyOf: 23
+    SubClassOf: 5582
+  'Axioms: Number of axioms': 31874
+  'Entities: % of entities reused': 12.16
+  'Entities: Number of annotation properties': 77
+  'Entities: Number of classes': 4208
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 44
-  'Entities: Number of object properties': 72
+  'Entities: Number of object properties': 73
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 17588
+    Class: 18494
     ObjectAllValuesFrom: 1
-    ObjectComplementOf: 23
-    ObjectIntersectionOf: 1206
+    ObjectComplementOf: 24
+    ObjectIntersectionOf: 1246
     ObjectMaxCardinality: 3
-    ObjectMinCardinality: 35
-    ObjectSomeValuesFrom: 3467
-    ObjectUnionOf: 255
+    ObjectMinCardinality: 27
+    ObjectSomeValuesFrom: 3680
+    ObjectUnionOf: 267
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.89
+    _dashboard: 0.792
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.168
+    _impact: 0.178
     _impact_external: 0.75
-    _reuse: 0.118
-    oboscore: 0.529
+    _reuse: 0.122
+    oboscore: 0.485
   'Info: How many externally documented uses?': 6
-  'Info: How many ontologies use it?': 30
+  'Info: How many ontologies use it?': 32
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 1128
+    BFO: 1241
     CARO: 2
-    CHEBI: 485
-    ENVO: 16297
-    ENVOALT: 109
+    CHEBI: 598
+    ENVO: 17038
+    ENVOALT: 113
     FAO: 4
     FOODON: 5
-    GO: 18
-    IAO: 3897
+    GO: 21
+    IAO: 4101
     NCBITaxon: 90
     OBI: 15
-    PATO: 649
-    PCO: 26
+    PATO: 675
+    PCO: 27
     PO: 19
-    RO: 2419
+    RO: 2526
     UBERON: 94
     dc: 2
-    dc11: 596
+    dc11: 969
     foaf: 1
     obo: 2
-    oboInOwl: 14046
+    oboInOwl: 14693
     owl: 441
     prefix_unknown: 15
-    rdfs: 4657
+    rdfs: 4899
     xsd: 5
   'Info: Which ontologies use it?':
   - agro
@@ -83,6 +82,7 @@ metrics:
   - envo
   - eupath
   - foodon
+  - genepio
   - geno
   - gsso
   - hso
@@ -94,6 +94,7 @@ metrics:
   - obib
   - ohmi
   - one
+  - ons
   - opmi
   - pco
   - peco
@@ -119,7 +120,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 340 missing definitions. See ROBOT Report for details.
+    comment: 342 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     comment: 6 non-RO properties used.
@@ -132,25 +133,26 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    status: PASS
+    comment: 6 missing labels. See ROBOT Report for details.
+    status: ERROR
   FP16 Maintenance:
     status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 385 warnings, 211 info messages.
+    comment: 6 errors, 387 warnings, 214 info messages.
     file: robot_report
     results:
-      ERROR: 0
-      INFO: 211
-      WARN: 385
-    status: WARN
-sha256_hash: 0c5816dbb8a2fe137fda6c379cedc69e0e065718f197bd819bbc9956f2db3888
+      ERROR: 6
+      INFO: 214
+      WARN: 387
+    status: ERROR
+sha256_hash: bf5f8fe5881568daeda9f729386e8902a1e781920706fad977f79b3c6d5c9381
 summary:
-  comment: 1 errors
+  comment: 3 errors
   status: ERROR
   summary_count:
-    ERROR: 1
+    ERROR: 3
     INFO: 1
-    WARN: 2
-version: http://purl.obolibrary.org/obo/envo/releases/2020-06-22/envo-base.owl
+    WARN: 1
+version: http://purl.obolibrary.org/obo/envo/releases/2021-05-14/envo-base.owl

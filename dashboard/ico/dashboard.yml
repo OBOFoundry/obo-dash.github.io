@@ -50,14 +50,14 @@ metrics:
     ObjectUnionOf: 18
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.738
+    _dashboard: 0.838
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.017
-    _impact_external: 0
+    _impact: 0.028
+    _impact_external: 0.25
     _reuse: 0.73
-    oboscore: 0.378
-  'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 3
+    oboscore: 0.433
+  'Info: How many externally documented uses?': 1
+  'Info: How many ontologies use it?': 5
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -102,8 +102,10 @@ metrics:
     skos: 7
     xsd: 6
   'Info: Which ontologies use it?':
+  - genepio
   - ico
   - obib
+  - ons
   - opmi
   - scdo
 mirror_from: http://purl.obolibrary.org/obo/ico.owl
@@ -119,8 +121,7 @@ results:
     comment: Missing version IRI
     status: ERROR
   FP05 Scope:
-    comment: Missing domain (scope)
-    status: ERROR
+    status: PASS
   FP06 Textual Definitions:
     comment: 8 missing definitions. See ROBOT Report for details.
     status: WARN
@@ -131,8 +132,7 @@ results:
   FP08 Documented:
     status: PASS
   FP09 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
+    status: PASS
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
@@ -152,10 +152,10 @@ results:
     status: WARN
 sha256_hash: 20f467e6e1bbe3bd9b4a184b7f0cf4f4d77e3793bf2caa7ddb6c99623d68810a
 summary:
-  comment: 4 errors
+  comment: 2 errors
   status: ERROR
   summary_count:
-    ERROR: 4
+    ERROR: 2
     INFO: 1
     WARN: 2
 version: null

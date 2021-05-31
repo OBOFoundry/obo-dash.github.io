@@ -5,58 +5,56 @@ base_prefixes:
 changed: false
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 338
-    Declaration: 124
+    AnnotationAssertion: 393
+    Declaration: 136
     EquivalentClasses: 9
-    ObjectPropertyDomain: 1
-    SubClassOf: 90
-    SubPropertyChainOf: 1
-  'Axioms: Number of axioms': 563
-  'Entities: % of entities reused': 52.99
-  'Entities: Number of annotation properties': 26
-  'Entities: Number of classes': 93
+    SubClassOf: 101
+  'Axioms: Number of axioms': 639
+  'Entities: % of entities reused': 50.0
+  'Entities: Number of annotation properties': 27
+  'Entities: Number of classes': 104
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 12
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 300
-    ObjectAllValuesFrom: 10
-    ObjectExactCardinality: 4
+    Class: 333
+    ObjectAllValuesFrom: 9
+    ObjectExactCardinality: 2
     ObjectIntersectionOf: 10
-    ObjectMinCardinality: 7
+    ObjectMinCardinality: 6
     ObjectSomeValuesFrom: 11
     ObjectUnionOf: 1
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.795
+    _dashboard: 0.796
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.112
+    _impact: 0.117
     _impact_external: 0
-    _reuse: 0.53
-    oboscore: 0.454
+    _reuse: 0.5
+    oboscore: 0.457
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 20
+  'Info: How many ontologies use it?': 21
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 17
+    BFO: 16
     CARO: 16
     ECOCORE: 4
     ENVO: 4
     GO: 4
-    IAO: 214
+    IAO: 251
     NCBITaxon: 3
-    PATO: 11
-    PCO: 213
-    RO: 30
+    PATO: 13
+    PCO: 241
+    RO: 28
     STATO: 2
     dc11: 13
     obo: 2
-    oboInOwl: 42
-    owl: 15
+    oboInOwl: 50
+    owl: 16
     prefix_unknown: 14
-    rdfs: 97
+    rdfs: 107
   'Info: Which ontologies use it?':
   - agro
   - apollo_sv
@@ -68,6 +66,7 @@ metrics:
   - envo
   - eupath
   - gecko
+  - genepio
   - geno
   - mpio
   - obib
@@ -96,9 +95,7 @@ results:
     comment: 2 multiple definitions. 6 missing definitions. See ROBOT Report for details.
     status: ERROR
   FP07 Relations:
-    comment: 1 non-RO properties used.
-    file: fp7
-    status: INFO
+    status: PASS
   FP08 Documented:
     status: PASS
   FP09 Plurality of Users:
@@ -114,19 +111,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 6 errors, 6 warnings, 4 info messages.
+    comment: 6 errors, 6 warnings, 5 info messages.
     file: robot_report
     results:
       ERROR: 6
-      INFO: 4
+      INFO: 5
       WARN: 6
     status: ERROR
-sha256_hash: 376570235db01a9039651ad7e866ab2cf59b3e14cfa19b2e2037ebde492c60f3
+sha256_hash: 455ad4ad8798b2ee8f7a274b3554ab3250bdf73cb3f884056e0dd29cca3b1e98
 summary:
   comment: 4 errors
   status: ERROR
   summary_count:
     ERROR: 4
-    INFO: 1
+    INFO: 0
     WARN: 0
-version: http://purl.obolibrary.org/obo/pco/releases/2020-08-26/pco-base.owl
+version: http://purl.obolibrary.org/obo/pco/releases/2021-05-03/pco-base.owl

@@ -1,0 +1,111 @@
+base_generated: false
+base_prefixes:
+- AISM
+- AISMALT
+changed: true
+metrics:
+  'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 1054
+    Declaration: 611
+    InverseObjectProperties: 1
+    SubAnnotationPropertyOf: 1
+    SubClassOf: 1918
+    SubObjectPropertyOf: 2
+  'Axioms: Number of axioms': 3587
+  'Entities: % of entities reused': 100.0
+  'Entities: Number of annotation properties': 18
+  'Entities: Number of classes': 565
+  'Entities: Number of data properties': 0
+  'Entities: Number of individuals': 0
+  'Entities: Number of object properties': 32
+  'Entities: Number of unsatisfiable classes': 0
+  'Info: Breakdown of OWL class expressions used':
+    Class: 4686
+    ObjectComplementOf: 13
+    ObjectIntersectionOf: 326
+    ObjectSomeValuesFrom: 1717
+    ObjectUnionOf: 6
+  'Info: Does the ontology fall under OWL 2 DL?': false
+  'Info: Experimental OBO score':
+    _dashboard: 0.842
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.0
+    _impact_external: 0
+    _reuse: 1.0
+    oboscore: 0.421
+  'Info: How many externally documented uses?': 0
+  'Info: How many ontologies use it?': 0
+  'Info: Logical consistency': true
+  'Info: Syntax': RDF/XML Syntax
+  'Info: Usage of namespaces in axioms':
+    BFO: 634
+    BSPO: 396
+    BSPOALT: 7
+    CARO: 2
+    CL: 8
+    IAO: 525
+    PATO: 64
+    PATOALT: 8
+    PR: 2
+    RO: 774
+    UBERON: 66
+    dc: 1
+    dc11: 2393
+    foaf: 2
+    obo: 4665
+    oboInOwl: 573
+    rdf: 1903
+    rdfs: 541
+  'Info: Which ontologies use it?':
+  - aism
+mirror_from: http://purl.obolibrary.org/obo/aism/aism-base.owl
+namespace: aism
+results:
+  FP01 Open:
+    status: PASS
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    status: PASS
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 10 missing definitions. See ROBOT Report for details.
+    status: WARN
+  FP07 Relations:
+    comment: 4 non-RO properties used.
+    file: fp7
+    status: INFO
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
+    status: ERROR
+  FP11 Locus of Authority:
+    status: PASS
+  FP12 Naming Conventions:
+    comment: 1 missing labels. See ROBOT Report for details.
+    status: ERROR
+  FP16 Maintenance:
+    status: PASS
+  FP20 Responsiveness:
+    status: PASS
+  ROBOT Report:
+    comment: 1 errors, 10 warnings, 5 info messages.
+    file: robot_report
+    results:
+      ERROR: 1
+      INFO: 5
+      WARN: 10
+    status: ERROR
+sha256_hash: 8a594706edaf8ef2ed4fe773bf6015076db02cb1478d7cb7648c7eeabc7be328
+summary:
+  comment: 3 errors
+  status: ERROR
+  summary_count:
+    ERROR: 3
+    INFO: 1
+    WARN: 1
+version: http://purl.obolibrary.org/obo/aism/releases/2021-05-21/aism-base.owl

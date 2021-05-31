@@ -5,46 +5,48 @@ base_prefixes:
 changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 35236
-    Declaration: 6515
+    AnnotationAssertion: 35556
+    Declaration: 6557
     SubAnnotationPropertyOf: 4
-    SubClassOf: 7588
-  'Axioms: Number of axioms': 49343
-  'Entities: % of entities reused': 0.57
+    SubClassOf: 7634
+  'Axioms: Number of axioms': 49751
+  'Entities: % of entities reused': 0.56
   'Entities: Number of annotation properties': 30
-  'Entities: Number of classes': 6478
+  'Entities: Number of classes': 6520
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 10
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 21654
-    ObjectSomeValuesFrom: 2898
+    Class: 21788
+    ObjectSomeValuesFrom: 2918
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.645
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.017
+    _impact: 0.028
     _impact_external: 0
     _reuse: 0.006
-    oboscore: 0.331
+    oboscore: 0.337
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 3
+  'Info: How many ontologies use it?': 5
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 1841
-    BTO: 21654
+    BFO: 1851
+    BTO: 21788
     BTOALT: 9
-    IAO: 5433
-    RO: 1066
-    oboInOwl: 28703
+    IAO: 5474
+    RO: 1076
+    oboInOwl: 28980
     owl: 57
-    rdfs: 6570
+    rdfs: 6613
   'Info: Which ontologies use it?':
   - bto
   - eupath
+  - foodon
   - fypo
+  - genepio
   - opl
 mirror_from: http://purl.obolibrary.org/obo/bto/bto-base.owl
 namespace: bto
@@ -60,7 +62,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 961 duplicate definitions. 1073 missing definitions. See ROBOT Report
+    comment: 969 duplicate definitions. 1074 missing definitions. See ROBOT Report
       for details.
     status: ERROR
   FP07 Relations:
@@ -83,14 +85,14 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 965 errors, 1143 warnings, 78 info messages.
+    comment: 973 errors, 1144 warnings, 78 info messages.
     file: robot_report
     results:
-      ERROR: 965
+      ERROR: 973
       INFO: 78
-      WARN: 1143
+      WARN: 1144
     status: ERROR
-sha256_hash: 075254d489c12be02f7d42e59bfcbb0fbce1acae4a7a1105dda603c92853f69a
+sha256_hash: 5939baa2edeebcdcc649540076ee1ecc0e494fb4d09308814ecd22f1f5317991
 summary:
   comment: 5 errors
   status: ERROR
@@ -98,4 +100,4 @@ summary:
     ERROR: 5
     INFO: 1
     WARN: 0
-version: http://purl.obolibrary.org/obo/bto/releases/2021-02-09/bto-base.owl
+version: http://purl.obolibrary.org/obo/bto/releases/2021-04-27/bto-base.owl
