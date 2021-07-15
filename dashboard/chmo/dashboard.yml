@@ -5,25 +5,26 @@ base_prefixes:
 changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 21096
-    Declaration: 3129
+    AnnotationAssertion: 21099
+    Declaration: 3134
     DisjointClasses: 1
     EquivalentClasses: 102
-    ObjectPropertyDomain: 5
-    ObjectPropertyRange: 5
+    ObjectPropertyDomain: 4
+    ObjectPropertyRange: 4
     SubAnnotationPropertyOf: 1
     SubClassOf: 3339
-    SubObjectPropertyOf: 7
-  'Axioms: Number of axioms': 27685
-  'Entities: % of entities reused': 6.0
-  'Entities: Number of annotation properties': 23
+    SubObjectPropertyOf: 9
+    TransitiveObjectProperty: 1
+  'Axioms: Number of axioms': 27694
+  'Entities: % of entities reused': 6.18
+  'Entities: Number of annotation properties': 26
   'Entities: Number of classes': 3084
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
-  'Entities: Number of object properties': 25
+  'Entities: Number of object properties': 27
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 10084
+    Class: 10082
     ObjectIntersectionOf: 102
     ObjectSomeValuesFrom: 388
   'Info: Does the ontology fall under OWL 2 DL?': false
@@ -32,7 +33,7 @@ metrics:
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.05
     _impact_external: 0
-    _reuse: 0.06
+    _reuse: 0.062
     oboscore: 0.418
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 9
@@ -41,15 +42,16 @@ metrics:
   'Info: Usage of namespaces in axioms':
     BFO: 354
     CHEBI: 107
-    CHMO: 9573
+    CHMO: 9569
     CHMOALT: 3
     FIX: 81
-    IAO: 3166
+    IAO: 3171
     MS: 7
     OBCS: 4
     OBI: 350
     REX: 1
-    oboInOwl: 17768
+    RO: 7
+    oboInOwl: 17769
     owl: 122
     rdfs: 3049
   'Info: Which ontologies use it?':
@@ -78,10 +80,10 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 43 missing definitions. See ROBOT Report for details.
+    comment: 42 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
-    comment: 6 non-RO properties used.
+    comment: 5 non-RO properties used.
     file: fp7
     status: INFO
   FP08 Documented:
@@ -99,14 +101,14 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 43 warnings, 0 info messages.
+    comment: 42 warnings, 0 info messages.
     file: robot_report
     results:
       ERROR: 0
       INFO: 0
-      WARN: 43
+      WARN: 42
     status: WARN
-sha256_hash: 581c0f19866cd12bb814da1be53338b0348f4e1b6031a55aa4474bece1cd0954
+sha256_hash: 92fee7188ef475e6f17b05df4937cd58d84f4fda98229d954762fc3c03693268
 summary:
   comment: 3 errors
   status: ERROR
