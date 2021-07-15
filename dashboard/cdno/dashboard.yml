@@ -5,10 +5,11 @@ base_prefixes:
 changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 1
     Declaration: 3
-  'Axioms: Number of axioms': 3
+  'Axioms: Number of axioms': 4
   'Entities: % of entities reused': 100.0
-  'Entities: Number of annotation properties': 4
+  'Entities: Number of annotation properties': 5
   'Entities: Number of classes': 0
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
@@ -17,12 +18,12 @@ metrics:
   'Info: Breakdown of OWL class expressions used': {}
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.9
+    _dashboard: 0.89
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
     _reuse: 1.0
-    oboscore: 0.45
+    oboscore: 0.445
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
@@ -30,6 +31,7 @@ metrics:
   'Info: Usage of namespaces in axioms':
     dc: 1
     dc11: 2
+    rdfs: 1
   'Info: Which ontologies use it?':
   - cdno
 mirror_from: http://purl.obolibrary.org/obo/cdno/cdno-base.owl
@@ -48,7 +50,8 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    status: PASS
+    comment: 1 missing definitions. See ROBOT Report for details.
+    status: WARN
   FP07 Relations:
     status: PASS
   FP08 Documented:
@@ -65,13 +68,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    status: PASS
-sha256_hash: 2b69f35a3b66fab64cec625a567635996daf7b595b358e4c928d9aa89dbc3fb4
+    comment: 1 warnings, 0 info messages.
+    file: robot_report
+    results:
+      ERROR: 0
+      INFO: 0
+      WARN: 1
+    status: WARN
+sha256_hash: 2a37348d657cb5a054f34d12896422951426750211616f0549dae3be8bab5619
 summary:
   comment: 2 errors
   status: ERROR
   summary_count:
     ERROR: 2
     INFO: 0
-    WARN: 0
-version: http://purl.obolibrary.org/obo/cdno/releases/2021-02-06/cdno-base.owl
+    WARN: 2
+version: http://purl.obolibrary.org/obo/cdno/releases/2021-05-30/cdno-base.owl

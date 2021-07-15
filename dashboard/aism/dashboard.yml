@@ -5,57 +5,63 @@ base_prefixes:
 changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 1054
-    Declaration: 611
-    InverseObjectProperties: 1
+    AnnotationAssertion: 1080
+    Declaration: 638
+    EquivalentClasses: 3
+    InverseObjectProperties: 2
+    ObjectPropertyDomain: 2
+    ObjectPropertyRange: 2
     SubAnnotationPropertyOf: 1
-    SubClassOf: 1918
-    SubObjectPropertyOf: 2
-  'Axioms: Number of axioms': 3587
+    SubClassOf: 1968
+    SubObjectPropertyOf: 4
+    SubPropertyChainOf: 2
+  'Axioms: Number of axioms': 3702
   'Entities: % of entities reused': 100.0
   'Entities: Number of annotation properties': 18
-  'Entities: Number of classes': 565
+  'Entities: Number of classes': 587
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
-  'Entities: Number of object properties': 32
+  'Entities: Number of object properties': 37
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 4686
-    ObjectComplementOf: 13
-    ObjectIntersectionOf: 326
-    ObjectSomeValuesFrom: 1717
-    ObjectUnionOf: 6
+    Class: 4822
+    ObjectComplementOf: 10
+    ObjectIntersectionOf: 329
+    ObjectSomeValuesFrom: 1756
+    ObjectUnionOf: 9
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.842
+    _dashboard: 0.839
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
     _reuse: 1.0
-    oboscore: 0.421
+    oboscore: 0.419
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 634
-    BSPO: 396
+    BFO: 655
+    BSPO: 410
     BSPOALT: 7
     CARO: 2
     CL: 8
-    IAO: 525
-    PATO: 64
+    IAO: 531
+    OBI: 1
+    PATO: 74
     PATOALT: 8
     PR: 2
-    RO: 774
-    UBERON: 66
+    RO: 788
+    UBERON: 67
     dc: 1
-    dc11: 2393
+    dc11: 2421
     foaf: 2
-    obo: 4665
-    oboInOwl: 573
-    rdf: 1903
-    rdfs: 541
+    obo: 4803
+    oboInOwl: 583
+    prefix_unknown: 1
+    rdf: 1901
+    rdfs: 526
   'Info: Which ontologies use it?':
   - aism
 mirror_from: http://purl.obolibrary.org/obo/aism/aism-base.owl
@@ -72,10 +78,10 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 10 missing definitions. See ROBOT Report for details.
+    comment: 26 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
-    comment: 4 non-RO properties used.
+    comment: 6 non-RO properties used.
     file: fp7
     status: INFO
   FP08 Documented:
@@ -93,14 +99,14 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 1 errors, 10 warnings, 5 info messages.
+    comment: 4 errors, 26 warnings, 9 info messages.
     file: robot_report
     results:
-      ERROR: 1
-      INFO: 5
-      WARN: 10
+      ERROR: 4
+      INFO: 9
+      WARN: 26
     status: ERROR
-sha256_hash: 8a594706edaf8ef2ed4fe773bf6015076db02cb1478d7cb7648c7eeabc7be328
+sha256_hash: a103b4704edbd4240e5c9ee4e7598fd9b07859ee62047992d3f62140d7965957
 summary:
   comment: 3 errors
   status: ERROR
@@ -108,4 +114,4 @@ summary:
     ERROR: 3
     INFO: 1
     WARN: 1
-version: http://purl.obolibrary.org/obo/aism/releases/2021-05-21/aism-base.owl
+version: http://purl.obolibrary.org/obo/aism/releases/2021-07-03/aism-base.owl
