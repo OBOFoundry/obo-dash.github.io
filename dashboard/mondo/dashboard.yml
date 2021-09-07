@@ -5,75 +5,75 @@ base_prefixes:
 changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 380097
-    Declaration: 30463
-    DisjointClasses: 83
-    EquivalentClasses: 7431
-    SubAnnotationPropertyOf: 35
-    SubClassOf: 47553
+    AnnotationAssertion: 382713
+    Declaration: 30605
+    DisjointClasses: 82
+    EquivalentClasses: 7498
+    SubAnnotationPropertyOf: 36
+    SubClassOf: 47971
     SubObjectPropertyOf: 4
     SubPropertyChainOf: 7
     TransitiveObjectProperty: 1
-  'Axioms: Number of axioms': 465674
-  'Entities: % of entities reused': 19.13
-  'Entities: Number of annotation properties': 85
-  'Entities: Number of classes': 30354
+  'Axioms: Number of axioms': 468917
+  'Entities: % of entities reused': 19.04
+  'Entities: Number of annotation properties': 83
+  'Entities: Number of classes': 30498
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 31
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 148305
-    ObjectIntersectionOf: 7415
-    ObjectSomeValuesFrom: 16969
+    Class: 149506
+    ObjectIntersectionOf: 7482
+    ObjectSomeValuesFrom: 17186
     ObjectUnionOf: 16
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.739
+    _dashboard: 0.77
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.028
     _impact_external: 0.5
-    _reuse: 0.191
-    oboscore: 0.384
+    _reuse: 0.19
+    oboscore: 0.399
   'Info: How many externally documented uses?': 5
   'Info: How many ontologies use it?': 5
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 54
-    CARO: 134
+    BFO: 45
+    CARO: 2
     CHEBI: 109
-    CL: 574
+    CL: 410
     ECTO: 108
     ENVO: 40
     FOODON: 2
-    GO: 1097
-    HGNC: 10201
-    HP: 2074
-    IAO: 17680
+    GO: 1099
+    HGNC: 10209
+    HP: 2108
+    IAO: 18333
     MF: 20
     MFOEM: 3
     MFOMD: 13
-    MONDO: 127353
-    MONDOALT: 1801
+    MONDO: 128814
+    MONDOALT: 1998
     NBO: 13
-    NCBITaxon: 1620
+    NCBITaxon: 1629
     NCIT: 75
     OBA: 2
-    PATO: 337
+    PATO: 340
     PO: 3
     PR: 60
-    RO: 16106
-    SO: 25
-    UBERON: 4721
+    RO: 16297
+    SO: 40
+    UBERON: 4592
     dc11: 112
-    obo: 2
-    oboInOwl: 514445
-    owl: 2370
-    rdf: 3
-    rdfs: 29186
-    skos: 88262
-    xsd: 35034
+    obo: 112
+    oboInOwl: 517091
+    owl: 2424
+    rdf: 4
+    rdfs: 29596
+    skos: 88357
+    xsd: 35122
   'Info: Which ontologies use it?':
   - duo
   - gecko
@@ -95,8 +95,9 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 7255 missing definitions. See ROBOT Report for details.
-    status: WARN
+    comment: 4 duplicate definitions. 7040 missing definitions. See ROBOT Report for
+      details.
+    status: ERROR
   FP07 Relations:
     comment: 12 non-RO properties used.
     file: fp7
@@ -108,26 +109,26 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 229 missing labels. See ROBOT Report for details.
+    comment: 44 missing labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
     status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 233 errors, 8420 warnings, 106 info messages.
+    comment: 48 errors, 8211 warnings, 105 info messages.
     file: robot_report
     results:
-      ERROR: 233
-      INFO: 106
-      WARN: 8420
+      ERROR: 48
+      INFO: 105
+      WARN: 8211
     status: ERROR
-sha256_hash: caff35e784a900269a435385ece69b68ae63deae8d1a446cde92136d18c4a723
+sha256_hash: 8314397960358f4bc6cab74873d93c44c21af0b6b480099d8b6b8cbd84bd8242
 summary:
-  comment: 2 errors
+  comment: 3 errors
   status: ERROR
   summary_count:
-    ERROR: 2
+    ERROR: 3
     INFO: 1
-    WARN: 1
-version: http://purl.obolibrary.org/obo/mondo/releases/2021-07-12/mondo-base.owl
+    WARN: 0
+version: http://purl.obolibrary.org/obo/mondo/releases/2021-09-01/mondo-base.owl

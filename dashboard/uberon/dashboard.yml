@@ -2,73 +2,75 @@ base_generated: false
 base_prefixes:
 - UBERON
 - UBERONALT
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 172970
-    Declaration: 15143
+    AnnotationAssertion: 173459
+    Declaration: 15208
     DisjointClasses: 603
     DisjointObjectProperties: 1
-    EquivalentClasses: 6322
+    EquivalentClasses: 6366
     InverseObjectProperties: 11
     ObjectPropertyDomain: 5
     ObjectPropertyRange: 3
     SubAnnotationPropertyOf: 42
-    SubClassOf: 25501
+    SubClassOf: 25534
     SubObjectPropertyOf: 85
-    SubPropertyChainOf: 40
+    SubPropertyChainOf: 38
     SymmetricObjectProperty: 3
     TransitiveObjectProperty: 26
-  'Axioms: Number of axioms': 220755
-  'Entities: % of entities reused': 7.16
-  'Entities: Number of annotation properties': 184
-  'Entities: Number of classes': 14833
+  'Axioms: Number of axioms': 221384
+  'Entities: % of entities reused': 7.09
+  'Entities: Number of annotation properties': 182
+  'Entities: Number of classes': 14889
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
-  'Entities: Number of object properties': 147
+  'Entities: Number of object properties': 142
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 87234
-    ObjectIntersectionOf: 6552
+    Class: 87491
+    ObjectIntersectionOf: 6594
     ObjectMaxCardinality: 49
     ObjectMinCardinality: 57
-    ObjectSomeValuesFrom: 23707
+    ObjectSomeValuesFrom: 23850
     ObjectUnionOf: 113
-  'Info: Does the ontology fall under OWL 2 DL?': false
+  'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
     _dashboard: 0.62
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.339
+    _impact: 0.335
     _impact_external: 0.75
-    _reuse: 0.072
-    oboscore: 0.48
+    _reuse: 0.071
+    oboscore: 0.478
   'Info: How many externally documented uses?': 10
-  'Info: How many ontologies use it?': 61
+  'Info: How many ontologies use it?': 60
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 13424
+    BFO: 13622
     BSPO: 613
     CHEBI: 60
     CL: 601
     ENVO: 14
     FBbt: 2
     GO: 658
-    IAO: 13806
+    IAO: 13906
     NBO: 23
     NCBITaxon: 1510
     PATO: 178
     PR: 23
-    RO: 8915
-    UBERON: 83438
-    dc11: 305
-    foaf: 1886
-    obo: 8183
-    oboInOwl: 205205
-    owl: 2075
-    rdf: 1
-    rdfs: 16566
-    xsd: 7398
+    RO: 9139
+    UBERON: 83695
+    dc: 2
+    dc11: 308
+    foaf: 1887
+    obo: 8173
+    oboInOwl: 205795
+    owl: 2094
+    prefix_unknown: 4
+    rdf: 83
+    rdfs: 16538
+    xsd: 7662
   'Info: Which ontologies use it?':
   - agro
   - aism
@@ -86,7 +88,6 @@ metrics:
   - ecocore
   - envo
   - eupath
-  - fobi
   - foodon
   - fovt
   - gecko
@@ -113,7 +114,6 @@ metrics:
   - obib
   - ohmi
   - ohpi
-  - omiabis
   - omit
   - one
   - ons
@@ -122,6 +122,7 @@ metrics:
   - opmi
   - ornaseq
   - ovae
+  - pato
   - plana
   - poro
   - ppo
@@ -146,7 +147,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 312 duplicate definitions. 2858 missing definitions. See ROBOT Report
+    comment: 130 duplicate definitions. 2860 missing definitions. See ROBOT Report
       for details.
     status: ERROR
   FP07 Relations:
@@ -160,21 +161,21 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 4 duplicate labels. 5 missing labels. See ROBOT Report for details.
+    comment: 87 missing labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
     status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 397 errors, 4090 warnings, 3635 info messages.
+    comment: 217 errors, 4136 warnings, 3676 info messages.
     file: robot_report
     results:
-      ERROR: 397
-      INFO: 3635
-      WARN: 4090
+      ERROR: 217
+      INFO: 3676
+      WARN: 4136
     status: ERROR
-sha256_hash: 81792ca58fa0f546b10926ddb751377803b98cfedd6a555958af5a7048f5c243
+sha256_hash: ed6b4d6500e99cb52b337afb43451ea8337357c835f66050e94e1747e63055e5
 summary:
   comment: 4 errors
   status: ERROR
@@ -182,4 +183,4 @@ summary:
     ERROR: 4
     INFO: 0
     WARN: 0
-version: http://purl.obolibrary.org/obo/uberon/releases/2021-02-13/uberon-base.owl
+version: http://purl.obolibrary.org/obo/uberon/releases/2021-07-27/uberon-base.owl
