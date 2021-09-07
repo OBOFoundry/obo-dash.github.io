@@ -5,38 +5,38 @@ base_prefixes:
 changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 1023843
+    AnnotationAssertion: 1031822
     ClassAssertion: 5
-    Declaration: 111715
-    SubClassOf: 117877
-  'Axioms: Number of axioms': 1253440
+    Declaration: 111928
+    SubClassOf: 124137
+  'Axioms: Number of axioms': 1267892
   'Entities: % of entities reused': 0.01
   'Entities: Number of annotation properties': 23
-  'Entities: Number of classes': 111696
+  'Entities: Number of classes': 111909
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 5
   'Entities: Number of object properties': 0
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 347455
+    Class: 360188
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.869
+    _dashboard: 0.949
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.006
-    _impact_external: 0
+    _impact_external: 0.5
     _reuse: 0.0
-    oboscore: 0.438
-  'Info: How many externally documented uses?': 0
+    oboscore: 0.477
+  'Info: How many externally documented uses?': 3
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    GNO: 1132724
-    IAO: 111713
-    oboInOwl: 7382
+    GNO: 1153014
+    IAO: 111926
+    oboInOwl: 7378
     owl: 7775
-    rdfs: 111728
+    rdfs: 111941
   'Info: Which ontologies use it?':
   - gno
   - pr
@@ -60,8 +60,7 @@ results:
   FP08 Documented:
     status: PASS
   FP09 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
+    status: PASS
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
@@ -75,15 +74,15 @@ results:
     file: robot_report
     results:
       ERROR: 0
-      INFO: 5854
+      INFO: 2
       WARN: 0
     status: INFO
-sha256_hash: ddb38fce865772fbb3c7fdfe17a7493998d53f44edf2035f4e35124597d1aeb5
+sha256_hash: e5185e435f78dc038197ce01b74b2ee5fa00b3c375926dd95892dd062c77fb82
 summary:
-  comment: 1 errors
-  status: ERROR
+  comment: 1 info messages
+  status: INFO
   summary_count:
-    ERROR: 1
+    ERROR: 0
     INFO: 1
     WARN: 0
-version: http://purl.obolibrary.org/obo/gno/2021-06-16/gno.owl
+version: http://purl.obolibrary.org/obo/gno/2021-08-13/gno.owl

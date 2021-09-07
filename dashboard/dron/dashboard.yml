@@ -1,73 +1,61 @@
-base_generated: true
+base_generated: false
 base_prefixes:
 - DRON
 - DRONALT
 changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 698024
-    AnnotationPropertyRangeOf: 1
-    ClassAssertion: 19
-    Declaration: 578314
-    DifferentIndividuals: 2
-    DisjointClasses: 11
-    EquivalentClasses: 78
-    InverseObjectProperties: 2
-    ObjectPropertyDomain: 2
-    ObjectPropertyRange: 2
-    SubAnnotationPropertyOf: 2
-    SubClassOf: 1157931
-    SubObjectPropertyOf: 18
-    TransitiveObjectProperty: 4
-  'Axioms: Number of axioms': 2434410
-  'Entities: % of entities reused': 0.36
-  'Entities: Number of annotation properties': 75
-  'Entities: Number of classes': 578205
+    AnnotationAssertion: 671293
+    Declaration: 577257
+    EquivalentClasses: 74
+    SubClassOf: 1153509
+    SubObjectPropertyOf: 2
+    TransitiveObjectProperty: 2
+  'Axioms: Number of axioms': 2402137
+  'Entities: % of entities reused': 0.44
+  'Entities: Number of annotation properties': 30
+  'Entities: Number of classes': 577214
   'Entities: Number of data properties': 1
-  'Entities: Number of individuals': 19
+  'Entities: Number of individuals': 1
   'Entities: Number of object properties': 20
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 3103867
+    Class: 3094365
     DataHasValue: 21288
     ObjectAllValuesFrom: 1
     ObjectHasValue: 21288
-    ObjectIntersectionOf: 115492
-    ObjectOneOf: 4
-    ObjectSomeValuesFrom: 788205
+    ObjectIntersectionOf: 115686
+    ObjectSomeValuesFrom: 788787
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.592
+    _dashboard: 0.664
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.078
     _impact_external: 0
     _reuse: 0.004
-    oboscore: 0.335
+    oboscore: 0.371
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 14
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    APOLLO_SV: 8
-    BFO: 189613
-    CHEBI: 53366
-    DRON: 3022847
-    GO: 21
-    IAO: 23895
-    OBI: 120687
-    OGMS: 4
-    PATO: 21290
-    PR: 5
-    RO: 21
-    UO: 21305
-    dc: 1
-    dc11: 126
-    foaf: 1
-    oboInOwl: 41115
-    owl: 15
-    prefix_unknown: 577575
-    protege: 1
-    rdfs: 586641
+    APOLLO_SV: 3
+    BFO: 189758
+    CHEBI: 66316
+    DRON: 3002334
+    GO: 7
+    IAO: 21625
+    OBI: 119206
+    OGMS: 3
+    PATO: 21289
+    PR: 1
+    RO: 15
+    UO: 21296
+    dc11: 112
+    oboInOwl: 39
+    owl: 2
+    prefix_unknown: 577770
+    rdfs: 577259
     xsd: 21288
   'Info: Which ontologies use it?':
   - apollo_sv
@@ -85,7 +73,7 @@ metrics:
   - opmi
   - pdro
   - scdo
-mirror_from: http://purl.obolibrary.org/obo/dron.owl
+mirror_from: http://purl.obolibrary.org/obo/dron/dron-base.owl
 namespace: dron
 results:
   FP01 Open:
@@ -95,15 +83,16 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    comment: Missing version IRI
-    status: ERROR
+    status: PASS
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 576165 missing definitions. See ROBOT Report for details.
+    comment: 577146 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
-    status: PASS
+    comment: 3 non-RO properties used.
+    file: fp7
+    status: INFO
   FP08 Documented:
     status: PASS
   FP09 Plurality of Users:
@@ -112,28 +101,27 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 360 duplicate labels. 18 multiple labels. 1 missing labels. See ROBOT
+    comment: 360 duplicate labels. 43 multiple labels. 24 missing labels. See ROBOT
       Report for details.
     status: ERROR
   FP16 Maintenance:
-    comment: Missing version IRI to check date
-    status: ERROR
+    status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 452 errors, 576165 warnings, 57 info messages.
+    comment: 498 errors, 577146 warnings, 2294 info messages.
     file: robot_report
     results:
-      ERROR: 452
-      INFO: 57
-      WARN: 576165
+      ERROR: 498
+      INFO: 2294
+      WARN: 577146
     status: ERROR
-sha256_hash: c11644dcd44b8582ece18131533736ab5b2e5b431c66e66f5b590ebb0537b582
+sha256_hash: 79cb37b8fbfd0d1de21cca5f3b04c7fbfaa2f11eaaa812bf66368b32d08de577
 summary:
-  comment: 5 errors
+  comment: 3 errors
   status: ERROR
   summary_count:
-    ERROR: 5
-    INFO: 0
+    ERROR: 3
+    INFO: 1
     WARN: 1
-version: null
+version: http://purl.obolibrary.org/obo/dron/releases/2021-08-12/dron-base.owl

@@ -2,35 +2,37 @@ base_generated: false
 base_prefixes:
 - RBO
 - RBOALT
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 618
-    ClassAssertion: 24
+    AnnotationAssertion: 658
+    ClassAssertion: 25
     DataPropertyDomain: 1
     DataPropertyRange: 1
-    Declaration: 261
-    SubClassOf: 219
-  'Axioms: Number of axioms': 1124
+    Declaration: 278
+    SubClassOf: 230
+  'Axioms: Number of axioms': 1193
   'Entities: % of entities reused': 100.0
-  'Entities: Number of annotation properties': 20
-  'Entities: Number of classes': 214
+  'Entities: Number of annotation properties': 21
+  'Entities: Number of classes': 228
   'Entities: Number of data properties': 3
-  'Entities: Number of individuals': 24
-  'Entities: Number of object properties': 3
+  'Entities: Number of individuals': 25
+  'Entities: Number of object properties': 5
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 647
+    Class: 684
     DataHasValue: 60
+    ObjectAllValuesFrom: 1
     ObjectIntersectionOf: 30
+    ObjectSomeValuesFrom: 2
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.834
+    _dashboard: 0.831
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
     _reuse: 1.0
-    oboscore: 0.417
+    oboscore: 0.415
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
@@ -41,17 +43,19 @@ metrics:
     CHMO: 3
     COB: 31
     DOID: 2
-    ENVO: 18
-    IAO: 384
-    OBI: 17
-    PATO: 5
-    RO: 2
-    UO: 6
+    ENVO: 21
+    GO: 6
+    IAO: 412
+    OBI: 19
+    PATO: 7
+    RO: 7
+    UO: 8
     dc: 1
     dc11: 4
-    obo: 646
+    obo: 670
     oboInOwl: 46
-    rdfs: 210
+    owl: 3
+    rdfs: 219
     xsd: 31
   'Info: Which ontologies use it?':
   - rbo
@@ -69,7 +73,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 58 missing definitions. See ROBOT Report for details.
+    comment: 60 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     comment: 2 non-RO properties used.
@@ -83,21 +87,21 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 2 missing labels. See ROBOT Report for details.
+    comment: 4 missing labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
     status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 2 errors, 90 warnings, 7 info messages.
+    comment: 7 errors, 93 warnings, 8 info messages.
     file: robot_report
     results:
-      ERROR: 2
-      INFO: 7
-      WARN: 90
+      ERROR: 7
+      INFO: 8
+      WARN: 93
     status: ERROR
-sha256_hash: 9ceeac1d045021acbcba85673eff24a77772208ea53b128380b1412eeea25ac7
+sha256_hash: 2632ff1fdb4ce8085034339a961162629c78a08d4742e2b557598acf0a05231e
 summary:
   comment: 3 errors
   status: ERROR
@@ -105,4 +109,4 @@ summary:
     ERROR: 3
     INFO: 1
     WARN: 1
-version: http://purl.obolibrary.org/obo/rbo/releases/2021-05-21/rbo-base.owl
+version: http://purl.obolibrary.org/obo/rbo/releases/2021-08-30/rbo-base.owl

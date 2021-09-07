@@ -8,7 +8,7 @@
             <div class="col-md-2"></div>
             <div class="col-md-8">
                 <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/mondo.html">mondo</a></h1>
-                <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/mondo/releases/2021-07-12/mondo-base.owl</p>
+                <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/mondo/releases/2021-09-01/mondo-base.owl</p>
                 <p class="lead" style="margin-top:-15px;"><b>Date run</b>: </p>
                 <p class="lead" style="margin-top:-15px;"><a href="dashboard.yml">View dashboard results as YAML</a></p>
                 <h3>Error Breakdown</h3>
@@ -18,7 +18,7 @@
                         
                     
                     <div class="alert alert-danger">
-                        <center><h3>ERROR - 2 errors</h3></center>
+                        <center><h3>ERROR - 3 errors</h3></center>
                     </div>
                 
                 <table class="table">
@@ -139,11 +139,11 @@
                                 
                                 
                             
-                            <td class="table-warning" style="text-align:center;">
-                                <img src="../assets/warning.svg" height="15px">
+                            <td class="table-danger" style="text-align:center;">
+                                <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>7255 missing definitions. See ROBOT Report for details.</td>
+                                <td>4 duplicate definitions. 7040 missing definitions. See ROBOT Report for details.</td>
                             
                             
                                 <td></td>
@@ -243,7 +243,7 @@
                                 <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>229 missing labels. See ROBOT Report for details.</td>
+                                <td>44 missing labels. See ROBOT Report for details.</td>
                             
                             
                                 <td></td>
@@ -283,7 +283,7 @@
                                 <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>233 errors, 8420 warnings, 106 info messages.</td>
+                                <td>48 errors, 8211 warnings, 105 info messages.</td>
                             
                             
                                 <td><a href="robot_report.html">View Report</a></td>
@@ -308,17 +308,17 @@
                                 
                                     <td><ul>
                                         
-                                        <li>AnnotationAssertion: 380097</li>
+                                        <li>AnnotationAssertion: 382713</li>
                                         
-                                        <li>Declaration: 30463</li>
+                                        <li>Declaration: 30605</li>
                                         
-                                        <li>DisjointClasses: 83</li>
+                                        <li>DisjointClasses: 82</li>
                                         
-                                        <li>EquivalentClasses: 7431</li>
+                                        <li>EquivalentClasses: 7498</li>
                                         
-                                        <li>SubAnnotationPropertyOf: 35</li>
+                                        <li>SubAnnotationPropertyOf: 36</li>
                                         
-                                        <li>SubClassOf: 47553</li>
+                                        <li>SubClassOf: 47971</li>
                                         
                                         <li>SubObjectPropertyOf: 4</li>
                                         
@@ -334,7 +334,7 @@
                                 <td>Axioms: Number of axioms</td>
                                 
                                 
-                                    <td>465674</td>
+                                    <td>468917</td>
                                 
                             </tr>
                         
@@ -342,7 +342,7 @@
                                 <td>Entities: % of entities reused</td>
                                 
                                 
-                                    <td>19.13</td>
+                                    <td>19.04</td>
                                 
                             </tr>
                         
@@ -350,7 +350,7 @@
                                 <td>Entities: Number of annotation properties</td>
                                 
                                 
-                                    <td>85</td>
+                                    <td>83</td>
                                 
                             </tr>
                         
@@ -358,7 +358,7 @@
                                 <td>Entities: Number of classes</td>
                                 
                                 
-                                    <td>30354</td>
+                                    <td>30498</td>
                                 
                             </tr>
                         
@@ -400,11 +400,11 @@
                                 
                                     <td><ul>
                                         
-                                        <li>Class: 148305</li>
+                                        <li>Class: 149506</li>
                                         
-                                        <li>ObjectIntersectionOf: 7415</li>
+                                        <li>ObjectIntersectionOf: 7482</li>
                                         
-                                        <li>ObjectSomeValuesFrom: 16969</li>
+                                        <li>ObjectSomeValuesFrom: 17186</li>
                                         
                                         <li>ObjectUnionOf: 16</li>
                                         
@@ -426,7 +426,7 @@
                                 
                                     <td><ul>
                                         
-                                        <li>_dashboard: 0.739</li>
+                                        <li>_dashboard: 0.77</li>
                                         
                                         <li>_formula: (1*impact+1*dashboard)/2</li>
                                         
@@ -434,9 +434,9 @@
                                         
                                         <li>_impact_external: 0.5</li>
                                         
-                                        <li>_reuse: 0.191</li>
+                                        <li>_reuse: 0.19</li>
                                         
-                                        <li>oboscore: 0.384</li>
+                                        <li>oboscore: 0.399</li>
                                         
                                     </ul></td>
                                 
@@ -480,13 +480,13 @@
                                 
                                     <td><ul>
                                         
-                                        <li>BFO: 54</li>
+                                        <li>BFO: 45</li>
                                         
-                                        <li>CARO: 134</li>
+                                        <li>CARO: 2</li>
                                         
                                         <li>CHEBI: 109</li>
                                         
-                                        <li>CL: 574</li>
+                                        <li>CL: 410</li>
                                         
                                         <li>ECTO: 108</li>
                                         
@@ -494,13 +494,13 @@
                                         
                                         <li>FOODON: 2</li>
                                         
-                                        <li>GO: 1097</li>
+                                        <li>GO: 1099</li>
                                         
-                                        <li>HGNC: 10201</li>
+                                        <li>HGNC: 10209</li>
                                         
-                                        <li>HP: 2074</li>
+                                        <li>HP: 2108</li>
                                         
-                                        <li>IAO: 17680</li>
+                                        <li>IAO: 18333</li>
                                         
                                         <li>MF: 20</li>
                                         
@@ -508,45 +508,45 @@
                                         
                                         <li>MFOMD: 13</li>
                                         
-                                        <li>MONDO: 127353</li>
+                                        <li>MONDO: 128814</li>
                                         
-                                        <li>MONDOALT: 1801</li>
+                                        <li>MONDOALT: 1998</li>
                                         
                                         <li>NBO: 13</li>
                                         
-                                        <li>NCBITaxon: 1620</li>
+                                        <li>NCBITaxon: 1629</li>
                                         
                                         <li>NCIT: 75</li>
                                         
                                         <li>OBA: 2</li>
                                         
-                                        <li>PATO: 337</li>
+                                        <li>PATO: 340</li>
                                         
                                         <li>PO: 3</li>
                                         
                                         <li>PR: 60</li>
                                         
-                                        <li>RO: 16106</li>
+                                        <li>RO: 16297</li>
                                         
-                                        <li>SO: 25</li>
+                                        <li>SO: 40</li>
                                         
-                                        <li>UBERON: 4721</li>
+                                        <li>UBERON: 4592</li>
                                         
                                         <li>dc11: 112</li>
                                         
-                                        <li>obo: 2</li>
+                                        <li>obo: 112</li>
                                         
-                                        <li>oboInOwl: 514445</li>
+                                        <li>oboInOwl: 517091</li>
                                         
-                                        <li>owl: 2370</li>
+                                        <li>owl: 2424</li>
                                         
-                                        <li>rdf: 3</li>
+                                        <li>rdf: 4</li>
                                         
-                                        <li>rdfs: 29186</li>
+                                        <li>rdfs: 29596</li>
                                         
-                                        <li>skos: 88262</li>
+                                        <li>skos: 88357</li>
                                         
-                                        <li>xsd: 35034</li>
+                                        <li>xsd: 35122</li>
                                         
                                     </ul></td>
                                 

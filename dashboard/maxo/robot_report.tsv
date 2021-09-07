@@ -1,4 +1,5 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	missing_label	MAXO:0000595	rdfs:label	
 ERROR	missing_label	OBI:0002600	rdfs:label	
 ERROR	missing_label	OBI:0002650	rdfs:label	
 ERROR	misused_obsolete_label	obsolete therapeutic intervention	rdfs:label	obsolete therapeutic intervention
@@ -40,6 +41,7 @@ ERROR	misused_obsolete_label	obsolete genitourinary agents, other	rdfs:label	obs
 ERROR	misused_obsolete_label	obsolete ophthalmic agents, other	rdfs:label	obsolete ophthalmic agents, other
 ERROR	misused_obsolete_label	obsolete respiratory tract agents, other	rdfs:label	obsolete respiratory tract agents, other
 ERROR	misused_obsolete_label	obsolete orthopedic consultation	rdfs:label	obsolete orthopedic consultation
+ERROR	misused_obsolete_label	obsolete bilevel positive airway pressure ventilation	rdfs:label	obsolete bilevel positive airway pressure ventilation
 ERROR	misused_obsolete_label	obsolete swab-based biospecimen collection	rdfs:label	obsolete swab-based biospecimen collection
 ERROR	misused_obsolete_label	obsolete urine protein assessment	rdfs:label	obsolete urine protein assessment
 ERROR	misused_obsolete_label	obsolete kidney ct	rdfs:label	obsolete kidney ct
@@ -87,9 +89,14 @@ WARN	missing_definition	thyroid-stimulating hormonal agent therapy	IAO:0000115
 WARN	missing_definition	obsolete ophthalmic agents, other	IAO:0000115	
 WARN	missing_definition	obsolete respiratory tract agents, other	IAO:0000115	
 WARN	missing_definition	obsolete orthopedic consultation	IAO:0000115	
+WARN	missing_definition	obsolete bilevel positive airway pressure ventilation	IAO:0000115	
 WARN	missing_definition	avoided behavior	IAO:0000115	
 WARN	missing_definition	obsolete swab-based biospecimen collection	IAO:0000115	
+WARN	missing_definition	MAXO:0000595	IAO:0000115	
 WARN	missing_definition	obsolete urine protein assessment	IAO:0000115	
+WARN	missing_definition	renal lithotripsy	IAO:0000115	
+WARN	missing_definition	extracardiac stimulation	IAO:0000115	
+WARN	missing_definition	hydration therapy	IAO:0000115	
 WARN	missing_definition	avoided medical action	IAO:0000115	
 WARN	missing_definition	avoided food	IAO:0000115	
 WARN	missing_definition	avoided excessive intake of food	IAO:0000115	
@@ -108,10 +115,6 @@ INFO	missing_superclass	obsolete therapeutic mental or psychological behavior av
 INFO	missing_superclass	obsolete stress avoidance	rdfs:subClassOf	
 INFO	missing_superclass	obsolete smoking avoidance	rdfs:subClassOf	
 INFO	missing_superclass	obsolete physiologic state	rdfs:subClassOf	
-INFO	missing_superclass	dehydration prevention recommendation	rdfs:subClassOf	
-INFO	missing_superclass	hypertension prevention recommendation	rdfs:subClassOf	
-INFO	missing_superclass	obesity prevention recommendation	rdfs:subClassOf	
-INFO	missing_superclass	inflammation of the skin prevention recommendation	rdfs:subClassOf	
 INFO	missing_superclass	obsolete lung transplantation surgical procedure	rdfs:subClassOf	
 INFO	missing_superclass	obsolete liver transplantation	rdfs:subClassOf	
 INFO	missing_superclass	obsolete liver ultrasound procedure	rdfs:subClassOf	
@@ -195,6 +198,3 @@ INFO	missing_superclass	biopsy of hypopharynx	rdfs:subClassOf
 INFO	missing_superclass	biopsy of hypothalamus	rdfs:subClassOf	
 INFO	missing_superclass	biopsy of intestine	rdfs:subClassOf	
 INFO	missing_superclass	biopsy of jaw skeleton	rdfs:subClassOf	
-INFO	missing_superclass	biopsy of lacrimal apparatus	rdfs:subClassOf	
-INFO	missing_superclass	biopsy of large intestine	rdfs:subClassOf	
-INFO	missing_superclass	biopsy of larynx	rdfs:subClassOf	
