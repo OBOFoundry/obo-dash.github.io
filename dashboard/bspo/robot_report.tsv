@@ -1,75 +1,96 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/bspo.owl	dc11:description	
-ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/bspo.owl	dc:license	
-ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/bspo.owl	dc11:title	
-WARN	annotation_whitespace	antero-dorsal region	oboInOwl:hasExactSynonym	anterodorsal region 
-WARN	annotation_whitespace	antero-ventral region	oboInOwl:hasExactSynonym	anteroventral region 
-WARN	annotation_whitespace	medial-lateral axis	oboInOwl:hasRelatedSynonym	proximal-distal axis 
-WARN	missing_definition	upper side	IAO:0000115	
-WARN	missing_definition	lower side	IAO:0000115	
-WARN	missing_definition	deep side	IAO:0000115	
-WARN	missing_definition	superficial side	IAO:0000115	
-WARN	missing_definition	upper region	IAO:0000115	
-WARN	missing_definition	lower region	IAO:0000115	
-WARN	missing_definition	anterior-most region	IAO:0000115	
-WARN	missing_definition	posterior-most region	IAO:0000115	
-WARN	missing_definition	dorsal-most region	IAO:0000115	
-WARN	missing_definition	ventral-most region	IAO:0000115	
-WARN	missing_definition	upper/lower compartment boundary	IAO:0000115	
-WARN	missing_definition	deep/superficial compartment boundary	IAO:0000115	
-WARN	missing_definition	apical/basal compartment boundary	IAO:0000115	
-WARN	missing_definition	proximal/distal compartment boundary	IAO:0000115	
-WARN	missing_definition	proximal side	IAO:0000115	
-WARN	missing_definition	lateral side	IAO:0000115	
-WARN	missing_definition	medial side	IAO:0000115	
-WARN	missing_definition	contralateral region	IAO:0000115	
-WARN	missing_definition	ipsilateral region	IAO:0000115	
-WARN	missing_definition	anatomical compartment	IAO:0000115	
-WARN	missing_definition	anterior compartment	IAO:0000115	
-WARN	missing_definition	compartment boundary	IAO:0000115	
-WARN	missing_definition	dorsal compartment	IAO:0000115	
-WARN	missing_definition	posterior compartment	IAO:0000115	
-WARN	missing_definition	ventral compartment	IAO:0000115	
-WARN	missing_definition	anatomical compartment boundary	IAO:0000115	
-WARN	missing_definition	anterior/posterior compartment boundary	IAO:0000115	
-WARN	missing_definition	dorsal/ventral compartment boundary	IAO:0000115	
-WARN	missing_definition	vicinity of	IAO:0000115	
-WARN	missing_definition	axial region	IAO:0000115	
-WARN	missing_definition	peripheral side	IAO:0000115	
-WARN	missing_definition	axial side	IAO:0000115	
-WARN	missing_definition	contralateral surface	IAO:0000115	
-WARN	missing_definition	preaxialmost part of	IAO:0000115	
-WARN	missing_definition	postaxialmost part of	IAO:0000115	
-WARN	missing_definition	finishes axis	IAO:0000115	
-WARN	missing_definition	follows axis	IAO:0000115	
-WARN	missing_definition	has axis	IAO:0000115	
-WARN	missing_definition	starts axis	IAO:0000115	
-WARN	missing_definition	surface of	IAO:0000115	
-WARN	missing_definition	synonym typically used in the context of human anatomy	IAO:0000115	
-WARN	missing_definition	synonym typically used in the context of vertebrate anatomy	IAO:0000115	
+ERROR	duplicate_definition	has start point	definition	A relation between an axis and a part of an organism, in which the part defines the initial point of the axis.
+ERROR	duplicate_definition	has end point	definition	A relation between an axis and a part of an organism, in which the part defines the initial point of the axis.
+ERROR	multiple_labels	medial to	rdfs:label	X medial to y if x is closer to the midsagittal plane than y.@en
+ERROR	multiple_labels	medial to	rdfs:label	medial to@en
+WARN	annotation_whitespace	antero-dorsal region	has_exact_synonym	anterodorsal region 
+WARN	annotation_whitespace	antero-ventral region	has_exact_synonym	anteroventral region 
+WARN	annotation_whitespace	medial-lateral axis	has_related_synonym	proximal-distal axis 
+WARN	missing_definition	part of	definition	
+WARN	missing_definition	has part	definition	
+WARN	missing_definition	upper side	definition	
+WARN	missing_definition	lower side	definition	
+WARN	missing_definition	deep side	definition	
+WARN	missing_definition	superficial side	definition	
+WARN	missing_definition	upper region	definition	
+WARN	missing_definition	lower region	definition	
+WARN	missing_definition	anterior-most region	definition	
+WARN	missing_definition	posterior-most region	definition	
+WARN	missing_definition	dorsal-most region	definition	
+WARN	missing_definition	ventral-most region	definition	
+WARN	missing_definition	upper/lower compartment boundary	definition	
+WARN	missing_definition	deep/superficial compartment boundary	definition	
+WARN	missing_definition	apical/basal compartment boundary	definition	
+WARN	missing_definition	proximal/distal compartment boundary	definition	
+WARN	missing_definition	proximal side	definition	
+WARN	missing_definition	lateral side	definition	
+WARN	missing_definition	medial side	definition	
+WARN	missing_definition	contralateral region	definition	
+WARN	missing_definition	ipsilateral region	definition	
+WARN	missing_definition	anatomical compartment	definition	
+WARN	missing_definition	anterior compartment	definition	
+WARN	missing_definition	compartment boundary	definition	
+WARN	missing_definition	dorsal compartment	definition	
+WARN	missing_definition	posterior compartment	definition	
+WARN	missing_definition	ventral compartment	definition	
+WARN	missing_definition	anatomical compartment boundary	definition	
+WARN	missing_definition	anterior/posterior compartment boundary	definition	
+WARN	missing_definition	dorsal/ventral compartment boundary	definition	
+WARN	missing_definition	vicinity of	definition	
+WARN	missing_definition	medial to	definition	
+WARN	missing_definition	axial region	definition	
+WARN	missing_definition	peripheral side	definition	
+WARN	missing_definition	axial side	definition	
+WARN	missing_definition	contralateral surface	definition	
+WARN	missing_definition	preaxialmost part of	definition	
+WARN	missing_definition	postaxialmost part of	definition	
+WARN	missing_definition	finishes axis	definition	
+WARN	missing_definition	follows axis	definition	
+WARN	missing_definition	has axis	definition	
+WARN	missing_definition	starts axis	definition	
+WARN	missing_definition	surface of	definition	
+WARN	missing_definition	definition	definition	
+WARN	missing_definition	term replaced by	definition	
+WARN	missing_definition	adjacent to	definition	
+WARN	missing_definition	synonym typically used in the context of human anatomy	definition	
+WARN	missing_definition	synonym typically used in the context of vertebrate anatomy	definition	
+WARN	missing_definition	namespace-id-rule	definition	
+WARN	missing_definition	synonym_type_property	definition	
+WARN	missing_definition	database_cross_reference	definition	
+WARN	missing_definition	has_exact_synonym	definition	
+WARN	missing_definition	has_narrow_synonym	definition	
+WARN	missing_definition	has_obo_format_version	definition	
+WARN	missing_definition	has_obo_namespace	definition	
+WARN	missing_definition	has_related_synonym	definition	
+WARN	missing_definition	has_scope	definition	
+WARN	missing_definition	has_synonym_type	definition	
+WARN	missing_definition	shorthand	definition	
 WARN	missing_obsolete_label	deep-superficial gradient (obsolete)	rdfs:label	deep-superficial gradient (obsolete)
 WARN	missing_obsolete_label	anatomical relation	rdfs:label	anatomical relation
-INFO	lowercase_definition	anterior to	IAO:0000115	x anterior to y iff x is further along the antero-posterior axis than y, towards the head. An antero-posterior axis is an axis that extends through an organism from head end to opposite end of body or tail.
-INFO	lowercase_definition	distal to	IAO:0000115	x distal to y iff x is further along the proximo-distal axis than y, towards the appendage tip. A proximo-distal axis extends from tip of an appendage (distal) to where it joins the body (proximal).
-INFO	lowercase_definition	dorsal to	IAO:0000115	x dorsal to y iff x is further along the dorso-ventral axis than y, towards the back. A dorso-ventral axis is an axis that extends through an organism from back (e.g. spinal column) to front (e.g. belly).
-INFO	lowercase_definition	posterior to	IAO:0000115	x posterior to y iff x is further along the antero-posterior axis than y, towards the body/tail. An antero-posterior axis is an axis that extends through an organism from head end to opposite end of body or tail.
-INFO	lowercase_definition	proximal to	IAO:0000115	x proximal to y iff x is closer to the point of attachment with the body than y.
-INFO	lowercase_definition	ventral to	IAO:0000115	x ventral to y iff x is further along the dorso-ventral axis than y, towards the front. A dorso-ventral axis is an axis that extends through an organism from back (e.g. spinal column) to front (e.g. belly).
-INFO	lowercase_definition	in proximal side of	IAO:0000115	x in proximal side of y <=> if y is subdivided into two proximal and distal portions, y is part of the proximal portion.
-INFO	lowercase_definition	in distal side of	IAO:0000115	x in distal side of y <=> if y is subdivided into two proximal and distal portions, y is part of the distal portion.
-INFO	lowercase_definition	immediately deep to	IAO:0000115	x immediately deep to y iff x deep_to y and x is contiguous with y.
-INFO	lowercase_definition	postaxial to	IAO:0000115	x preaxial to y iff x is further along the preaxial-postaxial axis than y, towards the postaxial side.
-INFO	lowercase_definition	orthogonal to	IAO:0000115	crossing at right angles
-INFO	lowercase_definition	immediately anterior to	IAO:0000115	x immediately anterior to y iff x anterior to y and x is contiguous with y.
-INFO	lowercase_definition	immediately distal to	IAO:0000115	x immediately distal to y iff x distal to y and x is contiguous with y.
-INFO	lowercase_definition	immediately dorsal to	IAO:0000115	x immediately dorsal to y iff x dorsal to y and x is contiguous with y.
-INFO	lowercase_definition	immediately posterior to	IAO:0000115	x immediately posterior to y iff x posterior_to y and x is contiguous with y.
-INFO	lowercase_definition	immediately proximal to	IAO:0000115	x immediately proximal to y iff x proximal to y and x is contiguous with y.
-INFO	lowercase_definition	immediately superficial to	IAO:0000115	x immediately superficial to y iff x superficial to y and x is contiguous with y.
-INFO	lowercase_definition	immediately ventral to	IAO:0000115	x immediately ventral to y iff x ventral to y and x is contiguous with y.
-INFO	lowercase_definition	immediately left of	IAO:0000115	x immediately left of y iff x left_of y and x is contiguous with y.
-INFO	lowercase_definition	immediately right of	IAO:0000115	x immediately right of y iff x right of y and x is contiguous with y.
-INFO	lowercase_definition	oral to	IAO:0000115	nearer to the oral opening of the organism, on the oral-aboral axis.
-INFO	lowercase_definition	aboral to	IAO:0000115	nearer to the aboral opening of the organism, on the oral-aboral axis.
-INFO	lowercase_definition	preaxial to	IAO:0000115	x preaxial to y iff x is further along the preaxial-postaxial axis than y, towards the front.
-INFO	lowercase_definition	parallel to	IAO:0000115	x is parallel t y iff x and y are lines or planes which when extended indefinitely do not cross.
+INFO	lowercase_definition	anterior to	definition	x anterior to y iff x is further along the antero-posterior axis than y, towards the head. An antero-posterior axis is an axis that extends through an organism from head end to opposite end of body or tail.
+INFO	lowercase_definition	distal to	definition	x distal to y iff x is further along the proximo-distal axis than y, towards the appendage tip. A proximo-distal axis extends from tip of an appendage (distal) to where it joins the body (proximal).
+INFO	lowercase_definition	dorsal to	definition	x dorsal to y iff x is further along the dorso-ventral axis than y, towards the back. A dorso-ventral axis is an axis that extends through an organism from back (e.g. spinal column) to front (e.g. belly).
+INFO	lowercase_definition	posterior to	definition	x posterior to y iff x is further along the antero-posterior axis than y, towards the body/tail. An antero-posterior axis is an axis that extends through an organism from head end to opposite end of body or tail.
+INFO	lowercase_definition	proximal to	definition	x proximal to y iff x is closer to the point of attachment with the body than y.
+INFO	lowercase_definition	ventral to	definition	x ventral to y iff x is further along the dorso-ventral axis than y, towards the front. A dorso-ventral axis is an axis that extends through an organism from back (e.g. spinal column) to front (e.g. belly).
+INFO	lowercase_definition	in proximal side of	definition	x in proximal side of y <=> if y is subdivided into two proximal and distal portions, y is part of the proximal portion.
+INFO	lowercase_definition	in distal side of	definition	x in distal side of y <=> if y is subdivided into two proximal and distal portions, y is part of the distal portion.
+INFO	lowercase_definition	immediately deep to	definition	x immediately deep to y iff x deep_to y and x is contiguous with y.
+INFO	lowercase_definition	postaxial to	definition	x preaxial to y iff x is further along the preaxial-postaxial axis than y, towards the postaxial side.
+INFO	lowercase_definition	orthogonal to	definition	crossing at right angles
+INFO	lowercase_definition	immediately anterior to	definition	x immediately anterior to y iff x anterior to y and x is contiguous with y.
+INFO	lowercase_definition	immediately distal to	definition	x immediately distal to y iff x distal to y and x is contiguous with y.
+INFO	lowercase_definition	immediately dorsal to	definition	x immediately dorsal to y iff x dorsal to y and x is contiguous with y.
+INFO	lowercase_definition	immediately posterior to	definition	x immediately posterior to y iff x posterior_to y and x is contiguous with y.
+INFO	lowercase_definition	immediately proximal to	definition	x immediately proximal to y iff x proximal to y and x is contiguous with y.
+INFO	lowercase_definition	immediately superficial to	definition	x immediately superficial to y iff x superficial to y and x is contiguous with y.
+INFO	lowercase_definition	immediately ventral to	definition	x immediately ventral to y iff x ventral to y and x is contiguous with y.
+INFO	lowercase_definition	immediately left of	definition	x immediately left of y iff x left_of y and x is contiguous with y.
+INFO	lowercase_definition	immediately right of	definition	x immediately right of y iff x right of y and x is contiguous with y.
+INFO	lowercase_definition	oral to	definition	nearer to the oral opening of the organism, on the oral-aboral axis.
+INFO	lowercase_definition	aboral to	definition	nearer to the aboral opening of the organism, on the oral-aboral axis.
+INFO	lowercase_definition	preaxial to	definition	x preaxial to y iff x is further along the preaxial-postaxial axis than y, towards the front.
+INFO	lowercase_definition	overlaps	definition	x overlaps y iff they have some part in common.
+INFO	lowercase_definition	parallel to	definition	x is parallel t y iff x and y are lines or planes which when extended indefinitely do not cross.
+INFO	missing_superclass	sagittal plane	rdfs:subClassOf	
+INFO	missing_superclass	anatomical entity	rdfs:subClassOf	
