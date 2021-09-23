@@ -1,61 +1,64 @@
-base_generated: true
+base_generated: false
 base_prefixes:
 - BSPO
 - BSPOALT
 changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 1259
-    Declaration: 232
-    DisjointObjectProperties: 1
+    AnnotationAssertion: 1267
+    Declaration: 237
+    DisjointObjectProperties: 2
     EquivalentClasses: 79
     InverseObjectProperties: 12
     ObjectPropertyDomain: 8
     ObjectPropertyRange: 7
+    Rule: 3
     SubAnnotationPropertyOf: 2
-    SubClassOf: 321
+    SubClassOf: 317
     SubObjectPropertyOf: 27
     SymmetricObjectProperty: 3
-    TransitiveObjectProperty: 16
-  'Axioms: Number of axioms': 1967
-  'Entities: % of entities reused': 16.03
-  'Entities: Number of annotation properties': 25
-  'Entities: Number of classes': 147
+    TransitiveObjectProperty: 18
+  'Axioms: Number of axioms': 1982
+  'Entities: % of entities reused': 17.28
+  'Entities: Number of annotation properties': 29
+  'Entities: Number of classes': 146
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
-  'Entities: Number of object properties': 62
+  'Entities: Number of object properties': 64
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 1066
+    Class: 1058
     ObjectIntersectionOf: 79
     ObjectSomeValuesFrom: 233
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.786
+    _dashboard: 0.789
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.078
+    _impact: 0.073
     _impact_external: 0
-    _reuse: 0.16
-    oboscore: 0.432
+    _reuse: 0.173
+    oboscore: 0.431
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 14
+  'Info: How many ontologies use it?': 13
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 18
-    BSPO: 1265
+    BFO: 21
+    BSPO: 1269
     BSPOALT: 6
-    CARO: 27
-    IAO: 166
+    CARO: 26
+    IAO: 167
     RO: 133
+    dc: 1
+    dc11: 2
     obo: 3
-    oboInOwl: 1000
-    owl: 7
-    rdfs: 283
+    oboInOwl: 1004
+    owl: 5
+    rdf: 3
+    rdfs: 289
   'Info: Which ontologies use it?':
   - aism
   - bspo
-  - cido
   - cteno
   - hp
   - hso
@@ -68,12 +71,11 @@ metrics:
   - uberon
   - upheno
   - zp
-mirror_from: http://purl.obolibrary.org/obo/bspo.owl
+mirror_from: http://purl.obolibrary.org/obo/bspo/bspo-base.owl
 namespace: bspo
 results:
   FP01 Open:
-    comment: Missing ontology license.
-    status: ERROR
+    status: PASS
   FP02 Common Format:
     status: PASS
   FP03 URIs:
@@ -83,10 +85,11 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 42 missing definitions. See ROBOT Report for details.
-    status: WARN
+    comment: 2 duplicate definitions. 59 missing definitions. See ROBOT Report for
+      details.
+    status: ERROR
   FP07 Relations:
-    comment: 54 non-RO properties used.
+    comment: 57 non-RO properties used.
     file: fp7
     status: INFO
   FP08 Documented:
@@ -97,26 +100,26 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    status: PASS
+    comment: 2 multiple labels. See ROBOT Report for details.
+    status: ERROR
   FP16 Maintenance:
-    comment: last version (2020-05-11) is over one year(s) old
-    status: INFO
+    status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 3 errors, 47 warnings, 24 info messages.
+    comment: 4 errors, 64 warnings, 27 info messages.
     file: robot_report
     results:
-      ERROR: 3
-      INFO: 24
-      WARN: 47
+      ERROR: 4
+      INFO: 27
+      WARN: 64
     status: ERROR
-sha256_hash: 561068ea21847a08c4d7138332349b6c80414337cb37ce2490bf58ace7b23630
+sha256_hash: f66c2b95345e61d96b80b1e2cd84793d9e6c70169df5aa29f4c0e81005315611
 summary:
-  comment: 3 errors
+  comment: 4 errors
   status: ERROR
   summary_count:
-    ERROR: 3
-    INFO: 2
-    WARN: 1
-version: http://purl.obolibrary.org/obo/bspo/releases/2020-05-11/bspo.owl
+    ERROR: 4
+    INFO: 1
+    WARN: 0
+version: http://purl.obolibrary.org/obo/bspo/releases/2021-09-22/bspo-base.owl

@@ -2,10 +2,10 @@ base_generated: true
 base_prefixes:
 - MF
 - MFALT
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 1997
+    AnnotationAssertion: 1992
     AnnotationPropertyRangeOf: 1
     ClassAssertion: 18
     Declaration: 502
@@ -18,7 +18,7 @@ metrics:
     SubObjectPropertyOf: 2
     SubPropertyChainOf: 1
     TransitiveObjectProperty: 5
-  'Axioms: Number of axioms': 3011
+  'Axioms: Number of axioms': 3006
   'Entities: % of entities reused': 81.37
   'Entities: Number of annotation properties': 71
   'Entities: Number of classes': 401
@@ -36,9 +36,12 @@ metrics:
     ObjectSomeValuesFrom: 17
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
+    _dashboard: 0.792
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.028
     _impact_external: 0
     _reuse: 0.814
+    oboscore: 0.41
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 5
   'Info: Logical consistency': true
@@ -46,7 +49,7 @@ metrics:
   'Info: Usage of namespaces in axioms':
     BFO: 273
     GO: 738
-    IAO: 1575
+    IAO: 1570
     MF: 312
     NBO: 44
     OGMS: 11
@@ -81,8 +84,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 10 multiple definitions. 7 missing definitions. See ROBOT Report for
-      details.
+    comment: 2 multiple definitions. 7 missing definitions. See ROBOT Report for details.
     status: ERROR
   FP07 Relations:
     status: PASS
@@ -100,14 +102,14 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 12 errors, 12 warnings, 5 info messages.
+    comment: 4 errors, 12 warnings, 5 info messages.
     file: robot_report
     results:
-      ERROR: 12
+      ERROR: 4
       INFO: 5
       WARN: 12
     status: ERROR
-sha256_hash: d9c7676beb159e06076f90aed57fe9f0469ea1974b5961160754571a0d970d98
+sha256_hash: 7610bd31268845b7f433fba694d98d56830e2129b3cc08c761c3a13a596a6367
 summary:
   comment: 3 errors
   status: ERROR
@@ -115,4 +117,4 @@ summary:
     ERROR: 3
     INFO: 0
     WARN: 1
-version: http://purl.obolibrary.org/obo/MF/2020-08-07/MF.owl
+version: http://purl.obolibrary.org/obo/MF/2021-09-21/MF.owl

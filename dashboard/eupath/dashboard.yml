@@ -5,116 +5,118 @@ base_prefixes:
 changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 15095
-    AnnotationPropertyRangeOf: 1
-    AsymmetricObjectProperty: 1
-    ClassAssertion: 60
-    DataPropertyDomain: 4
-    DataPropertyRange: 3
-    Declaration: 3863
+    AnnotationAssertion: 17452
+    AnnotationPropertyRangeOf: 2
+    ClassAssertion: 53
+    Declaration: 4232
     DifferentIndividuals: 2
-    DisjointClasses: 18
+    DisjointClasses: 19
     EquivalentClasses: 156
     EquivalentObjectProperties: 3
-    FunctionalDataProperty: 2
-    FunctionalObjectProperty: 2
-    InverseObjectProperties: 16
-    IrrefexiveObjectProperty: 1
-    ObjectPropertyDomain: 27
-    ObjectPropertyRange: 26
-    SubAnnotationPropertyOf: 7
-    SubClassOf: 4599
+    InverseObjectProperties: 4
+    ObjectPropertyDomain: 3
+    ObjectPropertyRange: 3
+    SubAnnotationPropertyOf: 4
+    SubClassOf: 5077
     SubDataPropertyOf: 1
-    SubObjectPropertyOf: 21
-    TransitiveObjectProperty: 7
-  'Axioms: Number of axioms': 23915
-  'Entities: % of entities reused': 65.44
-  'Entities: Number of annotation properties': 69
-  'Entities: Number of classes': 3641
+    SubObjectPropertyOf: 37
+    SubPropertyChainOf: 1
+    TransitiveObjectProperty: 3
+  'Axioms: Number of axioms': 27052
+  'Entities: % of entities reused': 67.07
+  'Entities: Number of annotation properties': 108
+  'Entities: Number of classes': 3957
   'Entities: Number of data properties': 4
   'Entities: Number of individuals': 85
-  'Entities: Number of object properties': 60
+  'Entities: Number of object properties': 74
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 14003
+    Class: 15253
     DataAllValuesFrom: 1
+    DataExactCardinality: 1
     DataMinCardinality: 2
-    ObjectAllValuesFrom: 59
+    ObjectAllValuesFrom: 62
     ObjectComplementOf: 3
     ObjectExactCardinality: 3
     ObjectHasValue: 6
-    ObjectIntersectionOf: 629
+    ObjectIntersectionOf: 726
+    ObjectMaxCardinality: 1
     ObjectMinCardinality: 2
     ObjectOneOf: 3
-    ObjectSomeValuesFrom: 1570
-    ObjectUnionOf: 28
+    ObjectSomeValuesFrom: 1804
+    ObjectUnionOf: 27
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.913
+    _dashboard: 0.901
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.011
     _impact_external: 0.5
-    _reuse: 0.654
-    oboscore: 0.462
+    _reuse: 0.671
+    oboscore: 0.456
   'Info: How many externally documented uses?': 3
   'Info: How many ontologies use it?': 2
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     APOLLO_SV: 7
-    BFO: 612
+    ARO: 2
+    BFO: 744
     BTO: 4
-    CHEBI: 708
+    CHEBI: 742
     CIDO: 2
-    CL: 48
-    CMO: 11
-    DOID: 578
-    DRON: 242
-    EFO: 30
-    ENVO: 439
-    ERO: 12
-    EUPATH: 3829
+    CL: 38
+    CMO: 18
+    COB: 7
+    DOID: 607
+    DRON: 245
+    DUO: 2
+    EFO: 37
+    ENVO: 448
+    ERO: 11
+    EUPATH: 3946
     FOODON: 8
-    GAZ: 11
+    GAZ: 14
     GENEPIO: 4
-    GO: 74
-    HP: 259
-    IAO: 11488
-    IDO: 28
+    GO: 93
+    HP: 505
+    IAO: 13605
+    IDO: 26
     MOD: 4
-    NCBITaxon: 2836
-    NCIT: 8
-    OBCS: 11
-    OBI: 3002
-    OBIB: 11
-    OGMS: 107
-    OMP: 2
+    NCBITaxon: 2869
+    NCIT: 40
+    OAE: 2
+    OBCS: 15
+    OBI: 3568
+    OBIB: 16
+    OGMS: 111
+    OMIABIS: 4
+    OMP: 3
     OMRSE: 55
-    OPL: 16
-    OPMI: 2
-    PATO: 85
-    PCO: 20
+    ONS: 2
+    OPL: 20
+    PATO: 109
+    PCO: 24
     PDRO: 3
     PO: 8
-    PR: 240
-    RO: 502
-    SO: 59
-    STATO: 82
-    SYMP: 34
-    UBERON: 622
-    UO: 170
+    PR: 237
+    RO: 569
+    SO: 53
+    STATO: 92
+    SYMP: 29
+    UBERON: 629
+    UO: 172
     VO: 2
-    dc: 3
-    dc11: 302
-    foaf: 2
-    obo: 18
-    oboInOwl: 55
-    owl: 443
-    prefix_unknown: 2
-    protege: 2
+    dc: 1
+    dc11: 273
+    foaf: 3
+    obo: 17
+    oboInOwl: 292
+    owl: 294
+    prefix_unknown: 6
+    protege: 1
     rdf: 1
-    rdfs: 3954
-    xsd: 7
+    rdfs: 4382
+    xsd: 5
   'Info: Which ontologies use it?':
   - eupath
   - gecko
@@ -133,7 +135,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 48 missing definitions. See ROBOT Report for details.
+    comment: 43 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     status: PASS
@@ -150,14 +152,14 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 66 warnings, 416 info messages.
+    comment: 189 warnings, 410 info messages.
     file: robot_report
     results:
       ERROR: 0
-      INFO: 416
-      WARN: 66
+      INFO: 410
+      WARN: 189
     status: WARN
-sha256_hash: 7836afd8a14129a4849ce36634851fc3e7e600c3444f2617924e4faecad196ce
+sha256_hash: e3c6be6c66c67b7b4e5647d9eab321b2b3d0f289fde59fdd5b863f62a397e1ff
 summary:
   comment: 2 warnings
   status: WARN
@@ -165,4 +167,4 @@ summary:
     ERROR: 0
     INFO: 0
     WARN: 2
-version: http://purl.obolibrary.org/obo/eupath/2021-04-28/eupath.owl
+version: http://purl.obolibrary.org/obo/eupath/2021-09-09/eupath.owl
