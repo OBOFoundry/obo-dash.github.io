@@ -1,24 +1,33 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	misused_obsolete_label	obsolete_date_created	rdfs:label	obsolete_date_created@en
 ERROR	misused_obsolete_label	obsolete_manual assertion process	rdfs:label	obsolete_manual assertion process@en
 ERROR	misused_obsolete_label	obsolete_automated assertion process	rdfs:label	obsolete_automated assertion process@en
 ERROR	misused_obsolete_label	obsolete_study group	rdfs:label	obsolete_study group@en
+ERROR	misused_obsolete_label	obsolete_evidence_assessed_by	rdfs:label	obsolete_evidence_assessed_by@en
+ERROR	misused_obsolete_label	obsolete_date_curated	rdfs:label	obsolete_date_curated@en
 ERROR	misused_obsolete_label	obsolete_observation	rdfs:label	obsolete_observation@en
+ERROR	misused_obsolete_label	obsolete_evidence statement	rdfs:label	obsolete_evidence statement@en
+ERROR	misused_obsolete_label	obsolete_evidence data	rdfs:label	obsolete_evidence data@en
+ERROR	misused_obsolete_label	obsolete_data table	rdfs:label	obsolete_data table@en
+ERROR	misused_obsolete_label	obsolete_has_quantifier	rdfs:label	obsolete_has_quantifier@en
+ERROR	misused_obsolete_label	obsolete_method	rdfs:label	obsolete_method@en
+ERROR	misused_obsolete_label	obsolete_opinion	rdfs:label	obsolete_opinion@en
+ERROR	misused_obsolete_label	ObsoleteDataProperty	rdfs:label	ObsoleteDataProperty
 ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/sepio.owl	dc11:description	
+ERROR	multiple_definitions	provided_by	IAO:0000115	A relationship between an information resource found in some information system, and the agent (person, organization, computational agent) who is responsible for sharing/providing it to that information system.
+ERROR	multiple_definitions	provided_by	IAO:0000115	Note that this property connects a resource to an agent, not to some other information resource from which it came (e.g. another database or an API from which the resource in question was obtained).  Use the 'source' property to capture this type of relationship.
 ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/sepio.owl	dc:license	
 ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/sepio.owl	dc11:title	
-WARN	missing_definition	is_asserted_in	IAO:0000115	
 WARN	missing_definition	has_agent	IAO:0000115	
-WARN	missing_definition	date_created	IAO:0000115	
+WARN	missing_definition	obsolete_date_created	IAO:0000115	
 WARN	missing_definition	assertion_has_subject	IAO:0000115	
 WARN	missing_definition	assertion_has_object	IAO:0000115	
 WARN	missing_definition	assertion_has_predicate	IAO:0000115	
-WARN	missing_definition	date_evaluated	IAO:0000115	
 WARN	missing_definition	has_role	IAO:0000115	
-WARN	missing_definition	date_submitted	IAO:0000115	
 WARN	missing_definition	consider	IAO:0000115	
 WARN	missing_definition	obsolete_manual assertion process	IAO:0000115	
 WARN	missing_definition	SEPIO_editor_note	IAO:0000115	
-WARN	missing_definition	date_started	IAO:0000115	
+WARN	missing_definition	start_date	IAO:0000115	
 WARN	missing_definition	interventional clinical study	IAO:0000115	
 WARN	missing_definition	observational clinical study	IAO:0000115	
 WARN	missing_definition	case-control clinical study	IAO:0000115	
@@ -28,7 +37,6 @@ WARN	missing_definition	cell-based in vivo study	IAO:0000115
 WARN	missing_definition	tissue-based in vivo study	IAO:0000115	
 WARN	missing_definition	organism-based in vivo study	IAO:0000115	
 WARN	missing_definition	curation-based study	IAO:0000115	
-WARN	missing_definition	DeprecatedObjectProperty	IAO:0000115	
 WARN	missing_definition	is_equilavent_to	IAO:0000115	
 WARN	missing_definition	is_consistent_with	IAO:0000115	
 WARN	missing_definition	strongly_contradicts	IAO:0000115	
@@ -38,28 +46,36 @@ WARN	missing_definition	has_compatability	IAO:0000115
 WARN	missing_definition	conflicts_with	IAO:0000115	
 WARN	missing_definition	aligns_with	IAO:0000115	
 WARN	missing_definition	has_textual_part	IAO:0000115	
-WARN	missing_definition	has_supporting_reference	IAO:0000115	
 WARN	missing_definition	is_inconsistent_with	IAO:0000115	
-WARN	missing_definition	DeprecatedClass	IAO:0000115	
-WARN	missing_definition	evaluated_by	IAO:0000115	
-WARN	missing_definition	date_evidence_strength_assessed	IAO:0000115	
 WARN	missing_definition	evidence role	IAO:0000115	
-WARN	missing_definition	evidence_strength_assessed_by	IAO:0000115	
+WARN	missing_definition	obsolete_evidence_assessed_by	IAO:0000115	
 WARN	missing_definition	creator role	IAO:0000115	
 WARN	missing_definition	assessor role	IAO:0000115	
 WARN	missing_definition	approver role	IAO:0000115	
 WARN	missing_definition	curator role	IAO:0000115	
-WARN	missing_definition	date_of_activity	IAO:0000115	
-WARN	missing_definition	date_ended	IAO:0000115	
-WARN	missing_definition	date_curated	IAO:0000115	
-WARN	missing_definition	date_of_contribution	IAO:0000115	
+WARN	missing_definition	activity_date	IAO:0000115	
+WARN	missing_definition	end_date	IAO:0000115	
+WARN	missing_definition	obsolete_date_curated	IAO:0000115	
 WARN	missing_definition	date_updated	IAO:0000115	
-WARN	missing_definition	value set	IAO:0000115	
 WARN	missing_definition	usage note	IAO:0000115	
-WARN	missing_definition	data table	IAO:0000115	
-WARN	missing_definition	contributed_to	IAO:0000115	
-WARN	missing_definition	quantifier	IAO:0000115	
-WARN	missing_definition	has_quantifier	IAO:0000115	
+WARN	missing_definition	obsolete_data table	IAO:0000115	
+WARN	missing_definition	contributes_to	IAO:0000115	
+WARN	missing_definition	obsolete_has_quantifier	IAO:0000115	
 WARN	missing_definition	provider interpretation	IAO:0000115	
-INFO	lowercase_definition	assertion_confidence_level	IAO:0000115	a relation between an assertion and a value that indicates the degree of confidence that the Proposition it puts forth is true.
-INFO	lowercase_definition	made_on_behalf_of	IAO:0000115	a relation between an agent and an other agent, typically an organization, on whose behalf a Contribution is made.
+WARN	missing_definition	in_value_set	IAO:0000115	
+WARN	missing_definition	evidence_item_for	IAO:0000115	
+WARN	missing_definition	date_created_after	IAO:0000115	
+WARN	missing_definition	obsolete_method	IAO:0000115	
+WARN	missing_definition	sepio_preferred_label	IAO:0000115	
+WARN	missing_definition	ExploratoryObjectProperty	IAO:0000115	
+WARN	missing_definition	probabilistic quantifier	IAO:0000115	
+WARN	missing_definition	is_evidence_line_for	IAO:0000115	
+WARN	missing_definition	recommendation	IAO:0000115	
+WARN	missing_definition	hypothesis	IAO:0000115	
+WARN	missing_definition	activity_location	IAO:0000115	
+WARN	missing_definition	ExploratoryDataProperty	IAO:0000115	
+WARN	missing_definition	ObsoleteDataProperty	IAO:0000115	
+WARN	invalid_xref	record	oboInOwl:hasDbXref	<http://semanticscience.org/resource/SIO_000088 ! 'record'>
+INFO	lowercase_definition	confidence_level	IAO:0000115	a relation between an information entity and an indicator of degree of confidence that the information it represents is true.
+INFO	lowercase_definition	performed_for	IAO:0000115	a relation between an agent and an other agent, typically an organization, on whose behalf a Contribution is made.
+INFO	missing_superclass	skos terms	rdfs:subClassOf	

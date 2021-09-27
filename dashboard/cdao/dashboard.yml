@@ -49,9 +49,12 @@ metrics:
     ObjectUnionOf: 18
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
+    _dashboard: 0.713
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.006
     _impact_external: 0
     _reuse: 0.342
+    oboscore: 0.359
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
@@ -102,8 +105,8 @@ results:
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
-    comment: last version (2019-06-26) is over one year(s) old
-    status: INFO
+    comment: last version (2019-06-26) is over two year(s) old
+    status: WARN
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
@@ -120,6 +123,6 @@ summary:
   status: ERROR
   summary_count:
     ERROR: 4
-    INFO: 1
-    WARN: 2
+    INFO: 0
+    WARN: 3
 version: http://purl.obolibrary.org/obo/cdao/2019-06-26/cdao.owl
