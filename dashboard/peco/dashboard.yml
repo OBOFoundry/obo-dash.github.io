@@ -36,9 +36,12 @@ metrics:
     ObjectUnionOf: 2
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.727
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.034
     _impact_external: 0
     _reuse: 0.826
+    oboscore: 0.381
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 6
   'Info: Logical consistency': true
@@ -107,7 +110,8 @@ results:
     comment: 2 multiple labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
-    status: PASS
+    comment: last version (2020-08-21) is over one year(s) old
+    status: INFO
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
@@ -124,6 +128,6 @@ summary:
   status: ERROR
   summary_count:
     ERROR: 6
-    INFO: 0
+    INFO: 1
     WARN: 0
 version: http://purl.obolibrary.org/obo/peco/releases/2020-08-21/peco.owl

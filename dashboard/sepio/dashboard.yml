@@ -5,70 +5,75 @@ base_prefixes:
 changed: false
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 1231
-    AnnotationPropertyRangeOf: 1
-    ClassAssertion: 2
-    DataPropertyDomain: 9
+    AnnotationAssertion: 1195
+    AnnotationPropertyRangeOf: 2
+    ClassAssertion: 21
+    DataPropertyDomain: 10
     DataPropertyRange: 3
-    Declaration: 288
+    Declaration: 300
     DifferentIndividuals: 2
     DisjointClasses: 6
-    EquivalentClasses: 4
-    InverseObjectProperties: 7
-    ObjectPropertyDomain: 26
-    ObjectPropertyRange: 19
-    SubAnnotationPropertyOf: 2
-    SubClassOf: 155
-    SubDataPropertyOf: 13
-    SubObjectPropertyOf: 40
-    SubPropertyChainOf: 14
+    EquivalentClasses: 7
+    InverseObjectProperties: 10
+    ObjectPropertyDomain: 32
+    ObjectPropertyRange: 25
+    SubAnnotationPropertyOf: 3
+    SubClassOf: 141
+    SubDataPropertyOf: 15
+    SubObjectPropertyOf: 50
+    SubPropertyChainOf: 12
     SymmetricObjectProperty: 3
     TransitiveObjectProperty: 2
-  'Axioms: Number of axioms': 1827
-  'Entities: % of entities reused': 59.6
-  'Entities: Number of annotation properties': 48
-  'Entities: Number of classes': 132
-  'Entities: Number of data properties': 24
-  'Entities: Number of individuals': 18
-  'Entities: Number of object properties': 72
+  'Axioms: Number of axioms': 1839
+  'Entities: % of entities reused': 52.9
+  'Entities: Number of annotation properties': 51
+  'Entities: Number of classes': 116
+  'Entities: Number of data properties': 32
+  'Entities: Number of individuals': 21
+  'Entities: Number of object properties': 86
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 529
-    DataSomeValuesFrom: 3
-    ObjectIntersectionOf: 3
-    ObjectSomeValuesFrom: 22
-    ObjectUnionOf: 10
+    Class: 513
+    DataExactCardinality: 1
+    DataSomeValuesFrom: 1
+    ObjectExactCardinality: 1
+    ObjectIntersectionOf: 1
+    ObjectOneOf: 5
+    ObjectSomeValuesFrom: 27
+    ObjectUnionOf: 7
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.735
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.006
     _impact_external: 0
-    _reuse: 0.596
+    _reuse: 0.529
+    oboscore: 0.37
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 130
+    BFO: 126
     ERO: 3
-    IAO: 1019
-    OAE: 2
-    OBI: 40
-    PCO: 6
-    RO: 39
-    SEPIO: 466
-    SIO: 6
-    STATO: 76
-    dc: 21
+    IAO: 1015
+    OBI: 28
+    RO: 48
+    SEPIO: 543
+    STATO: 10
+    dc: 22
     dc11: 4
-    foaf: 10
-    oban: 10
-    oboInOwl: 8
+    foaf: 6
+    oban: 16
+    oboInOwl: 44
     owl: 1
-    prefix_unknown: 17
+    prefix_unknown: 18
     protege: 1
-    prov: 13
-    rdfs: 368
-    xsd: 6
+    prov: 26
+    rdf: 1
+    rdfs: 391
+    skos: 2
+    xsd: 5
   'Info: Which ontologies use it?':
   - cob
   - sepio
@@ -76,23 +81,23 @@ mirror_from: http://purl.obolibrary.org/obo/sepio.owl
 namespace: sepio
 results:
   FP01 Open:
-    comment: License should use property 'http://purl.org/dc/terms/license'.
-    status: WARN
+    comment: Missing ontology license.
+    status: ERROR
   FP02 Common Format:
     status: PASS
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    comment: Version IRI 'http://purl.obolibrary.org/obo/sepio-v20170929.owl' is not
-      in recommended format
-    status: WARN
+    comment: Missing version IRI
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 55 missing definitions. See ROBOT Report for details.
-    status: WARN
+    comment: 2 multiple definitions. 57 missing definitions. See ROBOT Report for
+      details.
+    status: ERROR
   FP07 Relations:
-    comment: 1 labels match RO labels. 63 non-RO properties used.
+    comment: 1 labels match RO labels. 80 non-RO properties used.
     file: fp7
     status: ERROR
   FP08 Documented:
@@ -105,24 +110,24 @@ results:
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
-    comment: Version IRI does not have date information
-    status: INFO
+    comment: Missing version IRI to check date
+    status: ERROR
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 7 errors, 55 warnings, 2 info messages.
+    comment: 19 errors, 58 warnings, 3 info messages.
     file: robot_report
     results:
-      ERROR: 7
-      INFO: 2
-      WARN: 55
+      ERROR: 19
+      INFO: 3
+      WARN: 58
     status: ERROR
 sha256_hash: bff9cd11c03016b31fb6aa20c8d4d94d315eb0044b40dd0811dca89c0fe8334d
 summary:
-  comment: 3 errors
+  comment: 7 errors
   status: ERROR
   summary_count:
-    ERROR: 3
-    INFO: 1
-    WARN: 3
-version: http://purl.obolibrary.org/obo/sepio-v20170929.owl
+    ERROR: 7
+    INFO: 0
+    WARN: 0
+version: null
