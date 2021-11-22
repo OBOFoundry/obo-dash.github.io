@@ -25,9 +25,16 @@ oboscore:
     reuse: 1
 ontologies:
 - base_generated: true
+  changed: false
+  failure: failed_robot_base
+  mirror_from: http://purl.obolibrary.org/obo/EPSO.owl
+  namespace: EPSO
+  sha256_hash: 4705d5a95eade7a96dc2fb067f7853d131de18639bc14f8d85060b8178b33c7a
+- base_generated: true
   base_prefixes:
   - AEO
   - AEOALT
+  - AEO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -124,102 +131,111 @@ ontologies:
   base_prefixes:
   - AGRO
   - AGROALT
+  - AGRO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 12369
-      ClassAssertion: 332
-      DataPropertyDomain: 3
-      DataPropertyRange: 2
+      AnnotationAssertion: 14696
+      AnnotationPropertyRangeOf: 1
+      ClassAssertion: 331
+      DataPropertyDomain: 6
+      DataPropertyRange: 5
       DatatypeDefinition: 1
-      Declaration: 4285
+      Declaration: 4581
       DifferentIndividuals: 2
-      DisjointClasses: 32
-      EquivalentClasses: 1135
+      DisjointClasses: 44
+      EquivalentClasses: 1193
       EquivalentObjectProperties: 3
-      FunctionalDataProperty: 1
-      FunctionalObjectProperty: 3
-      InverseObjectProperties: 38
+      FunctionalDataProperty: 4
+      FunctionalObjectProperty: 5
+      InverseFunctionalObjectProperty: 1
+      InverseObjectProperties: 42
       IrrefexiveObjectProperty: 1
       ObjectPropertyAssertion: 46
-      ObjectPropertyDomain: 51
-      ObjectPropertyRange: 53
+      ObjectPropertyDomain: 56
+      ObjectPropertyRange: 57
       ReflexiveObjectProperty: 1
-      Rule: 20
-      SubClassOf: 5777
+      Rule: 25
+      SubAnnotationPropertyOf: 2
+      SubClassOf: 6157
       SubDataPropertyOf: 1
-      SubObjectPropertyOf: 172
+      SubObjectPropertyOf: 184
       SubPropertyChainOf: 62
       SymmetricObjectProperty: 2
       TransitiveObjectProperty: 16
-    'Axioms: Number of axioms': 24408
-    'Entities: % of entities reused': 82.78
-    'Entities: Number of annotation properties': 54
-    'Entities: Number of classes': 3500
-    'Entities: Number of data properties': 5
-    'Entities: Number of individuals': 545
-    'Entities: Number of object properties': 182
+    'Axioms: Number of axioms': 27525
+    'Entities: % of entities reused': 82.68
+    'Entities: Number of annotation properties': 86
+    'Entities: Number of classes': 3738
+    'Entities: Number of data properties': 8
+    'Entities: Number of individuals': 550
+    'Entities: Number of object properties': 197
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 18849
+      Class: 20060
+      DataExactCardinality: 6
       DataMinCardinality: 2
       DataSomeValuesFrom: 2
-      ObjectAllValuesFrom: 26
+      ObjectAllValuesFrom: 28
       ObjectComplementOf: 18
-      ObjectExactCardinality: 1
+      ObjectExactCardinality: 2
       ObjectHasSelf: 1
-      ObjectIntersectionOf: 1050
+      ObjectIntersectionOf: 1112
       ObjectMaxCardinality: 1
       ObjectMinCardinality: 11
       ObjectOneOf: 273
-      ObjectSomeValuesFrom: 2702
-      ObjectUnionOf: 164
+      ObjectSomeValuesFrom: 2874
+      ObjectUnionOf: 165
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
-      _dashboard: 0.728
+      _dashboard: 0.793
       _formula: (1*impact+1*dashboard)/2
       _impact: 0.006
-      _impact_external: 0
-      _reuse: 0.828
-      oboscore: 0.367
-    'Info: How many externally documented uses?': 0
+      _impact_external: 0.25
+      _reuse: 0.827
+      oboscore: 0.4
+    'Info: How many externally documented uses?': 2
     'Info: How many ontologies use it?': 1
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
-      AGRO: 3407
-      APOLLO_SV: 10
-      BFO: 974
+      AGRO: 3746
+      APOLLO_SV: 26
+      BFO: 1210
       CARO: 17
-      CHEBI: 3021
+      CHEBI: 3073
       CHEBIALT: 92
-      ENVO: 4396
+      ENVO: 4430
       ENVOALT: 24
       FOODON: 244
+      GAZ: 4
       GO: 213
-      IAO: 3406
+      IAO: 5962
       NCBITaxon: 771
-      OBI: 1446
+      OBI: 1469
       OGMS: 7
-      PATO: 1282
+      PATO: 1314
       PATOALT: 3
       PCO: 26
       PECO: 45
-      PO: 694
-      RO: 2584
+      PO: 692
+      RO: 2679
       TO: 1097
       UBERON: 187
-      UO: 2796
+      UO: 2798
       UOALT: 4
       XCO: 6
-      dc11: 371
-      obo: 79
-      oboInOwl: 10279
-      owl: 53
+      dc: 1
+      dc11: 315
+      foaf: 4
+      obo: 81
+      oboInOwl: 10392
+      owl: 85
       prefix_unknown: 15
+      protege: 1
       rdf: 17
-      rdfs: 3805
-      xsd: 26
+      rdfs: 4251
+      xsd: 29
     'Info: Which ontologies use it?':
     - agro
     - foodon
@@ -227,8 +243,7 @@ ontologies:
   namespace: agro
   results:
     FP01 Open:
-      comment: Missing ontology license.
-      status: ERROR
+      status: PASS
     FP02 Common Format:
       status: PASS
     FP03 URIs:
@@ -238,8 +253,8 @@ ontologies:
     FP05 Scope:
       status: PASS
     FP06 Textual Definitions:
-      comment: 8 duplicate definitions. 6 multiple definitions. 108 missing definitions.
-        See ROBOT Report for details.
+      comment: 4 multiple definitions. 13 missing definitions. See ROBOT Report for
+        details.
       status: ERROR
     FP07 Relations:
       comment: 4 non-RO properties used.
@@ -248,65 +263,65 @@ ontologies:
     FP08 Documented:
       status: PASS
     FP09 Plurality of Users:
-      comment: Missing usages
-      status: ERROR
+      status: PASS
     FP11 Locus of Authority:
       status: PASS
     FP12 Naming Conventions:
-      comment: 2 multiple labels. See ROBOT Report for details.
+      comment: 4 multiple labels. See ROBOT Report for details.
       status: ERROR
     FP16 Maintenance:
       status: PASS
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      comment: 18 errors, 115 warnings, 7 info messages.
+      comment: 9 errors, 14 warnings, 10 info messages.
       file: robot_report
       results:
-        ERROR: 18
-        INFO: 7
-        WARN: 115
+        ERROR: 9
+        INFO: 10
+        WARN: 14
       status: ERROR
-  sha256_hash: fbc6f1cb20d325675c3cf26c9df9e0cbdc5e04332cc78b7df4ae5eaa186346af
+  sha256_hash: 3a23f4c16c617d592fa3c19399d0c832e88dd7deaa4c055087223869e3dd909a
   summary:
-    comment: 5 errors
+    comment: 3 errors
     status: ERROR
     summary_count:
-      ERROR: 5
+      ERROR: 3
       INFO: 1
       WARN: 0
-  version: http://purl.obolibrary.org/obo/agro/releases/2021-07-01/agro.owl
+  version: http://purl.obolibrary.org/obo/agro/releases/2021-11-05/agro.owl
 - base_generated: false
   base_prefixes:
   - AISM
   - AISMALT
-  changed: true
+  - AISM
+  changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 1147
-      Declaration: 663
-      EquivalentClasses: 8
+      AnnotationAssertion: 1158
+      Declaration: 667
+      EquivalentClasses: 6
       InverseObjectProperties: 2
       ObjectPropertyDomain: 2
       ObjectPropertyRange: 2
       SubAnnotationPropertyOf: 1
-      SubClassOf: 2028
+      SubClassOf: 2029
       SubObjectPropertyOf: 4
       SubPropertyChainOf: 2
       TransitiveObjectProperty: 2
-    'Axioms: Number of axioms': 3861
+    'Axioms: Number of axioms': 3875
     'Entities: % of entities reused': 100.0
     'Entities: Number of annotation properties': 17
-    'Entities: Number of classes': 612
+    'Entities: Number of classes': 616
     'Entities: Number of data properties': 0
     'Entities: Number of individuals': 0
     'Entities: Number of object properties': 37
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 5036
+      Class: 5040
       ObjectComplementOf: 10
       ObjectIntersectionOf: 345
-      ObjectSomeValuesFrom: 1807
+      ObjectSomeValuesFrom: 1810
       ObjectUnionOf: 10
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
@@ -321,26 +336,26 @@ ontologies:
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
-      BFO: 670
+      BFO: 668
       BSPO: 412
       BSPOALT: 9
       CARO: 2
       CL: 13
       FBgn: 2
-      IAO: 566
-      PATO: 121
+      IAO: 572
+      PATO: 120
       PATOALT: 8
       PR: 2
-      RO: 828
+      RO: 832
       UBERON: 69
       dc: 1
-      dc11: 2566
+      dc11: 2594
       foaf: 2
-      obo: 4989
-      oboInOwl: 639
+      obo: 5002
+      oboInOwl: 646
       owl: 1
-      rdf: 2004
-      rdfs: 547
+      rdf: 2027
+      rdfs: 550
     'Info: Which ontologies use it?':
     - aism
   mirror_from: http://purl.obolibrary.org/obo/aism/aism-base.owl
@@ -357,7 +372,7 @@ ontologies:
     FP05 Scope:
       status: PASS
     FP06 Textual Definitions:
-      comment: 12 missing definitions. See ROBOT Report for details.
+      comment: 9 missing definitions. See ROBOT Report for details.
       status: WARN
     FP07 Relations:
       comment: 6 non-RO properties used.
@@ -378,14 +393,14 @@ ontologies:
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      comment: 1 errors, 12 warnings, 10 info messages.
+      comment: 1 errors, 11 warnings, 10 info messages.
       file: robot_report
       results:
         ERROR: 1
         INFO: 10
-        WARN: 12
+        WARN: 11
       status: ERROR
-  sha256_hash: 08b55ad879364f9befb956621ad67ae04e1c2269a6b2f94dbd7bab4d5c12a643
+  sha256_hash: 15d8507f8d9d0e7ffd9485558d688294aa41213bb87e328b3b27fa3dd9f9f43c
   summary:
     comment: 3 errors
     status: ERROR
@@ -393,11 +408,12 @@ ontologies:
       ERROR: 3
       INFO: 1
       WARN: 1
-  version: http://purl.obolibrary.org/obo/aism/releases/2021-09-08/aism-base.owl
+  version: http://purl.obolibrary.org/obo/aism/releases/2021-11-19/aism-base.owl
 - base_generated: true
   base_prefixes:
   - AMPHX
   - AMPHXALT
+  - AMPHX
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -493,7 +509,8 @@ ontologies:
   base_prefixes:
   - APO
   - APOALT
-  changed: true
+  - APO
+  changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 3781
@@ -573,7 +590,7 @@ ontologies:
         INFO: 4
         WARN: 74
       status: ERROR
-  sha256_hash: 1850394140891a15cf043ea48f897e424f0c4dd45aefe5942f9b50ea7eb070ad
+  sha256_hash: 142893cd29b2234f108341157409c07dbc82eb76d399e1c06786d0c237adb601
   summary:
     comment: 4 errors
     status: ERROR
@@ -581,11 +598,12 @@ ontologies:
       ERROR: 4
       INFO: 0
       WARN: 0
-  version: http://purl.obolibrary.org/obo/apo/releases/2021-09-07/apo.owl
+  version: http://purl.obolibrary.org/obo/apo/releases/2021-10-07/apo.owl
 - base_generated: true
   base_prefixes:
   - APOLLO_SV
   - APOLLO_SVALT
+  - APOLLO_SV
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -598,7 +616,7 @@ ontologies:
       Declaration: 1948
       DifferentIndividuals: 2
       DisjointClasses: 27
-      EquivalentClasses: 170
+      EquivalentClasses: 169
       EquivalentObjectProperties: 3
       FunctionalDataProperty: 4
       FunctionalObjectProperty: 4
@@ -614,7 +632,7 @@ ontologies:
       SubObjectPropertyOf: 97
       SubPropertyChainOf: 2
       TransitiveObjectProperty: 7
-    'Axioms: Number of axioms': 15573
+    'Axioms: Number of axioms': 15572
     'Entities: % of entities reused': 68.52
     'Entities: Number of annotation properties': 118
     'Entities: Number of classes': 1675
@@ -623,7 +641,7 @@ ontologies:
     'Entities: Number of object properties': 125
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 6174
+      Class: 6172
       DataExactCardinality: 6
       DataMinCardinality: 1
       ObjectAllValuesFrom: 45
@@ -633,22 +651,22 @@ ontologies:
       ObjectIntersectionOf: 316
       ObjectMinCardinality: 10
       ObjectOneOf: 3
-      ObjectSomeValuesFrom: 470
+      ObjectSomeValuesFrom: 469
       ObjectUnionOf: 20
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.72
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.096
+      _impact: 0.094
       _impact_external: 0
       _reuse: 0.685
-      oboscore: 0.408
+      oboscore: 0.407
     'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 17
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
-      APOLLO_SV: 2001
+      APOLLO_SV: 1999
       BFO: 777
       CHEBI: 3
       DOID: 9
@@ -666,7 +684,7 @@ ontologies:
       NCBITAXONALT: 256
       NCBITaxon: 1658
       OAE: 4
-      OBI: 364
+      OBI: 363
       OGMS: 60
       OMIABIS: 7
       OMRSE: 145
@@ -711,9 +729,7 @@ ontologies:
   namespace: apollo_sv
   results:
     FP01 Open:
-      comment: Ontology license 'https://creativecommons.org/licenses/by/4.0/' does
-        not match regsitry license 'https://creativecommons.org/licenses/by/3.0/'.
-      status: ERROR
+      status: PASS
     FP02 Common Format:
       status: PASS
     FP03 URIs:
@@ -748,19 +764,19 @@ ontologies:
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      comment: 17 errors, 116 warnings, 61 info messages.
+      comment: 17 errors, 114 warnings, 61 info messages.
       file: robot_report
       results:
         ERROR: 17
         INFO: 61
-        WARN: 116
+        WARN: 114
       status: ERROR
-  sha256_hash: 80b8a9728506914cd6b459b0d474148d3b663ccafd68bd80c91afe851069dc79
+  sha256_hash: eccf6c9cc99717df331f743607bca53d9722e575981f10f704afe774ac828477
   summary:
-    comment: 5 errors
+    comment: 4 errors
     status: ERROR
     summary_count:
-      ERROR: 5
+      ERROR: 4
       INFO: 2
       WARN: 1
   version: http://purl.obolibrary.org/obo/apollo_sv/v4.1.1./apollo_sv.owl
@@ -768,47 +784,48 @@ ontologies:
   base_prefixes:
   - ARO
   - AROALT
+  - ARO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 20953
-      Declaration: 4856
-      SubClassOf: 8800
-    'Axioms: Number of axioms': 34609
-    'Entities: % of entities reused': 0.84
+      AnnotationAssertion: 27433
+      Declaration: 6476
+      SubClassOf: 10503
+    'Axioms: Number of axioms': 44412
+    'Entities: % of entities reused': 0.63
     'Entities: Number of annotation properties': 12
-    'Entities: Number of classes': 4833
+    'Entities: Number of classes': 6453
     'Entities: Number of data properties': 0
     'Entities: Number of individuals': 0
     'Entities: Number of object properties': 11
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 22433
-      ObjectSomeValuesFrom: 3877
+      Class: 27459
+      ObjectSomeValuesFrom: 3959
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.622
       _formula: (1*impact+1*dashboard)/2
       _impact: 0.022
       _impact_external: 0
-      _reuse: 0.008
+      _reuse: 0.006
       oboscore: 0.322
     'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 4
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
-      ARO: 22390
+      ARO: 27416
       DOID: 21
       HP: 2
-      IAO: 4834
+      IAO: 6454
       NCIT: 12
       RO: 120
       SYMP: 2
       UBERON: 6
-      obo: 3768
-      oboInOwl: 14636
-      rdfs: 4851
+      obo: 3850
+      oboInOwl: 17875
+      rdfs: 6471
     'Info: Which ontologies use it?':
     - aro
     - eupath
@@ -851,14 +868,14 @@ ontologies:
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      comment: 344 errors, 40 warnings, 488 info messages.
+      comment: 344 errors, 40 warnings, 487 info messages.
       file: robot_report
       results:
         ERROR: 344
-        INFO: 488
+        INFO: 487
         WARN: 40
       status: ERROR
-  sha256_hash: 0eea74c7a25b44f93a770d6cc912cb0e65305964b0280f2cce8cbf470351b9b0
+  sha256_hash: ba3276bbad76c194ba182490c480c15c68c83b8da2c73ecfba9e5d7a303935ba
   summary:
     comment: 7 errors
     status: ERROR
@@ -871,41 +888,42 @@ ontologies:
   base_prefixes:
   - BCO
   - BCOALT
+  - BCO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 456
+      AnnotationAssertion: 474
       ClassAssertion: 1
-      Declaration: 138
+      Declaration: 142
       EquivalentClasses: 9
       ObjectPropertyAssertion: 4
       ObjectPropertyDomain: 2
       ObjectPropertyRange: 2
       SubAnnotationPropertyOf: 1
-      SubClassOf: 80
+      SubClassOf: 82
       SubObjectPropertyOf: 5
       SubPropertyChainOf: 1
       TransitiveObjectProperty: 2
-    'Axioms: Number of axioms': 701
-    'Entities: % of entities reused': 74.83
-    'Entities: Number of annotation properties': 26
-    'Entities: Number of classes': 94
+    'Axioms: Number of axioms': 725
+    'Entities: % of entities reused': 75.64
+    'Entities: Number of annotation properties': 28
+    'Entities: Number of classes': 96
     'Entities: Number of data properties': 0
-    'Entities: Number of individuals': 6
+    'Entities: Number of individuals': 7
     'Entities: Number of object properties': 21
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 280
+      Class: 286
       ObjectIntersectionOf: 4
       ObjectSomeValuesFrom: 13
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
-      _dashboard: 0.825
+      _dashboard: 0.827
       _formula: (1*impact+1*dashboard)/2
       _impact: 0.006
       _impact_external: 0
-      _reuse: 0.748
-      oboscore: 0.415
+      _reuse: 0.756
+      oboscore: 0.416
     'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 1
     'Info: Logical consistency': true
@@ -914,16 +932,17 @@ ontologies:
       BCO: 139
       BFO: 33
       CARO: 2
-      IAO: 268
+      IAO: 282
       OBI: 27
       PCO: 6
       RO: 5
-      dc11: 36
-      obo: 75
-      oboInOwl: 39
-      owl: 47
+      dc: 2
+      dc11: 37
+      obo: 78
+      oboInOwl: 41
+      owl: 50
       prefix_unknown: 33
-      rdfs: 125
+      rdfs: 127
     'Info: Which ontologies use it?':
     - bco
     - ppo
@@ -941,7 +960,7 @@ ontologies:
     FP05 Scope:
       status: PASS
     FP06 Textual Definitions:
-      comment: 33 missing definitions. See ROBOT Report for details.
+      comment: 27 missing definitions. See ROBOT Report for details.
       status: WARN
     FP07 Relations:
       comment: 4 non-RO properties used.
@@ -958,31 +977,31 @@ ontologies:
       comment: 21 missing labels. See ROBOT Report for details.
       status: ERROR
     FP16 Maintenance:
-      comment: last version (2020-03-27) is over one year(s) old
-      status: INFO
+      status: PASS
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      comment: 26 errors, 43 warnings, 7 info messages.
+      comment: 26 errors, 35 warnings, 7 info messages.
       file: robot_report
       results:
         ERROR: 26
         INFO: 7
-        WARN: 43
+        WARN: 35
       status: ERROR
-  sha256_hash: aadbb8d14600c591ead3d0884b430ac83149c99fe84f48e5cba5c8078e5f5875
+  sha256_hash: 527eeb35496cb9a713501764bc8011f9cf903fb88701a4d2b34dc65bf7065964
   summary:
     comment: 3 errors
     status: ERROR
     summary_count:
       ERROR: 3
-      INFO: 2
+      INFO: 1
       WARN: 1
-  version: http://purl.obolibrary.org/obo/bco/releases/2020-03-27/bco-base.owl
+  version: http://purl.obolibrary.org/obo/bco/releases/2021-11-14/bco-base.owl
 - base_generated: true
   base_prefixes:
   - BFO
   - BFOALT
+  - BFO
   changed: true
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -1005,12 +1024,12 @@ ontologies:
     'Info: Experimental OBO score':
       _dashboard: 0.883
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.77
+      _impact: 0.772
       _impact_external: 0.25
       _reuse: 0.393
-      oboscore: 0.827
+      oboscore: 0.828
     'Info: How many externally documented uses?': 1
-    'Info: How many ontologies use it?': 137
+    'Info: How many ontologies use it?': 139
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -1047,6 +1066,7 @@ ontologies:
     - cto
     - cvdo
     - dideo
+    - disdriv
     - dpo
     - dron
     - duo
@@ -1064,6 +1084,7 @@ ontologies:
     - fideo
     - flopo
     - foodon
+    - fovt
     - fypo
     - gecko
     - genepio
@@ -1212,6 +1233,7 @@ ontologies:
   base_prefixes:
   - BSPO
   - BSPOALT
+  - BSPO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -1244,12 +1266,12 @@ ontologies:
     'Info: Experimental OBO score':
       _dashboard: 0.789
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.079
+      _impact: 0.083
       _impact_external: 0
       _reuse: 0.173
-      oboscore: 0.434
+      oboscore: 0.436
     'Info: How many externally documented uses?': 0
-    'Info: How many ontologies use it?': 14
+    'Info: How many ontologies use it?': 15
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -1271,6 +1293,7 @@ ontologies:
     - bspo
     - cteno
     - flopo
+    - fovt
     - hp
     - hso
     - micro
@@ -1325,7 +1348,7 @@ ontologies:
         INFO: 27
         WARN: 64
       status: ERROR
-  sha256_hash: f66c2b95345e61d96b80b1e2cd84793d9e6c70169df5aa29f4c0e81005315611
+  sha256_hash: 7cd00f541fff6ca6f4179ff5eb50d9da8f3fd1f01956519cc69f6b795810b201
   summary:
     comment: 4 errors
     status: ERROR
@@ -1333,29 +1356,30 @@ ontologies:
       ERROR: 4
       INFO: 1
       WARN: 0
-  version: http://purl.obolibrary.org/obo/bspo/releases/2021-09-22/bspo-base.owl
+  version: http://purl.obolibrary.org/obo/bspo/releases/2021-10-13/bspo-base.owl
 - base_generated: false
   base_prefixes:
   - BTO
   - BTOALT
+  - BTO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 35556
-      Declaration: 6557
+      AnnotationAssertion: 36221
+      Declaration: 6606
       SubAnnotationPropertyOf: 4
-      SubClassOf: 7634
-    'Axioms: Number of axioms': 49751
+      SubClassOf: 7690
+    'Axioms: Number of axioms': 50521
     'Entities: % of entities reused': 0.56
     'Entities: Number of annotation properties': 30
-    'Entities: Number of classes': 6520
+    'Entities: Number of classes': 6569
     'Entities: Number of data properties': 0
     'Entities: Number of individuals': 0
     'Entities: Number of object properties': 10
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 21788
-      ObjectSomeValuesFrom: 2918
+      Class: 21949
+      ObjectSomeValuesFrom: 3067
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.645
@@ -1369,14 +1393,14 @@ ontologies:
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
-      BFO: 1851
-      BTO: 21788
+      BFO: 1852
+      BTO: 21949
       BTOALT: 9
-      IAO: 5474
-      RO: 1076
-      oboInOwl: 28980
-      owl: 57
-      rdfs: 6613
+      IAO: 5521
+      RO: 1224
+      oboInOwl: 29543
+      owl: 59
+      rdfs: 6718
     'Info: Which ontologies use it?':
     - bto
     - eupath
@@ -1398,7 +1422,7 @@ ontologies:
     FP05 Scope:
       status: PASS
     FP06 Textual Definitions:
-      comment: 969 duplicate definitions. 1074 missing definitions. See ROBOT Report
+      comment: 983 duplicate definitions. 1076 missing definitions. See ROBOT Report
         for details.
       status: ERROR
     FP07 Relations:
@@ -1421,14 +1445,14 @@ ontologies:
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      comment: 973 errors, 1144 warnings, 78 info messages.
+      comment: 987 errors, 1156 warnings, 79 info messages.
       file: robot_report
       results:
-        ERROR: 973
-        INFO: 78
-        WARN: 1144
+        ERROR: 987
+        INFO: 79
+        WARN: 1156
       status: ERROR
-  sha256_hash: 5939baa2edeebcdcc649540076ee1ecc0e494fb4d09308814ecd22f1f5317991
+  sha256_hash: 1a16b8f178850252524ed7af5380202a6bc02ba13e9e0580047f06eb5343a04f
   summary:
     comment: 5 errors
     status: ERROR
@@ -1436,11 +1460,12 @@ ontologies:
       ERROR: 5
       INFO: 1
       WARN: 0
-  version: http://purl.obolibrary.org/obo/bto/releases/2021-04-27/bto-base.owl
+  version: http://purl.obolibrary.org/obo/bto/releases/2021-10-26/bto-base.owl
 - base_generated: true
   base_prefixes:
   - CARO
   - CAROALT
+  - CARO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -1483,10 +1508,10 @@ ontologies:
     'Info: Experimental OBO score':
       _dashboard: 0.734
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.225
+      _impact: 0.222
       _impact_external: 0
       _reuse: 0.647
-      oboscore: 0.479
+      oboscore: 0.478
     'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 40
     'Info: Logical consistency': true
@@ -1611,6 +1636,7 @@ ontologies:
   base_prefixes:
   - CDAO
   - CDAOALT
+  - CDAO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -1739,6 +1765,7 @@ ontologies:
   base_prefixes:
   - CDNO
   - CDNOALT
+  - CDNO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -1812,7 +1839,7 @@ ontologies:
         INFO: 0
         WARN: 1
       status: WARN
-  sha256_hash: 53e74c86f5d0d677bb1657211dae045aa09604f6fd11ef5ab415276ece636092
+  sha256_hash: 5fe8a99229ea342c8d7e8a915ecc2efcc7828210934932da50f309a685d1dc6a
   summary:
     comment: 2 errors
     status: ERROR
@@ -1820,53 +1847,54 @@ ontologies:
       ERROR: 2
       INFO: 0
       WARN: 2
-  version: http://purl.obolibrary.org/obo/cdno/releases/2021-09-09/cdno-base.owl
+  version: http://purl.obolibrary.org/obo/cdno/releases/2021-10-20/cdno-base.owl
 - base_generated: true
   base_prefixes:
   - CHEBI
   - CHEBIALT
-  changed: false
+  - CHEBI
+  changed: true
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 2279160
-      Declaration: 166048
+      AnnotationAssertion: 2352498
+      Declaration: 171105
       InverseObjectProperties: 1
       SubAnnotationPropertyOf: 6
-      SubClassOf: 303491
+      SubClassOf: 310130
       TransitiveObjectProperty: 2
-    'Axioms: Number of axioms': 2748708
+    'Axioms: Number of axioms': 2833742
     'Entities: % of entities reused': 0.02
     'Entities: Number of annotation properties': 37
-    'Entities: Number of classes': 166001
+    'Entities: Number of classes': 171058
     'Entities: Number of data properties': 0
     'Entities: Number of individuals': 0
     'Entities: Number of object properties': 10
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 772983
-      ObjectSomeValuesFrom: 86737
+      Class: 791318
+      ObjectSomeValuesFrom: 87554
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
-      _dashboard: 0.579
+      _dashboard: 0.578
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.421
+      _impact: 0.417
       _impact_external: 0.25
       _reuse: 0.0
-      oboscore: 0.5
+      oboscore: 0.497
     'Info: How many externally documented uses?': 2
     'Info: How many ontologies use it?': 75
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
-      BFO: 3877
-      CHEBI: 772983
-      CHEBIALT: 41592
-      IAO: 87828
-      RO: 41294
-      obo: 926297
-      oboInOwl: 1672863
-      owl: 18544
-      rdfs: 147552
+      BFO: 3901
+      CHEBI: 791318
+      CHEBIALT: 41808
+      IAO: 88090
+      RO: 41871
+      obo: 961554
+      oboInOwl: 1722238
+      owl: 18553
+      rdfs: 152600
     'Info: Which ontologies use it?':
     - agro
     - apollo_sv
@@ -1882,6 +1910,7 @@ ontologies:
     - cteno
     - cto
     - dideo
+    - disdriv
     - doid
     - dpo
     - dron
@@ -1891,7 +1920,6 @@ ontologies:
     - fbcv
     - fideo
     - flopo
-    - fobi
     - foodon
     - fypo
     - genepio
@@ -1955,13 +1983,13 @@ ontologies:
     FP03 URIs:
       status: PASS
     FP04 Versioning:
-      comment: Version IRI 'http://purl.obolibrary.org/obo/chebi/203/chebi.owl' is
+      comment: Version IRI 'http://purl.obolibrary.org/obo/chebi/205/chebi.owl' is
         not in recommended format
       status: WARN
     FP05 Scope:
       status: PASS
     FP06 Textual Definitions:
-      comment: 1074 duplicate definitions. 96605 missing definitions. See ROBOT Report
+      comment: 1091 duplicate definitions. 101409 missing definitions. See ROBOT Report
         for details.
       status: ERROR
     FP07 Relations:
@@ -1983,14 +2011,14 @@ ontologies:
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      comment: 1080 errors, 98545 warnings, 286 info messages.
+      comment: 1097 errors, 103355 warnings, 291 info messages.
       file: robot_report
       results:
-        ERROR: 1080
-        INFO: 286
-        WARN: 98545
+        ERROR: 1097
+        INFO: 291
+        WARN: 103355
       status: ERROR
-  sha256_hash: 2e6c609bbbdf682248247f7d0bc3ce4dd9a7bf50b9213779ab9131ec66e201bb
+  sha256_hash: 6dc9d296c02ecdd6c94786c92309a7900b49f9e69a1630eaf0ea5289fd82e769
   summary:
     comment: 4 errors
     status: ERROR
@@ -1998,11 +2026,12 @@ ontologies:
       ERROR: 4
       INFO: 2
       WARN: 1
-  version: http://purl.obolibrary.org/obo/chebi/203/chebi.owl
+  version: http://purl.obolibrary.org/obo/chebi/205/chebi.owl
 - base_generated: true
   base_prefixes:
   - CHEMINF
   - CHEMINFALT
+  - CHEMINF
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -2146,6 +2175,7 @@ ontologies:
   base_prefixes:
   - CHIRO
   - CHIROALT
+  - CHIRO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -2253,6 +2283,7 @@ ontologies:
   base_prefixes:
   - CHMO
   - CHMOALT
+  - CHMO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -2282,7 +2313,7 @@ ontologies:
     'Info: Experimental OBO score':
       _dashboard: 0.785
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.051
+      _impact: 0.05
       _impact_external: 0
       _reuse: 0.062
       oboscore: 0.418
@@ -2372,7 +2403,8 @@ ontologies:
   base_prefixes:
   - CIDO
   - CIDOALT
-  changed: true
+  - CIDO
+  changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 87778
@@ -2545,6 +2577,7 @@ ontologies:
   base_prefixes:
   - CIO
   - CIOALT
+  - CIO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -2650,7 +2683,8 @@ ontologies:
   base_prefixes:
   - CL
   - CLALT
-  changed: true
+  - CL
+  changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 13650
@@ -2679,10 +2713,10 @@ ontologies:
     'Info: Experimental OBO score':
       _dashboard: 0.929
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.281
+      _impact: 0.278
       _impact_external: 0.25
       _reuse: 0.321
-      oboscore: 0.605
+      oboscore: 0.604
     'Info: How many externally documented uses?': 2
     'Info: How many ontologies use it?': 50
     'Info: Logical consistency': true
@@ -2818,58 +2852,62 @@ ontologies:
   base_prefixes:
   - CLAO
   - CLAOALT
+  - CLAO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 5535
+      AnnotationAssertion: 6208
       AsymmetricObjectProperty: 2
-      Declaration: 1517
+      Declaration: 1558
       SubAnnotationPropertyOf: 1
-      SubClassOf: 2419
-      SubObjectPropertyOf: 3
+      SubClassOf: 2717
+      SubObjectPropertyOf: 8
       SymmetricObjectProperty: 1
       TransitiveObjectProperty: 3
-    'Axioms: Number of axioms': 9481
-    'Entities: % of entities reused': 2.1
-    'Entities: Number of annotation properties': 21
-    'Entities: Number of classes': 1482
+    'Axioms: Number of axioms': 10498
+    'Entities: % of entities reused': 2.49
+    'Entities: Number of annotation properties': 22
+    'Entities: Number of classes': 1516
     'Entities: Number of data properties': 0
     'Entities: Number of individuals': 0
-    'Entities: Number of object properties': 19
+    'Entities: Number of object properties': 26
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 6323
-      ObjectIntersectionOf: 4
-      ObjectSomeValuesFrom: 932
+      Class: 6978
+      ObjectIntersectionOf: 30
+      ObjectSomeValuesFrom: 1221
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
-      _dashboard: 0.712
+      _dashboard: 0.786
       _formula: (1*impact+1*dashboard)/2
       _impact: 0.0
       _impact_external: 0
-      _reuse: 0.021
-      oboscore: 0.356
+      _reuse: 0.025
+      oboscore: 0.393
     'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
-      BFO: 622
-      CLAO: 6420
-      IAO: 1060
-      RO: 242
-      dc11: 374
-      obo: 550
-      oboInOwl: 2756
-      owl: 1
-      rdfs: 1573
+      BFO: 797
+      CLAO: 7074
+      IAO: 1531
+      PATO: 6
+      RO: 366
+      dc: 793
+      dc11: 380
+      obo: 271
+      oboInOwl: 3404
+      owl: 22
+      rdfs: 1664
     'Info: Which ontologies use it?':
     - clao
   mirror_from: http://purl.obolibrary.org/obo/clao/clao-base.owl
   namespace: clao
   results:
     FP01 Open:
-      comment: Missing ontology license.
+      comment: Ontology license 'https://creativecommons.org/licenses/by/4.0/' does
+        not match regsitry license 'http://creativecommons.org/publicdomain/zero/1.0/'.
       status: ERROR
     FP02 Common Format:
       status: PASS
@@ -2880,11 +2918,11 @@ ontologies:
     FP05 Scope:
       status: PASS
     FP06 Textual Definitions:
-      comment: 64 duplicate definitions. 12 multiple definitions. 460 missing definitions.
-        See ROBOT Report for details.
+      comment: 2 duplicate definitions. 20 missing definitions. See ROBOT Report for
+        details.
       status: ERROR
     FP07 Relations:
-      comment: 10 non-RO properties used.
+      comment: 14 non-RO properties used.
       file: fp7
       status: INFO
     FP08 Documented:
@@ -2901,14 +2939,14 @@ ontologies:
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      comment: 78 errors, 474 warnings, 6 info messages.
+      comment: 21 errors, 23 warnings, 1 info messages.
       file: robot_report
       results:
-        ERROR: 78
-        INFO: 6
-        WARN: 474
+        ERROR: 21
+        INFO: 1
+        WARN: 23
       status: ERROR
-  sha256_hash: 6da3d3e57d45e3cc705c046e3cb65c2f028ff686e66300a904a82764deabb06a
+  sha256_hash: f999596bd9196262f3511221ef9475c0189d2deff33d75b8cfa4ee2c2a86d923
   summary:
     comment: 4 errors
     status: ERROR
@@ -2916,11 +2954,12 @@ ontologies:
       ERROR: 4
       INFO: 1
       WARN: 0
-  version: http://purl.obolibrary.org/obo/clao/releases/2021-08-28/clao-base.owl
+  version: http://purl.obolibrary.org/obo/clao/releases/2021-09-27/clao-base.owl
 - base_generated: true
   base_prefixes:
   - CLO
   - CLOALT
+  - CLO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -3081,6 +3120,7 @@ ontologies:
   base_prefixes:
   - CLYH
   - CLYHALT
+  - CLYH
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -3177,6 +3217,7 @@ ontologies:
   base_prefixes:
   - CMO
   - CMOALT
+  - CMO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -3277,6 +3318,7 @@ ontologies:
   base_prefixes:
   - COB
   - COBALT
+  - COB
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -3419,6 +3461,7 @@ ontologies:
   base_prefixes:
   - CRO
   - CROALT
+  - CRO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -3526,6 +3569,7 @@ ontologies:
   base_prefixes:
   - CTENO
   - CTENOALT
+  - CTENO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -3662,6 +3706,7 @@ ontologies:
   base_prefixes:
   - CTO
   - CTOALT
+  - CTO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -3789,6 +3834,7 @@ ontologies:
   base_prefixes:
   - CVDO
   - CVDOALT
+  - CVDO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -3909,6 +3955,7 @@ ontologies:
   base_prefixes:
   - DDANAT
   - DDANATALT
+  - DDANAT
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -4005,6 +4052,7 @@ ontologies:
   base_prefixes:
   - DDPHENO
   - DDPHENOALT
+  - DDPHENO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -4025,12 +4073,12 @@ ontologies:
     'Info: Experimental OBO score':
       _dashboard: 0.937
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.0
+      _impact: 0.006
       _impact_external: 0
       _reuse: 0.022
-      oboscore: 0.469
+      oboscore: 0.472
     'Info: How many externally documented uses?': 0
-    'Info: How many ontologies use it?': 0
+    'Info: How many ontologies use it?': 1
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -4041,6 +4089,7 @@ ontologies:
       rdfs: 1116
     'Info: Which ontologies use it?':
     - ddpheno
+    - upheno
   mirror_from: http://purl.obolibrary.org/obo/ddpheno/ddpheno-base.owl
   namespace: ddpheno
   results:
@@ -4094,6 +4143,7 @@ ontologies:
   base_prefixes:
   - DIDEO
   - DIDEOALT
+  - DIDEO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -4252,72 +4302,169 @@ ontologies:
       INFO: 1
       WARN: 1
   version: http://purl.obolibrary.org/obo/dideo/release/2021-06-11/dideo.owl
+- base_generated: true
+  base_prefixes:
+  - DISDRIV
+  - DISDRIVALT
+  - DISDRIV
+  changed: false
+  metrics:
+    'Axioms: Breakdown of axiom types':
+      AnnotationAssertion: 52
+      Declaration: 24
+      SubClassOf: 12
+    'Axioms: Number of axioms': 88
+    'Entities: % of entities reused': 100.0
+    'Entities: Number of annotation properties': 9
+    'Entities: Number of classes': 13
+    'Entities: Number of data properties': 0
+    'Entities: Number of individuals': 0
+    'Entities: Number of object properties': 3
+    'Entities: Number of unsatisfiable classes': 0
+    'Info: Breakdown of OWL class expressions used':
+      Class: 37
+    'Info: Does the ontology fall under OWL 2 DL?': true
+    'Info: Experimental OBO score':
+      _dashboard: 0.84
+      _formula: (1*impact+1*dashboard)/2
+      _impact: 0.0
+      _impact_external: 0.25
+      _reuse: 1.0
+      oboscore: 0.42
+    'Info: How many externally documented uses?': 1
+    'Info: How many ontologies use it?': 0
+    'Info: Logical consistency': true
+    'Info: Syntax': RDF/XML Syntax
+    'Info: Usage of namespaces in axioms':
+      BFO: 2
+      CHEBI: 2
+      ExO: 10
+      FOODON: 3
+      IAO: 19
+      RO: 1
+      dc: 1
+      dc11: 2
+      obo: 22
+      oboInOwl: 29
+      rdfs: 26
+    'Info: Which ontologies use it?':
+    - disdriv
+  mirror_from: http://purl.obolibrary.org/obo/disdriv.owl
+  namespace: disdriv
+  results:
+    FP01 Open:
+      status: PASS
+    FP02 Common Format:
+      status: PASS
+    FP03 URIs:
+      status: PASS
+    FP04 Versioning:
+      comment: Missing version IRI
+      status: ERROR
+    FP05 Scope:
+      status: PASS
+    FP06 Textual Definitions:
+      comment: 3 missing definitions. See ROBOT Report for details.
+      status: WARN
+    FP07 Relations:
+      status: PASS
+    FP08 Documented:
+      status: PASS
+    FP09 Plurality of Users:
+      status: PASS
+    FP11 Locus of Authority:
+      status: PASS
+    FP12 Naming Conventions:
+      status: PASS
+    FP16 Maintenance:
+      comment: Missing version IRI to check date
+      status: ERROR
+    FP20 Responsiveness:
+      status: PASS
+    ROBOT Report:
+      comment: 3 warnings, 1 info messages.
+      file: robot_report
+      results:
+        ERROR: 0
+        INFO: 1
+        WARN: 3
+      status: WARN
+  sha256_hash: acb7c88c0b4388d6a53c3d9a4acef1eb3a6c110102f4271e047f0df753e9a3f1
+  summary:
+    comment: 2 errors
+    status: ERROR
+    summary_count:
+      ERROR: 2
+      INFO: 0
+      WARN: 2
+  version: null
 - base_generated: false
   base_prefixes:
   - DOID
   - DOIDALT
-  changed: false
+  - DOID
+  changed: true
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 120080
-      Declaration: 14517
+      AnnotationAssertion: 120444
+      Declaration: 14635
       DisjointClasses: 26
-      EquivalentClasses: 707
-      SubAnnotationPropertyOf: 16
-      SubClassOf: 17462
+      EquivalentClasses: 710
+      SubAnnotationPropertyOf: 17
+      SubClassOf: 18264
       SubObjectPropertyOf: 1
-    'Axioms: Number of axioms': 152809
-    'Entities: % of entities reused': 8.22
-    'Entities: Number of annotation properties': 54
-    'Entities: Number of classes': 14450
+    'Axioms: Number of axioms': 154097
+    'Entities: % of entities reused': 8.66
+    'Entities: Number of annotation properties': 55
+    'Entities: Number of classes': 14567
     'Entities: Number of data properties': 0
     'Entities: Number of individuals': 0
     'Entities: Number of object properties': 15
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 52215
+      Class: 53949
       ObjectExactCardinality: 5
-      ObjectIntersectionOf: 990
+      ObjectIntersectionOf: 997
       ObjectMinCardinality: 3
-      ObjectSomeValuesFrom: 7525
+      ObjectSomeValuesFrom: 8300
       ObjectUnionOf: 107
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.939
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.118
-      _impact_external: 0.25
-      _reuse: 0.082
+      _impact: 0.117
+      _impact_external: 0.5
+      _reuse: 0.087
       oboscore: 0.528
-    'Info: How many externally documented uses?': 1
+    'Info: How many externally documented uses?': 3
     'Info: How many ontologies use it?': 21
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
-      CHEBI: 204
+      CHEBI: 203
       CL: 709
-      DOID: 43347
-      DOIDALT: 32
+      DOID: 44246
+      DOIDALT: 34
       FOODON: 48
-      GENO: 2614
-      HP: 739
-      IAO: 8923
-      IDO: 2961
+      GENO: 2652
+      HP: 793
+      IAO: 8990
+      IDO: 2999
       NCBITaxon: 736
       OBI: 5
-      RO: 4337
+      RO: 5074
       SO: 296
       SOALT: 127
-      SYMP: 1271
+      SYMP: 2009
       TRANS: 213
-      UBERON: 2038
+      UBERON: 2044
       dc: 1
-      dc11: 7728
+      dc11: 7756
       obo: 1
-      oboInOwl: 102964
-      owl: 2456
-      rdfs: 14587
-      skos: 260
+      oboInOwl: 103280
+      owl: 2459
+      rdfs: 14635
+      skos: 261
     'Info: Which ontologies use it?':
     - apollo_sv
     - aro
@@ -4355,7 +4502,7 @@ ontologies:
     FP05 Scope:
       status: PASS
     FP06 Textual Definitions:
-      comment: 2553 missing definitions. See ROBOT Report for details.
+      comment: 2529 missing definitions. See ROBOT Report for details.
       status: WARN
     FP07 Relations:
       comment: 2 non-RO properties used.
@@ -4374,14 +4521,14 @@ ontologies:
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      comment: 2555 warnings, 0 info messages.
+      comment: 2531 warnings, 1 info messages.
       file: robot_report
       results:
         ERROR: 0
-        INFO: 0
-        WARN: 2555
+        INFO: 1
+        WARN: 2531
       status: WARN
-  sha256_hash: 442d70e24790aac5b470360b5f6633a1bb66a84b0f6c80783f58d791f63ad811
+  sha256_hash: cb91b9bd2fef0f6ca4fb0ac75dbeb70e93a92fdfa6616c7aa7d9811932f40ba9
   summary:
     comment: 2 warnings
     status: WARN
@@ -4389,7 +4536,7 @@ ontologies:
       ERROR: 0
       INFO: 1
       WARN: 2
-  version: http://purl.obolibrary.org/obo/doid/releases/2021-08-17/doid-base.owl
+  version: http://purl.obolibrary.org/obo/doid/releases/2021-11-17/doid-base.owl
 - base_generated: false
   base_prefixes:
   - FBcv
@@ -4494,14 +4641,14 @@ ontologies:
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      comment: 33 warnings, 0 info messages.
+      comment: 28 warnings, 0 info messages.
       file: robot_report
       results:
         ERROR: 0
         INFO: 0
-        WARN: 33
+        WARN: 28
       status: WARN
-  sha256_hash: 36147f907a378cd482c066c40b99469bd75212aff7bc5672b90e67d2e10652ae
+  sha256_hash: a255e38d3b8dd37d02fe91deb37d837b15095d3e4ed16fd430238db558371256
   summary:
     comment: 1 errors
     status: ERROR
@@ -4509,55 +4656,56 @@ ontologies:
       ERROR: 1
       INFO: 0
       WARN: 2
-  version: http://purl.obolibrary.org/obo/dpo/releases/2021-09-02/dpo-base.owl
+  version: http://purl.obolibrary.org/obo/dpo/releases/2021-10-15/dpo-base.owl
 - base_generated: false
   base_prefixes:
   - DRON
   - DRONALT
+  - DRON
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 671293
-      Declaration: 577257
+      AnnotationAssertion: 707701
+      Declaration: 613020
       EquivalentClasses: 74
-      SubClassOf: 1153509
+      SubClassOf: 1224720
       SubObjectPropertyOf: 2
       TransitiveObjectProperty: 2
-    'Axioms: Number of axioms': 2402137
-    'Entities: % of entities reused': 0.44
+    'Axioms: Number of axioms': 2545519
+    'Entities: % of entities reused': 0.42
     'Entities: Number of annotation properties': 30
-    'Entities: Number of classes': 577214
+    'Entities: Number of classes': 612977
     'Entities: Number of data properties': 1
     'Entities: Number of individuals': 1
     'Entities: Number of object properties': 20
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 3094365
+      Class: 3273206
       DataHasValue: 21288
       ObjectAllValuesFrom: 1
       ObjectHasValue: 21288
-      ObjectIntersectionOf: 115686
-      ObjectSomeValuesFrom: 788787
+      ObjectIntersectionOf: 116014
+      ObjectSomeValuesFrom: 824892
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.664
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.084
+      _impact: 0.083
       _impact_external: 0
       _reuse: 0.004
-      oboscore: 0.374
+      oboscore: 0.373
     'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 15
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
       APOLLO_SV: 3
-      BFO: 189758
-      CHEBI: 66316
-      DRON: 3002334
+      BFO: 190414
+      CHEBI: 66579
+      DRON: 3181194
       GO: 7
       IAO: 21625
-      OBI: 119206
+      OBI: 119567
       OGMS: 3
       PATO: 21289
       PR: 1
@@ -4566,8 +4714,8 @@ ontologies:
       dc11: 112
       oboInOwl: 39
       owl: 2
-      prefix_unknown: 577770
-      rdfs: 577259
+      prefix_unknown: 613219
+      rdfs: 613024
       xsd: 21288
     'Info: Which ontologies use it?':
     - apollo_sv
@@ -4600,7 +4748,7 @@ ontologies:
     FP05 Scope:
       status: PASS
     FP06 Textual Definitions:
-      comment: 577146 missing definitions. See ROBOT Report for details.
+      comment: 612909 missing definitions. See ROBOT Report for details.
       status: WARN
     FP07 Relations:
       comment: 3 non-RO properties used.
@@ -4614,7 +4762,7 @@ ontologies:
     FP11 Locus of Authority:
       status: PASS
     FP12 Naming Conventions:
-      comment: 360 duplicate labels. 43 multiple labels. 24 missing labels. See ROBOT
+      comment: 360 duplicate labels. 47 multiple labels. 24 missing labels. See ROBOT
         Report for details.
       status: ERROR
     FP16 Maintenance:
@@ -4622,14 +4770,14 @@ ontologies:
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      comment: 498 errors, 577146 warnings, 2294 info messages.
+      comment: 502 errors, 612909 warnings, 2295 info messages.
       file: robot_report
       results:
-        ERROR: 498
-        INFO: 2294
-        WARN: 577146
+        ERROR: 502
+        INFO: 2295
+        WARN: 612909
       status: ERROR
-  sha256_hash: 79cb37b8fbfd0d1de21cca5f3b04c7fbfaa2f11eaaa812bf66368b32d08de577
+  sha256_hash: 326f6225f52266f198708f45f508321a3a0c4d10e1b8413d21f35cc5712e6298
   summary:
     comment: 3 errors
     status: ERROR
@@ -4637,11 +4785,12 @@ ontologies:
       ERROR: 3
       INFO: 1
       WARN: 1
-  version: http://purl.obolibrary.org/obo/dron/releases/2021-08-12/dron-base.owl
+  version: http://purl.obolibrary.org/obo/dron/releases/2021-10-20/dron-base.owl
 - base_generated: true
   base_prefixes:
   - DUO
   - DUOALT
+  - DUO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -4780,6 +4929,7 @@ ontologies:
   base_prefixes:
   - ECAO
   - ECAOALT
+  - ECAO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -4874,10 +5024,11 @@ ontologies:
   base_prefixes:
   - ECO
   - ECOALT
-  changed: true
+  - ECO
+  changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 14140
+      AnnotationAssertion: 14701
       Declaration: 2030
       DisjointClasses: 3
       EquivalentClasses: 1225
@@ -4886,7 +5037,7 @@ ontologies:
       ObjectPropertyRange: 1
       SubAnnotationPropertyOf: 9
       SubClassOf: 1911
-    'Axioms: Number of axioms': 19321
+    'Axioms: Number of axioms': 19882
     'Entities: % of entities reused': 1.87
     'Entities: Number of annotation properties': 42
     'Entities: Number of classes': 1985
@@ -4914,15 +5065,15 @@ ontologies:
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
       BFO: 13
-      ECO: 11979
+      ECO: 12543
       ECOALT: 18
       IAO: 2684
       OBI: 4
       dc: 1
       dc11: 2
-      oboInOwl: 10704
+      oboInOwl: 10702
       owl: 44
-      rdfs: 2357
+      rdfs: 2353
       xsd: 301
     'Info: Which ontologies use it?':
     - eco
@@ -4967,7 +5118,7 @@ ontologies:
         INFO: 658
         WARN: 155
       status: WARN
-  sha256_hash: 36f2d34385a947369ce6764f9e44fdd0a18a2446704ad90affa5046f1793de43
+  sha256_hash: 66ab640e8bebac36a655b570fdafaaf91ef12fffeeeb122d1efd20f17e69ddcb
   summary:
     comment: 2 warnings
     status: WARN
@@ -4975,11 +5126,12 @@ ontologies:
       ERROR: 0
       INFO: 1
       WARN: 2
-  version: http://purl.obolibrary.org/obo/eco/releases/2021-09-14/eco-base.owl
+  version: http://purl.obolibrary.org/obo/eco/releases/2021-10-20/eco-base.owl
 - base_generated: false
   base_prefixes:
   - ECOCORE
   - ECOCOREALT
+  - ECOCORE
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -5090,23 +5242,24 @@ ontologies:
   base_prefixes:
   - ECTO
   - ECTOALT
+  - ECTO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 7750
-      Declaration: 5039
+      AnnotationAssertion: 7753
+      Declaration: 5040
       EquivalentClasses: 2540
       SubAnnotationPropertyOf: 1
-    'Axioms: Number of axioms': 15330
-    'Entities: % of entities reused': 48.79
+    'Axioms: Number of axioms': 15334
+    'Entities: % of entities reused': 48.78
     'Entities: Number of annotation properties': 16
-    'Entities: Number of classes': 5021
+    'Entities: Number of classes': 5022
     'Entities: Number of data properties': 0
     'Entities: Number of individuals': 0
     'Entities: Number of object properties': 5
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 12799
+      Class: 12800
       ObjectIntersectionOf: 2618
       ObjectSomeValuesFrom: 2698
     'Info: Does the ontology fall under OWL 2 DL?': false
@@ -5123,13 +5276,13 @@ ontologies:
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
       CHEBI: 4187
-      ECTO: 5122
+      ECTO: 5123
       ECTOALT: 2
       ENVO: 593
       ExO: 2586
       FOODON: 13
       GO: 6
-      IAO: 2585
+      IAO: 2586
       MAXO: 83
       NBO: 32
       NCBITaxon: 14
@@ -5140,8 +5293,8 @@ ontologies:
       dc: 1
       dc11: 2
       oboInOwl: 2545
-      owl: 42
-      rdfs: 2588
+      owl: 43
+      rdfs: 2589
     'Info: Which ontologies use it?':
     - ecto
     - mondo
@@ -5177,14 +5330,14 @@ ontologies:
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      comment: 3 warnings, 2540 info messages.
+      comment: 4 warnings, 2540 info messages.
       file: robot_report
       results:
         ERROR: 0
         INFO: 2540
-        WARN: 3
+        WARN: 4
       status: WARN
-  sha256_hash: f606dd55ec58e3705419790f1fdcb5ab2e79b63928741f5f059b9cc254477512
+  sha256_hash: 5dc3cc9e2d4439c85aac1004630950e0124b8b3dc78997faac7fe42ace245c77
   summary:
     comment: 1 errors
     status: ERROR
@@ -5192,11 +5345,12 @@ ontologies:
       ERROR: 1
       INFO: 0
       WARN: 2
-  version: http://purl.obolibrary.org/obo/ecto/releases/2021-03-17/ecto-base.owl
+  version: http://purl.obolibrary.org/obo/ecto/releases/2021-08-25/ecto-base.owl
 - base_generated: true
   base_prefixes:
   - EMAPA
   - EMAPAALT
+  - EMAPA
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -5292,6 +5446,7 @@ ontologies:
   base_prefixes:
   - ENVO
   - ENVOALT
+  - ENVO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -5326,10 +5481,10 @@ ontologies:
     'Info: Experimental OBO score':
       _dashboard: 0.792
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.185
+      _impact: 0.183
       _impact_external: 0.75
       _reuse: 0.122
-      oboscore: 0.489
+      oboscore: 0.488
     'Info: How many externally documented uses?': 6
     'Info: How many ontologies use it?': 33
     'Info: Logical consistency': true
@@ -5451,6 +5606,7 @@ ontologies:
   base_prefixes:
   - EUPATH
   - EUPATHALT
+  - EUPATH
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -5624,43 +5780,46 @@ ontologies:
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 1083
-      Declaration: 175
+      AnnotationAssertion: 1087
+      Declaration: 180
       DisjointClasses: 29
-      SubClassOf: 177
+      SubClassOf: 178
       TransitiveObjectProperty: 1
-    'Axioms: Number of axioms': 1465
-    'Entities: % of entities reused': 17.13
-    'Entities: Number of annotation properties': 20
-    'Entities: Number of classes': 151
+    'Axioms: Number of axioms': 1475
+    'Entities: % of entities reused': 18.38
+    'Entities: Number of annotation properties': 21
+    'Entities: Number of classes': 152
     'Entities: Number of data properties': 0
     'Entities: Number of individuals': 0
     'Entities: Number of object properties': 8
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 563
+      Class: 566
       ObjectSomeValuesFrom: 41
-    'Info: Does the ontology fall under OWL 2 DL?': false
+    'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.791
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.017
+      _impact: 0.022
       _impact_external: 0
-      _reuse: 0.171
-      oboscore: 0.404
+      _reuse: 0.184
+      oboscore: 0.407
     'Info: How many externally documented uses?': 0
-    'Info: How many ontologies use it?': 3
+    'Info: How many ontologies use it?': 4
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
       BFO: 36
       EXOALT: 16
-      ExO: 561
-      IAO: 152
-      oboInOwl: 860
+      ExO: 564
+      IAO: 153
+      dc: 1
+      dc11: 4
+      oboInOwl: 861
       owl: 1
-      rdfs: 165
+      rdfs: 166
     'Info: Which ontologies use it?':
+    - disdriv
     - ecto
     - exo
     - genepio
@@ -5701,14 +5860,14 @@ ontologies:
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      comment: 6 errors, 3 warnings, 0 info messages.
+      comment: 6 errors, 3 warnings, 1 info messages.
       file: robot_report
       results:
         ERROR: 6
-        INFO: 0
+        INFO: 1
         WARN: 3
       status: ERROR
-  sha256_hash: 053aeb8ba26264c9629f4e528adf7c7069222495e1e5f7b93e9a2da0e77d5dde
+  sha256_hash: a896aeefaec6caf164969c6b3ec1df7f3f7d50a239adb706dc1dadaf3b218e85
   summary:
     comment: 3 errors
     status: ERROR
@@ -5721,6 +5880,7 @@ ontologies:
   base_prefixes:
   - FAO
   - FAOALT
+  - FAO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -5857,7 +6017,7 @@ ontologies:
       ObjectUnionOf: 1
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
-      _dashboard: 0.688
+      _dashboard: 0.687
       _formula: (1*impact+1*dashboard)/2
       _impact: 0.0
       _impact_external: 0
@@ -5918,7 +6078,8 @@ ontologies:
       comment: 3 duplicate labels. 1 missing labels. See ROBOT Report for details.
       status: ERROR
     FP16 Maintenance:
-      status: PASS
+      comment: last version (2020-11-06) is over one year(s) old
+      status: INFO
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
@@ -5935,7 +6096,7 @@ ontologies:
     status: ERROR
     summary_count:
       ERROR: 4
-      INFO: 1
+      INFO: 2
       WARN: 1
   version: http://purl.obolibrary.org/obo/fbbi/releases/2020-11-06/fbbi.owl
 - base_generated: false
@@ -5946,24 +6107,24 @@ ontologies:
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 107571
-      Declaration: 14344
+      AnnotationAssertion: 112042
+      Declaration: 14768
       DisjointClasses: 60
-      EquivalentClasses: 4827
+      EquivalentClasses: 4890
       SubAnnotationPropertyOf: 49
-      SubClassOf: 32143
-    'Axioms: Number of axioms': 158994
-    'Entities: % of entities reused': 3.02
+      SubClassOf: 34040
+    'Axioms: Number of axioms': 165849
+    'Entities: % of entities reused': 2.96
     'Entities: Number of annotation properties': 85
-    'Entities: Number of classes': 14223
+    'Entities: Number of classes': 14647
     'Entities: Number of data properties': 0
     'Entities: Number of individuals': 0
     'Entities: Number of object properties': 44
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 94009
-      ObjectIntersectionOf: 4827
-      ObjectSomeValuesFrom: 28446
+      Class: 98423
+      ObjectIntersectionOf: 4890
+      ObjectSomeValuesFrom: 29926
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.72
@@ -5977,20 +6138,20 @@ ontologies:
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
-      BFO: 8459
+      BFO: 8838
       CARO: 4
       CL: 2
       FBBTALT: 103
-      FBbt: 90572
-      FBgn: 1038
-      GO: 1464
-      IAO: 13740
+      FBbt: 94701
+      FBgn: 1047
+      GO: 1725
+      IAO: 14167
       NCBITaxon: 4
-      PATO: 925
-      RO: 19917
-      oboInOwl: 100817
-      owl: 941
-      rdfs: 16851
+      PATO: 940
+      RO: 21012
+      oboInOwl: 105686
+      owl: 952
+      rdfs: 17567
     'Info: Which ontologies use it?':
     - caro
     - dpo
@@ -6011,7 +6172,7 @@ ontologies:
     FP05 Scope:
       status: PASS
     FP06 Textual Definitions:
-      comment: 423 duplicate definitions. 428 missing definitions. See ROBOT Report
+      comment: 507 duplicate definitions. 428 missing definitions. See ROBOT Report
         for details.
       status: ERROR
     FP07 Relations:
@@ -6029,14 +6190,14 @@ ontologies:
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      comment: 423 errors, 2103 warnings, 3438 info messages.
+      comment: 507 errors, 1309 warnings, 3489 info messages.
       file: robot_report
       results:
-        ERROR: 423
-        INFO: 3438
-        WARN: 2103
+        ERROR: 507
+        INFO: 3489
+        WARN: 1309
       status: ERROR
-  sha256_hash: 608fc253edc1fdc69776f462895f74e2541239fdbe45cf9ec2f08f95a1b57e6f
+  sha256_hash: 899580d40d7b962e0964b53cf647b9d339740b268d3c8bfa8ed14ff3f85d07cf
   summary:
     comment: 2 errors
     status: ERROR
@@ -6044,7 +6205,7 @@ ontologies:
       ERROR: 2
       INFO: 0
       WARN: 0
-  version: http://purl.obolibrary.org/obo/fbbt/releases/2021-09-01/fbbt-base.owl
+  version: http://purl.obolibrary.org/obo/fbbt/releases/2021-10-14/fbbt-base.owl
 - base_generated: false
   base_prefixes:
   - FBcv
@@ -6054,7 +6215,7 @@ ontologies:
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 7548
-      Declaration: 1472
+      Declaration: 1473
       DisjointClasses: 1
       EquivalentClasses: 130
       FunctionalObjectProperty: 2
@@ -6065,7 +6226,7 @@ ontologies:
       SubObjectPropertyOf: 3
       SubPropertyChainOf: 3
       TransitiveObjectProperty: 5
-    'Axioms: Number of axioms': 10306
+    'Axioms: Number of axioms': 10307
     'Entities: % of entities reused': 10.26
     'Entities: Number of annotation properties': 86
     'Entities: Number of classes': 1377
@@ -6079,12 +6240,12 @@ ontologies:
       ObjectSomeValuesFrom: 54
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
-      _dashboard: 0.696
+      _dashboard: 0.714
       _formula: (1*impact+1*dashboard)/2
       _impact: 0.017
       _impact_external: 0.25
       _reuse: 0.103
-      oboscore: 0.356
+      oboscore: 0.365
     'Info: How many externally documented uses?': 1
     'Info: How many ontologies use it?': 3
     'Info: Logical consistency': true
@@ -6099,7 +6260,7 @@ ontologies:
       RO: 33
       cc: 1
       dc: 1
-      dc11: 3
+      dc11: 4
       obo: 12
       oboInOwl: 5803
       owl: 184
@@ -6144,14 +6305,14 @@ ontologies:
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      comment: 112 errors, 376 warnings, 203 info messages.
+      comment: 112 errors, 195 warnings, 203 info messages.
       file: robot_report
       results:
         ERROR: 112
         INFO: 203
-        WARN: 376
+        WARN: 195
       status: ERROR
-  sha256_hash: c6b1c8e5ff8b0d2f5cfc068239dfb3dc8d87840a3f62b62ba0f33e55c86a1ef1
+  sha256_hash: 56ff19e1ee5098929774010e553d845bb46c6beae3e56ba6f9df2684c13733dd
   summary:
     comment: 4 errors
     status: ERROR
@@ -6159,7 +6320,7 @@ ontologies:
       ERROR: 4
       INFO: 0
       WARN: 0
-  version: http://purl.obolibrary.org/obo/fbcv/releases/2021-09-02/fbcv-base.owl
+  version: http://purl.obolibrary.org/obo/fbcv/releases/2021-10-18/fbcv-base.owl
 - base_generated: false
   base_prefixes:
   - FBdv
@@ -6169,13 +6330,13 @@ ontologies:
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1201
-      Declaration: 262
+      Declaration: 258
       EquivalentClasses: 2
       SubAnnotationPropertyOf: 14
       SubClassOf: 624
       SubObjectPropertyOf: 2
       TransitiveObjectProperty: 1
-    'Axioms: Number of axioms': 2106
+    'Axioms: Number of axioms': 2102
     'Entities: % of entities reused': 14.98
     'Entities: Number of annotation properties': 45
     'Entities: Number of classes': 216
@@ -6206,8 +6367,6 @@ ontologies:
       GO: 6
       IAO: 209
       RO: 244
-      dc: 1
-      dc11: 3
       oboInOwl: 811
       owl: 13
       rdfs: 432
@@ -6250,14 +6409,14 @@ ontologies:
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      comment: 32 warnings, 60 info messages.
+      comment: 26 warnings, 60 info messages.
       file: robot_report
       results:
         ERROR: 0
         INFO: 60
-        WARN: 32
+        WARN: 26
       status: WARN
-  sha256_hash: affdfaf93fa116377a727de982d899edf823311b5ff5f7acc22f5381736661ca
+  sha256_hash: a908b1a8b30d108083395a71748579105551b571881af75490e7b251e17be1ec
   summary:
     comment: 1 errors
     status: ERROR
@@ -6265,11 +6424,12 @@ ontologies:
       ERROR: 1
       INFO: 1
       WARN: 2
-  version: http://purl.obolibrary.org/obo/fbdv/releases/2021-09-01/fbdv-base.owl
+  version: http://purl.obolibrary.org/obo/fbdv/releases/2021-10-13/fbdv-base.owl
 - base_generated: true
   base_prefixes:
   - FIDEO
   - FIDEOALT
+  - FIDEO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -6379,12 +6539,13 @@ ontologies:
   base_prefixes:
   - FLOPO
   - FLOPOALT
+  - FLOPO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 90704
+      AnnotationAssertion: 90718
       AsymmetricObjectProperty: 1
-      Declaration: 32247
+      Declaration: 32249
       DisjointClasses: 271
       EquivalentClasses: 25296
       FunctionalObjectProperty: 2
@@ -6396,21 +6557,21 @@ ontologies:
       ReflexiveObjectProperty: 2
       Rule: 22
       SubAnnotationPropertyOf: 72
-      SubClassOf: 13426
+      SubClassOf: 13428
       SubObjectPropertyOf: 238
       SubPropertyChainOf: 108
       SymmetricObjectProperty: 6
       TransitiveObjectProperty: 38
-    'Axioms: Number of axioms': 162631
+    'Axioms: Number of axioms': 162649
     'Entities: % of entities reused': 24.99
     'Entities: Number of annotation properties': 185
-    'Entities: Number of classes': 31818
+    'Entities: Number of classes': 31820
     'Entities: Number of data properties': 1
     'Entities: Number of individuals': 0
     'Entities: Number of object properties': 251
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 135428
+      Class: 135434
       DataHasValue: 6
       DataSomeValuesFrom: 3
       ObjectAllValuesFrom: 6
@@ -6445,11 +6606,11 @@ ontologies:
       FLOPO: 48052
       GO: 5128
       GOALT: 32
-      IAO: 6968
+      IAO: 6970
       NBO: 18
       NCBITaxon: 266
       OBI: 7
-      PATO: 31542
+      PATO: 31548
       PATOALT: 411
       PO: 31009
       POALT: 42
@@ -6460,13 +6621,13 @@ ontologies:
       dc11: 106
       foaf: 265
       obo: 1439
-      oboInOwl: 67236
+      oboInOwl: 67244
       owl: 2417
       prefix_unknown: 9
-      rdf: 154
-      rdfs: 33303
+      rdf: 157
+      rdfs: 33309
       skos: 3
-      xsd: 765
+      xsd: 762
     'Info: Which ontologies use it?':
     - flopo
     - foodon
@@ -6527,6 +6688,7 @@ ontologies:
   base_prefixes:
   - FMA
   - FMAALT
+  - FMA
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -6630,110 +6792,209 @@ ontologies:
       WARN: 0
   version: http://purl.obolibrary.org/obo/fma/releases/2020-04-13/fma.owl
 - base_generated: true
-  changed: true
-  failure: failed_robot_base
+  base_prefixes:
+  - FOBI
+  - FOBIALT
+  - FOBI
+  changed: false
+  metrics:
+    'Axioms: Breakdown of axiom types':
+      AnnotationAssertion: 8517
+      Declaration: 1359
+      DisjointClasses: 2
+      InverseObjectProperties: 2
+      ObjectPropertyDomain: 2
+      ObjectPropertyRange: 2
+      SubClassOf: 6806
+    'Axioms: Number of axioms': 16690
+    'Entities: % of entities reused': 53.01
+    'Entities: Number of annotation properties': 22
+    'Entities: Number of classes': 1334
+    'Entities: Number of data properties': 0
+    'Entities: Number of individuals': 0
+    'Entities: Number of object properties': 4
+    'Entities: Number of unsatisfiable classes': 148
+    'Info: Breakdown of OWL class expressions used':
+      Class: 15096
+      ObjectSomeValuesFrom: 5474
+    'Info: Does the ontology fall under OWL 2 DL?': true
+    'Info: Experimental OBO score':
+      _dashboard: 0.747
+      _formula: (1*impact+1*dashboard)/2
+      _impact: 0.0
+      _impact_external: 0
+      _reuse: 0.53
+      oboscore: 0.373
+    'Info: How many externally documented uses?': 0
+    'Info: How many ontologies use it?': 0
+    'Info: Logical consistency': true
+    'Info: Syntax': OWL/XML Syntax
+    'Info: Usage of namespaces in axioms':
+      CHEBI: 2009
+      FOBI: 14106
+      FOBIALT: 4
+      FOODON: 6199
+      IAO: 1360
+      NCBITaxon: 4
+      UBERON: 2
+      dc: 1
+      obo: 2968
+      oboInOwl: 1106
+      rdfs: 1361
+    'Info: Which ontologies use it?':
+    - fobi
   mirror_from: http://purl.obolibrary.org/obo/fobi.owl
   namespace: fobi
+  results:
+    FP01 Open:
+      comment: Unable to load ontology. Missing ontology license.
+      status: ERROR
+    FP02 Common Format:
+      comment: Unable to load ontology
+      status: ERROR
+    FP03 URIs:
+      comment: Unable to load ontology
+      status: ERROR
+    FP04 Versioning:
+      comment: Unable to load ontology
+      status: ERROR
+    FP05 Scope:
+      status: PASS
+    FP06 Textual Definitions:
+      comment: ROBOT Report could not be generated
+      status: INFO
+    FP07 Relations:
+      comment: Unable to load ontology
+      status: ERROR
+    FP08 Documented:
+      status: PASS
+    FP09 Plurality of Users:
+      comment: Missing usages
+      status: ERROR
+    FP11 Locus of Authority:
+      status: PASS
+    FP12 Naming Conventions:
+      comment: ROBOT Report could not be generated
+      status: INFO
+    FP16 Maintenance:
+      comment: Unable to load ontology
+      status: ERROR
+    FP20 Responsiveness:
+      status: PASS
+    ROBOT Report:
+      comment: ROBOT Report could not be generated.
+      status: INFO
   sha256_hash: 2fef53e887bb1903a96f1655911c54a039b2d001aca1016a8a952ff5e4798b17
+  summary:
+    comment: 7 errors
+    status: ERROR
+    summary_count:
+      ERROR: 7
+      INFO: 3
+      WARN: 0
+  version: null
 - base_generated: true
   base_prefixes:
   - FOODON
   - FOODONALT
+  - FOODON
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 209352
+      AnnotationAssertion: 211189
       ClassAssertion: 15
-      Declaration: 32427
+      Declaration: 32501
       DisjointClasses: 55
-      EquivalentClasses: 1716
+      EquivalentClasses: 1713
       FunctionalObjectProperty: 1
-      InverseFunctionalObjectProperty: 2
+      InverseFunctionalObjectProperty: 1
       InverseObjectProperties: 1
       IrrefexiveObjectProperty: 5
       ObjectPropertyDomain: 1
       ObjectPropertyRange: 1
       SubAnnotationPropertyOf: 6
-      SubClassOf: 40455
-      SubObjectPropertyOf: 45
-      SymmetricObjectProperty: 2
+      SubClassOf: 40588
+      SubObjectPropertyOf: 55
+      SymmetricObjectProperty: 4
       TransitiveObjectProperty: 7
-    'Axioms: Number of axioms': 284091
-    'Entities: % of entities reused': 27.0
-    'Entities: Number of annotation properties': 69
-    'Entities: Number of classes': 31857
+    'Axioms: Number of axioms': 286143
+    'Entities: % of entities reused': 27.05
+    'Entities: Number of annotation properties': 70
+    'Entities: Number of classes': 31924
     'Entities: Number of data properties': 1
     'Entities: Number of individuals': 430
-    'Entities: Number of object properties': 72
+    'Entities: Number of object properties': 79
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 118236
-      ObjectAllValuesFrom: 133
+      Class: 118562
+      ObjectAllValuesFrom: 106
       ObjectComplementOf: 130
       ObjectExactCardinality: 2
-      ObjectIntersectionOf: 1807
+      ObjectIntersectionOf: 1781
       ObjectMinCardinality: 15
-      ObjectSomeValuesFrom: 8093
+      ObjectSomeValuesFrom: 8146
       ObjectUnionOf: 80
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
-      _dashboard: 0.58
+      _dashboard: 0.579
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.079
+      _impact: 0.083
       _impact_external: 0
-      _reuse: 0.27
-      oboscore: 0.329
+      _reuse: 0.271
+      oboscore: 0.331
     'Info: How many externally documented uses?': 0
-    'Info: How many ontologies use it?': 14
+    'Info: How many ontologies use it?': 15
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
       AGRO: 16
       APOLLO_SV: 3
-      BFO: 443
+      BFO: 448
       BTO: 7
       CARO: 7
       CEPH: 4
-      CHEBI: 5073
-      COB: 13
+      CHEBI: 5141
+      COB: 3
       DRON: 4
       ECOCORE: 114
       ENVO: 658
       ERO: 4
       FAO: 480
       FLOPO: 12
-      FOODON: 87308
+      FOODON: 87467
       GAZ: 1473
-      GENEPIO: 47
+      GENEPIO: 46
       GEO: 15
       GO: 44
       HANCESTRO: 991
       HP: 2
-      IAO: 78995
-      NCBITaxon: 18390
-      NCIT: 224
+      IAO: 79245
+      NCBITaxon: 18398
+      NCIT: 222
       NCIT_ALT: 2
-      OBI: 131
-      ONS: 446
+      OBI: 180
+      ONS: 510
       PATO: 695
       PECO: 26
-      PO: 1581
-      RO: 7706
+      PO: 1604
+      RO: 7709
+      SIO: 3
       STATO: 5
       UBERON: 292
       UO: 343
-      dc: 146
-      dc11: 1555
+      dc: 147
+      dc11: 1559
       efo: 2
       foaf: 5
-      obo: 2577
-      oboInOwl: 82524
-      owl: 2055
+      obo: 2685
+      oboInOwl: 83888
+      owl: 2057
       rdf: 2
-      rdfs: 46349
+      rdfs: 46494
       schema: 185
     'Info: Which ontologies use it?':
     - agro
+    - disdriv
     - doid
     - ecto
     - envo
@@ -6762,7 +7023,7 @@ ontologies:
     FP05 Scope:
       status: PASS
     FP06 Textual Definitions:
-      comment: 485 duplicate definitions. 10 multiple definitions. 12372 missing definitions.
+      comment: 485 duplicate definitions. 10 multiple definitions. 12374 missing definitions.
         See ROBOT Report for details.
       status: ERROR
     FP07 Relations:
@@ -6777,7 +7038,7 @@ ontologies:
     FP11 Locus of Authority:
       status: PASS
     FP12 Naming Conventions:
-      comment: 16 duplicate labels. 173 multiple labels. 4 missing labels. See ROBOT
+      comment: 16 duplicate labels. 178 multiple labels. 4 missing labels. See ROBOT
         Report for details.
       status: ERROR
     FP16 Maintenance:
@@ -6785,14 +7046,14 @@ ontologies:
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      comment: 797 errors, 13767 warnings, 390 info messages.
+      comment: 797 errors, 13779 warnings, 392 info messages.
       file: robot_report
       results:
         ERROR: 797
-        INFO: 390
-        WARN: 13767
+        INFO: 392
+        WARN: 13779
       status: ERROR
-  sha256_hash: 372509b0481794902e2512b3346ac33e66e718ed9c1c60408d2f3c480933a665
+  sha256_hash: 2313e253d7e3aed06328731beeb827cdba755757566ddb409e61b6587c19ff53
   summary:
     comment: 4 errors
     status: ERROR
@@ -6800,54 +7061,59 @@ ontologies:
       ERROR: 4
       INFO: 1
       WARN: 0
-  version: http://purl.obolibrary.org/obo/foodon/releases/2021-09-15/foodon.owl
+  version: http://purl.obolibrary.org/obo/foodon/releases/2021-11-17/foodon.owl
 - base_generated: false
   base_prefixes:
   - FOVT
   - FOVTALT
+  - FOVT
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 557
-      Declaration: 134
-      EquivalentClasses: 5
-      SubClassOf: 92
-    'Axioms: Number of axioms': 788
-    'Entities: % of entities reused': 100.0
-    'Entities: Number of annotation properties': 17
-    'Entities: Number of classes': 120
+      AnnotationAssertion: 1998
+      Declaration: 434
+      EquivalentClasses: 170
+      SubClassOf: 214
+    'Axioms: Number of axioms': 2816
+    'Entities: % of entities reused': 26.19
+    'Entities: Number of annotation properties': 22
+    'Entities: Number of classes': 412
     'Entities: Number of data properties': 0
     'Entities: Number of individuals': 0
-    'Entities: Number of object properties': 1
+    'Entities: Number of object properties': 5
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 319
-      ObjectIntersectionOf: 5
-      ObjectSomeValuesFrom: 5
+      Class: 1529
+      ObjectIntersectionOf: 264
+      ObjectSomeValuesFrom: 405
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
-      _dashboard: 0.843
+      _dashboard: 0.786
       _formula: (1*impact+1*dashboard)/2
       _impact: 0.0
       _impact_external: 0
-      _reuse: 1.0
-      oboscore: 0.421
+      _reuse: 0.262
+      oboscore: 0.393
     'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
-      IAO: 315
-      OBA: 71
-      PATO: 13
-      RO: 6
-      UBERON: 14
+      BFO: 95
+      BSPO: 2
+      FOVT: 811
+      IAO: 720
+      NCBITaxon: 14
+      OBA: 74
+      PATO: 177
+      RO: 231
+      UBERON: 452
       dc: 1
-      dc11: 89
-      oboInOwl: 114
-      owl: 6
-      prefix_unknown: 221
-      rdfs: 104
+      dc11: 556
+      obo: 1
+      oboInOwl: 684
+      owl: 15
+      rdfs: 358
     'Info: Which ontologies use it?':
     - fovt
   mirror_from: http://purl.obolibrary.org/obo/fovt/fovt-base.owl
@@ -6864,8 +7130,9 @@ ontologies:
     FP05 Scope:
       status: PASS
     FP06 Textual Definitions:
-      comment: 7 missing definitions. See ROBOT Report for details.
-      status: WARN
+      comment: 8 duplicate definitions. 7 missing definitions. See ROBOT Report for
+        details.
+      status: ERROR
     FP07 Relations:
       status: PASS
     FP08 Documented:
@@ -6876,85 +7143,86 @@ ontologies:
     FP11 Locus of Authority:
       status: PASS
     FP12 Naming Conventions:
-      comment: 2 missing labels. See ROBOT Report for details.
+      comment: 1 missing labels. See ROBOT Report for details.
       status: ERROR
     FP16 Maintenance:
       status: PASS
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      comment: 2 errors, 7 warnings, 2 info messages.
+      comment: 9 errors, 20 warnings, 158 info messages.
       file: robot_report
       results:
-        ERROR: 2
-        INFO: 2
-        WARN: 7
+        ERROR: 9
+        INFO: 158
+        WARN: 20
       status: ERROR
-  sha256_hash: bd80666c51db0f12f09d6b07d53ed7a80c1baf64aa33b00b1c14fd2aa4f3f547
+  sha256_hash: a8f411eb6da03aa4108340b2ae25b33e32c82a22c25487a673699f73013dc97d
   summary:
-    comment: 3 errors
+    comment: 4 errors
     status: ERROR
     summary_count:
-      ERROR: 3
+      ERROR: 4
       INFO: 0
-      WARN: 1
-  version: http://purl.obolibrary.org/obo/fovt/releases/2021-06-02/fovt-base.owl
+      WARN: 0
+  version: http://purl.obolibrary.org/obo/fovt/releases/2021-11-10/fovt-base.owl
 - base_generated: false
   base_prefixes:
   - FYPO
   - FYPOALT
-  changed: true
+  - FYPO
+  changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 79064
-      Declaration: 9764
+      AnnotationAssertion: 79423
+      Declaration: 9802
       DisjointClasses: 1
-      EquivalentClasses: 5917
+      EquivalentClasses: 5942
       SubAnnotationPropertyOf: 2
-      SubClassOf: 9398
+      SubClassOf: 9441
       TransitiveObjectProperty: 1
-    'Axioms: Number of axioms': 104147
-    'Entities: % of entities reused': 19.58
+    'Axioms: Number of axioms': 104612
+    'Entities: % of entities reused': 19.55
     'Entities: Number of annotation properties': 36
-    'Entities: Number of classes': 9715
+    'Entities: Number of classes': 9753
     'Entities: Number of data properties': 0
     'Entities: Number of individuals': 0
     'Entities: Number of object properties': 19
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 55737
-      ObjectIntersectionOf: 6590
-      ObjectSomeValuesFrom: 21628
+      Class: 55984
+      ObjectIntersectionOf: 6617
+      ObjectSomeValuesFrom: 21730
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
-      _dashboard: 0.936
+      _dashboard: 0.937
       _formula: (1*impact+1*dashboard)/2
       _impact: 0.0
       _impact_external: 0.25
       _reuse: 0.196
-      oboscore: 0.468
+      oboscore: 0.469
     'Info: How many externally documented uses?': 1
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
-      BFO: 6092
+      BFO: 6119
       BTO: 212
-      CHEBI: 1745
+      CHEBI: 1747
       CL: 760
-      FYPO: 33850
-      FYPOALT: 200
-      GO: 10376
-      IAO: 8057
-      PATO: 8322
+      FYPO: 33995
+      FYPOALT: 201
+      GO: 10432
+      IAO: 8091
+      PATO: 8367
       PR: 28
-      RO: 10584
+      RO: 10638
       SO: 441
-      dc11: 1013
-      obo: 3583
-      oboInOwl: 95597
+      dc11: 1083
+      obo: 3596
+      oboInOwl: 95979
       owl: 321
-      rdfs: 10527
+      rdfs: 10573
     'Info: Which ontologies use it?':
     - fypo
   mirror_from: http://purl.obolibrary.org/obo/fypo/fypo-base.owl
@@ -6990,14 +7258,14 @@ ontologies:
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      comment: 35 warnings, 2 info messages.
+      comment: 29 warnings, 2 info messages.
       file: robot_report
       results:
         ERROR: 0
         INFO: 2
-        WARN: 35
+        WARN: 29
       status: WARN
-  sha256_hash: 15509e09cdd9e1090a6e196288fd2bf7d78fab11d61a89f5a29b74d26bd72305
+  sha256_hash: 1506a6ba84414300c17b7317c4ec743e6a7449853a0e4782884f5fc9d4ba3f9f
   summary:
     comment: 1 errors
     status: ERROR
@@ -7005,11 +7273,12 @@ ontologies:
       ERROR: 1
       INFO: 0
       WARN: 2
-  version: http://purl.obolibrary.org/obo/fypo/releases/2021-09-21/fypo-base.owl
+  version: http://purl.obolibrary.org/obo/fypo/releases/2021-11-18/fypo-base.owl
 - base_generated: true
   base_prefixes:
   - GECKO
   - GECKOALT
+  - GECKO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -7113,6 +7382,7 @@ ontologies:
   base_prefixes:
   - GENEPIO
   - GENEPIOALT
+  - GENEPIO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -7166,7 +7436,7 @@ ontologies:
     'Info: Experimental OBO score':
       _dashboard: 0.666
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.034
+      _impact: 0.033
       _impact_external: 0
       _reuse: 0.822
       oboscore: 0.35
@@ -7308,6 +7578,7 @@ ontologies:
   base_prefixes:
   - GENO
   - GENOALT
+  - GENO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -7451,6 +7722,7 @@ ontologies:
   base_prefixes:
   - GEO
   - GEOALT
+  - GEO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -7497,10 +7769,10 @@ ontologies:
     'Info: Experimental OBO score':
       _dashboard: 0.736
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.045
+      _impact: 0.044
       _impact_external: 0
       _reuse: 0.724
-      oboscore: 0.391
+      oboscore: 0.39
     'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 8
     'Info: Logical consistency': true
@@ -7589,6 +7861,7 @@ ontologies:
   base_prefixes:
   - GNO
   - GNOALT
+  - GNO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -7677,73 +7950,74 @@ ontologies:
   base_prefixes:
   - GO
   - GOALT
-  changed: false
+  - GO
+  changed: true
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 409704
-      Declaration: 54693
-      DisjointClasses: 603
-      EquivalentClasses: 23474
+      AnnotationAssertion: 409847
+      Declaration: 54715
+      DisjointClasses: 602
+      EquivalentClasses: 23467
       InverseObjectProperties: 1
       SubAnnotationPropertyOf: 19
-      SubClassOf: 47660
+      SubClassOf: 47605
       SubObjectPropertyOf: 10
       SubPropertyChainOf: 2
       TransitiveObjectProperty: 4
-    'Axioms: Number of axioms': 536170
+    'Axioms: Number of axioms': 536272
     'Entities: % of entities reused': 7.29
-    'Entities: Number of annotation properties': 57
-    'Entities: Number of classes': 54542
+    'Entities: Number of annotation properties': 58
+    'Entities: Number of classes': 54563
     'Entities: Number of data properties': 0
     'Entities: Number of individuals': 0
     'Entities: Number of object properties': 95
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 223562
-      ObjectAllValuesFrom: 824
-      ObjectComplementOf: 528
-      ObjectIntersectionOf: 23469
-      ObjectSomeValuesFrom: 38435
+      Class: 223449
+      ObjectAllValuesFrom: 823
+      ObjectComplementOf: 527
+      ObjectIntersectionOf: 23462
+      ObjectSomeValuesFrom: 38421
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.849
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.489
-      _impact_external: 0.25
+      _impact: 0.483
+      _impact_external: 0.5
       _reuse: 0.073
-      oboscore: 0.669
-    'Info: How many externally documented uses?': 1
+      oboscore: 0.666
+    'Info: How many externally documented uses?': 5
     'Info: How many ontologies use it?': 87
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
-      BFO: 11342
+      BFO: 11333
       CARO: 5
-      CHEBI: 9213
-      CL: 1663
+      CHEBI: 9207
+      CL: 1664
       DDANAT: 6
       FAO: 36
-      GO: 206181
-      GOALT: 38
-      IAO: 56463
-      NCBITaxon: 2809
+      GO: 206077
+      GOALT: 40
+      IAO: 56592
+      NCBITaxon: 2805
       OBA: 183
       OBI: 2
       OPL: 9
       PATO: 33
       PO: 304
       PR: 644
-      RO: 28234
+      RO: 28227
       SO: 131
       UBERON: 2131
       dc: 1
       dc11: 2
       obo: 257
-      oboInOwl: 419757
-      owl: 6849
+      oboInOwl: 419617
+      owl: 6890
       rdf: 1
-      rdfs: 58978
-      xsd: 1428
+      rdfs: 58987
+      xsd: 1426
     'Info: Which ontologies use it?':
     - agro
     - amphx
@@ -7867,14 +8141,14 @@ ontologies:
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      comment: 7 errors, 118 warnings, 13940 info messages.
+      comment: 7 errors, 116 warnings, 13944 info messages.
       file: robot_report
       results:
         ERROR: 7
-        INFO: 13940
-        WARN: 118
+        INFO: 13944
+        WARN: 116
       status: ERROR
-  sha256_hash: 96b3ccdee12f4176cc0e34f0b01708141e5c78fa0bd22cfe086871b735de66a6
+  sha256_hash: 44c95b578db7f5b9ba60d9fb2530f29fe9211536351dbcec02da2c7d7864e3bd
   summary:
     comment: 2 errors
     status: ERROR
@@ -7882,79 +8156,81 @@ ontologies:
       ERROR: 2
       INFO: 1
       WARN: 1
-  version: http://purl.obolibrary.org/obo/go/releases/2021-09-01/go-base.owl
+  version: http://purl.obolibrary.org/obo/go/releases/2021-10-26/go-base.owl
 - base_generated: true
   base_prefixes:
   - GSSO
   - GSSOALT
+  - GSSO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 81240
-      ClassAssertion: 2756
-      Declaration: 13813
-      DifferentIndividuals: 51
+      AnnotationAssertion: 85369
+      ClassAssertion: 2810
+      Declaration: 14665
+      DifferentIndividuals: 56
       SubAnnotationPropertyOf: 99
-      SubClassOf: 12512
-    'Axioms: Number of axioms': 110471
-    'Entities: % of entities reused': 23.98
-    'Entities: Number of annotation properties': 290
-    'Entities: Number of classes': 10781
+      SubClassOf: 13378
+    'Axioms: Number of axioms': 116377
+    'Entities: % of entities reused': 23.1
+    'Entities: Number of annotation properties': 291
+    'Entities: Number of classes': 11570
     'Entities: Number of data properties': 0
-    'Entities: Number of individuals': 2737
+    'Entities: Number of individuals': 2799
     'Entities: Number of object properties': 0
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 38561
+      Class: 41136
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
-      _dashboard: 0.64
+      _dashboard: 0.638
       _formula: (1*impact+1*dashboard)/2
       _impact: 0.006
       _impact_external: 0
-      _reuse: 0.24
-      oboscore: 0.323
+      _reuse: 0.231
+      oboscore: 0.322
     'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 1
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
-      BFO: 83
-      CHEBI: 1080
+      BFO: 86
+      CHEBI: 1087
       CL: 61
-      DOID: 370
-      EFO: 75
-      ENVO: 112
-      GAZ: 762
-      GO: 624
-      GSSO: 34021
+      DOID: 382
+      EFO: 78
+      ENVO: 130
+      GAZ: 811
+      GO: 625
+      GSSO: 36452
       HP: 23
-      IAO: 12420
+      IAO: 13249
       IDO: 8
       ISNI: 134
-      MESH: 873
+      MESH: 896
       MF: 3
       MFOMD: 20
       NCBITaxon: 344
-      NCIT: 1302
+      NCIT: 1395
       OAE: 3
       OBI: 32
       OGMS: 12
       OMRSE: 18
-      PATO: 55
-      RO: 5
-      SIO: 1028
+      PATO: 70
+      RO: 6
+      SIO: 1043
       UBERON: 284
-      dc: 8315
-      dc11: 1367
+      dc: 8537
+      dc11: 1593
       fma: 980
       foaf: 1
-      oboInOwl: 22624
+      obo: 17
+      oboInOwl: 23700
       owl: 5
-      prefix_unknown: 32640
+      prefix_unknown: 33979
       rdf: 1
-      rdfs: 14652
-      webarchive: 68
+      rdfs: 15570
+      webarchive: 72
       xsd: 4
     'Info: Which ontologies use it?':
     - gsso
@@ -7978,7 +8254,7 @@ ontologies:
     FP05 Scope:
       status: PASS
     FP06 Textual Definitions:
-      comment: 77 duplicate definitions. 398 multiple definitions. 9 missing definitions.
+      comment: 75 duplicate definitions. 403 multiple definitions. 26 missing definitions.
         See ROBOT Report for details.
       status: ERROR
     FP07 Relations:
@@ -7991,7 +8267,7 @@ ontologies:
     FP11 Locus of Authority:
       status: PASS
     FP12 Naming Conventions:
-      comment: 36 duplicate labels. 214 multiple labels. See ROBOT Report for details.
+      comment: 42 duplicate labels. 224 multiple labels. See ROBOT Report for details.
       status: ERROR
     FP16 Maintenance:
       comment: Version IRI does not have date information
@@ -7999,14 +8275,14 @@ ontologies:
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      comment: 728 errors, 25 warnings, 31 info messages.
+      comment: 747 errors, 43 warnings, 36 info messages.
       file: robot_report
       results:
-        ERROR: 728
-        INFO: 31
-        WARN: 25
+        ERROR: 747
+        INFO: 36
+        WARN: 43
       status: ERROR
-  sha256_hash: bb0e9e1a82a3a129c180d732c5bebddb3e8a8fb332d6f518d2068b1b2eead5f6
+  sha256_hash: abe1c2006daa263f6a4fb42a3cf53bc50175fd588f6d93da8fe4d0d8e4a6a7d8
   summary:
     comment: 5 errors
     status: ERROR
@@ -8019,6 +8295,7 @@ ontologies:
   base_prefixes:
   - HANCESTRO
   - HANCESTROALT
+  - HANCESTRO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -8046,12 +8323,12 @@ ontologies:
     'Info: Experimental OBO score':
       _dashboard: 0.908
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.011
+      _impact: 0.017
       _impact_external: 0.5
       _reuse: 0.436
-      oboscore: 0.46
+      oboscore: 0.463
     'Info: How many externally documented uses?': 3
-    'Info: How many ontologies use it?': 2
+    'Info: How many ontologies use it?': 3
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -8073,6 +8350,7 @@ ontologies:
     - foodon
     - genepio
     - hancestro
+    - obib
   mirror_from: http://purl.obolibrary.org/obo/hancestro.owl
   namespace: hancestro
   results:
@@ -8126,6 +8404,7 @@ ontologies:
   base_prefixes:
   - HAO
   - HAOALT
+  - HAO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -8229,6 +8508,7 @@ ontologies:
   base_prefixes:
   - HOM
   - HOMALT
+  - HOM
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -8320,62 +8600,63 @@ ontologies:
   base_prefixes:
   - HP
   - HPALT
-  changed: true
+  - HP
+  changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 118521
-      Declaration: 18734
-      EquivalentClasses: 6185
+      AnnotationAssertion: 118630
+      Declaration: 18807
+      EquivalentClasses: 6208
       SubAnnotationPropertyOf: 7
-      SubClassOf: 20502
+      SubClassOf: 20568
       SubPropertyChainOf: 1
-    'Axioms: Number of axioms': 163950
-    'Entities: % of entities reused': 11.67
+    'Axioms: Number of axioms': 164221
+    'Entities: % of entities reused': 11.71
     'Entities: Number of annotation properties': 48
-    'Entities: Number of classes': 18673
+    'Entities: Number of classes': 18746
     'Entities: Number of data properties': 0
     'Entities: Number of individuals': 0
     'Entities: Number of object properties': 16
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 86673
-      ObjectIntersectionOf: 8044
-      ObjectSomeValuesFrom: 20811
+      Class: 86973
+      ObjectIntersectionOf: 8063
+      ObjectSomeValuesFrom: 20883
       ObjectUnionOf: 48
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.885
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.118
+      _impact: 0.117
       _impact_external: 0.25
       _reuse: 0.117
-      oboscore: 0.502
+      oboscore: 0.501
     'Info: How many externally documented uses?': 1
     'Info: How many ontologies use it?': 21
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
-      BFO: 8010
+      BFO: 8029
       BSPO: 4
-      CHEBI: 749
+      CHEBI: 748
       CL: 392
-      GO: 821
-      HP: 64140
-      HPALT: 20
+      GO: 819
+      HP: 64353
+      HPALT: 21
       HsapDv: 20
-      IAO: 13736
-      MPATH: 293
+      IAO: 13802
+      MPATH: 292
       NBO: 147
-      PATO: 12544
+      PATO: 12596
       PR: 123
-      RO: 12495
-      UBERON: 7444
+      RO: 12541
+      UBERON: 7483
       dc: 3
-      dc11: 3615
-      oboInOwl: 109857
-      owl: 309
+      dc11: 3671
+      oboInOwl: 109831
+      owl: 312
       rdf: 12
-      rdfs: 20124
+      rdfs: 20198
     'Info: Which ontologies use it?':
     - aro
     - chiro
@@ -8415,7 +8696,7 @@ ontologies:
     FP05 Scope:
       status: PASS
     FP06 Textual Definitions:
-      comment: 2749 missing definitions. See ROBOT Report for details.
+      comment: 2740 missing definitions. See ROBOT Report for details.
       status: WARN
     FP07 Relations:
       status: PASS
@@ -8433,14 +8714,14 @@ ontologies:
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      comment: 2752 warnings, 3 info messages.
+      comment: 2744 warnings, 3 info messages.
       file: robot_report
       results:
         ERROR: 0
         INFO: 3
-        WARN: 2752
+        WARN: 2744
       status: WARN
-  sha256_hash: 417328ad79b53bc579d6c2ee7b4afa374567ae4c441c4ef5d596635f06cc90dd
+  sha256_hash: 6252f3b7359765feb3f35300160c23c3fe14901cae5f02633951d5118531a288
   summary:
     comment: 1 errors
     status: ERROR
@@ -8448,7 +8729,7 @@ ontologies:
       ERROR: 1
       INFO: 0
       WARN: 3
-  version: http://purl.obolibrary.org/obo/hp/releases/2021-08-02/hp-base.owl
+  version: http://purl.obolibrary.org/obo/hp/releases/2021-10-10/hp-base.owl
 - base_generated: true
   base_prefixes:
   - HsapDv
@@ -8477,12 +8758,12 @@ ontologies:
     'Info: Experimental OBO score':
       _dashboard: 0.747
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.022
+      _impact: 0.028
       _impact_external: 0
       _reuse: 0.147
-      oboscore: 0.385
+      oboscore: 0.388
     'Info: How many externally documented uses?': 0
-    'Info: How many ontologies use it?': 4
+    'Info: How many ontologies use it?': 5
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -8501,6 +8782,7 @@ ontologies:
     - geno
     - hp
     - hsapdv
+    - mondo
     - scdo
     - upheno
   mirror_from: http://purl.obolibrary.org/obo/hsapdv.owl
@@ -8557,6 +8839,7 @@ ontologies:
   base_prefixes:
   - HSO
   - HSOALT
+  - HSO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -8693,6 +8976,7 @@ ontologies:
   base_prefixes:
   - HTN
   - HTNALT
+  - HTN
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -8843,6 +9127,7 @@ ontologies:
   base_prefixes:
   - IAO
   - IAOALT
+  - IAO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -8973,6 +9258,7 @@ ontologies:
   base_prefixes:
   - ICEO
   - ICEOALT
+  - ICEO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -9020,7 +9306,7 @@ ontologies:
       BFO: 6433
       CHEBI: 9
       GO: 661
-      IAO: 67697
+      IAO: 67698
       ICEO: 112867
       IDO: 66
       MI: 6
@@ -9032,7 +9318,7 @@ ontologies:
       RO: 8211
       SIO: 3
       dc: 2
-      dc11: 24951
+      dc11: 24950
       foaf: 4
       obo: 10
       oboInOwl: 1991
@@ -9088,7 +9374,7 @@ ontologies:
         INFO: 2363
         WARN: 1089
       status: ERROR
-  sha256_hash: 63434df3a430b086e76c79a7efddffb072d8dbd1828b16c563789331f00e0e15
+  sha256_hash: b647e59b45ce38ddd30c06213058d9a58164b20a73dbf297e7b327a93c8c7f51
   summary:
     comment: 7 errors
     status: ERROR
@@ -9101,6 +9387,7 @@ ontologies:
   base_prefixes:
   - ICO
   - ICOALT
+  - ICO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -9262,6 +9549,7 @@ ontologies:
   base_prefixes:
   - IDO
   - IDOALT
+  - IDO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -9300,10 +9588,10 @@ ontologies:
     'Info: Experimental OBO score':
       _dashboard: 0.767
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.112
+      _impact: 0.111
       _impact_external: 0
       _reuse: 0.343
-      oboscore: 0.44
+      oboscore: 0.439
     'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 20
     'Info: Logical consistency': true
@@ -9406,6 +9694,7 @@ ontologies:
   base_prefixes:
   - INO
   - INOALT
+  - INO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -9532,66 +9821,65 @@ ontologies:
   base_prefixes:
   - KISAO
   - KISAOALT
+  - KISAO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 2929
+      AnnotationAssertion: 2882
       DataPropertyDomain: 2
       DataPropertyRange: 1
-      Declaration: 535
+      Declaration: 530
       DisjointClasses: 88
       DisjointObjectProperties: 1
-      EquivalentClasses: 16
+      EquivalentClasses: 2
       FunctionalDataProperty: 1
       InverseObjectProperties: 3
-      ObjectPropertyDomain: 9
-      ObjectPropertyRange: 9
+      ObjectPropertyDomain: 8
+      ObjectPropertyRange: 8
       ReflexiveObjectProperty: 1
-      SubClassOf: 1128
+      SubClassOf: 1115
       SubObjectPropertyOf: 2
       SymmetricObjectProperty: 1
-    'Axioms: Number of axioms': 4726
-    'Entities: % of entities reused': 4.75
-    'Entities: Number of annotation properties': 18
-    'Entities: Number of classes': 509
+    'Axioms: Number of axioms': 4645
+    'Entities: % of entities reused': 3.7
+    'Entities: Number of annotation properties': 12
+    'Entities: Number of classes': 510
     'Entities: Number of data properties': 2
     'Entities: Number of individuals': 0
-    'Entities: Number of object properties': 10
+    'Entities: Number of object properties': 9
     'Entities: Number of unsatisfiable classes': 21
     'Info: Breakdown of OWL class expressions used':
-      Class: 3313
+      Class: 3239
       DataExactCardinality: 1
       DataHasValue: 15
       DataSomeValuesFrom: 44
       ObjectAllValuesFrom: 27
-      ObjectComplementOf: 29
+      ObjectComplementOf: 25
       ObjectExactCardinality: 22
-      ObjectIntersectionOf: 49
+      ObjectIntersectionOf: 36
       ObjectMaxCardinality: 41
       ObjectMinCardinality: 1
-      ObjectSomeValuesFrom: 508
-      ObjectUnionOf: 4
+      ObjectSomeValuesFrom: 480
+      ObjectUnionOf: 3
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.748
       _formula: (1*impact+1*dashboard)/2
       _impact: 0.0
       _impact_external: 0
-      _reuse: 0.048
+      _reuse: 0.037
       oboscore: 0.374
     'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
-      KISAO: 4014
-      dc: 853
-      oboInOwl: 53
-      owl: 21
-      prefix_unknown: 364
+      KISAO: 3910
+      dc: 893
+      prefix_unknown: 344
       protege: 2
-      rdfs: 1511
-      skos: 804
+      rdfs: 1492
+      skos: 824
       xsd: 61
     'Info: Which ontologies use it?':
     - kisao
@@ -9638,7 +9926,7 @@ ontologies:
         INFO: 0
         WARN: 0
       status: ERROR
-  sha256_hash: bdece3663391f8d4d959bb734420c015a7deed5b587a50284bee89d891bcec0f
+  sha256_hash: ee9746ba2c98b244ef914374403dc4a2de520edad2b3382c1de2e295c0d9908d
   summary:
     comment: 5 errors
     status: ERROR
@@ -9651,6 +9939,7 @@ ontologies:
   base_prefixes:
   - LABO
   - LABOALT
+  - LABO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -9781,6 +10070,7 @@ ontologies:
   base_prefixes:
   - MA
   - MAALT
+  - MA
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -9875,6 +10165,7 @@ ontologies:
   base_prefixes:
   - MAMO
   - MAMOALT
+  - MAMO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -9973,6 +10264,7 @@ ontologies:
   base_prefixes:
   - MAXO
   - MAXOALT
+  - MAXO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -10085,6 +10377,7 @@ ontologies:
   base_prefixes:
   - MCO
   - MCOALT
+  - MCO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -10205,10 +10498,11 @@ ontologies:
   base_prefixes:
   - MF
   - MFALT
+  - MF
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 1992
+      AnnotationAssertion: 2002
       AnnotationPropertyRangeOf: 1
       ClassAssertion: 18
       Declaration: 502
@@ -10221,7 +10515,7 @@ ontologies:
       SubObjectPropertyOf: 2
       SubPropertyChainOf: 1
       TransitiveObjectProperty: 5
-    'Axioms: Number of axioms': 3006
+    'Axioms: Number of axioms': 3016
     'Entities: % of entities reused': 81.37
     'Entities: Number of annotation properties': 71
     'Entities: Number of classes': 401
@@ -10252,7 +10546,7 @@ ontologies:
     'Info: Usage of namespaces in axioms':
       BFO: 273
       GO: 738
-      IAO: 1570
+      IAO: 1571
       MF: 312
       NBO: 44
       OGMS: 11
@@ -10264,7 +10558,7 @@ ontologies:
       owl: 9
       prefix_unknown: 50
       protege: 1
-      rdfs: 588
+      rdfs: 597
     'Info: Which ontologies use it?':
     - gecko
     - gsso
@@ -10306,14 +10600,14 @@ ontologies:
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      comment: 4 errors, 12 warnings, 5 info messages.
+      comment: 4 errors, 11 warnings, 4 info messages.
       file: robot_report
       results:
         ERROR: 4
-        INFO: 5
-        WARN: 12
+        INFO: 4
+        WARN: 11
       status: ERROR
-  sha256_hash: 7610bd31268845b7f433fba694d98d56830e2129b3cc08c761c3a13a596a6367
+  sha256_hash: 7ec9e16f5f7fd920ce6e11842baeb3eb62ed3abe0209a1f773b1ba5c6d8f0d6b
   summary:
     comment: 3 errors
     status: ERROR
@@ -10321,44 +10615,45 @@ ontologies:
       ERROR: 3
       INFO: 0
       WARN: 1
-  version: http://purl.obolibrary.org/obo/MF/2021-09-21/MF.owl
+  version: http://purl.obolibrary.org/obo/MF/2021-11-17/MF.owl
 - base_generated: true
   base_prefixes:
   - MFMO
   - MFMOALT
+  - MFMO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 4386
+      AnnotationAssertion: 4400
       AnnotationPropertyRangeOf: 1
       AsymmetricObjectProperty: 2
       ClassAssertion: 50
       DataPropertyRange: 1
-      Declaration: 1057
+      Declaration: 1063
       DisjointClasses: 14
       DisjointObjectProperties: 10
       EquivalentClasses: 53
       EquivalentObjectProperties: 1
       FunctionalObjectProperty: 3
       InverseFunctionalObjectProperty: 1
-      InverseObjectProperties: 109
+      InverseObjectProperties: 110
       IrrefexiveObjectProperty: 7
       ObjectPropertyDomain: 141
       ObjectPropertyRange: 139
       Rule: 22
       SubAnnotationPropertyOf: 61
       SubClassOf: 318
-      SubObjectPropertyOf: 650
-      SubPropertyChainOf: 142
+      SubObjectPropertyOf: 653
+      SubPropertyChainOf: 143
       SymmetricObjectProperty: 79
-      TransitiveObjectProperty: 45
-    'Axioms: Number of axioms': 7292
-    'Entities: % of entities reused': 82.36
-    'Entities: Number of annotation properties': 114
+      TransitiveObjectProperty: 46
+    'Axioms: Number of axioms': 7318
+    'Entities: % of entities reused': 82.48
+    'Entities: Number of annotation properties': 117
     'Entities: Number of classes': 283
     'Entities: Number of data properties': 1
     'Entities: Number of individuals': 33
-    'Entities: Number of object properties': 629
+    'Entities: Number of object properties': 633
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
       Class: 1550
@@ -10375,34 +10670,34 @@ ontologies:
       _formula: (1*impact+1*dashboard)/2
       _impact: 0.0
       _impact_external: 0
-      _reuse: 0.824
+      _reuse: 0.825
       oboscore: 0.363
     'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
-      BFO: 494
+      BFO: 495
       CARO: 87
       CL: 24
       ENVO: 7
       GO: 67
-      IAO: 1828
+      IAO: 1838
       MFMO: 856
       OGMS: 14
       PATO: 32
-      RO: 3137
+      RO: 3148
       UBERON: 191
       UPHENO: 5
       dc: 25
       dc11: 140
       foaf: 57
       obo: 64
-      oboInOwl: 916
-      owl: 14
+      oboInOwl: 919
+      owl: 16
       prefix_unknown: 48
       rdf: 16
-      rdfs: 1500
+      rdfs: 1504
       skos: 4
       wikimedia: 75
       xsd: 13
@@ -10466,10 +10761,11 @@ ontologies:
   base_prefixes:
   - MFOEM
   - MFOEMALT
+  - MFOEM
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 2635
+      AnnotationAssertion: 2661
       AnnotationPropertyRangeOf: 1
       ClassAssertion: 18
       Declaration: 725
@@ -10478,11 +10774,11 @@ ontologies:
       EquivalentClasses: 9
       InverseObjectProperties: 1
       SubAnnotationPropertyOf: 2
-      SubClassOf: 740
+      SubClassOf: 742
       SubObjectPropertyOf: 2
       SubPropertyChainOf: 1
       TransitiveObjectProperty: 5
-    'Axioms: Number of axioms': 4160
+    'Axioms: Number of axioms': 4188
     'Entities: % of entities reused': 70.4
     'Entities: Number of annotation properties': 74
     'Entities: Number of classes': 615
@@ -10491,21 +10787,21 @@ ontologies:
     'Entities: Number of object properties': 22
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 2172
+      Class: 2176
       ObjectAllValuesFrom: 1
       ObjectComplementOf: 1
       ObjectIntersectionOf: 9
       ObjectMinCardinality: 1
       ObjectOneOf: 4
-      ObjectSomeValuesFrom: 93
+      ObjectSomeValuesFrom: 95
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
-      _dashboard: 0.743
+      _dashboard: 0.744
       _formula: (1*impact+1*dashboard)/2
       _impact: 0.006
       _impact_external: 0
       _reuse: 0.704
-      oboscore: 0.374
+      oboscore: 0.375
     'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 1
     'Info: Logical consistency': true
@@ -10513,20 +10809,20 @@ ontologies:
     'Info: Usage of namespaces in axioms':
       BFO: 342
       GO: 741
-      IAO: 1758
-      MF: 318
-      MFOEM: 966
+      IAO: 1763
+      MF: 319
+      MFOEM: 970
       NBO: 46
       OGMS: 14
       dc: 1
       dc11: 17
       foaf: 2
       obo: 14
-      oboInOwl: 63
+      oboInOwl: 64
       owl: 9
       prefix_unknown: 50
       protege: 1
-      rdfs: 864
+      rdfs: 885
     'Info: Which ontologies use it?':
     - mfoem
     - mondo
@@ -10545,7 +10841,7 @@ ontologies:
     FP05 Scope:
       status: PASS
     FP06 Textual Definitions:
-      comment: 30 missing definitions. See ROBOT Report for details.
+      comment: 29 missing definitions. See ROBOT Report for details.
       status: WARN
     FP07 Relations:
       comment: 2 non-RO properties used.
@@ -10566,14 +10862,14 @@ ontologies:
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      comment: 69 errors, 110 warnings, 2 info messages.
+      comment: 69 errors, 107 warnings, 1 info messages.
       file: robot_report
       results:
         ERROR: 69
-        INFO: 2
-        WARN: 110
+        INFO: 1
+        WARN: 107
       status: ERROR
-  sha256_hash: 5819a0e666538bdfd074a0e5ec675c48caf1f432652cb8d84a2094fe50c3b8f2
+  sha256_hash: ad881090ba2f5c59543c2e6620b8fcfa7c4178e6c280d4a1cdbda7d9fd0fe2ef
   summary:
     comment: 3 errors
     status: ERROR
@@ -10581,15 +10877,16 @@ ontologies:
       ERROR: 3
       INFO: 1
       WARN: 2
-  version: http://purl.obolibrary.org/obo/MFOEM/2021-09-21/MFOEM.owl
+  version: http://purl.obolibrary.org/obo/MFOEM/2021-11-17/MFOEM.owl
 - base_generated: true
   base_prefixes:
   - MFOMD
   - MFOMDALT
+  - MFOMD
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 5697
+      AnnotationAssertion: 5706
       AnnotationPropertyRangeOf: 1
       ClassAssertion: 18
       Declaration: 1035
@@ -10602,7 +10899,7 @@ ontologies:
       SubObjectPropertyOf: 2
       SubPropertyChainOf: 1
       TransitiveObjectProperty: 5
-    'Axioms: Number of axioms': 7743
+    'Axioms: Number of axioms': 7752
     'Entities: % of entities reused': 86.56
     'Entities: Number of annotation properties': 99
     'Entities: Number of classes': 880
@@ -10650,7 +10947,7 @@ ontologies:
       owl: 76
       prefix_unknown: 53
       protege: 1
-      rdfs: 1223
+      rdfs: 1232
     'Info: Which ontologies use it?':
     - gsso
     - mfomd
@@ -10711,6 +11008,7 @@ ontologies:
   base_prefixes:
   - MI
   - MIALT
+  - MI
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -10812,6 +11110,7 @@ ontologies:
   base_prefixes:
   - MIAPA
   - MIAPAALT
+  - MIAPA
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -10948,6 +11247,7 @@ ontologies:
   base_prefixes:
   - MICRO
   - MICROALT
+  - MICRO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -11104,6 +11404,7 @@ ontologies:
   base_prefixes:
   - MMO
   - MMOALT
+  - MMO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -11299,6 +11600,7 @@ ontologies:
   base_prefixes:
   - MOD
   - MODALT
+  - MOD
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -11401,78 +11703,80 @@ ontologies:
   base_prefixes:
   - MONDO
   - MONDOALT
+  - MONDO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 382713
-      Declaration: 30605
+      AnnotationAssertion: 365654
+      Declaration: 30821
       DisjointClasses: 82
-      EquivalentClasses: 7498
+      EquivalentClasses: 7655
       SubAnnotationPropertyOf: 36
-      SubClassOf: 47971
+      SubClassOf: 47993
       SubObjectPropertyOf: 4
       SubPropertyChainOf: 7
       TransitiveObjectProperty: 1
-    'Axioms: Number of axioms': 468917
-    'Entities: % of entities reused': 19.04
+    'Axioms: Number of axioms': 452253
+    'Entities: % of entities reused': 19.33
     'Entities: Number of annotation properties': 83
-    'Entities: Number of classes': 30498
+    'Entities: Number of classes': 30712
     'Entities: Number of data properties': 0
     'Entities: Number of individuals': 0
-    'Entities: Number of object properties': 31
+    'Entities: Number of object properties': 33
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 149506
-      ObjectIntersectionOf: 7482
-      ObjectSomeValuesFrom: 17186
+      Class: 150235
+      ObjectIntersectionOf: 7639
+      ObjectSomeValuesFrom: 17575
       ObjectUnionOf: 16
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
-      _dashboard: 0.77
+      _dashboard: 0.769
       _formula: (1*impact+1*dashboard)/2
       _impact: 0.028
       _impact_external: 0.5
-      _reuse: 0.19
+      _reuse: 0.193
       oboscore: 0.399
     'Info: How many externally documented uses?': 5
     'Info: How many ontologies use it?': 5
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
-      BFO: 45
+      BFO: 48
       CARO: 2
       CHEBI: 109
-      CL: 410
-      ECTO: 108
-      ENVO: 40
+      CL: 413
+      ECTO: 111
+      ENVO: 42
       FOODON: 2
-      GO: 1099
-      HGNC: 10209
-      HP: 2108
-      IAO: 18333
+      GO: 1093
+      HGNC: 10219
+      HP: 2154
+      HsapDv: 9
+      IAO: 18501
       MF: 20
       MFOEM: 3
       MFOMD: 13
-      MONDO: 128814
-      MONDOALT: 1998
+      MONDO: 129012
+      MONDOALT: 2270
       NBO: 13
-      NCBITaxon: 1629
+      NCBITaxon: 1634
       NCIT: 75
       OBA: 2
       PATO: 340
       PO: 3
       PR: 60
-      RO: 16297
-      SO: 40
-      UBERON: 4592
-      dc11: 112
-      obo: 112
-      oboInOwl: 517091
-      owl: 2424
-      rdf: 4
-      rdfs: 29596
-      skos: 88357
-      xsd: 35122
+      RO: 16682
+      SO: 44
+      UBERON: 4598
+      dc11: 110
+      obo: 558
+      oboInOwl: 516798
+      owl: 2447
+      rdf: 3
+      rdfs: 30059
+      skos: 70882
+      xsd: 34970
     'Info: Which ontologies use it?':
     - duo
     - gecko
@@ -11494,11 +11798,11 @@ ontologies:
     FP05 Scope:
       status: PASS
     FP06 Textual Definitions:
-      comment: 4 duplicate definitions. 7040 missing definitions. See ROBOT Report
+      comment: 4 duplicate definitions. 7076 missing definitions. See ROBOT Report
         for details.
       status: ERROR
     FP07 Relations:
-      comment: 12 non-RO properties used.
+      comment: 14 non-RO properties used.
       file: fp7
       status: INFO
     FP08 Documented:
@@ -11508,21 +11812,21 @@ ontologies:
     FP11 Locus of Authority:
       status: PASS
     FP12 Naming Conventions:
-      comment: 44 missing labels. See ROBOT Report for details.
+      comment: 46 missing labels. See ROBOT Report for details.
       status: ERROR
     FP16 Maintenance:
       status: PASS
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      comment: 48 errors, 8211 warnings, 105 info messages.
+      comment: 50 errors, 8270 warnings, 105 info messages.
       file: robot_report
       results:
-        ERROR: 48
+        ERROR: 50
         INFO: 105
-        WARN: 8211
+        WARN: 8270
       status: ERROR
-  sha256_hash: 8314397960358f4bc6cab74873d93c44c21af0b6b480099d8b6b8cbd84bd8242
+  sha256_hash: 63c64c89f009895e57779e3757819429f97b7b1dfb4c9915fd8d31b1d8198636
   summary:
     comment: 3 errors
     status: ERROR
@@ -11530,32 +11834,33 @@ ontologies:
       ERROR: 3
       INFO: 1
       WARN: 0
-  version: http://purl.obolibrary.org/obo/mondo/releases/2021-09-01/mondo-base.owl
+  version: http://purl.obolibrary.org/obo/mondo/releases/2021-11-01/mondo-base.owl
 - base_generated: true
   base_prefixes:
   - MOP
   - MOPALT
+  - MOP
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 15268
-      Declaration: 3711
+      AnnotationAssertion: 15282
+      Declaration: 3713
       EquivalentClasses: 31
       SubAnnotationPropertyOf: 2
-      SubClassOf: 3779
+      SubClassOf: 3782
       SubObjectPropertyOf: 3
-    'Axioms: Number of axioms': 22794
-    'Entities: % of entities reused': 2.66
-    'Entities: Number of annotation properties': 22
-    'Entities: Number of classes': 3682
+    'Axioms: Number of axioms': 22813
+    'Entities: % of entities reused': 2.82
+    'Entities: Number of annotation properties': 24
+    'Entities: Number of classes': 3684
     'Entities: Number of data properties': 0
     'Entities: Number of individuals': 0
     'Entities: Number of object properties': 11
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 11335
+      Class: 11343
       ObjectIntersectionOf: 29
-      ObjectSomeValuesFrom: 157
+      ObjectSomeValuesFrom: 158
       ObjectUnionOf: 2
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
@@ -11563,24 +11868,24 @@ ontologies:
       _formula: (1*impact+1*dashboard)/2
       _impact: 0.017
       _impact_external: 0
-      _reuse: 0.027
+      _reuse: 0.028
       oboscore: 0.403
     'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 3
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
-      BFO: 179
-      CHEBI: 232
-      IAO: 3682
-      MOP: 11086
+      BFO: 180
+      CHEBI: 236
+      IAO: 3684
+      MOP: 11090
       MOPALT: 4
       REX: 2
       RO: 2
       RXNO: 7
-      oboInOwl: 8219
+      oboInOwl: 8230
       owl: 47
-      rdfs: 6989
+      rdfs: 6993
     'Info: Which ontologies use it?':
     - cob
     - dideo
@@ -11629,7 +11934,7 @@ ontologies:
         INFO: 2
         WARN: 2
       status: WARN
-  sha256_hash: 2f8e4eb696ab1f0d632d3f9d95a3cde6916ffdc44f72ac9c117d0fee4974e6ff
+  sha256_hash: 11477c4f082e3ccbad0744265a1bd4ae4e58d62e3703c9a1f85d25979d8fa5a6
   summary:
     comment: 3 errors
     status: ERROR
@@ -11642,59 +11947,60 @@ ontologies:
   base_prefixes:
   - MP
   - MPALT
+  - MP
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 94232
-      Declaration: 17912
-      EquivalentClasses: 9781
+      AnnotationAssertion: 94616
+      Declaration: 17940
+      EquivalentClasses: 9798
       SubAnnotationPropertyOf: 5
-      SubClassOf: 16861
-    'Axioms: Number of axioms': 138791
-    'Entities: % of entities reused': 23.04
+      SubClassOf: 16934
+    'Axioms: Number of axioms': 139293
+    'Entities: % of entities reused': 23.0
     'Entities: Number of annotation properties': 40
-    'Entities: Number of classes': 17854
+    'Entities: Number of classes': 17882
     'Entities: Number of data properties': 0
     'Entities: Number of individuals': 0
     'Entities: Number of object properties': 20
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 92820
-      ObjectIntersectionOf: 11545
-      ObjectSomeValuesFrom: 31517
+      Class: 93078
+      ObjectIntersectionOf: 11586
+      ObjectSomeValuesFrom: 31584
       ObjectUnionOf: 1
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
-      _dashboard: 0.844
+      _dashboard: 0.894
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.034
-      _impact_external: 0
+      _impact: 0.033
+      _impact_external: 0.5
       _reuse: 0.23
-      oboscore: 0.439
-    'Info: How many externally documented uses?': 0
+      oboscore: 0.464
+    'Info: How many externally documented uses?': 3
     'Info: How many ontologies use it?': 6
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
-      BFO: 11288
+      BFO: 11312
       CHEBI: 901
       CL: 1715
-      GO: 2866
-      IAO: 13699
-      MP: 57362
-      MPATH: 382
-      MPATHALT: 114
+      GO: 2873
+      IAO: 13729
+      MP: 57554
+      MPATH: 392
+      MPATHALT: 127
       NBO: 373
-      PATO: 19920
+      PATO: 19954
       PR: 226
-      RO: 19862
-      UBERON: 9066
+      RO: 19896
+      UBERON: 9081
       dc: 1
-      dc11: 3653
-      obo: 215
-      oboInOwl: 75989
+      dc11: 3711
+      obo: 211
+      oboInOwl: 76282
       owl: 444
-      rdfs: 14256
+      rdfs: 14290
     'Info: Which ontologies use it?':
     - chiro
     - geno
@@ -11717,7 +12023,7 @@ ontologies:
     FP05 Scope:
       status: PASS
     FP06 Textual Definitions:
-      comment: 163 missing definitions. See ROBOT Report for details.
+      comment: 162 missing definitions. See ROBOT Report for details.
       status: WARN
     FP07 Relations:
       comment: 2 labels match RO labels. 6 non-RO properties used.
@@ -11726,8 +12032,7 @@ ontologies:
     FP08 Documented:
       status: PASS
     FP09 Plurality of Users:
-      comment: Missing usages
-      status: ERROR
+      status: PASS
     FP11 Locus of Authority:
       status: PASS
     FP12 Naming Conventions:
@@ -11737,26 +12042,27 @@ ontologies:
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      comment: 163 warnings, 13250 info messages.
+      comment: 162 warnings, 13280 info messages.
       file: robot_report
       results:
         ERROR: 0
-        INFO: 13250
-        WARN: 163
+        INFO: 13280
+        WARN: 162
       status: WARN
-  sha256_hash: a36973f3cbfc641505dfc9ce784624ce14322aa71b25b35b5a23bf80efbcf8b2
+  sha256_hash: 4cc62929dcf738093d739e6388ad8312893893250b17b17597f3c60d2d486712
   summary:
-    comment: 2 errors
+    comment: 1 errors
     status: ERROR
     summary_count:
-      ERROR: 2
+      ERROR: 1
       INFO: 0
       WARN: 2
-  version: http://purl.obolibrary.org/obo/mp/releases/2021-09-21/mp-base.owl
+  version: http://purl.obolibrary.org/obo/mp/releases/2021-11-04/mp-base.owl
 - base_generated: true
   base_prefixes:
   - MPATH
   - MPATHALT
+  - MPATH
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -11779,10 +12085,10 @@ ontologies:
     'Info: Experimental OBO score':
       _dashboard: 0.714
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.034
+      _impact: 0.033
       _impact_external: 0
       _reuse: 0.024
-      oboscore: 0.374
+      oboscore: 0.373
     'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 6
     'Info: Logical consistency': true
@@ -11859,6 +12165,7 @@ ontologies:
   base_prefixes:
   - MPIO
   - MPIOALT
+  - MPIO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -11973,27 +12280,28 @@ ontologies:
   base_prefixes:
   - MRO
   - MROALT
-  changed: true
+  - MRO
+  changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 283274
-      Declaration: 51333
-      EquivalentClasses: 28241
+      AnnotationAssertion: 283301
+      Declaration: 51345
+      EquivalentClasses: 28247
       SubAnnotationPropertyOf: 1
-      SubClassOf: 56123
+      SubClassOf: 56137
       SubObjectPropertyOf: 17
-    'Axioms: Number of axioms': 418989
+    'Axioms: Number of axioms': 419048
     'Entities: % of entities reused': 0.26
     'Entities: Number of annotation properties': 23
-    'Entities: Number of classes': 51292
+    'Entities: Number of classes': 51304
     'Entities: Number of data properties': 0
     'Entities: Number of individuals': 0
     'Entities: Number of object properties': 21
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 303734
-      ObjectIntersectionOf: 28243
-      ObjectSomeValuesFrom: 83951
+      Class: 303794
+      ObjectIntersectionOf: 28249
+      ObjectSomeValuesFrom: 83961
       ObjectUnionOf: 1
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
@@ -12008,21 +12316,21 @@ ontologies:
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
-      BFO: 27408
-      ECO: 23
+      BFO: 27409
+      ECO: 26
       GO: 243
-      IAO: 87433
-      MRO: 375963
-      NCBITaxon: 28157
-      OBI: 28060
-      PR: 16526
-      RO: 28414
+      IAO: 87439
+      MRO: 376015
+      NCBITaxon: 28164
+      OBI: 28063
+      PR: 16530
+      RO: 28422
       SO: 5
       dc: 1
       dc11: 3
       obo: 4
       owl: 78
-      rdfs: 51325
+      rdfs: 51337
     'Info: Which ontologies use it?':
     - mro
   mirror_from: http://purl.obolibrary.org/obo/mro.owl
@@ -12039,7 +12347,7 @@ ontologies:
     FP05 Scope:
       status: PASS
     FP06 Textual Definitions:
-      comment: 51144 missing definitions. See ROBOT Report for details.
+      comment: 51154 missing definitions. See ROBOT Report for details.
       status: WARN
     FP07 Relations:
       comment: 3 non-RO properties used.
@@ -12058,14 +12366,14 @@ ontologies:
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      comment: 56151 warnings, 0 info messages.
+      comment: 56161 warnings, 0 info messages.
       file: robot_report
       results:
         ERROR: 0
         INFO: 0
-        WARN: 56151
+        WARN: 56161
       status: WARN
-  sha256_hash: 277a42ff393a1b64a1b036d36822c48a15ebbdd1174eac93945f9ab61432112f
+  sha256_hash: 3b796c1451dc2020d63f9ae17304956a958bd1a6d2993a48bff02053bbbbd2c5
   summary:
     comment: 2 warnings
     status: WARN
@@ -12073,43 +12381,44 @@ ontologies:
       ERROR: 0
       INFO: 1
       WARN: 2
-  version: http://purl.obolibrary.org/obo/mro/2021-09-24/mro.owl
+  version: http://purl.obolibrary.org/obo/mro/2021-11-04/mro.owl
 - base_generated: true
   base_prefixes:
   - MS
   - MSALT
+  - MS
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 33214
-      Declaration: 6198
+      AnnotationAssertion: 33776
+      Declaration: 6332
       DisjointClasses: 62
       EquivalentClasses: 305
       ObjectPropertyDomain: 11
       ObjectPropertyRange: 9
       SubAnnotationPropertyOf: 22
-      SubClassOf: 6324
+      SubClassOf: 7625
       SubObjectPropertyOf: 4
       TransitiveObjectProperty: 4
-    'Axioms: Number of axioms': 46153
-    'Entities: % of entities reused': 52.42
+    'Axioms: Number of axioms': 48150
+    'Entities: % of entities reused': 51.49
     'Entities: Number of annotation properties': 54
-    'Entities: Number of classes': 6141
+    'Entities: Number of classes': 6274
     'Entities: Number of data properties': 0
     'Entities: Number of individuals': 0
-    'Entities: Number of object properties': 29
+    'Entities: Number of object properties': 30
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 19848
+      Class: 22583
       ObjectIntersectionOf: 305
-      ObjectSomeValuesFrom: 1150
+      ObjectSomeValuesFrom: 2332
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.66
       _formula: (1*impact+1*dashboard)/2
       _impact: 0.011
       _impact_external: 0
-      _reuse: 0.524
+      _reuse: 0.515
       oboscore: 0.336
     'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 2
@@ -12117,19 +12426,19 @@ ontologies:
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
       BFO: 12
-      IAO: 5349
-      MS: 9585
-      MSALT: 473
+      IAO: 5471
+      MS: 11110
+      MSALT: 1656
       PATO: 8708
       PATOALT: 687
       RO: 423
-      UO: 1355
+      UO: 1363
       UOALT: 60
       dc11: 40
-      obo: 203
-      oboInOwl: 24737
-      owl: 1260
-      rdfs: 7625
+      obo: 1405
+      oboInOwl: 25172
+      owl: 1259
+      rdfs: 7817
     'Info: Which ontologies use it?':
     - chmo
     - cto
@@ -12145,7 +12454,7 @@ ontologies:
     FP03 URIs:
       status: PASS
     FP04 Versioning:
-      comment: Version IRI 'http://purl.obolibrary.org/obo/ms/4.1.35/ms.owl' is not
+      comment: Version IRI 'http://purl.obolibrary.org/obo/ms/4.1.62/ms.owl' is not
         in recommended format
       status: WARN
     FP05 Scope:
@@ -12155,7 +12464,7 @@ ontologies:
         for details.
       status: ERROR
     FP07 Relations:
-      comment: 5 non-RO properties used.
+      comment: 6 non-RO properties used.
       file: fp7
       status: INFO
     FP08 Documented:
@@ -12174,14 +12483,14 @@ ontologies:
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      comment: 103 errors, 300 warnings, 21 info messages.
+      comment: 103 errors, 303 warnings, 26 info messages.
       file: robot_report
       results:
         ERROR: 103
-        INFO: 21
-        WARN: 300
+        INFO: 26
+        WARN: 303
       status: ERROR
-  sha256_hash: a613208e3f787215ab0d1d9ba32af32382d42f2f71700c76ad83eb05740ffc48
+  sha256_hash: 0e5202e804e1273521de175ef5ddb93de0c09f2c972c35c306bd0b971b9fe72e
   summary:
     comment: 5 errors
     status: ERROR
@@ -12189,11 +12498,12 @@ ontologies:
       ERROR: 5
       INFO: 2
       WARN: 1
-  version: http://purl.obolibrary.org/obo/ms/4.1.35/ms.owl
+  version: http://purl.obolibrary.org/obo/ms/4.1.62/ms.owl
 - base_generated: false
   base_prefixes:
   - NBO
   - NBOALT
+  - NBO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -12219,10 +12529,10 @@ ontologies:
     'Info: Experimental OBO score':
       _dashboard: 0.737
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.096
+      _impact: 0.094
       _impact_external: 0
       _reuse: 0.113
-      oboscore: 0.416
+      oboscore: 0.415
     'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 17
     'Info: Logical consistency': true
@@ -12340,12 +12650,12 @@ ontologies:
     'Info: Experimental OBO score':
       _dashboard: 0.847
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.371
+      _impact: 0.378
       _impact_external: 0
       _reuse: 0.0
-      oboscore: 0.609
+      oboscore: 0.613
     'Info: How many externally documented uses?': 0
-    'Info: How many ontologies use it?': 66
+    'Info: How many ontologies use it?': 68
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -12375,7 +12685,9 @@ ontologies:
     - fao
     - fbbt
     - flopo
+    - fobi
     - foodon
+    - fovt
     - genepio
     - geno
     - go
@@ -12472,7 +12784,8 @@ ontologies:
   base_prefixes:
   - NCIT
   - NCITALT
-  changed: true
+  - NCIT
+  changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 2411795
@@ -12504,7 +12817,7 @@ ontologies:
     'Info: Experimental OBO score':
       _dashboard: 0.581
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.112
+      _impact: 0.111
       _impact_external: 0
       _reuse: 0.0
       oboscore: 0.346
@@ -12603,6 +12916,7 @@ ontologies:
   base_prefixes:
   - NCRO
   - NCROALT
+  - NCRO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -12722,11 +13036,12 @@ ontologies:
   base_prefixes:
   - NOMEN
   - NOMENALT
-  changed: true
+  - NOMEN
+  changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 753
-      Declaration: 382
+      AnnotationAssertion: 811
+      Declaration: 384
       DisjointClasses: 49
       DisjointObjectProperties: 3
       DisjointUnion: 1
@@ -12734,9 +13049,9 @@ ontologies:
       ObjectPropertyRange: 2
       SubClassOf: 263
       SubObjectPropertyOf: 103
-    'Axioms: Number of axioms': 1560
-    'Entities: % of entities reused': 2.56
-    'Entities: Number of annotation properties': 11
+    'Axioms: Number of axioms': 1620
+    'Entities: % of entities reused': 2.54
+    'Entities: Number of annotation properties': 13
     'Entities: Number of classes': 263
     'Entities: Number of data properties': 0
     'Entities: Number of individuals': 0
@@ -12751,7 +13066,7 @@ ontologies:
       _formula: (1*impact+1*dashboard)/2
       _impact: 0.0
       _impact_external: 0.25
-      _reuse: 0.026
+      _reuse: 0.025
       oboscore: 0.348
     'Info: How many externally documented uses?': 1
     'Info: How many ontologies use it?': 0
@@ -12759,9 +13074,9 @@ ontologies:
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
       IAO: 4
-      NOMEN: 1672
+      NOMEN: 1730
       owl: 2
-      rdfs: 399
+      rdfs: 401
     'Info: Which ontologies use it?':
     - nomen
   mirror_from: http://purl.obolibrary.org/obo/nomen.owl
@@ -12780,7 +13095,7 @@ ontologies:
     FP05 Scope:
       status: PASS
     FP06 Textual Definitions:
-      comment: 379 missing definitions. See ROBOT Report for details.
+      comment: 381 missing definitions. See ROBOT Report for details.
       status: WARN
     FP07 Relations:
       comment: 111 non-RO properties used.
@@ -12801,14 +13116,14 @@ ontologies:
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      comment: 17 errors, 381 warnings, 0 info messages.
+      comment: 17 errors, 383 warnings, 0 info messages.
       file: robot_report
       results:
         ERROR: 17
         INFO: 0
-        WARN: 381
+        WARN: 383
       status: ERROR
-  sha256_hash: ed70da7bdf65e3b8f7584b66842b172e5787d8e729ed4a29e2f74c87310d920f
+  sha256_hash: 95d28c93a3b51dd977ec377e56f8bae1f833913035dcbb9e4beb3d3e1dda0bd5
   summary:
     comment: 5 errors
     status: ERROR
@@ -12821,7 +13136,8 @@ ontologies:
   base_prefixes:
   - OAE
   - OAEALT
-  changed: true
+  - OAE
+  changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 51806
@@ -12859,7 +13175,7 @@ ontologies:
     'Info: Experimental OBO score':
       _dashboard: 0.647
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.084
+      _impact: 0.083
       _impact_external: 0
       _reuse: 0.238
       oboscore: 0.365
@@ -12968,6 +13284,7 @@ ontologies:
   base_prefixes:
   - OARCS
   - OARCSALT
+  - OARCS
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -13066,6 +13383,7 @@ ontologies:
   base_prefixes:
   - OBA
   - OBAALT
+  - OBA
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -13187,6 +13505,7 @@ ontologies:
   base_prefixes:
   - OBCS
   - OBCSALT
+  - OBCS
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -13326,7 +13645,8 @@ ontologies:
   base_prefixes:
   - OBI
   - OBIALT
-  changed: false
+  - OBI
+  changed: true
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 24263
@@ -13372,10 +13692,10 @@ ontologies:
     'Info: Experimental OBO score':
       _dashboard: 0.732
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.416
+      _impact: 0.411
       _impact_external: 0.25
       _reuse: 0.138
-      oboscore: 0.574
+      oboscore: 0.572
     'Info: How many externally documented uses?': 2
     'Info: How many ontologies use it?': 74
     'Info: Logical consistency': true
@@ -13543,110 +13863,110 @@ ontologies:
   base_prefixes:
   - OBIB
   - OBIBALT
+  - OBIB
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 12336
+      AnnotationAssertion: 13099
+      AnnotationPropertyRangeOf: 1
       AsymmetricObjectProperty: 6
-      ClassAssertion: 270
-      DataPropertyDomain: 3
-      DataPropertyRange: 2
-      Declaration: 2100
-      DisjointClasses: 50
-      EquivalentClasses: 193
-      EquivalentObjectProperties: 15
-      FunctionalDataProperty: 1
-      FunctionalObjectProperty: 5
-      InverseFunctionalObjectProperty: 2
-      InverseObjectProperties: 23
+      ClassAssertion: 225
+      Declaration: 2249
+      DifferentIndividuals: 2
+      DisjointClasses: 47
+      EquivalentClasses: 192
+      EquivalentObjectProperties: 3
+      FunctionalObjectProperty: 3
+      InverseFunctionalObjectProperty: 3
+      InverseObjectProperties: 18
       IrrefexiveObjectProperty: 4
-      ObjectPropertyDomain: 43
-      ObjectPropertyRange: 44
-      SubAnnotationPropertyOf: 5
-      SubClassOf: 2086
+      ObjectPropertyDomain: 23
+      ObjectPropertyRange: 25
+      Rule: 4
+      SubAnnotationPropertyOf: 2
+      SubClassOf: 2163
       SubDataPropertyOf: 1
-      SubObjectPropertyOf: 46
+      SubObjectPropertyOf: 49
       SubPropertyChainOf: 2
-      SymmetricObjectProperty: 1
-      TransitiveObjectProperty: 7
-    'Axioms: Number of axioms': 17245
-    'Entities: % of entities reused': 71.24
-    'Entities: Number of annotation properties': 52
-    'Entities: Number of classes': 1733
+      TransitiveObjectProperty: 6
+    'Axioms: Number of axioms': 18127
+    'Entities: % of entities reused': 67.35
+    'Entities: Number of annotation properties': 73
+    'Entities: Number of classes': 1854
     'Entities: Number of data properties': 3
-    'Entities: Number of individuals': 228
-    'Entities: Number of object properties': 79
+    'Entities: Number of individuals': 225
+    'Entities: Number of object properties': 92
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 7308
-      DataMinCardinality: 2
-      ObjectAllValuesFrom: 59
-      ObjectComplementOf: 8
-      ObjectExactCardinality: 5
-      ObjectIntersectionOf: 517
-      ObjectMinCardinality: 4
+      Class: 7462
+      DataMinCardinality: 1
+      ObjectAllValuesFrom: 53
+      ObjectComplementOf: 5
+      ObjectExactCardinality: 3
+      ObjectIntersectionOf: 492
+      ObjectMinCardinality: 3
       ObjectOneOf: 3
-      ObjectSomeValuesFrom: 901
-      ObjectUnionOf: 56
+      ObjectSomeValuesFrom: 806
+      ObjectUnionOf: 48
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
-      _dashboard: 0.949
+      _dashboard: 0.948
       _formula: (1*impact+1*dashboard)/2
       _impact: 0.017
       _impact_external: 0.5
-      _reuse: 0.712
-      oboscore: 0.483
+      _reuse: 0.673
+      oboscore: 0.482
     'Info: How many externally documented uses?': 3
     'Info: How many ontologies use it?': 3
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
-      APOLLO_SV: 20
-      BFO: 671
-      CHEBI: 157
-      CL: 35
+      APOLLO_SV: 16
+      BFO: 633
+      CHEBI: 156
+      CL: 33
       CLALT: 4
-      CLO: 21
+      CLO: 11
       DOID: 154
       DRON: 5
-      EFO: 63
+      EFO: 24
       ENVO: 3
       ERO: 34
       FLU: 7
       FMA: 36
-      GAZ: 6
+      GAZ: 4
       GEO: 23
-      GO: 25
-      IAO: 10849
+      GO: 22
+      HANCESTRO: 34
+      IAO: 11401
       ICO: 26
-      IDO: 34
-      NCBITaxon: 134
+      IDO: 33
+      NCBITaxon: 124
       NCIT: 101
       OAE: 10
-      OBI: 3346
-      OBIB: 1400
-      OGMS: 102
-      OMIABIS: 606
-      OMRSE: 86
+      OBI: 3124
+      OBIB: 1999
+      OGMS: 112
+      OMIABIS: 256
+      OMRSE: 108
       PATO: 80
       PCO: 3
-      PR: 6
-      RO: 485
+      PR: 5
+      RO: 459
       SO: 3
-      UBERON: 498
-      UO: 89
-      dc: 5
-      dc11: 182
-      efo: 1
-      foaf: 4
-      obo: 4
-      oboInOwl: 20
-      owl: 41
-      protege: 3
-      rdf: 4
-      rdfs: 2276
+      UBERON: 494
+      UO: 85
+      dc: 1
+      dc11: 105
+      foaf: 2
+      obo: 3
+      oboInOwl: 135
+      owl: 141
+      protege: 1
+      rdf: 3
+      rdfs: 2383
       vivoweb: 5
-      xsd: 6
+      xsd: 4
     'Info: Which ontologies use it?':
     - eupath
     - ico
@@ -13668,7 +13988,7 @@ ontologies:
     FP06 Textual Definitions:
       status: PASS
     FP07 Relations:
-      comment: 2 non-RO properties used.
+      comment: 6 non-RO properties used.
       file: fp7
       status: INFO
     FP08 Documented:
@@ -13684,20 +14004,27 @@ ontologies:
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      status: PASS
-  sha256_hash: 07eb2d49ef32e0aeb1c73987d872289c35fc0a863f0a26659633c48e146a50a1
+      comment: '{0} info messages.'
+      file: robot_report
+      results:
+        ERROR: 0
+        INFO: 3
+        WARN: 0
+      status: INFO
+  sha256_hash: 66c27284b0383f063a40f08fbdf7614562d0d60c08a902285b66baf76431e0d5
   summary:
-    comment: 1 info messages
+    comment: 2 info messages
     status: INFO
     summary_count:
       ERROR: 0
-      INFO: 1
+      INFO: 2
       WARN: 0
-  version: http://purl.obolibrary.org/obo/obib/2021-02-02/obib.owl
+  version: http://purl.obolibrary.org/obo/obib/2021-11-12/obib.owl
 - base_generated: true
   base_prefixes:
   - OGG
   - OGGALT
+  - OGG
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -13737,7 +14064,7 @@ ontologies:
     'Info: Experimental OBO score':
       _dashboard: 0.587
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.051
+      _impact: 0.05
       _impact_external: 0
       _reuse: 0.003
       oboscore: 0.319
@@ -13828,7 +14155,8 @@ ontologies:
   base_prefixes:
   - OGMS
   - OGMSALT
-  changed: true
+  - OGMS
+  changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1319
@@ -13855,10 +14183,10 @@ ontologies:
     'Info: Experimental OBO score':
       _dashboard: 0.796
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.236
+      _impact: 0.233
       _impact_external: 0
       _reuse: 0.565
-      oboscore: 0.516
+      oboscore: 0.515
     'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 42
     'Info: Logical consistency': true
@@ -13973,6 +14301,7 @@ ontologies:
   base_prefixes:
   - OGSF
   - OGSFALT
+  - OGSF
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -14119,6 +14448,7 @@ ontologies:
   base_prefixes:
   - OHD
   - OHDALT
+  - OHD
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -14254,6 +14584,7 @@ ontologies:
   base_prefixes:
   - OHMI
   - OHMIALT
+  - OHMI
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -14404,6 +14735,7 @@ ontologies:
   base_prefixes:
   - OHPI
   - OHPIALT
+  - OHPI
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -14661,6 +14993,7 @@ ontologies:
   base_prefixes:
   - OMIT
   - OMITALT
+  - OMIT
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -14792,6 +15125,7 @@ ontologies:
   base_prefixes:
   - IAO
   - IAOALT
+  - OMO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -14817,12 +15151,12 @@ ontologies:
     'Info: Experimental OBO score':
       _dashboard: 0.938
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.949
+      _impact: 0.95
       _impact_external: 0.25
       _reuse: 0.25
       oboscore: 0.944
     'Info: How many externally documented uses?': 1
-    'Info: How many ontologies use it?': 169
+    'Info: How many ontologies use it?': 171
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -14866,6 +15200,7 @@ ontologies:
     - ddanat
     - ddpheno
     - dideo
+    - disdriv
     - doid
     - dpo
     - dron
@@ -14886,6 +15221,7 @@ ontologies:
     - fideo
     - flopo
     - fma
+    - fobi
     - foodon
     - fovt
     - fypo
@@ -15057,7 +15393,8 @@ ontologies:
   base_prefixes:
   - OMP
   - OMPALT
-  changed: true
+  - OMP
+  changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 16190
@@ -15155,7 +15492,7 @@ ontologies:
         INFO: 13
         WARN: 331
       status: ERROR
-  sha256_hash: e6973c8459721365302ac2c29a11e40a01a0f3a6cdf2e01da869ee10f3a2cafb
+  sha256_hash: 5a4caf9e5e3fd0cfbea8c4d54167619a4101acc82c09f65e51b1ee1776f57d61
   summary:
     comment: 6 errors
     status: ERROR
@@ -15163,12 +15500,13 @@ ontologies:
       ERROR: 6
       INFO: 0
       WARN: 0
-  version: http://purl.obolibrary.org/obo/omp/releases/2021-09-13/omp.owl
+  version: http://purl.obolibrary.org/obo/omp/releases/2021-10-01/omp.owl
 - base_generated: false
   base_prefixes:
   - OMRSE
   - OMRSEALT
-  changed: true
+  - OMRSE
+  changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1136
@@ -15204,10 +15542,10 @@ ontologies:
     'Info: Experimental OBO score':
       _dashboard: 0.817
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.096
+      _impact: 0.094
       _impact_external: 0
       _reuse: 0.263
-      oboscore: 0.456
+      oboscore: 0.455
     'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 17
     'Info: Logical consistency': true
@@ -15306,6 +15644,7 @@ ontologies:
   base_prefixes:
   - ONE
   - ONEALT
+  - ONE
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -15466,7 +15805,8 @@ ontologies:
   base_prefixes:
   - ONS
   - ONSALT
-  changed: true
+  - ONS
+  changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 78381
@@ -15630,6 +15970,7 @@ ontologies:
 - base_generated: true
   base_prefixes:
   - ONTONEO
+  - ONTONEO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -15677,12 +16018,12 @@ ontologies:
       ObjectUnionOf: 12
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
-      _dashboard: 0.748
+      _dashboard: 0.641
       _formula: (1*impact+1*dashboard)/2
       _impact: 0.0
       _impact_external: 0
       _reuse: 1.0
-      oboscore: 0.374
+      oboscore: 0.321
     'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
@@ -15751,9 +16092,13 @@ ontologies:
     FP05 Scope:
       status: PASS
     FP06 Textual Definitions:
-      status: PASS
+      comment: 199 duplicate definitions. 447 multiple definitions. 59 missing definitions.
+        See ROBOT Report for details.
+      status: ERROR
     FP07 Relations:
-      status: PASS
+      comment: 5 non-RO properties used.
+      file: fp7
+      status: INFO
     FP08 Documented:
       comment: homepage URL (ontoneo.com) does not resolve
       status: ERROR
@@ -15763,33 +16108,34 @@ ontologies:
     FP11 Locus of Authority:
       status: PASS
     FP12 Naming Conventions:
-      comment: 2 multiple labels. See ROBOT Report for details.
+      comment: 8 duplicate labels. 473 multiple labels. See ROBOT Report for details.
       status: ERROR
     FP16 Maintenance:
       status: PASS
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      comment: 5 errors, 0 warnings, 0 info messages.
+      comment: 1130 errors, 68 warnings, 28 info messages.
       file: robot_report
       results:
-        ERROR: 5
-        INFO: 0
-        WARN: 0
+        ERROR: 1130
+        INFO: 28
+        WARN: 68
       status: ERROR
   sha256_hash: 3420ced72b05e098b81d91daf9652ba1ac4b5b612c53277b42b3ba4b9b6d91e5
   summary:
-    comment: 5 errors
+    comment: 6 errors
     status: ERROR
     summary_count:
-      ERROR: 5
-      INFO: 0
+      ERROR: 6
+      INFO: 1
       WARN: 0
   version: http://purl.obolibrary.org/obo/ontoneo/releases/2021-04-29/ontoneo.owl
 - base_generated: true
   base_prefixes:
   - OOSTT
   - OOSTTALT
+  - OOSTT
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -15935,6 +16281,7 @@ ontologies:
   base_prefixes:
   - OPL
   - OPLALT
+  - OPL
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -16054,6 +16401,7 @@ ontologies:
   base_prefixes:
   - OPMI
   - OPMIALT
+  - OPMI
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -16221,6 +16569,7 @@ ontologies:
   base_prefixes:
   - ORNASEQ
   - ORNASEQALT
+  - ORNASEQ
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -16331,6 +16680,7 @@ ontologies:
   base_prefixes:
   - OVAE
   - OVAEALT
+  - OVAE
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -16472,29 +16822,30 @@ ontologies:
   base_prefixes:
   - PATO
   - PATOALT
+  - PATO
   changed: true
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 17046
-      Declaration: 2900
+      AnnotationAssertion: 17060
+      Declaration: 2902
       DisjointClasses: 67
       EquivalentClasses: 318
       ObjectPropertyDomain: 11
       ObjectPropertyRange: 9
       SubAnnotationPropertyOf: 10
-      SubClassOf: 2137
+      SubClassOf: 2139
       SubObjectPropertyOf: 4
       TransitiveObjectProperty: 2
-    'Axioms: Number of axioms': 22504
-    'Entities: % of entities reused': 1.93
+    'Axioms: Number of axioms': 22522
+    'Entities: % of entities reused': 1.92
     'Entities: Number of annotation properties': 44
-    'Entities: Number of classes': 2833
+    'Entities: Number of classes': 2835
     'Entities: Number of data properties': 0
     'Entities: Number of individuals': 0
     'Entities: Number of object properties': 29
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 8217
+      Class: 8223
       ObjectComplementOf: 1
       ObjectExactCardinality: 2
       ObjectIntersectionOf: 326
@@ -16509,7 +16860,7 @@ ontologies:
       _reuse: 0.019
       oboscore: 0.689
     'Info: How many externally documented uses?': 1
-    'Info: How many ontologies use it?': 79
+    'Info: How many ontologies use it?': 80
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -16517,15 +16868,15 @@ ontologies:
       CARO: 2
       CL: 10
       GO: 11
-      IAO: 2036
-      PATO: 8183
+      IAO: 2038
+      PATO: 8189
       PATOALT: 402
       RO: 457
       UBERON: 9
       dc11: 35
-      oboInOwl: 12472
+      oboInOwl: 12480
       owl: 978
-      rdfs: 2900
+      rdfs: 2906
     'Info: Which ontologies use it?':
     - agro
     - aism
@@ -16534,6 +16885,7 @@ ontologies:
     - cheminf
     - cido
     - cl
+    - clao
     - clo
     - cob
     - cteno
@@ -16647,7 +16999,7 @@ ontologies:
         INFO: 42
         WARN: 49
       status: WARN
-  sha256_hash: 3943131e42e2a840723f07bc2556b6dcc822b8997af119bc3783e539f8016436
+  sha256_hash: 2b797b11572d6dd0f60e0e5c51ac820657b5c3ea5e6f7847d8cad51d4bfc36e7
   summary:
     comment: 1 errors
     status: ERROR
@@ -16655,11 +17007,12 @@ ontologies:
       ERROR: 1
       INFO: 0
       WARN: 2
-  version: http://purl.obolibrary.org/obo/pato/releases/2021-09-09/pato-base.owl
+  version: http://purl.obolibrary.org/obo/pato/releases/2021-11-05/pato-base.owl
 - base_generated: false
   base_prefixes:
   - PCO
   - PCOALT
+  - PCO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -16687,10 +17040,10 @@ ontologies:
     'Info: Experimental OBO score':
       _dashboard: 0.796
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.107
+      _impact: 0.106
       _impact_external: 0
       _reuse: 0.5
-      oboscore: 0.452
+      oboscore: 0.451
     'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 19
     'Info: Logical consistency': true
@@ -16788,7 +17141,8 @@ ontologies:
   base_prefixes:
   - PDRO
   - PDROALT
-  changed: true
+  - PDRO
+  changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 2334
@@ -17023,6 +17377,7 @@ ontologies:
   base_prefixes:
   - PECO
   - PECOALT
+  - PECO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -17059,10 +17414,10 @@ ontologies:
     'Info: Experimental OBO score':
       _dashboard: 0.727
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.034
+      _impact: 0.033
       _impact_external: 0
       _reuse: 0.826
-      oboscore: 0.381
+      oboscore: 0.38
     'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 6
     'Info: Logical consistency': true
@@ -17156,7 +17511,8 @@ ontologies:
   base_prefixes:
   - PHIPO
   - PHIPOALT
-  changed: true
+  - PHIPO
+  changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 6743
@@ -17179,12 +17535,12 @@ ontologies:
     'Info: Experimental OBO score':
       _dashboard: 0.937
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.0
+      _impact: 0.006
       _impact_external: 0
       _reuse: 0.226
-      oboscore: 0.469
+      oboscore: 0.472
     'Info: How many externally documented uses?': 0
-    'Info: How many ontologies use it?': 0
+    'Info: How many ontologies use it?': 1
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -17205,6 +17561,7 @@ ontologies:
       rdfs: 1260
     'Info: Which ontologies use it?':
     - phipo
+    - upheno
   mirror_from: http://purl.obolibrary.org/obo/phipo/phipo-base.owl
   namespace: phipo
   results:
@@ -17259,55 +17616,57 @@ ontologies:
   base_prefixes:
   - PLANA
   - PLANAALT
+  - PLANA
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 6379
-      Declaration: 770
+      AnnotationAssertion: 6397
+      Declaration: 777
       EquivalentClasses: 175
       SubAnnotationPropertyOf: 2
-      SubClassOf: 2611
-    'Axioms: Number of axioms': 9937
-    'Entities: % of entities reused': 17.4
-    'Entities: Number of annotation properties': 55
-    'Entities: Number of classes': 700
+      SubClassOf: 2580
+    'Axioms: Number of axioms': 9931
+    'Entities: % of entities reused': 17.5
+    'Entities: Number of annotation properties': 56
+    'Entities: Number of classes': 705
     'Entities: Number of data properties': 0
     'Entities: Number of individuals': 0
-    'Entities: Number of object properties': 18
+    'Entities: Number of object properties': 19
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 6464
+      Class: 6407
       ObjectIntersectionOf: 194
-      ObjectSomeValuesFrom: 2319
+      ObjectSomeValuesFrom: 2284
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
-      _dashboard: 0.766
+      _dashboard: 0.967
       _formula: (1*impact+1*dashboard)/2
       _impact: 0.006
-      _impact_external: 0
-      _reuse: 0.174
-      oboscore: 0.386
-    'Info: How many externally documented uses?': 0
+      _impact_external: 0.25
+      _reuse: 0.175
+      oboscore: 0.486
+    'Info: How many externally documented uses?': 1
     'Info: How many ontologies use it?': 1
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
       BFO: 422
-      BSPO: 131
+      BSPO: 128
       BSPOALT: 5
       GO: 96
-      IAO: 651
+      IAO: 656
       PATO: 6
-      PLANA: 6206
-      RO: 1888
-      UBERON: 49
-      dc11: 4
-      foaf: 3
+      PLANA: 6150
+      RO: 1857
+      UBERON: 48
+      dc: 1
+      dc11: 5
+      foaf: 2
       obo: 234
-      oboInOwl: 5289
+      oboInOwl: 5301
       owl: 3
       prefix_unknown: 1
-      rdfs: 888
+      rdfs: 893
       skos: 1
     'Info: Which ontologies use it?':
     - plana
@@ -17316,8 +17675,7 @@ ontologies:
   namespace: plana
   results:
     FP01 Open:
-      comment: Missing ontology license.
-      status: ERROR
+      status: PASS
     FP02 Common Format:
       status: PASS
     FP03 URIs:
@@ -17327,46 +17685,44 @@ ontologies:
     FP05 Scope:
       status: PASS
     FP06 Textual Definitions:
-      comment: 14 duplicate definitions. 17 missing definitions. See ROBOT Report
-        for details.
-      status: ERROR
+      comment: 16 missing definitions. See ROBOT Report for details.
+      status: WARN
     FP07 Relations:
       status: PASS
     FP08 Documented:
       status: PASS
     FP09 Plurality of Users:
-      comment: Missing usages
-      status: ERROR
+      status: PASS
     FP11 Locus of Authority:
       status: PASS
     FP12 Naming Conventions:
-      comment: 4 duplicate labels. 1 missing labels. See ROBOT Report for details.
-      status: ERROR
+      status: PASS
     FP16 Maintenance:
       status: PASS
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      comment: 22 errors, 88 warnings, 291 info messages.
+      comment: 89 warnings, 291 info messages.
       file: robot_report
       results:
-        ERROR: 22
+        ERROR: 0
         INFO: 291
-        WARN: 88
-      status: ERROR
-  sha256_hash: 965fff5cb249161a5c6fd6d4a35c2e83ddfc6821b5888edd5e5700e052e9e389
+        WARN: 89
+      status: WARN
+  sha256_hash: f5d12be402008ae6493ff42b66d06d60ad1ea3415234e02b6b41898ea6357a65
   summary:
-    comment: 5 errors
-    status: ERROR
+    comment: 2 warnings
+    status: WARN
     summary_count:
-      ERROR: 5
+      ERROR: 0
       INFO: 0
-      WARN: 0
-  version: http://purl.obolibrary.org/obo/plana/releases/2021-04-05/plana-base.owl
+      WARN: 2
+  version: http://purl.obolibrary.org/obo/plana/releases/2021-10-21/plana-base.owl
 - base_generated: false
   base_prefixes:
   - PLANP
   - PLANPALT
+  - PLANP
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -17389,12 +17745,12 @@ ontologies:
     'Info: Experimental OBO score':
       _dashboard: 0.846
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.0
+      _impact: 0.006
       _impact_external: 0
       _reuse: 0.481
-      oboscore: 0.423
+      oboscore: 0.426
     'Info: How many externally documented uses?': 0
-    'Info: How many ontologies use it?': 0
+    'Info: How many ontologies use it?': 1
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
@@ -17411,6 +17767,7 @@ ontologies:
       rdfs: 699
     'Info: Which ontologies use it?':
     - planp
+    - upheno
   mirror_from: http://purl.obolibrary.org/obo/planp/planp-base.owl
   namespace: planp
   results:
@@ -17464,7 +17821,8 @@ ontologies:
   base_prefixes:
   - PO
   - POALT
-  changed: false
+  - PO
+  changed: true
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 18941
@@ -17502,10 +17860,10 @@ ontologies:
     'Info: Experimental OBO score':
       _dashboard: 0.77
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.096
+      _impact: 0.094
       _impact_external: 0.5
       _reuse: 0.084
-      oboscore: 0.433
+      oboscore: 0.432
     'Info: How many externally documented uses?': 4
     'Info: How many ontologies use it?': 17
     'Info: Logical consistency': true
@@ -17600,71 +17958,70 @@ ontologies:
   base_prefixes:
   - PORO
   - POROALT
+  - PORO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 3471
+      AnnotationAssertion: 3266
       ClassAssertion: 2
-      Declaration: 1020
-      DisjointClasses: 14
+      Declaration: 981
+      DisjointClasses: 11
       DisjointUnion: 2
-      EquivalentClasses: 69
-      InverseObjectProperties: 12
+      EquivalentClasses: 57
+      InverseObjectProperties: 11
       ObjectPropertyDomain: 11
       ObjectPropertyRange: 12
       SubAnnotationPropertyOf: 2
-      SubClassOf: 1306
-      SubObjectPropertyOf: 56
-      SubPropertyChainOf: 24
-      SymmetricObjectProperty: 2
-      TransitiveObjectProperty: 10
-    'Axioms: Number of axioms': 6013
-    'Entities: % of entities reused': 37.03
+      SubClassOf: 1234
+      SubObjectPropertyOf: 43
+      SubPropertyChainOf: 16
+      TransitiveObjectProperty: 5
+    'Axioms: Number of axioms': 5653
+    'Entities: % of entities reused': 34.41
     'Entities: Number of annotation properties': 33
-    'Entities: Number of classes': 922
+    'Entities: Number of classes': 896
     'Entities: Number of data properties': 0
     'Entities: Number of individuals': 2
-    'Entities: Number of object properties': 69
+    'Entities: Number of object properties': 54
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 3805
+      Class: 3594
       ObjectComplementOf: 4
       ObjectExactCardinality: 23
-      ObjectIntersectionOf: 65
+      ObjectIntersectionOf: 54
       ObjectMinCardinality: 2
-      ObjectSomeValuesFrom: 343
-      ObjectUnionOf: 9
+      ObjectSomeValuesFrom: 280
+      ObjectUnionOf: 8
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.733
       _formula: (1*impact+1*dashboard)/2
       _impact: 0.0
       _impact_external: 0
-      _reuse: 0.37
+      _reuse: 0.344
       oboscore: 0.366
     'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
-      BFO: 262
+      BFO: 220
       CARO: 15
       CHEBI: 566
       CHEBIALT: 32
       CL: 72
       GO: 366
-      IAO: 834
-      OWLAPIERROR: 2
+      IAO: 795
       PATO: 66
       PORO: 2250
-      RO: 381
-      UBERON: 381
+      RO: 308
+      UBERON: 173
       dc11: 2
       foaf: 3
-      obo: 32
-      oboInOwl: 1619
-      owl: 89
-      rdfs: 1583
+      obo: 21
+      oboInOwl: 1503
+      owl: 88
+      rdfs: 1533
       xsd: 3
     'Info: Which ontologies use it?':
     - poro
@@ -17700,7 +18057,7 @@ ontologies:
     FP12 Naming Conventions:
       status: PASS
     FP16 Maintenance:
-      comment: last version (2016-09-13) is over three year(s) old
+      comment: last version (2016-10-06) is over three year(s) old
       status: ERROR
     FP20 Responsiveness:
       status: PASS
@@ -17712,7 +18069,7 @@ ontologies:
         INFO: 20
         WARN: 110
       status: ERROR
-  sha256_hash: 9abf199252e642af3807a1f784cfb36214ae3742ff8cd7f921ab6fede14ec435
+  sha256_hash: 52f310ae8d1f693cc5c1186e7d8f050c818fc3ff52968ef5d7e1ff67f3a05c36
   summary:
     comment: 5 errors
     status: ERROR
@@ -17720,11 +18077,12 @@ ontologies:
       ERROR: 5
       INFO: 1
       WARN: 0
-  version: http://purl.obolibrary.org/obo/poro/releases/2016-09-13/poro.owl
+  version: http://purl.obolibrary.org/obo/poro/releases/2016-10-06/poro.owl
 - base_generated: true
   base_prefixes:
   - PPO
   - PPOALT
+  - PPO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -17853,6 +18211,7 @@ ontologies:
   base_prefixes:
   - PR
   - PRALT
+  - PR
   changed: true
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -17886,10 +18245,10 @@ ontologies:
     'Info: Experimental OBO score':
       _dashboard: 0.876
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.236
+      _impact: 0.233
       _impact_external: 0.25
       _reuse: 0.306
-      oboscore: 0.556
+      oboscore: 0.554
     'Info: How many externally documented uses?': 2
     'Info: How many ontologies use it?': 42
     'Info: Logical consistency': true
@@ -18027,6 +18386,7 @@ ontologies:
   base_prefixes:
   - PSDO
   - PSDOALT
+  - PSDO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -18171,6 +18531,7 @@ ontologies:
   base_prefixes:
   - PSO
   - PSOALT
+  - PSO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -18295,6 +18656,7 @@ ontologies:
   base_prefixes:
   - PW
   - PWALT
+  - PW
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -18395,7 +18757,8 @@ ontologies:
   base_prefixes:
   - RBO
   - RBOALT
-  changed: true
+  - RBO
+  changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 658
@@ -18507,36 +18870,37 @@ ontologies:
   base_prefixes:
   - RO
   - ROALT
-  changed: true
+  - RO
+  changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 3485
+      AnnotationAssertion: 3499
       AnnotationPropertyRangeOf: 1
       AsymmetricObjectProperty: 2
       DataPropertyRange: 1
-      Declaration: 756
+      Declaration: 762
       DisjointClasses: 11
       DisjointObjectProperties: 10
       FunctionalObjectProperty: 3
       InverseFunctionalObjectProperty: 1
-      InverseObjectProperties: 107
+      InverseObjectProperties: 108
       IrrefexiveObjectProperty: 7
       ObjectPropertyDomain: 140
       ObjectPropertyRange: 139
       Rule: 22
       SubAnnotationPropertyOf: 61
       SubClassOf: 32
-      SubObjectPropertyOf: 644
-      SubPropertyChainOf: 142
+      SubObjectPropertyOf: 647
+      SubPropertyChainOf: 143
       SymmetricObjectProperty: 78
-      TransitiveObjectProperty: 45
-    'Axioms: Number of axioms': 5687
-    'Entities: % of entities reused': 13.58
-    'Entities: Number of annotation properties': 108
+      TransitiveObjectProperty: 46
+    'Axioms: Number of axioms': 5713
+    'Entities: % of entities reused': 13.97
+    'Entities: Number of annotation properties': 111
     'Entities: Number of classes': 43
     'Entities: Number of data properties': 1
     'Entities: Number of individuals': 0
-    'Entities: Number of object properties': 608
+    'Entities: Number of object properties': 612
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
       Class: 432
@@ -18550,34 +18914,34 @@ ontologies:
     'Info: Experimental OBO score':
       _dashboard: 0.863
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.725
+      _impact: 0.722
       _impact_external: 0.25
-      _reuse: 0.136
-      oboscore: 0.794
+      _reuse: 0.14
+      oboscore: 0.792
     'Info: How many externally documented uses?': 1
-    'Info: How many ontologies use it?': 129
+    'Info: How many ontologies use it?': 130
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
-      BFO: 438
+      BFO: 439
       CARO: 61
       CL: 20
       ENVO: 3
       GO: 15
-      IAO: 1664
+      IAO: 1674
       OGMS: 13
       PATO: 7
-      RO: 3116
+      RO: 3127
       UPHENO: 4
       dc: 25
       dc11: 137
       foaf: 4
       obo: 10
-      oboInOwl: 686
-      owl: 14
+      oboInOwl: 689
+      owl: 16
       prefix_unknown: 45
       rdf: 16
-      rdfs: 987
+      rdfs: 991
       skos: 4
       xsd: 13
     'Info: Which ontologies use it?':
@@ -18604,6 +18968,7 @@ ontologies:
     - cteno
     - cto
     - dideo
+    - disdriv
     - doid
     - dpo
     - dron
@@ -18725,7 +19090,7 @@ ontologies:
     FP05 Scope:
       status: PASS
     FP06 Textual Definitions:
-      comment: 141 missing definitions. See ROBOT Report for details.
+      comment: 143 missing definitions. See ROBOT Report for details.
       status: WARN
     FP07 Relations:
       status: PASS
@@ -18743,14 +19108,14 @@ ontologies:
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      comment: 6 errors, 171 warnings, 231 info messages.
+      comment: 6 errors, 173 warnings, 231 info messages.
       file: robot_report
       results:
         ERROR: 6
         INFO: 231
-        WARN: 171
+        WARN: 173
       status: ERROR
-  sha256_hash: 0c276fc0d6719ac38d3cf6c42147313ede99299d1099d6a75a552dbd111c648c
+  sha256_hash: 5273f60730615fd9fd2080aa6ee69bf464138b98a0c2a1faf97b3160d6e3b5c8
   summary:
     comment: 2 errors
     status: ERROR
@@ -18758,11 +19123,12 @@ ontologies:
       ERROR: 2
       INFO: 0
       WARN: 1
-  version: http://purl.obolibrary.org/obo/ro/releases/2021-08-31/ro-base.owl
+  version: http://purl.obolibrary.org/obo/ro/releases/2021-10-27/ro-base.owl
 - base_generated: true
   base_prefixes:
   - RS
   - RSALT
+  - RS
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -18862,37 +19228,38 @@ ontologies:
   base_prefixes:
   - RXNO
   - RXNOALT
+  - RXNO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 4679
-      Declaration: 934
+      AnnotationAssertion: 5055
+      Declaration: 995
       DisjointClasses: 2
       EquivalentClasses: 71
       ObjectPropertyDomain: 5
       ObjectPropertyRange: 5
-      SubClassOf: 1389
+      SubClassOf: 1497
       SubObjectPropertyOf: 8
-    'Axioms: Number of axioms': 7093
-    'Entities: % of entities reused': 30.46
-    'Entities: Number of annotation properties': 22
-    'Entities: Number of classes': 901
+    'Axioms: Number of axioms': 7638
+    'Entities: % of entities reused': 32.9
+    'Entities: Number of annotation properties': 35
+    'Entities: Number of classes': 946
     'Entities: Number of data properties': 0
     'Entities: Number of individuals': 0
     'Entities: Number of object properties': 14
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 3916
+      Class: 4177
       ObjectIntersectionOf: 51
-      ObjectSomeValuesFrom: 476
+      ObjectSomeValuesFrom: 536
       ObjectUnionOf: 20
-    'Info: Does the ontology fall under OWL 2 DL?': false
+    'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.848
       _formula: (1*impact+1*dashboard)/2
       _impact: 0.006
       _impact_external: 0
-      _reuse: 0.305
+      _reuse: 0.329
       oboscore: 0.427
     'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 1
@@ -18900,15 +19267,17 @@ ontologies:
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
       BFO: 73
-      CHEBI: 828
-      IAO: 747
-      MOP: 479
+      CHEBI: 968
+      IAO: 806
+      MOP: 484
       OBI: 66
-      RXNO: 2930
-      obo: 49
-      oboInOwl: 3635
+      RXNO: 3106
+      dc: 1
+      dc11: 40
+      obo: 84
+      oboInOwl: 3908
       owl: 35
-      rdfs: 999
+      rdfs: 1051
     'Info: Which ontologies use it?':
     - mop
     - rxno
@@ -18950,10 +19319,10 @@ ontologies:
       file: robot_report
       results:
         ERROR: 0
-        INFO: 2
+        INFO: 1
         WARN: 0
       status: INFO
-  sha256_hash: 943454d5ff08654eab230721eca29866ecb224cb87dd294c2a4a47ca4279aa7d
+  sha256_hash: 76e1dcc5dfad42afadc8a48c26aa2f5d6abbf770d9e1494252b343ec01b682ac
   summary:
     comment: 2 errors
     status: ERROR
@@ -18961,12 +19330,13 @@ ontologies:
       ERROR: 2
       INFO: 2
       WARN: 0
-  version: http://purl.obolibrary.org/obo/rxno.obo/2021-01-21/rxno.obo.owl
+  version: http://purl.obolibrary.org/obo/rxno.obo/2021-11-15/rxno.owl
 - base_generated: true
   base_prefixes:
   - SBO
   - SBOALT
-  changed: true
+  - SBO
+  changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 1540
@@ -19043,7 +19413,7 @@ ontologies:
         INFO: 0
         WARN: 0
       status: ERROR
-  sha256_hash: 7bb3d2ce86fb8832a334af13d3e2ab1d8eaa83825c63f2cf7aa9fe695c0b6aeb
+  sha256_hash: 66765a4f96331db40922fa8ab16ecdf5aa2ee349b21739f4ae32fde09c88d1a3
   summary:
     comment: 5 errors
     status: ERROR
@@ -19056,6 +19426,7 @@ ontologies:
   base_prefixes:
   - SCDO
   - SCDOALT
+  - SCDO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -19198,6 +19569,7 @@ ontologies:
   base_prefixes:
   - SEPIO
   - SEPIOALT
+  - SEPIO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -19331,50 +19703,51 @@ ontologies:
   base_prefixes:
   - SO
   - SOALT
-  changed: true
+  - SO
+  changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 19136
-      Declaration: 2787
+      AnnotationAssertion: 19393
+      Declaration: 2819
       DisjointClasses: 2
-      EquivalentClasses: 220
+      EquivalentClasses: 219
       SubAnnotationPropertyOf: 14
-      SubClassOf: 3085
+      SubClassOf: 3117
       SubObjectPropertyOf: 9
       SymmetricObjectProperty: 4
       TransitiveObjectProperty: 7
-    'Axioms: Number of axioms': 25264
-    'Entities: % of entities reused': 4.52
+    'Axioms: Number of axioms': 25584
+    'Entities: % of entities reused': 4.47
     'Entities: Number of annotation properties': 41
-    'Entities: Number of classes': 2696
+    'Entities: Number of classes': 2728
     'Entities: Number of data properties': 0
     'Entities: Number of individuals': 0
     'Entities: Number of object properties': 50
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 9544
-      ObjectIntersectionOf: 220
-      ObjectSomeValuesFrom: 862
+      Class: 9637
+      ObjectIntersectionOf: 219
+      ObjectSomeValuesFrom: 861
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.679
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.152
+      _impact: 0.15
       _impact_external: 0
       _reuse: 0.045
-      oboscore: 0.416
+      oboscore: 0.415
     'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 27
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
-      IAO: 2812
-      SO: 9447
-      SOALT: 961
+      IAO: 2844
+      SO: 9540
+      SOALT: 960
       obo: 97
-      oboInOwl: 15464
+      oboInOwl: 15640
       owl: 343
-      rdfs: 3686
+      rdfs: 3755
     'Info: Which ontologies use it?':
     - cido
     - clo
@@ -19448,7 +19821,7 @@ ontologies:
         INFO: 88
         WARN: 301
       status: ERROR
-  sha256_hash: 9239c56998cf7532e97bede6ddce80931bb73bae8097b6627945f6da3144f851
+  sha256_hash: 74bbf75f4351a153aaaf66dad4d92af06b13fe0ff206d1448fe2c8526d339131
   summary:
     comment: 6 errors
     status: ERROR
@@ -19461,6 +19834,7 @@ ontologies:
   base_prefixes:
   - SPD
   - SPDALT
+  - SPD
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -19561,6 +19935,7 @@ ontologies:
   base_prefixes:
   - STATO
   - STATOALT
+  - STATO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -19611,7 +19986,7 @@ ontologies:
     'Info: Experimental OBO score':
       _dashboard: 0.716
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.073
+      _impact: 0.072
       _impact_external: 0
       _reuse: 0.437
       oboscore: 0.394
@@ -19716,6 +20091,7 @@ ontologies:
   base_prefixes:
   - SWO
   - SWOALT
+  - SWO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -19841,6 +20217,7 @@ ontologies:
   base_prefixes:
   - SYMP
   - SYMPALT
+  - SYMP
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -19939,6 +20316,7 @@ ontologies:
   base_prefixes:
   - TAXRANK
   - TAXRANKALT
+  - TAXRANK
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -20031,13 +20409,14 @@ ontologies:
   base_prefixes:
   - TO
   - TOALT
+  - TO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 35752
       Declaration: 5362
       DisjointClasses: 46
-      EquivalentClasses: 939
+      EquivalentClasses: 938
       FunctionalObjectProperty: 1
       InverseObjectProperties: 31
       ObjectPropertyDomain: 37
@@ -20050,7 +20429,7 @@ ontologies:
       SubPropertyChainOf: 61
       SymmetricObjectProperty: 2
       TransitiveObjectProperty: 18
-    'Axioms: Number of axioms': 50737
+    'Axioms: Number of axioms': 50736
     'Entities: % of entities reused': 70.02
     'Entities: Number of annotation properties': 77
     'Entities: Number of classes': 5129
@@ -20059,13 +20438,13 @@ ontologies:
     'Entities: Number of object properties': 160
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 24836
+      Class: 24832
       ObjectAllValuesFrom: 3
       ObjectComplementOf: 2
       ObjectHasSelf: 1
-      ObjectIntersectionOf: 1137
+      ObjectIntersectionOf: 1135
       ObjectMinCardinality: 1
-      ObjectSomeValuesFrom: 2974
+      ObjectSomeValuesFrom: 2972
       ObjectUnionOf: 2
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
@@ -20090,13 +20469,13 @@ ontologies:
       IAO: 5018
       NCBITaxon: 351
       OBI: 7
-      PATO: 1552
+      PATO: 1550
       PATOALT: 27
       PECO: 436
-      PO: 9055
+      PO: 9054
       POALT: 42
-      RO: 2185
-      TO: 6439
+      RO: 2183
+      TO: 6438
       TOALT: 28
       dc11: 6
       oboInOwl: 38696
@@ -20144,12 +20523,12 @@ ontologies:
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      comment: 19 errors, 157 warnings, 1 info messages.
+      comment: 19 errors, 155 warnings, 1 info messages.
       file: robot_report
       results:
         ERROR: 19
         INFO: 1
-        WARN: 157
+        WARN: 155
       status: ERROR
   sha256_hash: 7694a55351edf4202c57f7f70f66098a3de85d04e8e970dd2a9825a681663c13
   summary:
@@ -20164,6 +20543,7 @@ ontologies:
   base_prefixes:
   - TRANS
   - TRANSALT
+  - TRANS
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -20258,6 +20638,7 @@ ontologies:
   base_prefixes:
   - TTO
   - TTOALT
+  - TTO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -20353,6 +20734,7 @@ ontologies:
   base_prefixes:
   - TXPO
   - TXPOALT
+  - TXPO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -20435,10 +20817,9 @@ ontologies:
   namespace: txpo
   results:
     FP01 Open:
-      comment: Registry license 'https://creativecommons.org/licenses/by/3.0/' is
-        not a valid open license. License should use property 'http://purl.org/dc/terms/license'.
-        Ontology license 'http://creativecommons.org/licenses/by/4.0/' does not match
-        regsitry license 'https://creativecommons.org/licenses/by/3.0/'.
+      comment: License should use property 'http://purl.org/dc/terms/license'. Ontology
+        license 'http://creativecommons.org/licenses/by/4.0/' does not match regsitry
+        license 'https://creativecommons.org/licenses/by/3.0/'.
       status: ERROR
     FP02 Common Format:
       status: PASS
@@ -20492,75 +20873,74 @@ ontologies:
   base_prefixes:
   - UBERON
   - UBERONALT
-  changed: true
+  - UBERON
+  changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 173459
-      Declaration: 15208
-      DisjointClasses: 603
+      AnnotationAssertion: 177931
+      Declaration: 15237
+      DisjointClasses: 1535
       DisjointObjectProperties: 1
-      EquivalentClasses: 6366
+      EquivalentClasses: 6101
       InverseObjectProperties: 11
       ObjectPropertyDomain: 5
       ObjectPropertyRange: 3
-      SubAnnotationPropertyOf: 42
-      SubClassOf: 25534
+      SubAnnotationPropertyOf: 43
+      SubClassOf: 25646
       SubObjectPropertyOf: 85
       SubPropertyChainOf: 38
       SymmetricObjectProperty: 3
       TransitiveObjectProperty: 26
-    'Axioms: Number of axioms': 221384
-    'Entities: % of entities reused': 7.09
-    'Entities: Number of annotation properties': 182
-    'Entities: Number of classes': 14889
+    'Axioms: Number of axioms': 226665
+    'Entities: % of entities reused': 7.04
+    'Entities: Number of annotation properties': 185
+    'Entities: Number of classes': 14931
     'Entities: Number of data properties': 0
     'Entities: Number of individuals': 0
     'Entities: Number of object properties': 142
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 87491
-      ObjectIntersectionOf: 6594
+      Class: 88834
+      ObjectIntersectionOf: 6329
       ObjectMaxCardinality: 49
-      ObjectMinCardinality: 57
-      ObjectSomeValuesFrom: 23850
+      ObjectMinCardinality: 56
+      ObjectSomeValuesFrom: 24597
       ObjectUnionOf: 113
-    'Info: Does the ontology fall under OWL 2 DL?': true
+    'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.62
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.348
+      _impact: 0.35
       _impact_external: 0.75
-      _reuse: 0.071
-      oboscore: 0.484
+      _reuse: 0.07
+      oboscore: 0.485
     'Info: How many externally documented uses?': 10
-    'Info: How many ontologies use it?': 62
+    'Info: How many ontologies use it?': 63
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
-      BFO: 13622
-      BSPO: 613
+      BFO: 13671
+      BSPO: 612
       CHEBI: 60
       CL: 601
-      ENVO: 14
+      ENVO: 10
       FBbt: 2
-      GO: 658
-      IAO: 13906
+      GO: 650
+      IAO: 13942
       NBO: 23
-      NCBITaxon: 1510
+      NCBITaxon: 2203
       PATO: 178
       PR: 23
-      RO: 9139
-      UBERON: 83695
-      dc: 2
-      dc11: 308
-      foaf: 1887
-      obo: 8173
-      oboInOwl: 205795
-      owl: 2094
-      prefix_unknown: 4
-      rdf: 83
-      rdfs: 16538
-      xsd: 7662
+      RO: 10498
+      UBERON: 84629
+      dc11: 343
+      foaf: 1886
+      obo: 8200
+      oboInOwl: 210185
+      owl: 1823
+      rdf: 1119
+      rdfs: 16604
+      xsd: 6803
     'Info: Which ontologies use it?':
     - agro
     - aism
@@ -20580,6 +20960,7 @@ ontologies:
     - envo
     - eupath
     - flopo
+    - fobi
     - foodon
     - fovt
     - gecko
@@ -20639,7 +21020,7 @@ ontologies:
     FP05 Scope:
       status: PASS
     FP06 Textual Definitions:
-      comment: 130 duplicate definitions. 2860 missing definitions. See ROBOT Report
+      comment: 130 duplicate definitions. 2868 missing definitions. See ROBOT Report
         for details.
       status: ERROR
     FP07 Relations:
@@ -20660,14 +21041,14 @@ ontologies:
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
-      comment: 217 errors, 4136 warnings, 3676 info messages.
+      comment: 217 errors, 4099 warnings, 3008 info messages.
       file: robot_report
       results:
         ERROR: 217
-        INFO: 3676
-        WARN: 4136
+        INFO: 3008
+        WARN: 4099
       status: ERROR
-  sha256_hash: ed6b4d6500e99cb52b337afb43451ea8337357c835f66050e94e1747e63055e5
+  sha256_hash: bea6dcd7089e88b22f750852bcc0d35e82c472b8e8a8e7194a431c51866ce0fa
   summary:
     comment: 4 errors
     status: ERROR
@@ -20675,11 +21056,12 @@ ontologies:
       ERROR: 4
       INFO: 0
       WARN: 0
-  version: http://purl.obolibrary.org/obo/uberon/releases/2021-07-27/uberon-base.owl
+  version: http://purl.obolibrary.org/obo/uberon/releases/2021-11-12/uberon-base.owl
 - base_generated: true
   base_prefixes:
   - UO
   - UOALT
+  - UO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -20706,10 +21088,10 @@ ontologies:
     'Info: Experimental OBO score':
       _dashboard: 0.696
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.169
+      _impact: 0.167
       _impact_external: 0
       _reuse: 0.062
-      oboscore: 0.432
+      oboscore: 0.431
     'Info: How many externally documented uses?': 0
     'Info: How many ontologies use it?': 30
     'Info: Logical consistency': true
@@ -20808,53 +21190,54 @@ ontologies:
   base_prefixes:
   - UPHENO
   - UPHENOALT
+  - UPHENO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 727229
+      AnnotationAssertion: 725593
       AsymmetricObjectProperty: 1
       ClassAssertion: 17
       DataPropertyRange: 1
-      Declaration: 160851
+      Declaration: 160703
       DifferentIndividuals: 2
-      DisjointClasses: 461
+      DisjointClasses: 462
       DisjointObjectProperties: 1
       DisjointUnion: 1
-      EquivalentClasses: 116228
+      EquivalentClasses: 115741
       EquivalentObjectProperties: 8
       FunctionalObjectProperty: 3
       InverseFunctionalObjectProperty: 1
       InverseObjectProperties: 53
       IrrefexiveObjectProperty: 2
-      ObjectPropertyDomain: 86
-      ObjectPropertyRange: 78
+      ObjectPropertyDomain: 88
+      ObjectPropertyRange: 80
       Rule: 25
       SubAnnotationPropertyOf: 119
-      SubClassOf: 293469
-      SubObjectPropertyOf: 301
-      SubPropertyChainOf: 110
+      SubClassOf: 292489
+      SubObjectPropertyOf: 302
+      SubPropertyChainOf: 111
       SymmetricObjectProperty: 7
       TransitiveObjectProperty: 53
-    'Axioms: Number of axioms': 1299107
+    'Axioms: Number of axioms': 1295863
     'Entities: % of entities reused': 100.0
-    'Entities: Number of annotation properties': 336
-    'Entities: Number of classes': 160160
+    'Entities: Number of annotation properties': 317
+    'Entities: Number of classes': 160015
     'Entities: Number of data properties': 1
     'Entities: Number of individuals': 18
     'Entities: Number of object properties': 358
-    'Entities: Number of unsatisfiable classes': 13738
+    'Entities: Number of unsatisfiable classes': 14135
     'Info: Breakdown of OWL class expressions used':
-      Class: 1305814
+      Class: 1302290
       DataSomeValuesFrom: 86
       ObjectAllValuesFrom: 97
       ObjectComplementOf: 7
       ObjectExactCardinality: 7
       ObjectHasSelf: 2
-      ObjectIntersectionOf: 192615
+      ObjectIntersectionOf: 192146
       ObjectMaxCardinality: 45
       ObjectMinCardinality: 58
       ObjectOneOf: 3
-      ObjectSomeValuesFrom: 524925
+      ObjectSomeValuesFrom: 524001
       ObjectUnionOf: 184
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
@@ -20869,72 +21252,76 @@ ontologies:
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
-      BFO: 201245
-      BSPO: 4040
+      BFO: 200202
+      BSPO: 4038
       BSPOALT: 4
-      CARO: 1362
+      CARO: 1363
       CAROALT: 4
-      CHEBI: 19428
-      CHEBIALT: 1414
-      CL: 15916
-      CLALT: 325
+      CHEBI: 19364
+      CHEBIALT: 1411
+      CL: 13884
+      CLALT: 419
+      DDPHENO: 1
       ENVO: 44
       FBBTALT: 18
       FBCVALT: 53
-      FBbt: 90016
+      FBbt: 90010
       FBcv: 1326
       FBdv: 1223
       GENENAMES: 124
-      GO: 148268
+      GO: 147480
       GOALT: 32
-      HP: 65583
-      HPALT: 20
+      HP: 65796
+      HPALT: 21
       HSAPDVALT: 37
       HsapDv: 94
-      IAO: 137888
+      IAO: 137395
       MAXO: 214
-      MP: 58770
-      MPATH: 2192
-      MPATHALT: 116
+      MGI: 73
+      MP: 58997
+      MPATH: 2202
+      MPATHALT: 130
       NBO: 2647
       NBOALT: 95
-      NCBITAXONALT: 5
-      NCBITaxon: 4628
+      NCBITAXONALT: 42
+      NCBITaxon: 4274
       OBI: 8
-      PATO: 254839
+      PATO: 254955
       PATOALT: 310
       PCO: 33
-      PR: 2877
-      PRALT: 93
-      RO: 294407
-      SO: 106
-      UBERON: 131544
-      UPHENO: 24236
-      VT: 12235
+      PHIPO: 1
+      PLANP: 1
+      PR: 2652
+      PRALT: 112
+      RO: 294371
+      SO: 124
+      UBERON: 131300
+      UPHENO: 24243
+      VT: 12286
       WBBTALT: 4
       WBPHENOTYPEALT: 3
-      WBPhenotype: 11243
+      WBPhenotype: 11268
       WBbt: 1742
       WBls: 525
       XAO: 53477
       XAOALT: 1726
-      XPO: 129901
-      ZFA: 83913
+      XPO: 129902
+      ZFA: 83380
       ZFAALT: 6
-      ZFS: 2179
-      ZP: 205421
+      ZFS: 2158
+      ZP: 205422
       cc: 1
       dc: 10
-      dc11: 7868
-      foaf: 1334
-      obo: 13146
-      oboInOwl: 549062
-      owl: 6009
-      prefix_unknown: 10
-      rdf: 889
-      rdfs: 172257
+      dc11: 8007
+      foaf: 1335
+      obo: 13074
+      oboInOwl: 548358
+      owl: 5920
+      prefix_unknown: 13
+      rdf: 907
+      rdfs: 172118
       skos: 3
-      xsd: 6064
+      xsd: 6060
     'Info: Which ontologies use it?':
     - cido
     - geno
@@ -20988,7 +21375,7 @@ ontologies:
         INFO: 6
         WARN: 7
       status: ERROR
-  sha256_hash: 81cc439b3b65b319d8e86aa0a7581598fe1c35140d017a77756242866777a552
+  sha256_hash: 6c181cf98f20e05e43dbc4af70f90c437727e041652eb9547c3e666e51751696
   summary:
     comment: 5 errors
     status: ERROR
@@ -21001,7 +21388,8 @@ ontologies:
   base_prefixes:
   - VO
   - VOALT
-  changed: true
+  - VO
+  changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 35437
@@ -21040,7 +21428,7 @@ ontologies:
     'Info: Experimental OBO score':
       _dashboard: 0.57
       _formula: (1*impact+1*dashboard)/2
-      _impact: 0.079
+      _impact: 0.078
       _impact_external: 0
       _reuse: 0.135
       oboscore: 0.324
@@ -21155,42 +21543,43 @@ ontologies:
   base_prefixes:
   - VT
   - VTALT
-  changed: true
+  - VT
+  changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 21578
-      Declaration: 3735
-      SubClassOf: 4260
+      AnnotationAssertion: 21646
+      Declaration: 3746
+      SubClassOf: 4280
       TransitiveObjectProperty: 1
-    'Axioms: Number of axioms': 29574
+    'Axioms: Number of axioms': 29673
     'Entities: % of entities reused': 0.59
     'Entities: Number of annotation properties': 18
-    'Entities: Number of classes': 3715
+    'Entities: Number of classes': 3726
     'Entities: Number of data properties': 0
     'Entities: Number of individuals': 0
     'Entities: Number of object properties': 2
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 12235
+      Class: 12286
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
       _dashboard: 0.73
       _formula: (1*impact+1*dashboard)/2
       _impact: 0.017
-      _impact_external: 0
+      _impact_external: 0.5
       _reuse: 0.006
       oboscore: 0.373
-    'Info: How many externally documented uses?': 0
+    'Info: How many externally documented uses?': 3
     'Info: How many ontologies use it?': 3
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
-      IAO: 3707
-      VT: 12235
+      IAO: 3718
+      VT: 12286
       obo: 3
-      oboInOwl: 17662
+      oboInOwl: 17719
       owl: 94
-      rdfs: 3905
+      rdfs: 3916
     'Info: Which ontologies use it?':
     - genepio
     - scdo
@@ -21220,8 +21609,7 @@ ontologies:
     FP08 Documented:
       status: PASS
     FP09 Plurality of Users:
-      comment: Missing usages
-      status: ERROR
+      status: PASS
     FP11 Locus of Authority:
       status: PASS
     FP12 Naming Conventions:
@@ -21240,12 +21628,12 @@ ontologies:
         INFO: 2
         WARN: 102
       status: ERROR
-  sha256_hash: e93693dd473eccbd29c10ccbb315ac71f9277a85dd7743df080df7b63e9b98ae
+  sha256_hash: ec8aebce2c8721e0deeb47496801d8c4d6ad6c2daa048a6f90e52c225ff07d48
   summary:
-    comment: 7 errors
+    comment: 6 errors
     status: ERROR
     summary_count:
-      ERROR: 7
+      ERROR: 6
       INFO: 0
       WARN: 1
   version: null
@@ -21253,6 +21641,7 @@ ontologies:
   base_prefixes:
   - VTO
   - VTOALT
+  - VTO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -21272,12 +21661,12 @@ ontologies:
       Class: 321370
     'Info: Does the ontology fall under OWL 2 DL?': true
     'Info: Experimental OBO score':
-      _dashboard: 0.84
+      _dashboard: 0.839
       _formula: (1*impact+1*dashboard)/2
       _impact: 0.0
       _impact_external: 0.25
       _reuse: 0.001
-      oboscore: 0.42
+      oboscore: 0.419
     'Info: How many externally documented uses?': 1
     'Info: How many ontologies use it?': 0
     'Info: Logical consistency': true
@@ -21322,7 +21711,8 @@ ontologies:
     FP12 Naming Conventions:
       status: PASS
     FP16 Maintenance:
-      status: PASS
+      comment: last version (2020-11-13) is over one year(s) old
+      status: INFO
     FP20 Responsiveness:
       status: PASS
     ROBOT Report:
@@ -21339,7 +21729,7 @@ ontologies:
     status: ERROR
     summary_count:
       ERROR: 1
-      INFO: 0
+      INFO: 1
       WARN: 2
   version: http://purl.obolibrary.org/obo/vto/2020-11-13/vto.owl
 - base_generated: false
@@ -21347,7 +21737,7 @@ ontologies:
   - WBbt
   - WBBTALT
   - WBbt
-  changed: true
+  changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 33163
@@ -21435,7 +21825,7 @@ ontologies:
         INFO: 4782
         WARN: 299
       status: ERROR
-  sha256_hash: 59fe4b2533c0bcd8589ff01894587658a9cfc5d9f8501f20f48b747956cdc219
+  sha256_hash: 60ecc9edc460ee8146ad882c785a2be3bf94cd385fcf8eafbdc5d114d60c6597
   summary:
     comment: 2 errors
     status: ERROR
@@ -21443,13 +21833,13 @@ ontologies:
       ERROR: 2
       INFO: 1
       WARN: 0
-  version: http://purl.obolibrary.org/obo/wbbt/releases/2021-07-06/wbbt-base.owl
+  version: http://purl.obolibrary.org/obo/wbbt/releases/2021-09-27/wbbt-base.owl
 - base_generated: false
   base_prefixes:
   - WBls
   - WBLSALT
   - WBls
-  changed: true
+  changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 5276
@@ -21549,60 +21939,60 @@ ontologies:
   - WBPhenotype
   - WBPHENOTYPEALT
   - WBPhenotype
-  changed: true
+  changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
-      AnnotationAssertion: 12944
-      Declaration: 3527
+      AnnotationAssertion: 12981
+      Declaration: 3536
       EquivalentClasses: 964
       SubAnnotationPropertyOf: 1
-      SubClassOf: 3034
+      SubClassOf: 3042
       SubObjectPropertyOf: 1
       SubPropertyChainOf: 1
-    'Axioms: Number of axioms': 20472
-    'Entities: % of entities reused': 24.29
+    'Axioms: Number of axioms': 20526
+    'Entities: % of entities reused': 24.25
     'Entities: Number of annotation properties': 31
-    'Entities: Number of classes': 3485
+    'Entities: Number of classes': 3494
     'Entities: Number of data properties': 0
     'Entities: Number of individuals': 0
     'Entities: Number of object properties': 14
     'Entities: Number of unsatisfiable classes': 0
     'Info: Breakdown of OWL class expressions used':
-      Class: 13587
-      ObjectIntersectionOf: 1093
-      ObjectSomeValuesFrom: 3076
+      Class: 13613
+      ObjectIntersectionOf: 1094
+      ObjectSomeValuesFrom: 3077
     'Info: Does the ontology fall under OWL 2 DL?': false
     'Info: Experimental OBO score':
       _dashboard: 0.891
       _formula: (1*impact+1*dashboard)/2
       _impact: 0.011
       _impact_external: 0.25
-      _reuse: 0.243
+      _reuse: 0.242
       oboscore: 0.451
     'Info: How many externally documented uses?': 2
     'Info: How many ontologies use it?': 2
     'Info: Logical consistency': true
     'Info: Syntax': RDF/XML Syntax
     'Info: Usage of namespaces in axioms':
-      BFO: 1074
+      BFO: 1073
       CARO: 100
       CHEBI: 290
       CL: 17
-      GO: 946
-      IAO: 2716
-      PATO: 1899
-      RO: 1922
+      GO: 947
+      IAO: 2724
+      PATO: 1900
+      RO: 1924
       UBERON: 4
       WBPHENOTYPEALT: 3
-      WBPhenotype: 9703
+      WBPhenotype: 9727
       WBbt: 547
       WBls: 81
       dc: 1
       dc11: 2
       obo: 97
-      oboInOwl: 10105
+      oboInOwl: 10134
       owl: 63
-      rdfs: 2745
+      rdfs: 2754
     'Info: Which ontologies use it?':
     - geno
     - upheno
@@ -21646,7 +22036,7 @@ ontologies:
         INFO: 4
         WARN: 15
       status: ERROR
-  sha256_hash: 61cdeb9753ecbc22315631e453dc34fa6d2171e10d76d4b3d418d82e1a7e97d4
+  sha256_hash: 62fb1c4c39e53d31f5c2270437293353e9a589f6b5fc0cf62fbf1b4cb6d671b1
   summary:
     comment: 2 errors
     status: ERROR
@@ -21654,11 +22044,12 @@ ontologies:
       ERROR: 2
       INFO: 0
       WARN: 1
-  version: http://purl.obolibrary.org/obo/wbphenotype/releases/2021-07-06/wbphenotype-base.owl
+  version: http://purl.obolibrary.org/obo/wbphenotype/releases/2021-10-25/wbphenotype-base.owl
 - base_generated: true
   base_prefixes:
   - XAO
   - XAOALT
+  - XAO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -21760,6 +22151,7 @@ ontologies:
   base_prefixes:
   - XCO
   - XCOALT
+  - XCO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -21866,6 +22258,7 @@ ontologies:
   base_prefixes:
   - XPO
   - XPOALT
+  - XPO
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -21965,7 +22358,8 @@ ontologies:
   base_prefixes:
   - ZECO
   - ZECOALT
-  changed: true
+  - ZECO
+  changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
       AnnotationAssertion: 316
@@ -22058,6 +22452,7 @@ ontologies:
   base_prefixes:
   - ZFA
   - ZFAALT
+  - ZFA
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -22164,6 +22559,7 @@ ontologies:
   base_prefixes:
   - ZFS
   - ZFSALT
+  - ZFS
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':
@@ -22263,6 +22659,7 @@ ontologies:
   base_prefixes:
   - ZP
   - ZPALT
+  - ZP
   changed: false
   metrics:
     'Axioms: Breakdown of axiom types':

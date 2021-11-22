@@ -2,75 +2,74 @@ base_generated: false
 base_prefixes:
 - UBERON
 - UBERONALT
-changed: true
+- UBERON
+changed: false
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 173459
-    Declaration: 15208
-    DisjointClasses: 603
+    AnnotationAssertion: 177931
+    Declaration: 15237
+    DisjointClasses: 1535
     DisjointObjectProperties: 1
-    EquivalentClasses: 6366
+    EquivalentClasses: 6101
     InverseObjectProperties: 11
     ObjectPropertyDomain: 5
     ObjectPropertyRange: 3
-    SubAnnotationPropertyOf: 42
-    SubClassOf: 25534
+    SubAnnotationPropertyOf: 43
+    SubClassOf: 25646
     SubObjectPropertyOf: 85
     SubPropertyChainOf: 38
     SymmetricObjectProperty: 3
     TransitiveObjectProperty: 26
-  'Axioms: Number of axioms': 221384
-  'Entities: % of entities reused': 7.09
-  'Entities: Number of annotation properties': 182
-  'Entities: Number of classes': 14889
+  'Axioms: Number of axioms': 226665
+  'Entities: % of entities reused': 7.04
+  'Entities: Number of annotation properties': 185
+  'Entities: Number of classes': 14931
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 142
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 87491
-    ObjectIntersectionOf: 6594
+    Class: 88834
+    ObjectIntersectionOf: 6329
     ObjectMaxCardinality: 49
-    ObjectMinCardinality: 57
-    ObjectSomeValuesFrom: 23850
+    ObjectMinCardinality: 56
+    ObjectSomeValuesFrom: 24597
     ObjectUnionOf: 113
-  'Info: Does the ontology fall under OWL 2 DL?': true
+  'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.62
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.348
+    _impact: 0.35
     _impact_external: 0.75
-    _reuse: 0.071
-    oboscore: 0.484
+    _reuse: 0.07
+    oboscore: 0.485
   'Info: How many externally documented uses?': 10
-  'Info: How many ontologies use it?': 62
+  'Info: How many ontologies use it?': 63
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 13622
-    BSPO: 613
+    BFO: 13671
+    BSPO: 612
     CHEBI: 60
     CL: 601
-    ENVO: 14
+    ENVO: 10
     FBbt: 2
-    GO: 658
-    IAO: 13906
+    GO: 650
+    IAO: 13942
     NBO: 23
-    NCBITaxon: 1510
+    NCBITaxon: 2203
     PATO: 178
     PR: 23
-    RO: 9139
-    UBERON: 83695
-    dc: 2
-    dc11: 308
-    foaf: 1887
-    obo: 8173
-    oboInOwl: 205795
-    owl: 2094
-    prefix_unknown: 4
-    rdf: 83
-    rdfs: 16538
-    xsd: 7662
+    RO: 10498
+    UBERON: 84629
+    dc11: 343
+    foaf: 1886
+    obo: 8200
+    oboInOwl: 210185
+    owl: 1823
+    rdf: 1119
+    rdfs: 16604
+    xsd: 6803
   'Info: Which ontologies use it?':
   - agro
   - aism
@@ -90,6 +89,7 @@ metrics:
   - envo
   - eupath
   - flopo
+  - fobi
   - foodon
   - fovt
   - gecko
@@ -149,7 +149,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 130 duplicate definitions. 2860 missing definitions. See ROBOT Report
+    comment: 130 duplicate definitions. 2868 missing definitions. See ROBOT Report
       for details.
     status: ERROR
   FP07 Relations:
@@ -170,14 +170,14 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 217 errors, 4136 warnings, 3676 info messages.
+    comment: 217 errors, 4099 warnings, 3008 info messages.
     file: robot_report
     results:
       ERROR: 217
-      INFO: 3676
-      WARN: 4136
+      INFO: 3008
+      WARN: 4099
     status: ERROR
-sha256_hash: ed6b4d6500e99cb52b337afb43451ea8337357c835f66050e94e1747e63055e5
+sha256_hash: bea6dcd7089e88b22f750852bcc0d35e82c472b8e8a8e7194a431c51866ce0fa
 summary:
   comment: 4 errors
   status: ERROR
@@ -185,4 +185,4 @@ summary:
     ERROR: 4
     INFO: 0
     WARN: 0
-version: http://purl.obolibrary.org/obo/uberon/releases/2021-07-27/uberon-base.owl
+version: http://purl.obolibrary.org/obo/uberon/releases/2021-11-12/uberon-base.owl
