@@ -2,41 +2,42 @@ base_generated: false
 base_prefixes:
 - BCO
 - BCOALT
+- BCO
 changed: false
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 456
+    AnnotationAssertion: 474
     ClassAssertion: 1
-    Declaration: 138
+    Declaration: 142
     EquivalentClasses: 9
     ObjectPropertyAssertion: 4
     ObjectPropertyDomain: 2
     ObjectPropertyRange: 2
     SubAnnotationPropertyOf: 1
-    SubClassOf: 80
+    SubClassOf: 82
     SubObjectPropertyOf: 5
     SubPropertyChainOf: 1
     TransitiveObjectProperty: 2
-  'Axioms: Number of axioms': 701
-  'Entities: % of entities reused': 74.83
-  'Entities: Number of annotation properties': 26
-  'Entities: Number of classes': 94
+  'Axioms: Number of axioms': 725
+  'Entities: % of entities reused': 75.64
+  'Entities: Number of annotation properties': 28
+  'Entities: Number of classes': 96
   'Entities: Number of data properties': 0
-  'Entities: Number of individuals': 6
+  'Entities: Number of individuals': 7
   'Entities: Number of object properties': 21
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 280
+    Class: 286
     ObjectIntersectionOf: 4
     ObjectSomeValuesFrom: 13
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.825
+    _dashboard: 0.827
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.006
     _impact_external: 0
-    _reuse: 0.748
-    oboscore: 0.415
+    _reuse: 0.756
+    oboscore: 0.416
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
@@ -45,16 +46,17 @@ metrics:
     BCO: 139
     BFO: 33
     CARO: 2
-    IAO: 268
+    IAO: 282
     OBI: 27
     PCO: 6
     RO: 5
-    dc11: 36
-    obo: 75
-    oboInOwl: 39
-    owl: 47
+    dc: 2
+    dc11: 37
+    obo: 78
+    oboInOwl: 41
+    owl: 50
     prefix_unknown: 33
-    rdfs: 125
+    rdfs: 127
   'Info: Which ontologies use it?':
   - bco
   - ppo
@@ -72,7 +74,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 33 missing definitions. See ROBOT Report for details.
+    comment: 27 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     comment: 4 non-RO properties used.
@@ -89,24 +91,23 @@ results:
     comment: 21 missing labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
-    comment: last version (2020-03-27) is over one year(s) old
-    status: INFO
+    status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 26 errors, 43 warnings, 7 info messages.
+    comment: 26 errors, 35 warnings, 7 info messages.
     file: robot_report
     results:
       ERROR: 26
       INFO: 7
-      WARN: 43
+      WARN: 35
     status: ERROR
-sha256_hash: aadbb8d14600c591ead3d0884b430ac83149c99fe84f48e5cba5c8078e5f5875
+sha256_hash: 527eeb35496cb9a713501764bc8011f9cf903fb88701a4d2b34dc65bf7065964
 summary:
   comment: 3 errors
   status: ERROR
   summary_count:
     ERROR: 3
-    INFO: 2
+    INFO: 1
     WARN: 1
-version: http://purl.obolibrary.org/obo/bco/releases/2020-03-27/bco-base.owl
+version: http://purl.obolibrary.org/obo/bco/releases/2021-11-14/bco-base.owl

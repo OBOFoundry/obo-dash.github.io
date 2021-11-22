@@ -1,26 +1,4 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	duplicate_definition	non-membrane-bounded organelle	IAO:0000115	Organized structure of distinctive morphology and function, not bounded by a lipid bilayer membrane. Includes ribosomes, the cytoskeleton and chromosomes.
-ERROR	duplicate_definition	ribosome	IAO:0000115	Organized structure of distinctive morphology and function, not bounded by a lipid bilayer membrane. Includes ribosomes, the cytoskeleton and chromosomes.
-ERROR	duplicate_definition	endoplasmic reticulum	IAO:0000115	Network of interconnected, flattened, and/or tubular membrane, known as cisternae. This membrane is contiguous with the outer nuclear membrane. The endoplasmic reticulum is involved in both protein and lipid synthesis.
-ERROR	duplicate_definition	rough endoplasmic reticulum	IAO:0000115	Network of interconnected, flattened, and/or tubular membrane, known as cisternae. This membrane is contiguous with the outer nuclear membrane. The endoplasmic reticulum is involved in both protein and lipid synthesis.
-ERROR	duplicate_definition	presynaptic vesicle	IAO:0000115	A secretory organelle, typically 50 nm in diameter, of presynaptic nerve terminals; accumulates in high concentrations of neurotransmitters and secretes these into the synaptic cleft by fusion with the 'active zone' of the presynaptic plasma membrane.
-ERROR	duplicate_definition	synaptic vesicle	IAO:0000115	A secretory organelle, typically 50 nm in diameter, of presynaptic nerve terminals; accumulates in high concentrations of neurotransmitters and secretes these into the synaptic cleft by fusion with the 'active zone' of the presynaptic plasma membrane.
-ERROR	duplicate_definition	wedge amputation	IAO:0000115	A piece of tissue removed from the lateral margin at any given point that extendes interiorly to more medial structures.
-ERROR	duplicate_definition	wedge fragment	IAO:0000115	A piece of tissue removed from the lateral margin at any given point that extendes interiorly to more medial structures.
-ERROR	duplicate_definition	autonomic neuron	IAO:0000115	A neruon whose cell body is within an autonomic ganglion.
-ERROR	duplicate_definition	enteric neuron	IAO:0000115	A neruon whose cell body is within an autonomic ganglion.
-ERROR	duplicate_definition	cell-cell junction	IAO:0000115	A cell junction that forms a connection between two or more cells in a multicellular organism; excludes direct cytoplasmic junctions such as ring canals.
-ERROR	duplicate_definition	intercellular junction	IAO:0000115	A cell junction that forms a connection between two or more cells in a multicellular organism; excludes direct cytoplasmic junctions such as ring canals.
-ERROR	duplicate_definition	incision	IAO:0000115	A breach of the epidermis made with a defined edge or point.
-ERROR	duplicate_definition	point incision	IAO:0000115	A breach of the epidermis made with a defined edge or point.
-ERROR	missing_label	foaf:depiction	rdfs:label	
-ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/plana/plana-base.owl	dc11:description	
-ERROR	duplicate_label	ventral region of plug fragment	rdfs:label	ventral region of plug fragment
-ERROR	duplicate_label	ventral region of plug fragment	rdfs:label	ventral region of plug fragment
-ERROR	duplicate_label	dorsal region of plug fragment	rdfs:label	dorsal region of plug fragment
-ERROR	duplicate_label	dorsal region of plug fragment	rdfs:label	dorsal region of plug fragment
-ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/plana/plana-base.owl	dc:license	
-ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/plana/plana-base.owl	dc11:title	
 WARN	duplicate_exact_synonym	photoreceptor neuron	has_exact_synonym	photosensitive cell
 WARN	duplicate_exact_synonym	eye cell	has_exact_synonym	photosensitive cell
 WARN	duplicate_exact_synonym	photoreceptor neuron	has_exact_synonym	photoreceptor cell
@@ -82,6 +60,8 @@ WARN	duplicate_label_synonym	dorsal region of plug fragment	has_exact_synonym	do
 WARN	duplicate_label_synonym	ventral region of plug fragment	has_exact_synonym	ventral region of plug fragment
 WARN	duplicate_label_synonym	anterior region of plug fragment	has_exact_synonym	anterior region of plug fragment
 WARN	duplicate_label_synonym	posterior region of plug fragment	has_exact_synonym	posterior region of plug fragment
+WARN	duplicate_label_synonym	dorsal region of wedge fragment	has_exact_synonym	dorsal region of wedge fragment
+WARN	duplicate_label_synonym	ventral region of wedge fragment	has_exact_synonym	ventral region of wedge fragment
 WARN	duplicate_label_synonym	anterior region of wedge fragment	has_exact_synonym	anterior region of wedge fragment
 WARN	duplicate_label_synonym	posterior region of wedge fragment	has_exact_synonym	posterior region of wedge fragment
 WARN	duplicate_label_synonym	pharynx circular muscle cell	has_exact_synonym	pharynx circular muscle cell
@@ -101,7 +81,6 @@ WARN	missing_definition	has_scope	IAO:0000115
 WARN	missing_definition	has_synonym_type	IAO:0000115	
 WARN	missing_definition	shorthand	IAO:0000115	
 WARN	missing_definition	treat-xrefs-as-genus-differentia	IAO:0000115	
-WARN	missing_definition	foaf:depiction	IAO:0000115	
 WARN	invalid_xref	optic chiasm	database_cross_reference	C90609
 WARN	invalid_xref	gastrodermal plexus	database_cross_reference	doi.org/10.1002/jmor.1051550208
 WARN	invalid_xref	neuropil	database_cross_reference	C12617
@@ -198,3 +177,24 @@ INFO	lowercase_definition	protonephridial lumen	IAO:0000115	lumen which is part 
 INFO	lowercase_definition	testis lumen	IAO:0000115	lumen which is part of the testis
 INFO	lowercase_definition	ovary lumen	IAO:0000115	lumen which is part of the ovary
 INFO	lowercase_definition	flame cell lumen	IAO:0000115	lumen which is part of the flame cell
+INFO	lowercase_definition	longitudinal fragment	IAO:0000115	a fragment derived from an amputation parallel to the midline.
+INFO	lowercase_definition	anterior photoreceptor neuron	IAO:0000115	photoreceptor neuron is contained in the anterior region of the eye
+INFO	lowercase_definition	posterior photoreceptor neuron	IAO:0000115	photoreceptor neuron is contained in the posterior region of the eye
+INFO	lowercase_definition	lateral muscle cell	IAO:0000115	muscle cell is contained in the lateral region
+INFO	lowercase_definition	anterior muscle cell	IAO:0000115	muscle cell is contained in the anterior region
+INFO	lowercase_definition	posterior muscle cell	IAO:0000115	muscle cell is contained in the posterior region
+INFO	lowercase_definition	head blastema	IAO:0000115	blastema which develops into head region
+INFO	lowercase_definition	tail blastema	IAO:0000115	blastema which develops into tail region
+INFO	lowercase_definition	regenerating head fragment	IAO:0000115	a head fragment that is regenerating
+INFO	lowercase_definition	regenerating trunk fragment	IAO:0000115	a trunk fragment that is regenerating
+INFO	lowercase_definition	regenerating tail fragment	IAO:0000115	a tail fragment that is regenerating
+INFO	lowercase_definition	regenerating prepharyngeal fragment	IAO:0000115	a prepharyngeal fragment that is regenerating
+INFO	lowercase_definition	regenerating postpharyngeal fragment	IAO:0000115	a postpharyngeal fragment that is regenerating
+INFO	lowercase_definition	regenerating anterior fragment	IAO:0000115	a anterior fragment that is regenerating
+INFO	lowercase_definition	regenerating posterior fragment	IAO:0000115	a posterior fragment that is regenerating
+INFO	lowercase_definition	regenerating lateral fragment	IAO:0000115	a lateral fragment that is regenerating
+INFO	lowercase_definition	regenerating longitudinal fragment	IAO:0000115	a longitudinal fragment that is regenerating
+INFO	lowercase_definition	regenerating plug fragment	IAO:0000115	a plug fragment that is regenerating
+INFO	lowercase_definition	regenerating wedge fragment	IAO:0000115	a wedge fragment that is regenerating
+INFO	lowercase_definition	testis somatic gonadal cell	IAO:0000115	dmd-1+ expressing somatic cells within the testis that promote male GSC maintenance. dmd-1+, ophis-1+ somatic gonadal cells ensheath germ cells via long cytoplasmic processes and promote differentiation.
+INFO	lowercase_definition	ovarian somatic gonadal cell	IAO:0000115	ophis+ somatic cells (gh4-, nanos-) in the ovary that may provide trophic support to female germline stem cells and differentiating oogonia.

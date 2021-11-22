@@ -2,55 +2,57 @@ base_generated: false
 base_prefixes:
 - PLANA
 - PLANAALT
+- PLANA
 changed: false
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 6379
-    Declaration: 770
+    AnnotationAssertion: 6397
+    Declaration: 777
     EquivalentClasses: 175
     SubAnnotationPropertyOf: 2
-    SubClassOf: 2611
-  'Axioms: Number of axioms': 9937
-  'Entities: % of entities reused': 17.4
-  'Entities: Number of annotation properties': 55
-  'Entities: Number of classes': 700
+    SubClassOf: 2580
+  'Axioms: Number of axioms': 9931
+  'Entities: % of entities reused': 17.5
+  'Entities: Number of annotation properties': 56
+  'Entities: Number of classes': 705
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
-  'Entities: Number of object properties': 18
+  'Entities: Number of object properties': 19
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 6464
+    Class: 6407
     ObjectIntersectionOf: 194
-    ObjectSomeValuesFrom: 2319
+    ObjectSomeValuesFrom: 2284
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.766
+    _dashboard: 0.967
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.006
-    _impact_external: 0
-    _reuse: 0.174
-    oboscore: 0.386
-  'Info: How many externally documented uses?': 0
+    _impact_external: 0.25
+    _reuse: 0.175
+    oboscore: 0.486
+  'Info: How many externally documented uses?': 1
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     BFO: 422
-    BSPO: 131
+    BSPO: 128
     BSPOALT: 5
     GO: 96
-    IAO: 651
+    IAO: 656
     PATO: 6
-    PLANA: 6206
-    RO: 1888
-    UBERON: 49
-    dc11: 4
-    foaf: 3
+    PLANA: 6150
+    RO: 1857
+    UBERON: 48
+    dc: 1
+    dc11: 5
+    foaf: 2
     obo: 234
-    oboInOwl: 5289
+    oboInOwl: 5301
     owl: 3
     prefix_unknown: 1
-    rdfs: 888
+    rdfs: 893
     skos: 1
   'Info: Which ontologies use it?':
   - plana
@@ -59,8 +61,7 @@ mirror_from: http://purl.obolibrary.org/obo/plana/plana-base.owl
 namespace: plana
 results:
   FP01 Open:
-    comment: Missing ontology license.
-    status: ERROR
+    status: PASS
   FP02 Common Format:
     status: PASS
   FP03 URIs:
@@ -70,39 +71,36 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 14 duplicate definitions. 17 missing definitions. See ROBOT Report for
-      details.
-    status: ERROR
+    comment: 16 missing definitions. See ROBOT Report for details.
+    status: WARN
   FP07 Relations:
     status: PASS
   FP08 Documented:
     status: PASS
   FP09 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
+    status: PASS
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 4 duplicate labels. 1 missing labels. See ROBOT Report for details.
-    status: ERROR
+    status: PASS
   FP16 Maintenance:
     status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 22 errors, 88 warnings, 291 info messages.
+    comment: 89 warnings, 291 info messages.
     file: robot_report
     results:
-      ERROR: 22
+      ERROR: 0
       INFO: 291
-      WARN: 88
-    status: ERROR
-sha256_hash: 965fff5cb249161a5c6fd6d4a35c2e83ddfc6821b5888edd5e5700e052e9e389
+      WARN: 89
+    status: WARN
+sha256_hash: f5d12be402008ae6493ff42b66d06d60ad1ea3415234e02b6b41898ea6357a65
 summary:
-  comment: 5 errors
-  status: ERROR
+  comment: 2 warnings
+  status: WARN
   summary_count:
-    ERROR: 5
+    ERROR: 0
     INFO: 0
-    WARN: 0
-version: http://purl.obolibrary.org/obo/plana/releases/2021-04-05/plana-base.owl
+    WARN: 2
+version: http://purl.obolibrary.org/obo/plana/releases/2021-10-21/plana-base.owl
