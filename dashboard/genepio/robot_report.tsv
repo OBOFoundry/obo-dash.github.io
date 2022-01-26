@@ -1,8 +1,10 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	duplicate_label	NIFSTD	rdfs:label	NIFSTD@en
+ERROR	duplicate_label	NIFSTD	rdfs:label	NIFSTD@en
 ERROR	duplicate_definition	test drug minimum concentration	IAO:0000115	This is the minimum concentration of a drug applied during an an assay.@en
 ERROR	duplicate_definition	test drug minimum concentration specification	IAO:0000115	This is the minimum concentration of a drug applied during an an assay.@en
-ERROR	duplicate_definition	tube containing media or preservative	IAO:0000600	<NOTE: there are different types of tubes with coloured caps indicating different preservatives etc.@en>
-ERROR	duplicate_definition	tube containing antimicrobial	IAO:0000600	<NOTE: there are different types of tubes with coloured caps indicating different preservatives etc.@en>
+ERROR	duplicate_definition	tube containing media or preservative	IAO:0000600	NOTE: there are different types of tubes with coloured caps indicating different preservatives etc.@en
+ERROR	duplicate_definition	tube containing antimicrobial	IAO:0000600	NOTE: there are different types of tubes with coloured caps indicating different preservatives etc.@en
 ERROR	duplicate_definition	specimen collection location - city or region	IAO:0000600	Note that this is expressed in a particular format in some standards.@en
 ERROR	duplicate_definition	specimen collection location - state/province/territory/region	IAO:0000600	Note that this is expressed in a particular format in some standards.@en
 ERROR	duplicate_definition	subject disease	IAO:0000115	Name of disease in a subject that is related to a given investigation, study and/or specimen.@en
@@ -42,6 +44,8 @@ ERROR	duplicate_definition	methadone use status	IAO:0000115	@en
 ERROR	duplicate_definition	substantial alcohol use/abuse status	IAO:0000115	@en
 ERROR	duplicate_definition	draft sequence repository data - submission to NCBI/DDBJ	IAO:0000115	@en
 ERROR	duplicate_definition	draft sequence repository data - submission to EBI	IAO:0000115	@en
+ERROR	deprecated_class_reference	obsolete: field specification	rdfs:subClassOf	OBI:0000658
+ERROR	deprecated_class_reference	blank node	owl:someValuesFrom	obsolete: earth surface
 ERROR	missing_label	GENEPIO:0000098	rdfs:label	
 ERROR	missing_label	GENEPIO:0000099	rdfs:label	
 ERROR	missing_label	GENEPIO:0000100	rdfs:label	
@@ -55,14 +59,14 @@ ERROR	missing_label	GENEPIO:0001370	rdfs:label
 ERROR	missing_label	GENEPIO:0001372	rdfs:label	
 ERROR	missing_label	GENEPIO:0001373	rdfs:label	
 ERROR	missing_label	GENEPIO:0001433	rdfs:label	
-ERROR	deprecated_class_reference	designated area on Earth	owl:someValuesFrom	<http://purl.obolibrary.org/obo/GENEPIO_0001338>
-ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/genepio.owl	dc11:description	
-ERROR	duplicate_label	NIFSTD	rdfs:label	NIFSTD@en
-ERROR	duplicate_label	NIFSTD	rdfs:label	NIFSTD@en
-ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/genepio.owl	dc11:title	
-ERROR	multiple_labels	isolate preparation service	rdfs:label	<http://purl.obolibrary.org/obo/IAO_0000428>
+ERROR	misused_replaced_by	pet treat	IAO:0100001	FOODON:00003357
+ERROR	misused_replaced_by	pet food (raw)	IAO:0100001	FOODON:00003356
+ERROR	misused_replaced_by	National Committee on Clinical Laboratory Standards (NCCLS)	IAO:0100001	ARO:3004366
+ERROR	multiple_labels	isolate preparation service	rdfs:label	IAO:0000428
 ERROR	multiple_labels	isolate preparation service	rdfs:label	isolate preparation service@en
-WARN	equivalent_pair	ARO:3004366	owl:equivalentClass	<http://purl.obolibrary.org/obo/GENEPIO_0002067>
+WARN	missing_obsolete_label	user interface help	rdfs:label	user interface help@en
+WARN	missing_obsolete_label	user interface hidden	rdfs:label	user interface hidden@en
+WARN	missing_obsolete_label	obsolete: German Institute for Standardization (DIN)	rdfs:label	Deutsches Institut für Normung@de
 WARN	missing_definition	metadata section	IAO:0000115	
 WARN	missing_definition	term as in existing standard	IAO:0000115	
 WARN	missing_definition	term source	IAO:0000115	
@@ -194,7 +198,3 @@ WARN	missing_definition	container identifier	IAO:0000115
 WARN	missing_definition	outbreak identifier	IAO:0000115	
 WARN	missing_definition	reference genome size	IAO:0000115	
 WARN	missing_definition	clinical or host-associated pathogen	IAO:0000115	
-WARN	missing_definition	agricultural project relevance	IAO:0000115	
-WARN	missing_definition	medical knowledge relevance	IAO:0000115	
-WARN	missing_definition	industrial processing relevance	IAO:0000115	
-WARN	missing_definition	evolution modelling relevance	IAO:0000115	

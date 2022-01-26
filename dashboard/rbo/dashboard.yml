@@ -3,62 +3,63 @@ base_prefixes:
 - RBO
 - RBOALT
 - RBO
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 658
+    AnnotationAssertion: 1018
     ClassAssertion: 25
     DataPropertyDomain: 1
     DataPropertyRange: 1
-    Declaration: 278
-    SubClassOf: 230
-  'Axioms: Number of axioms': 1193
-  'Entities: % of entities reused': 100.0
-  'Entities: Number of annotation properties': 21
-  'Entities: Number of classes': 228
+    Declaration: 394
+    SubClassOf: 347
+  'Axioms: Number of axioms': 1786
+  'Entities: % of entities reused': 16.71
+  'Entities: Number of annotation properties': 22
+  'Entities: Number of classes': 343
   'Entities: Number of data properties': 3
   'Entities: Number of individuals': 25
   'Entities: Number of object properties': 5
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 684
+    Class: 1033
     DataHasValue: 60
     ObjectAllValuesFrom: 1
     ObjectIntersectionOf: 30
     ObjectSomeValuesFrom: 2
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.831
+    _dashboard: 0.804
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.0
+    _impact: 0.005
     _impact_external: 0
-    _reuse: 1.0
-    oboscore: 0.415
+    _reuse: 0.167
+    oboscore: 0.405
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 0
+  'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     BFO: 13
     CHEBI: 10
     CHMO: 3
-    COB: 31
     DOID: 2
-    ENVO: 21
+    ENVO: 23
     GO: 6
-    IAO: 412
-    OBI: 19
-    PATO: 7
+    IAO: 372
+    OBI: 22
+    PATO: 9
+    RBO: 1042
     RO: 7
     UO: 8
     dc: 1
     dc11: 4
-    obo: 670
-    oboInOwl: 46
+    obo: 278
+    oboInOwl: 56
     owl: 3
-    rdfs: 219
+    rdfs: 333
     xsd: 31
   'Info: Which ontologies use it?':
+  - genepio
   - rbo
 mirror_from: http://purl.obolibrary.org/obo/rbo/rbo-base.owl
 namespace: rbo
@@ -74,7 +75,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 60 missing definitions. See ROBOT Report for details.
+    comment: 311 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     comment: 2 non-RO properties used.
@@ -95,14 +96,14 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 7 errors, 93 warnings, 8 info messages.
+    comment: 9 errors, 351 warnings, 0 info messages.
     file: robot_report
     results:
-      ERROR: 7
-      INFO: 8
-      WARN: 93
+      ERROR: 9
+      INFO: 0
+      WARN: 351
     status: ERROR
-sha256_hash: 2632ff1fdb4ce8085034339a961162629c78a08d4742e2b557598acf0a05231e
+sha256_hash: 1cb48dd3f16331a8752435cf2d39ff848271e55aafb975de7558a38d286ae36e
 summary:
   comment: 3 errors
   status: ERROR
@@ -110,4 +111,4 @@ summary:
     ERROR: 3
     INFO: 1
     WARN: 1
-version: http://purl.obolibrary.org/obo/rbo/releases/2021-08-30/rbo-base.owl
+version: http://purl.obolibrary.org/obo/rbo/releases/2022-01-14/rbo-base.owl

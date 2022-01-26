@@ -1,4 +1,5 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/omp.owl	dc:description	
 ERROR	duplicate_definition	altered fraction of non-constricted cells	IAO:0000115	population growth phenotype
 ERROR	duplicate_definition	altered cell division during cell population growth	IAO:0000115	population growth phenotype
 ERROR	duplicate_definition	altered cell circularity	IAO:0000115	Cell circularity is defined as (2*pi*cell area/(cell perimeter)^2).
@@ -7,6 +8,31 @@ ERROR	duplicate_definition	presence of acid-fast stain	IAO:0000115	An acid-fast 
 ERROR	duplicate_definition	absence of acid-fast stain	IAO:0000115	An acid-fast stain phenotype where a cell or cells that have been stained, typically with carbolfuchsin, are not easily decolorized by acid--alcohol.
 ERROR	duplicate_definition	decreased lethality in mice	IAO:0000115	A decreased lethality phenotype where the ability of an infectious microbe to cause death of its murine host is decreased relative to a designated control.
 ERROR	duplicate_definition	increased lethality in mice	IAO:0000115	A decreased lethality phenotype where the ability of an infectious microbe to cause death of its murine host is decreased relative to a designated control.
+ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/omp.owl	dc:license	
+ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/omp.owl	dc:title	
+ERROR	duplicate_label	presence of vegetative cell population growth	rdfs:label	presence of vegetative cell population growth
+ERROR	duplicate_label	presence of vegetative cell population growth	rdfs:label	presence of vegetative cell population growth
+ERROR	duplicate_label	plaque size phenotype	rdfs:label	plaque size phenotype
+ERROR	duplicate_label	plaque size phenotype	rdfs:label	plaque size phenotype
+ERROR	duplicate_label	plaque size phenotype	rdfs:label	plaque size phenotype
+ERROR	duplicate_label	plaque morphology phenotype	rdfs:label	plaque morphology phenotype
+ERROR	duplicate_label	plaque morphology phenotype	rdfs:label	plaque morphology phenotype
+ERROR	duplicate_label	plaque appearance phenotype	rdfs:label	plaque appearance phenotype
+ERROR	duplicate_label	plaque appearance phenotype	rdfs:label	plaque appearance phenotype
+ERROR	duplicate_label	nonviable vegetative cell population	rdfs:label	nonviable vegetative cell population
+ERROR	duplicate_label	nonviable vegetative cell population	rdfs:label	nonviable vegetative cell population
+ERROR	duplicate_label	nonviable cell population	rdfs:label	nonviable cell population
+ERROR	duplicate_label	nonviable cell population	rdfs:label	nonviable cell population
+ERROR	duplicate_label	increased cellular pigment accumulation	rdfs:label	increased cellular pigment accumulation
+ERROR	duplicate_label	increased cellular pigment accumulation	rdfs:label	increased cellular pigment accumulation
+ERROR	duplicate_label	cell wall morphology phenotype	rdfs:label	cell wall morphology phenotype
+ERROR	duplicate_label	cell wall morphology phenotype	rdfs:label	cell wall morphology phenotype
+ERROR	duplicate_label	altered plaque size phenotype	rdfs:label	altered plaque size phenotype
+ERROR	duplicate_label	altered plaque size phenotype	rdfs:label	altered plaque size phenotype
+ERROR	duplicate_label	altered plaque morphology phenotype	rdfs:label	altered plaque morphology phenotype
+ERROR	duplicate_label	altered plaque morphology phenotype	rdfs:label	altered plaque morphology phenotype
+ERROR	duplicate_label	altered actin cytoskeleton	rdfs:label	altered actin cytoskeleton
+ERROR	duplicate_label	altered actin cytoskeleton	rdfs:label	altered actin cytoskeleton
 ERROR	missing_label	obo:omp#Cross_product_review	rdfs:label	
 ERROR	missing_label	obo:omp#SOFA	rdfs:label	
 ERROR	missing_label	obo:omp#abnormal_slim	rdfs:label	
@@ -35,32 +61,14 @@ ERROR	missing_label	obo:omp#relational_slim	rdfs:label
 ERROR	missing_label	obo:omp#scalar_slim	rdfs:label	
 ERROR	missing_label	obo:omp#value_slim	rdfs:label	
 ERROR	missing_label	obo:omp#virus_checked	rdfs:label	
-ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/omp.owl	dc11:description	
-ERROR	duplicate_label	presence of vegetative cell population growth	rdfs:label	presence of vegetative cell population growth
-ERROR	duplicate_label	presence of vegetative cell population growth	rdfs:label	presence of vegetative cell population growth
-ERROR	duplicate_label	plaque size phenotype	rdfs:label	plaque size phenotype
-ERROR	duplicate_label	plaque size phenotype	rdfs:label	plaque size phenotype
-ERROR	duplicate_label	plaque size phenotype	rdfs:label	plaque size phenotype
-ERROR	duplicate_label	plaque morphology phenotype	rdfs:label	plaque morphology phenotype
-ERROR	duplicate_label	plaque morphology phenotype	rdfs:label	plaque morphology phenotype
-ERROR	duplicate_label	plaque appearance phenotype	rdfs:label	plaque appearance phenotype
-ERROR	duplicate_label	plaque appearance phenotype	rdfs:label	plaque appearance phenotype
-ERROR	duplicate_label	nonviable vegetative cell population	rdfs:label	nonviable vegetative cell population
-ERROR	duplicate_label	nonviable vegetative cell population	rdfs:label	nonviable vegetative cell population
-ERROR	duplicate_label	nonviable cell population	rdfs:label	nonviable cell population
-ERROR	duplicate_label	nonviable cell population	rdfs:label	nonviable cell population
-ERROR	duplicate_label	increased cellular pigment accumulation	rdfs:label	increased cellular pigment accumulation
-ERROR	duplicate_label	increased cellular pigment accumulation	rdfs:label	increased cellular pigment accumulation
-ERROR	duplicate_label	cell wall morphology phenotype	rdfs:label	cell wall morphology phenotype
-ERROR	duplicate_label	cell wall morphology phenotype	rdfs:label	cell wall morphology phenotype
-ERROR	duplicate_label	altered plaque size phenotype	rdfs:label	altered plaque size phenotype
-ERROR	duplicate_label	altered plaque size phenotype	rdfs:label	altered plaque size phenotype
-ERROR	duplicate_label	altered plaque morphology phenotype	rdfs:label	altered plaque morphology phenotype
-ERROR	duplicate_label	altered plaque morphology phenotype	rdfs:label	altered plaque morphology phenotype
-ERROR	duplicate_label	altered actin cytoskeleton	rdfs:label	altered actin cytoskeleton
-ERROR	duplicate_label	altered actin cytoskeleton	rdfs:label	altered actin cytoskeleton
-ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/omp.owl	dc:license	
-ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/omp.owl	dc11:title	
+WARN	duplicate_label_synonym	cell population phenotype	oboInOwl:hasExactSynonym	cell population phenotype
+WARN	duplicate_label_synonym	viable vegetative cell	oboInOwl:hasExactSynonym	viable vegetative cell
+WARN	duplicate_label_synonym	multiseptate vegetative cell	oboInOwl:hasExactSynonym	multiseptate vegetative cell
+WARN	duplicate_label_synonym	cellular process phenotype during vegetative growth	oboInOwl:hasExactSynonym	cellular process phenotype during vegetative growth
+WARN	duplicate_label_synonym	dispersed actin cortical patch localization	oboInOwl:hasExactSynonym	dispersed actin cortical patch localization
+WARN	duplicate_label_synonym	cellular pigment accumulation phenotype	oboInOwl:hasExactSynonym	cellular pigment accumulation phenotype
+WARN	duplicate_label_synonym	increased cellular pigment accumulation	oboInOwl:hasExactSynonym	increased cellular pigment accumulation
+WARN	duplicate_label_synonym	increased cellular pigment accumulation	oboInOwl:hasExactSynonym	increased cellular pigment accumulation
 WARN	annotation_whitespace	decreased resistance to dessication stress	oboInOwl:hasRelatedSynonym	increased dessication sensitivity 
 WARN	annotation_whitespace	decreased resistance to freeze/thawing stress	oboInOwl:hasRelatedSynonym	decreased freeze/thaw sensitivity. 
 WARN	annotation_whitespace	decreased resistance to x-ray radiation	oboInOwl:hasNarrowSynonym	increased x-ray sensitivity 
@@ -76,6 +84,61 @@ WARN	annotation_whitespace	inorganic nitrogen source utilization phenotype	oboIn
 WARN	annotation_whitespace	phototrophic phenotype	oboInOwl:hasRelatedSynonym	phototroph 
 WARN	annotation_whitespace	decreased resistance to a chemical	oboInOwl:hasExactSynonym	 increased sensitivity to a chemical
 WARN	annotation_whitespace	attached lifestyle phenotype	oboInOwl:hasExactSynonym	anchored lifestyle phenotype 
+WARN	missing_obsolete_label	plating morphology phenotype	rdfs:label	plating morphology phenotype
+WARN	missing_obsolete_label	MacConkey agar phenotype	rdfs:label	MacConkey agar phenotype
+WARN	missing_obsolete_label	red colony on MacConkey agar	rdfs:label	red colony on MacConkey agar
+WARN	missing_obsolete_label	protein activity phenotype	rdfs:label	protein activity phenotype
+WARN	missing_obsolete_label	genophore phenotype	rdfs:label	genophore phenotype
+WARN	missing_obsolete_label	galactose-1-phosphate uridyl transferase activity	rdfs:label	galactose-1-phosphate uridyl transferase activity
+WARN	missing_obsolete_label	increased substrate binding	rdfs:label	increased substrate binding
+WARN	missing_obsolete_label	resistant to ampicillin	rdfs:label	resistant to ampicillin
+WARN	missing_obsolete_label	resistant to penicillin	rdfs:label	resistant to penicillin
+WARN	missing_obsolete_label	decreased cytoskeleton phenotype	rdfs:label	decreased cytoskeleton phenotype
+WARN	missing_obsolete_label	abolished cytoskeleton morphology	rdfs:label	abolished cytoskeleton morphology
+WARN	missing_obsolete_label	increased cytoskeleton morphology	rdfs:label	increased cytoskeleton morphology
+WARN	missing_obsolete_label	abolished mutation frequency	rdfs:label	abolished mutation frequency
+WARN	missing_obsolete_label	utilization of organic nitrogen phenotype	rdfs:label	utilization of organic nitrogen phenotype
+WARN	missing_obsolete_label	utilization of inorganic phosphorus phenotype	rdfs:label	utilization of inorganic phosphorus phenotype
+WARN	missing_obsolete_label	utilization of organic phosphorus	rdfs:label	utilization of organic phosphorus
+WARN	missing_obsolete_label	antimicrobial peptide resistance phenotype	rdfs:label	antimicrobial peptide resistance phenotype
+WARN	missing_obsolete_label	quality (Interim)	rdfs:label	quality (Interim)
+WARN	missing_obsolete_label	abolished chemical sensitivity	rdfs:label	abolished chemical sensitivity
+WARN	missing_obsolete_label	cell wall morphology phenotype	rdfs:label	cell wall morphology phenotype
+WARN	missing_obsolete_label	urea derivative resistance phenotype	rdfs:label	urea derivative resistance phenotype
+WARN	missing_obsolete_label	resistant to a urea derivative	rdfs:label	resistant to a urea derivative
+WARN	missing_obsolete_label	not resistant to a urea derivative	rdfs:label	not resistant to a urea derivative
+WARN	missing_obsolete_label	altered resistance to a urea derivative	rdfs:label	altered resistance to a urea derivative
+WARN	missing_obsolete_label	increased resistance to a urea derivative	rdfs:label	increased resistance to a urea derivative
+WARN	missing_obsolete_label	decreased resistance to a urea derivative	rdfs:label	decreased resistance to a urea derivative
+WARN	missing_obsolete_label	abolished resistance to a urea derivative	rdfs:label	abolished resistance to a urea derivative
+WARN	missing_obsolete_label	altered biological process phenotype	rdfs:label	altered biological process phenotype
+WARN	missing_obsolete_label	altered population growth - duplicate term	rdfs:label	altered population growth - duplicate term
+WARN	missing_obsolete_label	polyether antimicrobial resistance phenotype	rdfs:label	polyether antimicrobial resistance phenotype
+WARN	missing_obsolete_label	bicyclomycin antimicrobial agent resistance phenotype	rdfs:label	bicyclomycin antimicrobial agent resistance phenotype
+WARN	missing_obsolete_label	presence of resistance to bicyclomycin	rdfs:label	presence of resistance to bicyclomycin
+WARN	missing_obsolete_label	absence of resistance to bicyclomycin	rdfs:label	absence of resistance to bicyclomycin
+WARN	missing_obsolete_label	altered resistance to bicyclomycin	rdfs:label	altered resistance to bicyclomycin
+WARN	missing_obsolete_label	decreased resistance to bicyclomycin	rdfs:label	decreased resistance to bicyclomycin
+WARN	missing_obsolete_label	abolished resistance to bicyclomycin	rdfs:label	abolished resistance to bicyclomycin
+WARN	missing_obsolete_label	increased resistance to bicyclomycin	rdfs:label	increased resistance to bicyclomycin
+WARN	missing_obsolete_label	A22 antimicrobial agent resistance phenotype	rdfs:label	A22 antimicrobial agent resistance phenotype
+WARN	missing_obsolete_label	presence of resistance to A22	rdfs:label	presence of resistance to A22
+WARN	missing_obsolete_label	absence of resistance to A22	rdfs:label	absence of resistance to A22
+WARN	missing_obsolete_label	increased resistance to A22	rdfs:label	increased resistance to A22
+WARN	missing_obsolete_label	decreased resistance to A22	rdfs:label	decreased resistance to A22
+WARN	missing_obsolete_label	abolished resistance to A22	rdfs:label	abolished resistance to A22
+WARN	missing_obsolete_label	altered resistance to A22	rdfs:label	altered resistance to A22
+WARN	missing_obsolete_label	presence of growth at alkaline pH	rdfs:label	presence of growth at alkaline pH
+WARN	missing_obsolete_label	absence of growth at alkaline pH	rdfs:label	absence of growth at alkaline pH
+WARN	missing_obsolete_label	plaque morphology phenotype	rdfs:label	plaque morphology phenotype
+WARN	missing_obsolete_label	plaque size phenotype	rdfs:label	plaque size phenotype
+WARN	missing_obsolete_label	altered plaque morphology phenotype	rdfs:label	altered plaque morphology phenotype
+WARN	missing_obsolete_label	altered plaque size phenotype	rdfs:label	altered plaque size phenotype
+WARN	missing_obsolete_label	plaque appearance phenotype	rdfs:label	plaque appearance phenotype
+WARN	missing_obsolete_label	plaque size phenotype	rdfs:label	plaque size phenotype
+WARN	missing_obsolete_label	bull's eye plaque appearance morphology	rdfs:label	bull's eye plaque appearance morphology
+WARN	missing_obsolete_label	decreased_relative_to	rdfs:label	decreased_relative_to
+WARN	missing_obsolete_label	increased_relative_to	rdfs:label	increased_relative_to
 WARN	missing_definition	decreased cell surface area-to-volume ratio	IAO:0000115	
 WARN	missing_definition	increased cell surface area-to-volume ratio	IAO:0000115	
 WARN	missing_definition	altered cell surface area-to-volume ratio variability	IAO:0000115	
@@ -135,66 +198,3 @@ WARN	missing_definition	cell perimeter length phenotype	IAO:0000115
 WARN	missing_definition	presence of cell volume variability	IAO:0000115	
 WARN	missing_definition	cell surface area phenotype	IAO:0000115	
 WARN	missing_definition	presence of cell surface area variability	IAO:0000115	
-WARN	missing_definition	cell volume phenotype	IAO:0000115	
-WARN	missing_definition	presence of cell perimeter length variability	IAO:0000115	
-WARN	missing_definition	cell surface area-to-volume ratio phenotype	IAO:0000115	
-WARN	missing_definition	presence of cell surface area-to-volume ratio variability	IAO:0000115	
-WARN	missing_definition	presence of cell circularity variability	IAO:0000115	
-WARN	missing_definition	presence of cell aspect ratio variability	IAO:0000115	
-WARN	missing_definition	presence of cell division ratio variability	IAO:0000115	
-WARN	missing_definition	presence of nucleoid area variability	IAO:0000115	
-WARN	missing_definition	nucleoid area phenotype	IAO:0000115	
-WARN	missing_definition	cell population growth yield phenotype	IAO:0000115	
-WARN	missing_definition	nucleoid constriction during cell division phenotype	IAO:0000115	
-WARN	missing_definition	altered nucleoid constriction during cell division	IAO:0000115	
-WARN	missing_definition	correlation between nucleoid and cell constriction phenotype	IAO:0000115	
-WARN	missing_definition	cell division during cell population growth phenotype	IAO:0000115	
-WARN	missing_definition	altered nucleoid number phenotype	IAO:0000115	
-WARN	missing_definition	timing of cell constriction phenotype	IAO:0000115	
-WARN	missing_definition	timing of nucleoid separation phenotype	IAO:0000115	
-WARN	missing_definition	altered timing of cell constriction	IAO:0000115	
-WARN	missing_definition	altered timing of nucleoid separation	IAO:0000115	
-WARN	missing_definition	decreased relative timing of cell constriction	IAO:0000115	
-WARN	missing_definition	increased relative timing of cell constriction	IAO:0000115	
-WARN	missing_definition	cell length variability phenotype	IAO:0000115	
-WARN	missing_definition	cell diameter variability phenotype	IAO:0000115	
-WARN	missing_definition	cell area variability phenotype	IAO:0000115	
-WARN	missing_definition	cell volume variability phenotype	IAO:0000115	
-WARN	missing_definition	cell surface area variability phenotype	IAO:0000115	
-WARN	missing_definition	cell perimeter length variability phenotype	IAO:0000115	
-WARN	missing_definition	cell surface area-to-volume ratio variability phenotype	IAO:0000115	
-WARN	missing_definition	cell circularity variability phenotype	IAO:0000115	
-WARN	missing_definition	cell aspect ratio variability phenotype	IAO:0000115	
-WARN	missing_definition	nucleoid area variability phenotype	IAO:0000115	
-WARN	missing_definition	cell division ratio variability phenotype	IAO:0000115	
-WARN	missing_definition	internalization by macrophage phenotype	IAO:0000115	
-WARN	missing_definition	presence of internalization by macrophage	IAO:0000115	
-WARN	missing_definition	absence of internalization by macrophage	IAO:0000115	
-WARN	missing_definition	altered internalization by macrophage	IAO:0000115	
-WARN	missing_definition	increased internalization by macrophage	IAO:0000115	
-WARN	missing_definition	decreased internalization by macrophage	IAO:0000115	
-WARN	missing_definition	abolished internalization by macrophage	IAO:0000115	
-WARN	missing_definition	absence of acid tolerance response	IAO:0000115	
-WARN	missing_definition	altered acid tolerance response	IAO:0000115	
-WARN	missing_definition	presence of acid tolerance response	IAO:0000115	
-WARN	missing_definition	decreased acid tolerance response	IAO:0000115	
-WARN	missing_definition	increased acid tolerance response	IAO:0000115	
-WARN	missing_definition	abolished acid tolerance response	IAO:0000115	
-WARN	missing_definition	absence of cell-cell self recognition	IAO:0000115	
-WARN	missing_definition	altered cell-cell self recognition	IAO:0000115	
-WARN	missing_definition	increased cell-cell self recognition	IAO:0000115	
-WARN	missing_definition	decreased cell-cell self recognition	IAO:0000115	
-WARN	missing_definition	abolished cell-cell self recognition	IAO:0000115	
-WARN	missing_definition	presence of transcription of gene or operon	IAO:0000115	
-WARN	missing_definition	absence of transcription of gene or operon	IAO:0000115	
-WARN	missing_definition	response to oxidative stress phenotype	IAO:0000115	
-WARN	missing_definition	viable but nonculturable cell	IAO:0000115	
-WARN	missing_definition	increased mucoidy	IAO:0000115	
-WARN	missing_definition	absence of survival in macrophage	IAO:0000115	
-WARN	missing_definition	altered survival in macrophage	IAO:0000115	
-WARN	missing_definition	survival in macrophage phenotype	IAO:0000115	
-WARN	missing_definition	clamp connection morphology phenotype	IAO:0000115	
-WARN	missing_definition	resistant to mitomycin	IAO:0000115	
-WARN	missing_definition	not resistant to mitomycin	IAO:0000115	
-WARN	missing_definition	level of substance in cell phenotype	IAO:0000115	
-WARN	missing_definition	presence of cellular reactive oxygen species	IAO:0000115	

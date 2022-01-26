@@ -3,7 +3,7 @@ base_prefixes:
 - OAE
 - OAEALT
 - OAE
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 51806
@@ -39,14 +39,14 @@ metrics:
     ObjectUnionOf: 767
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.647
+    _dashboard: 0.642
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.083
+    _impact: 0.088
     _impact_external: 0
     _reuse: 0.238
     oboscore: 0.365
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 15
+  'Info: How many ontologies use it?': 16
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -79,6 +79,7 @@ metrics:
   - cido
   - cto
   - dideo
+  - epio
   - eupath
   - genepio
   - gsso
@@ -130,12 +131,12 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 67 errors, 336 warnings, 3607 info messages.
+    comment: 68 errors, 383 warnings, 3607 info messages.
     file: robot_report
     results:
-      ERROR: 67
+      ERROR: 68
       INFO: 3607
-      WARN: 336
+      WARN: 383
     status: ERROR
 sha256_hash: b8d88f31628a4326f48349aa32bcd613bb4b8a7abeebc6215bac345f6102a3a9
 summary:

@@ -1,17 +1,17 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/geo.owl	dc11:description	
-ERROR	multiple_labels	aggregate of major administrative subdivisions	rdfs:label	aggregate of major administrative subdivisions@en
-ERROR	multiple_labels	aggregate of major administrative subdivisions	rdfs:label	group of major administrative subdivisions@en
-ERROR	multiple_labels	aggregate of dependencies	rdfs:label	aggregate of dependencies@en
-ERROR	multiple_labels	aggregate of dependencies	rdfs:label	group of dependencies@en
+ERROR	multiple_labels	group of major administrative subdivisions	rdfs:label	aggregate of major administrative subdivisions@en
+ERROR	multiple_labels	group of major administrative subdivisions	rdfs:label	group of major administrative subdivisions@en
+ERROR	multiple_labels	group of dependencies	rdfs:label	aggregate of dependencies@en
+ERROR	multiple_labels	group of dependencies	rdfs:label	group of dependencies@en
 ERROR	multiple_labels	angular degree	rdfs:label	angular degree@en
 ERROR	multiple_labels	angular degree	rdfs:label	°@en
 ERROR	multiple_labels	rad	rdfs:label	rad@en
 ERROR	multiple_labels	rad	rdfs:label	radian@en
-WARN	annotation_whitespace	aggregate of governmental organizations	IAO:0000115	"An aggregate of organizations that is not itself a governmental organization, has only governmental organizations as members, and has at least two governmental organizations as members.
-@en"
-WARN	annotation_whitespace	aggregate of geopolitical organizations	IAO:0000117	"William R. Hogan
-@en"
+ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/geo.owl	dc:description	
+ERROR	deprecated_class_reference	obsolete group of governmental organizations	rdfs:subClassOf	BFO:0000004
+ERROR	deprecated_class_reference	obsolete group of governmental organizations	owl:equivalentClass	714b2d09-74b9-463c-b57a-4f240f3e1d5cgenid1
+ERROR	deprecated_class_reference	obsolete aggregate of dependencies	rdfs:subClassOf	aggregate of governmental organizations
+ERROR	deprecated_class_reference	obsolete aggregate of major administrative subdivisions	rdfs:subClassOf	aggregate of governmental organizations
 WARN	missing_definition	US State Two Digit Identifier	IAO:0000115	
 WARN	missing_definition	US State Two Letter Abbreviation	IAO:0000115	
 WARN	missing_definition	US State Ens Identifier	IAO:0000115	
@@ -39,6 +39,14 @@ WARN	missing_definition	admin1 code	IAO:0000115
 WARN	missing_definition	admin2 code	IAO:0000115	
 WARN	missing_definition	admin3 code	IAO:0000115	
 WARN	missing_definition	admin4 code	IAO:0000115	
+WARN	annotation_whitespace	aggregate of governmental organizations	IAO:0000115	"An aggregate of organizations that is not itself a governmental organization, has only governmental organizations as members, and has at least two governmental organizations as members.
+@en"
+WARN	annotation_whitespace	aggregate of geopolitical organizations	IAO:0000117	"William R. Hogan
+@en"
+WARN	equivalent_class_axiom_no_genus	aggregate of contiguous land masses	BFO:0000075	land mass
+WARN	equivalent_class_axiom_no_genus	aggregate of geographical entities	BFO:0000075	geographical entity
+WARN	equivalent_class_axiom_no_genus	aggregate of geographical features	BFO:0000075	geographical feature
+WARN	equivalent_class_axiom_no_genus	aggregate of islands	BFO:0000075	island
 WARN	missing_obsolete_label	geopolitical entity	rdfs:label	geopolitical entity@en
 WARN	missing_obsolete_label	nation	rdfs:label	nation@en
 INFO	lowercase_definition	subnational entity	IAO:0000115	a governmental organization that has a local, regional, or territorial government that recognizes a sovereign state as its higher political authority@en

@@ -1,5 +1,4 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	duplicate_definition	diethyl sulfate	definition	No description.
 ERROR	duplicate_definition	2-chloroethyl methanesulfonate	definition	No description.
 ERROR	duplicate_definition	2-fluoroethyl methanesulfonate	definition	No description.
 ERROR	duplicate_definition	carbamate	definition	No description.
@@ -109,92 +108,93 @@ ERROR	missing_label	dc11:source	label
 ERROR	missing_label	oboInOwl:created_by	label	
 ERROR	missing_label	oboInOwl:creation_date	label	
 ERROR	missing_label	oboInOwl:id	label	
-ERROR	duplicate_label	has role	label	has role
-ERROR	duplicate_label	has role	label	has role
-WARN	annotation_whitespace	definition	IAO:0000116	<2012-04-05: Barry SmithThe official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions' is terrible.Can you fix to something like:A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.Alan RuttenbergYour proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. On the specifics of the proposed definition:We don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with. @en>
-WARN	equivalent_pair	CHEBI:13941	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000538>
-WARN	equivalent_pair	CHEBI:16842	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000584>
-WARN	equivalent_pair	CHEBI:16991	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000579>
-WARN	equivalent_pair	CHEBI:17967	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000539>
-WARN	equivalent_pair	CHEBI:19024	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000568>
-WARN	equivalent_pair	CHEBI:19032	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000547>
-WARN	equivalent_pair	CHEBI:19363	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000571>
-WARN	equivalent_pair	CHEBI:19508	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000528>
-WARN	equivalent_pair	CHEBI:19579	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000529>
-WARN	equivalent_pair	CHEBI:20552	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000549>
-WARN	equivalent_pair	CHEBI:20553	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000550>
-WARN	equivalent_pair	CHEBI:20787	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000572>
-WARN	equivalent_pair	CHEBI:21183	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000544>
-WARN	equivalent_pair	CHEBI:21184	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000589>
-WARN	equivalent_pair	CHEBI:21759	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000535>
-WARN	equivalent_pair	CHEBI:22025	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000602>
-WARN	equivalent_pair	CHEBI:22526	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000552>
-WARN	equivalent_pair	CHEBI:23359	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000577>
-WARN	equivalent_pair	CHEBI:23414	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000554>
-WARN	equivalent_pair	CHEBI:23704	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000559>
-WARN	equivalent_pair	CHEBI:23705	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000560>
-WARN	equivalent_pair	CHEBI:23994	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000530>
-WARN	equivalent_pair	CHEBI:23995	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000531>
-WARN	equivalent_pair	CHEBI:24431	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000525>
-WARN	equivalent_pair	CHEBI:24564	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000586>
-WARN	equivalent_pair	CHEBI:24565	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000587>
-WARN	equivalent_pair	CHEBI:24624	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000532>
-WARN	equivalent_pair	CHEBI:24835	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000553>
-WARN	equivalent_pair	CHEBI:24859	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000588>
-WARN	equivalent_pair	CHEBI:25234	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000590>
-WARN	equivalent_pair	CHEBI:25255	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000533>
-WARN	equivalent_pair	CHEBI:25434	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000534>
-WARN	equivalent_pair	CHEBI:25813	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000594>
-WARN	equivalent_pair	CHEBI:25814	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000595>
-WARN	equivalent_pair	CHEBI:25816	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000597>
-WARN	equivalent_pair	CHEBI:25818	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000599>
-WARN	equivalent_pair	CHEBI:25829	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000600>
-WARN	equivalent_pair	CHEBI:26491	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000601>
-WARN	equivalent_pair	CHEBI:26709	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000556>
-WARN	equivalent_pair	CHEBI:26800	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000603>
-WARN	equivalent_pair	CHEBI:27090	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000604>
-WARN	equivalent_pair	CHEBI:27292	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000540>
-WARN	equivalent_pair	CHEBI:27504	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000542>
-WARN	equivalent_pair	CHEBI:27561	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000582>
-WARN	equivalent_pair	CHEBI:27666	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000573>
-WARN	equivalent_pair	CHEBI:27732	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000575>
-WARN	equivalent_pair	CHEBI:27789	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000546>
-WARN	equivalent_pair	CHEBI:27899	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000576>
-WARN	equivalent_pair	CHEBI:27919	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000605>
-WARN	equivalent_pair	CHEBI:28262	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000578>
-WARN	equivalent_pair	CHEBI:28534	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000545>
-WARN	equivalent_pair	CHEBI:28741	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000557>
-WARN	equivalent_pair	CHEBI:28775	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000585>
-WARN	equivalent_pair	CHEBI:28830	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000815>
-WARN	equivalent_pair	CHEBI:28876	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000596>
-WARN	equivalent_pair	CHEBI:28901	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000814>
-WARN	equivalent_pair	CHEBI:28954	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000583>
-WARN	equivalent_pair	CHEBI:29238	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000511>
-WARN	equivalent_pair	CHEBI:29865	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000574>
-WARN	equivalent_pair	CHEBI:30969	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000581>
-WARN	equivalent_pair	CHEBI:33118	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000555>
-WARN	equivalent_pair	CHEBI:34699	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000527>
-WARN	equivalent_pair	CHEBI:34873	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000735>
-WARN	equivalent_pair	CHEBI:35299	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000562>
-WARN	equivalent_pair	CHEBI:35702	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000580>
-WARN	equivalent_pair	CHEBI:35807	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000593>
-WARN	equivalent_pair	CHEBI:37595	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000543>
-WARN	equivalent_pair	CHEBI:37598	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000813>
-WARN	equivalent_pair	CHEBI:37972	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000510>
-WARN	equivalent_pair	CHEBI:46790	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000570>
-WARN	equivalent_pair	CHEBI:50102	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000592>
-WARN	equivalent_pair	CHEBI:51052	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000569>
-WARN	equivalent_pair	CHEBI:53526	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000513>
-WARN	equivalent_pair	CHEBI:67107	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000563>
-WARN	equivalent_pair	CHEBI:67142	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000548>
-WARN	missing_definition	CHEBI:13941	definition	
-WARN	missing_definition	CHEBI:16842	definition	
-WARN	missing_definition	CHEBI:16991	definition	
-WARN	missing_definition	CHEBI:17967	definition	
-WARN	missing_definition	CHEBI:19024	definition	
-WARN	missing_definition	CHEBI:19032	definition	
-WARN	missing_definition	CHEBI:19363	definition	
-WARN	missing_definition	CHEBI:19508	definition	
-WARN	missing_definition	CHEBI:19579	definition	
-WARN	missing_definition	CHEBI:20552	definition	
-WARN	missing_definition	CHEBI:20553	definition	
+WARN	annotation_whitespace	definition	IAO:0000116	"2012-04-05: 
+Barry Smith
+
+The official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.
+
+Can you fix to something like:
+
+A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.
+
+Alan Ruttenberg
+
+Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. 
+
+On the specifics of the proposed definition:
+
+We don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. 
+
+Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
+
+We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  @en"
+WARN	equivalent_pair	CHEBI:13941	owl:equivalentClass	carbamate
+WARN	equivalent_pair	CHEBI:16842	owl:equivalentClass	formaldehyde
+WARN	equivalent_pair	CHEBI:16991	owl:equivalentClass	DNA
+WARN	equivalent_pair	CHEBI:17967	owl:equivalentClass	urethane
+WARN	equivalent_pair	CHEBI:19024	owl:equivalentClass	1-amino-2-naphthol-4-sulfonic acid
+WARN	equivalent_pair	CHEBI:19032	owl:equivalentClass	1-bromo-2-chloroethane
+WARN	equivalent_pair	CHEBI:19363	owl:equivalentClass	2,5-bis(ethyleneimino)-1,4-benzoquinone
+WARN	equivalent_pair	CHEBI:19508	owl:equivalentClass	2-chloroethyl methanesulfonate
+WARN	equivalent_pair	CHEBI:19579	owl:equivalentClass	2-fluoroethyl methanesulfonate
+WARN	equivalent_pair	CHEBI:20552	owl:equivalentClass	5-bromouracil
+WARN	equivalent_pair	CHEBI:20553	owl:equivalentClass	5-bromouridine
+WARN	equivalent_pair	CHEBI:20787	owl:equivalentClass	7-bromomethyl-12-methylbenz[a]anthracene
+WARN	equivalent_pair	CHEBI:21183	owl:equivalentClass	ICR 170
+WARN	equivalent_pair	CHEBI:21184	owl:equivalentClass	Janus green B
+WARN	equivalent_pair	CHEBI:21759	owl:equivalentClass	N-methyl-N'-nitro-N-nitrosoguanidine
+WARN	equivalent_pair	CHEBI:22025	owl:equivalentClass	S-2-chloroethylcysteine
+WARN	equivalent_pair	CHEBI:22526	owl:equivalentClass	aminopterin
+WARN	equivalent_pair	CHEBI:23359	owl:equivalentClass	colchicine
+WARN	equivalent_pair	CHEBI:23414	owl:equivalentClass	cupric sulfate
+WARN	equivalent_pair	CHEBI:23704	owl:equivalentClass	diepoxybutane
+WARN	equivalent_pair	CHEBI:23705	owl:equivalentClass	diepoxyoctane
+WARN	equivalent_pair	CHEBI:23994	owl:equivalentClass	ethyl methanesulfonate
+WARN	equivalent_pair	CHEBI:23995	owl:equivalentClass	ethyl nitrosourea
+WARN	equivalent_pair	CHEBI:24431	owl:equivalentClass	chemical
+WARN	equivalent_pair	CHEBI:24564	owl:equivalentClass	hexamethylmelamine
+WARN	equivalent_pair	CHEBI:24565	owl:equivalentClass	hexamethylphosphoramide
+WARN	equivalent_pair	CHEBI:24624	owl:equivalentClass	hycanthon methanesulfonate
+WARN	equivalent_pair	CHEBI:24835	owl:equivalentClass	inorganic compound
+WARN	equivalent_pair	CHEBI:24859	owl:equivalentClass	iodine
+WARN	equivalent_pair	CHEBI:25234	owl:equivalentClass	methoxy diethylnitrosamine
+WARN	equivalent_pair	CHEBI:25255	owl:equivalentClass	methyl methanesulfonate
+WARN	equivalent_pair	CHEBI:25434	owl:equivalentClass	bis(2-chloroethyl) sulfide
+WARN	equivalent_pair	CHEBI:25813	owl:equivalentClass	p-N,N-di(2-chloroethyl)aminophenylvaleric acid
+WARN	equivalent_pair	CHEBI:25814	owl:equivalentClass	p-N,N-di-(2-chloroethyl)amino-D-phenylalanine
+WARN	equivalent_pair	CHEBI:25816	owl:equivalentClass	p-N,N-di-(2-chloroethyl)amino-L-phenylalanine
+WARN	equivalent_pair	CHEBI:25818	owl:equivalentClass	p-N,N-di-(2-chloroethyl)aminophenylethylamine
+WARN	equivalent_pair	CHEBI:25829	owl:equivalentClass	p-p'-N,N-di(2-chloroethyl)aminophenoxyphenylalanine
+WARN	equivalent_pair	CHEBI:26491	owl:equivalentClass	quinhydrone
+WARN	equivalent_pair	CHEBI:26709	owl:equivalentClass	sodium bisulphite
+WARN	equivalent_pair	CHEBI:26800	owl:equivalentClass	styryl quinoline
+WARN	equivalent_pair	CHEBI:27090	owl:equivalentClass	triaziquone
+WARN	equivalent_pair	CHEBI:27292	owl:equivalentClass	vinyl carbamate
+WARN	equivalent_pair	CHEBI:27504	owl:equivalentClass	mitomycin C
+WARN	equivalent_pair	CHEBI:27561	owl:equivalentClass	ethylene oxide
+WARN	equivalent_pair	CHEBI:27666	owl:equivalentClass	actinomycin D
+WARN	equivalent_pair	CHEBI:27732	owl:equivalentClass	caffeine
+WARN	equivalent_pair	CHEBI:27789	owl:equivalentClass	1,2-dichloroethane
+WARN	equivalent_pair	CHEBI:27899	owl:equivalentClass	cisplatin
+WARN	equivalent_pair	CHEBI:27919	owl:equivalentClass	triethylenemelamine
+WARN	equivalent_pair	CHEBI:28262	owl:equivalentClass	dimethyl sulfoxide
+WARN	equivalent_pair	CHEBI:28534	owl:equivalentClass	1,2-dibromoethane
+WARN	equivalent_pair	CHEBI:28741	owl:equivalentClass	sodium fluoride
+WARN	equivalent_pair	CHEBI:28775	owl:equivalentClass	hesperidine
+WARN	equivalent_pair	CHEBI:28830	owl:equivalentClass	p-N,N-di-(2-chloroethyl)aminophenylbutyric acid
+WARN	equivalent_pair	CHEBI:28876	owl:equivalentClass	p-N,N-di-(2-chloroethyl)amino-DL-phenylalanine
+WARN	equivalent_pair	CHEBI:28901	owl:equivalentClass	1,4-dimethanesulfonoxybutane
+WARN	equivalent_pair	CHEBI:28954	owl:equivalentClass	fagaronine
+WARN	equivalent_pair	CHEBI:29238	owl:equivalentClass	3H
+WARN	equivalent_pair	CHEBI:29865	owl:equivalentClass	benzo(alpha)pyrene
+WARN	equivalent_pair	CHEBI:30969	owl:equivalentClass	ethylenimine
+WARN	equivalent_pair	CHEBI:33118	owl:equivalentClass	H3BO3
+WARN	equivalent_pair	CHEBI:34699	owl:equivalentClass	diethyl sulfate
+WARN	equivalent_pair	CHEBI:34873	owl:equivalentClass	N-nitrosodiethylamine
+WARN	equivalent_pair	CHEBI:35299	owl:equivalentClass	1,2:5,6-dibenzanthracene
+WARN	equivalent_pair	CHEBI:35702	owl:equivalentClass	ethyl ether
+WARN	equivalent_pair	CHEBI:35807	owl:equivalentClass	N-nitrosodimethylamine
+WARN	equivalent_pair	CHEBI:37595	owl:equivalentClass	quinacrine mustard
+WARN	equivalent_pair	CHEBI:37598	owl:equivalentClass	nitrogen mustard
+WARN	equivalent_pair	CHEBI:37972	owl:equivalentClass	32P
+WARN	equivalent_pair	CHEBI:46790	owl:equivalentClass	2-methoxyethanol

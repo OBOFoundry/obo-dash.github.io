@@ -1,8 +1,7 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/MFOEM.owl	dc11:description	
+ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/MFOEM.owl	dc:description	
 ERROR	duplicate_label	fury	rdfs:label	Wut@de
 ERROR	duplicate_label	rage	rdfs:label	Wut@de
-ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/MFOEM.owl	dc:license	
 ERROR	multiple_labels	Verärgerung	rdfs:label	Verärgerung@de
 ERROR	multiple_labels	Verärgerung	rdfs:label	annoyance
 ERROR	multiple_labels	Verärgerung	rdfs:label	la gêne@fr
@@ -68,8 +67,12 @@ ERROR	multiple_labels	enthousiasme	rdfs:label	enthusiasm@en
 ERROR	multiple_labels	jouissance	rdfs:label	Genuss@de
 ERROR	multiple_labels	jouissance	rdfs:label	enjoyment
 ERROR	multiple_labels	jouissance	rdfs:label	jouissance@fr
+ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/MFOEM.owl	dc:license	
+WARN	duplicate_label_synonym	jouissance	IAO:0000118	enjoyment
+WARN	equivalent_pair	GO:0060273	owl:equivalentClass	crying
 WARN	annotation_whitespace	appraisal	IAO:0000115	An appraisal is a cognitive representation which represents an evaluation of the relevance of some triggering object or event to the organism. 
-WARN	annotation_whitespace	anger	IAO:0000115	<Anger is a negative emotion, characterised by feelings of unpleasantness and high arousal, in the form of antagonistic feelings and action tendencies. [Source: OCEAS]>
+WARN	annotation_whitespace	anger	IAO:0000115	"Anger is a negative emotion, characterised by feelings of unpleasantness and high arousal, in the form of antagonistic feelings and action tendencies. [Source: OCEAS]
+"
 WARN	annotation_whitespace	appraisal of suddenness	IAO:0000115	An appraisal which represents an evaluation of how suddenly an event occurred. 
 WARN	annotation_whitespace	appraisal of familiarity	IAO:0000115	An appraisal that represents an evaluation of how familiar an object or event is. 
 WARN	annotation_whitespace	appraisal of predictability	IAO:0000115	An appraisal that represents an evaluation of how predictable an event was. 
@@ -145,7 +148,6 @@ WARN	annotation_whitespace	canonical disgusted voice utterance	IAO:0000115	Voice
 WARN	annotation_whitespace	canonical surprised facial expression	IAO:0000115	Characteristic facial expression made when a person is undergoing an experience of surprise. 
 WARN	annotation_whitespace	irritable mood	IAO:0000115	An irritable mood is a general feeling of mild annoyance, a heightened disposition to anger and other negatively valenced emotions. 
 WARN	annotation_whitespace	emotional personality trait	IAO:0000115	An emotional personality trait is a personality trait, a part of an overall personality, which predisposes the individual to repeated occurrences of a characteristic emotional process. 
-WARN	equivalent_pair	GO:0060273	owl:equivalentClass	<http://purl.obolibrary.org/obo/MFOEM_000031>
 WARN	missing_definition	isOutputOf	IAO:0000115	
 WARN	missing_definition	synonym	IAO:0000115	
 WARN	missing_definition	aesthetic pleasure	IAO:0000115	

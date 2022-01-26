@@ -8,7 +8,7 @@
             <div class="col-md-2"></div>
             <div class="col-md-8">
                 <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/fypo.html">fypo</a></h1>
-                <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/fypo/releases/2021-11-18/fypo-base.owl</p>
+                <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/fypo/releases/2022-01-18/fypo-base.owl</p>
                 <p class="lead" style="margin-top:-15px;"><b>Date run</b>: </p>
                 <p class="lead" style="margin-top:-15px;"><a href="dashboard.yml">View dashboard results as YAML</a></p>
                 <h3>Error Breakdown</h3>
@@ -18,7 +18,7 @@
                         
                     
                     <div class="alert alert-danger">
-                        <center><h3>ERROR - 1 errors</h3></center>
+                        <center><h3>ERROR - 3 errors</h3></center>
                     </div>
                 
                 <table class="table">
@@ -139,11 +139,11 @@
                                 
                                 
                             
-                            <td class="table-warning" style="text-align:center;">
-                                <img src="../assets/warning.svg" height="15px">
+                            <td class="table-danger" style="text-align:center;">
+                                <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>29 missing definitions. See ROBOT Report for details.</td>
+                                <td>2 duplicate definitions. 30 missing definitions. See ROBOT Report for details.</td>
                             
                             
                                 <td></td>
@@ -299,11 +299,11 @@
                                 
                                 
                             
-                            <td class="table-warning" style="text-align:center;">
-                                <img src="../assets/warning.svg" height="15px">
+                            <td class="table-danger" style="text-align:center;">
+                                <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>29 warnings, 2 info messages.</td>
+                                <td>2 errors, 40 warnings, 2 info messages.</td>
                             
                             
                                 <td><a href="robot_report.html">View Report</a></td>
@@ -328,17 +328,17 @@
                                 
                                     <td><ul>
                                         
-                                        <li>AnnotationAssertion: 79423</li>
+                                        <li>AnnotationAssertion: 79578</li>
                                         
-                                        <li>Declaration: 9802</li>
+                                        <li>Declaration: 9828</li>
                                         
                                         <li>DisjointClasses: 1</li>
                                         
-                                        <li>EquivalentClasses: 5942</li>
+                                        <li>EquivalentClasses: 5958</li>
                                         
                                         <li>SubAnnotationPropertyOf: 2</li>
                                         
-                                        <li>SubClassOf: 9441</li>
+                                        <li>SubClassOf: 9468</li>
                                         
                                         <li>TransitiveObjectProperty: 1</li>
                                         
@@ -350,7 +350,7 @@
                                 <td>Axioms: Number of axioms</td>
                                 
                                 
-                                    <td>104612</td>
+                                    <td>104836</td>
                                 
                             </tr>
                         
@@ -358,7 +358,7 @@
                                 <td>Entities: % of entities reused</td>
                                 
                                 
-                                    <td>19.55</td>
+                                    <td>19.52</td>
                                 
                             </tr>
                         
@@ -374,7 +374,7 @@
                                 <td>Entities: Number of classes</td>
                                 
                                 
-                                    <td>9753</td>
+                                    <td>9778</td>
                                 
                             </tr>
                         
@@ -398,7 +398,7 @@
                                 <td>Entities: Number of object properties</td>
                                 
                                 
-                                    <td>19</td>
+                                    <td>20</td>
                                 
                             </tr>
                         
@@ -416,11 +416,11 @@
                                 
                                     <td><ul>
                                         
-                                        <li>Class: 55984</li>
+                                        <li>Class: 56135</li>
                                         
-                                        <li>ObjectIntersectionOf: 6617</li>
+                                        <li>ObjectIntersectionOf: 6639</li>
                                         
-                                        <li>ObjectSomeValuesFrom: 21730</li>
+                                        <li>ObjectSomeValuesFrom: 21786</li>
                                         
                                     </ul></td>
                                 
@@ -440,7 +440,7 @@
                                 
                                     <td><ul>
                                         
-                                        <li>_dashboard: 0.937</li>
+                                        <li>_dashboard: 0.845</li>
                                         
                                         <li>_formula: (1*impact+1*dashboard)/2</li>
                                         
@@ -448,9 +448,9 @@
                                         
                                         <li>_impact_external: 0.25</li>
                                         
-                                        <li>_reuse: 0.196</li>
+                                        <li>_reuse: 0.195</li>
                                         
-                                        <li>oboscore: 0.469</li>
+                                        <li>oboscore: 0.422</li>
                                         
                                     </ul></td>
                                 
@@ -494,7 +494,7 @@
                                 
                                     <td><ul>
                                         
-                                        <li>BFO: 6119</li>
+                                        <li>BFO: 6135</li>
                                         
                                         <li>BTO: 212</li>
                                         
@@ -502,31 +502,33 @@
                                         
                                         <li>CL: 760</li>
                                         
-                                        <li>FYPO: 33995</li>
+                                        <li>FYPO: 34089</li>
                                         
                                         <li>FYPOALT: 201</li>
                                         
-                                        <li>GO: 10432</li>
+                                        <li>GO: 10465</li>
                                         
-                                        <li>IAO: 8091</li>
+                                        <li>IAO: 8115</li>
                                         
-                                        <li>PATO: 8367</li>
+                                        <li>PATO: 8389</li>
                                         
                                         <li>PR: 28</li>
                                         
-                                        <li>RO: 10638</li>
+                                        <li>RO: 10665</li>
                                         
-                                        <li>SO: 441</li>
+                                        <li>SO: 443</li>
                                         
-                                        <li>dc11: 1083</li>
+                                        <li>SOALT: 2</li>
                                         
-                                        <li>obo: 3596</li>
+                                        <li>dc11: 1122</li>
                                         
-                                        <li>oboInOwl: 95979</li>
+                                        <li>obo: 3605</li>
+                                        
+                                        <li>oboInOwl: 96081</li>
                                         
                                         <li>owl: 321</li>
                                         
-                                        <li>rdfs: 10573</li>
+                                        <li>rdfs: 10599</li>
                                         
                                     </ul></td>
                                 

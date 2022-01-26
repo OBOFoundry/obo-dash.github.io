@@ -3,40 +3,48 @@ base_prefixes:
 - DDPHENO
 - DDPHENOALT
 - DDPHENO
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 5942
-    Declaration: 1154
-    SubClassOf: 1153
-  'Axioms: Number of axioms': 8249
-  'Entities: % of entities reused': 2.24
-  'Entities: Number of annotation properties': 24
-  'Entities: Number of classes': 1133
+    AnnotationAssertion: 6980
+    Declaration: 1664
+    EquivalentClasses: 900
+    SubClassOf: 1166
+  'Axioms: Number of axioms': 10710
+  'Entities: % of entities reused': 24.66
+  'Entities: Number of annotation properties': 26
+  'Entities: Number of classes': 1637
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
-  'Entities: Number of object properties': 0
+  'Entities: Number of object properties': 6
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 3439
+    Class: 7768
+    ObjectIntersectionOf: 1099
+    ObjectSomeValuesFrom: 2899
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.937
+    _dashboard: 0.893
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.006
+    _impact: 0.005
     _impact_external: 0
-    _reuse: 0.022
-    oboscore: 0.472
+    _reuse: 0.247
+    oboscore: 0.449
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    DDPHENO: 3439
-    IAO: 1187
-    oboInOwl: 4595
-    owl: 152
-    rdfs: 1116
+    BFO: 971
+    DDANAT: 152
+    DDPHENO: 4491
+    GO: 1299
+    IAO: 1375
+    PATO: 1826
+    RO: 1934
+    oboInOwl: 5287
+    owl: 299
+    rdfs: 1199
   'Info: Which ontologies use it?':
   - ddpheno
   - upheno
@@ -54,7 +62,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 13 missing definitions. See ROBOT Report for details.
+    comment: 9 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     status: PASS
@@ -68,24 +76,23 @@ results:
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
-    comment: last version (2020-06-19) is over one year(s) old
-    status: INFO
+    status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 21 warnings, 1 info messages.
+    comment: 1 errors, 11 warnings, 1 info messages.
     file: robot_report
     results:
-      ERROR: 0
+      ERROR: 1
       INFO: 1
-      WARN: 21
-    status: WARN
-sha256_hash: 4a1fcbffea926e7f5ec511a24a074413949d90b63b8475e061469ca0f7bec24b
+      WARN: 11
+    status: ERROR
+sha256_hash: 873d9828f997e9f842c4dfbd90692ab4cbcd07e887c9cfe2a0cd67e03b062fe1
 summary:
-  comment: 1 errors
+  comment: 2 errors
   status: ERROR
   summary_count:
-    ERROR: 1
-    INFO: 1
-    WARN: 2
-version: http://purl.obolibrary.org/obo/ddpheno/releases/2020-06-19/ddpheno-base.owl
+    ERROR: 2
+    INFO: 0
+    WARN: 1
+version: http://purl.obolibrary.org/obo/ddpheno/releases/2022-01-19/ddpheno-base.owl

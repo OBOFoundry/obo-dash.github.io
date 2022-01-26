@@ -3,7 +3,7 @@ base_prefixes:
 - PW
 - PWALT
 - PW
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 16234
@@ -24,12 +24,12 @@ metrics:
   'Info: Experimental OBO score':
     _dashboard: 0.695
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.006
+    _impact: 0.011
     _impact_external: 0
     _reuse: 0.008
-    oboscore: 0.35
+    oboscore: 0.353
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 1
+  'Info: How many ontologies use it?': 2
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -41,6 +41,7 @@ metrics:
     owl: 43
     rdfs: 2660
   'Info: Which ontologies use it?':
+  - epio
   - ino
   - pw
 mirror_from: http://purl.obolibrary.org/obo/pw.owl
@@ -83,12 +84,12 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 44 errors, 255 warnings, 8 info messages.
+    comment: 44 errors, 259 warnings, 7 info messages.
     file: robot_report
     results:
       ERROR: 44
-      INFO: 8
-      WARN: 255
+      INFO: 7
+      WARN: 259
     status: ERROR
 sha256_hash: a29d5877b3d165138020f96398110c72d29952c8eab9f0b1923dd518f31b1783
 summary:

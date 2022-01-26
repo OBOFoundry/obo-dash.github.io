@@ -3,7 +3,7 @@ base_prefixes:
 - CLAO
 - CLAOALT
 - CLAO
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 6208
@@ -28,7 +28,7 @@ metrics:
     ObjectSomeValuesFrom: 1221
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.786
+    _dashboard: 0.785
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
@@ -39,6 +39,7 @@ metrics:
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
+    AISM: 271
     BFO: 797
     CLAO: 7074
     IAO: 1531
@@ -46,7 +47,6 @@ metrics:
     RO: 366
     dc: 793
     dc11: 380
-    obo: 271
     oboInOwl: 3404
     owl: 22
     rdfs: 1664
@@ -89,10 +89,10 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 21 errors, 23 warnings, 1 info messages.
+    comment: 23 errors, 23 warnings, 1 info messages.
     file: robot_report
     results:
-      ERROR: 21
+      ERROR: 23
       INFO: 1
       WARN: 23
     status: ERROR

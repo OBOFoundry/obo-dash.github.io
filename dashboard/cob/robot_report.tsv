@@ -1,16 +1,4 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	duplicate_definition	drug product	definition	A processed material entity created to be administered to an individual with the intent to improve health.
-ERROR	duplicate_definition	drug product	definition	A processed material entity created to be administered to an individual with the intent to improve health.
-ERROR	duplicate_definition	biological process	definition	A process that emerges from two or more causally-connected macromolecular activities and has evolved to achieve a biological objective.
-ERROR	duplicate_definition	biological process	definition	A process that emerges from two or more causally-connected macromolecular activities and has evolved to achieve a biological objective.
-ERROR	duplicate_definition	gross anatomical part	definition	A part of a multicellular organism that is a collection of cell components that are not all contained in one cell.
-ERROR	duplicate_definition	gross anatomical part	definition	A part of a multicellular organism that is a collection of cell components that are not all contained in one cell.
-ERROR	duplicate_definition	organism	definition	A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome.
-ERROR	duplicate_definition	organism	definition	A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome.
-ERROR	duplicate_definition	cell	definition	A material entity that has a plasma membrane and results from cellular division.
-ERROR	duplicate_definition	cell	definition	A material entity that has a plasma membrane and results from cellular division.
-ERROR	duplicate_definition	processed material entity	definition	A material entity processed by human activity with an intent to produce
-ERROR	duplicate_definition	processed material entity	definition	A material entity processed by human activity with an intent to produce
 ERROR	missing_label	CHEBI:50906	rdfs:label	
 ERROR	missing_label	GEO:000000370	rdfs:label	
 ERROR	missing_label	OBI:0000202	rdfs:label	
@@ -27,6 +15,20 @@ ERROR	missing_label	UBERON:0000468	rdfs:label
 ERROR	missing_label	UBERON:0010000	rdfs:label	
 ERROR	missing_label	XAO:0003012	rdfs:label	
 ERROR	missing_label	ZFA:0009000	rdfs:label	
+ERROR	duplicate_definition	drug product	definition	A processed material entity created to be administered to an individual with the intent to improve health.
+ERROR	duplicate_definition	drug product	definition	A processed material entity created to be administered to an individual with the intent to improve health.
+ERROR	duplicate_definition	biological process	definition	A process that emerges from two or more causally-connected macromolecular activities and has evolved to achieve a biological objective.
+ERROR	duplicate_definition	biological process	definition	A process that emerges from two or more causally-connected macromolecular activities and has evolved to achieve a biological objective.
+ERROR	duplicate_definition	gross anatomical part	definition	A part of a multicellular organism that is a collection of cell components that are not all contained in one cell.
+ERROR	duplicate_definition	gross anatomical part	definition	A part of a multicellular organism that is a collection of cell components that are not all contained in one cell.
+ERROR	duplicate_definition	organism	definition	A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome.
+ERROR	duplicate_definition	organism	definition	A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome.
+ERROR	duplicate_definition	cell	definition	A material entity that has a plasma membrane and results from cellular division.
+ERROR	duplicate_definition	cell	definition	A material entity that has a plasma membrane and results from cellular division.
+ERROR	duplicate_definition	processed material entity	definition	A material entity processed by human activity with an intent to produce
+ERROR	duplicate_definition	processed material entity	definition	A material entity processed by human activity with an intent to produce
+ERROR	multiple_labels	electron	rdfs:label	electron@en
+ERROR	multiple_labels	electron	rdfs:label	nucleic acid polymer
 ERROR	duplicate_label	uncharged atom	rdfs:label	uncharged atom
 ERROR	duplicate_label	uncharged atom	rdfs:label	uncharged atom
 ERROR	duplicate_label	subatomic particle	rdfs:label	subatomic particle@en
@@ -171,30 +173,28 @@ ERROR	duplicate_label	assay	rdfs:label	assay@en
 ERROR	duplicate_label	assay	rdfs:label	assay@en
 ERROR	duplicate_label	agent role	rdfs:label	agent role
 ERROR	duplicate_label	agent role	rdfs:label	agent role
-ERROR	multiple_labels	electron	rdfs:label	electron@en
-ERROR	multiple_labels	electron	rdfs:label	nucleic acid polymer
-WARN	multiple_equivalent_classes	electron	owl:equivalentClass	<http://purl.obolibrary.org/obo/COB_0000010>
-WARN	multiple_equivalent_classes	electron	owl:equivalentClass	<http://purl.obolibrary.org/obo/COB_0000049>
-WARN	multiple_equivalent_classes	organism	owl:equivalentClass	<http://purl.obolibrary.org/obo/NCBITaxon_1>
-WARN	multiple_equivalent_classes	organism	owl:equivalentClass	<http://purl.obolibrary.org/obo/OBI_0100026>
-WARN	multiple_equivalent_classes	information representation	owl:equivalentClass	3655b66c-3bb0-44bf-a72e-904f9346230agenid197
-WARN	multiple_equivalent_classes	information representation	owl:equivalentClass	3655b66c-3bb0-44bf-a72e-904f9346230agenid198
-WARN	multiple_equivalent_classes	physical information carrier	owl:equivalentClass	3655b66c-3bb0-44bf-a72e-904f9346230agenid199
-WARN	multiple_equivalent_classes	physical information carrier	owl:equivalentClass	3655b66c-3bb0-44bf-a72e-904f9346230agenid201
-WARN	equivalent_pair	process	owl:equivalentClass	<http://purl.obolibrary.org/obo/COB_0000034>
-WARN	equivalent_pair	disposition	owl:equivalentClass	<http://purl.obolibrary.org/obo/COB_0000111>
-WARN	equivalent_pair	realizable	owl:equivalentClass	<http://purl.obolibrary.org/obo/COB_0000033>
-WARN	equivalent_pair	BFO:0000020	owl:equivalentClass	<http://purl.obolibrary.org/obo/COB_0000502>
-WARN	equivalent_pair	role	owl:equivalentClass	<http://purl.obolibrary.org/obo/COB_0000114>
-WARN	equivalent_pair	site	owl:equivalentClass	<http://purl.obolibrary.org/obo/COB_0000057>
-WARN	equivalent_pair	function	owl:equivalentClass	<http://purl.obolibrary.org/obo/COB_0000112>
-WARN	equivalent_pair	material entity	owl:equivalentClass	<http://purl.obolibrary.org/obo/COB_0000006>
-WARN	equivalent_pair	immaterial entity	owl:equivalentClass	<http://purl.obolibrary.org/obo/COB_0000031>
-WARN	equivalent_pair	gross anatomical part	owl:equivalentClass	<http://purl.obolibrary.org/obo/COB_0000021>
-WARN	equivalent_pair	CARO:0001010	owl:equivalentClass	<http://purl.obolibrary.org/obo/COB_0000022>
-WARN	equivalent_pair	CARO:0010004	owl:equivalentClass	<http://purl.obolibrary.org/obo/COB_0000118>
-WARN	equivalent_pair	electron	owl:equivalentClass	<http://purl.obolibrary.org/obo/COB_0000010>
-WARN	equivalent_pair	electron	owl:equivalentClass	<http://purl.obolibrary.org/obo/COB_0000049>
-WARN	equivalent_pair	CHEBI:16541	owl:equivalentClass	<http://purl.obolibrary.org/obo/COB_0000015>
-WARN	equivalent_pair	proton	owl:equivalentClass	<http://purl.obolibrary.org/obo/COB_0000008>
-WARN	equivalent_pair	monoatomic ion	owl:equivalentClass	<http://purl.obolibrary.org/obo/COB_0000042>
+WARN	missing_definition	process	definition	
+WARN	missing_definition	disposition	definition	
+WARN	missing_definition	realizable	definition	
+WARN	missing_definition	role	definition	
+WARN	missing_definition	site	definition	
+WARN	missing_definition	function	definition	
+WARN	missing_definition	material entity	definition	
+WARN	missing_definition	immaterial entity	definition	
+WARN	missing_definition	part of	definition	
+WARN	missing_definition	has part	definition	
+WARN	missing_definition	realized in	definition	
+WARN	missing_definition	occurs in	definition	
+WARN	missing_definition	contains process	definition	
+WARN	missing_definition	electron	definition	
+WARN	missing_definition	proton	definition	
+WARN	missing_definition	monoatomic ion	definition	
+WARN	missing_definition	neutron	definition	
+WARN	missing_definition	uncharged atom	definition	
+WARN	missing_definition	atomic nucleus	definition	
+WARN	missing_definition	subatomic particle	definition	
+WARN	missing_definition	CHEBI:50906	definition	
+WARN	missing_definition	native cell	definition	
+WARN	missing_definition	cell in vitro	definition	
+WARN	missing_definition	is concretized as	definition	
+WARN	missing_definition	mass	definition	

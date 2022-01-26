@@ -1,14 +1,47 @@
 Level	Rule Name	Subject	Property	Value
-WARN	annotation_whitespace	datum label	curator note	<9/22/11 BP: changed the rdfs:label for this class from 'label' to 'datum label' to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum. >
-WARN	annotation_whitespace	definition	editor note	<2012-04-05: Barry SmithThe official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions' is terrible.Can you fix to something like:A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.Alan RuttenbergYour proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. On the specifics of the proposed definition:We don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with. @en>
-WARN	annotation_whitespace	expand expression to	example of usage	"<ObjectProperty: RO_0002104Label: has plasma membrane partAnnotations: IAO_0000424 \""http://purl.obolibrary.org/obo/BFO_0000051 some (http://purl.org/obo/owl/GO#GO_0005886 and http://purl.obolibrary.org/obo/BFO_0000051 some ?Y)\""@en>"
-WARN	annotation_whitespace	expand assertion to	example of usage	"<ObjectProperty: RO???Label: spatially disjoint fromAnnotations: expand_assertion_to \""DisjointClasses: (http://purl.obolibrary.org/obo/BFO_0000051 some ?X) (http://purl.obolibrary.org/obo/BFO_0000051 some ?Y)\""@en>"
+WARN	annotation_whitespace	datum label	curator note	"9/22/11 BP: changed the rdfs:label for this class from 'label' to 'datum label' to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum. 
+"
+WARN	annotation_whitespace	definition	editor note	"2012-04-05: 
+Barry Smith
+
+The official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.
+
+Can you fix to something like:
+
+A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.
+
+Alan Ruttenberg
+
+Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. 
+
+On the specifics of the proposed definition:
+
+We don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. 
+
+Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
+
+We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  @en"
+WARN	annotation_whitespace	expand expression to	example of usage	"ObjectProperty: RO_0002104
+Label: has plasma membrane part
+Annotations: IAO_0000424 \""http://purl.obolibrary.org/obo/BFO_0000051 some (http://purl.org/obo/owl/GO#GO_0005886 and http://purl.obolibrary.org/obo/BFO_0000051 some ?Y)\""
+@en"
+WARN	annotation_whitespace	expand assertion to	example of usage	"ObjectProperty: RO???
+Label: spatially disjoint from
+Annotations: expand_assertion_to \""DisjointClasses: (http://purl.obolibrary.org/obo/BFO_0000051 some ?X)  (http://purl.obolibrary.org/obo/BFO_0000051 some ?Y)\""
+@en"
 WARN	annotation_whitespace	associating information with a centrally registered identifier in its registry	example of usage	Articles in Pubmed are reviewed by curators who add MESH terms to the Pubmed records in order to categorize them better and improve the ability to search for them. 
 WARN	annotation_whitespace	centrally registered identifier registry	example of usage	PubMed is a CRID registry. It has a dataset of PubMed identifiers associated with journal articles. @en
 WARN	annotation_whitespace	looking up a centrally registered identifier	example of usage	Going to the PubMed website and entering a PubMed ID in order to retrieve the Pubmed information associated with that ID. 
-WARN	annotation_whitespace	has ID range allocated to	example of usage	"<Datatype: idrange:1Annotations: 'has ID range allocated to': \""Chris Mungall\""EquivalentTo: xsd:integer[> 2151 , <= 2300]@en>"
-WARN	annotation_whitespace	conflict of interest textual entity	example of usage	<SD [an author] is a Merck employee and Merck is the sponsor of this study. [Taken from 'Effects of obstructive sleep apnoea risk on postoperative respiratory complications: protocol for a hospital-based registry study' Shin et al. 2016 (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4735131/)] @en>
-WARN	annotation_whitespace	related work textual entity	example of usage	<Excerpt from Žitnik and Zupan. Bioinformatics. 2015 Jun 15; 31(12): i230–i239. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4542780/):Our work presented here is similar in spirit to our recently developed methodology for data fusion via collective matrix factorization (Žitnik and Zupan, 2015).@en>
+WARN	annotation_whitespace	has ID range allocated to	example of usage	"Datatype: idrange:1
+Annotations: 'has ID range allocated to': \""Chris Mungall\""
+EquivalentTo: xsd:integer[> 2151 , <= 2300]
+@en"
+WARN	annotation_whitespace	conflict of interest textual entity	example of usage	SD [an author] is a Merck employee and Merck is the sponsor of this study. [Taken from 'Effects of obstructive sleep apnoea risk on postoperative respiratory complications: protocol for a hospital-based registry study' Shin et al. 2016  (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4735131/)] @en
+WARN	annotation_whitespace	related work textual entity	example of usage	"Excerpt from Žitnik and Zupan. Bioinformatics. 2015 Jun 15; 31(12): i230–i239. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4542780/):
+
+Our work presented here is similar in spirit to our recently developed methodology for data fusion via collective matrix factorization (Žitnik and Zupan, 2015).
+
+@en"
 WARN	duplicate_exact_synonym	author summary section	alternative term	summary@en
 WARN	duplicate_exact_synonym	conclusion section	alternative term	summary@en
 WARN	missing_definition	has measurement value	definition	

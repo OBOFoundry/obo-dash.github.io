@@ -3,7 +3,7 @@ base_prefixes:
 - CLO
 - CLOALT
 - CLO
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 344066
@@ -43,9 +43,9 @@ metrics:
     ObjectUnionOf: 26
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.576
+    _dashboard: 0.577
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.056
+    _impact: 0.055
     _impact_external: 0
     _reuse: 0.075
     oboscore: 0.316
@@ -124,9 +124,9 @@ results:
       See ROBOT Report for details.
     status: ERROR
   FP07 Relations:
-    comment: 16 non-RO properties used.
+    comment: 1 labels match RO labels. 15 non-RO properties used.
     file: fp7
-    status: INFO
+    status: ERROR
   FP08 Documented:
     status: PASS
   FP09 Plurality of Users:
@@ -143,19 +143,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 9425 errors, 43010 warnings, 470 info messages.
+    comment: 9425 errors, 43845 warnings, 470 info messages.
     file: robot_report
     results:
       ERROR: 9425
       INFO: 470
-      WARN: 43010
+      WARN: 43845
     status: ERROR
 sha256_hash: f3720f76d126fed208d1be440b3054eb2c72381e9514692b4625a0b4b1f32dbc
 summary:
-  comment: 8 errors
+  comment: 9 errors
   status: ERROR
   summary_count:
-    ERROR: 8
-    INFO: 1
+    ERROR: 9
+    INFO: 0
     WARN: 0
 version: null

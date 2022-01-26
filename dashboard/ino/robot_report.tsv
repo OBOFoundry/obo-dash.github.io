@@ -1,18 +1,37 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/ino.owl	dc:license	
+ERROR	duplicate_label	macrophage-pathogen interaction	rdfs:label	macrophage-pathogen interaction@en
+ERROR	duplicate_label	macrophage-pathogen interaction	rdfs:label	macrophage-pathogen interaction@en
+ERROR	misused_obsolete_label	obsolete class	rdfs:label	obsolete class@en
 ERROR	duplicate_definition	positive regulation of transcription by binding to promoter	IAO:0000115	a regulation of transcription by binding to promoter that is further classified as a positive regulation
 ERROR	duplicate_definition	negative regulation of transcription by binding to promoter	IAO:0000115	a regulation of transcription by binding to promoter that is further classified as a positive regulation
 ERROR	duplicate_definition	negative regulation of gene transcription	IAO:0000115	a negative regulation process that down-regulates gene expression level
 ERROR	duplicate_definition	gene expression down-regulation	IAO:0000115	a negative regulation process that down-regulates gene expression level
-ERROR	misused_obsolete_label	obsolete class	rdfs:label	obsolete class@en
-ERROR	duplicate_label	macrophage-pathogen interaction	rdfs:label	macrophage-pathogen interaction@en
-ERROR	duplicate_label	macrophage-pathogen interaction	rdfs:label	macrophage-pathogen interaction@en
-ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/ino.owl	dc:license	
+WARN	equivalent_class_axiom_no_genus	interaction regulator	RO:0000087	regulator role
+WARN	equivalent_class_axiom_no_genus	interactor	RO:0000087	interactor role
+WARN	equivalent_class_axiom_no_genus	activator	RO:0000087	activator role
+WARN	equivalent_class_axiom_no_genus	regulation of transcription	RO:0002211	gene transcription
+WARN	equivalent_class_axiom_no_genus	regulation of translation	RO:0002211	protein translation
+WARN	equivalent_class_axiom_no_genus	positive regulation of gene expression	RO:0002213	gene expression
+WARN	equivalent_class_axiom_no_genus	negative regulation of gene expression	RO:0002212	gene expression
+WARN	equivalent_class_axiom_no_genus	negative regulation of gene transcription	RO:0002212	gene transcription
+WARN	equivalent_class_axiom_no_genus	negative regulation of protein translation	RO:0002212	protein translation
+WARN	equivalent_class_axiom_no_genus	gene expression regulation	RO:0002211	gene expression
+WARN	equivalent_class_axiom_no_genus	chemical reaction catalyst	RO:0000087	chemical reaction catalyst role
+WARN	equivalent_class_axiom_no_genus	positive regulation of gene transcription	RO:0002213	gene transcription
+WARN	equivalent_class_axiom_no_genus	positive regulation of protein translation	RO:0002213	protein translation
+WARN	equivalent_class_axiom_no_genus	input interactor	RO:0000087	input interactor role
+WARN	equivalent_class_axiom_no_genus	positive regulator	RO:0000087	positive regulator role
+WARN	equivalent_class_axiom_no_genus	negative regulator	RO:0000087	negative regulator role
+WARN	equivalent_class_axiom_no_genus	output interactor	RO:0000087	output interactor role
+WARN	duplicate_exact_synonym	negative regulation of protein activity	IAO:0000118	negative protein activity regulation
+WARN	duplicate_exact_synonym	positive regulation of protein activity	IAO:0000118	negative protein activity regulation
 WARN	annotation_whitespace	interaction	IAO:0000115	Interaction is a processual entity that has two or more participants (i.e., interactors) that have an effect upon one another. @en
 WARN	annotation_whitespace	pathway	IAO:0000115	an interaction network that includes at least two interactions and has a start point(s) and an end point(s). 
 WARN	annotation_whitespace	has literature mining keywords	IAO:0000115	an annotation property that lists keyword(s) useful for literature tagging and retrieval of sentences containing the type (or kind) of entity (e.g., interaction) as shown by the ontology term label and definition. 
 WARN	annotation_whitespace	edge	IAO:0000115	an edge is an object that represents a graphic line that links two interactors in an interaction. 
 WARN	annotation_whitespace	organism-organism interaction	IAO:0000115	a biological interaction that occurs in the organism level. 
-WARN	annotation_whitespace	organism-organism interaction	IAO:0000116	<Examples: a bacterium interacts with a mouse, a cat interacts with a dog >
+WARN	annotation_whitespace	organism-organism interaction	IAO:0000116	Examples: a bacterium interacts with a mouse, a cat interacts with a dog 
 WARN	annotation_whitespace	two-way interaction	IAO:0000115	A two-way interaction is an interaction that includes two different directions among two interactors. 
 WARN	annotation_whitespace	activation	IAO:0000115	a positive regulation that one interactor activates another. 
 WARN	annotation_whitespace	gene-enviroment interaction	IAO:0000115	an interaction that involves a gene and its environment (e.g., calcium in blood). 
@@ -25,20 +44,20 @@ WARN	annotation_whitespace	conversion	IAO:0000115	a direct physical association 
 WARN	annotation_whitespace	cooperation	IAO:0000115	an indirect association that one interactor cooperates with another interactor in a specfiic process. 
 WARN	annotation_whitespace	correlation	IAO:0000115	an indirect association that two interactors are correlated in a process without defined influence of each other. 
 WARN	annotation_whitespace	negative regulation	IAO:0000115	a regulation in which one interactor has a negative effect on another interactor 
-WARN	annotation_whitespace	negative regulation	IAO:0000116	<YH: different types of negative regulations exist. These types are related to different qualities and phenotyes of regulated targets. >
+WARN	annotation_whitespace	negative regulation	IAO:0000116	YH: different types of negative regulations exist. These types are related to different qualities and phenotyes of regulated targets. 
 WARN	annotation_whitespace	decrease	IAO:0000115	a negative regulation that results in the decrease of one interactor volume. 
 WARN	annotation_whitespace	biochemical degradation	IAO:0000115	an enzymatic reaction that leads to the breakdown of a biochemical entity. 
 WARN	annotation_whitespace	destabilization	IAO:0000115	a negative regulation that results in a destabilization. 
 WARN	annotation_whitespace	dominant regulation	IAO:0000115	a regulation that one interactor has a dominant effect on the quality of another interactor. This differs from the accessory regulation. 
 WARN	annotation_whitespace	protein dimerization	IAO:0000115	a protein complex assembly that involves two proteins that form a dimer. 
 WARN	annotation_whitespace	co-regulation	IAO:0000115	a regulation process that involves in two interactors co-regulate a third interactor. 
-WARN	annotation_whitespace	induction of production	IAO:0000116	"<YH: For example, \""IL-2 and IL-15 induced the production of IL-17 and IFN-γ in a dose dependent manner by PBMCs.” >"
+WARN	annotation_whitespace	induction of production	IAO:0000116	"YH: For example,  \""IL-2 and IL-15 induced the production of IL-17 and IFN-γ in a dose dependent manner by PBMCs.” "
 WARN	annotation_whitespace	gene expression	IAO:0000115	a biological interaction that uses the information from a gene to synthesize a functional gene product. 
 WARN	annotation_whitespace	accessory regulation	IAO:0000115	a positive regulation that one interactor facilitates a phenomenon such as a phenotype. This is an accessory effect not a major one. 
 WARN	annotation_whitespace	protein heterodimerization	IAO:0000115	a protein dimerization where two proteins are different. 
 WARN	annotation_whitespace	protein homodimerization	IAO:0000115	a protein dimerization where two proteins are the same. 
 WARN	annotation_whitespace	overexpression	IAO:0000115	a gene expression that has increased volume. 
-WARN	annotation_whitespace	positive regulation	IAO:0000116	<YH: different types of positive regulations exist. These types are related to different qualities and phenotyes of regulated targets. >
+WARN	annotation_whitespace	positive regulation	IAO:0000116	YH: different types of positive regulations exist. These types are related to different qualities and phenotyes of regulated targets. 
 WARN	annotation_whitespace	induction	IAO:0000115	a positive regulation that leads to the induction of a new interactor due to the presence of another interactor. 
 WARN	annotation_whitespace	interference	IAO:0000115	a negative regulation that one interactor interferes a process. 
 WARN	annotation_whitespace	neutralization	IAO:0000115	a biochemical reaction that one interactor neutrolizes another. 
@@ -50,8 +69,6 @@ WARN	annotation_whitespace	genetic transduction	IAO:0000115	a cell-cell interact
 WARN	annotation_whitespace	co-expression	IAO:0000116	a correlation association that two genes are co-expressed in a system. 
 WARN	annotation_whitespace	deregulation	IAO:0000115	a negative regulation that results in the deregulation of one interactor on a process. 
 WARN	annotation_whitespace	protein-protein interaction	IAO:0000115	an interaction between two proteins. 
-WARN	duplicate_exact_synonym	negative regulation of protein activity	IAO:0000118	negative protein activity regulation
-WARN	duplicate_exact_synonym	positive regulation of protein activity	IAO:0000118	negative protein activity regulation
 WARN	duplicate_label_synonym	overexpression	IAO:0000118	overexpression
 WARN	missing_definition	example of literature mining keyword usage	IAO:0000115	
 WARN	missing_definition	physical entity - obsolete	IAO:0000115	
@@ -181,20 +198,3 @@ INFO	lowercase_definition	increase	IAO:0000115	a positive regulation that leads 
 INFO	lowercase_definition	induction	IAO:0000115	a positive regulation that leads to the induction of a new interactor due to the presence of another interactor. 
 INFO	lowercase_definition	inhibition	IAO:0000115	a negative regulation that one interactor inhibites another.
 INFO	lowercase_definition	input interactor	IAO:0000115	an interactor that is an input of an interaction.
-INFO	lowercase_definition	interference	IAO:0000115	a negative regulation that one interactor interferes a process. 
-INFO	lowercase_definition	human molecular conversion	IAO:0000115	a human molecular interaction where one molecule converts to another molecule.
-INFO	lowercase_definition	positive regulator role	IAO:0000115	an interactor role that is borne by a material entity that positively regulates an interaction.
-INFO	lowercase_definition	negative regulator role	IAO:0000115	an interactor role that is borne by a material entity that negatively regulates an interaction.
-INFO	lowercase_definition	neutralization	IAO:0000115	a biochemical reaction that one interactor neutrolizes another. 
-INFO	lowercase_definition	positive regulator	IAO:0000115	an interaction regulator that positively regulates an interaction.
-INFO	lowercase_definition	negative regulator	IAO:0000115	an interaction regulator that negatively regulates an interaction.
-INFO	lowercase_definition	deactivator role	IAO:0000115	a negative regulator role that is borne by a material entity that deactivates,  inhibits, blocks, or disrupts the action of a biological agent (e.g., enzyme).
-INFO	lowercase_definition	motivator role	IAO:0000115	an input interactor role that is borne by a material entity that motivates a process.
-INFO	lowercase_definition	precedence	IAO:0000115	an indirect association that one interactor is preceded by another interactor. 
-INFO	lowercase_definition	hygiene factor role	IAO:0000115	an input interactor role that is borne by a material entity (e.g. status, job security, salary and fringe benefits) that do not motivate if present, but, if absent, result in demotivation.
-INFO	lowercase_definition	output interactor	IAO:0000115	an interactor that is an output of an interaction.
-INFO	lowercase_definition	reactivation	IAO:0000115	an activation that repeats.
-INFO	lowercase_definition	recruitment	IAO:0000115	a positive regulation that leads the recruitment of one interactor from one location to another. 
-INFO	lowercase_definition	stabilization	IAO:0000115	a postive interaction that one interactor increases the stability of another interactor. 
-INFO	lowercase_definition	synergization	IAO:0000115	a regulation process that involves in two interactors that are synergized in affecting a phenomenon (e.g., phenotype).
-INFO	lowercase_definition	termination	IAO:0000115	a negative regulation that leads to a process termination.

@@ -3,7 +3,7 @@ base_prefixes:
 - OMP
 - OMPALT
 - OMP
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 16190
@@ -29,14 +29,14 @@ metrics:
     ObjectSomeValuesFrom: 262
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.685
+    _dashboard: 0.684
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.017
+    _impact: 0.022
     _impact_external: 0
     _reuse: 0.125
-    oboscore: 0.351
+    oboscore: 0.353
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 3
+  'Info: How many ontologies use it?': 4
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -57,6 +57,7 @@ metrics:
   - genepio
   - mco
   - omp
+  - ons
 mirror_from: http://purl.obolibrary.org/obo/omp.owl
 namespace: omp
 results:
@@ -94,14 +95,14 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 62 errors, 331 warnings, 13 info messages.
+    comment: 62 errors, 342 warnings, 12 info messages.
     file: robot_report
     results:
       ERROR: 62
-      INFO: 13
-      WARN: 331
+      INFO: 12
+      WARN: 342
     status: ERROR
-sha256_hash: 5a4caf9e5e3fd0cfbea8c4d54167619a4101acc82c09f65e51b1ee1776f57d61
+sha256_hash: 78c5b51e4ebbfadcd0f3a48dca978fa395589b759ab04add4b19ed63dffaff30
 summary:
   comment: 6 errors
   status: ERROR
@@ -109,4 +110,4 @@ summary:
     ERROR: 6
     INFO: 0
     WARN: 0
-version: http://purl.obolibrary.org/obo/omp/releases/2021-10-01/omp.owl
+version: http://purl.obolibrary.org/obo/omp/releases/2022-01-07/omp.owl

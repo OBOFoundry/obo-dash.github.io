@@ -3,14 +3,14 @@ base_prefixes:
 - FOODON
 - FOODONALT
 - FOODON
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 211189
+    AnnotationAssertion: 211125
     ClassAssertion: 15
-    Declaration: 32501
+    Declaration: 32516
     DisjointClasses: 55
-    EquivalentClasses: 1713
+    EquivalentClasses: 1683
     FunctionalObjectProperty: 1
     InverseFunctionalObjectProperty: 1
     InverseObjectProperties: 1
@@ -18,37 +18,37 @@ metrics:
     ObjectPropertyDomain: 1
     ObjectPropertyRange: 1
     SubAnnotationPropertyOf: 6
-    SubClassOf: 40588
+    SubClassOf: 40603
     SubObjectPropertyOf: 55
     SymmetricObjectProperty: 4
     TransitiveObjectProperty: 7
-  'Axioms: Number of axioms': 286143
-  'Entities: % of entities reused': 27.05
+  'Axioms: Number of axioms': 286079
+  'Entities: % of entities reused': 27.04
   'Entities: Number of annotation properties': 70
-  'Entities: Number of classes': 31924
+  'Entities: Number of classes': 31939
   'Entities: Number of data properties': 1
   'Entities: Number of individuals': 430
   'Entities: Number of object properties': 79
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 118562
+    Class: 118518
     ObjectAllValuesFrom: 106
     ObjectComplementOf: 130
     ObjectExactCardinality: 2
-    ObjectIntersectionOf: 1781
+    ObjectIntersectionOf: 1752
     ObjectMinCardinality: 15
-    ObjectSomeValuesFrom: 8146
+    ObjectSomeValuesFrom: 8120
     ObjectUnionOf: 80
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.579
+    _dashboard: 0.58
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.083
+    _impact: 0.077
     _impact_external: 0
-    _reuse: 0.271
-    oboscore: 0.331
+    _reuse: 0.27
+    oboscore: 0.328
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 15
+  'Info: How many ontologies use it?': 14
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -57,6 +57,7 @@ metrics:
     BFO: 448
     BTO: 7
     CARO: 7
+    CDNO: 378
     CEPH: 4
     CHEBI: 5141
     COB: 3
@@ -66,36 +67,36 @@ metrics:
     ERO: 4
     FAO: 480
     FLOPO: 12
-    FOODON: 87467
+    FOODON: 87442
     GAZ: 1473
     GENEPIO: 46
     GEO: 15
     GO: 44
     HANCESTRO: 991
     HP: 2
-    IAO: 79245
-    NCBITaxon: 18398
+    IAO: 79127
+    NCBITaxon: 18388
     NCIT: 222
     NCIT_ALT: 2
     OBI: 180
     ONS: 510
     PATO: 695
     PECO: 26
-    PO: 1604
-    RO: 7709
+    PO: 1595
+    RO: 7683
     SIO: 3
     STATO: 5
     UBERON: 292
     UO: 343
     dc: 147
-    dc11: 1559
+    dc11: 1572
     efo: 2
     foaf: 5
-    obo: 2685
-    oboInOwl: 83888
-    owl: 2057
+    obo: 2307
+    oboInOwl: 83911
+    owl: 2061
     rdf: 2
-    rdfs: 46494
+    rdfs: 46508
     schema: 185
   'Info: Which ontologies use it?':
   - agro
@@ -105,7 +106,6 @@ metrics:
   - envo
   - eupath
   - fideo
-  - fobi
   - foodon
   - genepio
   - maxo
@@ -128,7 +128,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 485 duplicate definitions. 10 multiple definitions. 12374 missing definitions.
+    comment: 485 duplicate definitions. 10 multiple definitions. 12371 missing definitions.
       See ROBOT Report for details.
     status: ERROR
   FP07 Relations:
@@ -151,14 +151,14 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 797 errors, 13779 warnings, 392 info messages.
+    comment: 783 errors, 13873 warnings, 391 info messages.
     file: robot_report
     results:
-      ERROR: 797
-      INFO: 392
-      WARN: 13779
+      ERROR: 783
+      INFO: 391
+      WARN: 13873
     status: ERROR
-sha256_hash: 2313e253d7e3aed06328731beeb827cdba755757566ddb409e61b6587c19ff53
+sha256_hash: b4be03fb1307382bda5b698e8d96fac71e72493ab76f717a86b608ef6ff13aca
 summary:
   comment: 4 errors
   status: ERROR
@@ -166,4 +166,4 @@ summary:
     ERROR: 4
     INFO: 1
     WARN: 0
-version: http://purl.obolibrary.org/obo/foodon/releases/2021-11-17/foodon.owl
+version: http://purl.obolibrary.org/obo/foodon/releases/2021-11-25/foodon.owl

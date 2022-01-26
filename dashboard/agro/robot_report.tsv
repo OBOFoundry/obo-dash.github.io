@@ -1,14 +1,35 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	deprecated_class_reference	blank node	owl:someValuesFrom	<http://purl.obolibrary.org/obo/AGRO_00000213>
-ERROR	multiple_definitions	thinning	IAO:0000115	A planned process in which selected parts of the plant are removed. The practice entails targeted removal of diseased, damaged, dead, non-productive, structurally unsound, or otherwise unwanted tissue from plants. This is done in order to shape the plant or tree, improve plant or tree health, reduce the risk from falling branches, prepare nursery specimens for transplanting, and increase the yield or quality of harvested products.@en
-ERROR	multiple_definitions	thinning	IAO:0000115	Agricultural process during which removal of some plants, or parts of plants to make room for the growth of others but does not involve the cutting of the whole tree.@en
-ERROR	multiple_definitions	crop residue area density	IAO:0000115	An area density quality which inheres in above-ground crop residue by virtue of some influence exerted by the mass of above-ground crop residue applied in a given surface area.@en
-ERROR	multiple_definitions	crop residue area density	IAO:0000115	The area density of a crop residue
 ERROR	multiple_labels	crop residue area density	rdfs:label	crop residue area density
 ERROR	multiple_labels	crop residue area density	rdfs:label	crop residue area density@en
 ERROR	multiple_labels	agricultural product storage process	rdfs:label	agricultural product storage process@en
 ERROR	multiple_labels	agricultural product storage process	rdfs:label	storage process@en
-WARN	equivalent_pair	inorganic fertilizer role	owl:equivalentClass	<http://purl.obolibrary.org/obo/CHEBI_33287>
+ERROR	multiple_definitions	thinning	IAO:0000115	A planned process in which selected parts of the plant are removed. The practice entails targeted removal of diseased, damaged, dead, non-productive, structurally unsound, or otherwise unwanted tissue from plants. This is done in order to shape the plant or tree, improve plant or tree health, reduce the risk from falling branches, prepare nursery specimens for transplanting, and increase the yield or quality of harvested products.@en
+ERROR	multiple_definitions	thinning	IAO:0000115	Agricultural process during which removal of some plants, or parts of plants to make room for the growth of others but does not involve the cutting of the whole tree.@en
+ERROR	multiple_definitions	crop residue area density	IAO:0000115	An area density quality which inheres in above-ground crop residue by virtue of some influence exerted by the mass of above-ground crop residue applied in a given surface area.@en
+ERROR	multiple_definitions	crop residue area density	IAO:0000115	The area density of a crop residue
+ERROR	deprecated_class_reference	blank node	owl:someValuesFrom	obsolete crop residue spreading process
+WARN	equivalent_pair	inorganic fertilizer role	owl:equivalentClass	CHEBI:33287
+WARN	duplicate_label_synonym	tillage	oboInOwl:hasExactSynonym	tillage@en
+WARN	equivalent_class_axiom_no_genus	crop residue	RO:0001000	PO:0009011
+WARN	equivalent_class_axiom_no_genus	interrow	RO:0002609	row
+WARN	equivalent_class_axiom_no_genus	mulch thickness measurement protocol	measurement method of	mulch thickness
+WARN	equivalent_class_axiom_no_genus	bund height measurement protocol	measurement method of	bund height
+WARN	equivalent_class_axiom_no_genus	implement lenght measurement protocol	measurement method of	tillage tool blade length
+WARN	equivalent_class_axiom_no_genus	row length mesurement protocol	measurement method of	row length
+WARN	equivalent_class_axiom_no_genus	kjeldahl method	measurement method of	organic fertilizer carbon to nitrogen ratio
+WARN	equivalent_class_axiom_no_genus	mulch color recording protocol	measurement method of	mulch color
+WARN	equivalent_class_axiom_no_genus	well depth measurement protocol	measurement method of	well depth
+WARN	equivalent_class_axiom_no_genus	pivot lenght measurement protocol	measurement method of	center pivot irrigation equipment length
+WARN	equivalent_class_axiom_no_genus	irrigation water quantity recording protocol	measurement method of	volume of irrigation water
+WARN	equivalent_class_axiom_no_genus	treatment	RO:0002609	experimental factor
+WARN	equivalent_class_axiom_no_genus	percent of experiment area damaged	RO:0000052	field area
+WARN	equivalent_class_axiom_no_genus	nitrogen recovery efficiency measurement protocol	measurement method of	nitrogen recovery efficiency
+WARN	equivalent_class_axiom_no_genus	nitrogen use efficiency measurement protocol	measurement method of	nitrogen use efficiency
+WARN	equivalent_class_axiom_no_genus	crop residue incorporation process	BFO:0000051	tillage process
+WARN	equivalent_class_axiom_no_genus	stubble	RO:0001000	PO:0025066
+WARN	equivalent_class_axiom_no_genus	husk	RO:0001000	PO:0009054
+WARN	equivalent_class_axiom_no_genus	organic fertilizer	RO:0000087	organic fertilizer role
+WARN	equivalent_class_axiom_no_genus	inorganic fertilizer	RO:0000087	inorganic fertilizer role
 WARN	missing_definition	has method	IAO:0000115	
 WARN	missing_definition	measurement method of	IAO:0000115	
 WARN	missing_definition	has start date	IAO:0000115	
@@ -22,9 +43,9 @@ WARN	missing_definition	broadcast on surface	IAO:0000115
 WARN	missing_definition	localized application	IAO:0000115	
 WARN	missing_definition	kilogram per plot	IAO:0000115	
 WARN	missing_definition	preferred fieldbook label	IAO:0000115	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
 INFO	lowercase_definition	single-axle tractor	IAO:0000600	two-wheel tractor@en
 INFO	lowercase_definition	row	IAO:0000115	two or more crop plants planted in a line.@en
-INFO	lowercase_definition	moisture concentration measurement protocol	IAO:0000115	<1.Weight a sample of the material. 2.Dry this sample. 3.Weight the dry sample. Moisture concentration = ((Ww-Wd)/Ww) x 100 in which : WW = wet weight of the sample, and Wd = weight of the sample after drying.@en>
 INFO	lowercase_definition	number of square meter harvested	IAO:0000115	number of square meters of agricultural field or plot harvested.@en
 INFO	lowercase_definition	crop residue incorporation process	IAO:0000115	incorporation of crop residue into soil@en
 INFO	lowercase_definition	crop residue mulching process	IAO:0000115	a process in which crop residue are mulched@en

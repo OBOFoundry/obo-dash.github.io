@@ -1,21 +1,26 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/ohd.owl	dc11:description	
-ERROR	multiple_definitions	dental restoration material role	IAO:0000115	A functional prothetic role that is borne by a portion of dental restoration material and is realized in a tooth restoration procedure in which the restoration material becomes part of a restored tooth.@en
-ERROR	multiple_definitions	dental restoration material role	IAO:0000115	"<Bill Duncan 12/11/2014:Changed definition to read that a \""portion of dental restoration material\"" is realized by a \""tooth restoration procedure\"".>"
 ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/ohd.owl	dc:license	
-ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/ohd.owl	dc11:title	
+ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/ohd.owl	dc:description	
+ERROR	multiple_definitions	dental restoration material role	IAO:0000115	A functional prothetic role that is borne by a portion of dental restoration material and is realized in a tooth restoration procedure in which the restoration material becomes part of a restored tooth.@en
+ERROR	multiple_definitions	dental restoration material role	IAO:0000115	"Bill Duncan 12/11/2014:
+Changed definition to read that a \""portion of dental restoration material\"" is realized by a \""tooth restoration procedure\""."
+ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/ohd.owl	dc:title	
 WARN	annotation_whitespace	intracoronal restoration procedure	IAO:0000115	"A tooth restoration procedure in which a dental restoration material is placed into a site that is located in the crown of the tooth.
 "
 WARN	annotation_whitespace	dental finding	IAO:0000115	"A clinical finding is a specified output of a dental exam and is about the oral cavity, maxillofacial area, and/or the adjacent and associated structures, or their parts, or pathological anatomical entities derived from them. The finding has a part that is about when the exam that led to the finding occured well as other data items specifying the nature of the finding.
 @en"
-WARN	annotation_whitespace	dental finding	dc11:source	<Adapted from Mosby's definition of dentistry:The evaluation, diagnosis, and/or treatment (nonsurgical, surgical, or related procedures) of diseases, disorders, and/or conditions of the oral cavity, maxillofacial area, and/or the adjacent and associated structures and their impact on the body; provided by dental professionals, within the scope of his/her education, training, and experience, in accordance with the ethics of the profession and applicable law.(Mosby. Mosby's Dental Dictionary, 2nd Edition. Mosby, 102007. p. 173). >
-WARN	annotation_whitespace	dental hygienist role	IAO:0000116	<Bill Duncan 09/30/2015:Professional prophylaxis, radiographs, sealants, and nonsurgical periodontal therapy are among the procedures performed by a hygienist. Most are licensed to administer local anesthesia, depending on applicable regulations in their area. They usually work for a dentist in a dental office or clinic under a form of supervision. In some locations hygienists are allowed to practice without a dentist's supervision. >
+WARN	annotation_whitespace	dental finding	dc11:source	"Adapted from Mosby's definition of dentistry:
+The evaluation, diagnosis, and/or treatment (nonsurgical, surgical, or related procedures) of diseases, disorders, and/or conditions of the oral cavity, maxillofacial area, and/or the adjacent and associated structures and their impact on the body; provided by dental professionals, within the scope of his/her education, training, and experience, in accordance with the ethics of the profession and applicable law.
+(Mosby. Mosby's Dental Dictionary, 2nd Edition. Mosby, 102007. p. 173). 
+"
+WARN	annotation_whitespace	dental hygienist role	IAO:0000116	"Bill Duncan 09/30/2015:
+Professional prophylaxis, radiographs, sealants, and nonsurgical periodontal therapy are among the procedures performed by a hygienist. Most are licensed to administer local anesthesia, depending on applicable regulations in their area. They usually work for a dentist in a dental office or clinic under a form of supervision. In some locations hygienists are allowed to practice without a dentist's supervision. "
 WARN	annotation_whitespace	dentist role	IAO:0000115	"a dental health care provider role that inheres in a person who is qualified by training and licensed by a state or region to diagnose and treat abnormalities of the teeth, gums, and underlying bone, including conditions caused by disease, trauma, and heredity
 
 "
 WARN	annotation_whitespace	dental exam	IAO:0000115	A conversational, visual and tactile examination in which the clinician evaluates the status of the patient's medical, dental and oral health. @en
-WARN	annotation_whitespace	missing tooth finding	IAO:0000116	<Bill Duncan 5/14/2012: We have added the necessary condtion that a missing tooth finding is about 'exactly 1 Secondary Dentition'. >
-WARN	annotation_whitespace	dental caries	IAO:0000116	< Titus Schleyer 3/4/2014: definition updated>
+WARN	annotation_whitespace	missing tooth finding	IAO:0000116	Bill Duncan 5/14/2012: We have added the necessary condtion that a missing tooth finding is about 'exactly 1 Secondary Dentition'.  
+WARN	annotation_whitespace	dental caries	IAO:0000116	 Titus Schleyer 3/4/2014: definition updated
 WARN	annotation_whitespace	direct dental material insertion process	IAO:0000115	A material combination in which a moldable restorative material is placed directly into or on the tooth. The material then hardens and becomes (essentially) part of the tooth. 
 WARN	annotation_whitespace	dental material tooth attachment process	IAO:0000115	A material combination in which a rigid piece of restoration material is attached to a tooth. The restoration is attached to the tooth by mechanical forces or some form of cement or glue. 
 WARN	annotation_whitespace	tooth extraction procedure	IAO:0000115	"A surgical dental procedure that removes a tooth from the oral cavity.
@@ -24,27 +29,33 @@ WARN	annotation_whitespace	tooth extraction procedure	IAO:0000119	"Mosby. Mosby'
 "
 WARN	annotation_whitespace	asserted type	IAO:0000115	This annotation is used to indicate that an individual is asserted to be a member of a class.  This is useful when needing to find only the non-inferred type of an individual, and not the all the inferred types.  For example, suppose x is a member of the class 'material entity' and 'material entity' is a subclass of 'independent continuant'.  This entails that x will be a member of 'independent continuant'.  However, by using this annotation to assert that x is a member of 'material entity', you can query for x's 'asserted type' and ignore the other inferred types in the class hierarchy.  
 WARN	annotation_whitespace	Universal tooth number	IAO:0000115	A label naming a type of secondary tooth canonically found in humans, adopted by the American Dental Association, and commonly used as labels on odontograms (toothcharts) and clinical notes. The Universal Numbering System uses No. 1 through 32 for the 32 teeth in the permanent dentition, starting with 1 for the maxillary right third molar, going around the arch to the maxillary left third molar as 16; dropping down on the same side, the left mandibular third molar becomes 17, and then the numbers increase around the lower arch to 32, which is the lower right third molar. @en
-WARN	annotation_whitespace	Universal tooth number	IAO:0000119	<Book:Scheid, Rickne. Woelfel's Dental Anatomy, 8th Edition. Lippincott Williams & Wilkins, 01/2011. pp. i - ii). @en>
-WARN	annotation_whitespace	ceramic dental restoration material	IAO:0000119	< ISBN:1935201387#CDT 2011-2012 Current Dental Terminology, Chapter 1>
-WARN	annotation_whitespace	titanium dental restoration material	IAO:0000119	< ISBN:1935201387#CDT 2011-2012 Current Dental Terminology, Chapter 1>
-WARN	annotation_whitespace	noble metal dental restoration material	IAO:0000119	< ISBN:1935201387#CDT 2011-2012 Current Dental Terminology, Chapter 1>
-WARN	annotation_whitespace	high noble metal dental restoration material	IAO:0000119	< ISBN:1935201387#CDT 2011-2012 Current Dental Terminology, Chapter 1>
-WARN	annotation_whitespace	predominantly base metal dental restoration material	IAO:0000119	< ISBN:1935201387#CDT 2011-2012 Current Dental Terminology, Chapter 1>
+WARN	annotation_whitespace	Universal tooth number	IAO:0000119	Book:Scheid, Rickne. Woelfel's Dental Anatomy, 8th Edition. Lippincott Williams & Wilkins, 01/2011. pp. i - ii). @en
+WARN	annotation_whitespace	ceramic dental restoration material	IAO:0000119	 ISBN:1935201387#CDT 2011-2012 Current Dental Terminology, Chapter 1
+WARN	annotation_whitespace	titanium dental restoration material	IAO:0000119	 ISBN:1935201387#CDT 2011-2012 Current Dental Terminology, Chapter 1
+WARN	annotation_whitespace	noble metal dental restoration material	IAO:0000119	 ISBN:1935201387#CDT 2011-2012 Current Dental Terminology, Chapter 1
+WARN	annotation_whitespace	high noble metal dental restoration material	IAO:0000119	 ISBN:1935201387#CDT 2011-2012 Current Dental Terminology, Chapter 1
+WARN	annotation_whitespace	predominantly base metal dental restoration material	IAO:0000119	 ISBN:1935201387#CDT 2011-2012 Current Dental Terminology, Chapter 1
 WARN	annotation_whitespace	porcelain fused to high noble metal crown restoration procedure	IAO:0000115	"A procelain fused to nobal metal crown restoration procedure that uses high noble metal as a substrate.
 "
 WARN	annotation_whitespace	stainless steel with resin window crown restoration procedure	IAO:0000115	"A crown restoration procedure in which the artifical crown used to restore the tooth is formed by cutting a window into a stainless steel prosthetic crown and filling the window with resin.
 "
 WARN	annotation_whitespace	dental assistant role	IAO:0000115	"a dental health care provider role that inheres in a person who is a an auxiliary to the dental operator
 "
-WARN	annotation_whitespace	dental restoration material role	IAO:0000117	<Person:Alan Ruttenberg>
+WARN	annotation_whitespace	dental restoration material role	IAO:0000117	"Person:Alan Ruttenberg
+"
 WARN	annotation_whitespace	comprehensive oral evaluation	IAO:0000115	"An oral evaluation that is performed on new patients; established patients who have had a significant change in health conditions or other unusual circumstances; or established patients who have been absent from active treatment for three or more years. It is a thorough evaluation and recording of the extraoral and intraoral hard and soft tissues. It may require interpretation of information acquired through additional diagnostic procedures. 
 
 This includes an evaluation for oral cancer where indicated, the evaluation and recording of the patients dental and medical history and a general health assessment.  It may include the evaluation and recording of dental caries, missing or unerupted teeth, restorations, existing prostheses, occlusal relationships, periodontal conditions (including periodontal screening and/or charting), hard and soft tissue anomalies, etc. "
 WARN	annotation_whitespace	comprehensive periodontal evaluation	IAO:0000115	An oral evaluation performed on patients showing signs or symptoms of periodontal disease and for patients with risk factors for such disease, such as smoking or diabetes.  It includes evaluation of periodontal conditions, probing and charting, evaluation and recording of the patients dental and medical history and general health assessment.  It may include the evaluation and recording of dental caries, missing or unerupted teeth, restorations and occlusal relationships. 
 WARN	annotation_whitespace	prosthetic tooth	IAO:0000116	usually made of porcelain or plastic 
 WARN	annotation_whitespace	partial denture	IAO:0000115	a prosthesis that replaces one or more, but less than all, of the natural teeth and associated structures 
-WARN	annotation_whitespace	tooth-supported partial denture	IAO:0000116	<Dan Caplan 12/13/2014:Mosby's definition is not quite corrrect. The support could also include other teeth that are not adjacent to the endentulous area. The important point is that the prosthesis is supported by existing teeth (wherever they are in the arch), and not by the gingiva.>
-WARN	annotation_whitespace	prosthetic role	IAO:0000116	<Bill Duncan / Alan Ruttenber 12/16/2014:Prosthics may be either functional for non-functional. For example, a glass eye bears a prosthetic role, but it does not see. >
+WARN	annotation_whitespace	tooth-supported partial denture	IAO:0000116	"Dan Caplan 12/13/2014:
+Mosby's definition is not quite corrrect. The support could also include other teeth that are not adjacent to the endentulous area. The important point is that the prosthesis is supported by existing teeth (wherever they are in the arch), and not by the gingiva.
+"
+WARN	annotation_whitespace	prosthetic role	IAO:0000116	"Bill Duncan / Alan Ruttenber 12/16/2014:
+
+Prosthics may be either functional for non-functional. For example, a glass eye bears a prosthetic role, but it does not see. "
+WARN	equivalent_class_axiom_no_genus	dental restoration material	BFO:0000087	dental restoration material role
 WARN	missing_definition	dental restoration material	IAO:0000115	
 WARN	missing_definition	fractured tooth	IAO:0000115	
 WARN	missing_definition	fractured tooth finding	IAO:0000115	
@@ -73,7 +84,9 @@ WARN	missing_definition	pontic	IAO:0000115
 INFO	lowercase_definition	amalgam dental restoration material	IAO:0000115	a metal dental restoration material that consists of silver-colored, metallic alloy which is composed of a mixture of mercury and other metals@en
 INFO	lowercase_definition	performing a dental clinical assessment	IAO:0000115	should use obi class with modifications to not include restriction that has specified output is a diagnosis, and/or subclass the obi class
 INFO	lowercase_definition	patient ID	IAO:0000115	a data property that relates an individual patient to the literal string that represents the patient's id
-INFO	lowercase_definition	occurrence date	IAO:0000115	<a data property that relates either:1. a finding to the date on which it was recorded2. a process to the date on which it occrred>
+INFO	lowercase_definition	occurrence date	IAO:0000115	"a data property that relates either:
+1. a finding to the date on which it was recorded
+2. a process to the date on which it occrred"
 INFO	lowercase_definition	dental hygienist role	IAO:0000115	a dental health care provider role that inheres in a person who is a licensed dental professional that specializes in preventative care
 INFO	lowercase_definition	dentist role	IAO:0000115	"a dental health care provider role that inheres in a person who is qualified by training and licensed by a state or region to diagnose and treat abnormalities of the teeth, gums, and underlying bone, including conditions caused by disease, trauma, and heredity
 

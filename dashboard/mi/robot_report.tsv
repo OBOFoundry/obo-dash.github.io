@@ -1,4 +1,14 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	duplicate_label	suppression	rdfs:label	suppression
+ERROR	duplicate_label	suppression	rdfs:label	suppression
+ERROR	duplicate_label	pubchem	rdfs:label	pubchem
+ERROR	duplicate_label	pubchem	rdfs:label	pubchem
+ERROR	duplicate_label	opposing epistasis	rdfs:label	opposing epistasis
+ERROR	duplicate_label	opposing epistasis	rdfs:label	opposing epistasis
+ERROR	duplicate_label	ampylation assay	rdfs:label	ampylation assay
+ERROR	duplicate_label	ampylation assay	rdfs:label	ampylation assay
+ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/mi.owl	dc:title	
+ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/mi.owl	dc:license	
 ERROR	duplicate_definition	water solubility	IAO:0000115	Water solubility in mg/mL or g/L
 ERROR	duplicate_definition	predicted water solubility	IAO:0000115	Water solubility in mg/mL or g/L
 ERROR	duplicate_definition	carboxylation assay	IAO:0000115	The measurement of a the introduction of a carboxylic acid group into a substrate.
@@ -16,28 +26,49 @@ ERROR	duplicate_definition	atto 465	IAO:0000115	Fluorescent tag - maleimide coup
 ERROR	duplicate_definition	chembl compound	IAO:0000115	ChEMBL focuses on mapping the interactions of small molecules binding to their macromolecular targets.
 ERROR	duplicate_definition	chembl target	IAO:0000115	ChEMBL focuses on mapping the interactions of small molecules binding to their macromolecular targets.
 ERROR	duplicate_definition	chembl	IAO:0000115	ChEMBL focuses on mapping the interactions of small molecules binding to their macromolecular targets.
+ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/mi.owl	dc:description	
 ERROR	missing_label	obo:mi#Drugable	rdfs:label	
 ERROR	missing_label	obo:mi#PSI-MI_slim	rdfs:label	
 ERROR	missing_label	obo:mi#PSI-MOD_slim	rdfs:label	
-ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/mi.owl	dc11:description	
-ERROR	duplicate_label	suppression	rdfs:label	suppression
-ERROR	duplicate_label	suppression	rdfs:label	suppression
-ERROR	duplicate_label	pubchem	rdfs:label	pubchem
-ERROR	duplicate_label	pubchem	rdfs:label	pubchem
-ERROR	duplicate_label	opposing epistasis	rdfs:label	opposing epistasis
-ERROR	duplicate_label	opposing epistasis	rdfs:label	opposing epistasis
-ERROR	duplicate_label	ampylation assay	rdfs:label	ampylation assay
-ERROR	duplicate_label	ampylation assay	rdfs:label	ampylation assay
-ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/mi.owl	dc:license	
-ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/mi.owl	dc11:title	
+WARN	missing_synonymtype_declaration	Alternate label curated by PSI-MI	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	Unique short label curated by PSI-MI	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	Alternate label curated by PSI-MOD	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	Unique short label curated by PSI-MOD	rdfs:subPropertyOf	
+WARN	missing_definition	Label from MS DeltaMass	IAO:0000115	
+WARN	missing_definition	obo:mi#Drugable	IAO:0000115	
+WARN	missing_definition	Alternate label curated by PSI-MI	IAO:0000115	
+WARN	missing_definition	Unique short label curated by PSI-MI	IAO:0000115	
+WARN	missing_definition	obo:mi#PSI-MI_slim	IAO:0000115	
+WARN	missing_definition	Alternate label curated by PSI-MOD	IAO:0000115	
+WARN	missing_definition	Unique short label curated by PSI-MOD	IAO:0000115	
+WARN	missing_definition	obo:mi#PSI-MOD_slim	IAO:0000115	
+WARN	missing_definition	Agreed label from MS community	IAO:0000115	
+WARN	missing_definition	Alternate name from RESID	IAO:0000115	
+WARN	missing_definition	Misnomer label from RESID	IAO:0000115	
+WARN	missing_definition	Name from RESID	IAO:0000115	
+WARN	missing_definition	Systematic name from RESID	IAO:0000115	
+WARN	missing_definition	Alternate name from UniMod	IAO:0000115	
+WARN	missing_definition	Description (full_name) from UniMod	IAO:0000115	
+WARN	missing_definition	Interim label from UniMod	IAO:0000115	
+WARN	missing_definition	Label (title) from UniMod	IAO:0000115	
+WARN	missing_definition	Protein feature description from UniProtKB	IAO:0000115	
+WARN	missing_subset_declaration	obo:mi#Drugable	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:mi#PSI-MI_slim	rdfs:subPropertyOf	
 WARN	annotation_whitespace	myc tag coimmunoprecipitation	oboInOwl:hasExactSynonym	myc tag coip 
-WARN	annotation_whitespace	suppression mutation	IAO:0000115	<A given (suppressed) mutation phenotype is reverted by a supressor gene mutation.OBSOLETE: remap to CV intraction type 'suppressive interaction' MI:0793 and genetic experimental form 'mutated gene' MI:0804. >
-WARN	annotation_whitespace	suppression knockout	IAO:0000115	<Knocked out gene is the suppressor of a phenotype.OBSOLETE: remap to CV intraction type 'suppressive interaction' MI:0793 and genetic experimental form 'knock out' MI:0788. >
-WARN	annotation_whitespace	suppression partial alteration	IAO:0000115	<A mutation is the partial suppressor of a mutant phenotype.OBSOLETE: remap to CV intraction type 'suppressive interaction' MI:0793 and genetic experimental form 'knock down' MI:0789. >
-WARN	annotation_whitespace	suppression expression alteration	IAO:0000115	<An altered expression is the suppressor of a phenotype.OBSOLETE: remap to CV intraction type 'suppressive interaction' MI:0793 and genetic experimental form 'expression level alteration' MI:0803. >
-WARN	annotation_whitespace	suppression overexpression	IAO:0000115	<Overexpression is the suppressor of a phenotype.OBSOLETE: remap to CV intraction type 'suppressive interaction' MI:0793 and genetic experimental form 'over expressed' MI:0506. >
-WARN	annotation_whitespace	suppression scalable	IAO:0000115	<Level of over/underexpression scales the 'extend' of a phenotype.OBSOLETE: remap to CV intraction type 'suppressive interaction' MI:0793 and genetic experimental form 'expression level alteration' MI:0803. >
-WARN	annotation_whitespace	suppression underexpression	IAO:0000115	<Underexpression is the suppressor of a phenotype.OBSOLETE: remap to CV intraction type 'suppressive interaction' MI:0793 and genetic experimental form 'under expressed' MI:0223. >
+WARN	annotation_whitespace	suppression mutation	IAO:0000115	"A given (suppressed) mutation phenotype is reverted by a supressor gene mutation.
+OBSOLETE: remap to CV intraction type 'suppressive interaction' MI:0793 and genetic experimental form 'mutated gene' MI:0804. "
+WARN	annotation_whitespace	suppression knockout	IAO:0000115	"Knocked out gene is the suppressor of a phenotype.
+OBSOLETE: remap to CV intraction type 'suppressive interaction' MI:0793 and genetic experimental form 'knock out' MI:0788. "
+WARN	annotation_whitespace	suppression partial alteration	IAO:0000115	"A mutation is the partial suppressor of a mutant phenotype.
+OBSOLETE: remap to CV intraction type 'suppressive interaction' MI:0793 and genetic experimental form 'knock down' MI:0789. "
+WARN	annotation_whitespace	suppression expression alteration	IAO:0000115	"An altered expression is the suppressor of a phenotype.
+OBSOLETE: remap to CV intraction type 'suppressive interaction' MI:0793 and genetic experimental form 'expression level alteration' MI:0803. "
+WARN	annotation_whitespace	suppression overexpression	IAO:0000115	"Overexpression is the suppressor of a phenotype.
+OBSOLETE: remap to CV intraction type 'suppressive interaction' MI:0793 and genetic experimental form 'over expressed' MI:0506. "
+WARN	annotation_whitespace	suppression scalable	IAO:0000115	"Level of over/underexpression scales the 'extend' of a phenotype.
+OBSOLETE: remap to CV intraction type 'suppressive interaction' MI:0793 and genetic experimental form 'expression level alteration' MI:0803. "
+WARN	annotation_whitespace	suppression underexpression	IAO:0000115	"Underexpression is the suppressor of a phenotype.
+OBSOLETE: remap to CV intraction type 'suppressive interaction' MI:0793 and genetic experimental form 'under expressed' MI:0223. "
 WARN	annotation_whitespace	n-terminal position	oboInOwl:hasExactSynonym	n-terminal 
 WARN	annotation_whitespace	double stranded deoxyribonucleic acid	IAO:0000115	"DNA that consists of two base pairing strands. The 2 nucleotide chains are held together by hydrogen bonds between base pairs of nucleotides.
 "
@@ -88,113 +119,82 @@ WARN	duplicate_exact_synonym	aminoacylation assay	oboInOwl:hasExactSynonym	amino
 WARN	duplicate_exact_synonym	aminoacylation reaction	oboInOwl:hasExactSynonym	aminoacylation
 WARN	duplicate_exact_synonym	amidation reaction	oboInOwl:hasExactSynonym	amidation
 WARN	duplicate_exact_synonym	amidase assay	oboInOwl:hasExactSynonym	amidation
-WARN	missing_definition	Label from MS DeltaMass	IAO:0000115	
-WARN	missing_definition	obo:mi#Drugable	IAO:0000115	
-WARN	missing_definition	Alternate label curated by PSI-MI	IAO:0000115	
-WARN	missing_definition	Unique short label curated by PSI-MI	IAO:0000115	
-WARN	missing_definition	obo:mi#PSI-MI_slim	IAO:0000115	
-WARN	missing_definition	Alternate label curated by PSI-MOD	IAO:0000115	
-WARN	missing_definition	Unique short label curated by PSI-MOD	IAO:0000115	
-WARN	missing_definition	obo:mi#PSI-MOD_slim	IAO:0000115	
-WARN	missing_definition	Agreed label from MS community	IAO:0000115	
-WARN	missing_definition	Alternate name from RESID	IAO:0000115	
-WARN	missing_definition	Misnomer label from RESID	IAO:0000115	
-WARN	missing_definition	Name from RESID	IAO:0000115	
-WARN	missing_definition	Systematic name from RESID	IAO:0000115	
-WARN	missing_definition	Alternate name from UniMod	IAO:0000115	
-WARN	missing_definition	Description (full_name) from UniMod	IAO:0000115	
-WARN	missing_definition	Interim label from UniMod	IAO:0000115	
-WARN	missing_definition	Label (title) from UniMod	IAO:0000115	
-WARN	missing_definition	Protein feature description from UniProtKB	IAO:0000115	
-WARN	invalid_xref	reactome complex	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	reactome complex	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	reactome protein	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	reactome protein	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	cabri	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	cabri	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	newt	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	newt	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	resid	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	resid	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	huge	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	huge	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	cellular component	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	molecular function	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	biological process	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	pubmed	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	pubmed	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	gene ontology	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	gene ontology	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	interpro	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	interpro	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	cdd	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	pfam	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	pirsf	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	prints	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	prodom	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	prosite	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	scop superfamily	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	smart	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	tigrfams	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	mmdb	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	rcsb pdb	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	rcsb pdb	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	bind	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	cygd	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	dip	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	dip	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	reactome	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	reactome	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	intact	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	intact	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	kegg	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	mint	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	pdbe	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	pdbe	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	chebi	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	chebi	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	ddbj/embl/genbank	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	ddbj/embl/genbank	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	ensembl	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	ensembl	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	entrez gene/locuslink	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	flybase	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	flybase	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	mgd/mgi	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	omim	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	omim	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	refseq	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	rfam	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	rgd	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	sgd	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	sgd	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	uniparc	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	uniparc	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	uniprot knowledge base	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	uniprot knowledge base	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	wormbase	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	psi-mi	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	psi-mi	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	digital object identifier	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	digital object identifier	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	alliance for cellular signaling	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	alliance for cellular signaling	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	intenz	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	intenz	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	sequence ontology	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	imex	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	international protein index	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	pride	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	wwpdb	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	wwpdb	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	pdbj	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	pdbj	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	ncbi taxonomy	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	ncbi taxonomy	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	protein genbank identifier	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	protein genbank identifier	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	nucleotide genbank identifier	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	nucleotide genbank identifier	oboInOwl:hasDbXref	<search-url:>
-WARN	invalid_xref	genbank identifier	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	protein modification ontology	oboInOwl:hasDbXref	<id-validation-regexp:>
-WARN	invalid_xref	matrixdb	oboInOwl:hasDbXref	<search-url:>
+WARN	duplicate_label_synonym	filter binding	oboInOwl:hasExactSynonym	filter binding
+WARN	duplicate_label_synonym	gene	oboInOwl:hasExactSynonym	gene
+WARN	duplicate_label_synonym	deoxyribonucleic acid	oboInOwl:hasExactSynonym	deoxyribonucleic acid
+WARN	duplicate_label_synonym	rare isotope label	oboInOwl:hasExactSynonym	rare isotope label
+WARN	duplicate_label_synonym	intact	oboInOwl:hasExactSynonym	intact
+WARN	duplicate_label_synonym	rfam	oboInOwl:hasExactSynonym	rfam
+WARN	duplicate_label_synonym	maltose binding protein tag	oboInOwl:hasExactSynonym	maltose binding protein tag
+WARN	duplicate_label_synonym	function	oboInOwl:hasExactSynonym	function
+WARN	duplicate_label_synonym	prerequisite-ptm	oboInOwl:hasExactSynonym	prerequisite-ptm
+WARN	duplicate_label_synonym	resulting-ptm	oboInOwl:hasExactSynonym	resulting-ptm
+WARN	duplicate_label_synonym	Kd	oboInOwl:hasExactSynonym	Kd
+WARN	duplicate_label_synonym	sandwich immunoassay	oboInOwl:hasExactSynonym	sandwich immunoassay
+WARN	duplicate_label_synonym	asynthetic	oboInOwl:hasExactSynonym	asynthetic
+WARN	duplicate_label_synonym	suppression	oboInOwl:hasExactSynonym	suppression
+WARN	duplicate_label_synonym	koff	oboInOwl:hasExactSynonym	koff
+WARN	duplicate_label_synonym	observed-ptm	oboInOwl:hasExactSynonym	observed-ptm
+WARN	duplicate_label_synonym	glu tag	oboInOwl:hasExactSynonym	glu tag
+WARN	duplicate_label_synonym	competitor	oboInOwl:hasExactSynonym	competitor
+WARN	duplicate_label_synonym	polymerization	oboInOwl:hasExactSynonym	polymerization
+WARN	duplicate_label_synonym	inchi key	oboInOwl:hasExactSynonym	inchi key
+WARN	duplicate_label_synonym	amidase assay	oboInOwl:hasExactSynonym	amidase assay
+WARN	duplicate_label_synonym	ubiquitinase assay	oboInOwl:hasExactSynonym	ubiquitinase assay
+WARN	duplicate_label_synonym	deubiquitinase assay	oboInOwl:hasExactSynonym	deubiquitinase assay
+WARN	duplicate_label_synonym	palmitoylase assay	oboInOwl:hasExactSynonym	palmitoylase assay
+WARN	duplicate_label_synonym	predicted	oboInOwl:hasExactSynonym	predicted
+WARN	duplicate_label_synonym	beilstein	oboInOwl:hasExactSynonym	beilstein
+WARN	duplicate_label_synonym	einecs	oboInOwl:hasExactSynonym	einecs
+WARN	duplicate_label_synonym	merck index	oboInOwl:hasExactSynonym	merck index
+WARN	duplicate_label_synonym	plantgdb	oboInOwl:hasExactSynonym	plantgdb
+WARN	duplicate_label_synonym	ratmap	oboInOwl:hasExactSynonym	ratmap
+WARN	duplicate_label_synonym	tair	oboInOwl:hasExactSynonym	tair
+WARN	duplicate_label_synonym	tigr/jcvi	oboInOwl:hasExactSynonym	tigr/jcvi
+WARN	duplicate_label_synonym	zfin	oboInOwl:hasExactSynonym	zfin
+WARN	duplicate_label_synonym	photon donor	oboInOwl:hasExactSynonym	photon donor
+WARN	duplicate_label_synonym	photon acceptor	oboInOwl:hasExactSynonym	photon acceptor
+WARN	duplicate_label_synonym	atto label	oboInOwl:hasExactSynonym	atto label
+WARN	duplicate_label_synonym	genome databases	oboInOwl:hasExactSynonym	genome databases
+WARN	duplicate_label_synonym	hgnc	oboInOwl:hasExactSynonym	hgnc
+WARN	duplicate_label_synonym	uniprot	oboInOwl:hasExactSynonym	uniprot
+WARN	duplicate_label_synonym	bioactive entity	oboInOwl:hasExactSynonym	bioactive entity
+WARN	duplicate_label_synonym	mapped-identity	oboInOwl:hasExactSynonym	mapped-identity
+WARN	duplicate_label_synonym	solution state nmr	oboInOwl:hasExactSynonym	solution state nmr
+WARN	duplicate_label_synonym	solid state nmr	oboInOwl:hasExactSynonym	solid state nmr
+WARN	duplicate_label_synonym	biocyc	oboInOwl:hasExactSynonym	biocyc
+WARN	duplicate_label_synonym	pid	oboInOwl:hasExactSynonym	pid
+WARN	duplicate_label_synonym	biocarta	oboInOwl:hasExactSynonym	biocarta
+WARN	duplicate_label_synonym	carboxylation assay	oboInOwl:hasExactSynonym	carboxylation assay
+WARN	duplicate_label_synonym	ampylation assay	oboInOwl:hasExactSynonym	ampylation assay
+WARN	duplicate_label_synonym	lap tag	oboInOwl:hasExactSynonym	lap tag
+WARN	duplicate_label_synonym	chembl	oboInOwl:hasExactSynonym	chembl
+WARN	duplicate_label_synonym	lipid cleavage	oboInOwl:hasExactSynonym	lipid cleavage
+WARN	duplicate_label_synonym	standard inchi	oboInOwl:hasExactSynonym	standard inchi
+WARN	duplicate_label_synonym	clearance	oboInOwl:hasExactSynonym	clearance
+WARN	duplicate_label_synonym	cyp-450 inhibition	oboInOwl:hasExactSynonym	cyp-450 inhibition
+WARN	duplicate_label_synonym	aspgd	oboInOwl:hasExactSynonym	aspgd
+WARN	duplicate_label_synonym	cgd	oboInOwl:hasExactSynonym	cgd
+WARN	duplicate_label_synonym	ecoliwiki	oboInOwl:hasExactSynonym	ecoliwiki
+WARN	duplicate_label_synonym	genedb	oboInOwl:hasExactSynonym	genedb
+WARN	duplicate_label_synonym	gramene	oboInOwl:hasExactSynonym	gramene
+WARN	duplicate_label_synonym	pombase	oboInOwl:hasExactSynonym	pombase
+WARN	duplicate_label_synonym	agi_locuscode	oboInOwl:hasExactSynonym	agi_locuscode
+WARN	duplicate_label_synonym	subset	oboInOwl:hasExactSynonym	subset
+WARN	duplicate_label_synonym	agbase	oboInOwl:hasExactSynonym	agbase
+WARN	duplicate_label_synonym	cacao	oboInOwl:hasExactSynonym	cacao
+WARN	duplicate_label_synonym	dflat	oboInOwl:hasExactSynonym	dflat
+WARN	duplicate_label_synonym	go_central	oboInOwl:hasExactSynonym	go_central
+WARN	duplicate_label_synonym	mtbbase	oboInOwl:hasExactSynonym	mtbbase
+WARN	duplicate_label_synonym	parkinsonsuk-ucl	oboInOwl:hasExactSynonym	parkinsonsuk-ucl
+WARN	duplicate_label_synonym	alut	oboInOwl:hasExactSynonym	alut
+WARN	duplicate_label_synonym	ri	oboInOwl:hasExactSynonym	ri
+WARN	duplicate_label_synonym	par-clip	oboInOwl:hasExactSynonym	par-clip
+WARN	duplicate_label_synonym	avexis	oboInOwl:hasExactSynonym	avexis
+WARN	duplicate_label_synonym	clip	oboInOwl:hasExactSynonym	clip
+WARN	duplicate_label_synonym	clip-seq	oboInOwl:hasExactSynonym	clip-seq
+WARN	duplicate_label_synonym	iclip	oboInOwl:hasExactSynonym	iclip
+WARN	duplicate_label_synonym	crac	oboInOwl:hasExactSynonym	crac
+WARN	duplicate_label_synonym	clash	oboInOwl:hasExactSynonym	clash
+WARN	duplicate_label_synonym	probe interaction assay	oboInOwl:hasExactSynonym	probe interaction assay
+WARN	duplicate_label_synonym	labelling assay	oboInOwl:hasExactSynonym	labelling assay

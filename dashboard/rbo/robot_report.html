@@ -12,11 +12,9 @@
       <div class="report_summary"><table class="table">
       <tr><th><b>Level</b></th><th><b>Number of errors</b></th></tr>
       
-      <tr><td>ERROR</td><td>4</td></tr>
+      <tr><td>ERROR</td><td>9</td></tr>
       
-      <tr><td>WARN</td><td>93</td></tr>
-      
-      <tr><td>INFO</td><td>8</td></tr>
+      <tr><td>WARN</td><td>351</td></tr>
       
       </table></div>
       <h3>Error breakdown</h3>
@@ -25,13 +23,17 @@
       
       <tr><td>missing_label</td><td>4</td></tr>
       
-      <tr><td>annotation_whitespace</td><td>23</td></tr>
+      <tr><td>label_whitespace</td><td>2</td></tr>
       
-      <tr><td>missing_definition</td><td>60</td></tr>
+      <tr><td>deprecated_boolean_datatype</td><td>3</td></tr>
+      
+      <tr><td>missing_definition</td><td>311</td></tr>
+      
+      <tr><td>annotation_whitespace</td><td>28</td></tr>
       
       <tr><td>duplicate_scoped_synonym</td><td>10</td></tr>
       
-      <tr><td>lowercase_definition</td><td>8</td></tr>
+      <tr><td>duplicate_label_synonym</td><td>2</td></tr>
       
       </table></div>
       <p style="text-align:center; margin-top:-15px;">
@@ -218,36 +220,36 @@
           
             
           
-          <tr class="table-warning">
+          <tr class="table-danger">
             <td>5</td>
             
               <td>
               
-                WARN
+                ERROR
               
               </td>
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/annotation_whitespace">annotation_whitespace</a>
+                <a href="http://robot.obolibrary.org/report_queries/label_whitespace">label_whitespace</a>
               
               </td>
             
               <td>
               
-                Iron-56 nucleus
+                Social science and humanities study 
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
               
               </td>
             
               <td>
               
-                An atomic nucleus with 26 protons and 30 neutrons 
+                Social science and humanities study 
 
               
               </td>
@@ -258,36 +260,36 @@
           
             
           
-          <tr class="table-warning">
+          <tr class="table-danger">
             <td>6</td>
             
               <td>
               
-                WARN
+                ERROR
               
               </td>
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/annotation_whitespace">annotation_whitespace</a>
+                <a href="http://robot.obolibrary.org/report_queries/label_whitespace">label_whitespace</a>
               
               </td>
             
               <td>
               
-                Silicon-28 nucleus
+                Meteorology study 
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
               
               </td>
             
               <td>
               
-                An atomic nucleus with 14 protons and 14 neutrons 
+                Meteorology study 
 
               
               </td>
@@ -298,36 +300,36 @@
           
             
           
-          <tr class="table-warning">
+          <tr class="table-danger">
             <td>7</td>
             
               <td>
               
-                WARN
+                ERROR
               
               </td>
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/annotation_whitespace">annotation_whitespace</a>
+                <a href="http://robot.obolibrary.org/report_queries/deprecated_boolean_datatype">deprecated_boolean_datatype</a>
               
               </td>
             
               <td>
               
-                Carbon-12 nucleus
+                Cobalt-57 gamma radiation
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+                <a href="http://www.w3.org/2002/07/owl#deprecated">owl:deprecated</a>
               
               </td>
             
               <td>
               
-                An atomic nucleus with 6 protons and 6 neutrons 
+                radionuclide
 
               
               </td>
@@ -338,37 +340,37 @@
           
             
           
-          <tr class="table-warning">
+          <tr class="table-danger">
             <td>8</td>
             
               <td>
               
-                WARN
+                ERROR
               
               </td>
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/annotation_whitespace">annotation_whitespace</a>
+                <a href="http://robot.obolibrary.org/report_queries/deprecated_boolean_datatype">deprecated_boolean_datatype</a>
               
               </td>
             
               <td>
               
-                Helium-4 nucleus
+                biological process
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+                <a href="http://www.w3.org/2002/07/owl#deprecated">owl:deprecated</a>
               
               </td>
             
               <td>
               
-                An atomic nucleus with 2 protons and 2 neutrons 
-
+                <a href="http://www.w3.org/2002/07/owl#deprecated">owl:deprecated
+</a>
               
               </td>
             
@@ -378,37 +380,37 @@
           
             
           
-          <tr class="table-warning">
+          <tr class="table-danger">
             <td>9</td>
             
               <td>
               
-                WARN
+                ERROR
               
               </td>
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/annotation_whitespace">annotation_whitespace</a>
+                <a href="http://robot.obolibrary.org/report_queries/deprecated_boolean_datatype">deprecated_boolean_datatype</a>
               
               </td>
             
               <td>
               
-                Neon-20 nucleus
+                cellular process
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+                <a href="http://www.w3.org/2002/07/owl#deprecated">owl:deprecated</a>
               
               </td>
             
               <td>
               
-                An atomic nucleus with 10 protons and 10 neutrons 
-
+                <a href="http://www.w3.org/2002/07/owl#deprecated">owl:deprecated
+</a>
               
               </td>
             
@@ -420,726 +422,6 @@
           
           <tr class="table-warning">
             <td>10</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/annotation_whitespace">annotation_whitespace</a>
-              
-              </td>
-            
-              <td>
-              
-                ionizing radiation energy
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                The kinetic energy carried by a particle or photon of ionizing radiation. 
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>11</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/annotation_whitespace">annotation_whitespace</a>
-              
-              </td>
-            
-              <td>
-              
-                non-irradiated
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                An organism or material entity kept unexposed to radiation, for purposes of comparison to a similar organism or material entity that has been exposed to radiation 
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>12</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/annotation_whitespace">annotation_whitespace</a>
-              
-              </td>
-            
-              <td>
-              
-                irradiation protocol
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                A protocol for administering radiation to a sample 
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>13</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/annotation_whitespace">annotation_whitespace</a>
-              
-              </td>
-            
-              <td>
-              
-                Niobium-93 nucleus
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                An atomic nucleus with 41 protons and 52 neutrons 
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>14</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/annotation_whitespace">annotation_whitespace</a>
-              
-              </td>
-            
-              <td>
-              
-                Silver-107 nucleus
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                An atomic nucleus with 47 protons and 60 neutrons 
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>15</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/annotation_whitespace">annotation_whitespace</a>
-              
-              </td>
-            
-              <td>
-              
-                Xenon-129 nucleus
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                An atomic nucleus with 54 protons and 75 neutrons 
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>16</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/annotation_whitespace">annotation_whitespace</a>
-              
-              </td>
-            
-              <td>
-              
-                Tantalum-181 nucleus
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                An atomic nucleus with 73 protons and 108 neutrons 
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>17</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/annotation_whitespace">annotation_whitespace</a>
-              
-              </td>
-            
-              <td>
-              
-                Gold-197 nucleus
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                An atomic nucleus with 79 protons and 118 neutrons 
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>18</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/annotation_whitespace">annotation_whitespace</a>
-              
-              </td>
-            
-              <td>
-              
-                Nitrogen-14 nucleus
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                An atomic nucleus with 7 protons and 7 neutrons 
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>19</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/annotation_whitespace">annotation_whitespace</a>
-              
-              </td>
-            
-              <td>
-              
-                Oxygen-16 nucleus
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                An atomic nucleus with 8 protons and 8 neutrons 
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>20</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/annotation_whitespace">annotation_whitespace</a>
-              
-              </td>
-            
-              <td>
-              
-                Argon-40 nucleus
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                An atomic nucleus with 18 protons and 22 neutrons 
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>21</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/annotation_whitespace">annotation_whitespace</a>
-              
-              </td>
-            
-              <td>
-              
-                Titanium-48 nucleus
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                An atomic nucleus with 22 protons and 26 neutrons 
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>22</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/annotation_whitespace">annotation_whitespace</a>
-              
-              </td>
-            
-              <td>
-              
-                Krypton-84 nucleus
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                An atomic nucleus with 36 protons and 48 neutrons 
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>23</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/annotation_whitespace">annotation_whitespace</a>
-              
-              </td>
-            
-              <td>
-              
-                miliigray per second
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000118">IAO:0000118</a>
-              
-              </td>
-            
-              <td>
-              
-                mGy/sec 
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>24</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/annotation_whitespace">annotation_whitespace</a>
-              
-              </td>
-            
-              <td>
-              
-                biodosimetry
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                Use of a biological response as an indicator of a dose of an effective agent (e.g., the extent of decline in peripheral blood lymphocytes of humans exposed to ionizing radiation can be used as an indicator of the absorbed dose to the whole body from that 
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>25</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/annotation_whitespace">annotation_whitespace</a>
-              
-              </td>
-            
-              <td>
-              
-                delta ray
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                Highly energetic electrons produced during inelastic collisions between ionizing radiation and atomic electrons. In a small proportion of collisions, the ejected electron receives a considerable amount of energy (i.e., >1,000 eV), allowing it to travel a 
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>26</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/annotation_whitespace">annotation_whitespace</a>
-              
-              </td>
-            
-              <td>
-              
-                quality factor
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                Dimensionless factor developed for purposes of radiation protection and assessing health risks in general terms that accounts for the relative biological effectiveness of different radiations in producing stochastic effects and is used to relate absorbed 
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>27</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/annotation_whitespace">annotation_whitespace</a>
-              
-              </td>
-            
-              <td>
-              
-                relative biological effectiveness
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000112">IAO:0000112</a>
-              
-              </td>
-            
-              <td>
-              
-                Neutrons have been found to have a higher RBE than electrons. 
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>28</td>
             
               <td>
               
@@ -1179,7 +461,7 @@
             
           
           <tr class="table-warning">
-            <td>29</td>
+            <td>11</td>
             
               <td>
               
@@ -1219,7 +501,7 @@
             
           
           <tr class="table-warning">
-            <td>30</td>
+            <td>12</td>
             
               <td>
               
@@ -1259,6 +541,726 @@
             
           
           <tr class="table-warning">
+            <td>13</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                ionizing radiation categorized by source
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>14</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                space radiation
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>15</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                ground radiation
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>16</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                tissue equivalent material
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>17</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Fe-56 ion radiation
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>18</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                C-12 ion radiation
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>19</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Si-28 ion radiation
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>20</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                He-4 ion radiation
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>21</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Ne-20 ion radiation
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>22</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                light ion
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>23</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                active dosimeter
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>24</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                passive dosimeter
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>25</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                background ionizing radiation
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>26</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                effective dose
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>27</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                mixed radiation field
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>28</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                radiation environment
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>29</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Earth surface
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>30</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Earth atmosphere
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
             <td>31</td>
             
               <td>
@@ -1275,7 +1277,7 @@
             
               <td>
               
-                radionuclide
+                low Earth orbit
               
               </td>
             
@@ -1315,7 +1317,7 @@
             
               <td>
               
-                actinide
+                beyond low Earth orbit
               
               </td>
             
@@ -1355,7 +1357,7 @@
             
               <td>
               
-                actinium
+                fractionated radiation exposure
               
               </td>
             
@@ -1395,7 +1397,7 @@
             
               <td>
               
-                americium
+                millirad
               
               </td>
             
@@ -1435,7 +1437,7 @@
             
               <td>
               
-                californium
+                equivalent dose
               
               </td>
             
@@ -1475,7 +1477,7 @@
             
               <td>
               
-                neptunium
+                dose fraction
               
               </td>
             
@@ -1515,7 +1517,7 @@
             
               <td>
               
-                plutonium
+                cosmic radiation
               
               </td>
             
@@ -1555,7 +1557,7 @@
             
               <td>
               
-                thorium
+                galactic cosmic radiation
               
               </td>
             
@@ -1595,7 +1597,7 @@
             
               <td>
               
-                uranium
+                solar cosmic radiation
               
               </td>
             
@@ -1635,7 +1637,7 @@
             
               <td>
               
-                radioprotectant
+                dose rate
               
               </td>
             
@@ -1675,7 +1677,7 @@
             
               <td>
               
-                radionuclide chelator
+                spacecraft
               
               </td>
             
@@ -1715,7 +1717,7 @@
             
               <td>
               
-                co-carcinogen
+                spacecraft module
               
               </td>
             
@@ -1755,7 +1757,7 @@
             
               <td>
               
-                radiation response modifier
+                International Space Station module
               
               </td>
             
@@ -1795,7 +1797,7 @@
             
               <td>
               
-                peptide radiation response modifier
+                space station
               
               </td>
             
@@ -1835,7 +1837,7 @@
             
               <td>
               
-                small molecule radiation response modifier
+                particle accelerator beamline
               
               </td>
             
@@ -1875,7 +1877,7 @@
             
               <td>
               
-                nuclear industry worker
+                particle accelerator radiation
               
               </td>
             
@@ -1915,7 +1917,7 @@
             
               <td>
               
-                astronaut
+                nuclear reactor radiation
               
               </td>
             
@@ -1955,7 +1957,7 @@
             
               <td>
               
-                military
+                Cesium-137 gamma radiation
               
               </td>
             
@@ -1995,7 +1997,7 @@
             
               <td>
               
-                medical professional
+                Cobalt-60 gamma radiation
               
               </td>
             
@@ -2035,7 +2037,7 @@
             
               <td>
               
-                dentist
+                Cobalt-57 gamma radiation
               
               </td>
             
@@ -2075,7 +2077,7 @@
             
               <td>
               
-                radiologist
+                radionuclide
               
               </td>
             
@@ -2115,7 +2117,7 @@
             
               <td>
               
-                radiobiology study type
+                actinide
               
               </td>
             
@@ -2155,7 +2157,7 @@
             
               <td>
               
-                epidemiological study
+                actinium
               
               </td>
             
@@ -2195,7 +2197,7 @@
             
               <td>
               
-                environmental study
+                americium
               
               </td>
             
@@ -2235,7 +2237,7 @@
             
               <td>
               
-                lifespan study
+                californium
               
               </td>
             
@@ -2275,7 +2277,7 @@
             
               <td>
               
-                carcinogenesis study
+                neptunium
               
               </td>
             
@@ -2315,7 +2317,7 @@
             
               <td>
               
-                tissue damage study
+                plutonium
               
               </td>
             
@@ -2355,7 +2357,7 @@
             
               <td>
               
-                dna damage and repair study
+                thorium
               
               </td>
             
@@ -2395,7 +2397,7 @@
             
               <td>
               
-                physiological study
+                uranium
               
               </td>
             
@@ -2435,7 +2437,7 @@
             
               <td>
               
-                anatomical study
+                ultraviolet radiation
               
               </td>
             
@@ -2475,7 +2477,7 @@
             
               <td>
               
-                external exposure study
+                radioprotectant
               
               </td>
             
@@ -2515,7 +2517,7 @@
             
               <td>
               
-                internal contamination study
+                radionuclide chelator
               
               </td>
             
@@ -2555,7 +2557,7 @@
             
               <td>
               
-                mixed exposure route study
+                co-carcinogen
               
               </td>
             
@@ -2595,7 +2597,7 @@
             
               <td>
               
-                acute external exposure study
+                radiation response modifier
               
               </td>
             
@@ -2635,7 +2637,7 @@
             
               <td>
               
-                chronic external exposure study
+                peptide radiation response modifier
               
               </td>
             
@@ -2675,7 +2677,7 @@
             
               <td>
               
-                chronic internal contamination study
+                small molecule radiation response modifier
               
               </td>
             
@@ -2715,7 +2717,7 @@
             
               <td>
               
-                acute internal contamination study
+                nuclear industry worker
               
               </td>
             
@@ -2755,7 +2757,7 @@
             
               <td>
               
-                acute mixed exposure route study
+                astronaut
               
               </td>
             
@@ -2795,7 +2797,7 @@
             
               <td>
               
-                chronic mixed exposure route study
+                military
               
               </td>
             
@@ -2835,7 +2837,7 @@
             
               <td>
               
-                gene expression study
+                medical professional
               
               </td>
             
@@ -2875,7 +2877,7 @@
             
               <td>
               
-                proteomics study
+                dentist
               
               </td>
             
@@ -2915,7 +2917,7 @@
             
               <td>
               
-                marker discovery study
+                radiologist
               
               </td>
             
@@ -2955,7 +2957,7 @@
             
               <td>
               
-                therapeutics study
+                radiobiology study type
               
               </td>
             
@@ -2995,7 +2997,7 @@
             
               <td>
               
-                survival study
+                epidemiological study
               
               </td>
             
@@ -3035,7 +3037,7 @@
             
               <td>
               
-                metabolomics study
+                environmental study
               
               </td>
             
@@ -3075,7 +3077,7 @@
             
               <td>
               
-                nuclear accident study
+                lifespan study
               
               </td>
             
@@ -3115,7 +3117,7 @@
             
               <td>
               
-                toxicity study
+                carcinogenesis study
               
               </td>
             
@@ -3155,7 +3157,7 @@
             
               <td>
               
-                endocrine study
+                tissue damage study
               
               </td>
             
@@ -3195,7 +3197,7 @@
             
               <td>
               
-                offspring study
+                dna damage and repair study
               
               </td>
             
@@ -3235,7 +3237,7 @@
             
               <td>
               
-                biokinetics study
+                physiological study
               
               </td>
             
@@ -3275,7 +3277,7 @@
             
               <td>
               
-                occupational role
+                anatomical study
               
               </td>
             
@@ -3315,7 +3317,7 @@
             
               <td>
               
-                risk estimate
+                external exposure study
               
               </td>
             
@@ -3355,7 +3357,7 @@
             
               <td>
               
-                lifetime risk estimate
+                internal contamination study
               
               </td>
             
@@ -3395,7 +3397,7 @@
             
               <td>
               
-                biological process
+                mixed exposure route study
               
               </td>
             
@@ -3435,7 +3437,7 @@
             
               <td>
               
-                cellular process
+                acute external exposure study
               
               </td>
             
@@ -3475,7 +3477,7 @@
             
               <td>
               
-                mass number
+                chronic external exposure study
               
               </td>
             
@@ -3515,7 +3517,7 @@
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/UO_0000127">UO:0000127</a>
+                chronic internal contamination study
               
               </td>
             
@@ -3549,25 +3551,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym">duplicate_scoped_synonym</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                ionizing radiation
+                acute internal contamination study
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/IAO_0000118">IAO:0000118</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                ionising radiation
+                
 
               
               </td>
@@ -3589,25 +3591,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym">duplicate_scoped_synonym</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                ionizing radiation
+                acute mixed exposure route study
               
               </td>
             
               <td>
               
-                <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">oboInOwl:hasExactSynonym</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                ionising radiation
+                
 
               
               </td>
@@ -3629,25 +3631,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym">duplicate_scoped_synonym</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                as low as reasonably achievable
+                chronic mixed exposure route study
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/IAO_0000118">IAO:0000118</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                ALARA
+                
 
               
               </td>
@@ -3669,25 +3671,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym">duplicate_scoped_synonym</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                as low as reasonably achievable
+                gene expression study
               
               </td>
             
               <td>
               
-                <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">oboInOwl:hasExactSynonym</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                ALARA
+                
 
               
               </td>
@@ -3709,25 +3711,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym">duplicate_scoped_synonym</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                delta ray
+                proteomics study
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/IAO_0000118">IAO:0000118</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                delta electron
+                
 
               
               </td>
@@ -3749,25 +3751,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym">duplicate_scoped_synonym</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                delta ray
+                marker discovery study
               
               </td>
             
               <td>
               
-                <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">oboInOwl:hasExactSynonym</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                delta electron
+                
 
               
               </td>
@@ -3789,25 +3791,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym">duplicate_scoped_synonym</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                linear energy transfer
+                therapeutics study
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/IAO_0000118">IAO:0000118</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                LET
+                
 
               
               </td>
@@ -3829,25 +3831,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym">duplicate_scoped_synonym</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                linear energy transfer
+                survival study
               
               </td>
             
               <td>
               
-                <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">oboInOwl:hasExactSynonym</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                LET
+                
 
               
               </td>
@@ -3869,25 +3871,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym">duplicate_scoped_synonym</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                relative biological effectiveness
+                metabolomics study
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/IAO_0000118">IAO:0000118</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                RBE
+                
 
               
               </td>
@@ -3909,53 +3911,13 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym">duplicate_scoped_synonym</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                relative biological effectiveness
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">oboInOwl:hasExactSynonym</a>
-              
-              </td>
-            
-              <td>
-              
-                RBE
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-info">
-            <td>98</td>
-            
-              <td>
-              
-                INFO
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/lowercase_definition">lowercase_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                spacecraft module
+                nuclear accident study
               
               </td>
             
@@ -3967,7 +3929,7 @@
             
               <td>
               
-                a self-contained unit of a spacecraft
+                
 
               
               </td>
@@ -3978,18 +3940,538 @@
           
             
           
-          <tr class="table-info">
-            <td>99</td>
+          <tr class="table-warning">
+            <td>98</td>
             
               <td>
               
-                INFO
+                WARN
               
               </td>
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/lowercase_definition">lowercase_definition</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                toxicity study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>99</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                endocrine study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>100</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                offspring study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>101</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                biokinetics study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>102</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                occupational role
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>103</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                high linear energy transfer radiation
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>104</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                low linear energy transfer radiation
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>105</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                ionizing electromagnetic radiation
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>106</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                radiation dosimeter device
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>107</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                ionizing radiation
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>108</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                charged particle radiation
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>109</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                risk estimate
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>110</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                lifetime risk estimate
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>111</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
@@ -4007,7 +4489,7 @@
             
               <td>
               
-                electromagnetic radiation with photon energies greater than approximately 100 keV
+                
 
               
               </td>
@@ -4018,24 +4500,24 @@
           
             
           
-          <tr class="table-info">
-            <td>100</td>
+          <tr class="table-warning">
+            <td>112</td>
             
               <td>
               
-                INFO
+                WARN
               
               </td>
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/lowercase_definition">lowercase_definition</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                Gammacell 40
+                particle accelerator
               
               </td>
             
@@ -4047,8 +4529,8 @@
             
               <td>
               
-                <a href="http://www.theratronics.ca/PDFs/GC40_BTMB_8008GC40E_2_v112013_webSECURE.pdf"><http://www.theratronics.ca/PDFs/GC40_BTMB_8008GC40E_2_v112013_webSECURE.pdf>
-</a>
+                
+
               
               </td>
             
@@ -4058,24 +4540,24 @@
           
             
           
-          <tr class="table-info">
-            <td>101</td>
+          <tr class="table-warning">
+            <td>113</td>
             
               <td>
               
-                INFO
+                WARN
               
               </td>
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/lowercase_definition">lowercase_definition</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                RARAF 5.5 MV microbeam
+                nuclear reactor
               
               </td>
             
@@ -4087,8 +4569,8 @@
             
               <td>
               
-                <a href="https://www.crr.columbia.edu/services/ion-beam-and-neutron-core-facility"><https://www.crr.columbia.edu/services/ion-beam-and-neutron-core-facility>
-</a>
+                
+
               
               </td>
             
@@ -4098,24 +4580,24 @@
           
             
           
-          <tr class="table-info">
-            <td>102</td>
+          <tr class="table-warning">
+            <td>114</td>
             
               <td>
               
-                INFO
+                WARN
               
               </td>
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/lowercase_definition">lowercase_definition</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                Swift HALE
+                biological process
               
               </td>
             
@@ -4127,8 +4609,8 @@
             
               <td>
               
-                <a href="https://www.nasa.gov/feature/ames/nasa-small-business-partnership-prepares-drone-for-30-day-science-flights"><https://www.nasa.gov/feature/ames/nasa-small-business-partnership-prepares-drone-for-30-day-science-flights>
-</a>
+                
+
               
               </td>
             
@@ -4138,24 +4620,24 @@
           
             
           
-          <tr class="table-info">
-            <td>103</td>
+          <tr class="table-warning">
+            <td>115</td>
             
               <td>
               
-                INFO
+                WARN
               
               </td>
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/lowercase_definition">lowercase_definition</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                ER-2
+                cellular process
               
               </td>
             
@@ -4167,8 +4649,8 @@
             
               <td>
               
-                <a href="https://www.nasa.gov/centers/armstrong/aircraft/ER-2/index.html"><https://www.nasa.gov/centers/armstrong/aircraft/ER-2/index.html>
-</a>
+                
+
               
               </td>
             
@@ -4178,24 +4660,24 @@
           
             
           
-          <tr class="table-info">
-            <td>104</td>
+          <tr class="table-warning">
+            <td>116</td>
             
               <td>
               
-                INFO
+                WARN
               
               </td>
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/lowercase_definition">lowercase_definition</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                WB-57
+                O-16 ion radiation
               
               </td>
             
@@ -4207,8 +4689,8 @@
             
               <td>
               
-                <a href="https://airbornescience.nasa.gov/aircraft/WB-57_-_JSC"><https://airbornescience.nasa.gov/aircraft/WB-57_-_JSC>
-</a>
+                
+
               
               </td>
             
@@ -4218,24 +4700,24 @@
           
             
           
-          <tr class="table-info">
-            <td>105</td>
+          <tr class="table-warning">
+            <td>117</td>
             
               <td>
               
-                INFO
+                WARN
               
               </td>
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/lowercase_definition">lowercase_definition</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                Faxitron CP160
+                Ar-40 ion radiation
               
               </td>
             
@@ -4247,7 +4729,3327 @@
             
               <td>
               
-                <doi: 10.2349/biij.2.1.e1>
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>118</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Ti-48 ion radiation
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>119</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Kr-84 ion radiation
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>120</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Nb-93 ion radiation
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>121</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Ag-107 ion radiation
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>122</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Xe-129 ion radiation
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>123</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Ta-181 ion radiation
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>124</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Au-197 ion radiation
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>125</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                N-14 ion radiation
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>126</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Radiation exposure
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>127</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Accidental radiation exposure
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>128</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Planned radiation exposure
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>129</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Medical diagnostic radiation exposure
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>130</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Naturally occurring radiation exposure (NORM)
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>131</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Medical therapeutic radiation exposure
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>132</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Accidental non-medical anthropogenic radiation exposure
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>133</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Anthropogenic radiation exposure
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>134</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Planned anthropogenic radiation exposure
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>135</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Accidental anthropogenic radiation exposure
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>136</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Accidental medical anthropogenic radiation exposure
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>137</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Naturally occurring radiation exposure
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>138</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Planned naturally occurring radiation exposure
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>139</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Social and psychosocial studies
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>140</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Mass media study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>141</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Preparedness study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>142</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Clinical study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>143</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Legal and governance study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>144</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Security and law enforcement study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>145</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Cancer study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>146</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Study modality
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>147</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Environmental studies
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>148</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Nuclear industry study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>149</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Laboratory study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>150</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Attitudinal study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>151</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Communication study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>152</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Community study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>153</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Political and psephological study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>154</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Psychometric study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>155</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Behavioural study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>156</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Sociological study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>157</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Social science and humanities study 
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>158</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Perceptions, expectations and behaviours study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>159</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Holistic approaches to governance study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>160</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Responsible Research and Innovation study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>161</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Stakeholder engagement study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>162</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Risk and health communication study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>163</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Radiological protection culture study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>164</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Genetic population study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>165</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Prospective study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>166</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Registry study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>167</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Retrospective study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>168</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Incidence or prevalence study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>169</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Situation awareness and decision support study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>170</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Civil protection study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>171</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Disaster planning study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>172</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Nuclear accident study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>173</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Clinical trial study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>174</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Medical radiological safety study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>175</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Occupational health study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>176</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Radiation based Diagnostics study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>177</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Radiotherapy study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>178</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Therapeutics study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>179</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Histopathologic study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>180</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Radiation legislation study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>181</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Regulatory harmonisation study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>182</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Nuclear proliferation treaty study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>183</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Bioterrorism study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>184</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Military Defence study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>185</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                DNA modification study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>186</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Histone modification study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>187</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Interview study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>188</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Genetic study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>189</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Imaging study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>190</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Mathematical Modelling study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>191</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Model organism study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>192</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Monitoring technologies and metrology study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>193</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Radiochemistry study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>194</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Policy development study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>195</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Acoustic radiation study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>196</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Environmental study_ Abiotic_anthropogenic
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>197</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Natural environment studies
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>198</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Ecological population modelling study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>199</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Ecotoxicology study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>200</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                Environmental Radon study
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
 
               
               </td>

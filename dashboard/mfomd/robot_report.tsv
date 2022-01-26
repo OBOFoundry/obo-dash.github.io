@@ -1,12 +1,12 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	duplicate_label	ICD-10 code	rdfs:label	ICD-10 code@en
+ERROR	duplicate_label	ICD-10 code	rdfs:label	ICD-10 code@en
+ERROR	duplicate_label	ICD-10 code	rdfs:label	ICD-10 code@en
+ERROR	duplicate_label	disorientation	rdfs:label	disorientation@en
+ERROR	duplicate_label	disorientation	rdfs:label	disorientation@en
+ERROR	duplicate_label	code DSM-IV-TR	rdfs:label	code DSM-IV-TR@en
+ERROR	duplicate_label	code DSM-IV-TR	rdfs:label	code DSM-IV-TR@en
 ERROR	missing_label	MFOMD:0000038	rdfs:label	
-ERROR	duplicate_label	ICD-10 code	rdfs:label	ICD-10 code@en
-ERROR	duplicate_label	ICD-10 code	rdfs:label	ICD-10 code@en
-ERROR	duplicate_label	ICD-10 code	rdfs:label	ICD-10 code@en
-ERROR	duplicate_label	disorientation	rdfs:label	disorientation@en
-ERROR	duplicate_label	disorientation	rdfs:label	disorientation@en
-ERROR	duplicate_label	code DSM-IV-TR	rdfs:label	code DSM-IV-TR@en
-ERROR	duplicate_label	code DSM-IV-TR	rdfs:label	code DSM-IV-TR@en
 ERROR	multiple_definitions	mental disorder	IAO:0000115	A disease that involves a psychological or behavioral pattern generally associated with subjective distress or disability that occurs in an individual, and which are not a part of normal development or culture.
 ERROR	multiple_definitions	mental disorder	IAO:0000115	Clinically significant behavioural and/or cognitive pathology.
 ERROR	multiple_definitions	insomnia	IAO:0000115	"
@@ -41,7 +41,12 @@ WARN	annotation_whitespace	psychotic disorder due to a general medical condition
       .2   with delusions
       .0   with hallucinations
 "
-WARN	annotation_whitespace	cataplexy	IAO:0000115	<a sudden and transient episode of loss of muscle tone accompanied by full conscious awareness, often triggered by emotions such as laughing, crying, terror, etc.http://en.wikipedia.org/wiki/Cataplexy>
+WARN	annotation_whitespace	cataplexy	IAO:0000115	"
+a sudden and transient episode of loss of muscle tone accompanied by full conscious awareness, often triggered by emotions such as laughing, crying, terror, etc.
+
+
+http://en.wikipedia.org/wiki/Cataplexy
+"
 WARN	annotation_whitespace	delusion	IAO:0000115	"
 Erroneous beliefs that usually involve a misinterpretation of perceptions or experiences. (their content may include a variety of themes (e.g., persecutory, referential, somatic, religious, or grandiose).
 
@@ -144,8 +149,16 @@ WARN	annotation_whitespace	homicidal ideations	IAO:0000118	"
  homicidal thoughts"
 WARN	annotation_whitespace	homicidal ideations	ICD-10 code	"
 R45.850 "
-WARN	annotation_whitespace	agoraphobia	IAO:0000115	<Extreme fear of being in public places or open spaces from which escape may be difficult or embarrassing.http://www.apa.org/research/action/glossary.aspx>
-WARN	annotation_whitespace	fixation	IAO:0000115	<A state in which a person remains attached to objects or activities more appropriate for an earlier stage of psychosexual development.http://www.apa.org/research/action/glossary.aspx>
+WARN	annotation_whitespace	agoraphobia	IAO:0000115	"
+Extreme fear of being in public places or open spaces from which escape may be difficult or embarrassing.
+
+
+http://www.apa.org/research/action/glossary.aspx"
+WARN	annotation_whitespace	fixation	IAO:0000115	"
+A state in which a person remains attached to objects or activities more appropriate for an earlier stage of psychosexual development.
+
+
+http://www.apa.org/research/action/glossary.aspx"
 WARN	annotation_whitespace	cocaine bugs	IAO:0000115	"The sensation of tiny creatures crawling over the cocaine user's skin.
 
 Psychopharmacology Drugs, the Brain, and Behavior (Jerrold S. Meyer, Linda F. Quenzer)
@@ -185,16 +198,3 @@ WARN	annotation_whitespace	caffeine intoxication	symptoms	"
 - Psychomot agitation"
 WARN	annotation_whitespace	grossly disorganized behavior	IAO:0000115	"Behavior that may manifest itself in a variety of ways, ranging from childlike silliness to unpredictable agitation.
 "
-WARN	annotation_whitespace	suicidal ideations	IAO:0000118	"
-suicidal thoughts"
-WARN	annotation_whitespace	suicidal ideations	ICD-10 code	"
-R45.851"
-WARN	annotation_whitespace	affective flattening	IAO:0000115	"Is characterized by the person's face appearing immobile and unresponsive, with poor eye contact and reduced body language.
-
-"
-WARN	annotation_whitespace	alogia	IAO:0000115	Is manifested  by brief, laconic, empty replies.  
-WARN	annotation_whitespace	defense mechanism	IAO:0000115	"
-Automatic psychological process that protects the individual against anxiety and from awareness of internal or external stressors or dangers.
-
-
-DSM-IV-TR (american Psychiatric Association)"

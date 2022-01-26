@@ -3,42 +3,42 @@ base_prefixes:
 - NCBITaxon
 - NCBITAXONALT
 - NCBITaxon
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 9525482
-    Declaration: 2334937
+    AnnotationAssertion: 9748858
+    Declaration: 2387710
     SubAnnotationPropertyOf: 15
-    SubClassOf: 2334908
-  'Axioms: Number of axioms': 14195342
+    SubClassOf: 2387681
+  'Axioms: Number of axioms': 14524264
   'Entities: % of entities reused': 0.0
   'Entities: Number of annotation properties': 29
-  'Entities: Number of classes': 2334910
+  'Entities: Number of classes': 2387683
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 0
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 7004726
+    Class: 7163045
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.847
+    _dashboard: 0.743
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.378
+    _impact: 0.372
     _impact_external: 0
     _reuse: 0.0
-    oboscore: 0.613
+    oboscore: 0.557
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 68
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     IAO: 2
-    NCBITAXONALT: 2110918
-    NCBITaxon: 7004688
+    NCBITAXONALT: 2159495
+    NCBITaxon: 7163007
     obo: 38
-    oboInOwl: 5382197
-    rdfs: 2334939
+    oboInOwl: 5518019
+    rdfs: 2387712
   'Info: Which ontologies use it?':
   - agro
   - apollo_sv
@@ -59,7 +59,6 @@ metrics:
   - fao
   - fbbt
   - flopo
-  - fobi
   - foodon
   - fovt
   - genepio
@@ -79,6 +78,7 @@ metrics:
   - mondo
   - mro
   - ncbitaxon
+  - oba
   - obcs
   - obi
   - obib
@@ -124,8 +124,8 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: ROBOT Report could not be generated
-    status: INFO
+    comment: 2387695 missing definitions. See ROBOT Report for details.
+    status: WARN
   FP07 Relations:
     status: PASS
   FP08 Documented:
@@ -136,21 +136,25 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: ROBOT Report could not be generated
-    status: INFO
+    status: PASS
   FP16 Maintenance:
     status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: ROBOT Report could not be generated.
-    status: INFO
-sha256_hash: b37881acce6f5e2d56bb585cdcfffbfd00deaa8149bdb1cddb3d70e55e7aace0
+    comment: 3 errors, 2397590 warnings, 1 info messages.
+    file: robot_report
+    results:
+      ERROR: 3
+      INFO: 1
+      WARN: 2397590
+    status: ERROR
+sha256_hash: 6699f48c5c5d36a5ae765031282772bf384dcc9dbf4b88320187ef1fb239d818
 summary:
-  comment: 2 errors
+  comment: 3 errors
   status: ERROR
   summary_count:
-    ERROR: 2
-    INFO: 3
-    WARN: 0
-version: http://purl.obolibrary.org/obo/ncbitaxon/2021-06-10/ncbitaxon.owl
+    ERROR: 3
+    INFO: 0
+    WARN: 1
+version: http://purl.obolibrary.org/obo/ncbitaxon/2021-12-14/ncbitaxon.owl

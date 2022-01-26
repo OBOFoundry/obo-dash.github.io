@@ -3,41 +3,41 @@ base_prefixes:
 - MONDO
 - MONDOALT
 - MONDO
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 365654
-    Declaration: 30821
+    AnnotationAssertion: 377838
+    Declaration: 30866
     DisjointClasses: 82
-    EquivalentClasses: 7655
+    EquivalentClasses: 7733
     SubAnnotationPropertyOf: 36
-    SubClassOf: 47993
+    SubClassOf: 47303
     SubObjectPropertyOf: 4
     SubPropertyChainOf: 7
     TransitiveObjectProperty: 1
-  'Axioms: Number of axioms': 452253
-  'Entities: % of entities reused': 19.33
-  'Entities: Number of annotation properties': 83
-  'Entities: Number of classes': 30712
+  'Axioms: Number of axioms': 463870
+  'Entities: % of entities reused': 19.27
+  'Entities: Number of annotation properties': 85
+  'Entities: Number of classes': 30754
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 33
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 150235
-    ObjectIntersectionOf: 7639
-    ObjectSomeValuesFrom: 17575
-    ObjectUnionOf: 16
+    Class: 149136
+    ObjectIntersectionOf: 7718
+    ObjectSomeValuesFrom: 17739
+    ObjectUnionOf: 15
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.769
+    _dashboard: 0.773
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.028
+    _impact: 0.033
     _impact_external: 0.5
     _reuse: 0.193
-    oboscore: 0.399
+    oboscore: 0.403
   'Info: How many externally documented uses?': 5
-  'Info: How many ontologies use it?': 5
+  'Info: How many ontologies use it?': 6
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -48,36 +48,36 @@ metrics:
     ECTO: 111
     ENVO: 42
     FOODON: 2
-    GO: 1093
-    HGNC: 10219
-    HP: 2154
+    GO: 1073
+    HGNC: 10237
+    HP: 2160
     HsapDv: 9
-    IAO: 18501
+    IAO: 18803
+    MAXO: 10
     MF: 20
-    MFOEM: 3
     MFOMD: 13
-    MONDO: 129012
-    MONDOALT: 2270
+    MONDO: 127790
+    MONDOALT: 2393
     NBO: 13
-    NCBITaxon: 1634
+    NCBITaxon: 1631
     NCIT: 75
     OBA: 2
-    PATO: 340
+    PATO: 341
     PO: 3
-    PR: 60
-    RO: 16682
-    SO: 44
-    UBERON: 4598
+    RO: 16824
+    SO: 42
+    UBERON: 4592
     dc11: 110
-    obo: 558
-    oboInOwl: 516798
-    owl: 2447
+    obo: 740
+    oboInOwl: 536987
+    owl: 2536
     rdf: 3
-    rdfs: 30059
-    skos: 70882
-    xsd: 34970
+    rdfs: 31146
+    skos: 71219
+    xsd: 34853
   'Info: Which ontologies use it?':
   - duo
+  - epio
   - gecko
   - ico
   - mondo
@@ -97,7 +97,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 4 duplicate definitions. 7076 missing definitions. See ROBOT Report for
+    comment: 6 duplicate definitions. 7028 missing definitions. See ROBOT Report for
       details.
     status: ERROR
   FP07 Relations:
@@ -118,14 +118,14 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 50 errors, 8270 warnings, 105 info messages.
+    comment: 52 errors, 17962 warnings, 4 info messages.
     file: robot_report
     results:
-      ERROR: 50
-      INFO: 105
-      WARN: 8270
+      ERROR: 52
+      INFO: 4
+      WARN: 17962
     status: ERROR
-sha256_hash: 63c64c89f009895e57779e3757819429f97b7b1dfb4c9915fd8d31b1d8198636
+sha256_hash: a560101422883ede38403fbfa41b9d11ea666cebff3c24e8a94f588cfd65f791
 summary:
   comment: 3 errors
   status: ERROR
@@ -133,4 +133,4 @@ summary:
     ERROR: 3
     INFO: 1
     WARN: 0
-version: http://purl.obolibrary.org/obo/mondo/releases/2021-11-01/mondo-base.owl
+version: http://purl.obolibrary.org/obo/mondo/releases/2021-12-30/mondo-base.owl

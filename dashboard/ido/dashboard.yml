@@ -3,7 +3,7 @@ base_prefixes:
 - IDO
 - IDOALT
 - IDO
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 2929
@@ -39,14 +39,14 @@ metrics:
     ObjectUnionOf: 11
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.767
+    _dashboard: 0.766
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.111
+    _impact: 0.115
     _impact_external: 0
     _reuse: 0.343
-    oboscore: 0.439
+    oboscore: 0.441
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 20
+  'Info: How many ontologies use it?': 21
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -76,6 +76,7 @@ metrics:
   - eupath
   - genepio
   - gsso
+  - hso
   - htn
   - iceo
   - ido
@@ -127,12 +128,12 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 3 errors, 191 warnings, 31 info messages.
+    comment: 5 errors, 194 warnings, 31 info messages.
     file: robot_report
     results:
-      ERROR: 3
+      ERROR: 5
       INFO: 31
-      WARN: 191
+      WARN: 194
     status: ERROR
 sha256_hash: de5d35114bb65b7475551388e8a7899d202c4d69672bd9e39466605119fafb50
 summary:

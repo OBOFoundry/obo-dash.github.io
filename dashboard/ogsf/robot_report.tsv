@@ -1,17 +1,18 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/ogsf-merged.owl	dc:license	
+ERROR	duplicate_label	susceptibility gene	rdfs:label	susceptibility gene@en
+ERROR	duplicate_label	susceptibility gene	rdfs:label	susceptibility gene@en
+ERROR	label_whitespace	positive conclusion of genetic susceptibility_1 	rdfs:label	positive conclusion of genetic susceptibility_1 @en
 ERROR	duplicate_definition	genetic susceptibility to vaccine adverse event	IAO:0000115	a genetic susceptibility to adverse event that is proceded by a vaccination process.@en
 ERROR	duplicate_definition	genetic susceptibility to adverse event following Pandemix vaccination	IAO:0000115	a genetic susceptibility to adverse event that is proceded by a vaccination process.@en
 ERROR	duplicate_definition	genetic susceptibility to multiple scelorosis AE following Pandemix vaccination	IAO:0000115	a genetic susceptibility to adverse event that is proceded by a vaccination process.@en
-ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/ogsf-merged.owl	dc11:description	
-ERROR	duplicate_label	susceptibility gene	rdfs:label	susceptibility gene@en
-ERROR	duplicate_label	susceptibility gene	rdfs:label	susceptibility gene@en
 ERROR	multiple_definitions	is_allele_of_gene	IAO:0000115	@en
 ERROR	multiple_definitions	is_allele_of_gene	IAO:0000115	allele of is a relation to link an allele with its original form@en
-ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/ogsf-merged.owl	dc:license	
-ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/ogsf-merged.owl	dc11:title	
-ERROR	label_whitespace	positive conclusion of genetic susceptibility_1 	rdfs:label	positive conclusion of genetic susceptibility_1 @en
+ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/ogsf-merged.owl	dc:title	
+ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/ogsf-merged.owl	dc:description	
 WARN	annotation_whitespace	negative conclusion of genetic susceptibility	IAO:0000115	The textual conclusion from the paper that mentioned the genetic susceptibility of a genetic susceptibility factors that is denied by statistical calculation. @en
 WARN	annotation_whitespace	http://purl.obolibrary.org/obo/ogsf-merged.owl	IAO:0000115	Ontology of Genetic Susceptibility Factor (OGSF) is an application ontology to model/represent the notion of genetic susceptibility to a specific disease or an adverse event or a biological process. @en
+WARN	equivalent_class_axiom_no_genus	genetic susceptibility factor	BFO:0000127	genetic susceptibility
 WARN	missing_definition	susceptibility gene	IAO:0000115	
 WARN	missing_definition	textual conclusion of genetic susceptibility	IAO:0000115	
 WARN	missing_definition	susceptibility interactive gene group	IAO:0000115	
@@ -47,7 +48,7 @@ WARN	missing_definition	hasPvalue	IAO:0000115
 WARN	missing_definition	smallpox vaccination	IAO:0000115	
 WARN	missing_definition	wheezing AE after influenza vaccination	IAO:0000115	
 WARN	missing_definition	influenza vaccination	IAO:0000115	
-INFO	lowercase_definition	genetic susceptibility	IAO:0000115	<a disposition that is physically based on some genetic material, such as one or more gene mutations or variant, such that if the genome of an organism has the genetic material as its part, the organism may have an increased likelihood or chance to develop: 1) a particular disease; 2) a peculiar biological/bodily process.@en>
+INFO	lowercase_definition	genetic susceptibility	IAO:0000115	a disposition that is physically based on some genetic material, such as one or more gene mutations or variant, such that if the genome of an organism has the genetic material as its part, the organism may have an increased likelihood or chance to develop: 1) a particular disease; 2) a peculiar biological/bodily process.@en
 INFO	lowercase_definition	genetic susceptibility to pathological bodily process	IAO:0000115	a genetic susceptibility that lead to the increased possibilities to initiate a patholoical bodily process in the organism, whose genome has related genetic susceptibility factor (he physical basis of this genetic susceptibility) as its part.@en
 INFO	lowercase_definition	genetic susceptibility to biological process	IAO:0000115	a genetic susceptibility that lead to the increased possibilities to initiate a biological process in an organism, whose genome has related genetic susceptibility factor (he physical basis of this genetic susceptibility) as its part.@en
 INFO	lowercase_definition	genetic susceptibility to adverse event	IAO:0000115	a genetic susceptibility that lead to the increased possibilities to initiate adverse event in an organism, whose genome has related genetic susceptibility factor (he physical basis of this genetic susceptibility) as its part.@en

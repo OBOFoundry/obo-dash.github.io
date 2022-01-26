@@ -1,16 +1,16 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	label_formatting	is the biological process assayed by	rdfs:label	"is the biological process
- assayed by"
+ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/MicrO.owl	dc:license	
+ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/MicrO.owl	dc:title	
 ERROR	missing_label	MICRO:0000474	rdfs:label	
 ERROR	missing_label	MICRO:0000476	rdfs:label	
 ERROR	missing_label	MICRO:0000478	rdfs:label	
 ERROR	missing_label	MICRO:0001220	rdfs:label	
 ERROR	missing_label	MICRO:0001304	rdfs:label	
-ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/MicrO.owl	dc11:description	
+ERROR	label_formatting	is the biological process assayed by	rdfs:label	"is the biological process
+ assayed by"
+ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/MicrO.owl	dc:description	
 ERROR	duplicate_label	triple sugar iron agar	rdfs:label	triple sugar iron agar
 ERROR	duplicate_label	triple sugar iron agar	rdfs:label	triple sugar iron agar
-ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/MicrO.owl	dc:license	
-ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/MicrO.owl	dc11:title	
 ERROR	multiple_labels	Relationship between a material entity (x) and a cellular organism or environmental material (y) where the material entity is derived from the starting complex entity y.	rdfs:label	Relationship between a material entity (x) and a cellular organism or environmental material (y) where the material entity is derived from the starting complex entity y.
 ERROR	multiple_labels	Relationship between a material entity (x) and a cellular organism or environmental material (y) where the material entity is derived from the starting complex entity y.	rdfs:label	is chemical entity derived from
 WARN	annotation_whitespace	paired false branching	obo:definition	Paired filament branches where the filament exhibits false branching. 
@@ -19,18 +19,43 @@ WARN	annotation_whitespace	solitary false branching	obo:definition	Solitary fila
 WARN	annotation_whitespace	solitary true branching	obo:definition	Solitary filament branches where the filament exhibits true branching. 
 WARN	annotation_whitespace	prokaryotic nucleobase quality	obo:definition	"The molar percentage of nucleobases in the DNA of a prokaryotic chromosome and/or plasmid.
 "
-WARN	annotation_whitespace	casein agar	IAO:0000119	"<https://catalog.hardydiagnostics.com/cp_prod/Content/hugo/CaseinAgar.html FORMULAIngredients per liter of deionized water:*Dry Milk, Instant Nonfat 	50.0gmPancreatic Digest of Casein 	5.0gmYeast Extract 	2.5gmGlucose 	1.0gmAgar 	12.5gmFinal pH 6.8 +/- 0.3 at 25 degrees C. >"
+WARN	annotation_whitespace	casein agar	IAO:0000119	"https://catalog.hardydiagnostics.com/cp_prod/Content/hugo/CaseinAgar.html FORMULAIngredients per liter of deionized water:*Dry Milk, Instant Nonfat 	50.0gmPancreatic Digest of Casein 	5.0gmYeast Extract 	2.5gmGlucose 	1.0gmAgar 	12.5gmFinal pH 6.8 +/- 0.3 at 25 degrees C. "
 WARN	annotation_whitespace	cell filament	obo:definition	A group of prokaryotic cells where the cells are attached to one another end-to-end, forming long threads.  Formed when cell division occurs in a single plane (at right angles to the filament axis) and when cells do not detach from one another.  
 WARN	annotation_whitespace	calyptra	obo:definition	"Modified apical cell, having a thickened or enlarged morphology.  Has a hood-like, lid-like, or cap-like form.  Little is known about the role, although presence is environmentally influenced.  Not all trichomes in a natural population will exhibit a calyptra.  Found in the Oscillatoriales and Nostocales.
 
 "
 WARN	annotation_whitespace	tapered by apical and basal narrowing	oboInOwl:hasBroadSynonym	trichomes attenuated at the ends of developed trichomes 
-WARN	annotation_whitespace	216L marine medium	IAO:0000119	<From: Lai, Q., Yuan, J., Gu, L. & Shao, Z. (2009). Marispirillum indicum gen. nov., sp. nov., isolated from a deep-sea environment. Int J Syst Evol Microbiol 59, 1278–1281.Recipe:sodium acetate, 1.0 gTryptone, 10.0 gyeast extract, 2.0 gsodium citrate, 0.5 gNH4NO3, 0.2 gseawater, 1LpH 7.5>
-WARN	annotation_whitespace	artificial kinneret water medium	IAO:0000232	<Could not find in any references the pH of AKW, however the pH of Lake Kinneret varies from about 8.6 at the surface to 7.8 at depth.http://kinneret.ocean.org.il/ar_grp.aspx>
+WARN	annotation_whitespace	216L marine medium	IAO:0000119	"From: Lai, Q., Yuan, J., Gu, L. & Shao, Z. (2009). Marispirillum indicum gen. nov., sp. nov., isolated from a deep-sea environment. Int J Syst Evol Microbiol 59, 1278–1281.
+
+Recipe:
+sodium acetate, 1.0 g
+Tryptone, 10.0 g
+yeast extract, 2.0 g
+sodium citrate, 0.5 g
+NH4NO3, 0.2 g
+seawater, 1L
+pH 7.5
+
+"
+WARN	annotation_whitespace	artificial kinneret water medium	IAO:0000232	"Could not find in any references the pH of AKW, however the pH of Lake Kinneret varies from about 8.6 at the surface to 7.8 at depth.
+
+http://kinneret.ocean.org.il/ar_grp.aspx
+"
 WARN	annotation_whitespace	Hayflick medium	obo:definition	An organic-rich, liquid microbiological culture medium containing beef heart infusion, peptone, and sodium chloride.    Developed for the growth of Mycoplasma pneumoniae. 
 WARN	annotation_whitespace	nutrient broth	obo:definition	An organic-rich, liquid culture medium comprised of beef extract and peptone.  
-WARN	annotation_whitespace	Sehgal and Gibbons medium	IAO:0000119	<From: Schneegurt MA, Chapter 2, Media and conditions for the growth of halophilic and halotolerant bacteria and archaea. pg. 39, Table 2.1. In Vreeland RH (ed) Advances in Understanding the Biology of Halophilic Microorganisms. DOI 10.1007/978-94-007-5539-0_2Medium composition in grams per liter:NaCl, 250MgSO4x7H2O, 20FeCl2, 0.023Na-citrate, 3Casamino acids, 7.5yeast extract, 10>
-WARN	annotation_whitespace	Sehgal and Gibbons medium	IAO:0000119	<Sehgal and Gibbons, 1960, Effect of some metal ions on the growth of Halobacterium cutirubrum. Can J Microbiol 6:165.>
+WARN	annotation_whitespace	Sehgal and Gibbons medium	IAO:0000119	"From: Schneegurt MA, Chapter 2, Media and conditions for the growth of halophilic and halotolerant bacteria and archaea.  pg. 39, Table 2.1.  In Vreeland RH (ed) Advances in Understanding the Biology of Halophilic Microorganisms.  DOI 10.1007/978-94-007-5539-0_2
+
+Medium composition in grams per liter:
+NaCl, 250
+MgSO4x7H2O, 20
+FeCl2, 0.023
+Na-citrate, 3
+Casamino acids, 7.5
+yeast extract, 10
+
+"
+WARN	annotation_whitespace	Sehgal and Gibbons medium	IAO:0000119	"Sehgal and Gibbons, 1960, Effect of some metal ions on the growth of Halobacterium cutirubrum.  Can J Microbiol 6:165.
+"
 WARN	annotation_whitespace	Brucella agar with sheep blood	obo:definition	"An organic-rich, solid microbiological culture medium, containing peptones, yeast extract, glucose, and sodium bisulfite as a reducing agent.  Supplemented with 5% sheep blood, hemin, and vitamin K.  Used for the growth of Brucella. 
 
 "
@@ -38,11 +63,134 @@ WARN	annotation_whitespace	BRN medium	obo:definition	"A liquid, mineral-salts mi
 
 
 "
-WARN	annotation_whitespace	PPLO medium	IAO:0000119	<From: PPLO Media (Mycoplasma Media) (Becton-Dickinson Difco and BBL Manual of Microbiological Culture Media, 2nd edition):Intended UsePPLO (Mycoplasma) agars and broths, when supplemented with nutritive enrichments, are used for isolating and cultivating Mycoplasma. Mycoplasma Broth Base (Frey) is used for the cultivation of avian mycoplasmas.Principles of the ProcedureMeat digests, peptones, beef extract and yeast extract provide the nitrogen, vitamins, amino acids and carbon in these media. Sodium chloride maintains the osmotic balance of these formulations. Agar, the solidifying agent, is used in PPLO (Mycoplasma) Agar at a concentration slightly reduced from usual to ensure formation of the largest possible colonies because the organisms grow into the agar with only slight surface growth.13The base media are supplemented with Mycoplasma Supplement or Mycoplasma Enrichment w/o Penicillin because Mycoplasma spp. are fastidious in their growth requirements. 14 Mycoplasma Supplement contains fresh yeast extract and horse serum. Yeast extract provides the preformed nucleic acid precursors that are required by Mycoplasma spp.14 Horse serum supplies cholesterol, a growth stimulant.14 Mycoplasma Enrichment without Penicillin is a selective enrichment containing the inhibitor thallium acetate, to which a penicillin of choice (penicillin G or a broad-spectrum semisynthetic penicillin) can be added at the time of use to make it selective against gram-positive and gram-negative bacteria.FormulaeDifco™ PPLO AgarApproximate Formula* Per LiterBeef Heart, Infusion from 50 g..................................... 6.0 gPeptone..................................................................... 10.0 gSodium Chloride.......................................................... 5.0 gAgar.......................................................................... 14.0 gDifco™ PPLO BrothConsists of the the same ingredients without the agar.pH 7.8 ± 0.2BBL™ Mycoplasma Agar Base (PPLO Agar Base)Approximate Formula* Per LiterBeef Heart, Infusion from (solids).................................. 2.0 gPancreatic Digest of Casein.......................................... 7.0 gBeef Extract.................................................................. 3.0 gYeast Extract................................................................ 3.0 gSodium Chloride.......................................................... 5.0 gAgar.......................................................................... 14.0 gpH 7.8 ± 0.2BBL™ Mycoplasma Broth Base (PPLO Broth Base)Consists of the same ingredients without the agar.BBL™ Mycoplasma Broth Base (Frey)Approximate Formula* Per LiterPancreatic Digest of Casein.......................................... 7.5 gPapaic Digest of Soybean Meal..................................... 2.5 gYeast Extract................................................................ 5.0 gSodium Chloride.......................................................... 5.0 gPotassium Chloride...................................................... 0.4 gMagnesium Sulfate...................................................... 0.2 gDisodium Phosphate.................................................... 1.6 gMonopotassium Phosphate.......................................... 0.1 gpH 7.7 ± 0.2Difco™ Mycoplasma SupplementApproximate Formula* Per 30 mL VialYeast Extract................................................................ 0.09 gHorse Serum.............................................................. 22.8 mLBBL™ Mycoplasma Enrichment without PenicillinApproximate Formula* Per 30 mL VialHorse Serum.............................................................. 20.0 mLYeast Extract (fresh autolysate)................................... 10.0 mLThallium Acetate........................................................ 50.0 mg*Adjusted and/or supplemented as required to meet performance criteria.>
-WARN	annotation_whitespace	SP-4 medium	IAO:0000119	<From: https://catalog.hardydiagnostics.com/cp_prod/Content/hugo/SP4Media.htmSP4 Broth, Plain**:Pancreatic Digest of Casein 10.0gmPancreatic Digest of Gelatin 5.0gmPPLO Broth without CV 3.5gmPolymyxin B 50.0mgAmphotericin B 5.0mgFetal Bovine Serum 170.0mlCMRL 1066 Medium (10X) 50.0mlYeast Extract 35.0mlYeastolate 10% 20.0mlPenicillin 1,000,000UFinal pH at 25 degrees C.:SP4 Broth, PlainSP4 Broth with Arginine7.0 +/- 0.2>
-WARN	annotation_whitespace	Aa medium	IAO:0000119	<From: Patel GB. 1984. Characterization and nutritional properties of Methanothrix concilii sp. nov., a mesophilic, aceticlastic methanogen. Can J Microbiol 30:1383-1396.The composition of the Aa medium used for isolation and stock culture maintenance was as follows (in milligrams per litre): CH3COONa·3H2O, 6800; K2HPO4, 2190; KH2PO4, 1500; Na2CO3, 480; (NH4)2SO4, 450; cysteine-HCl, 125; Na2S·9H2O, 125; MgSO4·7H2O, 120; CaCl2·2H2O, 60; NaCl, 54; FeSO4 ·7H2O, 21; nitrilotriacetic acid, 15; MnSO4 · 2H2O, 5; CoCl2-6H2O, 1; ZnSO4·7H2O, I; resazurin, I; CuSO4·5H2O, 0.1; AIK(SO4)2- 12H2O, 0.1; H3BO3, 0.1; Na2Mo04·2H2O, 0.1; pyridoxine-HCl, 0.1; thiamine-HCl, riboflavin, nicotinic acid, p-aminobenzoic acid, lipoic acid, each 0.05; biotin and folic acid, each 0.02; vitamin B-12, 0.005. The Aa medium ingredients, except Na2CO3 and cysteine- Na2S, were 'mixed and adjusted to pH 7.8. The medium was then reduced with cysteine- Na2S, and Na2CO3 was added, using the Hungate (1950) technique. The reduced medium was dispensed in 10-mL aliquots into 60-mL serum vials (Miller and Wolin 1974) under 80% N2: 20% CO2 gas phase. The postautoclave (121°C, 15 min) pH was 7.2 ± 0.1. If the same medium contained 10000 mg/L of CH3COONa·3H20, it was referred to as AA medium.>
+WARN	annotation_whitespace	PPLO medium	IAO:0000119	"From: PPLO Media (Mycoplasma Media) (Becton-Dickinson Difco and BBL Manual of Microbiological Culture Media, 2nd edition):
+
+Intended Use
+PPLO (Mycoplasma) agars and broths, when supplemented with nutritive enrichments, are used for isolating and cultivating Mycoplasma. Mycoplasma Broth Base (Frey) is used for the cultivation of avian mycoplasmas.
+
+Principles of the Procedure
+Meat digests, peptones, beef extract and yeast extract provide the nitrogen, vitamins, amino acids and carbon in these media.  Sodium chloride maintains the osmotic balance of these formulations. Agar, the solidifying agent, is used in PPLO (Mycoplasma) Agar at a concentration slightly reduced from usual to ensure formation of the largest possible colonies because the organisms grow into the agar with only slight surface growth.13
+
+The base media are supplemented with Mycoplasma Supplement or Mycoplasma Enrichment w/o Penicillin because Mycoplasma spp. are fastidious in their growth requirements. 14  
+
+Mycoplasma Supplement contains fresh yeast extract and horse serum. Yeast extract provides the preformed nucleic acid precursors that are required by Mycoplasma spp.14 Horse serum supplies cholesterol, a growth stimulant.14 
+
+Mycoplasma Enrichment without Penicillin is a selective enrichment containing the inhibitor thallium acetate, to which a penicillin of choice (penicillin G or a broad-spectrum semisynthetic penicillin) can be added at the time of use to make it selective against gram-positive and gram-negative bacteria.
+
+Formulae
+Difco™ PPLO Agar
+Approximate Formula* Per Liter
+Beef Heart, Infusion from 50 g..................................... 6.0 g
+Peptone..................................................................... 10.0 g
+Sodium Chloride.......................................................... 5.0 g
+Agar.......................................................................... 14.0 g
+Difco™ PPLO Broth
+Consists of the the same ingredients without the agar.
+
+pH 7.8 ± 0.2
+
+BBL™ Mycoplasma Agar Base (PPLO Agar Base)
+Approximate Formula* Per Liter
+Beef Heart, Infusion from (solids).................................. 2.0 g
+Pancreatic Digest of Casein.......................................... 7.0 g
+Beef Extract.................................................................. 3.0 g
+Yeast Extract................................................................ 3.0 g
+Sodium Chloride.......................................................... 5.0 g
+Agar.......................................................................... 14.0 g
+
+pH 7.8 ± 0.2
+
+BBL™ Mycoplasma Broth Base (PPLO Broth Base)
+Consists of the same ingredients without the agar.
+
+BBL™ Mycoplasma Broth Base (Frey)
+Approximate Formula* Per Liter
+Pancreatic Digest of Casein.......................................... 7.5 g
+Papaic Digest of Soybean Meal..................................... 2.5 g
+Yeast Extract................................................................ 5.0 g
+Sodium Chloride.......................................................... 5.0 g
+Potassium Chloride...................................................... 0.4 g
+Magnesium Sulfate...................................................... 0.2 g
+Disodium Phosphate.................................................... 1.6 g
+Monopotassium Phosphate.......................................... 0.1 g
+
+pH 7.7 ± 0.2
+
+Difco™ Mycoplasma Supplement
+Approximate Formula* Per 30 mL Vial
+Yeast Extract................................................................ 0.09 g
+Horse Serum.............................................................. 22.8 mL
+
+BBL™ Mycoplasma Enrichment without Penicillin
+Approximate Formula* Per 30 mL Vial
+Horse Serum.............................................................. 20.0 mL
+Yeast Extract (fresh autolysate)................................... 10.0 mL
+Thallium Acetate........................................................ 50.0 mg
+*Adjusted and/or supplemented as required to meet performance criteria.
+"
+WARN	annotation_whitespace	SP-4 medium	IAO:0000119	"From:  https://catalog.hardydiagnostics.com/cp_prod/Content/hugo/SP4Media.htm
+
+SP4 Broth, Plain**:
+Pancreatic Digest of Casein    10.0gm
+Pancreatic Digest of Gelatin    5.0gm
+PPLO Broth without CV             3.5gm
+Polymyxin B                             50.0mg
+Amphotericin B                        5.0mg
+Fetal Bovine Serum                  170.0ml
+CMRL 1066 Medium (10X)       50.0ml
+Yeast Extract                           35.0ml
+Yeastolate 10%                        20.0ml
+Penicillin                                1,000,000U
+
+Final pH at 25 degrees C.:
+SP4 Broth, Plain
+SP4 Broth with Arginine
+7.0 +/- 0.2
+"
+WARN	annotation_whitespace	Aa medium	IAO:0000119	"From: Patel GB.  1984.  Characterization and nutritional properties of Methanothrix concilii sp. nov., a mesophilic, aceticlastic methanogen.  Can J Microbiol 30:1383-1396.
+
+The composition of the Aa medium used for isolation and stock culture maintenance was as follows (in milligrams per litre): 
+CH3COONa·3H2O, 6800; 
+K2HPO4, 2190; 
+KH2PO4, 1500; 
+Na2CO3, 480; 
+(NH4)2SO4, 450; 
+cysteine-HCl, 125; 
+Na2S·9H2O, 125; 
+MgSO4·7H2O, 120; 
+CaCl2·2H2O, 60; 
+NaCl, 54; 
+FeSO4 ·7H2O, 21; 
+nitrilotriacetic acid, 15; 
+MnSO4 · 2H2O, 5; 
+CoCl2-6H2O, 1; 
+ZnSO4·7H2O, I; 
+resazurin, I; 
+CuSO4·5H2O, 0.1; 
+AIK(SO4)2- 12H2O, 0.1; 
+H3BO3, 0.1; 
+Na2Mo04·2H2O, 0.1; 
+
+pyridoxine-HCl, 0.1; 
+thiamine-HCl, 
+riboflavin, 
+nicotinic acid, 
+p-aminobenzoic acid, 
+lipoic acid, each 0.05; 
+biotin and folic acid, each 0.02; 
+vitamin B-12, 0.005. 
+
+The Aa medium ingredients, except Na2CO3 and cysteine- Na2S, were 'mixed and adjusted to pH 7.8. 
+
+The medium was then reduced with cysteine- Na2S, and Na2CO3 was added, using the Hungate (1950) technique. 
+
+The reduced medium was dispensed in 10-mL aliquots into 60-mL serum vials (Miller and Wolin 1974) under 80% N2: 20% CO2 gas phase. The postautoclave (121°C, 15 min) pH was 7.2 ± 0.1. If the same medium contained 10000 mg/L of CH3COONa·3H20, it was referred to as AA medium.
+"
 WARN	annotation_whitespace	mesophilic	obo:definition	Temperature optimum quality, where growth rates at moderate temperatures (20-40˚C) are higher than growth rates at other temperatures. 
-WARN	annotation_whitespace	tryptic soy broth	IAO:0000119	<Wikipedia:Tryptic_soy_brothTryptic soy broth (frequently abbreviated as TSB) is used in microbiology laboratories as a culture broth to grow aerobic bacteria. It is frequently used in commercial diagnostics in conjunction with the additive Thio which promotes growth of anaerobes.>
+WARN	annotation_whitespace	tryptic soy broth	IAO:0000119	"Wikipedia:Tryptic_soy_broth
+
+Tryptic soy broth (frequently abbreviated as TSB) is used in microbiology laboratories as a culture broth to grow aerobic bacteria.   It is frequently used in commercial diagnostics in conjunction with the additive Thio which promotes growth of anaerobes.
+"
 WARN	annotation_whitespace	chemical mixture, serving as microbiological medium ingredients	obo:definition	A solid or liquid mixture of chemicals which are used as ingredients in microbiological culture media used to grow and propogate prokaryotic microorganisms. 
 WARN	annotation_whitespace	thermophilic	obo:definition	Temperature optimum quality, where growth rates at elevated temperatures (40-85˚C) are higher than growth rates at ambient temperatures. 
 WARN	annotation_whitespace	scytonematoid-branched filaments	obo:has_exact_synonym	"common lateral loops
@@ -50,151 +198,3 @@ WARN	annotation_whitespace	scytonematoid-branched filaments	obo:has_exact_synony
 WARN	annotation_whitespace	V-branched filaments	obo:definition	True-branched filaments, where an apical cell divides longitudinally, from which grows obliquely two equivalent branches.  
 WARN	annotation_whitespace	reverse Y-branched filaments	obo:definition	True-branched filaments, where branches arise in the intercalary (medial) cells after oblique cell division at an intercalary (medial cell).  
 WARN	annotation_whitespace	isopolar trichome	obo:has_exact_synonym	"morphologically not diversified in \""main\"" filaments and branches "
-WARN	annotation_whitespace	organic chemical mixture	obo:definition	Organic compounds or mixtures of organic compounds added to culture media to support growth or metabolism of a microorganism. 
-WARN	annotation_whitespace	methane produced by methanogenesis	obo:has_exact_synonym	"produces CH4
-"
-WARN	annotation_whitespace	microbiological medium ingredient, derived from aqueous extracts of animal tissues or fluids	obo:definition	"Undefined mixture of complex organic compounds deriving from the aqueous extraction (an extraction using water, such as hot water or steam) of animal organs, animal tissues, or animal secretions.  Used in the cultivation of microorganisms.
-"
-WARN	annotation_whitespace	microbiological medium ingredient, derived from extracts of microbial organisms	obo:definition	"Undefined mixtures of complex organic compounds deriving from the aqueous extraction (an extraction using water, such as hot water or steam) of microbial (prokaryotic or microbial eukaryotic) cells.  Used in the cultivation of microorganisms.
-"
-WARN	annotation_whitespace	microbiological medium ingredient, derived from oil	obo:definition	"Undefined mixtures of complex organic compounds derived from hydrophobic substances including lipids, fatty acids, and triacylglycerols, derived from the chemical or physical extraction of oil from an organism, the part of an organism, or a naturally occurring substance (such as crude oil).
-"
-WARN	annotation_whitespace	microbiological medium ingredient, derived from extracts of proteinaceous material	obo:definition	"An undefined mixture of complex organic compounds (peptides, sometimes with additional undefined vitamins and cofactors) derived from enzymatic, acid, or base digests of protein from plant or animal sources.  Used in the cultivation of microorganisms.
-"
-WARN	annotation_whitespace	Trypticase peptone	obo:has_exact_synonym	TrypticaseTM Peptone 
-WARN	annotation_whitespace	egg yolk oil	IAO:0000119	<From Wikipedia: Yolk:The yolk of one large egg (50 g total, 17 g yolk) contains approximately: 2.7 g protein, 210 mg cholesterol, 0.61 g carbohydrates, and 4.51 g total fat.All of the fat-soluble vitamins (A, D, E, and K) are found in the egg yolk. Egg yolk is one of the few foods naturally containing vitamin D.The composition (by weight) of the most prevalent fatty acids in egg yolk is typically as follows: Unsaturated fatty acids: Oleic acid, 47% Linoleic acid, 16% Palmitoleic acid, 5% Linolenic acid, 2% Saturated fatty acids: Palmitic acid, 23% Stearic acid, 4% Myristic acid, 1%>
-WARN	annotation_whitespace	olive oil	IAO:0000119	<From Wikipedia:Olive_oil:Olive oil is a fat obtained from the olive (the fruit of Olea europaea; family Oleaceae), a traditional tree crop of the Mediterranean Basin. The oil is produced by pressing whole olives. Olive oil is composed mainly of the mixed triglyceride esters of oleic acid and palmitic acid and of other fatty acids, along with traces of squalene (up to 0.7%) and sterols (about 0.2% phytosterol and tocosterols). >
-WARN	annotation_whitespace	beef heart infusion	IAO:0000119	<From http://www.oxoid.com/UK/blue/prod_detail/prod_detail.asp?pr=CM1032&cat=&sec=1:Heart Infusion Broth has been developed to give the same performance characteristics as Brain Heart Infusion (BHI) Broth. However, as bovine brain is a specified risk material, the exclusion of it from the Heart Infusion Broth means that the regulatory requirements when using it are lower.The medium has been developed to give equivalent performance to Brain Heart Infusion but the exclusion of calf brain infusion means that Heart Infusion Broth carries a lower regulatory burden.Simple additions may be made to the medium to make it suitable for the cultivation of yeasts and moulds and for use in blood culture.A highly nutritious infusion medium recommended for the cultivation of streptococci, pneumococci, meningococci and other fastidious organisms. >
-WARN	annotation_whitespace	horse manure extract	IAO:0000119	"<From \""Report of the New York State College of Agriculture at Cornell University, Ithaca, and of the Cornell University Agricultural Experiment Station\"", v. 25, Part 1, 1913, pg. 431:Manure extract agar. - Prepared as follows: To 100 grams of well-rotted horse manure was added 500 cc. of distilled water. This was allowed to stand for twenty-four hours at room temperature and then filtered. The filtrate was used as a stock solution.>"
-WARN	annotation_whitespace	yeast extract	IAO:0000119	<From www.SigmaAldrich.com: A water soluble extract of autolyzed yeast cells. Yeast extract is a mixture of amino acids, peptides, water soluble vitamins and carbohydrates and can be used as additive for culture media. >
-WARN	annotation_whitespace	endospore	obo:has_exact_synonym	"spore-forming
-"
-WARN	annotation_whitespace	gas vacuole	IAO:0000119	<Wikipedia:bacterial_cell_structureGas vacuoles are membrane-bound, spindle-shaped vesicles, found in some planktonic bacteria and Cyanobacteria, that provides buoyancy to these cells by decreasing their overall cell density. Positive buoyancy is needed to keep the cells in the upper reaches of the water column, so that they can continue to perform photosynthesis. They are made up of a shell of protein that has a highly hydrophobic inner surface, making it impermeable to water (and stopping water vapour from condensing inside) but permeable to most gases. Because the gas vesicle is a hollow cylinder, it is liable to collapse when the surrounding pressure becomes too great. >
-WARN	annotation_whitespace	gas vacuole	obo:createdBy	"Carrine Blank
-"
-WARN	annotation_whitespace	intracellular granule	obo:has_exact_synonym	"globule
-"
-WARN	annotation_whitespace	intracellular granule	obo:has_exact_synonym	"granulated
-"
-WARN	annotation_whitespace	greigite magnetosome	IAO:0000119	<Wikipedia:magnetosomeMagnetotactic bacteria usually mineralize either iron oxide magnetosomes, which contain crystals of magnetite (Fe3O4), or iron sulfide magnetosomes, which contain crystals of greigite (Fe3S4). >
-WARN	annotation_whitespace	magnetite magnetosome	IAO:0000119	<Wikipedia:magnetosomeMagnetotactic bacteria usually mineralize either iron oxide magnetosomes, which contain crystals of magnetite (Fe3O4), or iron sulfide magnetosomes, which contain crystals of greigite (Fe3S4). >
-WARN	annotation_whitespace	sheath	obo:definition	Part of the glycocalyx, or envelope of a prokaryotic cell, that lies outside the outer membrane.  
-WARN	annotation_whitespace	extracellular sulfur globule	obo:has_exact_synonym	"extracellular sulphur granule
-"
-WARN	annotation_whitespace	tetrazolium reduction assay	obo:definition	"An assay for the ability of a microorganism to reduce a compound that contains a tetrazoleum moiety.  Tetrazolium compounds are redox indicators of microbial oxidation and reduction, and hence microbial respiration.  
-
-"
-WARN	annotation_whitespace	amphitrichous cell	IAO:0000119	<http://microbeonline.com/bacterial-flagella-structure-importance-and-examples-of-flagellated-bacteria/Amphitrichous: Single flagellum at both ends e.g. Alcaligenes faecalis (Mneomonics: Remember: the characteristics of Amphibians: live both in land and water) >
-WARN	annotation_whitespace	cell having periplasmic flagella	IAO:0000119	<http://microbewiki.kenyon.edu/index.php/SpirochaetaThe morphology and cellular structure of Spirochaeta spp. (and most other Spirochetes) is unique among prokaryotes. The cells are helical in shape and consist of an outer membrane, axial filaments (ultrastructurally similar to bacterial flagella), and a protoplasmic cylinder. The outer membrane or the outer sheath surrounds all of the structures including the axial filaments and the protoplasmic cylinder. The protoplasmic cylinder is the cell body of the organism. It is coiled and is composed of the cytoplasm, the nuclear region and the peptidoglycan-cytoplasmic membrane complex. The axial filaments are usually called the periplasmic flagella but are also known as periplasmic fibrils, axial fibrils and endoflagella. >
-WARN	annotation_whitespace	cell having periplasmic flagella	obo:has_exact_synonym	"endoflagella
-"
-WARN	annotation_whitespace	tumbling motility	obo:definition	"Prokaryotic motility that is characterized microscopically by end-over-end tumbling and employs a flagellum.  This type of motility is typical of Listeria.
-"
-WARN	annotation_whitespace	distinctly shaped colony	obo:createdBy	"Carrine Blank
-"
-WARN	annotation_whitespace	satellite colonies	IAO:0000119	<http://www.yourdictionary.com/satellite#americanheritageSatellite colonies occur when tiny colonies are found to surround a larger central colony. >
-WARN	annotation_whitespace	translucent colony	oboInOwl:hasBroadSynonym	"almost clear
-"
-WARN	annotation_whitespace	chymotrypsin assay using N-benzoyl-Phe-pNA	oboInOwl:hasRelatedSynonym	N-benzoyl-D-L-phenylalanine 2-naphthylamide 
-WARN	annotation_whitespace	alanyl phenylalanyl proline arylamidase activity	obo:definition	"An aminopeptidase activity which cleaves the chromogenic substrate L-alanyl-L-phenylalanyl-L-proline-2-naphthylamide.
-
-"
-WARN	annotation_whitespace	glutamyl glutamic acid arylamidase activity	obo:definition	"An aminopeptidase activity which cleaves the chromogenic substrate L-glutamyl-L-glutamic acid-2-naphthylamide.
-"
-WARN	annotation_whitespace	glutaryl phenylalanine arylamidase activity	obo:definition	"An aminopeptidase activity which cleaves the chromogenic substrate glutaryl-L-phenylalanine-2-naphthylamide.
-"
-WARN	annotation_whitespace	glycyl phenylalanine arylamidase activity	obo:definition	"An aminopeptidase activity which cleaves the chromogenic substrate glycyl-L-phenylalanine-2-naphthylamide.
-"
-WARN	annotation_whitespace	glycyl proline arylamidase activity	obo:definition	"An aminopeptidase activity which cleaves the chromogenic substrate glycyl-L-proline-2-naphthylamide.
-"
-WARN	annotation_whitespace	glycyl tryptophan arylamidase activity	obo:definition	"An aminopeptidase activity which cleaves the chromogenic substrate glycyl-L-tryptophan-2-naphthylamide.
-"
-WARN	annotation_whitespace	glycyl glycine arylamidase activity	obo:definition	"An aminopeptidase activity which cleaves the chromogenic substrate glycyl-glycine-2-naphthylamide.
-
-"
-WARN	annotation_whitespace	colony having distinct electromagnetic (EM) radiation quality	obo:createdBy	"Carrine Blank
-"
-WARN	annotation_whitespace	punctiform colony	obo:createdBy	"Carrine Blank
-"
-WARN	annotation_whitespace	spindle colony	obo:createdBy	"Carrine Blank
-"
-WARN	annotation_whitespace	raised colony	obo:createdBy	"Carrine Blank
-"
-WARN	annotation_whitespace	sarcina	obo:definition	"A multicellular relationship of prokaryotic cells where cells are attached to one another in multiples of four (8,12, or 16).  This morphology forms as a result of cell division occurring in three planes.
-"
-WARN	annotation_whitespace	cell chain	obo:createdBy	"Carrine Blank
-"
-WARN	annotation_whitespace	cell chain	obo:has_exact_synonym	"short chains
-"
-WARN	annotation_whitespace	tetrad	obo:definition	"A multicellular prokaryotic morphological quality where cells are attached to one another in multiples of four.  Forms when cell division occurs in two planes at right angles to one another.
-"
-WARN	annotation_whitespace	streptococcus	obo:has_exact_synonym	"streptococci
-"
-WARN	annotation_whitespace	diplococcus	IAO:0000119	<Wikipedia:DiplococcusA diplococcus (plural diplococci) is a round bacterium (a coccus) that typically occurs in the form of two joined cells. Examples are gram-negative Neisseria sp., and gram-positive Streptococcus sp. and Staphylococcus sp..Its name comes from diplo, meaning double, and coccus, meaning berry.>
-WARN	annotation_whitespace	bacillus	obo:definition	A prokaryotic cell, where one axis (the long axis, the length) of the cell is longer than the other axis (the short axis, the width) of the cell. 
-WARN	annotation_whitespace	coccus	obo:has_exact_synonym	"cocci
-"
-WARN	annotation_whitespace	multiseriate filament	obo:has_exact_synonym	"multitrichomous
-"
-WARN	annotation_whitespace	nanophytoplankton	IAO:0000119	<From: Wikipedia: NanophytoplanktonNanophytoplankton are particularly small phytoplankton with sizes between 2 ­and 20 µm. They are the autotrophic part of nanoplankton. Like other phytoplankton, nanophytoplankton are microscopic organisms that obtain energy through the process of photosynthesis and must therefore live in the upper sunlit layer of ocean or other bodies of water. These microscopic free-floating organisms, including algae, protists, and cyanobacteria, fix large amounts of carbon which would otherwise be released as carbon dioxide.>
-WARN	annotation_whitespace	photosynthetic picoplankton	obo:createdBy	"Carrine Blank
-"
-WARN	annotation_whitespace	pleomorphic cell	obo:definition	"A prokaryotic cell that is irregular in shape, where the shapes of the cells are irregular and variable (pleomorphic).  Cell shapes may be variable in size and shape, depending on the environmental conditions.
-"
-WARN	annotation_whitespace	DNA Guanosine and Cytidine Content	obo:definition	"The molar percentage of guanosine and cytidine nucleobases ([molG+molC]/[molG+molC+molA+molT)) in the DNA of a prokaryotic chromosome and/or plasmid.
-"
-WARN	annotation_whitespace	gliding motility	obo:definition	"Cell gliding, characterized by bacterial movement that does not involve use of a flagellum.  Gliding is typically observed when a particular genus or species of microorganism encounters a surface. 
-"
-WARN	annotation_whitespace	trace metals 44	IAO:0000119	"<From http://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=149Metals ''44'': EDTA·2Na	 250.0 	 mgZnSO4·7H2O 1095.0	 mg 	FeSO4·7H2O	 500.0 	 mgMnSO4·xH2O	 154.0 	 mgCuSO4·5H2O	 39.2 	 mgCo(NO3)2·6H2O 24.8 	 mgNa2B4O7·10H2O 17.7 	 mgDistilled water	 1.0 	 L>"
-WARN	annotation_whitespace	trace metals 44	obo:definition	"A trace elements solution containing disodium EDTA, zinc sulfate, ferrous sulfate, manganese sulfate, copper sulfate, cobalt nitrate, and sodium tetraborate.
-
-"
-WARN	annotation_whitespace	anaerobic	IAO:0000119	<Wikipedia:anaerobic_organismAn anaerobic organism or anaerobe is any organism that does not require oxygen for growth. It may react negatively or even die if oxygen is present, which means that it can perform its bodily functions better in the absence of oxygen. An anaerobic organism may be unicellular or multicellular (like metazoa or more complex organisms like deep sea worms). A few parasites like Trichinella spiralis (pork worm) respire anaerobically in nurse cells (infected cell playing host to the juvenile parasite). Some largely unicellular anaerobic microbes are protozoans, but most of the anaerobic microbes are bacteria or Archaea. For practical purposes there are three categories: obligate anaerobes, which are harmed by the presence of oxygen aerotolerant organisms, which cannot use oxygen for growth, but tolerate the presence of it facultative anaerobes, which can grow without oxygen but can utilize oxygen if it is present>
-WARN	annotation_whitespace	chemotrophy	obo:createdBy	"Carrine Blank
-"
-WARN	annotation_whitespace	phototrophy	IAO:0000119	<Wikipedia:PhototrophPhototrophs are the organisms that carry out photon capture to acquire energy. They use the energy from light to carry out various cellular metabolic processes. Most of the well-recognized phototrophs are autotrophs, also known as photoautotrophs, and can fix carbon. >
-WARN	annotation_whitespace	aerotolerant	IAO:0000119	<Wikipedia:anaerobic_organismAn anaerobic organism or anaerobe is any organism that does not require oxygen for growth. For practical purposes there are three categories: obligate anaerobes, which are harmed by the presence of oxygen aerotolerant organisms, which cannot use oxygen for growth, but tolerate the presence of it facultative anaerobes, which can grow without oxygen but can utilize oxygen if it is present>
-WARN	annotation_whitespace	facultatively anaerobic	obo:has_exact_synonym	"facultative anaerobe
-"
-WARN	annotation_whitespace	chemolithotrophy	obo:createdBy	"Carrine Blank
-"
-WARN	annotation_whitespace	photoorganotrophy	obo:createdBy	"Carrine Blank
-"
-WARN	annotation_whitespace	microbiological medium ingredient, derived from extracts of plants	obo:definition	"Undefined mixtures of complex organic compounds deriving from the aqueous extraction (an extraction using water, such as hot water or steam) of macroscopic plants.  Used in the cultivation of microorganisms.
-"
-WARN	annotation_whitespace	R2A medium	IAO:0000119	<From: Wikipedia: R2a agarR2A agar (Reasoner´s 2A agar) is a culture medium developed to study bacteria which normally inhabit potable water. These bacteria tend to be slow-growing species and would quickly be suppressed by faster-growing species on a richer culture medium.Since its development in 1979, it has been found to allow the culturing of many other bacteria that will not readily grow on fuller, complex organic media.Typical Composition (g/l)Proteose peptone, 0.5Casamino acids, 0.5Yeast extract, 0.5Dextrose, 0.5Soluble starch, 0.5Dipotassium phosphate, 0.3Magnesium sulfate 7H2O, 0.05Sodium pyruvate, 0.3Agar, 15Final pH 7 ± 0.2 @25 °c>
-WARN	annotation_whitespace	R2A agar	IAO:0000119	<From: Wikipedia: R2a agarR2A agar (Reasoner´s 2A agar) is a culture medium developed to study bacteria which normally inhabit potable water. These bacteria tend to be slow-growing species and would quickly be suppressed by faster-growing species on a richer culture medium.Since its development in 1979, it has been found to allow the culturing of many other bacteria that will not readily grow on fuller, complex organic media.Typical Composition (g/l)Proteose peptone, 0.5Casamino acids, 0.5Yeast extract, 0.5Dextrose, 0.5Soluble starch, 0.5Dipotassium phosphate, 0.3Magnesium sulfate 7H2O, 0.05Sodium pyruvate, 0.3Agar, 15Final pH 7 ± 0.2 @25 °c>
-WARN	annotation_whitespace	YPD-Tween medium	IAO:0000119	<From: Cato EP, Holdeman LV, & Moore WEC. 1979. Proposal of neotype strains for seven non-saccharolytic Bacteroides species. IJSB 29(4):427-434.Growth was stimulated by the addition of ca. 0.02% Tween 80 to the media. >
-WARN	annotation_whitespace	peptone water medium	obo:definition	An organic-rich, liquid microbiological culture medium containing peptone and sodium chloride.  
-WARN	annotation_whitespace	OF basal agar	IAO:0000119	<From: http://www.microbelibrary.org/component/resource/laboratory-test/3151-oxidative-fermentative-test-protocolRECIPEHugh and Leifson’s OF basal medium (6, 8) Peptone (tryptone) 2.0 gSodium chloride 5.0 gGlucose (or other carbohydrate)a 10.0 gBromthymol blue 0.03 g Agar 3.0 gDipotassium phosphate 0.30 gBring to 1 liter with distilled water. The pH should be adjusted to 7.1 prior to autoclaving (7). After the medium is autoclaved at 121°C for 15 minutes, a filter sterilized solution of 10% solution of carbohydrate (6, 8) is aseptically added to the medium to a final concentration of 1%. The sterile medium containing the carbohydrate is aliquoted aseptically into sterile test tubes and cooled unslanted as stabs (5). Some procedures call for the addition of 10 g/liter of carbohydrate to the medium prior to sterilization. The medium is then dissolved by heating to a boil on a hot plate or by steaming for 20 minutes prior to aliquoting into test tubes. The tubed medium is then steamed for 20 minutes in place of autoclaving to prevent breaking down of the carbohydrate (7). OF basal medium is commercially available in a premixed form from biological supply companies. The carbohydrate source is not included and must be added as stated above. >
-WARN	annotation_whitespace	OF basal agar	obo:has_exact_synonym	Hugh and Leifson's 
-WARN	annotation_whitespace	MRS agar	IAO:0000119	<From: Wikipedia:MRS_agarOften abbreviated to MRS, this type of bacterial growth medium is so-named by its inventors: de Man, Rogosa and Sharpe. Developed in 1960, this medium was designed to favour the luxuriant growth of Lactobacilli for lab study. It contains sodium acetate, which suppresses the growth of many competing bacteria (although some other Lactobacillales, like Leuconostoc and Pediococcus, may grow). This medium has a clear brown colour.[1]MRS agar typically contains(w/v):[2] 1.0 % peptone 0.8 % egg extract 0.4 % yeast extract 2.0 % glucose 0.5 % sodium acetate trihydrate 0.1 % polysorbate 80 (also known as Tween 80) 0.2 % dipotassium hydrogen phosphate 0.2 % triammonium citrate 0.02 % magnesium sulfate heptahydrate 0.005 % manganese sulfate tetrahydrate 1.0 % agar pH adjusted to 6.2 at 25°C>
-WARN	annotation_whitespace	MM1 medium	IAO:0000119	<From: Pankratov TA, Tindall BJ, Liesack W, & Dedysh SN. 2007. Mucilaginibacter paludis gen. nov., sp. nov. and Mucilaginibacter gracilis sp. nov., pectin-, xylan- and laminarin-degrading members of the family Sphingobacteriaceae from acidic Sphagnum peat bog. IJSEM 57:2349-2354.All tests were carried out using medium MM1 containing (per liter distilled water) 0.5 g glucose, 0.04 g MgSO4.7H2O, 0.02 g CaCl2.2H2O and 0.1 g yeast extract.>
-WARN	annotation_whitespace	MacConkey agar	IAO:0000119	<From MacConkey Agar (Becton-Dickinson Difco and BBL Manual of Microbiological Culture Media, 2nd edition):Intended UseMacConkey agars are slightly selective and differential plating media mainly used for the detection and isolation of gram-negative organisms from clinical,1-3 dairy,4 food,5-7 water,8 pharmaceutical, 9-11 cosmetic,6,7 and other industrial sources. MacConkey Agar is used for isolating and differentiating lactose-fermenting from lactose-nonfermenting gram-negative enteric bacilli.Principles of the ProcedurePeptones are sources of nitrogen and other nutrients. Yeast extract is a source of trace elements, vitamins, amino acids and carbon. Lactose is a fermentable carbohydrate. When lactose is fermented, a local pH drop around the colony causes a color change in the pH indicator (neutral red) and bile precipitation. Bile salts, bile salts no. 3, oxgall and crystal violet are selective agents that inhibit growth of gram-positive organisms. Sodium chloride maintains osmotic balance in the medium. Magnesium sulfate is a source of divalent cations. Agar is the solidifying agent.FormulaeDifco™ MacConkey AgarApproximate Formula* Per LiterPancreatic Digest of Gelatin....................................... 17.0 gPeptones (meat and casein).......................................... 3.0 gLactose...................................................................... 10.0 gBile Salts No. 3............................................................. 1.5 gSodium Chloride.......................................................... 5.0 gAgar.......................................................................... 13.5 gNeutral Red.................................................................. 0.03 gCrystal Violet............................................................... 1.0 mgpH 7.1 ± 0.2Difco™ MacConkey Agar BaseConsists of the same ingredients without the lactose.BBL™ MacConkey AgarApproximate Formula* Per LiterPancreatic Digest of Gelatin....................................... 17.0 gPeptones (meat and casein).......................................... 3.0 gLactose...................................................................... 10.0 gBile Salts...................................................................... 1.5 gSodium Chloride.......................................................... 5.0 gAgar.......................................................................... 13.5 gNeutral Red.................................................................. 0.03 gCrystal Violet............................................................... 1.0 mgpH 7.1 ± 0.2>
-WARN	annotation_whitespace	laked blood agar	IAO:0000119	<From: http://medical-dictionary.thefreedictionary.com/laked+bloodlaked blood[lākt]Etymology: Fr, laque, a deep red colorblood that is clear, red, and homogenous because of hemolysis of the red blood cells, as may occur in poisoning and severe extensive burns.>
-WARN	annotation_whitespace	ISP 2 agar	IAO:0000119	<From: Shirling, E. B. & Gottlieb, D. (1966). Methods for characterization of Streptomyces species. Int J Syst Bacteriol 16, 313–340.Medium 2: Yeast-extract - malt extract agar (Pridham et al., 1956-57)Bacto-Yeast Extract (Difco) 4.0gBact-Malt Extract (Difco) 10.0 gBacto-Dextrose (Difco) 4.0 gDistilled water 1.0 literAdjust to pH 7.3, then add --Bacto agar 20.0 gLiquefy agar by steaming at 100˚C for 15-20 minutes.Dispense appropriate amount for a slanting into at least 6 tubes for each culture. Sterilize by autoclaving; cool tubes as slants. Use the agar slants for preparation of stock cultures.Also sterilize medium 2 in flasks for pouring the sterilized medium into Petri dishes. >
-WARN	annotation_whitespace	Czapek-Dox medium	IAO:0000119	<From: Czapek-Dox Broth (Becton-Dickinson Difco and BBL Manual of Microbiological Culture Media, 2nd edition):Intended UseCzapek-Dox Broth and Czapek Solution Agar are used for cultivating fungi and bacteria capable of using inorganic nitrogen.Principles of the ProcedureSaccharose is the sole carbon source, and sodium nitrate is the sole nitrogen source in Czapek-Dox Broth and Czapek Solution Agar. Dipotassium phosphate is the buffering agent, and potassium chloride contains essential ions. Magnesium sulfate and ferrous sulfate are sources of cations. Agar is the solidifying agent in Czapek Solution Agar.FormulaeDifco™ Czapek-Dox BrothApproximate Formula* Per LiterSaccharose................................................................. 30.0 gSodium Nitrate............................................................. 3.0 gDipotassium Phosphate................................................ 1.0 gMagnesium Sulfate...................................................... 0.5 gPotassium Chloride...................................................... 0.5 gFerrous Sulfate............................................................. 0.01 gpH 7.3 ± 0.2>
-WARN	annotation_whitespace	inorganic chemical mixture	obo:definition	Inorganic compounds or mixtures of inorganic compounds added to culture media to support growth or metabolism of a microorganism. 
-WARN	annotation_whitespace	HCY medium	IAO:0000119	"<From http://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=631Hunter's basal salts: Nitrilotriacetic acid 10.0 gMgSO4·7H2O	 14.45 gCaCl2·2H2O 4.42 g(NH4)6Mo7O24·4H2O 9.25 mgFeSO4·7H2O 99.0 mgNicotinic acid 50.0 mgThiamine·HCl 25.0 mgBiotin 0.5 mgMetals ''44'' (see Medium No. 149) 50.0 mlDistilled water 950.0 mlDissolve and neutralized nitrilotriacetic acid in 500.0 ml distilled water with the addition of KOH. Add the remaining chemicals in order listed. Adjust pH to 6.8 and bring volume to 1.0 L with distilled water. From http://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=149Metals ''44'': EDTA·2Na	 250.0 	 mgZnSO4·7H2O 1095.0	 mg 	FeSO4·7H2O	 500.0 	 mgMnSO4·xH2O	 154.0 	 mgCuSO4·5H2O	 39.2 	 mgCo(NO3)2·6H2O 24.8 	 mgNa2B4O7·10H2O 17.7 	 mgDistilled water	 1.0 	 L>"
-WARN	annotation_whitespace	HCY agar	IAO:0000119	"<From http://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=631Hunter's basal salts: Nitrilotriacetic acid 10.0 gMgSO4·7H2O	 14.45 gCaCl2·2H2O 4.42 g(NH4)6Mo7O24·4H2O 9.25 mgFeSO4·7H2O 99.0 mgNicotinic acid 50.0 mgThiamine·HCl 25.0 mgBiotin 0.5 mgMetals ''44'' (see Medium No. 149) 50.0 mlDistilled water 950.0 mlDissolve and neutralized nitrilotriacetic acid in 500.0 ml distilled water with the addition of KOH. Add the remaining chemicals in order listed. Adjust pH to 6.8 and bring volume to 1.0 L with distilled water. From http://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=149Metals ''44'': EDTA·2Na	 250.0 	 mgZnSO4·7H2O 1095.0	 mg 	FeSO4·7H2O	 500.0 	 mgMnSO4·xH2O	 154.0 	 mgCuSO4·5H2O	 39.2 	 mgCo(NO3)2·6H2O 24.8 	 mgNa2B4O7·10H2O 17.7 	 mgDistilled water	 1.0 	 L>"
-WARN	annotation_whitespace	dextrose agar	IAO:0000119	<From: Dextrose Agar (Becton-Dickinson Difco and BBL Manual of Microbiological Culture Media, 2nd edition):Intended UseDextrose Agar is used for cultivating a wide variety of microorganisms with or without added blood. Dextrose Broth is used for cultivating fastidious microorganisms and for detecting gas from enteric bacilli.Principles of the ProcedureBeef extract and peptones provide nitrogen, amino acids and vitamins. Dextrose is a carbon source, and the increased concentration is a distinguishing characteristic of this medium from other formulations used as blood agar bases. Agar is the solidifying agent.Supplementation with 5% blood provides additional growth factors for fastidious microorganisms.FormulaeDifco™ Dextrose AgarApproximate Formula* Per LiterPancreatic Digest of Casein.......................................... 5.0 gProteose Peptone No. 3................................................ 2.0 gPancreatic Digest of Gelatin......................................... 3.0 gBeef Extract.................................................................. 3.0 gDextrose.................................................................... 10.0 gSodium Chloride.......................................................... 5.0 gAgar.......................................................................... 15.0 gpH 7.3 ± 0.2>
-WARN	annotation_whitespace	Flexibacter maritimus medium agar	IAO:0000119	<From Table 2 in: Pazos F, Santos Y, Macias AR, Nunez S, & Toranzo AE. 1996. Evaluation of media for the successful culture of Flexibacter maritimus. Journal of Fish Diseases 19:196-197.Components (g/L)Peptone 5.0Yeast extract 0.5Sodium acetate 0.01Agar 15In sea water as the diluentpH 7.2-7.4>
-WARN	annotation_whitespace	DSMZ	IAO:0000119	<From: http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Mediumxxxx.pdf>
-WARN	annotation_whitespace	DSMZ	IAO:0000232	<DSM strains:>
-WARN	annotation_whitespace	Brucella medium	obo:definition	An organic-rich, liquid microbiological culture medium, containing pancreatic digest of casein (casitone), peptic digest of animal tissue (proteose peptone), dextrose (D-glucose), yeast extract, sodium chloride, and sodium bisulfite (sodium hydrogensulfite) as a reducing agent.  Used for the growth of Brucella. 
-WARN	annotation_whitespace	Brucella agar	obo:definition	An organic-rich, solid microbiological culture medium, containing pancreatic digest of casein (casitone), peptic digest of animal tissue (proteose peptone), dextrose (D-glucose), yeast extract, sodium chloride, sodium bisulfite (sodium hydrogensulfite) as a reducing agent, and agar.  Used for the growth of Brucella. 
-WARN	annotation_whitespace	bile esculin agar	obo:definition	An organic-rich, solid microbiological culture medium containing pancreatic digest of gelatin, beef extract, oxgall, esculin, and ferric iron.  Used for the differentiation of enterococci, Streptococcus bovis, and other streptococci, 
-WARN	annotation_whitespace	ox gall	IAO:0000119	<From Wikipedia:Ox_gall:Ox gall is gall, usually obtained from cows, that is mixed with alcohol and used as the wetting agent in paper marbling, engraving, lithography, and watercolor painting. It is a greenish-brown liquid mixture containing cholesterol, lecithin, taurocholic acid, and glycocholic acid.>
-WARN	annotation_whitespace	chopped meat	obo:definition	"Undefined mixtures of complex organic compounds derived from the chopped meat (muscle and fat) of mammals, used in the cultivation of microorganisms.
-"
-WARN	annotation_whitespace	Loeffler blood serum medium	IAO:0000119	"<Wikipedia:Loeffler's_mediumLöffler's medium is a special substance used to grow diphtheria bacilli to confirm the diagnosis.HistoryIn 1887, Friedrich Loeffler devised a culture medium containing horse serum, meat infusion, and dextrose for use in the cultivation of corynebacteria and for differentiating them from other organisms.[1] Perry and Petran suggested modification of the original formulation.[2] Buck, in 1949, described a modified Loeffler's medium for cultivating Corynebacterium diphtheriae.[3]UsesThis medium has a variety of uses in microbiological investigations. The current formulation incorporated these later modifications: The primary value of Loeffler medium is in the growth and morphological characterization of members of the genus Corynebacterium. This formulation enhances the formation of metachromatic granules within the cells of the organisms. Due to its serum content, Loeffler medium can be used for the determination of proteolytic activities of microorganisms. The gray-white surface of the medium provides an excellent background for the detection and observation of colonial pigmentation. If all extraneous moisture is removed aseptically from the slants and the upper part of the slant is heated until the slant ruptures, this medium can be used for the detection of ascospores.Principles of the procedureHeart muscle and animal tissue peptone provide the amino acids and other complex nitrogenous substances necessary to support growth of corynebacteria. Sodium chloride supplies essential ions.Dextrose is a source of fermentable carbohydrate. The eggs and beef serum cause the medium to coagulate during the sterilization process and are sources of protein which are used for metabolism of the corynebacteria and other organisms.Approximate formula 	 Per liter purified waterBeef serum 	 70.0 gHeart muscle, infusion from (solids) 	0.72 gPeptic digest of animal tissue 	 0.71 gSodium chloride 	 0.36 gDextrose 	 0.71 gEgg (whole, dried) 	 7.5 g>"
-WARN	annotation_whitespace	methyl red assay	IAO:0000119	<Wikipedia: IMViCThe methyl red test detects production of acids formed during metabolism using mixed acid fermentation pathway using pyruvate as a substrate. The pH indicator Methyl Red is added to one tube and a red color appears at pH's lower than 4.2, indicating a positive test (mixed acid fermentation is used). The solution remaining yellow (pH = 6.2 or above) indicates a negative test, meaning the butanediol fermentation is used.>
-WARN	annotation_whitespace	methylene blue assay	obo:definition	"An assay to determine if methylene blue can act as an artificial donor of electrons to cytochrome oxidase.  When methylene blue is reduced it turns from oxidized blue form to the reduced colorless form.  Methylene blue inhibits the growth of gram-positive bacteria, therefore inclusion in agar media is used to select for gram-negative bacteria.
-"
-WARN	annotation_whitespace	urea agar	obo:definition	An organic-rich, solid microbiological culture medium containing pancreatic digest of gelatin, dextrose (D-glucose), sodium chloride, phosphate, urea, a pH indicator (phenol red) and agar.  
-WARN	annotation_whitespace	phosphatase assay	oboInOwl:hasRelatedSynonym	 indoxylphosphate
-WARN	annotation_whitespace	resazurin reduction assay	obo:definition	An assay for the ability of a microorganism to reduce resazurin.  Resazurin is a dye in which under oxidizing conditions it is blue, however when reduced becomes pink (it is also strongly fluorescent).  It functions as a redox indicator, and in viability tests. 
-WARN	annotation_whitespace	tellurite reduction assay	obo:definition	<In the tellurite reduction test, tellurite is reduced to metallic tellurium, which is dark grey. Some microorganisms are resistant to tellurite, and thus tellurite reduction in those organisms is an assay of redox (respiratory) metabolism. The extent of tellurite reduction is also a measure of the extent of respiratory metabolism. Tellurite added to plates, when reduced, generates colonies that are dark grey in color.Tellurite is toxic, and so may be inhibitory at concentrations ranging from 40-120 mg/L.Nagai S. 1965. Differential reduction of tellurite by growing colonies of normal yeast and respiration-deficient mutans. J Bact 90(1):220-222.>
-WARN	annotation_whitespace	phosphoamidase assay	oboInOwl:hasRelatedSynonym	 naphthol-AS-B1-phosphodiamide
-WARN	annotation_whitespace	phosphoamidase assay	oboInOwl:hasRelatedSynonym	naphthol-AS-BIphosphohydrolase 
-WARN	annotation_whitespace	acid phosphatase assay with naphthol	obo:definition	"Uses the substrate 2-naphthyl phosphate at pH 5.4.  Acid phosphatase will cleave the substrate, producing 2-naphthol.  When reacted with Fast Blue BB it forms a colored insoluble precipitate that is purple in color.

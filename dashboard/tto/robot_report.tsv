@@ -1,5 +1,5 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/tto.owl	dc11:description	
+ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/tto.owl	dc:description	
 ERROR	duplicate_label	Sarcopterygii	rdfs:label	Sarcopterygii
 ERROR	duplicate_label	Sarcopterygii	rdfs:label	Sarcopterygii
 ERROR	duplicate_label	Nahangbagrus	rdfs:label	Nahangbagrus
@@ -19,7 +19,10 @@ ERROR	duplicate_label	Chondrichthyes	rdfs:label	Chondrichthyes
 ERROR	duplicate_label	Actinopterygii	rdfs:label	Actinopterygii
 ERROR	duplicate_label	Actinopterygii	rdfs:label	Actinopterygii
 ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/tto.owl	dc:license	
-ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/tto.owl	dc11:title	
+ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/tto.owl	dc:title	
+WARN	missing_synonymtype_declaration	common name	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	misspelling	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	name with (author year)	rdfs:subPropertyOf	
 WARN	annotation_whitespace	Cryptarius daugueti	oboInOwl:hasRelatedSynonym	Hemipimelodus daugueti 
 WARN	annotation_whitespace	Gymnotus mamiraua	oboInOwl:hasRelatedSynonym	Gymnotus mamiraua 
 WARN	annotation_whitespace	Gymnotus arapaima	oboInOwl:hasRelatedSynonym	Gymnotus arapaima 
@@ -195,6 +198,3 @@ WARN	missing_definition	Hydrocynus sp. (Vari 1989a)	IAO:0000115
 WARN	missing_definition	Mesoborus sp. (Vari 1989a)	IAO:0000115	
 WARN	missing_definition	Hemiodus sp. (Vari 1989a)	IAO:0000115	
 WARN	missing_definition	Ichthyoelephas sp. (Vari 1989a)	IAO:0000115	
-WARN	missing_definition	Pareiorhina sp. (Armbruster 2004)	IAO:0000115	
-WARN	missing_definition	Harttia sp. (Armbruster 2004)	IAO:0000115	
-WARN	missing_definition	Exastilithoxus sp. (Armbruster 2004)	IAO:0000115	

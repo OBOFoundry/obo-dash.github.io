@@ -3,7 +3,7 @@ base_prefixes:
 - MAXO
 - MAXOALT
 - MAXO
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 9568
@@ -24,14 +24,14 @@ metrics:
     ObjectSomeValuesFrom: 1063
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.743
+    _dashboard: 0.721
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.011
+    _impact: 0.016
     _impact_external: 0
     _reuse: 0.289
-    oboscore: 0.377
+    oboscore: 0.368
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 2
+  'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -57,6 +57,7 @@ metrics:
   'Info: Which ontologies use it?':
   - ecto
   - maxo
+  - mondo
   - upheno
 mirror_from: http://purl.obolibrary.org/obo/maxo/maxo-base.owl
 namespace: maxo
@@ -95,12 +96,12 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 50 errors, 59 warnings, 403 info messages.
+    comment: 94 errors, 63 warnings, 403 info messages.
     file: robot_report
     results:
-      ERROR: 50
+      ERROR: 94
       INFO: 403
-      WARN: 59
+      WARN: 63
     status: ERROR
 sha256_hash: ae71441cd40b5730bbed0b3bfb4618288bd0d8246f19ac9e179b7e4003ad291a
 summary:

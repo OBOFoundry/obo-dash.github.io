@@ -3,59 +3,59 @@ base_prefixes:
 - MP
 - MPALT
 - MP
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 94616
-    Declaration: 17940
-    EquivalentClasses: 9798
+    AnnotationAssertion: 95000
+    Declaration: 17990
+    EquivalentClasses: 9821
     SubAnnotationPropertyOf: 5
-    SubClassOf: 16934
-  'Axioms: Number of axioms': 139293
-  'Entities: % of entities reused': 23.0
-  'Entities: Number of annotation properties': 40
-  'Entities: Number of classes': 17882
+    SubClassOf: 16982
+  'Axioms: Number of axioms': 139798
+  'Entities: % of entities reused': 22.97
+  'Entities: Number of annotation properties': 41
+  'Entities: Number of classes': 17931
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 20
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 93078
-    ObjectIntersectionOf: 11586
-    ObjectSomeValuesFrom: 31584
+    Class: 93330
+    ObjectIntersectionOf: 11620
+    ObjectSomeValuesFrom: 31668
     ObjectUnionOf: 1
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.894
+    _dashboard: 0.848
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.033
     _impact_external: 0.5
     _reuse: 0.23
-    oboscore: 0.464
+    oboscore: 0.441
   'Info: How many externally documented uses?': 3
   'Info: How many ontologies use it?': 6
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 11312
-    CHEBI: 901
+    BFO: 11336
+    CHEBI: 905
     CL: 1715
-    GO: 2873
-    IAO: 13729
-    MP: 57554
+    GO: 2883
+    IAO: 13777
+    MP: 57718
     MPATH: 392
-    MPATHALT: 127
+    MPATHALT: 137
     NBO: 373
-    PATO: 19954
-    PR: 226
-    RO: 19896
-    UBERON: 9081
-    dc: 1
-    dc11: 3711
-    obo: 211
-    oboInOwl: 76282
+    PATO: 19999
+    PR: 242
+    RO: 19946
+    UBERON: 9093
+    dc: 52
+    dc11: 3769
+    obo: 212
+    oboInOwl: 76511
     owl: 444
-    rdfs: 14290
+    rdfs: 14337
   'Info: Which ontologies use it?':
   - chiro
   - geno
@@ -78,7 +78,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 162 missing definitions. See ROBOT Report for details.
+    comment: 159 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     comment: 2 labels match RO labels. 6 non-RO properties used.
@@ -97,19 +97,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 162 warnings, 13280 info messages.
+    comment: 1 errors, 162 warnings, 13328 info messages.
     file: robot_report
     results:
-      ERROR: 0
-      INFO: 13280
+      ERROR: 1
+      INFO: 13328
       WARN: 162
-    status: WARN
-sha256_hash: 4cc62929dcf738093d739e6388ad8312893893250b17b17597f3c60d2d486712
+    status: ERROR
+sha256_hash: 4b087f89c72f09eef02744531b8a76e900df75af1ae6eee7941957cb07a02624
 summary:
-  comment: 1 errors
+  comment: 2 errors
   status: ERROR
   summary_count:
-    ERROR: 1
+    ERROR: 2
     INFO: 0
-    WARN: 2
-version: http://purl.obolibrary.org/obo/mp/releases/2021-11-04/mp-base.owl
+    WARN: 1
+version: http://purl.obolibrary.org/obo/mp/releases/2021-12-16/mp-base.owl

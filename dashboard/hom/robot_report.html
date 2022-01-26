@@ -16,7 +16,7 @@
       
       <tr><td>WARN</td><td>4</td></tr>
       
-      <tr><td>INFO</td><td>3</td></tr>
+      <tr><td>INFO</td><td>1</td></tr>
       
       </table></div>
       <h3>Error breakdown</h3>
@@ -25,17 +25,15 @@
       
       <tr><td>missing_ontology_description</td><td>1</td></tr>
       
-      <tr><td>missing_ontology_license</td><td>1</td></tr>
-      
       <tr><td>missing_ontology_title</td><td>1</td></tr>
       
-      <tr><td>annotation_whitespace</td><td>1</td></tr>
+      <tr><td>missing_ontology_license</td><td>1</td></tr>
       
       <tr><td>invalid_xref</td><td>2</td></tr>
       
-      <tr><td>missing_obsolete_label</td><td>1</td></tr>
+      <tr><td>annotation_whitespace</td><td>1</td></tr>
       
-      <tr><td>lowercase_definition</td><td>2</td></tr>
+      <tr><td>missing_obsolete_label</td><td>1</td></tr>
       
       <tr><td>missing_superclass</td><td>1</td></tr>
       
@@ -87,7 +85,7 @@
             
               <td>
               
-                <a href="http://purl.org/dc/elements/1.1/description">dc11:description</a>
+                <a href="http://purl.org/dc/terms/description">dc:description</a>
               
               </td>
             
@@ -106,6 +104,46 @@
           
           <tr class="table-danger">
             <td>2</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_ontology_title">missing_ontology_title</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/hom.owl">http://purl.obolibrary.org/obo/hom.owl</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.org/dc/terms/title">dc:title</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>3</td>
             
               <td>
               
@@ -144,88 +182,8 @@
           
             
           
-          <tr class="table-danger">
-            <td>3</td>
-            
-              <td>
-              
-                ERROR
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_ontology_title">missing_ontology_title</a>
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/hom.owl">http://purl.obolibrary.org/obo/hom.owl</a>
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.org/dc/elements/1.1/title">dc11:title</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
           <tr class="table-warning">
             <td>4</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/annotation_whitespace">annotation_whitespace</a>
-              
-              </td>
-            
-              <td>
-              
-                many to many homology
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">oboInOwl:hasExactSynonym</a>
-              
-              </td>
-            
-              <td>
-              
-                <many:many homology >
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>5</td>
             
               <td>
               
@@ -253,7 +211,7 @@
             
               <td>
               
-                <MeSH:Structural Homology, Protein>
+                MeSH:Structural Homology, Protein
 
               
               </td>
@@ -265,7 +223,7 @@
             
           
           <tr class="table-warning">
-            <td>6</td>
+            <td>5</td>
             
               <td>
               
@@ -293,7 +251,47 @@
             
               <td>
               
-                <MeSH:Chromosome Pairing>
+                MeSH:Chromosome Pairing
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>6</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/annotation_whitespace">annotation_whitespace</a>
+              
+              </td>
+            
+              <td>
+              
+                many to many homology
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">oboInOwl:hasExactSynonym</a>
+              
+              </td>
+            
+              <td>
+              
+                many:many homology 
 
               
               </td>
@@ -346,86 +344,6 @@
           
           <tr class="table-info">
             <td>8</td>
-            
-              <td>
-              
-                INFO
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/lowercase_definition">lowercase_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                pro-orthology
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                <1:many orthology that involves a gene in species A and one of its ortholog in species B, when duplications more recent than the species split have occurred in species B but not in species A.>
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-info">
-            <td>9</td>
-            
-              <td>
-              
-                INFO
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/lowercase_definition">lowercase_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                semi-orthology
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                <1:many orthology that involves a gene in species A and its ortholog in species B, when duplications more recent than the species split have occurred in species A but not in species B.>
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-info">
-            <td>10</td>
             
               <td>
               
