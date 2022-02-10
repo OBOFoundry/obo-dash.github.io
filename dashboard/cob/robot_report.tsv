@@ -1,20 +1,4 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	missing_label	CHEBI:50906	rdfs:label	
-ERROR	missing_label	GEO:000000370	rdfs:label	
-ERROR	missing_label	OBI:0000202	rdfs:label	
-ERROR	missing_label	PO:0000003	rdfs:label	
-ERROR	missing_label	PO:0009002	rdfs:label	
-ERROR	missing_label	PO:0025117	rdfs:label	
-ERROR	missing_label	PO:0025606	rdfs:label	
-ERROR	missing_label	SO:0000110	rdfs:label	
-ERROR	missing_label	SO:0000400	rdfs:label	
-ERROR	missing_label	SO:0001060	rdfs:label	
-ERROR	missing_label	SO:0001260	rdfs:label	
-ERROR	missing_label	UBERON:0000466	rdfs:label	
-ERROR	missing_label	UBERON:0000468	rdfs:label	
-ERROR	missing_label	UBERON:0010000	rdfs:label	
-ERROR	missing_label	XAO:0003012	rdfs:label	
-ERROR	missing_label	ZFA:0009000	rdfs:label	
 ERROR	duplicate_definition	drug product	definition	A processed material entity created to be administered to an individual with the intent to improve health.
 ERROR	duplicate_definition	drug product	definition	A processed material entity created to be administered to an individual with the intent to improve health.
 ERROR	duplicate_definition	biological process	definition	A process that emerges from two or more causally-connected macromolecular activities and has evolved to achieve a biological objective.
@@ -173,28 +157,44 @@ ERROR	duplicate_label	assay	rdfs:label	assay@en
 ERROR	duplicate_label	assay	rdfs:label	assay@en
 ERROR	duplicate_label	agent role	rdfs:label	agent role
 ERROR	duplicate_label	agent role	rdfs:label	agent role
-WARN	missing_definition	process	definition	
-WARN	missing_definition	disposition	definition	
-WARN	missing_definition	realizable	definition	
-WARN	missing_definition	role	definition	
-WARN	missing_definition	site	definition	
-WARN	missing_definition	function	definition	
-WARN	missing_definition	material entity	definition	
-WARN	missing_definition	immaterial entity	definition	
-WARN	missing_definition	part of	definition	
-WARN	missing_definition	has part	definition	
-WARN	missing_definition	realized in	definition	
-WARN	missing_definition	occurs in	definition	
-WARN	missing_definition	contains process	definition	
-WARN	missing_definition	electron	definition	
-WARN	missing_definition	proton	definition	
-WARN	missing_definition	monoatomic ion	definition	
-WARN	missing_definition	neutron	definition	
-WARN	missing_definition	uncharged atom	definition	
-WARN	missing_definition	atomic nucleus	definition	
-WARN	missing_definition	subatomic particle	definition	
-WARN	missing_definition	CHEBI:50906	definition	
-WARN	missing_definition	native cell	definition	
-WARN	missing_definition	cell in vitro	definition	
-WARN	missing_definition	is concretized as	definition	
-WARN	missing_definition	mass	definition	
+ERROR	missing_label	CHEBI:50906	rdfs:label	
+ERROR	missing_label	GEO:000000370	rdfs:label	
+ERROR	missing_label	OBI:0000202	rdfs:label	
+ERROR	missing_label	PO:0000003	rdfs:label	
+ERROR	missing_label	PO:0009002	rdfs:label	
+ERROR	missing_label	PO:0025117	rdfs:label	
+ERROR	missing_label	PO:0025606	rdfs:label	
+ERROR	missing_label	SO:0000110	rdfs:label	
+ERROR	missing_label	SO:0000400	rdfs:label	
+ERROR	missing_label	SO:0001060	rdfs:label	
+ERROR	missing_label	SO:0001260	rdfs:label	
+ERROR	missing_label	UBERON:0000466	rdfs:label	
+ERROR	missing_label	UBERON:0000468	rdfs:label	
+ERROR	missing_label	UBERON:0010000	rdfs:label	
+ERROR	missing_label	XAO:0003012	rdfs:label	
+ERROR	missing_label	ZFA:0009000	rdfs:label	
+WARN	equivalent_pair	process	owl:equivalentClass	process
+WARN	equivalent_pair	disposition	owl:equivalentClass	disposition
+WARN	equivalent_pair	realizable	owl:equivalentClass	realizable
+WARN	equivalent_pair	BFO:0000020	owl:equivalentClass	characteristic
+WARN	equivalent_pair	role	owl:equivalentClass	role
+WARN	equivalent_pair	site	owl:equivalentClass	site
+WARN	equivalent_pair	function	owl:equivalentClass	function
+WARN	equivalent_pair	material entity	owl:equivalentClass	material entity
+WARN	equivalent_pair	immaterial entity	owl:equivalentClass	immaterial entity
+WARN	equivalent_pair	gross anatomical part	owl:equivalentClass	gross anatomical part
+WARN	equivalent_pair	CARO:0001010	owl:equivalentClass	organism
+WARN	equivalent_pair	CARO:0010004	owl:equivalentClass	cellular organism
+WARN	equivalent_pair	electron	owl:equivalentClass	electron
+WARN	equivalent_pair	electron	owl:equivalentClass	nucleic acid polymer
+WARN	equivalent_pair	CHEBI:16541	owl:equivalentClass	protein
+WARN	equivalent_pair	proton	owl:equivalentClass	proton
+WARN	equivalent_pair	monoatomic ion	owl:equivalentClass	monoatomic ion
+WARN	equivalent_pair	neutron	owl:equivalentClass	neutron
+WARN	equivalent_pair	uncharged atom	owl:equivalentClass	uncharged atom
+WARN	equivalent_pair	atomic nucleus	owl:equivalentClass	atomic nucleus
+WARN	equivalent_pair	subatomic particle	owl:equivalentClass	subatomic particle
+WARN	equivalent_pair	cell	owl:equivalentClass	cell
+WARN	equivalent_pair	native cell	owl:equivalentClass	native cell
+WARN	equivalent_pair	cell in vitro	owl:equivalentClass	cell in vitro
+WARN	equivalent_pair	mass	owl:equivalentClass	mass

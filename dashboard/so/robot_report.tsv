@@ -1,4 +1,10 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/so.owl	dc:description	
+ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/so.owl	dc:license	
+ERROR	missing_label	obo:so#Alliance_of_Genome_Resources	rdfs:label	
+ERROR	missing_label	obo:so#DBVAR	rdfs:label	
+ERROR	missing_label	obo:so#SOFA	rdfs:label	
+ERROR	missing_label	obo:so#biosapiens	rdfs:label	
 ERROR	duplicate_label	RNA_stability_element	rdfs:label	RNA_stability_element
 ERROR	duplicate_label	RNA_stability_element	rdfs:label	RNA_stability_element
 ERROR	duplicate_label	nested_transposon	rdfs:label	nested_transposon
@@ -15,6 +21,7 @@ ERROR	duplicate_label	assortment_derived_deficiency	rdfs:label	assortment_derive
 ERROR	duplicate_label	assortment_derived_deficiency	rdfs:label	assortment_derived_deficiency
 ERROR	duplicate_label	assortment_derived_aneuploid	rdfs:label	assortment_derived_aneuploid
 ERROR	duplicate_label	assortment_derived_aneuploid	rdfs:label	assortment_derived_aneuploid
+ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/so.owl	dc:title	
 ERROR	duplicate_definition	U5_five_prime_LTR_region	IAO:0000115	The U5 segment of the three-prime long terminal repeat.
 ERROR	duplicate_definition	U5_three_prime_LTR_region	IAO:0000115	The U5 segment of the three-prime long terminal repeat.
 ERROR	duplicate_definition	U3_five_prime_LTR_region	IAO:0000115	The U3 segment of the three-prime long terminal repeat.
@@ -65,23 +72,63 @@ ERROR	duplicate_definition	mating_type_region_replication_fork_barrier	IAO:00001
 ERROR	duplicate_definition	allelic_pseudogene	IAO:0000115	A (unitary) pseudogene that is stable in the population but importantly it has a functional alternative allele also in the population. i.e., one strain may have the gene, another strain may have the pseudogene. MHC haplotypes have allelic pseudogenes.
 ERROR	duplicate_definition	allelic_pseudogenic_rRNA	IAO:0000115	A (unitary) pseudogene that is stable in the population but importantly it has a functional alternative allele also in the population. i.e., one strain may have the gene, another strain may have the pseudogene. MHC haplotypes have allelic pseudogenes.
 ERROR	duplicate_definition	allelic_pseudogenic_tRNA	IAO:0000115	A (unitary) pseudogene that is stable in the population but importantly it has a functional alternative allele also in the population. i.e., one strain may have the gene, another strain may have the pseudogene. MHC haplotypes have allelic pseudogenes.
-ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/so.owl	dc:title	
-ERROR	missing_label	obo:so#Alliance_of_Genome_Resources	rdfs:label	
-ERROR	missing_label	obo:so#DBVAR	rdfs:label	
-ERROR	missing_label	obo:so#SOFA	rdfs:label	
-ERROR	missing_label	obo:so#biosapiens	rdfs:label	
 ERROR	deprecated_class_reference	promoter_targeting_sequence	rdfs:subClassOf	transcriptional_cis_regulatory_region
-ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/so.owl	dc:description	
-ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/so.owl	dc:license	
-WARN	missing_synonymtype_declaration	amino acid modification	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	biosapiens	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	RNA modification	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	variant annotation term	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	amino acid 1 letter code	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	amino acid 3 letter code	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	dbsnp variant terms	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	DBVAR	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	ensembl variant terms	rdfs:subPropertyOf	
+WARN	annotation_whitespace	RNApol_III_promoter_type_3	IAO:0000115	This type of promoter recruits RNA pol III to transcribe predominantly noncoding RNAs. This promoter contains a proximal sequence element (PSE) and a TATA box upstream of the gene that it regulates. Transcription can also be activated by a distal sequence element (DSE), which is located further upstream. 
+WARN	annotation_whitespace	dihydrouridine	oboInOwl:hasExactSynonym	 D
+WARN	annotation_whitespace	pseudouridine	oboInOwl:hasExactSynonym	 Y
+WARN	annotation_whitespace	queuosine	oboInOwl:hasExactSynonym	 Q
+WARN	annotation_whitespace	modified_L_leucine	oboInOwl:hasExactSynonym	modified L-leucine 
+WARN	annotation_whitespace	modified_L_proline	oboInOwl:hasExactSynonym	modified L-proline 
+WARN	annotation_whitespace	glutamine	IAO:0000115	A polar, hydorophilic amino acid encoded by the codons CAA and CAG. 
+WARN	annotation_whitespace	miRNA_antiguide	oboInOwl:hasExactSynonym	miRNA antiguide 
+WARN	annotation_whitespace	TFBS_fusion	oboInOwl:hasExactSynonym	TFBS fusion 
+WARN	annotation_whitespace	TFBS_amplification	oboInOwl:hasExactSynonym	TFBS amplification 
+WARN	annotation_whitespace	bacterial_RNApol_promoter_sigma_ecf_element	oboInOwl:hasExactSynonym	bacterial RNApol promoter sigma ecf 
+WARN	annotation_whitespace	H3R2_monomethylation_site	oboInOwl:hasExactSynonym	 H3R2me1
+WARN	annotation_whitespace	H4K4_trimethylation_site	oboInOwl:hasExactSynonym	 H4K4me3
+WARN	annotation_whitespace	extended_intronic_splice_region	oboInOwl:hasExactSynonym	extended intronic splice region 
+WARN	annotation_whitespace	TCS_element	oboInOwl:hasExactSynonym	TEA Consensus Sequence 
+WARN	annotation_whitespace	loop	IAO:0000115	The loop portion of a stem loop, which is not folded back upon itself. 
+WARN	annotation_whitespace	stem	IAO:0000115	The portion of a stem loop where the RNA is folded back upon itself. 
+WARN	annotation_whitespace	TFRS_module	IAO:0000115	The possible discontinuous stretch of DNA that is the combination of one or several TFRSs whose bound TFs work jointly in the regulation of a promoter. 
+WARN	missing_subset_declaration	obo:so#Alliance_of_Genome_Resources	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:so#DBVAR	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:so#SOFA	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:so#biosapiens	rdfs:subPropertyOf	
+WARN	duplicate_exact_synonym	simple_regulon	oboInOwl:hasExactSynonym	simple regulon
+WARN	duplicate_exact_synonym	complex_regulon	oboInOwl:hasExactSynonym	simple regulon
+WARN	duplicate_exact_synonym	non_processed_pseudogene	oboInOwl:hasExactSynonym	INSDC_qualifier:unprocessed
+WARN	duplicate_exact_synonym	unprocessed_pseudogenic_rRNA	oboInOwl:hasExactSynonym	INSDC_qualifier:unprocessed
+WARN	duplicate_exact_synonym	unprocessed_pseudogenic_tRNA	oboInOwl:hasExactSynonym	INSDC_qualifier:unprocessed
+WARN	duplicate_exact_synonym	unitary_pseudogene	oboInOwl:hasExactSynonym	INSDC_qualifier:unitary
+WARN	duplicate_exact_synonym	unitary_pseudogenic_rRNA	oboInOwl:hasExactSynonym	INSDC_qualifier:unitary
+WARN	duplicate_exact_synonym	unitary_pseudogenic_tRNA	oboInOwl:hasExactSynonym	INSDC_qualifier:unitary
+WARN	duplicate_exact_synonym	pseudogene	oboInOwl:hasExactSynonym	INSDC_qualifier:pseudo
+WARN	duplicate_exact_synonym	pseudogenic_transcript	oboInOwl:hasExactSynonym	INSDC_qualifier:pseudo
+WARN	duplicate_exact_synonym	pseudogenic_rRNA	oboInOwl:hasExactSynonym	INSDC_qualifier:pseudo
+WARN	duplicate_exact_synonym	pseudogenic_tRNA	oboInOwl:hasExactSynonym	INSDC_qualifier:pseudo
+WARN	duplicate_exact_synonym	pseudogenic_CDS	oboInOwl:hasExactSynonym	INSDC_qualifier:pseudo
+WARN	duplicate_exact_synonym	processed_pseudogene	oboInOwl:hasExactSynonym	INSDC_qualifier:processed
+WARN	duplicate_exact_synonym	processed_pseudogenic_rRNA	oboInOwl:hasExactSynonym	INSDC_qualifier:processed
+WARN	duplicate_exact_synonym	processed_pseudogenic_tRNA	oboInOwl:hasExactSynonym	INSDC_qualifier:processed
+WARN	duplicate_exact_synonym	recombination_feature	oboInOwl:hasExactSynonym	INSDC_qualifier:other
+WARN	duplicate_exact_synonym	repeat_region	oboInOwl:hasExactSynonym	INSDC_qualifier:other
+WARN	duplicate_exact_synonym	regulatory_region	oboInOwl:hasExactSynonym	INSDC_qualifier:other
+WARN	duplicate_exact_synonym	allelic_pseudogene	oboInOwl:hasExactSynonym	INSDC_qualifier:allelic
+WARN	duplicate_exact_synonym	allelic_pseudogenic_rRNA	oboInOwl:hasExactSynonym	INSDC_qualifier:allelic
+WARN	duplicate_exact_synonym	allelic_pseudogenic_tRNA	oboInOwl:hasExactSynonym	INSDC_qualifier:allelic
+WARN	duplicate_exact_synonym	tRNA	oboInOwl:hasExactSynonym	INSDC_feature:tRNA
+WARN	duplicate_exact_synonym	allelic_pseudogenic_tRNA	oboInOwl:hasExactSynonym	INSDC_feature:tRNA
+WARN	duplicate_exact_synonym	transit_peptide	oboInOwl:hasExactSynonym	INSDC_feature:transit_peptide
+WARN	duplicate_exact_synonym	transit_peptide_region_of_CDS	oboInOwl:hasExactSynonym	INSDC_feature:transit_peptide
+WARN	duplicate_exact_synonym	signal_peptide	oboInOwl:hasExactSynonym	INSDC_feature:sig_peptide
+WARN	duplicate_exact_synonym	signal_peptide_region_of_CDS	oboInOwl:hasExactSynonym	INSDC_feature:sig_peptide
+WARN	duplicate_exact_synonym	propeptide	oboInOwl:hasExactSynonym	INSDC_feature:propeptide
+WARN	duplicate_exact_synonym	propeptide_region_of_CDS	oboInOwl:hasExactSynonym	INSDC_feature:propeptide
+WARN	duplicate_exact_synonym	mature_protein_region	oboInOwl:hasExactSynonym	INSDC_feature:mat_peptide
+WARN	duplicate_exact_synonym	mature_protein_region_of_CDS	oboInOwl:hasExactSynonym	INSDC_feature:mat_peptide
+WARN	duplicate_exact_synonym	group_IIB_intron	oboInOwl:hasExactSynonym	group IIB intron
+WARN	duplicate_exact_synonym	group_IIC_intron	oboInOwl:hasExactSynonym	group IIB intron
 WARN	missing_obsolete_label	Sequence_Ontology	rdfs:label	Sequence_Ontology
 WARN	missing_obsolete_label	gene_sensu_your_favorite_organism	rdfs:label	gene_sensu_your_favorite_organism
 WARN	missing_obsolete_label	gene_class	rdfs:label	gene_class
@@ -151,50 +198,3 @@ WARN	missing_obsolete_label	phagemid_clone	rdfs:label	phagemid_clone
 WARN	missing_obsolete_label	PAC_clone	rdfs:label	PAC_clone
 WARN	missing_obsolete_label	fosmid_clone	rdfs:label	fosmid_clone
 WARN	missing_obsolete_label	BAC_clone	rdfs:label	BAC_clone
-WARN	missing_obsolete_label	cosmid_clone	rdfs:label	cosmid_clone
-WARN	missing_obsolete_label	clone_insert_start	rdfs:label	clone_insert_start
-WARN	missing_obsolete_label	transposable_element_attribute	rdfs:label	transposable_element_attribute
-WARN	missing_obsolete_label	reagent_attribute	rdfs:label	reagent_attribute
-WARN	missing_obsolete_label	clone_attribute	rdfs:label	clone_attribute
-WARN	missing_obsolete_label	cloned	rdfs:label	cloned
-WARN	missing_obsolete_label	cloned_genomic	rdfs:label	cloned_genomic
-WARN	missing_obsolete_label	cloned_cDNA	rdfs:label	cloned_cDNA
-WARN	missing_obsolete_label	engineered_DNA	rdfs:label	engineered_DNA
-WARN	missing_obsolete_label	promoter_region	rdfs:label	promoter_region
-WARN	missing_obsolete_label	bacterial_RNApol_promoter_region	rdfs:label	bacterial_RNApol_promoter_region
-WARN	missing_obsolete_label	RNApol_II_promoter_region	rdfs:label	RNApol_II_promoter_region
-WARN	missing_obsolete_label	RNApol_III_promoter_type_1_region	rdfs:label	RNApol_III_promoter_type_1_region
-WARN	missing_obsolete_label	RNApol_III_promoter_type_2_region	rdfs:label	RNApol_III_promoter_type_2_region
-WARN	missing_obsolete_label	nuclear_mitochondrial	rdfs:label	nuclear_mitochondrial
-WARN	missing_obsolete_label	processed	rdfs:label	processed
-WARN	missing_obsolete_label	unequally_crossed_over	rdfs:label	unequally_crossed_over
-WARN	missing_obsolete_label	edit_operation	rdfs:label	edit_operation
-WARN	missing_obsolete_label	insert_U	rdfs:label	insert_U
-WARN	missing_obsolete_label	delete_U	rdfs:label	delete_U
-WARN	missing_obsolete_label	substitute_A_to_I	rdfs:label	substitute_A_to_I
-WARN	missing_obsolete_label	insert_C	rdfs:label	insert_C
-WARN	missing_obsolete_label	insert_dinucleotide	rdfs:label	insert_dinucleotide
-WARN	missing_obsolete_label	substitute_C_to_U	rdfs:label	substitute_C_to_U
-WARN	missing_obsolete_label	insert_G	rdfs:label	insert_G
-WARN	missing_obsolete_label	insert_GC	rdfs:label	insert_GC
-WARN	missing_obsolete_label	insert_GU	rdfs:label	insert_GU
-WARN	missing_obsolete_label	insert_CU	rdfs:label	insert_CU
-WARN	missing_obsolete_label	insert_AU	rdfs:label	insert_AU
-WARN	missing_obsolete_label	insert_AA	rdfs:label	insert_AA
-WARN	missing_obsolete_label	vertebrate_immune_system_feature	rdfs:label	vertebrate_immune_system_feature
-WARN	missing_obsolete_label	sequence_replication_mode	rdfs:label	sequence_replication_mode
-WARN	missing_obsolete_label	rolling_circle	rdfs:label	rolling_circle
-WARN	missing_obsolete_label	theta_replication	rdfs:label	theta_replication
-WARN	missing_obsolete_label	DNA_replication_mode	rdfs:label	DNA_replication_mode
-WARN	missing_obsolete_label	RNA_replication_mode	rdfs:label	RNA_replication_mode
-WARN	missing_obsolete_label	sequence_variant_affecting_copy_number	rdfs:label	sequence_variant_affecting_copy_number
-WARN	missing_obsolete_label	nested_region	rdfs:label	nested_region
-WARN	missing_obsolete_label	nested_repeat	rdfs:label	nested_repeat
-WARN	missing_obsolete_label	nested_transposon	rdfs:label	nested_transposon
-WARN	missing_obsolete_label	enhanceosome	rdfs:label	enhanceosome
-WARN	missing_obsolete_label	promoter_targeting_sequence	rdfs:label	promoter_targeting_sequence
-WARN	missing_obsolete_label	cross_link	rdfs:label	cross_link
-WARN	missing_obsolete_label	disulfide_bond	rdfs:label	disulfide_bond
-WARN	missing_obsolete_label	covalent_binding_site	rdfs:label	covalent_binding_site
-WARN	missing_obsolete_label	non_covalent_binding_site	rdfs:label	non_covalent_binding_site
-WARN	missing_obsolete_label	rRNA_21S	rdfs:label	rRNA_21S

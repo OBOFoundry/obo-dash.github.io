@@ -1,5 +1,11 @@
 Level	Rule Name	Subject	Property	Value
 ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/cdao.owl	dc:license	
+WARN	equivalent_pair	BifurcatingTree	owl:equivalentClass	FullyResolvedTree
+WARN	equivalent_pair	Branch	owl:equivalentClass	Edge
+WARN	equivalent_pair	Dichotomy	owl:equivalentClass	Bifurcation
+WARN	equivalent_pair	Clade	owl:equivalentClass	HolophyleticGroup
+WARN	equivalent_pair	evolutionaryTransition	owl:equivalentClass	anageneticChange
+WARN	equivalent_pair	speciation	owl:equivalentClass	cladogenesis
 WARN	missing_definition	DesoxiRibonucleotideResidueStateDatum	IAO:0000115	
 WARN	missing_definition	CoordinatePoint	IAO:0000115	
 WARN	missing_definition	Lineage	IAO:0000115	
@@ -192,9 +198,3 @@ WARN	missing_definition	exclude_Subtree	IAO:0000115
 WARN	missing_definition	belongs_to_Tree	IAO:0000115	
 WARN	missing_definition	has_Parent_Node	IAO:0000115	
 WARN	missing_definition	has_Lineage_node	IAO:0000115	
-WARN	missing_definition	belongs_to_Tree_as_Root	IAO:0000115	
-WARN	missing_definition	has_Hereditary_Change	IAO:0000115	
-WARN	missing_definition	belongs_to_Character	IAO:0000115	
-WARN	missing_definition	has_Molecular_Datum	IAO:0000115	
-WARN	missing_definition	has_Continuous_Datum	IAO:0000115	
-WARN	missing_definition	has_TU	IAO:0000115	

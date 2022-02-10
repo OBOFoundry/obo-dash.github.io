@@ -1,9 +1,23 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/mmo.owl	dc:title	
-ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/mmo.owl	dc:description	
 ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/mmo.owl	dc:license	
 ERROR	duplicate_label	optical coherence tomography	rdfs:label	optical coherence tomography
 ERROR	duplicate_label	optical coherence tomography	rdfs:label	optical coherence tomography
+ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/mmo.owl	dc:title	
+ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/mmo.owl	dc:description	
+WARN	missing_synonymtype_declaration	term name abbreviation, used for display	rdfs:subPropertyOf	
+WARN	duplicate_scoped_synonym	quantitative reverse transcription polymerase chain reaction	oboInOwl:hasExactSynonym	qRT-PCR
+WARN	duplicate_scoped_synonym	quantitative reverse transcription polymerase chain reaction	oboInOwl:hasRelatedSynonym	qRT-PCR
+WARN	duplicate_scoped_synonym	ribonuclease protection assay	oboInOwl:hasExactSynonym	RNase protection
+WARN	duplicate_scoped_synonym	ribonuclease protection assay	oboInOwl:hasRelatedSynonym	RNase protection
+WARN	duplicate_scoped_synonym	reverse transcription polymerase chain reaction assay	oboInOwl:hasExactSynonym	RT-PCR
+WARN	duplicate_scoped_synonym	reverse transcription polymerase chain reaction assay	oboInOwl:hasRelatedSynonym	RT-PCR
+WARN	duplicate_scoped_synonym	in situ reverse transcription polymerase chain reaction assay	oboInOwl:hasExactSynonym	in situ RT-PCR
+WARN	duplicate_scoped_synonym	in situ reverse transcription polymerase chain reaction assay	oboInOwl:hasRelatedSynonym	in situ RT-PCR
+WARN	duplicate_scoped_synonym	serial analysis of gene expression assay	oboInOwl:hasExactSynonym	SAGE
+WARN	duplicate_scoped_synonym	serial analysis of gene expression assay	oboInOwl:hasRelatedSynonym	SAGE
+WARN	duplicate_label_synonym	immunohistochemistry	oboInOwl:hasExactSynonym	immunohistochemistry
+WARN	duplicate_label_synonym	expression assay	oboInOwl:hasExactSynonym	expression assay
+WARN	duplicate_label_synonym	immunofluorescence	oboInOwl:hasExactSynonym	immunofluorescence
 WARN	missing_obsolete_label	digital scale	rdfs:label	digital scale
 WARN	missing_obsolete_label	western blot	rdfs:label	western blot
 WARN	missing_obsolete_label	phospholipid analysis of serum lipoprotein fraction	rdfs:label	phospholipid analysis of serum lipoprotein fraction
@@ -81,18 +95,4 @@ WARN	missing_definition	isolated tissue free fatty acid measurement test	IAO:000
 WARN	missing_definition	automated chemiluminescent-based plasma total cholesterol analysis	IAO:0000115	
 WARN	missing_definition	automated chemiluminescent-based plasma low-density lipoprotein-cholesterol analysis	IAO:0000115	
 WARN	missing_definition	term name abbreviation, used for display	IAO:0000115	
-WARN	missing_synonymtype_declaration	term name abbreviation, used for display	rdfs:subPropertyOf	
-WARN	duplicate_scoped_synonym	quantitative reverse transcription polymerase chain reaction	oboInOwl:hasExactSynonym	qRT-PCR
-WARN	duplicate_scoped_synonym	quantitative reverse transcription polymerase chain reaction	oboInOwl:hasRelatedSynonym	qRT-PCR
-WARN	duplicate_scoped_synonym	ribonuclease protection assay	oboInOwl:hasExactSynonym	RNase protection
-WARN	duplicate_scoped_synonym	ribonuclease protection assay	oboInOwl:hasRelatedSynonym	RNase protection
-WARN	duplicate_scoped_synonym	reverse transcription polymerase chain reaction assay	oboInOwl:hasExactSynonym	RT-PCR
-WARN	duplicate_scoped_synonym	reverse transcription polymerase chain reaction assay	oboInOwl:hasRelatedSynonym	RT-PCR
-WARN	duplicate_scoped_synonym	in situ reverse transcription polymerase chain reaction assay	oboInOwl:hasExactSynonym	in situ RT-PCR
-WARN	duplicate_scoped_synonym	in situ reverse transcription polymerase chain reaction assay	oboInOwl:hasRelatedSynonym	in situ RT-PCR
-WARN	duplicate_scoped_synonym	serial analysis of gene expression assay	oboInOwl:hasExactSynonym	SAGE
-WARN	duplicate_scoped_synonym	serial analysis of gene expression assay	oboInOwl:hasRelatedSynonym	SAGE
-WARN	duplicate_label_synonym	immunohistochemistry	oboInOwl:hasExactSynonym	immunohistochemistry
-WARN	duplicate_label_synonym	expression assay	oboInOwl:hasExactSynonym	expression assay
-WARN	duplicate_label_synonym	immunofluorescence	oboInOwl:hasExactSynonym	immunofluorescence
 INFO	missing_superclass	measurement method	rdfs:subClassOf	

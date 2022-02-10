@@ -1,4 +1,6 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/tto.owl	dc:title	
+ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/tto.owl	dc:license	
 ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/tto.owl	dc:description	
 ERROR	duplicate_label	Sarcopterygii	rdfs:label	Sarcopterygii
 ERROR	duplicate_label	Sarcopterygii	rdfs:label	Sarcopterygii
@@ -18,8 +20,6 @@ ERROR	duplicate_label	Chondrichthyes	rdfs:label	Chondrichthyes
 ERROR	duplicate_label	Chondrichthyes	rdfs:label	Chondrichthyes
 ERROR	duplicate_label	Actinopterygii	rdfs:label	Actinopterygii
 ERROR	duplicate_label	Actinopterygii	rdfs:label	Actinopterygii
-ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/tto.owl	dc:license	
-ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/tto.owl	dc:title	
 WARN	missing_synonymtype_declaration	common name	rdfs:subPropertyOf	
 WARN	missing_synonymtype_declaration	misspelling	rdfs:subPropertyOf	
 WARN	missing_synonymtype_declaration	name with (author year)	rdfs:subPropertyOf	
@@ -29,6 +29,70 @@ WARN	annotation_whitespace	Gymnotus arapaima	oboInOwl:hasRelatedSynonym	Gymnotus
 WARN	annotation_whitespace	Gymnotus jonasi	oboInOwl:hasRelatedSynonym	Gymnotus jonasi 
 WARN	annotation_whitespace	Sinilabeo tonkinensis	oboInOwl:hasRelatedSynonym	 loos
 WARN	annotation_whitespace	Astyanax varzeae	oboInOwl:hasRelatedSynonym	 Astyanax varzeae
+WARN	missing_obsolete_label	Genus1 (Sidlauskas and Vari 2008)	rdfs:label	Genus1 (Sidlauskas and Vari 2008)
+WARN	missing_obsolete_label	Hypomasticus	rdfs:label	Hypomasticus
+WARN	missing_obsolete_label	Roeboides sp. (Lucena and Menezes 1998)	rdfs:label	Roeboides sp. (Lucena and Menezes 1998)
+WARN	missing_obsolete_label	Aopidoparia sp. (Siebert 1987)	rdfs:label	Aopidoparia sp. (Siebert 1987)
+WARN	missing_obsolete_label	Squalius borysthenicus	rdfs:label	Squalius borysthenicus
+WARN	missing_obsolete_label	Squalius berak	rdfs:label	Squalius berak
+WARN	missing_obsolete_label	Squalius lepidus	rdfs:label	Squalius lepidus
+WARN	missing_obsolete_label	Pseudophoxinus ghigii	rdfs:label	Pseudophoxinus ghigii
+WARN	missing_obsolete_label	Glyptoperichthys gibbiceps	rdfs:label	Glyptoperichthys gibbiceps
+WARN	missing_obsolete_label	Pseudancistrus pediculatus	rdfs:label	Pseudancistrus pediculatus
+WARN	missing_obsolete_label	Ariopsis taylori	rdfs:label	Ariopsis taylori
+WARN	missing_obsolete_label	Labeo	rdfs:label	Labeo
+WARN	missing_obsolete_label	Cypselurus melanurus	rdfs:label	Cypselurus melanurus
+WARN	missing_obsolete_label	Fundulopanchax batesii	rdfs:label	Fundulopanchax batesii
+WARN	missing_obsolete_label	Hypoplectrus lamprurus	rdfs:label	Hypoplectrus lamprurus
+WARN	missing_obsolete_label	Bathybates graueri	rdfs:label	Bathybates graueri
+WARN	missing_obsolete_label	Liza ramado	rdfs:label	Liza ramado
+WARN	missing_obsolete_label	Microlipophrys nigriceps	rdfs:label	Microlipophrys nigriceps
+WARN	missing_obsolete_label	Psammogobius biocellatus	rdfs:label	Psammogobius biocellatus
+WARN	missing_obsolete_label	Pseudogramma polyacanthum	rdfs:label	Pseudogramma polyacanthum
+WARN	missing_obsolete_label	Grahamina gymnota	rdfs:label	Grahamina gymnota
+WARN	missing_obsolete_label	Pardachirus pavonius	rdfs:label	Pardachirus pavonius
+WARN	missing_obsolete_label	Lampetra camtschatica	rdfs:label	Lampetra camtschatica
+WARN	missing_obsolete_label	Microrasbora erythromicron	rdfs:label	Microrasbora erythromicron
+WARN	missing_obsolete_label	Poropuntius sinensis	rdfs:label	Poropuntius sinensis
+WARN	missing_obsolete_label	Chromaphyosemion bivittatum	rdfs:label	Chromaphyosemion bivittatum
+WARN	missing_obsolete_label	Chromaphyosemion loennbergii	rdfs:label	Chromaphyosemion loennbergii
+WARN	missing_obsolete_label	Trypauchen taenia	rdfs:label	Trypauchen taenia
+WARN	missing_obsolete_label	Trichomycterus travassosi	rdfs:label	Trichomycterus travassosi
+WARN	missing_obsolete_label	Cociella crocodila	rdfs:label	Cociella crocodila
+WARN	missing_obsolete_label	Acanthorhodeus chankaensis	rdfs:label	Acanthorhodeus chankaensis
+WARN	missing_obsolete_label	Erethistes hara	rdfs:label	Erethistes hara
+WARN	missing_obsolete_label	Hypseleotris cyprinoides	rdfs:label	Hypseleotris cyprinoides
+WARN	missing_obsolete_label	Diagramma pictum	rdfs:label	Diagramma pictum
+WARN	missing_obsolete_label	Glyptoperichthys punctatus	rdfs:label	Glyptoperichthys punctatus
+WARN	missing_obsolete_label	Schizothorax eurystoma	rdfs:label	Schizothorax eurystoma
+WARN	missing_obsolete_label	Arius macrorhynchus	rdfs:label	Arius macrorhynchus
+WARN	missing_obsolete_label	Hemisynodontis membranacea	rdfs:label	Hemisynodontis membranacea
+WARN	missing_obsolete_label	Chromaphyosemion bitaeniatum	rdfs:label	Chromaphyosemion bitaeniatum
+WARN	missing_obsolete_label	Trypauchen raha	rdfs:label	Trypauchen raha
+WARN	missing_obsolete_label	Trypauchen wakae	rdfs:label	Trypauchen wakae
+WARN	missing_obsolete_label	Paramyxine fernholmi	rdfs:label	Paramyxine fernholmi
+WARN	missing_obsolete_label	Aphyosemion halleri	rdfs:label	Aphyosemion halleri
+WARN	missing_obsolete_label	Aphyosemion haasi	rdfs:label	Aphyosemion haasi
+WARN	missing_obsolete_label	Chalcalburnus	rdfs:label	Chalcalburnus
+WARN	missing_obsolete_label	Dinematichthys megasoma	rdfs:label	Dinematichthys megasoma
+WARN	missing_obsolete_label	Paramyxine wisneri	rdfs:label	Paramyxine wisneri
+WARN	missing_obsolete_label	Trichomycterus cubataonis	rdfs:label	Trichomycterus cubataonis
+WARN	missing_obsolete_label	Simpsonichthys similes	rdfs:label	Simpsonichthys similes
+WARN	missing_obsolete_label	Psilorhynchoides	rdfs:label	Psilorhynchoides
+WARN	missing_obsolete_label	Bengala	rdfs:label	Bengala
+WARN	missing_obsolete_label	Celestichthys	rdfs:label	Celestichthys
+WARN	missing_obsolete_label	Nahangbagrus	rdfs:label	Nahangbagrus
+WARN	missing_obsolete_label	Chondrichthyes	rdfs:label	Chondrichthyes
+WARN	missing_obsolete_label	Sarcopterygii	rdfs:label	Sarcopterygii
+WARN	missing_obsolete_label	Actinopterygii	rdfs:label	Actinopterygii
+WARN	missing_obsolete_label	class	rdfs:label	class
+WARN	missing_obsolete_label	family	rdfs:label	family
+WARN	missing_obsolete_label	genus	rdfs:label	genus
+WARN	missing_obsolete_label	order	rdfs:label	order
+WARN	missing_obsolete_label	phylum	rdfs:label	phylum
+WARN	missing_obsolete_label	species	rdfs:label	species
+WARN	missing_obsolete_label	subclass	rdfs:label	subclass
+WARN	missing_obsolete_label	subphylum	rdfs:label	subphylum
 WARN	missing_definition	Chordata	IAO:0000115	
 WARN	missing_definition	Craniata	IAO:0000115	
 WARN	missing_definition	Eigenmannia sp. (Fink and Fink 1981)	IAO:0000115	
@@ -134,67 +198,3 @@ WARN	missing_definition	Ernstichthys sp. (de Pinna 1996)	IAO:0000115
 WARN	missing_definition	Acanthocobitis sp. (Conway and Mayden 2007)	IAO:0000115	
 WARN	missing_definition	Beaufortia cf. leveretti (Conway and Mayden 2007)	IAO:0000115	
 WARN	missing_definition	Gastromyzon sp. (Conway and Mayden 2007)	IAO:0000115	
-WARN	missing_definition	Ictiobus sp. (Conway and Mayden 2007)	IAO:0000115	
-WARN	missing_definition	Acantopsis sp. (Conway and Mayden 2007)	IAO:0000115	
-WARN	missing_definition	Pterygoplichthys lituratus	IAO:0000115	
-WARN	missing_definition	Loricariichthys brunneus	IAO:0000115	
-WARN	missing_definition	Hemiancistrus sp. (Armbruster 2004)	IAO:0000115	
-WARN	missing_definition	Hemiancistrus sp. Brazil (Armbruster 2004)	IAO:0000115	
-WARN	missing_definition	Peckoltia sp. 1 (Armbruster 2004)	IAO:0000115	
-WARN	missing_definition	Peckoltia sp. 2 (Armbruster 2004)	IAO:0000115	
-WARN	missing_definition	Peckoltia sp. big spot (Armbruster 2004)	IAO:0000115	
-WARN	missing_definition	Pseudancistrus sp. gold spot (Armbruster 2004)	IAO:0000115	
-WARN	missing_definition	Hypostomus plecostomus 2 (Armbruster 2004)	IAO:0000115	
-WARN	missing_definition	Hypostomus sp. round snout 1 (Armbruster 2004)	IAO:0000115	
-WARN	missing_definition	Hypostomus sp. round snout 2 (Armbruster 2004)	IAO:0000115	
-WARN	missing_definition	Hemipsilichthys sp. (Armbruster 2004)	IAO:0000115	
-WARN	missing_definition	Hemipsilichthys? (Armbruster 2004)	IAO:0000115	
-WARN	missing_definition	Kronichthys sp. 1 (Armbruster 2004)	IAO:0000115	
-WARN	missing_definition	Kronichthys sp. 2 (Armbruster 2004)	IAO:0000115	
-WARN	missing_definition	Arius sp. (Schaefer 1990)	IAO:0000115	
-WARN	missing_definition	Henonemus sp. (Schaefer 1990)	IAO:0000115	
-WARN	missing_definition	Stegophilus sp. (Schaefer 1990)	IAO:0000115	
-WARN	missing_definition	Trichomycterus sp. (Schaefer 1990)	IAO:0000115	
-WARN	missing_definition	Tridentopsis sp. (Schaefer 1990)	IAO:0000115	
-WARN	missing_definition	Astroblepus sp. (Schaefer 1990)	IAO:0000115	
-WARN	missing_definition	Hypostomus sp. (Schaefer 1990)	IAO:0000115	
-WARN	missing_definition	Neoplecostomus sp. (Schaefer 1990)	IAO:0000115	
-WARN	missing_definition	Gnathodolus sp. (Winterbottom 1980)	IAO:0000115	
-WARN	missing_definition	Anostomus sp. (Castro and Vari 2004)	IAO:0000115	
-WARN	missing_definition	Cynodon sp. (Toledo-Piza 2000)	IAO:0000115	
-WARN	missing_definition	Hydrolycus sp. (Toledo-Piza 2000)	IAO:0000115	
-WARN	missing_definition	Agoniates sp. (Toledo-Piza 2000)	IAO:0000115	
-WARN	missing_definition	Gnathocharax sp. (Toledo-Piza 2000)	IAO:0000115	
-WARN	missing_definition	Heterocharax sp. (Toledo-Piza 2000)	IAO:0000115	
-WARN	missing_definition	Mylossoma sp. (Toledo-Piza 2000)	IAO:0000115	
-WARN	missing_definition	Roeboides sp. (Toledo-Piza 2000)	IAO:0000115	
-WARN	missing_definition	Serrasalmus sp. (Toledo-Piza 2000)	IAO:0000115	
-WARN	missing_definition	Triportheus sp. (Toledo-Piza 2000)	IAO:0000115	
-WARN	missing_definition	Hoplias cf. malabaricus (Toledo-Piza 2000)	IAO:0000115	
-WARN	missing_definition	Hemiodus sp. (Toledo-Piza 2000)	IAO:0000115	
-WARN	missing_definition	Hydrocynus sp. (Toledo-Piza 2000)	IAO:0000115	
-WARN	missing_definition	Pyrrhulina sp. (Toledo-Piza 2000)	IAO:0000115	
-WARN	missing_definition	Bryconops sp. (Toledo-Piza 2007)	IAO:0000115	
-WARN	missing_definition	Brycon sp. (Lucena and Menezes 1998)	IAO:0000115	
-WARN	missing_definition	Roestes sp. (Lucena and Menezes 1998)	IAO:0000115	
-WARN	missing_definition	Aphyodite sp. (Weitzman and Fink 1983)	IAO:0000115	
-WARN	missing_definition	Characidium sp. (Weitzman and Fink 1983)	IAO:0000115	
-WARN	missing_definition	Hemigrammus sp. (Weitzman and Fink 1983)	IAO:0000115	
-WARN	missing_definition	Hyphessobrycon sp. (Weitzman and Fink 1983)	IAO:0000115	
-WARN	missing_definition	Leptobrycon sp. (Weitzman and Fink 1983)	IAO:0000115	
-WARN	missing_definition	Microschemobrycon sp. (Weitzman and Fink 1983)	IAO:0000115	
-WARN	missing_definition	Oxybrycon sp. (Weitzman and Fink 1983)	IAO:0000115	
-WARN	missing_definition	Pristella sp. (Weitzman and Fink 1983)	IAO:0000115	
-WARN	missing_definition	Ichthyoelephas sp. (Vari 1983)	IAO:0000115	
-WARN	missing_definition	Prochilodus sp. (Vari 1983)	IAO:0000115	
-WARN	missing_definition	Anostomus sp. (Vari 1983)	IAO:0000115	
-WARN	missing_definition	Hemiodus sp. (Vari 1983)	IAO:0000115	
-WARN	missing_definition	Citharinus sp. (Vari 1983)	IAO:0000115	
-WARN	missing_definition	Anostomus sp. (Vari 1989a)	IAO:0000115	
-WARN	missing_definition	Laemolyta sp. (Vari 1989a)	IAO:0000115	
-WARN	missing_definition	Agoniates sp. (Vari 1989a)	IAO:0000115	
-WARN	missing_definition	Hollandichthys sp. (Vari 1989a)	IAO:0000115	
-WARN	missing_definition	Hydrocynus sp. (Vari 1989a)	IAO:0000115	
-WARN	missing_definition	Mesoborus sp. (Vari 1989a)	IAO:0000115	
-WARN	missing_definition	Hemiodus sp. (Vari 1989a)	IAO:0000115	
-WARN	missing_definition	Ichthyoelephas sp. (Vari 1989a)	IAO:0000115	

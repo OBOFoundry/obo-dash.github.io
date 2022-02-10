@@ -1,4 +1,7 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	missing_label	obo:mi#Drugable	rdfs:label	
+ERROR	missing_label	obo:mi#PSI-MI_slim	rdfs:label	
+ERROR	missing_label	obo:mi#PSI-MOD_slim	rdfs:label	
 ERROR	duplicate_label	suppression	rdfs:label	suppression
 ERROR	duplicate_label	suppression	rdfs:label	suppression
 ERROR	duplicate_label	pubchem	rdfs:label	pubchem
@@ -7,8 +10,6 @@ ERROR	duplicate_label	opposing epistasis	rdfs:label	opposing epistasis
 ERROR	duplicate_label	opposing epistasis	rdfs:label	opposing epistasis
 ERROR	duplicate_label	ampylation assay	rdfs:label	ampylation assay
 ERROR	duplicate_label	ampylation assay	rdfs:label	ampylation assay
-ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/mi.owl	dc:title	
-ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/mi.owl	dc:license	
 ERROR	duplicate_definition	water solubility	IAO:0000115	Water solubility in mg/mL or g/L
 ERROR	duplicate_definition	predicted water solubility	IAO:0000115	Water solubility in mg/mL or g/L
 ERROR	duplicate_definition	carboxylation assay	IAO:0000115	The measurement of a the introduction of a carboxylic acid group into a substrate.
@@ -27,174 +28,173 @@ ERROR	duplicate_definition	chembl compound	IAO:0000115	ChEMBL focuses on mapping
 ERROR	duplicate_definition	chembl target	IAO:0000115	ChEMBL focuses on mapping the interactions of small molecules binding to their macromolecular targets.
 ERROR	duplicate_definition	chembl	IAO:0000115	ChEMBL focuses on mapping the interactions of small molecules binding to their macromolecular targets.
 ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/mi.owl	dc:description	
-ERROR	missing_label	obo:mi#Drugable	rdfs:label	
-ERROR	missing_label	obo:mi#PSI-MI_slim	rdfs:label	
-ERROR	missing_label	obo:mi#PSI-MOD_slim	rdfs:label	
-WARN	missing_synonymtype_declaration	Alternate label curated by PSI-MI	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	Unique short label curated by PSI-MI	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	Alternate label curated by PSI-MOD	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	Unique short label curated by PSI-MOD	rdfs:subPropertyOf	
-WARN	missing_definition	Label from MS DeltaMass	IAO:0000115	
-WARN	missing_definition	obo:mi#Drugable	IAO:0000115	
-WARN	missing_definition	Alternate label curated by PSI-MI	IAO:0000115	
-WARN	missing_definition	Unique short label curated by PSI-MI	IAO:0000115	
-WARN	missing_definition	obo:mi#PSI-MI_slim	IAO:0000115	
-WARN	missing_definition	Alternate label curated by PSI-MOD	IAO:0000115	
-WARN	missing_definition	Unique short label curated by PSI-MOD	IAO:0000115	
-WARN	missing_definition	obo:mi#PSI-MOD_slim	IAO:0000115	
-WARN	missing_definition	Agreed label from MS community	IAO:0000115	
-WARN	missing_definition	Alternate name from RESID	IAO:0000115	
-WARN	missing_definition	Misnomer label from RESID	IAO:0000115	
-WARN	missing_definition	Name from RESID	IAO:0000115	
-WARN	missing_definition	Systematic name from RESID	IAO:0000115	
-WARN	missing_definition	Alternate name from UniMod	IAO:0000115	
-WARN	missing_definition	Description (full_name) from UniMod	IAO:0000115	
-WARN	missing_definition	Interim label from UniMod	IAO:0000115	
-WARN	missing_definition	Label (title) from UniMod	IAO:0000115	
-WARN	missing_definition	Protein feature description from UniProtKB	IAO:0000115	
-WARN	missing_subset_declaration	obo:mi#Drugable	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:mi#PSI-MI_slim	rdfs:subPropertyOf	
-WARN	annotation_whitespace	myc tag coimmunoprecipitation	oboInOwl:hasExactSynonym	myc tag coip 
-WARN	annotation_whitespace	suppression mutation	IAO:0000115	"A given (suppressed) mutation phenotype is reverted by a supressor gene mutation.
-OBSOLETE: remap to CV intraction type 'suppressive interaction' MI:0793 and genetic experimental form 'mutated gene' MI:0804. "
-WARN	annotation_whitespace	suppression knockout	IAO:0000115	"Knocked out gene is the suppressor of a phenotype.
-OBSOLETE: remap to CV intraction type 'suppressive interaction' MI:0793 and genetic experimental form 'knock out' MI:0788. "
-WARN	annotation_whitespace	suppression partial alteration	IAO:0000115	"A mutation is the partial suppressor of a mutant phenotype.
-OBSOLETE: remap to CV intraction type 'suppressive interaction' MI:0793 and genetic experimental form 'knock down' MI:0789. "
-WARN	annotation_whitespace	suppression expression alteration	IAO:0000115	"An altered expression is the suppressor of a phenotype.
-OBSOLETE: remap to CV intraction type 'suppressive interaction' MI:0793 and genetic experimental form 'expression level alteration' MI:0803. "
-WARN	annotation_whitespace	suppression overexpression	IAO:0000115	"Overexpression is the suppressor of a phenotype.
-OBSOLETE: remap to CV intraction type 'suppressive interaction' MI:0793 and genetic experimental form 'over expressed' MI:0506. "
-WARN	annotation_whitespace	suppression scalable	IAO:0000115	"Level of over/underexpression scales the 'extend' of a phenotype.
-OBSOLETE: remap to CV intraction type 'suppressive interaction' MI:0793 and genetic experimental form 'expression level alteration' MI:0803. "
-WARN	annotation_whitespace	suppression underexpression	IAO:0000115	"Underexpression is the suppressor of a phenotype.
-OBSOLETE: remap to CV intraction type 'suppressive interaction' MI:0793 and genetic experimental form 'under expressed' MI:0223. "
-WARN	annotation_whitespace	n-terminal position	oboInOwl:hasExactSynonym	n-terminal 
-WARN	annotation_whitespace	double stranded deoxyribonucleic acid	IAO:0000115	"DNA that consists of two base pairing strands. The 2 nucleotide chains are held together by hydrogen bonds between base pairs of nucleotides.
-"
-WARN	annotation_whitespace	gal4 dna binding domain	IAO:0000115	"Part of the yeast transcription factor GAL4 (amino acids 11-38) specifically responsible for DNA binding of a 17 base-pair long sequence in the upstream activating sequence of galactose-induced genes.
-"
-WARN	annotation_whitespace	dna strand elongation	oboInOwl:hasExactSynonym	DNA replication elongation 
-WARN	annotation_whitespace	knock out	IAO:0000115	The gene has been completely removed e.g. by genetic engineering 
-WARN	annotation_whitespace	genbank identifier	IAO:0000115	 edit
-WARN	annotation_whitespace	zz tag	IAO:0000115	The ZZ tag is a tag made out of two tandem repeats of the Protein A IgG binding domain. 
-WARN	annotation_whitespace	surface plasmon resonance array	oboInOwl:hasExactSynonym	SPRi-Plex 
-WARN	annotation_whitespace	fiash label	oboInOwl:hasExactSynonym	4',5'-bis(1,3,2-dithioarsolan-2-yl)fluorescein 
-WARN	annotation_whitespace	iaedans label	oboInOwl:hasExactSynonym	(5((((2-iodoacetyl)amino)ethyl)amino)-naphthalene-1-sulfonic acid) 
-WARN	annotation_whitespace	miniaturized immunoprecipitation	oboInOwl:hasExactSynonym	 protein interaction network generator
-WARN	annotation_whitespace	einecs	oboInOwl:hasExactSynonym	European Inventory of Existing Commercial Chemical Substances 
-WARN	annotation_whitespace	zfin	oboInOwl:hasExactSynonym	The Zebrafish Model Organism Database 
-WARN	annotation_whitespace	sequence based prediction of gene regulatory region binding sites	oboInOwl:hasRelatedSynonym	sequence based prediction of TG regulatory region binding sites  for TF 
-WARN	annotation_whitespace	CLONE OF phosphotransfer reaction	IAO:0000115	Reaction where a phosphate is transferred between two proteins of a phosphorelay system. 
-WARN	annotation_whitespace	ABCB1 transporter substrate	oboInOwl:hasExactSynonym	pgp(mdr1) substrate 
-WARN	duplicate_exact_synonym	x-ray crystallography	oboInOwl:hasExactSynonym	X-ray
-WARN	duplicate_exact_synonym	x-ray powder diffraction	oboInOwl:hasExactSynonym	X-ray
-WARN	duplicate_exact_synonym	x-ray fiber diffraction	oboInOwl:hasExactSynonym	X-ray
-WARN	duplicate_exact_synonym	uniprot/swiss-prot	oboInOwl:hasExactSynonym	UniProt
-WARN	duplicate_exact_synonym	uniprot/trembl	oboInOwl:hasExactSynonym	UniProt
-WARN	duplicate_exact_synonym	renilla luciferase protein tag	oboInOwl:hasExactSynonym	renilla luciferase
-WARN	duplicate_exact_synonym	Split renilla luciferase complementation	oboInOwl:hasExactSynonym	renilla luciferase
-WARN	duplicate_exact_synonym	small interfering rna	oboInOwl:hasExactSynonym	micro RNA
-WARN	duplicate_exact_synonym	micro rna	oboInOwl:hasExactSynonym	micro RNA
-WARN	duplicate_exact_synonym	gal4 vp16 complementation	oboInOwl:hasExactSynonym	KISS
-WARN	duplicate_exact_synonym	kiss	oboInOwl:hasExactSynonym	KISS
-WARN	duplicate_exact_synonym	force spectroscopy	oboInOwl:hasExactSynonym	intermolecular force
-WARN	duplicate_exact_synonym	force measurement	oboInOwl:hasExactSynonym	intermolecular force
-WARN	duplicate_exact_synonym	kinase homogeneous time resolved fluorescence	oboInOwl:hasExactSynonym	homogeneous time-resolved fluorescence
-WARN	duplicate_exact_synonym	phosphatase homogeneous time resolved fluorescence	oboInOwl:hasExactSynonym	homogeneous time-resolved fluorescence
-WARN	duplicate_exact_synonym	homogeneous time resolved fluorescence	oboInOwl:hasExactSynonym	homogeneous time-resolved fluorescence
-WARN	duplicate_exact_synonym	glycosylation reaction	oboInOwl:hasExactSynonym	glycosylation
-WARN	duplicate_exact_synonym	attached carbohydrate	oboInOwl:hasExactSynonym	glycosylation
-WARN	duplicate_exact_synonym	epistasis	oboInOwl:hasExactSynonym	epistatic
-WARN	duplicate_exact_synonym	epistatic gene	oboInOwl:hasExactSynonym	epistatic
-WARN	duplicate_exact_synonym	physiological level	oboInOwl:hasExactSynonym	endogenous
-WARN	duplicate_exact_synonym	naturally occurring	oboInOwl:hasExactSynonym	endogenous
-WARN	duplicate_exact_synonym	deamination assay	oboInOwl:hasExactSynonym	deamination
-WARN	duplicate_exact_synonym	deamination reaction	oboInOwl:hasExactSynonym	deamination
-WARN	duplicate_exact_synonym	deamidation reaction	oboInOwl:hasExactSynonym	deamidation
-WARN	duplicate_exact_synonym	deamidation assay	oboInOwl:hasExactSynonym	deamidation
-WARN	duplicate_exact_synonym	cleavage reaction	oboInOwl:hasExactSynonym	cleavage
-WARN	duplicate_exact_synonym	cleavage assay	oboInOwl:hasExactSynonym	cleavage
-WARN	duplicate_exact_synonym	aminoacylation assay	oboInOwl:hasExactSynonym	aminoacylation
-WARN	duplicate_exact_synonym	aminoacylation reaction	oboInOwl:hasExactSynonym	aminoacylation
-WARN	duplicate_exact_synonym	amidation reaction	oboInOwl:hasExactSynonym	amidation
-WARN	duplicate_exact_synonym	amidase assay	oboInOwl:hasExactSynonym	amidation
-WARN	duplicate_label_synonym	filter binding	oboInOwl:hasExactSynonym	filter binding
-WARN	duplicate_label_synonym	gene	oboInOwl:hasExactSynonym	gene
-WARN	duplicate_label_synonym	deoxyribonucleic acid	oboInOwl:hasExactSynonym	deoxyribonucleic acid
-WARN	duplicate_label_synonym	rare isotope label	oboInOwl:hasExactSynonym	rare isotope label
-WARN	duplicate_label_synonym	intact	oboInOwl:hasExactSynonym	intact
-WARN	duplicate_label_synonym	rfam	oboInOwl:hasExactSynonym	rfam
-WARN	duplicate_label_synonym	maltose binding protein tag	oboInOwl:hasExactSynonym	maltose binding protein tag
-WARN	duplicate_label_synonym	function	oboInOwl:hasExactSynonym	function
-WARN	duplicate_label_synonym	prerequisite-ptm	oboInOwl:hasExactSynonym	prerequisite-ptm
-WARN	duplicate_label_synonym	resulting-ptm	oboInOwl:hasExactSynonym	resulting-ptm
-WARN	duplicate_label_synonym	Kd	oboInOwl:hasExactSynonym	Kd
-WARN	duplicate_label_synonym	sandwich immunoassay	oboInOwl:hasExactSynonym	sandwich immunoassay
-WARN	duplicate_label_synonym	asynthetic	oboInOwl:hasExactSynonym	asynthetic
-WARN	duplicate_label_synonym	suppression	oboInOwl:hasExactSynonym	suppression
-WARN	duplicate_label_synonym	koff	oboInOwl:hasExactSynonym	koff
-WARN	duplicate_label_synonym	observed-ptm	oboInOwl:hasExactSynonym	observed-ptm
-WARN	duplicate_label_synonym	glu tag	oboInOwl:hasExactSynonym	glu tag
-WARN	duplicate_label_synonym	competitor	oboInOwl:hasExactSynonym	competitor
-WARN	duplicate_label_synonym	polymerization	oboInOwl:hasExactSynonym	polymerization
-WARN	duplicate_label_synonym	inchi key	oboInOwl:hasExactSynonym	inchi key
-WARN	duplicate_label_synonym	amidase assay	oboInOwl:hasExactSynonym	amidase assay
-WARN	duplicate_label_synonym	ubiquitinase assay	oboInOwl:hasExactSynonym	ubiquitinase assay
-WARN	duplicate_label_synonym	deubiquitinase assay	oboInOwl:hasExactSynonym	deubiquitinase assay
-WARN	duplicate_label_synonym	palmitoylase assay	oboInOwl:hasExactSynonym	palmitoylase assay
-WARN	duplicate_label_synonym	predicted	oboInOwl:hasExactSynonym	predicted
-WARN	duplicate_label_synonym	beilstein	oboInOwl:hasExactSynonym	beilstein
-WARN	duplicate_label_synonym	einecs	oboInOwl:hasExactSynonym	einecs
-WARN	duplicate_label_synonym	merck index	oboInOwl:hasExactSynonym	merck index
-WARN	duplicate_label_synonym	plantgdb	oboInOwl:hasExactSynonym	plantgdb
-WARN	duplicate_label_synonym	ratmap	oboInOwl:hasExactSynonym	ratmap
-WARN	duplicate_label_synonym	tair	oboInOwl:hasExactSynonym	tair
-WARN	duplicate_label_synonym	tigr/jcvi	oboInOwl:hasExactSynonym	tigr/jcvi
-WARN	duplicate_label_synonym	zfin	oboInOwl:hasExactSynonym	zfin
-WARN	duplicate_label_synonym	photon donor	oboInOwl:hasExactSynonym	photon donor
-WARN	duplicate_label_synonym	photon acceptor	oboInOwl:hasExactSynonym	photon acceptor
-WARN	duplicate_label_synonym	atto label	oboInOwl:hasExactSynonym	atto label
-WARN	duplicate_label_synonym	genome databases	oboInOwl:hasExactSynonym	genome databases
-WARN	duplicate_label_synonym	hgnc	oboInOwl:hasExactSynonym	hgnc
-WARN	duplicate_label_synonym	uniprot	oboInOwl:hasExactSynonym	uniprot
-WARN	duplicate_label_synonym	bioactive entity	oboInOwl:hasExactSynonym	bioactive entity
-WARN	duplicate_label_synonym	mapped-identity	oboInOwl:hasExactSynonym	mapped-identity
-WARN	duplicate_label_synonym	solution state nmr	oboInOwl:hasExactSynonym	solution state nmr
-WARN	duplicate_label_synonym	solid state nmr	oboInOwl:hasExactSynonym	solid state nmr
-WARN	duplicate_label_synonym	biocyc	oboInOwl:hasExactSynonym	biocyc
-WARN	duplicate_label_synonym	pid	oboInOwl:hasExactSynonym	pid
-WARN	duplicate_label_synonym	biocarta	oboInOwl:hasExactSynonym	biocarta
-WARN	duplicate_label_synonym	carboxylation assay	oboInOwl:hasExactSynonym	carboxylation assay
-WARN	duplicate_label_synonym	ampylation assay	oboInOwl:hasExactSynonym	ampylation assay
-WARN	duplicate_label_synonym	lap tag	oboInOwl:hasExactSynonym	lap tag
-WARN	duplicate_label_synonym	chembl	oboInOwl:hasExactSynonym	chembl
-WARN	duplicate_label_synonym	lipid cleavage	oboInOwl:hasExactSynonym	lipid cleavage
-WARN	duplicate_label_synonym	standard inchi	oboInOwl:hasExactSynonym	standard inchi
-WARN	duplicate_label_synonym	clearance	oboInOwl:hasExactSynonym	clearance
-WARN	duplicate_label_synonym	cyp-450 inhibition	oboInOwl:hasExactSynonym	cyp-450 inhibition
-WARN	duplicate_label_synonym	aspgd	oboInOwl:hasExactSynonym	aspgd
-WARN	duplicate_label_synonym	cgd	oboInOwl:hasExactSynonym	cgd
-WARN	duplicate_label_synonym	ecoliwiki	oboInOwl:hasExactSynonym	ecoliwiki
-WARN	duplicate_label_synonym	genedb	oboInOwl:hasExactSynonym	genedb
-WARN	duplicate_label_synonym	gramene	oboInOwl:hasExactSynonym	gramene
-WARN	duplicate_label_synonym	pombase	oboInOwl:hasExactSynonym	pombase
-WARN	duplicate_label_synonym	agi_locuscode	oboInOwl:hasExactSynonym	agi_locuscode
-WARN	duplicate_label_synonym	subset	oboInOwl:hasExactSynonym	subset
-WARN	duplicate_label_synonym	agbase	oboInOwl:hasExactSynonym	agbase
-WARN	duplicate_label_synonym	cacao	oboInOwl:hasExactSynonym	cacao
-WARN	duplicate_label_synonym	dflat	oboInOwl:hasExactSynonym	dflat
-WARN	duplicate_label_synonym	go_central	oboInOwl:hasExactSynonym	go_central
-WARN	duplicate_label_synonym	mtbbase	oboInOwl:hasExactSynonym	mtbbase
-WARN	duplicate_label_synonym	parkinsonsuk-ucl	oboInOwl:hasExactSynonym	parkinsonsuk-ucl
-WARN	duplicate_label_synonym	alut	oboInOwl:hasExactSynonym	alut
-WARN	duplicate_label_synonym	ri	oboInOwl:hasExactSynonym	ri
-WARN	duplicate_label_synonym	par-clip	oboInOwl:hasExactSynonym	par-clip
-WARN	duplicate_label_synonym	avexis	oboInOwl:hasExactSynonym	avexis
-WARN	duplicate_label_synonym	clip	oboInOwl:hasExactSynonym	clip
-WARN	duplicate_label_synonym	clip-seq	oboInOwl:hasExactSynonym	clip-seq
-WARN	duplicate_label_synonym	iclip	oboInOwl:hasExactSynonym	iclip
-WARN	duplicate_label_synonym	crac	oboInOwl:hasExactSynonym	crac
-WARN	duplicate_label_synonym	clash	oboInOwl:hasExactSynonym	clash
-WARN	duplicate_label_synonym	probe interaction assay	oboInOwl:hasExactSynonym	probe interaction assay
-WARN	duplicate_label_synonym	labelling assay	oboInOwl:hasExactSynonym	labelling assay
+ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/mi.owl	dc:title	
+ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/mi.owl	dc:license	
+WARN	missing_obsolete_label	colocalization by fluorescent probes cloning	rdfs:label	colocalization by fluorescent probes cloning
+WARN	missing_obsolete_label	colocalization by immunostaining	rdfs:label	colocalization by immunostaining
+WARN	missing_obsolete_label	colocalization/visualisation technologies	rdfs:label	colocalization/visualisation technologies
+WARN	missing_obsolete_label	copurification	rdfs:label	copurification
+WARN	missing_obsolete_label	flag tag coimmunoprecipitation	rdfs:label	flag tag coimmunoprecipitation
+WARN	missing_obsolete_label	gst pull down	rdfs:label	gst pull down
+WARN	missing_obsolete_label	ha tag coimmunoprecipitation	rdfs:label	ha tag coimmunoprecipitation
+WARN	missing_obsolete_label	his pull down	rdfs:label	his pull down
+WARN	missing_obsolete_label	his tag coimmunoprecipitation	rdfs:label	his tag coimmunoprecipitation
+WARN	missing_obsolete_label	myc tag coimmunoprecipitation	rdfs:label	myc tag coimmunoprecipitation
+WARN	missing_obsolete_label	other biochemical technologies	rdfs:label	other biochemical technologies
+WARN	missing_obsolete_label	tap tag coimmunoprecipitation	rdfs:label	tap tag coimmunoprecipitation
+WARN	missing_obsolete_label	post translation modification	rdfs:label	post translation modification
+WARN	missing_obsolete_label	acetylated residue	rdfs:label	acetylated residue
+WARN	missing_obsolete_label	n-acetyl-alanine	rdfs:label	n-acetyl-alanine
+WARN	missing_obsolete_label	n2-acetyl-arginine	rdfs:label	n2-acetyl-arginine
+WARN	missing_obsolete_label	n-acetyl-asparagine	rdfs:label	n-acetyl-asparagine
+WARN	missing_obsolete_label	n-acetyl-aspartic acid	rdfs:label	n-acetyl-aspartic acid
+WARN	missing_obsolete_label	n-acetyl-cysteine	rdfs:label	n-acetyl-cysteine
+WARN	missing_obsolete_label	n-acetyl-glutamine	rdfs:label	n-acetyl-glutamine
+WARN	missing_obsolete_label	n-acetyl-glutamic acid	rdfs:label	n-acetyl-glutamic acid
+WARN	missing_obsolete_label	n-acetylglycine	rdfs:label	n-acetylglycine
+WARN	missing_obsolete_label	n-acetyl-histidine	rdfs:label	n-acetyl-histidine
+WARN	missing_obsolete_label	n-acetyl-isoleucine	rdfs:label	n-acetyl-isoleucine
+WARN	missing_obsolete_label	n-acetyl-leucine	rdfs:label	n-acetyl-leucine
+WARN	missing_obsolete_label	n2-acetyl-lysine	rdfs:label	n2-acetyl-lysine
+WARN	missing_obsolete_label	n6-acetyl-lysine	rdfs:label	n6-acetyl-lysine
+WARN	missing_obsolete_label	n-acetyl-methionine	rdfs:label	n-acetyl-methionine
+WARN	missing_obsolete_label	n-acetyl-phenylalanine	rdfs:label	n-acetyl-phenylalanine
+WARN	missing_obsolete_label	n-acetyl-proline	rdfs:label	n-acetyl-proline
+WARN	missing_obsolete_label	n-acetyl-serine	rdfs:label	n-acetyl-serine
+WARN	missing_obsolete_label	n-acetyl-threonine	rdfs:label	n-acetyl-threonine
+WARN	missing_obsolete_label	n-acetyl-tryptophan	rdfs:label	n-acetyl-tryptophan
+WARN	missing_obsolete_label	n-acetyl-tyrosine	rdfs:label	n-acetyl-tyrosine
+WARN	missing_obsolete_label	n-acetyl-valine	rdfs:label	n-acetyl-valine
+WARN	missing_obsolete_label	amidated residue	rdfs:label	amidated residue
+WARN	missing_obsolete_label	arginine amide	rdfs:label	arginine amide
+WARN	missing_obsolete_label	formylated residue	rdfs:label	formylated residue
+WARN	missing_obsolete_label	n-formyl-methionine	rdfs:label	n-formyl-methionine
+WARN	missing_obsolete_label	hydroxylated residue	rdfs:label	hydroxylated residue
+WARN	missing_obsolete_label	lipid modification	rdfs:label	lipid modification
+WARN	missing_obsolete_label	s-farnesyl-cysteine	rdfs:label	s-farnesyl-cysteine
+WARN	missing_obsolete_label	s-geranylgeranyl-cysteine	rdfs:label	s-geranylgeranyl-cysteine
+WARN	missing_obsolete_label	n-palmitoyl-cysteine	rdfs:label	n-palmitoyl-cysteine
+WARN	missing_obsolete_label	s-palmitoyl-cysteine	rdfs:label	s-palmitoyl-cysteine
+WARN	missing_obsolete_label	n-myristoyl-glycine	rdfs:label	n-myristoyl-glycine
+WARN	missing_obsolete_label	n6-myristoyl-lysine	rdfs:label	n6-myristoyl-lysine
+WARN	missing_obsolete_label	methylated residue	rdfs:label	methylated residue
+WARN	missing_obsolete_label	n-methyl-alanine	rdfs:label	n-methyl-alanine
+WARN	missing_obsolete_label	n,n,n-trimethyl-alanine	rdfs:label	n,n,n-trimethyl-alanine
+WARN	missing_obsolete_label	omega-n,omega-n-dimethyl-arginine	rdfs:label	omega-n,omega-n-dimethyl-arginine
+WARN	missing_obsolete_label	beta-methylthioaspartic acid	rdfs:label	beta-methylthioaspartic acid
+WARN	missing_obsolete_label	n5-methyl-glutamine	rdfs:label	n5-methyl-glutamine
+WARN	missing_obsolete_label	glutamic acid 5-methyl ester	rdfs:label	glutamic acid 5-methyl ester
+WARN	missing_obsolete_label	n6-methyl-lysine	rdfs:label	n6-methyl-lysine
+WARN	missing_obsolete_label	n6,n6-dimethyl-lysine	rdfs:label	n6,n6-dimethyl-lysine
+WARN	missing_obsolete_label	n6,n6,n6-trimethyl-lysine	rdfs:label	n6,n6,n6-trimethyl-lysine
+WARN	missing_obsolete_label	n-methyl-methionine	rdfs:label	n-methyl-methionine
+WARN	missing_obsolete_label	n-methyl-phenylalanine	rdfs:label	n-methyl-phenylalanine
+WARN	missing_obsolete_label	phosphorylated residue	rdfs:label	phosphorylated residue
+WARN	missing_obsolete_label	omega-n-phospho-arginine	rdfs:label	omega-n-phospho-arginine
+WARN	missing_obsolete_label	aspartic 4-phosphoric anhydride	rdfs:label	aspartic 4-phosphoric anhydride
+WARN	missing_obsolete_label	s-phospho-cysteine	rdfs:label	s-phospho-cysteine
+WARN	missing_obsolete_label	o-phospho-serine	rdfs:label	o-phospho-serine
+WARN	missing_obsolete_label	o-phospho-threonine	rdfs:label	o-phospho-threonine
+WARN	missing_obsolete_label	o4'-phospho-tyrosine	rdfs:label	o4'-phospho-tyrosine
+WARN	missing_obsolete_label	other modification	rdfs:label	other modification
+WARN	missing_obsolete_label	selenocysteine	rdfs:label	selenocysteine
+WARN	missing_obsolete_label	selenomethionine	rdfs:label	selenomethionine
+WARN	missing_obsolete_label	3-oxoalanine	rdfs:label	3-oxoalanine
+WARN	missing_obsolete_label	glutamyl 5-glycerylphosphorylethanolamine	rdfs:label	glutamyl 5-glycerylphosphorylethanolamine
+WARN	missing_obsolete_label	n6-biotinyl-lysine	rdfs:label	n6-biotinyl-lysine
+WARN	missing_obsolete_label	n6-(4-amino-2-hydroxybutyl)-lysine	rdfs:label	n6-(4-amino-2-hydroxybutyl)-lysine
+WARN	missing_obsolete_label	n6-retinal-lysine	rdfs:label	n6-retinal-lysine
+WARN	missing_obsolete_label	ubiquitinated lysine	rdfs:label	ubiquitinated lysine
+WARN	missing_obsolete_label	aggregation	rdfs:label	aggregation
+WARN	missing_obsolete_label	covalent interaction	rdfs:label	covalent interaction
+WARN	missing_obsolete_label	disaggregation	rdfs:label	disaggregation
+WARN	missing_obsolete_label	non covalent interaction	rdfs:label	non covalent interaction
+WARN	missing_obsolete_label	physical interaction	rdfs:label	physical interaction
+WARN	missing_obsolete_label	synthetic lethal	rdfs:label	synthetic lethal
+WARN	missing_obsolete_label	cytoplasmic complementation assay	rdfs:label	cytoplasmic complementation assay
+WARN	missing_obsolete_label	membrane bound complementation assay	rdfs:label	membrane bound complementation assay
+WARN	missing_obsolete_label	reactome complex	rdfs:label	reactome complex
+WARN	missing_obsolete_label	reactome protein	rdfs:label	reactome protein
+WARN	missing_obsolete_label	newt	rdfs:label	newt
+WARN	missing_obsolete_label	inhibitor antibodies	rdfs:label	inhibitor antibodies
+WARN	missing_obsolete_label	perturbagens peptides	rdfs:label	perturbagens peptides
+WARN	missing_obsolete_label	inhibitor small molecules	rdfs:label	inhibitor small molecules
+WARN	missing_obsolete_label	suppression	rdfs:label	suppression
+WARN	missing_obsolete_label	suppression mutation	rdfs:label	suppression mutation
+WARN	missing_obsolete_label	suppression knockout	rdfs:label	suppression knockout
+WARN	missing_obsolete_label	suppression partial alteration	rdfs:label	suppression partial alteration
+WARN	missing_obsolete_label	suppression expression alteration	rdfs:label	suppression expression alteration
+WARN	missing_obsolete_label	suppression overexpression	rdfs:label	suppression overexpression
+WARN	missing_obsolete_label	suppression scalable	rdfs:label	suppression scalable
+WARN	missing_obsolete_label	suppression underexpression	rdfs:label	suppression underexpression
+WARN	missing_obsolete_label	synthetic phenotype	rdfs:label	synthetic phenotype
+WARN	missing_obsolete_label	conditional synthetic lethal	rdfs:label	conditional synthetic lethal
+WARN	missing_obsolete_label	conditional synthetic lethal temperature-sensitivity	rdfs:label	conditional synthetic lethal temperature-sensitivity
+WARN	missing_obsolete_label	synthetic growth effect	rdfs:label	synthetic growth effect
+WARN	missing_obsolete_label	synthetic growth defect	rdfs:label	synthetic growth defect
+WARN	missing_obsolete_label	synthetic growth increase	rdfs:label	synthetic growth increase
+WARN	missing_obsolete_label	genomic tagging	rdfs:label	genomic tagging
+WARN	missing_obsolete_label	dna footprinting	rdfs:label	dna footprinting
+WARN	missing_obsolete_label	genetic	rdfs:label	genetic
+WARN	missing_obsolete_label	ubiquitin binding	rdfs:label	ubiquitin binding
+WARN	missing_obsolete_label	experiment condition	rdfs:label	experiment condition
+WARN	missing_obsolete_label	in silico	rdfs:label	in silico
+WARN	missing_obsolete_label	in vitro	rdfs:label	in vitro
+WARN	missing_obsolete_label	in vivo	rdfs:label	in vivo
+WARN	missing_obsolete_label	in situ	rdfs:label	in situ
+WARN	missing_obsolete_label	n-acetyl-lysine	rdfs:label	n-acetyl-lysine
+WARN	missing_obsolete_label	adp ribosylated residue	rdfs:label	adp ribosylated residue
+WARN	missing_obsolete_label	omega-n-(adp-ribosyl)-arginine	rdfs:label	omega-n-(adp-ribosyl)-arginine
+WARN	missing_obsolete_label	s-(adp-ribosyl)-cysteine	rdfs:label	s-(adp-ribosyl)-cysteine
+WARN	missing_obsolete_label	glutamyl-5-poly(adp-ribose)	rdfs:label	glutamyl-5-poly(adp-ribose)
+WARN	missing_obsolete_label	o-(adp-ribosyl)-serine	rdfs:label	o-(adp-ribosyl)-serine
+WARN	missing_obsolete_label	n4-(adp-ribosyl)-asparagine	rdfs:label	n4-(adp-ribosyl)-asparagine
+WARN	missing_obsolete_label	glycosylated residue	rdfs:label	glycosylated residue
+WARN	missing_obsolete_label	glycosyl-cysteine	rdfs:label	glycosyl-cysteine
+WARN	missing_obsolete_label	glycosyl-serine	rdfs:label	glycosyl-serine
+WARN	missing_obsolete_label	glycosyl-threonine	rdfs:label	glycosyl-threonine
+WARN	missing_obsolete_label	omega-n-glycosyl-arginine	rdfs:label	omega-n-glycosyl-arginine
+WARN	missing_obsolete_label	n4-glycosyl-asparagine	rdfs:label	n4-glycosyl-asparagine
+WARN	missing_obsolete_label	gpi anchor residue	rdfs:label	gpi anchor residue
+WARN	missing_obsolete_label	gpi-anchor amidated alanine	rdfs:label	gpi-anchor amidated alanine
+WARN	missing_obsolete_label	gpi-anchor amidated asparagine	rdfs:label	gpi-anchor amidated asparagine
+WARN	missing_obsolete_label	gpi-anchor amidated aspartate	rdfs:label	gpi-anchor amidated aspartate
+WARN	missing_obsolete_label	gpi-anchor amidated cysteine	rdfs:label	gpi-anchor amidated cysteine
+WARN	missing_obsolete_label	gpi-anchor amidated glycine	rdfs:label	gpi-anchor amidated glycine
+WARN	missing_obsolete_label	gpi-anchor amidated serine	rdfs:label	gpi-anchor amidated serine
+WARN	missing_obsolete_label	gpi-anchor amidated threonine	rdfs:label	gpi-anchor amidated threonine
+WARN	missing_obsolete_label	s-prenyl-cysteine	rdfs:label	s-prenyl-cysteine
+WARN	missing_obsolete_label	methylated-lysine	rdfs:label	methylated-lysine
+WARN	missing_obsolete_label	alkylated cysteine	rdfs:label	alkylated cysteine
+WARN	missing_obsolete_label	gamma-carboxyglutamic acid	rdfs:label	gamma-carboxyglutamic acid
+WARN	missing_obsolete_label	nitro-tyrosine	rdfs:label	nitro-tyrosine
+WARN	missing_obsolete_label	s-nitrosyl-cysteine	rdfs:label	s-nitrosyl-cysteine
+WARN	missing_obsolete_label	o4'-sulfo-tyrosine	rdfs:label	o4'-sulfo-tyrosine
+WARN	missing_obsolete_label	sumoylated lysine	rdfs:label	sumoylated lysine
+WARN	missing_obsolete_label	phospho-histidine	rdfs:label	phospho-histidine
+WARN	missing_obsolete_label	myristoylated residue	rdfs:label	myristoylated residue
+WARN	missing_obsolete_label	palmitoylated residue	rdfs:label	palmitoylated residue
+WARN	missing_obsolete_label	methylated alanine	rdfs:label	methylated alanine
+WARN	missing_obsolete_label	methylated arginine	rdfs:label	methylated arginine
+WARN	missing_obsolete_label	omega-n-methyl-arginine	rdfs:label	omega-n-methyl-arginine
+WARN	missing_obsolete_label	neddylated lysine	rdfs:label	neddylated lysine
+WARN	missing_obsolete_label	inhibited	rdfs:label	inhibited
+WARN	missing_obsolete_label	conditional synthetic lethal nutrition-sensitivity	rdfs:label	conditional synthetic lethal nutrition-sensitivity
+WARN	missing_obsolete_label	millimolar	rdfs:label	millimolar
+WARN	missing_obsolete_label	micromolar	rdfs:label	micromolar
+WARN	missing_obsolete_label	nanomolar	rdfs:label	nanomolar
+WARN	missing_obsolete_label	picomolar	rdfs:label	picomolar
+WARN	missing_obsolete_label	fentomolar	rdfs:label	fentomolar
+WARN	missing_obsolete_label	conditional genetic interaction defined by inequality	rdfs:label	conditional genetic interaction defined by inequality
+WARN	missing_obsolete_label	additive genetic interaction defined by inequality	rdfs:label	additive genetic interaction defined by inequality
+WARN	missing_obsolete_label	single nonmonotonic genetic interaction defined by inequality	rdfs:label	single nonmonotonic genetic interaction defined by inequality
+WARN	missing_obsolete_label	double nonmonotonic genetic interaction defined by inequality	rdfs:label	double nonmonotonic genetic interaction defined by inequality
+WARN	missing_obsolete_label	enhancement interaction	rdfs:label	enhancement interaction
+WARN	missing_obsolete_label	half cystine	rdfs:label	half cystine
+WARN	missing_obsolete_label	epistatis	rdfs:label	epistatis
+WARN	missing_obsolete_label	genetic interaction defined by inequality	rdfs:label	genetic interaction defined by inequality
+WARN	missing_obsolete_label	ampylation assay	rdfs:label	ampylation assay
+WARN	missing_obsolete_label	opposing epistasis	rdfs:label	opposing epistasis
+WARN	missing_obsolete_label	CLONE OF phosphotransfer reaction	rdfs:label	CLONE OF phosphotransfer reaction
+WARN	missing_obsolete_label	pubchem	rdfs:label	pubchem
+WARN	missing_obsolete_label	indirect causal regulation	rdfs:label	indirect causal regulation

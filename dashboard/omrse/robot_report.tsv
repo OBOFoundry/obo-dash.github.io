@@ -1,4 +1,6 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/omrse/omrse-base.owl	dc:description	
+ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/omrse/omrse-base.owl	dc:title	
 ERROR	missing_label	OMIABIS:0000008	rdfs:label	
 ERROR	missing_label	OMIABIS:0000009	rdfs:label	
 ERROR	missing_label	OMIABIS:0000048	rdfs:label	
@@ -6,29 +8,30 @@ ERROR	missing_label	OMRSE:00002046	rdfs:label
 ERROR	missing_label	OMRSE:00002047	rdfs:label	
 ERROR	missing_label	PCO:0000020	rdfs:label	
 ERROR	missing_label	RO:0002217	rdfs:label	
+ERROR	deprecated_boolean_datatype	is-aggregate-of	owl:deprecated	true@en
 ERROR	deprecated_class_reference	obsolete OMB ethnic identity datum	rdfs:subClassOf	obsolete ethnic identity datum
 ERROR	deprecated_class_reference	obsolete OMB ethnic identity datum	rdfs:subClassOf	obsolete hispanic or latino identity datum
 ERROR	deprecated_class_reference	obsolete OMB ethnic identity datum	rdfs:subClassOf	obsolete not hispanic or latino identity datum
 ERROR	deprecated_class_reference	obsolete socio-legal human social role	rdfs:subClassOf	human social role
 ERROR	deprecated_class_reference	obsolete racial identity datum	rdfs:subClassOf	obsolete OMB racial identity datum
-ERROR	deprecated_class_reference	obsolete racial identity datum	owl:equivalentClass	1481a17a-f657-4ef1-b3ac-3ddb88d04964genid305
+ERROR	deprecated_class_reference	obsolete racial identity datum	owl:equivalentClass	8c17491d-50d5-44f1-a618-0e5359151220genid305
 ERROR	deprecated_class_reference	obsolete ethnic identity datum	rdfs:subClassOf	obsolete OMB ethnic identity datum
-ERROR	deprecated_class_reference	obsolete ethnic identity datum	owl:equivalentClass	1481a17a-f657-4ef1-b3ac-3ddb88d04964genid319
+ERROR	deprecated_class_reference	obsolete ethnic identity datum	owl:equivalentClass	8c17491d-50d5-44f1-a618-0e5359151220genid319
 ERROR	deprecated_class_reference	obsolete hispanic or latino identity datum	rdfs:subClassOf	obsolete OMB ethnic identity datum
 ERROR	deprecated_class_reference	obsolete not hispanic or latino identity datum	rdfs:subClassOf	obsolete OMB ethnic identity datum
 ERROR	deprecated_class_reference	obsolete identity datum	rdfs:subClassOf	obsolete self-identity data item
 ERROR	deprecated_class_reference	obsolete identity datum	rdfs:subClassOf	answer to identity question
-ERROR	deprecated_class_reference	obsolete identity datum	owl:equivalentClass	1481a17a-f657-4ef1-b3ac-3ddb88d04964genid383
+ERROR	deprecated_class_reference	obsolete identity datum	owl:equivalentClass	8c17491d-50d5-44f1-a618-0e5359151220genid383
 ERROR	deprecated_class_reference	obsolete gender identity datum	rdfs:subClassOf	obsolete female gender identity datum
 ERROR	deprecated_class_reference	obsolete gender identity datum	rdfs:subClassOf	obsolete male gender identity datum
 ERROR	deprecated_class_reference	obsolete gender identity datum	rdfs:subClassOf	obsolete non-binary gender identity datum
-ERROR	deprecated_class_reference	obsolete gender identity datum	owl:equivalentClass	1481a17a-f657-4ef1-b3ac-3ddb88d04964genid392
+ERROR	deprecated_class_reference	obsolete gender identity datum	owl:equivalentClass	8c17491d-50d5-44f1-a618-0e5359151220genid392
 ERROR	deprecated_class_reference	obsolete female gender identity datum	rdfs:subClassOf	obsolete gender identity datum
 ERROR	deprecated_class_reference	obsolete male gender identity datum	rdfs:subClassOf	obsolete gender identity datum
 ERROR	deprecated_class_reference	obsolete self-identity data item	rdfs:subClassOf	obsolete identity datum
 ERROR	deprecated_class_reference	obsolete medical advice	rdfs:subClassOf	IAO:0021003
-ERROR	deprecated_class_reference	questions asking process	rdfs:subClassOf	1481a17a-f657-4ef1-b3ac-3ddb88d04964genid439
-ERROR	deprecated_class_reference	questions asking process	rdfs:subClassOf	1481a17a-f657-4ef1-b3ac-3ddb88d04964genid440
+ERROR	deprecated_class_reference	questions asking process	rdfs:subClassOf	8c17491d-50d5-44f1-a618-0e5359151220genid439
+ERROR	deprecated_class_reference	questions asking process	rdfs:subClassOf	8c17491d-50d5-44f1-a618-0e5359151220genid440
 ERROR	deprecated_class_reference	questions asking process	rdfs:subClassOf	identity question asking process
 ERROR	deprecated_class_reference	material information bearer of question text plus answer set	rdfs:subClassOf	BFO:0000040
 ERROR	deprecated_class_reference	identity question asking process	rdfs:subClassOf	questions asking process
@@ -54,14 +57,6 @@ ERROR	deprecated_class_reference	blank node	owl:someValuesFrom	obsolete gender i
 ERROR	deprecated_class_reference	blank node	owl:someValuesFrom	questions asking process
 ERROR	deprecated_class_reference	blank node	owl:someValuesFrom	material information bearer of question text plus answer set
 ERROR	deprecated_class_reference	blank node	owl:someValuesFrom	obsolete OMB racial identity datum
-ERROR	deprecated_boolean_datatype	is-aggregate-of	owl:deprecated	true@en
-ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/omrse/omrse-base.owl	dc:title	
-ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/omrse/omrse-base.owl	dc:description	
-WARN	missing_obsolete_label	questions asking process	rdfs:label	questions asking process@en
-WARN	missing_obsolete_label	material information bearer of question text plus answer set	rdfs:label	material information bearer of question text plus answer set@en
-WARN	missing_obsolete_label	identity question asking process	rdfs:label	identity question asking process@en
-WARN	missing_obsolete_label	ethnic identity question asking process	rdfs:label	ethnic identity question asking process@en
-WARN	missing_obsolete_label	race identity question asking process	rdfs:label	race identity question asking process@en
 WARN	missing_definition	OMIABIS:0000008	IAO:0000115	
 WARN	missing_definition	OMIABIS:0000009	IAO:0000115	
 WARN	missing_definition	OMIABIS:0000048	IAO:0000115	
@@ -153,6 +148,11 @@ WARN	missing_definition	ISO 639-3 code	IAO:0000115
 WARN	missing_definition	higher education program	IAO:0000115	
 WARN	missing_definition	PCO:0000020	IAO:0000115	
 WARN	missing_definition	RO:0002217	IAO:0000115	
+WARN	missing_obsolete_label	questions asking process	rdfs:label	questions asking process@en
+WARN	missing_obsolete_label	material information bearer of question text plus answer set	rdfs:label	material information bearer of question text plus answer set@en
+WARN	missing_obsolete_label	identity question asking process	rdfs:label	identity question asking process@en
+WARN	missing_obsolete_label	ethnic identity question asking process	rdfs:label	ethnic identity question asking process@en
+WARN	missing_obsolete_label	race identity question asking process	rdfs:label	race identity question asking process@en
 WARN	equivalent_class_axiom_no_genus	county smoking survey data	OBI:0000312	county smoking survey execution
 WARN	annotation_whitespace	human social role	IAO:0000117	"Mathias Brochhausen
 @en"
@@ -161,10 +161,6 @@ WARN	annotation_whitespace	health care provider role	IAO:0000117	"Mathias Brochh
 @en"
 WARN	annotation_whitespace	obsolete aggregate of geopoli organizations	IAO:0000117	"William R. Hogan
 @en"
-INFO	missing_superclass	human patient role	rdfs:subClassOf	
-INFO	missing_superclass	human traveling information	rdfs:subClassOf	
-INFO	missing_superclass	household identifier	rdfs:subClassOf	
-INFO	missing_superclass	family identifier	rdfs:subClassOf	
 INFO	lowercase_definition	obsolete intergovernmental organization	IAO:0000115	an intergovernmental organization that has at least three member states, that has activies in at least three states, and that is unified by some formal intergovernmental agreement
 INFO	lowercase_definition	obsolete nongovernmental organization	IAO:0000115	a geopolitical organization that is voluntary and private, whose members are individual persons or organizations that come together to acheive a common purpose.@en
 INFO	lowercase_definition	obsolete subnational entity	IAO:0000115	a governmental organization that has a local, regional, or territorial government that recognizes a sovereign state as its higher political authority@en
@@ -180,3 +176,7 @@ Somehow involves skilled nursing encounters@en"
 INFO	lowercase_definition	information content entity-request process	IAO:0000115	a communication in which some participant requests of some other participant an information content entity about some portion of reality@en
 INFO	lowercase_definition	information content entity request about ethnic identity	IAO:0000115	an information content entity-request process in which some participant requests of some other participant an information content entity that indicates the ethnic identity of that other participant@en
 INFO	lowercase_definition	information content entity request about racial identity	IAO:0000115	an information content entity-request process in which some participant requests of some other participant an information content entity that indicates the racial identity of that other participant@en
+INFO	missing_superclass	human patient role	rdfs:subClassOf	
+INFO	missing_superclass	human traveling information	rdfs:subClassOf	
+INFO	missing_superclass	household identifier	rdfs:subClassOf	
+INFO	missing_superclass	family identifier	rdfs:subClassOf	

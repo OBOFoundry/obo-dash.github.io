@@ -1,11 +1,8 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	duplicate_definition	has start point	definition	A relation between an axis and a part of an organism, in which the part defines the initial point of the axis.
-ERROR	duplicate_definition	has end point	definition	A relation between an axis and a part of an organism, in which the part defines the initial point of the axis.
 ERROR	multiple_labels	medial to	rdfs:label	X medial to y if x is closer to the midsagittal plane than y.@en
 ERROR	multiple_labels	medial to	rdfs:label	medial to@en
-WARN	duplicate_label_synonym	dorso-medial margin	has_exact_synonym	dorso-medial margin
-WARN	missing_obsolete_label	deep-superficial gradient (obsolete)	rdfs:label	deep-superficial gradient (obsolete)
-WARN	missing_obsolete_label	anatomical relation	rdfs:label	anatomical relation
+ERROR	duplicate_definition	has start point	definition	A relation between an axis and a part of an organism, in which the part defines the initial point of the axis.
+ERROR	duplicate_definition	has end point	definition	A relation between an axis and a part of an organism, in which the part defines the initial point of the axis.
 WARN	missing_definition	part of	definition	
 WARN	missing_definition	has part	definition	
 WARN	missing_definition	upper side	definition	
@@ -68,6 +65,9 @@ WARN	missing_definition	shorthand	definition
 WARN	annotation_whitespace	antero-dorsal region	has_exact_synonym	anterodorsal region 
 WARN	annotation_whitespace	antero-ventral region	has_exact_synonym	anteroventral region 
 WARN	annotation_whitespace	medial-lateral axis	has_related_synonym	proximal-distal axis 
+WARN	missing_obsolete_label	deep-superficial gradient (obsolete)	rdfs:label	deep-superficial gradient (obsolete)
+WARN	missing_obsolete_label	anatomical relation	rdfs:label	anatomical relation
+WARN	duplicate_label_synonym	dorso-medial margin	has_exact_synonym	dorso-medial margin
 INFO	missing_superclass	sagittal plane	rdfs:subClassOf	
 INFO	missing_superclass	anatomical entity	rdfs:subClassOf	
 INFO	lowercase_definition	anterior to	definition	x anterior to y iff x is further along the antero-posterior axis than y, towards the head. An antero-posterior axis is an axis that extends through an organism from head end to opposite end of body or tail.

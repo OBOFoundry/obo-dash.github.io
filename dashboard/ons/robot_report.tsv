@@ -1,5 +1,4 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	missing_ontology_license	https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/ons.owl	dc:license	
 ERROR	deprecated_class_reference	ONS:0000003	rdfs:subClassOf	Subject Information collection
 ERROR	deprecated_class_reference	Dietary assessment method	rdfs:subClassOf	Dietary assessment
 ERROR	deprecated_class_reference	subject informations	rdfs:subClassOf	Subject Information collection
@@ -12,11 +11,14 @@ ERROR	deprecated_class_reference	ONS:0000057	rdfs:subClassOf	Physiology assay ty
 ERROR	deprecated_class_reference	Information tab	rdfs:subClassOf	OBI:0000070
 ERROR	deprecated_class_reference	Information tab	rdfs:subClassOf	Chemical biological data
 ERROR	deprecated_class_reference	Physiology assay type	rdfs:subClassOf	ONS:0000057
+ERROR	missing_ontology_license	https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/ons.owl	dc:license	
 ERROR	duplicate_definition	technological processes during dairy food fermentation	IAO:0000115	This is a high-level term with the purpose of organization of more granular children term. Should not be used in annotation, favoring more specific sub-classes@en
 ERROR	duplicate_definition	biological processes during dairy food fermentation	IAO:0000115	This is a high-level term with the purpose of organization of more granular children term. Should not be used in annotation, favoring more specific sub-classes@en
 ERROR	duplicate_definition	microbiota in finished or semi-finished fermented products and in the entire food-chain	IAO:0000115	This is a high-level term with the purpose of organization of more granular children term. Should not be used in annotation, favoring more specific sub-classes@en
 ERROR	duplicate_definition	starter culture for food fermentation	IAO:0000115	microbial culture responsible for the beginning of the fermentation process@en
 ERROR	duplicate_definition	starter culture	IAO:0000115	microbial culture responsible for the beginning of the fermentation process@en
+WARN	duplicate_label_synonym	average daily nutrient intake level	oboInOwl:hasExactSynonym	average daily nutrient intake level@en
+WARN	duplicate_label_synonym	time-restricted feeding	oboInOwl:hasExactSynonym	time-restricted feeding@en
 WARN	missing_obsolete_label	Dietary assessment method	rdfs:label	Dietary assessment method@en
 WARN	missing_obsolete_label	subject informations	rdfs:label	subject informations@en
 WARN	missing_obsolete_label	Start tab	rdfs:label	Start tab@en
@@ -25,6 +27,12 @@ WARN	missing_obsolete_label	Event tab	rdfs:label	Event tab@en
 WARN	missing_obsolete_label	Sampling tab	rdfs:label	Sampling tab@en
 WARN	missing_obsolete_label	Information tab	rdfs:label	Information tab@en
 WARN	missing_obsolete_label	Physiology assay type	rdfs:label	Physiology assay type@en
+WARN	equivalent_pair	GO:0006113	owl:equivalentClass	fermentation ons
+WARN	equivalent_pair	OBI:0000630	owl:equivalentClass	blood analytics
+WARN	duplicate_exact_synonym	low-carbohydrate, high-protien, high fat diet	oboInOwl:hasExactSynonym	Low carbohydrate diet@en
+WARN	duplicate_exact_synonym	low-carbohydrate, high-protien, high fat diet dietary pattern	oboInOwl:hasExactSynonym	Low carbohydrate diet@en
+WARN	duplicate_exact_synonym	semi-vegetarian diet	oboInOwl:hasExactSynonym	flexitarian diet@en
+WARN	duplicate_exact_synonym	semi-vegetarian dietary pattern	oboInOwl:hasExactSynonym	flexitarian diet@en
 WARN	annotation_whitespace	fasting process	IAO:0000117	 https://github.com/FoodOntology/joint-food-ontology-wg
 WARN	annotation_whitespace	fasting process	IAO:0000117	Leigh Carmody 
 WARN	annotation_whitespace	intermittent fasting	IAO:0000117	 https://github.com/FoodOntology/joint-food-ontology-wg
@@ -61,16 +69,8 @@ WARN	annotation_whitespace	low-carbohydrate, high-protien, high fat diet dietary
 WARN	annotation_whitespace	low-carbohydrate, high-protien, high fat diet dietary pattern	IAO:0000119	PMID:18635428 
 WARN	annotation_whitespace	low fat diet dietary pattern	IAO:0000117	 https://github.com/FoodOntology/joint-food-ontology-wg
 WARN	annotation_whitespace	low fat diet dietary pattern	IAO:0000117	Leigh Carmody 
-WARN	duplicate_exact_synonym	low-carbohydrate, high-protien, high fat diet	oboInOwl:hasExactSynonym	Low carbohydrate diet@en
-WARN	duplicate_exact_synonym	low-carbohydrate, high-protien, high fat diet dietary pattern	oboInOwl:hasExactSynonym	Low carbohydrate diet@en
-WARN	duplicate_exact_synonym	semi-vegetarian diet	oboInOwl:hasExactSynonym	flexitarian diet@en
-WARN	duplicate_exact_synonym	semi-vegetarian dietary pattern	oboInOwl:hasExactSynonym	flexitarian diet@en
-WARN	duplicate_label_synonym	average daily nutrient intake level	oboInOwl:hasExactSynonym	average daily nutrient intake level@en
-WARN	duplicate_label_synonym	time-restricted feeding	oboInOwl:hasExactSynonym	time-restricted feeding@en
 WARN	missing_definition	Seroepidemiologic Studies	IAO:0000115	
 WARN	missing_definition	Literature database query	IAO:0000115	
-WARN	equivalent_pair	GO:0006113	owl:equivalentClass	fermentation ons
-WARN	equivalent_pair	OBI:0000630	owl:equivalentClass	blood analytics
 INFO	lowercase_definition	light physical activity by questionnaire	IAO:0000115	time spent in light physical activity in minutes/day derived from questionnaire data@en
 INFO	lowercase_definition	nutritional research assay	IAO:0000115	any type of assay that can be performed in the context of a nutritional study@en
 INFO	lowercase_definition	food biomarker analysis assay	IAO:0000115	an assay that is aimed at discovering new potential metabolites as food consumption biomarkers, or to measure/validate known food consumption biomarkers in a biological sample (e.g. urine, blood, serum, feces).@en

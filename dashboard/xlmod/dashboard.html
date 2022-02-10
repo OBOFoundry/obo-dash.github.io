@@ -1,14 +1,14 @@
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <title>aeo Dashboard Report</title>
+    <title>xlmod Dashboard Report</title>
 </head>
 <body>
     <div class="container">
         <div class="row" style="padding-top:30px;">
             <div class="col-md-2"></div>
             <div class="col-md-8">
-                <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/aeo.html">aeo</a></h1>
-                <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/aeo/releases/2014-12-05/aeo.owl</p>
+                <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/xlmod.html">xlmod</a></h1>
+                <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/xlmod/release/2019-10-28/xlmod.owl</p>
                 <p class="lead" style="margin-top:-15px;"><b>Date run</b>: </p>
                 <p class="lead" style="margin-top:-15px;"><a href="dashboard.yml">View dashboard results as YAML</a></p>
                 <h3>Error Breakdown</h3>
@@ -139,11 +139,11 @@
                                 
                                 
                             
-                            <td class="table-warning" style="text-align:center;">
-                                <img src="../assets/warning.svg" height="15px">
+                            <td class="table-danger" style="text-align:center;">
+                                <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>11 missing definitions. See ROBOT Report for details.</td>
+                                <td>12 duplicate definitions. See ROBOT Report for details.</td>
                             
                             
                                 <td></td>
@@ -163,7 +163,7 @@
                                 <img src="../assets/info.svg" height="15px">
                             </td>
                             
-                                <td>11 non-RO properties used.</td>
+                                <td>16 non-RO properties used.</td>
                             
                             
                                 <td><a href="fp7.html">View Report</a></td>
@@ -259,11 +259,11 @@
                                 
                                 
                             
-                            <td class="table-danger" style="text-align:center;">
-                                <img src="../assets/x.svg" height="15px">
+                            <td class="table-warning" style="text-align:center;">
+                                <img src="../assets/warning.svg" height="15px">
                             </td>
                             
-                                <td>last version (2014-12-05) is over three year(s) old</td>
+                                <td>last version (2019-10-28) is over two year(s) old</td>
                             
                             
                                 <td></td>
@@ -303,7 +303,7 @@
                                 <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>3 errors, 12 warnings, 0 info messages.</td>
+                                <td>15 errors, 1 warnings, 28 info messages.</td>
                             
                             
                                 <td><a href="robot_report.html">View Report</a></td>
@@ -328,11 +328,13 @@
                                 
                                     <td><ul>
                                         
-                                        <li>AnnotationAssertion: 1278</li>
+                                        <li>AnnotationAssertion: 6214</li>
                                         
-                                        <li>Declaration: 276</li>
+                                        <li>Declaration: 1147</li>
                                         
-                                        <li>SubClassOf: 366</li>
+                                        <li>SubClassOf: 2969</li>
+                                        
+                                        <li>TransitiveObjectProperty: 1</li>
                                         
                                     </ul></td>
                                 
@@ -342,7 +344,7 @@
                                 <td>Axioms: Number of axioms</td>
                                 
                                 
-                                    <td>1920</td>
+                                    <td>10331</td>
                                 
                             </tr>
                         
@@ -350,7 +352,7 @@
                                 <td>Entities: % of entities reused</td>
                                 
                                 
-                                    <td>47.84</td>
+                                    <td>2.95</td>
                                 
                             </tr>
                         
@@ -358,7 +360,7 @@
                                 <td>Entities: Number of annotation properties</td>
                                 
                                 
-                                    <td>15</td>
+                                    <td>29</td>
                                 
                             </tr>
                         
@@ -366,7 +368,7 @@
                                 <td>Entities: Number of classes</td>
                                 
                                 
-                                    <td>250</td>
+                                    <td>1102</td>
                                 
                             </tr>
                         
@@ -390,7 +392,7 @@
                                 <td>Entities: Number of object properties</td>
                                 
                                 
-                                    <td>11</td>
+                                    <td>16</td>
                                 
                             </tr>
                         
@@ -408,9 +410,9 @@
                                 
                                     <td><ul>
                                         
-                                        <li>Class: 982</li>
+                                        <li>Class: 7040</li>
                                         
-                                        <li>ObjectSomeValuesFrom: 101</li>
+                                        <li>ObjectSomeValuesFrom: 1814</li>
                                         
                                     </ul></td>
                                 
@@ -430,7 +432,7 @@
                                 
                                     <td><ul>
                                         
-                                        <li>_dashboard: 0.741</li>
+                                        <li>_dashboard: 0.735</li>
                                         
                                         <li>_formula: (1*impact+1*dashboard)/2</li>
                                         
@@ -438,9 +440,9 @@
                                         
                                         <li>_impact_external: 0</li>
                                         
-                                        <li>_reuse: 0.478</li>
+                                        <li>_reuse: 0.03</li>
                                         
-                                        <li>oboscore: 0.37</li>
+                                        <li>oboscore: 0.367</li>
                                         
                                     </ul></td>
                                 
@@ -484,21 +486,19 @@
                                 
                                     <td><ul>
                                         
-                                        <li>AEO: 472</li>
+                                        <li>IAO: 1119</li>
                                         
-                                        <li>AEOALT: 112</li>
+                                        <li>XLMOD: 7040</li>
                                         
-                                        <li>CARO: 198</li>
+                                        <li>XLMODALT: 1831</li>
                                         
-                                        <li>CL: 312</li>
+                                        <li>obo: 1048</li>
                                         
-                                        <li>IAO: 236</li>
-                                        
-                                        <li>oboInOwl: 1030</li>
+                                        <li>oboInOwl: 4048</li>
                                         
                                         <li>owl: 2</li>
                                         
-                                        <li>rdfs: 270</li>
+                                        <li>rdfs: 1144</li>
                                         
                                     </ul></td>
                                 
@@ -508,7 +508,7 @@
                                 <td>Info: Which ontologies use it?</td>
                                 
                                 
-                                    <td>['aeo']</td>
+                                    <td>['xlmod']</td>
                                 
                             </tr>
                         

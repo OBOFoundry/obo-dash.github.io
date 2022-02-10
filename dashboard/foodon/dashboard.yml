@@ -6,38 +6,37 @@ base_prefixes:
 changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 211125
-    ClassAssertion: 15
-    Declaration: 32516
+    AnnotationAssertion: 215199
+    ClassAssertion: 22
+    Declaration: 33072
     DisjointClasses: 55
-    EquivalentClasses: 1683
-    FunctionalObjectProperty: 1
-    InverseFunctionalObjectProperty: 1
+    EquivalentClasses: 2217
+    FunctionalObjectProperty: 2
     InverseObjectProperties: 1
-    IrrefexiveObjectProperty: 5
+    IrrefexiveObjectProperty: 4
     ObjectPropertyDomain: 1
     ObjectPropertyRange: 1
     SubAnnotationPropertyOf: 6
-    SubClassOf: 40603
-    SubObjectPropertyOf: 55
-    SymmetricObjectProperty: 4
-    TransitiveObjectProperty: 7
-  'Axioms: Number of axioms': 286079
-  'Entities: % of entities reused': 27.04
-  'Entities: Number of annotation properties': 70
-  'Entities: Number of classes': 31939
-  'Entities: Number of data properties': 1
-  'Entities: Number of individuals': 430
-  'Entities: Number of object properties': 79
+    SubClassOf: 41480
+    SubObjectPropertyOf: 9
+    SymmetricObjectProperty: 2
+    TransitiveObjectProperty: 4
+  'Axioms: Number of axioms': 292075
+  'Entities: % of entities reused': 27.97
+  'Entities: Number of annotation properties': 69
+  'Entities: Number of classes': 32516
+  'Entities: Number of data properties': 2
+  'Entities: Number of individuals': 435
+  'Entities: Number of object properties': 53
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 118518
-    ObjectAllValuesFrom: 106
-    ObjectComplementOf: 130
-    ObjectExactCardinality: 2
-    ObjectIntersectionOf: 1752
+    Class: 123540
+    ObjectAllValuesFrom: 105
+    ObjectComplementOf: 6
+    ObjectExactCardinality: 1
+    ObjectIntersectionOf: 3367
     ObjectMinCardinality: 15
-    ObjectSomeValuesFrom: 8120
+    ObjectSomeValuesFrom: 10049
     ObjectUnionOf: 80
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
@@ -45,7 +44,7 @@ metrics:
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.077
     _impact_external: 0
-    _reuse: 0.27
+    _reuse: 0.28
     oboscore: 0.328
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 14
@@ -54,49 +53,48 @@ metrics:
   'Info: Usage of namespaces in axioms':
     AGRO: 16
     APOLLO_SV: 3
-    BFO: 448
-    BTO: 7
-    CARO: 7
-    CDNO: 378
+    BFO: 2564
+    BTO: 9
+    CDNO: 3239
     CEPH: 4
-    CHEBI: 5141
+    CHEBI: 6115
     COB: 3
     DRON: 4
     ECOCORE: 114
-    ENVO: 658
-    ERO: 4
+    ENVO: 660
+    ERO: 2
     FAO: 480
     FLOPO: 12
-    FOODON: 87442
+    FOODON: 87465
     GAZ: 1473
     GENEPIO: 46
     GEO: 15
     GO: 44
     HANCESTRO: 991
     HP: 2
-    IAO: 79127
-    NCBITaxon: 18388
-    NCIT: 222
+    IAO: 81408
+    MOP: 2
+    NCBITaxon: 18461
+    NCIT: 224
     NCIT_ALT: 2
-    OBI: 180
-    ONS: 510
-    PATO: 695
+    OBI: 184
+    PATO: 1278
     PECO: 26
-    PO: 1595
-    RO: 7683
-    SIO: 3
-    STATO: 5
-    UBERON: 292
+    PO: 1563
+    RO: 8421
+    STATO: 6
+    UBERON: 304
     UO: 343
     dc: 147
-    dc11: 1572
-    efo: 2
+    dc11: 1665
+    efo: 1
     foaf: 5
-    obo: 2307
-    oboInOwl: 83911
-    owl: 2061
+    obo: 2304
+    oboInOwl: 85036
+    owl: 2062
+    prefix_unknown: 28
     rdf: 2
-    rdfs: 46508
+    rdfs: 47056
     schema: 185
   'Info: Which ontologies use it?':
   - agro
@@ -128,7 +126,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 485 duplicate definitions. 10 multiple definitions. 12371 missing definitions.
+    comment: 485 duplicate definitions. 10 multiple definitions. 12417 missing definitions.
       See ROBOT Report for details.
     status: ERROR
   FP07 Relations:
@@ -143,7 +141,7 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 16 duplicate labels. 178 multiple labels. 4 missing labels. See ROBOT
+    comment: 16 duplicate labels. 174 multiple labels. 4 missing labels. See ROBOT
       Report for details.
     status: ERROR
   FP16 Maintenance:
@@ -151,14 +149,14 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 783 errors, 13873 warnings, 391 info messages.
+    comment: 753 errors, 13914 warnings, 390 info messages.
     file: robot_report
     results:
-      ERROR: 783
-      INFO: 391
-      WARN: 13873
+      ERROR: 753
+      INFO: 390
+      WARN: 13914
     status: ERROR
-sha256_hash: b4be03fb1307382bda5b698e8d96fac71e72493ab76f717a86b608ef6ff13aca
+sha256_hash: ef8fa298bda81e5b5c55df91c9ee263c957641fe831f913bb8f12210fcb6d768
 summary:
   comment: 4 errors
   status: ERROR
@@ -166,4 +164,4 @@ summary:
     ERROR: 4
     INFO: 1
     WARN: 0
-version: http://purl.obolibrary.org/obo/foodon/releases/2021-11-25/foodon.owl
+version: http://purl.obolibrary.org/obo/foodon/releases/2022-02-01/foodon.owl

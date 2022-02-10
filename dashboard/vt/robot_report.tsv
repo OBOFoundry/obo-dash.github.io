@@ -1,6 +1,6 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/TEMP	dc:license	
 ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/TEMP	dc:description	
+ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/TEMP	dc:license	
 ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/TEMP	dc:title	
 ERROR	duplicate_label	pulmonary blood flow trait	rdfs:label	pulmonary blood flow trait
 ERROR	duplicate_label	pulmonary blood flow trait	rdfs:label	pulmonary blood flow trait
@@ -8,6 +8,20 @@ ERROR	duplicate_label	ear orientation trait	rdfs:label	ear orientation trait
 ERROR	duplicate_label	ear orientation trait	rdfs:label	ear orientation trait
 ERROR	duplicate_label	blood molecular composition trait	rdfs:label	blood molecular composition trait
 ERROR	duplicate_label	blood molecular composition trait	rdfs:label	blood molecular composition trait
+WARN	duplicate_label_synonym	dermis thickness	oboInOwl:hasExactSynonym	dermis thickness
+WARN	duplicate_label_synonym	onset of fertility	oboInOwl:hasExactSynonym	onset of fertility
+WARN	duplicate_label_synonym	pulmonary endothelial cell surface area	oboInOwl:hasExactSynonym	pulmonary endothelial cell surface area
+WARN	duplicate_label_synonym	cranium size trait	oboInOwl:hasExactSynonym	cranium size trait
+WARN	duplicate_label_synonym	tibia area	oboInOwl:hasExactSynonym	tibia area
+WARN	missing_definition	mammary gland secreted fluid morphology trait	IAO:0000115	
+WARN	missing_definition	mammary gland growth trait	IAO:0000115	
+WARN	missing_definition	total urine protein amount	IAO:0000115	
+WARN	missing_definition	total milk casein amount	IAO:0000115	
+WARN	missing_definition	total milk mineral amount	IAO:0000115	
+WARN	missing_definition	organism trait	IAO:0000115	
+WARN	missing_definition	maternal behavior trait	IAO:0000115	
+WARN	missing_definition	maternal nurturing trait	IAO:0000115	
+WARN	missing_definition	touch perception trait	IAO:0000115	
 WARN	missing_obsolete_label	red blood cell quantity	rdfs:label	red blood cell quantity
 WARN	missing_obsolete_label	ear orientation trait	rdfs:label	ear orientation trait
 WARN	missing_obsolete_label	total urine molecular amount	rdfs:label	total urine molecular amount
@@ -101,19 +115,5 @@ WARN	missing_obsolete_label	total heart ventricle size trait	rdfs:label	total he
 WARN	missing_obsolete_label	temperament trait	rdfs:label	temperament trait
 WARN	missing_obsolete_label	pulmonary blood flow trait	rdfs:label	pulmonary blood flow trait
 WARN	missing_obsolete_label	venous return amount	rdfs:label	venous return amount
-WARN	duplicate_label_synonym	dermis thickness	oboInOwl:hasExactSynonym	dermis thickness
-WARN	duplicate_label_synonym	onset of fertility	oboInOwl:hasExactSynonym	onset of fertility
-WARN	duplicate_label_synonym	pulmonary endothelial cell surface area	oboInOwl:hasExactSynonym	pulmonary endothelial cell surface area
-WARN	duplicate_label_synonym	cranium size trait	oboInOwl:hasExactSynonym	cranium size trait
-WARN	duplicate_label_synonym	tibia area	oboInOwl:hasExactSynonym	tibia area
-WARN	missing_definition	mammary gland secreted fluid morphology trait	IAO:0000115	
-WARN	missing_definition	mammary gland growth trait	IAO:0000115	
-WARN	missing_definition	total urine protein amount	IAO:0000115	
-WARN	missing_definition	total milk casein amount	IAO:0000115	
-WARN	missing_definition	total milk mineral amount	IAO:0000115	
-WARN	missing_definition	organism trait	IAO:0000115	
-WARN	missing_definition	maternal behavior trait	IAO:0000115	
-WARN	missing_definition	maternal nurturing trait	IAO:0000115	
-WARN	missing_definition	touch perception trait	IAO:0000115	
-INFO	missing_superclass	vertebrate trait	rdfs:subClassOf	
 INFO	lowercase_definition	medulla oblongata dopamine amount	IAO:0000115	of this catecholamine neurotransmitter, derived from tyrosine and the precursor to norepinephrine and epinephrine.
+INFO	missing_superclass	vertebrate trait	rdfs:subClassOf	

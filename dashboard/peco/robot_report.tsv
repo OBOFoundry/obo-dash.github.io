@@ -1,5 +1,7 @@
 Level	Rule Name	Subject	Property	Value
 ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/peco.owl	dc:title	
+ERROR	multiple_labels	antimicrobial agent exposure	rdfs:label	antibiotic exposure
+ERROR	multiple_labels	antimicrobial agent exposure	rdfs:label	antimicrobial agent exposure
 ERROR	multiple_definitions	nematicide exposure	IAO:0000115	A pesticide exposure (PECO:0007167) involving the application of a nematicide; a chemical entity or mixture of chemical entities to kill plant-parasitic nematodes.
 ERROR	multiple_definitions	nematicide exposure	IAO:0000115	An exposure to a chemical that has the role of nematicide
 ERROR	multiple_definitions	antimicrobial agent exposure	IAO:0000115	A chemical exposure (PECO:0007189) involving the use of antibiotic for selection purposes.
@@ -22,8 +24,6 @@ ERROR	multiple_definitions	fungicide exposure	IAO:0000115	A pesticide exposure (
 ERROR	multiple_definitions	fungicide exposure	IAO:0000115	An exposure to a chemical that has the role of fungicide
 ERROR	multiple_definitions	insecticide exposure	IAO:0000115	A pesticide exposure (PECO:0007167) involving the application of an insecticide; a chemical entity or mixture of chemical entities.
 ERROR	multiple_definitions	insecticide exposure	IAO:0000115	An exposure to a chemical that has the role of insecticide
-ERROR	multiple_labels	antimicrobial agent exposure	rdfs:label	antibiotic exposure
-ERROR	multiple_labels	antimicrobial agent exposure	rdfs:label	antimicrobial agent exposure
 ERROR	duplicate_definition	Meloidogyne arenaria exposure	IAO:0000115	The treatment involving exposure of plant to the pest Meloidogyne oryzae. It is a causal agent for rice root knot nematode disease.
 ERROR	duplicate_definition	Meloidogyne oryzae exposure	IAO:0000115	The treatment involving exposure of plant to the pest Meloidogyne oryzae. It is a causal agent for rice root knot nematode disease.
 ERROR	duplicate_definition	Meloidogyne javanica exposure	IAO:0000115	The treatment involving exposure of plant to the pest Meloidogyne oryzae. It is a causal agent for rice root knot nematode disease.
@@ -33,6 +33,25 @@ ERROR	duplicate_definition	Hirschmaniella imamuri exposure	IAO:0000115	The treat
 ERROR	duplicate_definition	Hirschmaniella caudacrena exposure	IAO:0000115	The treatment involving exposure of plant to the pest Hirschmaniella imamuri. It is a causal agent for rice root nematode disease.
 ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/peco.owl	dc:description	
 ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/peco.owl	dc:license	
+WARN	missing_obsolete_label	plant growth environment	rdfs:label	plant growth environment
+WARN	missing_obsolete_label	monocot mixed crop neighbor	rdfs:label	monocot mixed crop neighbor
+WARN	missing_obsolete_label	monocot weed plant neighbor	rdfs:label	monocot weed plant neighbor
+WARN	missing_obsolete_label	dicot weed plant neighbor	rdfs:label	dicot weed plant neighbor
+WARN	missing_obsolete_label	dicot mixed crop neighbor	rdfs:label	dicot mixed crop neighbor
+WARN	missing_obsolete_label	soil flora	rdfs:label	soil flora
+WARN	missing_obsolete_label	soil fauna	rdfs:label	soil fauna
+WARN	missing_obsolete_label	Proteobacterial plant exposure	rdfs:label	Proteobacterial plant exposure
+WARN	missing_obsolete_label	pest/pathogen/animal/plant environment	rdfs:label	pest/pathogen/animal/plant environment
+WARN	missing_obsolete_label	genetic environment	rdfs:label	genetic environment
+WARN	missing_obsolete_label	facultative anaerobic environment	rdfs:label	facultative anaerobic environment
+WARN	missing_obsolete_label	normal temperature regimen	rdfs:label	normal temperature regimen
+WARN	missing_obsolete_label	optimal temperature regimen	rdfs:label	optimal temperature regimen
+WARN	missing_obsolete_label	genetic background	rdfs:label	genetic background
+WARN	missing_obsolete_label	germplasm	rdfs:label	germplasm
+WARN	missing_obsolete_label	genotype	rdfs:label	genotype
+WARN	missing_obsolete_label	cytoplasmic genetic background	rdfs:label	cytoplasmic genetic background
+WARN	missing_obsolete_label	nuclear genetic background	rdfs:label	nuclear genetic background
+WARN	missing_obsolete_label	sub-sahara region	rdfs:label	sub-sahara region
 WARN	missing_definition	loam content exposure	IAO:0000115	
 WARN	missing_definition	high light intensity exposure	IAO:0000115	
 WARN	missing_definition	moderate light intensity exposure	IAO:0000115	
@@ -67,22 +86,3 @@ WARN	missing_definition	radio wave exposure	IAO:0000115
 WARN	missing_definition	stratosphere exposure	IAO:0000115	
 WARN	missing_definition	supersonic exposure	IAO:0000115	
 WARN	missing_definition	part of	IAO:0000115	
-WARN	missing_obsolete_label	plant growth environment	rdfs:label	plant growth environment
-WARN	missing_obsolete_label	monocot mixed crop neighbor	rdfs:label	monocot mixed crop neighbor
-WARN	missing_obsolete_label	monocot weed plant neighbor	rdfs:label	monocot weed plant neighbor
-WARN	missing_obsolete_label	dicot weed plant neighbor	rdfs:label	dicot weed plant neighbor
-WARN	missing_obsolete_label	dicot mixed crop neighbor	rdfs:label	dicot mixed crop neighbor
-WARN	missing_obsolete_label	soil flora	rdfs:label	soil flora
-WARN	missing_obsolete_label	soil fauna	rdfs:label	soil fauna
-WARN	missing_obsolete_label	Proteobacterial plant exposure	rdfs:label	Proteobacterial plant exposure
-WARN	missing_obsolete_label	pest/pathogen/animal/plant environment	rdfs:label	pest/pathogen/animal/plant environment
-WARN	missing_obsolete_label	genetic environment	rdfs:label	genetic environment
-WARN	missing_obsolete_label	facultative anaerobic environment	rdfs:label	facultative anaerobic environment
-WARN	missing_obsolete_label	normal temperature regimen	rdfs:label	normal temperature regimen
-WARN	missing_obsolete_label	optimal temperature regimen	rdfs:label	optimal temperature regimen
-WARN	missing_obsolete_label	genetic background	rdfs:label	genetic background
-WARN	missing_obsolete_label	germplasm	rdfs:label	germplasm
-WARN	missing_obsolete_label	genotype	rdfs:label	genotype
-WARN	missing_obsolete_label	cytoplasmic genetic background	rdfs:label	cytoplasmic genetic background
-WARN	missing_obsolete_label	nuclear genetic background	rdfs:label	nuclear genetic background
-WARN	missing_obsolete_label	sub-sahara region	rdfs:label	sub-sahara region

@@ -1,24 +1,11 @@
 Level	Rule Name	Subject	Property	Value
 ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/caro/caro.owl	dc:license	
-ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/caro/caro.owl	dc:title	
 ERROR	missing_label	obo:caro#core	rdfs:label	
 ERROR	missing_label	obo:caro#plus	rdfs:label	
 ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/caro/caro.owl	dc:description	
-WARN	missing_obsolete_label	anatomical cluster	rdfs:label	anatomical cluster
-WARN	missing_obsolete_label	anatomical group	rdfs:label	anatomical group
-WARN	missing_obsolete_label	basal lamina	rdfs:label	basal lamina
-WARN	missing_obsolete_label	epithelial cell	rdfs:label	epithelial cell
-WARN	missing_definition	unpaired appendage	IAO:0000115	
-WARN	missing_definition	anatomical plane	IAO:0000115	
-WARN	missing_definition	epithelial sac	IAO:0000115	
-WARN	missing_definition	obo:caro#core	IAO:0000115	
-WARN	missing_definition	obo:caro#plus	IAO:0000115	
-WARN	equivalent_pair	cell	owl:equivalentClass	CL:0000003
-WARN	equivalent_pair	cell	owl:equivalentClass	GO:0005623
-WARN	equivalent_pair	cell part	owl:equivalentClass	GO:0044464
-WARN	equivalent_pair	cellular organism	owl:equivalentClass	NCBITaxon:131567
-WARN	multiple_equivalent_classes	cell	owl:equivalentClass	CL:0000003
-WARN	multiple_equivalent_classes	cell	owl:equivalentClass	GO:0005623
+ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/caro/caro.owl	dc:title	
+WARN	missing_subset_declaration	obo:caro#core	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:caro#plus	rdfs:subPropertyOf	
 WARN	annotation_whitespace	anatomical line	IAO:0000112	A line between two points where these are typically used to measure some aspect of morphology, such as the distance between the eyes or the length of a leg. 
 WARN	annotation_whitespace	anatomical point	IAO:0000112	The tip of the nose or other material anatomical entity, or the end of an anatomical line. 
 WARN	annotation_whitespace	anatomical group	IAO:0000115	"Anatomical structure consisting of at least two non-overlapping organs, multi-tissue aggregates or portion of tissues or cells of different types that does not constitute an organism, organ, multi-tissue aggregate, or portion of tissue.
@@ -26,8 +13,17 @@ WARN	annotation_whitespace	anatomical group	IAO:0000115	"Anatomical structure co
 WARN	annotation_whitespace	anatomical surface	IAO:0000115	"A two dimensional anatomical structure that is the boundary between an anatomical structure and an anatomical substance, an anatomical space or the organism's environment.  Examples include the surface of your skin, the surface of the lining of your gut; the surface of the endothelium of you aorta that is in contact with blood.
 @en"
 WARN	annotation_whitespace	gross anatomical part	IAO:0000115	Anatomical structure that is part of a multicellular organism and is at the gross anatomical level, e.g. above the level of a cell.  Included are portions of organism substances such as blood, multi-cell-part structures such as axon tracts, acellular anatomical structures such as hair, and organism subdivisions such as head. Excluded is the whole organism and more granular parts of the organism, such as atoms, molecules, macromolecular complexes and cells. 
-WARN	missing_subset_declaration	obo:caro#core	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:caro#plus	rdfs:subPropertyOf	
+WARN	equivalent_pair	cell	owl:equivalentClass	CL:0000003
+WARN	equivalent_pair	cellular organism	owl:equivalentClass	NCBITaxon:131567
+WARN	missing_definition	unpaired appendage	IAO:0000115	
+WARN	missing_definition	anatomical plane	IAO:0000115	
+WARN	missing_definition	epithelial sac	IAO:0000115	
+WARN	missing_definition	obo:caro#core	IAO:0000115	
+WARN	missing_definition	obo:caro#plus	IAO:0000115	
+WARN	missing_obsolete_label	anatomical cluster	rdfs:label	anatomical cluster
+WARN	missing_obsolete_label	anatomical group	rdfs:label	anatomical group
+WARN	missing_obsolete_label	basal lamina	rdfs:label	basal lamina
+WARN	missing_obsolete_label	epithelial cell	rdfs:label	epithelial cell
 INFO	missing_superclass	connected anatomical structure	rdfs:subClassOf	
 INFO	missing_superclass	acellular anatomical structure	rdfs:subClassOf	
 INFO	missing_superclass	cell space	rdfs:subClassOf	

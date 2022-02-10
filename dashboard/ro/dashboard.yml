@@ -3,39 +3,39 @@ base_prefixes:
 - RO
 - ROALT
 - RO
-changed: true
+changed: false
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 3546
+    AnnotationAssertion: 3567
     AnnotationPropertyRangeOf: 1
     AsymmetricObjectProperty: 2
     DataPropertyRange: 1
-    Declaration: 775
+    Declaration: 783
     DisjointClasses: 11
     DisjointObjectProperties: 10
     FunctionalObjectProperty: 3
     InverseFunctionalObjectProperty: 1
     InverseObjectProperties: 107
     IrrefexiveObjectProperty: 7
-    ObjectPropertyDomain: 141
-    ObjectPropertyRange: 139
+    ObjectPropertyDomain: 145
+    ObjectPropertyRange: 142
     Rule: 23
     SubAnnotationPropertyOf: 62
     SubClassOf: 32
-    SubObjectPropertyOf: 661
+    SubObjectPropertyOf: 663
     SubPropertyChainOf: 148
     SymmetricObjectProperty: 78
     TransitiveObjectProperty: 46
-  'Axioms: Number of axioms': 5794
-  'Entities: % of entities reused': 14.12
+  'Axioms: Number of axioms': 5832
+  'Entities: % of entities reused': 13.98
   'Entities: Number of annotation properties': 114
   'Entities: Number of classes': 44
   'Entities: Number of data properties': 1
   'Entities: Number of individuals': 0
-  'Entities: Number of object properties': 621
+  'Entities: Number of object properties': 629
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 433
+    Class: 440
     ObjectAllValuesFrom: 12
     ObjectComplementOf: 2
     ObjectHasSelf: 2
@@ -46,34 +46,34 @@ metrics:
   'Info: Experimental OBO score':
     _dashboard: 0.863
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.736
+    _impact: 0.742
     _impact_external: 0.25
-    _reuse: 0.141
-    oboscore: 0.799
+    _reuse: 0.14
+    oboscore: 0.802
   'Info: How many externally documented uses?': 1
-  'Info: How many ontologies use it?': 134
+  'Info: How many ontologies use it?': 135
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     BFO: 441
     CARO: 59
-    CL: 20
+    CL: 21
     ENVO: 3
     GO: 15
-    IAO: 1689
+    IAO: 1695
     OGMS: 13
-    PATO: 9
-    RO: 3183
+    PATO: 15
+    RO: 3202
     UPHENO: 4
     dc: 30
-    dc11: 144
+    dc11: 145
     foaf: 4
     obo: 10
-    oboInOwl: 691
+    oboInOwl: 699
     owl: 16
     prefix_unknown: 45
     rdf: 16
-    rdfs: 1008
+    rdfs: 1020
     skos: 4
     xsd: 13
   'Info: Which ontologies use it?':
@@ -178,6 +178,7 @@ metrics:
   - ornaseq
   - ovae
   - pato
+  - pcl
   - pco
   - pdro
   - pdumdv
@@ -226,7 +227,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 144 missing definitions. See ROBOT Report for details.
+    comment: 145 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     status: PASS
@@ -244,14 +245,14 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 5 errors, 176 warnings, 230 info messages.
+    comment: 5 errors, 177 warnings, 236 info messages.
     file: robot_report
     results:
       ERROR: 5
-      INFO: 230
-      WARN: 176
+      INFO: 236
+      WARN: 177
     status: ERROR
-sha256_hash: 885b40a77af5e220345b532884a4a1300862ff4fa0f7cfdb957c39af9b00320c
+sha256_hash: 467d74fa24f1a7513af4f35e2eca91e1b726bbd58ebb504d4606b92810575063
 summary:
   comment: 2 errors
   status: ERROR
@@ -259,4 +260,4 @@ summary:
     ERROR: 2
     INFO: 0
     WARN: 1
-version: http://purl.obolibrary.org/obo/ro/releases/2022-01-20/ro-base.owl
+version: http://purl.obolibrary.org/obo/ro/releases/2022-02-07/ro-base.owl
