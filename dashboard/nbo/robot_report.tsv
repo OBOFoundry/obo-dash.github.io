@@ -1,8 +1,13 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/nbo/nbo-base.owl	dc:title	
-ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/nbo/nbo-base.owl	dc:description	
+ERROR	duplicate_label	active foraging behavior	rdfs:label	active foraging behavior@en
+ERROR	duplicate_label	active foraging behavior	rdfs:label	active foraging behavior@en
+ERROR	deprecated_boolean_datatype	behavior related to feelings experiencing	owl:deprecated	true
+ERROR	missing_label	GO:0007625	rdfs:label	
+ERROR	missing_label	GO:0007629	rdfs:label	
+ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/nbo/nbo-base.owl	dc:license	
 ERROR	multiple_definitions	agonistic alarm	IAO:0000115	Alarm behavior triggered by agonistic actions or postures@en
 ERROR	multiple_definitions	agonistic alarm	IAO:0000115	Alarm behavior triggered by agonistic actions or postures.@en
+ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/nbo/nbo-base.owl	dc:title	
 ERROR	duplicate_definition	active foraging behavior	IAO:0000115	Feeding behavior during which a living entity acquires food and energy by actively searching for food resources.
 ERROR	duplicate_definition	active foraging behavior	IAO:0000115	Feeding behavior during which a living entity acquires food and energy by actively searching for food resources.
 ERROR	duplicate_definition	smoking behavior	IAO:0000115	Consumption behavior that involves inhaling a material (such as finely ground tobacco leaves) through the nose.
@@ -15,12 +20,7 @@ ERROR	duplicate_definition	regulation of withdrawal response	IAO:0000115	"\""Any
 ERROR	duplicate_definition	regulation of addiction response	IAO:0000115	"\""Any process that modulates the frequency, rate or extent of withdrawal response.\"" [NBOC:GVG]"
 ERROR	duplicate_definition	regulation of behavioral response to chemical stimulus	IAO:0000115	"\""Any process that modulates the frequency, rate or extent of behavioral response to chemical stimulus.\"" [NBOC:GVG]"
 ERROR	duplicate_definition	regulation of behavioral response to addictive substance	IAO:0000115	"\""Any process that modulates the frequency, rate or extent of behavioral response to chemical stimulus.\"" [NBOC:GVG]"
-ERROR	missing_label	GO:0007625	rdfs:label	
-ERROR	missing_label	GO:0007629	rdfs:label	
-ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/nbo/nbo-base.owl	dc:license	
-ERROR	deprecated_boolean_datatype	behavior related to feelings experiencing	owl:deprecated	true
-ERROR	duplicate_label	active foraging behavior	rdfs:label	active foraging behavior@en
-ERROR	duplicate_label	active foraging behavior	rdfs:label	active foraging behavior@en
+ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/nbo/nbo-base.owl	dc:description	
 WARN	equivalent_class_axiom_no_genus	regulation of eating behavior	RO:0002211	food consumption
 WARN	equivalent_class_axiom_no_genus	regulation of drinking behavior	RO:0002211	liquid consumption
 WARN	equivalent_class_axiom_no_genus	regulation of behavior	RO:0002211	behavior process
@@ -37,6 +37,18 @@ WARN	equivalent_class_axiom_no_genus	regulation of behavioral response to chemic
 WARN	equivalent_class_axiom_no_genus	regulation of behavioral response to addictive substance	RO:0002211	behavioral response to addictive substance
 WARN	equivalent_class_axiom_no_genus	regulation of withdrawal response	RO:0002211	withdrawal response
 WARN	equivalent_class_axiom_no_genus	regulation of addiction response	RO:0002211	addiction response
+WARN	duplicate_exact_synonym	seizures	oboInOwl:hasExactSynonym	unprovoked seizure
+WARN	duplicate_exact_synonym	epilepsy	oboInOwl:hasExactSynonym	unprovoked seizure
+WARN	duplicate_exact_synonym	REM sleep behavior disorder	oboInOwl:hasExactSynonym	RBD
+WARN	duplicate_exact_synonym	recurrent brief depression	oboInOwl:hasExactSynonym	RBD
+WARN	duplicate_exact_synonym	pathological anxiety	oboInOwl:hasExactSynonym	hysteria
+WARN	duplicate_exact_synonym	conversion disorder	oboInOwl:hasExactSynonym	hysteria
+WARN	duplicate_exact_synonym	GO:0007625	oboInOwl:hasExactSynonym	groom@en
+WARN	duplicate_exact_synonym	grooming behavior	oboInOwl:hasExactSynonym	groom@en
+WARN	duplicate_exact_synonym	GO:0007629	oboInOwl:hasExactSynonym	fly@en
+WARN	duplicate_exact_synonym	flight behavior	oboInOwl:hasExactSynonym	fly@en
+WARN	duplicate_exact_synonym	discriminatory behavior	oboInOwl:hasExactSynonym	<new synonym>
+WARN	duplicate_exact_synonym	bruxism	oboInOwl:hasExactSynonym	<new synonym>
 WARN	missing_definition	GO:0007625	IAO:0000115	
 WARN	missing_definition	GO:0007629	IAO:0000115	
 WARN	missing_definition	whole body movement	IAO:0000115	
@@ -186,15 +198,3 @@ WARN	missing_definition	simple partial onset, followed by impairment of consciou
 WARN	missing_definition	with impairment of consciousness at onset	IAO:0000115	
 WARN	missing_definition	childhood absence epilepsy	IAO:0000115	
 WARN	missing_definition	continuous seizure	IAO:0000115	
-WARN	missing_definition	non-convulsive status epilepticus	IAO:0000115	
-WARN	missing_definition	generalised convulsive status epilepticus	IAO:0000115	
-WARN	missing_definition	absence status epilepticus	IAO:0000115	
-WARN	missing_definition	aggressive behavior by intent	IAO:0000115	
-WARN	missing_definition	aggressive behavior by means	IAO:0000115	
-WARN	missing_definition	perception behavior phenotype	IAO:0000115	
-WARN	missing_definition	spatial perception	IAO:0000115	
-WARN	missing_definition	jaw movement	IAO:0000115	
-WARN	missing_definition	blinking	IAO:0000115	
-WARN	missing_definition	eyelid movement	IAO:0000115	
-WARN	missing_definition	perception behavior by means	IAO:0000115	
-WARN	missing_definition	electrical nociceptive behavior	IAO:0000115	

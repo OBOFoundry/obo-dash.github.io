@@ -6,33 +6,33 @@ base_prefixes:
 changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 15282
-    Declaration: 3713
+    AnnotationAssertion: 15304
+    Declaration: 3724
     EquivalentClasses: 31
     SubAnnotationPropertyOf: 2
-    SubClassOf: 3782
+    SubClassOf: 3786
     SubObjectPropertyOf: 3
-  'Axioms: Number of axioms': 22813
-  'Entities: % of entities reused': 2.82
-  'Entities: Number of annotation properties': 24
-  'Entities: Number of classes': 3684
+  'Axioms: Number of axioms': 22850
+  'Entities: % of entities reused': 2.92
+  'Entities: Number of annotation properties': 27
+  'Entities: Number of classes': 3687
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 11
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 11343
+    Class: 11354
     ObjectIntersectionOf: 29
     ObjectSomeValuesFrom: 158
     ObjectUnionOf: 2
-  'Info: Does the ontology fall under OWL 2 DL?': false
+  'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.739
+    _dashboard: 0.789
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.022
     _impact_external: 0
-    _reuse: 0.028
-    oboscore: 0.381
+    _reuse: 0.029
+    oboscore: 0.406
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 4
   'Info: Logical consistency': true
@@ -40,15 +40,18 @@ metrics:
   'Info: Usage of namespaces in axioms':
     BFO: 180
     CHEBI: 236
-    IAO: 3684
-    MOP: 11090
+    GO: 2
+    IAO: 3689
+    MOP: 11099
     MOPALT: 4
     REX: 2
     RO: 2
     RXNO: 7
-    oboInOwl: 8230
+    dc: 1
+    dc11: 8
+    oboInOwl: 8243
     owl: 47
-    rdfs: 6993
+    rdfs: 6998
   'Info: Which ontologies use it?':
   - cob
   - dideo
@@ -86,8 +89,7 @@ results:
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
-    comment: last version (2014-09-03) is over three year(s) old
-    status: ERROR
+    status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
@@ -98,12 +100,12 @@ results:
       INFO: 1
       WARN: 542
     status: WARN
-sha256_hash: 11477c4f082e3ccbad0744265a1bd4ae4e58d62e3703c9a1f85d25979d8fa5a6
+sha256_hash: 0a1c5271adfd561cf54528e567a127b0e8d914c8c521e9a299c230b7b4a38133
 summary:
-  comment: 3 errors
+  comment: 2 errors
   status: ERROR
   summary_count:
-    ERROR: 3
+    ERROR: 2
     INFO: 1
     WARN: 2
-version: http://purl.obolibrary.org/obo/mop/releases/2014-09-03/mop.owl
+version: http://purl.obolibrary.org/obo/mop/releases/2022-02-01/mop.owl

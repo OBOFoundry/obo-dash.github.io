@@ -1,4 +1,5 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/po.owl	dc:title	
 ERROR	missing_label	obo:po#Angiosperm	rdfs:label	
 ERROR	missing_label	obo:po#Arabidopsis	rdfs:label	
 ERROR	missing_label	obo:po#Bryophytes	rdfs:label	
@@ -14,9 +15,19 @@ ERROR	missing_label	obo:po#Rice	rdfs:label
 ERROR	missing_label	obo:po#Tomato	rdfs:label	
 ERROR	missing_label	obo:po#TraitNet	rdfs:label	
 ERROR	missing_label	obo:po#reference	rdfs:label	
-ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/po.owl	dc:title	
 ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/po.owl	dc:license	
 ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/po.owl	dc:description	
+WARN	duplicate_exact_synonym	schizocarp fruit	oboInOwl:hasExactSynonym	nutlet (exact)
+WARN	duplicate_exact_synonym	nut fruit	oboInOwl:hasExactSynonym	nutlet (exact)
+WARN	duplicate_exact_synonym	drepanium inflorescence	oboInOwl:hasExactSynonym	drepanium (exact)
+WARN	duplicate_exact_synonym	compound drepanium inflorescence	oboInOwl:hasExactSynonym	drepanium (exact)
+WARN	duplicate_exact_synonym	coma	oboInOwl:hasExactSynonym	comae (exact, plural)
+WARN	duplicate_exact_synonym	gametophyte coma	oboInOwl:hasExactSynonym	comae (exact, plural)
+WARN	missing_synonymtype_declaration	German synonym (exact)	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	Japanese synonym (exact)	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	Plural	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	Spanish synonym (exact)	rdfs:subPropertyOf	
+WARN	annotation_whitespace	E emerged root elongation	IAO:0000115	OBSOLETE. The stage at which the emerged root starts to elongate. 
 WARN	missing_subset_declaration	obo:po#Angiosperm	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	obo:po#Arabidopsis	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	obo:po#Bryophytes	rdfs:subPropertyOf	
@@ -52,17 +63,6 @@ WARN	missing_definition	obo:po#Tomato	IAO:0000115
 WARN	missing_definition	obo:po#TraitNet	IAO:0000115	
 WARN	missing_definition	isolated from germplasm	IAO:0000115	
 WARN	missing_definition	obo:po#reference	IAO:0000115	
-WARN	annotation_whitespace	E emerged root elongation	IAO:0000115	OBSOLETE. The stage at which the emerged root starts to elongate. 
-WARN	duplicate_exact_synonym	schizocarp fruit	oboInOwl:hasExactSynonym	nutlet (exact)
-WARN	duplicate_exact_synonym	nut fruit	oboInOwl:hasExactSynonym	nutlet (exact)
-WARN	duplicate_exact_synonym	drepanium inflorescence	oboInOwl:hasExactSynonym	drepanium (exact)
-WARN	duplicate_exact_synonym	compound drepanium inflorescence	oboInOwl:hasExactSynonym	drepanium (exact)
-WARN	duplicate_exact_synonym	coma	oboInOwl:hasExactSynonym	comae (exact, plural)
-WARN	duplicate_exact_synonym	gametophyte coma	oboInOwl:hasExactSynonym	comae (exact, plural)
-WARN	missing_synonymtype_declaration	German synonym (exact)	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	Japanese synonym (exact)	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	Plural	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	Spanish synonym (exact)	rdfs:subPropertyOf	
 WARN	missing_obsolete_label	starch sheath cell	rdfs:label	starch sheath cell
 WARN	missing_obsolete_label	casparian strip	rdfs:label	casparian strip
 WARN	missing_obsolete_label	filiform apparatus	rdfs:label	filiform apparatus

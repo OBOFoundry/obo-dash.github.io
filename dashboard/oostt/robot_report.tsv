@@ -1,16 +1,24 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/oostt.owl	dc:description	
+ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/oostt.owl	dc:license	
 ERROR	deprecated_class_reference	blank node	owl:someValuesFrom	obsolete_anesthesia services availability plan specification
 ERROR	deprecated_class_reference	blank node	owl:someValuesFrom	obsolete_board eligible trauma surgeon role
 ERROR	deprecated_class_reference	blank node	owl:someValuesFrom	obsolete_board certified trauma surgeon role
 ERROR	deprecated_class_reference	blank node	owl:someValuesFrom	obsolete_on call exclusivity obligee role
+ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/oostt.owl	dc:description	
 ERROR	duplicate_definition	aggregate of level 1 trauma centers	IAO:0000115	An aggregate of organizations whose members are all bearer of a level 1 trauma center role.@en
 ERROR	duplicate_definition	aggregate of level 2 trauma centers	IAO:0000115	An aggregate of organizations whose members are all bearer of a level 1 trauma center role.@en
 ERROR	duplicate_definition	aggregate of emergency medical services pediatric ground transportation agencies	IAO:0000115	An aggregate of organization that consists only of emergencny medical service pediatric ground transportation agencies.@en
 ERROR	duplicate_definition	aggregate of emergency medical services pediatric air transportation agencies	IAO:0000115	An aggregate of organization that consists only of emergencny medical service pediatric ground transportation agencies.@en
 ERROR	duplicate_definition	trauma multidisciplinary peer review committee	IAO:0000115	A committee with members from multiple specialties that engages in case review of trauma cases.@en
 ERROR	duplicate_definition	trauma peer review committee	IAO:0000115	A committee with members from multiple specialties that engages in case review of trauma cases.@en
-ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/oostt.owl	dc:license	
+WARN	equivalent_class_axiom_no_genus	prehospital protocol development	OBI:0000299	prehospital protocol
+WARN	equivalent_class_axiom_no_genus	successful completion of ATLS course information content entity	OBI:0000312	advanced trauma life support course
+WARN	equivalent_class_axiom_no_genus	critical care certificate	OBI:0000312	critical care certificate course
+WARN	equivalent_class_axiom_no_genus	successful completion of trauma surgery fellowship information content entity	OBI:0000312	trauma surgery fellowship program
+WARN	equivalent_class_axiom_no_genus	successful completion of anesthesiology residency information content entity	OBI:0000312	anesthesiology residency program
+WARN	equivalent_class_axiom_no_genus	aggregate of emergency medical service transporting agency	BFO:0000075	emergency medical service transportation agency
+WARN	equivalent_class_axiom_no_genus	aggregate of emergency medical services pediatric ground transportation agencies	BFO:0000075	emergency medical services pediatric ground transportation agency
+WARN	equivalent_class_axiom_no_genus	aggregate of emergency medical services pediatric air transportation agencies	BFO:0000075	emergency medical services pediatric air transportation agency
 WARN	duplicate_label_synonym	general surgeon role	IAO:0000118	general surgeon role@en
 WARN	missing_definition	OOSTT user-centered description	IAO:0000115	
 WARN	missing_definition	governmental organization	IAO:0000115	
@@ -22,14 +30,6 @@ WARN	missing_definition	pediatric burn center role	IAO:0000115
 WARN	missing_definition	traumatic brain injury rehabilitation organization role	IAO:0000115	
 WARN	missing_definition	spinal cord injury center role	IAO:0000115	
 WARN	missing_definition	board certified neurosurgeon role	IAO:0000115	
-WARN	equivalent_class_axiom_no_genus	prehospital protocol development	OBI:0000299	prehospital protocol
-WARN	equivalent_class_axiom_no_genus	successful completion of ATLS course information content entity	OBI:0000312	advanced trauma life support course
-WARN	equivalent_class_axiom_no_genus	critical care certificate	OBI:0000312	critical care certificate course
-WARN	equivalent_class_axiom_no_genus	successful completion of trauma surgery fellowship information content entity	OBI:0000312	trauma surgery fellowship program
-WARN	equivalent_class_axiom_no_genus	successful completion of anesthesiology residency information content entity	OBI:0000312	anesthesiology residency program
-WARN	equivalent_class_axiom_no_genus	aggregate of emergency medical service transporting agency	BFO:0000075	emergency medical service transportation agency
-WARN	equivalent_class_axiom_no_genus	aggregate of emergency medical services pediatric ground transportation agencies	BFO:0000075	emergency medical services pediatric ground transportation agency
-WARN	equivalent_class_axiom_no_genus	aggregate of emergency medical services pediatric air transportation agencies	BFO:0000075	emergency medical services pediatric air transportation agency
 INFO	missing_superclass	collection of trauma surgeons on trauma service with practice-based learning course	rdfs:subClassOf	
 INFO	lowercase_definition	organize	IAO:0000115	'organize' holds between an independent continuant and a planned process, iff the independent continuant particpates in the planned process and also participated in the creation of the plan specification that the planned process realizes.@en
 INFO	lowercase_definition	authority	IAO:0000115	a socio-legal generically dependent continuant that is concretized in a role within an organizational context and which legally, normatively, or ethically permits some action.@en

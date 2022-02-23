@@ -1,4 +1,9 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/to.owl	dc:title	
+ERROR	duplicate_label	stem senescence	rdfs:label	stem senescence
+ERROR	duplicate_label	stem senescence	rdfs:label	stem senescence
+ERROR	duplicate_label	grain length to width ratio	rdfs:label	grain length to width ratio
+ERROR	duplicate_label	grain length to width ratio	rdfs:label	grain length to width ratio
 ERROR	missing_label	obo:to#Allium_porrum	rdfs:label	
 ERROR	missing_label	obo:to#Cucurbita	rdfs:label	
 ERROR	missing_label	obo:to#Glycine_max	rdfs:label	
@@ -7,30 +12,12 @@ ERROR	missing_label	obo:to#Saccharum	rdfs:label
 ERROR	missing_label	obo:to#Solanaceae_spp	rdfs:label	
 ERROR	missing_label	obo:to#Triticum_aestivum	rdfs:label	
 ERROR	missing_label	obo:to#Zea_mays	rdfs:label	
+ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/to.owl	dc:description	
 ERROR	duplicate_definition	rice bacterial blight disease resistance	IAO:0000115	Causal agent: Xanthomonas oryzae pv. oryzae.
 ERROR	duplicate_definition	rice seedling blight disease resistance	IAO:0000115	Causal agent: Xanthomonas oryzae pv. oryzae.
 ERROR	duplicate_definition	barley spot blotch disease resistance	IAO:0000115	Causal agent: Cochliobolus sativus (Bipolaris sorokiniana).
 ERROR	duplicate_definition	wheat spot blotch disease resistance	IAO:0000115	Causal agent: Cochliobolus sativus (Bipolaris sorokiniana).
 ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/to.owl	dc:license	
-ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/to.owl	dc:description	
-ERROR	duplicate_label	stem senescence	rdfs:label	stem senescence
-ERROR	duplicate_label	stem senescence	rdfs:label	stem senescence
-ERROR	duplicate_label	grain length to width ratio	rdfs:label	grain length to width ratio
-ERROR	duplicate_label	grain length to width ratio	rdfs:label	grain length to width ratio
-ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/to.owl	dc:title	
-WARN	duplicate_exact_synonym	iodine content trait	oboInOwl:hasExactSynonym	I content (exact)
-WARN	duplicate_exact_synonym	lead content trait	oboInOwl:hasExactSynonym	I content (exact)
-WARN	missing_subset_declaration	obo:to#Allium_porrum	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:to#Cucurbita	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:to#Hordeum_vulgare	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:to#Saccharum	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:to#Solanaceae_spp	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:to#Triticum_aestivum	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:to#Zea_mays	rdfs:subPropertyOf	
-WARN	annotation_whitespace	sterility or fertility trait	IAO:0000115	 A plant trait (TO:0000387) which is a measure of either the fertility or sterility, contributed by nonfunctional male and or female plant parts or their incompatible interaction. This also includes traits on seed setting behavior in the fruit (caryopsis) of a grass plant that can be assayed in terms of spikelet sterility or fertility.
-WARN	annotation_whitespace	inflorescence width	oboInOwl:hasRelatedSynonym	 INFLWD (related)
-WARN	annotation_whitespace	kernel number per row	oboInOwl:hasRelatedSynonym	 78114   (related)
-WARN	annotation_whitespace	shoot system molybdenum content	IAO:0000115	A molybdenum content trait (TO:0006056) which is the (CHEBI:37239) in a shoot system (PO:0009006). 
 WARN	missing_obsolete_label	epigenetic trait	rdfs:label	epigenetic trait
 WARN	missing_obsolete_label	male sterility extent	rdfs:label	male sterility extent
 WARN	missing_obsolete_label	yield component	rdfs:label	yield component
@@ -58,6 +45,13 @@ WARN	missing_obsolete_label	plant volume (sensu Poaceae)	rdfs:label	plant volume
 WARN	missing_obsolete_label	cooking or brewing quality	rdfs:label	cooking or brewing quality
 WARN	missing_obsolete_label	stem senescence	rdfs:label	stem senescence
 WARN	missing_obsolete_label	chlorophyll content in an extract	rdfs:label	chlorophyll content in an extract
+WARN	missing_subset_declaration	obo:to#Allium_porrum	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:to#Cucurbita	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:to#Hordeum_vulgare	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:to#Saccharum	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:to#Solanaceae_spp	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:to#Triticum_aestivum	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:to#Zea_mays	rdfs:subPropertyOf	
 WARN	missing_definition	black streak dwarf virus resistance	IAO:0000115	
 WARN	missing_definition	silicon sensitivity	IAO:0000115	
 WARN	missing_definition	selenium sensitivity	IAO:0000115	
@@ -180,4 +174,10 @@ WARN	missing_definition	has phenotype variable	IAO:0000115
 WARN	missing_definition	has ratio quality	IAO:0000115	
 WARN	missing_definition	has relative phenotype	IAO:0000115	
 WARN	missing_definition	relative to	IAO:0000115	
+WARN	annotation_whitespace	sterility or fertility trait	IAO:0000115	 A plant trait (TO:0000387) which is a measure of either the fertility or sterility, contributed by nonfunctional male and or female plant parts or their incompatible interaction. This also includes traits on seed setting behavior in the fruit (caryopsis) of a grass plant that can be assayed in terms of spikelet sterility or fertility.
+WARN	annotation_whitespace	inflorescence width	oboInOwl:hasRelatedSynonym	 INFLWD (related)
+WARN	annotation_whitespace	kernel number per row	oboInOwl:hasRelatedSynonym	 78114   (related)
+WARN	annotation_whitespace	shoot system molybdenum content	IAO:0000115	A molybdenum content trait (TO:0006056) which is the (CHEBI:37239) in a shoot system (PO:0009006). 
+WARN	duplicate_exact_synonym	iodine content trait	oboInOwl:hasExactSynonym	I content (exact)
+WARN	duplicate_exact_synonym	lead content trait	oboInOwl:hasExactSynonym	I content (exact)
 INFO	lowercase_definition	sterility or fertility trait	IAO:0000115	 A plant trait (TO:0000387) which is a measure of either the fertility or sterility, contributed by nonfunctional male and or female plant parts or their incompatible interaction. This also includes traits on seed setting behavior in the fruit (caryopsis) of a grass plant that can be assayed in terms of spikelet sterility or fertility.

@@ -1,29 +1,12 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/ino.owl	dc:license	
-ERROR	misused_obsolete_label	obsolete class	rdfs:label	obsolete class@en
 ERROR	duplicate_definition	positive regulation of transcription by binding to promoter	IAO:0000115	a regulation of transcription by binding to promoter that is further classified as a positive regulation
 ERROR	duplicate_definition	negative regulation of transcription by binding to promoter	IAO:0000115	a regulation of transcription by binding to promoter that is further classified as a positive regulation
 ERROR	duplicate_definition	negative regulation of gene transcription	IAO:0000115	a negative regulation process that down-regulates gene expression level
 ERROR	duplicate_definition	gene expression down-regulation	IAO:0000115	a negative regulation process that down-regulates gene expression level
+ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/ino.owl	dc:license	
 ERROR	duplicate_label	macrophage-pathogen interaction	rdfs:label	macrophage-pathogen interaction@en
 ERROR	duplicate_label	macrophage-pathogen interaction	rdfs:label	macrophage-pathogen interaction@en
-WARN	equivalent_class_axiom_no_genus	interaction regulator	RO:0000087	regulator role
-WARN	equivalent_class_axiom_no_genus	interactor	RO:0000087	interactor role
-WARN	equivalent_class_axiom_no_genus	activator	RO:0000087	activator role
-WARN	equivalent_class_axiom_no_genus	regulation of transcription	RO:0002211	gene transcription
-WARN	equivalent_class_axiom_no_genus	regulation of translation	RO:0002211	protein translation
-WARN	equivalent_class_axiom_no_genus	positive regulation of gene expression	RO:0002213	gene expression
-WARN	equivalent_class_axiom_no_genus	negative regulation of gene expression	RO:0002212	gene expression
-WARN	equivalent_class_axiom_no_genus	negative regulation of gene transcription	RO:0002212	gene transcription
-WARN	equivalent_class_axiom_no_genus	negative regulation of protein translation	RO:0002212	protein translation
-WARN	equivalent_class_axiom_no_genus	gene expression regulation	RO:0002211	gene expression
-WARN	equivalent_class_axiom_no_genus	chemical reaction catalyst	RO:0000087	chemical reaction catalyst role
-WARN	equivalent_class_axiom_no_genus	positive regulation of gene transcription	RO:0002213	gene transcription
-WARN	equivalent_class_axiom_no_genus	positive regulation of protein translation	RO:0002213	protein translation
-WARN	equivalent_class_axiom_no_genus	input interactor	RO:0000087	input interactor role
-WARN	equivalent_class_axiom_no_genus	positive regulator	RO:0000087	positive regulator role
-WARN	equivalent_class_axiom_no_genus	negative regulator	RO:0000087	negative regulator role
-WARN	equivalent_class_axiom_no_genus	output interactor	RO:0000087	output interactor role
+ERROR	misused_obsolete_label	obsolete class	rdfs:label	obsolete class@en
 WARN	annotation_whitespace	interaction	IAO:0000115	Interaction is a processual entity that has two or more participants (i.e., interactors) that have an effect upon one another. @en
 WARN	annotation_whitespace	pathway	IAO:0000115	an interaction network that includes at least two interactions and has a start point(s) and an end point(s). 
 WARN	annotation_whitespace	has literature mining keywords	IAO:0000115	an annotation property that lists keyword(s) useful for literature tagging and retrieval of sentences containing the type (or kind) of entity (e.g., interaction) as shown by the ontology term label and definition. 
@@ -67,7 +50,26 @@ WARN	annotation_whitespace	genetic transduction	IAO:0000115	a cell-cell interact
 WARN	annotation_whitespace	co-expression	IAO:0000116	a correlation association that two genes are co-expressed in a system. 
 WARN	annotation_whitespace	deregulation	IAO:0000115	a negative regulation that results in the deregulation of one interactor on a process. 
 WARN	annotation_whitespace	protein-protein interaction	IAO:0000115	an interaction between two proteins. 
+WARN	equivalent_class_axiom_no_genus	interaction regulator	RO:0000087	regulator role
+WARN	equivalent_class_axiom_no_genus	interactor	RO:0000087	interactor role
+WARN	equivalent_class_axiom_no_genus	activator	RO:0000087	activator role
+WARN	equivalent_class_axiom_no_genus	regulation of transcription	RO:0002211	gene transcription
+WARN	equivalent_class_axiom_no_genus	regulation of translation	RO:0002211	protein translation
+WARN	equivalent_class_axiom_no_genus	positive regulation of gene expression	RO:0002213	gene expression
+WARN	equivalent_class_axiom_no_genus	negative regulation of gene expression	RO:0002212	gene expression
+WARN	equivalent_class_axiom_no_genus	negative regulation of gene transcription	RO:0002212	gene transcription
+WARN	equivalent_class_axiom_no_genus	negative regulation of protein translation	RO:0002212	protein translation
+WARN	equivalent_class_axiom_no_genus	gene expression regulation	RO:0002211	gene expression
+WARN	equivalent_class_axiom_no_genus	chemical reaction catalyst	RO:0000087	chemical reaction catalyst role
+WARN	equivalent_class_axiom_no_genus	positive regulation of gene transcription	RO:0002213	gene transcription
+WARN	equivalent_class_axiom_no_genus	positive regulation of protein translation	RO:0002213	protein translation
+WARN	equivalent_class_axiom_no_genus	input interactor	RO:0000087	input interactor role
+WARN	equivalent_class_axiom_no_genus	positive regulator	RO:0000087	positive regulator role
+WARN	equivalent_class_axiom_no_genus	negative regulator	RO:0000087	negative regulator role
+WARN	equivalent_class_axiom_no_genus	output interactor	RO:0000087	output interactor role
 WARN	duplicate_label_synonym	overexpression	IAO:0000118	overexpression
+WARN	duplicate_exact_synonym	negative regulation of protein activity	IAO:0000118	negative protein activity regulation
+WARN	duplicate_exact_synonym	positive regulation of protein activity	IAO:0000118	negative protein activity regulation
 WARN	missing_definition	example of literature mining keyword usage	IAO:0000115	
 WARN	missing_definition	physical entity - obsolete	IAO:0000115	
 WARN	missing_definition	costimulation	IAO:0000115	
@@ -94,8 +96,6 @@ WARN	missing_definition	epithelial cell-pathogen protein-protein interaction	IAO
 WARN	missing_definition	obsolete class	IAO:0000115	
 WARN	missing_definition	tyrosine-phosphorylation	IAO:0000115	
 WARN	missing_definition	co-expression	IAO:0000115	
-WARN	duplicate_exact_synonym	negative regulation of protein activity	IAO:0000118	negative protein activity regulation
-WARN	duplicate_exact_synonym	positive regulation of protein activity	IAO:0000118	negative protein activity regulation
 INFO	lowercase_definition	pathway	IAO:0000115	an interaction network that includes at least two interactions and has a start point(s) and an end point(s). 
 INFO	lowercase_definition	Bayesian network	IAO:0000115	an interaction network model that is represented by a probabilistic graphical model (a type of statistical model) that represents a set of random variables and their conditional dependencies via a directed acyclic graph (DAG).
 INFO	lowercase_definition	regulator role	IAO:0000115	an regulator role that is borne by a material entity that regulates an interaction.

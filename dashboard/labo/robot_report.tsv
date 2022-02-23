@@ -1,38 +1,9 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/labo.owl	dc:title	
-ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/labo.owl	dc:license	
-ERROR	deprecated_boolean_datatype	laboratory test specimen ID	owl:deprecated	@en
 ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/labo.owl	dc:description	
-ERROR	multiple_labels	laboratory test specimen ID	rdfs:label	identification d'échantillon d'examen de laboratoire@fr
-ERROR	multiple_labels	laboratory test specimen ID	rdfs:label	laboratory test specimen ID@en
-ERROR	multiple_labels	spécification de type d'échantillon	rdfs:label	laboratory test specimen type specification@en
-ERROR	multiple_labels	spécification de type d'échantillon	rdfs:label	spécification de type d'échantillon@fr
-ERROR	multiple_labels	résultat d'hématocrite	rdfs:label	hematocrit result@en
-ERROR	multiple_labels	résultat d'hématocrite	rdfs:label	résultat d'hématocrite@fr
-ERROR	multiple_labels	résultat de test d'hémoglobine	rdfs:label	hemoglobin test result@en
-ERROR	multiple_labels	résultat de test d'hémoglobine	rdfs:label	résultat de test d'hémoglobine@fr
-ERROR	multiple_labels	spécification de méthode échantillonnage	rdfs:label	sampling method specification@en
-ERROR	multiple_labels	spécification de méthode échantillonnage	rdfs:label	spécification de méthode échantillonnage@fr
-ERROR	multiple_labels	résultat de volume corpusculaire moyen	rdfs:label	mean corpuscular volume result@en
-ERROR	multiple_labels	résultat de volume corpusculaire moyen	rdfs:label	résultat de volume corpusculaire moyen@fr
-ERROR	multiple_labels	résultat de volume moyen des plaquettes	rdfs:label	mean platelet volume result@en
-ERROR	multiple_labels	résultat de volume moyen des plaquettes	rdfs:label	résultat de volume moyen des plaquettes@fr
-ERROR	multiple_labels	platelets count result	rdfs:label	platelets count result@en
-ERROR	multiple_labels	platelets count result	rdfs:label	résultat de dénombrement de plaquettes@fr
-ERROR	multiple_labels	résultat de dénombrement de cellules rouges	rdfs:label	red blood cell count result@en
-ERROR	multiple_labels	résultat de dénombrement de cellules rouges	rdfs:label	résultat de dénombrement de cellules rouges@fr
-ERROR	multiple_labels	résultat de variation de taille des cellules rouges	rdfs:label	red cell distribution width result@en
-ERROR	multiple_labels	résultat de variation de taille des cellules rouges	rdfs:label	résultat de variation de taille des cellules rouges@fr
-ERROR	multiple_labels	information de compte-rendu de test de laboratoire	rdfs:label	information de compte-rendu de test de laboratoire@fr
-ERROR	multiple_labels	information de compte-rendu de test de laboratoire	rdfs:label	prescribed laboratory test complete reporting information@en
-ERROR	multiple_labels	laboratory test prescription	rdfs:label	laboratory test prescription@en
-ERROR	multiple_labels	laboratory test prescription	rdfs:label	prescription de test de laboratoire@fr
-ERROR	multiple_labels	laboratory test reporting information	rdfs:label	information de résultat pour un test de laboratoire (WIP)@fr
-ERROR	multiple_labels	laboratory test reporting information	rdfs:label	laboratory test reporting information@en
-ERROR	multiple_labels	groupement de résultats pour un test de laboratoire	rdfs:label	groupement de résultats pour un test de laboratoire@fr
-ERROR	multiple_labels	groupement de résultats pour un test de laboratoire	rdfs:label	laboratory test reporting group@en
-ERROR	multiple_labels	valeur limite	rdfs:label	bound@en
-ERROR	multiple_labels	valeur limite	rdfs:label	valeur limite@fr
+ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/labo.owl	dc:license	
+ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/labo.owl	dc:title	
+ERROR	duplicate_definition	laboratory test specimen ID	IAO:0000115	TODO@fr
+ERROR	duplicate_definition	information de compte-rendu de test de laboratoire	IAO:0000115	TODO@fr
 ERROR	multiple_definitions	laboratory test specimen ID	IAO:0000115	A centrally registered identifier that denotes a particular specimen on which a laboratory test is intended to be executed or has already been executed.@en
 ERROR	multiple_definitions	laboratory test specimen ID	IAO:0000115	TODO@fr
 ERROR	multiple_definitions	spécification de type d'échantillon	IAO:0000115	An information content entity about the type of the specimen to be used for some laboratory tests.@en
@@ -63,9 +34,38 @@ ERROR	multiple_definitions	groupement de résultats pour un test de laboratoire	
 ERROR	multiple_definitions	groupement de résultats pour un test de laboratoire	IAO:0000115	Une partie d'un document d'analyse de laboratoire qui spécifie des résultats des tests.@fr
 ERROR	multiple_definitions	laboratory test specimen specification	IAO:0000115	An information content entity that denotes a particular specimen on which a laboratory test is intended to be executed or has already been executed.@en
 ERROR	multiple_definitions	laboratory test specimen specification	IAO:0000115	Une entité de contenu informationnel qui est à propos d'une entité biologique particulière ou d'une classe d'entité biologique sur laquelle quelqu'un a l'intention de prendre une mesure ou sur laquelle une mesure a déjà été prise.@fr
-ERROR	duplicate_definition	laboratory test specimen ID	IAO:0000115	TODO@fr
-ERROR	duplicate_definition	information de compte-rendu de test de laboratoire	IAO:0000115	TODO@fr
+ERROR	multiple_labels	laboratory test specimen ID	rdfs:label	identification d'échantillon d'examen de laboratoire@fr
+ERROR	multiple_labels	laboratory test specimen ID	rdfs:label	laboratory test specimen ID@en
+ERROR	multiple_labels	spécification de type d'échantillon	rdfs:label	laboratory test specimen type specification@en
+ERROR	multiple_labels	spécification de type d'échantillon	rdfs:label	spécification de type d'échantillon@fr
+ERROR	multiple_labels	résultat d'hématocrite	rdfs:label	hematocrit result@en
+ERROR	multiple_labels	résultat d'hématocrite	rdfs:label	résultat d'hématocrite@fr
+ERROR	multiple_labels	résultat de test d'hémoglobine	rdfs:label	hemoglobin test result@en
+ERROR	multiple_labels	résultat de test d'hémoglobine	rdfs:label	résultat de test d'hémoglobine@fr
+ERROR	multiple_labels	spécification de méthode échantillonnage	rdfs:label	sampling method specification@en
+ERROR	multiple_labels	spécification de méthode échantillonnage	rdfs:label	spécification de méthode échantillonnage@fr
+ERROR	multiple_labels	résultat de volume corpusculaire moyen	rdfs:label	mean corpuscular volume result@en
+ERROR	multiple_labels	résultat de volume corpusculaire moyen	rdfs:label	résultat de volume corpusculaire moyen@fr
+ERROR	multiple_labels	résultat de volume moyen des plaquettes	rdfs:label	mean platelet volume result@en
+ERROR	multiple_labels	résultat de volume moyen des plaquettes	rdfs:label	résultat de volume moyen des plaquettes@fr
+ERROR	multiple_labels	platelets count result	rdfs:label	platelets count result@en
+ERROR	multiple_labels	platelets count result	rdfs:label	résultat de dénombrement de plaquettes@fr
+ERROR	multiple_labels	résultat de dénombrement de cellules rouges	rdfs:label	red blood cell count result@en
+ERROR	multiple_labels	résultat de dénombrement de cellules rouges	rdfs:label	résultat de dénombrement de cellules rouges@fr
+ERROR	multiple_labels	résultat de variation de taille des cellules rouges	rdfs:label	red cell distribution width result@en
+ERROR	multiple_labels	résultat de variation de taille des cellules rouges	rdfs:label	résultat de variation de taille des cellules rouges@fr
+ERROR	multiple_labels	information de compte-rendu de test de laboratoire	rdfs:label	information de compte-rendu de test de laboratoire@fr
+ERROR	multiple_labels	information de compte-rendu de test de laboratoire	rdfs:label	prescribed laboratory test complete reporting information@en
+ERROR	multiple_labels	laboratory test prescription	rdfs:label	laboratory test prescription@en
+ERROR	multiple_labels	laboratory test prescription	rdfs:label	prescription de test de laboratoire@fr
+ERROR	multiple_labels	laboratory test reporting information	rdfs:label	information de résultat pour un test de laboratoire (WIP)@fr
+ERROR	multiple_labels	laboratory test reporting information	rdfs:label	laboratory test reporting information@en
+ERROR	multiple_labels	groupement de résultats pour un test de laboratoire	rdfs:label	groupement de résultats pour un test de laboratoire@fr
+ERROR	multiple_labels	groupement de résultats pour un test de laboratoire	rdfs:label	laboratory test reporting group@en
+ERROR	multiple_labels	valeur limite	rdfs:label	bound@en
+ERROR	multiple_labels	valeur limite	rdfs:label	valeur limite@fr
 ERROR	illegal_use_of_built_in_vocabulary	rdf:type	rdf:type	owl:AnnotationProperty
+ERROR	deprecated_boolean_datatype	laboratory test specimen ID	owl:deprecated	@en
 WARN	missing_definition	has minimal value	IAO:0000115	
 WARN	missing_definition	has maximal value	IAO:0000115	
 WARN	missing_definition	result range	IAO:0000115	

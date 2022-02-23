@@ -1,11 +1,9 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/ido.owl	dc:description	
 ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/ido.owl	dc:license	
-ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/ido.owl	dc:title	
 ERROR	deprecated_class_reference	_obsolete_enterotoxin disposition	rdfs:subClassOf	exotoxin disposition
 ERROR	deprecated_class_reference	endotoxin disposition	rdfs:subClassOf	toxin disposition
-WARN	missing_definition	results_in	IAO:0000115	
-WARN	missing_definition	has_material_basis_in	IAO:0000115	
+ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/ido.owl	dc:description	
+ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/ido.owl	dc:title	
 WARN	equivalent_class_axiom_no_genus	establishment of localization in host	BFO:0000066	host
 WARN	equivalent_class_axiom_no_genus	appearance of disorder	RO:0002297	OGMS:0000045
 WARN	equivalent_class_axiom_no_genus	negative regulation of life-sustaining process	RO:0002212	life-sustaining process
@@ -184,6 +182,8 @@ WARN	missing_obsolete_label	_obsolete_biological object	rdfs:label	_obsolete_bio
 WARN	missing_obsolete_label	_obsolete_replicating biological material entity	rdfs:label	_obsolete_replicating biological material entity@en
 WARN	missing_obsolete_label	_obsolete_host range	rdfs:label	_obsolete_contagiousness quality@en
 WARN	missing_obsolete_label	_obsolete_host range	rdfs:label	_obsolete_host range@en
+WARN	missing_definition	results_in	IAO:0000115	
+WARN	missing_definition	has_material_basis_in	IAO:0000115	
 WARN	annotation_whitespace	symbiont host role	IAO:0000115	A host role borne by an organism in virtue of the fact that its extended organism contains a second organism and provides an environment supportive for the survival, growth, maturation, or reproduction of that organism.  @en
 WARN	annotation_whitespace	definitive host role	IAO:0000115	A symbiont host role borne by an organism in virtue of the fact that its partner in symbiosis reaches developmental maturity or reproduces sexually in the host.  @en
 WARN	annotation_whitespace	paratenic host role	IAO:0000115	A symbiont host role borne by an organism in virtue of the fact that its partner in symbiosis utilizes the host to undergo a developmental stage transition, but the host is not required for continuation of the partner's life cycle. @en

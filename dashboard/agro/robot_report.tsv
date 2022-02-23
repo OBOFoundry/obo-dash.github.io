@@ -8,8 +8,6 @@ ERROR	multiple_definitions	thinning	IAO:0000115	Agricultural process during whic
 ERROR	multiple_definitions	crop residue area density	IAO:0000115	An area density quality which inheres in above-ground crop residue by virtue of some influence exerted by the mass of above-ground crop residue applied in a given surface area.@en
 ERROR	multiple_definitions	crop residue area density	IAO:0000115	The area density of a crop residue
 ERROR	deprecated_class_reference	blank node	owl:someValuesFrom	obsolete crop residue spreading process
-WARN	equivalent_pair	inorganic fertilizer role	owl:equivalentClass	CHEBI:33287
-WARN	duplicate_label_synonym	tillage	oboInOwl:hasExactSynonym	tillage@en
 WARN	equivalent_class_axiom_no_genus	crop residue	RO:0001000	PO:0009011
 WARN	equivalent_class_axiom_no_genus	interrow	RO:0002609	row
 WARN	equivalent_class_axiom_no_genus	mulch thickness measurement protocol	measurement method of	mulch thickness
@@ -30,6 +28,7 @@ WARN	equivalent_class_axiom_no_genus	stubble	RO:0001000	PO:0025066
 WARN	equivalent_class_axiom_no_genus	husk	RO:0001000	PO:0009054
 WARN	equivalent_class_axiom_no_genus	organic fertilizer	RO:0000087	organic fertilizer role
 WARN	equivalent_class_axiom_no_genus	inorganic fertilizer	RO:0000087	inorganic fertilizer role
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
 WARN	missing_definition	has method	IAO:0000115	
 WARN	missing_definition	measurement method of	IAO:0000115	
 WARN	missing_definition	has start date	IAO:0000115	
@@ -43,7 +42,8 @@ WARN	missing_definition	broadcast on surface	IAO:0000115
 WARN	missing_definition	localized application	IAO:0000115	
 WARN	missing_definition	kilogram per plot	IAO:0000115	
 WARN	missing_definition	preferred fieldbook label	IAO:0000115	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	equivalent_pair	inorganic fertilizer role	owl:equivalentClass	CHEBI:33287
+WARN	duplicate_label_synonym	tillage	oboInOwl:hasExactSynonym	tillage@en
 INFO	lowercase_definition	single-axle tractor	IAO:0000600	two-wheel tractor@en
 INFO	lowercase_definition	row	IAO:0000115	two or more crop plants planted in a line.@en
 INFO	lowercase_definition	number of square meter harvested	IAO:0000115	number of square meters of agricultural field or plot harvested.@en
