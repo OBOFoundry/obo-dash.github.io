@@ -1,37 +1,35 @@
 Level	Rule Name	Subject	Property	Value
 ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/omrse/omrse-base.owl	dc:description	
 ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/omrse/omrse-base.owl	dc:title	
+ERROR	deprecated_boolean_datatype	is-aggregate-of	owl:deprecated	true@en
 ERROR	missing_label	OMIABIS:0000008	rdfs:label	
 ERROR	missing_label	OMIABIS:0000009	rdfs:label	
 ERROR	missing_label	OMIABIS:0000048	rdfs:label	
-ERROR	missing_label	OMRSE:00002046	rdfs:label	
-ERROR	missing_label	OMRSE:00002047	rdfs:label	
 ERROR	missing_label	PCO:0000020	rdfs:label	
 ERROR	missing_label	RO:0002217	rdfs:label	
-ERROR	deprecated_boolean_datatype	is-aggregate-of	owl:deprecated	true@en
 ERROR	deprecated_class_reference	obsolete OMB ethnic identity datum	rdfs:subClassOf	obsolete ethnic identity datum
 ERROR	deprecated_class_reference	obsolete OMB ethnic identity datum	rdfs:subClassOf	obsolete hispanic or latino identity datum
 ERROR	deprecated_class_reference	obsolete OMB ethnic identity datum	rdfs:subClassOf	obsolete not hispanic or latino identity datum
 ERROR	deprecated_class_reference	obsolete socio-legal human social role	rdfs:subClassOf	human social role
 ERROR	deprecated_class_reference	obsolete racial identity datum	rdfs:subClassOf	obsolete OMB racial identity datum
-ERROR	deprecated_class_reference	obsolete racial identity datum	owl:equivalentClass	bb9aa1cb-b2ef-4725-bfcc-a8737107305agenid305
+ERROR	deprecated_class_reference	obsolete racial identity datum	owl:equivalentClass	e7357367-4b36-4ae3-8602-ab96da51a598genid294
 ERROR	deprecated_class_reference	obsolete ethnic identity datum	rdfs:subClassOf	obsolete OMB ethnic identity datum
-ERROR	deprecated_class_reference	obsolete ethnic identity datum	owl:equivalentClass	bb9aa1cb-b2ef-4725-bfcc-a8737107305agenid319
+ERROR	deprecated_class_reference	obsolete ethnic identity datum	owl:equivalentClass	e7357367-4b36-4ae3-8602-ab96da51a598genid308
 ERROR	deprecated_class_reference	obsolete hispanic or latino identity datum	rdfs:subClassOf	obsolete OMB ethnic identity datum
 ERROR	deprecated_class_reference	obsolete not hispanic or latino identity datum	rdfs:subClassOf	obsolete OMB ethnic identity datum
 ERROR	deprecated_class_reference	obsolete identity datum	rdfs:subClassOf	obsolete self-identity data item
 ERROR	deprecated_class_reference	obsolete identity datum	rdfs:subClassOf	answer to identity question
-ERROR	deprecated_class_reference	obsolete identity datum	owl:equivalentClass	bb9aa1cb-b2ef-4725-bfcc-a8737107305agenid383
+ERROR	deprecated_class_reference	obsolete identity datum	owl:equivalentClass	e7357367-4b36-4ae3-8602-ab96da51a598genid372
 ERROR	deprecated_class_reference	obsolete gender identity datum	rdfs:subClassOf	obsolete female gender identity datum
 ERROR	deprecated_class_reference	obsolete gender identity datum	rdfs:subClassOf	obsolete male gender identity datum
 ERROR	deprecated_class_reference	obsolete gender identity datum	rdfs:subClassOf	obsolete non-binary gender identity datum
-ERROR	deprecated_class_reference	obsolete gender identity datum	owl:equivalentClass	bb9aa1cb-b2ef-4725-bfcc-a8737107305agenid392
+ERROR	deprecated_class_reference	obsolete gender identity datum	owl:equivalentClass	e7357367-4b36-4ae3-8602-ab96da51a598genid381
 ERROR	deprecated_class_reference	obsolete female gender identity datum	rdfs:subClassOf	obsolete gender identity datum
 ERROR	deprecated_class_reference	obsolete male gender identity datum	rdfs:subClassOf	obsolete gender identity datum
 ERROR	deprecated_class_reference	obsolete self-identity data item	rdfs:subClassOf	obsolete identity datum
 ERROR	deprecated_class_reference	obsolete medical advice	rdfs:subClassOf	IAO:0021003
-ERROR	deprecated_class_reference	questions asking process	rdfs:subClassOf	bb9aa1cb-b2ef-4725-bfcc-a8737107305agenid439
-ERROR	deprecated_class_reference	questions asking process	rdfs:subClassOf	bb9aa1cb-b2ef-4725-bfcc-a8737107305agenid440
+ERROR	deprecated_class_reference	questions asking process	rdfs:subClassOf	e7357367-4b36-4ae3-8602-ab96da51a598genid429
+ERROR	deprecated_class_reference	questions asking process	rdfs:subClassOf	e7357367-4b36-4ae3-8602-ab96da51a598genid430
 ERROR	deprecated_class_reference	questions asking process	rdfs:subClassOf	identity question asking process
 ERROR	deprecated_class_reference	material information bearer of question text plus answer set	rdfs:subClassOf	BFO:0000040
 ERROR	deprecated_class_reference	identity question asking process	rdfs:subClassOf	questions asking process
@@ -50,6 +48,9 @@ ERROR	deprecated_class_reference	obsolete OMB racial identity datum	rdfs:subClas
 ERROR	deprecated_class_reference	obsolete OMB racial identity datum	rdfs:subClassOf	obsolete black or African American identity datum
 ERROR	deprecated_class_reference	obsolete OMB racial identity datum	rdfs:subClassOf	obsolete Native Hawaiian or other Pacific Islander identity datum
 ERROR	deprecated_class_reference	obsolete OMB racial identity datum	rdfs:subClassOf	obsolete white identity datum
+ERROR	deprecated_class_reference	obsolete communication	rdfs:subClassOf	obsolete expression of preferred language
+ERROR	deprecated_class_reference	obsolete expression of preferred language	rdfs:subClassOf	e7357367-4b36-4ae3-8602-ab96da51a598genid446
+ERROR	deprecated_class_reference	obsolete expression of preferred language	rdfs:subClassOf	obsolete communication
 ERROR	deprecated_class_reference	obsolete non-binary gender identity datum	rdfs:subClassOf	obsolete gender identity datum
 ERROR	deprecated_class_reference	blank node	owl:someValuesFrom	obsolete racial identity datum
 ERROR	deprecated_class_reference	blank node	owl:someValuesFrom	obsolete ethnic identity datum
@@ -57,6 +58,16 @@ ERROR	deprecated_class_reference	blank node	owl:someValuesFrom	obsolete gender i
 ERROR	deprecated_class_reference	blank node	owl:someValuesFrom	questions asking process
 ERROR	deprecated_class_reference	blank node	owl:someValuesFrom	material information bearer of question text plus answer set
 ERROR	deprecated_class_reference	blank node	owl:someValuesFrom	obsolete OMB racial identity datum
+ERROR	deprecated_class_reference	blank node	owl:someValuesFrom	obsolete linguistic competence
+ERROR	deprecated_class_reference	blank node	owl:someValuesFrom	obsolete preferred language information content entity
+WARN	annotation_whitespace	human social role	IAO:0000117	"Mathias Brochhausen
+@en"
+WARN	annotation_whitespace	human health care role	IAO:0000115	A role in human social processes that is realized by health care processes such as seeking or providing treatment for disease and injury, diagnosing disease and injury, or undergoing diagnosis. @en
+WARN	annotation_whitespace	health care provider role	IAO:0000117	"Mathias Brochhausen
+@en"
+WARN	annotation_whitespace	obsolete aggregate of geopoli organizations	IAO:0000117	"William R. Hogan
+@en"
+WARN	equivalent_class_axiom_no_genus	county smoking survey data	OBI:0000312	county smoking survey execution
 WARN	missing_definition	OMIABIS:0000008	IAO:0000115	
 WARN	missing_definition	OMIABIS:0000009	IAO:0000115	
 WARN	missing_definition	OMIABIS:0000048	IAO:0000115	
@@ -119,7 +130,6 @@ WARN	missing_definition	assistance with instrumental activities of daily living 
 WARN	missing_definition	medication assistance care encounter	IAO:0000115	
 WARN	missing_definition	assisted living function	IAO:0000115	
 WARN	missing_definition	acute care encounter	IAO:0000115	
-WARN	missing_definition	leaving a health care facility after receiving care	IAO:0000115	
 WARN	missing_definition	response to a question asking process	IAO:0000115	
 WARN	missing_definition	home health care organization	IAO:0000115	
 WARN	missing_definition	home health care function	IAO:0000115	
@@ -153,14 +163,6 @@ WARN	missing_obsolete_label	material information bearer of question text plus an
 WARN	missing_obsolete_label	identity question asking process	rdfs:label	identity question asking process@en
 WARN	missing_obsolete_label	ethnic identity question asking process	rdfs:label	ethnic identity question asking process@en
 WARN	missing_obsolete_label	race identity question asking process	rdfs:label	race identity question asking process@en
-WARN	equivalent_class_axiom_no_genus	county smoking survey data	OBI:0000312	county smoking survey execution
-WARN	annotation_whitespace	human social role	IAO:0000117	"Mathias Brochhausen
-@en"
-WARN	annotation_whitespace	human health care role	IAO:0000115	A role in human social processes that is realized by health care processes such as seeking or providing treatment for disease and injury, diagnosing disease and injury, or undergoing diagnosis. @en
-WARN	annotation_whitespace	health care provider role	IAO:0000117	"Mathias Brochhausen
-@en"
-WARN	annotation_whitespace	obsolete aggregate of geopoli organizations	IAO:0000117	"William R. Hogan
-@en"
 INFO	lowercase_definition	obsolete intergovernmental organization	IAO:0000115	an intergovernmental organization that has at least three member states, that has activies in at least three states, and that is unified by some formal intergovernmental agreement
 INFO	lowercase_definition	obsolete nongovernmental organization	IAO:0000115	a geopolitical organization that is voluntary and private, whose members are individual persons or organizations that come together to acheive a common purpose.@en
 INFO	lowercase_definition	obsolete subnational entity	IAO:0000115	a governmental organization that has a local, regional, or territorial government that recognizes a sovereign state as its higher political authority@en

@@ -3,39 +3,37 @@ base_prefixes:
 - ONTOAVIDA
 - ONTOAVIDAALT
 - ONTOAVIDA
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 17437
-    AsymmetricObjectProperty: 6015
-    DataPropertyDomain: 2014
-    DataPropertyRange: 2014
-    Declaration: 8729
-    DisjointClasses: 13
+    AnnotationAssertion: 1441
+    AsymmetricObjectProperty: 18
+    DataPropertyDomain: 14
+    DataPropertyRange: 14
+    Declaration: 732
+    DisjointClasses: 23
     EquivalentClasses: 7
     FunctionalDataProperty: 11
-    FunctionalObjectProperty: 2000
-    InverseObjectProperties: 3005
-    ObjectPropertyDomain: 6016
-    ObjectPropertyRange: 6016
+    InverseObjectProperties: 6
+    ObjectPropertyDomain: 18
+    ObjectPropertyRange: 18
     SubClassOf: 692
-    SubDataPropertyOf: 2014
-    SubObjectPropertyOf: 6017
-    SubPropertyChainOf: 2
+    SubDataPropertyOf: 15
+    SubObjectPropertyOf: 21
+    SubPropertyChainOf: 3
     SymmetricObjectProperty: 2
-  'Axioms: Number of axioms': 62004
-  'Entities: % of entities reused': 0.51
+  'Axioms: Number of axioms': 3035
+  'Entities: % of entities reused': 6.33
   'Entities: Number of annotation properties': 24
   'Entities: Number of classes': 675
-  'Entities: Number of data properties': 2017
+  'Entities: Number of data properties': 17
   'Entities: Number of individuals': 0
-  'Entities: Number of object properties': 6019
+  'Entities: Number of object properties': 22
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 16164
-    ObjectExactCardinality: 15
+    Class: 2188
+    ObjectExactCardinality: 16
     ObjectIntersectionOf: 7
-    ObjectMaxCardinality: 1
     ObjectMinCardinality: 3
     ObjectSomeValuesFrom: 6
   'Info: Does the ontology fall under OWL 2 DL?': false
@@ -44,7 +42,7 @@ metrics:
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
-    _reuse: 0.005
+    _reuse: 0.063
     oboscore: 0.45
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
@@ -52,20 +50,20 @@ metrics:
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     FBcv: 4
-    GSSO: 5030
-    IAO: 8725
-    NCIT: 4
-    ONTOAVIDA: 65247
-    RO: 53
+    GSSO: 34
+    IAO: 727
+    NCIT: 3
+    ONTOAVIDA: 2278
+    RO: 59
     STATO: 8
     dc: 2
     dc11: 3
     oboInOwl: 17
-    owl: 45
+    owl: 51
     rdf: 1
-    rdfs: 8711
+    rdfs: 715
     skos: 1
-    xsd: 2013
+    xsd: 13
   'Info: Which ontologies use it?':
   - ontoavida
 mirror_from: http://purl.obolibrary.org/obo/ontoavida.owl
@@ -84,7 +82,7 @@ results:
   FP06 Textual Definitions:
     status: PASS
   FP07 Relations:
-    comment: 8025 non-RO properties used.
+    comment: 26 non-RO properties used.
     file: fp7
     status: INFO
   FP08 Documented:
@@ -102,7 +100,7 @@ results:
     status: PASS
   ROBOT Report:
     status: PASS
-sha256_hash: d9afd56b02fd1602b82a95e32811dc7a83c220a2bd170856e8b048c3422381d7
+sha256_hash: 3da46c81ccb8c5219fe9a5a1ca083dab351c29f4c83dd3bac9555594593629d6
 summary:
   comment: 1 errors
   status: ERROR
@@ -110,4 +108,4 @@ summary:
     ERROR: 1
     INFO: 1
     WARN: 0
-version: http://purl.obolibrary.org/obo/ontoavida/2021-12-20/ontoavida.owl
+version: http://purl.obolibrary.org/obo/ontoavida/releases/2022-03-15/ontoavida.owl

@@ -6,113 +6,114 @@ base_prefixes:
 changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 87917
+    AnnotationAssertion: 111636
     AnnotationPropertyDomain: 1
     AnnotationPropertyRangeOf: 15
     ClassAssertion: 40
     DataPropertyRange: 2
-    Declaration: 9791
-    EquivalentClasses: 761
+    Declaration: 11811
+    EquivalentClasses: 1096
     EquivalentObjectProperties: 20
     FunctionalObjectProperty: 4
-    InverseObjectProperties: 54
+    InverseObjectProperties: 56
     IrrefexiveObjectProperty: 1
-    ObjectPropertyDomain: 124
-    ObjectPropertyRange: 123
+    ObjectPropertyDomain: 123
+    ObjectPropertyRange: 119
     ReflexiveObjectProperty: 2
     SubAnnotationPropertyOf: 15
-    SubClassOf: 19270
-    SubObjectPropertyOf: 309
+    SubClassOf: 25092
+    SubDataPropertyOf: 4
+    SubObjectPropertyOf: 315
     SubPropertyChainOf: 66
     SymmetricObjectProperty: 4
     TransitiveObjectProperty: 33
-  'Axioms: Number of axioms': 118552
-  'Entities: % of entities reused': 90.39
+  'Axioms: Number of axioms': 150455
+  'Entities: % of entities reused': 88.04
   'Entities: Number of annotation properties': 150
-  'Entities: Number of classes': 8796
-  'Entities: Number of data properties': 18
+  'Entities: Number of classes': 10800
+  'Entities: Number of data properties': 24
   'Entities: Number of individuals': 457
-  'Entities: Number of object properties': 363
+  'Entities: Number of object properties': 374
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 50173
-    DataHasValue: 7
+    Class: 64685
+    DataHasValue: 137
     ObjectAllValuesFrom: 22
     ObjectComplementOf: 6
     ObjectExactCardinality: 1
     ObjectHasValue: 28
-    ObjectIntersectionOf: 953
+    ObjectIntersectionOf: 1278
     ObjectOneOf: 2
-    ObjectSomeValuesFrom: 9353
+    ObjectSomeValuesFrom: 12702
     ObjectUnionOf: 38
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.599
+    _dashboard: 0.594
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.005
     _impact_external: 0
-    _reuse: 0.904
-    oboscore: 0.302
+    _reuse: 0.88
+    oboscore: 0.299
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
-  'Info: Syntax': RDF/XML Syntax
+  'Info: Syntax': RDF/XML
   'Info: Usage of namespaces in axioms':
     APOLLO_SV: 62
-    BFO: 1178
-    CHEBI: 8993
-    CHEBIALT: 454
-    CIDO: 6971
+    BFO: 1309
+    CHEBI: 13495
+    CHEBIALT: 916
+    CIDO: 10235
     CL: 53
     DOID: 300
     DOIDALT: 19
     DRON: 764
     EGGENE: 4
     ENVO: 50
-    GENENAMES: 1952
+    GENENAMES: 3245
     GENO: 14
-    GO: 4519
+    GO: 4524
     HP: 880
-    IAO: 21167
+    IAO: 26398
     IDO: 72
     MGI: 4
     MPATH: 5
-    NCBIGENE: 77
+    NCBIGENE: 79
     NCBITAXONALT: 1132
-    NCBITaxon: 7471
+    NCBITaxon: 8440
     NDFRT: 15812
     OAE: 333
     OBCS: 47
     OBI: 1958
     OGG: 714
-    OGMS: 36
+    OGMS: 35
     OMIABIS: 11
     OMRSE: 17
     OPMI: 44
-    PATO: 95
-    PR: 9445
-    PRALT: 531
-    RO: 5991
-    SO: 548
+    PATO: 90
+    PR: 14109
+    PRALT: 857
+    RO: 7988
+    SO: 872
     SOALT: 6
     SYMP: 67
     TRANS: 7
     UBERON: 601
     UO: 12
-    UPHENO: 7
-    VO: 1930
+    VO: 1931
+    VariO: 15
     dc: 31
     dc11: 308
     foaf: 32
-    obo: 3088
-    oboInOwl: 39648
-    owl: 207
+    obo: 5206
+    oboInOwl: 53032
+    owl: 211
     prefix_unknown: 69
     protege: 5
     rdf: 2
-    rdfs: 12067
+    rdfs: 15137
     skos: 2
-    xsd: 14
+    xsd: 143
     yeastgenome: 9
   'Info: Which ontologies use it?':
   - cido
@@ -123,7 +124,8 @@ results:
   FP01 Open:
     status: PASS
   FP02 Common Format:
-    status: PASS
+    comment: OWL syntax (RDF/XML), but should be RDF/XML
+    status: WARN
   FP03 URIs:
     status: PASS
   FP04 Versioning:
@@ -133,11 +135,11 @@ results:
     comment: Missing domain (scope)
     status: ERROR
   FP06 Textual Definitions:
-    comment: 28 duplicate definitions. 14 multiple definitions. 547 missing definitions.
+    comment: 32 duplicate definitions. 18 multiple definitions. 528 missing definitions.
       See ROBOT Report for details.
     status: ERROR
   FP07 Relations:
-    comment: 2 labels match RO labels. 73 non-RO properties used.
+    comment: 2 labels match RO labels. 88 non-RO properties used.
     file: fp7
     status: ERROR
   FP08 Documented:
@@ -148,7 +150,7 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 2 multiple labels. 1 missing labels. See ROBOT Report for details.
+    comment: 90 multiple labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
     comment: Missing version IRI to check date
@@ -156,19 +158,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 636 errors, 737 warnings, 19 info messages.
+    comment: 731 errors, 730 warnings, 19 info messages.
     file: robot_report
     results:
-      ERROR: 636
+      ERROR: 731
       INFO: 19
-      WARN: 737
+      WARN: 730
     status: ERROR
-sha256_hash: d8828248c7a85c9259ee270fbd4b409f5ad436ba1e24040017b3a69c18f9799f
+sha256_hash: 9b0b5eb00561a76e22675e93ad3fdabd2dea4b20fcc8d135335bbf32cde62b7a
 summary:
   comment: 8 errors
   status: ERROR
   summary_count:
     ERROR: 8
     INFO: 0
-    WARN: 0
+    WARN: 1
 version: null

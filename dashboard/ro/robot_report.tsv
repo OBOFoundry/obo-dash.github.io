@@ -1,78 +1,21 @@
 Level	Rule Name	Subject	Property	Value
 ERROR	missing_label	CARO:0000006	rdfs:label	
+ERROR	missing_label	CHEBI:50906	rdfs:label	
 ERROR	missing_label	GO:0004842	rdfs:label	
 ERROR	missing_label	GO:0016301	rdfs:label	
+ERROR	missing_label	GO:0019107	rdfs:label	
 ERROR	missing_label	IAO:0000426	rdfs:label	
 ERROR	missing_label	RO:0001900	rdfs:label	
-WARN	annotation_whitespace	contained in	IAO:0000116	"Intended meaning:
-domain: material entity
-range: spatial region or site (immaterial continuant)
-        @en"
-WARN	annotation_whitespace	ends during	rdfs:comment	X ends_during Y iff: ((start(Y) before_or_simultaneous_with end(X)) AND end(X) before_or_simultaneous_with end(Y). @en
-WARN	annotation_whitespace	fasciculates with	definition	"relationship between a neuron and a neuron projection bundle (e.g.- tract or nerve bundle) that one or more of its projections travels through.
-@en"
-WARN	annotation_whitespace	synapsed by	definition	Relation between an anatomical structure (including cells) and a neuron that chemically synapses to it. @en
-WARN	annotation_whitespace	synapsed_by_via_type_II_bouton	IAO:0000424	"BFO_0000051 some (GO_0042734 that BFO_0000050 some (GO_0045202 that BFO_0000051 some (GO_0061174 that BFO_0000051 some GO_0045211 that BFO_0000050 some ?Y)))
-"
-WARN	annotation_whitespace	has postsynaptic terminal in	definition	Relation between a neuron and some structure (e.g.- a brain region) in which it receives (chemical) synaptic input. @en
-WARN	annotation_whitespace	synapsed_by_via_type_III_bouton	definition	"Relation between a muscle and a motor neuron that synapses to it via a type III bouton.
-"
-WARN	annotation_whitespace	synapsed to	definition	" Relation between a neuron and an anatomical structure (including cells) that it chemically synapses to.
-        @en"
-WARN	annotation_whitespace	dendrite synapsed in	definition	"Relation between a neuron and some structure  (e.g.- a brain region) in which its dendrite receives synaptic input.
-
-	@en"
-WARN	annotation_whitespace	has fasciculating neuron projection	IAO:0000426	"(forall (?x ?y) 
-	(iff 
-		(has_fasciculating_neuron_projection ?x ?y)
-		(exists (?nps ?npbs)		
-			(and 
-				(\""neuron projection bundle ; CARO_0001001\"" ?x)
-				(\""neuron projection ; GO0043005\"" ?y)
-				(\""neuron projection segment ; CARO_0001502\"" ?nps)
-				(\""neuron projection bundle segment ; CARO_0001500\"" ?npbs)
-				(part_of ?nps ?y)
-				(part_of ?npbs ?x)
-				(part_of ?nps ?npbs)
-				(forall (?npbss)
-					(if
-						(and 
-							(\""neuron projection bundle subsegment ; CARO_0001501\"" ?npbss)
-							(part_of ?npbss ?npbs) 
-						)
-						(overlaps ?nps ?npbss)
-					))))))
-
-
-"
-WARN	annotation_whitespace	never in taxon	IAO:0000425	Class: ?X DisjointWith: RO_0002162 some ?Y 
-WARN	annotation_whitespace	spatially disjoint from	IAO:0000116	There are two ways to encode this as a shortcut relation. The other possibility to use an annotation assertion between two classes, and expand this to a disjointness axiom. @en
-WARN	annotation_whitespace	capable of	definition	A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. 
-WARN	annotation_whitespace	developmentally induced by	IAO:0000119	 Developmental Biology, Gilbert, 8th edition, figure 6.5(F)
-WARN	annotation_whitespace	results in maturation of	IAO:0000112	 an annotation of gene X to cell maturation with results_in_maturation_of CL:0000057 (fibroblast) means that the fibroblast is mature at the end of the process
-WARN	annotation_whitespace	contributes to	IAO:0000232	In the context of the Gene Ontology, contributes_to may be used only with classes from the molecular function ontology. 
-WARN	annotation_whitespace	results in transport along	definition	Holds between p and l when p is a transportation or localization process and the outcome of this process is to move c from one location to another, and the route taken by c follows a path that is aligned_with l 
-WARN	annotation_whitespace	results in specification of	definition	The relationship linking a cell and its participation in a process that results in the fate of the cell being specified. Once specification has taken place, a cell will be committed to differentiate down a specific pathway if left in its normal environment. 
-WARN	annotation_whitespace	obsolete has direct output	definition	p has direct input c iff c is a participanti n p, c is present at the end of p, and c is not present at the beginning of c. 
-WARN	annotation_whitespace	always present in taxon	IAO:0000116	This is a very strong relation. Often we will not have enough evidence to know for sure that there are no species within a lineage that lack the structure - loss is common in evolution. However, there are some statements we can make with confidence - no vertebrate lineage could persist without a brain or a heart. All primates are limbed. 
-WARN	annotation_whitespace	sequentially related to	definition	A relation that holds between two entities that have the property of being sequences or having sequences. 
-WARN	annotation_whitespace	temporal logical macro assertion on a class	IAO:0000232	This properties were created originally for the annotation of developmental or life cycle stages, such as for example Carnegie Stage 20 in humans. 
-WARN	annotation_whitespace	in many to many homology relationship with	has_exact_synonym	many:many homology 
-WARN	annotation_whitespace	http://purl.obolibrary.org/obo/ro/ro-base.owl	foaf:homepage	 https://github.com/oborel/obo-relations/^^http://www.w3.org/2001/XMLSchema#anyURI
-WARN	duplicate_label_synonym	directly positively regulates	IAO:0000118	directly positively regulates
-WARN	duplicate_label_synonym	directly negatively regulates	IAO:0000118	directly negatively regulates
-WARN	duplicate_exact_synonym	capable of inhibiting or preventing pathological process	IAO:0000118	treats
-WARN	duplicate_exact_synonym	is substance that treats	IAO:0000118	treats
-WARN	duplicate_exact_synonym	starts with	IAO:0000118	started by
-WARN	duplicate_exact_synonym	has start sequence	IAO:0000118	started by
 WARN	missing_definition	spatial region	definition	
 WARN	missing_definition	disposition	definition	
 WARN	missing_definition	quality	definition	
 WARN	missing_definition	function	definition	
 WARN	missing_definition	immaterial entity	definition	
 WARN	missing_definition	CARO:0000006	definition	
+WARN	missing_definition	CHEBI:50906	definition	
 WARN	missing_definition	GO:0004842	definition	
 WARN	missing_definition	GO:0016301	definition	
+WARN	missing_definition	GO:0019107	definition	
 WARN	missing_definition	definition	definition	
 WARN	missing_definition	contained in	definition	
 WARN	missing_definition	contains	definition	
@@ -198,3 +141,60 @@ WARN	missing_definition	causally upstream of or within, negative effect	definiti
 WARN	missing_definition	causally upstream of or within, positive effect	definition	
 WARN	missing_definition	is positive form of	definition	
 WARN	missing_definition	is negative form of	definition	
+WARN	missing_definition	results in fusion of	definition	
+WARN	missing_definition	exemplar data of	definition	
+WARN	missing_definition	has relative magnitude	definition	
+WARN	missing_definition	has phenotype or disease	definition	
+WARN	missing_definition	subset_property	definition	
+WARN	missing_definition	has_broad_synonym	definition	
+WARN	missing_definition	database_cross_reference	definition	
+WARN	missing_definition	has_exact_synonym	definition	
+WARN	missing_definition	has_narrow_synonym	definition	
+WARN	missing_definition	has_obo_format_version	definition	
+WARN	missing_definition	has_related_synonym	definition	
+WARN	missing_definition	in_subset	definition	
+WARN	duplicate_label_synonym	directly positively regulates	IAO:0000118	directly positively regulates
+WARN	duplicate_label_synonym	directly negatively regulates	IAO:0000118	directly negatively regulates
+WARN	annotation_whitespace	contained in	IAO:0000116	"Intended meaning:
+domain: material entity
+range: spatial region or site (immaterial continuant)
+        @en"
+WARN	annotation_whitespace	ends during	rdfs:comment	X ends_during Y iff: ((start(Y) before_or_simultaneous_with end(X)) AND end(X) before_or_simultaneous_with end(Y). @en
+WARN	annotation_whitespace	fasciculates with	definition	"relationship between a neuron and a neuron projection bundle (e.g.- tract or nerve bundle) that one or more of its projections travels through.
+@en"
+WARN	annotation_whitespace	synapsed by	definition	Relation between an anatomical structure (including cells) and a neuron that chemically synapses to it. @en
+WARN	annotation_whitespace	synapsed_by_via_type_II_bouton	IAO:0000424	"BFO_0000051 some (GO_0042734 that BFO_0000050 some (GO_0045202 that BFO_0000051 some (GO_0061174 that BFO_0000051 some GO_0045211 that BFO_0000050 some ?Y)))
+"
+WARN	annotation_whitespace	has postsynaptic terminal in	definition	Relation between a neuron and some structure (e.g.- a brain region) in which it receives (chemical) synaptic input. @en
+WARN	annotation_whitespace	synapsed_by_via_type_III_bouton	definition	"Relation between a muscle and a motor neuron that synapses to it via a type III bouton.
+"
+WARN	annotation_whitespace	synapsed to	definition	" Relation between a neuron and an anatomical structure (including cells) that it chemically synapses to.
+        @en"
+WARN	annotation_whitespace	dendrite synapsed in	definition	"Relation between a neuron and some structure  (e.g.- a brain region) in which its dendrite receives synaptic input.
+
+	@en"
+WARN	annotation_whitespace	has fasciculating neuron projection	IAO:0000426	"(forall (?x ?y) 
+	(iff 
+		(has_fasciculating_neuron_projection ?x ?y)
+		(exists (?nps ?npbs)		
+			(and 
+				(\""neuron projection bundle ; CARO_0001001\"" ?x)
+				(\""neuron projection ; GO0043005\"" ?y)
+				(\""neuron projection segment ; CARO_0001502\"" ?nps)
+				(\""neuron projection bundle segment ; CARO_0001500\"" ?npbs)
+				(part_of ?nps ?y)
+				(part_of ?npbs ?x)
+				(part_of ?nps ?npbs)
+				(forall (?npbss)
+					(if
+						(and 
+							(\""neuron projection bundle subsegment ; CARO_0001501\"" ?npbss)
+							(part_of ?npbss ?npbs) 
+						)
+						(overlaps ?nps ?npbss)
+					))))))
+
+
+"
+WARN	annotation_whitespace	never in taxon	IAO:0000425	Class: ?X DisjointWith: RO_0002162 some ?Y 
+WARN	annotation_whitespace	spatially disjoint from	IAO:0000116	There are two ways to encode this as a shortcut relation. The other possibility to use an annotation assertion between two classes, and expand this to a disjointness axiom. @en

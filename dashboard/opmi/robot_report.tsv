@@ -1,4 +1,21 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	misused_obsolete_label	obsolete class	rdfs:label	obsolete class@en
+ERROR	duplicate_definition	primary admission diagnosis status	IAO:0000115	The status of have the primary admission diagnosis
+ERROR	duplicate_definition	preliminary admission diagnosis status	IAO:0000115	The status of have the primary admission diagnosis
+ERROR	duplicate_definition	preliminary discharge diagnosis status	IAO:0000115	The status of have the primary admission diagnosis
+ERROR	duplicate_definition	recruitment status	IAO:0000115	The current stage of a clinical study and whether it is or will be open for enrollment
+ERROR	duplicate_definition	study status	IAO:0000115	The current stage of a clinical study and whether it is or will be open for enrollment
+ERROR	duplicate_definition	DNA biomarker	IAO:0000115	Oliver He, Yingtong Liu
+ERROR	duplicate_definition	RNA biomarker	IAO:0000115	Oliver He, Yingtong Liu
+ERROR	duplicate_definition	protein biomarker	IAO:0000115	Oliver He, Yingtong Liu
+ERROR	duplicate_definition	sponsor investigator role	IAO:0000115	An investigator role taken by an individual who both initiates and conducts the study
+ERROR	duplicate_definition	sponsor investigator	IAO:0000115	An investigator role taken by an individual who both initiates and conducts the study
+ERROR	duplicate_definition	Whether self owns email address	IAO:0000115	An email question that asks whether the email address provided belongs to the person being surveyed.
+ERROR	duplicate_definition	Who owns email address	IAO:0000115	An email question that asks whether the email address provided belongs to the person being surveyed.
+ERROR	duplicate_definition	outpatient visit	IAO:0000115	A vist ocurrence in which a patient attends an outpatient clinic with no plan to stay beyond the duration of the visit.
+ERROR	duplicate_definition	emergency room visit	IAO:0000115	A vist ocurrence in which a patient attends an outpatient clinic with no plan to stay beyond the duration of the visit.
+ERROR	duplicate_definition	age question	IAO:0000115	A textual question about age
+ERROR	duplicate_definition	email question	IAO:0000115	A textual question about age
 ERROR	multiple_definitions	health insurance plan	IAO:0000115	The code in the specific coding system for the payment method of the expenses incurred in a single hospitalization of the patient@en
 ERROR	multiple_definitions	health insurance plan	IAO:0000115	患者单次住院诊疗所发生费用的支付方式的特定编码体系中的代码@zh
 ERROR	multiple_definitions	viroid	IAO:0000115	
@@ -19,23 +36,33 @@ ERROR	multiple_definitions	Early Phase 1 clinical trial	IAO:0000115	A clinical t
 ERROR	multiple_definitions	Early Phase 1 clinical trial	IAO:0000115	A clinical trial that is at an Early Phase i or Phase 0, which is designed to use an investigational agent that is available only in very limited quantities and which has never previously given to humans or for which there is extremely limited human experience. Phase 0 clinical trials are intended to enable researchers to understand the path of the drug in the body and its efficacy. Adverse event reporting in Phase 0 trials is expedited. [def-source: NCI]
 ERROR	multiple_definitions	Phase 3 clinical trial	IAO:0000115	A clinical trial that is at Phase 3
 ERROR	multiple_definitions	Phase 3 clinical trial	IAO:0000115	A clinical trial that is at Phase 3, which is designed to investigate the efficacy of the biomedical or behavioral intervention in large groups of human subjects (from several hundred to several thousand), to confirm efficacy, to monitor adverse reactions to the new medication or treatment regimen with respect to long-term use and by comparing the intervention to other standard or experimental interventions as well as to a placebo. [def-source: NCI]
-ERROR	duplicate_definition	primary admission diagnosis status	IAO:0000115	The status of have the primary admission diagnosis
-ERROR	duplicate_definition	preliminary admission diagnosis status	IAO:0000115	The status of have the primary admission diagnosis
-ERROR	duplicate_definition	preliminary discharge diagnosis status	IAO:0000115	The status of have the primary admission diagnosis
-ERROR	duplicate_definition	recruitment status	IAO:0000115	The current stage of a clinical study and whether it is or will be open for enrollment
-ERROR	duplicate_definition	study status	IAO:0000115	The current stage of a clinical study and whether it is or will be open for enrollment
-ERROR	duplicate_definition	DNA biomarker	IAO:0000115	Oliver He, Yingtong Liu
-ERROR	duplicate_definition	RNA biomarker	IAO:0000115	Oliver He, Yingtong Liu
-ERROR	duplicate_definition	protein biomarker	IAO:0000115	Oliver He, Yingtong Liu
-ERROR	duplicate_definition	sponsor investigator role	IAO:0000115	An investigator role taken by an individual who both initiates and conducts the study
-ERROR	duplicate_definition	sponsor investigator	IAO:0000115	An investigator role taken by an individual who both initiates and conducts the study
-ERROR	duplicate_definition	Whether self owns email address	IAO:0000115	An email question that asks whether the email address provided belongs to the person being surveyed.
-ERROR	duplicate_definition	Who owns email address	IAO:0000115	An email question that asks whether the email address provided belongs to the person being surveyed.
-ERROR	duplicate_definition	outpatient visit	IAO:0000115	A vist ocurrence in which a patient attends an outpatient clinic with no plan to stay beyond the duration of the visit.
-ERROR	duplicate_definition	emergency room visit	IAO:0000115	A vist ocurrence in which a patient attends an outpatient clinic with no plan to stay beyond the duration of the visit.
-ERROR	duplicate_definition	age question	IAO:0000115	A textual question about age
-ERROR	duplicate_definition	email question	IAO:0000115	A textual question about age
-ERROR	misused_obsolete_label	obsolete class	rdfs:label	obsolete class@en
+WARN	equivalent_class_axiom_no_genus	precision medicine process	OBI:0000417	precision medicine objective
+WARN	equivalent_class_axiom_no_genus	investigator	RO:0000087	investigator role
+WARN	equivalent_class_axiom_no_genus	contact person	RO:0000087	contact person role
+WARN	equivalent_class_axiom_no_genus	primary registry identifier	RO:0000087	primary registry identifier role
+WARN	equivalent_class_axiom_no_genus	sponsor	RO:0000087	OBI:0000243
+WARN	equivalent_class_axiom_no_genus	secondary registry identifier	RO:0000087	secondary registry identifier role
+WARN	equivalent_class_axiom_no_genus	principal investigator	RO:0000087	principal investigator role
+WARN	equivalent_class_axiom_no_genus	sponsor investigator	RO:0000087	sponsor investigator role
+WARN	equivalent_class_axiom_no_genus	patient	RO:0000087	OMRSE:00000030
+WARN	equivalent_class_axiom_no_genus	biomarker	RO:0000087	biomarker role
+WARN	equivalent_class_axiom_no_genus	Early Phase 1 clinical trial	has process quality	clinical trial early phase 1
+WARN	equivalent_class_axiom_no_genus	Phase 1 clinical trial	has process quality	clinical trial phase 1
+WARN	equivalent_class_axiom_no_genus	Phase 2 clinical trial	has process quality	clinical trial phase 2
+WARN	equivalent_class_axiom_no_genus	Phase 3 clinical trial	has process quality	clinical trial phase 3
+WARN	equivalent_class_axiom_no_genus	Phase 4 clinical trial	has process quality	clinical trial phase 4
+WARN	duplicate_exact_synonym	provenance of procedure record	IAO:0000118	Procedure Type Concept
+WARN	duplicate_exact_synonym	provenance of episode record	IAO:0000118	Procedure Type Concept
+WARN	duplicate_exact_synonym	procedure start date	IAO:0000118	procedure date
+WARN	duplicate_exact_synonym	procedure start datetime	IAO:0000118	procedure date
+WARN	duplicate_exact_synonym	procedure end date	IAO:0000118	procedure date
+WARN	duplicate_exact_synonym	procedure end datetime	IAO:0000118	procedure date
+WARN	duplicate_exact_synonym	primary admission diagnosis status	IAO:0000118	primary admission diagnosis
+WARN	duplicate_exact_synonym	postoperative diagnosis status	IAO:0000118	primary admission diagnosis
+WARN	duplicate_exact_synonym	secondary sponsor role	IAO:0000118	collaborator role
+WARN	duplicate_exact_synonym	investigation collaborator role	IAO:0000118	collaborator role
+WARN	duplicate_exact_synonym	central contact person of study	IAO:0000118	central contact person
+WARN	duplicate_exact_synonym	central contact backup of study	IAO:0000118	central contact person
 WARN	missing_definition	more than 5.5 pounds (2500 grams) birth weight	IAO:0000115	
 WARN	missing_definition	less than 5.5 pounds (2500 grams) birth weight	IAO:0000115	
 WARN	missing_definition	unknown birth weight	IAO:0000115	
@@ -171,30 +198,3 @@ WARN	missing_definition	Whether patient signed HIPPA release form	IAO:0000115
 WARN	missing_definition	When HIPAA release form signed	IAO:0000115	
 WARN	missing_definition	Whether scanned HIPAA release form uploaded	IAO:0000115	
 WARN	missing_definition	AKi percutaneous biopsy	IAO:0000115	
-WARN	missing_definition	AKI open biopsy	IAO:0000115	
-WARN	missing_definition	diabetic nephropathy resisters percutaneous biopsy	IAO:0000115	
-WARN	missing_definition	Whether diseased	IAO:0000115	
-WARN	missing_definition	Whether kidney diseased	IAO:0000115	
-WARN	missing_definition	quality measured by year	IAO:0000115	
-WARN	missing_definition	answering textual question	IAO:0000115	
-WARN	missing_definition	CRF filled up by participant candidate	IAO:0000115	
-WARN	missing_definition	pregnancy test positive	IAO:0000115	
-WARN	missing_definition	hemoglobin test finding	IAO:0000115	
-WARN	missing_definition	hemoglobin test positive with result < 9 g/dl	IAO:0000115	
-WARN	missing_definition	status	IAO:0000115	
-WARN	missing_definition	patient status	IAO:0000115	
-WARN	missing_definition	kit identifier	IAO:0000115	
-WARN	missing_definition	excellent health status	IAO:0000115	
-WARN	missing_definition	very good health status	IAO:0000115	
-WARN	missing_definition	good health status	IAO:0000115	
-WARN	missing_definition	fair health status	IAO:0000115	
-WARN	missing_definition	poor health status	IAO:0000115	
-WARN	missing_definition	quality of life	IAO:0000115	
-WARN	missing_definition	excellent quality of life	IAO:0000115	
-WARN	missing_definition	very good quality of life	IAO:0000115	
-WARN	missing_definition	good quality of life	IAO:0000115	
-WARN	missing_definition	fair quality of life	IAO:0000115	
-WARN	missing_definition	poor quality of life	IAO:0000115	
-WARN	missing_definition	consent status	IAO:0000115	
-WARN	missing_definition	year	IAO:0000115	
-WARN	missing_definition	medical history question	IAO:0000115	

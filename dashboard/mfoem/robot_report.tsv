@@ -1,4 +1,8 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/MFOEM.owl	dc:description	
+ERROR	duplicate_label	fury	rdfs:label	Wut@de
+ERROR	duplicate_label	rage	rdfs:label	Wut@de
+ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/MFOEM.owl	dc:license	
 ERROR	multiple_labels	Verärgerung	rdfs:label	Verärgerung@de
 ERROR	multiple_labels	Verärgerung	rdfs:label	annoyance
 ERROR	multiple_labels	Verärgerung	rdfs:label	la gêne@fr
@@ -64,12 +68,7 @@ ERROR	multiple_labels	enthousiasme	rdfs:label	enthusiasm@en
 ERROR	multiple_labels	jouissance	rdfs:label	Genuss@de
 ERROR	multiple_labels	jouissance	rdfs:label	enjoyment
 ERROR	multiple_labels	jouissance	rdfs:label	jouissance@fr
-ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/MFOEM.owl	dc:description	
-ERROR	duplicate_label	fury	rdfs:label	Wut@de
-ERROR	duplicate_label	rage	rdfs:label	Wut@de
-ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/MFOEM.owl	dc:license	
 WARN	equivalent_pair	GO:0060273	owl:equivalentClass	crying
-WARN	duplicate_label_synonym	jouissance	IAO:0000118	enjoyment
 WARN	missing_definition	isOutputOf	IAO:0000115	
 WARN	missing_definition	synonym	IAO:0000115	
 WARN	missing_definition	aesthetic pleasure	IAO:0000115	
@@ -95,11 +94,8 @@ WARN	missing_definition	blushing	IAO:0000115
 WARN	missing_definition	temperature falling (experienced as feeling cold)	IAO:0000115	
 WARN	missing_definition	emotional speaking behaviour	IAO:0000115	
 WARN	missing_definition	tag display synonym	IAO:0000115	
-WARN	missing_definition	thirst	IAO:0000115	
 WARN	missing_definition	hasOutput	IAO:0000115	
-WARN	missing_definition	physical pleasure	IAO:0000115	
-WARN	missing_definition	ticklish	IAO:0000115	
-WARN	annotation_whitespace	appraisal	IAO:0000115	An appraisal is a cognitive representation which represents an evaluation of the relevance of some triggering object or event to the organism. 
+WARN	missing_definition	feeling ticklish	IAO:0000115	
 WARN	annotation_whitespace	anger	IAO:0000115	"Anger is a negative emotion, characterised by feelings of unpleasantness and high arousal, in the form of antagonistic feelings and action tendencies. [Source: OCEAS]
 "
 WARN	annotation_whitespace	appraisal of suddenness	IAO:0000115	An appraisal which represents an evaluation of how suddenly an event occurred. 
@@ -119,7 +115,6 @@ WARN	annotation_whitespace	evaluation as important to goals	IAO:0000115	An appra
 WARN	annotation_whitespace	evaluation as not important to goals	IAO:0000115	An appraisal that represents an evaluation that the event or object is not important to the person's goals or needs. 
 WARN	annotation_whitespace	appraisal of causal agency	IAO:0000115	An appraisal that represents an evaluation of who or what caused an event. 
 WARN	annotation_whitespace	appraisal as caused by chance	IAO:0000115	An appraisal that represents an evaluation that an event was caused by chance. 
-WARN	annotation_whitespace	feeling good	IAO:0000115	The subjective emotional feeling of feeling good, positive.  
 WARN	annotation_whitespace	appraisal as deliberate	IAO:0000115	An appraisal that represents an evaluation that an event was deliberately (intentionally) caused. 
 WARN	annotation_whitespace	appraisal of desirability of consequences	IAO:0000115	An appraisal that represents an evaluation of the desirability of the expected consequences of an event. 
 WARN	annotation_whitespace	appraisal as desirable consequences	IAO:0000115	An appraisal that represents an evaluation that the expected consequences of an event are desirable. 
@@ -138,15 +133,6 @@ WARN	annotation_whitespace	appraisal of justice of treatment	IAO:0000115	Apprais
 WARN	annotation_whitespace	appraisal as just treatment	IAO:0000115	An appraisal which represents an evaluation that the person was treated justly by another person. 
 WARN	annotation_whitespace	appraisal as unjust treatment	IAO:0000115	An appraisal that represents an evaluation that the person was treated unjustly by another person. (Injustice.) 
 WARN	annotation_whitespace	appraisal of loss	IAO:0000115	An appraisal that represents a belief that something or someone that is important to the person has been lost to the person. 
-WARN	annotation_whitespace	feeling at ease	IAO:0000115	The subjective emotional feeling of being at ease, comfortable, relaxed. 
-WARN	annotation_whitespace	feeling energetic	IAO:0000115	The subjective emotional feeling of having lots of energy, being energetic. 
-WARN	annotation_whitespace	feeling in control	IAO:0000115	The subjective emotional feeling that one is in control of oneself, that one is fully the agent of one's behavior. 
-WARN	annotation_whitespace	feeling restless	IAO:0000115	The subjective emotional feeling of restlessness, a state of not being calm, of an agitation to do something. 
-WARN	annotation_whitespace	feeling calm	IAO:0000115	The subjective feeling of being calm, being relaxed, being at peace. 
-WARN	annotation_whitespace	feeling out of control	IAO:0000115	The subjective feeling of not being in control, not being able to gain agency of one's own behavior. 
-WARN	annotation_whitespace	feeling strong	IAO:0000115	The subjective feeling of strength, capability, energy and capacity to do things. 
-WARN	annotation_whitespace	feeling weak	IAO:0000115	The subjective feeling of weakness, lack of energy and/or capability, faintness, absence of strength. 
-WARN	annotation_whitespace	feeling alert	IAO:0000115	The subjective feeling of being wide awake, alert, having active attention and perception. 
 WARN	annotation_whitespace	facial expression behaviour	IAO:0000115	A behavioural process that involves a change in the expression of the face. 
 WARN	annotation_whitespace	smiling	IAO:0000115	A facial expression behaviour in which the person smiles. 
 WARN	annotation_whitespace	pressing lips together	IAO:0000115	A facial expression behaviour in which the lips are tightly pressed together. 
@@ -175,6 +161,6 @@ WARN	annotation_whitespace	canonical sad facial expression	IAO:0000115	The canon
 WARN	annotation_whitespace	canonical emotional voice utterances	IAO:0000115	"The vocal utterances associated with the characteristic sound of an emotion. Obviously, any particular emotional instance may be associated with a great variety of different types of voice utterances or no voice utterances at all. However, \""canonical\"" or characteristic voice utterances can be associated with core emotions. "
 WARN	annotation_whitespace	canonical disgusted voice utterance	IAO:0000115	Voice utterances characteristically associated with the experience of disgust. 
 WARN	annotation_whitespace	canonical surprised facial expression	IAO:0000115	Characteristic facial expression made when a person is undergoing an experience of surprise. 
-WARN	annotation_whitespace	irritable mood	IAO:0000115	An irritable mood is a general feeling of mild annoyance, a heightened disposition to anger and other negatively valenced emotions. 
 WARN	annotation_whitespace	emotional personality trait	IAO:0000115	An emotional personality trait is a personality trait, a part of an overall personality, which predisposes the individual to repeated occurrences of a characteristic emotional process. 
+WARN	duplicate_label_synonym	jouissance	IAO:0000118	enjoyment
 INFO	lowercase_definition	shivering	IAO:0000115	

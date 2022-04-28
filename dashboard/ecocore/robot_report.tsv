@@ -1,15 +1,31 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/ecocore/ecocore-base.owl	dc:description	
 ERROR	missing_label	ENVO:01000063	rdfs:label	
 ERROR	missing_label	UBERON:0007197	rdfs:label	
 ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/ecocore/ecocore-base.owl	dc:title	
-ERROR	multiple_labels	secondary consumer	rdfs:label	A predator that eats primary consumers or herbivores
-ERROR	multiple_labels	secondary consumer	rdfs:label	secondary consumer
-ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/ecocore/ecocore-base.owl	dc:license	
-ERROR	multiple_definitions	sequentially hermaphroditic	definition	Sequential hermaphroditism occurs when the individual changes sex at some point in its life.
-ERROR	multiple_definitions	sequentially hermaphroditic	definition	a reproductive quality inhering in the bearer by virtue of the bearer changing sex at some point in its life
+ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/ecocore/ecocore-base.owl	dc:description	
+WARN	equivalent_class_axiom_no_genus	heterotroph	RO:0002215	heterotrophy
+WARN	equivalent_class_axiom_no_genus	fungivory	RO:0002233	NCBITaxon:4751
+WARN	equivalent_class_axiom_no_genus	herbivore	RO:0002215	herbivory
+WARN	equivalent_class_axiom_no_genus	carnivory	RO:0002233	NCBITaxon:33208
+WARN	equivalent_class_axiom_no_genus	autotroph	RO:0002215	autotrophy
+WARN	equivalent_class_axiom_no_genus	symbiotroph	RO:0002215	symbiotrophy
+WARN	equivalent_class_axiom_no_genus	deposit feeder	RO:0002215	deposit feeding
+WARN	equivalent_class_axiom_no_genus	decomposer	RO:0002215	decomposition
+WARN	equivalent_class_axiom_no_genus	detritivory	RO:0002233	ENVO:01001103
+WARN	equivalent_class_axiom_no_genus	folivore	RO:0002470	PO:0025034
+WARN	equivalent_class_axiom_no_genus	rhizovore	RO:0002470	PO:0009005
+WARN	equivalent_class_axiom_no_genus	predator	RO:0002215	predation
+WARN	equivalent_class_axiom_no_genus	scavenger	RO:0002215	scavenging
+WARN	equivalent_class_axiom_no_genus	insectivore	RO:0002215	insectivory
+WARN	equivalent_class_axiom_no_genus	seed predation	RO:0002233	PO:0009010
+WARN	equivalent_class_axiom_no_genus	frugivore	RO:0002470	PO:0009001
+WARN	equivalent_class_axiom_no_genus	granivore	RO:0002470	PO:0009010
+WARN	equivalent_class_axiom_no_genus	xylophage	RO:0002470	ENVO:00002040
+WARN	equivalent_class_axiom_no_genus	parasite	RO:0002215	trophic parasitism
+WARN	equivalent_class_axiom_no_genus	planktivore	RO:0002470	ENVO:01000063
+WARN	equivalent_class_axiom_no_genus	hematophagy	RO:0002233	UBERON:0000178
+WARN	equivalent_class_axiom_no_genus	leaf miner	RO:0002634	PO:0025034
 WARN	missing_definition	crepuscular	definition	
-WARN	missing_definition	secondary consumer	definition	
 WARN	missing_definition	ENVO:01000063	definition	
 WARN	missing_definition	editor preferred term	definition	
 WARN	missing_definition	example of usage	definition	
@@ -24,29 +40,6 @@ WARN	missing_definition	temporal interpretation	definition
 WARN	missing_definition	is a defining property chain axiom	definition	
 WARN	missing_definition	is a defining property chain axiom where second argument is reflexive	definition	
 WARN	missing_definition	UBERON:0007197	definition	
-WARN	equivalent_class_axiom_no_genus	heterotroph	RO:0002215	heterotrophy
-WARN	equivalent_class_axiom_no_genus	fungivory	RO:0002233	NCBITaxon:4751
-WARN	equivalent_class_axiom_no_genus	herbivore	RO:0002215	herbivory
-WARN	equivalent_class_axiom_no_genus	carnivory	RO:0002233	NCBITaxon:33208
-WARN	equivalent_class_axiom_no_genus	autotroph	RO:0002215	autotrophy
-WARN	equivalent_class_axiom_no_genus	decomposer	RO:0002215	decomposition
-WARN	equivalent_class_axiom_no_genus	detritivory	RO:0002233	ENVO:01001103
-WARN	equivalent_class_axiom_no_genus	folivore	RO:0002470	PO:0025034
-WARN	equivalent_class_axiom_no_genus	rhizovore	RO:0002470	PO:0009005
-WARN	equivalent_class_axiom_no_genus	predator	RO:0002215	predation
-WARN	equivalent_class_axiom_no_genus	scavenger	RO:0002215	scavenging
-WARN	equivalent_class_axiom_no_genus	insectivore	RO:0002215	insectivory
-WARN	equivalent_class_axiom_no_genus	seed predation	RO:0002233	PO:0009010
-WARN	equivalent_class_axiom_no_genus	photoorganoautotroph	RO:0002215	organotrophy
-WARN	equivalent_class_axiom_no_genus	chemoorganoautotroph	RO:0002215	GO:0062097
-WARN	equivalent_class_axiom_no_genus	chemolithoheterotroph	RO:0002215	lithotrophy
-WARN	equivalent_class_axiom_no_genus	photoautotroph	RO:0002215	phototrophy
-WARN	equivalent_class_axiom_no_genus	frugivore	RO:0002470	PO:0009001
-WARN	equivalent_class_axiom_no_genus	granivore	RO:0002470	PO:0009010
-WARN	equivalent_class_axiom_no_genus	xylophage	RO:0002470	ENVO:00002040
-WARN	equivalent_class_axiom_no_genus	parasite	RO:0002215	parasitism
-WARN	equivalent_class_axiom_no_genus	planktivore	RO:0002470	ENVO:01000063
-WARN	equivalent_class_axiom_no_genus	hematophagy	RO:0002233	UBERON:0000178
 INFO	lowercase_definition	hermaphroditic	definition	a reproductive quality inhering in the bearer by virtue of the bearer having reproductive organs normally associated with both male and female sexes at the same time
 INFO	lowercase_definition	protogynous	definition	a reproductive quality inhering in the bearer by virtue of the bearer having female reproductive organs at the beginning of its life and then switching to male reproductive organs
 INFO	lowercase_definition	symbiotroph	definition	heterotroph that acquires nutrition from a symbiont

@@ -1,15 +1,17 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	deprecated_class_reference	GO:0019012	owl:disjointWith	CL:0000000
-ERROR	deprecated_class_reference	GO:0019012	owl:disjointWith	extracellular matrix
-ERROR	deprecated_class_reference	GO:0019012	owl:disjointWith	protein-containing complex
-ERROR	deprecated_class_reference	GO:0019012	owl:disjointWith	organelle
-ERROR	deprecated_class_reference	GO:0019012	owl:disjointWith	symplast
 ERROR	missing_label	CHEBI:24431	rdfs:label	
 ERROR	missing_label	NCBITaxon:1	rdfs:label	
 ERROR	missing_label	OBA:0000001	rdfs:label	
 ERROR	missing_label	PATO:0000001	rdfs:label	
 ERROR	missing_label	SO:0000673	rdfs:label	
 ERROR	missing_label	SO:0000833	rdfs:label	
+ERROR	deprecated_class_reference	GO:0019012	owl:disjointWith	CL:0000000
+ERROR	deprecated_class_reference	GO:0019012	owl:disjointWith	extracellular matrix
+ERROR	deprecated_class_reference	GO:0019012	owl:disjointWith	protein-containing complex
+ERROR	deprecated_class_reference	GO:0019012	owl:disjointWith	organelle
+ERROR	deprecated_class_reference	GO:0019012	owl:disjointWith	symplast
+WARN	duplicate_label_synonym	voltage-gated calcium channel activity involved in regulation of presynaptic cytosolic calcium levels	has_exact_synonym	voltage-gated calcium channel activity involved in regulation of presynaptic cytosolic calcium levels
+WARN	duplicate_label_synonym	voltage-gated calcium channel activity involved in regulation of postsynaptic cytosolic calcium levels	has_exact_synonym	voltage-gated calcium channel activity involved in regulation of postsynaptic cytosolic calcium levels
 WARN	missing_definition	part of	definition	
 WARN	missing_definition	has part	definition	
 WARN	missing_definition	preceded by	definition	
@@ -63,7 +65,6 @@ WARN	missing_definition	results in morphogenesis of	definition
 WARN	missing_definition	results in maturation of	definition	
 WARN	missing_definition	causally upstream of, positive effect	definition	
 WARN	missing_definition	causally upstream of, negative effect	definition	
-WARN	missing_definition	transports or maintains localization of	definition	
 WARN	missing_definition	results in acquisition of features of	definition	
 WARN	missing_definition	regulates levels of	definition	
 WARN	missing_definition	regulated by	definition	
@@ -71,12 +72,10 @@ WARN	missing_definition	negatively regulated by	definition
 WARN	missing_definition	positively regulated by	definition	
 WARN	missing_definition	has target start location	definition	
 WARN	missing_definition	has target end location	definition	
-WARN	missing_definition	imports	definition	
 WARN	missing_definition	results in transport along	definition	
 WARN	missing_definition	results in transport across	definition	
 WARN	missing_definition	results in growth of	definition	
 WARN	missing_definition	results in transport to from or in	definition	
-WARN	missing_definition	exports	definition	
 WARN	missing_definition	results in commitment to	definition	
 WARN	missing_definition	results in determination of	definition	
 WARN	missing_definition	output of	definition	
@@ -102,6 +101,9 @@ WARN	missing_definition	has primary output	definition
 WARN	missing_definition	has primary input	definition	
 WARN	missing_definition	acts on population of	definition	
 WARN	missing_definition	results in fusion of	definition	
+WARN	missing_definition	regulates characteristic	definition	
+WARN	missing_definition	positively regulates characteristic	definition	
+WARN	missing_definition	negatively regulates characteristic	definition	
 WARN	missing_definition	SO:0000673	definition	
 WARN	missing_definition	SO:0000833	definition	
 WARN	missing_definition	label approved by the SynGO project	definition	
@@ -121,14 +123,11 @@ WARN	missing_definition	has_scope	definition
 WARN	missing_definition	has_synonym_type	definition	
 WARN	missing_definition	in_subset	definition	
 WARN	missing_definition	shorthand	definition	
-WARN	duplicate_label_synonym	voltage-gated calcium channel activity involved in regulation of presynaptic cytosolic calcium levels	has_exact_synonym	voltage-gated calcium channel activity involved in regulation of presynaptic cytosolic calcium levels
-WARN	duplicate_label_synonym	voltage-gated calcium channel activity involved in regulation of postsynaptic cytosolic calcium levels	has_exact_synonym	voltage-gated calcium channel activity involved in regulation of postsynaptic cytosolic calcium levels
 WARN	equivalent_pair	BFO:0000023	owl:equivalentClass	CHEBI:50906
 WARN	equivalent_pair	CHEBI:17843	owl:equivalentClass	SO:0000253
 WARN	equivalent_pair	CHEBI:18111	owl:equivalentClass	SO:0000252
 WARN	equivalent_pair	CHEBI:33699	owl:equivalentClass	SO:0000234
 WARN	equivalent_pair	CHEBI:36080	owl:equivalentClass	PR:000000001
-WARN	invalid_xref	delta(3,5)-delta(2,4)-dienoyl-CoA isomerase activity	database_cross_reference	EC.5.3.3.21
 INFO	lowercase_definition	cyclic nucleotide-dependent protein kinase activity	definition	cNMP-dependent catalysis of the reaction: ATP + a protein = ADP + a phosphoprotein.
 INFO	lowercase_definition	cAMP-dependent protein kinase activity	definition	cAMP-dependent catalysis of the reaction: ATP + a protein = ADP + a phosphoprotein.
 INFO	lowercase_definition	cGMP-dependent protein kinase activity	definition	cGMP dependent catalysis of the reaction: ATP + a protein = ADP + a phosphoprotein.
@@ -198,3 +197,4 @@ INFO	missing_superclass	exonucleolytic trimming involved in rRNA processing	rdfs
 INFO	missing_superclass	endonucleolytic cleavage involved in rRNA processing	rdfs:subClassOf	
 INFO	missing_superclass	nucleotide-excision repair, DNA duplex unwinding	rdfs:subClassOf	
 INFO	missing_superclass	DNA synthesis involved in DNA repair	rdfs:subClassOf	
+INFO	missing_superclass	double-strand break repair via single-strand annealing, removal of nonhomologous ends	rdfs:subClassOf	

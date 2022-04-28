@@ -6,38 +6,38 @@ base_prefixes:
 changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 7517
-    Declaration: 1472
+    AnnotationAssertion: 7561
+    Declaration: 1478
     DisjointClasses: 1
     EquivalentClasses: 130
     FunctionalObjectProperty: 2
     InverseObjectProperties: 1
     IrrefexiveObjectProperty: 1
     SubAnnotationPropertyOf: 34
-    SubClassOf: 1106
+    SubClassOf: 1113
     SubObjectPropertyOf: 3
     SubPropertyChainOf: 3
     TransitiveObjectProperty: 5
-  'Axioms: Number of axioms': 10275
-  'Entities: % of entities reused': 10.27
-  'Entities: Number of annotation properties': 86
-  'Entities: Number of classes': 1377
+  'Axioms: Number of axioms': 10332
+  'Entities: % of entities reused': 10.16
+  'Entities: Number of annotation properties': 85
+  'Entities: Number of classes': 1384
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 13
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 3906
+    Class: 3927
     ObjectIntersectionOf: 55
     ObjectSomeValuesFrom: 54
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.768
+    _dashboard: 0.718
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.022
     _impact_external: 0.25
-    _reuse: 0.103
-    oboscore: 0.395
+    _reuse: 0.102
+    oboscore: 0.37
   'Info: How many externally documented uses?': 1
   'Info: How many ontologies use it?': 4
   'Info: Logical consistency': true
@@ -46,17 +46,17 @@ metrics:
     BFO: 14
     CHEBI: 160
     FBCVALT: 109
-    FBcv: 3748
+    FBcv: 3769
     FBdv: 3
-    IAO: 1215
+    IAO: 1219
     RO: 33
     cc: 1
     dc: 1
     dc11: 4
     obo: 12
-    oboInOwl: 5791
+    oboInOwl: 5830
     owl: 184
-    rdfs: 1575
+    rdfs: 1582
   'Info: Which ontologies use it?':
   - apollo_sv
   - dpo
@@ -67,7 +67,9 @@ mirror_from: http://purl.obolibrary.org/obo/fbcv/fbcv-base.owl
 namespace: fbcv
 results:
   FP01 Open:
-    status: PASS
+    comment: Ontology license 'https://creativecommons.org/licenses/by/4.0/' does
+      not match regsitry license 'http://creativecommons.org/licenses/by/3.0/'.
+    status: ERROR
   FP02 Common Format:
     status: PASS
   FP03 URIs:
@@ -105,12 +107,12 @@ results:
       INFO: 140
       WARN: 193
     status: ERROR
-sha256_hash: 2aadb34220456c2acbc3100c8bfe21935eb59cd8aa7de6f3c37eb0f92c6dbed6
+sha256_hash: 940f49efb5d189edb0141ae4ace497658a0247fe43927e8dc7b1f74b588a30f2
 summary:
-  comment: 3 errors
+  comment: 4 errors
   status: ERROR
   summary_count:
-    ERROR: 3
+    ERROR: 4
     INFO: 1
     WARN: 0
-version: http://purl.obolibrary.org/obo/fbcv/releases/2022-01-24/fbcv-base.owl
+version: http://purl.obolibrary.org/obo/fbcv/releases/2022-04-14/fbcv-base.owl

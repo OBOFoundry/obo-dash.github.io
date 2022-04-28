@@ -6,54 +6,54 @@ base_prefixes:
 changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 9568
-    Declaration: 1753
-    EquivalentClasses: 491
-    SubClassOf: 957
-  'Axioms: Number of axioms': 12769
-  'Entities: % of entities reused': 28.94
-  'Entities: Number of annotation properties': 20
-  'Entities: Number of classes': 1731
+    AnnotationAssertion: 10106
+    Declaration: 1865
+    EquivalentClasses: 535
+    SubClassOf: 1004
+  'Axioms: Number of axioms': 13510
+  'Entities: % of entities reused': 28.23
+  'Entities: Number of annotation properties': 21
+  'Entities: Number of classes': 1842
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 7
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 5346
-    ObjectIntersectionOf: 721
-    ObjectSomeValuesFrom: 1063
+    Class: 5689
+    ObjectIntersectionOf: 771
+    ObjectSomeValuesFrom: 1153
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.721
+    _dashboard: 0.737
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.016
     _impact_external: 0
-    _reuse: 0.289
-    oboscore: 0.368
+    _reuse: 0.282
+    oboscore: 0.377
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 351
-    CHEBI: 527
-    FOODON: 100
+    BFO: 392
+    CHEBI: 541
+    FOODON: 98
     GO: 1
-    HP: 67
-    IAO: 1243
-    MAXO: 4273
+    HP: 92
+    IAO: 1328
+    MAXO: 4552
     MAXOALT: 1
     NBO: 18
     NCIT: 2
     OBI: 124
-    PR: 29
-    RO: 482
-    UBERON: 442
+    PR: 31
+    RO: 527
+    UBERON: 471
     dc: 1
-    dc11: 1208
-    oboInOwl: 6228
-    owl: 47
-    rdfs: 1319
+    dc11: 1296
+    oboInOwl: 6482
+    owl: 53
+    rdfs: 1451
   'Info: Which ontologies use it?':
   - ecto
   - maxo
@@ -75,8 +75,9 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 59 missing definitions. See ROBOT Report for details.
-    status: WARN
+    comment: 2 multiple definitions. 17 missing definitions. See ROBOT Report for
+      details.
+    status: ERROR
   FP07 Relations:
     comment: 4 non-RO properties used.
     file: fp7
@@ -89,26 +90,26 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 3 missing labels. See ROBOT Report for details.
+    comment: 68 multiple labels. 3 missing labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
     status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 94 errors, 63 warnings, 403 info messages.
+    comment: 73 errors, 53 warnings, 399 info messages.
     file: robot_report
     results:
-      ERROR: 94
-      INFO: 403
-      WARN: 63
+      ERROR: 73
+      INFO: 399
+      WARN: 53
     status: ERROR
-sha256_hash: ae71441cd40b5730bbed0b3bfb4618288bd0d8246f19ac9e179b7e4003ad291a
+sha256_hash: 64e54df2b2ed74fb72e3110740a13ed8c6241d3b9ee1bf039555a2a7f143ed12
 summary:
-  comment: 4 errors
+  comment: 5 errors
   status: ERROR
   summary_count:
-    ERROR: 4
+    ERROR: 5
     INFO: 1
-    WARN: 1
-version: http://purl.obolibrary.org/obo/maxo/releases/2021-08-19/maxo-base.owl
+    WARN: 0
+version: http://purl.obolibrary.org/obo/maxo/releases/2022-04-11/maxo-base.owl
