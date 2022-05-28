@@ -6,81 +6,81 @@ base_prefixes:
 changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 388337
-    Declaration: 31113
+    AnnotationAssertion: 384910
+    Declaration: 31524
     DisjointClasses: 79
-    EquivalentClasses: 7714
-    SubAnnotationPropertyOf: 34
-    SubClassOf: 47179
+    EquivalentClasses: 7727
+    SubAnnotationPropertyOf: 36
+    SubClassOf: 47399
     SubObjectPropertyOf: 4
     SubPropertyChainOf: 7
-  'Axioms: Number of axioms': 474467
-  'Entities: % of entities reused': 19.57
-  'Entities: Number of annotation properties': 82
-  'Entities: Number of classes': 31004
+  'Axioms: Number of axioms': 471686
+  'Entities: % of entities reused': 19.38
+  'Entities: Number of annotation properties': 84
+  'Entities: Number of classes': 31411
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
-  'Entities: Number of object properties': 33
+  'Entities: Number of object properties': 35
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 149079
-    ObjectIntersectionOf: 7699
-    ObjectSomeValuesFrom: 17965
+    Class: 149966
+    ObjectIntersectionOf: 7712
+    ObjectSomeValuesFrom: 18047
     ObjectUnionOf: 15
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.744
+    _dashboard: 0.939
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.038
+    _impact: 0.044
     _impact_external: 0.5
-    _reuse: 0.196
-    oboscore: 0.391
+    _reuse: 0.194
+    oboscore: 0.491
   'Info: How many externally documented uses?': 5
-  'Info: How many ontologies use it?': 7
+  'Info: How many ontologies use it?': 8
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     BFO: 56
-    CARO: 104
+    CARO: 103
     CHEBI: 120
-    CL: 781
+    CL: 780
     ECTO: 101
     ENVO: 42
     FOODON: 2
-    GO: 1054
-    HGNC: 10233
+    GO: 1050
+    HGNC: 10324
     HP: 2154
     HsapDv: 9
-    IAO: 18949
+    IAO: 19262
     MAXO: 10
     MF: 20
     MFOMD: 13
-    MONDO: 127068
-    MONDOALT: 2394
+    MONDO: 127876
+    MONDOALT: 2404
     NBO: 13
-    NCBITaxon: 1631
+    NCBITaxon: 1629
     NCIT: 75
     OBA: 2
-    PATO: 341
+    PATO: 340
     PO: 2
-    RO: 17011
+    RO: 17094
     SO: 50
-    UBERON: 4732
+    UBERON: 4723
     dc11: 115
-    obo: 808
-    oboInOwl: 532630
-    owl: 2823
+    obo: 815
+    oboInOwl: 522804
+    owl: 3049
     rdf: 3
-    rdfs: 34226
-    skos: 78823
-    xsd: 33201
+    rdfs: 34883
+    skos: 79019
+    xsd: 33375
   'Info: Which ontologies use it?':
   - duo
   - epio
   - gecko
   - genepio
   - ico
-  - mondo
+  - oba
   - ohmi
   - opmi
 mirror_from: http://purl.obolibrary.org/obo/mondo/mondo-base.owl
@@ -97,7 +97,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 7085 missing definitions. See ROBOT Report for details.
+    comment: 6861 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     comment: 14 non-RO properties used.
@@ -110,26 +110,25 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 310 missing labels. See ROBOT Report for details.
-    status: ERROR
+    status: PASS
   FP16 Maintenance:
     status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 310 errors, 18050 warnings, 0 info messages.
+    comment: 17837 warnings, 0 info messages.
     file: robot_report
     results:
-      ERROR: 310
+      ERROR: 0
       INFO: 0
-      WARN: 18050
-    status: ERROR
-sha256_hash: 18aec403c578beb2fd1a1958276c1e97d3d92ef9e3f71c992f8fa09ef9c285a1
+      WARN: 17837
+    status: WARN
+sha256_hash: 7565b4bb3a19eefea2c693a0c3d8a6fb082b78e37b17faee658f58ac12cc14cb
 summary:
-  comment: 2 errors
-  status: ERROR
+  comment: 2 warnings
+  status: WARN
   summary_count:
-    ERROR: 2
+    ERROR: 0
     INFO: 1
-    WARN: 1
-version: http://purl.obolibrary.org/obo/mondo/releases/2022-04-04/mondo-base.owl
+    WARN: 2
+version: http://purl.obolibrary.org/obo/mondo/releases/2022-05-02/mondo-base.owl

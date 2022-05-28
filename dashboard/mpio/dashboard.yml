@@ -3,7 +3,7 @@ base_prefixes:
 - MPIO
 - MPIOALT
 - MPIO
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 647
@@ -28,9 +28,12 @@ metrics:
     ObjectSomeValuesFrom: 29
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
+    _dashboard: 0.743
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.005
     _impact_external: 0
     _reuse: 0.917
+    oboscore: 0.374
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
@@ -59,7 +62,6 @@ metrics:
     rdfs: 142
   'Info: Which ontologies use it?':
   - dideo
-  - mpio
 mirror_from: http://purl.obolibrary.org/obo/mpio.owl
 namespace: mpio
 results:

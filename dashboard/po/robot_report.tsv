@@ -1,4 +1,6 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/po.owl	dc:license	
+ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/po.owl	dc:description	
 ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/po.owl	dc:title	
 ERROR	missing_label	obo:po#Angiosperm	rdfs:label	
 ERROR	missing_label	obo:po#Arabidopsis	rdfs:label	
@@ -15,19 +17,6 @@ ERROR	missing_label	obo:po#Rice	rdfs:label
 ERROR	missing_label	obo:po#Tomato	rdfs:label	
 ERROR	missing_label	obo:po#TraitNet	rdfs:label	
 ERROR	missing_label	obo:po#reference	rdfs:label	
-ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/po.owl	dc:license	
-ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/po.owl	dc:description	
-WARN	duplicate_exact_synonym	schizocarp fruit	oboInOwl:hasExactSynonym	nutlet (exact)
-WARN	duplicate_exact_synonym	nut fruit	oboInOwl:hasExactSynonym	nutlet (exact)
-WARN	duplicate_exact_synonym	drepanium inflorescence	oboInOwl:hasExactSynonym	drepanium (exact)
-WARN	duplicate_exact_synonym	compound drepanium inflorescence	oboInOwl:hasExactSynonym	drepanium (exact)
-WARN	duplicate_exact_synonym	coma	oboInOwl:hasExactSynonym	comae (exact, plural)
-WARN	duplicate_exact_synonym	gametophyte coma	oboInOwl:hasExactSynonym	comae (exact, plural)
-WARN	missing_synonymtype_declaration	German synonym (exact)	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	Japanese synonym (exact)	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	Plural	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	Spanish synonym (exact)	rdfs:subPropertyOf	
-WARN	annotation_whitespace	E emerged root elongation	IAO:0000115	OBSOLETE. The stage at which the emerged root starts to elongate. 
 WARN	missing_subset_declaration	obo:po#Angiosperm	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	obo:po#Arabidopsis	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	obo:po#Bryophytes	rdfs:subPropertyOf	
@@ -43,143 +32,154 @@ WARN	missing_subset_declaration	obo:po#Rice	rdfs:subPropertyOf
 WARN	missing_subset_declaration	obo:po#Tomato	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	obo:po#TraitNet	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	obo:po#reference	rdfs:subPropertyOf	
+WARN	duplicate_exact_synonym	PO:0030098	oboInOwl:hasExactSynonym	nutlet (exact)
+WARN	duplicate_exact_synonym	PO:0030102	oboInOwl:hasExactSynonym	nutlet (exact)
+WARN	duplicate_exact_synonym	PO:0030135	oboInOwl:hasExactSynonym	drepanium (exact)
+WARN	duplicate_exact_synonym	PO:0030136	oboInOwl:hasExactSynonym	drepanium (exact)
+WARN	duplicate_exact_synonym	PO:0020061	oboInOwl:hasExactSynonym	comae (exact, plural)
+WARN	duplicate_exact_synonym	PO:0028005	oboInOwl:hasExactSynonym	comae (exact, plural)
+WARN	annotation_whitespace	PO:0007529	IAO:0000115	OBSOLETE. The stage at which the emerged root starts to elongate. 
+WARN	missing_obsolete_label	PO:0000020	rdfs:label	starch sheath cell
+WARN	missing_obsolete_label	PO:0000023	rdfs:label	casparian strip
+WARN	missing_obsolete_label	PO:0000024	rdfs:label	filiform apparatus
+WARN	missing_obsolete_label	PO:0000028	rdfs:label	pollen tube tip
+WARN	missing_obsolete_label	PO:0000029	rdfs:label	root hair tip
+WARN	missing_obsolete_label	PO:0000081	rdfs:label	axial cell
+WARN	missing_obsolete_label	PO:0000273	rdfs:label	xylem element
+WARN	missing_obsolete_label	PO:0000373	rdfs:label	mucilage cell
+WARN	missing_obsolete_label	PO:0001000	rdfs:label	meristem elaboration
+WARN	missing_obsolete_label	PO:0001027	rdfs:label	meristamtic zone formation
+WARN	missing_obsolete_label	PO:0001028	rdfs:label	elongation zone formation
+WARN	missing_obsolete_label	PO:0001030	rdfs:label	specialization zone formation
+WARN	missing_obsolete_label	PO:0001098	rdfs:label	formation of starchy endosperm
+WARN	missing_obsolete_label	PO:0002001	rdfs:label	papillae
+WARN	missing_obsolete_label	PO:0003004	rdfs:label	haustorial root
+WARN	missing_obsolete_label	PO:0004002	rdfs:label	contact cell
+WARN	missing_obsolete_label	PO:0004004	rdfs:label	epithelium cell
+WARN	missing_obsolete_label	PO:0004005	rdfs:label	laticiferous cell
+WARN	missing_obsolete_label	PO:0004007	rdfs:label	phelloid cell
+WARN	missing_obsolete_label	PO:0004008	rdfs:label	photosynthetic cell
+WARN	missing_obsolete_label	PO:0004012	rdfs:label	secretory cell
+WARN	missing_obsolete_label	PO:0004706	rdfs:label	flower primordium
+WARN	missing_obsolete_label	PO:0005007	rdfs:label	non-articulated laticifer
+WARN	missing_obsolete_label	PO:0005009	rdfs:label	carpel septum
+WARN	missing_obsolete_label	PO:0005016	rdfs:label	replum
+WARN	missing_obsolete_label	PO:0005053	rdfs:label	laticifer
+WARN	missing_obsolete_label	PO:0005349	rdfs:label	schizo-lysigenous aerenchyma
+WARN	missing_obsolete_label	PO:0005621	rdfs:label	angular collenchyma
+WARN	missing_obsolete_label	PO:0005632	rdfs:label	lacunar collenchyma
+WARN	missing_obsolete_label	PO:0005633	rdfs:label	lamellar collenchyma
+WARN	missing_obsolete_label	PO:0005704	rdfs:label	rhexigenous aerenchyma
+WARN	missing_obsolete_label	PO:0005706	rdfs:label	lysigenous aerenchyma
+WARN	missing_obsolete_label	PO:0005752	rdfs:label	promeristem
+WARN	missing_obsolete_label	PO:0006067	rdfs:label	cambium-like transitional zone
+WARN	missing_obsolete_label	PO:0006086	rdfs:label	accessory transfusion tissue
+WARN	missing_obsolete_label	PO:0006087	rdfs:label	proliferation tissue
+WARN	missing_obsolete_label	PO:0006209	rdfs:label	lateral root epidermis
+WARN	missing_obsolete_label	PO:0006301	rdfs:label	corpus
+WARN	missing_obsolete_label	PO:0006302	rdfs:label	tunica
+WARN	missing_obsolete_label	PO:0006303	rdfs:label	L1
+WARN	missing_obsolete_label	PO:0006304	rdfs:label	L2
+WARN	missing_obsolete_label	PO:0006305	rdfs:label	L3
+WARN	missing_obsolete_label	PO:0006345	rdfs:label	pollen tube
+WARN	missing_obsolete_label	PO:0007004	rdfs:label	3 rapid growth stage
+WARN	missing_obsolete_label	PO:0007035	rdfs:label	7-8 fruit formation and maturation
+WARN	missing_obsolete_label	PO:0007061	rdfs:label	2.00 main shoot only
+WARN	missing_obsolete_label	PO:0007075	rdfs:label	5.02 20% of inflorescence emerged.
+WARN	missing_obsolete_label	PO:0007102	rdfs:label	5.04 40% of inflorescence emerged
+WARN	missing_obsolete_label	PO:0007105	rdfs:label	5.06 60% of inflorescence emerged
+WARN	missing_obsolete_label	PO:0007107	rdfs:label	5.08 80% of inflorescence emerged
+WARN	missing_obsolete_label	PO:0007121	rdfs:label	6.01 10% of flowers open
+WARN	missing_obsolete_label	PO:0007124	rdfs:label	6.03 30% of flowers open
+WARN	missing_obsolete_label	PO:0007125	rdfs:label	6.04 40% of flowers open
+WARN	missing_obsolete_label	PO:0007126	rdfs:label	7.02 fruit size 20%
+WARN	missing_obsolete_label	PO:0007127	rdfs:label	7.04 fruit size 40%
+WARN	missing_obsolete_label	PO:0007128	rdfs:label	7.06 fruit size 60%
+WARN	missing_obsolete_label	PO:0007129	rdfs:label	7.08 fruit size 80%
+WARN	missing_obsolete_label	PO:0007503	rdfs:label	A2.1 root intials differntiation of primary roots
+WARN	missing_obsolete_label	PO:0007512	rdfs:label	A2 root initials differentiation stage
+WARN	missing_obsolete_label	PO:0007514	rdfs:label	B3 crown root meristem formation
+WARN	missing_obsolete_label	PO:0007521	rdfs:label	C3.1 metaxylem differentiation of root.
+WARN	missing_obsolete_label	PO:0007523	rdfs:label	establishment of initial cells
+WARN	missing_obsolete_label	PO:0007524	rdfs:label	B1 primary root meristem formation
+WARN	missing_obsolete_label	PO:0007526	rdfs:label	F2 root hair elongation
+WARN	missing_obsolete_label	PO:0007528	rdfs:label	A2.2 root initials differentiation of lateral roots
+WARN	missing_obsolete_label	PO:0007529	rdfs:label	E emerged root elongation
+WARN	missing_obsolete_label	PO:0007530	rdfs:label	A2.3 founder cell derivatives of lateral root
+WARN	missing_obsolete_label	PO:0007531	rdfs:label	F1 root hair initiation
+WARN	missing_obsolete_label	PO:0007533	rdfs:label	C3.3 maturation of protoxylem elements in root.
+WARN	missing_obsolete_label	PO:0007534	rdfs:label	A2.4 root initials differentiation of crown roots
+WARN	missing_obsolete_label	PO:0007535	rdfs:label	A1 root initials formation stage
+WARN	missing_obsolete_label	PO:0007536	rdfs:label	root primordium visible
+WARN	missing_obsolete_label	PO:0007537	rdfs:label	C3.2 maturation of phloem elements in root.
+WARN	missing_obsolete_label	PO:0007539	rdfs:label	B2 lateral root meristem formation
+WARN	missing_obsolete_label	PO:0007609	rdfs:label	sepals 50% of final size
+WARN	missing_obsolete_label	PO:0007610	rdfs:label	sepals 100% of final size
+WARN	missing_obsolete_label	PO:0008031	rdfs:label	trichome branch
+WARN	missing_obsolete_label	PO:0008034	rdfs:label	leaf whorl
+WARN	missing_obsolete_label	PO:0008037	rdfs:label	seedling
+WARN	missing_obsolete_label	PO:0008038	rdfs:label	adventitious root primordium
+WARN	missing_obsolete_label	PO:0008043	rdfs:label	floral epidermis
+WARN	missing_obsolete_label	PO:0008044	rdfs:label	floral stomatal complex
+WARN	missing_obsolete_label	PO:0008045	rdfs:label	floral guard cell
+WARN	missing_obsolete_label	PO:0008046	rdfs:label	floral stomatal pore
+WARN	missing_obsolete_label	PO:0009003	rdfs:label	sporophyte
+WARN	missing_obsolete_label	PO:0009004	rdfs:label	gametophyte
+WARN	missing_obsolete_label	PO:0009014	rdfs:label	dermal tissue
+WARN	missing_obsolete_label	PO:0009016	rdfs:label	ground tissue
+WARN	missing_obsolete_label	PO:0009075	rdfs:label	plant ontology
+WARN	missing_obsolete_label	PO:0009083	rdfs:label	reproductive structures
+WARN	missing_obsolete_label	PO:0009091	rdfs:label	mature dispersal unit
+WARN	missing_obsolete_label	PO:0020008	rdfs:label	exine
+WARN	missing_obsolete_label	PO:0020009	rdfs:label	ectexine
+WARN	missing_obsolete_label	PO:0020010	rdfs:label	endexine
+WARN	missing_obsolete_label	PO:0020011	rdfs:label	nexine
+WARN	missing_obsolete_label	PO:0020012	rdfs:label	sexine
+WARN	missing_obsolete_label	PO:0020013	rdfs:label	tectum
+WARN	missing_obsolete_label	PO:0020014	rdfs:label	pollen wall columella
+WARN	missing_obsolete_label	PO:0020015	rdfs:label	sculpture elements
+WARN	missing_obsolete_label	PO:0020016	rdfs:label	foot layer
+WARN	missing_obsolete_label	PO:0020017	rdfs:label	intine
+WARN	missing_obsolete_label	PO:0020018	rdfs:label	germination pore
+WARN	missing_obsolete_label	PO:0020052	rdfs:label	megaphyll
+WARN	missing_obsolete_label	PO:0020053	rdfs:label	microphyll
+WARN	missing_obsolete_label	PO:0020059	rdfs:label	pollen wall
+WARN	missing_obsolete_label	PO:0020064	rdfs:label	dehiscent fruit
+WARN	missing_obsolete_label	PO:0020065	rdfs:label	indehiscent fruit
+WARN	missing_obsolete_label	PO:0020066	rdfs:label	fleshy fruit
+WARN	missing_obsolete_label	PO:0020081	rdfs:label	seed as dispersal unit
+WARN	missing_obsolete_label	PO:0020084	rdfs:label	pyrene
+WARN	missing_obsolete_label	PO:0020085	rdfs:label	seed and fruit wall as dispersal unit
+WARN	missing_obsolete_label	PO:0020086	rdfs:label	multiple fruit
+WARN	missing_obsolete_label	PO:0020095	rdfs:label	polar nucleus
+WARN	missing_obsolete_label	PO:0020125	rdfs:label	elongation zone
+WARN	missing_obsolete_label	PO:0020134	rdfs:label	statolith
+WARN	missing_obsolete_label	PO:0021002	rdfs:label	calyx absolute size
+WARN	missing_obsolete_label	PO:0021003	rdfs:label	calyx relationship
+WARN	missing_obsolete_label	PO:0025027	rdfs:label	microgametophytic cell
+WARN	missing_obsolete_label	PO:0025299	rdfs:label	calyptra perianth
+WARN	missing_obsolete_label	PO:0028001	rdfs:label	plant life cycle phase
+WARN	missing_synonymtype_declaration	obo:po#German	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:po#Japanese	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:po#Plural	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:po#Spanish	rdfs:subPropertyOf	
 WARN	missing_definition	obo:po#Angiosperm	IAO:0000115	
 WARN	missing_definition	obo:po#Arabidopsis	IAO:0000115	
 WARN	missing_definition	obo:po#Bryophytes	IAO:0000115	
 WARN	missing_definition	obo:po#CL	IAO:0000115	
 WARN	missing_definition	obo:po#Citrus	IAO:0000115	
-WARN	missing_definition	German synonym (exact)	IAO:0000115	
+WARN	missing_definition	obo:po#German	IAO:0000115	
 WARN	missing_definition	obo:po#Gymnosperms	IAO:0000115	
-WARN	missing_definition	Japanese synonym (exact)	IAO:0000115	
+WARN	missing_definition	obo:po#Japanese	IAO:0000115	
 WARN	missing_definition	obo:po#Maize	IAO:0000115	
 WARN	missing_definition	obo:po#Musa	IAO:0000115	
-WARN	missing_definition	Plural	IAO:0000115	
+WARN	missing_definition	obo:po#Plural	IAO:0000115	
 WARN	missing_definition	obo:po#Poaceae	IAO:0000115	
 WARN	missing_definition	obo:po#Potato	IAO:0000115	
 WARN	missing_definition	obo:po#Pteridophytes	IAO:0000115	
 WARN	missing_definition	obo:po#Rice	IAO:0000115	
-WARN	missing_definition	Spanish synonym (exact)	IAO:0000115	
+WARN	missing_definition	obo:po#Spanish	IAO:0000115	
 WARN	missing_definition	obo:po#Tomato	IAO:0000115	
 WARN	missing_definition	obo:po#TraitNet	IAO:0000115	
-WARN	missing_definition	isolated from germplasm	IAO:0000115	
+WARN	missing_definition	obo:po#isolated_from_germplasm	IAO:0000115	
 WARN	missing_definition	obo:po#reference	IAO:0000115	
-WARN	missing_obsolete_label	starch sheath cell	rdfs:label	starch sheath cell
-WARN	missing_obsolete_label	casparian strip	rdfs:label	casparian strip
-WARN	missing_obsolete_label	filiform apparatus	rdfs:label	filiform apparatus
-WARN	missing_obsolete_label	pollen tube tip	rdfs:label	pollen tube tip
-WARN	missing_obsolete_label	root hair tip	rdfs:label	root hair tip
-WARN	missing_obsolete_label	axial cell	rdfs:label	axial cell
-WARN	missing_obsolete_label	xylem element	rdfs:label	xylem element
-WARN	missing_obsolete_label	mucilage cell	rdfs:label	mucilage cell
-WARN	missing_obsolete_label	meristem elaboration	rdfs:label	meristem elaboration
-WARN	missing_obsolete_label	meristamtic zone formation	rdfs:label	meristamtic zone formation
-WARN	missing_obsolete_label	elongation zone formation	rdfs:label	elongation zone formation
-WARN	missing_obsolete_label	specialization zone formation	rdfs:label	specialization zone formation
-WARN	missing_obsolete_label	formation of starchy endosperm	rdfs:label	formation of starchy endosperm
-WARN	missing_obsolete_label	papillae	rdfs:label	papillae
-WARN	missing_obsolete_label	haustorial root	rdfs:label	haustorial root
-WARN	missing_obsolete_label	contact cell	rdfs:label	contact cell
-WARN	missing_obsolete_label	epithelium cell	rdfs:label	epithelium cell
-WARN	missing_obsolete_label	laticiferous cell	rdfs:label	laticiferous cell
-WARN	missing_obsolete_label	phelloid cell	rdfs:label	phelloid cell
-WARN	missing_obsolete_label	photosynthetic cell	rdfs:label	photosynthetic cell
-WARN	missing_obsolete_label	secretory cell	rdfs:label	secretory cell
-WARN	missing_obsolete_label	flower primordium	rdfs:label	flower primordium
-WARN	missing_obsolete_label	non-articulated laticifer	rdfs:label	non-articulated laticifer
-WARN	missing_obsolete_label	carpel septum	rdfs:label	carpel septum
-WARN	missing_obsolete_label	replum	rdfs:label	replum
-WARN	missing_obsolete_label	laticifer	rdfs:label	laticifer
-WARN	missing_obsolete_label	schizo-lysigenous aerenchyma	rdfs:label	schizo-lysigenous aerenchyma
-WARN	missing_obsolete_label	angular collenchyma	rdfs:label	angular collenchyma
-WARN	missing_obsolete_label	lacunar collenchyma	rdfs:label	lacunar collenchyma
-WARN	missing_obsolete_label	lamellar collenchyma	rdfs:label	lamellar collenchyma
-WARN	missing_obsolete_label	rhexigenous aerenchyma	rdfs:label	rhexigenous aerenchyma
-WARN	missing_obsolete_label	lysigenous aerenchyma	rdfs:label	lysigenous aerenchyma
-WARN	missing_obsolete_label	promeristem	rdfs:label	promeristem
-WARN	missing_obsolete_label	cambium-like transitional zone	rdfs:label	cambium-like transitional zone
-WARN	missing_obsolete_label	accessory transfusion tissue	rdfs:label	accessory transfusion tissue
-WARN	missing_obsolete_label	proliferation tissue	rdfs:label	proliferation tissue
-WARN	missing_obsolete_label	lateral root epidermis	rdfs:label	lateral root epidermis
-WARN	missing_obsolete_label	corpus	rdfs:label	corpus
-WARN	missing_obsolete_label	tunica	rdfs:label	tunica
-WARN	missing_obsolete_label	L1	rdfs:label	L1
-WARN	missing_obsolete_label	L2	rdfs:label	L2
-WARN	missing_obsolete_label	L3	rdfs:label	L3
-WARN	missing_obsolete_label	pollen tube	rdfs:label	pollen tube
-WARN	missing_obsolete_label	3 rapid growth stage	rdfs:label	3 rapid growth stage
-WARN	missing_obsolete_label	7-8 fruit formation and maturation	rdfs:label	7-8 fruit formation and maturation
-WARN	missing_obsolete_label	2.00 main shoot only	rdfs:label	2.00 main shoot only
-WARN	missing_obsolete_label	5.02 20% of inflorescence emerged.	rdfs:label	5.02 20% of inflorescence emerged.
-WARN	missing_obsolete_label	5.04 40% of inflorescence emerged	rdfs:label	5.04 40% of inflorescence emerged
-WARN	missing_obsolete_label	5.06 60% of inflorescence emerged	rdfs:label	5.06 60% of inflorescence emerged
-WARN	missing_obsolete_label	5.08 80% of inflorescence emerged	rdfs:label	5.08 80% of inflorescence emerged
-WARN	missing_obsolete_label	6.01 10% of flowers open	rdfs:label	6.01 10% of flowers open
-WARN	missing_obsolete_label	6.03 30% of flowers open	rdfs:label	6.03 30% of flowers open
-WARN	missing_obsolete_label	6.04 40% of flowers open	rdfs:label	6.04 40% of flowers open
-WARN	missing_obsolete_label	7.02 fruit size 20%	rdfs:label	7.02 fruit size 20%
-WARN	missing_obsolete_label	7.04 fruit size 40%	rdfs:label	7.04 fruit size 40%
-WARN	missing_obsolete_label	7.06 fruit size 60%	rdfs:label	7.06 fruit size 60%
-WARN	missing_obsolete_label	7.08 fruit size 80%	rdfs:label	7.08 fruit size 80%
-WARN	missing_obsolete_label	A2.1 root intials differntiation of primary roots	rdfs:label	A2.1 root intials differntiation of primary roots
-WARN	missing_obsolete_label	A2 root initials differentiation stage	rdfs:label	A2 root initials differentiation stage
-WARN	missing_obsolete_label	B3 crown root meristem formation	rdfs:label	B3 crown root meristem formation
-WARN	missing_obsolete_label	C3.1 metaxylem differentiation of root.	rdfs:label	C3.1 metaxylem differentiation of root.
-WARN	missing_obsolete_label	establishment of initial cells	rdfs:label	establishment of initial cells
-WARN	missing_obsolete_label	B1 primary root meristem formation	rdfs:label	B1 primary root meristem formation
-WARN	missing_obsolete_label	F2 root hair elongation	rdfs:label	F2 root hair elongation
-WARN	missing_obsolete_label	A2.2 root initials differentiation of lateral roots	rdfs:label	A2.2 root initials differentiation of lateral roots
-WARN	missing_obsolete_label	E emerged root elongation	rdfs:label	E emerged root elongation
-WARN	missing_obsolete_label	A2.3 founder cell derivatives of lateral root	rdfs:label	A2.3 founder cell derivatives of lateral root
-WARN	missing_obsolete_label	F1 root hair initiation	rdfs:label	F1 root hair initiation
-WARN	missing_obsolete_label	C3.3 maturation of protoxylem elements in root.	rdfs:label	C3.3 maturation of protoxylem elements in root.
-WARN	missing_obsolete_label	A2.4 root initials differentiation of crown roots	rdfs:label	A2.4 root initials differentiation of crown roots
-WARN	missing_obsolete_label	A1 root initials formation stage	rdfs:label	A1 root initials formation stage
-WARN	missing_obsolete_label	root primordium visible	rdfs:label	root primordium visible
-WARN	missing_obsolete_label	C3.2 maturation of phloem elements in root.	rdfs:label	C3.2 maturation of phloem elements in root.
-WARN	missing_obsolete_label	B2 lateral root meristem formation	rdfs:label	B2 lateral root meristem formation
-WARN	missing_obsolete_label	sepals 50% of final size	rdfs:label	sepals 50% of final size
-WARN	missing_obsolete_label	sepals 100% of final size	rdfs:label	sepals 100% of final size
-WARN	missing_obsolete_label	trichome branch	rdfs:label	trichome branch
-WARN	missing_obsolete_label	leaf whorl	rdfs:label	leaf whorl
-WARN	missing_obsolete_label	seedling	rdfs:label	seedling
-WARN	missing_obsolete_label	adventitious root primordium	rdfs:label	adventitious root primordium
-WARN	missing_obsolete_label	floral epidermis	rdfs:label	floral epidermis
-WARN	missing_obsolete_label	floral stomatal complex	rdfs:label	floral stomatal complex
-WARN	missing_obsolete_label	floral guard cell	rdfs:label	floral guard cell
-WARN	missing_obsolete_label	floral stomatal pore	rdfs:label	floral stomatal pore
-WARN	missing_obsolete_label	sporophyte	rdfs:label	sporophyte
-WARN	missing_obsolete_label	gametophyte	rdfs:label	gametophyte
-WARN	missing_obsolete_label	dermal tissue	rdfs:label	dermal tissue
-WARN	missing_obsolete_label	ground tissue	rdfs:label	ground tissue
-WARN	missing_obsolete_label	plant ontology	rdfs:label	plant ontology
-WARN	missing_obsolete_label	reproductive structures	rdfs:label	reproductive structures
-WARN	missing_obsolete_label	mature dispersal unit	rdfs:label	mature dispersal unit
-WARN	missing_obsolete_label	exine	rdfs:label	exine
-WARN	missing_obsolete_label	ectexine	rdfs:label	ectexine
-WARN	missing_obsolete_label	endexine	rdfs:label	endexine
-WARN	missing_obsolete_label	nexine	rdfs:label	nexine
-WARN	missing_obsolete_label	sexine	rdfs:label	sexine
-WARN	missing_obsolete_label	tectum	rdfs:label	tectum
-WARN	missing_obsolete_label	pollen wall columella	rdfs:label	pollen wall columella
-WARN	missing_obsolete_label	sculpture elements	rdfs:label	sculpture elements
-WARN	missing_obsolete_label	foot layer	rdfs:label	foot layer
-WARN	missing_obsolete_label	intine	rdfs:label	intine
-WARN	missing_obsolete_label	germination pore	rdfs:label	germination pore
-WARN	missing_obsolete_label	megaphyll	rdfs:label	megaphyll
-WARN	missing_obsolete_label	microphyll	rdfs:label	microphyll
-WARN	missing_obsolete_label	pollen wall	rdfs:label	pollen wall
-WARN	missing_obsolete_label	dehiscent fruit	rdfs:label	dehiscent fruit
-WARN	missing_obsolete_label	indehiscent fruit	rdfs:label	indehiscent fruit
-WARN	missing_obsolete_label	fleshy fruit	rdfs:label	fleshy fruit
-WARN	missing_obsolete_label	seed as dispersal unit	rdfs:label	seed as dispersal unit
-WARN	missing_obsolete_label	pyrene	rdfs:label	pyrene
-WARN	missing_obsolete_label	seed and fruit wall as dispersal unit	rdfs:label	seed and fruit wall as dispersal unit
-WARN	missing_obsolete_label	multiple fruit	rdfs:label	multiple fruit
-WARN	missing_obsolete_label	polar nucleus	rdfs:label	polar nucleus
-WARN	missing_obsolete_label	elongation zone	rdfs:label	elongation zone
-WARN	missing_obsolete_label	statolith	rdfs:label	statolith
-WARN	missing_obsolete_label	calyx absolute size	rdfs:label	calyx absolute size
-WARN	missing_obsolete_label	calyx relationship	rdfs:label	calyx relationship
-WARN	missing_obsolete_label	microgametophytic cell	rdfs:label	microgametophytic cell
-WARN	missing_obsolete_label	calyptra perianth	rdfs:label	calyptra perianth
-WARN	missing_obsolete_label	plant life cycle phase	rdfs:label	plant life cycle phase

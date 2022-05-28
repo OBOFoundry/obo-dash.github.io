@@ -8,7 +8,7 @@
             <div class="col-md-2"></div>
             <div class="col-md-8">
                 <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/mop.html">mop</a></h1>
-                <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/mop/releases/2022-02-01/mop.owl</p>
+                <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/mop/releases/2022-05-11/mop.owl</p>
                 <p class="lead" style="margin-top:-15px;"><b>Date run</b>: </p>
                 <p class="lead" style="margin-top:-15px;"><a href="dashboard.yml">View dashboard results as YAML</a></p>
                 <h3>Error Breakdown</h3>
@@ -18,7 +18,7 @@
                         
                     
                     <div class="alert alert-danger">
-                        <center><h3>ERROR - 2 errors</h3></center>
+                        <center><h3>ERROR - 1 errors</h3></center>
                     </div>
                 
                 <table class="table">
@@ -119,11 +119,11 @@
                                 
                                 
                             
-                            <td class="table-danger" style="text-align:center;">
-                                <img src="../assets/x.svg" height="15px">
+                            <td class="table-success" style="text-align:center;">
+                                <img src="../assets/check.svg" height="15px">
                             </td>
                             
-                                <td>Missing domain (scope)</td>
+                                <td></td>
                             
                             
                                 <td></td>
@@ -326,21 +326,23 @@
                                 <td>Axioms: Breakdown of axiom types</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>AnnotationAssertion: 15304</li>
-                                        
-                                        <li>Declaration: 3724</li>
-                                        
-                                        <li>EquivalentClasses: 31</li>
-                                        
-                                        <li>SubAnnotationPropertyOf: 2</li>
-                                        
-                                        <li>SubClassOf: 3786</li>
-                                        
-                                        <li>SubObjectPropertyOf: 3</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>AnnotationAssertion: 15298</li>
+                                            
+                                                <li>Declaration: 3724</li>
+                                            
+                                                <li>EquivalentClasses: 31</li>
+                                            
+                                                <li>SubAnnotationPropertyOf: 2</li>
+                                            
+                                                <li>SubClassOf: 3785</li>
+                                            
+                                                <li>SubObjectPropertyOf: 3</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -348,7 +350,7 @@
                                 <td>Axioms: Number of axioms</td>
                                 
                                 
-                                    <td>22850</td>
+                                    <td>22843</td>
                                 
                             </tr>
                         
@@ -356,7 +358,7 @@
                                 <td>Entities: % of entities reused</td>
                                 
                                 
-                                    <td>2.92</td>
+                                    <td>2.95</td>
                                 
                             </tr>
                         
@@ -364,7 +366,7 @@
                                 <td>Entities: Number of annotation properties</td>
                                 
                                 
-                                    <td>27</td>
+                                    <td>29</td>
                                 
                             </tr>
                         
@@ -372,7 +374,7 @@
                                 <td>Entities: Number of classes</td>
                                 
                                 
-                                    <td>3687</td>
+                                    <td>3686</td>
                                 
                             </tr>
                         
@@ -412,17 +414,19 @@
                                 <td>Info: Breakdown of OWL class expressions used</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>Class: 11354</li>
-                                        
-                                        <li>ObjectIntersectionOf: 29</li>
-                                        
-                                        <li>ObjectSomeValuesFrom: 158</li>
-                                        
-                                        <li>ObjectUnionOf: 2</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>Class: 11351</li>
+                                            
+                                                <li>ObjectIntersectionOf: 29</li>
+                                            
+                                                <li>ObjectSomeValuesFrom: 158</li>
+                                            
+                                                <li>ObjectUnionOf: 2</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -438,15 +442,23 @@
                                 <td>Info: Experimental OBO score</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>_impact: 0.022</li>
-                                        
-                                        <li>_impact_external: 0</li>
-                                        
-                                        <li>_reuse: 0.029</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>_dashboard: 0.839</li>
+                                            
+                                                <li>_formula: (1*impact+1*dashboard)/2</li>
+                                            
+                                                <li>_impact: 0.022</li>
+                                            
+                                                <li>_impact_external: 0</li>
+                                            
+                                                <li>_reuse: 0.03</li>
+                                            
+                                                <li>oboscore: 0.43</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -486,37 +498,37 @@
                                 <td>Info: Usage of namespaces in axioms</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>BFO: 180</li>
-                                        
-                                        <li>CHEBI: 236</li>
-                                        
-                                        <li>GO: 2</li>
-                                        
-                                        <li>IAO: 3689</li>
-                                        
-                                        <li>MOP: 11099</li>
-                                        
-                                        <li>MOPALT: 4</li>
-                                        
-                                        <li>REX: 2</li>
-                                        
-                                        <li>RO: 2</li>
-                                        
-                                        <li>RXNO: 7</li>
-                                        
-                                        <li>dc: 1</li>
-                                        
-                                        <li>dc11: 8</li>
-                                        
-                                        <li>oboInOwl: 8243</li>
-                                        
-                                        <li>owl: 47</li>
-                                        
-                                        <li>rdfs: 6998</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>BFO: 180</li>
+                                            
+                                                <li>CHEBI: 236</li>
+                                            
+                                                <li>IAO: 3689</li>
+                                            
+                                                <li>MOP: 11098</li>
+                                            
+                                                <li>MOPALT: 4</li>
+                                            
+                                                <li>REX: 2</li>
+                                            
+                                                <li>RO: 2</li>
+                                            
+                                                <li>RXNO: 7</li>
+                                            
+                                                <li>dc: 1</li>
+                                            
+                                                <li>dc11: 8</li>
+                                            
+                                                <li>oboInOwl: 8236</li>
+                                            
+                                                <li>owl: 47</li>
+                                            
+                                                <li>rdfs: 7000</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -524,7 +536,17 @@
                                 <td>Info: Which ontologies use it?</td>
                                 
                                 
-                                    <td>['cob', 'dideo', 'foodon', 'mop', 'rxno']</td>
+                                    <td><ul>
+                                        
+                                            <li>cob</li>
+                                        
+                                            <li>dideo</li>
+                                        
+                                            <li>foodon</li>
+                                        
+                                            <li>rxno</li>
+                                        
+                                    </ul></td>
                                 
                             </tr>
                         

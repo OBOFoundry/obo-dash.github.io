@@ -12,36 +12,42 @@
       <div class="report_summary"><table class="table">
       <tr><th><b>Level</b></th><th><b>Number of errors</b></th></tr>
       
-      <tr><td>ERROR</td><td>22</td></tr>
+      <tr><td>ERROR</td><td>20</td></tr>
       
-      <tr><td>WARN</td><td>177</td></tr>
+      <tr><td>WARN</td><td>220</td></tr>
+      
+      <tr><td>INFO</td><td>604</td></tr>
       
       </table></div>
       <h3>Error breakdown</h3>
       <div class="report_summary"><table class="table">
       <tr><th><b>Rule</b></th><th><b>Number of errors</b></th></tr>
       
-      <tr><td>duplicate_label</td><td>2</td></tr>
-      
       <tr><td>deprecated_boolean_datatype</td><td>1</td></tr>
-      
-      <tr><td>missing_label</td><td>2</td></tr>
-      
-      <tr><td>missing_ontology_license</td><td>1</td></tr>
       
       <tr><td>multiple_definitions</td><td>2</td></tr>
       
+      <tr><td>duplicate_definition</td><td>12</td></tr>
+      
+      <tr><td>missing_ontology_license</td><td>1</td></tr>
+      
       <tr><td>missing_ontology_title</td><td>1</td></tr>
       
-      <tr><td>duplicate_definition</td><td>12</td></tr>
+      <tr><td>duplicate_label</td><td>2</td></tr>
       
       <tr><td>missing_ontology_description</td><td>1</td></tr>
       
+      <tr><td>duplicate_exact_synonym</td><td>10</td></tr>
+      
+      <tr><td>missing_definition</td><td>176</td></tr>
+      
+      <tr><td>duplicate_label_synonym</td><td>18</td></tr>
+      
       <tr><td>equivalent_class_axiom_no_genus</td><td>16</td></tr>
       
-      <tr><td>duplicate_exact_synonym</td><td>12</td></tr>
+      <tr><td>missing_superclass</td><td>1</td></tr>
       
-      <tr><td>missing_definition</td><td>149</td></tr>
+      <tr><td>lowercase_definition</td><td>603</td></tr>
       
       </table></div>
       <p style="text-align:center; margin-top:-15px;">
@@ -79,93 +85,13 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_label">duplicate_label</a>
-              
-              </td>
-            
-              <td>
-              
-                active foraging behavior
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
-              
-              </td>
-            
-              <td>
-              
-                active foraging behavior@en
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-danger">
-            <td>2</td>
-            
-              <td>
-              
-                ERROR
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_label">duplicate_label</a>
-              
-              </td>
-            
-              <td>
-              
-                active foraging behavior
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
-              
-              </td>
-            
-              <td>
-              
-                active foraging behavior@en
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-danger">
-            <td>3</td>
-            
-              <td>
-              
-                ERROR
-              
-              </td>
-            
-              <td>
-              
                 <a href="http://robot.obolibrary.org/report_queries/deprecated_boolean_datatype">deprecated_boolean_datatype</a>
               
               </td>
             
               <td>
               
-                behavior related to feelings experiencing
+                <a href="http://purl.obolibrary.org/obo/NBO_0000453">NBO:0000453</a>
               
               </td>
             
@@ -189,6 +115,86 @@
             
           
           <tr class="table-danger">
+            <td>2</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/multiple_definitions">multiple_definitions</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/NBO_0020145">NBO:0020145</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                Alarm behavior triggered by agonistic actions or postures@en
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>3</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/multiple_definitions">multiple_definitions</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/NBO_0020145">NBO:0020145</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                Alarm behavior triggered by agonistic actions or postures.@en
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
             <td>4</td>
             
               <td>
@@ -199,25 +205,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_label">missing_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/duplicate_definition">duplicate_definition</a>
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/GO_0007625">GO:0007625</a>
+                <a href="http://purl.obolibrary.org/obo/NBO_0015003">NBO:0015003</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                
+                Feeding behavior during which a living entity acquires food and energy by actively searching for food resources.
 
               
               </td>
@@ -239,25 +245,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_label">missing_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/duplicate_definition">duplicate_definition</a>
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/GO_0007629">GO:0007629</a>
+                <a href="http://purl.obolibrary.org/obo/NBO_0015004">NBO:0015004</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                
+                Feeding behavior during which a living entity acquires food and energy by actively searching for food resources.
 
               
               </td>
@@ -270,6 +276,406 @@
           
           <tr class="table-danger">
             <td>6</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/duplicate_definition">duplicate_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/NBO_0015005">NBO:0015005</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                Consumption behavior that involves inhaling a material (such as finely ground tobacco leaves) through the nose.
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>7</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/duplicate_definition">duplicate_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/NBO_0015009">NBO:0015009</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                Consumption behavior that involves inhaling a material (such as finely ground tobacco leaves) through the nose.
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>8</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/duplicate_definition">duplicate_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/NBO_0000112">NBO:0000112</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/NBO_GVG">"\""Exhibiting a domineering, assault posture and/or hostile physical action toward inanimate objects.\"" [NBO:GVG]"
+</a>
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>9</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/duplicate_definition">duplicate_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/NBO_0000113">NBO:0000113</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/NBO_GVG">"\""Exhibiting a domineering, assault posture and/or hostile physical action toward inanimate objects.\"" [NBO:GVG]"
+</a>
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>10</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/duplicate_definition">duplicate_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/NBO_0000162">NBO:0000162</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/NBO_GVG">"\""Duration of REM sleep.\"" [NBO:GVG]"
+</a>
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>11</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/duplicate_definition">duplicate_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/NBO_0000164">NBO:0000164</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/NBO_GVG">"\""Duration of REM sleep.\"" [NBO:GVG]"
+</a>
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>12</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/duplicate_definition">duplicate_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/NBO_0003142">NBO:0003142</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                "\""Any process that modulates the frequency, rate or extent of withdrawal response.\"" [NBOC:GVG]"
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>13</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/duplicate_definition">duplicate_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/NBO_0003194">NBO:0003194</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                "\""Any process that modulates the frequency, rate or extent of withdrawal response.\"" [NBOC:GVG]"
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>14</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/duplicate_definition">duplicate_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/NBO_0003047">NBO:0003047</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                "\""Any process that modulates the frequency, rate or extent of behavioral response to chemical stimulus.\"" [NBOC:GVG]"
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>15</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/duplicate_definition">duplicate_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/NBO_0003104">NBO:0003104</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                "\""Any process that modulates the frequency, rate or extent of behavioral response to chemical stimulus.\"" [NBOC:GVG]"
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>16</td>
             
               <td>
               
@@ -309,87 +715,7 @@
             
           
           <tr class="table-danger">
-            <td>7</td>
-            
-              <td>
-              
-                ERROR
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/multiple_definitions">multiple_definitions</a>
-              
-              </td>
-            
-              <td>
-              
-                agonistic alarm
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                Alarm behavior triggered by agonistic actions or postures@en
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-danger">
-            <td>8</td>
-            
-              <td>
-              
-                ERROR
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/multiple_definitions">multiple_definitions</a>
-              
-              </td>
-            
-              <td>
-              
-                agonistic alarm
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                Alarm behavior triggered by agonistic actions or postures.@en
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-danger">
-            <td>9</td>
+            <td>17</td>
             
               <td>
               
@@ -429,326 +755,6 @@
             
           
           <tr class="table-danger">
-            <td>10</td>
-            
-              <td>
-              
-                ERROR
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_definition">duplicate_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                active foraging behavior
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                Feeding behavior during which a living entity acquires food and energy by actively searching for food resources.
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-danger">
-            <td>11</td>
-            
-              <td>
-              
-                ERROR
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_definition">duplicate_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                active foraging behavior
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                Feeding behavior during which a living entity acquires food and energy by actively searching for food resources.
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-danger">
-            <td>12</td>
-            
-              <td>
-              
-                ERROR
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_definition">duplicate_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                smoking behavior
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                Consumption behavior that involves inhaling a material (such as finely ground tobacco leaves) through the nose.
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-danger">
-            <td>13</td>
-            
-              <td>
-              
-                ERROR
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_definition">duplicate_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                snuffing behavior
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                Consumption behavior that involves inhaling a material (such as finely ground tobacco leaves) through the nose.
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-danger">
-            <td>14</td>
-            
-              <td>
-              
-                ERROR
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_definition">duplicate_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                aggressive behavior towards inanimate objects
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/NBO_GVG">"\""Exhibiting a domineering, assault posture and/or hostile physical action toward inanimate objects.\"" [NBO:GVG]"
-</a>
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-danger">
-            <td>15</td>
-            
-              <td>
-              
-                ERROR
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_definition">duplicate_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                aggressive behavior towards animate objects
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/NBO_GVG">"\""Exhibiting a domineering, assault posture and/or hostile physical action toward inanimate objects.\"" [NBO:GVG]"
-</a>
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-danger">
-            <td>16</td>
-            
-              <td>
-              
-                ERROR
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_definition">duplicate_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                REM duration
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/NBO_GVG">"\""Duration of REM sleep.\"" [NBO:GVG]"
-</a>
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-danger">
-            <td>17</td>
-            
-              <td>
-              
-                ERROR
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_definition">duplicate_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                NREM duration
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/NBO_GVG">"\""Duration of REM sleep.\"" [NBO:GVG]"
-</a>
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-danger">
             <td>18</td>
             
               <td>
@@ -759,25 +765,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_definition">duplicate_definition</a>
+                <a href="http://robot.obolibrary.org/report_queries/duplicate_label">duplicate_label</a>
               
               </td>
             
               <td>
               
-                regulation of withdrawal response
+                <a href="http://purl.obolibrary.org/obo/NBO_0015003">NBO:0015003</a>
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
               
               </td>
             
               <td>
               
-                "\""Any process that modulates the frequency, rate or extent of withdrawal response.\"" [NBOC:GVG]"
+                active foraging behavior@en
 
               
               </td>
@@ -799,25 +805,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_definition">duplicate_definition</a>
+                <a href="http://robot.obolibrary.org/report_queries/duplicate_label">duplicate_label</a>
               
               </td>
             
               <td>
               
-                regulation of addiction response
+                <a href="http://purl.obolibrary.org/obo/NBO_0015004">NBO:0015004</a>
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
               
               </td>
             
               <td>
               
-                "\""Any process that modulates the frequency, rate or extent of withdrawal response.\"" [NBOC:GVG]"
+                active foraging behavior@en
 
               
               </td>
@@ -830,86 +836,6 @@
           
           <tr class="table-danger">
             <td>20</td>
-            
-              <td>
-              
-                ERROR
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_definition">duplicate_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                regulation of behavioral response to chemical stimulus
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                "\""Any process that modulates the frequency, rate or extent of behavioral response to chemical stimulus.\"" [NBOC:GVG]"
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-danger">
-            <td>21</td>
-            
-              <td>
-              
-                ERROR
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_definition">duplicate_definition</a>
-              
-              </td>
-            
-              <td>
-              
-                regulation of behavioral response to addictive substance
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
-              
-              </td>
-            
-              <td>
-              
-                "\""Any process that modulates the frequency, rate or extent of behavioral response to chemical stimulus.\"" [NBOC:GVG]"
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-danger">
-            <td>22</td>
             
               <td>
               
@@ -949,6 +875,86 @@
             
           
           <tr class="table-warning">
+            <td>21</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym">duplicate_exact_synonym</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/NBO_0000025">NBO:0000025</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">oboInOwl:hasExactSynonym</a>
+              
+              </td>
+            
+              <td>
+              
+                unprovoked seizure
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>22</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym">duplicate_exact_synonym</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/NBO_0000642">NBO:0000642</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">oboInOwl:hasExactSynonym</a>
+              
+              </td>
+            
+              <td>
+              
+                unprovoked seizure
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
             <td>23</td>
             
               <td>
@@ -959,25 +965,25 @@
             
               <td>
               
-                equivalent_class_axiom_no_genus
+                <a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym">duplicate_exact_synonym</a>
               
               </td>
             
               <td>
               
-                regulation of eating behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000503">NBO:0000503</a>
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/RO_0002211">RO:0002211</a>
+                <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">oboInOwl:hasExactSynonym</a>
               
               </td>
             
               <td>
               
-                food consumption
+                RBD
 
               
               </td>
@@ -999,25 +1005,25 @@
             
               <td>
               
-                equivalent_class_axiom_no_genus
+                <a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym">duplicate_exact_synonym</a>
               
               </td>
             
               <td>
               
-                regulation of drinking behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000524">NBO:0000524</a>
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/RO_0002211">RO:0002211</a>
+                <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">oboInOwl:hasExactSynonym</a>
               
               </td>
             
               <td>
               
-                liquid consumption
+                RBD
 
               
               </td>
@@ -1039,25 +1045,25 @@
             
               <td>
               
-                equivalent_class_axiom_no_genus
+                <a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym">duplicate_exact_synonym</a>
               
               </td>
             
               <td>
               
-                regulation of behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000244">NBO:0000244</a>
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/RO_0002211">RO:0002211</a>
+                <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">oboInOwl:hasExactSynonym</a>
               
               </td>
             
               <td>
               
-                behavior process
+                hysteria
 
               
               </td>
@@ -1079,25 +1085,25 @@
             
               <td>
               
-                equivalent_class_axiom_no_genus
+                <a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym">duplicate_exact_synonym</a>
               
               </td>
             
               <td>
               
-                regulation of alcohol consumption
+                <a href="http://purl.obolibrary.org/obo/NBO_0000250">NBO:0000250</a>
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/RO_0002211">RO:0002211</a>
+                <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">oboInOwl:hasExactSynonym</a>
               
               </td>
             
               <td>
               
-                alcohol consumption
+                hysteria
 
               
               </td>
@@ -1119,25 +1125,25 @@
             
               <td>
               
-                equivalent_class_axiom_no_genus
+                <a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym">duplicate_exact_synonym</a>
               
               </td>
             
               <td>
               
-                regulation of cocaine consumption
+                <a href="http://purl.obolibrary.org/obo/NBO_0000027">NBO:0000027</a>
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/RO_0002211">RO:0002211</a>
+                <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">oboInOwl:hasExactSynonym</a>
               
               </td>
             
               <td>
               
-                cocaine consumption
+                groom@en
 
               
               </td>
@@ -1159,25 +1165,25 @@
             
               <td>
               
-                equivalent_class_axiom_no_genus
+                <a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym">duplicate_exact_synonym</a>
               
               </td>
             
               <td>
               
-                regulation of consumption behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000367">NBO:0000367</a>
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/RO_0002211">RO:0002211</a>
+                <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">oboInOwl:hasExactSynonym</a>
               
               </td>
             
               <td>
               
-                consumption behavior
+                fly@en
 
               
               </td>
@@ -1199,25 +1205,25 @@
             
               <td>
               
-                equivalent_class_axiom_no_genus
+                <a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym">duplicate_exact_synonym</a>
               
               </td>
             
               <td>
               
-                regulation of consumption of an addictive substance
+                <a href="http://purl.obolibrary.org/obo/NBO_0000277">NBO:0000277</a>
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/RO_0002211">RO:0002211</a>
+                <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">oboInOwl:hasExactSynonym</a>
               
               </td>
             
               <td>
               
-                consumption of an addictive substance
+                <new synonym>
 
               
               </td>
@@ -1239,25 +1245,25 @@
             
               <td>
               
-                equivalent_class_axiom_no_genus
+                <a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym">duplicate_exact_synonym</a>
               
               </td>
             
               <td>
               
-                regulation of nicotine consumption
+                <a href="http://purl.obolibrary.org/obo/NBO_0000420">NBO:0000420</a>
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/RO_0002211">RO:0002211</a>
+                <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">oboInOwl:hasExactSynonym</a>
               
               </td>
             
               <td>
               
-                nicotine consumption
+                <new synonym>
 
               
               </td>
@@ -1279,25 +1285,25 @@
             
               <td>
               
-                equivalent_class_axiom_no_genus
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                regulation of morphine consumption
+                <a href="http://purl.obolibrary.org/obo/NBO_0000002">NBO:0000002</a>
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/RO_0002211">RO:0002211</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                morphine consumption
+                
 
               
               </td>
@@ -1319,25 +1325,25 @@
             
               <td>
               
-                equivalent_class_axiom_no_genus
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                regulation of water consumption
+                <a href="http://purl.obolibrary.org/obo/NBO_0000008">NBO:0000008</a>
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/RO_0002211">RO:0002211</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                water consumption
+                
 
               
               </td>
@@ -1359,25 +1365,25 @@
             
               <td>
               
-                equivalent_class_axiom_no_genus
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                regulation of saccharin consumption
+                <a href="http://purl.obolibrary.org/obo/NBO_0000012">NBO:0000012</a>
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/RO_0002211">RO:0002211</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                saccharin consumption
+                
 
               
               </td>
@@ -1399,25 +1405,25 @@
             
               <td>
               
-                equivalent_class_axiom_no_genus
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                regulation of sexual activity
+                <a href="http://purl.obolibrary.org/obo/NBO_0000035">NBO:0000035</a>
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/RO_0002211">RO:0002211</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                sexual activity
+                
 
               
               </td>
@@ -1439,25 +1445,25 @@
             
               <td>
               
-                equivalent_class_axiom_no_genus
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                regulation of behavioral response to chemical stimulus
+                <a href="http://purl.obolibrary.org/obo/NBO_0000036">NBO:0000036</a>
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/RO_0002211">RO:0002211</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                behavioral response to chemical stimulus
+                
 
               
               </td>
@@ -1479,25 +1485,25 @@
             
               <td>
               
-                equivalent_class_axiom_no_genus
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                regulation of behavioral response to addictive substance
+                <a href="http://purl.obolibrary.org/obo/NBO_0000047">NBO:0000047</a>
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/RO_0002211">RO:0002211</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                behavioral response to addictive substance
+                
 
               
               </td>
@@ -1519,25 +1525,25 @@
             
               <td>
               
-                equivalent_class_axiom_no_genus
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                regulation of withdrawal response
+                <a href="http://purl.obolibrary.org/obo/NBO_0000059">NBO:0000059</a>
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/RO_0002211">RO:0002211</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                withdrawal response
+                
 
               
               </td>
@@ -1559,25 +1565,25 @@
             
               <td>
               
-                equivalent_class_axiom_no_genus
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                regulation of addiction response
+                <a href="http://purl.obolibrary.org/obo/NBO_0000069">NBO:0000069</a>
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/RO_0002211">RO:0002211</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                addiction response
+                
 
               
               </td>
@@ -1599,25 +1605,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym">duplicate_exact_synonym</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                seizures
+                <a href="http://purl.obolibrary.org/obo/NBO_0000070">NBO:0000070</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">oboInOwl:hasExactSynonym</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                unprovoked seizure
+                
 
               
               </td>
@@ -1639,25 +1645,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym">duplicate_exact_synonym</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                epilepsy
+                <a href="http://purl.obolibrary.org/obo/NBO_0000074">NBO:0000074</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">oboInOwl:hasExactSynonym</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                unprovoked seizure
+                
 
               
               </td>
@@ -1679,25 +1685,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym">duplicate_exact_synonym</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                REM sleep behavior disorder
+                <a href="http://purl.obolibrary.org/obo/NBO_0000082">NBO:0000082</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">oboInOwl:hasExactSynonym</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                RBD
+                
 
               
               </td>
@@ -1719,25 +1725,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym">duplicate_exact_synonym</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                recurrent brief depression
+                <a href="http://purl.obolibrary.org/obo/NBO_0000100">NBO:0000100</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">oboInOwl:hasExactSynonym</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                RBD
+                
 
               
               </td>
@@ -1759,25 +1765,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym">duplicate_exact_synonym</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                pathological anxiety
+                <a href="http://purl.obolibrary.org/obo/NBO_0000121">NBO:0000121</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">oboInOwl:hasExactSynonym</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                hysteria
+                
 
               
               </td>
@@ -1799,25 +1805,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym">duplicate_exact_synonym</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                conversion disorder
+                <a href="http://purl.obolibrary.org/obo/NBO_0000126">NBO:0000126</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">oboInOwl:hasExactSynonym</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                hysteria
+                
 
               
               </td>
@@ -1839,25 +1845,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym">duplicate_exact_synonym</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/GO_0007625">GO:0007625</a>
+                <a href="http://purl.obolibrary.org/obo/NBO_0000133">NBO:0000133</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">oboInOwl:hasExactSynonym</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                groom@en
+                
 
               
               </td>
@@ -1879,25 +1885,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym">duplicate_exact_synonym</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                grooming behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000135">NBO:0000135</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">oboInOwl:hasExactSynonym</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                groom@en
+                
 
               
               </td>
@@ -1919,25 +1925,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym">duplicate_exact_synonym</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/GO_0007629">GO:0007629</a>
+                <a href="http://purl.obolibrary.org/obo/NBO_0000141">NBO:0000141</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">oboInOwl:hasExactSynonym</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                fly@en
+                
 
               
               </td>
@@ -1959,25 +1965,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym">duplicate_exact_synonym</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                flight behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000142">NBO:0000142</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">oboInOwl:hasExactSynonym</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                fly@en
+                
 
               
               </td>
@@ -1999,25 +2005,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym">duplicate_exact_synonym</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                discriminatory behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000143">NBO:0000143</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">oboInOwl:hasExactSynonym</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                <new synonym>
+                
 
               
               </td>
@@ -2039,25 +2045,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym">duplicate_exact_synonym</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                bruxism
+                <a href="http://purl.obolibrary.org/obo/NBO_0000144">NBO:0000144</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">oboInOwl:hasExactSynonym</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                <new synonym>
+                
 
               
               </td>
@@ -2085,7 +2091,7 @@
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/GO_0007625">GO:0007625</a>
+                <a href="http://purl.obolibrary.org/obo/NBO_0000145">NBO:0000145</a>
               
               </td>
             
@@ -2125,7 +2131,7 @@
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/GO_0007629">GO:0007629</a>
+                <a href="http://purl.obolibrary.org/obo/NBO_0000146">NBO:0000146</a>
               
               </td>
             
@@ -2165,7 +2171,7 @@
             
               <td>
               
-                whole body movement
+                <a href="http://purl.obolibrary.org/obo/NBO_0000147">NBO:0000147</a>
               
               </td>
             
@@ -2205,7 +2211,7 @@
             
               <td>
               
-                rhythmic behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000148">NBO:0000148</a>
               
               </td>
             
@@ -2245,7 +2251,7 @@
             
               <td>
               
-                seizures/epilepsy
+                <a href="http://purl.obolibrary.org/obo/NBO_0000149">NBO:0000149</a>
               
               </td>
             
@@ -2285,7 +2291,7 @@
             
               <td>
               
-                emission behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000154">NBO:0000154</a>
               
               </td>
             
@@ -2325,7 +2331,7 @@
             
               <td>
               
-                behavioral control of production of sound
+                <a href="http://purl.obolibrary.org/obo/NBO_0000156">NBO:0000156</a>
               
               </td>
             
@@ -2365,7 +2371,7 @@
             
               <td>
               
-                weaning behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000157">NBO:0000157</a>
               
               </td>
             
@@ -2405,7 +2411,7 @@
             
               <td>
               
-                nuzzling
+                <a href="http://purl.obolibrary.org/obo/NBO_0000158">NBO:0000158</a>
               
               </td>
             
@@ -2445,7 +2451,7 @@
             
               <td>
               
-                swaying
+                <a href="http://purl.obolibrary.org/obo/NBO_0000159">NBO:0000159</a>
               
               </td>
             
@@ -2485,7 +2491,7 @@
             
               <td>
               
-                tilting
+                <a href="http://purl.obolibrary.org/obo/NBO_0000160">NBO:0000160</a>
               
               </td>
             
@@ -2525,7 +2531,7 @@
             
               <td>
               
-                yawning
+                <a href="http://purl.obolibrary.org/obo/NBO_0000163">NBO:0000163</a>
               
               </td>
             
@@ -2565,7 +2571,7 @@
             
               <td>
               
-                writhing
+                <a href="http://purl.obolibrary.org/obo/NBO_0000165">NBO:0000165</a>
               
               </td>
             
@@ -2605,7 +2611,7 @@
             
               <td>
               
-                exploration behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000167">NBO:0000167</a>
               
               </td>
             
@@ -2645,7 +2651,7 @@
             
               <td>
               
-                agonistic behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000168">NBO:0000168</a>
               
               </td>
             
@@ -2685,7 +2691,7 @@
             
               <td>
               
-                subordination behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000169">NBO:0000169</a>
               
               </td>
             
@@ -2725,7 +2731,7 @@
             
               <td>
               
-                liquid preference/aversion
+                <a href="http://purl.obolibrary.org/obo/NBO_0000172">NBO:0000172</a>
               
               </td>
             
@@ -2765,7 +2771,7 @@
             
               <td>
               
-                food preference/aversion
+                <a href="http://purl.obolibrary.org/obo/NBO_0000173">NBO:0000173</a>
               
               </td>
             
@@ -2805,7 +2811,7 @@
             
               <td>
               
-                food preference
+                <a href="http://purl.obolibrary.org/obo/NBO_0000174">NBO:0000174</a>
               
               </td>
             
@@ -2845,7 +2851,7 @@
             
               <td>
               
-                food aversion
+                <a href="http://purl.obolibrary.org/obo/NBO_0000175">NBO:0000175</a>
               
               </td>
             
@@ -2885,7 +2891,7 @@
             
               <td>
               
-                saccharin preference
+                <a href="http://purl.obolibrary.org/obo/NBO_0000197">NBO:0000197</a>
               
               </td>
             
@@ -2925,7 +2931,7 @@
             
               <td>
               
-                mating frequency
+                <a href="http://purl.obolibrary.org/obo/NBO_0000201">NBO:0000201</a>
               
               </td>
             
@@ -2965,7 +2971,7 @@
             
               <td>
               
-                mating preference
+                <a href="http://purl.obolibrary.org/obo/NBO_0000204">NBO:0000204</a>
               
               </td>
             
@@ -3005,7 +3011,7 @@
             
               <td>
               
-                mating receptivity
+                <a href="http://purl.obolibrary.org/obo/NBO_0000210">NBO:0000210</a>
               
               </td>
             
@@ -3045,7 +3051,7 @@
             
               <td>
               
-                sexual display behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000211">NBO:0000211</a>
               
               </td>
             
@@ -3085,7 +3091,7 @@
             
               <td>
               
-                social investigation
+                <a href="http://purl.obolibrary.org/obo/NBO_0000213">NBO:0000213</a>
               
               </td>
             
@@ -3125,7 +3131,7 @@
             
               <td>
               
-                reclusive behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000214">NBO:0000214</a>
               
               </td>
             
@@ -3165,7 +3171,7 @@
             
               <td>
               
-                maternal crouching
+                <a href="http://purl.obolibrary.org/obo/NBO_0000215">NBO:0000215</a>
               
               </td>
             
@@ -3205,7 +3211,7 @@
             
               <td>
               
-                nesting behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000216">NBO:0000216</a>
               
               </td>
             
@@ -3245,7 +3251,7 @@
             
               <td>
               
-                nest building behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000221">NBO:0000221</a>
               
               </td>
             
@@ -3285,7 +3291,7 @@
             
               <td>
               
-                sleep pattern
+                <a href="http://purl.obolibrary.org/obo/NBO_0000222">NBO:0000222</a>
               
               </td>
             
@@ -3325,7 +3331,7 @@
             
               <td>
               
-                rapid eye movement sleep
+                <a href="http://purl.obolibrary.org/obo/NBO_0000223">NBO:0000223</a>
               
               </td>
             
@@ -3365,7 +3371,7 @@
             
               <td>
               
-                sleep duration
+                <a href="http://purl.obolibrary.org/obo/NBO_0000224">NBO:0000224</a>
               
               </td>
             
@@ -3405,7 +3411,7 @@
             
               <td>
               
-                REM frequency
+                <a href="http://purl.obolibrary.org/obo/NBO_0000226">NBO:0000226</a>
               
               </td>
             
@@ -3445,7 +3451,7 @@
             
               <td>
               
-                NREM frequency
+                <a href="http://purl.obolibrary.org/obo/NBO_0000227">NBO:0000227</a>
               
               </td>
             
@@ -3485,7 +3491,7 @@
             
               <td>
               
-                circadian period
+                <a href="http://purl.obolibrary.org/obo/NBO_0000228">NBO:0000228</a>
               
               </td>
             
@@ -3525,7 +3531,7 @@
             
               <td>
               
-                circadian persistence
+                <a href="http://purl.obolibrary.org/obo/NBO_0000230">NBO:0000230</a>
               
               </td>
             
@@ -3565,7 +3571,7 @@
             
               <td>
               
-                circadian phase
+                <a href="http://purl.obolibrary.org/obo/NBO_0000231">NBO:0000231</a>
               
               </td>
             
@@ -3605,7 +3611,7 @@
             
               <td>
               
-                olfactory learning behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000232">NBO:0000232</a>
               
               </td>
             
@@ -3645,7 +3651,7 @@
             
               <td>
               
-                visual learning behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000240">NBO:0000240</a>
               
               </td>
             
@@ -3685,7 +3691,7 @@
             
               <td>
               
-                motor learning
+                <a href="http://purl.obolibrary.org/obo/NBO_0000241">NBO:0000241</a>
               
               </td>
             
@@ -3725,7 +3731,7 @@
             
               <td>
               
-                spatial learning
+                <a href="http://purl.obolibrary.org/obo/NBO_0000242">NBO:0000242</a>
               
               </td>
             
@@ -3765,7 +3771,7 @@
             
               <td>
               
-                iconic memory
+                <a href="http://purl.obolibrary.org/obo/NBO_0000244">NBO:0000244</a>
               
               </td>
             
@@ -3805,7 +3811,7 @@
             
               <td>
               
-                direct priming
+                <a href="http://purl.obolibrary.org/obo/NBO_0000252">NBO:0000252</a>
               
               </td>
             
@@ -3845,7 +3851,7 @@
             
               <td>
               
-                response priming
+                <a href="http://purl.obolibrary.org/obo/NBO_0000253">NBO:0000253</a>
               
               </td>
             
@@ -3885,7 +3891,7 @@
             
               <td>
               
-                avoidance learning behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000254">NBO:0000254</a>
               
               </td>
             
@@ -3925,7 +3931,7 @@
             
               <td>
               
-                conditioned taste aversion
+                <a href="http://purl.obolibrary.org/obo/NBO_0000255">NBO:0000255</a>
               
               </td>
             
@@ -3965,7 +3971,7 @@
             
               <td>
               
-                imprinting behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000256">NBO:0000256</a>
               
               </td>
             
@@ -4005,7 +4011,7 @@
             
               <td>
               
-                latent learning behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000257">NBO:0000257</a>
               
               </td>
             
@@ -4045,7 +4051,7 @@
             
               <td>
               
-                observational learning
+                <a href="http://purl.obolibrary.org/obo/NBO_0000259">NBO:0000259</a>
               
               </td>
             
@@ -4085,7 +4091,7 @@
             
               <td>
               
-                language learning behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000260">NBO:0000260</a>
               
               </td>
             
@@ -4125,7 +4131,7 @@
             
               <td>
               
-                conditioned emotional response
+                <a href="http://purl.obolibrary.org/obo/NBO_0000261">NBO:0000261</a>
               
               </td>
             
@@ -4165,7 +4171,7 @@
             
               <td>
               
-                conditioned place preference behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000262">NBO:0000262</a>
               
               </td>
             
@@ -4205,7 +4211,7 @@
             
               <td>
               
-                contextual conditioning behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000263">NBO:0000263</a>
               
               </td>
             
@@ -4245,7 +4251,7 @@
             
               <td>
               
-                cued conditioning behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000264">NBO:0000264</a>
               
               </td>
             
@@ -4285,7 +4291,7 @@
             
               <td>
               
-                spinal conditioning
+                <a href="http://purl.obolibrary.org/obo/NBO_0000265">NBO:0000265</a>
               
               </td>
             
@@ -4325,7 +4331,7 @@
             
               <td>
               
-                eye blink conditioning behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000267">NBO:0000267</a>
               
               </td>
             
@@ -4365,7 +4371,7 @@
             
               <td>
               
-                jaw movement conditioning behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000268">NBO:0000268</a>
               
               </td>
             
@@ -4405,7 +4411,7 @@
             
               <td>
               
-                pleasure behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000269">NBO:0000269</a>
               
               </td>
             
@@ -4445,7 +4451,7 @@
             
               <td>
               
-                excitement behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000272">NBO:0000272</a>
               
               </td>
             
@@ -4485,7 +4491,7 @@
             
               <td>
               
-                distress behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000273">NBO:0000273</a>
               
               </td>
             
@@ -4525,7 +4531,7 @@
             
               <td>
               
-                anorexia nervosa
+                <a href="http://purl.obolibrary.org/obo/NBO_0000274">NBO:0000274</a>
               
               </td>
             
@@ -4565,7 +4571,7 @@
             
               <td>
               
-                bulimia nervosa
+                <a href="http://purl.obolibrary.org/obo/NBO_0000275">NBO:0000275</a>
               
               </td>
             
@@ -4605,7 +4611,7 @@
             
               <td>
               
-                obesity
+                <a href="http://purl.obolibrary.org/obo/NBO_0000277">NBO:0000277</a>
               
               </td>
             
@@ -4645,7 +4651,7 @@
             
               <td>
               
-                pathological anxiety
+                <a href="http://purl.obolibrary.org/obo/NBO_0000278">NBO:0000278</a>
               
               </td>
             
@@ -4685,7 +4691,7 @@
             
               <td>
               
-                dissociative disorders
+                <a href="http://purl.obolibrary.org/obo/NBO_0000280">NBO:0000280</a>
               
               </td>
             
@@ -4725,7 +4731,7 @@
             
               <td>
               
-                dissociative amnesia
+                <a href="http://purl.obolibrary.org/obo/NBO_0000283">NBO:0000283</a>
               
               </td>
             
@@ -4765,7 +4771,7 @@
             
               <td>
               
-                dissociative fugue
+                <a href="http://purl.obolibrary.org/obo/NBO_0000284">NBO:0000284</a>
               
               </td>
             
@@ -4805,7 +4811,7 @@
             
               <td>
               
-                dissociative identity disorder
+                <a href="http://purl.obolibrary.org/obo/NBO_0000289">NBO:0000289</a>
               
               </td>
             
@@ -4845,7 +4851,7 @@
             
               <td>
               
-                mood disorder
+                <a href="http://purl.obolibrary.org/obo/NBO_0000290">NBO:0000290</a>
               
               </td>
             
@@ -4885,7 +4891,7 @@
             
               <td>
               
-                major depressive disorder
+                <a href="http://purl.obolibrary.org/obo/NBO_0000291">NBO:0000291</a>
               
               </td>
             
@@ -4925,7 +4931,7 @@
             
               <td>
               
-                psychotic disorder
+                <a href="http://purl.obolibrary.org/obo/NBO_0000292">NBO:0000292</a>
               
               </td>
             
@@ -4965,7 +4971,7 @@
             
               <td>
               
-                paranoid schizophrenia
+                <a href="http://purl.obolibrary.org/obo/NBO_0000295">NBO:0000295</a>
               
               </td>
             
@@ -5005,7 +5011,7 @@
             
               <td>
               
-                catatonic schizophrenia
+                <a href="http://purl.obolibrary.org/obo/NBO_0000299">NBO:0000299</a>
               
               </td>
             
@@ -5045,7 +5051,7 @@
             
               <td>
               
-                disorganized (hebephrenic) schizophrenia
+                <a href="http://purl.obolibrary.org/obo/NBO_0000305">NBO:0000305</a>
               
               </td>
             
@@ -5085,7 +5091,7 @@
             
               <td>
               
-                undifferentiated schizophrenia
+                <a href="http://purl.obolibrary.org/obo/NBO_0000318">NBO:0000318</a>
               
               </td>
             
@@ -5125,7 +5131,7 @@
             
               <td>
               
-                residual schizophrenia
+                <a href="http://purl.obolibrary.org/obo/NBO_0000319">NBO:0000319</a>
               
               </td>
             
@@ -5165,7 +5171,7 @@
             
               <td>
               
-                personality disorder
+                <a href="http://purl.obolibrary.org/obo/NBO_0000320">NBO:0000320</a>
               
               </td>
             
@@ -5205,7 +5211,7 @@
             
               <td>
               
-                delirium
+                <a href="http://purl.obolibrary.org/obo/NBO_0000321">NBO:0000321</a>
               
               </td>
             
@@ -5245,7 +5251,7 @@
             
               <td>
               
-                dementia
+                <a href="http://purl.obolibrary.org/obo/NBO_0000324">NBO:0000324</a>
               
               </td>
             
@@ -5285,7 +5291,7 @@
             
               <td>
               
-                amnestic disorder
+                <a href="http://purl.obolibrary.org/obo/NBO_0000330">NBO:0000330</a>
               
               </td>
             
@@ -5325,7 +5331,7 @@
             
               <td>
               
-                social facilitation
+                <a href="http://purl.obolibrary.org/obo/NBO_0000331">NBO:0000331</a>
               
               </td>
             
@@ -5365,7 +5371,7 @@
             
               <td>
               
-                social interference
+                <a href="http://purl.obolibrary.org/obo/NBO_0000332">NBO:0000332</a>
               
               </td>
             
@@ -5405,7 +5411,7 @@
             
               <td>
               
-                group polarization
+                <a href="http://purl.obolibrary.org/obo/NBO_0000333">NBO:0000333</a>
               
               </td>
             
@@ -5445,7 +5451,7 @@
             
               <td>
               
-                groupthink
+                <a href="http://purl.obolibrary.org/obo/NBO_0000334">NBO:0000334</a>
               
               </td>
             
@@ -5485,7 +5491,7 @@
             
               <td>
               
-                discriminatory behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000335">NBO:0000335</a>
               
               </td>
             
@@ -5525,7 +5531,7 @@
             
               <td>
               
-                gender specific discriminatory behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000336">NBO:0000336</a>
               
               </td>
             
@@ -5565,7 +5571,7 @@
             
               <td>
               
-                attraction-related behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000337">NBO:0000337</a>
               
               </td>
             
@@ -5605,7 +5611,7 @@
             
               <td>
               
-                friendship
+                <a href="http://purl.obolibrary.org/obo/NBO_0000349">NBO:0000349</a>
               
               </td>
             
@@ -5645,7 +5651,7 @@
             
               <td>
               
-                love
+                <a href="http://purl.obolibrary.org/obo/NBO_0000354">NBO:0000354</a>
               
               </td>
             
@@ -5685,7 +5691,7 @@
             
               <td>
               
-                social influence related behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000414">NBO:0000414</a>
               
               </td>
             
@@ -5725,7 +5731,7 @@
             
               <td>
               
-                conformity
+                <a href="http://purl.obolibrary.org/obo/NBO_0000444">NBO:0000444</a>
               
               </td>
             
@@ -5765,7 +5771,7 @@
             
               <td>
               
-                obedience to authority
+                <a href="http://purl.obolibrary.org/obo/NBO_0000445">NBO:0000445</a>
               
               </td>
             
@@ -5805,7 +5811,7 @@
             
               <td>
               
-                bystander intervention
+                <a href="http://purl.obolibrary.org/obo/NBO_0000448">NBO:0000448</a>
               
               </td>
             
@@ -5845,7 +5851,7 @@
             
               <td>
               
-                satiation
+                <a href="http://purl.obolibrary.org/obo/NBO_0000453">NBO:0000453</a>
               
               </td>
             
@@ -5885,7 +5891,7 @@
             
               <td>
               
-                alloparental behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000471">NBO:0000471</a>
               
               </td>
             
@@ -5925,7 +5931,7 @@
             
               <td>
               
-                memory encoding behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000473">NBO:0000473</a>
               
               </td>
             
@@ -5965,7 +5971,7 @@
             
               <td>
               
-                balance
+                <a href="http://purl.obolibrary.org/obo/NBO_0000474">NBO:0000474</a>
               
               </td>
             
@@ -6005,7 +6011,7 @@
             
               <td>
               
-                body rotation sensation behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000476">NBO:0000476</a>
               
               </td>
             
@@ -6045,7 +6051,7 @@
             
               <td>
               
-                gravitation sensation behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000482">NBO:0000482</a>
               
               </td>
             
@@ -6085,7 +6091,7 @@
             
               <td>
               
-                movement sensation behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000487">NBO:0000487</a>
               
               </td>
             
@@ -6125,7 +6131,7 @@
             
               <td>
               
-                taste behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000489">NBO:0000489</a>
               
               </td>
             
@@ -6165,7 +6171,7 @@
             
               <td>
               
-                cutaneous sensation behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000515">NBO:0000515</a>
               
               </td>
             
@@ -6205,7 +6211,7 @@
             
               <td>
               
-                nociceptive behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000530">NBO:0000530</a>
               
               </td>
             
@@ -6245,7 +6251,7 @@
             
               <td>
               
-                touch related behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000531">NBO:0000531</a>
               
               </td>
             
@@ -6285,7 +6291,7 @@
             
               <td>
               
-                chemical nociceptive behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000532">NBO:0000532</a>
               
               </td>
             
@@ -6325,7 +6331,7 @@
             
               <td>
               
-                mechanical nociceptive behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000533">NBO:0000533</a>
               
               </td>
             
@@ -6365,7 +6371,7 @@
             
               <td>
               
-                thermal nociceptive behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000553">NBO:0000553</a>
               
               </td>
             
@@ -6405,7 +6411,7 @@
             
               <td>
               
-                chemically-elicited antinociceptive behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000554">NBO:0000554</a>
               
               </td>
             
@@ -6445,7 +6451,7 @@
             
               <td>
               
-                pressure related behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000555">NBO:0000555</a>
               
               </td>
             
@@ -6485,7 +6491,7 @@
             
               <td>
               
-                manual dexterity
+                <a href="http://purl.obolibrary.org/obo/NBO_0000558">NBO:0000558</a>
               
               </td>
             
@@ -6525,7 +6531,7 @@
             
               <td>
               
-                bilateral coordination
+                <a href="http://purl.obolibrary.org/obo/NBO_0000565">NBO:0000565</a>
               
               </td>
             
@@ -6565,7 +6571,7 @@
             
               <td>
               
-                jaw jerk reflex
+                <a href="http://purl.obolibrary.org/obo/NBO_0000566">NBO:0000566</a>
               
               </td>
             
@@ -6605,7 +6611,7 @@
             
               <td>
               
-                eye movement
+                <a href="http://purl.obolibrary.org/obo/NBO_0000573">NBO:0000573</a>
               
               </td>
             
@@ -6645,7 +6651,7 @@
             
               <td>
               
-                tail movement
+                <a href="http://purl.obolibrary.org/obo/NBO_0000617">NBO:0000617</a>
               
               </td>
             
@@ -6685,7 +6691,7 @@
             
               <td>
               
-                vertical activity
+                <a href="http://purl.obolibrary.org/obo/NBO_0000634">NBO:0000634</a>
               
               </td>
             
@@ -6725,7 +6731,7 @@
             
               <td>
               
-                behavior related to feelings experiencing
+                <a href="http://purl.obolibrary.org/obo/NBO_0000641">NBO:0000641</a>
               
               </td>
             
@@ -6765,7 +6771,7 @@
             
               <td>
               
-                predator avoidance behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000649">NBO:0000649</a>
               
               </td>
             
@@ -6805,7 +6811,7 @@
             
               <td>
               
-                rhythmic behavior phenotype
+                <a href="http://purl.obolibrary.org/obo/NBO_0000657">NBO:0000657</a>
               
               </td>
             
@@ -6845,7 +6851,7 @@
             
               <td>
               
-                circadian behavior phenotype
+                <a href="http://purl.obolibrary.org/obo/NBO_0000663">NBO:0000663</a>
               
               </td>
             
@@ -6885,7 +6891,7 @@
             
               <td>
               
-                intrinsic sleep disorder
+                <a href="http://purl.obolibrary.org/obo/NBO_0000664">NBO:0000664</a>
               
               </td>
             
@@ -6925,7 +6931,7 @@
             
               <td>
               
-                extrinsic sleep disorder
+                <a href="http://purl.obolibrary.org/obo/NBO_0000665">NBO:0000665</a>
               
               </td>
             
@@ -6965,7 +6971,7 @@
             
               <td>
               
-                intrinsic circadian rhythm sleep disorder
+                <a href="http://purl.obolibrary.org/obo/NBO_0000666">NBO:0000666</a>
               
               </td>
             
@@ -7005,7 +7011,7 @@
             
               <td>
               
-                shift work sleep disorder
+                <a href="http://purl.obolibrary.org/obo/NBO_0000667">NBO:0000667</a>
               
               </td>
             
@@ -7045,7 +7051,7 @@
             
               <td>
               
-                depressive disorder
+                <a href="http://purl.obolibrary.org/obo/NBO_0000668">NBO:0000668</a>
               
               </td>
             
@@ -7085,7 +7091,7 @@
             
               <td>
               
-                substance induced mood disorder
+                <a href="http://purl.obolibrary.org/obo/NBO_0000684">NBO:0000684</a>
               
               </td>
             
@@ -7125,7 +7131,7 @@
             
               <td>
               
-                alcohol induced mood disorder
+                <a href="http://purl.obolibrary.org/obo/NBO_0000685">NBO:0000685</a>
               
               </td>
             
@@ -7165,7 +7171,7 @@
             
               <td>
               
-                benzodiazepine induced mood disorder
+                <a href="http://purl.obolibrary.org/obo/NBO_0000691">NBO:0000691</a>
               
               </td>
             
@@ -7205,7 +7211,7 @@
             
               <td>
               
-                Interferon-alpha induced mood disorder
+                <a href="http://purl.obolibrary.org/obo/NBO_0000692">NBO:0000692</a>
               
               </td>
             
@@ -7245,7 +7251,7 @@
             
               <td>
               
-                short term object recognition memory
+                <a href="http://purl.obolibrary.org/obo/NBO_0000694">NBO:0000694</a>
               
               </td>
             
@@ -7285,7 +7291,7 @@
             
               <td>
               
-                visual short term memory
+                <a href="http://purl.obolibrary.org/obo/NBO_0000740">NBO:0000740</a>
               
               </td>
             
@@ -7325,7 +7331,7 @@
             
               <td>
               
-                spatial working memory
+                <a href="http://purl.obolibrary.org/obo/NBO_0000741">NBO:0000741</a>
               
               </td>
             
@@ -7365,7 +7371,7 @@
             
               <td>
               
-                long term spatial memory
+                <a href="http://purl.obolibrary.org/obo/NBO_0000744">NBO:0000744</a>
               
               </td>
             
@@ -7405,7 +7411,7 @@
             
               <td>
               
-                social withdrawal
+                <a href="http://purl.obolibrary.org/obo/NBO_0000746">NBO:0000746</a>
               
               </td>
             
@@ -7445,7 +7451,7 @@
             
               <td>
               
-                social withdrawal in childhood
+                <a href="http://purl.obolibrary.org/obo/NBO_0000747">NBO:0000747</a>
               
               </td>
             
@@ -7485,7 +7491,7 @@
             
               <td>
               
-                behavioral despair
+                <a href="http://purl.obolibrary.org/obo/NBO_0000749">NBO:0000749</a>
               
               </td>
             
@@ -7525,7 +7531,7 @@
             
               <td>
               
-                laughing behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000750">NBO:0000750</a>
               
               </td>
             
@@ -7565,7 +7571,7 @@
             
               <td>
               
-                irritable aggressive behavior
+                <a href="http://purl.obolibrary.org/obo/NBO_0000751">NBO:0000751</a>
               
               </td>
             
@@ -7605,7 +7611,7 @@
             
               <td>
               
-                discrimination learning
+                <a href="http://purl.obolibrary.org/obo/NBO_0000752">NBO:0000752</a>
               
               </td>
             
@@ -7645,7 +7651,7 @@
             
               <td>
               
-                being conscious
+                <a href="http://purl.obolibrary.org/obo/NBO_0000768">NBO:0000768</a>
               
               </td>
             
@@ -7685,7 +7691,7 @@
             
               <td>
               
-                cutaneous sensation behavior phenotype
+                <a href="http://purl.obolibrary.org/obo/NBO_0000772">NBO:0000772</a>
               
               </td>
             
@@ -7725,7 +7731,7 @@
             
               <td>
               
-                partial seizure evolving to secondarily generalized seizure
+                <a href="http://purl.obolibrary.org/obo/NBO_0000773">NBO:0000773</a>
               
               </td>
             
@@ -7765,7 +7771,7 @@
             
               <td>
               
-                simple partial seizure evolving to generalized seizure
+                <a href="http://purl.obolibrary.org/obo/NBO_0000778">NBO:0000778</a>
               
               </td>
             
@@ -7805,7 +7811,7 @@
             
               <td>
               
-                complex partial seizure evolving to generalized seizure
+                <a href="http://purl.obolibrary.org/obo/NBO_0000851">NBO:0000851</a>
               
               </td>
             
@@ -7845,7 +7851,7 @@
             
               <td>
               
-                simple partial seizure evolving to complex partial seizure evolving to generalized seizure
+                <a href="http://purl.obolibrary.org/obo/NBO_0000886">NBO:0000886</a>
               
               </td>
             
@@ -7885,7 +7891,7 @@
             
               <td>
               
-                simple partial onset, followed by impairment of consciousness
+                <a href="http://purl.obolibrary.org/obo/NBO_0000929">NBO:0000929</a>
               
               </td>
             
@@ -7925,7 +7931,7 @@
             
               <td>
               
-                with impairment of consciousness at onset
+                <a href="http://purl.obolibrary.org/obo/NBO_0000961">NBO:0000961</a>
               
               </td>
             
@@ -7965,7 +7971,7 @@
             
               <td>
               
-                childhood absence epilepsy
+                <a href="http://purl.obolibrary.org/obo/NBO_0000993">NBO:0000993</a>
               
               </td>
             
@@ -8005,7 +8011,47 @@
             
               <td>
               
-                continuous seizure
+                <a href="http://purl.obolibrary.org/obo/NBO_0009001">NBO:0009001</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>200</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/NBO_0045004">NBO:0045004</a>
               
               </td>
             

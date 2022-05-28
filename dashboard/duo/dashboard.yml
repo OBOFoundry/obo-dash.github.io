@@ -3,7 +3,7 @@ base_prefixes:
 - DUO
 - DUOALT
 - DUO
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 2880
@@ -28,8 +28,8 @@ metrics:
     SubPropertyChainOf: 2
     TransitiveObjectProperty: 4
   'Axioms: Number of axioms': 3884
-  'Entities: % of entities reused': 90.99
-  'Entities: Number of annotation properties': 72
+  'Entities: % of entities reused': 90.97
+  'Entities: Number of annotation properties': 71
   'Entities: Number of classes': 300
   'Entities: Number of data properties': 4
   'Entities: Number of individuals': 22
@@ -49,9 +49,12 @@ metrics:
     ObjectUnionOf: 2
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
+    _dashboard: 0.84
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.016
     _impact_external: 0
     _reuse: 0.91
+    oboscore: 0.428
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
@@ -79,7 +82,6 @@ metrics:
     skos: 7
     xsd: 4
   'Info: Which ontologies use it?':
-  - duo
   - eupath
   - ico
   - scdo
@@ -95,8 +97,7 @@ results:
   FP04 Versioning:
     status: PASS
   FP05 Scope:
-    comment: Missing domain (scope)
-    status: ERROR
+    status: PASS
   FP06 Textual Definitions:
     comment: 1 missing definitions. See ROBOT Report for details.
     status: WARN
@@ -128,10 +129,10 @@ results:
     status: ERROR
 sha256_hash: 6a34ce09ae07b1e37c6756e049c12129fd1104e7d9e6e2f8cee84d2ab374c45b
 summary:
-  comment: 3 errors
+  comment: 2 errors
   status: ERROR
   summary_count:
-    ERROR: 3
+    ERROR: 2
     INFO: 2
     WARN: 1
 version: http://purl.obolibrary.org/obo/duo/releases/2021-02-23/duo.owl

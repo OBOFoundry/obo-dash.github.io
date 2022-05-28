@@ -3,10 +3,10 @@ base_prefixes:
 - GENEPIO
 - GENEPIOALT
 - GENEPIO
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 39126
+    AnnotationAssertion: 39830
     AnnotationPropertyDomain: 4
     AnnotationPropertyRangeOf: 6
     AsymmetricObjectProperty: 3
@@ -14,7 +14,7 @@ metrics:
     DataPropertyAssertion: 3
     DataPropertyDomain: 2
     DataPropertyRange: 11
-    Declaration: 8086
+    Declaration: 8433
     DifferentIndividuals: 3
     DisjointClasses: 32
     EquivalentClasses: 19
@@ -31,16 +31,16 @@ metrics:
     SubPropertyChainOf: 9
     SymmetricObjectProperty: 1
     TransitiveObjectProperty: 10
-  'Axioms: Number of axioms': 57046
-  'Entities: % of entities reused': 79.06
-  'Entities: Number of annotation properties': 85
-  'Entities: Number of classes': 6681
+  'Axioms: Number of axioms': 58097
+  'Entities: % of entities reused': 79.3
+  'Entities: Number of annotation properties': 82
+  'Entities: Number of classes': 7028
   'Entities: Number of data properties': 29
   'Entities: Number of individuals': 1227
   'Entities: Number of object properties': 64
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 23816
+    Class: 24163
     DataAllValuesFrom: 5
     DataExactCardinality: 5
     DataHasValue: 1
@@ -56,9 +56,12 @@ metrics:
     ObjectUnionOf: 21
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.607
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.033
     _impact_external: 0
-    _reuse: 0.791
+    _reuse: 0.793
+    oboscore: 0.32
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 6
   'Info: Logical consistency': true
@@ -72,13 +75,14 @@ metrics:
     CARO: 51
     CHEBI: 2875
     CHMO: 29
+    CIDO: 2
     CL: 14
     CLO: 30
     CVDO: 2
-    DOID: 1085
+    DOID: 1086
     ECTO: 56
-    EFO: 152
-    ENVO: 1002
+    EFO: 153
+    ENVO: 1039
     EO: 26
     EPO: 3
     ERO: 20
@@ -86,20 +90,20 @@ metrics:
     FIX: 2
     FLU: 2
     FOODON: 2916
-    GAZ: 3173
-    GENEPIO: 5935
+    GAZ: 3407
+    GENEPIO: 5987
     GEO: 6
     GO: 38
     GSSO: 32
     HANCESTRO: 978
-    HP: 1195
+    HP: 1196
     IAO: 15829
     ICO: 3
-    IDO: 101
+    IDO: 103
     MESH: 10
     MI: 17
     MMO: 8
-    MONDO: 685
+    MONDO: 686
     MP: 48
     MPATH: 13
     NBO: 8
@@ -107,12 +111,12 @@ metrics:
     NCIT: 1724
     NCRO: 2
     OAE: 2
-    OBI: 868
+    OBI: 880
     OGMS: 15
     OMIABIS: 2
     OMIT: 43
     OMP: 4
-    OMRSE: 2
+    OMRSE: 6
     PATO: 175
     PCO: 35
     PECO: 33
@@ -134,7 +138,7 @@ metrics:
     dc11: 81
     foaf: 1
     obo: 23
-    oboInOwl: 13650
+    oboInOwl: 14354
     owl: 176
     prefix_unknown: 1237
     rdf: 36
@@ -145,7 +149,6 @@ metrics:
   - eupath
   - fideo
   - foodon
-  - genepio
   - hso
   - ons
   - ornaseq
@@ -155,7 +158,8 @@ results:
   FP01 Open:
     status: PASS
   FP02 Common Format:
-    status: PASS
+    comment: OWL syntax (RDF/XML), but should be RDF/XML
+    status: WARN
   FP03 URIs:
     status: PASS
   FP04 Versioning:
@@ -163,7 +167,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 66 duplicate definitions. 400 missing definitions. See ROBOT Report for
+    comment: 66 duplicate definitions. 410 missing definitions. See ROBOT Report for
       details.
     status: ERROR
   FP07 Relations:
@@ -178,7 +182,7 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 8 duplicate labels. 8 multiple labels. 13 missing labels. See ROBOT Report
+    comment: 8 duplicate labels. 8 multiple labels. 23 missing labels. See ROBOT Report
       for details.
     status: ERROR
   FP16 Maintenance:
@@ -186,12 +190,12 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 157 errors, 501 warnings, 76 info messages.
+    comment: 166 errors, 508 warnings, 86 info messages.
     file: robot_report
     results:
-      ERROR: 157
-      INFO: 76
-      WARN: 501
+      ERROR: 166
+      INFO: 86
+      WARN: 508
     status: ERROR
 sha256_hash: e066f17baba67e59bcfa9bf5da373c933846470425324159df0e22414b7efe8b
 summary:
@@ -200,5 +204,5 @@ summary:
   summary_count:
     ERROR: 4
     INFO: 1
-    WARN: 0
+    WARN: 1
 version: http://purl.obolibrary.org/obo/genepio/releases/2022-02-06/genepio.owl

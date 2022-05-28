@@ -18,7 +18,7 @@
                         
                     
                     <div class="alert alert-danger">
-                        <center><h3>ERROR - 4 errors</h3></center>
+                        <center><h3>ERROR - 3 errors</h3></center>
                     </div>
                 
                 <table class="table">
@@ -119,11 +119,11 @@
                                 
                                 
                             
-                            <td class="table-danger" style="text-align:center;">
-                                <img src="../assets/x.svg" height="15px">
+                            <td class="table-success" style="text-align:center;">
+                                <img src="../assets/check.svg" height="15px">
                             </td>
                             
-                                <td>Missing domain (scope)</td>
+                                <td></td>
                             
                             
                                 <td></td>
@@ -259,11 +259,11 @@
                                 
                                 
                             
-                            <td class="table-info" style="text-align:center;">
-                                <img src="../assets/info.svg" height="15px">
+                            <td class="table-warning" style="text-align:center;">
+                                <img src="../assets/warning.svg" height="15px">
                             </td>
                             
-                                <td>last version (2020-03-10) is over one year(s) old</td>
+                                <td>last version (2020-03-10) is over two year(s) old</td>
                             
                             
                                 <td></td>
@@ -326,21 +326,23 @@
                                 <td>Axioms: Breakdown of axiom types</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>AnnotationAssertion: 2055</li>
-                                        
-                                        <li>Declaration: 282</li>
-                                        
-                                        <li>SubAnnotationPropertyOf: 1</li>
-                                        
-                                        <li>SubClassOf: 728</li>
-                                        
-                                        <li>SubObjectPropertyOf: 1</li>
-                                        
-                                        <li>TransitiveObjectProperty: 2</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>AnnotationAssertion: 2055</li>
+                                            
+                                                <li>Declaration: 282</li>
+                                            
+                                                <li>SubAnnotationPropertyOf: 1</li>
+                                            
+                                                <li>SubClassOf: 728</li>
+                                            
+                                                <li>SubObjectPropertyOf: 1</li>
+                                            
+                                                <li>TransitiveObjectProperty: 2</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -412,13 +414,15 @@
                                 <td>Info: Breakdown of OWL class expressions used</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>Class: 1701</li>
-                                        
-                                        <li>ObjectSomeValuesFrom: 475</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>Class: 1701</li>
+                                            
+                                                <li>ObjectSomeValuesFrom: 475</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -434,15 +438,23 @@
                                 <td>Info: Experimental OBO score</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>_impact: 0.027</li>
-                                        
-                                        <li>_impact_external: 0</li>
-                                        
-                                        <li>_reuse: 0.147</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>_dashboard: 0.793</li>
+                                            
+                                                <li>_formula: (1*impact+1*dashboard)/2</li>
+                                            
+                                                <li>_impact: 0.027</li>
+                                            
+                                                <li>_impact_external: 0</li>
+                                            
+                                                <li>_reuse: 0.147</li>
+                                            
+                                                <li>oboscore: 0.41</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -482,31 +494,33 @@
                                 <td>Info: Usage of namespaces in axioms</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>BFO: 248</li>
-                                        
-                                        <li>HSAPDVALT: 538</li>
-                                        
-                                        <li>HsapDv: 1677</li>
-                                        
-                                        <li>IAO: 254</li>
-                                        
-                                        <li>NCBITaxon: 12</li>
-                                        
-                                        <li>RO: 223</li>
-                                        
-                                        <li>UBERON: 12</li>
-                                        
-                                        <li>obo: 8</li>
-                                        
-                                        <li>oboInOwl: 1258</li>
-                                        
-                                        <li>rdfs: 319</li>
-                                        
-                                        <li>xsd: 7</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>BFO: 248</li>
+                                            
+                                                <li>HSAPDVALT: 538</li>
+                                            
+                                                <li>HsapDv: 1677</li>
+                                            
+                                                <li>IAO: 254</li>
+                                            
+                                                <li>NCBITaxon: 12</li>
+                                            
+                                                <li>RO: 223</li>
+                                            
+                                                <li>UBERON: 12</li>
+                                            
+                                                <li>obo: 8</li>
+                                            
+                                                <li>oboInOwl: 1258</li>
+                                            
+                                                <li>rdfs: 319</li>
+                                            
+                                                <li>xsd: 7</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -514,7 +528,19 @@
                                 <td>Info: Which ontologies use it?</td>
                                 
                                 
-                                    <td>['geno', 'hp', 'hsapdv', 'mondo', 'scdo', 'upheno']</td>
+                                    <td><ul>
+                                        
+                                            <li>geno</li>
+                                        
+                                            <li>hp</li>
+                                        
+                                            <li>mondo</li>
+                                        
+                                            <li>scdo</li>
+                                        
+                                            <li>upheno</li>
+                                        
+                                    </ul></td>
                                 
                             </tr>
                         

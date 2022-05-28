@@ -3,7 +3,7 @@ base_prefixes:
 - IDO
 - IDOALT
 - IDO
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 2929
@@ -39,9 +39,12 @@ metrics:
     ObjectUnionOf: 11
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.716
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.121
     _impact_external: 0
     _reuse: 0.343
+    oboscore: 0.418
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 22
   'Info: Logical consistency': true
@@ -77,7 +80,6 @@ metrics:
   - hso
   - htn
   - iceo
-  - ido
   - ino
   - mfomd
   - micro
@@ -112,7 +114,9 @@ results:
     file: fp7
     status: INFO
   FP08 Documented:
-    status: PASS
+    comment: homepage URL (http://www.bioontology.org/wiki/index.php/Infectious_Disease_Ontology)
+      does not resolve
+    status: ERROR
   FP09 Plurality of Users:
     comment: Missing usages
     status: ERROR
@@ -135,10 +139,10 @@ results:
     status: ERROR
 sha256_hash: de5d35114bb65b7475551388e8a7899d202c4d69672bd9e39466605119fafb50
 summary:
-  comment: 3 errors
+  comment: 4 errors
   status: ERROR
   summary_count:
-    ERROR: 3
+    ERROR: 4
     INFO: 1
     WARN: 2
 version: http://purl.obolibrary.org/obo/ido/2017-11-03/ido.owl

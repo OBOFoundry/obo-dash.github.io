@@ -18,7 +18,7 @@
                         
                     
                     <div class="alert alert-danger">
-                        <center><h3>ERROR - 5 errors</h3></center>
+                        <center><h3>ERROR - 6 errors</h3></center>
                     </div>
                 
                 <table class="table">
@@ -79,14 +79,14 @@
                                 
                                 
                             
-                            <td class="table-success" style="text-align:center;">
-                                <img src="../assets/check.svg" height="15px">
+                            <td class="table-danger" style="text-align:center;">
+                                <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td></td>
+                                <td>0 invalid IRIs. The Ontology IRI is not valid.</td>
                             
                             
-                                <td></td>
+                                <td><a href="fp3.html">View Report</a></td>
                             
                         </tr>
                     
@@ -259,11 +259,11 @@
                                 
                                 
                             
-                            <td class="table-info" style="text-align:center;">
-                                <img src="../assets/info.svg" height="15px">
+                            <td class="table-warning" style="text-align:center;">
+                                <img src="../assets/warning.svg" height="15px">
                             </td>
                             
-                                <td>last version (2020-04-26) is over one year(s) old</td>
+                                <td>last version (2020-04-26) is over two year(s) old</td>
                             
                             
                                 <td></td>
@@ -303,7 +303,7 @@
                                 <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>13 errors, 82 warnings, 35 info messages.</td>
+                                <td>12 errors, 82 warnings, 35 info messages.</td>
                             
                             
                                 <td><a href="robot_report.html">View Report</a></td>
@@ -326,35 +326,37 @@
                                 <td>Axioms: Breakdown of axiom types</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>AnnotationAssertion: 5706</li>
-                                        
-                                        <li>AnnotationPropertyRangeOf: 1</li>
-                                        
-                                        <li>ClassAssertion: 18</li>
-                                        
-                                        <li>Declaration: 1035</li>
-                                        
-                                        <li>DifferentIndividuals: 2</li>
-                                        
-                                        <li>DisjointClasses: 21</li>
-                                        
-                                        <li>EquivalentClasses: 5</li>
-                                        
-                                        <li>InverseObjectProperties: 2</li>
-                                        
-                                        <li>SubAnnotationPropertyOf: 13</li>
-                                        
-                                        <li>SubClassOf: 941</li>
-                                        
-                                        <li>SubObjectPropertyOf: 2</li>
-                                        
-                                        <li>SubPropertyChainOf: 1</li>
-                                        
-                                        <li>TransitiveObjectProperty: 5</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>AnnotationAssertion: 5706</li>
+                                            
+                                                <li>AnnotationPropertyRangeOf: 1</li>
+                                            
+                                                <li>ClassAssertion: 18</li>
+                                            
+                                                <li>Declaration: 1035</li>
+                                            
+                                                <li>DifferentIndividuals: 2</li>
+                                            
+                                                <li>DisjointClasses: 21</li>
+                                            
+                                                <li>EquivalentClasses: 5</li>
+                                            
+                                                <li>InverseObjectProperties: 2</li>
+                                            
+                                                <li>SubAnnotationPropertyOf: 13</li>
+                                            
+                                                <li>SubClassOf: 941</li>
+                                            
+                                                <li>SubObjectPropertyOf: 2</li>
+                                            
+                                                <li>SubPropertyChainOf: 1</li>
+                                            
+                                                <li>TransitiveObjectProperty: 5</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -426,23 +428,25 @@
                                 <td>Info: Breakdown of OWL class expressions used</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>Class: 2827</li>
-                                        
-                                        <li>ObjectAllValuesFrom: 1</li>
-                                        
-                                        <li>ObjectComplementOf: 1</li>
-                                        
-                                        <li>ObjectIntersectionOf: 1</li>
-                                        
-                                        <li>ObjectMinCardinality: 1</li>
-                                        
-                                        <li>ObjectOneOf: 4</li>
-                                        
-                                        <li>ObjectSomeValuesFrom: 22</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>Class: 2827</li>
+                                            
+                                                <li>ObjectAllValuesFrom: 1</li>
+                                            
+                                                <li>ObjectComplementOf: 1</li>
+                                            
+                                                <li>ObjectIntersectionOf: 1</li>
+                                            
+                                                <li>ObjectMinCardinality: 1</li>
+                                            
+                                                <li>ObjectOneOf: 4</li>
+                                            
+                                                <li>ObjectSomeValuesFrom: 22</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -458,15 +462,23 @@
                                 <td>Info: Experimental OBO score</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>_impact: 0.016</li>
-                                        
-                                        <li>_impact_external: 0</li>
-                                        
-                                        <li>_reuse: 0.866</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>_dashboard: 0.729</li>
+                                            
+                                                <li>_formula: (1*impact+1*dashboard)/2</li>
+                                            
+                                                <li>_impact: 0.016</li>
+                                            
+                                                <li>_impact_external: 0</li>
+                                            
+                                                <li>_reuse: 0.866</li>
+                                            
+                                                <li>oboscore: 0.372</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -506,49 +518,51 @@
                                 <td>Info: Usage of namespaces in axioms</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>BFO: 306</li>
-                                        
-                                        <li>DOID: 678</li>
-                                        
-                                        <li>DOIDALT: 33</li>
-                                        
-                                        <li>GO: 738</li>
-                                        
-                                        <li>IAO: 2432</li>
-                                        
-                                        <li>IDO: 7</li>
-                                        
-                                        <li>MF: 313</li>
-                                        
-                                        <li>MFOMD: 524</li>
-                                        
-                                        <li>NBO: 44</li>
-                                        
-                                        <li>OBI: 12</li>
-                                        
-                                        <li>OGMS: 327</li>
-                                        
-                                        <li>dc: 1</li>
-                                        
-                                        <li>dc11: 27</li>
-                                        
-                                        <li>foaf: 2</li>
-                                        
-                                        <li>obo: 13</li>
-                                        
-                                        <li>oboInOwl: 2446</li>
-                                        
-                                        <li>owl: 76</li>
-                                        
-                                        <li>prefix_unknown: 53</li>
-                                        
-                                        <li>protege: 1</li>
-                                        
-                                        <li>rdfs: 1232</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>BFO: 306</li>
+                                            
+                                                <li>DOID: 678</li>
+                                            
+                                                <li>DOIDALT: 33</li>
+                                            
+                                                <li>GO: 738</li>
+                                            
+                                                <li>IAO: 2432</li>
+                                            
+                                                <li>IDO: 7</li>
+                                            
+                                                <li>MF: 313</li>
+                                            
+                                                <li>MFOMD: 524</li>
+                                            
+                                                <li>NBO: 44</li>
+                                            
+                                                <li>OBI: 12</li>
+                                            
+                                                <li>OGMS: 327</li>
+                                            
+                                                <li>dc: 1</li>
+                                            
+                                                <li>dc11: 27</li>
+                                            
+                                                <li>foaf: 2</li>
+                                            
+                                                <li>obo: 13</li>
+                                            
+                                                <li>oboInOwl: 2446</li>
+                                            
+                                                <li>owl: 76</li>
+                                            
+                                                <li>prefix_unknown: 53</li>
+                                            
+                                                <li>protege: 1</li>
+                                            
+                                                <li>rdfs: 1232</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -556,7 +570,15 @@
                                 <td>Info: Which ontologies use it?</td>
                                 
                                 
-                                    <td>['epio', 'gsso', 'mfomd', 'mondo']</td>
+                                    <td><ul>
+                                        
+                                            <li>epio</li>
+                                        
+                                            <li>gsso</li>
+                                        
+                                            <li>mondo</li>
+                                        
+                                    </ul></td>
                                 
                             </tr>
                         

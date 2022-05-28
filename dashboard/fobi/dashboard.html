@@ -8,7 +8,7 @@
             <div class="col-md-2"></div>
             <div class="col-md-8">
                 <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/fobi.html">fobi</a></h1>
-                <p class="lead"><b>Version</b>: None</p>
+                <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/fobi/fobi.owl</p>
                 <p class="lead" style="margin-top:-15px;"><b>Date run</b>: </p>
                 <p class="lead" style="margin-top:-15px;"><a href="dashboard.yml">View dashboard results as YAML</a></p>
                 <h3>Error Breakdown</h3>
@@ -18,7 +18,7 @@
                         
                     
                     <div class="alert alert-danger">
-                        <center><h3>ERROR - 7 errors</h3></center>
+                        <center><h3>ERROR - 4 errors</h3></center>
                     </div>
                 
                 <table class="table">
@@ -43,7 +43,7 @@
                                 <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>Unable to load ontology. Missing ontology license.</td>
+                                <td>Ontology license 'http://creativecommons.org/licenses/by/4.0/' does not match regsitry license 'http://creativecommons.org/licenses/by/3.0/'.</td>
                             
                             
                                 <td></td>
@@ -59,11 +59,11 @@
                                 
                                 
                             
-                            <td class="table-danger" style="text-align:center;">
-                                <img src="../assets/x.svg" height="15px">
+                            <td class="table-success" style="text-align:center;">
+                                <img src="../assets/check.svg" height="15px">
                             </td>
                             
-                                <td>Unable to load ontology</td>
+                                <td></td>
                             
                             
                                 <td></td>
@@ -79,11 +79,11 @@
                                 
                                 
                             
-                            <td class="table-danger" style="text-align:center;">
-                                <img src="../assets/x.svg" height="15px">
+                            <td class="table-success" style="text-align:center;">
+                                <img src="../assets/check.svg" height="15px">
                             </td>
                             
-                                <td>Unable to load ontology</td>
+                                <td></td>
                             
                             
                                 <td></td>
@@ -99,11 +99,11 @@
                                 
                                 
                             
-                            <td class="table-danger" style="text-align:center;">
-                                <img src="../assets/x.svg" height="15px">
+                            <td class="table-warning" style="text-align:center;">
+                                <img src="../assets/warning.svg" height="15px">
                             </td>
                             
-                                <td>Unable to load ontology</td>
+                                <td>Version IRI 'http://purl.obolibrary.org/obo/fobi/fobi.owl' is not in recommended format</td>
                             
                             
                                 <td></td>
@@ -139,11 +139,11 @@
                                 
                                 
                             
-                            <td class="table-info" style="text-align:center;">
-                                <img src="../assets/info.svg" height="15px">
+                            <td class="table-warning" style="text-align:center;">
+                                <img src="../assets/warning.svg" height="15px">
                             </td>
                             
-                                <td>ROBOT Report could not be generated</td>
+                                <td>642 missing definitions. See ROBOT Report for details.</td>
                             
                             
                                 <td></td>
@@ -163,10 +163,10 @@
                                 <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>Unable to load ontology</td>
+                                <td>1 labels match RO labels. 3 non-RO properties used.</td>
                             
                             
-                                <td></td>
+                                <td><a href="fp7.html">View Report</a></td>
                             
                         </tr>
                     
@@ -239,11 +239,11 @@
                                 
                                 
                             
-                            <td class="table-info" style="text-align:center;">
-                                <img src="../assets/info.svg" height="15px">
+                            <td class="table-success" style="text-align:center;">
+                                <img src="../assets/check.svg" height="15px">
                             </td>
                             
-                                <td>ROBOT Report could not be generated</td>
+                                <td></td>
                             
                             
                                 <td></td>
@@ -259,11 +259,11 @@
                                 
                                 
                             
-                            <td class="table-danger" style="text-align:center;">
-                                <img src="../assets/x.svg" height="15px">
+                            <td class="table-info" style="text-align:center;">
+                                <img src="../assets/info.svg" height="15px">
                             </td>
                             
-                                <td>Unable to load ontology</td>
+                                <td>Version IRI does not have date information</td>
                             
                             
                                 <td></td>
@@ -299,14 +299,14 @@
                                 
                                 
                             
-                            <td class="table-info" style="text-align:center;">
-                                <img src="../assets/info.svg" height="15px">
+                            <td class="table-danger" style="text-align:center;">
+                                <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>ROBOT Report could not be generated.</td>
+                                <td>2 errors, 642 warnings, 2 info messages.</td>
                             
                             
-                                <td></td>
+                                <td><a href="robot_report.html">View Report</a></td>
                             
                         </tr>
                     
@@ -326,23 +326,25 @@
                                 <td>Axioms: Breakdown of axiom types</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>AnnotationAssertion: 8517</li>
-                                        
-                                        <li>Declaration: 1359</li>
-                                        
-                                        <li>DisjointClasses: 2</li>
-                                        
-                                        <li>InverseObjectProperties: 2</li>
-                                        
-                                        <li>ObjectPropertyDomain: 2</li>
-                                        
-                                        <li>ObjectPropertyRange: 2</li>
-                                        
-                                        <li>SubClassOf: 6806</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>AnnotationAssertion: 8518</li>
+                                            
+                                                <li>Declaration: 1359</li>
+                                            
+                                                <li>DisjointClasses: 2</li>
+                                            
+                                                <li>InverseObjectProperties: 2</li>
+                                            
+                                                <li>ObjectPropertyDomain: 2</li>
+                                            
+                                                <li>ObjectPropertyRange: 2</li>
+                                            
+                                                <li>SubClassOf: 6806</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -350,7 +352,7 @@
                                 <td>Axioms: Number of axioms</td>
                                 
                                 
-                                    <td>16690</td>
+                                    <td>16691</td>
                                 
                             </tr>
                         
@@ -358,7 +360,7 @@
                                 <td>Entities: % of entities reused</td>
                                 
                                 
-                                    <td>53.01</td>
+                                    <td>52.93</td>
                                 
                             </tr>
                         
@@ -414,13 +416,15 @@
                                 <td>Info: Breakdown of OWL class expressions used</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>Class: 15096</li>
-                                        
-                                        <li>ObjectSomeValuesFrom: 5474</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>Class: 15096</li>
+                                            
+                                                <li>ObjectSomeValuesFrom: 5474</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -436,15 +440,23 @@
                                 <td>Info: Experimental OBO score</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>_impact: 0.0</li>
-                                        
-                                        <li>_impact_external: 0</li>
-                                        
-                                        <li>_reuse: 0.53</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>_dashboard: 0.688</li>
+                                            
+                                                <li>_formula: (1*impact+1*dashboard)/2</li>
+                                            
+                                                <li>_impact: 0.0</li>
+                                            
+                                                <li>_impact_external: 0</li>
+                                            
+                                                <li>_reuse: 0.529</li>
+                                            
+                                                <li>oboscore: 0.344</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -476,7 +488,7 @@
                                 <td>Info: Syntax</td>
                                 
                                 
-                                    <td>OWL/XML Syntax</td>
+                                    <td>RDF/XML Syntax</td>
                                 
                             </tr>
                         
@@ -484,31 +496,31 @@
                                 <td>Info: Usage of namespaces in axioms</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>CHEBI: 2009</li>
-                                        
-                                        <li>FOBI: 14106</li>
-                                        
-                                        <li>FOBIALT: 4</li>
-                                        
-                                        <li>FOODON: 6199</li>
-                                        
-                                        <li>IAO: 1360</li>
-                                        
-                                        <li>NCBITaxon: 4</li>
-                                        
-                                        <li>UBERON: 2</li>
-                                        
-                                        <li>dc: 1</li>
-                                        
-                                        <li>obo: 2968</li>
-                                        
-                                        <li>oboInOwl: 1106</li>
-                                        
-                                        <li>rdfs: 1361</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>CHEBI: 2009</li>
+                                            
+                                                <li>FOBI: 14963</li>
+                                            
+                                                <li>FOODON: 6199</li>
+                                            
+                                                <li>IAO: 1360</li>
+                                            
+                                                <li>NCBITaxon: 4</li>
+                                            
+                                                <li>UBERON: 2</li>
+                                            
+                                                <li>dc: 1</li>
+                                            
+                                                <li>obo: 2115</li>
+                                            
+                                                <li>oboInOwl: 1106</li>
+                                            
+                                                <li>rdfs: 1362</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -516,7 +528,9 @@
                                 <td>Info: Which ontologies use it?</td>
                                 
                                 
-                                    <td>['fobi']</td>
+                                    <td><ul>
+                                        
+                                    </ul></td>
                                 
                             </tr>
                         

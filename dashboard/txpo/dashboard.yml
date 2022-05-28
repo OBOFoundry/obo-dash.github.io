@@ -3,7 +3,7 @@ base_prefixes:
 - TXPO
 - TXPOALT
 - TXPO
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 48787
@@ -35,9 +35,12 @@ metrics:
     ObjectUnionOf: 9
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.685
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
     _reuse: 0.411
+    oboscore: 0.343
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
@@ -76,8 +79,7 @@ metrics:
     rdfs: 12397
     skos: 2
     xsd: 130
-  'Info: Which ontologies use it?':
-  - txpo
+  'Info: Which ontologies use it?': []
 mirror_from: http://purl.obolibrary.org/obo/txpo.owl
 namespace: txpo
 results:
@@ -113,8 +115,8 @@ results:
     comment: 2 duplicate labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
-    comment: last version (2020-03-03) is over one year(s) old
-    status: INFO
+    comment: last version (2020-03-03) is over two year(s) old
+    status: WARN
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
@@ -131,6 +133,6 @@ summary:
   status: ERROR
   summary_count:
     ERROR: 5
-    INFO: 2
-    WARN: 0
+    INFO: 1
+    WARN: 1
 version: http://purl.obolibrary.org/obo/txpo/releases/2020-03-03/txpo.owl

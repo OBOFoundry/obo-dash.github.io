@@ -3,28 +3,28 @@ base_prefixes:
 - PATO
 - PATOALT
 - PATO
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 17189
-    Declaration: 2924
+    AnnotationAssertion: 17210
+    Declaration: 2925
     DisjointClasses: 67
     EquivalentClasses: 318
     ObjectPropertyDomain: 4
     ObjectPropertyRange: 4
     SubAnnotationPropertyOf: 10
-    SubClassOf: 2153
+    SubClassOf: 2150
     TransitiveObjectProperty: 2
-  'Axioms: Number of axioms': 22671
+  'Axioms: Number of axioms': 22690
   'Entities: % of entities reused': 2.15
   'Entities: Number of annotation properties': 44
-  'Entities: Number of classes': 2850
+  'Entities: Number of classes': 2851
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 36
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 8254
+    Class: 8249
     ObjectComplementOf: 1
     ObjectExactCardinality: 2
     ObjectIntersectionOf: 326
@@ -32,11 +32,14 @@ metrics:
     ObjectSomeValuesFrom: 369
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _impact: 0.462
+    _dashboard: 0.986
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.451
     _impact_external: 0.25
     _reuse: 0.021
+    oboscore: 0.719
   'Info: How many externally documented uses?': 1
-  'Info: How many ontologies use it?': 84
+  'Info: How many ontologies use it?': 82
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -44,16 +47,16 @@ metrics:
     CARO: 2
     CL: 10
     GO: 11
-    IAO: 2063
-    PATO: 8220
+    IAO: 2065
+    PATO: 8215
     PATOALT: 51
     RO: 795
     UBERON: 9
     dc: 744
     dc11: 45
-    oboInOwl: 11785
-    owl: 999
-    rdfs: 2934
+    oboInOwl: 11794
+    owl: 1003
+    rdfs: 2942
   'Info: Which ontologies use it?':
   - agro
   - aism
@@ -99,7 +102,6 @@ metrics:
   - micro
   - mondo
   - mp
-  - ms
   - nbo
   - oae
   - oba
@@ -116,7 +118,6 @@ metrics:
   - oostt
   - opmi
   - ovae
-  - pato
   - pcl
   - pco
   - pdro
@@ -134,7 +135,6 @@ metrics:
   - to
   - txpo
   - uberon
-  - uo
   - upheno
   - vo
   - wbphenotype
@@ -154,7 +154,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 36 missing definitions. See ROBOT Report for details.
+    comment: 19 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     status: PASS
@@ -171,14 +171,14 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 38 warnings, 34 info messages.
+    comment: 21 warnings, 34 info messages.
     file: robot_report
     results:
       ERROR: 0
       INFO: 34
-      WARN: 38
+      WARN: 21
     status: WARN
-sha256_hash: 8dc808ce11c647c33dcf7ae078f9b9927796f2e9d52529ec006464e00ef32c03
+sha256_hash: d57a3c4bb4c046ded0168c8deba3bef47778d1d36cd3cc646c092d5a252829af
 summary:
   comment: 2 warnings
   status: WARN
@@ -186,4 +186,4 @@ summary:
     ERROR: 0
     INFO: 0
     WARN: 2
-version: http://purl.obolibrary.org/obo/pato/releases/2022-02-20/pato-base.owl
+version: http://purl.obolibrary.org/obo/pato/releases/2022-05-20/pato-base.owl

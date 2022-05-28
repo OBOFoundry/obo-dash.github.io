@@ -37,12 +37,12 @@ metrics:
     ObjectUnionOf: 16
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.803
+    _dashboard: 0.86
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.093
     _impact_external: 0
     _reuse: 0.261
-    oboscore: 0.448
+    oboscore: 0.476
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 17
   'Info: Logical consistency': true
@@ -79,7 +79,6 @@ metrics:
   - ico
   - obib
   - ohd
-  - omrse
   - one
   - ons
   - ontoneo
@@ -100,7 +99,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 90 missing definitions. See ROBOT Report for details.
+    comment: 85 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     comment: 6 non-RO properties used.
@@ -114,26 +113,25 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 5 missing labels. See ROBOT Report for details.
-    status: ERROR
+    status: PASS
   FP16 Maintenance:
     status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 61 errors, 100 warnings, 18 info messages.
+    comment: 48 errors, 95 warnings, 18 info messages.
     file: robot_report
     results:
-      ERROR: 61
+      ERROR: 48
       INFO: 18
-      WARN: 100
+      WARN: 95
     status: ERROR
 sha256_hash: 8d65f82651fd026e79d7ff8fbe6067b593df4dcaad7430f9f161706f83b37c8b
 summary:
-  comment: 3 errors
+  comment: 2 errors
   status: ERROR
   summary_count:
-    ERROR: 3
+    ERROR: 2
     INFO: 1
     WARN: 1
 version: http://purl.obolibrary.org/obo/omrse/releases/2022-04-06/omrse-base.owl

@@ -3,15 +3,15 @@ base_prefixes:
 - CHEMINF
 - CHEMINFALT
 - CHEMINF
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 4256
+    AnnotationAssertion: 4258
     AnnotationPropertyRangeOf: 1
     ClassAssertion: 19
     DataPropertyDomain: 6
     DataPropertyRange: 5
-    Declaration: 1048
+    Declaration: 1049
     DifferentIndividuals: 2
     DisjointClasses: 58
     DisjointObjectProperties: 1
@@ -24,22 +24,22 @@ metrics:
     ObjectPropertyDomain: 54
     ObjectPropertyRange: 53
     SubAnnotationPropertyOf: 2
-    SubClassOf: 1187
+    SubClassOf: 1190
     SubDataPropertyOf: 5
     SubObjectPropertyOf: 61
     SubPropertyChainOf: 4
     SymmetricObjectProperty: 5
     TransitiveObjectProperty: 17
-  'Axioms: Number of axioms': 6870
-  'Entities: % of entities reused': 43.93
+  'Axioms: Number of axioms': 6876
+  'Entities: % of entities reused': 43.89
   'Entities: Number of annotation properties': 80
-  'Entities: Number of classes': 834
+  'Entities: Number of classes': 835
   'Entities: Number of data properties': 7
   'Entities: Number of individuals': 22
   'Entities: Number of object properties': 108
   'Entities: Number of unsatisfiable classes': 15
   'Info: Breakdown of OWL class expressions used':
-    Class: 3650
+    Class: 3657
     DataExactCardinality: 6
     DataMinCardinality: 1
     DataSomeValuesFrom: 18
@@ -49,13 +49,16 @@ metrics:
     ObjectIntersectionOf: 120
     ObjectMinCardinality: 1
     ObjectOneOf: 3
-    ObjectSomeValuesFrom: 439
+    ObjectSomeValuesFrom: 440
     ObjectUnionOf: 16
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.75
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
     _reuse: 0.439
+    oboscore: 0.375
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
@@ -63,18 +66,18 @@ metrics:
   'Info: Usage of namespaces in axioms':
     APOLLO_SV: 22
     BFO: 555
-    CHEBI: 108
-    CHEMINF: 2526
+    CHEBI: 109
+    CHEMINF: 2532
     GAZ: 4
     GO: 4
-    IAO: 3507
+    IAO: 3508
     OBI: 83
     PATO: 24
     PR: 3
     RO: 186
     UO: 10
     dc: 1
-    dc11: 359
+    dc11: 360
     foaf: 4
     obo: 2
     oboInOwl: 188
@@ -82,11 +85,10 @@ metrics:
     prefix_unknown: 217
     protege: 1
     rdf: 2
-    rdfs: 1310
+    rdfs: 1311
     skos: 2
     xsd: 26
-  'Info: Which ontologies use it?':
-  - cheminf
+  'Info: Which ontologies use it?': []
 mirror_from: http://purl.obolibrary.org/obo/cheminf.owl
 namespace: cheminf
 results:
@@ -98,7 +100,9 @@ results:
   FP02 Common Format:
     status: PASS
   FP03 URIs:
-    status: PASS
+    comment: 0 invalid IRIs. The Ontology IRI is not valid.
+    file: fp3
+    status: ERROR
   FP04 Versioning:
     comment: Missing version IRI
     status: ERROR
@@ -123,13 +127,7 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 2 errors, 0 warnings, 0 info messages.
-    file: robot_report
-    results:
-      ERROR: 2
-      INFO: 0
-      WARN: 0
-    status: ERROR
+    status: PASS
 sha256_hash: 0338de0084bd4e606434ae8b39ba095820e34500dfda366783bccf0b940c8db3
 summary:
   comment: 5 errors

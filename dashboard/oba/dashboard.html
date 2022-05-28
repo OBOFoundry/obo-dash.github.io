@@ -8,7 +8,7 @@
             <div class="col-md-2"></div>
             <div class="col-md-8">
                 <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/oba.html">oba</a></h1>
-                <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/oba/releases/2022-01-19/oba.owl</p>
+                <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/oba/releases/2022-05-11/oba-base.owl</p>
                 <p class="lead" style="margin-top:-15px;"><b>Date run</b>: </p>
                 <p class="lead" style="margin-top:-15px;"><a href="dashboard.yml">View dashboard results as YAML</a></p>
                 <h3>Error Breakdown</h3>
@@ -18,7 +18,7 @@
                         
                     
                     <div class="alert alert-danger">
-                        <center><h3>ERROR - 3 errors</h3></center>
+                        <center><h3>ERROR - 1 errors</h3></center>
                     </div>
                 
                 <table class="table">
@@ -143,7 +143,7 @@
                                 <img src="../assets/warning.svg" height="15px">
                             </td>
                             
-                                <td>10 missing definitions. See ROBOT Report for details.</td>
+                                <td>12 missing definitions. See ROBOT Report for details.</td>
                             
                             
                                 <td></td>
@@ -239,11 +239,11 @@
                                 
                                 
                             
-                            <td class="table-danger" style="text-align:center;">
-                                <img src="../assets/x.svg" height="15px">
+                            <td class="table-success" style="text-align:center;">
+                                <img src="../assets/check.svg" height="15px">
                             </td>
                             
-                                <td>2 duplicate labels. See ROBOT Report for details.</td>
+                                <td></td>
                             
                             
                                 <td></td>
@@ -299,11 +299,11 @@
                                 
                                 
                             
-                            <td class="table-danger" style="text-align:center;">
-                                <img src="../assets/x.svg" height="15px">
+                            <td class="table-warning" style="text-align:center;">
+                                <img src="../assets/warning.svg" height="15px">
                             </td>
                             
-                                <td>6 errors, 113 warnings, 0 info messages.</td>
+                                <td>116 warnings, 7559 info messages.</td>
                             
                             
                                 <td><a href="robot_report.html">View Report</a></td>
@@ -326,45 +326,19 @@
                                 <td>Axioms: Breakdown of axiom types</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>AnnotationAssertion: 177161</li>
-                                        
-                                        <li>AsymmetricObjectProperty: 1</li>
-                                        
-                                        <li>Declaration: 21444</li>
-                                        
-                                        <li>DisjointClasses: 312</li>
-                                        
-                                        <li>EquivalentClasses: 13670</li>
-                                        
-                                        <li>FunctionalObjectProperty: 2</li>
-                                        
-                                        <li>InverseFunctionalObjectProperty: 1</li>
-                                        
-                                        <li>InverseObjectProperties: 45</li>
-                                        
-                                        <li>IrrefexiveObjectProperty: 2</li>
-                                        
-                                        <li>ObjectPropertyDomain: 57</li>
-                                        
-                                        <li>ObjectPropertyRange: 56</li>
-                                        
-                                        <li>Rule: 23</li>
-                                        
-                                        <li>SubAnnotationPropertyOf: 73</li>
-                                        
-                                        <li>SubClassOf: 59690</li>
-                                        
-                                        <li>SubObjectPropertyOf: 279</li>
-                                        
-                                        <li>SubPropertyChainOf: 109</li>
-                                        
-                                        <li>SymmetricObjectProperty: 6</li>
-                                        
-                                        <li>TransitiveObjectProperty: 40</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>AnnotationAssertion: 23951</li>
+                                            
+                                                <li>Declaration: 11697</li>
+                                            
+                                                <li>EquivalentClasses: 7606</li>
+                                            
+                                                <li>SubClassOf: 7300</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -372,7 +346,7 @@
                                 <td>Axioms: Number of axioms</td>
                                 
                                 
-                                    <td>272971</td>
+                                    <td>50554</td>
                                 
                             </tr>
                         
@@ -380,7 +354,7 @@
                                 <td>Entities: % of entities reused</td>
                                 
                                 
-                                    <td>65.0</td>
+                                    <td>34.38</td>
                                 
                             </tr>
                         
@@ -388,7 +362,7 @@
                                 <td>Entities: Number of annotation properties</td>
                                 
                                 
-                                    <td>223</td>
+                                    <td>27</td>
                                 
                             </tr>
                         
@@ -396,7 +370,7 @@
                                 <td>Entities: Number of classes</td>
                                 
                                 
-                                    <td>20948</td>
+                                    <td>11670</td>
                                 
                             </tr>
                         
@@ -420,7 +394,7 @@
                                 <td>Entities: Number of object properties</td>
                                 
                                 
-                                    <td>279</td>
+                                    <td>5</td>
                                 
                             </tr>
                         
@@ -436,29 +410,17 @@
                                 <td>Info: Breakdown of OWL class expressions used</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>Class: 183065</li>
-                                        
-                                        <li>ObjectAllValuesFrom: 60</li>
-                                        
-                                        <li>ObjectComplementOf: 166</li>
-                                        
-                                        <li>ObjectExactCardinality: 8</li>
-                                        
-                                        <li>ObjectHasSelf: 1</li>
-                                        
-                                        <li>ObjectIntersectionOf: 28532</li>
-                                        
-                                        <li>ObjectMaxCardinality: 3</li>
-                                        
-                                        <li>ObjectMinCardinality: 7</li>
-                                        
-                                        <li>ObjectSomeValuesFrom: 61704</li>
-                                        
-                                        <li>ObjectUnionOf: 23</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>Class: 49409</li>
+                                            
+                                                <li>ObjectIntersectionOf: 22413</li>
+                                            
+                                                <li>ObjectSomeValuesFrom: 36899</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -474,15 +436,23 @@
                                 <td>Info: Experimental OBO score</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>_impact: 0.022</li>
-                                        
-                                        <li>_impact_external: 0</li>
-                                        
-                                        <li>_reuse: 0.65</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>_dashboard: 0.898</li>
+                                            
+                                                <li>_formula: (1*impact+1*dashboard)/2</li>
+                                            
+                                                <li>_impact: 0.022</li>
+                                            
+                                                <li>_impact_external: 0</li>
+                                            
+                                                <li>_reuse: 0.344</li>
+                                            
+                                                <li>oboscore: 0.46</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -522,83 +492,57 @@
                                 <td>Info: Usage of namespaces in axioms</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>BFO: 15104</li>
-                                        
-                                        <li>BSPO: 147</li>
-                                        
-                                        <li>CARO: 561</li>
-                                        
-                                        <li>CHEBI: 7391</li>
-                                        
-                                        <li>CHEBIALT: 434</li>
-                                        
-                                        <li>CL: 8187</li>
-                                        
-                                        <li>CLALT: 247</li>
-                                        
-                                        <li>GO: 50375</li>
-                                        
-                                        <li>GOALT: 32</li>
-                                        
-                                        <li>IAO: 22302</li>
-                                        
-                                        <li>NBO: 1163</li>
-                                        
-                                        <li>NBOALT: 73</li>
-                                        
-                                        <li>NCBITAXONALT: 101</li>
-                                        
-                                        <li>NCBITaxon: 881</li>
-                                        
-                                        <li>OBA: 41574</li>
-                                        
-                                        <li>OBI: 2</li>
-                                        
-                                        <li>PATO: 19420</li>
-                                        
-                                        <li>PATOALT: 140</li>
-                                        
-                                        <li>PO: 295</li>
-                                        
-                                        <li>POALT: 28</li>
-                                        
-                                        <li>PR: 1790</li>
-                                        
-                                        <li>PRALT: 57</li>
-                                        
-                                        <li>RO: 33237</li>
-                                        
-                                        <li>SO: 141</li>
-                                        
-                                        <li>SOALT: 16</li>
-                                        
-                                        <li>UBERON: 50920</li>
-                                        
-                                        <li>dc: 69</li>
-                                        
-                                        <li>dc11: 261</li>
-                                        
-                                        <li>foaf: 1124</li>
-                                        
-                                        <li>obo: 6130</li>
-                                        
-                                        <li>oboInOwl: 197850</li>
-                                        
-                                        <li>owl: 71</li>
-                                        
-                                        <li>prefix_unknown: 12</li>
-                                        
-                                        <li>rdf: 2596</li>
-                                        
-                                        <li>rdfs: 23122</li>
-                                        
-                                        <li>skos: 3</li>
-                                        
-                                        <li>xsd: 202</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>BFO: 7412</li>
+                                            
+                                                <li>CHEBI: 718</li>
+                                            
+                                                <li>CL: 1875</li>
+                                            
+                                                <li>GO: 2852</li>
+                                            
+                                                <li>HP: 28</li>
+                                            
+                                                <li>IAO: 7669</li>
+                                            
+                                                <li>MONDO: 54</li>
+                                            
+                                                <li>NBO: 327</li>
+                                            
+                                                <li>OBA: 15417</li>
+                                            
+                                                <li>OBAALT: 2</li>
+                                            
+                                                <li>PATO: 14954</li>
+                                            
+                                                <li>PO: 15</li>
+                                            
+                                                <li>PR: 111</li>
+                                            
+                                                <li>RO: 15006</li>
+                                            
+                                                <li>SO: 14</li>
+                                            
+                                                <li>UBERON: 13038</li>
+                                            
+                                                <li>dc11: 23</li>
+                                            
+                                                <li>obo: 6</li>
+                                            
+                                                <li>oboInOwl: 23599</li>
+                                            
+                                                <li>owl: 63</li>
+                                            
+                                                <li>prefix_unknown: 6</li>
+                                            
+                                                <li>rdfs: 7638</li>
+                                            
+                                                <li>xsd: 8</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -606,7 +550,17 @@
                                 <td>Info: Which ontologies use it?</td>
                                 
                                 
-                                    <td>['epio', 'fovt', 'go', 'mondo', 'oba']</td>
+                                    <td><ul>
+                                        
+                                            <li>epio</li>
+                                        
+                                            <li>fovt</li>
+                                        
+                                            <li>go</li>
+                                        
+                                            <li>mondo</li>
+                                        
+                                    </ul></td>
                                 
                             </tr>
                         

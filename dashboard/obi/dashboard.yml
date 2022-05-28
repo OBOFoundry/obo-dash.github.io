@@ -3,88 +3,92 @@ base_prefixes:
 - OBI
 - OBIALT
 - OBI
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 24263
+    AnnotationAssertion: 25376
     ClassAssertion: 241
     DataPropertyDomain: 3
     DataPropertyRange: 1
-    Declaration: 4434
+    Declaration: 4678
     DisjointClasses: 21
-    EquivalentClasses: 888
+    EquivalentClasses: 926
     InverseObjectProperties: 5
     ObjectPropertyAssertion: 10
     ObjectPropertyDomain: 19
     ObjectPropertyRange: 17
     SubAnnotationPropertyOf: 4
-    SubClassOf: 5462
+    SubClassOf: 5745
     SubDataPropertyOf: 1
     SubObjectPropertyOf: 29
     SymmetricObjectProperty: 1
     TransitiveObjectProperty: 1
-  'Axioms: Number of axioms': 35400
-  'Entities: % of entities reused': 13.76
+  'Axioms: Number of axioms': 37078
+  'Entities: % of entities reused': 13.51
   'Entities: Number of annotation properties': 53
-  'Entities: Number of classes': 4057
+  'Entities: Number of classes': 4301
   'Entities: Number of data properties': 5
   'Entities: Number of individuals': 243
   'Entities: Number of object properties': 72
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 19431
+    Class: 20984
     DataMinCardinality: 3
     DataSomeValuesFrom: 5
     ObjectAllValuesFrom: 79
-    ObjectComplementOf: 11
+    ObjectComplementOf: 10
     ObjectExactCardinality: 5
-    ObjectHasValue: 101
-    ObjectIntersectionOf: 3567
+    ObjectHasValue: 105
+    ObjectIntersectionOf: 4167
     ObjectMaxCardinality: 1
     ObjectMinCardinality: 3
     ObjectOneOf: 1
-    ObjectSomeValuesFrom: 6749
-    ObjectUnionOf: 97
+    ObjectSomeValuesFrom: 7851
+    ObjectUnionOf: 103
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _impact: 0.423
+    _dashboard: 0.93
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.412
     _impact_external: 0.5
-    _reuse: 0.138
+    _reuse: 0.135
+    oboscore: 0.671
   'Info: How many externally documented uses?': 5
-  'Info: How many ontologies use it?': 77
+  'Info: How many ontologies use it?': 75
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 2250
-    CHEBI: 449
-    CHMO: 10
-    CL: 189
+    BFO: 2021
+    CHEBI: 485
+    CHMO: 13
+    CL: 205
     CLO: 38
+    COB: 6
     ENVO: 3
     GAZ: 2
-    GO: 473
+    GO: 709
     HP: 2
-    IAO: 20566
+    IAO: 21862
     IDO: 10
-    NCBITaxon: 68
-    OBI: 20584
+    NCBITaxon: 91
+    OBI: 22502
     OGMS: 28
     OMIABIS: 5
-    OPL: 4
-    PATO: 59
-    PR: 136
-    RO: 2015
+    OPL: 5
+    PATO: 60
+    PR: 141
+    RO: 2090
     SO: 25
     UBERON: 222
-    UO: 84
+    UO: 88
     dc: 2
-    dc11: 82
+    dc11: 83
     obo: 4
-    oboInOwl: 84
-    owl: 124
+    oboInOwl: 87
+    owl: 127
     protege: 1
     rdf: 3
-    rdfs: 3890
+    rdfs: 4112
     xsd: 9
   'Info: Which ontologies use it?':
   - agro
@@ -128,12 +132,9 @@ metrics:
   - micro
   - mpio
   - mro
-  - ms
   - ncro
   - oae
-  - oba
   - obcs
-  - obi
   - obib
   - ogg
   - ogms
@@ -179,9 +180,8 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 26 duplicate definitions. 91 missing definitions. See ROBOT Report for
-      details.
-    status: ERROR
+    comment: 3 missing definitions. See ROBOT Report for details.
+    status: WARN
   FP07 Relations:
     comment: 27 non-RO properties used.
     file: fp7
@@ -193,26 +193,25 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 75 missing labels. See ROBOT Report for details.
-    status: ERROR
+    status: PASS
   FP16 Maintenance:
     status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 101 errors, 417 warnings, 1164 info messages.
+    comment: 287 warnings, 1190 info messages.
     file: robot_report
     results:
-      ERROR: 101
-      INFO: 1164
-      WARN: 417
-    status: ERROR
-sha256_hash: a1801f2959da97e4fba805985918c026651c929f06be8d9e034830dde1379df9
+      ERROR: 0
+      INFO: 1190
+      WARN: 287
+    status: WARN
+sha256_hash: b5abcb9a77eb2ed3ecd2e05cb9a3823c2bcce0aa32b50ae53c60911cba5ecbb7
 summary:
-  comment: 3 errors
-  status: ERROR
+  comment: 2 warnings
+  status: WARN
   summary_count:
-    ERROR: 3
+    ERROR: 0
     INFO: 1
-    WARN: 0
-version: http://purl.obolibrary.org/obo/obi/2021-08-18/obi-base.owl
+    WARN: 2
+version: http://purl.obolibrary.org/obo/obi/2022-05-19/obi-base.owl

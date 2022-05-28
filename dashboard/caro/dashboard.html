@@ -1,14 +1,14 @@
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <title>uo Dashboard Report</title>
+    <title>caro Dashboard Report</title>
 </head>
 <body>
     <div class="container">
         <div class="row" style="padding-top:30px;">
             <div class="col-md-2"></div>
             <div class="col-md-8">
-                <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/uo.html">uo</a></h1>
-                <p class="lead"><b>Version</b>: None</p>
+                <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/caro.html">caro</a></h1>
+                <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/caro/releases/2022-02-18/caro-base.owl</p>
                 <p class="lead" style="margin-top:-15px;"><b>Date run</b>: </p>
                 <p class="lead" style="margin-top:-15px;"><a href="dashboard.yml">View dashboard results as YAML</a></p>
                 <h3>Error Breakdown</h3>
@@ -18,7 +18,7 @@
                         
                     
                     <div class="alert alert-danger">
-                        <center><h3>ERROR - 6 errors</h3></center>
+                        <center><h3>ERROR - 5 errors</h3></center>
                     </div>
                 
                 <table class="table">
@@ -43,7 +43,7 @@
                                 <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>Missing ontology license.</td>
+                                <td>Ontology license 'https://creativecommons.org/licenses/unspecified' does not match regsitry license 'https://creativecommons.org/licenses/by/3.0/'.</td>
                             
                             
                                 <td></td>
@@ -103,7 +103,7 @@
                                 <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>Missing version IRI</td>
+                                <td>Version IRI does not resolve</td>
                             
                             
                                 <td></td>
@@ -139,11 +139,11 @@
                                 
                                 
                             
-                            <td class="table-warning" style="text-align:center;">
-                                <img src="../assets/warning.svg" height="15px">
+                            <td class="table-danger" style="text-align:center;">
+                                <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>289 missing definitions. See ROBOT Report for details.</td>
+                                <td>4 duplicate definitions. 3 missing definitions. See ROBOT Report for details.</td>
                             
                             
                                 <td></td>
@@ -239,11 +239,11 @@
                                 
                                 
                             
-                            <td class="table-danger" style="text-align:center;">
-                                <img src="../assets/x.svg" height="15px">
+                            <td class="table-success" style="text-align:center;">
+                                <img src="../assets/check.svg" height="15px">
                             </td>
                             
-                                <td>6 duplicate labels. See ROBOT Report for details.</td>
+                                <td></td>
                             
                             
                                 <td></td>
@@ -259,11 +259,11 @@
                                 
                                 
                             
-                            <td class="table-danger" style="text-align:center;">
-                                <img src="../assets/x.svg" height="15px">
+                            <td class="table-success" style="text-align:center;">
+                                <img src="../assets/check.svg" height="15px">
                             </td>
                             
-                                <td>Missing version IRI to check date</td>
+                                <td></td>
                             
                             
                                 <td></td>
@@ -303,7 +303,7 @@
                                 <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>9 errors, 369 warnings, 2 info messages.</td>
+                                <td>4 errors, 14 warnings, 8 info messages.</td>
                             
                             
                                 <td><a href="robot_report.html">View Report</a></td>
@@ -326,17 +326,29 @@
                                 <td>Axioms: Breakdown of axiom types</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>AnnotationAssertion: 1363</li>
-                                        
-                                        <li>Declaration: 881</li>
-                                        
-                                        <li>EquivalentClasses: 348</li>
-                                        
-                                        <li>SubClassOf: 791</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>AnnotationAssertion: 39443</li>
+                                            
+                                                <li>Declaration: 159</li>
+                                            
+                                                <li>DisjointClasses: 42</li>
+                                            
+                                                <li>DisjointUnion: 1</li>
+                                            
+                                                <li>EquivalentClasses: 18</li>
+                                            
+                                                <li>ObjectPropertyDomain: 1</li>
+                                            
+                                                <li>ObjectPropertyRange: 1</li>
+                                            
+                                                <li>SubAnnotationPropertyOf: 5</li>
+                                            
+                                                <li>SubClassOf: 102</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -344,7 +356,7 @@
                                 <td>Axioms: Number of axioms</td>
                                 
                                 
-                                    <td>3383</td>
+                                    <td>39772</td>
                                 
                             </tr>
                         
@@ -352,7 +364,7 @@
                                 <td>Entities: % of entities reused</td>
                                 
                                 
-                                    <td>6.22</td>
+                                    <td>44.24</td>
                                 
                             </tr>
                         
@@ -360,7 +372,7 @@
                                 <td>Entities: Number of annotation properties</td>
                                 
                                 
-                                    <td>4</td>
+                                    <td>49</td>
                                 
                             </tr>
                         
@@ -368,7 +380,7 @@
                                 <td>Entities: Number of classes</td>
                                 
                                 
-                                    <td>607</td>
+                                    <td>107</td>
                                 
                             </tr>
                         
@@ -384,7 +396,7 @@
                                 <td>Entities: Number of individuals</td>
                                 
                                 
-                                    <td>270</td>
+                                    <td>0</td>
                                 
                             </tr>
                         
@@ -392,7 +404,7 @@
                                 <td>Entities: Number of object properties</td>
                                 
                                 
-                                    <td>2</td>
+                                    <td>5</td>
                                 
                             </tr>
                         
@@ -408,21 +420,27 @@
                                 <td>Info: Breakdown of OWL class expressions used</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>Class: 2697</li>
-                                        
-                                        <li>ObjectAllValuesFrom: 44</li>
-                                        
-                                        <li>ObjectIntersectionOf: 78</li>
-                                        
-                                        <li>ObjectOneOf: 270</li>
-                                        
-                                        <li>ObjectSomeValuesFrom: 78</li>
-                                        
-                                        <li>ObjectUnionOf: 44</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>Class: 467</li>
+                                            
+                                                <li>ObjectAllValuesFrom: 2</li>
+                                            
+                                                <li>ObjectComplementOf: 4</li>
+                                            
+                                                <li>ObjectExactCardinality: 5</li>
+                                            
+                                                <li>ObjectIntersectionOf: 16</li>
+                                            
+                                                <li>ObjectMinCardinality: 6</li>
+                                            
+                                                <li>ObjectSomeValuesFrom: 31</li>
+                                            
+                                                <li>ObjectUnionOf: 2</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -438,15 +456,23 @@
                                 <td>Info: Experimental OBO score</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>_impact: 0.165</li>
-                                        
-                                        <li>_impact_external: 0</li>
-                                        
-                                        <li>_reuse: 0.062</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>_dashboard: 0.796</li>
+                                            
+                                                <li>_formula: (1*impact+1*dashboard)/2</li>
+                                            
+                                                <li>_impact: 0.22</li>
+                                            
+                                                <li>_impact_external: 0</li>
+                                            
+                                                <li>_reuse: 0.442</li>
+                                            
+                                                <li>oboscore: 0.508</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -462,7 +488,7 @@
                                 <td>Info: How many ontologies use it?</td>
                                 
                                 
-                                    <td>30</td>
+                                    <td>40</td>
                                 
                             </tr>
                         
@@ -486,19 +512,41 @@
                                 <td>Info: Usage of namespaces in axioms</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>PATO: 96</li>
-                                        
-                                        <li>UO: 3141</li>
-                                        
-                                        <li>obo: 124</li>
-                                        
-                                        <li>prefix_unknown: 413</li>
-                                        
-                                        <li>rdfs: 952</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>BFO: 34</li>
+                                            
+                                                <li>CARO: 427</li>
+                                            
+                                                <li>CAROALT: 4</li>
+                                            
+                                                <li>FBBTALT: 6</li>
+                                            
+                                                <li>IAO: 4557</li>
+                                            
+                                                <li>PATO: 25</li>
+                                            
+                                                <li>RO: 29</li>
+                                            
+                                                <li>dc: 1</li>
+                                            
+                                                <li>dc11: 6</li>
+                                            
+                                                <li>obo: 1</li>
+                                            
+                                                <li>oboInOwl: 40517</li>
+                                            
+                                                <li>owl: 247</li>
+                                            
+                                                <li>prefix_unknown: 2</li>
+                                            
+                                                <li>rdf: 3</li>
+                                            
+                                                <li>rdfs: 1494</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -506,7 +554,89 @@
                                 <td>Info: Which ontologies use it?</td>
                                 
                                 
-                                    <td>['agro', 'apollo_sv', 'cheminf', 'cido', 'dideo', 'dron', 'duo', 'eupath', 'foodon', 'genepio', 'geo', 'htn', 'iao', 'ico', 'ms', 'obcs', 'obi', 'obib', 'ohmi', 'ohpi', 'one', 'ons', 'oostt', 'opmi', 'pdro', 'psdo', 'rbo', 'scdo', 'stato', 'uo', 'vo']</td>
+                                    <td><ul>
+                                        
+                                            <li>agro</li>
+                                        
+                                            <li>aism</li>
+                                        
+                                            <li>bco</li>
+                                        
+                                            <li>bspo</li>
+                                        
+                                            <li>clo</li>
+                                        
+                                            <li>cob</li>
+                                        
+                                            <li>colao</li>
+                                        
+                                            <li>cteno</li>
+                                        
+                                            <li>dpo</li>
+                                        
+                                            <li>ecocore</li>
+                                        
+                                            <li>envo</li>
+                                        
+                                            <li>fbbi</li>
+                                        
+                                            <li>fbbt</li>
+                                        
+                                            <li>flopo</li>
+                                        
+                                            <li>genepio</li>
+                                        
+                                            <li>go</li>
+                                        
+                                            <li>htn</li>
+                                        
+                                            <li>ido</li>
+                                        
+                                            <li>mfmo</li>
+                                        
+                                            <li>mondo</li>
+                                        
+                                            <li>oarcs</li>
+                                        
+                                            <li>ohd</li>
+                                        
+                                            <li>ohmi</li>
+                                        
+                                            <li>ohpi</li>
+                                        
+                                            <li>ons</li>
+                                        
+                                            <li>opl</li>
+                                        
+                                            <li>opmi</li>
+                                        
+                                            <li>ovae</li>
+                                        
+                                            <li>pato</li>
+                                        
+                                            <li>pco</li>
+                                        
+                                            <li>peco</li>
+                                        
+                                            <li>phipo</li>
+                                        
+                                            <li>po</li>
+                                        
+                                            <li>poro</li>
+                                        
+                                            <li>pso</li>
+                                        
+                                            <li>ro</li>
+                                        
+                                            <li>to</li>
+                                        
+                                            <li>upheno</li>
+                                        
+                                            <li>wbphenotype</li>
+                                        
+                                            <li>zp</li>
+                                        
+                                    </ul></td>
                                 
                             </tr>
                         

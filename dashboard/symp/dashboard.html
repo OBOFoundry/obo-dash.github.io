@@ -8,7 +8,7 @@
             <div class="col-md-2"></div>
             <div class="col-md-8">
                 <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/symp.html">symp</a></h1>
-                <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/symp/releases/2020-08-04/symp.owl</p>
+                <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/symp/releases/2022-05-26/symp.owl</p>
                 <p class="lead" style="margin-top:-15px;"><b>Date run</b>: </p>
                 <p class="lead" style="margin-top:-15px;"><a href="dashboard.yml">View dashboard results as YAML</a></p>
                 <h3>Error Breakdown</h3>
@@ -143,7 +143,7 @@
                                 <img src="../assets/warning.svg" height="15px">
                             </td>
                             
-                                <td>599 missing definitions. See ROBOT Report for details.</td>
+                                <td>611 missing definitions. See ROBOT Report for details.</td>
                             
                             
                                 <td></td>
@@ -259,11 +259,11 @@
                                 
                                 
                             
-                            <td class="table-info" style="text-align:center;">
-                                <img src="../assets/info.svg" height="15px">
+                            <td class="table-success" style="text-align:center;">
+                                <img src="../assets/check.svg" height="15px">
                             </td>
                             
-                                <td>last version (2020-08-04) is over one year(s) old</td>
+                                <td></td>
                             
                             
                                 <td></td>
@@ -303,7 +303,7 @@
                                 <img src="../assets/warning.svg" height="15px">
                             </td>
                             
-                                <td>697 warnings, 1 info messages.</td>
+                                <td>619 warnings, 1 info messages.</td>
                             
                             
                                 <td><a href="robot_report.html">View Report</a></td>
@@ -326,15 +326,17 @@
                                 <td>Axioms: Breakdown of axiom types</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>AnnotationAssertion: 4078</li>
-                                        
-                                        <li>Declaration: 966</li>
-                                        
-                                        <li>SubClassOf: 850</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>AnnotationAssertion: 4129</li>
+                                            
+                                                <li>Declaration: 981</li>
+                                            
+                                                <li>SubClassOf: 861</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -342,7 +344,7 @@
                                 <td>Axioms: Number of axioms</td>
                                 
                                 
-                                    <td>5894</td>
+                                    <td>5971</td>
                                 
                             </tr>
                         
@@ -350,7 +352,7 @@
                                 <td>Entities: % of entities reused</td>
                                 
                                 
-                                    <td>2.37</td>
+                                    <td>2.34</td>
                                 
                             </tr>
                         
@@ -366,7 +368,7 @@
                                 <td>Entities: Number of classes</td>
                                 
                                 
-                                    <td>948</td>
+                                    <td>960</td>
                                 
                             </tr>
                         
@@ -406,11 +408,13 @@
                                 <td>Info: Breakdown of OWL class expressions used</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>Class: 2648</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>Class: 2682</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -418,7 +422,7 @@
                                 <td>Info: Does the ontology fall under OWL 2 DL?</td>
                                 
                                 
-                                    <td>False</td>
+                                    <td>True</td>
                                 
                             </tr>
                         
@@ -426,21 +430,23 @@
                                 <td>Info: Experimental OBO score</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>_dashboard: 0.888</li>
-                                        
-                                        <li>_formula: (1*impact+1*dashboard)/2</li>
-                                        
-                                        <li>_impact: 0.044</li>
-                                        
-                                        <li>_impact_external: 0.25</li>
-                                        
-                                        <li>_reuse: 0.024</li>
-                                        
-                                        <li>oboscore: 0.466</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>_dashboard: 0.889</li>
+                                            
+                                                <li>_formula: (1*impact+1*dashboard)/2</li>
+                                            
+                                                <li>_impact: 0.044</li>
+                                            
+                                                <li>_impact_external: 0.25</li>
+                                            
+                                                <li>_reuse: 0.023</li>
+                                            
+                                                <li>oboscore: 0.467</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -480,21 +486,27 @@
                                 <td>Info: Usage of namespaces in axioms</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>IAO: 254</li>
-                                        
-                                        <li>SYMP: 2648</li>
-                                        
-                                        <li>SYMPALT: 1</li>
-                                        
-                                        <li>oboInOwl: 2971</li>
-                                        
-                                        <li>owl: 99</li>
-                                        
-                                        <li>rdfs: 1024</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>IAO: 254</li>
+                                            
+                                                <li>SYMP: 2682</li>
+                                            
+                                                <li>SYMPALT: 1</li>
+                                            
+                                                <li>dc: 1</li>
+                                            
+                                                <li>dc11: 2</li>
+                                            
+                                                <li>oboInOwl: 3009</li>
+                                            
+                                                <li>owl: 100</li>
+                                            
+                                                <li>rdfs: 1036</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -502,7 +514,25 @@
                                 <td>Info: Which ontologies use it?</td>
                                 
                                 
-                                    <td>['aro', 'cido', 'doid', 'epio', 'eupath', 'genepio', 'ontoneo', 'scdo', 'symp']</td>
+                                    <td><ul>
+                                        
+                                            <li>aro</li>
+                                        
+                                            <li>cido</li>
+                                        
+                                            <li>doid</li>
+                                        
+                                            <li>epio</li>
+                                        
+                                            <li>eupath</li>
+                                        
+                                            <li>genepio</li>
+                                        
+                                            <li>ontoneo</li>
+                                        
+                                            <li>scdo</li>
+                                        
+                                    </ul></td>
                                 
                             </tr>
                         

@@ -56,7 +56,6 @@ metrics:
   - eupath
   - genepio
   - mco
-  - omp
   - ons
 mirror_from: http://purl.obolibrary.org/obo/omp.owl
 namespace: omp
@@ -69,7 +68,8 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -102,12 +102,12 @@ results:
       INFO: 12
       WARN: 342
     status: ERROR
-sha256_hash: 1a1313278858b1ff545596d30a18f4e6e20d80a4ba511c4101aaef5a29e1cf57
+sha256_hash: 6780d723ad23d4ea9469ec02217bf99fafbde4dd6f541dc3cba2b52f7470f4ca
 summary:
-  comment: 6 errors
+  comment: 7 errors
   status: ERROR
   summary_count:
-    ERROR: 6
+    ERROR: 7
     INFO: 0
     WARN: 0
-version: http://purl.obolibrary.org/obo/omp/releases/2022-04-11/omp.owl
+version: http://purl.obolibrary.org/obo/omp/releases/2022-05-06/omp.owl

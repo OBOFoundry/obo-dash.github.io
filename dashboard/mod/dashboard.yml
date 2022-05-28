@@ -3,7 +3,7 @@ base_prefixes:
 - MOD
 - MODALT
 - MOD
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 31709
@@ -24,9 +24,12 @@ metrics:
     ObjectSomeValuesFrom: 156
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
+    _dashboard: 0.58
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.011
     _impact_external: 0
     _reuse: 0.01
+    oboscore: 0.295
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 2
   'Info: Logical consistency': true
@@ -40,7 +43,6 @@ metrics:
     rdfs: 2978
   'Info: Which ontologies use it?':
   - eupath
-  - mod
   - pr
 mirror_from: http://purl.obolibrary.org/obo/mod.owl
 namespace: mod
@@ -83,14 +85,14 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 255 errors, 2196 warnings, 281 info messages.
+    comment: 255 errors, 2194 warnings, 281 info messages.
     file: robot_report
     results:
       ERROR: 255
       INFO: 281
-      WARN: 2196
+      WARN: 2194
     status: ERROR
-sha256_hash: 5dbad94d3e3c22c3d533ae0dc9dafe41bacee0616f9117ea7fbc99ee67f20423
+sha256_hash: c2bcc649a5a3b47380de7453824175618c1be094a492ba804e48c75a207a6886
 summary:
   comment: 7 errors
   status: ERROR

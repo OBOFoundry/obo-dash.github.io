@@ -32,12 +32,12 @@ metrics:
     ObjectSomeValuesFrom: 54
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.718
+    _dashboard: 0.829
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.022
     _impact_external: 0.25
     _reuse: 0.102
-    oboscore: 0.37
+    oboscore: 0.425
   'Info: How many externally documented uses?': 1
   'Info: How many ontologies use it?': 4
   'Info: Logical consistency': true
@@ -60,7 +60,6 @@ metrics:
   'Info: Which ontologies use it?':
   - apollo_sv
   - dpo
-  - fbcv
   - ontoavida
   - upheno
 mirror_from: http://purl.obolibrary.org/obo/fbcv/fbcv-base.owl
@@ -79,7 +78,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 30 duplicate definitions. 116 missing definitions. See ROBOT Report for
+    comment: 30 duplicate definitions. 17 missing definitions. See ROBOT Report for
       details.
     status: ERROR
   FP07 Relations:
@@ -93,26 +92,25 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 79 missing labels. See ROBOT Report for details.
-    status: ERROR
+    status: PASS
   FP16 Maintenance:
     status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 109 errors, 193 warnings, 140 info messages.
+    comment: 30 errors, 18 warnings, 58 info messages.
     file: robot_report
     results:
-      ERROR: 109
-      INFO: 140
-      WARN: 193
+      ERROR: 30
+      INFO: 58
+      WARN: 18
     status: ERROR
 sha256_hash: 940f49efb5d189edb0141ae4ace497658a0247fe43927e8dc7b1f74b588a30f2
 summary:
-  comment: 4 errors
+  comment: 3 errors
   status: ERROR
   summary_count:
-    ERROR: 4
+    ERROR: 3
     INFO: 1
     WARN: 0
 version: http://purl.obolibrary.org/obo/fbcv/releases/2022-04-14/fbcv-base.owl

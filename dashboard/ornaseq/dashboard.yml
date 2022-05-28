@@ -3,7 +3,7 @@ base_prefixes:
 - ORNASEQ
 - ORNASEQALT
 - ORNASEQ
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 866
@@ -25,9 +25,12 @@ metrics:
     ObjectSomeValuesFrom: 6
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.832
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
     _reuse: 0.91
+    oboscore: 0.416
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
@@ -54,8 +57,7 @@ metrics:
     owl: 2
     rdf: 1
     rdfs: 204
-  'Info: Which ontologies use it?':
-  - ornaseq
+  'Info: Which ontologies use it?': []
 mirror_from: http://purl.obolibrary.org/obo/ornaseq.owl
 namespace: ornaseq
 results:

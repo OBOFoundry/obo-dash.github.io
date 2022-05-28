@@ -6,140 +6,146 @@ base_prefixes:
 changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 111636
+    AnnotationAssertion: 113337
     AnnotationPropertyDomain: 1
     AnnotationPropertyRangeOf: 15
     ClassAssertion: 40
-    DataPropertyRange: 2
-    Declaration: 11811
-    EquivalentClasses: 1096
+    DataPropertyDomain: 1
+    DataPropertyRange: 3
+    Declaration: 12076
+    EquivalentClasses: 1091
     EquivalentObjectProperties: 20
-    FunctionalObjectProperty: 4
+    FunctionalDataProperty: 1
+    FunctionalObjectProperty: 5
     InverseObjectProperties: 56
     IrrefexiveObjectProperty: 1
     ObjectPropertyDomain: 123
-    ObjectPropertyRange: 119
+    ObjectPropertyRange: 120
     ReflexiveObjectProperty: 2
-    SubAnnotationPropertyOf: 15
-    SubClassOf: 25092
+    SubAnnotationPropertyOf: 20
+    SubClassOf: 25593
     SubDataPropertyOf: 4
-    SubObjectPropertyOf: 315
+    SubObjectPropertyOf: 312
     SubPropertyChainOf: 66
     SymmetricObjectProperty: 4
-    TransitiveObjectProperty: 33
-  'Axioms: Number of axioms': 150455
-  'Entities: % of entities reused': 88.04
-  'Entities: Number of annotation properties': 150
-  'Entities: Number of classes': 10800
-  'Entities: Number of data properties': 24
-  'Entities: Number of individuals': 457
-  'Entities: Number of object properties': 374
+    TransitiveObjectProperty: 31
+  'Axioms: Number of axioms': 152922
+  'Entities: % of entities reused': 87.47
+  'Entities: Number of annotation properties': 169
+  'Entities: Number of classes': 11036
+  'Entities: Number of data properties': 25
+  'Entities: Number of individuals': 458
+  'Entities: Number of object properties': 382
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 64685
-    DataHasValue: 137
-    ObjectAllValuesFrom: 22
+    Class: 65915
+    DataHasValue: 138
+    DataMinCardinality: 1
+    ObjectAllValuesFrom: 23
     ObjectComplementOf: 6
     ObjectExactCardinality: 1
     ObjectHasValue: 28
-    ObjectIntersectionOf: 1278
+    ObjectIntersectionOf: 1273
+    ObjectMinCardinality: 1
     ObjectOneOf: 2
-    ObjectSomeValuesFrom: 12702
-    ObjectUnionOf: 38
+    ObjectSomeValuesFrom: 12987
+    ObjectUnionOf: 40
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.594
+    _dashboard: 0.599
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.005
+    _impact: 0.011
     _impact_external: 0
-    _reuse: 0.88
-    oboscore: 0.299
+    _reuse: 0.875
+    oboscore: 0.305
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 1
+  'Info: How many ontologies use it?': 2
   'Info: Logical consistency': true
-  'Info: Syntax': RDF/XML
+  'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    APOLLO_SV: 62
-    BFO: 1309
-    CHEBI: 13495
-    CHEBIALT: 916
-    CIDO: 10235
-    CL: 53
-    DOID: 300
-    DOIDALT: 19
+    APOLLO_SV: 78
+    BFO: 1359
+    CHEBI: 13640
+    CHEBIALT: 921
+    CIDO: 10512
+    CL: 28
+    CMO: 2
+    DOID: 356
+    DOIDALT: 2
     DRON: 764
     EGGENE: 4
     ENVO: 50
+    GAZ: 3
     GENENAMES: 3245
-    GENO: 14
-    GO: 4524
+    GENO: 2
+    GO: 4523
     HP: 880
-    IAO: 26398
-    IDO: 72
+    IAO: 27310
+    ICO: 3
+    IDO: 66
     MGI: 4
     MPATH: 5
-    NCBIGENE: 79
+    NCBIGENE: 26
     NCBITAXONALT: 1132
-    NCBITaxon: 8440
+    NCBITaxon: 8452
+    NCIT: 87
     NDFRT: 15812
-    OAE: 333
+    OAE: 335
     OBCS: 47
-    OBI: 1958
-    OGG: 714
+    OBI: 1981
+    OBIB: 3
+    OGG: 739
     OGMS: 35
     OMIABIS: 11
-    OMRSE: 17
-    OPMI: 44
-    PATO: 90
-    PR: 14109
-    PRALT: 857
-    RO: 7988
-    SO: 872
-    SOALT: 6
-    SYMP: 67
+    OMRSE: 27
+    OPMI: 416
+    PATO: 86
+    PR: 14568
+    PRALT: 841
+    RO: 8191
+    SO: 846
+    SYMP: 2
     TRANS: 7
-    UBERON: 601
+    UBERON: 551
     UO: 12
     VO: 1931
     VariO: 15
-    dc: 31
-    dc11: 308
+    dc: 30
+    dc11: 307
     foaf: 32
-    obo: 5206
-    oboInOwl: 53032
-    owl: 211
-    prefix_unknown: 69
-    protege: 5
+    obo: 5355
+    oboInOwl: 53813
+    owl: 213
+    prefix_unknown: 72
+    protege: 7
     rdf: 2
-    rdfs: 15137
+    rdfs: 15518
     skos: 2
-    xsd: 143
+    xsd: 145
     yeastgenome: 9
   'Info: Which ontologies use it?':
-  - cido
   - eupath
+  - genepio
 mirror_from: http://purl.obolibrary.org/obo/cido.owl
 namespace: cido
 results:
   FP01 Open:
     status: PASS
   FP02 Common Format:
-    comment: OWL syntax (RDF/XML), but should be RDF/XML
-    status: WARN
+    status: PASS
   FP03 URIs:
     status: PASS
   FP04 Versioning:
     comment: Missing version IRI
     status: ERROR
   FP05 Scope:
-    comment: Missing domain (scope)
-    status: ERROR
+    status: PASS
   FP06 Textual Definitions:
-    comment: 32 duplicate definitions. 18 multiple definitions. 528 missing definitions.
+    comment: 34 duplicate definitions. 18 multiple definitions. 606 missing definitions.
       See ROBOT Report for details.
     status: ERROR
   FP07 Relations:
-    comment: 2 labels match RO labels. 88 non-RO properties used.
+    comment: 3 labels match RO labels. 89 non-RO properties used.
     file: fp7
     status: ERROR
   FP08 Documented:
@@ -150,7 +156,7 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 90 multiple labels. See ROBOT Report for details.
+    comment: 2 duplicate labels. 12 multiple labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
     comment: Missing version IRI to check date
@@ -158,19 +164,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 731 errors, 730 warnings, 19 info messages.
+    comment: 624 errors, 816 warnings, 20 info messages.
     file: robot_report
     results:
-      ERROR: 731
-      INFO: 19
-      WARN: 730
+      ERROR: 624
+      INFO: 20
+      WARN: 816
     status: ERROR
-sha256_hash: 9b0b5eb00561a76e22675e93ad3fdabd2dea4b20fcc8d135335bbf32cde62b7a
+sha256_hash: 509dde506cb6ecc99cd9697d37461c8fecb71d62e0571d3e5c53a18bd8849955
 summary:
-  comment: 8 errors
+  comment: 7 errors
   status: ERROR
   summary_count:
-    ERROR: 8
+    ERROR: 7
     INFO: 0
-    WARN: 1
+    WARN: 0
 version: null

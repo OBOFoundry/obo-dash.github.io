@@ -3,33 +3,36 @@ base_prefixes:
 - MOP
 - MOPALT
 - MOP
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 15304
+    AnnotationAssertion: 15298
     Declaration: 3724
     EquivalentClasses: 31
     SubAnnotationPropertyOf: 2
-    SubClassOf: 3786
+    SubClassOf: 3785
     SubObjectPropertyOf: 3
-  'Axioms: Number of axioms': 22850
-  'Entities: % of entities reused': 2.92
-  'Entities: Number of annotation properties': 27
-  'Entities: Number of classes': 3687
+  'Axioms: Number of axioms': 22843
+  'Entities: % of entities reused': 2.95
+  'Entities: Number of annotation properties': 29
+  'Entities: Number of classes': 3686
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 11
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 11354
+    Class: 11351
     ObjectIntersectionOf: 29
     ObjectSomeValuesFrom: 158
     ObjectUnionOf: 2
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
+    _dashboard: 0.839
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.022
     _impact_external: 0
-    _reuse: 0.029
+    _reuse: 0.03
+    oboscore: 0.43
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 4
   'Info: Logical consistency': true
@@ -37,23 +40,21 @@ metrics:
   'Info: Usage of namespaces in axioms':
     BFO: 180
     CHEBI: 236
-    GO: 2
     IAO: 3689
-    MOP: 11099
+    MOP: 11098
     MOPALT: 4
     REX: 2
     RO: 2
     RXNO: 7
     dc: 1
     dc11: 8
-    oboInOwl: 8243
+    oboInOwl: 8236
     owl: 47
-    rdfs: 6998
+    rdfs: 7000
   'Info: Which ontologies use it?':
   - cob
   - dideo
   - foodon
-  - mop
   - rxno
 mirror_from: http://purl.obolibrary.org/obo/mop.owl
 namespace: mop
@@ -67,8 +68,7 @@ results:
   FP04 Versioning:
     status: PASS
   FP05 Scope:
-    comment: Missing domain (scope)
-    status: ERROR
+    status: PASS
   FP06 Textual Definitions:
     comment: 2 missing definitions. See ROBOT Report for details.
     status: WARN
@@ -97,12 +97,12 @@ results:
       INFO: 1
       WARN: 542
     status: WARN
-sha256_hash: 0a1c5271adfd561cf54528e567a127b0e8d914c8c521e9a299c230b7b4a38133
+sha256_hash: 7ed57af2b7e7b19f3d2e4e3d74982ec392efe586fc3d5307b2c999d5810206d9
 summary:
-  comment: 2 errors
+  comment: 1 errors
   status: ERROR
   summary_count:
-    ERROR: 2
+    ERROR: 1
     INFO: 1
     WARN: 2
-version: http://purl.obolibrary.org/obo/mop/releases/2022-02-01/mop.owl
+version: http://purl.obolibrary.org/obo/mop/releases/2022-05-11/mop.owl

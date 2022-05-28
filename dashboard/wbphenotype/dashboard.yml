@@ -27,12 +27,12 @@ metrics:
     ObjectSomeValuesFrom: 3077
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.891
+    _dashboard: 0.995
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.011
     _impact_external: 0.25
     _reuse: 0.242
-    oboscore: 0.451
+    oboscore: 0.503
   'Info: How many externally documented uses?': 2
   'Info: How many ontologies use it?': 2
   'Info: Logical consistency': true
@@ -60,7 +60,6 @@ metrics:
   'Info: Which ontologies use it?':
   - geno
   - upheno
-  - wbphenotype
 mirror_from: http://purl.obolibrary.org/obo/wbphenotype/wbphenotype-base.owl
 namespace: wbphenotype
 results:
@@ -75,8 +74,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 15 missing definitions. See ROBOT Report for details.
-    status: WARN
+    status: PASS
   FP07 Relations:
     status: PASS
   FP08 Documented:
@@ -86,26 +84,25 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 4 missing labels. See ROBOT Report for details.
-    status: ERROR
+    status: PASS
   FP16 Maintenance:
     status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 4 errors, 16 warnings, 4 info messages.
+    comment: 1 warnings, 3 info messages.
     file: robot_report
     results:
-      ERROR: 4
-      INFO: 4
-      WARN: 16
-    status: ERROR
+      ERROR: 0
+      INFO: 3
+      WARN: 1
+    status: WARN
 sha256_hash: a9a0f7490622320b4e2a9a2c0c5ea92026a6ccaa5d747b942b96e98f89b34dde
 summary:
-  comment: 2 errors
-  status: ERROR
+  comment: 1 warnings
+  status: WARN
   summary_count:
-    ERROR: 2
+    ERROR: 0
     INFO: 0
     WARN: 1
 version: http://purl.obolibrary.org/obo/wbphenotype/releases/2022-03-22/wbphenotype-base.owl

@@ -3,7 +3,7 @@ base_prefixes:
 - CMO
 - CMOALT
 - CMO
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 14719
@@ -23,11 +23,14 @@ metrics:
     ObjectSomeValuesFrom: 8
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _impact: 0.044
+    _dashboard: 0.675
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.049
     _impact_external: 0
     _reuse: 0.006
+    oboscore: 0.362
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 8
+  'Info: How many ontologies use it?': 9
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML
   'Info: Usage of namespaces in axioms':
@@ -37,7 +40,7 @@ metrics:
     prefix_unknown: 5463
     rdfs: 3158
   'Info: Which ontologies use it?':
-  - cmo
+  - cido
   - epio
   - eupath
   - gecko
@@ -53,9 +56,12 @@ results:
     comment: Missing ontology license.
     status: ERROR
   FP02 Common Format:
-    status: PASS
+    comment: OWL syntax (RDF/XML), but should be RDF/XML
+    status: WARN
   FP03 URIs:
-    status: PASS
+    comment: 0 invalid IRIs. The Ontology IRI is not valid.
+    file: fp3
+    status: ERROR
   FP04 Versioning:
     status: PASS
   FP05 Scope:
@@ -90,10 +96,10 @@ results:
     status: ERROR
 sha256_hash: 61a2852abb5fc60000c72182007afba65044930db5947d6a19d142c82b8bf69d
 summary:
-  comment: 5 errors
+  comment: 6 errors
   status: ERROR
   summary_count:
-    ERROR: 5
+    ERROR: 6
     INFO: 0
-    WARN: 1
+    WARN: 2
 version: http://purl.obolibrary.org/obo/cmo/releases/2019-02-19/cmo.owl

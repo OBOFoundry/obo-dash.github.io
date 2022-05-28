@@ -3,7 +3,7 @@ base_prefixes:
 - LEPAO
 - LEPAOALT
 - LEPAO
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 275
@@ -22,9 +22,12 @@ metrics:
     ObjectSomeValuesFrom: 8
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.927
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
     _reuse: 1.0
+    oboscore: 0.464
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
@@ -38,8 +41,7 @@ metrics:
     obo: 399
     oboInOwl: 251
     rdfs: 137
-  'Info: Which ontologies use it?':
-  - lepao
+  'Info: Which ontologies use it?': []
 mirror_from: http://purl.obolibrary.org/obo/lepao/lepao-base.owl
 namespace: lepao
 results:
@@ -54,7 +56,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 223 missing definitions. See ROBOT Report for details.
+    comment: 130 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     status: PASS
@@ -66,26 +68,25 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 93 missing labels. See ROBOT Report for details.
-    status: ERROR
+    status: PASS
   FP16 Maintenance:
     status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 93 errors, 225 warnings, 5 info messages.
+    comment: 130 warnings, 4 info messages.
     file: robot_report
     results:
-      ERROR: 93
-      INFO: 5
-      WARN: 225
-    status: ERROR
+      ERROR: 0
+      INFO: 4
+      WARN: 130
+    status: WARN
 sha256_hash: e1fa3ca9236b90315d6b5cf4a8e0552c13c907d63ca40c7168433ec807a73e35
 summary:
-  comment: 3 errors
+  comment: 1 errors
   status: ERROR
   summary_count:
-    ERROR: 3
+    ERROR: 1
     INFO: 0
-    WARN: 1
+    WARN: 2
 version: http://purl.obolibrary.org/obo/lepao/releases/2021-11-20/lepao-base.owl

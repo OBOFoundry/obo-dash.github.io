@@ -37,12 +37,12 @@ metrics:
     ObjectSomeValuesFrom: 95
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.745
+    _dashboard: 0.696
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.005
     _impact_external: 0
     _reuse: 0.699
-    oboscore: 0.375
+    oboscore: 0.35
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
@@ -66,7 +66,6 @@ metrics:
     rdfs: 893
   'Info: Which ontologies use it?':
   - epio
-  - mfoem
 mirror_from: http://purl.obolibrary.org/obo/mfoem.owl
 namespace: mfoem
 results:
@@ -76,7 +75,9 @@ results:
   FP02 Common Format:
     status: PASS
   FP03 URIs:
-    status: PASS
+    comment: 0 invalid IRIs. The Ontology IRI is not valid.
+    file: fp3
+    status: ERROR
   FP04 Versioning:
     status: PASS
   FP05 Scope:
@@ -103,19 +104,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 69 errors, 94 warnings, 1 info messages.
+    comment: 67 errors, 93 warnings, 1 info messages.
     file: robot_report
     results:
-      ERROR: 69
+      ERROR: 67
       INFO: 1
-      WARN: 94
+      WARN: 93
     status: ERROR
 sha256_hash: 3b3d3f498e73104b817e9dd1b5878c574f5231c0f290057289a1506dc90f1121
 summary:
-  comment: 3 errors
+  comment: 4 errors
   status: ERROR
   summary_count:
-    ERROR: 3
+    ERROR: 4
     INFO: 1
     WARN: 2
 version: http://purl.obolibrary.org/obo/MFOEM/2021-11-17/MFOEM.owl

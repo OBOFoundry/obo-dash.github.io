@@ -18,7 +18,7 @@
                         
                     
                     <div class="alert alert-danger">
-                        <center><h3>ERROR - 5 errors</h3></center>
+                        <center><h3>ERROR - 6 errors</h3></center>
                     </div>
                 
                 <table class="table">
@@ -99,11 +99,11 @@
                                 
                                 
                             
-                            <td class="table-warning" style="text-align:center;">
-                                <img src="../assets/warning.svg" height="15px">
+                            <td class="table-danger" style="text-align:center;">
+                                <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>Version IRI 'http://purl.obolibrary.org/obo/gsso/releases/2.0.5/gsso.owl' is not in recommended format</td>
+                                <td>Version IRI does not resolve</td>
                             
                             
                                 <td></td>
@@ -303,7 +303,7 @@
                                 <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>751 errors, 51 warnings, 33 info messages.</td>
+                                <td>751 errors, 50 warnings, 33 info messages.</td>
                             
                             
                                 <td><a href="robot_report.html">View Report</a></td>
@@ -326,21 +326,23 @@
                                 <td>Axioms: Breakdown of axiom types</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>AnnotationAssertion: 89001</li>
-                                        
-                                        <li>ClassAssertion: 2839</li>
-                                        
-                                        <li>Declaration: 15034</li>
-                                        
-                                        <li>DifferentIndividuals: 56</li>
-                                        
-                                        <li>SubAnnotationPropertyOf: 99</li>
-                                        
-                                        <li>SubClassOf: 13709</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>AnnotationAssertion: 89001</li>
+                                            
+                                                <li>ClassAssertion: 2839</li>
+                                            
+                                                <li>Declaration: 15034</li>
+                                            
+                                                <li>DifferentIndividuals: 56</li>
+                                            
+                                                <li>SubAnnotationPropertyOf: 99</li>
+                                            
+                                                <li>SubClassOf: 13709</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -412,11 +414,13 @@
                                 <td>Info: Breakdown of OWL class expressions used</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>Class: 42144</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>Class: 42144</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -432,15 +436,23 @@
                                 <td>Info: Experimental OBO score</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>_impact: 0.016</li>
-                                        
-                                        <li>_impact_external: 0</li>
-                                        
-                                        <li>_reuse: 0.226</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>_dashboard: 0.642</li>
+                                            
+                                                <li>_formula: (1*impact+1*dashboard)/2</li>
+                                            
+                                                <li>_impact: 0.016</li>
+                                            
+                                                <li>_impact_external: 0</li>
+                                            
+                                                <li>_reuse: 0.226</li>
+                                            
+                                                <li>oboscore: 0.329</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -480,85 +492,87 @@
                                 <td>Info: Usage of namespaces in axioms</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>BFO: 86</li>
-                                        
-                                        <li>CHEBI: 1087</li>
-                                        
-                                        <li>CL: 61</li>
-                                        
-                                        <li>DOID: 382</li>
-                                        
-                                        <li>EFO: 78</li>
-                                        
-                                        <li>ENVO: 130</li>
-                                        
-                                        <li>GAZ: 811</li>
-                                        
-                                        <li>GO: 625</li>
-                                        
-                                        <li>GSSO: 37486</li>
-                                        
-                                        <li>HP: 23</li>
-                                        
-                                        <li>IAO: 13577</li>
-                                        
-                                        <li>IDO: 8</li>
-                                        
-                                        <li>ISNI: 134</li>
-                                        
-                                        <li>MESH: 899</li>
-                                        
-                                        <li>MF: 3</li>
-                                        
-                                        <li>MFOMD: 20</li>
-                                        
-                                        <li>NCBITaxon: 344</li>
-                                        
-                                        <li>NCIT: 1434</li>
-                                        
-                                        <li>OAE: 3</li>
-                                        
-                                        <li>OBI: 32</li>
-                                        
-                                        <li>OGMS: 12</li>
-                                        
-                                        <li>OMRSE: 18</li>
-                                        
-                                        <li>PATO: 70</li>
-                                        
-                                        <li>RO: 6</li>
-                                        
-                                        <li>SIO: 1051</li>
-                                        
-                                        <li>UBERON: 284</li>
-                                        
-                                        <li>dc: 9523</li>
-                                        
-                                        <li>dc11: 2012</li>
-                                        
-                                        <li>fma: 981</li>
-                                        
-                                        <li>foaf: 1</li>
-                                        
-                                        <li>obo: 17</li>
-                                        
-                                        <li>oboInOwl: 24627</li>
-                                        
-                                        <li>owl: 5</li>
-                                        
-                                        <li>prefix_unknown: 35315</li>
-                                        
-                                        <li>rdf: 1</li>
-                                        
-                                        <li>rdfs: 15946</li>
-                                        
-                                        <li>webarchive: 73</li>
-                                        
-                                        <li>xsd: 4</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>BFO: 86</li>
+                                            
+                                                <li>CHEBI: 1087</li>
+                                            
+                                                <li>CL: 61</li>
+                                            
+                                                <li>DOID: 382</li>
+                                            
+                                                <li>EFO: 78</li>
+                                            
+                                                <li>ENVO: 130</li>
+                                            
+                                                <li>GAZ: 811</li>
+                                            
+                                                <li>GO: 625</li>
+                                            
+                                                <li>GSSO: 37486</li>
+                                            
+                                                <li>HP: 23</li>
+                                            
+                                                <li>IAO: 13577</li>
+                                            
+                                                <li>IDO: 8</li>
+                                            
+                                                <li>ISNI: 134</li>
+                                            
+                                                <li>MESH: 899</li>
+                                            
+                                                <li>MF: 3</li>
+                                            
+                                                <li>MFOMD: 20</li>
+                                            
+                                                <li>NCBITaxon: 344</li>
+                                            
+                                                <li>NCIT: 1434</li>
+                                            
+                                                <li>OAE: 3</li>
+                                            
+                                                <li>OBI: 32</li>
+                                            
+                                                <li>OGMS: 12</li>
+                                            
+                                                <li>OMRSE: 18</li>
+                                            
+                                                <li>PATO: 70</li>
+                                            
+                                                <li>RO: 6</li>
+                                            
+                                                <li>SIO: 1051</li>
+                                            
+                                                <li>UBERON: 284</li>
+                                            
+                                                <li>dc: 9523</li>
+                                            
+                                                <li>dc11: 2012</li>
+                                            
+                                                <li>fma: 981</li>
+                                            
+                                                <li>foaf: 1</li>
+                                            
+                                                <li>obo: 17</li>
+                                            
+                                                <li>oboInOwl: 24627</li>
+                                            
+                                                <li>owl: 5</li>
+                                            
+                                                <li>prefix_unknown: 35315</li>
+                                            
+                                                <li>rdf: 1</li>
+                                            
+                                                <li>rdfs: 15946</li>
+                                            
+                                                <li>webarchive: 73</li>
+                                            
+                                                <li>xsd: 4</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -566,7 +580,15 @@
                                 <td>Info: Which ontologies use it?</td>
                                 
                                 
-                                    <td>['genepio', 'gsso', 'ontoavida', 'scdo']</td>
+                                    <td><ul>
+                                        
+                                            <li>genepio</li>
+                                        
+                                            <li>ontoavida</li>
+                                        
+                                            <li>scdo</li>
+                                        
+                                    </ul></td>
                                 
                             </tr>
                         

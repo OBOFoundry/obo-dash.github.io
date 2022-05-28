@@ -3,7 +3,7 @@ base_prefixes:
 - OHD
 - OHDALT
 - OHD
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 7336
@@ -48,9 +48,12 @@ metrics:
     ObjectUnionOf: 561
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.731
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
     _reuse: 0.912
+    oboscore: 0.365
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
@@ -73,8 +76,7 @@ metrics:
     rdf: 1
     rdfs: 3055
     xsd: 5
-  'Info: Which ontologies use it?':
-  - ohd
+  'Info: Which ontologies use it?': []
 mirror_from: http://purl.obolibrary.org/obo/ohd.owl
 namespace: ohd
 results:
@@ -115,12 +117,12 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 5 errors, 57 warnings, 74 info messages.
+    comment: 5 errors, 56 warnings, 74 info messages.
     file: robot_report
     results:
       ERROR: 5
       INFO: 74
-      WARN: 57
+      WARN: 56
     status: ERROR
 sha256_hash: 0d97ea12080d77bdeb2fc24505676b15ed2dd0427fb5500a9e03a14b64954f91
 summary:

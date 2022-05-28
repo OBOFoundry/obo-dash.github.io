@@ -95,7 +95,6 @@ metrics:
   - opmi
   - ovae
   - scdo
-  - vo
 mirror_from: http://purl.obolibrary.org/obo/vo.owl
 namespace: vo
 results:
@@ -107,7 +106,9 @@ results:
   FP02 Common Format:
     status: PASS
   FP03 URIs:
-    status: PASS
+    comment: 0 invalid IRIs. The Ontology IRI is not valid.
+    file: fp3
+    status: ERROR
   FP04 Versioning:
     comment: Missing version IRI
     status: ERROR
@@ -137,19 +138,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 364 errors, 5049 warnings, 570 info messages.
+    comment: 362 errors, 5049 warnings, 570 info messages.
     file: robot_report
     results:
-      ERROR: 364
+      ERROR: 362
       INFO: 570
       WARN: 5049
     status: ERROR
 sha256_hash: b3bc3513dfd9d7e82fbe5054646589d798edb4772b5f0019cec0075a3ee80521
 summary:
-  comment: 7 errors
+  comment: 8 errors
   status: ERROR
   summary_count:
-    ERROR: 7
+    ERROR: 8
     INFO: 1
     WARN: 0
 version: null

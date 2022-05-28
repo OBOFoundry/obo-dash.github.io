@@ -31,12 +31,12 @@ metrics:
     ObjectUnionOf: 3
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.943
+    _dashboard: 0.945
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.005
     _impact_external: 0.25
     _reuse: 0.022
-    oboscore: 0.474
+    oboscore: 0.475
   'Info: How many externally documented uses?': 2
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
@@ -55,7 +55,6 @@ metrics:
     rdfs: 2353
     xsd: 301
   'Info: Which ontologies use it?':
-  - eco
   - mro
 mirror_from: http://purl.obolibrary.org/obo/eco/eco-base.owl
 namespace: eco
@@ -71,7 +70,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 24 missing definitions. See ROBOT Report for details.
+    comment: 2 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     comment: 2 non-RO properties used.
@@ -90,12 +89,12 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 158 warnings, 640 info messages.
+    comment: 136 warnings, 639 info messages.
     file: robot_report
     results:
       ERROR: 0
-      INFO: 640
-      WARN: 158
+      INFO: 639
+      WARN: 136
     status: WARN
 sha256_hash: 90cd111ff111bd42707a9eacecc1e901de5ff4d104c045108fa63cf760f337f3
 summary:

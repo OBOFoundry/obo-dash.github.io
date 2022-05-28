@@ -3,87 +3,90 @@ base_prefixes:
 - COB
 - COBALT
 - COB
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 311
+    AnnotationAssertion: 214
     DataPropertyDomain: 3
     DataPropertyRange: 2
     Declaration: 202
-    DisjointClasses: 18
-    EquivalentClasses: 65
+    DisjointClasses: 10
+    EquivalentClasses: 63
     EquivalentObjectProperties: 17
-    InverseFunctionalObjectProperty: 2
-    InverseObjectProperties: 18
-    ObjectPropertyDomain: 14
-    ObjectPropertyRange: 4
-    SubClassOf: 210
-    SubDataPropertyOf: 1
-    SubObjectPropertyOf: 12
-    SubPropertyChainOf: 2
-    TransitiveObjectProperty: 2
-  'Axioms: Number of axioms': 883
-  'Entities: % of entities reused': 53.02
-  'Entities: Number of annotation properties': 15
+    InverseFunctionalObjectProperty: 1
+    InverseObjectProperties: 9
+    ObjectPropertyDomain: 6
+    ObjectPropertyRange: 2
+    SubClassOf: 114
+    SubDataPropertyOf: 2
+    SubObjectPropertyOf: 6
+    SubPropertyChainOf: 1
+    TransitiveObjectProperty: 1
+  'Axioms: Number of axioms': 653
+  'Entities: % of entities reused': 53.7
+  'Entities: Number of annotation properties': 17
   'Entities: Number of classes': 148
   'Entities: Number of data properties': 5
   'Entities: Number of individuals': 0
-  'Entities: Number of object properties': 42
+  'Entities: Number of object properties': 41
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 753
-    DataHasValue: 3
-    ObjectAllValuesFrom: 6
-    ObjectIntersectionOf: 6
-    ObjectSomeValuesFrom: 64
-    ObjectUnionOf: 4
+    Class: 531
+    DataHasValue: 2
+    ObjectAllValuesFrom: 3
+    ObjectIntersectionOf: 3
+    ObjectSomeValuesFrom: 32
+    ObjectUnionOf: 2
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _impact: 0.016
+    _dashboard: 0.877
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.022
     _impact_external: 0
-    _reuse: 0.53
+    _reuse: 0.537
+    oboscore: 0.45
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 3
+  'Info: How many ontologies use it?': 4
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 96
-    CARO: 7
-    CHEBI: 35
-    CL: 11
-    COB: 630
-    DRON: 3
-    ENVO: 12
+    BFO: 28
+    CARO: 6
+    CHEBI: 19
+    CL: 6
+    COB: 566
+    DRON: 2
+    ENVO: 6
     GEO: 2
-    GO: 24
-    IAO: 65
-    MOP: 6
-    NCBITaxon: 8
-    OBI: 67
-    OGMS: 9
-    PATO: 19
-    PCO: 3
+    GO: 8
+    IAO: 31
+    MOP: 2
+    NCBITaxon: 4
+    OBI: 30
+    OGMS: 6
+    PATO: 6
+    PCO: 2
     PO: 8
-    PR: 3
-    RO: 35
-    SEPIO: 4
+    PR: 2
+    RO: 12
+    SEPIO: 2
     SO: 8
-    STATO: 4
+    STATO: 2
     UBERON: 6
     XAO: 2
     ZFA: 2
     dc: 1
     dc11: 2
-    owl: 23
-    prefix_unknown: 212
-    rdf: 90
-    rdfs: 223
+    owl: 14
+    prefix_unknown: 318
+    rdf: 87
+    rdfs: 132
     skos: 5
-    xsd: 5
+    xsd: 4
   'Info: Which ontologies use it?':
-  - cob
   - eupath
   - foodon
+  - obi
   - rbo
 mirror_from: http://purl.obolibrary.org/obo/cob/cob-base.owl
 namespace: cob
@@ -99,11 +102,10 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 12 duplicate definitions. 168 missing definitions. See ROBOT Report for
-      details.
-    status: ERROR
+    comment: 86 missing definitions. See ROBOT Report for details.
+    status: WARN
   FP07 Relations:
-    comment: 7 labels match RO labels. 14 non-RO properties used.
+    comment: 13 labels match RO labels. 14 non-RO properties used.
     file: fp7
     status: ERROR
   FP08 Documented:
@@ -114,27 +116,25 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 144 duplicate labels. 2 multiple labels. 16 missing labels. See ROBOT
-      Report for details.
-    status: ERROR
+    status: PASS
   FP16 Maintenance:
     status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 174 errors, 236 warnings, 2 info messages.
+    comment: 125 warnings, 2 info messages.
     file: robot_report
     results:
-      ERROR: 174
+      ERROR: 0
       INFO: 2
-      WARN: 236
-    status: ERROR
-sha256_hash: 0ed3dbab6a93b8105990f7d64faff389b58db874cb4dc58ac5bc237923c04236
+      WARN: 125
+    status: WARN
+sha256_hash: 78b00e403736f460b52d0f8a197677fab803e55a955a5093ecf487bdc93ae217
 summary:
-  comment: 5 errors
+  comment: 2 errors
   status: ERROR
   summary_count:
-    ERROR: 5
+    ERROR: 2
     INFO: 0
-    WARN: 0
-version: http://purl.obolibrary.org/obo/cob/releases/2021-09-13/cob-native.owl
+    WARN: 2
+version: http://purl.obolibrary.org/obo/cob/releases/2022-05-02/cob-base.owl

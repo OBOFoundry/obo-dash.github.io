@@ -3,7 +3,7 @@ base_prefixes:
 - OGMS
 - OGMSALT
 - OGMS
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1319
@@ -28,11 +28,14 @@ metrics:
     ObjectOneOf: 3
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _impact: 0.242
+    _dashboard: 0.796
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.236
     _impact_external: 0
     _reuse: 0.565
+    oboscore: 0.516
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 44
+  'Info: How many ontologies use it?': 43
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -71,11 +74,9 @@ metrics:
   - mfoem
   - mfomd
   - mpio
-  - ms
   - oae
   - obi
   - obib
-  - ogms
   - ogsf
   - ohd
   - ohpi

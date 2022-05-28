@@ -3,7 +3,7 @@ base_prefixes:
 - NBO
 - NBOALT
 - NBO
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 4816
@@ -26,11 +26,14 @@ metrics:
     ObjectUnionOf: 2
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _impact: 0.11
+    _dashboard: 0.736
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.104
     _impact_external: 0
     _reuse: 0.113
+    oboscore: 0.42
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 20
+  'Info: How many ontologies use it?': 19
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -62,8 +65,6 @@ metrics:
   - mfomd
   - mondo
   - mp
-  - ms
-  - nbo
   - oba
   - planp
   - scdo
@@ -85,7 +86,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 12 duplicate definitions. 2 multiple definitions. 178 missing definitions.
+    comment: 12 duplicate definitions. 2 multiple definitions. 176 missing definitions.
       See ROBOT Report for details.
     status: ERROR
   FP07 Relations:
@@ -100,7 +101,7 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 2 duplicate labels. 2 missing labels. See ROBOT Report for details.
+    comment: 2 duplicate labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
     comment: last version (2021-02-15) is over one year(s) old
@@ -108,12 +109,12 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 22 errors, 224 warnings, 604 info messages.
+    comment: 20 errors, 220 warnings, 604 info messages.
     file: robot_report
     results:
-      ERROR: 22
+      ERROR: 20
       INFO: 604
-      WARN: 224
+      WARN: 220
     status: ERROR
 sha256_hash: 707f01555a01f34af14d8b57cc8edcadf7fcac91e5e7aaa79325940290afe90c
 summary:

@@ -8,7 +8,7 @@
             <div class="col-md-2"></div>
             <div class="col-md-8">
                 <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/omp.html">omp</a></h1>
-                <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/omp/releases/2022-04-11/omp.owl</p>
+                <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/omp/releases/2022-05-06/omp.owl</p>
                 <p class="lead" style="margin-top:-15px;"><b>Date run</b>: </p>
                 <p class="lead" style="margin-top:-15px;"><a href="dashboard.yml">View dashboard results as YAML</a></p>
                 <h3>Error Breakdown</h3>
@@ -18,7 +18,7 @@
                         
                     
                     <div class="alert alert-danger">
-                        <center><h3>ERROR - 6 errors</h3></center>
+                        <center><h3>ERROR - 7 errors</h3></center>
                     </div>
                 
                 <table class="table">
@@ -99,11 +99,11 @@
                                 
                                 
                             
-                            <td class="table-success" style="text-align:center;">
-                                <img src="../assets/check.svg" height="15px">
+                            <td class="table-danger" style="text-align:center;">
+                                <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td></td>
+                                <td>Version IRI does not resolve</td>
                             
                             
                                 <td></td>
@@ -326,27 +326,29 @@
                                 <td>Axioms: Breakdown of axiom types</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>AnnotationAssertion: 16190</li>
-                                        
-                                        <li>Declaration: 2440</li>
-                                        
-                                        <li>EquivalentClasses: 121</li>
-                                        
-                                        <li>ObjectPropertyDomain: 6</li>
-                                        
-                                        <li>ObjectPropertyRange: 9</li>
-                                        
-                                        <li>SubAnnotationPropertyOf: 36</li>
-                                        
-                                        <li>SubClassOf: 2876</li>
-                                        
-                                        <li>SubObjectPropertyOf: 8</li>
-                                        
-                                        <li>TransitiveObjectProperty: 12</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>AnnotationAssertion: 16190</li>
+                                            
+                                                <li>Declaration: 2440</li>
+                                            
+                                                <li>EquivalentClasses: 121</li>
+                                            
+                                                <li>ObjectPropertyDomain: 6</li>
+                                            
+                                                <li>ObjectPropertyRange: 9</li>
+                                            
+                                                <li>SubAnnotationPropertyOf: 36</li>
+                                            
+                                                <li>SubClassOf: 2876</li>
+                                            
+                                                <li>SubObjectPropertyOf: 8</li>
+                                            
+                                                <li>TransitiveObjectProperty: 12</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -418,15 +420,17 @@
                                 <td>Info: Breakdown of OWL class expressions used</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>Class: 8441</li>
-                                        
-                                        <li>ObjectIntersectionOf: 121</li>
-                                        
-                                        <li>ObjectSomeValuesFrom: 262</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>Class: 8441</li>
+                                            
+                                                <li>ObjectIntersectionOf: 121</li>
+                                            
+                                                <li>ObjectSomeValuesFrom: 262</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -442,21 +446,23 @@
                                 <td>Info: Experimental OBO score</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>_dashboard: 0.684</li>
-                                        
-                                        <li>_formula: (1*impact+1*dashboard)/2</li>
-                                        
-                                        <li>_impact: 0.022</li>
-                                        
-                                        <li>_impact_external: 0</li>
-                                        
-                                        <li>_reuse: 0.125</li>
-                                        
-                                        <li>oboscore: 0.353</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>_dashboard: 0.684</li>
+                                            
+                                                <li>_formula: (1*impact+1*dashboard)/2</li>
+                                            
+                                                <li>_impact: 0.022</li>
+                                            
+                                                <li>_impact_external: 0</li>
+                                            
+                                                <li>_reuse: 0.125</li>
+                                            
+                                                <li>oboscore: 0.353</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -496,33 +502,35 @@
                                 <td>Info: Usage of namespaces in axioms</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>BFO: 12</li>
-                                        
-                                        <li>CHEBI: 20</li>
-                                        
-                                        <li>GO: 447</li>
-                                        
-                                        <li>IAO: 2326</li>
-                                        
-                                        <li>OMP: 7197</li>
-                                        
-                                        <li>OMPALT: 349</li>
-                                        
-                                        <li>PATO: 777</li>
-                                        
-                                        <li>RO: 138</li>
-                                        
-                                        <li>obo: 3</li>
-                                        
-                                        <li>oboInOwl: 13391</li>
-                                        
-                                        <li>owl: 56</li>
-                                        
-                                        <li>rdfs: 3105</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>BFO: 12</li>
+                                            
+                                                <li>CHEBI: 20</li>
+                                            
+                                                <li>GO: 447</li>
+                                            
+                                                <li>IAO: 2326</li>
+                                            
+                                                <li>OMP: 7197</li>
+                                            
+                                                <li>OMPALT: 349</li>
+                                            
+                                                <li>PATO: 777</li>
+                                            
+                                                <li>RO: 138</li>
+                                            
+                                                <li>obo: 3</li>
+                                            
+                                                <li>oboInOwl: 13391</li>
+                                            
+                                                <li>owl: 56</li>
+                                            
+                                                <li>rdfs: 3105</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -530,7 +538,17 @@
                                 <td>Info: Which ontologies use it?</td>
                                 
                                 
-                                    <td>['eupath', 'genepio', 'mco', 'omp', 'ons']</td>
+                                    <td><ul>
+                                        
+                                            <li>eupath</li>
+                                        
+                                            <li>genepio</li>
+                                        
+                                            <li>mco</li>
+                                        
+                                            <li>ons</li>
+                                        
+                                    </ul></td>
                                 
                             </tr>
                         

@@ -29,14 +29,14 @@ metrics:
     ObjectSomeValuesFrom: 8902
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.848
+    _dashboard: 0.85
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.022
+    _impact: 0.016
     _impact_external: 0.25
     _reuse: 0.027
-    oboscore: 0.435
+    oboscore: 0.433
   'Info: How many externally documented uses?': 1
-  'Info: How many ontologies use it?': 4
+  'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -51,9 +51,7 @@ metrics:
     rdfs: 3324
   'Info: Which ontologies use it?':
   - cob
-  - uberon
   - upheno
-  - zfa
   - zp
 mirror_from: http://purl.obolibrary.org/obo/zfa/zfa-base.owl
 namespace: zfa
@@ -69,7 +67,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 4 duplicate definitions. 390 missing definitions. See ROBOT Report for
+    comment: 4 duplicate definitions. 323 missing definitions. See ROBOT Report for
       details.
     status: ERROR
   FP07 Relations:
@@ -87,12 +85,12 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 4 errors, 548 warnings, 5 info messages.
+    comment: 4 errors, 481 warnings, 1 info messages.
     file: robot_report
     results:
       ERROR: 4
-      INFO: 5
-      WARN: 548
+      INFO: 1
+      WARN: 481
     status: ERROR
 sha256_hash: b4a0211109d0387f0fb8a3d4c5a446a3a062055e75f0c1b49266f35d4a5ab79d
 summary:

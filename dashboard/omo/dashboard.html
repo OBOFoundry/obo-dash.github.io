@@ -8,7 +8,7 @@
             <div class="col-md-2"></div>
             <div class="col-md-8">
                 <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/omo.html">omo</a></h1>
-                <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/omo/2020-06-08/omo.owl</p>
+                <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/omo/releases/2022-04-27/omo-base.owl</p>
                 <p class="lead" style="margin-top:-15px;"><b>Date run</b>: </p>
                 <p class="lead" style="margin-top:-15px;"><a href="dashboard.yml">View dashboard results as YAML</a></p>
                 <h3>Error Breakdown</h3>
@@ -259,11 +259,11 @@
                                 
                                 
                             
-                            <td class="table-info" style="text-align:center;">
-                                <img src="../assets/info.svg" height="15px">
+                            <td class="table-success" style="text-align:center;">
+                                <img src="../assets/check.svg" height="15px">
                             </td>
                             
-                                <td>last version (2020-06-08) is over one year(s) old</td>
+                                <td></td>
                             
                             
                                 <td></td>
@@ -326,23 +326,27 @@
                                 <td>Axioms: Breakdown of axiom types</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>AnnotationAssertion: 368</li>
-                                        
-                                        <li>AnnotationPropertyRangeOf: 1</li>
-                                        
-                                        <li>ClassAssertion: 17</li>
-                                        
-                                        <li>Declaration: 98</li>
-                                        
-                                        <li>DifferentIndividuals: 2</li>
-                                        
-                                        <li>EquivalentClasses: 3</li>
-                                        
-                                        <li>SubClassOf: 27</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>AnnotationAssertion: 406</li>
+                                            
+                                                <li>AnnotationPropertyRangeOf: 1</li>
+                                            
+                                                <li>ClassAssertion: 18</li>
+                                            
+                                                <li>Declaration: 105</li>
+                                            
+                                                <li>DifferentIndividuals: 2</li>
+                                            
+                                                <li>EquivalentClasses: 3</li>
+                                            
+                                                <li>SubAnnotationPropertyOf: 5</li>
+                                            
+                                                <li>SubClassOf: 27</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -350,7 +354,7 @@
                                 <td>Axioms: Number of axioms</td>
                                 
                                 
-                                    <td>516</td>
+                                    <td>567</td>
                                 
                             </tr>
                         
@@ -358,7 +362,7 @@
                                 <td>Entities: % of entities reused</td>
                                 
                                 
-                                    <td>25.0</td>
+                                    <td>27.68</td>
                                 
                             </tr>
                         
@@ -366,7 +370,7 @@
                                 <td>Entities: Number of annotation properties</td>
                                 
                                 
-                                    <td>56</td>
+                                    <td>63</td>
                                 
                             </tr>
                         
@@ -390,7 +394,7 @@
                                 <td>Entities: Number of individuals</td>
                                 
                                 
-                                    <td>18</td>
+                                    <td>19</td>
                                 
                             </tr>
                         
@@ -414,13 +418,15 @@
                                 <td>Info: Breakdown of OWL class expressions used</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>Class: 102</li>
-                                        
-                                        <li>ObjectOneOf: 3</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>Class: 103</li>
+                                            
+                                                <li>ObjectOneOf: 3</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -436,15 +442,23 @@
                                 <td>Info: Experimental OBO score</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>_impact: 0.951</li>
-                                        
-                                        <li>_impact_external: 0.25</li>
-                                        
-                                        <li>_reuse: 0.25</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>_dashboard: 0.989</li>
+                                            
+                                                <li>_formula: (1*impact+1*dashboard)/2</li>
+                                            
+                                                <li>_impact: 0.956</li>
+                                            
+                                                <li>_impact_external: 0.25</li>
+                                            
+                                                <li>_reuse: 0.277</li>
+                                            
+                                                <li>oboscore: 0.972</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -460,7 +474,7 @@
                                 <td>Info: How many ontologies use it?</td>
                                 
                                 
-                                    <td>173</td>
+                                    <td>174</td>
                                 
                             </tr>
                         
@@ -484,25 +498,29 @@
                                 <td>Info: Usage of namespaces in axioms</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>BFO: 2</li>
-                                        
-                                        <li>IAO: 471</li>
-                                        
-                                        <li>dc: 1</li>
-                                        
-                                        <li>dc11: 15</li>
-                                        
-                                        <li>oboInOwl: 2</li>
-                                        
-                                        <li>owl: 1</li>
-                                        
-                                        <li>protege: 1</li>
-                                        
-                                        <li>rdfs: 94</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>BFO: 2</li>
+                                            
+                                                <li>IAO: 500</li>
+                                            
+                                                <li>OMO: 6</li>
+                                            
+                                                <li>dc: 1</li>
+                                            
+                                                <li>dc11: 17</li>
+                                            
+                                                <li>oboInOwl: 11</li>
+                                            
+                                                <li>owl: 1</li>
+                                            
+                                                <li>protege: 1</li>
+                                            
+                                                <li>rdfs: 106</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -510,7 +528,357 @@
                                 <td>Info: Which ontologies use it?</td>
                                 
                                 
-                                    <td>['agro', 'aism', 'amphx', 'apo', 'apollo_sv', 'aro', 'bco', 'bfo', 'bspo', 'bto', 'caro', 'cdao', 'cheminf', 'chiro', 'chmo', 'cido', 'cio', 'cl', 'clao', 'clo', 'clyh', 'cob', 'colao', 'cro', 'cteno', 'cto', 'cvdo', 'ddanat', 'ddpheno', 'dideo', 'disdriv', 'doid', 'dpo', 'dron', 'duo', 'ecao', 'eco', 'ecocore', 'ecto', 'emapa', 'envo', 'epio', 'eupath', 'exo', 'fao', 'fbbi', 'fbbt', 'fbcv', 'fbdv', 'fideo', 'flopo', 'fobi', 'foodon', 'fovt', 'fypo', 'gecko', 'genepio', 'geno', 'geo', 'gno', 'go', 'gsso', 'hancestro', 'hao', 'hom', 'hp', 'hsapdv', 'hso', 'htn', 'iao', 'iceo', 'ico', 'ido', 'ino', 'labo', 'lepao', 'ma', 'maxo', 'mco', 'mf', 'mfmo', 'mfoem', 'mfomd', 'mi', 'miapa', 'micro', 'mmo', 'mmusdv', 'mod', 'mondo', 'mop', 'mp', 'mpath', 'mpio', 'mro', 'ms', 'nbo', 'ncbitaxon', 'ncit', 'ncro', 'nomen', 'oae', 'oarcs', 'oba', 'obcs', 'obi', 'obib', 'ogg', 'ogms', 'ogsf', 'ohd', 'ohmi', 'ohpi', 'olatdv', 'omit', 'omo', 'omp', 'omrse', 'one', 'ons', 'ontoavida', 'ontoneo', 'oostt', 'opl', 'opmi', 'ornaseq', 'ovae', 'pato', 'pcl', 'pco', 'pdro', 'pdumdv', 'peco', 'phipo', 'plana', 'planp', 'po', 'poro', 'ppo', 'pr', 'psdo', 'pso', 'pw', 'rbo', 'ro', 'rs', 'rxno', 'scdo', 'sepio', 'so', 'spd', 'stato', 'swo', 'taxrank', 'to', 'trans', 'tto', 'txpo', 'uberon', 'upheno', 'vo', 'vt', 'vto', 'wbbt', 'wbls', 'wbphenotype', 'xao', 'xco', 'xlmod', 'xpo', 'zeco', 'zfa', 'zfs', 'zp']</td>
+                                    <td><ul>
+                                        
+                                            <li>agro</li>
+                                        
+                                            <li>aism</li>
+                                        
+                                            <li>amphx</li>
+                                        
+                                            <li>apo</li>
+                                        
+                                            <li>apollo_sv</li>
+                                        
+                                            <li>aro</li>
+                                        
+                                            <li>bco</li>
+                                        
+                                            <li>bfo</li>
+                                        
+                                            <li>bspo</li>
+                                        
+                                            <li>bto</li>
+                                        
+                                            <li>caro</li>
+                                        
+                                            <li>cdao</li>
+                                        
+                                            <li>chebi</li>
+                                        
+                                            <li>cheminf</li>
+                                        
+                                            <li>chiro</li>
+                                        
+                                            <li>chmo</li>
+                                        
+                                            <li>cido</li>
+                                        
+                                            <li>cio</li>
+                                        
+                                            <li>cl</li>
+                                        
+                                            <li>clao</li>
+                                        
+                                            <li>clo</li>
+                                        
+                                            <li>clyh</li>
+                                        
+                                            <li>cob</li>
+                                        
+                                            <li>colao</li>
+                                        
+                                            <li>cro</li>
+                                        
+                                            <li>cteno</li>
+                                        
+                                            <li>cto</li>
+                                        
+                                            <li>cvdo</li>
+                                        
+                                            <li>ddanat</li>
+                                        
+                                            <li>ddpheno</li>
+                                        
+                                            <li>dideo</li>
+                                        
+                                            <li>disdriv</li>
+                                        
+                                            <li>doid</li>
+                                        
+                                            <li>dpo</li>
+                                        
+                                            <li>dron</li>
+                                        
+                                            <li>duo</li>
+                                        
+                                            <li>ecao</li>
+                                        
+                                            <li>eco</li>
+                                        
+                                            <li>ecocore</li>
+                                        
+                                            <li>ecto</li>
+                                        
+                                            <li>emapa</li>
+                                        
+                                            <li>envo</li>
+                                        
+                                            <li>epio</li>
+                                        
+                                            <li>eupath</li>
+                                        
+                                            <li>exo</li>
+                                        
+                                            <li>fao</li>
+                                        
+                                            <li>fbbi</li>
+                                        
+                                            <li>fbbt</li>
+                                        
+                                            <li>fbcv</li>
+                                        
+                                            <li>fbdv</li>
+                                        
+                                            <li>fideo</li>
+                                        
+                                            <li>flopo</li>
+                                        
+                                            <li>fobi</li>
+                                        
+                                            <li>foodon</li>
+                                        
+                                            <li>fovt</li>
+                                        
+                                            <li>fypo</li>
+                                        
+                                            <li>gecko</li>
+                                        
+                                            <li>genepio</li>
+                                        
+                                            <li>geno</li>
+                                        
+                                            <li>geo</li>
+                                        
+                                            <li>gno</li>
+                                        
+                                            <li>go</li>
+                                        
+                                            <li>gsso</li>
+                                        
+                                            <li>hancestro</li>
+                                        
+                                            <li>hao</li>
+                                        
+                                            <li>hom</li>
+                                        
+                                            <li>hp</li>
+                                        
+                                            <li>hsapdv</li>
+                                        
+                                            <li>hso</li>
+                                        
+                                            <li>htn</li>
+                                        
+                                            <li>iao</li>
+                                        
+                                            <li>iceo</li>
+                                        
+                                            <li>ico</li>
+                                        
+                                            <li>ido</li>
+                                        
+                                            <li>ino</li>
+                                        
+                                            <li>labo</li>
+                                        
+                                            <li>lepao</li>
+                                        
+                                            <li>ma</li>
+                                        
+                                            <li>maxo</li>
+                                        
+                                            <li>mco</li>
+                                        
+                                            <li>mf</li>
+                                        
+                                            <li>mfmo</li>
+                                        
+                                            <li>mfoem</li>
+                                        
+                                            <li>mfomd</li>
+                                        
+                                            <li>mi</li>
+                                        
+                                            <li>miapa</li>
+                                        
+                                            <li>micro</li>
+                                        
+                                            <li>mmo</li>
+                                        
+                                            <li>mmusdv</li>
+                                        
+                                            <li>mod</li>
+                                        
+                                            <li>mondo</li>
+                                        
+                                            <li>mop</li>
+                                        
+                                            <li>mp</li>
+                                        
+                                            <li>mpath</li>
+                                        
+                                            <li>mpio</li>
+                                        
+                                            <li>mro</li>
+                                        
+                                            <li>nbo</li>
+                                        
+                                            <li>ncbitaxon</li>
+                                        
+                                            <li>ncit</li>
+                                        
+                                            <li>ncro</li>
+                                        
+                                            <li>nomen</li>
+                                        
+                                            <li>oae</li>
+                                        
+                                            <li>oarcs</li>
+                                        
+                                            <li>oba</li>
+                                        
+                                            <li>obcs</li>
+                                        
+                                            <li>obi</li>
+                                        
+                                            <li>obib</li>
+                                        
+                                            <li>ogg</li>
+                                        
+                                            <li>ogms</li>
+                                        
+                                            <li>ogsf</li>
+                                        
+                                            <li>ohd</li>
+                                        
+                                            <li>ohmi</li>
+                                        
+                                            <li>ohpi</li>
+                                        
+                                            <li>olatdv</li>
+                                        
+                                            <li>omit</li>
+                                        
+                                            <li>omp</li>
+                                        
+                                            <li>omrse</li>
+                                        
+                                            <li>one</li>
+                                        
+                                            <li>ons</li>
+                                        
+                                            <li>ontoavida</li>
+                                        
+                                            <li>ontoneo</li>
+                                        
+                                            <li>oostt</li>
+                                        
+                                            <li>opl</li>
+                                        
+                                            <li>opmi</li>
+                                        
+                                            <li>ornaseq</li>
+                                        
+                                            <li>ovae</li>
+                                        
+                                            <li>pato</li>
+                                        
+                                            <li>pcl</li>
+                                        
+                                            <li>pco</li>
+                                        
+                                            <li>pdro</li>
+                                        
+                                            <li>pdumdv</li>
+                                        
+                                            <li>peco</li>
+                                        
+                                            <li>phipo</li>
+                                        
+                                            <li>plana</li>
+                                        
+                                            <li>planp</li>
+                                        
+                                            <li>po</li>
+                                        
+                                            <li>poro</li>
+                                        
+                                            <li>ppo</li>
+                                        
+                                            <li>pr</li>
+                                        
+                                            <li>psdo</li>
+                                        
+                                            <li>pso</li>
+                                        
+                                            <li>pw</li>
+                                        
+                                            <li>rbo</li>
+                                        
+                                            <li>ro</li>
+                                        
+                                            <li>rs</li>
+                                        
+                                            <li>rxno</li>
+                                        
+                                            <li>scdo</li>
+                                        
+                                            <li>sepio</li>
+                                        
+                                            <li>so</li>
+                                        
+                                            <li>spd</li>
+                                        
+                                            <li>stato</li>
+                                        
+                                            <li>swo</li>
+                                        
+                                            <li>symp</li>
+                                        
+                                            <li>taxrank</li>
+                                        
+                                            <li>to</li>
+                                        
+                                            <li>trans</li>
+                                        
+                                            <li>tto</li>
+                                        
+                                            <li>txpo</li>
+                                        
+                                            <li>uberon</li>
+                                        
+                                            <li>upheno</li>
+                                        
+                                            <li>vo</li>
+                                        
+                                            <li>vt</li>
+                                        
+                                            <li>vto</li>
+                                        
+                                            <li>wbbt</li>
+                                        
+                                            <li>wbls</li>
+                                        
+                                            <li>wbphenotype</li>
+                                        
+                                            <li>xao</li>
+                                        
+                                            <li>xco</li>
+                                        
+                                            <li>xlmod</li>
+                                        
+                                            <li>xpo</li>
+                                        
+                                            <li>zeco</li>
+                                        
+                                            <li>zfa</li>
+                                        
+                                            <li>zfs</li>
+                                        
+                                            <li>zp</li>
+                                        
+                                    </ul></td>
                                 
                             </tr>
                         

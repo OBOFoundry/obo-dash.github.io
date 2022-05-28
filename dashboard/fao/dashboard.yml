@@ -3,7 +3,7 @@ base_prefixes:
 - FAO
 - FAOALT
 - FAO
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 619
@@ -23,9 +23,12 @@ metrics:
     ObjectSomeValuesFrom: 28
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
+    _dashboard: 0.792
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.016
     _impact_external: 0
     _reuse: 0.196
+    oboscore: 0.404
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
@@ -42,7 +45,6 @@ metrics:
     xsd: 10
   'Info: Which ontologies use it?':
   - envo
-  - fao
   - foodon
   - go
 mirror_from: http://purl.obolibrary.org/obo/fao/fao-base.owl
@@ -56,12 +58,12 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 2 duplicate definitions. 12 missing definitions. See ROBOT Report for
-      details.
+    comment: 2 duplicate definitions. See ROBOT Report for details.
     status: ERROR
   FP07 Relations:
     status: PASS
@@ -75,24 +77,24 @@ results:
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
-    comment: last version (2020-05-07) is over one year(s) old
-    status: INFO
+    comment: last version (2020-05-07) is over two year(s) old
+    status: WARN
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 5 errors, 15 warnings, 0 info messages.
+    comment: 5 errors, 3 warnings, 0 info messages.
     file: robot_report
     results:
       ERROR: 5
       INFO: 0
-      WARN: 15
+      WARN: 3
     status: ERROR
 sha256_hash: 17d6791e94448f340fd551b12b334a62324236ef13e31360cdd2dd51161395cc
 summary:
-  comment: 4 errors
+  comment: 5 errors
   status: ERROR
   summary_count:
-    ERROR: 4
-    INFO: 1
-    WARN: 0
+    ERROR: 5
+    INFO: 0
+    WARN: 1
 version: http://purl.obolibrary.org/obo/fao/releases/2020-05-07/fao/fao-base.owl

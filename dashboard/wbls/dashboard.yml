@@ -27,12 +27,12 @@ metrics:
     ObjectUnionOf: 19
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.989
+    _dashboard: 0.995
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.011
     _impact_external: 0.25
     _reuse: 0.043
-    oboscore: 0.5
+    oboscore: 0.503
   'Info: How many externally documented uses?': 1
   'Info: How many ontologies use it?': 2
   'Info: Logical consistency': true
@@ -49,7 +49,6 @@ metrics:
     rdfs: 806
   'Info: Which ontologies use it?':
   - upheno
-  - wbls
   - wbphenotype
 mirror_from: http://purl.obolibrary.org/obo/wbls/wbls-base.owl
 namespace: wbls
@@ -65,8 +64,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 13 missing definitions. See ROBOT Report for details.
-    status: WARN
+    status: PASS
   FP07 Relations:
     status: PASS
   FP08 Documented:
@@ -82,19 +80,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 14 warnings, 1 info messages.
+    comment: 1 warnings, 1 info messages.
     file: robot_report
     results:
       ERROR: 0
       INFO: 1
-      WARN: 14
+      WARN: 1
     status: WARN
 sha256_hash: e13fe01eb32a7c4af11608e3e829cf8159714aed0fb8ef67615b8426162b2af5
 summary:
-  comment: 2 warnings
+  comment: 1 warnings
   status: WARN
   summary_count:
     ERROR: 0
     INFO: 0
-    WARN: 2
+    WARN: 1
 version: http://purl.obolibrary.org/obo/wbls/releases/2022-03-22/wbls-base.owl

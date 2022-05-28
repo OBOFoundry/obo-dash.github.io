@@ -18,7 +18,7 @@
                         
                     
                     <div class="alert alert-danger">
-                        <center><h3>ERROR - 3 errors</h3></center>
+                        <center><h3>ERROR - 5 errors</h3></center>
                     </div>
                 
                 <table class="table">
@@ -79,14 +79,14 @@
                                 
                                 
                             
-                            <td class="table-success" style="text-align:center;">
-                                <img src="../assets/check.svg" height="15px">
+                            <td class="table-danger" style="text-align:center;">
+                                <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td></td>
+                                <td>0 invalid IRIs. The Ontology IRI is not valid.</td>
                             
                             
-                                <td></td>
+                                <td><a href="fp3.html">View Report</a></td>
                             
                         </tr>
                     
@@ -99,11 +99,11 @@
                                 
                                 
                             
-                            <td class="table-success" style="text-align:center;">
-                                <img src="../assets/check.svg" height="15px">
+                            <td class="table-danger" style="text-align:center;">
+                                <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td></td>
+                                <td>Version IRI does not resolve</td>
                             
                             
                                 <td></td>
@@ -259,11 +259,11 @@
                                 
                                 
                             
-                            <td class="table-info" style="text-align:center;">
-                                <img src="../assets/info.svg" height="15px">
+                            <td class="table-warning" style="text-align:center;">
+                                <img src="../assets/warning.svg" height="15px">
                             </td>
                             
-                                <td>last version (2020-05-19) is over one year(s) old</td>
+                                <td>last version (2020-05-19) is over two year(s) old</td>
                             
                             
                                 <td></td>
@@ -326,39 +326,41 @@
                                 <td>Axioms: Breakdown of axiom types</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>AnnotationAssertion: 8309</li>
-                                        
-                                        <li>Declaration: 3922</li>
-                                        
-                                        <li>DisjointClasses: 11</li>
-                                        
-                                        <li>EquivalentClasses: 134</li>
-                                        
-                                        <li>FunctionalObjectProperty: 1</li>
-                                        
-                                        <li>InverseObjectProperties: 24</li>
-                                        
-                                        <li>ObjectPropertyDomain: 29</li>
-                                        
-                                        <li>ObjectPropertyRange: 28</li>
-                                        
-                                        <li>ReflexiveObjectProperty: 1</li>
-                                        
-                                        <li>Rule: 20</li>
-                                        
-                                        <li>SubClassOf: 4262</li>
-                                        
-                                        <li>SubObjectPropertyOf: 129</li>
-                                        
-                                        <li>SubPropertyChainOf: 55</li>
-                                        
-                                        <li>SymmetricObjectProperty: 2</li>
-                                        
-                                        <li>TransitiveObjectProperty: 13</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>AnnotationAssertion: 8309</li>
+                                            
+                                                <li>Declaration: 3922</li>
+                                            
+                                                <li>DisjointClasses: 11</li>
+                                            
+                                                <li>EquivalentClasses: 134</li>
+                                            
+                                                <li>FunctionalObjectProperty: 1</li>
+                                            
+                                                <li>InverseObjectProperties: 24</li>
+                                            
+                                                <li>ObjectPropertyDomain: 29</li>
+                                            
+                                                <li>ObjectPropertyRange: 28</li>
+                                            
+                                                <li>ReflexiveObjectProperty: 1</li>
+                                            
+                                                <li>Rule: 20</li>
+                                            
+                                                <li>SubClassOf: 4262</li>
+                                            
+                                                <li>SubObjectPropertyOf: 129</li>
+                                            
+                                                <li>SubPropertyChainOf: 55</li>
+                                            
+                                                <li>SymmetricObjectProperty: 2</li>
+                                            
+                                                <li>TransitiveObjectProperty: 13</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -430,21 +432,23 @@
                                 <td>Info: Breakdown of OWL class expressions used</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>Class: 13222</li>
-                                        
-                                        <li>ObjectAllValuesFrom: 3</li>
-                                        
-                                        <li>ObjectHasSelf: 1</li>
-                                        
-                                        <li>ObjectIntersectionOf: 358</li>
-                                        
-                                        <li>ObjectSomeValuesFrom: 1040</li>
-                                        
-                                        <li>ObjectUnionOf: 1</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>Class: 13222</li>
+                                            
+                                                <li>ObjectAllValuesFrom: 3</li>
+                                            
+                                                <li>ObjectHasSelf: 1</li>
+                                            
+                                                <li>ObjectIntersectionOf: 358</li>
+                                            
+                                                <li>ObjectSomeValuesFrom: 1040</li>
+                                            
+                                                <li>ObjectUnionOf: 1</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -460,15 +464,23 @@
                                 <td>Info: Experimental OBO score</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>_impact: 0.0</li>
-                                        
-                                        <li>_impact_external: 0</li>
-                                        
-                                        <li>_reuse: 0.97</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>_dashboard: 0.738</li>
+                                            
+                                                <li>_formula: (1*impact+1*dashboard)/2</li>
+                                            
+                                                <li>_impact: 0.0</li>
+                                            
+                                                <li>_impact_external: 0</li>
+                                            
+                                                <li>_reuse: 0.97</li>
+                                            
+                                                <li>oboscore: 0.369</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -508,53 +520,55 @@
                                 <td>Info: Usage of namespaces in axioms</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>BFO: 503</li>
-                                        
-                                        <li>CARO: 13</li>
-                                        
-                                        <li>CHEBI: 135</li>
-                                        
-                                        <li>FOODON: 2</li>
-                                        
-                                        <li>GO: 29</li>
-                                        
-                                        <li>IAO: 651</li>
-                                        
-                                        <li>NCBITaxon: 10632</li>
-                                        
-                                        <li>PATO: 2</li>
-                                        
-                                        <li>PECO: 229</li>
-                                        
-                                        <li>PO: 1110</li>
-                                        
-                                        <li>PSO: 905</li>
-                                        
-                                        <li>RO: 1391</li>
-                                        
-                                        <li>dc: 10</li>
-                                        
-                                        <li>dc11: 3</li>
-                                        
-                                        <li>foaf: 3</li>
-                                        
-                                        <li>obo: 2</li>
-                                        
-                                        <li>oboInOwl: 7652</li>
-                                        
-                                        <li>owl: 100</li>
-                                        
-                                        <li>prefix_unknown: 4</li>
-                                        
-                                        <li>rdf: 14</li>
-                                        
-                                        <li>rdfs: 3893</li>
-                                        
-                                        <li>xsd: 15</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>BFO: 503</li>
+                                            
+                                                <li>CARO: 13</li>
+                                            
+                                                <li>CHEBI: 135</li>
+                                            
+                                                <li>FOODON: 2</li>
+                                            
+                                                <li>GO: 29</li>
+                                            
+                                                <li>IAO: 651</li>
+                                            
+                                                <li>NCBITaxon: 10632</li>
+                                            
+                                                <li>PATO: 2</li>
+                                            
+                                                <li>PECO: 229</li>
+                                            
+                                                <li>PO: 1110</li>
+                                            
+                                                <li>PSO: 905</li>
+                                            
+                                                <li>RO: 1391</li>
+                                            
+                                                <li>dc: 10</li>
+                                            
+                                                <li>dc11: 3</li>
+                                            
+                                                <li>foaf: 3</li>
+                                            
+                                                <li>obo: 2</li>
+                                            
+                                                <li>oboInOwl: 7652</li>
+                                            
+                                                <li>owl: 100</li>
+                                            
+                                                <li>prefix_unknown: 4</li>
+                                            
+                                                <li>rdf: 14</li>
+                                            
+                                                <li>rdfs: 3893</li>
+                                            
+                                                <li>xsd: 15</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -562,7 +576,9 @@
                                 <td>Info: Which ontologies use it?</td>
                                 
                                 
-                                    <td>['pso']</td>
+                                    <td><ul>
+                                        
+                                    </ul></td>
                                 
                             </tr>
                         

@@ -3,7 +3,7 @@ base_prefixes:
 - MICRO
 - MICROALT
 - MICRO
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 222364
@@ -51,9 +51,12 @@ metrics:
     ObjectUnionOf: 584
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.66
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.005
     _impact_external: 0
     _reuse: 0.883
+    oboscore: 0.333
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
@@ -95,7 +98,6 @@ metrics:
     xsd: 68
   'Info: Which ontologies use it?':
   - mco
-  - micro
 mirror_from: http://purl.obolibrary.org/obo/micro.owl
 namespace: micro
 results:
@@ -105,7 +107,9 @@ results:
   FP02 Common Format:
     status: PASS
   FP03 URIs:
-    status: PASS
+    comment: 0 invalid IRIs. The Ontology IRI is not valid.
+    file: fp3
+    status: ERROR
   FP04 Versioning:
     comment: Missing version IRI
     status: ERROR
@@ -135,19 +139,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 13 errors, 2624 warnings, 1151 info messages.
+    comment: 10 errors, 2624 warnings, 1151 info messages.
     file: robot_report
     results:
-      ERROR: 13
+      ERROR: 10
       INFO: 1151
       WARN: 2624
     status: ERROR
 sha256_hash: ef21dbfab755143a9c390ad274d4e1405f344f6a8dbfbd749de09af0b4b54910
 summary:
-  comment: 7 errors
+  comment: 8 errors
   status: ERROR
   summary_count:
-    ERROR: 7
+    ERROR: 8
     INFO: 0
     WARN: 1
 version: null

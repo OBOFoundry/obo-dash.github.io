@@ -18,7 +18,7 @@
                         
                     
                     <div class="alert alert-danger">
-                        <center><h3>ERROR - 1 errors</h3></center>
+                        <center><h3>ERROR - 3 errors</h3></center>
                     </div>
                 
                 <table class="table">
@@ -79,14 +79,14 @@
                                 
                                 
                             
-                            <td class="table-success" style="text-align:center;">
-                                <img src="../assets/check.svg" height="15px">
+                            <td class="table-danger" style="text-align:center;">
+                                <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td></td>
+                                <td>0 invalid IRIs. The Ontology IRI is not valid.</td>
                             
                             
-                                <td></td>
+                                <td><a href="fp3.html">View Report</a></td>
                             
                         </tr>
                     
@@ -99,11 +99,11 @@
                                 
                                 
                             
-                            <td class="table-warning" style="text-align:center;">
-                                <img src="../assets/warning.svg" height="15px">
+                            <td class="table-danger" style="text-align:center;">
+                                <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>Version IRI 'https://bio.scai.fraunhofer.de/ontology/epilepsy/2021-05-28/EPIO.owl' is not in recommended format</td>
+                                <td>Version IRI does not resolve</td>
                             
                             
                                 <td></td>
@@ -326,21 +326,23 @@
                                 <td>Axioms: Breakdown of axiom types</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>AnnotationAssertion: 23364</li>
-                                        
-                                        <li>Declaration: 2051</li>
-                                        
-                                        <li>DisjointClasses: 19</li>
-                                        
-                                        <li>EquivalentClasses: 12</li>
-                                        
-                                        <li>SubAnnotationPropertyOf: 4</li>
-                                        
-                                        <li>SubClassOf: 2013</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>AnnotationAssertion: 23364</li>
+                                            
+                                                <li>Declaration: 2051</li>
+                                            
+                                                <li>DisjointClasses: 19</li>
+                                            
+                                                <li>EquivalentClasses: 12</li>
+                                            
+                                                <li>SubAnnotationPropertyOf: 4</li>
+                                            
+                                                <li>SubClassOf: 2013</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -412,13 +414,15 @@
                                 <td>Info: Breakdown of OWL class expressions used</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>Class: 6003</li>
-                                        
-                                        <li>ObjectSomeValuesFrom: 59</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>Class: 6003</li>
+                                            
+                                                <li>ObjectSomeValuesFrom: 59</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -434,15 +438,23 @@
                                 <td>Info: Experimental OBO score</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>_impact: 0.0</li>
-                                        
-                                        <li>_impact_external: 0</li>
-                                        
-                                        <li>_reuse: 1.0</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>_dashboard: 0.799</li>
+                                            
+                                                <li>_formula: (1*impact+1*dashboard)/2</li>
+                                            
+                                                <li>_impact: 0.0</li>
+                                            
+                                                <li>_impact_external: 0</li>
+                                            
+                                                <li>_reuse: 1.0</li>
+                                            
+                                                <li>oboscore: 0.4</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -482,105 +494,107 @@
                                 <td>Info: Usage of namespaces in axioms</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>BFO: 240</li>
-                                        
-                                        <li>CLO: 4</li>
-                                        
-                                        <li>CMO: 133</li>
-                                        
-                                        <li>DOID: 985</li>
-                                        
-                                        <li>EFO: 6</li>
-                                        
-                                        <li>ERO: 73</li>
-                                        
-                                        <li>EUPATH: 2</li>
-                                        
-                                        <li>FMA: 4</li>
-                                        
-                                        <li>GO: 77</li>
-                                        
-                                        <li>HP: 890</li>
-                                        
-                                        <li>IAO: 3544</li>
-                                        
-                                        <li>IDO: 6</li>
-                                        
-                                        <li>IDOMAL: 3</li>
-                                        
-                                        <li>MF: 20</li>
-                                        
-                                        <li>MFOEM: 54</li>
-                                        
-                                        <li>MFOMD: 31</li>
-                                        
-                                        <li>MMO: 15</li>
-                                        
-                                        <li>MONDO: 333</li>
-                                        
-                                        <li>MONDOALT: 4</li>
-                                        
-                                        <li>MP: 68</li>
-                                        
-                                        <li>NBO: 232</li>
-                                        
-                                        <li>NCBITAXONALT: 19</li>
-                                        
-                                        <li>NCBITaxon: 64</li>
-                                        
-                                        <li>NCIT: 1319</li>
-                                        
-                                        <li>OAE: 23</li>
-                                        
-                                        <li>OBA: 7</li>
-                                        
-                                        <li>OBI: 64</li>
-                                        
-                                        <li>OGMS: 95</li>
-                                        
-                                        <li>OMIABIS: 15</li>
-                                        
-                                        <li>OMIT: 93</li>
-                                        
-                                        <li>PATO: 45</li>
-                                        
-                                        <li>PW: 47</li>
-                                        
-                                        <li>RO: 14</li>
-                                        
-                                        <li>RS: 41</li>
-                                        
-                                        <li>SYMP: 297</li>
-                                        
-                                        <li>UBERON: 544</li>
-                                        
-                                        <li>dc: 1</li>
-                                        
-                                        <li>dc11: 174</li>
-                                        
-                                        <li>efo: 6</li>
-                                        
-                                        <li>foaf: 62</li>
-                                        
-                                        <li>obo: 254</li>
-                                        
-                                        <li>oboInOwl: 13371</li>
-                                        
-                                        <li>owl: 8</li>
-                                        
-                                        <li>prefix_unknown: 3191</li>
-                                        
-                                        <li>protege: 3</li>
-                                        
-                                        <li>rdf: 2</li>
-                                        
-                                        <li>rdfs: 3381</li>
-                                        
-                                        <li>skos: 377</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>BFO: 240</li>
+                                            
+                                                <li>CLO: 4</li>
+                                            
+                                                <li>CMO: 133</li>
+                                            
+                                                <li>DOID: 985</li>
+                                            
+                                                <li>EFO: 6</li>
+                                            
+                                                <li>ERO: 73</li>
+                                            
+                                                <li>EUPATH: 2</li>
+                                            
+                                                <li>FMA: 4</li>
+                                            
+                                                <li>GO: 77</li>
+                                            
+                                                <li>HP: 890</li>
+                                            
+                                                <li>IAO: 3544</li>
+                                            
+                                                <li>IDO: 6</li>
+                                            
+                                                <li>IDOMAL: 3</li>
+                                            
+                                                <li>MF: 20</li>
+                                            
+                                                <li>MFOEM: 54</li>
+                                            
+                                                <li>MFOMD: 31</li>
+                                            
+                                                <li>MMO: 15</li>
+                                            
+                                                <li>MONDO: 333</li>
+                                            
+                                                <li>MONDOALT: 4</li>
+                                            
+                                                <li>MP: 68</li>
+                                            
+                                                <li>NBO: 232</li>
+                                            
+                                                <li>NCBITAXONALT: 19</li>
+                                            
+                                                <li>NCBITaxon: 64</li>
+                                            
+                                                <li>NCIT: 1319</li>
+                                            
+                                                <li>OAE: 23</li>
+                                            
+                                                <li>OBA: 7</li>
+                                            
+                                                <li>OBI: 64</li>
+                                            
+                                                <li>OGMS: 95</li>
+                                            
+                                                <li>OMIABIS: 15</li>
+                                            
+                                                <li>OMIT: 93</li>
+                                            
+                                                <li>PATO: 45</li>
+                                            
+                                                <li>PW: 47</li>
+                                            
+                                                <li>RO: 14</li>
+                                            
+                                                <li>RS: 41</li>
+                                            
+                                                <li>SYMP: 297</li>
+                                            
+                                                <li>UBERON: 544</li>
+                                            
+                                                <li>dc: 1</li>
+                                            
+                                                <li>dc11: 174</li>
+                                            
+                                                <li>efo: 6</li>
+                                            
+                                                <li>foaf: 62</li>
+                                            
+                                                <li>obo: 254</li>
+                                            
+                                                <li>oboInOwl: 13371</li>
+                                            
+                                                <li>owl: 8</li>
+                                            
+                                                <li>prefix_unknown: 3191</li>
+                                            
+                                                <li>protege: 3</li>
+                                            
+                                                <li>rdf: 2</li>
+                                            
+                                                <li>rdfs: 3381</li>
+                                            
+                                                <li>skos: 377</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -588,7 +602,9 @@
                                 <td>Info: Which ontologies use it?</td>
                                 
                                 
-                                    <td>['epio']</td>
+                                    <td><ul>
+                                        
+                                    </ul></td>
                                 
                             </tr>
                         

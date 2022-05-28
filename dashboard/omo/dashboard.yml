@@ -1,47 +1,52 @@
-base_generated: true
+base_generated: false
 base_prefixes:
 - IAO
 - IAOALT
 - OMO
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 368
+    AnnotationAssertion: 406
     AnnotationPropertyRangeOf: 1
-    ClassAssertion: 17
-    Declaration: 98
+    ClassAssertion: 18
+    Declaration: 105
     DifferentIndividuals: 2
     EquivalentClasses: 3
+    SubAnnotationPropertyOf: 5
     SubClassOf: 27
-  'Axioms: Number of axioms': 516
-  'Entities: % of entities reused': 25.0
-  'Entities: Number of annotation properties': 56
+  'Axioms: Number of axioms': 567
+  'Entities: % of entities reused': 27.68
+  'Entities: Number of annotation properties': 63
   'Entities: Number of classes': 28
   'Entities: Number of data properties': 0
-  'Entities: Number of individuals': 18
+  'Entities: Number of individuals': 19
   'Entities: Number of object properties': 0
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 102
+    Class: 103
     ObjectOneOf: 3
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _impact: 0.951
+    _dashboard: 0.989
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.956
     _impact_external: 0.25
-    _reuse: 0.25
+    _reuse: 0.277
+    oboscore: 0.972
   'Info: How many externally documented uses?': 1
-  'Info: How many ontologies use it?': 173
+  'Info: How many ontologies use it?': 174
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     BFO: 2
-    IAO: 471
+    IAO: 500
+    OMO: 6
     dc: 1
-    dc11: 15
-    oboInOwl: 2
+    dc11: 17
+    oboInOwl: 11
     owl: 1
     protege: 1
-    rdfs: 94
+    rdfs: 106
   'Info: Which ontologies use it?':
   - agro
   - aism
@@ -55,6 +60,7 @@ metrics:
   - bto
   - caro
   - cdao
+  - chebi
   - cheminf
   - chiro
   - chmo
@@ -138,7 +144,6 @@ metrics:
   - mpath
   - mpio
   - mro
-  - ms
   - nbo
   - ncbitaxon
   - ncit
@@ -158,7 +163,6 @@ metrics:
   - ohpi
   - olatdv
   - omit
-  - omo
   - omp
   - omrse
   - one
@@ -196,6 +200,7 @@ metrics:
   - spd
   - stato
   - swo
+  - symp
   - taxrank
   - to
   - trans
@@ -217,7 +222,7 @@ metrics:
   - zfa
   - zfs
   - zp
-mirror_from: http://purl.obolibrary.org/obo/omo.owl
+mirror_from: http://purl.obolibrary.org/obo/omo/omo-base.owl
 namespace: omo
 results:
   FP01 Open:
@@ -244,8 +249,7 @@ results:
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
-    comment: last version (2020-06-08) is over one year(s) old
-    status: INFO
+    status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
@@ -256,12 +260,12 @@ results:
       INFO: 0
       WARN: 13
     status: WARN
-sha256_hash: 68c22f48c60303c7abab04a19357236dc2a37bdc1b88fc1585d651f3f8849a7b
+sha256_hash: 08a2048d680cedcafe02527ac14f9a634d8b8db7669ad10324d3dfefd09fc51a
 summary:
   comment: 2 warnings
   status: WARN
   summary_count:
     ERROR: 0
-    INFO: 1
+    INFO: 0
     WARN: 2
-version: http://purl.obolibrary.org/obo/omo/2020-06-08/omo.owl
+version: http://purl.obolibrary.org/obo/omo/releases/2022-04-27/omo-base.owl

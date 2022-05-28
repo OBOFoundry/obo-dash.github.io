@@ -27,7 +27,7 @@ metrics:
     ObjectSomeValuesFrom: 425
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.887
+    _dashboard: 0.888
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.016
     _impact_external: 0
@@ -50,7 +50,6 @@ metrics:
   'Info: Which ontologies use it?':
   - dpo
   - fbcv
-  - fbdv
   - upheno
 mirror_from: http://purl.obolibrary.org/obo/fbdv/fbdv-base.owl
 namespace: fbdv
@@ -68,7 +67,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 25 missing definitions. See ROBOT Report for details.
+    comment: 8 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     comment: 1 non-RO properties used.
@@ -88,12 +87,12 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 25 warnings, 0 info messages.
+    comment: 8 warnings, 0 info messages.
     file: robot_report
     results:
       ERROR: 0
       INFO: 0
-      WARN: 25
+      WARN: 8
     status: WARN
 sha256_hash: 7b37dc44039e175edd1ba677dc6d32a681108e5c5279c593069ab7128599ebdd
 summary:

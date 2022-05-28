@@ -3,7 +3,7 @@ base_prefixes:
 - GEO
 - GEOALT
 - GEO
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1181
@@ -29,8 +29,8 @@ metrics:
     SubPropertyChainOf: 2
     TransitiveObjectProperty: 6
   'Axioms: Number of axioms': 1591
-  'Entities: % of entities reused': 72.41
-  'Entities: Number of annotation properties': 55
+  'Entities: % of entities reused': 72.14
+  'Entities: Number of annotation properties': 53
   'Entities: Number of classes': 90
   'Entities: Number of data properties': 1
   'Entities: Number of individuals': 4
@@ -47,9 +47,12 @@ metrics:
     ObjectUnionOf: 1
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.734
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.044
     _impact_external: 0
-    _reuse: 0.724
+    _reuse: 0.721
+    oboscore: 0.389
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 8
   'Info: Logical consistency': true
@@ -76,7 +79,6 @@ metrics:
   - cob
   - foodon
   - genepio
-  - geo
   - hancestro
   - ico
   - obib
@@ -94,8 +96,7 @@ results:
     comment: Missing version IRI
     status: ERROR
   FP05 Scope:
-    comment: Missing domain (scope)
-    status: ERROR
+    status: PASS
   FP06 Textual Definitions:
     comment: 27 missing definitions. See ROBOT Report for details.
     status: WARN
@@ -128,10 +129,10 @@ results:
     status: ERROR
 sha256_hash: acbee9b03490f6476112f56afd3318882f53d41c37acd9bdf196240532aecdc3
 summary:
-  comment: 6 errors
+  comment: 5 errors
   status: ERROR
   summary_count:
-    ERROR: 6
+    ERROR: 5
     INFO: 1
     WARN: 1
 version: null

@@ -8,7 +8,7 @@
             <div class="col-md-2"></div>
             <div class="col-md-8">
                 <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/obi.html">obi</a></h1>
-                <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/obi/2021-08-18/obi-base.owl</p>
+                <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/obi/2022-05-19/obi-base.owl</p>
                 <p class="lead" style="margin-top:-15px;"><b>Date run</b>: </p>
                 <p class="lead" style="margin-top:-15px;"><a href="dashboard.yml">View dashboard results as YAML</a></p>
                 <h3>Error Breakdown</h3>
@@ -17,8 +17,8 @@
                     
                         
                     
-                    <div class="alert alert-danger">
-                        <center><h3>ERROR - 3 errors</h3></center>
+                    <div class="alert alert-warning">
+                        <center><h3>WARN - 2 warnings</h3></center>
                     </div>
                 
                 <table class="table">
@@ -139,11 +139,11 @@
                                 
                                 
                             
-                            <td class="table-danger" style="text-align:center;">
-                                <img src="../assets/x.svg" height="15px">
+                            <td class="table-warning" style="text-align:center;">
+                                <img src="../assets/warning.svg" height="15px">
                             </td>
                             
-                                <td>26 duplicate definitions. 91 missing definitions. See ROBOT Report for details.</td>
+                                <td>3 missing definitions. See ROBOT Report for details.</td>
                             
                             
                                 <td></td>
@@ -239,11 +239,11 @@
                                 
                                 
                             
-                            <td class="table-danger" style="text-align:center;">
-                                <img src="../assets/x.svg" height="15px">
+                            <td class="table-success" style="text-align:center;">
+                                <img src="../assets/check.svg" height="15px">
                             </td>
                             
-                                <td>75 missing labels. See ROBOT Report for details.</td>
+                                <td></td>
                             
                             
                                 <td></td>
@@ -299,11 +299,11 @@
                                 
                                 
                             
-                            <td class="table-danger" style="text-align:center;">
-                                <img src="../assets/x.svg" height="15px">
+                            <td class="table-warning" style="text-align:center;">
+                                <img src="../assets/warning.svg" height="15px">
                             </td>
                             
-                                <td>101 errors, 417 warnings, 1164 info messages.</td>
+                                <td>287 warnings, 1190 info messages.</td>
                             
                             
                                 <td><a href="robot_report.html">View Report</a></td>
@@ -326,43 +326,45 @@
                                 <td>Axioms: Breakdown of axiom types</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>AnnotationAssertion: 24263</li>
-                                        
-                                        <li>ClassAssertion: 241</li>
-                                        
-                                        <li>DataPropertyDomain: 3</li>
-                                        
-                                        <li>DataPropertyRange: 1</li>
-                                        
-                                        <li>Declaration: 4434</li>
-                                        
-                                        <li>DisjointClasses: 21</li>
-                                        
-                                        <li>EquivalentClasses: 888</li>
-                                        
-                                        <li>InverseObjectProperties: 5</li>
-                                        
-                                        <li>ObjectPropertyAssertion: 10</li>
-                                        
-                                        <li>ObjectPropertyDomain: 19</li>
-                                        
-                                        <li>ObjectPropertyRange: 17</li>
-                                        
-                                        <li>SubAnnotationPropertyOf: 4</li>
-                                        
-                                        <li>SubClassOf: 5462</li>
-                                        
-                                        <li>SubDataPropertyOf: 1</li>
-                                        
-                                        <li>SubObjectPropertyOf: 29</li>
-                                        
-                                        <li>SymmetricObjectProperty: 1</li>
-                                        
-                                        <li>TransitiveObjectProperty: 1</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>AnnotationAssertion: 25376</li>
+                                            
+                                                <li>ClassAssertion: 241</li>
+                                            
+                                                <li>DataPropertyDomain: 3</li>
+                                            
+                                                <li>DataPropertyRange: 1</li>
+                                            
+                                                <li>Declaration: 4678</li>
+                                            
+                                                <li>DisjointClasses: 21</li>
+                                            
+                                                <li>EquivalentClasses: 926</li>
+                                            
+                                                <li>InverseObjectProperties: 5</li>
+                                            
+                                                <li>ObjectPropertyAssertion: 10</li>
+                                            
+                                                <li>ObjectPropertyDomain: 19</li>
+                                            
+                                                <li>ObjectPropertyRange: 17</li>
+                                            
+                                                <li>SubAnnotationPropertyOf: 4</li>
+                                            
+                                                <li>SubClassOf: 5745</li>
+                                            
+                                                <li>SubDataPropertyOf: 1</li>
+                                            
+                                                <li>SubObjectPropertyOf: 29</li>
+                                            
+                                                <li>SymmetricObjectProperty: 1</li>
+                                            
+                                                <li>TransitiveObjectProperty: 1</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -370,7 +372,7 @@
                                 <td>Axioms: Number of axioms</td>
                                 
                                 
-                                    <td>35400</td>
+                                    <td>37078</td>
                                 
                             </tr>
                         
@@ -378,7 +380,7 @@
                                 <td>Entities: % of entities reused</td>
                                 
                                 
-                                    <td>13.76</td>
+                                    <td>13.51</td>
                                 
                             </tr>
                         
@@ -394,7 +396,7 @@
                                 <td>Entities: Number of classes</td>
                                 
                                 
-                                    <td>4057</td>
+                                    <td>4301</td>
                                 
                             </tr>
                         
@@ -434,35 +436,37 @@
                                 <td>Info: Breakdown of OWL class expressions used</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>Class: 19431</li>
-                                        
-                                        <li>DataMinCardinality: 3</li>
-                                        
-                                        <li>DataSomeValuesFrom: 5</li>
-                                        
-                                        <li>ObjectAllValuesFrom: 79</li>
-                                        
-                                        <li>ObjectComplementOf: 11</li>
-                                        
-                                        <li>ObjectExactCardinality: 5</li>
-                                        
-                                        <li>ObjectHasValue: 101</li>
-                                        
-                                        <li>ObjectIntersectionOf: 3567</li>
-                                        
-                                        <li>ObjectMaxCardinality: 1</li>
-                                        
-                                        <li>ObjectMinCardinality: 3</li>
-                                        
-                                        <li>ObjectOneOf: 1</li>
-                                        
-                                        <li>ObjectSomeValuesFrom: 6749</li>
-                                        
-                                        <li>ObjectUnionOf: 97</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>Class: 20984</li>
+                                            
+                                                <li>DataMinCardinality: 3</li>
+                                            
+                                                <li>DataSomeValuesFrom: 5</li>
+                                            
+                                                <li>ObjectAllValuesFrom: 79</li>
+                                            
+                                                <li>ObjectComplementOf: 10</li>
+                                            
+                                                <li>ObjectExactCardinality: 5</li>
+                                            
+                                                <li>ObjectHasValue: 105</li>
+                                            
+                                                <li>ObjectIntersectionOf: 4167</li>
+                                            
+                                                <li>ObjectMaxCardinality: 1</li>
+                                            
+                                                <li>ObjectMinCardinality: 3</li>
+                                            
+                                                <li>ObjectOneOf: 1</li>
+                                            
+                                                <li>ObjectSomeValuesFrom: 7851</li>
+                                            
+                                                <li>ObjectUnionOf: 103</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -478,15 +482,23 @@
                                 <td>Info: Experimental OBO score</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>_impact: 0.423</li>
-                                        
-                                        <li>_impact_external: 0.5</li>
-                                        
-                                        <li>_reuse: 0.138</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>_dashboard: 0.93</li>
+                                            
+                                                <li>_formula: (1*impact+1*dashboard)/2</li>
+                                            
+                                                <li>_impact: 0.412</li>
+                                            
+                                                <li>_impact_external: 0.5</li>
+                                            
+                                                <li>_reuse: 0.135</li>
+                                            
+                                                <li>oboscore: 0.671</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -502,7 +514,7 @@
                                 <td>Info: How many ontologies use it?</td>
                                 
                                 
-                                    <td>77</td>
+                                    <td>75</td>
                                 
                             </tr>
                         
@@ -526,71 +538,75 @@
                                 <td>Info: Usage of namespaces in axioms</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>BFO: 2250</li>
-                                        
-                                        <li>CHEBI: 449</li>
-                                        
-                                        <li>CHMO: 10</li>
-                                        
-                                        <li>CL: 189</li>
-                                        
-                                        <li>CLO: 38</li>
-                                        
-                                        <li>ENVO: 3</li>
-                                        
-                                        <li>GAZ: 2</li>
-                                        
-                                        <li>GO: 473</li>
-                                        
-                                        <li>HP: 2</li>
-                                        
-                                        <li>IAO: 20566</li>
-                                        
-                                        <li>IDO: 10</li>
-                                        
-                                        <li>NCBITaxon: 68</li>
-                                        
-                                        <li>OBI: 20584</li>
-                                        
-                                        <li>OGMS: 28</li>
-                                        
-                                        <li>OMIABIS: 5</li>
-                                        
-                                        <li>OPL: 4</li>
-                                        
-                                        <li>PATO: 59</li>
-                                        
-                                        <li>PR: 136</li>
-                                        
-                                        <li>RO: 2015</li>
-                                        
-                                        <li>SO: 25</li>
-                                        
-                                        <li>UBERON: 222</li>
-                                        
-                                        <li>UO: 84</li>
-                                        
-                                        <li>dc: 2</li>
-                                        
-                                        <li>dc11: 82</li>
-                                        
-                                        <li>obo: 4</li>
-                                        
-                                        <li>oboInOwl: 84</li>
-                                        
-                                        <li>owl: 124</li>
-                                        
-                                        <li>protege: 1</li>
-                                        
-                                        <li>rdf: 3</li>
-                                        
-                                        <li>rdfs: 3890</li>
-                                        
-                                        <li>xsd: 9</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>BFO: 2021</li>
+                                            
+                                                <li>CHEBI: 485</li>
+                                            
+                                                <li>CHMO: 13</li>
+                                            
+                                                <li>CL: 205</li>
+                                            
+                                                <li>CLO: 38</li>
+                                            
+                                                <li>COB: 6</li>
+                                            
+                                                <li>ENVO: 3</li>
+                                            
+                                                <li>GAZ: 2</li>
+                                            
+                                                <li>GO: 709</li>
+                                            
+                                                <li>HP: 2</li>
+                                            
+                                                <li>IAO: 21862</li>
+                                            
+                                                <li>IDO: 10</li>
+                                            
+                                                <li>NCBITaxon: 91</li>
+                                            
+                                                <li>OBI: 22502</li>
+                                            
+                                                <li>OGMS: 28</li>
+                                            
+                                                <li>OMIABIS: 5</li>
+                                            
+                                                <li>OPL: 5</li>
+                                            
+                                                <li>PATO: 60</li>
+                                            
+                                                <li>PR: 141</li>
+                                            
+                                                <li>RO: 2090</li>
+                                            
+                                                <li>SO: 25</li>
+                                            
+                                                <li>UBERON: 222</li>
+                                            
+                                                <li>UO: 88</li>
+                                            
+                                                <li>dc: 2</li>
+                                            
+                                                <li>dc11: 83</li>
+                                            
+                                                <li>obo: 4</li>
+                                            
+                                                <li>oboInOwl: 87</li>
+                                            
+                                                <li>owl: 127</li>
+                                            
+                                                <li>protege: 1</li>
+                                            
+                                                <li>rdf: 3</li>
+                                            
+                                                <li>rdfs: 4112</li>
+                                            
+                                                <li>xsd: 9</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -598,7 +614,159 @@
                                 <td>Info: Which ontologies use it?</td>
                                 
                                 
-                                    <td>['agro', 'apollo_sv', 'bco', 'cheminf', 'chmo', 'cido', 'clo', 'cob', 'cto', 'dideo', 'doid', 'dpo', 'dron', 'duo', 'eco', 'ecocore', 'envo', 'epio', 'eupath', 'fideo', 'flopo', 'foodon', 'gecko', 'genepio', 'geno', 'geo', 'go', 'gsso', 'hso', 'htn', 'iao', 'iceo', 'ico', 'ido', 'labo', 'maxo', 'mco', 'mfomd', 'micro', 'mpio', 'mro', 'ms', 'ncro', 'oae', 'oba', 'obcs', 'obi', 'obib', 'ogg', 'ogms', 'ogsf', 'ohd', 'ohmi', 'ohpi', 'omit', 'omrse', 'one', 'ons', 'ontoneo', 'oostt', 'opl', 'opmi', 'ornaseq', 'ovae', 'pdro', 'ppo', 'pr', 'psdo', 'rbo', 'rxno', 'scdo', 'sepio', 'stato', 'swo', 'to', 'txpo', 'upheno', 'vo']</td>
+                                    <td><ul>
+                                        
+                                            <li>agro</li>
+                                        
+                                            <li>apollo_sv</li>
+                                        
+                                            <li>bco</li>
+                                        
+                                            <li>cheminf</li>
+                                        
+                                            <li>chmo</li>
+                                        
+                                            <li>cido</li>
+                                        
+                                            <li>clo</li>
+                                        
+                                            <li>cob</li>
+                                        
+                                            <li>cto</li>
+                                        
+                                            <li>dideo</li>
+                                        
+                                            <li>doid</li>
+                                        
+                                            <li>dpo</li>
+                                        
+                                            <li>dron</li>
+                                        
+                                            <li>duo</li>
+                                        
+                                            <li>eco</li>
+                                        
+                                            <li>ecocore</li>
+                                        
+                                            <li>envo</li>
+                                        
+                                            <li>epio</li>
+                                        
+                                            <li>eupath</li>
+                                        
+                                            <li>fideo</li>
+                                        
+                                            <li>flopo</li>
+                                        
+                                            <li>foodon</li>
+                                        
+                                            <li>gecko</li>
+                                        
+                                            <li>genepio</li>
+                                        
+                                            <li>geno</li>
+                                        
+                                            <li>geo</li>
+                                        
+                                            <li>go</li>
+                                        
+                                            <li>gsso</li>
+                                        
+                                            <li>hso</li>
+                                        
+                                            <li>htn</li>
+                                        
+                                            <li>iao</li>
+                                        
+                                            <li>iceo</li>
+                                        
+                                            <li>ico</li>
+                                        
+                                            <li>ido</li>
+                                        
+                                            <li>labo</li>
+                                        
+                                            <li>maxo</li>
+                                        
+                                            <li>mco</li>
+                                        
+                                            <li>mfomd</li>
+                                        
+                                            <li>micro</li>
+                                        
+                                            <li>mpio</li>
+                                        
+                                            <li>mro</li>
+                                        
+                                            <li>ncro</li>
+                                        
+                                            <li>oae</li>
+                                        
+                                            <li>obcs</li>
+                                        
+                                            <li>obib</li>
+                                        
+                                            <li>ogg</li>
+                                        
+                                            <li>ogms</li>
+                                        
+                                            <li>ogsf</li>
+                                        
+                                            <li>ohd</li>
+                                        
+                                            <li>ohmi</li>
+                                        
+                                            <li>ohpi</li>
+                                        
+                                            <li>omit</li>
+                                        
+                                            <li>omrse</li>
+                                        
+                                            <li>one</li>
+                                        
+                                            <li>ons</li>
+                                        
+                                            <li>ontoneo</li>
+                                        
+                                            <li>oostt</li>
+                                        
+                                            <li>opl</li>
+                                        
+                                            <li>opmi</li>
+                                        
+                                            <li>ornaseq</li>
+                                        
+                                            <li>ovae</li>
+                                        
+                                            <li>pdro</li>
+                                        
+                                            <li>ppo</li>
+                                        
+                                            <li>pr</li>
+                                        
+                                            <li>psdo</li>
+                                        
+                                            <li>rbo</li>
+                                        
+                                            <li>rxno</li>
+                                        
+                                            <li>scdo</li>
+                                        
+                                            <li>sepio</li>
+                                        
+                                            <li>stato</li>
+                                        
+                                            <li>swo</li>
+                                        
+                                            <li>to</li>
+                                        
+                                            <li>txpo</li>
+                                        
+                                            <li>upheno</li>
+                                        
+                                            <li>vo</li>
+                                        
+                                    </ul></td>
                                 
                             </tr>
                         

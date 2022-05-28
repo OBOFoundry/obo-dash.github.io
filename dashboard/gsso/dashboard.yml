@@ -3,7 +3,7 @@ base_prefixes:
 - GSSO
 - GSSOALT
 - GSSO
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 89001
@@ -24,9 +24,12 @@ metrics:
     Class: 42144
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.642
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.016
     _impact_external: 0
     _reuse: 0.226
+    oboscore: 0.329
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
@@ -72,7 +75,6 @@ metrics:
     xsd: 4
   'Info: Which ontologies use it?':
   - genepio
-  - gsso
   - ontoavida
   - scdo
 mirror_from: http://purl.obolibrary.org/obo/gsso.owl
@@ -88,9 +90,8 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    comment: Version IRI 'http://purl.obolibrary.org/obo/gsso/releases/2.0.5/gsso.owl'
-      is not in recommended format
-    status: WARN
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -115,19 +116,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 751 errors, 51 warnings, 33 info messages.
+    comment: 751 errors, 50 warnings, 33 info messages.
     file: robot_report
     results:
       ERROR: 751
       INFO: 33
-      WARN: 51
+      WARN: 50
     status: ERROR
 sha256_hash: 0d348d1f61340bc02b395b20153ca5717a7059c12f2fb13e145c04baa2235fc9
 summary:
-  comment: 5 errors
+  comment: 6 errors
   status: ERROR
   summary_count:
-    ERROR: 5
+    ERROR: 6
     INFO: 1
-    WARN: 1
+    WARN: 0
 version: http://purl.obolibrary.org/obo/gsso/releases/2.0.5/gsso.owl

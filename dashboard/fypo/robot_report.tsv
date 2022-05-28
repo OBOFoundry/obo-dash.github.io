@@ -1,42 +1,25 @@
 Level	Rule Name	Subject	Property	Value
-WARN	missing_definition	part_of	definition	
-WARN	missing_definition	has_part	definition	
-WARN	missing_definition	occurs in	definition	
-WARN	missing_definition	normal chromatin loop formation during meiotic prophase I	definition	
-WARN	missing_definition	normal chromatin organization during meiotic cell cycle	definition	
-WARN	missing_definition	happens_during	definition	
-WARN	missing_definition	during	definition	
-WARN	missing_definition	exists_during	definition	
-WARN	missing_definition	occurs_at	definition	
-WARN	missing_definition	definition	definition	
-WARN	missing_definition	term replaced by	definition	
-WARN	missing_definition	inheres_in	definition	
-WARN	missing_definition	located in	definition	
-WARN	missing_definition	inheres in part of	definition	
-WARN	missing_definition	towards	definition	
-WARN	missing_definition	qualifier	definition	
-WARN	missing_definition	output_of	definition	
-WARN	missing_definition	preceded_by	definition	
-WARN	missing_definition	precedes	definition	
-WARN	missing_definition	subset_property	definition	
-WARN	missing_definition	consider	definition	
-WARN	missing_definition	has_alternative_id	definition	
-WARN	missing_definition	has_broad_synonym	definition	
-WARN	missing_definition	database_cross_reference	definition	
-WARN	missing_definition	has_exact_synonym	definition	
-WARN	missing_definition	has_narrow_synonym	definition	
-WARN	missing_definition	has_obo_format_version	definition	
-WARN	missing_definition	has_obo_namespace	definition	
-WARN	missing_definition	has_related_synonym	definition	
-WARN	missing_definition	in_subset	definition	
-WARN	missing_definition	shorthand	definition	
-WARN	duplicate_label_synonym	abnormal glucan synthesis during vegetative growth	has_exact_synonym	abnormal glucan synthesis during vegetative growth
-WARN	duplicate_label_synonym	normal cytoplasmic microtubules during vegetative growth	has_exact_synonym	normal cytoplasmic microtubules during vegetative growth
-WARN	duplicate_label_synonym	decreased protein level at centromere outer repeat heterochromatin	has_exact_synonym	decreased protein level at centromere outer repeat heterochromatin
-WARN	duplicate_label_synonym	abnormal chromatin remodeling during meiosis I	has_exact_synonym	abnormal chromatin remodeling during meiosis I
-WARN	duplicate_label_synonym	normal protein localization to meiotic spindle during meiosis I	has_exact_synonym	normal protein localization to meiotic spindle during meiosis I
-WARN	duplicate_label_synonym	abnormal cell cycle arrest at meiotic G2/MI transition	has_exact_synonym	abnormal cell cycle arrest at meiotic G2/MI transition
-WARN	duplicate_label_synonym	normal protein localization to meiotic spindle midzone during meiosis I	has_exact_synonym	normal protein localization to meiotic spindle midzone during meiosis I
-WARN	duplicate_label_synonym	sensitive to echinocandin	has_exact_synonym	sensitive to echinocandin
-INFO	lowercase_definition	has_output	definition	p has output c if either: p has direct output c or p has output input c. Implies that if p happens, c always ensues.
-INFO	missing_superclass	phenotype	rdfs:subClassOf	
+WARN	missing_obsolete_label	FYPO:0000512	rdfs:label	DEPRECATED decreased nuclear fusion during mating
+WARN	missing_definition	FYPO:0007941	IAO:0000115	
+WARN	missing_definition	FYPO:0007977	IAO:0000115	
+WARN	missing_definition	FYPO:0007978	IAO:0000115	
+WARN	missing_definition	obo:fypo#output_of	IAO:0000115	
+WARN	missing_definition	obo:fypo#preceded_by	IAO:0000115	
+WARN	missing_definition	obo:fypo#precedes	IAO:0000115	
+WARN	duplicate_label_synonym	FYPO:0000043	oboInOwl:hasExactSynonym	abnormal glucan synthesis during vegetative growth
+WARN	duplicate_label_synonym	FYPO:0001976	oboInOwl:hasExactSynonym	normal cytoplasmic microtubules during vegetative growth
+WARN	duplicate_label_synonym	FYPO:0003193	oboInOwl:hasExactSynonym	normal rate of microtubule depolymerization during vegetative growth
+WARN	duplicate_label_synonym	FYPO:0003225	oboInOwl:hasExactSynonym	normal rate of microtubule polymerization during vegetative growth
+WARN	duplicate_label_synonym	FYPO:0003681	oboInOwl:hasExactSynonym	decreased protein level at centromere outer repeat heterochromatin
+WARN	duplicate_label_synonym	FYPO:0004614	oboInOwl:hasExactSynonym	abnormal microtubule polymerization during vegetative growth
+WARN	duplicate_label_synonym	FYPO:0005703	oboInOwl:hasExactSynonym	decreased rate of microtubule polymerization during vegetative growth
+WARN	duplicate_label_synonym	FYPO:0005913	oboInOwl:hasExactSynonym	abnormal chromatin remodeling during meiosis I
+WARN	duplicate_label_synonym	FYPO:0007750	oboInOwl:hasExactSynonym	normal protein localization to meiotic spindle during meiosis I
+WARN	duplicate_label_synonym	FYPO:0007760	oboInOwl:hasExactSynonym	decreased protein localization to kinetochore during meiotic prophase II
+WARN	duplicate_label_synonym	FYPO:0007785	oboInOwl:hasExactSynonym	abnormal cell cycle arrest at meiotic G2/MI transition
+WARN	duplicate_label_synonym	FYPO:0007857	oboInOwl:hasExactSynonym	normal protein localization to meiotic spindle midzone during meiosis I
+WARN	duplicate_label_synonym	FYPO:0007947	oboInOwl:hasExactSynonym	sensitive to echinocandin
+INFO	missing_superclass	FYPO:0000001	rdfs:subClassOf	
+INFO	lowercase_definition	FYPO:0007960	IAO:0000115	'A cellular process phenotype observed in the vegetative growth phase of the life cycle in which the rate, or speed, of mitotic spindle elongation is decreased during prophase'.
+INFO	lowercase_definition	FYPO:0007963	IAO:0000115	'A biological process phenotype in which the observed mating efficiency, as determined by counting zygotes, asci, and sometimes spores, is normal (i.e. the same as in wild-type cells) during nitrogen limitation or poor nitrogen source'
+INFO	lowercase_definition	obo:fypo#has_output	IAO:0000115	p has output c if either: p has direct output c or p has output input c. Implies that if p happens, c always ensues.

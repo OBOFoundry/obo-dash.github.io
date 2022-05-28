@@ -27,9 +27,9 @@
       
       <tr><td>missing_ontology_description</td><td>1</td></tr>
       
-      <tr><td>annotation_whitespace</td><td>52</td></tr>
-      
       <tr><td>missing_definition</td><td>1</td></tr>
+      
+      <tr><td>annotation_whitespace</td><td>52</td></tr>
       
       <tr><td>lowercase_definition</td><td>19</td></tr>
       
@@ -149,25 +149,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/annotation_whitespace">annotation_whitespace</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                continuant
+                <a href="http://purl.obolibrary.org/obo/BFO_0000141">BFO:0000141</a>
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/IAO_0000602">IAO:0000602</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                (forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] 
+                
 
               
               </td>
@@ -195,7 +195,7 @@
             
               <td>
               
-                continuant
+                <a href="http://purl.obolibrary.org/obo/BFO_0000002">BFO:0000002</a>
               
               </td>
             
@@ -207,7 +207,7 @@
             
               <td>
               
-                (forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] 
+                (forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] 
 
               
               </td>
@@ -235,7 +235,7 @@
             
               <td>
               
-                continuant
+                <a href="http://purl.obolibrary.org/obo/BFO_0000002">BFO:0000002</a>
               
               </td>
             
@@ -247,7 +247,7 @@
             
               <td>
               
-                (forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] 
+                (forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] 
 
               
               </td>
@@ -275,7 +275,7 @@
             
               <td>
               
-                continuant
+                <a href="http://purl.obolibrary.org/obo/BFO_0000002">BFO:0000002</a>
               
               </td>
             
@@ -287,7 +287,7 @@
             
               <td>
               
-                (forall (x) (if (Material Entity x) (exists (t) (and (TemporalRegion t) (existsAt x t))))) // axiom label in BFO2 CLIF: [011-002] 
+                (forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] 
 
               
               </td>
@@ -315,7 +315,7 @@
             
               <td>
               
-                occurrent
+                <a href="http://purl.obolibrary.org/obo/BFO_0000002">BFO:0000002</a>
               
               </td>
             
@@ -327,7 +327,7 @@
             
               <td>
               
-                (forall (x) (if (Occurrent x) (exists (r) (and (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion x r))))) // axiom label in BFO2 CLIF: [108-001] 
+                (forall (x) (if (Material Entity x) (exists (t) (and (TemporalRegion t) (existsAt x t))))) // axiom label in BFO2 CLIF: [011-002] 
 
               
               </td>
@@ -355,7 +355,7 @@
             
               <td>
               
-                occurrent
+                <a href="http://purl.obolibrary.org/obo/BFO_0000003">BFO:0000003</a>
               
               </td>
             
@@ -367,7 +367,7 @@
             
               <td>
               
-                (forall (x) (iff (Occurrent x) (and (Entity x) (exists (y) (temporalPartOf y x))))) // axiom label in BFO2 CLIF: [079-001] 
+                (forall (x) (if (Occurrent x) (exists (r) (and (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion x r))))) // axiom label in BFO2 CLIF: [108-001] 
 
               
               </td>
@@ -395,7 +395,7 @@
             
               <td>
               
-                independent continuant
+                <a href="http://purl.obolibrary.org/obo/BFO_0000003">BFO:0000003</a>
               
               </td>
             
@@ -407,7 +407,7 @@
             
               <td>
               
-                (forall (x t) (if (IndependentContinuant x) (exists (r) (and (SpatialRegion r) (locatedInAt x r t))))) // axiom label in BFO2 CLIF: [134-001] 
+                (forall (x) (iff (Occurrent x) (and (Entity x) (exists (y) (temporalPartOf y x))))) // axiom label in BFO2 CLIF: [079-001] 
 
               
               </td>
@@ -435,7 +435,7 @@
             
               <td>
               
-                independent continuant
+                <a href="http://purl.obolibrary.org/obo/BFO_0000004">BFO:0000004</a>
               
               </td>
             
@@ -447,7 +447,7 @@
             
               <td>
               
-                (forall (x t) (if (and (IndependentContinuant x) (existsAt x t)) (exists (y) (and (Entity y) (specificallyDependsOnAt y x t))))) // axiom label in BFO2 CLIF: [018-002] 
+                (forall (x t) (if (IndependentContinuant x) (exists (r) (and (SpatialRegion r) (locatedInAt x r t))))) // axiom label in BFO2 CLIF: [134-001] 
 
               
               </td>
@@ -475,7 +475,7 @@
             
               <td>
               
-                independent continuant
+                <a href="http://purl.obolibrary.org/obo/BFO_0000004">BFO:0000004</a>
               
               </td>
             
@@ -487,7 +487,7 @@
             
               <td>
               
-                (iff (IndependentContinuant a) (and (Continuant a) (not (exists (b t) (specificallyDependsOnAt a b t))))) // axiom label in BFO2 CLIF: [017-002] 
+                (forall (x t) (if (and (IndependentContinuant x) (existsAt x t)) (exists (y) (and (Entity y) (specificallyDependsOnAt y x t))))) // axiom label in BFO2 CLIF: [018-002] 
 
               
               </td>
@@ -515,7 +515,7 @@
             
               <td>
               
-                spatial region
+                <a href="http://purl.obolibrary.org/obo/BFO_0000004">BFO:0000004</a>
               
               </td>
             
@@ -527,7 +527,7 @@
             
               <td>
               
-                (forall (x y t) (if (and (SpatialRegion x) (continuantPartOfAt y x t)) (SpatialRegion y))) // axiom label in BFO2 CLIF: [036-001] 
+                (iff (IndependentContinuant a) (and (Continuant a) (not (exists (b t) (specificallyDependsOnAt a b t))))) // axiom label in BFO2 CLIF: [017-002] 
 
               
               </td>
@@ -555,7 +555,7 @@
             
               <td>
               
-                spatial region
+                <a href="http://purl.obolibrary.org/obo/BFO_0000006">BFO:0000006</a>
               
               </td>
             
@@ -567,7 +567,7 @@
             
               <td>
               
-                (forall (x) (if (SpatialRegion x) (Continuant x))) // axiom label in BFO2 CLIF: [035-001] 
+                (forall (x y t) (if (and (SpatialRegion x) (continuantPartOfAt y x t)) (SpatialRegion y))) // axiom label in BFO2 CLIF: [036-001] 
 
               
               </td>
@@ -595,7 +595,7 @@
             
               <td>
               
-                temporal region
+                <a href="http://purl.obolibrary.org/obo/BFO_0000006">BFO:0000006</a>
               
               </td>
             
@@ -607,7 +607,7 @@
             
               <td>
               
-                (forall (r) (if (TemporalRegion r) (occupiesTemporalRegion r r))) // axiom label in BFO2 CLIF: [119-002] 
+                (forall (x) (if (SpatialRegion x) (Continuant x))) // axiom label in BFO2 CLIF: [035-001] 
 
               
               </td>
@@ -635,7 +635,7 @@
             
               <td>
               
-                temporal region
+                <a href="http://purl.obolibrary.org/obo/BFO_0000008">BFO:0000008</a>
               
               </td>
             
@@ -647,7 +647,7 @@
             
               <td>
               
-                (forall (x y) (if (and (TemporalRegion x) (occurrentPartOf y x)) (TemporalRegion y))) // axiom label in BFO2 CLIF: [101-001] 
+                (forall (r) (if (TemporalRegion r) (occupiesTemporalRegion r r))) // axiom label in BFO2 CLIF: [119-002] 
 
               
               </td>
@@ -675,7 +675,7 @@
             
               <td>
               
-                temporal region
+                <a href="http://purl.obolibrary.org/obo/BFO_0000008">BFO:0000008</a>
               
               </td>
             
@@ -687,7 +687,7 @@
             
               <td>
               
-                (forall (x) (if (TemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [100-001] 
+                (forall (x y) (if (and (TemporalRegion x) (occurrentPartOf y x)) (TemporalRegion y))) // axiom label in BFO2 CLIF: [101-001] 
 
               
               </td>
@@ -715,7 +715,7 @@
             
               <td>
               
-                two-dimensional spatial region
+                <a href="http://purl.obolibrary.org/obo/BFO_0000008">BFO:0000008</a>
               
               </td>
             
@@ -727,7 +727,7 @@
             
               <td>
               
-                (forall (x) (if (TwoDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [039-001] 
+                (forall (x) (if (TemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [100-001] 
 
               
               </td>
@@ -755,7 +755,7 @@
             
               <td>
               
-                spatiotemporal region
+                <a href="http://purl.obolibrary.org/obo/BFO_0000009">BFO:0000009</a>
               
               </td>
             
@@ -767,7 +767,7 @@
             
               <td>
               
-                (forall (r) (if (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion r r))) // axiom label in BFO2 CLIF: [107-002] 
+                (forall (x) (if (TwoDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [039-001] 
 
               
               </td>
@@ -795,7 +795,7 @@
             
               <td>
               
-                spatiotemporal region
+                <a href="http://purl.obolibrary.org/obo/BFO_0000011">BFO:0000011</a>
               
               </td>
             
@@ -807,7 +807,7 @@
             
               <td>
               
-                (forall (x t) (if (SpatioTemporalRegion x) (exists (y) (and (SpatialRegion y) (spatiallyProjectsOntoAt x y t))))) // axiom label in BFO2 CLIF: [099-001] 
+                (forall (r) (if (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion r r))) // axiom label in BFO2 CLIF: [107-002] 
 
               
               </td>
@@ -835,7 +835,7 @@
             
               <td>
               
-                spatiotemporal region
+                <a href="http://purl.obolibrary.org/obo/BFO_0000011">BFO:0000011</a>
               
               </td>
             
@@ -847,7 +847,7 @@
             
               <td>
               
-                (forall (x y) (if (and (SpatioTemporalRegion x) (occurrentPartOf y x)) (SpatioTemporalRegion y))) // axiom label in BFO2 CLIF: [096-001] 
+                (forall (x t) (if (SpatioTemporalRegion x) (exists (y) (and (SpatialRegion y) (spatiallyProjectsOntoAt x y t))))) // axiom label in BFO2 CLIF: [099-001] 
 
               
               </td>
@@ -875,7 +875,7 @@
             
               <td>
               
-                spatiotemporal region
+                <a href="http://purl.obolibrary.org/obo/BFO_0000011">BFO:0000011</a>
               
               </td>
             
@@ -887,7 +887,7 @@
             
               <td>
               
-                (forall (x) (if (SpatioTemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [095-001] 
+                (forall (x y) (if (and (SpatioTemporalRegion x) (occurrentPartOf y x)) (SpatioTemporalRegion y))) // axiom label in BFO2 CLIF: [096-001] 
 
               
               </td>
@@ -915,7 +915,7 @@
             
               <td>
               
-                spatiotemporal region
+                <a href="http://purl.obolibrary.org/obo/BFO_0000011">BFO:0000011</a>
               
               </td>
             
@@ -927,7 +927,7 @@
             
               <td>
               
-                (forall (x) (if (SpatioTemporalRegion x) (exists (y) (and (TemporalRegion y) (temporallyProjectsOnto x y))))) // axiom label in BFO2 CLIF: [098-001] 
+                (forall (x) (if (SpatioTemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [095-001] 
 
               
               </td>
@@ -955,7 +955,7 @@
             
               <td>
               
-                process
+                <a href="http://purl.obolibrary.org/obo/BFO_0000011">BFO:0000011</a>
               
               </td>
             
@@ -967,7 +967,7 @@
             
               <td>
               
-                (iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] 
+                (forall (x) (if (SpatioTemporalRegion x) (exists (y) (and (TemporalRegion y) (temporallyProjectsOnto x y))))) // axiom label in BFO2 CLIF: [098-001] 
 
               
               </td>
@@ -995,7 +995,7 @@
             
               <td>
               
-                disposition
+                <a href="http://purl.obolibrary.org/obo/BFO_0000015">BFO:0000015</a>
               
               </td>
             
@@ -1007,7 +1007,7 @@
             
               <td>
               
-                (forall (x t) (if (and (RealizableEntity x) (existsAt x t)) (exists (y) (and (MaterialEntity y) (specificallyDepends x y t))))) // axiom label in BFO2 CLIF: [063-002] 
+                (iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] 
 
               
               </td>
@@ -1035,7 +1035,7 @@
             
               <td>
               
-                disposition
+                <a href="http://purl.obolibrary.org/obo/BFO_0000016">BFO:0000016</a>
               
               </td>
             
@@ -1047,7 +1047,7 @@
             
               <td>
               
-                (forall (x) (if (Disposition x) (and (RealizableEntity x) (exists (y) (and (MaterialEntity y) (bearerOfAt x y t)))))) // axiom label in BFO2 CLIF: [062-002] 
+                (forall (x t) (if (and (RealizableEntity x) (existsAt x t)) (exists (y) (and (MaterialEntity y) (specificallyDepends x y t))))) // axiom label in BFO2 CLIF: [063-002] 
 
               
               </td>
@@ -1075,7 +1075,7 @@
             
               <td>
               
-                realizable entity
+                <a href="http://purl.obolibrary.org/obo/BFO_0000016">BFO:0000016</a>
               
               </td>
             
@@ -1087,7 +1087,7 @@
             
               <td>
               
-                (forall (x t) (if (RealizableEntity x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (bearerOfAt y x t))))) // axiom label in BFO2 CLIF: [060-002] 
+                (forall (x) (if (Disposition x) (and (RealizableEntity x) (exists (y) (and (MaterialEntity y) (bearerOfAt x y t)))))) // axiom label in BFO2 CLIF: [062-002] 
 
               
               </td>
@@ -1115,7 +1115,7 @@
             
               <td>
               
-                realizable entity
+                <a href="http://purl.obolibrary.org/obo/BFO_0000017">BFO:0000017</a>
               
               </td>
             
@@ -1127,7 +1127,7 @@
             
               <td>
               
-                (forall (x) (if (RealizableEntity x) (and (SpecificallyDependentContinuant x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (inheresIn x y)))))) // axiom label in BFO2 CLIF: [058-002] 
+                (forall (x t) (if (RealizableEntity x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (bearerOfAt y x t))))) // axiom label in BFO2 CLIF: [060-002] 
 
               
               </td>
@@ -1155,7 +1155,7 @@
             
               <td>
               
-                zero-dimensional spatial region
+                <a href="http://purl.obolibrary.org/obo/BFO_0000017">BFO:0000017</a>
               
               </td>
             
@@ -1167,7 +1167,7 @@
             
               <td>
               
-                (forall (x) (if (ZeroDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [037-001] 
+                (forall (x) (if (RealizableEntity x) (and (SpecificallyDependentContinuant x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (inheresIn x y)))))) // axiom label in BFO2 CLIF: [058-002] 
 
               
               </td>
@@ -1195,7 +1195,7 @@
             
               <td>
               
-                quality
+                <a href="http://purl.obolibrary.org/obo/BFO_0000018">BFO:0000018</a>
               
               </td>
             
@@ -1207,7 +1207,7 @@
             
               <td>
               
-                (forall (x) (if (Quality x) (SpecificallyDependentContinuant x))) // axiom label in BFO2 CLIF: [055-001] 
+                (forall (x) (if (ZeroDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [037-001] 
 
               
               </td>
@@ -1235,7 +1235,7 @@
             
               <td>
               
-                quality
+                <a href="http://purl.obolibrary.org/obo/BFO_0000019">BFO:0000019</a>
               
               </td>
             
@@ -1247,7 +1247,7 @@
             
               <td>
               
-                (forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] 
+                (forall (x) (if (Quality x) (SpecificallyDependentContinuant x))) // axiom label in BFO2 CLIF: [055-001] 
 
               
               </td>
@@ -1275,7 +1275,7 @@
             
               <td>
               
-                specifically dependent continuant
+                <a href="http://purl.obolibrary.org/obo/BFO_0000019">BFO:0000019</a>
               
               </td>
             
@@ -1287,7 +1287,7 @@
             
               <td>
               
-                (iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003] 
+                (forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] 
 
               
               </td>
@@ -1315,7 +1315,7 @@
             
               <td>
               
-                role
+                <a href="http://purl.obolibrary.org/obo/BFO_0000020">BFO:0000020</a>
               
               </td>
             
@@ -1327,7 +1327,7 @@
             
               <td>
               
-                (forall (x) (if (Role x) (RealizableEntity x))) // axiom label in BFO2 CLIF: [061-001] 
+                (iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003] 
 
               
               </td>
@@ -1355,7 +1355,7 @@
             
               <td>
               
-                fiat object part
+                <a href="http://purl.obolibrary.org/obo/BFO_0000023">BFO:0000023</a>
               
               </td>
             
@@ -1367,7 +1367,7 @@
             
               <td>
               
-                (forall (x) (if (FiatObjectPart x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y) (and (Object y) (properContinuantPartOfAt x y t)))))))) // axiom label in BFO2 CLIF: [027-004] 
+                (forall (x) (if (Role x) (RealizableEntity x))) // axiom label in BFO2 CLIF: [061-001] 
 
               
               </td>
@@ -1395,7 +1395,7 @@
             
               <td>
               
-                one-dimensional spatial region
+                <a href="http://purl.obolibrary.org/obo/BFO_0000024">BFO:0000024</a>
               
               </td>
             
@@ -1407,7 +1407,7 @@
             
               <td>
               
-                (forall (x) (if (OneDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [038-001] 
+                (forall (x) (if (FiatObjectPart x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y) (and (Object y) (properContinuantPartOfAt x y t)))))))) // axiom label in BFO2 CLIF: [027-004] 
 
               
               </td>
@@ -1435,19 +1435,19 @@
             
               <td>
               
-                object aggregate
+                <a href="http://purl.obolibrary.org/obo/BFO_0000026">BFO:0000026</a>
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/IAO_0000116">IAO:0000116</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000602">IAO:0000602</a>
               
               </td>
             
               <td>
               
-                An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects 
+                (forall (x) (if (OneDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [038-001] 
 
               
               </td>
@@ -1475,19 +1475,19 @@
             
               <td>
               
-                object aggregate
+                <a href="http://purl.obolibrary.org/obo/BFO_0000027">BFO:0000027</a>
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/IAO_0000602">IAO:0000602</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000116">IAO:0000116</a>
               
               </td>
             
               <td>
               
-                (forall (x) (if (ObjectAggregate x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y z) (and (Object y) (Object z) (memberPartOfAt y x t) (memberPartOfAt z x t) (not (= y z)))))) (not (exists (w t_1) (and (memberPartOfAt w x t_1) (not (Object w)))))))) // axiom label in BFO2 CLIF: [025-004] 
+                An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects 
 
               
               </td>
@@ -1515,7 +1515,7 @@
             
               <td>
               
-                three-dimensional spatial region
+                <a href="http://purl.obolibrary.org/obo/BFO_0000027">BFO:0000027</a>
               
               </td>
             
@@ -1527,7 +1527,7 @@
             
               <td>
               
-                (forall (x) (if (ThreeDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [040-001] 
+                (forall (x) (if (ObjectAggregate x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y z) (and (Object y) (Object z) (memberPartOfAt y x t) (memberPartOfAt z x t) (not (= y z)))))) (not (exists (w t_1) (and (memberPartOfAt w x t_1) (not (Object w)))))))) // axiom label in BFO2 CLIF: [025-004] 
 
               
               </td>
@@ -1555,7 +1555,7 @@
             
               <td>
               
-                site
+                <a href="http://purl.obolibrary.org/obo/BFO_0000028">BFO:0000028</a>
               
               </td>
             
@@ -1567,7 +1567,7 @@
             
               <td>
               
-                (forall (x) (if (Site x) (ImmaterialEntity x))) // axiom label in BFO2 CLIF: [034-002] 
+                (forall (x) (if (ThreeDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [040-001] 
 
               
               </td>
@@ -1595,7 +1595,7 @@
             
               <td>
               
-                generically dependent continuant
+                <a href="http://purl.obolibrary.org/obo/BFO_0000029">BFO:0000029</a>
               
               </td>
             
@@ -1607,7 +1607,7 @@
             
               <td>
               
-                (iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] 
+                (forall (x) (if (Site x) (ImmaterialEntity x))) // axiom label in BFO2 CLIF: [034-002] 
 
               
               </td>
@@ -1635,7 +1635,7 @@
             
               <td>
               
-                function
+                <a href="http://purl.obolibrary.org/obo/BFO_0000031">BFO:0000031</a>
               
               </td>
             
@@ -1647,7 +1647,7 @@
             
               <td>
               
-                (forall (x) (if (Function x) (Disposition x))) // axiom label in BFO2 CLIF: [064-001] 
+                (iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] 
 
               
               </td>
@@ -1675,7 +1675,7 @@
             
               <td>
               
-                process boundary
+                <a href="http://purl.obolibrary.org/obo/BFO_0000034">BFO:0000034</a>
               
               </td>
             
@@ -1687,7 +1687,7 @@
             
               <td>
               
-                (forall (x) (if (ProcessBoundary x) (exists (y) (and (ZeroDimensionalTemporalRegion y) (occupiesTemporalRegion x y))))) // axiom label in BFO2 CLIF: [085-002] 
+                (forall (x) (if (Function x) (Disposition x))) // axiom label in BFO2 CLIF: [064-001] 
 
               
               </td>
@@ -1715,7 +1715,7 @@
             
               <td>
               
-                process boundary
+                <a href="http://purl.obolibrary.org/obo/BFO_0000035">BFO:0000035</a>
               
               </td>
             
@@ -1727,7 +1727,7 @@
             
               <td>
               
-                (iff (ProcessBoundary a) (exists (p) (and (Process p) (temporalPartOf a p) (not (exists (b) (properTemporalPartOf b a)))))) // axiom label in BFO2 CLIF: [084-001] 
+                (forall (x) (if (ProcessBoundary x) (exists (y) (and (ZeroDimensionalTemporalRegion y) (occupiesTemporalRegion x y))))) // axiom label in BFO2 CLIF: [085-002] 
 
               
               </td>
@@ -1755,7 +1755,7 @@
             
               <td>
               
-                one-dimensional temporal region
+                <a href="http://purl.obolibrary.org/obo/BFO_0000035">BFO:0000035</a>
               
               </td>
             
@@ -1767,7 +1767,7 @@
             
               <td>
               
-                (forall (x) (if (OneDimensionalTemporalRegion x) (TemporalRegion x))) // axiom label in BFO2 CLIF: [103-001] 
+                (iff (ProcessBoundary a) (exists (p) (and (Process p) (temporalPartOf a p) (not (exists (b) (properTemporalPartOf b a)))))) // axiom label in BFO2 CLIF: [084-001] 
 
               
               </td>
@@ -1795,7 +1795,7 @@
             
               <td>
               
-                material entity
+                <a href="http://purl.obolibrary.org/obo/BFO_0000038">BFO:0000038</a>
               
               </td>
             
@@ -1807,7 +1807,7 @@
             
               <td>
               
-                (forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002] 
+                (forall (x) (if (OneDimensionalTemporalRegion x) (TemporalRegion x))) // axiom label in BFO2 CLIF: [103-001] 
 
               
               </td>
@@ -1835,7 +1835,7 @@
             
               <td>
               
-                material entity
+                <a href="http://purl.obolibrary.org/obo/BFO_0000040">BFO:0000040</a>
               
               </td>
             
@@ -1847,7 +1847,7 @@
             
               <td>
               
-                (forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] 
+                (forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002] 
 
               
               </td>
@@ -1875,7 +1875,7 @@
             
               <td>
               
-                material entity
+                <a href="http://purl.obolibrary.org/obo/BFO_0000040">BFO:0000040</a>
               
               </td>
             
@@ -1887,7 +1887,7 @@
             
               <td>
               
-                (forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] 
+                (forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] 
 
               
               </td>
@@ -1915,7 +1915,7 @@
             
               <td>
               
-                continuant fiat boundary
+                <a href="http://purl.obolibrary.org/obo/BFO_0000040">BFO:0000040</a>
               
               </td>
             
@@ -1927,7 +1927,7 @@
             
               <td>
               
-                (iff (ContinuantFiatBoundary a) (and (ImmaterialEntity a) (exists (b) (and (or (ZeroDimensionalSpatialRegion b) (OneDimensionalSpatialRegion b) (TwoDimensionalSpatialRegion b)) (forall (t) (locatedInAt a b t)))) (not (exists (c t) (and (SpatialRegion c) (continuantPartOfAt c a t)))))) // axiom label in BFO2 CLIF: [029-001] 
+                (forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] 
 
               
               </td>
@@ -1955,7 +1955,7 @@
             
               <td>
               
-                one-dimensional continuant fiat boundary
+                <a href="http://purl.obolibrary.org/obo/BFO_0000140">BFO:0000140</a>
               
               </td>
             
@@ -1967,7 +1967,7 @@
             
               <td>
               
-                (iff (OneDimensionalContinuantFiatBoundary a) (and (ContinuantFiatBoundary a) (exists (b) (and (OneDimensionalSpatialRegion b) (forall (t) (locatedInAt a b t)))))) // axiom label in BFO2 CLIF: [032-001] 
+                (iff (ContinuantFiatBoundary a) (and (ImmaterialEntity a) (exists (b) (and (or (ZeroDimensionalSpatialRegion b) (OneDimensionalSpatialRegion b) (TwoDimensionalSpatialRegion b)) (forall (t) (locatedInAt a b t)))) (not (exists (c t) (and (SpatialRegion c) (continuantPartOfAt c a t)))))) // axiom label in BFO2 CLIF: [029-001] 
 
               
               </td>
@@ -1995,7 +1995,7 @@
             
               <td>
               
-                process profile
+                <a href="http://purl.obolibrary.org/obo/BFO_0000142">BFO:0000142</a>
               
               </td>
             
@@ -2007,7 +2007,7 @@
             
               <td>
               
-                (forall (x y) (if (processProfileOf x y) (and (properContinuantPartOf x y) (exists (z t) (and (properOccurrentPartOf z y) (TemporalRegion t) (occupiesSpatioTemporalRegion x t) (occupiesSpatioTemporalRegion y t) (occupiesSpatioTemporalRegion z t) (not (exists (w) (and (occurrentPartOf w x) (occurrentPartOf w z))))))))) // axiom label in BFO2 CLIF: [094-005] 
+                (iff (OneDimensionalContinuantFiatBoundary a) (and (ContinuantFiatBoundary a) (exists (b) (and (OneDimensionalSpatialRegion b) (forall (t) (locatedInAt a b t)))))) // axiom label in BFO2 CLIF: [032-001] 
 
               
               </td>
@@ -2035,7 +2035,7 @@
             
               <td>
               
-                process profile
+                <a href="http://purl.obolibrary.org/obo/BFO_0000144">BFO:0000144</a>
               
               </td>
             
@@ -2047,7 +2047,7 @@
             
               <td>
               
-                (iff (ProcessProfile a) (exists (b) (and (Process b) (processProfileOf a b)))) // axiom label in BFO2 CLIF: [093-002] 
+                (forall (x y) (if (processProfileOf x y) (and (properContinuantPartOf x y) (exists (z t) (and (properOccurrentPartOf z y) (TemporalRegion t) (occupiesSpatioTemporalRegion x t) (occupiesSpatioTemporalRegion y t) (occupiesSpatioTemporalRegion z t) (not (exists (w) (and (occurrentPartOf w x) (occurrentPartOf w z))))))))) // axiom label in BFO2 CLIF: [094-005] 
 
               
               </td>
@@ -2075,7 +2075,7 @@
             
               <td>
               
-                relational quality
+                <a href="http://purl.obolibrary.org/obo/BFO_0000144">BFO:0000144</a>
               
               </td>
             
@@ -2087,7 +2087,7 @@
             
               <td>
               
-                (iff (RelationalQuality a) (exists (b c t) (and (IndependentContinuant b) (IndependentContinuant c) (qualityOfAt a b t) (qualityOfAt a c t)))) // axiom label in BFO2 CLIF: [057-001] 
+                (iff (ProcessProfile a) (exists (b) (and (Process b) (processProfileOf a b)))) // axiom label in BFO2 CLIF: [093-002] 
 
               
               </td>
@@ -2115,7 +2115,7 @@
             
               <td>
               
-                two-dimensional continuant fiat boundary
+                <a href="http://purl.obolibrary.org/obo/BFO_0000145">BFO:0000145</a>
               
               </td>
             
@@ -2127,7 +2127,7 @@
             
               <td>
               
-                (iff (TwoDimensionalContinuantFiatBoundary a) (and (ContinuantFiatBoundary a) (exists (b) (and (TwoDimensionalSpatialRegion b) (forall (t) (locatedInAt a b t)))))) // axiom label in BFO2 CLIF: [033-001] 
+                (iff (RelationalQuality a) (exists (b c t) (and (IndependentContinuant b) (IndependentContinuant c) (qualityOfAt a b t) (qualityOfAt a c t)))) // axiom label in BFO2 CLIF: [057-001] 
 
               
               </td>
@@ -2155,7 +2155,7 @@
             
               <td>
               
-                zero-dimensional continuant fiat boundary
+                <a href="http://purl.obolibrary.org/obo/BFO_0000146">BFO:0000146</a>
               
               </td>
             
@@ -2167,7 +2167,7 @@
             
               <td>
               
-                (iff (ZeroDimensionalContinuantFiatBoundary a) (and (ContinuantFiatBoundary a) (exists (b) (and (ZeroDimensionalSpatialRegion b) (forall (t) (locatedInAt a b t)))))) // axiom label in BFO2 CLIF: [031-001] 
+                (iff (TwoDimensionalContinuantFiatBoundary a) (and (ContinuantFiatBoundary a) (exists (b) (and (TwoDimensionalSpatialRegion b) (forall (t) (locatedInAt a b t)))))) // axiom label in BFO2 CLIF: [033-001] 
 
               
               </td>
@@ -2195,7 +2195,7 @@
             
               <td>
               
-                zero-dimensional temporal region
+                <a href="http://purl.obolibrary.org/obo/BFO_0000147">BFO:0000147</a>
               
               </td>
             
@@ -2207,7 +2207,7 @@
             
               <td>
               
-                (forall (x) (if (ZeroDimensionalTemporalRegion x) (TemporalRegion x))) // axiom label in BFO2 CLIF: [102-001] 
+                (iff (ZeroDimensionalContinuantFiatBoundary a) (and (ContinuantFiatBoundary a) (exists (b) (and (ZeroDimensionalSpatialRegion b) (forall (t) (locatedInAt a b t)))))) // axiom label in BFO2 CLIF: [031-001] 
 
               
               </td>
@@ -2229,25 +2229,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+                <a href="http://robot.obolibrary.org/report_queries/annotation_whitespace">annotation_whitespace</a>
               
               </td>
             
               <td>
               
-                immaterial entity
+                <a href="http://purl.obolibrary.org/obo/BFO_0000148">BFO:0000148</a>
               
               </td>
             
               <td>
               
-                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000602">IAO:0000602</a>
               
               </td>
             
               <td>
               
-                
+                (forall (x) (if (ZeroDimensionalTemporalRegion x) (TemporalRegion x))) // axiom label in BFO2 CLIF: [102-001] 
 
               
               </td>
@@ -2275,7 +2275,7 @@
             
               <td>
               
-                independent continuant
+                <a href="http://purl.obolibrary.org/obo/BFO_0000004">BFO:0000004</a>
               
               </td>
             
@@ -2315,7 +2315,7 @@
             
               <td>
               
-                process
+                <a href="http://purl.obolibrary.org/obo/BFO_0000015">BFO:0000015</a>
               
               </td>
             
@@ -2355,7 +2355,7 @@
             
               <td>
               
-                disposition
+                <a href="http://purl.obolibrary.org/obo/BFO_0000016">BFO:0000016</a>
               
               </td>
             
@@ -2395,7 +2395,7 @@
             
               <td>
               
-                quality
+                <a href="http://purl.obolibrary.org/obo/BFO_0000019">BFO:0000019</a>
               
               </td>
             
@@ -2435,7 +2435,7 @@
             
               <td>
               
-                specifically dependent continuant
+                <a href="http://purl.obolibrary.org/obo/BFO_0000020">BFO:0000020</a>
               
               </td>
             
@@ -2475,7 +2475,7 @@
             
               <td>
               
-                role
+                <a href="http://purl.obolibrary.org/obo/BFO_0000023">BFO:0000023</a>
               
               </td>
             
@@ -2515,7 +2515,7 @@
             
               <td>
               
-                fiat object part
+                <a href="http://purl.obolibrary.org/obo/BFO_0000024">BFO:0000024</a>
               
               </td>
             
@@ -2555,7 +2555,7 @@
             
               <td>
               
-                object aggregate
+                <a href="http://purl.obolibrary.org/obo/BFO_0000027">BFO:0000027</a>
               
               </td>
             
@@ -2595,7 +2595,7 @@
             
               <td>
               
-                site
+                <a href="http://purl.obolibrary.org/obo/BFO_0000029">BFO:0000029</a>
               
               </td>
             
@@ -2635,7 +2635,7 @@
             
               <td>
               
-                object
+                <a href="http://purl.obolibrary.org/obo/BFO_0000030">BFO:0000030</a>
               
               </td>
             
@@ -2675,7 +2675,7 @@
             
               <td>
               
-                generically dependent continuant
+                <a href="http://purl.obolibrary.org/obo/BFO_0000031">BFO:0000031</a>
               
               </td>
             
@@ -2715,7 +2715,7 @@
             
               <td>
               
-                process boundary
+                <a href="http://purl.obolibrary.org/obo/BFO_0000035">BFO:0000035</a>
               
               </td>
             
@@ -2755,7 +2755,7 @@
             
               <td>
               
-                continuant fiat boundary
+                <a href="http://purl.obolibrary.org/obo/BFO_0000140">BFO:0000140</a>
               
               </td>
             
@@ -2795,7 +2795,7 @@
             
               <td>
               
-                one-dimensional continuant fiat boundary
+                <a href="http://purl.obolibrary.org/obo/BFO_0000142">BFO:0000142</a>
               
               </td>
             
@@ -2835,7 +2835,7 @@
             
               <td>
               
-                process profile
+                <a href="http://purl.obolibrary.org/obo/BFO_0000144">BFO:0000144</a>
               
               </td>
             
@@ -2875,7 +2875,7 @@
             
               <td>
               
-                process profile
+                <a href="http://purl.obolibrary.org/obo/BFO_0000144">BFO:0000144</a>
               
               </td>
             
@@ -2915,7 +2915,7 @@
             
               <td>
               
-                relational quality
+                <a href="http://purl.obolibrary.org/obo/BFO_0000145">BFO:0000145</a>
               
               </td>
             
@@ -2955,7 +2955,7 @@
             
               <td>
               
-                two-dimensional continuant fiat boundary
+                <a href="http://purl.obolibrary.org/obo/BFO_0000146">BFO:0000146</a>
               
               </td>
             
@@ -2995,7 +2995,7 @@
             
               <td>
               
-                zero-dimensional continuant fiat boundary
+                <a href="http://purl.obolibrary.org/obo/BFO_0000147">BFO:0000147</a>
               
               </td>
             

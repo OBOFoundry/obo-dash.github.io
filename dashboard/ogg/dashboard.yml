@@ -3,7 +3,7 @@ base_prefixes:
 - OGG
 - OGGALT
 - OGG
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1067483
@@ -40,9 +40,12 @@ metrics:
     ObjectUnionOf: 27
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.587
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.044
     _impact_external: 0
     _reuse: 0.003
+    oboscore: 0.316
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 8
   'Info: Logical consistency': true
@@ -64,7 +67,6 @@ metrics:
   - cido
   - iceo
   - ino
-  - ogg
   - ohmi
   - ohpi
   - ovae
@@ -84,8 +86,7 @@ results:
     comment: Missing version IRI
     status: ERROR
   FP05 Scope:
-    comment: Missing domain (scope)
-    status: ERROR
+    status: PASS
   FP06 Textual Definitions:
     comment: 69541 missing definitions. See ROBOT Report for details.
     status: WARN
@@ -118,10 +119,10 @@ results:
     status: ERROR
 sha256_hash: 9e4eeab6a89ea90d68d0c518267338f1845c9b132f2ed22c560f49ac3019ec7a
 summary:
-  comment: 6 errors
+  comment: 5 errors
   status: ERROR
   summary_count:
-    ERROR: 6
+    ERROR: 5
     INFO: 1
     WARN: 2
 version: null

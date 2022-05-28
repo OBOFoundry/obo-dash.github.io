@@ -3,7 +3,7 @@ base_prefixes:
 - BCO
 - BCOALT
 - BCO
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 474
@@ -32,9 +32,12 @@ metrics:
     ObjectSomeValuesFrom: 13
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.845
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.005
     _impact_external: 0
     _reuse: 0.756
+    oboscore: 0.425
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
@@ -55,7 +58,6 @@ metrics:
     prefix_unknown: 33
     rdfs: 127
   'Info: Which ontologies use it?':
-  - bco
   - ppo
 mirror_from: http://purl.obolibrary.org/obo/bco/bco-base.owl
 namespace: bco
@@ -67,12 +69,12 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 27 missing definitions. See ROBOT Report for details.
-    status: WARN
+    status: PASS
   FP07 Relations:
     comment: 4 non-RO properties used.
     file: fp7
@@ -85,19 +87,18 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 21 missing labels. See ROBOT Report for details.
-    status: ERROR
+    status: PASS
   FP16 Maintenance:
     status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 27 errors, 35 warnings, 7 info messages.
+    comment: 6 errors, 5 warnings, 1 info messages.
     file: robot_report
     results:
-      ERROR: 27
-      INFO: 7
-      WARN: 35
+      ERROR: 6
+      INFO: 1
+      WARN: 5
     status: ERROR
 sha256_hash: 527eeb35496cb9a713501764bc8011f9cf903fb88701a4d2b34dc65bf7065964
 summary:
@@ -106,5 +107,5 @@ summary:
   summary_count:
     ERROR: 3
     INFO: 1
-    WARN: 1
+    WARN: 0
 version: http://purl.obolibrary.org/obo/bco/releases/2021-11-14/bco-base.owl

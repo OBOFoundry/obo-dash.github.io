@@ -18,7 +18,7 @@
                         
                     
                     <div class="alert alert-danger">
-                        <center><h3>ERROR - 4 errors</h3></center>
+                        <center><h3>ERROR - 5 errors</h3></center>
                     </div>
                 
                 <table class="table">
@@ -99,11 +99,11 @@
                                 
                                 
                             
-                            <td class="table-success" style="text-align:center;">
-                                <img src="../assets/check.svg" height="15px">
+                            <td class="table-danger" style="text-align:center;">
+                                <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td></td>
+                                <td>Version IRI does not resolve</td>
                             
                             
                                 <td></td>
@@ -143,7 +143,7 @@
                                 <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>2 duplicate definitions. 12 missing definitions. See ROBOT Report for details.</td>
+                                <td>2 duplicate definitions. See ROBOT Report for details.</td>
                             
                             
                                 <td></td>
@@ -259,11 +259,11 @@
                                 
                                 
                             
-                            <td class="table-info" style="text-align:center;">
-                                <img src="../assets/info.svg" height="15px">
+                            <td class="table-warning" style="text-align:center;">
+                                <img src="../assets/warning.svg" height="15px">
                             </td>
                             
-                                <td>last version (2020-05-07) is over one year(s) old</td>
+                                <td>last version (2020-05-07) is over two year(s) old</td>
                             
                             
                                 <td></td>
@@ -303,7 +303,7 @@
                                 <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>5 errors, 15 warnings, 0 info messages.</td>
+                                <td>5 errors, 3 warnings, 0 info messages.</td>
                             
                             
                                 <td><a href="robot_report.html">View Report</a></td>
@@ -326,17 +326,19 @@
                                 <td>Axioms: Breakdown of axiom types</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>AnnotationAssertion: 619</li>
-                                        
-                                        <li>Declaration: 141</li>
-                                        
-                                        <li>SubClassOf: 151</li>
-                                        
-                                        <li>TransitiveObjectProperty: 2</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>AnnotationAssertion: 619</li>
+                                            
+                                                <li>Declaration: 141</li>
+                                            
+                                                <li>SubClassOf: 151</li>
+                                            
+                                                <li>TransitiveObjectProperty: 2</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -408,13 +410,15 @@
                                 <td>Info: Breakdown of OWL class expressions used</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>Class: 418</li>
-                                        
-                                        <li>ObjectSomeValuesFrom: 28</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>Class: 418</li>
+                                            
+                                                <li>ObjectSomeValuesFrom: 28</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -430,15 +434,23 @@
                                 <td>Info: Experimental OBO score</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>_impact: 0.016</li>
-                                        
-                                        <li>_impact_external: 0</li>
-                                        
-                                        <li>_reuse: 0.196</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>_dashboard: 0.792</li>
+                                            
+                                                <li>_formula: (1*impact+1*dashboard)/2</li>
+                                            
+                                                <li>_impact: 0.016</li>
+                                            
+                                                <li>_impact_external: 0</li>
+                                            
+                                                <li>_reuse: 0.196</li>
+                                            
+                                                <li>oboscore: 0.404</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -478,27 +490,29 @@
                                 <td>Info: Usage of namespaces in axioms</td>
                                 
                                 
-                                    <td><ul>
-                                        
-                                        <li>BFO: 25</li>
-                                        
-                                        <li>FAO: 416</li>
-                                        
-                                        <li>IAO: 119</li>
-                                        
-                                        <li>NCBITaxon: 2</li>
-                                        
-                                        <li>RO: 8</li>
-                                        
-                                        <li>oboInOwl: 532</li>
-                                        
-                                        <li>owl: 4</li>
-                                        
-                                        <li>rdfs: 131</li>
-                                        
-                                        <li>xsd: 10</li>
-                                        
-                                    </ul></td>
+                                    <td>
+                                        <ul>
+                                            
+                                                <li>BFO: 25</li>
+                                            
+                                                <li>FAO: 416</li>
+                                            
+                                                <li>IAO: 119</li>
+                                            
+                                                <li>NCBITaxon: 2</li>
+                                            
+                                                <li>RO: 8</li>
+                                            
+                                                <li>oboInOwl: 532</li>
+                                            
+                                                <li>owl: 4</li>
+                                            
+                                                <li>rdfs: 131</li>
+                                            
+                                                <li>xsd: 10</li>
+                                            
+                                        </ul>
+                                    </td>
                                 
                             </tr>
                         
@@ -506,7 +520,15 @@
                                 <td>Info: Which ontologies use it?</td>
                                 
                                 
-                                    <td>['envo', 'fao', 'foodon', 'go']</td>
+                                    <td><ul>
+                                        
+                                            <li>envo</li>
+                                        
+                                            <li>foodon</li>
+                                        
+                                            <li>go</li>
+                                        
+                                    </ul></td>
                                 
                             </tr>
                         

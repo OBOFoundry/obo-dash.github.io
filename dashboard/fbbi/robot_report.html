@@ -14,28 +14,32 @@
       
       <tr><td>ERROR</td><td>7</td></tr>
       
-      <tr><td>WARN</td><td>192</td></tr>
+      <tr><td>WARN</td><td>563</td></tr>
+      
+      <tr><td>INFO</td><td>46</td></tr>
       
       </table></div>
       <h3>Error breakdown</h3>
       <div class="report_summary"><table class="table">
       <tr><th><b>Rule</b></th><th><b>Number of errors</b></th></tr>
       
-      <tr><td>missing_ontology_license</td><td>1</td></tr>
-      
       <tr><td>missing_ontology_description</td><td>1</td></tr>
+      
+      <tr><td>duplicate_label</td><td>3</td></tr>
       
       <tr><td>missing_label</td><td>1</td></tr>
       
       <tr><td>missing_ontology_title</td><td>1</td></tr>
       
-      <tr><td>duplicate_label</td><td>3</td></tr>
+      <tr><td>missing_ontology_license</td><td>1</td></tr>
       
-      <tr><td>missing_obsolete_label</td><td>107</td></tr>
+      <tr><td>missing_definition</td><td>455</td></tr>
       
       <tr><td>missing_subset_declaration</td><td>1</td></tr>
       
-      <tr><td>missing_definition</td><td>84</td></tr>
+      <tr><td>missing_obsolete_label</td><td>107</td></tr>
+      
+      <tr><td>lowercase_definition</td><td>46</td></tr>
       
       </table></div>
       <p style="text-align:center; margin-top:-15px;">
@@ -64,46 +68,6 @@
           
           <tr class="table-danger">
             <td>1</td>
-            
-              <td>
-              
-                ERROR
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_ontology_license">missing_ontology_license</a>
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/fbbi.owl">http://purl.obolibrary.org/obo/fbbi.owl</a>
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.org/dc/terms/license">dc:license</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-danger">
-            <td>2</td>
             
               <td>
               
@@ -143,7 +107,127 @@
             
           
           <tr class="table-danger">
+            <td>2</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/duplicate_label">duplicate_label</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000281">FBbi:00000281</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+              
+              </td>
+            
+              <td>
+              
+                nearfield illumination
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
             <td>3</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/duplicate_label">duplicate_label</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000619">FBbi:00000619</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+              
+              </td>
+            
+              <td>
+              
+                nearfield illumination
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>4</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/duplicate_label">duplicate_label</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000620">FBbi:00000620</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+              
+              </td>
+            
+              <td>
+              
+                nearfield illumination
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-danger">
+            <td>5</td>
             
               <td>
               
@@ -183,7 +267,7 @@
             
           
           <tr class="table-danger">
-            <td>4</td>
+            <td>6</td>
             
               <td>
               
@@ -223,86 +307,6 @@
             
           
           <tr class="table-danger">
-            <td>5</td>
-            
-              <td>
-              
-                ERROR
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_label">duplicate_label</a>
-              
-              </td>
-            
-              <td>
-              
-                nearfield illumination
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
-              
-              </td>
-            
-              <td>
-              
-                nearfield illumination
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-danger">
-            <td>6</td>
-            
-              <td>
-              
-                ERROR
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_label">duplicate_label</a>
-              
-              </td>
-            
-              <td>
-              
-                nearfield illumination
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
-              
-              </td>
-            
-              <td>
-              
-                nearfield illumination
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-danger">
             <td>7</td>
             
               <td>
@@ -313,25 +317,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/duplicate_label">duplicate_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_ontology_license">missing_ontology_license</a>
               
               </td>
             
               <td>
               
-                nearfield illumination
+                <a href="http://purl.obolibrary.org/obo/fbbi.owl">http://purl.obolibrary.org/obo/fbbi.owl</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.org/dc/terms/license">dc:license</a>
               
               </td>
             
               <td>
               
-                nearfield illumination
+                
 
               
               </td>
@@ -353,25 +357,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                dummy term
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000001">FBbi:00000001</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                dummy term
+                
 
               
               </td>
@@ -393,25 +397,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                endogenous substrate, non-vital dye
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000002">FBbi:00000002</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                endogenous substrate, non-vital dye
+                
 
               
               </td>
@@ -433,25 +437,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                endogenous substrate, diaminobenzidine
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000003">FBbi:00000003</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                endogenous substrate, diaminobenzidine
+                
 
               
               </td>
@@ -473,25 +477,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                endogenous substrate, vital dye
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000004">FBbi:00000004</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                endogenous substrate, vital dye
+                
 
               
               </td>
@@ -513,25 +517,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                endogenous substrate, dye conjugate
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000005">FBbi:00000005</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                endogenous substrate, dye conjugate
+                
 
               
               </td>
@@ -553,25 +557,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                endogenous substrate, acidotropic-fluor conjugate
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000006">FBbi:00000006</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                endogenous substrate, acidotropic-fluor conjugate
+                
 
               
               </td>
@@ -593,25 +597,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                endogenous substrate, lectin-fluor conjugate
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000007">FBbi:00000007</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                endogenous substrate, lectin-fluor conjugate
+                
 
               
               </td>
@@ -633,25 +637,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                endogenous substrate, lectin-gold conjugate
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000008">FBbi:00000008</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                endogenous substrate, lectin-gold conjugate
+                
 
               
               </td>
@@ -673,25 +677,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                endogenous substrate, phalloidin-fluor conjugate
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000009">FBbi:00000009</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                endogenous substrate, phalloidin-fluor conjugate
+                
 
               
               </td>
@@ -713,25 +717,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                exogenous label
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000010">FBbi:00000010</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                exogenous label
+                
 
               
               </td>
@@ -753,25 +757,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                Aequorea victoria red fluorescent protein tag
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000011">FBbi:00000011</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                Aequorea victoria red fluorescent protein tag
+                
 
               
               </td>
@@ -793,25 +797,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                Alexa Fluor 488 actin fill
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000012">FBbi:00000012</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                Alexa Fluor 488 actin fill
+                
 
               
               </td>
@@ -833,25 +837,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                Alexa Fluor 568 actin fill
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000013">FBbi:00000013</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                Alexa Fluor 568 actin fill
+                
 
               
               </td>
@@ -873,25 +877,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                fluoresceine actin fill
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000014">FBbi:00000014</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                fluoresceine actin fill
+                
 
               
               </td>
@@ -913,25 +917,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                rhodamine actin fill
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000015">FBbi:00000015</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                rhodamine actin fill
+                
 
               
               </td>
@@ -953,25 +957,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                Alexa Fluor 350 phalloidin fill
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000016">FBbi:00000016</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                Alexa Fluor 350 phalloidin fill
+                
 
               
               </td>
@@ -993,25 +997,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                Alexa Fluor 488 phalloidin fill
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000017">FBbi:00000017</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                Alexa Fluor 488 phalloidin fill
+                
 
               
               </td>
@@ -1033,25 +1037,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                eosin phalloidin fill
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000018">FBbi:00000018</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                eosin phalloidin fill
+                
 
               
               </td>
@@ -1073,25 +1077,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                fluoresceine phalloidin fill
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000019">FBbi:00000019</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                fluoresceine phalloidin fill
+                
 
               
               </td>
@@ -1113,25 +1117,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                Oregon Green 488 phalloidin fill
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000020">FBbi:00000020</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                Oregon Green 488 phalloidin fill
+                
 
               
               </td>
@@ -1153,25 +1157,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                Oregon Green 514 phalloidin fill
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000021">FBbi:00000021</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                Oregon Green 514 phalloidin fill
+                
 
               
               </td>
@@ -1193,25 +1197,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                rhodamine phalloidin fill
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000022">FBbi:00000022</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                rhodamine phalloidin fill
+                
 
               
               </td>
@@ -1233,25 +1237,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                Texas Red-X phalloidin fill
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000023">FBbi:00000023</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                Texas Red-X phalloidin fill
+                
 
               
               </td>
@@ -1273,25 +1277,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                Oregon Green 514 tubulin fill
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000024">FBbi:00000024</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                Oregon Green 514 tubulin fill
+                
 
               
               </td>
@@ -1313,25 +1317,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                X-rhodamine tubulin fill
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000026">FBbi:00000026</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                X-rhodamine tubulin fill
+                
 
               
               </td>
@@ -1353,25 +1357,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                primary antibody-enzyme conjugate, substrate
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000027">FBbi:00000027</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                primary antibody-enzyme conjugate, substrate
+                
 
               
               </td>
@@ -1393,25 +1397,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                primary antibody-alkaline phosphastase conjugate, DAB
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000028">FBbi:00000028</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                primary antibody-alkaline phosphastase conjugate, DAB
+                
 
               
               </td>
@@ -1433,25 +1437,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                primary antibody-alkaline phosphastase conjugate, ELF 97 phosphate
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000029">FBbi:00000029</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                primary antibody-alkaline phosphastase conjugate, ELF 97 phosphate
+                
 
               
               </td>
@@ -1473,25 +1477,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                primary antibody-alkaline phosphastase conjugate, Vector Black
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000030">FBbi:00000030</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                primary antibody-alkaline phosphastase conjugate, Vector Black
+                
 
               
               </td>
@@ -1513,25 +1517,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                primary antibody-alkaline phosphastase conjugate, Vector Blue
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000031">FBbi:00000031</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                primary antibody-alkaline phosphastase conjugate, Vector Blue
+                
 
               
               </td>
@@ -1553,25 +1557,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                primary antibody-alkaline phosphastase conjugate, Vector Red
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000033">FBbi:00000033</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                primary antibody-alkaline phosphastase conjugate, Vector Red
+                
 
               
               </td>
@@ -1593,25 +1597,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                primary antibody-horseradish peroxidase, 4-chloro-1-naphthol
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000034">FBbi:00000034</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                primary antibody-horseradish peroxidase, 4-chloro-1-naphthol
+                
 
               
               </td>
@@ -1633,25 +1637,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                primary antibody-horseradish peroxidase, 3-amino-9-ethylcarbazole
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000035">FBbi:00000035</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                primary antibody-horseradish peroxidase, 3-amino-9-ethylcarbazole
+                
 
               
               </td>
@@ -1673,25 +1677,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                primary antibody-horseradish peroxidase, 3,3',5,5'-tetramethylbenzidine
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000038">FBbi:00000038</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                primary antibody-horseradish peroxidase, 3,3',5,5'-tetramethylbenzidine
+                
 
               
               </td>
@@ -1713,25 +1717,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                primary antibody-horseradish peroxidase, Vector NovaRed
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000039">FBbi:00000039</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                primary antibody-horseradish peroxidase, Vector NovaRed
+                
 
               
               </td>
@@ -1753,25 +1757,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                primary antibody-horseradish peroxidase, Vector SG
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000040">FBbi:00000040</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                primary antibody-horseradish peroxidase, Vector SG
+                
 
               
               </td>
@@ -1793,25 +1797,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                primary antibody-horseradish peroxidase, Vector VIP
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000042">FBbi:00000042</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                primary antibody-horseradish peroxidase, Vector VIP
+                
 
               
               </td>
@@ -1833,25 +1837,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                primary antibody-fluor conjugate
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000043">FBbi:00000043</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                primary antibody-fluor conjugate
+                
 
               
               </td>
@@ -1873,25 +1877,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                primary antibody-aminomethylcoumarin acetate
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000044">FBbi:00000044</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                primary antibody-aminomethylcoumarin acetate
+                
 
               
               </td>
@@ -1913,25 +1917,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                primary antibody-Cascade blue
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000045">FBbi:00000045</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                primary antibody-Cascade blue
+                
 
               
               </td>
@@ -1953,25 +1957,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                primary antibody-cyanine
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000046">FBbi:00000046</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                primary antibody-cyanine
+                
 
               
               </td>
@@ -1993,25 +1997,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                primary antibody-fluorescein isothiocyanate
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000047">FBbi:00000047</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                primary antibody-fluorescein isothiocyanate
+                
 
               
               </td>
@@ -2033,25 +2037,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                primary antibody-indocarbocyanine
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000048">FBbi:00000048</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                primary antibody-indocarbocyanine
+                
 
               
               </td>
@@ -2073,25 +2077,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                primary antibody-indodicarbocyanine
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000049">FBbi:00000049</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                primary antibody-indodicarbocyanine
+                
 
               
               </td>
@@ -2113,25 +2117,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                primary antibody-rhodamine red-X
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000051">FBbi:00000051</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                primary antibody-rhodamine red-X
+                
 
               
               </td>
@@ -2153,25 +2157,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                primary antibody-tetramethyl rhodamine isothiocyanate
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000052">FBbi:00000052</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                primary antibody-tetramethyl rhodamine isothiocyanate
+                
 
               
               </td>
@@ -2193,25 +2197,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                primary antibody-Texas Red
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000053">FBbi:00000053</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                primary antibody-Texas Red
+                
 
               
               </td>
@@ -2233,25 +2237,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                primary antibody-gold conjugate
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000054">FBbi:00000054</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                primary antibody-gold conjugate
+                
 
               
               </td>
@@ -2273,25 +2277,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-enzyme conjugate, substrate
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000055">FBbi:00000055</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-enzyme conjugate, substrate
+                
 
               
               </td>
@@ -2313,25 +2317,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-alkaline phosphastase conjugate, DAB
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000056">FBbi:00000056</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-alkaline phosphastase conjugate, DAB
+                
 
               
               </td>
@@ -2353,25 +2357,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-alkaline phosphastase conjugate, ELF 97 phosphate
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000057">FBbi:00000057</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-alkaline phosphastase conjugate, ELF 97 phosphate
+                
 
               
               </td>
@@ -2393,25 +2397,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-alkaline phosphastase conjugate, Fast Blue B
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000058">FBbi:00000058</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-alkaline phosphastase conjugate, Fast Blue B
+                
 
               
               </td>
@@ -2433,25 +2437,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-alkaline phosphastase conjugate, Fast Red
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000059">FBbi:00000059</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-alkaline phosphastase conjugate, Fast Red
+                
 
               
               </td>
@@ -2473,25 +2477,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-alkaline phosphastase conjugate, INT
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000060">FBbi:00000060</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-alkaline phosphastase conjugate, INT
+                
 
               
               </td>
@@ -2513,25 +2517,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-alkaline phosphastase conjugate, Magenta Phos
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000061">FBbi:00000061</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-alkaline phosphastase conjugate, Magenta Phos
+                
 
               
               </td>
@@ -2553,25 +2557,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-alkaline phosphastase conjugate, NABP
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000062">FBbi:00000062</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-alkaline phosphastase conjugate, NABP
+                
 
               
               </td>
@@ -2593,25 +2597,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-alkaline phosphastase conjugate, NAGP
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000063">FBbi:00000063</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-alkaline phosphastase conjugate, NAGP
+                
 
               
               </td>
@@ -2633,25 +2637,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-alkaline phosphastase conjugate, NAMP
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000064">FBbi:00000064</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-alkaline phosphastase conjugate, NAMP
+                
 
               
               </td>
@@ -2673,25 +2677,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-alkaline phosphastase conjugate, NATP
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000065">FBbi:00000065</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-alkaline phosphastase conjugate, NATP
+                
 
               
               </td>
@@ -2713,25 +2717,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-alkaline phosphastase conjugate, NBT
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000066">FBbi:00000066</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-alkaline phosphastase conjugate, NBT
+                
 
               
               </td>
@@ -2753,25 +2757,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-alkaline phosphastase conjugate, Vector Black
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000067">FBbi:00000067</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-alkaline phosphastase conjugate, Vector Black
+                
 
               
               </td>
@@ -2793,25 +2797,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-alkaline phosphastase conjugate, Vector Blue
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000068">FBbi:00000068</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-alkaline phosphastase conjugate, Vector Blue
+                
 
               
               </td>
@@ -2833,25 +2837,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-alkaline phosphastase conjugate, Vector Red
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000073">FBbi:00000073</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-alkaline phosphastase conjugate, Vector Red
+                
 
               
               </td>
@@ -2873,25 +2877,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-alkaline phosphastase conjugate, BCIP
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000076">FBbi:00000076</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-alkaline phosphastase conjugate, BCIP
+                
 
               
               </td>
@@ -2913,25 +2917,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-beta-galactosidase, X-Gal
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000077">FBbi:00000077</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-beta-galactosidase, X-Gal
+                
 
               
               </td>
@@ -2953,25 +2957,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-beta-glucuronidase, X-gluc
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000078">FBbi:00000078</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-beta-glucuronidase, X-gluc
+                
 
               
               </td>
@@ -2993,25 +2997,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-esterase, Naphthol-AS-D-chloroacetate
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000079">FBbi:00000079</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-esterase, Naphthol-AS-D-chloroacetate
+                
 
               
               </td>
@@ -3033,25 +3037,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-glucose oxidase, TNBT
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000080">FBbi:00000080</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-glucose oxidase, TNBT
+                
 
               
               </td>
@@ -3073,25 +3077,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-horseradish peroxidase, 3,3'-diaminobenzidine
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000081">FBbi:00000081</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-horseradish peroxidase, 3,3'-diaminobenzidine
+                
 
               
               </td>
@@ -3113,25 +3117,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-horseradish peroxidase, 3,3'-diaminobenzidine silver enhanced
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000082">FBbi:00000082</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-horseradish peroxidase, 3,3'-diaminobenzidine silver enhanced
+                
 
               
               </td>
@@ -3153,25 +3157,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-horseradish peroxidase, 4-chloro-1-naphthol
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000084">FBbi:00000084</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-horseradish peroxidase, 4-chloro-1-naphthol
+                
 
               
               </td>
@@ -3193,25 +3197,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-horseradish peroxidase, 3-amino-9-ethylcarbazole
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000085">FBbi:00000085</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-horseradish peroxidase, 3-amino-9-ethylcarbazole
+                
 
               
               </td>
@@ -3233,25 +3237,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-horseradish peroxidase, 3,3',5,5'-tetramethylbenzidine
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000086">FBbi:00000086</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-horseradish peroxidase, 3,3',5,5'-tetramethylbenzidine
+                
 
               
               </td>
@@ -3273,25 +3277,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-horseradish peroxidase, Vector NovaRed
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000087">FBbi:00000087</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-horseradish peroxidase, Vector NovaRed
+                
 
               
               </td>
@@ -3313,25 +3317,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-horseradish peroxidase, Vector SG
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000090">FBbi:00000090</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-horseradish peroxidase, Vector SG
+                
 
               
               </td>
@@ -3353,25 +3357,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-horseradish peroxidase, Vector VIP
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000091">FBbi:00000091</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-horseradish peroxidase, Vector VIP
+                
 
               
               </td>
@@ -3393,25 +3397,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-phosphatase, Naphthol-AS-BI-phosphate
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000092">FBbi:00000092</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-phosphatase, Naphthol-AS-BI-phosphate
+                
 
               
               </td>
@@ -3433,25 +3437,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-fluor conjugate
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000094">FBbi:00000094</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-fluor conjugate
+                
 
               
               </td>
@@ -3473,25 +3477,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-Alexa Fluor conjugate
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000095">FBbi:00000095</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-Alexa Fluor conjugate
+                
 
               
               </td>
@@ -3513,25 +3517,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-cyanine conjugate
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000100">FBbi:00000100</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-cyanine conjugate
+                
 
               
               </td>
@@ -3553,25 +3557,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-diaminotriazinylaminoflorescein conjugate
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000109">FBbi:00000109</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-diaminotriazinylaminoflorescein conjugate
+                
 
               
               </td>
@@ -3593,25 +3597,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-fluorescein isothiocyanate conjugate
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000112">FBbi:00000112</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-fluorescein isothiocyanate conjugate
+                
 
               
               </td>
@@ -3633,25 +3637,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-indocarbocyanine conjugate
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000113">FBbi:00000113</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-indocarbocyanine conjugate
+                
 
               
               </td>
@@ -3673,25 +3677,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-indodicarbocyanine conjugate
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000114">FBbi:00000114</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-indodicarbocyanine conjugate
+                
 
               
               </td>
@@ -3713,25 +3717,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-lissamine rhodamine sulfonyl chloride
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000115">FBbi:00000115</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-lissamine rhodamine sulfonyl chloride
+                
 
               
               </td>
@@ -3753,25 +3757,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-rhodamine red-X conjugate
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000116">FBbi:00000116</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-rhodamine red-X conjugate
+                
 
               
               </td>
@@ -3793,25 +3797,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-tetramethyl rhodamine isothiocyanate conjugate
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000117">FBbi:00000117</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-tetramethyl rhodamine isothiocyanate conjugate
+                
 
               
               </td>
@@ -3833,25 +3837,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                secondary antibody-Texas red conjugate
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000118">FBbi:00000118</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                secondary antibody-Texas red conjugate
+                
 
               
               </td>
@@ -3873,25 +3877,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                labeled nucleic acid probe
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000119">FBbi:00000119</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                labeled nucleic acid probe
+                
 
               
               </td>
@@ -3913,25 +3917,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                biotin labeled DNA probe
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000120">FBbi:00000120</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                biotin labeled DNA probe
+                
 
               
               </td>
@@ -3953,25 +3957,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                digoxigenin labeled DNA probe
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000121">FBbi:00000121</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                digoxigenin labeled DNA probe
+                
 
               
               </td>
@@ -3993,25 +3997,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                fluor labeled DNA probe
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000122">FBbi:00000122</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                fluor labeled DNA probe
+                
 
               
               </td>
@@ -4033,25 +4037,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                BODIPY TR-14-dUTP labeled DNA probe
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000123">FBbi:00000123</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                BODIPY TR-14-dUTP labeled DNA probe
+                
 
               
               </td>
@@ -4073,25 +4077,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                bromodeoxyuridine labeled DNA probe
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000124">FBbi:00000124</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                bromodeoxyuridine labeled DNA probe
+                
 
               
               </td>
@@ -4113,25 +4117,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                fluoresceine-12-dUTP labeled DNA probe
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000125">FBbi:00000125</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                fluoresceine-12-dUTP labeled DNA probe
+                
 
               
               </td>
@@ -4153,25 +4157,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                Oregon Green 488-5-dUTP labeled DNA probe
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000126">FBbi:00000126</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                Oregon Green 488-5-dUTP labeled DNA probe
+                
 
               
               </td>
@@ -4193,25 +4197,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                radioisotope labeled DNA probe
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000127">FBbi:00000127</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                radioisotope labeled DNA probe
+                
 
               
               </td>
@@ -4233,25 +4237,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                [32]P labeled DNA probe
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000128">FBbi:00000128</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                [32]P labeled DNA probe
+                
 
               
               </td>
@@ -4273,25 +4277,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                [33]P labeled DNA probe
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000130">FBbi:00000130</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                [33]P labeled DNA probe
+                
 
               
               </td>
@@ -4313,25 +4317,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                biotin labeled RNA probe
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000132">FBbi:00000132</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                biotin labeled RNA probe
+                
 
               
               </td>
@@ -4353,25 +4357,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                digoxigenin labeled RNA probe
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000138">FBbi:00000138</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                digoxigenin labeled RNA probe
+                
 
               
               </td>
@@ -4393,25 +4397,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                fluoroscein labeled RNA probe
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000156">FBbi:00000156</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                fluoroscein labeled RNA probe
+                
 
               
               </td>
@@ -4433,25 +4437,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                radioisotope labeled RNA probe
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000158">FBbi:00000158</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                radioisotope labeled RNA probe
+                
 
               
               </td>
@@ -4473,25 +4477,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                [32]P labeled RNA probe
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000176">FBbi:00000176</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                [32]P labeled RNA probe
+                
 
               
               </td>
@@ -4513,25 +4517,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                [33]P labeled RNA probe
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000178">FBbi:00000178</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                [33]P labeled RNA probe
+                
 
               
               </td>
@@ -4553,25 +4557,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                wide field light micrograph
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000191">FBbi:00000191</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                wide field light micrograph
+                
 
               
               </td>
@@ -4593,25 +4597,25 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label">missing_obsolete_label</a>
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                narrow field light micrograph
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000192">FBbi:00000192</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
               <td>
               
-                narrow field light micrograph
+                
 
               
               </td>
@@ -4633,19 +4637,19 @@
             
               <td>
               
-                missing_subset_declaration
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
               
               </td>
             
               <td>
               
-                obo:fbbi#PhenoImageShare_ImagingMethod
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000202">FBbi:00000202</a>
               
               </td>
             
               <td>
               
-                <a href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf">rdfs:subPropertyOf</a>
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
               
               </td>
             
@@ -4679,7 +4683,7 @@
             
               <td>
               
-                sample preparation method
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000204">FBbi:00000204</a>
               
               </td>
             
@@ -4719,7 +4723,7 @@
             
               <td>
               
-                chemically fixed tissue
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000215">FBbi:00000215</a>
               
               </td>
             
@@ -4759,7 +4763,7 @@
             
               <td>
               
-                coagulating-fixative fixed tissue
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000222">FBbi:00000222</a>
               
               </td>
             
@@ -4799,7 +4803,7 @@
             
               <td>
               
-                acetone fixed tissue
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000223">FBbi:00000223</a>
               
               </td>
             
@@ -4839,7 +4843,7 @@
             
               <td>
               
-                acrolein fixed tissue
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000224">FBbi:00000224</a>
               
               </td>
             
@@ -4879,7 +4883,7 @@
             
               <td>
               
-                ethanol fixed tissue
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000225">FBbi:00000225</a>
               
               </td>
             
@@ -4919,7 +4923,7 @@
             
               <td>
               
-                methanol fixed tissue
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000226">FBbi:00000226</a>
               
               </td>
             
@@ -4959,7 +4963,7 @@
             
               <td>
               
-                crosslinking-fixative fixed tissue
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000227">FBbi:00000227</a>
               
               </td>
             
@@ -4999,7 +5003,7 @@
             
               <td>
               
-                ethylene glycol-bis-succinimidyl succinate fixed tissue
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000228">FBbi:00000228</a>
               
               </td>
             
@@ -5039,7 +5043,7 @@
             
               <td>
               
-                formaldehyde fixed tissue
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000229">FBbi:00000229</a>
               
               </td>
             
@@ -5079,7 +5083,7 @@
             
               <td>
               
-                glutaraldehyde fixed tissue
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000230">FBbi:00000230</a>
               
               </td>
             
@@ -5119,7 +5123,7 @@
             
               <td>
               
-                osmium tetroxide fixed tissue
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000231">FBbi:00000231</a>
               
               </td>
             
@@ -5159,7 +5163,7 @@
             
               <td>
               
-                cryofixed tissue
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000232">FBbi:00000232</a>
               
               </td>
             
@@ -5199,7 +5203,7 @@
             
               <td>
               
-                unfixed tissue
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000233">FBbi:00000233</a>
               
               </td>
             
@@ -5239,7 +5243,7 @@
             
               <td>
               
-                embedded tissue
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000234">FBbi:00000234</a>
               
               </td>
             
@@ -5279,7 +5283,7 @@
             
               <td>
               
-                tissue in plastic embedment
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000235">FBbi:00000235</a>
               
               </td>
             
@@ -5319,7 +5323,7 @@
             
               <td>
               
-                tissue in acrylic resin embedment
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000236">FBbi:00000236</a>
               
               </td>
             
@@ -5359,7 +5363,7 @@
             
               <td>
               
-                tissue in epoxy resin embedment
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000237">FBbi:00000237</a>
               
               </td>
             
@@ -5399,7 +5403,7 @@
             
               <td>
               
-                tissue in wax embedment
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000238">FBbi:00000238</a>
               
               </td>
             
@@ -5439,7 +5443,7 @@
             
               <td>
               
-                tissue in paraffin embedment
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000239">FBbi:00000239</a>
               
               </td>
             
@@ -5479,7 +5483,7 @@
             
               <td>
               
-                tissue in polyester wax embedment
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000243">FBbi:00000243</a>
               
               </td>
             
@@ -5519,7 +5523,7 @@
             
               <td>
               
-                tissue in polyethylene glycol embedment
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000245">FBbi:00000245</a>
               
               </td>
             
@@ -5559,7 +5563,7 @@
             
               <td>
               
-                unembedded tissue
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000246">FBbi:00000246</a>
               
               </td>
             
@@ -5599,7 +5603,7 @@
             
               <td>
               
-                whole mounted tissue
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000247">FBbi:00000247</a>
               
               </td>
             
@@ -5639,7 +5643,7 @@
             
               <td>
               
-                sectioned tissue
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000248">FBbi:00000248</a>
               
               </td>
             
@@ -5679,7 +5683,7 @@
             
               <td>
               
-                cryostat-sectioned tissue
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000249">FBbi:00000249</a>
               
               </td>
             
@@ -5719,7 +5723,7 @@
             
               <td>
               
-                hand-sectioned tissue
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000251">FBbi:00000251</a>
               
               </td>
             
@@ -5759,7 +5763,7 @@
             
               <td>
               
-                microtome-sectioned tissue
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000252">FBbi:00000252</a>
               
               </td>
             
@@ -5799,7 +5803,7 @@
             
               <td>
               
-                vibratome-sectioned tissue
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000253">FBbi:00000253</a>
               
               </td>
             
@@ -5839,7 +5843,7 @@
             
               <td>
               
-                visualization method
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000254">FBbi:00000254</a>
               
               </td>
             
@@ -5879,7 +5883,7 @@
             
               <td>
               
-                diagram
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000255">FBbi:00000255</a>
               
               </td>
             
@@ -5919,7 +5923,7 @@
             
               <td>
               
-                HA peptide tag
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000256">FBbi:00000256</a>
               
               </td>
             
@@ -5959,7 +5963,7 @@
             
               <td>
               
-                cresyl fast violet
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000258">FBbi:00000258</a>
               
               </td>
             
@@ -5999,7 +6003,7 @@
             
               <td>
               
-                ethidium bromide
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000260">FBbi:00000260</a>
               
               </td>
             
@@ -6039,7 +6043,7 @@
             
               <td>
               
-                fuchsin
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000261">FBbi:00000261</a>
               
               </td>
             
@@ -6079,7 +6083,7 @@
             
               <td>
               
-                giemsa
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000271">FBbi:00000271</a>
               
               </td>
             
@@ -6119,7 +6123,7 @@
             
               <td>
               
-                methyl green
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000272">FBbi:00000272</a>
               
               </td>
             
@@ -6159,7 +6163,7 @@
             
               <td>
               
-                methyl violet
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000273">FBbi:00000273</a>
               
               </td>
             
@@ -6199,7 +6203,7 @@
             
               <td>
               
-                nitro blue tetrazolium chloride
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000274">FBbi:00000274</a>
               
               </td>
             
@@ -6239,7 +6243,7 @@
             
               <td>
               
-                nuclear fast red
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000275">FBbi:00000275</a>
               
               </td>
             
@@ -6279,7 +6283,7 @@
             
               <td>
               
-                orcein
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000276">FBbi:00000276</a>
               
               </td>
             
@@ -6319,7 +6323,7 @@
             
               <td>
               
-                propidium iodide
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000279">FBbi:00000279</a>
               
               </td>
             
@@ -6359,7 +6363,7 @@
             
               <td>
               
-                SYTOX Green
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000280">FBbi:00000280</a>
               
               </td>
             
@@ -6399,7 +6403,7 @@
             
               <td>
               
-                toluidine blue
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000281">FBbi:00000281</a>
               
               </td>
             
@@ -6439,7 +6443,7 @@
             
               <td>
               
-                acridine orange
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000282">FBbi:00000282</a>
               
               </td>
             
@@ -6479,7 +6483,7 @@
             
               <td>
               
-                Hoechst 33342
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000283">FBbi:00000283</a>
               
               </td>
             
@@ -6519,7 +6523,7 @@
             
               <td>
               
-                cationic colloidal gold
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000285">FBbi:00000285</a>
               
               </td>
             
@@ -6559,7 +6563,7 @@
             
               <td>
               
-                CMX rosamine (Mitotracker Red)
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000294">FBbi:00000294</a>
               
               </td>
             
@@ -6599,7 +6603,7 @@
             
               <td>
               
-                DiOC6 (3,3'-dihexyloxacarbocyanine iodide)
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000295">FBbi:00000295</a>
               
               </td>
             
@@ -6639,7 +6643,7 @@
             
               <td>
               
-                4',6-diamidino-2-phenylindole (DAPI)
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000296">FBbi:00000296</a>
               
               </td>
             
@@ -6679,7 +6683,7 @@
             
               <td>
               
-                lucifer yellow
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000297">FBbi:00000297</a>
               
               </td>
             
@@ -6719,7 +6723,7 @@
             
               <td>
               
-                methylene blue
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000298">FBbi:00000298</a>
               
               </td>
             
@@ -6759,7 +6763,7 @@
             
               <td>
               
-                Nile blue A
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000299">FBbi:00000299</a>
               
               </td>
             
@@ -6799,7 +6803,7 @@
             
               <td>
               
-                Nile red
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000300">FBbi:00000300</a>
               
               </td>
             
@@ -6839,7 +6843,7 @@
             
               <td>
               
-                pyronine
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000301">FBbi:00000301</a>
               
               </td>
             
@@ -6879,7 +6883,7 @@
             
               <td>
               
-                rhodamine 123
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000302">FBbi:00000302</a>
               
               </td>
             
@@ -6919,7 +6923,7 @@
             
               <td>
               
-                rhodamine B
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000303">FBbi:00000303</a>
               
               </td>
             
@@ -6959,7 +6963,7 @@
             
               <td>
               
-                SYTO Blue
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000304">FBbi:00000304</a>
               
               </td>
             
@@ -6999,7 +7003,7 @@
             
               <td>
               
-                SYTO Green
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000305">FBbi:00000305</a>
               
               </td>
             
@@ -7039,7 +7043,7 @@
             
               <td>
               
-                SYTO Orange
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000306">FBbi:00000306</a>
               
               </td>
             
@@ -7079,7 +7083,7 @@
             
               <td>
               
-                SYTO Red
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000307">FBbi:00000307</a>
               
               </td>
             
@@ -7119,7 +7123,7 @@
             
               <td>
               
-                YO-PRO-1
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000308">FBbi:00000308</a>
               
               </td>
             
@@ -7159,7 +7163,7 @@
             
               <td>
               
-                taxol
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000309">FBbi:00000309</a>
               
               </td>
             
@@ -7199,7 +7203,7 @@
             
               <td>
               
-                genetically encoded enzyme
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000310">FBbi:00000310</a>
               
               </td>
             
@@ -7239,7 +7243,7 @@
             
               <td>
               
-                beta-galactosidase
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000311">FBbi:00000311</a>
               
               </td>
             
@@ -7279,7 +7283,7 @@
             
               <td>
               
-                beta-glucuronidase
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000312">FBbi:00000312</a>
               
               </td>
             
@@ -7319,7 +7323,7 @@
             
               <td>
               
-                genetically encoded tag
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000313">FBbi:00000313</a>
               
               </td>
             
@@ -7359,7 +7363,7 @@
             
               <td>
               
-                EBFP
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000314">FBbi:00000314</a>
               
               </td>
             
@@ -7399,7 +7403,7 @@
             
               <td>
               
-                ECFP
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000315">FBbi:00000315</a>
               
               </td>
             
@@ -7439,7 +7443,7 @@
             
               <td>
               
-                EGFP
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000316">FBbi:00000316</a>
               
               </td>
             
@@ -7479,7 +7483,7 @@
             
               <td>
               
-                EYFP
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000317">FBbi:00000317</a>
               
               </td>
             
@@ -7519,7 +7523,7 @@
             
               <td>
               
-                DsRed
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000318">FBbi:00000318</a>
               
               </td>
             
@@ -7559,7 +7563,7 @@
             
               <td>
               
-                c-MYC peptide tag
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000319">FBbi:00000319</a>
               
               </td>
             
@@ -7599,7 +7603,7 @@
             
               <td>
               
-                FLAG peptide tag
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000320">FBbi:00000320</a>
               
               </td>
             
@@ -7639,7 +7643,7 @@
             
               <td>
               
-                fluor labeled RNA fill
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000322">FBbi:00000322</a>
               
               </td>
             
@@ -7679,7 +7683,7 @@
             
               <td>
               
-                5-SFX fluorescein RNA fill
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000323">FBbi:00000323</a>
               
               </td>
             
@@ -7719,7 +7723,7 @@
             
               <td>
               
-                X-rhodamine RNA fill
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000324">FBbi:00000324</a>
               
               </td>
             
@@ -7759,7 +7763,7 @@
             
               <td>
               
-                fluor labeled protein fill
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000325">FBbi:00000325</a>
               
               </td>
             
@@ -7799,7 +7803,7 @@
             
               <td>
               
-                fluor conjugated actin fill
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000327">FBbi:00000327</a>
               
               </td>
             
@@ -7839,7 +7843,7 @@
             
               <td>
               
-                phalloidin
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000328">FBbi:00000328</a>
               
               </td>
             
@@ -7879,7 +7883,7 @@
             
               <td>
               
-                fluor conjugated tubulin fill
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000329">FBbi:00000329</a>
               
               </td>
             
@@ -7919,7 +7923,7 @@
             
               <td>
               
-                probe for lipid
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000330">FBbi:00000330</a>
               
               </td>
             
@@ -7959,7 +7963,7 @@
             
               <td>
               
-                DiA
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000331">FBbi:00000331</a>
               
               </td>
             
@@ -7999,7 +8003,47 @@
             
               <td>
               
-                DiD
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000332">FBbi:00000332</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/IAO_0000115">IAO:0000115</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>200</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_definition">missing_definition</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/FBbi_00000333">FBbi:00000333</a>
               
               </td>
             

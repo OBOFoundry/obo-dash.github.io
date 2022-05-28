@@ -3,7 +3,7 @@ base_prefixes:
 - PHIPO
 - PHIPOALT
 - PHIPO
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 6743
@@ -24,9 +24,12 @@ metrics:
     ObjectSomeValuesFrom: 2007
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.937
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.011
     _impact_external: 0
     _reuse: 0.226
+    oboscore: 0.474
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 2
   'Info: Logical consistency': true
@@ -49,7 +52,6 @@ metrics:
     rdfs: 1260
   'Info: Which ontologies use it?':
   - eupath
-  - phipo
   - upheno
 mirror_from: http://purl.obolibrary.org/obo/phipo/phipo-base.owl
 namespace: phipo
@@ -85,12 +87,12 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 28 warnings, 3 info messages.
+    comment: 23 warnings, 3 info messages.
     file: robot_report
     results:
       ERROR: 0
       INFO: 3
-      WARN: 28
+      WARN: 23
     status: WARN
 sha256_hash: e3f2805f5d6d65870bc615b2bde065136e9bcfa02a89a8908ee3f09ef15ff0ed
 summary:

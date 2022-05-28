@@ -3,7 +3,7 @@ base_prefixes:
 - OBCS
 - OBCSALT
 - OBCS
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 5575
@@ -46,9 +46,12 @@ metrics:
     ObjectUnionOf: 25
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.741
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.022
     _impact_external: 0
     _reuse: 0.729
+    oboscore: 0.382
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 4
   'Info: Logical consistency': true
@@ -79,7 +82,6 @@ metrics:
   - chmo
   - cido
   - eupath
-  - obcs
   - ons
 mirror_from: http://purl.obolibrary.org/obo/obcs.owl
 namespace: obcs

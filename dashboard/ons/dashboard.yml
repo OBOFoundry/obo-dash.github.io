@@ -3,44 +3,43 @@ base_prefixes:
 - ONS
 - ONSALT
 - ONS
-changed: false
+changed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 76904
-    AnnotationPropertyDomain: 1
-    AnnotationPropertyRangeOf: 35
+    AnnotationAssertion: 76892
+    AnnotationPropertyRangeOf: 25
     ClassAssertion: 179
     DataPropertyAssertion: 8
     DataPropertyDomain: 3
     DataPropertyRange: 3
-    Declaration: 6450
+    Declaration: 6439
     EquivalentClasses: 126
     EquivalentObjectProperties: 3
     FunctionalDataProperty: 2
-    FunctionalObjectProperty: 4
+    FunctionalObjectProperty: 3
     InverseFunctionalObjectProperty: 4
-    InverseObjectProperties: 33
+    InverseObjectProperties: 31
     IrrefexiveObjectProperty: 1
-    ObjectPropertyAssertion: 6
-    ObjectPropertyDomain: 48
-    ObjectPropertyRange: 39
-    SubAnnotationPropertyOf: 27
+    ObjectPropertyAssertion: 28
+    ObjectPropertyDomain: 40
+    ObjectPropertyRange: 49
+    SubAnnotationPropertyOf: 23
     SubClassOf: 8696
     SubDataPropertyOf: 1
-    SubObjectPropertyOf: 65
-    SubPropertyChainOf: 15
-    SymmetricObjectProperty: 3
+    SubObjectPropertyOf: 55
+    SubPropertyChainOf: 14
+    SymmetricObjectProperty: 1
     TransitiveObjectProperty: 8
-  'Axioms: Number of axioms': 92664
-  'Entities: % of entities reused': 95.74
-  'Entities: Number of annotation properties': 162
-  'Entities: Number of classes': 6055
+  'Axioms: Number of axioms': 92634
+  'Entities: % of entities reused': 95.75
+  'Entities: Number of annotation properties': 146
+  'Entities: Number of classes': 6056
   'Entities: Number of data properties': 5
-  'Entities: Number of individuals': 111
-  'Entities: Number of object properties': 112
+  'Entities: Number of individuals': 133
+  'Entities: Number of object properties': 117
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 24229
+    Class: 24231
     DataMinCardinality: 2
     ObjectAllValuesFrom: 28
     ObjectComplementOf: 126
@@ -53,27 +52,31 @@ metrics:
     ObjectUnionOf: 40
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.723
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.016
     _impact_external: 0
-    _reuse: 0.957
+    _reuse: 0.958
+    oboscore: 0.369
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
   'Info: Syntax': OWL/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 557
+    BFO: 572
+    CARO: 2
     CHEBI: 65
     CL: 14
     CMO: 14
     EFO: 34
     ENVO: 3
     ERO: 7
-    FOODON: 11242
+    FOODON: 11243
     GAZ: 4
     GENEPIO: 4
     GO: 458
     HP: 44
-    IAO: 26485
+    IAO: 26486
     ICO: 13
     NCBITAXONALT: 68
     NCBITaxon: 8162
@@ -91,7 +94,7 @@ metrics:
     PATO: 122
     PO: 17
     PR: 4
-    RO: 925
+    RO: 904
     SIO: 187
     SO: 4
     STATO: 11
@@ -116,7 +119,6 @@ metrics:
   - ecto
   - eupath
   - one
-  - ons
 mirror_from: http://purl.obolibrary.org/obo/ons.owl
 namespace: ons
 results:
@@ -124,9 +126,12 @@ results:
     comment: License should use property 'http://purl.org/dc/terms/license'.
     status: WARN
   FP02 Common Format:
-    status: PASS
+    comment: OWL syntax (OWL/XML Syntax), but should be RDF/XML
+    status: WARN
   FP03 URIs:
-    status: PASS
+    comment: 0 invalid IRIs. The Ontology IRI is not valid.
+    file: fp3
+    status: ERROR
   FP04 Versioning:
     comment: Missing version IRI
     status: ERROR
@@ -153,19 +158,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 18 errors, 54 warnings, 58 info messages.
+    comment: 17 errors, 52 warnings, 58 info messages.
     file: robot_report
     results:
-      ERROR: 18
+      ERROR: 17
       INFO: 58
-      WARN: 54
+      WARN: 52
     status: ERROR
-sha256_hash: 3f51375509a2c0daa686e9d29103930ed1e405758909496092ee585bad08be43
+sha256_hash: 6f53ce609591fd4ea692979a2500ae05022d0e32d39d8eabf4810752cffb170a
 summary:
-  comment: 5 errors
+  comment: 6 errors
   status: ERROR
   summary_count:
-    ERROR: 5
+    ERROR: 6
     INFO: 0
-    WARN: 1
+    WARN: 2
 version: null
