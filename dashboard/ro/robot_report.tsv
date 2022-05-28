@@ -1,66 +1,7 @@
 Level	Rule Name	Subject	Property	Value
 ERROR	missing_label	RO:0001900	rdfs:label	
-WARN	missing_obsolete_label	RO:0004096	rdfs:label	DEPRECATED inheres in@en
-WARN	missing_obsolete_label	RO:0004097	rdfs:label	DEPRECATED bearer of@en
-WARN	annotation_whitespace	RO:0001018	IAO:0000116	"Intended meaning:
-domain: material entity
-range: spatial region or site (immaterial continuant)
-        @en"
-WARN	annotation_whitespace	RO:0002093	rdfs:comment	X ends_during Y iff: ((start(Y) before_or_simultaneous_with end(X)) AND end(X) before_or_simultaneous_with end(Y). @en
-WARN	annotation_whitespace	RO:0002101	IAO:0000115	"relationship between a neuron and a neuron projection bundle (e.g.- tract or nerve bundle) that one or more of its projections travels through.
-@en"
-WARN	annotation_whitespace	RO:0002103	IAO:0000115	Relation between an anatomical structure (including cells) and a neuron that chemically synapses to it. @en
-WARN	annotation_whitespace	RO:0002108	IAO:0000424	"BFO_0000051 some (GO_0042734 that BFO_0000050 some (GO_0045202 that BFO_0000051 some (GO_0061174 that BFO_0000051 some GO_0045211 that BFO_0000050 some ?Y)))
-"
-WARN	annotation_whitespace	RO:0002110	IAO:0000115	Relation between a neuron and some structure (e.g.- a brain region) in which it receives (chemical) synaptic input. @en
-WARN	annotation_whitespace	RO:0002115	IAO:0000115	"Relation between a muscle and a motor neuron that synapses to it via a type III bouton.
-"
-WARN	annotation_whitespace	RO:0002120	IAO:0000115	" Relation between a neuron and an anatomical structure (including cells) that it chemically synapses to.
-        @en"
-WARN	annotation_whitespace	RO:0002121	IAO:0000115	"Relation between a neuron and some structure  (e.g.- a brain region) in which its dendrite receives synaptic input.
-
-	@en"
-WARN	annotation_whitespace	RO:0002132	IAO:0000426	"(forall (?x ?y) 
-	(iff 
-		(has_fasciculating_neuron_projection ?x ?y)
-		(exists (?nps ?npbs)		
-			(and 
-				(\""neuron projection bundle ; CARO_0001001\"" ?x)
-				(\""neuron projection ; GO0043005\"" ?y)
-				(\""neuron projection segment ; CARO_0001502\"" ?nps)
-				(\""neuron projection bundle segment ; CARO_0001500\"" ?npbs)
-				(part_of ?nps ?y)
-				(part_of ?npbs ?x)
-				(part_of ?nps ?npbs)
-				(forall (?npbss)
-					(if
-						(and 
-							(\""neuron projection bundle subsegment ; CARO_0001501\"" ?npbss)
-							(part_of ?npbss ?npbs) 
-						)
-						(overlaps ?nps ?npbss)
-					))))))
-
-
-"
-WARN	annotation_whitespace	RO:0002161	IAO:0000425	Class: ?X DisjointWith: RO_0002162 some ?Y 
-WARN	annotation_whitespace	RO:0002163	IAO:0000116	There are two ways to encode this as a shortcut relation. The other possibility to use an annotation assertion between two classes, and expand this to a disjointness axiom. @en
-WARN	annotation_whitespace	RO:0002215	IAO:0000115	A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. 
-WARN	annotation_whitespace	RO:0002256	IAO:0000119	 Developmental Biology, Gilbert, 8th edition, figure 6.5(F)
-WARN	annotation_whitespace	RO:0002299	IAO:0000112	 an annotation of gene X to cell maturation with results_in_maturation_of CL:0000057 (fibroblast) means that the fibroblast is mature at the end of the process
-WARN	annotation_whitespace	RO:0002326	IAO:0000232	In the context of the Gene Ontology, contributes_to may be used only with classes from the molecular function ontology. 
-WARN	annotation_whitespace	RO:0002341	IAO:0000115	Holds between p and l when p is a transportation or localization process and the outcome of this process is to move c from one location to another, and the route taken by c follows a path that is aligned_with l 
-WARN	annotation_whitespace	RO:0002356	IAO:0000115	The relationship linking a cell and its participation in a process that results in the fate of the cell being specified. Once specification has taken place, a cell will be committed to differentiate down a specific pathway if left in its normal environment. 
-WARN	annotation_whitespace	RO:0002402	IAO:0000115	p has direct input c iff c is a participanti n p, c is present at the end of p, and c is not present at the beginning of c. 
-WARN	annotation_whitespace	RO:0002504	IAO:0000116	This is a very strong relation. Often we will not have enough evidence to know for sure that there are no species within a lineage that lack the structure - loss is common in evolution. However, there are some statements we can make with confidence - no vertebrate lineage could persist without a brain or a heart. All primates are limbed. 
-WARN	annotation_whitespace	RO:0002514	IAO:0000115	A relation that holds between two entities that have the property of being sequences or having sequences. 
-WARN	annotation_whitespace	RO:0002535	IAO:0000232	This properties were created originally for the annotation of developmental or life cycle stages, such as for example Carnegie Stage 20 in humans. 
-WARN	annotation_whitespace	RO:HOM0000036	oboInOwl:hasExactSynonym	many:many homology 
-WARN	annotation_whitespace	http://purl.obolibrary.org/obo/ro/ro-base.owl	foaf:homepage	 https://github.com/oborel/obo-relations/^^http://www.w3.org/2001/XMLSchema#anyURI
-WARN	duplicate_exact_synonym	RO:0002599	IAO:0000118	treats
-WARN	duplicate_exact_synonym	RO:0002606	IAO:0000118	treats
-WARN	duplicate_exact_synonym	RO:0002224	IAO:0000118	started by
-WARN	duplicate_exact_synonym	RO:0002516	IAO:0000118	started by
+WARN	duplicate_label_synonym	RO:0002629	IAO:0000118	directly positively regulates
+WARN	duplicate_label_synonym	RO:0002630	IAO:0000118	directly negatively regulates
 WARN	missing_definition	RO:0001018	IAO:0000115	
 WARN	missing_definition	RO:0001019	IAO:0000115	
 WARN	missing_definition	RO:0002001	IAO:0000115	
@@ -189,8 +130,67 @@ WARN	missing_definition	RO:0012008	IAO:0000115
 WARN	missing_definition	RO:0015002	IAO:0000115	
 WARN	missing_definition	RO:0015010	IAO:0000115	
 WARN	missing_definition	RO:0016001	IAO:0000115	
-WARN	duplicate_label_synonym	RO:0002629	IAO:0000118	directly positively regulates
-WARN	duplicate_label_synonym	RO:0002630	IAO:0000118	directly negatively regulates
+WARN	annotation_whitespace	RO:0001018	IAO:0000116	"Intended meaning:
+domain: material entity
+range: spatial region or site (immaterial continuant)
+        @en"
+WARN	annotation_whitespace	RO:0002093	rdfs:comment	X ends_during Y iff: ((start(Y) before_or_simultaneous_with end(X)) AND end(X) before_or_simultaneous_with end(Y). @en
+WARN	annotation_whitespace	RO:0002101	IAO:0000115	"relationship between a neuron and a neuron projection bundle (e.g.- tract or nerve bundle) that one or more of its projections travels through.
+@en"
+WARN	annotation_whitespace	RO:0002103	IAO:0000115	Relation between an anatomical structure (including cells) and a neuron that chemically synapses to it. @en
+WARN	annotation_whitespace	RO:0002108	IAO:0000424	"BFO_0000051 some (GO_0042734 that BFO_0000050 some (GO_0045202 that BFO_0000051 some (GO_0061174 that BFO_0000051 some GO_0045211 that BFO_0000050 some ?Y)))
+"
+WARN	annotation_whitespace	RO:0002110	IAO:0000115	Relation between a neuron and some structure (e.g.- a brain region) in which it receives (chemical) synaptic input. @en
+WARN	annotation_whitespace	RO:0002115	IAO:0000115	"Relation between a muscle and a motor neuron that synapses to it via a type III bouton.
+"
+WARN	annotation_whitespace	RO:0002120	IAO:0000115	" Relation between a neuron and an anatomical structure (including cells) that it chemically synapses to.
+        @en"
+WARN	annotation_whitespace	RO:0002121	IAO:0000115	"Relation between a neuron and some structure  (e.g.- a brain region) in which its dendrite receives synaptic input.
+
+	@en"
+WARN	annotation_whitespace	RO:0002132	IAO:0000426	"(forall (?x ?y) 
+	(iff 
+		(has_fasciculating_neuron_projection ?x ?y)
+		(exists (?nps ?npbs)		
+			(and 
+				(\""neuron projection bundle ; CARO_0001001\"" ?x)
+				(\""neuron projection ; GO0043005\"" ?y)
+				(\""neuron projection segment ; CARO_0001502\"" ?nps)
+				(\""neuron projection bundle segment ; CARO_0001500\"" ?npbs)
+				(part_of ?nps ?y)
+				(part_of ?npbs ?x)
+				(part_of ?nps ?npbs)
+				(forall (?npbss)
+					(if
+						(and 
+							(\""neuron projection bundle subsegment ; CARO_0001501\"" ?npbss)
+							(part_of ?npbss ?npbs) 
+						)
+						(overlaps ?nps ?npbss)
+					))))))
+
+
+"
+WARN	annotation_whitespace	RO:0002161	IAO:0000425	Class: ?X DisjointWith: RO_0002162 some ?Y 
+WARN	annotation_whitespace	RO:0002163	IAO:0000116	There are two ways to encode this as a shortcut relation. The other possibility to use an annotation assertion between two classes, and expand this to a disjointness axiom. @en
+WARN	annotation_whitespace	RO:0002215	IAO:0000115	A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. 
+WARN	annotation_whitespace	RO:0002256	IAO:0000119	 Developmental Biology, Gilbert, 8th edition, figure 6.5(F)
+WARN	annotation_whitespace	RO:0002299	IAO:0000112	 an annotation of gene X to cell maturation with results_in_maturation_of CL:0000057 (fibroblast) means that the fibroblast is mature at the end of the process
+WARN	annotation_whitespace	RO:0002326	IAO:0000232	In the context of the Gene Ontology, contributes_to may be used only with classes from the molecular function ontology. 
+WARN	annotation_whitespace	RO:0002341	IAO:0000115	Holds between p and l when p is a transportation or localization process and the outcome of this process is to move c from one location to another, and the route taken by c follows a path that is aligned_with l 
+WARN	annotation_whitespace	RO:0002356	IAO:0000115	The relationship linking a cell and its participation in a process that results in the fate of the cell being specified. Once specification has taken place, a cell will be committed to differentiate down a specific pathway if left in its normal environment. 
+WARN	annotation_whitespace	RO:0002402	IAO:0000115	p has direct input c iff c is a participanti n p, c is present at the end of p, and c is not present at the beginning of c. 
+WARN	annotation_whitespace	RO:0002504	IAO:0000116	This is a very strong relation. Often we will not have enough evidence to know for sure that there are no species within a lineage that lack the structure - loss is common in evolution. However, there are some statements we can make with confidence - no vertebrate lineage could persist without a brain or a heart. All primates are limbed. 
+WARN	annotation_whitespace	RO:0002514	IAO:0000115	A relation that holds between two entities that have the property of being sequences or having sequences. 
+WARN	annotation_whitespace	RO:0002535	IAO:0000232	This properties were created originally for the annotation of developmental or life cycle stages, such as for example Carnegie Stage 20 in humans. 
+WARN	annotation_whitespace	RO:HOM0000036	oboInOwl:hasExactSynonym	many:many homology 
+WARN	annotation_whitespace	http://purl.obolibrary.org/obo/ro/ro-base.owl	foaf:homepage	 https://github.com/oborel/obo-relations/^^http://www.w3.org/2001/XMLSchema#anyURI
+WARN	missing_obsolete_label	RO:0004096	rdfs:label	DEPRECATED inheres in@en
+WARN	missing_obsolete_label	RO:0004097	rdfs:label	DEPRECATED bearer of@en
+WARN	duplicate_exact_synonym	RO:0002599	IAO:0000118	treats
+WARN	duplicate_exact_synonym	RO:0002606	IAO:0000118	treats
+WARN	duplicate_exact_synonym	RO:0002224	IAO:0000118	started by
+WARN	duplicate_exact_synonym	RO:0002516	IAO:0000118	started by
 INFO	lowercase_definition	RO:0000052	IAO:0000115	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
 INFO	lowercase_definition	RO:0000056	IAO:0000115	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
 INFO	lowercase_definition	RO:0000057	IAO:0000115	a relation between a process and a continuant, in which the continuant is somehow involved in the process@en
