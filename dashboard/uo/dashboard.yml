@@ -1,6 +1,129 @@
 base_generated: true
+base_prefixes:
+- UO
+- UOALT
+- UO
 changed: true
-failure: failed_robot_base
+metrics:
+  'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 1503
+    Declaration: 908
+    EquivalentClasses: 350
+    SubClassOf: 821
+  'Axioms: Number of axioms': 3582
+  'Entities: % of entities reused': 6.45
+  'Entities: Number of annotation properties': 6
+  'Entities: Number of classes': 634
+  'Entities: Number of data properties': 0
+  'Entities: Number of individuals': 270
+  'Entities: Number of object properties': 2
+  'Entities: Number of unsatisfiable classes': 0
+  'Info: Breakdown of OWL class expressions used':
+    Class: 2790
+    ObjectAllValuesFrom: 44
+    ObjectIntersectionOf: 80
+    ObjectOneOf: 270
+    ObjectSomeValuesFrom: 80
+    ObjectUnionOf: 44
+  'Info: Does the ontology fall under OWL 2 DL?': false
+  'Info: Experimental OBO score':
+    _dashboard: 0.696
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.159
+    _impact_external: 0
+    _reuse: 0.065
+    oboscore: 0.427
+  'Info: How many externally documented uses?': 0
+  'Info: How many ontologies use it?': 29
+  'Info: Logical consistency': true
+  'Info: Syntax': RDF/XML
+  'Info: Usage of namespaces in axioms':
+    PATO: 96
+    UO: 3234
+    dc11: 54
+    obo: 126
+    prefix_unknown: 443
+    rdfs: 1008
+  'Info: Which ontologies use it?':
+  - agro
+  - apollo_sv
+  - cheminf
+  - cido
+  - dideo
+  - dron
+  - duo
+  - eupath
+  - foodon
+  - genepio
+  - geo
+  - htn
+  - iao
+  - ico
+  - obcs
+  - obi
+  - obib
+  - ohmi
+  - ohpi
+  - one
+  - ons
+  - oostt
+  - opmi
+  - pdro
+  - psdo
+  - rbo
+  - scdo
+  - stato
+  - vo
 mirror_from: http://purl.obolibrary.org/obo/uo.owl
 namespace: uo
-sha256_hash: e845610a7a84759aad730f4cfbe4c6862c476361daeeb7b4990d8badf7b5e07a
+results:
+  FP01 Open:
+    comment: Missing ontology license.
+    status: ERROR
+  FP02 Common Format:
+    comment: OWL syntax (RDF/XML), but should be RDF/XML
+    status: WARN
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    comment: Missing version IRI
+    status: ERROR
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 316 missing definitions. See ROBOT Report for details.
+    status: WARN
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
+    status: ERROR
+  FP11 Locus of Authority:
+    status: PASS
+  FP12 Naming Conventions:
+    comment: 6 duplicate labels. See ROBOT Report for details.
+    status: ERROR
+  FP16 Maintenance:
+    comment: Missing version IRI to check date
+    status: ERROR
+  FP20 Responsiveness:
+    status: PASS
+  ROBOT Report:
+    comment: 9 errors, 394 warnings, 2 info messages.
+    file: robot_report
+    results:
+      ERROR: 9
+      INFO: 2
+      WARN: 394
+    status: ERROR
+sha256_hash: 5688931301919f347c93632f94063a9d67dfa7a1e4c0fd8552c18397c3d8301c
+summary:
+  comment: 6 errors
+  status: ERROR
+  summary_count:
+    ERROR: 6
+    INFO: 0
+    WARN: 2
+version: null

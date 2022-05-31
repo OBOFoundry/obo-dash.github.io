@@ -26,14 +26,6 @@ ERROR	misused_obsolete_label	GENO:0000742	rdfs:label	obsolete_is_alteration_with
 ERROR	misused_obsolete_label	GENO:0000767	rdfs:label	obsolete_has_position_component@en
 ERROR	misused_obsolete_label	GENO:0000910	rdfs:label	obsolete reporter role@en
 ERROR	misused_obsolete_label	GENO:0000911	rdfs:label	obsolete selectable marker role@en
-WARN	invalid_xref	GENO:0000010	oboInOwl:hasDbXref	OBI:genetic population background information
-WARN	invalid_xref	GENO:0000014	oboInOwl:hasDbXref	SO:0001023 ! allele
-WARN	invalid_xref	GENO:0000019	oboInOwl:hasDbXref	perhaps not same as SO:sequence collection, as here we explicitly include features that can have an extent of zero (and SO:sequence collection is a collection of regions that have an extent of at least one)
-WARN	invalid_xref	GENO:0000033	oboInOwl:hasDbXref	SO:0001506 ! variant_genome (definition of SO term here is too vague to know if has same meaning as GENO class here)
-WARN	invalid_xref	GENO:0000666	oboInOwl:hasDbXref	SO:0000831 (gene member region)
-WARN	invalid_xref	GENO:0000870	oboInOwl:hasDbXref	SO:0001260 ! sequence_collection
-WARN	duplicate_label_synonym	GENO:0000017	IAO:0000118	reference sequence
-WARN	duplicate_label_synonym	GENO:0000501	IAO:0000118	wild-type allele
 WARN	equivalent_class_axiom_no_genus	GENO:0000960	GENO:0000251	GENO:0000481
 WARN	missing_definition	GENO:0000092	IAO:0000115	
 WARN	missing_definition	GENO:0000113	IAO:0000115	
@@ -118,8 +110,16 @@ WARN	missing_definition	GENO:0000910	IAO:0000115
 WARN	missing_definition	GENO:0000911	IAO:0000115	
 WARN	missing_definition	GENO:0000912	IAO:0000115	
 WARN	missing_definition	GENO:0000964	IAO:0000115	
+WARN	invalid_xref	GENO:0000010	oboInOwl:hasDbXref	OBI:genetic population background information
+WARN	invalid_xref	GENO:0000014	oboInOwl:hasDbXref	SO:0001023 ! allele
+WARN	invalid_xref	GENO:0000019	oboInOwl:hasDbXref	perhaps not same as SO:sequence collection, as here we explicitly include features that can have an extent of zero (and SO:sequence collection is a collection of regions that have an extent of at least one)
+WARN	invalid_xref	GENO:0000033	oboInOwl:hasDbXref	SO:0001506 ! variant_genome (definition of SO term here is too vague to know if has same meaning as GENO class here)
+WARN	invalid_xref	GENO:0000666	oboInOwl:hasDbXref	SO:0000831 (gene member region)
+WARN	invalid_xref	GENO:0000870	oboInOwl:hasDbXref	SO:0001260 ! sequence_collection
 WARN	annotation_whitespace	GENO:0000243	IAO:0000116	Created subproperties 'approximates_sequence' and 'resolves to sequence'. Genotypes and other sequence variant artifacts are not always expected to completely specify a sequence, but rather provide some approximation based on available knowledge. The 'resolves_to_sequence' property can be used when the sequence variant artifact is able to completely resolve a sequence, and the 'approximates_sequence' property can be used when it does not. 
 WARN	annotation_whitespace	GENO:0000244	IAO:0000116	Created subproperties 'approximates_sequence' and 'resolves to sequence'. Genotypes and other sequence variant artifacts are not always expected to completely specify a sequence, but rather provide some approximation based on available knowledge. The 'resolves_to_sequence' property can be used when the sequence variant artifact is able to completely resolve a sequence, and the 'approximates_sequence' property can be used when it does not. 
+WARN	duplicate_label_synonym	GENO:0000017	IAO:0000118	reference sequence
+WARN	duplicate_label_synonym	GENO:0000501	IAO:0000118	wild-type allele
 INFO	missing_superclass	GENO:0000009	rdfs:subClassOf	
 INFO	missing_superclass	GENO:0000017	rdfs:subClassOf	
 INFO	missing_superclass	GENO:0000030	rdfs:subClassOf	

@@ -1,9 +1,4 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	duplicate_definition	ONS:0000136	IAO:0000115	This is a high-level term with the purpose of organization of more granular children term. Should not be used in annotation, favoring more specific sub-classes@en
-ERROR	duplicate_definition	ONS:0000137	IAO:0000115	This is a high-level term with the purpose of organization of more granular children term. Should not be used in annotation, favoring more specific sub-classes@en
-ERROR	duplicate_definition	ONS:0000138	IAO:0000115	This is a high-level term with the purpose of organization of more granular children term. Should not be used in annotation, favoring more specific sub-classes@en
-ERROR	duplicate_definition	ONS:0000134	IAO:0000115	microbial culture responsible for the beginning of the fermentation process@en
-ERROR	duplicate_definition	ONS:0000158	IAO:0000115	microbial culture responsible for the beginning of the fermentation process@en
 ERROR	deprecated_class_reference	ONS:0000003	rdfs:subClassOf	ONS:0000066
 ERROR	deprecated_class_reference	ONS:0000021	rdfs:subClassOf	ONS:0000033
 ERROR	deprecated_class_reference	ONS:0000034	rdfs:subClassOf	ONS:0000066
@@ -16,6 +11,17 @@ ERROR	deprecated_class_reference	ONS:0000057	rdfs:subClassOf	ONS:0000065
 ERROR	deprecated_class_reference	ONS:0000058	rdfs:subClassOf	OBI:0000070
 ERROR	deprecated_class_reference	ONS:0000058	rdfs:subClassOf	ONS:0000090
 ERROR	deprecated_class_reference	ONS:0000065	rdfs:subClassOf	ONS:0000057
+ERROR	duplicate_definition	ONS:0000136	IAO:0000115	This is a high-level term with the purpose of organization of more granular children term. Should not be used in annotation, favoring more specific sub-classes@en
+ERROR	duplicate_definition	ONS:0000137	IAO:0000115	This is a high-level term with the purpose of organization of more granular children term. Should not be used in annotation, favoring more specific sub-classes@en
+ERROR	duplicate_definition	ONS:0000138	IAO:0000115	This is a high-level term with the purpose of organization of more granular children term. Should not be used in annotation, favoring more specific sub-classes@en
+ERROR	duplicate_definition	ONS:0000134	IAO:0000115	microbial culture responsible for the beginning of the fermentation process@en
+ERROR	duplicate_definition	ONS:0000158	IAO:0000115	microbial culture responsible for the beginning of the fermentation process@en
+WARN	duplicate_exact_synonym	ONS:1000040	oboInOwl:hasExactSynonym	Low carbohydrate diet@en
+WARN	duplicate_exact_synonym	ONS:2000040	oboInOwl:hasExactSynonym	Low carbohydrate diet@en
+WARN	duplicate_exact_synonym	ONS:1000025	oboInOwl:hasExactSynonym	flexitarian diet@en
+WARN	duplicate_exact_synonym	ONS:2000025	oboInOwl:hasExactSynonym	flexitarian diet@en
+WARN	missing_definition	ONS:0000104	IAO:0000115	
+WARN	missing_definition	ONS:0000109	IAO:0000115	
 WARN	missing_obsolete_label	ONS:0000021	rdfs:label	Dietary assessment method@en
 WARN	missing_obsolete_label	ONS:0000034	rdfs:label	subject informations@en
 WARN	missing_obsolete_label	ONS:0000053	rdfs:label	Start tab@en
@@ -24,10 +30,6 @@ WARN	missing_obsolete_label	ONS:0000055	rdfs:label	Event tab@en
 WARN	missing_obsolete_label	ONS:0000056	rdfs:label	Sampling tab@en
 WARN	missing_obsolete_label	ONS:0000058	rdfs:label	Information tab@en
 WARN	missing_obsolete_label	ONS:0000065	rdfs:label	Physiology assay type@en
-WARN	missing_definition	ONS:0000104	IAO:0000115	
-WARN	missing_definition	ONS:0000109	IAO:0000115	
-WARN	duplicate_label_synonym	ONS:0000115	oboInOwl:hasExactSynonym	average daily nutrient intake level@en
-WARN	duplicate_label_synonym	ONS:1000013	oboInOwl:hasExactSynonym	time-restricted feeding@en
 WARN	annotation_whitespace	ONS:1000011	IAO:0000117	 https://github.com/FoodOntology/joint-food-ontology-wg
 WARN	annotation_whitespace	ONS:1000011	IAO:0000117	Leigh Carmody 
 WARN	annotation_whitespace	ONS:1000012	IAO:0000117	 https://github.com/FoodOntology/joint-food-ontology-wg
@@ -64,10 +66,8 @@ WARN	annotation_whitespace	ONS:2000040	IAO:0000119	 https://en.wikipedia.org/wik
 WARN	annotation_whitespace	ONS:2000040	IAO:0000119	PMID:18635428 
 WARN	annotation_whitespace	ONS:2000042	IAO:0000117	 https://github.com/FoodOntology/joint-food-ontology-wg
 WARN	annotation_whitespace	ONS:2000042	IAO:0000117	Leigh Carmody 
-WARN	duplicate_exact_synonym	ONS:1000040	oboInOwl:hasExactSynonym	Low carbohydrate diet@en
-WARN	duplicate_exact_synonym	ONS:2000040	oboInOwl:hasExactSynonym	Low carbohydrate diet@en
-WARN	duplicate_exact_synonym	ONS:1000025	oboInOwl:hasExactSynonym	flexitarian diet@en
-WARN	duplicate_exact_synonym	ONS:2000025	oboInOwl:hasExactSynonym	flexitarian diet@en
+WARN	duplicate_label_synonym	ONS:0000115	oboInOwl:hasExactSynonym	average daily nutrient intake level@en
+WARN	duplicate_label_synonym	ONS:1000013	oboInOwl:hasExactSynonym	time-restricted feeding@en
 INFO	lowercase_definition	ONS:0000009	IAO:0000115	time spent in light physical activity in minutes/day derived from questionnaire data@en
 INFO	lowercase_definition	ONS:0000110	IAO:0000115	any type of assay that can be performed in the context of a nutritional study@en
 INFO	lowercase_definition	ONS:0000111	IAO:0000115	an assay that is aimed at discovering new potential metabolites as food consumption biomarkers, or to measure/validate known food consumption biomarkers in a biological sample (e.g. urine, blood, serum, feces).@en

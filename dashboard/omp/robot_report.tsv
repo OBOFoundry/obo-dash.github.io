@@ -1,4 +1,5 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/omp.owl	dc:title	
 ERROR	duplicate_label	OMP:0007793	rdfs:label	presence of vegetative cell population growth
 ERROR	duplicate_label	OMP:0007796	rdfs:label	presence of vegetative cell population growth
 ERROR	duplicate_label	OMP:0008044	rdfs:label	plaque size phenotype
@@ -22,9 +23,16 @@ ERROR	duplicate_label	OMP:0008045	rdfs:label	altered plaque morphology phenotype
 ERROR	duplicate_label	OMP:0008048	rdfs:label	altered plaque morphology phenotype
 ERROR	duplicate_label	OMP:0007753	rdfs:label	altered actin cytoskeleton
 ERROR	duplicate_label	OMP:0007760	rdfs:label	altered actin cytoskeleton
-ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/omp.owl	dc:description	
 ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/omp.owl	dc:license	
-ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/omp.owl	dc:title	
+ERROR	duplicate_definition	OMP:0000287	IAO:0000115	population growth phenotype
+ERROR	duplicate_definition	OMP:0000350	IAO:0000115	population growth phenotype
+ERROR	duplicate_definition	OMP:0000044	IAO:0000115	Cell circularity is defined as (2*pi*cell area/(cell perimeter)^2).
+ERROR	duplicate_definition	OMP:0000138	IAO:0000115	Cell circularity is defined as (2*pi*cell area/(cell perimeter)^2).
+ERROR	duplicate_definition	OMP:0007298	IAO:0000115	An acid-fast stain phenotype where a cell or cells that have been stained, typically with carbolfuchsin, are not easily decolorized by acid--alcohol.
+ERROR	duplicate_definition	OMP:0007299	IAO:0000115	An acid-fast stain phenotype where a cell or cells that have been stained, typically with carbolfuchsin, are not easily decolorized by acid--alcohol.
+ERROR	duplicate_definition	OMP:0007446	IAO:0000115	A decreased lethality phenotype where the ability of an infectious microbe to cause death of its murine host is decreased relative to a designated control.
+ERROR	duplicate_definition	OMP:0007450	IAO:0000115	A decreased lethality phenotype where the ability of an infectious microbe to cause death of its murine host is decreased relative to a designated control.
+ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/omp.owl	dc:description	
 ERROR	missing_label	obo:omp#Cross_product_review	rdfs:label	
 ERROR	missing_label	obo:omp#SOFA	rdfs:label	
 ERROR	missing_label	obo:omp#abnormal_slim	rdfs:label	
@@ -53,17 +61,61 @@ ERROR	missing_label	obo:omp#relational_slim	rdfs:label
 ERROR	missing_label	obo:omp#scalar_slim	rdfs:label	
 ERROR	missing_label	obo:omp#value_slim	rdfs:label	
 ERROR	missing_label	obo:omp#virus_checked	rdfs:label	
-ERROR	duplicate_definition	OMP:0000287	IAO:0000115	population growth phenotype
-ERROR	duplicate_definition	OMP:0000350	IAO:0000115	population growth phenotype
-ERROR	duplicate_definition	OMP:0000044	IAO:0000115	Cell circularity is defined as (2*pi*cell area/(cell perimeter)^2).
-ERROR	duplicate_definition	OMP:0000138	IAO:0000115	Cell circularity is defined as (2*pi*cell area/(cell perimeter)^2).
-ERROR	duplicate_definition	OMP:0007298	IAO:0000115	An acid-fast stain phenotype where a cell or cells that have been stained, typically with carbolfuchsin, are not easily decolorized by acid--alcohol.
-ERROR	duplicate_definition	OMP:0007299	IAO:0000115	An acid-fast stain phenotype where a cell or cells that have been stained, typically with carbolfuchsin, are not easily decolorized by acid--alcohol.
-ERROR	duplicate_definition	OMP:0007446	IAO:0000115	A decreased lethality phenotype where the ability of an infectious microbe to cause death of its murine host is decreased relative to a designated control.
-ERROR	duplicate_definition	OMP:0007450	IAO:0000115	A decreased lethality phenotype where the ability of an infectious microbe to cause death of its murine host is decreased relative to a designated control.
-WARN	missing_subset_declaration	obo:omp#SOFA	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:omp#qc_do_not_annotate	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:omp#qc_do_not_manually_annotate	rdfs:subPropertyOf	
+WARN	missing_obsolete_label	OMP:0000255	rdfs:label	plating morphology phenotype
+WARN	missing_obsolete_label	OMP:0000256	rdfs:label	MacConkey agar phenotype
+WARN	missing_obsolete_label	OMP:0000258	rdfs:label	red colony on MacConkey agar
+WARN	missing_obsolete_label	OMP:0000269	rdfs:label	protein activity phenotype
+WARN	missing_obsolete_label	OMP:0000291	rdfs:label	genophore phenotype
+WARN	missing_obsolete_label	OMP:0000299	rdfs:label	galactose-1-phosphate uridyl transferase activity
+WARN	missing_obsolete_label	OMP:0000304	rdfs:label	increased substrate binding
+WARN	missing_obsolete_label	OMP:0000437	rdfs:label	resistant to ampicillin
+WARN	missing_obsolete_label	OMP:0000445	rdfs:label	resistant to penicillin
+WARN	missing_obsolete_label	OMP:0005186	rdfs:label	decreased cytoskeleton phenotype
+WARN	missing_obsolete_label	OMP:0005187	rdfs:label	abolished cytoskeleton morphology
+WARN	missing_obsolete_label	OMP:0005188	rdfs:label	increased cytoskeleton morphology
+WARN	missing_obsolete_label	OMP:0006124	rdfs:label	abolished mutation frequency
+WARN	missing_obsolete_label	OMP:0007037	rdfs:label	utilization of organic nitrogen phenotype
+WARN	missing_obsolete_label	OMP:0007049	rdfs:label	utilization of inorganic phosphorus phenotype
+WARN	missing_obsolete_label	OMP:0007052	rdfs:label	utilization of organic phosphorus
+WARN	missing_obsolete_label	OMP:0007169	rdfs:label	antimicrobial peptide resistance phenotype
+WARN	missing_obsolete_label	OMP:0007187	rdfs:label	quality (Interim)
+WARN	missing_obsolete_label	OMP:0007251	rdfs:label	abolished chemical sensitivity
+WARN	missing_obsolete_label	OMP:0007277	rdfs:label	cell wall morphology phenotype
+WARN	missing_obsolete_label	OMP:0007533	rdfs:label	urea derivative resistance phenotype
+WARN	missing_obsolete_label	OMP:0007534	rdfs:label	resistant to a urea derivative
+WARN	missing_obsolete_label	OMP:0007535	rdfs:label	not resistant to a urea derivative
+WARN	missing_obsolete_label	OMP:0007536	rdfs:label	altered resistance to a urea derivative
+WARN	missing_obsolete_label	OMP:0007537	rdfs:label	increased resistance to a urea derivative
+WARN	missing_obsolete_label	OMP:0007538	rdfs:label	decreased resistance to a urea derivative
+WARN	missing_obsolete_label	OMP:0007539	rdfs:label	abolished resistance to a urea derivative
+WARN	missing_obsolete_label	OMP:0007549	rdfs:label	altered biological process phenotype
+WARN	missing_obsolete_label	OMP:0007550	rdfs:label	altered population growth - duplicate term
+WARN	missing_obsolete_label	OMP:0007800	rdfs:label	polyether antimicrobial resistance phenotype
+WARN	missing_obsolete_label	OMP:0007862	rdfs:label	bicyclomycin antimicrobial agent resistance phenotype
+WARN	missing_obsolete_label	OMP:0007863	rdfs:label	presence of resistance to bicyclomycin
+WARN	missing_obsolete_label	OMP:0007864	rdfs:label	absence of resistance to bicyclomycin
+WARN	missing_obsolete_label	OMP:0007865	rdfs:label	altered resistance to bicyclomycin
+WARN	missing_obsolete_label	OMP:0007866	rdfs:label	decreased resistance to bicyclomycin
+WARN	missing_obsolete_label	OMP:0007867	rdfs:label	abolished resistance to bicyclomycin
+WARN	missing_obsolete_label	OMP:0007868	rdfs:label	increased resistance to bicyclomycin
+WARN	missing_obsolete_label	OMP:0007869	rdfs:label	A22 antimicrobial agent resistance phenotype
+WARN	missing_obsolete_label	OMP:0007870	rdfs:label	presence of resistance to A22
+WARN	missing_obsolete_label	OMP:0007871	rdfs:label	absence of resistance to A22
+WARN	missing_obsolete_label	OMP:0007872	rdfs:label	increased resistance to A22
+WARN	missing_obsolete_label	OMP:0007873	rdfs:label	decreased resistance to A22
+WARN	missing_obsolete_label	OMP:0007874	rdfs:label	abolished resistance to A22
+WARN	missing_obsolete_label	OMP:0007875	rdfs:label	altered resistance to A22
+WARN	missing_obsolete_label	OMP:0007947	rdfs:label	presence of growth at alkaline pH
+WARN	missing_obsolete_label	OMP:0007948	rdfs:label	absence of growth at alkaline pH
+WARN	missing_obsolete_label	OMP:0008043	rdfs:label	plaque morphology phenotype
+WARN	missing_obsolete_label	OMP:0008044	rdfs:label	plaque size phenotype
+WARN	missing_obsolete_label	OMP:0008045	rdfs:label	altered plaque morphology phenotype
+WARN	missing_obsolete_label	OMP:0008046	rdfs:label	altered plaque size phenotype
+WARN	missing_obsolete_label	OMP:0008047	rdfs:label	plaque appearance phenotype
+WARN	missing_obsolete_label	OMP:0008050	rdfs:label	plaque size phenotype
+WARN	missing_obsolete_label	OMP:0008062	rdfs:label	bull's eye plaque appearance morphology
+WARN	missing_obsolete_label	obo:omp#decreased_relative_to	rdfs:label	decreased_relative_to
+WARN	missing_obsolete_label	obo:omp#increased_relative_to	rdfs:label	increased_relative_to
 WARN	duplicate_label_synonym	OMP:0007698	oboInOwl:hasExactSynonym	cell population phenotype
 WARN	duplicate_label_synonym	OMP:0007716	oboInOwl:hasExactSynonym	viable vegetative cell
 WARN	duplicate_label_synonym	OMP:0007770	oboInOwl:hasExactSynonym	multiseptate vegetative cell
@@ -72,21 +124,9 @@ WARN	duplicate_label_synonym	OMP:0007791	oboInOwl:hasExactSynonym	dispersed acti
 WARN	duplicate_label_synonym	OMP:0007811	oboInOwl:hasExactSynonym	cellular pigment accumulation phenotype
 WARN	duplicate_label_synonym	OMP:0007815	oboInOwl:hasExactSynonym	increased cellular pigment accumulation
 WARN	duplicate_label_synonym	OMP:0007816	oboInOwl:hasExactSynonym	increased cellular pigment accumulation
-WARN	annotation_whitespace	OMP:0005088	oboInOwl:hasRelatedSynonym	increased dessication sensitivity 
-WARN	annotation_whitespace	OMP:0005090	oboInOwl:hasRelatedSynonym	decreased freeze/thaw sensitivity. 
-WARN	annotation_whitespace	OMP:0005096	oboInOwl:hasNarrowSynonym	increased x-ray sensitivity 
-WARN	annotation_whitespace	OMP:0005097	oboInOwl:hasRelatedSynonym	decreased UV sensitivity 
-WARN	annotation_whitespace	OMP:0005098	oboInOwl:hasRelatedSynonym	increased UV sensitivity 
-WARN	annotation_whitespace	OMP:0005115	oboInOwl:hasExactSynonym	cell division cycle 
-WARN	annotation_whitespace	OMP:0005265	oboInOwl:hasNarrowSynonym	abolished endocytosis during vegetative growth 
-WARN	annotation_whitespace	OMP:0005266	oboInOwl:hasRelatedSynonym	delayed onset of endocytosis during vegetative growth 
-WARN	annotation_whitespace	OMP:0006023	oboInOwl:hasNarrowSynonym	succinate 
-WARN	annotation_whitespace	OMP:0006029	oboInOwl:hasBroadSynonym	quinolines 
-WARN	annotation_whitespace	OMP:0006107	oboInOwl:hasExactSynonym	vesiculation 
-WARN	annotation_whitespace	OMP:0007013	oboInOwl:hasNarrowSynonym	nitrate utilization, phenotype 
-WARN	annotation_whitespace	OMP:0007064	oboInOwl:hasRelatedSynonym	phototroph 
-WARN	annotation_whitespace	OMP:0007249	oboInOwl:hasExactSynonym	 increased sensitivity to a chemical
-WARN	annotation_whitespace	OMP:0007647	oboInOwl:hasExactSynonym	anchored lifestyle phenotype 
+WARN	missing_subset_declaration	obo:omp#SOFA	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:omp#qc_do_not_annotate	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:omp#qc_do_not_manually_annotate	rdfs:subPropertyOf	
 WARN	missing_definition	OMP:0000009	IAO:0000115	
 WARN	missing_definition	OMP:0000019	IAO:0000115	
 WARN	missing_definition	OMP:0000025	IAO:0000115	
@@ -158,43 +198,3 @@ WARN	missing_definition	OMP:0000344	IAO:0000115
 WARN	missing_definition	OMP:0000345	IAO:0000115	
 WARN	missing_definition	OMP:0000346	IAO:0000115	
 WARN	missing_definition	OMP:0000347	IAO:0000115	
-WARN	missing_definition	OMP:0000348	IAO:0000115	
-WARN	missing_definition	OMP:0000349	IAO:0000115	
-WARN	missing_definition	OMP:0000351	IAO:0000115	
-WARN	missing_definition	OMP:0000352	IAO:0000115	
-WARN	missing_definition	OMP:0000353	IAO:0000115	
-WARN	missing_definition	OMP:0000354	IAO:0000115	
-WARN	missing_definition	OMP:0000355	IAO:0000115	
-WARN	missing_definition	OMP:0000356	IAO:0000115	
-WARN	missing_definition	OMP:0000357	IAO:0000115	
-WARN	missing_definition	OMP:0000358	IAO:0000115	
-WARN	missing_definition	OMP:0000359	IAO:0000115	
-WARN	missing_definition	OMP:0000360	IAO:0000115	
-WARN	missing_definition	OMP:0000361	IAO:0000115	
-WARN	missing_definition	OMP:0000362	IAO:0000115	
-WARN	missing_definition	OMP:0000363	IAO:0000115	
-WARN	missing_definition	OMP:0000364	IAO:0000115	
-WARN	missing_definition	OMP:0000365	IAO:0000115	
-WARN	missing_definition	OMP:0000366	IAO:0000115	
-WARN	missing_definition	OMP:0000367	IAO:0000115	
-WARN	missing_definition	OMP:0000368	IAO:0000115	
-WARN	missing_definition	OMP:0000369	IAO:0000115	
-WARN	missing_definition	OMP:0000370	IAO:0000115	
-WARN	missing_definition	OMP:0000371	IAO:0000115	
-WARN	missing_definition	OMP:0000372	IAO:0000115	
-WARN	missing_definition	OMP:0000373	IAO:0000115	
-WARN	missing_definition	OMP:0000374	IAO:0000115	
-WARN	missing_definition	OMP:0000375	IAO:0000115	
-WARN	missing_definition	OMP:0000377	IAO:0000115	
-WARN	missing_definition	OMP:0000378	IAO:0000115	
-WARN	missing_definition	OMP:0000379	IAO:0000115	
-WARN	missing_definition	OMP:0000380	IAO:0000115	
-WARN	missing_definition	OMP:0000381	IAO:0000115	
-WARN	missing_definition	OMP:0000382	IAO:0000115	
-WARN	missing_definition	OMP:0000384	IAO:0000115	
-WARN	missing_definition	OMP:0000386	IAO:0000115	
-WARN	missing_definition	OMP:0000387	IAO:0000115	
-WARN	missing_definition	OMP:0000388	IAO:0000115	
-WARN	missing_definition	OMP:0000389	IAO:0000115	
-WARN	missing_definition	OMP:0000390	IAO:0000115	
-WARN	missing_definition	OMP:0000391	IAO:0000115	

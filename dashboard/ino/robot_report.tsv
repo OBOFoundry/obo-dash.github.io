@@ -1,31 +1,14 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	misused_obsolete_label	INO:0000159	rdfs:label	obsolete class@en
-ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/ino.owl	dc:license	
+ERROR	duplicate_label	INO:0000109	rdfs:label	macrophage-pathogen interaction@en
+ERROR	duplicate_label	INO:0000146	rdfs:label	macrophage-pathogen interaction@en
 ERROR	duplicate_definition	INO:0000072	IAO:0000115	a regulation of transcription by binding to promoter that is further classified as a positive regulation
 ERROR	duplicate_definition	INO:0000074	IAO:0000115	a regulation of transcription by binding to promoter that is further classified as a positive regulation
 ERROR	duplicate_definition	INO:0000042	IAO:0000115	a negative regulation process that down-regulates gene expression level
 ERROR	duplicate_definition	INO:0000095	IAO:0000115	a negative regulation process that down-regulates gene expression level
-ERROR	duplicate_label	INO:0000109	rdfs:label	macrophage-pathogen interaction@en
-ERROR	duplicate_label	INO:0000146	rdfs:label	macrophage-pathogen interaction@en
+ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/ino.owl	dc:license	
+ERROR	misused_obsolete_label	INO:0000159	rdfs:label	obsolete class@en
 WARN	duplicate_exact_synonym	INO:0000067	IAO:0000118	negative protein activity regulation
 WARN	duplicate_exact_synonym	INO:0000104	IAO:0000118	negative protein activity regulation
-WARN	equivalent_class_axiom_no_genus	INO:0000008	RO:0000087	INO:0000005
-WARN	equivalent_class_axiom_no_genus	INO:0000016	RO:0000087	INO:0000015
-WARN	equivalent_class_axiom_no_genus	INO:0000017	RO:0000087	INO:0000011
-WARN	equivalent_class_axiom_no_genus	INO:0000032	RO:0002211	INO:0000173
-WARN	equivalent_class_axiom_no_genus	INO:0000034	RO:0002211	INO:0000045
-WARN	equivalent_class_axiom_no_genus	INO:0000038	RO:0002213	INO:0000102
-WARN	equivalent_class_axiom_no_genus	INO:0000039	RO:0002212	INO:0000102
-WARN	equivalent_class_axiom_no_genus	INO:0000042	RO:0002212	INO:0000173
-WARN	equivalent_class_axiom_no_genus	INO:0000043	RO:0002212	INO:0000045
-WARN	equivalent_class_axiom_no_genus	INO:0000044	RO:0002211	INO:0000102
-WARN	equivalent_class_axiom_no_genus	INO:0000047	RO:0000087	INO:0000069
-WARN	equivalent_class_axiom_no_genus	INO:0000049	RO:0002213	INO:0000173
-WARN	equivalent_class_axiom_no_genus	INO:0000053	RO:0002213	INO:0000045
-WARN	equivalent_class_axiom_no_genus	INO:0000125	RO:0000087	INO:0000009
-WARN	equivalent_class_axiom_no_genus	INO:0000141	RO:0000087	INO:0000134
-WARN	equivalent_class_axiom_no_genus	INO:0000144	RO:0000087	INO:0000137
-WARN	equivalent_class_axiom_no_genus	INO:0000151	RO:0000087	INO:0000010
 WARN	duplicate_label_synonym	INO:0000114	IAO:0000118	overexpression
 WARN	annotation_whitespace	INO:0000002	IAO:0000115	Interaction is a processual entity that has two or more participants (i.e., interactors) that have an effect upon one another. @en
 WARN	annotation_whitespace	INO:0000003	IAO:0000115	an interaction network that includes at least two interactions and has a start point(s) and an end point(s). 
@@ -96,6 +79,23 @@ WARN	missing_definition	INO:0000156	IAO:0000115
 WARN	missing_definition	INO:0000159	IAO:0000115	
 WARN	missing_definition	INO:0000178	IAO:0000115	
 WARN	missing_definition	INO:0000231	IAO:0000115	
+WARN	equivalent_class_axiom_no_genus	INO:0000008	RO:0000087	INO:0000005
+WARN	equivalent_class_axiom_no_genus	INO:0000016	RO:0000087	INO:0000015
+WARN	equivalent_class_axiom_no_genus	INO:0000017	RO:0000087	INO:0000011
+WARN	equivalent_class_axiom_no_genus	INO:0000032	RO:0002211	INO:0000173
+WARN	equivalent_class_axiom_no_genus	INO:0000034	RO:0002211	INO:0000045
+WARN	equivalent_class_axiom_no_genus	INO:0000038	RO:0002213	INO:0000102
+WARN	equivalent_class_axiom_no_genus	INO:0000039	RO:0002212	INO:0000102
+WARN	equivalent_class_axiom_no_genus	INO:0000042	RO:0002212	INO:0000173
+WARN	equivalent_class_axiom_no_genus	INO:0000043	RO:0002212	INO:0000045
+WARN	equivalent_class_axiom_no_genus	INO:0000044	RO:0002211	INO:0000102
+WARN	equivalent_class_axiom_no_genus	INO:0000047	RO:0000087	INO:0000069
+WARN	equivalent_class_axiom_no_genus	INO:0000049	RO:0002213	INO:0000173
+WARN	equivalent_class_axiom_no_genus	INO:0000053	RO:0002213	INO:0000045
+WARN	equivalent_class_axiom_no_genus	INO:0000125	RO:0000087	INO:0000009
+WARN	equivalent_class_axiom_no_genus	INO:0000141	RO:0000087	INO:0000134
+WARN	equivalent_class_axiom_no_genus	INO:0000144	RO:0000087	INO:0000137
+WARN	equivalent_class_axiom_no_genus	INO:0000151	RO:0000087	INO:0000010
 INFO	lowercase_definition	INO:0000003	IAO:0000115	an interaction network that includes at least two interactions and has a start point(s) and an end point(s). 
 INFO	lowercase_definition	INO:0000004	IAO:0000115	an interaction network model that is represented by a probabilistic graphical model (a type of statistical model) that represents a set of random variables and their conditional dependencies via a directed acyclic graph (DAG).
 INFO	lowercase_definition	INO:0000005	IAO:0000115	an regulator role that is borne by a material entity that regulates an interaction.
