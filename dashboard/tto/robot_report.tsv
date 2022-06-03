@@ -1,5 +1,7 @@
 Level	Rule Name	Subject	Property	Value
 ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/tto.owl	dc:title	
+ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/tto.owl	dc:description	
+ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/tto.owl	dc:license	
 ERROR	duplicate_label	TTO:19	rdfs:label	Sarcopterygii
 ERROR	duplicate_label	TTO:639	rdfs:label	Sarcopterygii
 ERROR	duplicate_label	TTO:110995	rdfs:label	Nahangbagrus
@@ -18,14 +20,9 @@ ERROR	duplicate_label	TTO:12	rdfs:label	Chondrichthyes
 ERROR	duplicate_label	TTO:7	rdfs:label	Chondrichthyes
 ERROR	duplicate_label	TTO:18	rdfs:label	Actinopterygii
 ERROR	duplicate_label	TTO:699	rdfs:label	Actinopterygii
-ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/tto.owl	dc:license	
-ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/tto.owl	dc:description	
-WARN	annotation_whitespace	TTO:1053509	oboInOwl:hasRelatedSynonym	Hemipimelodus daugueti 
-WARN	annotation_whitespace	TTO:1066444	oboInOwl:hasRelatedSynonym	Gymnotus mamiraua 
-WARN	annotation_whitespace	TTO:1066445	oboInOwl:hasRelatedSynonym	Gymnotus arapaima 
-WARN	annotation_whitespace	TTO:1066446	oboInOwl:hasRelatedSynonym	Gymnotus jonasi 
-WARN	annotation_whitespace	TTO:1068715	oboInOwl:hasRelatedSynonym	 loos
-WARN	annotation_whitespace	TTO:1069774	oboInOwl:hasRelatedSynonym	 Astyanax varzeae
+WARN	missing_synonymtype_declaration	obo:tto#COMMONNAME	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:tto#MISSPELLING	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:tto#TAXONNAMEUSAGE	rdfs:subPropertyOf	
 WARN	missing_obsolete_label	TTO:10000076	rdfs:label	Genus1 (Sidlauskas and Vari 2008)
 WARN	missing_obsolete_label	TTO:10000077	rdfs:label	Hypomasticus
 WARN	missing_obsolete_label	TTO:10000146	rdfs:label	Roeboides sp. (Lucena and Menezes 1998)
@@ -198,3 +195,6 @@ WARN	missing_definition	TTO:10000103	IAO:0000115
 WARN	missing_definition	TTO:10000104	IAO:0000115	
 WARN	missing_definition	TTO:10000105	IAO:0000115	
 WARN	missing_definition	TTO:10000106	IAO:0000115	
+WARN	missing_definition	TTO:10000107	IAO:0000115	
+WARN	missing_definition	TTO:10000108	IAO:0000115	
+WARN	missing_definition	TTO:10000109	IAO:0000115	

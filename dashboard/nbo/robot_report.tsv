@@ -1,4 +1,12 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/nbo/nbo-base.owl	dc:description	
+ERROR	multiple_definitions	NBO:0020145	IAO:0000115	Alarm behavior triggered by agonistic actions or postures@en
+ERROR	multiple_definitions	NBO:0020145	IAO:0000115	Alarm behavior triggered by agonistic actions or postures.@en
+ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/nbo/nbo-base.owl	dc:title	
+ERROR	duplicate_label	NBO:0015003	rdfs:label	active foraging behavior@en
+ERROR	duplicate_label	NBO:0015004	rdfs:label	active foraging behavior@en
+ERROR	deprecated_boolean_datatype	NBO:0000453	owl:deprecated	true
+ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/nbo/nbo-base.owl	dc:license	
 ERROR	duplicate_definition	NBO:0015003	IAO:0000115	Feeding behavior during which a living entity acquires food and energy by actively searching for food resources.
 ERROR	duplicate_definition	NBO:0015004	IAO:0000115	Feeding behavior during which a living entity acquires food and energy by actively searching for food resources.
 ERROR	duplicate_definition	NBO:0015005	IAO:0000115	Consumption behavior that involves inhaling a material (such as finely ground tobacco leaves) through the nose.
@@ -11,14 +19,6 @@ ERROR	duplicate_definition	NBO:0003142	IAO:0000115	"\""Any process that modulate
 ERROR	duplicate_definition	NBO:0003194	IAO:0000115	"\""Any process that modulates the frequency, rate or extent of withdrawal response.\"" [NBOC:GVG]"
 ERROR	duplicate_definition	NBO:0003047	IAO:0000115	"\""Any process that modulates the frequency, rate or extent of behavioral response to chemical stimulus.\"" [NBOC:GVG]"
 ERROR	duplicate_definition	NBO:0003104	IAO:0000115	"\""Any process that modulates the frequency, rate or extent of behavioral response to chemical stimulus.\"" [NBOC:GVG]"
-ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/nbo/nbo-base.owl	dc:description	
-ERROR	multiple_definitions	NBO:0020145	IAO:0000115	Alarm behavior triggered by agonistic actions or postures@en
-ERROR	multiple_definitions	NBO:0020145	IAO:0000115	Alarm behavior triggered by agonistic actions or postures.@en
-ERROR	duplicate_label	NBO:0015003	rdfs:label	active foraging behavior@en
-ERROR	duplicate_label	NBO:0015004	rdfs:label	active foraging behavior@en
-ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/nbo/nbo-base.owl	dc:license	
-ERROR	deprecated_boolean_datatype	NBO:0000453	owl:deprecated	true
-ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/nbo/nbo-base.owl	dc:title	
 WARN	duplicate_exact_synonym	NBO:0000025	oboInOwl:hasExactSynonym	unprovoked seizure
 WARN	duplicate_exact_synonym	NBO:0000642	oboInOwl:hasExactSynonym	unprovoked seizure
 WARN	duplicate_exact_synonym	NBO:0000503	oboInOwl:hasExactSynonym	RBD
@@ -29,24 +29,6 @@ WARN	duplicate_exact_synonym	NBO:0000027	oboInOwl:hasExactSynonym	groom@en
 WARN	duplicate_exact_synonym	NBO:0000367	oboInOwl:hasExactSynonym	fly@en
 WARN	duplicate_exact_synonym	NBO:0000277	oboInOwl:hasExactSynonym	<new synonym>
 WARN	duplicate_exact_synonym	NBO:0000420	oboInOwl:hasExactSynonym	<new synonym>
-WARN	duplicate_label_synonym	NBO:0000104	oboInOwl:hasExactSynonym	aggressive behavior towards humans
-WARN	duplicate_label_synonym	NBO:0000105	oboInOwl:hasExactSynonym	aggressive behavior towards animals
-WARN	duplicate_label_synonym	NBO:0000106	oboInOwl:hasExactSynonym	aggressive behavior towards objects
-WARN	duplicate_label_synonym	NBO:0000107	oboInOwl:hasExactSynonym	aggressive behavior towards mice
-WARN	duplicate_label_synonym	NBO:0000108	oboInOwl:hasExactSynonym	aggressive behavior towards women
-WARN	duplicate_label_synonym	NBO:0000109	oboInOwl:hasExactSynonym	aggressive behavior towards men
-WARN	duplicate_label_synonym	NBO:0000110	oboInOwl:hasExactSynonym	aggressive behavior towards male mice
-WARN	duplicate_label_synonym	NBO:0000111	oboInOwl:hasExactSynonym	aggressive behavior towards female mice
-WARN	duplicate_label_synonym	NBO:0000112	oboInOwl:hasExactSynonym	aggressive behavior towards inanimate objects
-WARN	duplicate_label_synonym	NBO:0000113	oboInOwl:hasExactSynonym	aggressive behavior towards animate objects
-WARN	duplicate_label_synonym	NBO:0000114	oboInOwl:hasExactSynonym	aggressive behavior towards children
-WARN	duplicate_label_synonym	NBO:0000115	oboInOwl:hasExactSynonym	aggressive behavior towards pups
-WARN	duplicate_label_synonym	NBO:0000118	oboInOwl:hasExactSynonym	aggressive behavior towards males
-WARN	duplicate_label_synonym	NBO:0000123	oboInOwl:hasExactSynonym	submissive behavior towards males
-WARN	duplicate_label_synonym	NBO:0000124	oboInOwl:hasExactSynonym	submissive behavior towards females
-WARN	duplicate_label_synonym	NBO:0000125	oboInOwl:hasExactSynonym	submissive behavior towards male mice
-WARN	duplicate_label_synonym	NBO:0000370	oboInOwl:hasExactSynonym	saltation
-WARN	duplicate_label_synonym	NBO:0000749	oboInOwl:hasExactSynonym	blinking
 WARN	missing_definition	NBO:0000002	IAO:0000115	
 WARN	missing_definition	NBO:0000008	IAO:0000115	
 WARN	missing_definition	NBO:0000012	IAO:0000115	
@@ -198,3 +180,21 @@ WARN	missing_definition	NBO:0000691	IAO:0000115
 WARN	missing_definition	NBO:0000692	IAO:0000115	
 WARN	missing_definition	NBO:0000694	IAO:0000115	
 WARN	missing_definition	NBO:0000740	IAO:0000115	
+WARN	missing_definition	NBO:0000741	IAO:0000115	
+WARN	missing_definition	NBO:0000744	IAO:0000115	
+WARN	missing_definition	NBO:0000746	IAO:0000115	
+WARN	missing_definition	NBO:0000747	IAO:0000115	
+WARN	missing_definition	NBO:0000749	IAO:0000115	
+WARN	missing_definition	NBO:0000750	IAO:0000115	
+WARN	missing_definition	NBO:0000751	IAO:0000115	
+WARN	missing_definition	NBO:0000752	IAO:0000115	
+WARN	missing_definition	NBO:0000768	IAO:0000115	
+WARN	missing_definition	NBO:0000772	IAO:0000115	
+WARN	missing_definition	NBO:0000773	IAO:0000115	
+WARN	missing_definition	NBO:0000778	IAO:0000115	
+WARN	missing_definition	NBO:0000851	IAO:0000115	
+WARN	missing_definition	NBO:0000886	IAO:0000115	
+WARN	missing_definition	NBO:0000929	IAO:0000115	
+WARN	missing_definition	NBO:0000961	IAO:0000115	
+WARN	missing_definition	NBO:0000993	IAO:0000115	
+WARN	missing_definition	NBO:0009001	IAO:0000115	
