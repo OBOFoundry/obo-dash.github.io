@@ -1,9 +1,26 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/ido.owl	dc:license	
-ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/ido.owl	dc:description	
 ERROR	deprecated_class_reference	IDO:0000428	rdfs:subClassOf	IDO:0000427
 ERROR	deprecated_class_reference	IDO:0000429	rdfs:subClassOf	IDO:0000426
+ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/ido.owl	dc:description	
+ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/ido.owl	dc:license	
 ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/ido.owl	dc:title	
+WARN	annotation_whitespace	IDO:0000408	IAO:0000115	A host role borne by an organism in virtue of the fact that its extended organism contains a second organism and provides an environment supportive for the survival, growth, maturation, or reproduction of that organism.  @en
+WARN	annotation_whitespace	IDO:0000409	IAO:0000115	A symbiont host role borne by an organism in virtue of the fact that its partner in symbiosis reaches developmental maturity or reproduces sexually in the host.  @en
+WARN	annotation_whitespace	IDO:0000411	IAO:0000115	A symbiont host role borne by an organism in virtue of the fact that its partner in symbiosis utilizes the host to undergo a developmental stage transition, but the host is not required for continuation of the partner's life cycle. @en
+WARN	annotation_whitespace	IDO:0000417	IAO:0000115	A role borne by a material entity in virtue of the fact that an infectious agent is located in or on the entity and the entity has the capability to transfer (either actively or passively) the infectious agent from one location to another. @en
+WARN	annotation_whitespace	IDO:0000432	IAO:0000115	A role borne by a material entity in virtue of the fact that it has an antimicrobial disposition and is applied to a non-living entity.  @en
+WARN	annotation_whitespace	IDO:0000433	IAO:0000115	A role borne by a material entity in virtue of the fact that it has an antimicrobial disposition and is applied to an anatomical entity of a living organism.  @en
+WARN	annotation_whitespace	IDO:0000455	IAO:0000115	A disposition that inheres in a collection of entities in virtue of the individual dispositions of the constituents of that collection. @en
+WARN	annotation_whitespace	IDO:0000466	IAO:0000115	A quality that inheres in an infectious agent and is the degree to which realizations of the infectious disease caused by the infectious agent become severe or fatal. @en
+WARN	annotation_whitespace	IDO:0000481	IAO:0000115	A quality that inheres in an organism population and is the proportion of members of the population not experiencing an infectious disease course at the beginning of a specified period of time and in whom the infectious disease begins during the specified period of time. @en
+WARN	annotation_whitespace	IDO:0000482	IAO:0000115	A quality that inheres in an organism population and is the proportion of members of the population not infected at the beginning of a specified period of time who become infected during the specified period of time. @en
+WARN	annotation_whitespace	IDO:0000491	IAO:0000115	An infectious disease prevalence that is typical for an infectious disease in an organism population. @en
+WARN	annotation_whitespace	IDO:0000492	IAO:0000115	An infectious disease incidence rate that is typical for an infectious disease in an organism population. @en
+WARN	annotation_whitespace	IDO:0000493	IAO:0000115	An infectious disease endemicity that inheres in an organism population in virtue of the fact that the infectious disease endemic level for an infectious disease is persistently high in the population.  @en
+WARN	annotation_whitespace	IDO:0000502	IAO:0000116	For a particular instance of infectious disease epidemic, signficance is determined based on the infectious disease incidence that is typical for an infectious disease for the particular population and time period.  @en
+WARN	equivalent_class_axiom_no_genus	IDO:0000625	BFO:0000066	IDO:0000531
+WARN	equivalent_class_axiom_no_genus	IDO:0000626	RO:0002297	OGMS:0000045
+WARN	equivalent_class_axiom_no_genus	IDO:0000663	RO:0002212	IDO:0000662
 WARN	missing_definition	IDO:0000660	IAO:0000115	
 WARN	missing_definition	IDO:0000664	IAO:0000115	
 WARN	missing_obsolete_label	IDO:0000000	rdfs:label	_obsolete_process@en
@@ -181,20 +198,3 @@ WARN	missing_obsolete_label	IDO:0000613	rdfs:label	_obsolete_biological object@e
 WARN	missing_obsolete_label	IDO:0000614	rdfs:label	_obsolete_replicating biological material entity@en
 WARN	missing_obsolete_label	IDO:0000624	rdfs:label	_obsolete_contagiousness quality@en
 WARN	missing_obsolete_label	IDO:0000624	rdfs:label	_obsolete_host range@en
-WARN	annotation_whitespace	IDO:0000408	IAO:0000115	A host role borne by an organism in virtue of the fact that its extended organism contains a second organism and provides an environment supportive for the survival, growth, maturation, or reproduction of that organism.  @en
-WARN	annotation_whitespace	IDO:0000409	IAO:0000115	A symbiont host role borne by an organism in virtue of the fact that its partner in symbiosis reaches developmental maturity or reproduces sexually in the host.  @en
-WARN	annotation_whitespace	IDO:0000411	IAO:0000115	A symbiont host role borne by an organism in virtue of the fact that its partner in symbiosis utilizes the host to undergo a developmental stage transition, but the host is not required for continuation of the partner's life cycle. @en
-WARN	annotation_whitespace	IDO:0000417	IAO:0000115	A role borne by a material entity in virtue of the fact that an infectious agent is located in or on the entity and the entity has the capability to transfer (either actively or passively) the infectious agent from one location to another. @en
-WARN	annotation_whitespace	IDO:0000432	IAO:0000115	A role borne by a material entity in virtue of the fact that it has an antimicrobial disposition and is applied to a non-living entity.  @en
-WARN	annotation_whitespace	IDO:0000433	IAO:0000115	A role borne by a material entity in virtue of the fact that it has an antimicrobial disposition and is applied to an anatomical entity of a living organism.  @en
-WARN	annotation_whitespace	IDO:0000455	IAO:0000115	A disposition that inheres in a collection of entities in virtue of the individual dispositions of the constituents of that collection. @en
-WARN	annotation_whitespace	IDO:0000466	IAO:0000115	A quality that inheres in an infectious agent and is the degree to which realizations of the infectious disease caused by the infectious agent become severe or fatal. @en
-WARN	annotation_whitespace	IDO:0000481	IAO:0000115	A quality that inheres in an organism population and is the proportion of members of the population not experiencing an infectious disease course at the beginning of a specified period of time and in whom the infectious disease begins during the specified period of time. @en
-WARN	annotation_whitespace	IDO:0000482	IAO:0000115	A quality that inheres in an organism population and is the proportion of members of the population not infected at the beginning of a specified period of time who become infected during the specified period of time. @en
-WARN	annotation_whitespace	IDO:0000491	IAO:0000115	An infectious disease prevalence that is typical for an infectious disease in an organism population. @en
-WARN	annotation_whitespace	IDO:0000492	IAO:0000115	An infectious disease incidence rate that is typical for an infectious disease in an organism population. @en
-WARN	annotation_whitespace	IDO:0000493	IAO:0000115	An infectious disease endemicity that inheres in an organism population in virtue of the fact that the infectious disease endemic level for an infectious disease is persistently high in the population.  @en
-WARN	annotation_whitespace	IDO:0000502	IAO:0000116	For a particular instance of infectious disease epidemic, signficance is determined based on the infectious disease incidence that is typical for an infectious disease for the particular population and time period.  @en
-WARN	equivalent_class_axiom_no_genus	IDO:0000625	BFO:0000066	IDO:0000531
-WARN	equivalent_class_axiom_no_genus	IDO:0000626	RO:0002297	OGMS:0000045
-WARN	equivalent_class_axiom_no_genus	IDO:0000663	RO:0002212	IDO:0000662

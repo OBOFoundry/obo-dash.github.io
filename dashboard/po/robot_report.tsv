@@ -1,7 +1,4 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/po.owl	dc:title	
-ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/po.owl	dc:description	
-ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/po.owl	dc:license	
 ERROR	missing_label	obo:po#Angiosperm	rdfs:label	
 ERROR	missing_label	obo:po#Arabidopsis	rdfs:label	
 ERROR	missing_label	obo:po#Bryophytes	rdfs:label	
@@ -17,26 +14,36 @@ ERROR	missing_label	obo:po#Rice	rdfs:label
 ERROR	missing_label	obo:po#Tomato	rdfs:label	
 ERROR	missing_label	obo:po#TraitNet	rdfs:label	
 ERROR	missing_label	obo:po#reference	rdfs:label	
-WARN	missing_synonymtype_declaration	obo:po#German	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:po#Japanese	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:po#Plural	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:po#Spanish	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:po#Angiosperm	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:po#Arabidopsis	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:po#Bryophytes	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:po#CL	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:po#Citrus	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:po#Gymnosperms	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:po#Maize	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:po#Musa	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:po#Poaceae	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:po#Potato	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:po#Pteridophytes	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:po#Rice	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:po#Tomato	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:po#TraitNet	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:po#reference	rdfs:subPropertyOf	
+ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/po.owl	dc:description	
+ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/po.owl	dc:license	
+ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/po.owl	dc:title	
 WARN	annotation_whitespace	PO:0007529	IAO:0000115	OBSOLETE. The stage at which the emerged root starts to elongate. 
+WARN	duplicate_exact_synonym	PO:0030098	oboInOwl:hasExactSynonym	nutlet (exact)
+WARN	duplicate_exact_synonym	PO:0030102	oboInOwl:hasExactSynonym	nutlet (exact)
+WARN	duplicate_exact_synonym	PO:0030135	oboInOwl:hasExactSynonym	drepanium (exact)
+WARN	duplicate_exact_synonym	PO:0030136	oboInOwl:hasExactSynonym	drepanium (exact)
+WARN	duplicate_exact_synonym	PO:0020061	oboInOwl:hasExactSynonym	comae (exact, plural)
+WARN	duplicate_exact_synonym	PO:0028005	oboInOwl:hasExactSynonym	comae (exact, plural)
+WARN	missing_definition	obo:po#Angiosperm	IAO:0000115	
+WARN	missing_definition	obo:po#Arabidopsis	IAO:0000115	
+WARN	missing_definition	obo:po#Bryophytes	IAO:0000115	
+WARN	missing_definition	obo:po#CL	IAO:0000115	
+WARN	missing_definition	obo:po#Citrus	IAO:0000115	
+WARN	missing_definition	obo:po#German	IAO:0000115	
+WARN	missing_definition	obo:po#Gymnosperms	IAO:0000115	
+WARN	missing_definition	obo:po#Japanese	IAO:0000115	
+WARN	missing_definition	obo:po#Maize	IAO:0000115	
+WARN	missing_definition	obo:po#Musa	IAO:0000115	
+WARN	missing_definition	obo:po#Plural	IAO:0000115	
+WARN	missing_definition	obo:po#Poaceae	IAO:0000115	
+WARN	missing_definition	obo:po#Potato	IAO:0000115	
+WARN	missing_definition	obo:po#Pteridophytes	IAO:0000115	
+WARN	missing_definition	obo:po#Rice	IAO:0000115	
+WARN	missing_definition	obo:po#Spanish	IAO:0000115	
+WARN	missing_definition	obo:po#Tomato	IAO:0000115	
+WARN	missing_definition	obo:po#TraitNet	IAO:0000115	
+WARN	missing_definition	obo:po#isolated_from_germplasm	IAO:0000115	
+WARN	missing_definition	obo:po#reference	IAO:0000115	
 WARN	missing_obsolete_label	PO:0000020	rdfs:label	starch sheath cell
 WARN	missing_obsolete_label	PO:0000023	rdfs:label	casparian strip
 WARN	missing_obsolete_label	PO:0000024	rdfs:label	filiform apparatus
@@ -157,29 +164,22 @@ WARN	missing_obsolete_label	PO:0021003	rdfs:label	calyx relationship
 WARN	missing_obsolete_label	PO:0025027	rdfs:label	microgametophytic cell
 WARN	missing_obsolete_label	PO:0025299	rdfs:label	calyptra perianth
 WARN	missing_obsolete_label	PO:0028001	rdfs:label	plant life cycle phase
-WARN	missing_definition	obo:po#Angiosperm	IAO:0000115	
-WARN	missing_definition	obo:po#Arabidopsis	IAO:0000115	
-WARN	missing_definition	obo:po#Bryophytes	IAO:0000115	
-WARN	missing_definition	obo:po#CL	IAO:0000115	
-WARN	missing_definition	obo:po#Citrus	IAO:0000115	
-WARN	missing_definition	obo:po#German	IAO:0000115	
-WARN	missing_definition	obo:po#Gymnosperms	IAO:0000115	
-WARN	missing_definition	obo:po#Japanese	IAO:0000115	
-WARN	missing_definition	obo:po#Maize	IAO:0000115	
-WARN	missing_definition	obo:po#Musa	IAO:0000115	
-WARN	missing_definition	obo:po#Plural	IAO:0000115	
-WARN	missing_definition	obo:po#Poaceae	IAO:0000115	
-WARN	missing_definition	obo:po#Potato	IAO:0000115	
-WARN	missing_definition	obo:po#Pteridophytes	IAO:0000115	
-WARN	missing_definition	obo:po#Rice	IAO:0000115	
-WARN	missing_definition	obo:po#Spanish	IAO:0000115	
-WARN	missing_definition	obo:po#Tomato	IAO:0000115	
-WARN	missing_definition	obo:po#TraitNet	IAO:0000115	
-WARN	missing_definition	obo:po#isolated_from_germplasm	IAO:0000115	
-WARN	missing_definition	obo:po#reference	IAO:0000115	
-WARN	duplicate_exact_synonym	PO:0030098	oboInOwl:hasExactSynonym	nutlet (exact)
-WARN	duplicate_exact_synonym	PO:0030102	oboInOwl:hasExactSynonym	nutlet (exact)
-WARN	duplicate_exact_synonym	PO:0030135	oboInOwl:hasExactSynonym	drepanium (exact)
-WARN	duplicate_exact_synonym	PO:0030136	oboInOwl:hasExactSynonym	drepanium (exact)
-WARN	duplicate_exact_synonym	PO:0020061	oboInOwl:hasExactSynonym	comae (exact, plural)
-WARN	duplicate_exact_synonym	PO:0028005	oboInOwl:hasExactSynonym	comae (exact, plural)
+WARN	missing_subset_declaration	obo:po#Angiosperm	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:po#Arabidopsis	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:po#Bryophytes	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:po#CL	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:po#Citrus	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:po#Gymnosperms	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:po#Maize	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:po#Musa	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:po#Poaceae	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:po#Potato	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:po#Pteridophytes	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:po#Rice	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:po#Tomato	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:po#TraitNet	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:po#reference	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:po#German	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:po#Japanese	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:po#Plural	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:po#Spanish	rdfs:subPropertyOf	

@@ -1,4 +1,11 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	duplicate_definition	GENO:0000847	IAO:0000115	A relation used to describe  an environment contextualizing the identity of an entity.
+ERROR	duplicate_definition	GENO:0000873	IAO:0000115	A relation used to describe  an environment contextualizing the identity of an entity.
+ERROR	duplicate_definition	GENO:0000846	IAO:0000115	A relation used to describe  a process contextualizing the identity of an entity.
+ERROR	duplicate_definition	GENO:0000874	IAO:0000115	A relation used to describe  a process contextualizing the identity of an entity.
+ERROR	duplicate_definition	GENO:0000719	IAO:0000115	A genotype that describes the total variation in heritable genomic sequence of a cell or organism, typically in terms of alterations from some reference or background genotype.
+ERROR	duplicate_definition	GENO:0000899	IAO:0000115	A genotype that describes the total variation in heritable genomic sequence of a cell or organism, typically in terms of alterations from some reference or background genotype.
+ERROR	duplicate_label	GENO:0000152	rdfs:label	reference
 ERROR	misused_obsolete_label	GENO:0000242	rdfs:label	obsolete_specifies
 ERROR	misused_obsolete_label	GENO:0000243	rdfs:label	obsolete_approximates_sequence
 ERROR	misused_obsolete_label	GENO:0000244	rdfs:label	obsolete_resolves_to_sequence
@@ -15,19 +22,21 @@ ERROR	misused_obsolete_label	GENO:0000742	rdfs:label	obsolete_is_alteration_with
 ERROR	misused_obsolete_label	GENO:0000767	rdfs:label	obsolete_has_position_component@en
 ERROR	misused_obsolete_label	GENO:0000910	rdfs:label	obsolete reporter role@en
 ERROR	misused_obsolete_label	GENO:0000911	rdfs:label	obsolete selectable marker role@en
-ERROR	duplicate_definition	GENO:0000847	IAO:0000115	A relation used to describe  an environment contextualizing the identity of an entity.
-ERROR	duplicate_definition	GENO:0000873	IAO:0000115	A relation used to describe  an environment contextualizing the identity of an entity.
-ERROR	duplicate_definition	GENO:0000846	IAO:0000115	A relation used to describe  a process contextualizing the identity of an entity.
-ERROR	duplicate_definition	GENO:0000874	IAO:0000115	A relation used to describe  a process contextualizing the identity of an entity.
-ERROR	duplicate_definition	GENO:0000719	IAO:0000115	A genotype that describes the total variation in heritable genomic sequence of a cell or organism, typically in terms of alterations from some reference or background genotype.
-ERROR	duplicate_definition	GENO:0000899	IAO:0000115	A genotype that describes the total variation in heritable genomic sequence of a cell or organism, typically in terms of alterations from some reference or background genotype.
-ERROR	duplicate_label	GENO:0000152	rdfs:label	reference
 ERROR	multiple_labels	GENO:0000910	rdfs:label	obsolete reporter role@en
 ERROR	multiple_labels	GENO:0000910	rdfs:label	reporter@en
 ERROR	multiple_labels	GENO:0000911	rdfs:label	obsolete selectable marker role@en
 ERROR	multiple_labels	GENO:0000911	rdfs:label	selectable marker@en
 WARN	annotation_whitespace	GENO:0000243	IAO:0000116	Created subproperties 'approximates_sequence' and 'resolves to sequence'. Genotypes and other sequence variant artifacts are not always expected to completely specify a sequence, but rather provide some approximation based on available knowledge. The 'resolves_to_sequence' property can be used when the sequence variant artifact is able to completely resolve a sequence, and the 'approximates_sequence' property can be used when it does not. 
 WARN	annotation_whitespace	GENO:0000244	IAO:0000116	Created subproperties 'approximates_sequence' and 'resolves to sequence'. Genotypes and other sequence variant artifacts are not always expected to completely specify a sequence, but rather provide some approximation based on available knowledge. The 'resolves_to_sequence' property can be used when the sequence variant artifact is able to completely resolve a sequence, and the 'approximates_sequence' property can be used when it does not. 
+WARN	duplicate_label_synonym	GENO:0000017	IAO:0000118	reference sequence
+WARN	duplicate_label_synonym	GENO:0000501	IAO:0000118	wild-type allele
+WARN	equivalent_class_axiom_no_genus	GENO:0000960	GENO:0000251	GENO:0000481
+WARN	invalid_xref	GENO:0000010	oboInOwl:hasDbXref	OBI:genetic population background information
+WARN	invalid_xref	GENO:0000014	oboInOwl:hasDbXref	SO:0001023 ! allele
+WARN	invalid_xref	GENO:0000019	oboInOwl:hasDbXref	perhaps not same as SO:sequence collection, as here we explicitly include features that can have an extent of zero (and SO:sequence collection is a collection of regions that have an extent of at least one)
+WARN	invalid_xref	GENO:0000033	oboInOwl:hasDbXref	SO:0001506 ! variant_genome (definition of SO term here is too vague to know if has same meaning as GENO class here)
+WARN	invalid_xref	GENO:0000666	oboInOwl:hasDbXref	SO:0000831 (gene member region)
+WARN	invalid_xref	GENO:0000870	oboInOwl:hasDbXref	SO:0001260 ! sequence_collection
 WARN	missing_definition	GENO:0000092	IAO:0000115	
 WARN	missing_definition	GENO:0000113	IAO:0000115	
 WARN	missing_definition	GENO:0000118	IAO:0000115	
@@ -111,15 +120,6 @@ WARN	missing_definition	GENO:0000910	IAO:0000115
 WARN	missing_definition	GENO:0000911	IAO:0000115	
 WARN	missing_definition	GENO:0000912	IAO:0000115	
 WARN	missing_definition	GENO:0000964	IAO:0000115	
-WARN	duplicate_label_synonym	GENO:0000017	IAO:0000118	reference sequence
-WARN	duplicate_label_synonym	GENO:0000501	IAO:0000118	wild-type allele
-WARN	invalid_xref	GENO:0000010	oboInOwl:hasDbXref	OBI:genetic population background information
-WARN	invalid_xref	GENO:0000014	oboInOwl:hasDbXref	SO:0001023 ! allele
-WARN	invalid_xref	GENO:0000019	oboInOwl:hasDbXref	perhaps not same as SO:sequence collection, as here we explicitly include features that can have an extent of zero (and SO:sequence collection is a collection of regions that have an extent of at least one)
-WARN	invalid_xref	GENO:0000033	oboInOwl:hasDbXref	SO:0001506 ! variant_genome (definition of SO term here is too vague to know if has same meaning as GENO class here)
-WARN	invalid_xref	GENO:0000666	oboInOwl:hasDbXref	SO:0000831 (gene member region)
-WARN	invalid_xref	GENO:0000870	oboInOwl:hasDbXref	SO:0001260 ! sequence_collection
-WARN	equivalent_class_axiom_no_genus	GENO:0000960	GENO:0000251	GENO:0000481
 INFO	lowercase_definition	GENO:0000019	IAO:0000115	a collection more than one sequence features (ie a collection of discontinuous sequence features)
 INFO	lowercase_definition	GENO:0000111	IAO:0000115	a population of homo sapiens grouped together in virtue of their sharing some commonality (either an inherent attribute or an externally assigned role)
 INFO	lowercase_definition	GENO:0000125	IAO:0000115	sequence attribute that can inhere only in a collection of more than one sequence features

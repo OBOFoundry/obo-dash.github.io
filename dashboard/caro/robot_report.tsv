@@ -3,13 +3,6 @@ ERROR	duplicate_definition	CARO:0000027	IAO:0000115	Gonochoristic organism that 
 ERROR	duplicate_definition	CARO:0000028	IAO:0000115	Gonochoristic organism that can produce female gametes.
 ERROR	duplicate_definition	CARO:0001000	IAO:0000115	A structure consisting of multiple cell components but which is not itself a cell and does not have (complete) cells as a part.
 ERROR	duplicate_definition	CARO:0001001	IAO:0000115	A fasciculated bundle of neuron projections (GO:0043005), largely or completely lacking synapses.
-WARN	missing_definition	CARO:0000134	IAO:0000115	
-WARN	missing_definition	CARO:0001013	IAO:0000115	
-WARN	missing_definition	CARO:0010010	IAO:0000115	
-WARN	missing_obsolete_label	CARO:0000041	rdfs:label	anatomical cluster
-WARN	missing_obsolete_label	CARO:0000054	rdfs:label	anatomical group
-WARN	missing_obsolete_label	CARO:0000065	rdfs:label	basal lamina
-WARN	missing_obsolete_label	CARO:0000077	rdfs:label	epithelial cell
 WARN	annotation_whitespace	CARO:0000008	IAO:0000112	A line between two points where these are typically used to measure some aspect of morphology, such as the distance between the eyes or the length of a leg. 
 WARN	annotation_whitespace	CARO:0000009	IAO:0000112	The tip of the nose or other material anatomical entity, or the end of an anatomical line. 
 WARN	annotation_whitespace	CARO:0000042	rdfs:comment	"MH: define as not part of embryo, or will not develop into embryo? MH: changed def to exclude cells so this class could be included in gross anatomical part. DOS: Changed to something that I think works for both vertebrates and invertebrates and that keeps the restriction to multicellular structures.  Old def: \""Anatomical structure that is contiguous with the embryo and is comprised of portions of tissue that will not contribute to the embryo.\"".  One remaining question - perhaps zygote is too restrictive given that some organisms have parthenogenesis e.g. aphids?
@@ -20,6 +13,13 @@ WARN	annotation_whitespace	CARO:0001002	IAO:0000115	"A two dimensional anatomica
 @en"
 WARN	annotation_whitespace	CARO:0001008	IAO:0000115	Anatomical structure that is part of a multicellular organism and is at the gross anatomical level, e.g. above the level of a cell.  Included are portions of organism substances such as blood, multi-cell-part structures such as axon tracts, acellular anatomical structures such as hair, and organism subdivisions such as head. Excluded is the whole organism and more granular parts of the organism, such as atoms, molecules, macromolecular complexes and cells. 
 WARN	annotation_whitespace	CARO:0010004	rdfs:comment	A general term for organism that is agnostic about single cell vs multi-cellular.  Note that this is a subclass of 'anatomical structure', meaning that an organism must be a connected structure. For example, if I take one plant and make a rooted cutting from a it, I now have two (clonally related) organisms. 
+WARN	missing_definition	CARO:0000134	IAO:0000115	
+WARN	missing_definition	CARO:0001013	IAO:0000115	
+WARN	missing_definition	CARO:0010010	IAO:0000115	
+WARN	missing_obsolete_label	CARO:0000041	rdfs:label	anatomical cluster
+WARN	missing_obsolete_label	CARO:0000054	rdfs:label	anatomical group
+WARN	missing_obsolete_label	CARO:0000065	rdfs:label	basal lamina
+WARN	missing_obsolete_label	CARO:0000077	rdfs:label	epithelial cell
 INFO	missing_superclass	CARO:0000003	rdfs:subClassOf	
 INFO	missing_superclass	CARO:0000040	rdfs:subClassOf	
 INFO	missing_superclass	CARO:0000062	rdfs:subClassOf	

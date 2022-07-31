@@ -1,7 +1,6 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	multiple_definitions	SEPIO:0000437	IAO:0000115	A relationship between an information resource found in some information system, and the agent (person, organization, computational agent) who is responsible for sharing/providing it to that information system.
-ERROR	multiple_definitions	SEPIO:0000437	IAO:0000115	Note that this property connects a resource to an agent, not to some other information resource from which it came (e.g. another database or an API from which the resource in question was obtained).  Use the 'source' property to capture this type of relationship.
 ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/sepio.owl	dc:license	
+ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/sepio.owl	dc:title	
 ERROR	misused_obsolete_label	SEPIO:0000021	rdfs:label	obsolete_date_created@en
 ERROR	misused_obsolete_label	SEPIO:0000055	rdfs:label	obsolete_manual assertion process@en
 ERROR	misused_obsolete_label	SEPIO:0000056	rdfs:label	obsolete_automated assertion process@en
@@ -16,7 +15,9 @@ ERROR	misused_obsolete_label	SEPIO:0000232	rdfs:label	obsolete_has_quantifier@en
 ERROR	misused_obsolete_label	SEPIO:0000385	rdfs:label	obsolete_method@en
 ERROR	misused_obsolete_label	SEPIO:0000401	rdfs:label	obsolete_opinion@en
 ERROR	misused_obsolete_label	SEPIO:0000435	rdfs:label	ObsoleteDataProperty
-ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/sepio.owl	dc:title	
+ERROR	multiple_definitions	SEPIO:0000437	IAO:0000115	A relationship between an information resource found in some information system, and the agent (person, organization, computational agent) who is responsible for sharing/providing it to that information system.
+ERROR	multiple_definitions	SEPIO:0000437	IAO:0000115	Note that this property connects a resource to an agent, not to some other information resource from which it came (e.g. another database or an API from which the resource in question was obtained).  Use the 'source' property to capture this type of relationship.
+WARN	invalid_xref	SEPIO:000383	oboInOwl:hasDbXref	http://semanticscience.org/resource/SIO_000088 ! 'record'
 WARN	missing_definition	SEPIO:0000017	IAO:0000115	
 WARN	missing_definition	SEPIO:0000021	IAO:0000115	
 WARN	missing_definition	SEPIO:0000026	IAO:0000115	
@@ -74,7 +75,6 @@ WARN	missing_definition	SEPIO:0000432	IAO:0000115
 WARN	missing_definition	SEPIO:0000433	IAO:0000115	
 WARN	missing_definition	SEPIO:0000434	IAO:0000115	
 WARN	missing_definition	SEPIO:0000435	IAO:0000115	
-WARN	invalid_xref	SEPIO:000383	oboInOwl:hasDbXref	http://semanticscience.org/resource/SIO_000088 ! 'record'
 INFO	lowercase_definition	SEPIO:0000167	IAO:0000115	a relation between an information entity and an indicator of degree of confidence that the information it represents is true.
 INFO	lowercase_definition	SEPIO:0000169	IAO:0000115	a relation between an agent and an other agent, typically an organization, on whose behalf a Contribution is made.
 INFO	missing_superclass	SEPIO:0000340	rdfs:subClassOf	

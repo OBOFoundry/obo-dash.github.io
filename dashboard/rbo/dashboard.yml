@@ -4,18 +4,18 @@ base_prefixes:
 - RBOALT
 - RBO
 changed: true
-date: 2022-06-01 14:44:19.405343
+date: 2022-07-29 21:58:52.827466
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 1065
+    AnnotationAssertion: 1107
     ClassAssertion: 25
     DataPropertyDomain: 2
     DataPropertyRange: 1
-    Declaration: 422
+    Declaration: 421
     SubClassOf: 357
-  'Axioms: Number of axioms': 1872
-  'Entities: % of entities reused': 19.58
-  'Entities: Number of annotation properties': 22
+  'Axioms: Number of axioms': 1913
+  'Entities: % of entities reused': 19.39
+  'Entities: Number of annotation properties': 21
   'Entities: Number of classes': 367
   'Entities: Number of data properties': 3
   'Entities: Number of individuals': 25
@@ -30,12 +30,12 @@ metrics:
     ObjectSomeValuesFrom: 5
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.838
+    _dashboard: 0.771
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.005
     _impact_external: 0
-    _reuse: 0.196
-    oboscore: 0.421
+    _reuse: 0.194
+    oboscore: 0.388
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
@@ -49,7 +49,7 @@ metrics:
     DOID: 2
     ENVO: 30
     GO: 8
-    IAO: 394
+    IAO: 722
     OBI: 28
     PATO: 9
     PO: 2
@@ -59,9 +59,9 @@ metrics:
     UO: 8
     dc: 1
     dc11: 4
-    obo: 290
+    obo: 1
     oboInOwl: 56
-    owl: 3
+    owl: 5
     rdfs: 346
     xsd: 16
   'Info: Which ontologies use it?':
@@ -80,7 +80,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 319 missing definitions. See ROBOT Report for details.
+    comment: 22 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     comment: 3 non-RO properties used.
@@ -94,25 +94,26 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    status: PASS
+    comment: 2 duplicate labels. See ROBOT Report for details.
+    status: ERROR
   FP16 Maintenance:
     status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 5 errors, 375 warnings, 0 info messages.
+    comment: 7 errors, 66 warnings, 8 info messages.
     file: robot_report
     results:
-      ERROR: 5
-      INFO: 0
-      WARN: 375
+      ERROR: 7
+      INFO: 8
+      WARN: 66
     status: ERROR
-sha256_hash: 002fefd95dc49d02ce15ddbf60816f7e17d8ffa7fce808d13b63479a14618a92
+sha256_hash: 98921889815c34e18312f4ab2a35605daea7c4fcbd93f6c48811916a7c75f069
 summary:
-  comment: 2 errors
+  comment: 3 errors
   status: ERROR
   summary_count:
-    ERROR: 2
+    ERROR: 3
     INFO: 1
     WARN: 1
-version: http://purl.obolibrary.org/obo/rbo/releases/2022-04-16/rbo-base.owl
+version: http://purl.obolibrary.org/obo/rbo/releases/2022-06-02/rbo-base.owl

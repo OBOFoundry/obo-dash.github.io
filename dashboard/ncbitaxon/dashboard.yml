@@ -4,43 +4,44 @@ base_prefixes:
 - NCBITAXONALT
 - NCBITaxon
 changed: true
-date: 2022-06-01 14:13:51.930499
+date: 2022-07-29 21:29:27.302007
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 9810543
-    Declaration: 2401853
+    AnnotationAssertion: 9928241
+    Declaration: 2427686
     SubAnnotationPropertyOf: 15
-    SubClassOf: 2401824
-  'Axioms: Number of axioms': 14614235
+    SubClassOf: 2427657
+  'Axioms: Number of axioms': 14783599
   'Entities: % of entities reused': 0.0
-  'Entities: Number of annotation properties': 29
-  'Entities: Number of classes': 2401826
+  'Entities: Number of annotation properties': 32
+  'Entities: Number of classes': 2427659
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 0
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 7205474
-  'Info: Does the ontology fall under OWL 2 DL?': true
+    Class: 7282973
+  'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.711
+    _dashboard: 0.822
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.379
+    _impact: 0.388
     _impact_external: 0
     _reuse: 0.0
-    oboscore: 0.545
+    oboscore: 0.605
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 69
+  'Info: How many ontologies use it?': 71
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     IAO: 2
-    NCBITAXONALT: 2173023
-    NCBITaxon: 7205436
+    NCBITAXONALT: 2195795
+    NCBITaxon: 7282935
     obo: 38
-    oboInOwl: 5555829
-    rdfs: 2401855
+    oboInOwl: 5640279
+    rdfs: 2427688
   'Info: Which ontologies use it?':
+  - ado
   - agro
   - apollo_sv
   - chiro
@@ -79,6 +80,7 @@ metrics:
   - micro
   - mondo
   - mro
+  - ms
   - obcs
   - obi
   - obib
@@ -114,8 +116,7 @@ mirror_from: http://purl.obolibrary.org/obo/ncbitaxon.owl
 namespace: ncbitaxon
 results:
   FP01 Open:
-    comment: Missing ontology license.
-    status: ERROR
+    status: PASS
   FP02 Common Format:
     status: PASS
   FP03 URIs:
@@ -125,7 +126,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 2401838 missing definitions. See ROBOT Report for details.
+    comment: 2427671 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     status: PASS
@@ -143,19 +144,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 3 errors, 2411723 warnings, 1 info messages.
+    comment: 2437612 warnings, 1 info messages.
     file: robot_report
     results:
-      ERROR: 3
+      ERROR: 0
       INFO: 1
-      WARN: 2411723
-    status: ERROR
-sha256_hash: 517a87febf6c0b32df3856ded26d658b8870ccd3d5571868a2850d729ef0b456
+      WARN: 2437612
+    status: WARN
+sha256_hash: e1c15880d7f268a2176d54972b13987976d7f7e8cd6b4d146bfe1b1cdbdd23e0
 summary:
-  comment: 3 errors
+  comment: 1 errors
   status: ERROR
   summary_count:
-    ERROR: 3
+    ERROR: 1
     INFO: 0
-    WARN: 1
-version: http://purl.obolibrary.org/obo/ncbitaxon/2022-02-21/ncbitaxon.owl
+    WARN: 2
+version: http://purl.obolibrary.org/obo/ncbitaxon/2022-06-28/ncbitaxon.owl

@@ -4,7 +4,7 @@ base_prefixes:
 - UOALT
 - UO
 changed: true
-date: 2022-06-01 14:48:35.893656
+date: 2022-07-29 22:03:03.694531
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1503
@@ -28,23 +28,23 @@ metrics:
     ObjectUnionOf: 44
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.489
+    _dashboard: 0.511
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.159
+    _impact: 0.164
     _impact_external: 0
     _reuse: 0.065
-    oboscore: 0.324
+    oboscore: 0.338
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 29
+  'Info: How many ontologies use it?': 30
   'Info: Logical consistency': true
-  'Info: Syntax': RDF/XML
+  'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     PATO: 96
     UO: 3234
     dc11: 54
     obo: 126
-    prefix_unknown: 443
-    rdfs: 1008
+    prefix_unknown: 444
+    rdfs: 1007
   'Info: Which ontologies use it?':
   - agro
   - apollo_sv
@@ -60,6 +60,7 @@ metrics:
   - htn
   - iao
   - ico
+  - ms
   - obcs
   - obi
   - obib
@@ -82,8 +83,7 @@ results:
     comment: Missing ontology license.
     status: ERROR
   FP02 Common Format:
-    comment: OWL syntax (RDF/XML), but should be RDF/XML
-    status: WARN
+    status: PASS
   FP03 URIs:
     status: PASS
   FP04 Versioning:
@@ -112,19 +112,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 9 errors, 394 warnings, 2 info messages.
+    comment: 9 errors, 396 warnings, 2 info messages.
     file: robot_report
     results:
       ERROR: 9
       INFO: 2
-      WARN: 394
+      WARN: 396
     status: ERROR
-sha256_hash: 5688931301919f347c93632f94063a9d67dfa7a1e4c0fd8552c18397c3d8301c
+sha256_hash: 8a568202351e8e4ace10c9df6a1a4491cf8a05a17db7140257e8eee659eac6ce
 summary:
   comment: 6 errors
   status: ERROR
   summary_count:
     ERROR: 6
     INFO: 0
-    WARN: 2
+    WARN: 1
 version: null

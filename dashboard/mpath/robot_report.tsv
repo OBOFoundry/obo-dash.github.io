@@ -1,7 +1,4 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/mpath.owl	dc:title	
-ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/mpath.owl	dc:description	
-ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/mpath.owl	dc:license	
 ERROR	duplicate_label	MPATH:853	rdfs:label	systemic plasmacytosis
 ERROR	duplicate_label	MPATH:876	rdfs:label	systemic plasmacytosis
 ERROR	duplicate_label	MPATH:550	rdfs:label	sarcoma
@@ -22,6 +19,14 @@ ERROR	duplicate_label	MPATH:65	rdfs:label	developmental hypoplasia
 ERROR	duplicate_label	MPATH:703	rdfs:label	developmental hypoplasia
 ERROR	duplicate_label	MPATH:854	rdfs:label	cutaneous plasmacytosis
 ERROR	duplicate_label	MPATH:875	rdfs:label	cutaneous plasmacytosis
+ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/mpath.owl	dc:description	
+ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/mpath.owl	dc:license	
+ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/mpath.owl	dc:title	
+WARN	annotation_whitespace	MPATH:710	oboInOwl:hasExactSynonym	Myosarcoma 
+WARN	annotation_whitespace	MPATH:710	oboInOwl:hasRelatedSynonym	 Rhabdopoietic Sarcoma
+WARN	annotation_whitespace	MPATH:710	oboInOwl:hasRelatedSynonym	 Sarcoma Botryoides [Soft Tissues]
+WARN	annotation_whitespace	MPATH:723	oboInOwl:hasRelatedSynonym	 Musculoaponeurotic Fibromatosis
+WARN	annotation_whitespace	MPATH:889	IAO:0000115	 intracellular aggregates of actin and actin-associated proteins first observed in neurons (nerve cells) by Asao Hirano. PMID: 21978358
 WARN	invalid_xref	MPATH:272	oboInOwl:hasDbXref	URL: http://emice.nci.nih.gov/mouse_models/organ_models/lung_models/murinecancer/tumorclass
 WARN	invalid_xref	MPATH:273	oboInOwl:hasDbXref	URL: http://emice.nci.nih.gov/mouse_models/organ_models/lung_models/murinecancer/tumorclass
 WARN	invalid_xref	MPATH:359	oboInOwl:hasDbXref	URL: http://emice.nci.nih.gov/emice/mouse_models/organ_models/skin_models/malignant_melanoma#melanoma_table
@@ -167,12 +172,6 @@ WARN	missing_obsolete_label	MPATH:612	rdfs:label	Abscess
 WARN	missing_obsolete_label	MPATH:65	rdfs:label	developmental hypoplasia
 WARN	missing_obsolete_label	MPATH:69	rdfs:label	ectopia
 WARN	missing_obsolete_label	MPATH:88	rdfs:label	nephroblastomatosis
-WARN	annotation_whitespace	MPATH:710	oboInOwl:hasExactSynonym	Myosarcoma 
-WARN	annotation_whitespace	MPATH:710	oboInOwl:hasRelatedSynonym	 Rhabdopoietic Sarcoma
-WARN	annotation_whitespace	MPATH:710	oboInOwl:hasRelatedSynonym	 Sarcoma Botryoides [Soft Tissues]
-WARN	annotation_whitespace	MPATH:723	oboInOwl:hasRelatedSynonym	 Musculoaponeurotic Fibromatosis
-WARN	annotation_whitespace	MPATH:889	IAO:0000115	 intracellular aggregates of actin and actin-associated proteins first observed in neurons (nerve cells) by Asao Hirano. PMID: 21978358
-INFO	missing_superclass	MPATH:1000	rdfs:subClassOf	
 INFO	lowercase_definition	MPATH:129	IAO:0000115	epithelial dysplasia
 INFO	lowercase_definition	MPATH:169	IAO:0000115	.A rare benign neoplasm of the mucosa of the urinary bladder or the urethra, consisting of tubular structures resembling those of the nephron.
 INFO	lowercase_definition	MPATH:203	IAO:0000115	general immunodeficiency disease
@@ -198,3 +197,4 @@ INFO	lowercase_definition	MPATH:349	IAO:0000115	mast cell tumor
 INFO	lowercase_definition	MPATH:350	IAO:0000115	mastocytoma
 INFO	lowercase_definition	MPATH:364	IAO:0000115	mesothelial tumor
 INFO	lowercase_definition	MPATH:368	IAO:0000115	obsolete.
+INFO	lowercase_definition	MPATH:369	IAO:0000115	endocrine adenoma

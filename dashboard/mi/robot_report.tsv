@@ -16,8 +16,6 @@ ERROR	duplicate_definition	MI:1322	IAO:0000115	Fluorescent tag - maleimide coupl
 ERROR	duplicate_definition	MI:0967	IAO:0000115	ChEMBL focuses on mapping the interactions of small molecules binding to their macromolecular targets.
 ERROR	duplicate_definition	MI:1348	IAO:0000115	ChEMBL focuses on mapping the interactions of small molecules binding to their macromolecular targets.
 ERROR	duplicate_definition	MI:1349	IAO:0000115	ChEMBL focuses on mapping the interactions of small molecules binding to their macromolecular targets.
-ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/mi.owl	dc:title	
-ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/mi.owl	dc:description	
 ERROR	duplicate_label	MI:0261	rdfs:label	suppression
 ERROR	duplicate_label	MI:0796	rdfs:label	suppression
 ERROR	duplicate_label	MI:0730	rdfs:label	pubchem
@@ -29,25 +27,9 @@ ERROR	duplicate_label	MI:1226	rdfs:label	ampylation assay
 ERROR	missing_label	obo:mi#Drugable	rdfs:label	
 ERROR	missing_label	obo:mi#PSI-MI_slim	rdfs:label	
 ERROR	missing_label	obo:mi#PSI-MOD_slim	rdfs:label	
+ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/mi.owl	dc:description	
 ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/mi.owl	dc:license	
-WARN	missing_definition	obo:mi#DeltaMass-label	IAO:0000115	
-WARN	missing_definition	obo:mi#Drugable	IAO:0000115	
-WARN	missing_definition	obo:mi#PSI-MI-alternate	IAO:0000115	
-WARN	missing_definition	obo:mi#PSI-MI-short	IAO:0000115	
-WARN	missing_definition	obo:mi#PSI-MI_slim	IAO:0000115	
-WARN	missing_definition	obo:mi#PSI-MOD-alternate	IAO:0000115	
-WARN	missing_definition	obo:mi#PSI-MOD-short	IAO:0000115	
-WARN	missing_definition	obo:mi#PSI-MOD_slim	IAO:0000115	
-WARN	missing_definition	obo:mi#PSI-MS-label	IAO:0000115	
-WARN	missing_definition	obo:mi#RESID-alternate	IAO:0000115	
-WARN	missing_definition	obo:mi#RESID-misnomer	IAO:0000115	
-WARN	missing_definition	obo:mi#RESID-name	IAO:0000115	
-WARN	missing_definition	obo:mi#RESID-systematic	IAO:0000115	
-WARN	missing_definition	obo:mi#UniMod-alternate	IAO:0000115	
-WARN	missing_definition	obo:mi#UniMod-description	IAO:0000115	
-WARN	missing_definition	obo:mi#UniMod-interim	IAO:0000115	
-WARN	missing_definition	obo:mi#UniMod-label	IAO:0000115	
-WARN	missing_definition	obo:mi#UniProt-feature	IAO:0000115	
+ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/mi.owl	dc:title	
 WARN	annotation_whitespace	MI:0075	oboInOwl:hasExactSynonym	myc tag coip 
 WARN	annotation_whitespace	MI:0262	IAO:0000115	"A given (suppressed) mutation phenotype is reverted by a supressor gene mutation.
 OBSOLETE: remap to CV intraction type 'suppressive interaction' MI:0793 and genetic experimental form 'mutated gene' MI:0804. "
@@ -113,12 +95,6 @@ WARN	duplicate_exact_synonym	MI:1142	oboInOwl:hasExactSynonym	aminoacylation
 WARN	duplicate_exact_synonym	MI:1143	oboInOwl:hasExactSynonym	aminoacylation
 WARN	duplicate_exact_synonym	MI:0193	oboInOwl:hasExactSynonym	amidation
 WARN	duplicate_exact_synonym	MI:0989	oboInOwl:hasExactSynonym	amidation
-WARN	missing_subset_declaration	obo:mi#Drugable	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:mi#PSI-MI_slim	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:mi#PSI-MI-alternate	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:mi#PSI-MI-short	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:mi#PSI-MOD-alternate	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:mi#PSI-MOD-short	rdfs:subPropertyOf	
 WARN	duplicate_label_synonym	MI:0049	oboInOwl:hasExactSynonym	filter binding
 WARN	duplicate_label_synonym	MI:0250	oboInOwl:hasExactSynonym	gene
 WARN	duplicate_label_synonym	MI:0319	oboInOwl:hasExactSynonym	deoxyribonucleic acid
@@ -198,3 +174,27 @@ WARN	duplicate_label_synonym	MI:2194	oboInOwl:hasExactSynonym	crac
 WARN	duplicate_label_synonym	MI:2195	oboInOwl:hasExactSynonym	clash
 WARN	duplicate_label_synonym	MI:2197	oboInOwl:hasExactSynonym	probe interaction assay
 WARN	duplicate_label_synonym	MI:2198	oboInOwl:hasExactSynonym	labelling assay
+WARN	duplicate_label_synonym	MI:2199	oboInOwl:hasExactSynonym	specific site-labelling technology
+WARN	duplicate_label_synonym	MI:2200	oboInOwl:hasExactSynonym	primesdb
+WARN	duplicate_label_synonym	MI:2201	oboInOwl:hasExactSynonym	DNA chemical modification
+WARN	duplicate_label_synonym	MI:2202	oboInOwl:hasExactSynonym	RNA chemical modification
+WARN	duplicate_label_synonym	MI:2203	oboInOwl:hasExactSynonym	primer extension assay
+WARN	duplicate_label_synonym	MI:2205	oboInOwl:hasExactSynonym	pir
+WARN	duplicate_label_synonym	MI:2206	oboInOwl:hasExactSynonym	observed nucleic acid chemical modification
+WARN	duplicate_label_synonym	MI:2207	oboInOwl:hasExactSynonym	resulting nucleic acid chemical modification
+WARN	duplicate_label_synonym	MI:2208	oboInOwl:hasExactSynonym	prerequisite-nucleic acid chemical modification
+WARN	duplicate_label_synonym	MI:2209	oboInOwl:hasExactSynonym	nucleic acid chemical modification decreasing an interaction
+WARN	duplicate_label_synonym	MI:2210	oboInOwl:hasExactSynonym	nucleic acid chemical modification disrupting an interaction
+WARN	duplicate_label_synonym	MI:2211	oboInOwl:hasExactSynonym	nucleic acid chemical modification increasing an interaction
+WARN	duplicate_label_synonym	MI:2212	oboInOwl:hasExactSynonym	proteomexchange
+WARN	duplicate_label_synonym	MI:2213	oboInOwl:hasExactSynonym	super-resolution microscopy
+WARN	duplicate_label_synonym	MI:2214	oboInOwl:hasExactSynonym	signor
+WARN	duplicate_label_synonym	MI:2215	oboInOwl:hasExactSynonym	barcode fusion genetics two hybrid
+WARN	duplicate_label_synonym	MI:2216	oboInOwl:hasExactSynonym	deampylation assay
+WARN	duplicate_label_synonym	MI:2217	oboInOwl:hasExactSynonym	luciferase-c
+WARN	duplicate_label_synonym	MI:2218	oboInOwl:hasExactSynonym	luciferase-n
+WARN	duplicate_label_synonym	MI:2219	oboInOwl:hasExactSynonym	gaussia luciferase protein tag
+WARN	duplicate_label_synonym	MI:2220	oboInOwl:hasExactSynonym	gaussia-c
+WARN	duplicate_label_synonym	MI:2221	oboInOwl:hasExactSynonym	gaussia-n
+WARN	duplicate_label_synonym	MI:2222	oboInOwl:hasExactSynonym	inference by socio-affinity scoring
+WARN	duplicate_label_synonym	MI:2223	oboInOwl:hasExactSynonym	inference by quantitative co-purification

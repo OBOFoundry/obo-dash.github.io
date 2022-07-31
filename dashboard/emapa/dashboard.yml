@@ -4,45 +4,46 @@ base_prefixes:
 - EMAPAALT
 - EMAPA
 changed: true
-date: 2022-06-01 12:58:53.663489
+date: 2022-07-29 20:15:05.537370
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 28449
-    Declaration: 8759
-    SubClassOf: 23348
+    AnnotationAssertion: 28513
+    Declaration: 8774
+    SubClassOf: 23001
     TransitiveObjectProperty: 4
-  'Axioms: Number of axioms': 60560
-  'Entities: % of entities reused': 0.25
+  'Axioms: Number of axioms': 60292
+  'Entities: % of entities reused': 0.57
   'Entities: Number of annotation properties': 18
-  'Entities: Number of classes': 8734
+  'Entities: Number of classes': 8749
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 9
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 55429
-    ObjectSomeValuesFrom: 18035
+    Class: 54750
+    ObjectSomeValuesFrom: 17674
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
     _dashboard: 0.638
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.0
+    _impact: 0.005
     _impact_external: 0.25
-    _reuse: 0.003
-    oboscore: 0.319
+    _reuse: 0.006
+    oboscore: 0.322
   'Info: How many externally documented uses?': 1
-  'Info: How many ontologies use it?': 0
+  'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    EMAPA: 43934
-    EMAPAALT: 28742
+    EMAPA: 43241
+    EMAPAALT: 17691
     IAO: 1651
-    obo: 30
-    oboInOwl: 18222
+    obo: 10734
+    oboInOwl: 18271
     owl: 1539
-    rdfs: 8035
-  'Info: Which ontologies use it?': []
+    rdfs: 8050
+  'Info: Which ontologies use it?':
+  - ado
 mirror_from: http://purl.obolibrary.org/obo/emapa.owl
 namespace: emapa
 results:
@@ -59,7 +60,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 7762 missing definitions. See ROBOT Report for details.
+    comment: 7749 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     comment: 9 non-RO properties used.
@@ -79,14 +80,14 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 17 errors, 7816 warnings, 4 info messages.
+    comment: 17 errors, 7803 warnings, 4 info messages.
     file: robot_report
     results:
       ERROR: 17
       INFO: 4
-      WARN: 7816
+      WARN: 7803
     status: ERROR
-sha256_hash: c86be2f69fe79220b6e34366f360ae02c37b6ebb404756a688244b9482d1e2e7
+sha256_hash: 4dae515c7af7d28f113657a9fd342dc3a7b1b729951a363244ac65d6f8081ed0
 summary:
   comment: 4 errors
   status: ERROR
@@ -94,4 +95,4 @@ summary:
     ERROR: 4
     INFO: 1
     WARN: 1
-version: http://purl.obolibrary.org/obo/emapa/releases/2021-09-01/emapa.owl
+version: http://purl.obolibrary.org/obo/emapa/releases/2022-07-28/emapa.owl

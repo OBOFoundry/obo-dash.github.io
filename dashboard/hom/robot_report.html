@@ -23,15 +23,15 @@
       <div class="report_summary"><table class="table">
       <tr><th><b>Rule</b></th><th><b>Number of errors</b></th></tr>
       
-      <tr><td>missing_ontology_title</td><td>1</td></tr>
-      
       <tr><td>missing_ontology_description</td><td>1</td></tr>
       
       <tr><td>missing_ontology_license</td><td>1</td></tr>
       
-      <tr><td>invalid_xref</td><td>2</td></tr>
+      <tr><td>missing_ontology_title</td><td>1</td></tr>
       
       <tr><td>annotation_whitespace</td><td>1</td></tr>
+      
+      <tr><td>invalid_xref</td><td>2</td></tr>
       
       <tr><td>missing_obsolete_label</td><td>1</td></tr>
       
@@ -73,46 +73,6 @@
             
               <td>
               
-                <a href="http://robot.obolibrary.org/report_queries/missing_ontology_title">missing_ontology_title</a>
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/hom.owl">http://purl.obolibrary.org/obo/hom.owl</a>
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.org/dc/terms/title">dc:title</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-danger">
-            <td>2</td>
-            
-              <td>
-              
-                ERROR
-              
-              </td>
-            
-              <td>
-              
                 <a href="http://robot.obolibrary.org/report_queries/missing_ontology_description">missing_ontology_description</a>
               
               </td>
@@ -143,7 +103,7 @@
             
           
           <tr class="table-danger">
-            <td>3</td>
+            <td>2</td>
             
               <td>
               
@@ -182,8 +142,88 @@
           
             
           
+          <tr class="table-danger">
+            <td>3</td>
+            
+              <td>
+              
+                ERROR
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/missing_ontology_title">missing_ontology_title</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/hom.owl">http://purl.obolibrary.org/obo/hom.owl</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.org/dc/terms/title">dc:title</a>
+              
+              </td>
+            
+              <td>
+              
+                
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
           <tr class="table-warning">
             <td>4</td>
+            
+              <td>
+              
+                WARN
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://robot.obolibrary.org/report_queries/annotation_whitespace">annotation_whitespace</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://purl.obolibrary.org/obo/HOM_0000036">HOM:0000036</a>
+              
+              </td>
+            
+              <td>
+              
+                <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">oboInOwl:hasExactSynonym</a>
+              
+              </td>
+            
+              <td>
+              
+                many:many homology 
+
+              
+              </td>
+            
+          </tr>
+        
+          
+          
+            
+          
+          <tr class="table-warning">
+            <td>5</td>
             
               <td>
               
@@ -223,7 +263,7 @@
             
           
           <tr class="table-warning">
-            <td>5</td>
+            <td>6</td>
             
               <td>
               
@@ -252,46 +292,6 @@
               <td>
               
                 MeSH:Chromosome Pairing
-
-              
-              </td>
-            
-          </tr>
-        
-          
-          
-            
-          
-          <tr class="table-warning">
-            <td>6</td>
-            
-              <td>
-              
-                WARN
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/annotation_whitespace">annotation_whitespace</a>
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/HOM_0000036">HOM:0000036</a>
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">oboInOwl:hasExactSynonym</a>
-              
-              </td>
-            
-              <td>
-              
-                many:many homology 
 
               
               </td>

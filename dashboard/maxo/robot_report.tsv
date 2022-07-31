@@ -1,4 +1,7 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	missing_label	MAXO:0000595	rdfs:label	
+ERROR	multiple_definitions	MAXO:0000126	IAO:0000115	The use of any device, marker, or other means for the purpose of detecting the presence Neoplasm, usually in asymptomatic individuals.
+ERROR	multiple_definitions	MAXO:0000126	IAO:0000115	The use of any device, marker, or other means for the purpose of detecting the presence of a tumor, usually before there are any symptoms.
 ERROR	multiple_labels	MAXO:0000061	rdfs:label	antibacterial agent therapy
 ERROR	multiple_labels	MAXO:0000061	rdfs:label	antibacterial agent therapy@en
 ERROR	multiple_labels	MAXO:0000126	rdfs:label	cancer screening
@@ -67,10 +70,6 @@ ERROR	multiple_labels	MAXO:0001020	rdfs:label	general anesthetic agent therapy
 ERROR	multiple_labels	MAXO:0001020	rdfs:label	general anesthetic agent therapy@en
 ERROR	multiple_labels	MAXO:0001021	rdfs:label	antimicrobial agent therapy
 ERROR	multiple_labels	MAXO:0001021	rdfs:label	antimicrobial agent therapy@en
-ERROR	multiple_definitions	MAXO:0000126	IAO:0000115	The use of any device, marker, or other means for the purpose of detecting the presence Neoplasm, usually in asymptomatic individuals.
-ERROR	multiple_definitions	MAXO:0000126	IAO:0000115	The use of any device, marker, or other means for the purpose of detecting the presence of a tumor, usually before there are any symptoms.
-ERROR	missing_label	MAXO:0000595	rdfs:label	
-WARN	missing_synonymtype_declaration	obo:maxo#ABBREVIATION	rdfs:subPropertyOf	
 WARN	duplicate_label_synonym	MAXO:0000062	oboInOwl:hasExactSynonym	antineoplastic agent therapy
 WARN	duplicate_label_synonym	MAXO:0000159	oboInOwl:hasExactSynonym	analgesic therapy
 WARN	duplicate_label_synonym	MAXO:0000166	oboInOwl:hasExactSynonym	antipsychotic agent therapy
@@ -118,7 +117,10 @@ WARN	missing_definition	MAXO:0001226	IAO:0000115
 WARN	missing_definition	MAXO:0009013	IAO:0000115	
 WARN	missing_definition	MAXO:0009014	IAO:0000115	
 WARN	missing_definition	MAXO:0009016	IAO:0000115	
+WARN	missing_definition	MAXO:0009074	IAO:0000115	
+WARN	missing_definition	MAXO:0009087	IAO:0000115	
 WARN	missing_definition	obo:maxo#ABBREVIATION	IAO:0000115	
+WARN	missing_synonymtype_declaration	obo:maxo#ABBREVIATION	rdfs:subPropertyOf	
 INFO	missing_superclass	MAXO:0000001	rdfs:subClassOf	
 INFO	missing_superclass	MAXO:0000107	rdfs:subClassOf	
 INFO	missing_superclass	MAXO:0000108	rdfs:subClassOf	
@@ -196,5 +198,3 @@ INFO	missing_superclass	MAXO:0000392	rdfs:subClassOf
 INFO	missing_superclass	MAXO:0000393	rdfs:subClassOf	
 INFO	missing_superclass	MAXO:0000394	rdfs:subClassOf	
 INFO	missing_superclass	MAXO:0000395	rdfs:subClassOf	
-INFO	missing_superclass	MAXO:0000396	rdfs:subClassOf	
-INFO	missing_superclass	MAXO:0000397	rdfs:subClassOf	
