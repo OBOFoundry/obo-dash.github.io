@@ -1,5 +1,5 @@
 <head>
-  <title>OBO Dashboard (2022-07-29)</title>
+  <title>OBO Dashboard (2022-09-25)</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <style>
 body {
@@ -38,7 +38,7 @@ $(function () {
 </script>
 </head>
 <body>
-  <h1>OBO Dashboard (2022-07-29)</h1>
+  <h1>OBO Dashboard (2022-09-25)</h1>
   <h4>Dashboard for OBO Foundry ontologies. <a href="about.html">Learn More!</a></h4>
   <p>Created with <a href="http://robot.obolibrary.org/">ROBOT version 1.9.0</a> and <a href="https://github.com/OBOFoundry/OBO-Dashboard/commit/1844d3889d9d84b29bc9c20c30ec8005e0ea3aca">OBO Metadata Schema</a>.</p>
   <p>A very basic analysis of the results can be found <a href="analysis.html">here</a>.</p>
@@ -421,7 +421,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not resolve"></td>
                 
             
                 
@@ -1087,7 +1087,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="357 errors, 4992 warnings, 383 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="357 errors, 5011 warnings, 383 info messages."></td>
                 
             
             
@@ -1357,7 +1357,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2019-08-26) is over two year(s) old"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2019-08-26) is over three year(s) old"></td>
                 
             
                 
@@ -1609,7 +1609,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Homepage URL (http://www.brenda-enzymes.org) does not resolve"></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
                 
@@ -1690,7 +1690,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Ontology license 'https://creativecommons.org/licenses/unspecified' does not match regsitry license 'https://creativecommons.org/licenses/by/3.0/'."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Ontology license 'https://creativecommons.org/licenses/unspecified' does not match registry license 'https://creativecommons.org/licenses/by/3.0/'."></td>
                 
             
                 
@@ -1978,7 +1978,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Ontology license 'https://creativecommons.org/licenses/unspecified' does not match regsitry license 'https://creativecommons.org/licenses/by/3.0/'."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Ontology license 'https://creativecommons.org/licenses/unspecified' does not match registry license 'https://creativecommons.org/licenses/by/3.0/'."></td>
                 
             
                 
@@ -2005,7 +2005,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not resolve"></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
                 
@@ -2114,12 +2114,144 @@ $(function () {
         <tr>
             <td><b><a href="chebi/dashboard.html">chebi</a></b></td>
             
-                <td class="table-notchecked" colspan="13">Failed to process ontology: failed_download</td>
             
             
                 
                 
-                <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing ontology license."></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI 'http://purl.obolibrary.org/obo/chebi/213/chebi.owl' is not in recommended format"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="1230 duplicate definitions. 110254 missing definitions. See ROBOT Report for details."></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="8 non-RO properties used."></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="3 missing labels. See ROBOT Report for details."></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not have date information"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="1236 errors, 129671 warnings, 154 info messages."></td>
+                
+            
+            
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
+                
             
         </tr>
     
@@ -2134,7 +2266,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="License should use property 'http://purl.org/dc/terms/license'. Ontology license 'http://creativecommons.org/licenses/by/3.0' does not match regsitry license 'http://creativecommons.org/licenses/by/4.0/'."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="License should use property 'http://purl.org/dc/terms/license'. Ontology license 'http://creativecommons.org/licenses/by/3.0' does not match registry license 'http://creativecommons.org/publicdomain/zero/1.0/'."></td>
                 
             
                 
@@ -2206,7 +2338,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing usages"></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
                 
@@ -2611,7 +2743,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="34 duplicate definitions. 18 multiple definitions. 606 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="34 duplicate definitions. 18 multiple definitions. 617 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -2683,7 +2815,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="624 errors, 816 warnings, 20 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="624 errors, 827 warnings, 19 info messages."></td>
                 
             
             
@@ -2899,7 +3031,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="369 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="370 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -2971,7 +3103,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="376 warnings, 431 info messages."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="376 warnings, 447 info messages."></td>
                 
             
             
@@ -2998,7 +3130,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Ontology license 'https://creativecommons.org/licenses/by/4.0/' does not match regsitry license 'http://creativecommons.org/publicdomain/zero/1.0/'."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Ontology license 'https://creativecommons.org/licenses/by/4.0/' does not match registry license 'http://creativecommons.org/publicdomain/zero/1.0/'."></td>
                 
             
                 
@@ -3205,7 +3337,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Homepage URL (http://www.clo-ontology.org) does not resolve"></td>
                 
             
                 
@@ -3745,7 +3877,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not resolve"></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
                 
@@ -5131,7 +5263,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2442 warnings, 1 info messages."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2435 warnings, 1 info messages."></td>
                 
             
             
@@ -5851,7 +5983,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="136 warnings, 639 info messages."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="163 warnings, 639 info messages."></td>
                 
             
             
@@ -6139,7 +6271,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="1971 warnings, 2822 info messages."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="1973 warnings, 2826 info messages."></td>
                 
             
             
@@ -6211,7 +6343,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="7749 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="7746 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -6256,15 +6388,6 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="14 duplicate labels. See ROBOT Report for details."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
                     <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
@@ -6283,7 +6406,16 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="17 errors, 7803 warnings, 4 info messages."></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="3 errors, 7798 warnings, 4 info messages."></td>
                 
             
             
@@ -6310,7 +6442,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Ontology license 'https://creativecommons.org/publicdomain/zero/1.0/' does not match regsitry license 'http://creativecommons.org/licenses/by/3.0/'."></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
                 
@@ -6438,7 +6570,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px"></td>
                 
             
         </tr>
@@ -6643,7 +6775,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="41 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="40 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -6715,7 +6847,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="223 warnings, 341 info messages."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="222 warnings, 313 info messages."></td>
                 
             
             
@@ -7291,7 +7423,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="490 errors, 664 warnings, 3292 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="490 errors, 616 warnings, 4060 info messages."></td>
                 
             
             
@@ -7894,7 +8026,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Ontology license 'http://creativecommons.org/licenses/by/4.0/' does not match regsitry license 'http://creativecommons.org/licenses/by/3.0/'."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Ontology license 'http://creativecommons.org/licenses/by/4.0/' does not match registry license 'http://creativecommons.org/licenses/by/3.0/'."></td>
                 
             
                 
@@ -8030,144 +8162,12 @@ $(function () {
         <tr>
             <td><b><a href="foodon/dashboard.html">foodon</a></b></td>
             
+                <td class="table-notchecked" colspan="13">Failed to process ontology: failed_robot_base</td>
             
             
                 
                 
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="485 duplicate definitions. 10 multiple definitions. 12417 missing definitions. See ROBOT Report for details."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="3 non-RO properties used."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing usages"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="16 duplicate labels. 174 multiple labels. 4 missing labels. See ROBOT Report for details."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="753 errors, 13912 warnings, 390 info messages."></td>
-                
-            
-            
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
-                
+                <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
             
         </tr>
     
@@ -8443,7 +8443,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="21 warnings, 4 info messages."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="22 warnings, 4 info messages."></td>
                 
             
             
@@ -8758,15 +8758,6 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Ontology license 'https://creativecommons.org/licenses/by-sa/2.0/' does not match regsitry license 'https://creativecommons.org/licenses/by/4.0/'."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
                     <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
@@ -8785,7 +8776,16 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not resolve"></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
                 
@@ -9307,7 +9307,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="5 errors, 5 warnings, 13885 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="5 errors, 5 warnings, 13880 info messages."></td>
                 
             
             
@@ -9334,7 +9334,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Registry license 'http://www.apache.org/licenses/LICENSE-2.0' is not a valid open license. Ontology license 'https://www.apache.org/licenses/license-2.0' does not match regsitry license 'http://www.apache.org/licenses/LICENSE-2.0'."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Registry license 'http://www.apache.org/licenses/LICENSE-2.0' is not a valid open license. Ontology license 'https://creativecommons.org/licenses/by-nc-nd/4.0/' does not match registry license 'http://www.apache.org/licenses/LICENSE-2.0'."></td>
                 
             
                 
@@ -9424,7 +9424,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="50 duplicate labels. 879 multiple labels. See ROBOT Report for details."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="48 duplicate labels. 879 multiple labels. See ROBOT Report for details."></td>
                 
             
                 
@@ -9451,7 +9451,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="1421 errors, 61 warnings, 34 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="1419 errors, 59 warnings, 34 info messages."></td>
                 
             
             
@@ -11206,7 +11206,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Registry license 'http://opensource.org/licenses/Artistic-2.0' is not a valid open license. License should use property 'http://purl.org/dc/terms/license'. Ontology license 'artistic license 2.0' does not match regsitry license 'http://opensource.org/licenses/Artistic-2.0'."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Registry license 'http://opensource.org/licenses/Artistic-2.0' is not a valid open license. License should use property 'http://purl.org/dc/terms/license'. Ontology license 'artistic license 2.0' does not match registry license 'http://opensource.org/licenses/Artistic-2.0'."></td>
                 
             
                 
@@ -11782,7 +11782,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Ontology license 'https://creativecommons.org/licenses/by/4.0/' does not match regsitry license 'http://creativecommons.org/licenses/by/3.0/'."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Ontology license 'https://creativecommons.org/licenses/by/4.0/' does not match registry license 'http://creativecommons.org/licenses/by/3.0/'."></td>
                 
             
                 
@@ -11827,7 +11827,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2 multiple definitions. 17 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2 multiple definitions. 18 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -11872,7 +11872,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="68 multiple labels. 1 missing labels. See ROBOT Report for details."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="72 multiple labels. 1 missing labels. See ROBOT Report for details."></td>
                 
             
                 
@@ -11899,7 +11899,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="71 errors, 51 warnings, 425 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="75 errors, 52 warnings, 424 info messages."></td>
                 
             
             
@@ -13555,7 +13555,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="6929 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="6893 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -13627,7 +13627,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="17083 warnings, 0 info messages."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="17022 warnings, 0 info messages."></td>
                 
             
             
@@ -13843,7 +13843,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="141 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="134 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -13915,7 +13915,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="149 warnings, 13542 info messages."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="147 warnings, 13580 info messages."></td>
                 
             
             
@@ -14275,7 +14275,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="51216 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="51222 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -14347,7 +14347,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="56345 warnings, 0 info messages."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="56351 warnings, 0 info messages."></td>
                 
             
             
@@ -14707,7 +14707,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2427671 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2438867 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -14779,7 +14779,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2437612 warnings, 1 info messages."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2448811 warnings, 1 info messages."></td>
                 
             
             
@@ -14851,7 +14851,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="6567 duplicate definitions. 33204 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="6592 duplicate definitions. 33168 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -14896,7 +14896,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="1636 duplicate labels. 2 missing labels. See ROBOT Report for details."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="1648 duplicate labels. 2 missing labels. See ROBOT Report for details."></td>
                 
             
                 
@@ -14923,7 +14923,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="18015 errors, 254068 warnings, 215 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="18141 errors, 256595 warnings, 217 info messages."></td>
                 
             
             
@@ -15283,7 +15283,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="15 duplicate definitions. 6 multiple definitions. 113 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="362 duplicate definitions. 18 multiple definitions. 402 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -15328,7 +15328,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="26 duplicate labels. See ROBOT Report for details."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="166 duplicate labels. 18 multiple labels. See ROBOT Report for details."></td>
                 
             
                 
@@ -15355,7 +15355,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="67 errors, 382 warnings, 3607 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="584 errors, 630 warnings, 3608 info messages."></td>
                 
             
             
@@ -15643,7 +15643,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="116 warnings, 7559 info messages."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="115 warnings, 7577 info messages."></td>
                 
             
             
@@ -15670,7 +15670,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Ontology license 'http://creativecommons.org/licenses/by/4.0/' does not match regsitry license 'http://creativecommons.org/licenses/by/3.0/'."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Ontology license 'http://creativecommons.org/licenses/by/4.0/' does not match registry license 'http://creativecommons.org/licenses/by/3.0/'."></td>
                 
             
                 
@@ -16345,7 +16345,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2021-08-19) is over one year(s) old"></td>
                 
             
                 
@@ -16390,7 +16390,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="License should use property 'http://purl.org/dc/terms/license'. Ontology license 'new bsd license' does not match regsitry license 'https://creativecommons.org/licenses/by/3.0/'."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="License should use property 'http://purl.org/dc/terms/license'. Ontology license 'new bsd license' does not match registry license 'https://creativecommons.org/licenses/by/3.0/'."></td>
                 
             
                 
@@ -16777,7 +16777,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2019-09-17) is over two year(s) old"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2019-09-17) is over three year(s) old"></td>
                 
             
                 
@@ -18118,7 +18118,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="License should use property 'http://purl.org/dc/terms/license'. Ontology license 'http://creativecommons.org/licenses/by/4.0/' does not match regsitry license 'http://creativecommons.org/licenses/by/3.0/'."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="License should use property 'http://purl.org/dc/terms/license'. Ontology license 'http://creativecommons.org/licenses/by/4.0/' does not match registry license 'http://creativecommons.org/licenses/by/3.0/'."></td>
                 
             
                 
@@ -18361,7 +18361,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2021-01-08) is over one year(s) old"></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
                 
@@ -18595,7 +18595,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="26 duplicate definitions. 20 multiple definitions. 240 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="26 duplicate definitions. 20 multiple definitions. 239 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -18667,7 +18667,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="47 errors, 301 warnings, 33 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="47 errors, 300 warnings, 33 info messages."></td>
                 
             
             
@@ -19027,7 +19027,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="19 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="18 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -19801,7 +19801,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2020-08-21) is over one year(s) old"></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2020-08-21) is over two year(s) old"></td>
                 
             
                 
@@ -20377,7 +20377,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2021-08-13) is over one year(s) old"></td>
                 
             
                 
@@ -20737,7 +20737,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI 'http://purl.obolibrary.org/obo/pr/66.0/pr.owl' is not in recommended format"></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI 'http://purl.obolibrary.org/obo/pr/67.0/pr.owl' is not in recommended format"></td>
                 
             
                 
@@ -20998,7 +20998,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Ontology license 'https://creativecommons.org/licenses/by/4.0/' does not match regsitry license 'http://creativecommons.org/licenses/by/3.0/'."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Ontology license 'https://creativecommons.org/licenses/by/4.0/' does not match registry license 'http://creativecommons.org/licenses/by/3.0/'."></td>
                 
             
                 
@@ -21998,12 +21998,144 @@ $(function () {
         <tr>
             <td><b><a href="sbo/dashboard.html">sbo</a></b></td>
             
-                <td class="table-notchecked" colspan="13">Failed to process ontology: failed_download</td>
             
             
                 
                 
-                <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Registry license 'http://opensource.org/licenses/Artistic-2.0' is not a valid open license. Missing ontology license."></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="0 invalid IRIs. The Ontology IRI is not valid."></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing version IRI"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Homepage URL (http://www.ebi.ac.uk/sbo/) does not resolve"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing usages"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing version IRI to check date"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+            
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
+                
             
         </tr>
     
@@ -22018,7 +22150,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Registry license 'https://www.gnu.org/licenses/gpl-3.0.en.html' is not a valid open license. License should use property 'http://purl.org/dc/terms/license'. Ontology license 'gpl-3.0' does not match regsitry license 'https://www.gnu.org/licenses/gpl-3.0.en.html'."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Registry license 'https://www.gnu.org/licenses/gpl-3.0.en.html' is not a valid open license. License should use property 'http://purl.org/dc/terms/license'. Ontology license 'gpl-3.0' does not match registry license 'https://www.gnu.org/licenses/gpl-3.0.en.html'."></td>
                 
             
                 
@@ -22423,7 +22555,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="74 errors, 320 warnings, 11 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="74 errors, 321 warnings, 11 info messages."></td>
                 
             
             
@@ -22738,7 +22870,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Ontology license 'swo is provided under a creative commons attribution 4.0 international (cc by 4.0) license (https://creativecommons.org/licenses/by/4.0/).' does not match regsitry license 'https://creativecommons.org/licenses/by/4.0/'."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Ontology license 'swo is provided under a creative commons attribution 4.0 international (cc by 4.0) license (https://creativecommons.org/licenses/by/4.0/).' does not match registry license 'https://creativecommons.org/licenses/by/4.0/'."></td>
                 
             
                 
@@ -22927,7 +23059,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="628 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="506 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -22999,7 +23131,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="628 warnings, 1 info messages."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="509 warnings, 1 info messages."></td>
                 
             
             
@@ -23287,7 +23419,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="8 errors, 128 warnings, 0 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="9 errors, 129 warnings, 0 info messages."></td>
                 
             
             
@@ -23413,7 +23545,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2020-08-04) is over one year(s) old"></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2020-08-04) is over two year(s) old"></td>
                 
             
                 
@@ -23442,7 +23574,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px"></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px"></td>
                 
             
         </tr>
@@ -23602,7 +23734,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="License should use property 'http://purl.org/dc/terms/license'. Ontology license 'http://creativecommons.org/licenses/by/4.0/' does not match regsitry license 'https://creativecommons.org/licenses/by/3.0/'."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="License should use property 'http://purl.org/dc/terms/license'. Ontology license 'http://creativecommons.org/licenses/by/4.0/' does not match registry license 'https://creativecommons.org/licenses/by/3.0/'."></td>
                 
             
                 
@@ -23863,7 +23995,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="129 errors, 4644 warnings, 2949 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="129 errors, 4640 warnings, 2950 info messages."></td>
                 
             
             
@@ -24168,6 +24300,150 @@ $(function () {
         </tr>
     
         <tr>
+            <td><b><a href="vbo/dashboard.html">vbo</a></b></td>
+            
+            
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="OWL syntax (RDF/XML), but should be RDF/XML"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="17094 missing definitions. See ROBOT Report for details."></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing usages"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="29452 warnings, 3 info messages."></td>
+                
+            
+            
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
+                
+            
+        </tr>
+    
+        <tr>
             <td><b><a href="vo/dashboard.html">vo</a></b></td>
             
             
@@ -24178,7 +24454,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="License should use property 'http://purl.org/dc/terms/license'. Ontology license 'http://creativecommons.org/licenses/by/4.0/' does not match regsitry license 'http://creativecommons.org/licenses/by/3.0/'."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="License should use property 'http://purl.org/dc/terms/license'. Ontology license 'http://creativecommons.org/licenses/by/4.0/' does not match registry license 'http://creativecommons.org/licenses/by/3.0/'."></td>
                 
             
                 
@@ -24223,7 +24499,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="36 duplicate definitions. 29 multiple definitions. 4784 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="38 duplicate definitions. 29 multiple definitions. 4785 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -24268,7 +24544,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="255 duplicate labels. 35 multiple labels. See ROBOT Report for details."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="257 duplicate labels. 35 multiple labels. See ROBOT Report for details."></td>
                 
             
                 
@@ -24295,7 +24571,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="360 errors, 5063 warnings, 570 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="364 errors, 5064 warnings, 570 info messages."></td>
                 
             
             
@@ -25141,7 +25417,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2021-03-04) is over one year(s) old"></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
                 
@@ -25573,7 +25849,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2021-03-05) is over one year(s) old"></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
                 
@@ -25591,7 +25867,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="10 errors, 2 warnings, 20072 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="10 errors, 2 warnings, 20371 info messages."></td>
                 
             
             

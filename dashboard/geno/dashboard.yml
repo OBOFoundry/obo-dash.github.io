@@ -4,7 +4,7 @@ base_prefixes:
 - GENOALT
 - GENO
 changed: true
-date: 2022-07-29 20:19:25.534702
+date: 2022-09-25 13:02:11.283525
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1808
@@ -43,12 +43,12 @@ metrics:
     ObjectUnionOf: 15
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.593
+    _dashboard: 0.727
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.016
     _impact_external: 0
     _reuse: 0.385
-    oboscore: 0.304
+    oboscore: 0.371
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
@@ -93,16 +93,13 @@ mirror_from: http://purl.obolibrary.org/obo/geno/geno-base.owl
 namespace: geno
 results:
   FP01 Open:
-    comment: Ontology license 'https://creativecommons.org/licenses/by-sa/2.0/' does
-      not match regsitry license 'https://creativecommons.org/licenses/by/4.0/'.
-    status: ERROR
+    status: PASS
   FP02 Common Format:
     status: PASS
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    comment: Version IRI does not resolve
-    status: ERROR
+    status: PASS
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -135,12 +132,12 @@ results:
       INFO: 29
       WARN: 94
     status: ERROR
-sha256_hash: d116509b94bcdd0800f3b53950600acbd2922b1b54951af15ae20c10ec9e7a15
+sha256_hash: ce548a49923e2fbf2fe41b58e9aff19317cf37efa2206c4c6e92508287eef1bb
 summary:
-  comment: 6 errors
+  comment: 4 errors
   status: ERROR
   summary_count:
-    ERROR: 6
+    ERROR: 4
     INFO: 1
     WARN: 0
-version: http://purl.obolibrary.org/obo/geno/releases/2022-03-05/geno-base.owl
+version: http://purl.obolibrary.org/obo/geno/releases/2022-08-10/geno-base.owl

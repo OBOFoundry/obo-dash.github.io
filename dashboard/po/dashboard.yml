@@ -4,7 +4,7 @@ base_prefixes:
 - POALT
 - PO
 changed: true
-date: 2022-07-29 19:46:55.136422
+date: 2022-09-25 14:45:08.325662
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 18941
@@ -40,14 +40,14 @@ metrics:
     ObjectUnionOf: 1
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.704
+    _dashboard: 0.698
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.098
+    _impact: 0.092
     _impact_external: 0.5
     _reuse: 0.084
-    oboscore: 0.401
+    oboscore: 0.395
   'Info: How many externally documented uses?': 4
-  'Info: How many ontologies use it?': 18
+  'Info: How many ontologies use it?': 17
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -73,7 +73,6 @@ metrics:
   - envo
   - eupath
   - flopo
-  - foodon
   - genepio
   - go
   - micro
@@ -116,7 +115,8 @@ results:
     comment: 15 missing labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
-    status: PASS
+    comment: last version (2021-08-13) is over one year(s) old
+    status: INFO
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
@@ -133,6 +133,6 @@ summary:
   status: ERROR
   summary_count:
     ERROR: 3
-    INFO: 1
+    INFO: 2
     WARN: 1
 version: http://purl.obolibrary.org/obo/po/releases/2021-08-13/po.owl
