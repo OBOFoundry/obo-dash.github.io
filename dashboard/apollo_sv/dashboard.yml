@@ -4,70 +4,70 @@ base_prefixes:
 - APOLLO_SVALT
 - APOLLO_SV
 changed: true
-date: 2022-09-28 14:05:28.118629
+date: 2022-11-26 20:17:46.830962
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 11436
+    AnnotationAssertion: 11520
     AnnotationPropertyRangeOf: 1
     AsymmetricObjectProperty: 7
-    ClassAssertion: 25
+    ClassAssertion: 26
     DataPropertyDomain: 5
     DataPropertyRange: 4
-    Declaration: 1962
+    Declaration: 1963
     DifferentIndividuals: 2
     DisjointClasses: 27
-    EquivalentClasses: 173
+    EquivalentClasses: 175
     EquivalentObjectProperties: 3
     FunctionalDataProperty: 4
     FunctionalObjectProperty: 4
     InverseFunctionalObjectProperty: 1
-    InverseObjectProperties: 22
+    InverseObjectProperties: 21
     IrrefexiveObjectProperty: 9
     ObjectPropertyDomain: 39
     ObjectPropertyRange: 38
     ReflexiveObjectProperty: 3
     Rule: 4
-    SubAnnotationPropertyOf: 4
-    SubClassOf: 1830
+    SubAnnotationPropertyOf: 9
+    SubClassOf: 1829
     SubObjectPropertyOf: 97
     SubPropertyChainOf: 2
     TransitiveObjectProperty: 7
-  'Axioms: Number of axioms': 15709
-  'Entities: % of entities reused': 68.34
-  'Entities: Number of annotation properties': 118
+  'Axioms: Number of axioms': 15800
+  'Entities: % of entities reused': 68.35
+  'Entities: Number of annotation properties': 120
   'Entities: Number of classes': 1689
   'Entities: Number of data properties': 5
-  'Entities: Number of individuals': 29
-  'Entities: Number of object properties': 125
+  'Entities: Number of individuals': 27
+  'Entities: Number of object properties': 126
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 6238
+    Class: 6244
     DataExactCardinality: 6
     DataMinCardinality: 1
     ObjectAllValuesFrom: 45
     ObjectComplementOf: 27
     ObjectExactCardinality: 9
     ObjectHasValue: 4
-    ObjectIntersectionOf: 327
+    ObjectIntersectionOf: 329
     ObjectMinCardinality: 10
     ObjectOneOf: 3
-    ObjectSomeValuesFrom: 482
+    ObjectSomeValuesFrom: 484
     ObjectUnionOf: 20
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.587
+    _dashboard: 0.593
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.092
+    _impact: 0.097
     _impact_external: 0
     _reuse: 0.683
-    oboscore: 0.339
+    oboscore: 0.345
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 17
+  'Info: How many ontologies use it?': 18
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     APOLLO_SV: 2032
-    BFO: 781
+    BFO: 779
     CHEBI: 3
     DOID: 13
     DRON: 3
@@ -76,17 +76,18 @@ metrics:
     ERO: 3
     FBcv: 6
     FMA: 17
-    GAZ: 4
+    GAZ: 1
     GEO: 174
     GO: 191
-    IAO: 7186
+    IAO: 7265
     NBO: 3
     NCBITAXONALT: 256
     NCBITaxon: 1659
     OAE: 4
-    OBI: 368
+    OBI: 367
     OGMS: 61
     OMIABIS: 7
+    OMO: 6
     OMRSE: 146
     PATO: 61
     PCO: 21
@@ -96,15 +97,15 @@ metrics:
     UO: 39
     VO: 13
     dc: 1
-    dc11: 99
+    dc11: 103
     foaf: 5
-    obo: 404
-    oboInOwl: 2996
+    obo: 402
+    oboInOwl: 3000
     owl: 115
     prefix_unknown: 33
     protege: 1
     rdf: 2
-    rdfs: 2385
+    rdfs: 2403
     xsd: 4
   'Info: Which ontologies use it?':
   - agro
@@ -124,6 +125,7 @@ metrics:
   - one
   - oostt
   - scdo
+  - swo
 mirror_from: http://purl.obolibrary.org/obo/apollo_sv.owl
 namespace: apollo_sv
 results:
@@ -157,24 +159,23 @@ results:
     comment: 8 multiple labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
-    comment: Version IRI does not have date information
-    status: INFO
+    status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 38 errors, 114 warnings, 61 info messages.
+    comment: 39 errors, 115 warnings, 61 info messages.
     file: robot_report
     results:
-      ERROR: 38
+      ERROR: 39
       INFO: 61
-      WARN: 114
+      WARN: 115
     status: ERROR
-sha256_hash: 46dfefab8bd671f37a48235c4ce8f049cdf3843aa200423f15b52715495abc22
+sha256_hash: 6ddbbf6fab2266c8c153d6b5f398446838770c5fe8b22ed5990fe82e9531312a
 summary:
   comment: 5 errors
   status: ERROR
   summary_count:
     ERROR: 5
-    INFO: 2
+    INFO: 1
     WARN: 0
-version: http://purl.obolibrary.org/obo/apollo_sv/v4.1.1./apollo_sv.owl
+version: http://purl.obolibrary.org/obo/apollo_sv/releases/2022-11-25/apollo_sv.owl

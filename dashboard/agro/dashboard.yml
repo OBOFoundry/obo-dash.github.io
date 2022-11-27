@@ -4,19 +4,19 @@ base_prefixes:
 - AGROALT
 - AGRO
 changed: true
-date: 2022-09-28 14:05:01.972675
+date: 2022-11-26 20:17:22.182512
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 14696
+    AnnotationAssertion: 15809
     AnnotationPropertyRangeOf: 1
     ClassAssertion: 331
     DataPropertyDomain: 6
     DataPropertyRange: 5
     DatatypeDefinition: 1
-    Declaration: 4581
+    Declaration: 5009
     DifferentIndividuals: 2
-    DisjointClasses: 44
-    EquivalentClasses: 1193
+    DisjointClasses: 45
+    EquivalentClasses: 1208
     EquivalentObjectProperties: 3
     FunctionalDataProperty: 4
     FunctionalObjectProperty: 5
@@ -24,90 +24,88 @@ metrics:
     InverseObjectProperties: 42
     IrrefexiveObjectProperty: 1
     ObjectPropertyAssertion: 46
-    ObjectPropertyDomain: 56
-    ObjectPropertyRange: 57
-    ReflexiveObjectProperty: 1
-    Rule: 25
+    ObjectPropertyDomain: 57
+    ObjectPropertyRange: 58
+    ReflexiveObjectProperty: 2
+    Rule: 28
     SubAnnotationPropertyOf: 2
-    SubClassOf: 6157
+    SubClassOf: 6727
     SubDataPropertyOf: 1
-    SubObjectPropertyOf: 184
-    SubPropertyChainOf: 62
-    SymmetricObjectProperty: 2
-    TransitiveObjectProperty: 16
-  'Axioms: Number of axioms': 27525
-  'Entities: % of entities reused': 82.68
-  'Entities: Number of annotation properties': 86
-  'Entities: Number of classes': 3738
-  'Entities: Number of data properties': 8
-  'Entities: Number of individuals': 550
-  'Entities: Number of object properties': 197
+    SubObjectPropertyOf: 194
+    SubPropertyChainOf: 74
+    SymmetricObjectProperty: 3
+    TransitiveObjectProperty: 18
+  'Axioms: Number of axioms': 29683
+  'Entities: % of entities reused': 82.29
+  'Entities: Number of annotation properties': 85
+  'Entities: Number of classes': 4163
+  'Entities: Number of data properties': 6
+  'Entities: Number of individuals': 552
+  'Entities: Number of object properties': 203
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 20060
+    Class: 21682
     DataExactCardinality: 6
     DataMinCardinality: 2
-    DataSomeValuesFrom: 2
-    ObjectAllValuesFrom: 28
+    ObjectAllValuesFrom: 34
     ObjectComplementOf: 18
     ObjectExactCardinality: 2
     ObjectHasSelf: 1
-    ObjectIntersectionOf: 1112
+    ObjectIntersectionOf: 1153
     ObjectMaxCardinality: 1
     ObjectMinCardinality: 11
-    ObjectOneOf: 273
-    ObjectSomeValuesFrom: 2874
-    ObjectUnionOf: 165
+    ObjectOneOf: 275
+    ObjectSomeValuesFrom: 2982
+    ObjectUnionOf: 170
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.66
+    _dashboard: 0.822
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.005
     _impact_external: 0.25
-    _reuse: 0.827
-    oboscore: 0.333
+    _reuse: 0.823
+    oboscore: 0.413
   'Info: How many externally documented uses?': 2
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    AGRO: 3746
+    AGRO: 3947
     APOLLO_SV: 26
-    BFO: 1210
-    CARO: 17
-    CHEBI: 3073
+    BFO: 1242
+    CARO: 36
+    CHEBI: 3227
     CHEBIALT: 92
-    ENVO: 4430
+    ENVO: 4610
     ENVOALT: 24
-    FOODON: 244
+    FOODON: 301
     GAZ: 4
-    GO: 213
-    IAO: 5962
-    NCBITaxon: 771
-    OBI: 1469
+    GO: 391
+    IAO: 6082
+    NCBITaxon: 1273
+    OBI: 1481
     OGMS: 7
-    PATO: 1314
-    PATOALT: 3
+    PATO: 1348
     PCO: 26
     PECO: 45
-    PO: 692
-    RO: 2679
-    TO: 1097
-    UBERON: 187
-    UO: 2798
+    PO: 713
+    RO: 2866
+    TO: 1313
+    UBERON: 192
+    UO: 2811
     UOALT: 4
     XCO: 6
     dc: 1
-    dc11: 315
+    dc11: 420
     foaf: 4
     obo: 81
-    oboInOwl: 10392
-    owl: 85
+    oboInOwl: 11260
+    owl: 96
     prefix_unknown: 15
     protege: 1
-    rdf: 17
-    rdfs: 4251
-    xsd: 29
+    rdf: 19
+    rdfs: 4690
+    xsd: 25
   'Info: Which ontologies use it?':
   - foodon
 mirror_from: http://purl.obolibrary.org/obo/agro.owl
@@ -126,13 +124,10 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 4 multiple definitions. 13 missing definitions. See ROBOT Report for
-      details.
-    status: ERROR
+    comment: 1 missing definitions. See ROBOT Report for details.
+    status: WARN
   FP07 Relations:
-    comment: 4 non-RO properties used.
-    file: fp7
-    status: INFO
+    status: PASS
   FP08 Documented:
     status: PASS
   FP09 Plurality of Users:
@@ -140,26 +135,25 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 4 multiple labels. See ROBOT Report for details.
-    status: ERROR
+    status: PASS
   FP16 Maintenance:
     status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 8 errors, 35 warnings, 9 info messages.
+    comment: 14 warnings, 4 info messages.
     file: robot_report
     results:
-      ERROR: 8
-      INFO: 9
-      WARN: 35
-    status: ERROR
-sha256_hash: 3a23f4c16c617d592fa3c19399d0c832e88dd7deaa4c055087223869e3dd909a
+      ERROR: 0
+      INFO: 4
+      WARN: 14
+    status: WARN
+sha256_hash: d861a6fbf09e01fffcf4312dee29f20a15a1a4a65b2a7012e50c02f65a495b55
 summary:
-  comment: 4 errors
+  comment: 1 errors
   status: ERROR
   summary_count:
-    ERROR: 4
-    INFO: 1
-    WARN: 0
-version: http://purl.obolibrary.org/obo/agro/releases/2021-11-05/agro.owl
+    ERROR: 1
+    INFO: 0
+    WARN: 2
+version: http://purl.obolibrary.org/obo/agro/releases/2022-11-02/agro.owl
