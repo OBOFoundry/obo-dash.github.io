@@ -4,52 +4,52 @@ base_prefixes:
 - ZFAALT
 - ZFA
 changed: true
-date: 2022-11-26 22:56:36.629994
+date: 2022-12-15 14:50:04.057625
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 21496
-    Declaration: 3287
+    AnnotationAssertion: 21662
+    Declaration: 3311
     DisjointClasses: 1
     InverseObjectProperties: 1
     SubAnnotationPropertyOf: 2
-    SubClassOf: 12140
-    SubObjectPropertyOf: 2
+    SubClassOf: 12245
+    SubObjectPropertyOf: 3
     SubPropertyChainOf: 3
     SymmetricObjectProperty: 1
-    TransitiveObjectProperty: 3
-  'Axioms: Number of axioms': 36936
-  'Entities: % of entities reused': 2.7
-  'Entities: Number of annotation properties': 35
-  'Entities: Number of classes': 3249
+    TransitiveObjectProperty: 4
+  'Axioms: Number of axioms': 37233
+  'Entities: % of entities reused': 3.01
+  'Entities: Number of annotation properties': 36
+  'Entities: Number of classes': 3271
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
-  'Entities: Number of object properties': 8
+  'Entities: Number of object properties': 10
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 27531
-    ObjectSomeValuesFrom: 8902
+    Class: 27763
+    ObjectSomeValuesFrom: 8985
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.867
+    _dashboard: 0.844
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.016
     _impact_external: 0.25
-    _reuse: 0.027
-    oboscore: 0.442
+    _reuse: 0.03
+    oboscore: 0.43
   'Info: How many externally documented uses?': 1
   'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 2157
-    IAO: 2911
-    RO: 6770
-    ZFA: 21241
+    BFO: 2206
+    IAO: 2927
+    RO: 6809
+    ZFA: 21321
     ZFAALT: 4
-    ZFS: 6290
-    oboInOwl: 19059
+    ZFS: 6442
+    oboInOwl: 19208
     owl: 125
-    rdfs: 3324
+    rdfs: 3348
   'Info: Which ontologies use it?':
   - cob
   - upheno
@@ -68,9 +68,8 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 4 duplicate definitions. 323 missing definitions. See ROBOT Report for
-      details.
-    status: ERROR
+    comment: 323 missing definitions. See ROBOT Report for details.
+    status: WARN
   FP07 Relations:
     status: PASS
   FP08 Documented:
@@ -80,25 +79,26 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    status: PASS
+    comment: 3 duplicate labels. See ROBOT Report for details.
+    status: ERROR
   FP16 Maintenance:
     status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 4 errors, 481 warnings, 1 info messages.
+    comment: 3 errors, 472 warnings, 1 info messages.
     file: robot_report
     results:
-      ERROR: 4
+      ERROR: 3
       INFO: 1
-      WARN: 481
+      WARN: 472
     status: ERROR
-sha256_hash: b4a0211109d0387f0fb8a3d4c5a446a3a062055e75f0c1b49266f35d4a5ab79d
+sha256_hash: 6bc98b12ffbebf18ee195f9e03ed88c3b0102097428929e95dbefe78fccc4a47
 summary:
   comment: 2 errors
   status: ERROR
   summary_count:
     ERROR: 2
     INFO: 0
-    WARN: 0
-version: http://purl.obolibrary.org/obo/zfa/releases/2022-03-15/zfa-base.owl
+    WARN: 1
+version: http://purl.obolibrary.org/obo/zfa/releases/2022-12-09/zfa-base.owl
