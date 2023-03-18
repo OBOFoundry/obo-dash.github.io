@@ -2,6 +2,9 @@ Level	Rule Name	Subject	Property	Value
 ERROR	missing_label	MAXO:0000595	rdfs:label	
 ERROR	multiple_definitions	MAXO:0000126	IAO:0000115	The use of any device, marker, or other means for the purpose of detecting the presence Neoplasm, usually in asymptomatic individuals.
 ERROR	multiple_definitions	MAXO:0000126	IAO:0000115	The use of any device, marker, or other means for the purpose of detecting the presence of a tumor, usually before there are any symptoms.
+ERROR	multiple_definitions	MAXO:0010039	IAO:0000115	The transfer of a whole organ from one body to another.
+ERROR	multiple_definitions	MAXO:0010039	IAO:0000115	The transfer of an organ, or organ subpart, from one body to another.
+ERROR	multiple_equivalent_class_definitions	MAXO:0010039	owl:equivalentClass	blank node
 ERROR	multiple_labels	MAXO:0000061	rdfs:label	antibacterial agent therapy
 ERROR	multiple_labels	MAXO:0000061	rdfs:label	antibacterial agent therapy@en
 ERROR	multiple_labels	MAXO:0000126	rdfs:label	cancer screening
@@ -70,10 +73,14 @@ ERROR	multiple_labels	MAXO:0001020	rdfs:label	general anesthetic agent therapy
 ERROR	multiple_labels	MAXO:0001020	rdfs:label	general anesthetic agent therapy@en
 ERROR	multiple_labels	MAXO:0001021	rdfs:label	antimicrobial agent therapy
 ERROR	multiple_labels	MAXO:0001021	rdfs:label	antimicrobial agent therapy@en
+ERROR	multiple_labels	MAXO:0001135	rdfs:label	fat-soluble vitamin supplementation
+ERROR	multiple_labels	MAXO:0001135	rdfs:label	fat-soluble vitamin supplementation@en
 ERROR	multiple_labels	MAXO:0009095	rdfs:label	zinc therapy
 ERROR	multiple_labels	MAXO:0009095	rdfs:label	zinc therapy@en
 ERROR	multiple_labels	MAXO:0009097	rdfs:label	GABA transaminase inhibitor agent therapy
 ERROR	multiple_labels	MAXO:0009097	rdfs:label	GABA transaminase inhibitor agent therapy@en
+ERROR	multiple_labels	MAXO:0010039	rdfs:label	organ transplantation
+ERROR	multiple_labels	MAXO:0010039	rdfs:label	whole organ transplantation
 WARN	duplicate_label_synonym	MAXO:0000062	oboInOwl:hasExactSynonym	antineoplastic agent therapy
 WARN	duplicate_label_synonym	MAXO:0000159	oboInOwl:hasExactSynonym	analgesic therapy
 WARN	duplicate_label_synonym	MAXO:0000166	oboInOwl:hasExactSynonym	antipsychotic agent therapy
@@ -124,8 +131,10 @@ WARN	missing_definition	MAXO:0009016	IAO:0000115
 WARN	missing_definition	MAXO:0009074	IAO:0000115	
 WARN	missing_definition	MAXO:0009087	IAO:0000115	
 WARN	missing_definition	MAXO:0009097	IAO:0000115	
+WARN	missing_definition	MAXO:0009098	IAO:0000115	
 WARN	missing_definition	obo:maxo#ABBREVIATION	IAO:0000115	
 WARN	missing_synonymtype_declaration	obo:maxo#ABBREVIATION	rdfs:subPropertyOf	
+WARN	multiple_equivalent_classes	MAXO:0010039	owl:equivalentClass	blank node
 INFO	missing_superclass	MAXO:0000001	rdfs:subClassOf	
 INFO	missing_superclass	MAXO:0000107	rdfs:subClassOf	
 INFO	missing_superclass	MAXO:0000108	rdfs:subClassOf	
@@ -189,12 +198,3 @@ INFO	missing_superclass	MAXO:0000379	rdfs:subClassOf
 INFO	missing_superclass	MAXO:0000380	rdfs:subClassOf	
 INFO	missing_superclass	MAXO:0000381	rdfs:subClassOf	
 INFO	missing_superclass	MAXO:0000382	rdfs:subClassOf	
-INFO	missing_superclass	MAXO:0000383	rdfs:subClassOf	
-INFO	missing_superclass	MAXO:0000384	rdfs:subClassOf	
-INFO	missing_superclass	MAXO:0000385	rdfs:subClassOf	
-INFO	missing_superclass	MAXO:0000386	rdfs:subClassOf	
-INFO	missing_superclass	MAXO:0000387	rdfs:subClassOf	
-INFO	missing_superclass	MAXO:0000388	rdfs:subClassOf	
-INFO	missing_superclass	MAXO:0000389	rdfs:subClassOf	
-INFO	missing_superclass	MAXO:0000390	rdfs:subClassOf	
-INFO	missing_superclass	MAXO:0000391	rdfs:subClassOf	

@@ -4,42 +4,42 @@ base_prefixes:
 - VTALT
 - VT
 changed: true
-date: 2022-09-28 16:39:12.993180
+date: 2022-12-15 14:44:25.846492
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 21917
-    Declaration: 3790
-    SubClassOf: 4331
+    AnnotationAssertion: 21985
+    Declaration: 3800
+    SubClassOf: 4345
     TransitiveObjectProperty: 1
-  'Axioms: Number of axioms': 30039
-  'Entities: % of entities reused': 0.58
-  'Entities: Number of annotation properties': 18
-  'Entities: Number of classes': 3770
+  'Axioms: Number of axioms': 30131
+  'Entities: % of entities reused': 0.6
+  'Entities: Number of annotation properties': 19
+  'Entities: Number of classes': 3780
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 2
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 12432
-  'Info: Does the ontology fall under OWL 2 DL?': true
+    Class: 12470
+  'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.511
+    _dashboard: 0.467
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.016
     _impact_external: 0.5
     _reuse: 0.006
-    oboscore: 0.264
+    oboscore: 0.242
   'Info: How many externally documented uses?': 3
   'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    IAO: 3762
-    VT: 12432
+    IAO: 3775
+    VT: 12470
     obo: 3
-    oboInOwl: 17946
+    oboInOwl: 18004
     owl: 94
-    rdfs: 3960
+    rdfs: 3970
   'Info: Which ontologies use it?':
   - genepio
   - scdo
@@ -62,8 +62,9 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 9 missing definitions. See ROBOT Report for details.
-    status: WARN
+    comment: 4 duplicate definitions. 6 missing definitions. See ROBOT Report for
+      details.
+    status: ERROR
   FP07 Relations:
     status: PASS
   FP08 Documented:
@@ -81,19 +82,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 6 errors, 107 warnings, 2 info messages.
+    comment: 10 errors, 104 warnings, 2 info messages.
     file: robot_report
     results:
-      ERROR: 6
+      ERROR: 10
       INFO: 2
-      WARN: 107
+      WARN: 104
     status: ERROR
-sha256_hash: eceec7456ece766a77a3303a58e41de45ca9205196a5925b299f7323b1842920
+sha256_hash: afc2cbe029f7e1626e814a34985bb5ecc127486af878a9d4028b0c662b0efa84
 summary:
-  comment: 6 errors
+  comment: 7 errors
   status: ERROR
   summary_count:
-    ERROR: 6
+    ERROR: 7
     INFO: 0
-    WARN: 1
+    WARN: 0
 version: null

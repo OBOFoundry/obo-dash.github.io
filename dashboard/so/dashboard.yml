@@ -4,50 +4,50 @@ base_prefixes:
 - SOALT
 - SO
 changed: true
-date: 2022-09-28 16:34:52.264791
+date: 2022-12-15 14:38:54.853942
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 19397
-    Declaration: 2819
+    AnnotationAssertion: 19418
+    Declaration: 2820
     DisjointClasses: 2
     EquivalentClasses: 219
     SubAnnotationPropertyOf: 14
-    SubClassOf: 3119
+    SubClassOf: 3120
     SubObjectPropertyOf: 9
     SymmetricObjectProperty: 4
     TransitiveObjectProperty: 7
-  'Axioms: Number of axioms': 25590
-  'Entities: % of entities reused': 4.47
+  'Axioms: Number of axioms': 25613
+  'Entities: % of entities reused': 4.46
   'Entities: Number of annotation properties': 41
-  'Entities: Number of classes': 2728
+  'Entities: Number of classes': 2729
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 50
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 9641
+    Class: 9644
     ObjectIntersectionOf: 219
     ObjectSomeValuesFrom: 862
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.467
+    _dashboard: 0.46
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.174
+    _impact: 0.178
     _impact_external: 0
     _reuse: 0.045
-    oboscore: 0.321
+    oboscore: 0.319
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 32
+  'Info: How many ontologies use it?': 33
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    IAO: 2845
-    SO: 9544
+    IAO: 2846
+    SO: 9547
     SOALT: 961
     obo: 97
-    oboInOwl: 15642
+    oboInOwl: 15654
     owl: 344
-    rdfs: 3755
+    rdfs: 3766
   'Info: Which ontologies use it?':
   - ado
   - cido
@@ -78,6 +78,7 @@ metrics:
   - pcl
   - pr
   - psdo
+  - rbo
   - scdo
   - stato
   - upheno
@@ -115,23 +116,24 @@ results:
     comment: 16 duplicate labels. 4 missing labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
-    status: PASS
+    comment: last version (2021-11-22) is over one year(s) old
+    status: INFO
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 74 errors, 321 warnings, 11 info messages.
+    comment: 74 errors, 328 warnings, 11 info messages.
     file: robot_report
     results:
       ERROR: 74
       INFO: 11
-      WARN: 321
+      WARN: 328
     status: ERROR
-sha256_hash: b84ca5de3924807845ba513fea664b1389b130fecf854aa0e22c43c20e94df71
+sha256_hash: 293d449de102200a77a061dbdce6546ca1f086c77d46125e352db965a780184d
 summary:
   comment: 7 errors
   status: ERROR
   summary_count:
     ERROR: 7
-    INFO: 0
+    INFO: 1
     WARN: 0
 version: http://purl.obolibrary.org/obo/so/2021-11-22/so.owl

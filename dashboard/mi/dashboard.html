@@ -8,8 +8,8 @@
             <div class="col-md-2"></div>
             <div class="col-md-8">
                 <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/mi.html">mi</a></h1>
-                <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/mi/releases/2020-04-13/mi.owl</p>
-                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: 2022-09-28 14:46:16.800734</p>
+                <p class="lead"><b>Version</b>: None</p>
+                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: 2022-12-15 12:49:13.143910</p>
                 <p class="lead" style="margin-top:-15px;"><a href="dashboard.yml">View dashboard results as YAML</a></p>
                 <p class="lead" style="margin-top:-15px;"><a href="../index.html">Go back to Overview</a></p>
                 <h3>Error Breakdown</h3>
@@ -19,7 +19,7 @@
                         
                     
                     <div class="alert alert-danger">
-                        <center><h3>ERROR - 6 errors</h3></center>
+                        <center><h3>ERROR - 7 errors</h3></center>
                     </div>
                 
                 <table class="table">
@@ -100,11 +100,11 @@
                                 
                                 
                             
-                            <td class="table-success" style="text-align:center;">
-                                <img src="../assets/check.svg" height="15px">
+                            <td class="table-danger" style="text-align:center;">
+                                <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td></td>
+                                <td>Missing version IRI</td>
                             
                             
                                 <td></td>
@@ -160,14 +160,14 @@
                                 
                                 
                             
-                            <td class="table-danger" style="text-align:center;">
-                                <img src="../assets/x.svg" height="15px">
+                            <td class="table-success" style="text-align:center;">
+                                <img src="../assets/check.svg" height="15px">
                             </td>
                             
-                                <td>3 labels match RO labels. 1 non-RO properties used.</td>
+                                <td></td>
                             
                             
-                                <td><a href="fp7.html">View Report</a></td>
+                                <td></td>
                             
                         </tr>
                     
@@ -244,7 +244,7 @@
                                 <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>8 duplicate labels. 3 missing labels. See ROBOT Report for details.</td>
+                                <td>4 duplicate labels. 3 missing labels. See ROBOT Report for details.</td>
                             
                             
                                 <td></td>
@@ -260,11 +260,11 @@
                                 
                                 
                             
-                            <td class="table-warning" style="text-align:center;">
-                                <img src="../assets/warning.svg" height="15px">
+                            <td class="table-danger" style="text-align:center;">
+                                <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>last version (2020-04-13) is over two year(s) old</td>
+                                <td>Missing version IRI to check date</td>
                             
                             
                                 <td></td>
@@ -304,7 +304,7 @@
                                 <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>31 errors, 563 warnings, 33 info messages.</td>
+                                <td>27 errors, 566 warnings, 28 info messages.</td>
                             
                             
                                 <td><a href="robot_report.html">View Report</a></td>
@@ -330,15 +330,13 @@
                                     <td>
                                         <ul>
                                             
-                                                <li>AnnotationAssertion: 11247</li>
+                                                <li>AnnotationAssertion: 11622</li>
                                             
-                                                <li>Declaration: 1614</li>
+                                                <li>Declaration: 1668</li>
                                             
                                                 <li>SubAnnotationPropertyOf: 18</li>
                                             
-                                                <li>SubClassOf: 1540</li>
-                                            
-                                                <li>TransitiveObjectProperty: 4</li>
+                                                <li>SubClassOf: 1631</li>
                                             
                                         </ul>
                                     </td>
@@ -349,7 +347,7 @@
                                 <td>Axioms: Number of axioms</td>
                                 
                                 
-                                    <td>14423</td>
+                                    <td>14939</td>
                                 
                             </tr>
                         
@@ -357,7 +355,7 @@
                                 <td>Entities: % of entities reused</td>
                                 
                                 
-                                    <td>1.73</td>
+                                    <td>1.68</td>
                                 
                             </tr>
                         
@@ -365,7 +363,7 @@
                                 <td>Entities: Number of annotation properties</td>
                                 
                                 
-                                    <td>44</td>
+                                    <td>45</td>
                                 
                             </tr>
                         
@@ -373,7 +371,7 @@
                                 <td>Entities: Number of classes</td>
                                 
                                 
-                                    <td>1566</td>
+                                    <td>1623</td>
                                 
                             </tr>
                         
@@ -397,7 +395,7 @@
                                 <td>Entities: Number of object properties</td>
                                 
                                 
-                                    <td>4</td>
+                                    <td>0</td>
                                 
                             </tr>
                         
@@ -416,9 +414,7 @@
                                     <td>
                                         <ul>
                                             
-                                                <li>Class: 4646</li>
-                                            
-                                                <li>ObjectSomeValuesFrom: 36</li>
+                                                <li>Class: 4885</li>
                                             
                                         </ul>
                                     </td>
@@ -440,7 +436,7 @@
                                     <td>
                                         <ul>
                                             
-                                                <li>_dashboard: 0.511</li>
+                                                <li>_dashboard: 0.467</li>
                                             
                                                 <li>_formula: (1*impact+1*dashboard)/2</li>
                                             
@@ -450,7 +446,7 @@
                                             
                                                 <li>_reuse: 0.017</li>
                                             
-                                                <li>oboscore: 0.267</li>
+                                                <li>oboscore: 0.245</li>
                                             
                                         </ul>
                                     </td>
@@ -496,17 +492,17 @@
                                     <td>
                                         <ul>
                                             
-                                                <li>IAO: 1574</li>
+                                                <li>IAO: 1629</li>
                                             
-                                                <li>MI: 4646</li>
+                                                <li>MI: 4885</li>
                                             
-                                                <li>MIALT: 80</li>
+                                                <li>MIALT: 48</li>
                                             
-                                                <li>oboInOwl: 11161</li>
+                                                <li>oboInOwl: 11470</li>
                                             
-                                                <li>owl: 178</li>
+                                                <li>owl: 181</li>
                                             
-                                                <li>rdfs: 1810</li>
+                                                <li>rdfs: 1864</li>
                                             
                                         </ul>
                                     </td>

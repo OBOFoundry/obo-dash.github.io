@@ -1,84 +1,76 @@
-base_generated: true
+base_generated: false
 base_prefixes:
 - OHD
 - OHDALT
 - OHD
 changed: true
-date: 2022-09-28 16:11:11.854310
+date: 2022-12-15 14:15:04.558766
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 7336
-    AsymmetricObjectProperty: 26
-    ClassAssertion: 368
+    AnnotationAssertion: 937
+    ClassAssertion: 32
     DataPropertyDomain: 2
     DataPropertyRange: 3
-    Declaration: 2896
-    DifferentIndividuals: 3
-    DisjointClasses: 10
-    EquivalentClasses: 78
-    FunctionalObjectProperty: 6
-    InverseFunctionalObjectProperty: 3
-    InverseObjectProperties: 22
-    IrrefexiveObjectProperty: 26
+    Declaration: 1176
+    DisjointClasses: 7
+    EquivalentClasses: 69
     ObjectPropertyAssertion: 32
-    ObjectPropertyDomain: 25
-    ObjectPropertyRange: 21
-    SubClassOf: 6507
+    ObjectPropertyDomain: 1
+    ObjectPropertyRange: 1
+    SubAnnotationPropertyOf: 1
+    SubClassOf: 460
     SubDataPropertyOf: 2
-    SubObjectPropertyOf: 89
-    SubPropertyChainOf: 4
-    TransitiveObjectProperty: 15
-  'Axioms: Number of axioms': 17474
-  'Entities: % of entities reused': 91.15
-  'Entities: Number of annotation properties': 28
-  'Entities: Number of classes': 2745
-  'Entities: Number of data properties': 4
-  'Entities: Number of individuals': 82
-  'Entities: Number of object properties': 62
+    SubObjectPropertyOf: 2
+    SubPropertyChainOf: 1
+    TransitiveObjectProperty: 1
+  'Axioms: Number of axioms': 2727
+  'Entities: % of entities reused': 77.87
+  'Entities: Number of annotation properties': 18
+  'Entities: Number of classes': 1073
+  'Entities: Number of data properties': 5
+  'Entities: Number of individuals': 65
+  'Entities: Number of object properties': 20
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 17237
-    ObjectAllValuesFrom: 49
+    Class: 2387
+    ObjectAllValuesFrom: 36
     ObjectComplementOf: 32
     ObjectExactCardinality: 25
     ObjectHasValue: 32
-    ObjectIntersectionOf: 190
+    ObjectIntersectionOf: 183
     ObjectMinCardinality: 9
-    ObjectOneOf: 4
-    ObjectSomeValuesFrom: 1944
-    ObjectUnionOf: 561
+    ObjectSomeValuesFrom: 414
+    ObjectUnionOf: 15
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.564
+    _dashboard: 0.593
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
-    _reuse: 0.912
-    oboscore: 0.282
+    _reuse: 0.779
+    oboscore: 0.296
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 902
-    CARO: 12
-    FMA: 14788
-    IAO: 4471
-    NCBITaxon: 13
-    OBI: 260
-    OGMS: 206
-    OHD: 1679
-    OMRSE: 13
-    dc11: 176
-    obo: 937
-    oboInOwl: 21
+    BFO: 221
+    FMA: 1117
+    IAO: 803
+    NCBITaxon: 10
+    OBI: 128
+    OGMS: 38
+    OHD: 1297
+    OMRSE: 4
+    dc11: 8
+    obo: 180
+    oboInOwl: 6
     owl: 2
-    prefix_unknown: 1106
-    rdf: 1
-    rdfs: 3055
-    xsd: 5
+    prefix_unknown: 4
+    rdfs: 274
+    xsd: 4
   'Info: Which ontologies use it?': []
-mirror_from: http://purl.obolibrary.org/obo/ohd.owl
+mirror_from: http://purl.obolibrary.org/obo/ohd/ohd-base.owl
 namespace: ohd
 results:
   FP01 Open:
@@ -89,9 +81,8 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    comment: Version IRI 'http://purl.obolibrary.org/obo/2016-06-27/ohd-inferred.owl'
-      is not in recommended format
-    status: WARN
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -99,7 +90,7 @@ results:
       details.
     status: ERROR
   FP07 Relations:
-    comment: 6 non-RO properties used.
+    comment: 7 non-RO properties used.
     file: fp7
     status: INFO
   FP08 Documented:
@@ -113,24 +104,23 @@ results:
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
-    comment: Version IRI does not have date information
-    status: INFO
+    status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 5 errors, 56 warnings, 74 info messages.
+    comment: 5 errors, 56 warnings, 138 info messages.
     file: robot_report
     results:
       ERROR: 5
-      INFO: 74
+      INFO: 138
       WARN: 56
     status: ERROR
-sha256_hash: 0d97ea12080d77bdeb2fc24505676b15ed2dd0427fb5500a9e03a14b64954f91
+sha256_hash: 533996bac8af67cb7194a9d97bb686af36739851b0aad3b9ee4b4664bbee5db6
 summary:
-  comment: 5 errors
+  comment: 6 errors
   status: ERROR
   summary_count:
-    ERROR: 5
-    INFO: 2
-    WARN: 1
-version: http://purl.obolibrary.org/obo/2016-06-27/ohd-inferred.owl
+    ERROR: 6
+    INFO: 1
+    WARN: 0
+version: http://purl.obolibrary.org/obo/ohd/releases/2022-10-10/ohd-base.owl

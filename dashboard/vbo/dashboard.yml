@@ -4,47 +4,47 @@ base_prefixes:
 - VBOALT
 - VBO
 changed: true
-date: 2022-09-28 16:38:46.995656
+date: 2022-12-15 14:43:58.873313
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 167705
-    Declaration: 17364
+    AnnotationAssertion: 167805
+    Declaration: 17371
     SubAnnotationPropertyOf: 3
-    SubClassOf: 32245
-  'Axioms: Number of axioms': 217317
-  'Entities: % of entities reused': 99.94
+    SubClassOf: 32257
+  'Axioms: Number of axioms': 217436
+  'Entities: % of entities reused': 1.48
   'Entities: Number of annotation properties': 26
-  'Entities: Number of classes': 17144
+  'Entities: Number of classes': 17151
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 197
   'Entities: Number of object properties': 1
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 66491
-    ObjectHasValue: 15143
+    Class: 66517
+    ObjectHasValue: 15148
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.867
+    _dashboard: 0.889
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
-    _reuse: 0.999
-    oboscore: 0.433
+    _reuse: 0.015
+    oboscore: 0.445
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
-  'Info: Syntax': RDF/XML
+  'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     IAO: 19
-    NCBITaxon: 8999
-    RO: 15144
-    VBOALT: 53355
-    dc: 69152
-    obo: 57492
-    oboInOwl: 156183
-    prefix_unknown: 15340
-    rdfs: 17125
-    xsd: 15143
+    NCBITaxon: 9007
+    RO: 15149
+    VBO: 57510
+    VBOALT: 53365
+    dc: 69163
+    oboInOwl: 156357
+    prefix_unknown: 15345
+    rdfs: 17131
+    xsd: 31980
   'Info: Which ontologies use it?': []
 mirror_from: http://purl.obolibrary.org/obo/vbo/vbo-base.owl
 namespace: vbo
@@ -52,8 +52,7 @@ results:
   FP01 Open:
     status: PASS
   FP02 Common Format:
-    comment: OWL syntax (RDF/XML), but should be RDF/XML
-    status: WARN
+    status: PASS
   FP03 URIs:
     status: PASS
   FP04 Versioning:
@@ -61,7 +60,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 17094 missing definitions. See ROBOT Report for details.
+    comment: 17100 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     status: PASS
@@ -79,19 +78,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 29452 warnings, 3 info messages.
+    comment: 29494 warnings, 2 info messages.
     file: robot_report
     results:
       ERROR: 0
-      INFO: 3
-      WARN: 29452
+      INFO: 2
+      WARN: 29494
     status: WARN
-sha256_hash: e5aa710b1f231ac986f2a807662b29b018d8a2b6b890b42dc100f488232d3575
+sha256_hash: c376c74358ff02de500bd8e30b19f60970d25131fcaebd6ebbfeea042eed9f1a
 summary:
   comment: 1 errors
   status: ERROR
   summary_count:
     ERROR: 1
     INFO: 0
-    WARN: 3
-version: http://purl.obolibrary.org/obo/vbo/releases/2022-09-22/vbo-base.owl
+    WARN: 2
+version: http://purl.obolibrary.org/obo/vbo/releases/2022-11-29/vbo-base.owl

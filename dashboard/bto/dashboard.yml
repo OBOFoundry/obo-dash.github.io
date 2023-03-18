@@ -4,7 +4,7 @@ base_prefixes:
 - BTOALT
 - BTO
 changed: true
-date: 2022-09-28 14:06:18.224457
+date: 2022-12-15 12:09:12.549532
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 36221
@@ -24,12 +24,12 @@ metrics:
     ObjectSomeValuesFrom: 3067
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.66
+    _dashboard: 0.653
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.033
+    _impact: 0.032
     _impact_external: 0
     _reuse: 0.006
-    oboscore: 0.347
+    oboscore: 0.343
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 6
   'Info: Logical consistency': true
@@ -83,7 +83,8 @@ results:
     comment: 4 duplicate labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
-    status: PASS
+    comment: last version (2021-10-26) is over one year(s) old
+    status: INFO
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
@@ -100,6 +101,6 @@ summary:
   status: ERROR
   summary_count:
     ERROR: 5
-    INFO: 1
+    INFO: 2
     WARN: 0
 version: http://purl.obolibrary.org/obo/bto/releases/2021-10-26/bto-base.owl
