@@ -3,114 +3,115 @@ base_prefixes:
 - OBIB
 - OBIBALT
 - OBIB
-changed: true
-date: 2022-12-15 14:08:14.713200
+changed: false
+date: 2023-06-25 09:36:37.726166
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 13099
+    AnnotationAssertion: 12863
     AnnotationPropertyRangeOf: 1
     AsymmetricObjectProperty: 6
-    ClassAssertion: 225
-    Declaration: 2249
+    ClassAssertion: 226
+    Declaration: 2207
     DifferentIndividuals: 2
     DisjointClasses: 47
-    EquivalentClasses: 192
+    EquivalentClasses: 190
     EquivalentObjectProperties: 3
     FunctionalObjectProperty: 3
     InverseFunctionalObjectProperty: 3
-    InverseObjectProperties: 18
+    InverseObjectProperties: 17
     IrrefexiveObjectProperty: 4
     ObjectPropertyDomain: 23
     ObjectPropertyRange: 25
     Rule: 4
-    SubAnnotationPropertyOf: 2
-    SubClassOf: 2163
+    SubAnnotationPropertyOf: 7
+    SubClassOf: 2117
     SubDataPropertyOf: 1
-    SubObjectPropertyOf: 49
+    SubObjectPropertyOf: 50
     SubPropertyChainOf: 2
     TransitiveObjectProperty: 6
-  'Axioms: Number of axioms': 18127
-  'Entities: % of entities reused': 67.35
-  'Entities: Number of annotation properties': 73
-  'Entities: Number of classes': 1854
+  'Axioms: Number of axioms': 17807
+  'Entities: % of entities reused': 66.74
+  'Entities: Number of annotation properties': 79
+  'Entities: Number of classes': 1804
   'Entities: Number of data properties': 3
-  'Entities: Number of individuals': 225
-  'Entities: Number of object properties': 92
+  'Entities: Number of individuals': 226
+  'Entities: Number of object properties': 93
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 7462
+    Class: 7438
     DataMinCardinality: 1
-    ObjectAllValuesFrom: 53
+    ObjectAllValuesFrom: 52
     ObjectComplementOf: 5
     ObjectExactCardinality: 3
-    ObjectIntersectionOf: 492
+    ObjectIntersectionOf: 612
     ObjectMinCardinality: 3
     ObjectOneOf: 3
-    ObjectSomeValuesFrom: 806
+    ObjectSomeValuesFrom: 924
     ObjectUnionOf: 48
-  'Info: Does the ontology fall under OWL 2 DL?': false
+  'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.898
+    _dashboard: 0.92
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.027
+    _impact: 0.032
     _impact_external: 0.5
-    _reuse: 0.673
-    oboscore: 0.463
+    _reuse: 0.667
+    oboscore: 0.476
   'Info: How many externally documented uses?': 3
-  'Info: How many ontologies use it?': 5
+  'Info: How many ontologies use it?': 6
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    APOLLO_SV: 16
-    BFO: 633
+    APOLLO_SV: 14
+    BFO: 678
     CHEBI: 156
     CL: 33
     CLALT: 4
     CLO: 11
-    DOID: 154
-    DRON: 5
+    DOID: 39
+    DRON: 3
     EFO: 24
     ENVO: 3
-    ERO: 34
+    ERO: 5
     FLU: 7
     FMA: 36
-    GAZ: 4
-    GEO: 23
+    GEO: 25
     GO: 22
-    HANCESTRO: 34
-    IAO: 11401
+    HANCESTRO: 27
+    IAO: 11215
     ICO: 26
     IDO: 33
-    NCBITaxon: 124
+    NCBITaxon: 125
     NCIT: 101
     OAE: 10
-    OBI: 3124
-    OBIB: 1999
-    OGMS: 112
-    OMIABIS: 256
-    OMRSE: 108
+    OBI: 3203
+    OBIB: 1990
+    OGMS: 111
+    OMIABIS: 262
+    OMO: 6
+    OMRSE: 110
     PATO: 80
     PCO: 3
     PR: 5
-    RO: 459
+    RO: 456
     SO: 3
-    UBERON: 494
+    UBERON: 539
     UO: 85
     dc: 1
-    dc11: 105
+    dc11: 109
     foaf: 2
     obo: 3
-    oboInOwl: 135
-    owl: 141
+    oboInOwl: 144
+    owl: 155
     protege: 1
-    rdf: 3
-    rdfs: 2383
+    rdf: 9
+    rdfs: 2331
     vivoweb: 5
     xsd: 4
   'Info: Which ontologies use it?':
   - cido
   - eupath
   - ico
+  - ngbo
   - ons
   - opmi
 mirror_from: http://purl.obolibrary.org/obo/obib.owl
@@ -141,24 +142,23 @@ results:
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
-    comment: last version (2021-11-12) is over one year(s) old
-    status: INFO
+    status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 2 warnings, 3 info messages.
+    comment: '{0} info messages.'
     file: robot_report
     results:
       ERROR: 0
       INFO: 3
-      WARN: 2
-    status: WARN
-sha256_hash: 66c27284b0383f063a40f08fbdf7614562d0d60c08a902285b66baf76431e0d5
+      WARN: 0
+    status: INFO
+sha256_hash: 596d0be49bf485b06919ec898381eea21715d7c584dd41fb26f6828927f21616
 summary:
-  comment: 1 warnings
-  status: WARN
+  comment: 2 info messages
+  status: INFO
   summary_count:
     ERROR: 0
     INFO: 2
-    WARN: 1
-version: http://purl.obolibrary.org/obo/obib/2021-11-12/obib.owl
+    WARN: 0
+version: http://purl.obolibrary.org/obo/obib/2023-04-05/obib.owl

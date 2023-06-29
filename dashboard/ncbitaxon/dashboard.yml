@@ -3,25 +3,25 @@ base_prefixes:
 - NCBITaxon
 - NCBITAXONALT
 - NCBITaxon
-changed: true
-date: 2022-12-15 13:51:32.826532
+changed: false
+date: 2023-06-20 18:36:06.313526
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 10002840
-    Declaration: 2446701
+    AnnotationAssertion: 10277412
+    Declaration: 2509851
     SubAnnotationPropertyOf: 15
-    SubClassOf: 2446672
-  'Axioms: Number of axioms': 14896228
+    SubClassOf: 2509819
+  'Axioms: Number of axioms': 15297097
   'Entities: % of entities reused': 0.0
   'Entities: Number of annotation properties': 32
-  'Entities: Number of classes': 2446674
+  'Entities: Number of classes': 2509821
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 0
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 7340018
-  'Info: Does the ontology fall under OWL 2 DL?': false
+    Class: 7529459
+  'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
     _dashboard: 0.822
     _formula: (1*impact+1*dashboard)/2
@@ -35,11 +35,12 @@ metrics:
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     IAO: 2
-    NCBITAXONALT: 2212932
-    NCBITaxon: 7339980
+    NCBITAXONALT: 2272627
+    NCBITaxon: 7529421
+    dc: 3
     obo: 38
-    oboInOwl: 5677598
-    rdfs: 2446703
+    oboInOwl: 5849754
+    rdfs: 2509850
   'Info: Which ontologies use it?':
   - ado
   - agro
@@ -77,10 +78,10 @@ metrics:
   - ino
   - labo
   - mco
-  - micro
   - mondo
   - mro
   - ms
+  - ngbo
   - obcs
   - obi
   - obib
@@ -128,7 +129,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 2446686 missing definitions. See ROBOT Report for details.
+    comment: 2509833 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     status: PASS
@@ -146,14 +147,14 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 2450816 warnings, 1 info messages.
+    comment: 2513958 warnings, 1 info messages.
     file: robot_report
     results:
       ERROR: 0
       INFO: 1
-      WARN: 2450816
+      WARN: 2513958
     status: WARN
-sha256_hash: ff4d2f9eb09edfadfae54d81574b032ad99ceaa782932952f544bdb6587a65dd
+sha256_hash: 1d1502d8f22e81b6a2594b250dd497c6f35815e6ebea5fbdfbc59ef8799beae3
 summary:
   comment: 1 errors
   status: ERROR
@@ -161,4 +162,4 @@ summary:
     ERROR: 1
     INFO: 0
     WARN: 2
-version: http://purl.obolibrary.org/obo/ncbitaxon/2022-10-05/ncbitaxon.owl
+version: http://purl.obolibrary.org/obo/ncbitaxon/2023-06-16/ncbitaxon.owl

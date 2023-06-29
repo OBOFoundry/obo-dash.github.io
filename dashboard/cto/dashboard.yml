@@ -4,7 +4,7 @@ base_prefixes:
 - CTOALT
 - CTO
 changed: true
-date: 2022-12-15 12:23:41.180887
+date: 2023-06-19 14:09:43.037772
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 3217
@@ -31,12 +31,12 @@ metrics:
     ObjectSomeValuesFrom: 11
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.571
+    _dashboard: 0.684
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.005
     _impact_external: 0
     _reuse: 0.718
-    oboscore: 0.288
+    oboscore: 0.345
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
@@ -69,7 +69,7 @@ metrics:
     oboInOwl: 636
     owl: 4
     protege: 4
-    rdf: 2
+    rdf: 89
     rdfs: 611
   'Info: Which ontologies use it?':
   - ado
@@ -89,9 +89,8 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 9 multiple definitions. 32 missing definitions. See ROBOT Report for
-      details.
-    status: ERROR
+    comment: ROBOT Report could not be generated
+    status: INFO
   FP07 Relations:
     comment: 6 non-RO properties used.
     file: fp7
@@ -104,26 +103,22 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    status: PASS
+    comment: ROBOT Report could not be generated
+    status: INFO
   FP16 Maintenance:
     comment: Missing version IRI to check date
     status: ERROR
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 9 errors, 37 warnings, 7 info messages.
-    file: robot_report
-    results:
-      ERROR: 9
-      INFO: 7
-      WARN: 37
-    status: ERROR
+    comment: ROBOT Report could not be generated.
+    status: INFO
 sha256_hash: 9eb6c989f26ed9079eff28efb5d11c3b0b05eb8af47691d224740042b7501a5b
 summary:
-  comment: 5 errors
+  comment: 3 errors
   status: ERROR
   summary_count:
-    ERROR: 5
-    INFO: 1
+    ERROR: 3
+    INFO: 4
     WARN: 1
 version: null

@@ -3,45 +3,50 @@ base_prefixes:
 - LEPAO
 - LEPAOALT
 - LEPAO
-changed: true
-date: 2022-12-15 12:48:17.718375
+changed: false
+date: 2023-06-20 16:40:35.160391
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 275
-    Declaration: 144
-    SubClassOf: 140
-  'Axioms: Number of axioms': 559
-  'Entities: % of entities reused': 13.16
-  'Entities: Number of annotation properties': 13
-  'Entities: Number of classes': 137
+    AnnotationAssertion: 333
+    Declaration: 182
+    SubClassOf: 173
+  'Axioms: Number of axioms': 688
+  'Entities: % of entities reused': 22.58
+  'Entities: Number of annotation properties': 19
+  'Entities: Number of classes': 163
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
-  'Entities: Number of object properties': 1
+  'Entities: Number of object properties': 3
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 417
-    ObjectSomeValuesFrom: 8
-  'Info: Does the ontology fall under OWL 2 DL?': false
+    Class: 509
+    ObjectSomeValuesFrom: 21
+  'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.882
+    _dashboard: 0.822
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
-    _reuse: 0.132
-    oboscore: 0.441
+    _reuse: 0.226
+    oboscore: 0.411
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    AISM: 115
-    BFO: 9
-    IAO: 8
-    LEPAO: 399
-    UBERON: 13
-    dc11: 113
-    oboInOwl: 251
-    rdfs: 137
+    AISM: 129
+    BFO: 19
+    CLAO: 1
+    IAO: 32
+    LEPAO: 452
+    PATO: 25
+    RO: 5
+    UBERON: 14
+    dc: 2
+    dc11: 139
+    oboInOwl: 292
+    rdf: 135
+    rdfs: 153
   'Info: Which ontologies use it?': []
 mirror_from: http://purl.obolibrary.org/obo/lepao/lepao-base.owl
 namespace: lepao
@@ -53,11 +58,12 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 130 missing definitions. See ROBOT Report for details.
+    comment: 121 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     status: PASS
@@ -71,24 +77,23 @@ results:
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
-    comment: last version (2021-11-20) is over one year(s) old
-    status: INFO
+    status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 130 warnings, 4 info messages.
+    comment: 121 warnings, 4 info messages.
     file: robot_report
     results:
       ERROR: 0
       INFO: 4
-      WARN: 130
+      WARN: 121
     status: WARN
-sha256_hash: e1fa3ca9236b90315d6b5cf4a8e0552c13c907d63ca40c7168433ec807a73e35
+sha256_hash: 9eac6c0568c06a7baa8c66b9cc4d1a4f2ca742ea9f56644e049aa8ef4065dd54
 summary:
-  comment: 1 errors
+  comment: 2 errors
   status: ERROR
   summary_count:
-    ERROR: 1
-    INFO: 1
+    ERROR: 2
+    INFO: 0
     WARN: 2
-version: http://purl.obolibrary.org/obo/lepao/releases/2021-11-20/lepao-base.owl
+version: http://purl.obolibrary.org/obo/lepao/releases/2023-02-18/lepao-base.owl

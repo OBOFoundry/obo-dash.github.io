@@ -3,8 +3,8 @@ base_prefixes:
 - OPL
 - OPLALT
 - OPL
-changed: true
-date: 2022-12-15 14:20:03.498507
+changed: false
+date: 2023-06-25 09:53:09.980420
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 3910
@@ -24,7 +24,7 @@ metrics:
     SubPropertyChainOf: 2
     TransitiveObjectProperty: 4
   'Axioms: Number of axioms': 5686
-  'Entities: % of entities reused': 46.21
+  'Entities: % of entities reused': 46.3
   'Entities: Number of annotation properties': 89
   'Entities: Number of classes': 446
   'Entities: Number of data properties': 0
@@ -41,12 +41,12 @@ metrics:
     ObjectUnionOf: 3
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.927
+    _dashboard: 0.911
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.016
     _impact_external: 0.25
-    _reuse: 0.462
-    oboscore: 0.472
+    _reuse: 0.463
+    oboscore: 0.464
   'Info: How many externally documented uses?': 2
   'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
@@ -72,7 +72,7 @@ metrics:
     oboInOwl: 674
     owl: 7
     protege: 1
-    rdf: 2
+    rdf: 8
     rdfs: 662
   'Info: Which ontologies use it?':
   - eupath
@@ -104,18 +104,18 @@ results:
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
-    comment: last version (2021-01-28) is over one year(s) old
-    status: INFO
+    comment: last version (2021-01-28) is over two year(s) old
+    status: WARN
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
     status: PASS
 sha256_hash: e931bb5a4b6489288edc18426379bed51f4e7db095e79265b717a89d3d46a099
 summary:
-  comment: 1 info messages
-  status: INFO
+  comment: 1 warnings
+  status: WARN
   summary_count:
     ERROR: 0
-    INFO: 1
-    WARN: 0
+    INFO: 0
+    WARN: 1
 version: http://purl.obolibrary.org/obo/opl/2021-01-28/opl.owl

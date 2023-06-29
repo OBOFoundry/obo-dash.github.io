@@ -3,36 +3,37 @@ base_prefixes:
 - PR
 - PRALT
 - PR
-changed: true
-date: 2022-12-15 14:37:38.276966
+changed: false
+date: 2023-06-25 10:25:06.962476
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 2620638
-    Declaration: 334557
+    AnnotationAssertion: 2623891
+    Declaration: 334908
     DisjointClasses: 126
-    EquivalentClasses: 126605
+    EquivalentClasses: 126754
     ObjectPropertyDomain: 1
     ObjectPropertyRange: 1
     SubAnnotationPropertyOf: 9
-    SubClassOf: 851108
+    SubClassOf: 843096
+    SubObjectPropertyOf: 3
     SymmetricObjectProperty: 1
     TransitiveObjectProperty: 5
-  'Axioms: Number of axioms': 3933051
+  'Axioms: Number of axioms': 3928795
   'Entities: % of entities reused': 30.61
   'Entities: Number of annotation properties': 37
-  'Entities: Number of classes': 334504
+  'Entities: Number of classes': 334852
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
-  'Entities: Number of object properties': 20
+  'Entities: Number of object properties': 23
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 2452535
-    ObjectExactCardinality: 1193
-    ObjectIntersectionOf: 126428
+    Class: 2437383
+    ObjectExactCardinality: 1205
+    ObjectIntersectionOf: 126573
     ObjectMaxCardinality: 10
-    ObjectMinCardinality: 19
-    ObjectSomeValuesFrom: 583440
-    ObjectUnionOf: 176
+    ObjectMinCardinality: 46
+    ObjectSomeValuesFrom: 584184
+    ObjectUnionOf: 181
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.853
@@ -46,38 +47,39 @@ metrics:
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 24373
-    BIRDGENE: 2229
+    BFO: 24424
+    BIRDGENE: 2234
     CHEBI: 399
     CL: 14
     EGGENE: 16190
     ENSEMBLEGENOMEID: 1157
-    ENSEMBLEID: 854
-    FBgn: 18054
-    GENENAMES: 80241
+    ENSEMBLEID: 813
+    FBgn: 18131
+    GENENAMES: 80281
     GNO: 11666
-    GO: 2426
-    IAO: 333661
-    MGI: 68381
-    MOD: 15978
-    NCBIGENE: 23181
-    NCBITaxon: 410964
+    GO: 2423
+    IAO: 334041
+    MGI: 68434
+    MOD: 15973
+    NCBIGENE: 23258
+    NCBITaxon: 411381
     OBI: 6
     OGG: 56
-    PR: 1467382
-    PRALT: 147832
-    RO: 412195
-    SO: 106869
-    SPOMBE: 23943
-    WBGene: 21837
-    ZFIN_GENE: 14499
-    dictyGene: 20740
+    PR: 1451145
+    PRALT: 148091
+    RO: 412676
+    SO: 107003
+    SPOMBE: 23947
+    WBGene: 21904
+    ZFIN_GENE: 14577
+    dictyGene: 20785
     obo: 4411
-    oboInOwl: 3119587
-    owl: 5393
-    prefix_unknown: 79333
-    rdfs: 678841
-    rgd: 33291
+    oboInOwl: 3124015
+    owl: 5407
+    prefix_unknown: 79428
+    rdfs: 679571
+    rgd: 33331
+    xsd: 1012297
     yeastgenome: 28421
   'Info: Which ontologies use it?':
   - ado
@@ -93,6 +95,7 @@ metrics:
   - dron
   - eupath
   - flopo
+  - foodon
   - fypo
   - genepio
   - go
@@ -101,7 +104,6 @@ metrics:
   - iceo
   - ino
   - maxo
-  - micro
   - mp
   - mro
   - ms
@@ -135,16 +137,16 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    comment: Version IRI 'http://purl.obolibrary.org/obo/pr/67.0/pr.owl' is not in
+    comment: Version IRI 'http://purl.obolibrary.org/obo/pr/68.0/pr.owl' is not in
       recommended format
     status: WARN
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 53 missing definitions. See ROBOT Report for details.
+    comment: 51 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
-    comment: 5 non-RO properties used.
+    comment: 6 non-RO properties used.
     file: fp7
     status: INFO
   FP08 Documented:
@@ -161,14 +163,14 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 66 warnings, 0 info messages.
+    comment: 65 warnings, 0 info messages.
     file: robot_report
     results:
       ERROR: 0
       INFO: 0
-      WARN: 66
+      WARN: 65
     status: WARN
-sha256_hash: dac9c04a137cb3c4c073eef1e9c3181eb169d0a72a0bbc7e5444337437d8663f
+sha256_hash: fdbe7ff162ba8172e5562f0cea15741fa2507469df5bbc98fc6af64e1c7af15d
 summary:
   comment: 3 warnings
   status: WARN
@@ -176,4 +178,4 @@ summary:
     ERROR: 0
     INFO: 2
     WARN: 3
-version: http://purl.obolibrary.org/obo/pr/67.0/pr.owl
+version: http://purl.obolibrary.org/obo/pr/68.0/pr.owl

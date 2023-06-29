@@ -3,8 +3,8 @@ base_prefixes:
 - PCO
 - PCOALT
 - PCO
-changed: true
-date: 2022-12-15 14:23:26.144753
+changed: false
+date: 2023-06-25 09:58:45.213285
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 393
@@ -29,14 +29,14 @@ metrics:
     ObjectUnionOf: 1
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.793
+    _dashboard: 0.778
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.108
+    _impact: 0.114
     _impact_external: 0
     _reuse: 0.5
-    oboscore: 0.451
+    oboscore: 0.446
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 20
+  'Info: How many ontologies use it?': 21
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -67,6 +67,7 @@ metrics:
   - envo
   - eupath
   - flopo
+  - foodon
   - gecko
   - genepio
   - geno
@@ -106,8 +107,8 @@ results:
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
-    comment: last version (2021-05-03) is over one year(s) old
-    status: INFO
+    comment: last version (2021-05-03) is over two year(s) old
+    status: WARN
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
@@ -124,6 +125,6 @@ summary:
   status: ERROR
   summary_count:
     ERROR: 3
-    INFO: 1
-    WARN: 0
+    INFO: 0
+    WARN: 1
 version: http://purl.obolibrary.org/obo/pco/releases/2021-05-03/pco-base.owl

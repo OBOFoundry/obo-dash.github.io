@@ -3,72 +3,75 @@ base_prefixes:
 - OHD
 - OHDALT
 - OHD
-changed: true
-date: 2022-12-15 14:15:04.558766
+changed: false
+date: 2023-06-25 09:46:16.563898
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 937
+    AnnotationAssertion: 1471
     ClassAssertion: 32
+    DataPropertyAssertion: 2
     DataPropertyDomain: 2
-    DataPropertyRange: 3
-    Declaration: 1176
-    DisjointClasses: 7
-    EquivalentClasses: 69
+    DataPropertyRange: 10
+    Declaration: 1313
+    DisjointClasses: 6
+    EquivalentClasses: 124
     ObjectPropertyAssertion: 32
     ObjectPropertyDomain: 1
     ObjectPropertyRange: 1
     SubAnnotationPropertyOf: 1
-    SubClassOf: 460
+    SubClassOf: 521
     SubDataPropertyOf: 2
     SubObjectPropertyOf: 2
-    SubPropertyChainOf: 1
+    SubPropertyChainOf: 2
     TransitiveObjectProperty: 1
-  'Axioms: Number of axioms': 2727
-  'Entities: % of entities reused': 77.87
-  'Entities: Number of annotation properties': 18
-  'Entities: Number of classes': 1073
-  'Entities: Number of data properties': 5
-  'Entities: Number of individuals': 65
-  'Entities: Number of object properties': 20
+  'Axioms: Number of axioms': 3523
+  'Entities: % of entities reused': 71.14
+  'Entities: Number of annotation properties': 21
+  'Entities: Number of classes': 1196
+  'Entities: Number of data properties': 11
+  'Entities: Number of individuals': 67
+  'Entities: Number of object properties': 21
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 2387
+    Class: 2688
+    DataHasValue: 32
     ObjectAllValuesFrom: 36
     ObjectComplementOf: 32
-    ObjectExactCardinality: 25
+    ObjectExactCardinality: 7
     ObjectHasValue: 32
-    ObjectIntersectionOf: 183
-    ObjectMinCardinality: 9
-    ObjectSomeValuesFrom: 414
-    ObjectUnionOf: 15
-  'Info: Does the ontology fall under OWL 2 DL?': false
+    ObjectIntersectionOf: 175
+    ObjectMinCardinality: 1
+    ObjectSomeValuesFrom: 396
+    ObjectUnionOf: 18
+  'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.593
+    _dashboard: 0.527
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
-    _reuse: 0.779
-    oboscore: 0.296
+    _reuse: 0.711
+    oboscore: 0.264
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 221
-    FMA: 1117
-    IAO: 803
-    NCBITaxon: 10
+    BFO: 228
+    FMA: 1128
+    IAO: 944
+    NCBITaxon: 7
     OBI: 128
     OGMS: 38
-    OHD: 1297
+    OHD: 1612
     OMRSE: 4
-    dc11: 8
-    obo: 180
-    oboInOwl: 6
+    dc11: 183
+    obo: 185
+    oboInOwl: 95
     owl: 2
-    prefix_unknown: 4
-    rdfs: 274
-    xsd: 4
+    prefix_unknown: 1
+    rdf: 34
+    rdfs: 402
+    xsd: 11
   'Info: Which ontologies use it?': []
 mirror_from: http://purl.obolibrary.org/obo/ohd/ohd-base.owl
 namespace: ohd
@@ -86,11 +89,11 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 2 multiple definitions. 25 missing definitions. See ROBOT Report for
-      details.
+    comment: 2 duplicate definitions. 12 multiple definitions. 26 missing definitions.
+      See ROBOT Report for details.
     status: ERROR
   FP07 Relations:
-    comment: 7 non-RO properties used.
+    comment: 12 non-RO properties used.
     file: fp7
     status: INFO
   FP08 Documented:
@@ -102,25 +105,26 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    status: PASS
+    comment: 2 duplicate labels. 10 multiple labels. See ROBOT Report for details.
+    status: ERROR
   FP16 Maintenance:
     status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 5 errors, 56 warnings, 138 info messages.
+    comment: 29 errors, 59 warnings, 194 info messages.
     file: robot_report
     results:
-      ERROR: 5
-      INFO: 138
-      WARN: 56
+      ERROR: 29
+      INFO: 194
+      WARN: 59
     status: ERROR
-sha256_hash: 533996bac8af67cb7194a9d97bb686af36739851b0aad3b9ee4b4664bbee5db6
+sha256_hash: d24f6ce0d5874c50c6735c6077e71fad06143a13f5ec9e07cf30848775cfc40d
 summary:
-  comment: 6 errors
+  comment: 7 errors
   status: ERROR
   summary_count:
-    ERROR: 6
+    ERROR: 7
     INFO: 1
     WARN: 0
-version: http://purl.obolibrary.org/obo/ohd/releases/2022-10-10/ohd-base.owl
+version: http://purl.obolibrary.org/obo/ohd/releases/2023-04-14/ohd-base.owl

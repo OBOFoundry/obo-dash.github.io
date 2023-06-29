@@ -4,48 +4,49 @@ base_prefixes:
 - CHEBIALT
 - CHEBI
 changed: true
-date: 2022-12-15 12:20:55.710104
+date: 2023-06-19 14:04:09.924778
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 2510618
-    Declaration: 182116
+    AnnotationAssertion: 2528377
+    Declaration: 183221
     InverseObjectProperties: 1
     SubAnnotationPropertyOf: 6
-    SubClassOf: 325798
+    SubClassOf: 327951
     TransitiveObjectProperty: 2
-  'Axioms: Number of axioms': 3018541
+  'Axioms: Number of axioms': 3039558
   'Entities: % of entities reused': 0.02
   'Entities: Number of annotation properties': 37
-  'Entities: Number of classes': 182069
+  'Entities: Number of classes': 183174
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 10
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 833665
-    ObjectSomeValuesFrom: 89350
+    Class: 839076
+    ObjectSomeValuesFrom: 89887
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.587
+    _dashboard: 0.631
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.432
+    _impact: 0.427
     _impact_external: 0.25
     _reuse: 0.0
-    oboscore: 0.509
+    oboscore: 0.529
   'Info: How many externally documented uses?': 2
-  'Info: How many ontologies use it?': 80
+  'Info: How many ontologies use it?': 79
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 3957
-    CHEBI: 833665
-    CHEBIALT: 42834
-    IAO: 89413
-    RO: 42585
-    obo: 1036965
-    oboInOwl: 1828409
-    owl: 18593
-    rdfs: 163575
+    BFO: 3995
+    CHEBI: 839076
+    CHEBIALT: 43067
+    IAO: 89811
+    RO: 42851
+    obo: 1044260
+    oboInOwl: 1843094
+    owl: 18612
+    rdfs: 164661
+    xsd: 539666
   'Info: Which ontologies use it?':
   - ado
   - agro
@@ -54,7 +55,6 @@ metrics:
   - chiro
   - chmo
   - cido
-  - cl
   - clo
   - cob
   - cteno
@@ -85,13 +85,13 @@ metrics:
   - maxo
   - mco
   - mfmo
-  - micro
   - mondo
   - mop
   - mp
   - ms
   - nbo
   - ncro
+  - ngbo
   - oba
   - obcs
   - obi
@@ -138,12 +138,13 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    comment: Version IRI does not resolve
-    status: ERROR
+    comment: Version IRI 'http://purl.obolibrary.org/obo/chebi/222/chebi.owl' is not
+      in recommended format
+    status: WARN
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 1285 duplicate definitions. 111129 missing definitions. See ROBOT Report
+    comment: 1318 duplicate definitions. 111855 missing definitions. See ROBOT Report
       for details.
     status: ERROR
   FP07 Relations:
@@ -165,19 +166,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 1291 errors, 130716 warnings, 154 info messages.
+    comment: 1324 errors, 131556 warnings, 155 info messages.
     file: robot_report
     results:
-      ERROR: 1291
-      INFO: 154
-      WARN: 130716
+      ERROR: 1324
+      INFO: 155
+      WARN: 131556
     status: ERROR
-sha256_hash: a1ed76b0ca74b99720deefcbabd2934e46f7ed2e90d207b1e037bfd50fc5256e
+sha256_hash: 55165a362ff73fcfde98cc8d4ce08aaccfd1f53b1a0bf53c00c7ee0c2466bca6
 summary:
-  comment: 5 errors
+  comment: 4 errors
   status: ERROR
   summary_count:
-    ERROR: 5
+    ERROR: 4
     INFO: 2
-    WARN: 0
-version: http://purl.obolibrary.org/obo/chebi/220/chebi.owl
+    WARN: 1
+version: http://purl.obolibrary.org/obo/chebi/222/chebi.owl
