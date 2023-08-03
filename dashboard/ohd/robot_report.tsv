@@ -1,4 +1,6 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	missing_label	OHD:0000000	rdfs:label	
+ERROR	missing_label	OHD:0000234	rdfs:label	
 ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/ohd/ohd-base.owl	dc:description	
 ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/ohd/ohd-base.owl	dc:license	
 ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/ohd/ohd-base.owl	dc:title	
@@ -30,11 +32,6 @@ WARN	annotation_whitespace	OHD:0000057	IAO:0000119	"Mosby. Mosby's Dental Dictio
 WARN	annotation_whitespace	OHD:0000092	IAO:0000115	This annotation is used to indicate that an individual is asserted to be a member of a class.  This is useful when needing to find only the non-inferred type of an individual, and not the all the inferred types.  For example, suppose x is a member of the class 'material entity' and 'material entity' is a subclass of 'independent continuant'.  This entails that x will be a member of 'independent continuant'.  However, by using this annotation to assert that x is a member of 'material entity', you can query for x's 'asserted type' and ignore the other inferred types in the class hierarchy.  
 WARN	annotation_whitespace	OHD:0000100	IAO:0000115	A label naming a type of secondary tooth canonically found in humans, adopted by the American Dental Association, and commonly used as labels on odontograms (toothcharts) and clinical notes. The Universal Numbering System uses No. 1 through 32 for the 32 teeth in the permanent dentition, starting with 1 for the maxillary right third molar, going around the arch to the maxillary left third molar as 16; dropping down on the same side, the left mandibular third molar becomes 17, and then the numbers increase around the lower arch to 32, which is the lower right third molar. @en
 WARN	annotation_whitespace	OHD:0000100	IAO:0000119	Book:Scheid, Rickne. Woelfel's Dental Anatomy, 8th Edition. Lippincott Williams & Wilkins, 01/2011. pp. i - ii). @en
-WARN	annotation_whitespace	OHD:0000135	IAO:0000119	 ISBN:1935201387#CDT 2011-2012 Current Dental Terminology, Chapter 1
-WARN	annotation_whitespace	OHD:0000136	IAO:0000119	 ISBN:1935201387#CDT 2011-2012 Current Dental Terminology, Chapter 1
-WARN	annotation_whitespace	OHD:0000146	IAO:0000119	 ISBN:1935201387#CDT 2011-2012 Current Dental Terminology, Chapter 1
-WARN	annotation_whitespace	OHD:0000147	IAO:0000119	 ISBN:1935201387#CDT 2011-2012 Current Dental Terminology, Chapter 1
-WARN	annotation_whitespace	OHD:0000156	IAO:0000119	 ISBN:1935201387#CDT 2011-2012 Current Dental Terminology, Chapter 1
 WARN	annotation_whitespace	OHD:0000158	IAO:0000115	"A procelain fused to nobal metal crown restoration procedure that uses high noble metal as a substrate.
 "
 WARN	annotation_whitespace	OHD:0000164	IAO:0000115	"A crown restoration procedure in which the artifical crown used to restore the tooth is formed by cutting a window into a stainless steel prosthetic crown and filling the window with resin.
@@ -55,20 +52,16 @@ Mosby's definition is not quite corrrect. The support could also include other t
 WARN	annotation_whitespace	OHD:0000314	IAO:0000116	"Bill Duncan / Alan Ruttenber 12/16/2014:
 
 Prosthics may be either functional for non-functional. For example, a glass eye bears a prosthetic role, but it does not see. "
-WARN	equivalent_class_axiom_no_genus	OHD:0000000	BFO:0000087	OHD:0000191
+WARN	duplicate_label_synonym	OHD:0000169	IAO:0000118	resin onlay restoration procedure
+WARN	equivalent_class_axiom_no_genus	OHD:0000002	BFO:0000055	OHD:0000190
 WARN	missing_definition	OHD:0000000	IAO:0000115	
 WARN	missing_definition	OHD:0000029	IAO:0000115	
 WARN	missing_definition	OHD:0000030	IAO:0000115	
-WARN	missing_definition	OHD:0000043	IAO:0000115	
-WARN	missing_definition	OHD:0000050	IAO:0000115	
 WARN	missing_definition	OHD:0000065	IAO:0000115	
-WARN	missing_definition	OHD:0000093	IAO:0000115	
-WARN	missing_definition	OHD:0000140	IAO:0000115	
 WARN	missing_definition	OHD:0000141	IAO:0000115	
 WARN	missing_definition	OHD:0000143	IAO:0000115	
 WARN	missing_definition	OHD:0000144	IAO:0000115	
 WARN	missing_definition	OHD:0000145	IAO:0000115	
-WARN	missing_definition	OHD:0000147	IAO:0000115	
 WARN	missing_definition	OHD:0000159	IAO:0000115	
 WARN	missing_definition	OHD:0000162	IAO:0000115	
 WARN	missing_definition	OHD:0000167	IAO:0000115	
@@ -79,9 +72,12 @@ WARN	missing_definition	OHD:0000199	IAO:0000115
 WARN	missing_definition	OHD:0000208	IAO:0000115	
 WARN	missing_definition	OHD:0000209	IAO:0000115	
 WARN	missing_definition	OHD:0000210	IAO:0000115	
+WARN	missing_definition	OHD:0000215	IAO:0000115	
+WARN	missing_definition	OHD:0000254	IAO:0000115	
+WARN	missing_definition	OHD:0000258	IAO:0000115	
+WARN	missing_definition	OHD:0000295	IAO:0000115	
 WARN	missing_definition	OHD:0000313	IAO:0000115	
 WARN	missing_definition	OHD:0000316	IAO:0000115	
-INFO	lowercase_definition	OHD:0000001	IAO:0000115	a metal dental restoration material that consists of silver-colored, metallic alloy which is composed of a mixture of mercury and other metals@en
 INFO	lowercase_definition	OHD:0000011	IAO:0000115	should use obi class with modifications to not include restriction that has specified output is a diagnosis, and/or subclass the obi class
 INFO	lowercase_definition	OHD:0000014	IAO:0000115	a data property that relates an individual patient to the literal string that represents the patient's id
 INFO	lowercase_definition	OHD:0000015	IAO:0000115	"a data property that relates either:
@@ -95,9 +91,10 @@ INFO	lowercase_definition	OHD:0000018	IAO:0000115	a dental health care provider 
 INFO	lowercase_definition	OHD:0000020	IAO:0000115	a dental health care provider that bears a dental hygienist role
 INFO	lowercase_definition	OHD:0000028	IAO:0000115	a missing tooth finding in which tooth 14 is found to be missing
 INFO	lowercase_definition	OHD:0000032	IAO:0000115	a dental exam which focuses on soft tissue in and near the mouth.
+INFO	lowercase_definition	OHD:0000050	IAO:0000115	a data property that relates an individual to the date on which the individual was born
 INFO	lowercase_definition	OHD:0000051	IAO:0000115	a health care provider that bears a dental health care provider role
 INFO	lowercase_definition	OHD:0000052	IAO:0000115	a health care provider role that inheres in a person who is licensed to provide dental health care
-INFO	lowercase_definition	OHD:0000053	IAO:0000115	a data property that relates an individual to the data source that was used to extract information about the individual
+INFO	lowercase_definition	OHD:0000053	IAO:0000115	an annotation property that relates an individual to the data source that was used to extract information about the individual
 INFO	lowercase_definition	OHD:0000059	IAO:0000115	a missing tooth finding in which tooth 1 is found to be missing
 INFO	lowercase_definition	OHD:0000060	IAO:0000115	a missing tooth finding in which tooth 2 is found to be missing
 INFO	lowercase_definition	OHD:0000061	IAO:0000115	a missing tooth finding in which tooth 3 is found to be missing
@@ -129,6 +126,7 @@ INFO	lowercase_definition	OHD:0000087	IAO:0000115	a missing tooth finding in whi
 INFO	lowercase_definition	OHD:0000088	IAO:0000115	a missing tooth finding in which tooth 30 is found to be missing
 INFO	lowercase_definition	OHD:0000089	IAO:0000115	a missing tooth finding in which tooth 31 is found to be missing
 INFO	lowercase_definition	OHD:0000090	IAO:0000115	a missing tooth finding in which tooth 32 is found to be missing
+INFO	lowercase_definition	OHD:0000097	IAO:0000115	"a data property in which the values provide information as to whether a patient is actively being cared for by the practicet; takes values \""active\"" and \""inactive\"""
 INFO	lowercase_definition	OHD:0000165	IAO:0000115	"a dental health care provider role that inheres in a person who is a an auxiliary to the dental operator
 "
 INFO	lowercase_definition	OHD:0000170	IAO:0000115	a dentist role that inheres in a person a dentist who practices as part of the dental team to provide educational, clinical and therapeutic patient services; and can provide basic preventive and restorative treatment to children and adults, and extractions of primary (baby) teeth under the supervision of a dentist
@@ -155,16 +153,19 @@ INFO	lowercase_definition	OHD:0000212	IAO:0000115	a role that inheres in a perso
 INFO	lowercase_definition	OHD:0000213	IAO:0000115	a dentist that bears a prosthodontist role
 INFO	lowercase_definition	OHD:0000216	IAO:0000115	relates a health care encounter such as a inpatient, outpatient, or hospital stay to the next such encounter for the same patient.
 INFO	lowercase_definition	OHD:0000217	IAO:0000115	relates a health care encounter such as a inpatient, outpatient, or hospital stay to any subsequent such encounter for the same patient.
+INFO	lowercase_definition	OHD:0000218	IAO:0000115	a data property used to record the date of a patient's first dental visit
+INFO	lowercase_definition	OHD:0000219	IAO:0000115	a data property used to record the last date on which a patient had a dental visit
+INFO	lowercase_definition	OHD:0000234	IAO:0000115	a data property whose value is an ADA universal tooth number that represents a tooth which is missing from a dentition
 INFO	lowercase_definition	OHD:0000301	IAO:0000115	a processed material that bears a prothetic role
 INFO	lowercase_definition	OHD:0000302	IAO:0000115	a prosthesis that has been fabricated for use as a substitute for a natural tooth
 INFO	lowercase_definition	OHD:0000310	IAO:0000115	a prosthesis that replaces one or more, but less than all, of the natural teeth and associated structures 
-INFO	lowercase_definition	OHD:0000311	IAO:0000115	a partial denture that is supported entirely by existing teeth
-INFO	lowercase_definition	OHD:0000312	IAO:0000115	a tooth-supported partial denture that is intended to be permanently attached to the teeth that furnish support to the restoration
+INFO	lowercase_definition	OHD:0000360	IAO:0000115	a data property whose value is an ADA universal tooth number that represents the tooth associated with a tooth root that is missing from a dentition
 INFO	missing_superclass	OHD:0000008	rdfs:subClassOf	
 INFO	missing_superclass	OHD:0000012	rdfs:subClassOf	
 INFO	missing_superclass	OHD:0000018	rdfs:subClassOf	
 INFO	missing_superclass	OHD:0000020	rdfs:subClassOf	
 INFO	missing_superclass	OHD:0000022	rdfs:subClassOf	
+INFO	missing_superclass	OHD:0000023	rdfs:subClassOf	
 INFO	missing_superclass	OHD:0000030	rdfs:subClassOf	
 INFO	missing_superclass	OHD:0000039	rdfs:subClassOf	
 INFO	missing_superclass	OHD:0000040	rdfs:subClassOf	
@@ -197,4 +198,3 @@ INFO	missing_superclass	OHD:0000155	rdfs:subClassOf
 INFO	missing_superclass	OHD:0000158	rdfs:subClassOf	
 INFO	missing_superclass	OHD:0000159	rdfs:subClassOf	
 INFO	missing_superclass	OHD:0000160	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000161	rdfs:subClassOf	

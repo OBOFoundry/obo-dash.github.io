@@ -4,7 +4,7 @@ base_prefixes:
 - IAOALT
 - OMO
 changed: true
-date: 2022-12-15 14:19:12.009412
+date: 2023-07-31 23:23:37.884437
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 406
@@ -16,7 +16,7 @@ metrics:
     SubAnnotationPropertyOf: 5
     SubClassOf: 27
   'Axioms: Number of axioms': 567
-  'Entities: % of entities reused': 27.68
+  'Entities: % of entities reused': 28.32
   'Entities: Number of annotation properties': 63
   'Entities: Number of classes': 28
   'Entities: Number of data properties': 0
@@ -28,12 +28,12 @@ metrics:
     ObjectOneOf: 3
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.956
+    _dashboard: 0.949
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.973
+    _impact: 0.968
     _impact_external: 0.25
-    _reuse: 0.277
-    oboscore: 0.964
+    _reuse: 0.283
+    oboscore: 0.958
   'Info: How many externally documented uses?': 1
   'Info: How many ontologies use it?': 180
   'Info: Logical consistency': true
@@ -67,18 +67,17 @@ metrics:
   - cheminf
   - chiro
   - chmo
-  - cido
   - cio
   - cl
   - clao
   - clo
   - clyh
+  - cmo
   - cob
   - colao
   - cro
   - cteno
   - cto
-  - cvdo
   - ddanat
   - ddpheno
   - dideo
@@ -131,13 +130,13 @@ metrics:
   - ma
   - maxo
   - mco
+  - mcro
   - mf
   - mfmo
   - mfoem
   - mfomd
   - mi
   - miapa
-  - micro
   - mmo
   - mmusdv
   - mod
@@ -152,6 +151,7 @@ metrics:
   - ncbitaxon
   - ncit
   - ncro
+  - ngbo
   - nomen
   - oae
   - oarcs
@@ -256,7 +256,8 @@ results:
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
-    status: PASS
+    comment: last version (2022-04-27) is over one year(s) old
+    status: INFO
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
@@ -273,6 +274,6 @@ summary:
   status: WARN
   summary_count:
     ERROR: 0
-    INFO: 0
+    INFO: 1
     WARN: 2
 version: http://purl.obolibrary.org/obo/omo/releases/2022-04-27/omo-base.owl

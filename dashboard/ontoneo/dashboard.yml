@@ -3,15 +3,14 @@ base_prefixes:
 - ONTONEO
 - ONTONEO
 changed: true
-date: 2022-12-15 14:19:52.794571
+date: 2023-07-31 23:24:09.993920
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 15595
-    AnnotationPropertyDomain: 9
     AnnotationPropertyRangeOf: 12
     AsymmetricObjectProperty: 5
     ClassAssertion: 14
-    DataPropertyDomain: 1
+    DataPropertyDomain: 5
     DataPropertyRange: 1
     Declaration: 2429
     DisjointClasses: 27
@@ -21,7 +20,7 @@ metrics:
     FunctionalObjectProperty: 6
     InverseObjectProperties: 77
     IrrefexiveObjectProperty: 5
-    ObjectPropertyDomain: 10
+    ObjectPropertyDomain: 15
     ObjectPropertyRange: 13
     SubAnnotationPropertyOf: 68
     SubClassOf: 2292
@@ -32,13 +31,13 @@ metrics:
   'Axioms: Number of axioms': 21264
   'Entities: % of entities reused': 100.0
   'Entities: Number of annotation properties': 176
-  'Entities: Number of classes': 1797
+  'Entities: Number of classes': 1801
   'Entities: Number of data properties': 8
   'Entities: Number of individuals': 17
   'Entities: Number of object properties': 444
   'Entities: Number of unsatisfiable classes': 21
   'Info: Breakdown of OWL class expressions used':
-    Class: 7145
+    Class: 7154
     DataMinCardinality: 2
     ObjectAllValuesFrom: 11
     ObjectComplementOf: 1
@@ -50,12 +49,12 @@ metrics:
     ObjectUnionOf: 12
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.52
+    _dashboard: 0.504
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
     _reuse: 1.0
-    oboscore: 0.26
+    oboscore: 0.252
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
@@ -63,8 +62,9 @@ metrics:
   'Info: Usage of namespaces in axioms':
     BAO: 4
     BCGO: 17
-    BFO: 749
-    CL: 30
+    BFO: 750
+    CARO: 1
+    CL: 31
     CLALT: 8
     CMO: 23
     CVDO: 16
@@ -73,9 +73,9 @@ metrics:
     EFO: 31
     ERO: 23
     FMA: 1828
-    GO: 460
+    GO: 462
     HP: 305
-    IAO: 5339
+    IAO: 5343
     IDOMAL: 7
     MP: 153
     MPATH: 26
@@ -101,9 +101,9 @@ metrics:
     owl: 25
     prefix_unknown: 33
     protege: 37
-    rdf: 1
+    rdf: 12
     rdfs: 3475
-    xsd: 11
+    xsd: 78
   'Info: Which ontologies use it?': []
 mirror_from: http://purl.obolibrary.org/obo/ontoneo.owl
 namespace: ontoneo
@@ -141,8 +141,8 @@ results:
     comment: 8 duplicate labels. 473 multiple labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
-    comment: last version (2021-04-29) is over one year(s) old
-    status: INFO
+    comment: last version (2021-04-29) is over two year(s) old
+    status: WARN
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
@@ -159,6 +159,6 @@ summary:
   status: ERROR
   summary_count:
     ERROR: 6
-    INFO: 2
-    WARN: 0
+    INFO: 1
+    WARN: 1
 version: http://purl.obolibrary.org/obo/ontoneo/releases/2021-04-29/ontoneo.owl

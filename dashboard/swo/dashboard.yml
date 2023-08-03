@@ -4,18 +4,18 @@ base_prefixes:
 - SWOALT
 - SWO
 changed: true
-date: 2022-12-15 14:39:17.845936
+date: 2023-07-31 23:35:09.924186
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 10945
+    AnnotationAssertion: 11272
     AnnotationPropertyRangeOf: 1
-    ClassAssertion: 403
+    ClassAssertion: 447
     DataPropertyRange: 5
-    Declaration: 2601
+    Declaration: 2660
     DifferentIndividuals: 2
     DisjointClasses: 24
     EquivalentClasses: 51
-    EquivalentObjectProperties: 3
+    EquivalentObjectProperties: 2
     FunctionalObjectProperty: 2
     InverseFunctionalObjectProperty: 1
     InverseObjectProperties: 37
@@ -23,24 +23,24 @@ metrics:
     ObjectPropertyAssertion: 24
     ObjectPropertyDomain: 52
     ObjectPropertyRange: 53
-    Rule: 21
+    Rule: 23
     SubAnnotationPropertyOf: 6
-    SubClassOf: 4486
+    SubClassOf: 4482
     SubDataPropertyOf: 1
-    SubObjectPropertyOf: 137
-    SubPropertyChainOf: 45
+    SubObjectPropertyOf: 148
+    SubPropertyChainOf: 52
     SymmetricObjectProperty: 5
-    TransitiveObjectProperty: 13
-  'Axioms: Number of axioms': 18919
-  'Entities: % of entities reused': 53.53
-  'Entities: Number of annotation properties': 68
-  'Entities: Number of classes': 1973
+    TransitiveObjectProperty: 15
+  'Axioms: Number of axioms': 19366
+  'Entities: % of entities reused': 52.79
+  'Entities: Number of annotation properties': 76
+  'Entities: Number of classes': 1971
   'Entities: Number of data properties': 5
-  'Entities: Number of individuals': 402
-  'Entities: Number of object properties': 153
+  'Entities: Number of individuals': 446
+  'Entities: Number of object properties': 161
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 11973
+    Class: 12007
     DataHasValue: 149
     ObjectAllValuesFrom: 263
     ObjectComplementOf: 27
@@ -55,40 +55,44 @@ metrics:
   'Info: Experimental OBO score':
     _dashboard: 0.727
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.005
+    _impact: 0.016
     _impact_external: 0
-    _reuse: 0.535
-    oboscore: 0.366
+    _reuse: 0.528
+    oboscore: 0.371
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 1
+  'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     APOLLO_SV: 12
-    BFO: 252
-    GO: 21
-    IAO: 6068
-    NCBITaxon: 44
-    OBI: 1234
+    BFO: 256
+    GO: 10
+    IAO: 6220
+    NCBITaxon: 47
+    OBI: 1232
     OMO: 3
     PATO: 3
-    RO: 865
-    SWO: 10687
+    RO: 907
+    SWO: 11286
     UO: 176
-    dc: 715
-    dc11: 91
+    dc: 714
+    dc11: 95
     edam: 9
-    efo: 3295
+    efo: 2111
+    foaf: 2
     obo: 10
-    oboInOwl: 804
-    owl: 688
+    oboInOwl: 876
+    owl: 738
     prefix_unknown: 371
-    rdf: 163
-    rdfs: 2745
+    protege: 1
+    rdf: 297
+    rdfs: 3537
     skos: 6
-    xsd: 12
+    xsd: 11
   'Info: Which ontologies use it?':
+  - mcro
   - miapa
+  - ngbo
 mirror_from: http://purl.obolibrary.org/obo/swo.owl
 namespace: swo
 results:
@@ -125,7 +129,7 @@ results:
     status: PASS
   ROBOT Report:
     status: PASS
-sha256_hash: b8165b6ed17c6f4d1b7548f22fd086e7fb488115a50a7fa300d4d33781a97633
+sha256_hash: a2136461c6bf4a76c42caf6f96da3910a2d334d555a372639f16f6dbef1e4545
 summary:
   comment: 3 errors
   status: ERROR
@@ -133,4 +137,4 @@ summary:
     ERROR: 3
     INFO: 1
     WARN: 0
-version: http://www.ebi.ac.uk/swo/swo/releases/2022-10-11/swo.owl
+version: http://www.ebi.ac.uk/swo/swo/releases/2023-03-05/swo.owl

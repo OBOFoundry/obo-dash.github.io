@@ -9,9 +9,9 @@
 # we therefore map the whole repo (../..) to a docker volume.
 #
 # See README-editors.md for more details.
-docker run -e ROBOT_JAVA_ARGS='-Xmx58G' -e JAVA_OPTS='-Xmx58G' \
+docker run -e ROBOT_JAVA_ARGS='-Xmx58G' -e JAVA_OPTS='-Xmx58G' -e ODK_USER_ID='0' \
   -v $PWD/dashboard:/tools/OBO-Dashboard/dashboard \
   -v $PWD/dashboard-config.yml:/tools/OBO-Dashboard/dashboard-config.yml \
   -v $PWD/ontologies:/tools/OBO-Dashboard/build/ontologies \
   -v $PWD/sparql:/tools/OBO-Dashboard/sparql \
-  -w /work --rm -ti obolibrary/odkfull:dev "$@"
+  -w /work --rm -ti obolibrary/odkfull "$@"

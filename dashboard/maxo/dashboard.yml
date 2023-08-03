@@ -4,69 +4,69 @@ base_prefixes:
 - MAXOALT
 - MAXO
 changed: true
-date: 2022-12-15 12:48:39.974801
+date: 2023-07-31 22:47:00.742402
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 10763
-    Declaration: 1989
-    EquivalentClasses: 584
-    SubClassOf: 1169
-  'Axioms: Number of axioms': 14505
-  'Entities: % of entities reused': 27.68
-  'Entities: Number of annotation properties': 21
-  'Entities: Number of classes': 1965
+    AnnotationAssertion: 12394
+    Declaration: 2487
+    EquivalentClasses: 823
+    SubClassOf: 1327
+  'Axioms: Number of axioms': 17031
+  'Entities: % of entities reused': 27.02
+  'Entities: Number of annotation properties': 23
+  'Entities: Number of classes': 2458
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
-  'Entities: Number of object properties': 8
+  'Entities: Number of object properties': 10
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 6187
-    ObjectIntersectionOf: 717
-    ObjectSomeValuesFrom: 1151
-  'Info: Does the ontology fall under OWL 2 DL?': false
+    Class: 7755
+    ObjectIntersectionOf: 990
+    ObjectSomeValuesFrom: 1635
+  'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.66
+    _dashboard: 0.882
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.022
     _impact_external: 0
-    _reuse: 0.277
-    oboscore: 0.341
+    _reuse: 0.27
+    oboscore: 0.452
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 4
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 342
-    CHEBI: 602
+    BFO: 499
+    CHEBI: 705
+    CL: 74
+    COB: 2
     FOODON: 98
-    GO: 1
     HP: 92
-    IAO: 1425
-    MAXO: 5092
+    IAO: 1816
+    MAXO: 6301
     MAXOALT: 1
     NBO: 18
-    OBI: 19
-    PATO: 1
+    OBI: 14
+    PATO: 46
     PR: 31
-    RO: 573
-    UBERON: 477
+    RO: 817
+    UBERON: 703
     dc: 1
-    dc11: 1388
-    oboInOwl: 6850
-    owl: 53
-    rdfs: 1567
+    dc11: 1672
+    oboInOwl: 7453
+    owl: 57
+    rdf: 383
+    rdfs: 1910
   'Info: Which ontologies use it?':
   - ado
   - ecto
+  - eupath
   - mondo
-  - upheno
 mirror_from: http://purl.obolibrary.org/obo/maxo/maxo-base.owl
 namespace: maxo
 results:
   FP01 Open:
-    comment: Ontology license 'https://creativecommons.org/licenses/by/4.0/' does
-      not match registry license 'http://creativecommons.org/licenses/by/3.0/'.
-    status: ERROR
+    status: PASS
   FP02 Common Format:
     status: PASS
   FP03 URIs:
@@ -76,9 +76,8 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 4 multiple definitions. 19 missing definitions. See ROBOT Report for
-      details.
-    status: ERROR
+    comment: 1 missing definitions. See ROBOT Report for details.
+    status: WARN
   FP07 Relations:
     comment: 4 non-RO properties used.
     file: fp7
@@ -91,26 +90,25 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 76 multiple labels. 1 missing labels. See ROBOT Report for details.
-    status: ERROR
+    status: PASS
   FP16 Maintenance:
     status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 82 errors, 54 warnings, 440 info messages.
+    comment: 2 warnings, 656 info messages.
     file: robot_report
     results:
-      ERROR: 82
-      INFO: 440
-      WARN: 54
-    status: ERROR
-sha256_hash: 6b210f6173fdf2325850ae7136a306edcda49e91d97f7c772abc7ceae226c99c
+      ERROR: 0
+      INFO: 656
+      WARN: 2
+    status: WARN
+sha256_hash: adea03dcada010d99567be1f5545159c4ee36d9853eee0dfb7258ddd91d19b2c
 summary:
-  comment: 5 errors
+  comment: 1 errors
   status: ERROR
   summary_count:
-    ERROR: 5
+    ERROR: 1
     INFO: 1
-    WARN: 0
-version: http://purl.obolibrary.org/obo/maxo/releases/2022-12-09/maxo-base.owl
+    WARN: 2
+version: http://purl.obolibrary.org/obo/maxo/releases/2023-06-06/maxo-base.owl

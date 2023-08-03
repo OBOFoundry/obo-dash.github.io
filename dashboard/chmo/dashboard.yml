@@ -4,11 +4,11 @@ base_prefixes:
 - CHMOALT
 - CHMO
 changed: true
-date: 2022-12-15 12:21:15.343992
+date: 2023-07-31 22:24:03.342901
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 21198
-    Declaration: 3162
+    Declaration: 3165
     DisjointClasses: 1
     EquivalentClasses: 102
     ObjectPropertyDomain: 4
@@ -17,7 +17,7 @@ metrics:
     SubClassOf: 3358
     SubObjectPropertyOf: 9
     TransitiveObjectProperty: 1
-  'Axioms: Number of axioms': 27840
+  'Axioms: Number of axioms': 27843
   'Entities: % of entities reused': 6.5
   'Entities: Number of annotation properties': 37
   'Entities: Number of classes': 3101
@@ -29,16 +29,16 @@ metrics:
     Class: 10137
     ObjectIntersectionOf: 102
     ObjectSomeValuesFrom: 388
-  'Info: Does the ontology fall under OWL 2 DL?': false
+  'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.816
+    _dashboard: 0.809
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.054
+    _impact: 0.048
     _impact_external: 0
     _reuse: 0.065
-    oboscore: 0.435
+    oboscore: 0.429
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 10
+  'Info: How many ontologies use it?': 9
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -53,15 +53,17 @@ metrics:
     OBI: 356
     REX: 1
     RO: 7
+    dc: 1
+    dc11: 2
     oboInOwl: 17820
     owl: 122
+    rdf: 2910
     rdfs: 3065
   'Info: Which ontologies use it?':
   - dideo
   - genepio
   - hso
   - ico
-  - micro
   - obi
   - one
   - proco
@@ -97,7 +99,8 @@ results:
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
-    status: PASS
+    comment: last version (2022-04-19) is over one year(s) old
+    status: INFO
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
@@ -108,12 +111,12 @@ results:
       INFO: 0
       WARN: 204
     status: WARN
-sha256_hash: 06c6d552beb4c82567a7344e2fa1ed8227878db79e7b742e13eb96171b8cdbce
+sha256_hash: 9c950db21a12c957620e8ad3fc92b0a0469a2719b98b6cea8f64f768e209c3c7
 summary:
   comment: 1 errors
   status: ERROR
   summary_count:
     ERROR: 1
-    INFO: 1
+    INFO: 2
     WARN: 2
 version: http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl

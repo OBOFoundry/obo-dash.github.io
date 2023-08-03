@@ -4,113 +4,116 @@ base_prefixes:
 - APOLLO_SVALT
 - APOLLO_SV
 changed: true
-date: 2022-12-15 12:08:19.609832
+date: 2023-07-31 22:19:24.246764
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 11520
+    AnnotationAssertion: 11598
     AnnotationPropertyRangeOf: 1
     AsymmetricObjectProperty: 7
     ClassAssertion: 26
     DataPropertyDomain: 5
     DataPropertyRange: 4
-    Declaration: 1963
+    Declaration: 2084
     DifferentIndividuals: 2
-    DisjointClasses: 27
-    EquivalentClasses: 175
-    EquivalentObjectProperties: 3
+    DisjointClasses: 24
+    EquivalentClasses: 165
+    EquivalentObjectProperties: 2
     FunctionalDataProperty: 4
-    FunctionalObjectProperty: 4
+    FunctionalObjectProperty: 5
     InverseFunctionalObjectProperty: 1
-    InverseObjectProperties: 21
+    InverseObjectProperties: 41
     IrrefexiveObjectProperty: 9
-    ObjectPropertyDomain: 39
-    ObjectPropertyRange: 38
+    ObjectPropertyDomain: 66
+    ObjectPropertyRange: 64
     ReflexiveObjectProperty: 3
-    Rule: 4
-    SubAnnotationPropertyOf: 9
-    SubClassOf: 1829
-    SubObjectPropertyOf: 97
-    SubPropertyChainOf: 2
-    TransitiveObjectProperty: 7
-  'Axioms: Number of axioms': 15800
-  'Entities: % of entities reused': 68.35
-  'Entities: Number of annotation properties': 120
-  'Entities: Number of classes': 1689
+    Rule: 25
+    SubAnnotationPropertyOf: 19
+    SubClassOf: 1970
+    SubObjectPropertyOf: 223
+    SubPropertyChainOf: 73
+    SymmetricObjectProperty: 3
+    TransitiveObjectProperty: 19
+  'Axioms: Number of axioms': 16443
+  'Entities: % of entities reused': 69.9
+  'Entities: Number of annotation properties': 144
+  'Entities: Number of classes': 1693
   'Entities: Number of data properties': 5
   'Entities: Number of individuals': 27
-  'Entities: Number of object properties': 126
+  'Entities: Number of object properties': 220
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 6244
+    Class: 6615
     DataExactCardinality: 6
     DataMinCardinality: 1
-    ObjectAllValuesFrom: 45
-    ObjectComplementOf: 27
+    ObjectAllValuesFrom: 53
+    ObjectComplementOf: 36
     ObjectExactCardinality: 9
-    ObjectHasValue: 4
-    ObjectIntersectionOf: 329
-    ObjectMinCardinality: 10
+    ObjectHasSelf: 1
+    ObjectHasValue: 7
+    ObjectIntersectionOf: 386
+    ObjectMinCardinality: 6
     ObjectOneOf: 3
-    ObjectSomeValuesFrom: 484
-    ObjectUnionOf: 20
+    ObjectSomeValuesFrom: 724
+    ObjectUnionOf: 28
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.593
+    _dashboard: 0.882
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.103
-    _impact_external: 0
-    _reuse: 0.683
-    oboscore: 0.348
-  'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 19
+    _impact: 0.097
+    _impact_external: 0.25
+    _reuse: 0.699
+    oboscore: 0.489
+  'Info: How many externally documented uses?': 1
+  'Info: How many ontologies use it?': 18
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    APOLLO_SV: 2032
-    BFO: 779
-    CHEBI: 3
+    APOLLO_SV: 2262
+    BFO: 974
+    CHEBI: 4
     DOID: 13
-    DRON: 3
+    DRON: 4
     EFO: 3
-    ENVO: 37
+    ENVO: 38
     ERO: 3
     FBcv: 6
     FMA: 17
-    GAZ: 1
-    GEO: 174
-    GO: 191
-    IAO: 7265
+    GEO: 205
+    GO: 197
+    IAO: 7579
     NBO: 3
     NCBITAXONALT: 256
-    NCBITaxon: 1659
+    NCBITaxon: 1661
     OAE: 4
-    OBI: 367
-    OGMS: 61
+    OBI: 422
+    OGMS: 63
     OMIABIS: 7
     OMO: 6
-    OMRSE: 146
-    PATO: 61
-    PCO: 21
-    RO: 311
-    STATO: 41
-    UBERON: 42
+    OMRSE: 143
+    PATO: 60
+    PATOALT: 6
+    PCO: 26
+    RO: 1093
+    STATO: 38
+    UBERON: 56
     UO: 39
-    VO: 13
-    dc: 1
-    dc11: 103
+    UOALT: 2
+    VO: 18
+    dc: 15
+    dc11: 109
     foaf: 5
-    obo: 402
-    oboInOwl: 3000
-    owl: 115
-    prefix_unknown: 33
+    obo: 400
+    oboInOwl: 2669
+    owl: 118
+    prefix_unknown: 29
     protege: 1
-    rdf: 2
-    rdfs: 2403
-    xsd: 4
+    rdf: 34
+    rdfs: 2540
+    skos: 3
+    xsd: 12
   'Info: Which ontologies use it?':
   - agro
   - cheminf
-  - cido
   - dideo
   - dron
   - duo
@@ -119,8 +122,8 @@ metrics:
   - genepio
   - iao
   - ico
+  - mcro
   - mpio
-  - obi
   - obib
   - omrse
   - one
@@ -137,14 +140,12 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    comment: Version IRI does not resolve
-    status: ERROR
+    status: PASS
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 2 duplicate definitions. 4 multiple definitions. 59 missing definitions.
-      See ROBOT Report for details.
-    status: ERROR
+    comment: 58 missing definitions. See ROBOT Report for details.
+    status: WARN
   FP07 Relations:
     comment: 5 non-RO properties used.
     file: fp7
@@ -152,31 +153,29 @@ results:
   FP08 Documented:
     status: PASS
   FP09 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
+    status: PASS
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 8 multiple labels. See ROBOT Report for details.
-    status: ERROR
+    status: PASS
   FP16 Maintenance:
     status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 39 errors, 115 warnings, 61 info messages.
+    comment: 111 warnings, 60 info messages.
     file: robot_report
     results:
-      ERROR: 39
-      INFO: 61
-      WARN: 115
-    status: ERROR
-sha256_hash: 8b099f516d9b8b2a253c434c992aaed937004486d125b0769f9cd06388a7dcc3
+      ERROR: 0
+      INFO: 60
+      WARN: 111
+    status: WARN
+sha256_hash: abf654dfed3987bdacdefd08844f0b91d916151463803616a1f3c92977129dfa
 summary:
-  comment: 5 errors
-  status: ERROR
+  comment: 2 warnings
+  status: WARN
   summary_count:
-    ERROR: 5
+    ERROR: 0
     INFO: 1
-    WARN: 0
-version: http://purl.obolibrary.org/obo/apollo_sv/releases/2022-11-25/apollo_sv.owl
+    WARN: 2
+version: http://purl.obolibrary.org/obo/apollo_sv/releases/2023-06-02/apollo_sv.owl

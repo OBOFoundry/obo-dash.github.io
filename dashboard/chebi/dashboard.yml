@@ -4,48 +4,49 @@ base_prefixes:
 - CHEBIALT
 - CHEBI
 changed: true
-date: 2022-12-15 12:20:55.710104
+date: 2023-07-31 22:23:44.581720
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 2510618
-    Declaration: 182116
+    AnnotationAssertion: 2529672
+    Declaration: 183294
     InverseObjectProperties: 1
     SubAnnotationPropertyOf: 6
-    SubClassOf: 325798
+    SubClassOf: 328131
     TransitiveObjectProperty: 2
-  'Axioms: Number of axioms': 3018541
+  'Axioms: Number of axioms': 3041106
   'Entities: % of entities reused': 0.02
   'Entities: Number of annotation properties': 37
-  'Entities: Number of classes': 182069
+  'Entities: Number of classes': 183247
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 10
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 833665
-    ObjectSomeValuesFrom: 89350
+    Class: 839509
+    ObjectSomeValuesFrom: 89942
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.587
+    _dashboard: 0.571
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.432
+    _impact: 0.419
     _impact_external: 0.25
     _reuse: 0.0
-    oboscore: 0.509
+    oboscore: 0.495
   'Info: How many externally documented uses?': 2
-  'Info: How many ontologies use it?': 80
+  'Info: How many ontologies use it?': 78
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 3957
-    CHEBI: 833665
-    CHEBIALT: 42834
-    IAO: 89413
-    RO: 42585
-    obo: 1036965
-    oboInOwl: 1828409
-    owl: 18593
-    rdfs: 163575
+    BFO: 4002
+    CHEBI: 839509
+    CHEBIALT: 43088
+    IAO: 89846
+    RO: 42878
+    obo: 1044738
+    oboInOwl: 1844308
+    owl: 18612
+    rdfs: 164734
+    xsd: 540126
   'Info: Which ontologies use it?':
   - ado
   - agro
@@ -53,8 +54,6 @@ metrics:
   - cheminf
   - chiro
   - chmo
-  - cido
-  - cl
   - clo
   - cob
   - cteno
@@ -85,13 +84,13 @@ metrics:
   - maxo
   - mco
   - mfmo
-  - micro
   - mondo
   - mop
   - mp
   - ms
   - nbo
   - ncro
+  - ngbo
   - oba
   - obcs
   - obi
@@ -138,18 +137,19 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    comment: Version IRI does not resolve
-    status: ERROR
+    comment: Version IRI 'http://purl.obolibrary.org/obo/chebi/223/chebi.owl' is not
+      in recommended format
+    status: WARN
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 1285 duplicate definitions. 111129 missing definitions. See ROBOT Report
-      for details.
+    comment: 1 duplicate definitions. 1 missing definitions. See ROBOT Report for
+      details.
     status: ERROR
   FP07 Relations:
-    comment: 8 non-RO properties used.
+    comment: 4 labels match RO labels. 4 non-RO properties used.
     file: fp7
-    status: INFO
+    status: ERROR
   FP08 Documented:
     status: PASS
   FP09 Plurality of Users:
@@ -157,7 +157,7 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 3 missing labels. See ROBOT Report for details.
+    comment: 1 missing labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
     comment: Version IRI does not have date information
@@ -165,19 +165,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 1291 errors, 130716 warnings, 154 info messages.
+    comment: 5 errors, 8 warnings, 2 info messages.
     file: robot_report
     results:
-      ERROR: 1291
-      INFO: 154
-      WARN: 130716
+      ERROR: 5
+      INFO: 2
+      WARN: 8
     status: ERROR
-sha256_hash: a1ed76b0ca74b99720deefcbabd2934e46f7ed2e90d207b1e037bfd50fc5256e
+sha256_hash: 768db28d15869ac2083c327ff78d4a6653c04dd602ff028041eaee1cb6d0f7ea
 summary:
   comment: 5 errors
   status: ERROR
   summary_count:
     ERROR: 5
-    INFO: 2
-    WARN: 0
-version: http://purl.obolibrary.org/obo/chebi/220/chebi.owl
+    INFO: 1
+    WARN: 1
+version: http://purl.obolibrary.org/obo/chebi/223/chebi.owl

@@ -9,7 +9,7 @@
             <div class="col-md-8">
                 <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/flopo.html">flopo</a></h1>
                 <p class="lead"><b>Version</b>: None</p>
-                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: 2022-12-15 12:38:11.947176</p>
+                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: 2023-07-31 22:35:04.472100</p>
                 <p class="lead" style="margin-top:-15px;"><a href="dashboard.yml">View dashboard results as YAML</a></p>
                 <p class="lead" style="margin-top:-15px;"><a href="../index.html">Go back to Overview</a></p>
                 <h3>Error Breakdown</h3>
@@ -24,7 +24,8 @@
                 
                 <table class="table">
                     <tr>
-                        <th>Check</th>
+                        <th>Principle</th>
+                        <th>Automated Check</th>
                         <th>Status</th>
                         <th>Comment</th>
                         <th>Resources</th>
@@ -36,6 +37,7 @@
                         
                         <tr>
                             <td><a href="http://obofoundry.org/principles/fp-001-open.html">Open</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_001">Open Automated Check</a></td>
                             
                                 
                                 
@@ -56,6 +58,7 @@
                         
                         <tr>
                             <td><a href="http://obofoundry.org/principles/fp-002-format.html">Common Format</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_002">Common Format Automated Check</a></td>
                             
                                 
                                 
@@ -76,6 +79,7 @@
                         
                         <tr>
                             <td><a href="http://obofoundry.org/principles/fp-003-uris.html">URIs</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_003">URIs Automated Check</a></td>
                             
                                 
                                 
@@ -96,6 +100,7 @@
                         
                         <tr>
                             <td><a href="http://obofoundry.org/principles/fp-004-versioning.html">Versioning</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_004">Versioning Automated Check</a></td>
                             
                                 
                                 
@@ -116,6 +121,7 @@
                         
                         <tr>
                             <td><a href="http://obofoundry.org/principles/fp-005-delineated-content.html">Scope</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_005">Scope Automated Check</a></td>
                             
                                 
                                 
@@ -136,6 +142,7 @@
                         
                         <tr>
                             <td><a href="http://obofoundry.org/principles/fp-006-textual-definitions.html">Textual Definitions</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_006">Textual Definitions Automated Check</a></td>
                             
                                 
                                 
@@ -156,6 +163,7 @@
                         
                         <tr>
                             <td><a href="http://obofoundry.org/principles/fp-007-relations.html">Relations</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_007">Relations Automated Check</a></td>
                             
                                 
                                 
@@ -176,6 +184,7 @@
                         
                         <tr>
                             <td><a href="http://obofoundry.org/principles/fp-008-documented.html">Documented</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_008">Documented Automated Check</a></td>
                             
                                 
                                 
@@ -196,6 +205,7 @@
                         
                         <tr>
                             <td><a href="http://obofoundry.org/principles/fp-009-users.html">Plurality of Users</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_009">Plurality of Users Automated Check</a></td>
                             
                                 
                                 
@@ -216,6 +226,7 @@
                         
                         <tr>
                             <td><a href="http://obofoundry.org/principles/fp-011-locus-of-authority.html">Locus of Authority</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_011">Locus of Authority Automated Check</a></td>
                             
                                 
                                 
@@ -236,6 +247,7 @@
                         
                         <tr>
                             <td><a href="http://obofoundry.org/principles/fp-012-naming-conventions.html">Naming Conventions</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_012">Naming Conventions Automated Check</a></td>
                             
                                 
                                 
@@ -256,6 +268,7 @@
                         
                         <tr>
                             <td><a href="http://obofoundry.org/principles/fp-016-maintenance.html">Maintenance</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_016">Maintenance Automated Check</a></td>
                             
                                 
                                 
@@ -276,6 +289,7 @@
                         
                         <tr>
                             <td><a href="http://obofoundry.org/principles/fp-020-responsiveness.html">Responsiveness</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_020">Responsiveness Automated Check</a></td>
                             
                                 
                                 
@@ -291,27 +305,33 @@
                             
                         </tr>
                     
-                        
-                        
-                        
-                        <tr>
-                            <td><a href="">Report</a></td>
-                            
-                                
-                                
-                            
-                            <td class="table-danger" style="text-align:center;">
-                                <img src="../assets/x.svg" height="15px">
-                            </td>
-                            
-                                <td>68 errors, 24196 warnings, 22882 info messages.</td>
-                            
-                            
-                                <td><a href="robot_report.html">View Report</a></td>
-                            
-                        </tr>
-                    
-                    <tr>
+                </table>
+                <h3>ROBOT Report Summary</h3>
+                <table class="table">
+                  <tr>
+                      <th>Check</th>
+                      <th>Status</th>
+                      <th>Comment</th>
+                      <th>Resources</th>
+                  </tr>
+                  
+                  
+                  <tr>
+                      <td><a href="http://robot.obolibrary.org/report">ROBOT Report</td>
+                      
+                          
+                          
+                      
+                      <td class="table-danger" style="text-align:center;">
+                          <img src="../assets/x.svg" height="15px">
+                      </td>
+                      
+                          <td>68 errors, 24196 warnings, 22882 info messages.</td>
+                      
+                      
+                          <td><a href="robot_report.html">View Report</a></td>
+                      
+                  </tr>  
                 </table>
                 <h3>Ontology metrics</h3>
                 
@@ -330,43 +350,47 @@
                                     <td>
                                         <ul>
                                             
-                                                <li>AnnotationAssertion: 142410</li>
+                                                <li>AnnotationAssertion: 141695</li>
                                             
                                                 <li>AsymmetricObjectProperty: 1</li>
                                             
-                                                <li>Declaration: 37519</li>
+                                                <li>ClassAssertion: 2</li>
                                             
-                                                <li>DisjointClasses: 430</li>
+                                                <li>Declaration: 37349</li>
                                             
-                                                <li>EquivalentClasses: 29509</li>
+                                                <li>DifferentIndividuals: 1</li>
+                                            
+                                                <li>DisjointClasses: 427</li>
+                                            
+                                                <li>EquivalentClasses: 29336</li>
                                             
                                                 <li>FunctionalObjectProperty: 2</li>
                                             
                                                 <li>InverseFunctionalObjectProperty: 1</li>
                                             
-                                                <li>InverseObjectProperties: 44</li>
+                                                <li>InverseObjectProperties: 46</li>
                                             
                                                 <li>IrrefexiveObjectProperty: 2</li>
                                             
-                                                <li>ObjectPropertyDomain: 68</li>
+                                                <li>ObjectPropertyDomain: 70</li>
                                             
-                                                <li>ObjectPropertyRange: 62</li>
+                                                <li>ObjectPropertyRange: 63</li>
                                             
-                                                <li>ReflexiveObjectProperty: 2</li>
+                                                <li>ReflexiveObjectProperty: 3</li>
                                             
-                                                <li>Rule: 26</li>
+                                                <li>Rule: 25</li>
                                             
-                                                <li>SubAnnotationPropertyOf: 104</li>
+                                                <li>SubAnnotationPropertyOf: 107</li>
                                             
-                                                <li>SubClassOf: 27589</li>
+                                                <li>SubClassOf: 27033</li>
                                             
-                                                <li>SubObjectPropertyOf: 284</li>
+                                                <li>SubObjectPropertyOf: 286</li>
                                             
                                                 <li>SubPropertyChainOf: 120</li>
                                             
-                                                <li>SymmetricObjectProperty: 6</li>
+                                                <li>SymmetricObjectProperty: 7</li>
                                             
-                                                <li>TransitiveObjectProperty: 32</li>
+                                                <li>TransitiveObjectProperty: 30</li>
                                             
                                         </ul>
                                     </td>
@@ -377,7 +401,7 @@
                                 <td>Axioms: Number of axioms</td>
                                 
                                 
-                                    <td>238211</td>
+                                    <td>236606</td>
                                 
                             </tr>
                         
@@ -385,7 +409,7 @@
                                 <td>Entities: % of entities reused</td>
                                 
                                 
-                                    <td>35.52</td>
+                                    <td>35.22</td>
                                 
                             </tr>
                         
@@ -393,7 +417,7 @@
                                 <td>Entities: Number of annotation properties</td>
                                 
                                 
-                                    <td>231</td>
+                                    <td>243</td>
                                 
                             </tr>
                         
@@ -401,7 +425,7 @@
                                 <td>Entities: Number of classes</td>
                                 
                                 
-                                    <td>36984</td>
+                                    <td>36788</td>
                                 
                             </tr>
                         
@@ -417,7 +441,7 @@
                                 <td>Entities: Number of individuals</td>
                                 
                                 
-                                    <td>0</td>
+                                    <td>9</td>
                                 
                             </tr>
                         
@@ -425,7 +449,7 @@
                                 <td>Entities: Number of object properties</td>
                                 
                                 
-                                    <td>307</td>
+                                    <td>312</td>
                                 
                             </tr>
                         
@@ -444,27 +468,29 @@
                                     <td>
                                         <ul>
                                             
-                                                <li>Class: 182426</li>
+                                                <li>Class: 180594</li>
                                             
                                                 <li>DataHasValue: 6</li>
                                             
                                                 <li>DataSomeValuesFrom: 3</li>
                                             
-                                                <li>ObjectAllValuesFrom: 92</li>
+                                                <li>ObjectAllValuesFrom: 97</li>
                                             
-                                                <li>ObjectComplementOf: 183</li>
+                                                <li>ObjectComplementOf: 175</li>
                                             
                                                 <li>ObjectExactCardinality: 8</li>
                                             
                                                 <li>ObjectHasSelf: 1</li>
                                             
-                                                <li>ObjectIntersectionOf: 29593</li>
+                                                <li>ObjectIntersectionOf: 29425</li>
                                             
-                                                <li>ObjectMinCardinality: 6</li>
+                                                <li>ObjectMinCardinality: 8</li>
                                             
-                                                <li>ObjectSomeValuesFrom: 64559</li>
+                                                <li>ObjectOneOf: 1</li>
                                             
-                                                <li>ObjectUnionOf: 9</li>
+                                                <li>ObjectSomeValuesFrom: 64239</li>
+                                            
+                                                <li>ObjectUnionOf: 11</li>
                                             
                                         </ul>
                                     </td>
@@ -494,7 +520,7 @@
                                             
                                                 <li>_impact_external: 0</li>
                                             
-                                                <li>_reuse: 0.355</li>
+                                                <li>_reuse: 0.352</li>
                                             
                                                 <li>oboscore: 0.288</li>
                                             
@@ -542,79 +568,79 @@
                                     <td>
                                         <ul>
                                             
-                                                <li>BFO: 29959</li>
+                                                <li>BFO: 29772</li>
                                             
                                                 <li>BSPO: 137</li>
                                             
-                                                <li>CARO: 23</li>
+                                                <li>CARO: 2</li>
                                             
-                                                <li>CHEBI: 3130</li>
+                                                <li>CHEBI: 3166</li>
                                             
-                                                <li>CHEBIALT: 108</li>
+                                                <li>CHEBIALT: 131</li>
                                             
-                                                <li>CL: 5449</li>
+                                                <li>CL: 5833</li>
                                             
-                                                <li>CLALT: 227</li>
+                                                <li>CLALT: 10</li>
                                             
                                                 <li>ENVO: 6</li>
                                             
                                                 <li>FLOPO: 48052</li>
                                             
-                                                <li>GO: 38895</li>
+                                                <li>GO: 36998</li>
                                             
-                                                <li>GOALT: 36</li>
+                                                <li>GOALT: 38</li>
                                             
-                                                <li>IAO: 13054</li>
+                                                <li>IAO: 12939</li>
                                             
                                                 <li>NBO: 2</li>
                                             
                                                 <li>NCBITAXONALT: 121</li>
                                             
-                                                <li>NCBITaxon: 1063</li>
+                                                <li>NCBITaxon: 1060</li>
                                             
-                                                <li>OBI: 2</li>
+                                                <li>OBI: 4</li>
                                             
-                                                <li>PATO: 31798</li>
+                                                <li>PATO: 31802</li>
                                             
                                                 <li>PATOALT: 60</li>
                                             
                                                 <li>PCO: 32</li>
                                             
-                                                <li>PO: 31009</li>
+                                                <li>PO: 31021</li>
                                             
-                                                <li>POALT: 42</li>
+                                                <li>POALT: 38</li>
                                             
-                                                <li>PR: 1336</li>
+                                                <li>PR: 1407</li>
                                             
-                                                <li>PRALT: 6</li>
+                                                <li>PRALT: 8</li>
                                             
-                                                <li>RO: 36700</li>
+                                                <li>RO: 36558</li>
                                             
                                                 <li>SO: 2</li>
                                             
-                                                <li>UBERON: 21238</li>
+                                                <li>UBERON: 21214</li>
                                             
-                                                <li>dc: 1083</li>
+                                                <li>dc: 1125</li>
                                             
-                                                <li>dc11: 57</li>
+                                                <li>dc11: 62</li>
                                             
-                                                <li>foaf: 374</li>
+                                                <li>foaf: 376</li>
                                             
-                                                <li>obo: 2389</li>
+                                                <li>obo: 2446</li>
                                             
-                                                <li>oboInOwl: 122707</li>
+                                                <li>oboInOwl: 121753</li>
                                             
                                                 <li>owl: 2383</li>
                                             
-                                                <li>prefix_unknown: 11</li>
+                                                <li>prefix_unknown: 13</li>
                                             
-                                                <li>rdf: 317</li>
+                                                <li>rdf: 32530</li>
                                             
-                                                <li>rdfs: 39624</li>
+                                                <li>rdfs: 39058</li>
                                             
                                                 <li>skos: 3</li>
                                             
-                                                <li>xsd: 1140</li>
+                                                <li>xsd: 18</li>
                                             
                                         </ul>
                                     </td>

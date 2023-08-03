@@ -4,60 +4,63 @@ base_prefixes:
 - FYPOALT
 - FYPO
 changed: true
-date: 2022-12-15 12:39:51.193542
+date: 2023-07-31 22:36:43.012629
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 80250
-    Declaration: 9967
+    AnnotationAssertion: 81461
+    Declaration: 10180
+    DifferentIndividuals: 1
     DisjointClasses: 1
-    EquivalentClasses: 5992
+    EquivalentClasses: 6054
     SubAnnotationPropertyOf: 2
-    SubClassOf: 9591
+    SubClassOf: 9782
     TransitiveObjectProperty: 1
-  'Axioms: Number of axioms': 105804
-  'Entities: % of entities reused': 19.4
-  'Entities: Number of annotation properties': 37
-  'Entities: Number of classes': 9911
+  'Axioms: Number of axioms': 107482
+  'Entities: % of entities reused': 19.33
+  'Entities: Number of annotation properties': 40
+  'Entities: Number of classes': 10103
   'Entities: Number of data properties': 0
-  'Entities: Number of individuals': 0
+  'Entities: Number of individuals': 18
   'Entities: Number of object properties': 21
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 56682
-    ObjectIntersectionOf: 6675
-    ObjectSomeValuesFrom: 21927
-  'Info: Does the ontology fall under OWL 2 DL?': false
+    Class: 57558
+    ObjectIntersectionOf: 6739
+    ObjectSomeValuesFrom: 22166
+  'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.8
+    _dashboard: 0.889
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.005
     _impact_external: 0.25
-    _reuse: 0.194
-    oboscore: 0.403
+    _reuse: 0.193
+    oboscore: 0.447
   'Info: How many externally documented uses?': 1
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 6166
-    BTO: 219
-    CHEBI: 1781
-    CL: 769
-    FYPO: 34499
+    BFO: 6226
+    BTO: 247
+    CHEBI: 1844
+    CL: 768
+    FYPO: 35150
     FYPOALT: 208
-    GO: 10512
-    IAO: 8238
-    PATO: 8430
+    GO: 10583
+    IAO: 8453
+    OMO: 2
+    PATO: 8495
     PR: 28
-    RO: 10736
-    SO: 444
+    RO: 10885
+    SO: 443
     SOALT: 4
     dc: 1
-    dc11: 1240
-    obo: 3630
-    oboInOwl: 96475
-    owl: 328
-    rdfs: 10749
+    dc11: 1409
+    obo: 3659
+    oboInOwl: 97495
+    owl: 330
+    rdf: 37128
+    rdfs: 10957
   'Info: Which ontologies use it?':
   - ado
 mirror_from: http://purl.obolibrary.org/obo/fypo/fypo-base.owl
@@ -74,8 +77,8 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 6 multiple definitions. 7 missing definitions. See ROBOT Report for details.
-    status: ERROR
+    comment: 3 missing definitions. See ROBOT Report for details.
+    status: WARN
   FP07 Relations:
     comment: 1 labels match RO labels. 7 non-RO properties used.
     file: fp7
@@ -93,19 +96,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 6 errors, 25 warnings, 7 info messages.
+    comment: 3 warnings, 2 info messages.
     file: robot_report
     results:
-      ERROR: 6
-      INFO: 7
-      WARN: 25
-    status: ERROR
-sha256_hash: e425a6f8974f5e5c0a168e08d8f6f7108104715c3d7746aca103b192aeb3b618
+      ERROR: 0
+      INFO: 2
+      WARN: 3
+    status: WARN
+sha256_hash: cd3faf9248e5a6e3bc42699acc148a11c52ab38ecd02733db38e15021b030d3b
 summary:
-  comment: 3 errors
+  comment: 1 errors
   status: ERROR
   summary_count:
-    ERROR: 3
+    ERROR: 1
     INFO: 0
-    WARN: 0
-version: http://purl.obolibrary.org/obo/fypo/releases/2022-11-30/fypo-base.owl
+    WARN: 2
+version: http://purl.obolibrary.org/obo/fypo/releases/2023-07-28/fypo-base.owl

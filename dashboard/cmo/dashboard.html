@@ -8,8 +8,8 @@
             <div class="col-md-2"></div>
             <div class="col-md-8">
                 <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/cmo.html">cmo</a></h1>
-                <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/cmo/releases/2019-02-19/cmo.owl</p>
-                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: 2022-12-15 12:23:13.894751</p>
+                <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/cmo/2.187/cmo.owl</p>
+                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: 2023-07-31 22:25:46.478504</p>
                 <p class="lead" style="margin-top:-15px;"><a href="dashboard.yml">View dashboard results as YAML</a></p>
                 <p class="lead" style="margin-top:-15px;"><a href="../index.html">Go back to Overview</a></p>
                 <h3>Error Breakdown</h3>
@@ -19,12 +19,13 @@
                         
                     
                     <div class="alert alert-danger">
-                        <center><h3>ERROR - 6 errors</h3></center>
+                        <center><h3>ERROR - 5 errors</h3></center>
                     </div>
                 
                 <table class="table">
                     <tr>
-                        <th>Check</th>
+                        <th>Principle</th>
+                        <th>Automated Check</th>
                         <th>Status</th>
                         <th>Comment</th>
                         <th>Resources</th>
@@ -36,6 +37,7 @@
                         
                         <tr>
                             <td><a href="http://obofoundry.org/principles/fp-001-open.html">Open</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_001">Open Automated Check</a></td>
                             
                                 
                                 
@@ -56,46 +58,7 @@
                         
                         <tr>
                             <td><a href="http://obofoundry.org/principles/fp-002-format.html">Common Format</a></td>
-                            
-                                
-                                
-                            
-                            <td class="table-warning" style="text-align:center;">
-                                <img src="../assets/warning.svg" height="15px">
-                            </td>
-                            
-                                <td>OWL syntax (RDF/XML), but should be RDF/XML</td>
-                            
-                            
-                                <td></td>
-                            
-                        </tr>
-                    
-                        
-                        
-                        
-                        <tr>
-                            <td><a href="http://obofoundry.org/principles/fp-003-uris.html">URIs</a></td>
-                            
-                                
-                                
-                            
-                            <td class="table-danger" style="text-align:center;">
-                                <img src="../assets/x.svg" height="15px">
-                            </td>
-                            
-                                <td>0 invalid IRIs. The Ontology IRI is not valid.</td>
-                            
-                            
-                                <td><a href="fp3.html">View Report</a></td>
-                            
-                        </tr>
-                    
-                        
-                        
-                        
-                        <tr>
-                            <td><a href="http://obofoundry.org/principles/fp-004-versioning.html">Versioning</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_002">Common Format Automated Check</a></td>
                             
                                 
                                 
@@ -115,7 +78,50 @@
                         
                         
                         <tr>
+                            <td><a href="http://obofoundry.org/principles/fp-003-uris.html">URIs</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_003">URIs Automated Check</a></td>
+                            
+                                
+                                
+                            
+                            <td class="table-success" style="text-align:center;">
+                                <img src="../assets/check.svg" height="15px">
+                            </td>
+                            
+                                <td></td>
+                            
+                            
+                                <td></td>
+                            
+                        </tr>
+                    
+                        
+                        
+                        
+                        <tr>
+                            <td><a href="http://obofoundry.org/principles/fp-004-versioning.html">Versioning</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_004">Versioning Automated Check</a></td>
+                            
+                                
+                                
+                            
+                            <td class="table-warning" style="text-align:center;">
+                                <img src="../assets/warning.svg" height="15px">
+                            </td>
+                            
+                                <td>Version IRI 'http://purl.obolibrary.org/obo/cmo/2.187/cmo.owl' is not in recommended format</td>
+                            
+                            
+                                <td></td>
+                            
+                        </tr>
+                    
+                        
+                        
+                        
+                        <tr>
                             <td><a href="http://obofoundry.org/principles/fp-005-delineated-content.html">Scope</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_005">Scope Automated Check</a></td>
                             
                                 
                                 
@@ -136,15 +142,16 @@
                         
                         <tr>
                             <td><a href="http://obofoundry.org/principles/fp-006-textual-definitions.html">Textual Definitions</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_006">Textual Definitions Automated Check</a></td>
                             
                                 
                                 
                             
-                            <td class="table-warning" style="text-align:center;">
-                                <img src="../assets/warning.svg" height="15px">
+                            <td class="table-danger" style="text-align:center;">
+                                <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>3025 missing definitions. See ROBOT Report for details.</td>
+                                <td>18 duplicate definitions. 346 missing definitions. See ROBOT Report for details.</td>
                             
                             
                                 <td></td>
@@ -156,18 +163,19 @@
                         
                         <tr>
                             <td><a href="http://obofoundry.org/principles/fp-007-relations.html">Relations</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_007">Relations Automated Check</a></td>
                             
                                 
                                 
                             
-                            <td class="table-success" style="text-align:center;">
-                                <img src="../assets/check.svg" height="15px">
+                            <td class="table-info" style="text-align:center;">
+                                <img src="../assets/info.svg" height="15px">
                             </td>
                             
-                                <td></td>
+                                <td>1 non-RO properties used.</td>
                             
                             
-                                <td></td>
+                                <td><a href="fp7.html">View Report</a></td>
                             
                         </tr>
                     
@@ -176,6 +184,7 @@
                         
                         <tr>
                             <td><a href="http://obofoundry.org/principles/fp-008-documented.html">Documented</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_008">Documented Automated Check</a></td>
                             
                                 
                                 
@@ -196,6 +205,7 @@
                         
                         <tr>
                             <td><a href="http://obofoundry.org/principles/fp-009-users.html">Plurality of Users</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_009">Plurality of Users Automated Check</a></td>
                             
                                 
                                 
@@ -216,6 +226,7 @@
                         
                         <tr>
                             <td><a href="http://obofoundry.org/principles/fp-011-locus-of-authority.html">Locus of Authority</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_011">Locus of Authority Automated Check</a></td>
                             
                                 
                                 
@@ -236,6 +247,7 @@
                         
                         <tr>
                             <td><a href="http://obofoundry.org/principles/fp-012-naming-conventions.html">Naming Conventions</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_012">Naming Conventions Automated Check</a></td>
                             
                                 
                                 
@@ -244,7 +256,7 @@
                                 <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>26 duplicate labels. See ROBOT Report for details.</td>
+                                <td>38 duplicate labels. See ROBOT Report for details.</td>
                             
                             
                                 <td></td>
@@ -256,15 +268,16 @@
                         
                         <tr>
                             <td><a href="http://obofoundry.org/principles/fp-016-maintenance.html">Maintenance</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_016">Maintenance Automated Check</a></td>
                             
                                 
                                 
                             
-                            <td class="table-danger" style="text-align:center;">
-                                <img src="../assets/x.svg" height="15px">
+                            <td class="table-info" style="text-align:center;">
+                                <img src="../assets/info.svg" height="15px">
                             </td>
                             
-                                <td>last version (2019-02-19) is over three year(s) old</td>
+                                <td>Version IRI does not have date information</td>
                             
                             
                                 <td></td>
@@ -276,6 +289,7 @@
                         
                         <tr>
                             <td><a href="http://obofoundry.org/principles/fp-020-responsiveness.html">Responsiveness</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_020">Responsiveness Automated Check</a></td>
                             
                                 
                                 
@@ -291,27 +305,33 @@
                             
                         </tr>
                     
-                        
-                        
-                        
-                        <tr>
-                            <td><a href="">Report</a></td>
-                            
-                                
-                                
-                            
-                            <td class="table-danger" style="text-align:center;">
-                                <img src="../assets/x.svg" height="15px">
-                            </td>
-                            
-                                <td>29 errors, 3054 warnings, 1 info messages.</td>
-                            
-                            
-                                <td><a href="robot_report.html">View Report</a></td>
-                            
-                        </tr>
-                    
-                    <tr>
+                </table>
+                <h3>ROBOT Report Summary</h3>
+                <table class="table">
+                  <tr>
+                      <th>Check</th>
+                      <th>Status</th>
+                      <th>Comment</th>
+                      <th>Resources</th>
+                  </tr>
+                  
+                  
+                  <tr>
+                      <td><a href="http://robot.obolibrary.org/report">ROBOT Report</td>
+                      
+                          
+                          
+                      
+                      <td class="table-danger" style="text-align:center;">
+                          <img src="../assets/x.svg" height="15px">
+                      </td>
+                      
+                          <td>59 errors, 441 warnings, 15 info messages.</td>
+                      
+                      
+                          <td><a href="robot_report.html">View Report</a></td>
+                      
+                  </tr>  
                 </table>
                 <h3>Ontology metrics</h3>
                 
@@ -330,11 +350,11 @@
                                     <td>
                                         <ul>
                                             
-                                                <li>AnnotationAssertion: 14719</li>
+                                                <li>AnnotationAssertion: 27545</li>
                                             
-                                                <li>Declaration: 3067</li>
+                                                <li>Declaration: 3954</li>
                                             
-                                                <li>SubClassOf: 3717</li>
+                                                <li>SubClassOf: 4658</li>
                                             
                                                 <li>TransitiveObjectProperty: 1</li>
                                             
@@ -347,7 +367,7 @@
                                 <td>Axioms: Number of axioms</td>
                                 
                                 
-                                    <td>21504</td>
+                                    <td>36158</td>
                                 
                             </tr>
                         
@@ -355,7 +375,7 @@
                                 <td>Entities: % of entities reused</td>
                                 
                                 
-                                    <td>0.55</td>
+                                    <td>0.68</td>
                                 
                             </tr>
                         
@@ -363,7 +383,7 @@
                                 <td>Entities: Number of annotation properties</td>
                                 
                                 
-                                    <td>12</td>
+                                    <td>21</td>
                                 
                             </tr>
                         
@@ -371,7 +391,7 @@
                                 <td>Entities: Number of classes</td>
                                 
                                 
-                                    <td>3054</td>
+                                    <td>3932</td>
                                 
                             </tr>
                         
@@ -387,7 +407,7 @@
                                 <td>Entities: Number of individuals</td>
                                 
                                 
-                                    <td>1</td>
+                                    <td>0</td>
                                 
                             </tr>
                         
@@ -395,7 +415,7 @@
                                 <td>Entities: Number of object properties</td>
                                 
                                 
-                                    <td>2</td>
+                                    <td>1</td>
                                 
                             </tr>
                         
@@ -414,9 +434,9 @@
                                     <td>
                                         <ul>
                                             
-                                                <li>Class: 10488</li>
+                                                <li>Class: 13248</li>
                                             
-                                                <li>ObjectSomeValuesFrom: 8</li>
+                                                <li>ObjectSomeValuesFrom: 52</li>
                                             
                                         </ul>
                                     </td>
@@ -427,7 +447,7 @@
                                 <td>Info: Does the ontology fall under OWL 2 DL?</td>
                                 
                                 
-                                    <td>False</td>
+                                    <td>True</td>
                                 
                             </tr>
                         
@@ -438,17 +458,17 @@
                                     <td>
                                         <ul>
                                             
-                                                <li>_dashboard: 0.489</li>
+                                                <li>_dashboard: 0.564</li>
                                             
                                                 <li>_formula: (1*impact+1*dashboard)/2</li>
                                             
-                                                <li>_impact: 0.054</li>
+                                                <li>_impact: 0.048</li>
                                             
                                                 <li>_impact_external: 0</li>
                                             
-                                                <li>_reuse: 0.006</li>
+                                                <li>_reuse: 0.007</li>
                                             
-                                                <li>oboscore: 0.272</li>
+                                                <li>oboscore: 0.306</li>
                                             
                                         </ul>
                                     </td>
@@ -467,7 +487,7 @@
                                 <td>Info: How many ontologies use it?</td>
                                 
                                 
-                                    <td>10</td>
+                                    <td>9</td>
                                 
                             </tr>
                         
@@ -483,7 +503,7 @@
                                 <td>Info: Syntax</td>
                                 
                                 
-                                    <td>RDF/XML</td>
+                                    <td>RDF/XML Syntax</td>
                                 
                             </tr>
                         
@@ -494,15 +514,21 @@
                                     <td>
                                         <ul>
                                             
-                                                <li>CMO: 10488</li>
+                                                <li>CMO: 13244</li>
                                             
-                                                <li>obo: 8761</li>
+                                                <li>CMOALT: 54</li>
                                             
-                                                <li>owl: 29</li>
+                                                <li>IAO: 3662</li>
                                             
-                                                <li>prefix_unknown: 5463</li>
+                                                <li>obo: 4</li>
                                             
-                                                <li>rdfs: 3158</li>
+                                                <li>oboInOwl: 23107</li>
+                                            
+                                                <li>owl: 64</li>
+                                            
+                                                <li>rdfs: 4039</li>
+                                            
+                                                <li>xsd: 3306</li>
                                             
                                         </ul>
                                     </td>
@@ -516,8 +542,6 @@
                                     <td><ul>
                                         
                                             <li>ado</li>
-                                        
-                                            <li>cido</li>
                                         
                                             <li>epio</li>
                                         
