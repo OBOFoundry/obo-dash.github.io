@@ -3,72 +3,80 @@ base_prefixes:
 - OHD
 - OHDALT
 - OHD
-changed: true
-date: 2022-12-15 14:15:04.558766
+changed: false
+date: 2023-08-11 17:29:53.917118
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 937
+    AnnotationAssertion: 1540
     ClassAssertion: 32
+    DataPropertyAssertion: 2
     DataPropertyDomain: 2
-    DataPropertyRange: 3
-    Declaration: 1176
-    DisjointClasses: 7
-    EquivalentClasses: 69
+    DataPropertyRange: 8
+    Declaration: 1359
+    DisjointClasses: 6
+    EquivalentClasses: 126
     ObjectPropertyAssertion: 32
-    ObjectPropertyDomain: 1
     ObjectPropertyRange: 1
-    SubAnnotationPropertyOf: 1
-    SubClassOf: 460
+    SubAnnotationPropertyOf: 5
+    SubClassOf: 533
     SubDataPropertyOf: 2
-    SubObjectPropertyOf: 2
-    SubPropertyChainOf: 1
+    SubObjectPropertyOf: 3
+    SubPropertyChainOf: 2
     TransitiveObjectProperty: 1
-  'Axioms: Number of axioms': 2727
-  'Entities: % of entities reused': 77.87
-  'Entities: Number of annotation properties': 18
-  'Entities: Number of classes': 1073
-  'Entities: Number of data properties': 5
-  'Entities: Number of individuals': 65
-  'Entities: Number of object properties': 20
+  'Axioms: Number of axioms': 3654
+  'Entities: % of entities reused': 70.42
+  'Entities: Number of annotation properties': 32
+  'Entities: Number of classes': 1229
+  'Entities: Number of data properties': 9
+  'Entities: Number of individuals': 68
+  'Entities: Number of object properties': 24
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 2387
-    ObjectAllValuesFrom: 36
+    Class: 2756
+    DataHasValue: 32
+    ObjectAllValuesFrom: 35
     ObjectComplementOf: 32
-    ObjectExactCardinality: 25
+    ObjectExactCardinality: 7
     ObjectHasValue: 32
-    ObjectIntersectionOf: 183
-    ObjectMinCardinality: 9
-    ObjectSomeValuesFrom: 414
-    ObjectUnionOf: 15
-  'Info: Does the ontology fall under OWL 2 DL?': false
+    ObjectIntersectionOf: 179
+    ObjectMinCardinality: 1
+    ObjectSomeValuesFrom: 400
+    ObjectUnionOf: 21
+  'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.593
+    _dashboard: 0.527
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
-    _reuse: 0.779
-    oboscore: 0.296
+    _reuse: 0.704
+    oboscore: 0.264
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 221
-    FMA: 1117
-    IAO: 803
-    NCBITaxon: 10
-    OBI: 128
-    OGMS: 38
-    OHD: 1297
+    BFO: 232
+    ECTO: 3
+    FMA: 1143
+    IAO: 943
+    NBO: 3
+    NCBITaxon: 7
+    OBI: 122
+    OGMS: 48
+    OHD: 1643
     OMRSE: 4
-    dc11: 8
-    obo: 180
-    oboInOwl: 6
+    PATO: 3
+    RO: 10
+    dc: 204
+    dc11: 45
+    obo: 184
+    oboInOwl: 102
     owl: 2
-    prefix_unknown: 4
-    rdfs: 274
-    xsd: 4
+    prefix_unknown: 2
+    rdf: 37
+    rdfs: 414
+    skos: 6
+    xsd: 13
   'Info: Which ontologies use it?': []
 mirror_from: http://purl.obolibrary.org/obo/ohd/ohd-base.owl
 namespace: ohd
@@ -86,11 +94,11 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 2 multiple definitions. 25 missing definitions. See ROBOT Report for
+    comment: 2 multiple definitions. 24 missing definitions. See ROBOT Report for
       details.
     status: ERROR
   FP07 Relations:
-    comment: 7 non-RO properties used.
+    comment: 10 non-RO properties used.
     file: fp7
     status: INFO
   FP08 Documented:
@@ -102,25 +110,26 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    status: PASS
+    comment: 2 missing labels. See ROBOT Report for details.
+    status: ERROR
   FP16 Maintenance:
     status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 5 errors, 56 warnings, 138 info messages.
+    comment: 7 errors, 51 warnings, 196 info messages.
     file: robot_report
     results:
-      ERROR: 5
-      INFO: 138
-      WARN: 56
+      ERROR: 7
+      INFO: 196
+      WARN: 51
     status: ERROR
-sha256_hash: 533996bac8af67cb7194a9d97bb686af36739851b0aad3b9ee4b4664bbee5db6
+sha256_hash: 79581aeceac439b091a9ee0a9ab1c5578b8578481836c9dece5a9a600d7bba81
 summary:
-  comment: 6 errors
+  comment: 7 errors
   status: ERROR
   summary_count:
-    ERROR: 6
+    ERROR: 7
     INFO: 1
     WARN: 0
-version: http://purl.obolibrary.org/obo/ohd/releases/2022-10-10/ohd-base.owl
+version: http://purl.obolibrary.org/obo/ohd/releases/2023-07-22/ohd-base.owl

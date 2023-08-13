@@ -2,8 +2,8 @@ base_generated: true
 base_prefixes:
 - ExO
 - ExO
-changed: true
-date: 2022-12-15 12:35:59.591647
+changed: false
+date: 2023-08-09 09:06:29.183175
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1091
@@ -24,12 +24,12 @@ metrics:
     ObjectSomeValuesFrom: 41
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.733
+    _dashboard: 0.66
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.027
     _impact_external: 0
     _reuse: 0.17
-    oboscore: 0.38
+    oboscore: 0.344
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 5
   'Info: Logical consistency': true
@@ -43,6 +43,7 @@ metrics:
     oboInOwl: 865
     owl: 1
     rdfs: 166
+    xsd: 79
   'Info: Which ontologies use it?':
   - ado
   - disdriv
@@ -59,7 +60,8 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -78,7 +80,8 @@ results:
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
-    status: PASS
+    comment: last version (2022-06-29) is over one year(s) old
+    status: INFO
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
@@ -91,10 +94,10 @@ results:
     status: ERROR
 sha256_hash: ed26e2c811b7d752ef01a3e7b882e5bcea413dbd61d7c1329f9bacaa171b6ce6
 summary:
-  comment: 3 errors
+  comment: 4 errors
   status: ERROR
   summary_count:
-    ERROR: 3
-    INFO: 0
+    ERROR: 4
+    INFO: 1
     WARN: 0
 version: http://purl.obolibrary.org/obo/exo/releases/2022-06-29/exo.owl

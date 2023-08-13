@@ -1,63 +1,64 @@
-base_generated: true
+base_generated: false
 base_prefixes:
 - HANCESTRO
 - HANCESTROALT
 - HANCESTRO
-changed: true
-date: 2022-12-15 12:47:08.735663
+changed: false
+date: 2023-08-09 09:18:39.318063
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 973
-    Declaration: 606
+    AnnotationAssertion: 988
+    Declaration: 617
     DisjointClasses: 4
     EquivalentClasses: 2
     InverseObjectProperties: 3
-    SubClassOf: 1155
-  'Axioms: Number of axioms': 2743
-  'Entities: % of entities reused': 43.72
-  'Entities: Number of annotation properties': 18
-  'Entities: Number of classes': 583
+    SubClassOf: 1124
+  'Axioms: Number of axioms': 2738
+  'Entities: % of entities reused': 43.76
+  'Entities: Number of annotation properties': 20
+  'Entities: Number of classes': 585
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 9
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 2929
+    Class: 2870
     ObjectAllValuesFrom: 310
     ObjectIntersectionOf: 2
     ObjectSomeValuesFrom: 232
     ObjectUnionOf: 1
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.816
+    _dashboard: 0.882
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.016
     _impact_external: 0.5
-    _reuse: 0.437
-    oboscore: 0.416
+    _reuse: 0.438
+    oboscore: 0.449
   'Info: How many externally documented uses?': 3
   'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     BFO: 31
-    GEO: 9
-    HANCESTRO: 2230
-    IAO: 66
+    GEO: 8
+    HANCESTRO: 2177
+    IAO: 77
     RO: 240
-    dbpedia: 962
+    dbpedia: 966
     dc: 857
-    dc11: 2
+    dc11: 3
     oboInOwl: 312
-    owl: 12
-    prefix_unknown: 6
-    rdf: 855
-    rdfs: 602
+    owl: 10
+    prefix_unknown: 1
+    rdf: 856
+    rdfs: 608
+    xsd: 2
   'Info: Which ontologies use it?':
   - foodon
   - genepio
   - obib
-mirror_from: http://purl.obolibrary.org/obo/hancestro.owl
+mirror_from: http://purl.obolibrary.org/obo/hancestro/hancestro-base.owl
 namespace: hancestro
 results:
   FP01 Open:
@@ -65,18 +66,17 @@ results:
   FP02 Common Format:
     status: PASS
   FP03 URIs:
-    comment: 0 invalid IRIs. The Ontology IRI is not valid.
-    file: fp3
-    status: ERROR
-  FP04 Versioning:
     status: PASS
+  FP04 Versioning:
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 314 missing definitions. See ROBOT Report for details.
+    comment: 312 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
-    comment: 5 non-RO properties used.
+    comment: 4 non-RO properties used.
     file: fp7
     status: INFO
   FP08 Documented:
@@ -92,14 +92,14 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 314 warnings, 0 info messages.
+    comment: 313 warnings, 1 info messages.
     file: robot_report
     results:
       ERROR: 0
-      INFO: 0
-      WARN: 314
+      INFO: 1
+      WARN: 313
     status: WARN
-sha256_hash: cbca9edf755338fa9016ea89b25c9bd004e2262e956e1ffbd38167a459154457
+sha256_hash: 2bf7276207a5e0d2e535707fe318a18a41badd182169eeb2a3a0d2c350f1ae68
 summary:
   comment: 1 errors
   status: ERROR
@@ -107,4 +107,4 @@ summary:
     ERROR: 1
     INFO: 1
     WARN: 2
-version: http://purl.obolibrary.org/obo/hancestro/releases/2022-05-12/hancestro.owl
+version: http://purl.obolibrary.org/obo/hancestro/releases/2023-07-31/hancestro-base.owl

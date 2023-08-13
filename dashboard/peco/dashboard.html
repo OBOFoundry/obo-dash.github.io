@@ -8,8 +8,8 @@
             <div class="col-md-2"></div>
             <div class="col-md-8">
                 <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/peco.html">peco</a></h1>
-                <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/peco/releases/2020-08-21/peco.owl</p>
-                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: 2022-12-15 14:23:55.551607</p>
+                <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/peco/releases/2023-07-25/peco.owl</p>
+                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: 2023-08-11 17:37:55.399725</p>
                 <p class="lead" style="margin-top:-15px;"><a href="dashboard.yml">View dashboard results as YAML</a></p>
                 <p class="lead" style="margin-top:-15px;"><a href="../index.html">Go back to Overview</a></p>
                 <h3>Error Breakdown</h3>
@@ -19,12 +19,13 @@
                         
                     
                     <div class="alert alert-danger">
-                        <center><h3>ERROR - 6 errors</h3></center>
+                        <center><h3>ERROR - 3 errors</h3></center>
                     </div>
                 
                 <table class="table">
                     <tr>
-                        <th>Check</th>
+                        <th>Principle</th>
+                        <th>Automated Check</th>
                         <th>Status</th>
                         <th>Comment</th>
                         <th>Resources</th>
@@ -36,6 +37,7 @@
                         
                         <tr>
                             <td><a href="http://obofoundry.org/principles/fp-001-open.html">Open</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_001">Open Automated Check</a></td>
                             
                                 
                                 
@@ -56,6 +58,7 @@
                         
                         <tr>
                             <td><a href="http://obofoundry.org/principles/fp-002-format.html">Common Format</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_002">Common Format Automated Check</a></td>
                             
                                 
                                 
@@ -76,6 +79,7 @@
                         
                         <tr>
                             <td><a href="http://obofoundry.org/principles/fp-003-uris.html">URIs</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_003">URIs Automated Check</a></td>
                             
                                 
                                 
@@ -96,6 +100,7 @@
                         
                         <tr>
                             <td><a href="http://obofoundry.org/principles/fp-004-versioning.html">Versioning</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_004">Versioning Automated Check</a></td>
                             
                                 
                                 
@@ -116,6 +121,7 @@
                         
                         <tr>
                             <td><a href="http://obofoundry.org/principles/fp-005-delineated-content.html">Scope</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_005">Scope Automated Check</a></td>
                             
                                 
                                 
@@ -136,15 +142,16 @@
                         
                         <tr>
                             <td><a href="http://obofoundry.org/principles/fp-006-textual-definitions.html">Textual Definitions</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_006">Textual Definitions Automated Check</a></td>
                             
                                 
                                 
                             
-                            <td class="table-danger" style="text-align:center;">
-                                <img src="../assets/x.svg" height="15px">
+                            <td class="table-warning" style="text-align:center;">
+                                <img src="../assets/warning.svg" height="15px">
                             </td>
                             
-                                <td>7 duplicate definitions. 22 multiple definitions. 34 missing definitions. See ROBOT Report for details.</td>
+                                <td>33 missing definitions. See ROBOT Report for details.</td>
                             
                             
                                 <td></td>
@@ -156,18 +163,19 @@
                         
                         <tr>
                             <td><a href="http://obofoundry.org/principles/fp-007-relations.html">Relations</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_007">Relations Automated Check</a></td>
                             
                                 
                                 
                             
-                            <td class="table-danger" style="text-align:center;">
-                                <img src="../assets/x.svg" height="15px">
+                            <td class="table-success" style="text-align:center;">
+                                <img src="../assets/check.svg" height="15px">
                             </td>
                             
-                                <td>1 labels match RO labels.</td>
+                                <td></td>
                             
                             
-                                <td><a href="fp7.html">View Report</a></td>
+                                <td></td>
                             
                         </tr>
                     
@@ -176,6 +184,7 @@
                         
                         <tr>
                             <td><a href="http://obofoundry.org/principles/fp-008-documented.html">Documented</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_008">Documented Automated Check</a></td>
                             
                                 
                                 
@@ -196,6 +205,7 @@
                         
                         <tr>
                             <td><a href="http://obofoundry.org/principles/fp-009-users.html">Plurality of Users</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_009">Plurality of Users Automated Check</a></td>
                             
                                 
                                 
@@ -216,6 +226,7 @@
                         
                         <tr>
                             <td><a href="http://obofoundry.org/principles/fp-011-locus-of-authority.html">Locus of Authority</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_011">Locus of Authority Automated Check</a></td>
                             
                                 
                                 
@@ -236,46 +247,7 @@
                         
                         <tr>
                             <td><a href="http://obofoundry.org/principles/fp-012-naming-conventions.html">Naming Conventions</a></td>
-                            
-                                
-                                
-                            
-                            <td class="table-danger" style="text-align:center;">
-                                <img src="../assets/x.svg" height="15px">
-                            </td>
-                            
-                                <td>2 multiple labels. See ROBOT Report for details.</td>
-                            
-                            
-                                <td></td>
-                            
-                        </tr>
-                    
-                        
-                        
-                        
-                        <tr>
-                            <td><a href="http://obofoundry.org/principles/fp-016-maintenance.html">Maintenance</a></td>
-                            
-                                
-                                
-                            
-                            <td class="table-warning" style="text-align:center;">
-                                <img src="../assets/warning.svg" height="15px">
-                            </td>
-                            
-                                <td>last version (2020-08-21) is over two year(s) old</td>
-                            
-                            
-                                <td></td>
-                            
-                        </tr>
-                    
-                        
-                        
-                        
-                        <tr>
-                            <td><a href="http://obofoundry.org/principles/fp-020-responsiveness.html">Responsiveness</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_012">Naming Conventions Automated Check</a></td>
                             
                                 
                                 
@@ -295,23 +267,71 @@
                         
                         
                         <tr>
-                            <td><a href="">Report</a></td>
+                            <td><a href="http://obofoundry.org/principles/fp-016-maintenance.html">Maintenance</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_016">Maintenance Automated Check</a></td>
                             
                                 
                                 
                             
-                            <td class="table-danger" style="text-align:center;">
-                                <img src="../assets/x.svg" height="15px">
+                            <td class="table-success" style="text-align:center;">
+                                <img src="../assets/check.svg" height="15px">
                             </td>
                             
-                                <td>34 errors, 53 warnings, 0 info messages.</td>
+                                <td></td>
                             
                             
-                                <td><a href="robot_report.html">View Report</a></td>
+                                <td></td>
                             
                         </tr>
                     
-                    <tr>
+                        
+                        
+                        
+                        <tr>
+                            <td><a href="http://obofoundry.org/principles/fp-020-responsiveness.html">Responsiveness</a></td>
+                            <td><a href="https://obofoundry.org/principles/checks/fp_020">Responsiveness Automated Check</a></td>
+                            
+                                
+                                
+                            
+                            <td class="table-success" style="text-align:center;">
+                                <img src="../assets/check.svg" height="15px">
+                            </td>
+                            
+                                <td></td>
+                            
+                            
+                                <td></td>
+                            
+                        </tr>
+                    
+                </table>
+                <h3>ROBOT Report Summary</h3>
+                <table class="table">
+                  <tr>
+                      <th>Check</th>
+                      <th>Status</th>
+                      <th>Comment</th>
+                      <th>Resources</th>
+                  </tr>
+                  
+                  
+                  <tr>
+                      <td><a href="http://robot.obolibrary.org/report">ROBOT Report</td>
+                      
+                          
+                          
+                      
+                      <td class="table-danger" style="text-align:center;">
+                          <img src="../assets/x.svg" height="15px">
+                      </td>
+                      
+                          <td>3 errors, 33 warnings, 0 info messages.</td>
+                      
+                      
+                          <td><a href="robot_report.html">View Report</a></td>
+                      
+                  </tr>  
                 </table>
                 <h3>Ontology metrics</h3>
                 
@@ -330,33 +350,31 @@
                                     <td>
                                         <ul>
                                             
-                                                <li>AnnotationAssertion: 15319</li>
+                                                <li>AnnotationAssertion: 15396</li>
                                             
-                                                <li>Declaration: 3181</li>
+                                                <li>Declaration: 3230</li>
                                             
-                                                <li>DisjointClasses: 9</li>
+                                                <li>DisjointClasses: 8</li>
                                             
-                                                <li>EquivalentClasses: 239</li>
+                                                <li>EquivalentClasses: 255</li>
                                             
-                                                <li>FunctionalObjectProperty: 1</li>
+                                                <li>FunctionalObjectProperty: 2</li>
                                             
-                                                <li>InverseObjectProperties: 28</li>
+                                                <li>InverseObjectProperties: 19</li>
                                             
-                                                <li>ObjectPropertyDomain: 21</li>
+                                                <li>ObjectPropertyDomain: 22</li>
                                             
-                                                <li>ObjectPropertyRange: 23</li>
+                                                <li>ObjectPropertyRange: 21</li>
                                             
-                                                <li>ReflexiveObjectProperty: 1</li>
+                                                <li>Rule: 18</li>
                                             
-                                                <li>Rule: 16</li>
+                                                <li>SubClassOf: 5304</li>
                                             
-                                                <li>SubClassOf: 5298</li>
+                                                <li>SubObjectPropertyOf: 124</li>
                                             
-                                                <li>SubObjectPropertyOf: 128</li>
+                                                <li>SubPropertyChainOf: 42</li>
                                             
-                                                <li>SubPropertyChainOf: 44</li>
-                                            
-                                                <li>SymmetricObjectProperty: 2</li>
+                                                <li>SymmetricObjectProperty: 3</li>
                                             
                                                 <li>TransitiveObjectProperty: 12</li>
                                             
@@ -369,7 +387,7 @@
                                 <td>Axioms: Number of axioms</td>
                                 
                                 
-                                    <td>24322</td>
+                                    <td>24456</td>
                                 
                             </tr>
                         
@@ -377,7 +395,7 @@
                                 <td>Entities: % of entities reused</td>
                                 
                                 
-                                    <td>82.55</td>
+                                    <td>82.29</td>
                                 
                             </tr>
                         
@@ -385,7 +403,7 @@
                                 <td>Entities: Number of annotation properties</td>
                                 
                                 
-                                    <td>25</td>
+                                    <td>27</td>
                                 
                             </tr>
                         
@@ -393,7 +411,7 @@
                                 <td>Entities: Number of classes</td>
                                 
                                 
-                                    <td>3121</td>
+                                    <td>3086</td>
                                 
                             </tr>
                         
@@ -417,7 +435,7 @@
                                 <td>Entities: Number of object properties</td>
                                 
                                 
-                                    <td>124</td>
+                                    <td>119</td>
                                 
                             </tr>
                         
@@ -436,13 +454,15 @@
                                     <td>
                                         <ul>
                                             
-                                                <li>Class: 14424</li>
+                                                <li>Class: 14528</li>
                                             
-                                                <li>ObjectIntersectionOf: 249</li>
+                                                <li>ObjectHasSelf: 1</li>
                                             
-                                                <li>ObjectMinCardinality: 2</li>
+                                                <li>ObjectIntersectionOf: 265</li>
                                             
-                                                <li>ObjectSomeValuesFrom: 1524</li>
+                                                <li>ObjectMinCardinality: 3</li>
+                                            
+                                                <li>ObjectSomeValuesFrom: 1648</li>
                                             
                                                 <li>ObjectUnionOf: 2</li>
                                             
@@ -466,7 +486,7 @@
                                     <td>
                                         <ul>
                                             
-                                                <li>_dashboard: 0.511</li>
+                                                <li>_dashboard: 0.711</li>
                                             
                                                 <li>_formula: (1*impact+1*dashboard)/2</li>
                                             
@@ -474,9 +494,9 @@
                                             
                                                 <li>_impact_external: 0</li>
                                             
-                                                <li>_reuse: 0.826</li>
+                                                <li>_reuse: 0.823</li>
                                             
-                                                <li>oboscore: 0.272</li>
+                                                <li>oboscore: 0.371</li>
                                             
                                         </ul>
                                     </td>
@@ -522,49 +542,45 @@
                                     <td>
                                         <ul>
                                             
-                                                <li>BFO: 318</li>
+                                                <li>BFO: 324</li>
                                             
-                                                <li>CARO: 11</li>
+                                                <li>CHEBI: 8526</li>
                                             
-                                                <li>CHEBI: 8390</li>
+                                                <li>CHEBIALT: 501</li>
                                             
-                                                <li>CHEBIALT: 474</li>
-                                            
-                                                <li>ENVO: 704</li>
+                                                <li>ENVO: 750</li>
                                             
                                                 <li>ENVOALT: 4</li>
                                             
                                                 <li>EO: 1148</li>
                                             
-                                                <li>FOODON: 22</li>
+                                                <li>FOODON: 3</li>
                                             
                                                 <li>GO: 21</li>
                                             
-                                                <li>IAO: 2862</li>
+                                                <li>IAO: 2899</li>
                                             
-                                                <li>NCBITaxon: 872</li>
+                                                <li>NCBITaxon: 839</li>
                                             
-                                                <li>PATO: 126</li>
+                                                <li>PATO: 118</li>
                                             
-                                                <li>PCO: 31</li>
+                                                <li>PCO: 21</li>
                                             
-                                                <li>PECO: 2276</li>
+                                                <li>PECO: 2285</li>
                                             
-                                                <li>PECOALT: 2</li>
+                                                <li>RO: 1661</li>
                                             
-                                                <li>RO: 1609</li>
+                                                <li>oboInOwl: 17136</li>
                                             
-                                                <li>oboInOwl: 17058</li>
-                                            
-                                                <li>owl: 1202</li>
+                                                <li>owl: 1204</li>
                                             
                                                 <li>prefix_unknown: 3</li>
                                             
                                                 <li>rdf: 12</li>
                                             
-                                                <li>rdfs: 2527</li>
+                                                <li>rdfs: 2586</li>
                                             
-                                                <li>xsd: 11</li>
+                                                <li>xsd: 6696</li>
                                             
                                         </ul>
                                     </td>

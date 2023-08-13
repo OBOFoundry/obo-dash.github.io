@@ -3,80 +3,86 @@ base_prefixes:
 - TO
 - TOALT
 - TO
-changed: true
-date: 2022-12-15 14:39:50.212347
+changed: false
+date: 2023-08-13 12:31:33.176952
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 36730
-    Declaration: 5496
-    DisjointClasses: 48
-    EquivalentClasses: 994
-    FunctionalObjectProperty: 1
-    InverseObjectProperties: 31
-    ObjectPropertyDomain: 36
-    ObjectPropertyRange: 38
-    ReflexiveObjectProperty: 1
-    Rule: 20
+    AnnotationAssertion: 37868
+    ClassAssertion: 2
+    Declaration: 5540
+    DifferentIndividuals: 1
+    DisjointClasses: 49
+    EquivalentClasses: 988
+    FunctionalObjectProperty: 2
+    InverseFunctionalObjectProperty: 1
+    InverseObjectProperties: 33
+    ObjectPropertyDomain: 41
+    ObjectPropertyRange: 42
+    ReflexiveObjectProperty: 2
+    Rule: 28
     SubAnnotationPropertyOf: 27
-    SubClassOf: 8424
-    SubObjectPropertyOf: 144
-    SubPropertyChainOf: 61
-    SymmetricObjectProperty: 2
-    TransitiveObjectProperty: 16
-  'Axioms: Number of axioms': 52069
-  'Entities: % of entities reused': 69.44
-  'Entities: Number of annotation properties': 81
-  'Entities: Number of classes': 5263
+    SubClassOf: 8458
+    SubObjectPropertyOf: 159
+    SubPropertyChainOf: 72
+    SymmetricObjectProperty: 4
+    TransitiveObjectProperty: 18
+  'Axioms: Number of axioms': 53335
+  'Entities: % of entities reused': 69.11
+  'Entities: Number of annotation properties': 70
+  'Entities: Number of classes': 5290
   'Entities: Number of data properties': 0
-  'Entities: Number of individuals': 0
-  'Entities: Number of object properties': 159
+  'Entities: Number of individuals': 9
+  'Entities: Number of object properties': 173
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 25477
-    ObjectAllValuesFrom: 3
+    Class: 25563
+    ObjectAllValuesFrom: 6
     ObjectComplementOf: 2
     ObjectHasSelf: 1
-    ObjectIntersectionOf: 1194
+    ObjectIntersectionOf: 1185
     ObjectMinCardinality: 1
-    ObjectSomeValuesFrom: 3094
+    ObjectOneOf: 1
+    ObjectSomeValuesFrom: 3091
     ObjectUnionOf: 2
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.771
+    _dashboard: 0.704
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.005
     _impact_external: 0.25
-    _reuse: 0.694
-    oboscore: 0.388
+    _reuse: 0.691
+    oboscore: 0.354
   'Info: How many externally documented uses?': 2
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 1495
-    CARO: 22
-    CHEBI: 4950
-    CHEBIALT: 261
+    BFO: 1525
+    CHEBI: 4977
+    CHEBIALT: 265
     ENVO: 312
     FOODON: 17
-    GO: 1603
-    IAO: 5184
-    NCBITaxon: 352
-    OBI: 7
-    PATO: 1564
+    GO: 1566
+    IAO: 5221
+    NCBITAXONALT: 52
+    NCBITaxon: 333
+    OBI: 8
+    PATO: 1559
     PECO: 436
-    PO: 8919
-    POALT: 42
-    RO: 2308
-    TO: 6746
-    TOALT: 30
-    dc11: 6
-    oboInOwl: 39565
-    owl: 795
+    PO: 8931
+    POALT: 38
+    RO: 2397
+    TO: 6831
+    TOALT: 28
+    UBERON: 16
+    dc: 3
+    dc11: 5
+    oboInOwl: 40597
+    owl: 802
     prefix_unknown: 3
-    rdf: 16
-    rdfs: 6720
-    xsd: 80
+    rdf: 11689
+    rdfs: 6784
+    xsd: 6
   'Info: Which ontologies use it?':
   - agro
 mirror_from: http://purl.obolibrary.org/obo/to.owl
@@ -89,11 +95,12 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 121 missing definitions. See ROBOT Report for details.
+    comment: 119 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     comment: 12 non-RO properties used.
@@ -113,19 +120,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 9 errors, 129 warnings, 0 info messages.
+    comment: 8 errors, 126 warnings, 0 info messages.
     file: robot_report
     results:
-      ERROR: 9
+      ERROR: 8
       INFO: 0
-      WARN: 129
+      WARN: 126
     status: ERROR
-sha256_hash: ad09d2c192ec102fbb647aa56b88eedf97db79d3a8ed16f6c6d2ed16aa69f719
+sha256_hash: 69171de8c03fcec46048033ae1e9712cc7b38e0c177c5811d6f76a32fdc55714
 summary:
-  comment: 2 errors
+  comment: 3 errors
   status: ERROR
   summary_count:
-    ERROR: 2
+    ERROR: 3
     INFO: 1
     WARN: 1
-version: http://purl.obolibrary.org/obo/to/releases/2022-04-13/to.owl
+version: http://purl.obolibrary.org/obo/to/releases/2023-07-17/to.owl

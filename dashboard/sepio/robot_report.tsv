@@ -1,31 +1,13 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/sepio.owl	dc:license	
-ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/sepio.owl	dc:title	
-ERROR	misused_obsolete_label	SEPIO:0000021	rdfs:label	obsolete_date_created@en
-ERROR	misused_obsolete_label	SEPIO:0000055	rdfs:label	obsolete_manual assertion process@en
-ERROR	misused_obsolete_label	SEPIO:0000056	rdfs:label	obsolete_automated assertion process@en
-ERROR	misused_obsolete_label	SEPIO:0000127	rdfs:label	obsolete_study group@en
-ERROR	misused_obsolete_label	SEPIO:0000152	rdfs:label	obsolete_evidence_assessed_by@en
-ERROR	misused_obsolete_label	SEPIO:0000162	rdfs:label	obsolete_date_curated@en
-ERROR	misused_obsolete_label	SEPIO:0000175	rdfs:label	obsolete_observation@en
-ERROR	misused_obsolete_label	SEPIO:0000180	rdfs:label	obsolete_evidence statement@en
-ERROR	misused_obsolete_label	SEPIO:0000181	rdfs:label	obsolete_evidence data@en
-ERROR	misused_obsolete_label	SEPIO:0000185	rdfs:label	obsolete_data table@en
-ERROR	misused_obsolete_label	SEPIO:0000232	rdfs:label	obsolete_has_quantifier@en
-ERROR	misused_obsolete_label	SEPIO:0000385	rdfs:label	obsolete_method@en
-ERROR	misused_obsolete_label	SEPIO:0000401	rdfs:label	obsolete_opinion@en
-ERROR	misused_obsolete_label	SEPIO:0000435	rdfs:label	ObsoleteDataProperty
-ERROR	multiple_definitions	SEPIO:0000437	IAO:0000115	A relationship between an information resource found in some information system, and the agent (person, organization, computational agent) who is responsible for sharing/providing it to that information system.
-ERROR	multiple_definitions	SEPIO:0000437	IAO:0000115	Note that this property connects a resource to an agent, not to some other information resource from which it came (e.g. another database or an API from which the resource in question was obtained).  Use the 'source' property to capture this type of relationship.
-WARN	invalid_xref	SEPIO:000383	oboInOwl:hasDbXref	http://semanticscience.org/resource/SIO_000088 ! 'record'
+ERROR	multiple_labels	SEPIO:0000048	rdfs:label	agent role
+ERROR	multiple_labels	SEPIO:0000048	rdfs:label	contributor role@en
+WARN	duplicate_label_synonym	SEPIO:0000048	IAO:0000118	agent role
 WARN	missing_definition	SEPIO:0000017	IAO:0000115	
-WARN	missing_definition	SEPIO:0000021	IAO:0000115	
 WARN	missing_definition	SEPIO:0000026	IAO:0000115	
 WARN	missing_definition	SEPIO:0000027	IAO:0000115	
 WARN	missing_definition	SEPIO:0000028	IAO:0000115	
 WARN	missing_definition	SEPIO:0000046	IAO:0000115	
 WARN	missing_definition	SEPIO:0000052	IAO:0000115	
-WARN	missing_definition	SEPIO:0000055	IAO:0000115	
 WARN	missing_definition	SEPIO:0000061	IAO:0000115	
 WARN	missing_definition	SEPIO:0000063	IAO:0000115	
 WARN	missing_definition	SEPIO:0000069	IAO:0000115	
@@ -48,24 +30,19 @@ WARN	missing_definition	SEPIO:0000116	IAO:0000115
 WARN	missing_definition	SEPIO:0000123	IAO:0000115	
 WARN	missing_definition	SEPIO:0000126	IAO:0000115	
 WARN	missing_definition	SEPIO:0000148	IAO:0000115	
-WARN	missing_definition	SEPIO:0000152	IAO:0000115	
 WARN	missing_definition	SEPIO:0000153	IAO:0000115	
 WARN	missing_definition	SEPIO:0000154	IAO:0000115	
 WARN	missing_definition	SEPIO:0000155	IAO:0000115	
 WARN	missing_definition	SEPIO:0000156	IAO:0000115	
 WARN	missing_definition	SEPIO:0000160	IAO:0000115	
 WARN	missing_definition	SEPIO:0000161	IAO:0000115	
-WARN	missing_definition	SEPIO:0000162	IAO:0000115	
 WARN	missing_definition	SEPIO:0000164	IAO:0000115	
 WARN	missing_definition	SEPIO:0000184	IAO:0000115	
-WARN	missing_definition	SEPIO:0000185	IAO:0000115	
 WARN	missing_definition	SEPIO:0000188	IAO:0000115	
-WARN	missing_definition	SEPIO:0000232	IAO:0000115	
 WARN	missing_definition	SEPIO:0000258	IAO:0000115	
 WARN	missing_definition	SEPIO:0000337	IAO:0000115	
 WARN	missing_definition	SEPIO:0000376	IAO:0000115	
 WARN	missing_definition	SEPIO:0000384	IAO:0000115	
-WARN	missing_definition	SEPIO:0000385	IAO:0000115	
 WARN	missing_definition	SEPIO:0000386	IAO:0000115	
 WARN	missing_definition	SEPIO:0000406	IAO:0000115	
 WARN	missing_definition	SEPIO:0000419	IAO:0000115	
@@ -74,7 +51,4 @@ WARN	missing_definition	SEPIO:0000431	IAO:0000115
 WARN	missing_definition	SEPIO:0000432	IAO:0000115	
 WARN	missing_definition	SEPIO:0000433	IAO:0000115	
 WARN	missing_definition	SEPIO:0000434	IAO:0000115	
-WARN	missing_definition	SEPIO:0000435	IAO:0000115	
-INFO	lowercase_definition	SEPIO:0000167	IAO:0000115	a relation between an information entity and an indicator of degree of confidence that the information it represents is true.
-INFO	lowercase_definition	SEPIO:0000169	IAO:0000115	a relation between an agent and an other agent, typically an organization, on whose behalf a Contribution is made.
 INFO	missing_superclass	SEPIO:0000340	rdfs:subClassOf	

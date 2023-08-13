@@ -1,5 +1,5 @@
 <head>
-  <title>OBO Dashboard (2022-12-15)</title>
+  <title>OBO Dashboard (2023-08-13)</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <style>
 body {
@@ -38,9 +38,9 @@ $(function () {
 </script>
 </head>
 <body>
-  <h1>OBO Dashboard (2022-12-15)</h1>
+  <h1>OBO Dashboard (2023-08-13)</h1>
   <h4>Dashboard for OBO Foundry ontologies. <a href="about.html">Learn More!</a></h4>
-  <p>Created with <a href="http://robot.obolibrary.org/">ROBOT version 1.9.1</a> and <a href="https://github.com/OBOFoundry/OBO-Dashboard/commit/1844d3889d9d84b29bc9c20c30ec8005e0ea3aca">OBO Metadata Schema</a>.</p>
+  <p>Created with <a href="http://robot.obolibrary.org/">ROBOT version 1.10.0-SNAPSHOT</a> and <a href="https://github.com/OBOFoundry/OBO-Dashboard/commit/a8354d0a4a7bca488c2bedefbb487821442c1c99">OBO Metadata Schema</a>.</p>
   <p>A very basic analysis of the results can be found <a href="analysis.html">here</a>.</p>
   <table class="table table-borderless">
     <thead>
@@ -205,7 +205,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2022-06-11) is over one year(s) old"></td>
                 
             
                 
@@ -439,7 +439,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2 duplicate definitions. 4 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -484,7 +484,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2 multiple labels. See ROBOT Report for details."></td>
                 
             
                 
@@ -511,7 +511,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="4 warnings, 4 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="4 errors, 8 warnings, 4 info messages."></td>
                 
             
             
@@ -637,7 +637,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2020-12-18) is over one year(s) old"></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2020-12-18) is over two year(s) old"></td>
                 
             
                 
@@ -853,7 +853,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not resolve"></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
                 
@@ -871,7 +871,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2 duplicate definitions. 4 multiple definitions. 59 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="58 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -898,25 +898,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing usages"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
                     <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="8 multiple labels. See ROBOT Report for details."></td>
                 
             
                 
@@ -943,7 +925,25 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="39 errors, 115 warnings, 61 info messages."></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="111 warnings, 60 info messages."></td>
                 
             
             
@@ -954,7 +954,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px"></td>
                 
             
         </tr>
@@ -1015,7 +1015,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="357 duplicate definitions. See ROBOT Report for details."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="420 duplicate definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -1087,7 +1087,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="357 errors, 5011 warnings, 383 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="420 errors, 5212 warnings, 384 info messages."></td>
                 
             
             
@@ -1429,7 +1429,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not resolve"></td>
                 
             
                 
@@ -1690,7 +1690,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Ontology license 'https://creativecommons.org/licenses/unspecified' does not match registry license 'https://creativecommons.org/licenses/by/4.0/'."></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
                 
@@ -2005,7 +2005,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not resolve"></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
                 
@@ -2149,7 +2149,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not resolve"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI has neither a semantic version nor a date"></td>
                 
             
                 
@@ -2167,7 +2167,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="1285 duplicate definitions. 111129 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="1335 duplicate definitions. 111962 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -2176,7 +2176,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="8 non-RO properties used."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="4 labels match RO labels. 4 non-RO properties used."></td>
                 
             
                 
@@ -2239,7 +2239,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="1291 errors, 130716 warnings, 154 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="1341 errors, 131738 warnings, 159 info messages."></td>
                 
             
             
@@ -2266,7 +2266,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="License should use property 'http://purl.org/dc/terms/license'. Ontology license 'http://creativecommons.org/licenses/by/3.0' does not match registry license 'http://creativecommons.org/publicdomain/zero/1.0/'."></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
                 
@@ -2653,7 +2653,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2022-04-19) is over one year(s) old"></td>
                 
             
                 
@@ -2743,7 +2743,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="34 duplicate definitions. 18 multiple definitions. 617 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="58 duplicate definitions. 18 multiple definitions. 660 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -2752,7 +2752,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="3 labels match RO labels. 89 non-RO properties used."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="3 labels match RO labels. 94 non-RO properties used."></td>
                 
             
                 
@@ -2815,7 +2815,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="624 errors, 827 warnings, 19 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="648 errors, 874 warnings, 21 info messages."></td>
                 
             
             
@@ -3031,7 +3031,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="369 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="294 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -3040,16 +3040,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="4 non-RO properties used."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="3 non-RO properties used."></td>
                 
             
                 
@@ -3103,7 +3094,16 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="375 warnings, 452 info messages."></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="301 warnings, 465 info messages."></td>
                 
             
             
@@ -3517,7 +3517,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2020-05-29) is over two year(s) old"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2020-05-29) is over three year(s) old"></td>
                 
             
                 
@@ -3571,24 +3571,6 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="OWL syntax (RDF/XML), but should be RDF/XML"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="0 invalid IRIs. The Ontology IRI is not valid."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
                     <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
@@ -3607,7 +3589,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="3025 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI 'http://purl.obolibrary.org/obo/cmo/2.188/cmo.owl' is not in recommended format"></td>
                 
             
                 
@@ -3617,6 +3599,24 @@ $(function () {
                         
                     
                     <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="18 duplicate definitions. 346 missing definitions. See ROBOT Report for details."></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="1 non-RO properties used."></td>
                 
             
                 
@@ -3652,7 +3652,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="26 duplicate labels. See ROBOT Report for details."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="38 duplicate labels. See ROBOT Report for details."></td>
                 
             
                 
@@ -3661,7 +3661,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2019-02-19) is over three year(s) old"></td>
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not have date information"></td>
                 
             
                 
@@ -3679,7 +3679,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="29 errors, 3054 warnings, 1 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="59 errors, 441 warnings, 15 info messages."></td>
                 
             
             
@@ -3877,7 +3877,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not resolve"></td>
                 
             
                 
@@ -3895,7 +3895,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="1 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2 duplicate definitions. 8 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -3967,7 +3967,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="1 warnings, 0 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2 errors, 8 warnings, 0 info messages."></td>
                 
             
             
@@ -4327,7 +4327,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="9 multiple definitions. 32 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="ROBOT Report could not be generated"></td>
                 
             
                 
@@ -4372,7 +4372,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="ROBOT Report could not be generated"></td>
                 
             
                 
@@ -4399,7 +4399,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="9 errors, 37 warnings, 7 info messages."></td>
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="ROBOT Report could not be generated."></td>
                 
             
             
@@ -4426,15 +4426,6 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing ontology license."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
                     <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
@@ -4453,7 +4444,16 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI 'http://purl.obolibrary.org/obo/2020-03-05/cvdo.owl' is not in recommended format"></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
                 
@@ -4525,7 +4525,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not have date information"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2020-03-05) is over three year(s) old"></td>
                 
             
                 
@@ -4543,7 +4543,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="5 errors, 283 warnings, 129 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="3 errors, 283 warnings, 129 info messages."></td>
                 
             
             
@@ -4669,7 +4669,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2020-04-13) is over two year(s) old"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2020-04-13) is over three year(s) old"></td>
                 
             
                 
@@ -5191,7 +5191,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2426 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2372 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -5263,7 +5263,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2429 warnings, 1 info messages."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2374 warnings, 1 info messages."></td>
                 
             
             
@@ -5479,7 +5479,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="653596 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="663997 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -5506,33 +5506,6 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing usages"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="360 duplicate labels. 18 multiple labels. 3 missing labels. See ROBOT Report for details."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
                     <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
@@ -5551,7 +5524,34 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="452 errors, 653596 warnings, 57 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="360 duplicate labels. 18 multiple labels. 1 missing labels. See ROBOT Report for details."></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="450 errors, 663997 warnings, 57 info messages."></td>
                 
             
             
@@ -5677,7 +5677,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2021-02-23) is over one year(s) old"></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2021-02-23) is over two year(s) old"></td>
                 
             
                 
@@ -5821,7 +5821,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2020-05-22) is over two year(s) old"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2020-05-22) is over three year(s) old"></td>
                 
             
                 
@@ -6109,7 +6109,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2022-03-09) is over one year(s) old"></td>
                 
             
                 
@@ -6271,7 +6271,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="1973 warnings, 2826 info messages."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="1981 warnings, 2842 info messages."></td>
                 
             
             
@@ -6343,7 +6343,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="7762 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="7769 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -6415,7 +6415,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="3 errors, 7814 warnings, 4 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="3 errors, 7821 warnings, 4 info messages."></td>
                 
             
             
@@ -6487,7 +6487,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="305 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="209 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -6541,7 +6541,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2021-05-14) is over one year(s) old"></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
                 
@@ -6559,7 +6559,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="453 warnings, 212 info messages."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="252 warnings, 258 info messages."></td>
                 
             
             
@@ -6775,7 +6775,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="39 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="49 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -6847,7 +6847,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="221 warnings, 264 info messages."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="157 warnings, 264 info messages."></td>
                 
             
             
@@ -6901,7 +6901,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not resolve"></td>
                 
             
                 
@@ -6973,7 +6973,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2022-06-29) is over one year(s) old"></td>
                 
             
                 
@@ -7117,7 +7117,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2020-05-07) is over two year(s) old"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2020-05-07) is over three year(s) old"></td>
                 
             
                 
@@ -7351,7 +7351,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="503 duplicate definitions. 211 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="502 duplicate definitions. 209 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -7423,7 +7423,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="503 errors, 539 warnings, 4370 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="502 errors, 539 warnings, 4438 info messages."></td>
                 
             
             
@@ -7639,7 +7639,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="8 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
                 
@@ -7666,15 +7666,6 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing usages"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
                     <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
@@ -7711,7 +7702,16 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="8 warnings, 0 info messages."></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
             
@@ -7722,7 +7722,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
+                    <td class="check table-info"><img src="assets/info.svg" height="15px"></td>
                 
             
         </tr>
@@ -7765,7 +7765,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not resolve"></td>
                 
             
                 
@@ -8053,7 +8053,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI 'http://purl.obolibrary.org/obo/fobi/fobi.owl' is not in recommended format"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not resolve"></td>
                 
             
                 
@@ -8197,7 +8197,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not resolve"></td>
                 
             
                 
@@ -8215,7 +8215,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="491 duplicate definitions. 6 multiple definitions. 12311 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="490 duplicate definitions. 16 multiple definitions. 12280 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -8260,7 +8260,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="30 duplicate labels. 3 missing labels. See ROBOT Report for details."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="50 duplicate labels. 8 multiple labels. 2 missing labels. See ROBOT Report for details."></td>
                 
             
                 
@@ -8287,7 +8287,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="592 errors, 13814 warnings, 377 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="625 errors, 13711 warnings, 375 info messages."></td>
                 
             
             
@@ -8359,7 +8359,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="8 duplicate definitions. 6 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="65 duplicate definitions. 6 multiple definitions. 6 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -8413,7 +8413,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2021-11-10) is over one year(s) old"></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
                 
@@ -8431,7 +8431,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="8 errors, 19 warnings, 157 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="71 errors, 12 warnings, 363 info messages."></td>
                 
             
             
@@ -8503,7 +8503,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="6 multiple definitions. 7 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="3 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -8575,7 +8575,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="6 errors, 25 warnings, 7 info messages."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="3 warnings, 2 info messages."></td>
                 
             
             
@@ -8701,7 +8701,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2021-01-18) is over one year(s) old"></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2021-01-18) is over two year(s) old"></td>
                 
             
                 
@@ -8755,15 +8755,6 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="OWL syntax (RDF/XML), but should be RDF/XML"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
                     <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
@@ -8782,6 +8773,15 @@ $(function () {
                         
                         
                     
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not resolve"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
                     <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
@@ -8791,7 +8791,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="68 duplicate definitions. 398 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="76 duplicate definitions. 6 multiple definitions. 382 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -8836,7 +8836,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="8 duplicate labels. 8 multiple labels. 13 missing labels. See ROBOT Report for details."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="8 duplicate labels. 16 multiple labels. 13 missing labels. See ROBOT Report for details."></td>
                 
             
                 
@@ -8863,7 +8863,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="158 errors, 496 warnings, 76 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="123 errors, 2021 warnings, 59 info messages."></td>
                 
             
             
@@ -8935,7 +8935,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="6 duplicate definitions. 83 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="81 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -8944,7 +8944,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="98 non-RO properties used."></td>
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="84 non-RO properties used."></td>
                 
             
                 
@@ -8980,15 +8980,6 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="1 duplicate labels. 4 multiple labels. See ROBOT Report for details."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
                     <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
@@ -9007,7 +8998,16 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="27 errors, 94 warnings, 29 info messages."></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="92 warnings, 29 info messages."></td>
                 
             
             
@@ -9439,7 +9439,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="5 errors, 5 warnings, 13906 info messages."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="5 warnings, 13742 info messages."></td>
                 
             
             
@@ -9450,7 +9450,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px"></td>
                 
             
         </tr>
@@ -9628,7 +9628,16 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="0 invalid IRIs. The Ontology IRI is not valid."></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not resolve"></td>
                 
             
                 
@@ -9646,7 +9655,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="312 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -9655,43 +9664,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="314 missing definitions. See ROBOT Report for details."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="5 non-RO properties used."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="4 non-RO properties used."></td>
                 
             
                 
@@ -9727,7 +9700,34 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="314 warnings, 0 info messages."></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="313 warnings, 1 info messages."></td>
                 
             
             
@@ -9853,7 +9853,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2021-03-05) is over one year(s) old"></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
                 
@@ -9871,7 +9871,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="120 errors, 82 warnings, 23 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="122 errors, 83 warnings, 24 info messages."></td>
                 
             
             
@@ -9925,7 +9925,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not resolve"></td>
                 
             
                 
@@ -10087,7 +10087,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2659 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2663 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -10159,7 +10159,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="3697 warnings, 1 info messages."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="3666 warnings, 1 info messages."></td>
                 
             
             
@@ -10213,7 +10213,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not resolve"></td>
                 
             
                 
@@ -10285,7 +10285,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2020-03-10) is over two year(s) old"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2020-03-10) is over three year(s) old"></td>
                 
             
                 
@@ -11509,7 +11509,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not resolve"></td>
                 
             
                 
@@ -11581,7 +11581,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2021-06-08) is over one year(s) old"></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2021-06-08) is over two year(s) old"></td>
                 
             
                 
@@ -11653,7 +11653,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not resolve"></td>
                 
             
                 
@@ -11671,7 +11671,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="130 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="121 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -11725,7 +11725,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2021-11-20) is over one year(s) old"></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
                 
@@ -11743,7 +11743,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="130 warnings, 4 info messages."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="121 warnings, 4 info messages."></td>
                 
             
             
@@ -11797,7 +11797,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not resolve"></td>
                 
             
                 
@@ -11914,15 +11914,6 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Ontology license 'https://creativecommons.org/licenses/by/4.0/' does not match registry license 'http://creativecommons.org/licenses/by/3.0/'."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
                     <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
@@ -11959,7 +11950,16 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="4 multiple definitions. 19 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="1 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -12004,15 +12004,6 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="76 multiple labels. 1 missing labels. See ROBOT Report for details."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
                     <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
@@ -12031,7 +12022,16 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="82 errors, 54 warnings, 440 info messages."></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2 warnings, 656 info messages."></td>
                 
             
             
@@ -12192,6 +12192,150 @@ $(function () {
         </tr>
     
         <tr>
+            <td><b><a href="mcro/dashboard.html">mcro</a></b></td>
+            
+            
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Ontology license 'https://creativecommons.org/licenses/by/3.0/' does not match registry license 'https://creativecommons.org/licenses/by/4.0/'."></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI 'http://purl.obolibrary.org/obo/2023-03-07/mcro.owl' is not in recommended format"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="12 non-RO properties used."></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not have date information"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="{0} info messages."></td>
+                
+            
+            
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
+                
+            
+        </tr>
+    
+        <tr>
             <td><b><a href="mf/dashboard.html">mf</a></b></td>
             
             
@@ -12301,7 +12445,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2022-07-19) is over one year(s) old"></td>
                 
             
                 
@@ -12373,7 +12517,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not resolve"></td>
                 
             
                 
@@ -12589,7 +12733,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2022-07-19) is over one year(s) old"></td>
                 
             
                 
@@ -12661,7 +12805,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not resolve"></td>
                 
             
                 
@@ -12733,7 +12877,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2020-04-26) is over two year(s) old"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2020-04-26) is over three year(s) old"></td>
                 
             
                 
@@ -13056,150 +13200,6 @@ $(function () {
         </tr>
     
         <tr>
-            <td><b><a href="micro/dashboard.html">micro</a></b></td>
-            
-            
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing ontology license."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="0 invalid IRIs. The Ontology IRI is not valid."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing version IRI"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2061 missing definitions. See ROBOT Report for details."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="1 labels match RO labels. 77 non-RO properties used."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing usages"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2 duplicate labels. 2 multiple labels. 5 missing labels. See ROBOT Report for details."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing version IRI to check date"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="10 errors, 2624 warnings, 1151 info messages."></td>
-                
-            
-            
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
-                
-            
-        </tr>
-    
-        <tr>
             <td><b><a href="mmo/dashboard.html">mmo</a></b></td>
             
             
@@ -13381,7 +13381,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not resolve"></td>
                 
             
                 
@@ -13453,7 +13453,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2020-03-10) is over two year(s) old"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2020-03-10) is over three year(s) old"></td>
                 
             
                 
@@ -13525,7 +13525,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI 'http://purl.obolibrary.org/obo/mod/1.031.6/mod.owl' is not in recommended format"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI has neither a semantic version nor a date"></td>
                 
             
                 
@@ -13552,7 +13552,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="3 labels match RO labels. 1 non-RO properties used."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="4 labels match RO labels."></td>
                 
             
                 
@@ -13687,7 +13687,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="6987 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="7380 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -13696,16 +13696,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="15 non-RO properties used."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="14 non-RO properties used."></td>
                 
             
                 
@@ -13759,7 +13750,16 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="17179 warnings, 0 info messages."></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="17520 warnings, 1 info messages."></td>
                 
             
             
@@ -13885,7 +13885,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2022-05-11) is over one year(s) old"></td>
                 
             
                 
@@ -13975,16 +13975,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="133 missing definitions. See ROBOT Report for details."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="1 labels match RO labels. 5 non-RO properties used."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="118 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -14047,7 +14038,16 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="142 warnings, 13620 info messages."></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="124 warnings, 13722 info messages."></td>
                 
             
             
@@ -14058,7 +14058,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px"></td>
                 
             
         </tr>
@@ -14173,7 +14173,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2020-05-19) is over two year(s) old"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2020-05-19) is over three year(s) old"></td>
                 
             
                 
@@ -14407,7 +14407,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="51222 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="51237 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -14479,7 +14479,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="56351 warnings, 0 info messages."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="56246 warnings, 0 info messages."></td>
                 
             
             
@@ -14551,7 +14551,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="86 duplicate definitions. 27 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="87 duplicate definitions. 27 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -14623,7 +14623,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="272 errors, 312 warnings, 25 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="273 errors, 315 warnings, 40 info messages."></td>
                 
             
             
@@ -14650,15 +14650,6 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing ontology license."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
                     <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
@@ -14695,7 +14686,16 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="12 duplicate definitions. 2 multiple definitions. 176 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="174 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -14740,16 +14740,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2 duplicate labels. See ROBOT Report for details."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2021-02-15) is over one year(s) old"></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
                 
@@ -14767,7 +14758,16 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="20 errors, 220 warnings, 604 info messages."></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="225 warnings, 169 info messages."></td>
                 
             
             
@@ -14839,7 +14839,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2446686 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2511812 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -14911,7 +14911,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2450816 warnings, 1 info messages."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2515937 warnings, 1 info messages."></td>
                 
             
             
@@ -15181,7 +15181,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2015-12-10) is over three year(s) old"></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2015-12-10) is over two year(s) old"></td>
                 
             
                 
@@ -15200,6 +15200,150 @@ $(function () {
                         
                     
                     <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="3 errors, 2527 warnings, 4 info messages."></td>
+                
+            
+            
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
+                
+            
+        </tr>
+    
+        <tr>
+            <td><b><a href="ngbo/dashboard.html">ngbo</a></b></td>
+            
+            
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="6 non-RO properties used."></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing usages"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2 warnings, 0 info messages."></td>
                 
             
             
@@ -15271,7 +15415,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="381 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="382 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -15280,7 +15424,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="111 non-RO properties used."></td>
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="112 non-RO properties used."></td>
                 
             
                 
@@ -15343,7 +15487,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="14 errors, 383 warnings, 0 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="14 errors, 384 warnings, 0 info messages."></td>
                 
             
             
@@ -15613,7 +15757,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2019-04-18) is over three year(s) old"></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2019-04-18) is over two year(s) old"></td>
                 
             
                 
@@ -15703,34 +15847,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="16 missing definitions. See ROBOT Report for details."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing usages"></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="18 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -15775,7 +15892,34 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="129 warnings, 0 info messages."></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="135 warnings, 12840 info messages."></td>
                 
             
             
@@ -15786,7 +15930,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px"></td>
                 
             
         </tr>
@@ -15901,7 +16045,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2018-02-22) is over three year(s) old"></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2018-02-22) is over two year(s) old"></td>
                 
             
                 
@@ -15919,7 +16063,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="5 errors, 55 warnings, 6 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="5 errors, 56 warnings, 6 info messages."></td>
                 
             
             
@@ -16000,7 +16144,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="45 non-RO properties used."></td>
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="28 non-RO properties used."></td>
                 
             
                 
@@ -16063,7 +16207,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="285 warnings, 1236 info messages."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="85 warnings, 1294 info messages."></td>
                 
             
             
@@ -16189,7 +16333,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2021-11-12) is over one year(s) old"></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
                 
@@ -16207,7 +16351,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2 warnings, 3 info messages."></td>
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="{0} info messages."></td>
                 
             
             
@@ -16218,7 +16362,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px"></td>
+                    <td class="check table-info"><img src="assets/info.svg" height="15px"></td>
                 
             
         </tr>
@@ -16711,7 +16855,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2 multiple definitions. 25 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2 multiple definitions. 24 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -16720,7 +16864,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="7 non-RO properties used."></td>
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="10 non-RO properties used."></td>
                 
             
                 
@@ -16756,7 +16900,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2 missing labels. See ROBOT Report for details."></td>
                 
             
                 
@@ -16783,7 +16927,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="5 errors, 56 warnings, 138 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="7 errors, 51 warnings, 196 info messages."></td>
                 
             
             
@@ -16909,7 +17053,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2019-09-17) is over three year(s) old"></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2019-09-17) is over two year(s) old"></td>
                 
             
                 
@@ -17269,7 +17413,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI 'http://purl.obolibrary.org/obo/omit/dev/omit.owl' is not in recommended format"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI has neither a semantic version nor a date"></td>
                 
             
                 
@@ -17485,7 +17629,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2022-04-27) is over one year(s) old"></td>
                 
             
                 
@@ -17584,7 +17728,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2 labels match RO labels. 36 non-RO properties used."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="6 labels match RO labels. 32 non-RO properties used."></td>
                 
             
                 
@@ -17719,7 +17863,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="85 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="83 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -17728,7 +17872,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="6 non-RO properties used."></td>
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="8 non-RO properties used."></td>
                 
             
                 
@@ -17791,7 +17935,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="48 errors, 95 warnings, 18 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="47 errors, 90 warnings, 18 info messages."></td>
                 
             
             
@@ -17971,7 +18115,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="OWL syntax (OWL/XML Syntax), but should be RDF/XML"></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
                 
@@ -18205,7 +18349,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2022-03-15) is over one year(s) old"></td>
                 
             
                 
@@ -18349,7 +18493,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2021-04-29) is over one year(s) old"></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2021-04-29) is over two year(s) old"></td>
                 
             
                 
@@ -18394,15 +18538,6 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="License should use property 'http://purl.org/dc/terms/license'."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
                     <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
@@ -18439,7 +18574,16 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="6 duplicate definitions. 10 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
                 
@@ -18511,7 +18655,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="8 errors, 19 warnings, 13 info messages."></td>
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="{0} info messages."></td>
                 
             
             
@@ -18637,15 +18781,6 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2021-01-28) is over one year(s) old"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
                     <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
@@ -18658,6 +18793,15 @@ $(function () {
                     <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2 warnings, 0 info messages."></td>
+                
+            
             
             
                 
@@ -18666,7 +18810,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px"></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px"></td>
                 
             
         </tr>
@@ -18925,7 +19069,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2019-07-08) is over three year(s) old"></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2019-07-08) is over two year(s) old"></td>
                 
             
                 
@@ -19087,7 +19231,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="27 errors, 51 warnings, 36 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="27 errors, 52 warnings, 36 info messages."></td>
                 
             
             
@@ -19285,7 +19429,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not resolve"></td>
                 
             
                 
@@ -19501,7 +19645,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2021-05-03) is over one year(s) old"></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2021-05-03) is over two year(s) old"></td>
                 
             
                 
@@ -19645,7 +19789,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2021-06-08) is over one year(s) old"></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2021-06-08) is over two year(s) old"></td>
                 
             
                 
@@ -19879,7 +20023,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="7 duplicate definitions. 22 multiple definitions. 34 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="33 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -19888,7 +20032,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="1 labels match RO labels."></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
                 
@@ -19924,16 +20068,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2 multiple labels. See ROBOT Report for details."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2020-08-21) is over two year(s) old"></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
                 
@@ -19951,7 +20086,16 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="34 errors, 53 warnings, 0 info messages."></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="3 errors, 33 warnings, 0 info messages."></td>
                 
             
             
@@ -20410,15 +20554,6 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing ontology license."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
                     <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
@@ -20438,6 +20573,15 @@ $(function () {
                         
                     
                     <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not resolve"></td>
                 
             
                 
@@ -20509,7 +20653,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2021-08-13) is over one year(s) old"></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
                 
@@ -20527,7 +20671,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="18 errors, 166 warnings, 0 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="15 errors, 39 warnings, 0 info messages."></td>
                 
             
             
@@ -20653,7 +20797,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2016-10-06) is over three year(s) old"></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2016-10-06) is over two year(s) old"></td>
                 
             
                 
@@ -20869,7 +21013,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI 'http://purl.obolibrary.org/obo/pr/67.0/pr.owl' is not in recommended format"></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI 'http://purl.obolibrary.org/obo/pr/68.0/pr.owl' is not in recommended format"></td>
                 
             
                 
@@ -20887,7 +21031,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="53 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="51 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -20896,7 +21040,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="5 non-RO properties used."></td>
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="6 non-RO properties used."></td>
                 
             
                 
@@ -20959,7 +21103,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="66 warnings, 0 info messages."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="65 warnings, 0 info messages."></td>
                 
             
             
@@ -21085,7 +21229,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2022-04-11) is over one year(s) old"></td>
                 
             
                 
@@ -21157,7 +21301,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI 'http://purl.obolibrary.org/obo/2020-12-04/psdo.owl' is not in recommended format"></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI 'http://purl.obolibrary.org/obo/2022-02-23/psdo.owl' is not in recommended format"></td>
                 
             
                 
@@ -21373,7 +21517,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2020-05-19) is over two year(s) old"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2020-05-19) is over three year(s) old"></td>
                 
             
                 
@@ -21679,7 +21823,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="8 errors, 55 warnings, 9 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="9 errors, 53 warnings, 9 info messages."></td>
                 
             
             
@@ -21796,15 +21940,6 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="1 missing labels. See ROBOT Report for details."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
                     <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
@@ -21823,7 +21958,16 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="1 errors, 157 warnings, 242 info messages."></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="157 warnings, 250 info messages."></td>
                 
             
             
@@ -21834,7 +21978,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px"></td>
                 
             
         </tr>
@@ -22093,7 +22237,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2021-12-16) is over one year(s) old"></td>
                 
             
                 
@@ -22381,7 +22525,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2021-04-15) is over one year(s) old"></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2021-04-15) is over two year(s) old"></td>
                 
             
                 
@@ -22426,7 +22570,16 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing ontology license."></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
                 
@@ -22453,15 +22606,6 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing version IRI"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
                     <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
@@ -22471,7 +22615,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2 multiple definitions. 57 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="49 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -22480,7 +22624,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="1 labels match RO labels. 80 non-RO properties used."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="1 labels match RO labels. 78 non-RO properties used."></td>
                 
             
                 
@@ -22516,16 +22660,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing version IRI to check date"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2 multiple labels. See ROBOT Report for details."></td>
                 
             
                 
@@ -22543,7 +22678,16 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="18 errors, 58 warnings, 3 info messages."></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2 errors, 50 warnings, 1 info messages."></td>
                 
             
             
@@ -22975,7 +23119,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="77 warnings, 341 info messages."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="78 warnings, 341 info messages."></td>
                 
             
             
@@ -23407,7 +23551,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="4 errors, 69 warnings, 0 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="4 errors, 70 warnings, 0 info messages."></td>
                 
             
             
@@ -23605,7 +23749,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not resolve"></td>
                 
             
                 
@@ -23623,7 +23767,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="121 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="119 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -23695,7 +23839,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="9 errors, 129 warnings, 0 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="8 errors, 126 warnings, 0 info messages."></td>
                 
             
             
@@ -24199,7 +24343,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="129 duplicate definitions. 2753 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="129 duplicate definitions. 2724 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -24208,16 +24352,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2 labels match RO labels. 54 non-RO properties used."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="54 non-RO properties used."></td>
                 
             
                 
@@ -24271,7 +24406,16 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="129 errors, 4639 warnings, 2959 info messages."></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="129 errors, 4641 warnings, 3010 info messages."></td>
                 
             
             
@@ -24325,7 +24469,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing version IRI"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not resolve"></td>
                 
             
                 
@@ -24388,16 +24532,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="6 duplicate labels. See ROBOT Report for details."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing version IRI to check date"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="4 duplicate labels. See ROBOT Report for details."></td>
                 
             
                 
@@ -24415,7 +24550,16 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="9 errors, 369 warnings, 2 info messages."></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="7 errors, 414 warnings, 2 info messages."></td>
                 
             
             
@@ -24631,34 +24775,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="17100 missing definitions. See ROBOT Report for details."></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
-                
-            
-                
-                
-                    
-                        
-                        
-                    
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Missing usages"></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="18544 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -24703,7 +24820,34 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="29494 warnings, 2 info messages."></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                
+            
+                
+                
+                    
+                        
+                        
+                    
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="31703 warnings, 1 info messages."></td>
                 
             
             
@@ -24714,7 +24858,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
+                    <td class="check table-warning"><img src="assets/warning.svg" height="15px"></td>
                 
             
         </tr>
@@ -24775,7 +24919,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="38 duplicate definitions. 29 multiple definitions. 4791 missing definitions. See ROBOT Report for details."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="52 duplicate definitions. 29 multiple definitions. 4921 missing definitions. See ROBOT Report for details."></td>
                 
             
                 
@@ -24784,7 +24928,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="36 non-RO properties used."></td>
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="37 non-RO properties used."></td>
                 
             
                 
@@ -24820,7 +24964,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="257 duplicate labels. 35 multiple labels. See ROBOT Report for details."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="265 duplicate labels. 35 multiple labels. See ROBOT Report for details."></td>
                 
             
                 
@@ -24847,7 +24991,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="364 errors, 5070 warnings, 570 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="386 errors, 5214 warnings, 573 info messages."></td>
                 
             
             
@@ -25333,7 +25477,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not resolve"></td>
                 
             
                 
@@ -25434,7 +25578,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
                 
             
         </tr>
@@ -25477,7 +25621,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Version IRI does not resolve"></td>
                 
             
                 
@@ -25578,7 +25722,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px"></td>
                 
             
         </tr>
@@ -25657,7 +25801,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="Homepage URL (http://www.xenbase.org/anatomy/xao.do?method=display) does not resolve"></td>
                 
             
                 
@@ -26269,7 +26413,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
+                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2022-02-14) is over one year(s) old"></td>
                 
             
                 
@@ -26557,7 +26701,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-warning"><img src="assets/warning.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2020-03-10) is over two year(s) old"></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2020-03-10) is over three year(s) old"></td>
                 
             
                 
@@ -26701,7 +26845,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-info"><img src="assets/info.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="last version (2021-12-12) is over one year(s) old"></td>
+                    <td class="check table-success"><img src="assets/check.svg" height="15px"></td>
                 
             
                 
@@ -26719,7 +26863,7 @@ $(function () {
                         
                         
                     
-                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2 errors, 1 warnings, 36602 info messages."></td>
+                    <td class="check table-danger"><img src="assets/x.svg" height="15px" data-toggle="tooltip" data-html="true" data-placement="right" title="2 errors, 1 warnings, 39373 info messages."></td>
                 
             
             

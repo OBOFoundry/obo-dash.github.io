@@ -3,8 +3,8 @@ base_prefixes:
 - NCRO
 - NCROALT
 - NCRO
-changed: true
-date: 2022-12-15 14:06:49.021257
+changed: false
+date: 2023-08-11 17:24:04.066868
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 8750
@@ -23,7 +23,7 @@ metrics:
     SymmetricObjectProperty: 3
     TransitiveObjectProperty: 3
   'Axioms: Number of axioms': 17385
-  'Entities: % of entities reused': 19.15
+  'Entities: % of entities reused': 19.17
   'Entities: Number of annotation properties': 40
   'Entities: Number of classes': 3078
   'Entities: Number of data properties': 0
@@ -36,12 +36,12 @@ metrics:
     ObjectSomeValuesFrom: 2066
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.504
+    _dashboard: 0.549
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.011
     _impact_external: 0
-    _reuse: 0.191
-    oboscore: 0.258
+    _reuse: 0.192
+    oboscore: 0.28
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 2
   'Info: Logical consistency': true
@@ -62,6 +62,7 @@ metrics:
     dc11: 2
     foaf: 1
     oboInOwl: 2545
+    rdf: 6
     rdfs: 3720
   'Info: Which ontologies use it?':
   - genepio
@@ -100,8 +101,8 @@ results:
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
-    comment: last version (2015-12-10) is over three year(s) old
-    status: ERROR
+    comment: last version (2015-12-10) is over two year(s) old
+    status: WARN
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
@@ -114,10 +115,10 @@ results:
     status: ERROR
 sha256_hash: a5bf7ba6e35933356678ab10c039a9cfe5394869d1af2f76ddefa10559198af4
 summary:
-  comment: 6 errors
+  comment: 5 errors
   status: ERROR
   summary_count:
-    ERROR: 6
+    ERROR: 5
     INFO: 1
-    WARN: 1
+    WARN: 2
 version: http://purl.obolibrary.org/obo/ncro/2015-12-10/ncro-combined.owl
