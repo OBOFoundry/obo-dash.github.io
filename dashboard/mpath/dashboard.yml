@@ -1,0 +1,106 @@
+base_generated: true
+base_prefixes:
+- MPATH
+- MPATHALT
+- MPATH
+changed: false
+date: 2023-08-09 09:24:26.568547
+metrics:
+  'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 4632
+    Declaration: 913
+    SubClassOf: 949
+    TransitiveObjectProperty: 1
+  'Axioms: Number of axioms': 6495
+  'Entities: % of entities reused': 2.4
+  'Entities: Number of annotation properties': 20
+  'Entities: Number of classes': 891
+  'Entities: Number of data properties': 0
+  'Entities: Number of individuals': 0
+  'Entities: Number of object properties': 2
+  'Entities: Number of unsatisfiable classes': 0
+  'Info: Breakdown of OWL class expressions used':
+    Class: 2789
+    ObjectSomeValuesFrom: 3
+  'Info: Does the ontology fall under OWL 2 DL?': true
+  'Info: Experimental OBO score':
+    _dashboard: 0.511
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.043
+    _impact_external: 0
+    _reuse: 0.024
+    oboscore: 0.277
+  'Info: How many externally documented uses?': 0
+  'Info: How many ontologies use it?': 8
+  'Info: Logical consistency': true
+  'Info: Syntax': RDF/XML Syntax
+  'Info: Usage of namespaces in axioms':
+    IAO: 810
+    MPATH: 2789
+    MPATHALT: 6
+    oboInOwl: 3865
+    owl: 51
+    rdfs: 1027
+    xsd: 1101
+  'Info: Which ontologies use it?':
+  - ado
+  - cido
+  - genepio
+  - hp
+  - mp
+  - ontoneo
+  - upheno
+  - zp
+mirror_from: http://purl.obolibrary.org/obo/mpath.owl
+namespace: mpath
+results:
+  FP01 Open:
+    comment: Missing ontology license.
+    status: ERROR
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    status: PASS
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 87 missing definitions. See ROBOT Report for details.
+    status: WARN
+  FP07 Relations:
+    comment: 1 labels match RO labels. 1 non-RO properties used.
+    file: fp7
+    status: ERROR
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
+    status: ERROR
+  FP11 Locus of Authority:
+    status: PASS
+  FP12 Naming Conventions:
+    comment: 20 duplicate labels. See ROBOT Report for details.
+    status: ERROR
+  FP16 Maintenance:
+    comment: last version (2020-05-19) is over three year(s) old
+    status: ERROR
+  FP20 Responsiveness:
+    status: PASS
+  ROBOT Report:
+    comment: 23 errors, 150 warnings, 76 info messages.
+    file: robot_report
+    results:
+      ERROR: 23
+      INFO: 76
+      WARN: 150
+    status: ERROR
+sha256_hash: d20c3079f2fa02755bd62575645054445277e3156afebb2c3d456f7a084276fe
+summary:
+  comment: 6 errors
+  status: ERROR
+  summary_count:
+    ERROR: 6
+    INFO: 0
+    WARN: 1
+version: http://purl.obolibrary.org/obo/mpath/2020-05-19/mpath.owl
