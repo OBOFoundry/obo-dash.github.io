@@ -4,7 +4,7 @@ base_prefixes:
 - MAALT
 - MA
 changed: true
-date: 2023-08-13 19:44:45.430950
+date: 2023-09-19 16:57:42.101750
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 12215
@@ -24,12 +24,12 @@ metrics:
     ObjectSomeValuesFrom: 1975
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.689
+    _dashboard: 0.622
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0.25
     _reuse: 0.005
-    oboscore: 0.344
+    oboscore: 0.311
   'Info: How many externally documented uses?': 1
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
@@ -53,7 +53,8 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -86,10 +87,10 @@ results:
     status: ERROR
 sha256_hash: 89f8dc54226d96ceaae9cd0401390b8ddb7940b99a4f7472da5d3693ff63862f
 summary:
-  comment: 3 errors
+  comment: 4 errors
   status: ERROR
   summary_count:
-    ERROR: 3
+    ERROR: 4
     INFO: 0
     WARN: 2
 version: http://purl.obolibrary.org/obo/ma/releases/2017-02-07/ma.owl

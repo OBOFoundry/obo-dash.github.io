@@ -4,7 +4,7 @@ base_prefixes:
 - FOODONALT
 - FOODON
 changed: true
-date: 2023-08-13 19:33:39.048877
+date: 2023-09-19 16:46:59.413602
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 225023
@@ -45,14 +45,14 @@ metrics:
     ObjectMinCardinality: 1
     ObjectSomeValuesFrom: 12355
     ObjectUnionOf: 103
-  'Info: Does the ontology fall under OWL 2 DL?': true
+  'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.66
+    _dashboard: 0.593
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.081
     _impact_external: 0
     _reuse: 0.3
-    oboscore: 0.37
+    oboscore: 0.337
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 15
   'Info: Logical consistency': true
@@ -133,7 +133,8 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -169,10 +170,10 @@ results:
     status: ERROR
 sha256_hash: 701c928d4adb8482823a31382c8551f48841e33ed5d787ecb1ad647f2a6e615c
 summary:
-  comment: 4 errors
+  comment: 5 errors
   status: ERROR
   summary_count:
-    ERROR: 4
+    ERROR: 5
     INFO: 1
     WARN: 0
 version: http://purl.obolibrary.org/obo/foodon/releases/2023-05-03/foodon.owl

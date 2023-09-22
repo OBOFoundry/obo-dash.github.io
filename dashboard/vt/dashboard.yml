@@ -3,44 +3,44 @@ base_prefixes:
 - VT
 - VTALT
 - VT
-changed: true
-date: 2023-08-13 21:32:49.774778
+changed: false
+date: 2023-09-21 15:53:49.719382
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 22247
-    Declaration: 3843
-    SubClassOf: 4390
+    AnnotationAssertion: 22253
+    Declaration: 3845
+    SubClassOf: 4391
     TransitiveObjectProperty: 1
-  'Axioms: Number of axioms': 30481
-  'Entities: % of entities reused': 0.6
-  'Entities: Number of annotation properties': 19
-  'Entities: Number of classes': 3823
+  'Axioms: Number of axioms': 30490
+  'Entities: % of entities reused': 0.57
+  'Entities: Number of annotation properties': 20
+  'Entities: Number of classes': 3824
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 2
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 12603
+    Class: 12606
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.689
+    _dashboard: 0.66
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.016
     _impact_external: 0.5
     _reuse: 0.006
-    oboscore: 0.352
+    oboscore: 0.338
   'Info: How many externally documented uses?': 3
   'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    IAO: 3818
-    VT: 12603
-    obo: 3
-    oboInOwl: 18223
+    IAO: 3823
+    VT: 12606
+    VTALT: 3
+    oboInOwl: 18229
     owl: 94
-    rdfs: 4013
-    xsd: 3883
+    rdfs: 4014
+    xsd: 3888
   'Info: Which ontologies use it?':
   - genepio
   - scdo
@@ -53,19 +53,20 @@ results:
   FP02 Common Format:
     status: PASS
   FP03 URIs:
-    comment: 0 invalid IRIs. The Ontology IRI is not valid.
-    file: fp3
-    status: ERROR
+    status: PASS
   FP04 Versioning:
     comment: Missing version IRI
     status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 6 missing definitions. See ROBOT Report for details.
-    status: WARN
+    comment: 2 duplicate definitions. 4 missing definitions. See ROBOT Report for
+      details.
+    status: ERROR
   FP07 Relations:
-    status: PASS
+    comment: 2 non-RO properties used.
+    file: fp7
+    status: INFO
   FP08 Documented:
     status: PASS
   FP09 Plurality of Users:
@@ -80,19 +81,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 101 warnings, 2 info messages.
+    comment: 4 errors, 5 warnings, 1 info messages.
     file: robot_report
     results:
-      ERROR: 0
-      INFO: 2
-      WARN: 101
-    status: WARN
-sha256_hash: b690a0043237afb0e672bdb15fb26aa5f04db2daa69f7601fa7047c45a291314
+      ERROR: 4
+      INFO: 1
+      WARN: 5
+    status: ERROR
+sha256_hash: d1ec06a01640a6a202abc2215d9b0360aab167ae9b4d136ccc729d113e095b11
 summary:
-  comment: 3 errors
+  comment: 4 errors
   status: ERROR
   summary_count:
-    ERROR: 3
-    INFO: 0
-    WARN: 2
+    ERROR: 4
+    INFO: 1
+    WARN: 0
 version: null

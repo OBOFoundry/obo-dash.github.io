@@ -3,41 +3,40 @@ base_prefixes:
 - RO
 - ROALT
 - RO
-changed: true
-date: 2023-08-13 21:27:05.838475
+changed: false
+date: 2023-09-21 15:47:43.306056
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 3744
+    AnnotationAssertion: 3743
     AnnotationPropertyRangeOf: 1
     AsymmetricObjectProperty: 2
     DataPropertyRange: 1
-    Declaration: 815
+    Declaration: 812
     DisjointClasses: 11
     DisjointObjectProperties: 10
     FunctionalObjectProperty: 3
     InverseFunctionalObjectProperty: 1
-    InverseObjectProperties: 113
+    InverseObjectProperties: 112
     IrrefexiveObjectProperty: 8
-    ObjectPropertyDomain: 148
-    ObjectPropertyRange: 143
-    ReflexiveObjectProperty: 1
+    ObjectPropertyDomain: 147
+    ObjectPropertyRange: 142
     Rule: 25
     SubAnnotationPropertyOf: 62
     SubClassOf: 33
     SubObjectPropertyOf: 691
-    SubPropertyChainOf: 149
+    SubPropertyChainOf: 148
     SymmetricObjectProperty: 86
-    TransitiveObjectProperty: 49
-  'Axioms: Number of axioms': 6096
-  'Entities: % of entities reused': 13.7
-  'Entities: Number of annotation properties': 115
+    TransitiveObjectProperty: 46
+  'Axioms: Number of axioms': 6084
+  'Entities: % of entities reused': 13.38
+  'Entities: Number of annotation properties': 112
   'Entities: Number of classes': 46
   'Entities: Number of data properties': 1
   'Entities: Number of individuals': 2
   'Entities: Number of object properties': 656
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 447
+    Class: 445
     ObjectAllValuesFrom: 11
     ObjectComplementOf: 2
     ObjectHasSelf: 3
@@ -48,37 +47,37 @@ metrics:
   'Info: Experimental OBO score':
     _dashboard: 0.956
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.769
+    _impact: 0.758
     _impact_external: 0.25
-    _reuse: 0.137
-    oboscore: 0.863
+    _reuse: 0.134
+    oboscore: 0.857
   'Info: How many externally documented uses?': 1
-  'Info: How many ontologies use it?': 143
+  'Info: How many ontologies use it?': 141
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 441
+    BFO: 438
     CHEBI: 2
     CL: 23
     ENVO: 5
     GO: 16
-    IAO: 1737
+    IAO: 1736
     OBI: 11
     OGMS: 13
     OMO: 4
     PATO: 16
-    RO: 3327
+    RO: 3315
     UBERON: 47
     UPHENO: 4
-    dc: 72
-    dc11: 137
+    dc: 205
+    dc11: 1
     foaf: 4
     obo: 10
-    oboInOwl: 722
-    owl: 18
+    oboInOwl: 720
+    owl: 20
     prefix_unknown: 45
     rdf: 53
-    rdfs: 1100
+    rdfs: 1102
     skos: 5
     xsd: 11
   'Info: Which ontologies use it?':
@@ -96,7 +95,6 @@ metrics:
   - cheminf
   - chiro
   - chmo
-  - cido
   - cl
   - clao
   - clo
@@ -106,6 +104,7 @@ metrics:
   - cro
   - cteno
   - cto
+  - ddanat
   - ddpheno
   - dideo
   - disdriv
@@ -174,7 +173,6 @@ metrics:
   - ohd
   - ohmi
   - ohpi
-  - olatdv
   - omit
   - omp
   - omrse
@@ -191,7 +189,6 @@ metrics:
   - pcl
   - pco
   - pdro
-  - pdumdv
   - peco
   - phipo
   - plana
@@ -239,7 +236,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 123 missing definitions. See ROBOT Report for details.
+    comment: 121 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     status: PASS
@@ -256,14 +253,14 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 157 warnings, 250 info messages.
+    comment: 154 warnings, 250 info messages.
     file: robot_report
     results:
       ERROR: 0
       INFO: 250
-      WARN: 157
+      WARN: 154
     status: WARN
-sha256_hash: c1de0081c50a44a99b05ea994a7040b42b97db56a553e59692a193bfc8409175
+sha256_hash: 44a1e25fc57db5a80a075ec47eff5b36adc0126c0ef20c12f3d4e9f16f1df60f
 summary:
   comment: 2 warnings
   status: WARN
@@ -271,4 +268,4 @@ summary:
     ERROR: 0
     INFO: 0
     WARN: 2
-version: http://purl.obolibrary.org/obo/ro/releases/2023-06-28/ro-base.owl
+version: http://purl.obolibrary.org/obo/ro/releases/2023-08-18/ro-base.owl

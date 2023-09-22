@@ -3,48 +3,48 @@ base_prefixes:
 - MmusDv
 - MmusDv
 changed: true
-date: 2023-08-13 19:46:00.918924
+date: 2023-09-19 16:58:41.671693
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 1023
-    Declaration: 150
+    AnnotationAssertion: 1646
+    Declaration: 216
     SubAnnotationPropertyOf: 1
-    SubClassOf: 304
+    SubClassOf: 388
     SubObjectPropertyOf: 1
     TransitiveObjectProperty: 2
-  'Axioms: Number of axioms': 1481
-  'Entities: % of entities reused': 26.14
-  'Entities: Number of annotation properties': 34
-  'Entities: Number of classes': 113
+  'Axioms: Number of axioms': 2254
+  'Entities: % of entities reused': 19.09
+  'Entities: Number of annotation properties': 36
+  'Entities: Number of classes': 178
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 3
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 721
-    ObjectSomeValuesFrom: 196
-  'Info: Does the ontology fall under OWL 2 DL?': true
+    Class: 954
+    ObjectSomeValuesFrom: 255
+  'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.689
+    _dashboard: 0.533
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
-    _reuse: 0.261
-    oboscore: 0.344
+    _reuse: 0.191
+    oboscore: 0.267
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 112
-    IAO: 124
-    MMUSDVALT: 216
-    MmusDv: 721
-    RO: 91
-    oboInOwl: 654
-    owl: 9
-    rdfs: 199
-    xsd: 143
+    BFO: 138
+    IAO: 191
+    MMUSDVALT: 409
+    MmusDv: 954
+    RO: 124
+    oboInOwl: 967
+    owl: 45
+    rdfs: 279
+    xsd: 208
   'Info: Which ontologies use it?': []
 mirror_from: http://purl.obolibrary.org/obo/mmusdv.owl
 namespace: mmusdv
@@ -57,12 +57,12 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Missing version IRI
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 1 missing definitions. See ROBOT Report for details.
-    status: WARN
+    status: PASS
   FP07 Relations:
     status: PASS
   FP08 Documented:
@@ -73,26 +73,27 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    status: PASS
+    comment: 6 duplicate labels. See ROBOT Report for details.
+    status: ERROR
   FP16 Maintenance:
-    comment: last version (2020-03-10) is over two year(s) old
-    status: WARN
+    comment: Missing version IRI to check date
+    status: ERROR
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 13 errors, 13 warnings, 2 info messages.
+    comment: 9 errors, 48 warnings, 2 info messages.
     file: robot_report
     results:
-      ERROR: 13
+      ERROR: 9
       INFO: 2
-      WARN: 13
+      WARN: 48
     status: ERROR
-sha256_hash: 1c3dab8c54d51dc57f09880c2613fd5a3e6e4888de424bc6b8efc7e4d3adcc91
+sha256_hash: 8227a82624aee6f9f0f8349746798ed7df09f32a94e64354d095fe99896fed0b
 summary:
-  comment: 3 errors
+  comment: 6 errors
   status: ERROR
   summary_count:
-    ERROR: 3
+    ERROR: 6
     INFO: 0
-    WARN: 2
-version: http://purl.obolibrary.org/obo/mmusdv/releases/2020-03-10/mmusdv.owl
+    WARN: 0
+version: null

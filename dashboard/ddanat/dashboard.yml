@@ -4,44 +4,47 @@ base_prefixes:
 - DDANATALT
 - DDANAT
 changed: true
-date: 2023-08-13 19:19:15.755869
+date: 2023-09-19 16:32:37.265776
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 711
-    Declaration: 156
-    SubClassOf: 350
+    AnnotationAssertion: 723
+    Declaration: 161
+    SubClassOf: 352
     TransitiveObjectProperty: 1
-  'Axioms: Number of axioms': 1218
-  'Entities: % of entities reused': 14.47
-  'Entities: Number of annotation properties': 21
-  'Entities: Number of classes': 134
+  'Axioms: Number of axioms': 1237
+  'Entities: % of entities reused': 17.68
+  'Entities: Number of annotation properties': 25
+  'Entities: Number of classes': 135
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 2
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 834
-    ObjectSomeValuesFrom: 221
+    Class: 839
+    ObjectSomeValuesFrom: 222
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.622
+    _dashboard: 0.727
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.011
     _impact_external: 0
-    _reuse: 0.145
-    oboscore: 0.317
+    _reuse: 0.177
+    oboscore: 0.369
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 2
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    DDANAT: 834
-    DDANATALT: 224
-    IAO: 141
-    oboInOwl: 562
+    BFO: 137
+    DDANAT: 839
+    IAO: 142
+    RO: 88
+    dc: 1
+    dc11: 2
+    oboInOwl: 573
     owl: 4
-    rdfs: 160
-    xsd: 136
+    rdfs: 162
+    xsd: 137
   'Info: Which ontologies use it?':
   - ddpheno
   - go
@@ -49,23 +52,20 @@ mirror_from: http://purl.obolibrary.org/obo/ddanat.owl
 namespace: ddanat
 results:
   FP01 Open:
-    comment: Missing ontology license.
-    status: ERROR
+    status: PASS
   FP02 Common Format:
     status: PASS
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Missing version IRI
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 2 missing definitions. See ROBOT Report for details.
-    status: WARN
+    status: PASS
   FP07 Relations:
-    comment: 1 labels match RO labels. 1 non-RO properties used.
-    file: fp7
-    status: ERROR
+    status: PASS
   FP08 Documented:
     status: PASS
   FP09 Plurality of Users:
@@ -76,24 +76,24 @@ results:
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
-    comment: last version (2020-04-13) is over two year(s) old
-    status: WARN
+    comment: Missing version IRI to check date
+    status: ERROR
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 3 errors, 4 warnings, 1 info messages.
+    comment: 1 info messages.
     file: robot_report
     results:
-      ERROR: 3
+      ERROR: 0
       INFO: 1
-      WARN: 4
-    status: ERROR
-sha256_hash: d0cf6e11b3d67575a1d578f8c2f57b567960b5946db0bc4043666c2d51f770a5
+      WARN: 0
+    status: INFO
+sha256_hash: bbc97bda154ddabff4abacad2eb96c73dacfbd1da36860541cf1140c1a8441cf
 summary:
-  comment: 4 errors
+  comment: 3 errors
   status: ERROR
   summary_count:
-    ERROR: 4
-    INFO: 0
-    WARN: 2
-version: http://purl.obolibrary.org/obo/ddanat/releases/2020-04-13/ddanat.owl
+    ERROR: 3
+    INFO: 1
+    WARN: 0
+version: null

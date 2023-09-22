@@ -3,45 +3,45 @@ base_prefixes:
 - SPD
 - SPDALT
 - SPD
-changed: true
-date: 2023-08-13 21:27:49.066869
+changed: false
+date: 2023-09-21 15:48:32.768901
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 4425
-    Declaration: 854
-    SubClassOf: 1191
+    AnnotationAssertion: 4363
+    Declaration: 852
+    SubClassOf: 1201
     TransitiveObjectProperty: 1
-  'Axioms: Number of axioms': 6471
-  'Entities: % of entities reused': 2.34
+  'Axioms: Number of axioms': 6417
+  'Entities: % of entities reused': 2.58
   'Entities: Number of annotation properties': 18
   'Entities: Number of classes': 832
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
-  'Entities: Number of object properties': 4
+  'Entities: Number of object properties': 2
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 3214
+    Class: 3234
     ObjectSomeValuesFrom: 584
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.438
+    _dashboard: 0.333
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
-    _reuse: 0.023
-    oboscore: 0.219
+    _reuse: 0.026
+    oboscore: 0.167
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     IAO: 794
-    SPD: 3214
-    SPDALT: 589
-    oboInOwl: 3599
+    SPD: 3234
+    obo: 587
+    oboInOwl: 3601
     owl: 76
-    rdfs: 936
-    xsd: 962
+    rdf: 965
+    rdfs: 875
   'Info: Which ontologies use it?': []
 mirror_from: http://purl.obolibrary.org/obo/spd.owl
 namespace: spd
@@ -52,21 +52,19 @@ results:
   FP02 Common Format:
     status: PASS
   FP03 URIs:
-    status: PASS
+    comment: 0 invalid IRIs. The Ontology IRI is not valid.
+    file: fp3
+    status: ERROR
   FP04 Versioning:
-    comment: Version IRI 'http://purl.obolibrary.org/obo/spd/1.0/spd.owl' is not in
-      recommended format
-    status: WARN
+    comment: Missing version IRI
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 7 duplicate definitions. 4 missing definitions. See ROBOT Report for
-      details.
+    comment: 7 duplicate definitions. See ROBOT Report for details.
     status: ERROR
   FP07 Relations:
-    comment: 3 labels match RO labels. 1 non-RO properties used.
-    file: fp7
-    status: ERROR
+    status: PASS
   FP08 Documented:
     comment: Homepage URL (http://research.amnh.org/atol/files/) does not resolve
     status: ERROR
@@ -79,24 +77,24 @@ results:
     comment: 4 duplicate labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
-    comment: Version IRI does not have date information
-    status: INFO
+    comment: Missing version IRI to check date
+    status: ERROR
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 14 errors, 79 warnings, 1 info messages.
+    comment: 11 errors, 75 warnings, 1 info messages.
     file: robot_report
     results:
-      ERROR: 14
+      ERROR: 11
       INFO: 1
-      WARN: 79
+      WARN: 75
     status: ERROR
-sha256_hash: 5506db98f72ca7057027d8d504aaa4a7f2e076a8aa0a01225714ef483bcde7af
+sha256_hash: b00e7238362e93b28d3f4b6e212a18afd85cc521da57aab9dca0ce792e200df8
 summary:
-  comment: 7 errors
+  comment: 9 errors
   status: ERROR
   summary_count:
-    ERROR: 7
-    INFO: 1
-    WARN: 1
-version: http://purl.obolibrary.org/obo/spd/1.0/spd.owl
+    ERROR: 9
+    INFO: 0
+    WARN: 0
+version: null

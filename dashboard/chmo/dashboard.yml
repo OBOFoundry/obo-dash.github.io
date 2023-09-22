@@ -4,7 +4,7 @@ base_prefixes:
 - CHMOALT
 - CHMO
 changed: true
-date: 2023-08-13 19:16:10.574590
+date: 2023-09-19 16:30:27.145690
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 21198
@@ -31,12 +31,12 @@ metrics:
     ObjectSomeValuesFrom: 388
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.809
+    _dashboard: 0.742
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.048
     _impact_external: 0
     _reuse: 0.065
-    oboscore: 0.429
+    oboscore: 0.395
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 9
   'Info: Logical consistency': true
@@ -79,7 +79,8 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -113,10 +114,10 @@ results:
     status: WARN
 sha256_hash: 9c950db21a12c957620e8ad3fc92b0a0469a2719b98b6cea8f64f768e209c3c7
 summary:
-  comment: 1 errors
+  comment: 2 errors
   status: ERROR
   summary_count:
-    ERROR: 1
+    ERROR: 2
     INFO: 2
     WARN: 2
 version: http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl

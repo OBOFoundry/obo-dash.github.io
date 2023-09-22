@@ -3,8 +3,8 @@ base_prefixes:
 - XLMOD
 - XLMODALT
 - XLMOD
-changed: true
-date: 2023-08-13 21:37:02.663458
+changed: false
+date: 2023-09-21 15:57:56.689954
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 6214
@@ -24,12 +24,12 @@ metrics:
     ObjectSomeValuesFrom: 1814
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.638
+    _dashboard: 0.571
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
     _reuse: 0.03
-    oboscore: 0.319
+    oboscore: 0.285
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
@@ -55,7 +55,8 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -89,10 +90,10 @@ results:
     status: ERROR
 sha256_hash: b328d05a224dcccfe4ad45a567716179b85a1956e08167a46d6f309690a7b6be
 summary:
-  comment: 4 errors
+  comment: 5 errors
   status: ERROR
   summary_count:
-    ERROR: 4
+    ERROR: 5
     INFO: 1
     WARN: 1
 version: http://purl.obolibrary.org/obo/xlmod/release/2019-10-28/xlmod.owl

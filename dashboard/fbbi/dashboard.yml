@@ -4,7 +4,7 @@ base_prefixes:
 - FBBIALT
 - FBbi
 changed: true
-date: 2023-08-13 19:30:55.104445
+date: 2023-09-19 16:44:21.300568
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 3706
@@ -39,12 +39,12 @@ metrics:
     ObjectUnionOf: 1
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.616
+    _dashboard: 0.549
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
     _reuse: 0.201
-    oboscore: 0.308
+    oboscore: 0.275
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
@@ -78,7 +78,8 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -113,10 +114,10 @@ results:
     status: ERROR
 sha256_hash: 7db5258bed1d0a77b7de070f3ef39e95da5251caf0e2336c2ca383f04815f47e
 summary:
-  comment: 4 errors
+  comment: 5 errors
   status: ERROR
   summary_count:
-    ERROR: 4
+    ERROR: 5
     INFO: 1
     WARN: 2
 version: http://purl.obolibrary.org/obo/fbbi/releases/2020-11-06/fbbi.owl

@@ -4,7 +4,7 @@ base_prefixes:
 - HANCESTROALT
 - HANCESTRO
 changed: true
-date: 2023-08-13 19:43:21.408928
+date: 2023-09-19 16:56:26.689649
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 988
@@ -29,12 +29,12 @@ metrics:
     ObjectUnionOf: 1
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.949
+    _dashboard: 0.882
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.016
     _impact_external: 0.5
     _reuse: 0.438
-    oboscore: 0.482
+    oboscore: 0.449
   'Info: How many externally documented uses?': 3
   'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
@@ -68,7 +68,8 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -100,10 +101,10 @@ results:
     status: WARN
 sha256_hash: 2bf7276207a5e0d2e535707fe318a18a41badd182169eeb2a3a0d2c350f1ae68
 summary:
-  comment: 2 warnings
-  status: WARN
+  comment: 1 errors
+  status: ERROR
   summary_count:
-    ERROR: 0
+    ERROR: 1
     INFO: 1
     WARN: 2
 version: http://purl.obolibrary.org/obo/hancestro/releases/2023-07-31/hancestro-base.owl

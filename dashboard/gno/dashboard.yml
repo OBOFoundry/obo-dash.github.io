@@ -4,7 +4,7 @@ base_prefixes:
 - GNOALT
 - GNO
 changed: true
-date: 2023-08-13 19:40:58.464850
+date: 2023-09-19 16:54:06.433689
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1518059
@@ -23,12 +23,12 @@ metrics:
     Class: 566898
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.927
+    _dashboard: 0.86
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.005
     _impact_external: 0.5
     _reuse: 0.0
-    oboscore: 0.466
+    oboscore: 0.432
   'Info: How many externally documented uses?': 3
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
@@ -51,7 +51,8 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -71,7 +72,7 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: '{0} info messages.'
+    comment: 2 info messages.
     file: robot_report
     results:
       ERROR: 0
@@ -80,10 +81,10 @@ results:
     status: INFO
 sha256_hash: c3a3fbc3f6e86b02a70bdc2b824017a69355e625808a44b81c013539cea34699
 summary:
-  comment: 1 info messages
-  status: INFO
+  comment: 1 errors
+  status: ERROR
   summary_count:
-    ERROR: 0
+    ERROR: 1
     INFO: 1
     WARN: 0
 version: http://purl.obolibrary.org/obo/gno/2023-08-09/gno.owl

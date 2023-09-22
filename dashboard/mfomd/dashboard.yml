@@ -4,7 +4,7 @@ base_prefixes:
 - MFOMDALT
 - MFOMD
 changed: true
-date: 2023-08-13 19:45:34.555317
+date: 2023-09-19 16:58:19.654131
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 5734
@@ -38,12 +38,12 @@ metrics:
     ObjectSomeValuesFrom: 22
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.511
+    _dashboard: 0.444
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.022
     _impact_external: 0
     _reuse: 0.866
-    oboscore: 0.267
+    oboscore: 0.233
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 4
   'Info: Logical consistency': true
@@ -90,7 +90,8 @@ results:
     file: fp3
     status: ERROR
   FP04 Versioning:
-    status: PASS
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -124,10 +125,10 @@ results:
     status: ERROR
 sha256_hash: 378d88f742231ffe249ce2b0b42283f3126f427f70962de087d89b05a5582534
 summary:
-  comment: 6 errors
+  comment: 7 errors
   status: ERROR
   summary_count:
-    ERROR: 6
+    ERROR: 7
     INFO: 0
     WARN: 1
 version: http://purl.obolibrary.org/obo/MFOMD/2020-04-26/MFOMD.owl

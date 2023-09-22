@@ -3,50 +3,49 @@ base_prefixes:
 - HsapDv
 - HsapDv
 changed: true
-date: 2023-08-13 19:43:43.320196
+date: 2023-09-19 16:56:44.110018
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 2055
-    Declaration: 282
+    AnnotationAssertion: 2252
+    Declaration: 300
     SubAnnotationPropertyOf: 1
-    SubClassOf: 728
+    SubClassOf: 698
     SubObjectPropertyOf: 1
     TransitiveObjectProperty: 2
-  'Axioms: Number of axioms': 3069
-  'Entities: % of entities reused': 14.74
-  'Entities: Number of annotation properties': 33
-  'Entities: Number of classes': 245
+  'Axioms: Number of axioms': 3254
+  'Entities: % of entities reused': 14.8
+  'Entities: Number of annotation properties': 39
+  'Entities: Number of classes': 259
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
-  'Entities: Number of object properties': 4
+  'Entities: Number of object properties': 3
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 1701
-    ObjectSomeValuesFrom: 475
-  'Info: Does the ontology fall under OWL 2 DL?': true
+    Class: 1655
+    ObjectSomeValuesFrom: 461
+  'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.711
+    _dashboard: 0.533
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.027
     _impact_external: 0
-    _reuse: 0.147
-    oboscore: 0.369
+    _reuse: 0.148
+    oboscore: 0.28
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 5
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 248
-    HSAPDVALT: 538
-    HsapDv: 1677
-    IAO: 254
-    NCBITaxon: 12
-    RO: 223
-    UBERON: 12
+    BFO: 246
+    HSAPDVALT: 559
+    HsapDv: 1655
+    IAO: 272
+    RO: 222
     obo: 8
-    oboInOwl: 1258
-    rdfs: 319
-    xsd: 275
+    oboInOwl: 1375
+    owl: 22
+    rdfs: 347
+    xsd: 291
   'Info: Which ontologies use it?':
   - geno
   - hp
@@ -64,7 +63,8 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Missing version IRI
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -79,26 +79,27 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    status: PASS
+    comment: 10 duplicate labels. See ROBOT Report for details.
+    status: ERROR
   FP16 Maintenance:
-    comment: last version (2020-03-10) is over two year(s) old
-    status: WARN
+    comment: Missing version IRI to check date
+    status: ERROR
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 3 errors, 3 warnings, 1 info messages.
+    comment: 13 errors, 24 warnings, 1 info messages.
     file: robot_report
     results:
-      ERROR: 3
+      ERROR: 13
       INFO: 1
-      WARN: 3
+      WARN: 24
     status: ERROR
-sha256_hash: 27d2d845f26e1b43d88f905685ffd8e53985f5b2fd748359cfc8aacad1af1b43
+sha256_hash: 270902d52a0643f2234a177809a74b0becaa5f1d0f4c38547eec00cff65d5057
 summary:
-  comment: 3 errors
+  comment: 6 errors
   status: ERROR
   summary_count:
-    ERROR: 3
+    ERROR: 6
     INFO: 0
-    WARN: 1
-version: http://purl.obolibrary.org/obo/hsapdv/releases/2020-03-10/hsapdv.owl
+    WARN: 0
+version: null

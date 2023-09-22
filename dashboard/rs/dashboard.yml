@@ -3,43 +3,44 @@ base_prefixes:
 - RS
 - RSALT
 - RS
-changed: true
-date: 2023-08-13 21:27:19.791887
+changed: false
+date: 2023-09-21 15:48:05.153245
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 28490
-    Declaration: 4786
-    SubClassOf: 6554
-  'Axioms: Number of axioms': 39830
-  'Entities: % of entities reused': 0.42
-  'Entities: Number of annotation properties': 18
-  'Entities: Number of classes': 4768
+    AnnotationAssertion: 31540
+    Declaration: 5294
+    SubAnnotationPropertyOf: 1
+    SubClassOf: 7095
+  'Axioms: Number of axioms': 43930
+  'Entities: % of entities reused': 0.43
+  'Entities: Number of annotation properties': 22
+  'Entities: Number of classes': 5272
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 1
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 17876
+    Class: 19462
     ObjectSomeValuesFrom: 6
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.564
+    _dashboard: 0.52
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.005
     _impact_external: 0
     _reuse: 0.004
-    oboscore: 0.284
+    oboscore: 0.263
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    IAO: 106
-    RS: 17876
-    RSALT: 7
-    oboInOwl: 23686
-    owl: 15
-    rdfs: 4762
+    IAO: 112
+    RS: 19462
+    RSALT: 9
+    oboInOwl: 26227
+    owl: 17
+    rdfs: 5268
     xsd: 62
   'Info: Which ontologies use it?':
   - epio
@@ -54,13 +55,12 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    comment: Version IRI 'http://purl.obolibrary.org/obo/rs/6.107/rs.owl' is not in
-      recommended format
-    status: WARN
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 40 duplicate definitions. 4681 missing definitions. See ROBOT Report
+    comment: 40 duplicate definitions. 5182 missing definitions. See ROBOT Report
       for details.
     status: ERROR
   FP07 Relations:
@@ -75,7 +75,7 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 4 duplicate labels. See ROBOT Report for details.
+    comment: 8 duplicate labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
     comment: Version IRI does not have date information
@@ -83,19 +83,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 47 errors, 4681 warnings, 4 info messages.
+    comment: 51 errors, 5185 warnings, 5 info messages.
     file: robot_report
     results:
-      ERROR: 47
-      INFO: 4
-      WARN: 4681
+      ERROR: 51
+      INFO: 5
+      WARN: 5185
     status: ERROR
-sha256_hash: 8279dc0f6f58d9f08416d40e82f0e1ea1e903ac4101e8629ef1343b8d29c8458
+sha256_hash: 6b863785e486ec58a78e61980400d22334bbf234dc3d9af433bf9a9e3dadd848
 summary:
-  comment: 5 errors
+  comment: 6 errors
   status: ERROR
   summary_count:
-    ERROR: 5
+    ERROR: 6
     INFO: 2
-    WARN: 1
-version: http://purl.obolibrary.org/obo/rs/6.107/rs.owl
+    WARN: 0
+version: http://purl.obolibrary.org/obo/rs/6.205/rs.owl

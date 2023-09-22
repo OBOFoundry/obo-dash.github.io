@@ -4,7 +4,7 @@ base_prefixes:
 - LABOALT
 - LABO
 changed: true
-date: 2023-08-13 19:44:30.513679
+date: 2023-09-19 16:57:28.290886
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1404
@@ -45,12 +45,12 @@ metrics:
     ObjectUnionOf: 4
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.704
+    _dashboard: 0.638
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0.25
     _reuse: 0.688
-    oboscore: 0.352
+    oboscore: 0.319
   'Info: How many externally documented uses?': 1
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
@@ -87,7 +87,8 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -122,10 +123,10 @@ results:
     status: ERROR
 sha256_hash: edebab71df1d8dcdf6b530e82f9ef30b15e0df1c2de3213c9be4984d82bfa21e
 summary:
-  comment: 3 errors
+  comment: 4 errors
   status: ERROR
   summary_count:
-    ERROR: 3
+    ERROR: 4
     INFO: 1
     WARN: 1
 version: http://purl.obolibrary.org/obo/labo/2021-06-08/labo.owl
