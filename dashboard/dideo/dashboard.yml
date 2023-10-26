@@ -4,7 +4,7 @@ base_prefixes:
 - DIDEOALT
 - DIDEO
 changed: true
-date: 2023-09-19 16:32:48.568912
+date: 2023-10-20 12:21:08.579793
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 6407
@@ -31,8 +31,8 @@ metrics:
     SubPropertyChainOf: 11
     TransitiveObjectProperty: 6
   'Axioms: Number of axioms': 8395
-  'Entities: % of entities reused': 79.95
-  'Entities: Number of annotation properties': 119
+  'Entities: % of entities reused': 79.93
+  'Entities: Number of annotation properties': 118
   'Entities: Number of classes': 623
   'Entities: Number of data properties': 6
   'Entities: Number of individuals': 24
@@ -51,14 +51,14 @@ metrics:
     ObjectOneOf: 4
     ObjectSomeValuesFrom: 535
     ObjectUnionOf: 36
-  'Info: Does the ontology fall under OWL 2 DL?': false
+  'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.438
+    _dashboard: 0.66
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.005
     _impact_external: 0
     _reuse: 0.799
-    oboscore: 0.222
+    oboscore: 0.333
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
@@ -111,17 +111,13 @@ mirror_from: http://purl.obolibrary.org/obo/dideo.owl
 namespace: dideo
 results:
   FP01 Open:
-    comment: License should use property 'http://purl.org/dc/terms/license'.
-    status: WARN
+    status: PASS
   FP02 Common Format:
     status: PASS
   FP03 URIs:
-    comment: 0 invalid IRIs. The Ontology IRI is not valid.
-    file: fp3
-    status: ERROR
+    status: PASS
   FP04 Versioning:
-    comment: Missing version IRI
-    status: ERROR
+    status: PASS
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -143,24 +139,23 @@ results:
     comment: 2 duplicate labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
-    comment: Missing version IRI to check date
-    status: ERROR
+    status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 13 errors, 12 warnings, 48 info messages.
+    comment: 12 errors, 12 warnings, 48 info messages.
     file: robot_report
     results:
-      ERROR: 13
+      ERROR: 12
       INFO: 48
       WARN: 12
     status: ERROR
-sha256_hash: 3a1e9d9bd4974a02cf4073d041feb08ffaa050a7402f0ad07c0aa583ae3b1af0
+sha256_hash: 1f4da6b6183d897f972890fac672ef637234da6749ba4db233887439ce59ee1b
 summary:
-  comment: 7 errors
+  comment: 4 errors
   status: ERROR
   summary_count:
-    ERROR: 7
+    ERROR: 4
     INFO: 1
-    WARN: 1
-version: null
+    WARN: 0
+version: http://purl.obolibrary.org/obo/dideo/release/2023-10-16/dideo.owl
