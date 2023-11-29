@@ -1,63 +1,63 @@
-base_generated: false
+base_generated: true
 base_prefixes:
 - MP
 - MPALT
 - MP
 changed: false
-date: 2023-10-25 08:25:41.771498
+date: 2023-11-22 12:06:08.481148
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 102336
-    Declaration: 18461
-    EquivalentClasses: 10039
+    AnnotationAssertion: 102435
+    Declaration: 18473
+    EquivalentClasses: 10047
     SubAnnotationPropertyOf: 5
-    SubClassOf: 18222
-  'Axioms: Number of axioms': 149063
-  'Entities: % of entities reused': 22.65
+    SubClassOf: 18238
+  'Axioms: Number of axioms': 149198
+  'Entities: % of entities reused': 22.63
   'Entities: Number of annotation properties': 41
-  'Entities: Number of classes': 18406
+  'Entities: Number of classes': 18417
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 16
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 97026
-    ObjectIntersectionOf: 11786
-    ObjectSomeValuesFrom: 33557
+    Class: 97101
+    ObjectIntersectionOf: 11794
+    ObjectSomeValuesFrom: 33581
     ObjectUnionOf: 1
-  'Info: Does the ontology fall under OWL 2 DL?': false
+  'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.956
+    _dashboard: 0.822
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.049
     _impact_external: 0.5
     _reuse: 0.226
-    oboscore: 0.502
+    oboscore: 0.435
   'Info: How many externally documented uses?': 3
   'Info: How many ontologies use it?': 9
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 12275
+    BFO: 12283
     CHEBI: 940
-    CL: 1754
+    CL: 1758
     GO: 2850
-    IAO: 14220
-    MP: 60149
+    IAO: 14230
+    MP: 60199
     MPATH: 332
     MPATHALT: 164
     NBO: 377
-    PATO: 20430
+    PATO: 20446
     PR: 238
-    RO: 21069
-    UBERON: 9943
-    dc: 3864
-    dc11: 4129
+    RO: 21085
+    UBERON: 9948
+    dc: 3874
+    dc11: 4140
     obo: 10
-    oboInOwl: 79237
+    oboInOwl: 79306
     owl: 450
-    rdf: 13909
-    rdfs: 14787
+    rdf: 13918
+    rdfs: 14800
   'Info: Which ontologies use it?':
   - ado
   - chiro
@@ -68,7 +68,7 @@ metrics:
   - scdo
   - txpo
   - upheno
-mirror_from: http://purl.obolibrary.org/obo/mp/mp-base.owl
+mirror_from: http://purl.obolibrary.org/obo/mp.owl
 namespace: mp
 results:
   FP01 Open:
@@ -78,7 +78,8 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -99,19 +100,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 126 warnings, 13762 info messages.
+    comment: 126 warnings, 13772 info messages.
     file: robot_report
     results:
       ERROR: 0
-      INFO: 13762
+      INFO: 13772
       WARN: 126
     status: WARN
-sha256_hash: 021661b11bea4c6b049ec9e93d257152e532450559ae1043c74cee862328161d
+sha256_hash: 9609d6dc35c181146582604eda32fbdc2b6ac6d85123d32c751b4c34e5cf167b
 summary:
-  comment: 2 warnings
-  status: WARN
+  comment: 1 errors
+  status: ERROR
   summary_count:
-    ERROR: 0
+    ERROR: 1
     INFO: 0
     WARN: 2
-version: http://purl.obolibrary.org/obo/mp/releases/2023-10-18/mp-base.owl
+version: http://purl.obolibrary.org/obo/mp/releases/2023-11-15/mp-base.owl

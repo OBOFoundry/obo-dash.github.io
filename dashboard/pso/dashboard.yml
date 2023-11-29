@@ -1,97 +1,70 @@
-base_generated: true
+base_generated: false
 base_prefixes:
 - PSO
 - PSOALT
 - PSO
 changed: false
-date: 2023-10-26 09:10:00.048127
+date: 2023-11-28 17:39:54.135486
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 8309
-    Declaration: 3922
-    DisjointClasses: 11
-    EquivalentClasses: 134
-    FunctionalObjectProperty: 1
-    InverseObjectProperties: 24
-    ObjectPropertyDomain: 29
-    ObjectPropertyRange: 28
-    ReflexiveObjectProperty: 1
-    Rule: 20
-    SubClassOf: 4262
-    SubObjectPropertyOf: 129
-    SubPropertyChainOf: 55
-    SymmetricObjectProperty: 2
-    TransitiveObjectProperty: 13
-  'Axioms: Number of axioms': 16940
-  'Entities: % of entities reused': 97.0
-  'Entities: Number of annotation properties': 48
-  'Entities: Number of classes': 3764
+    AnnotationAssertion: 646
+    Declaration: 434
+    EquivalentClasses: 231
+    SubClassOf: 4
+  'Axioms: Number of axioms': 1315
+  'Entities: % of entities reused': 46.68
+  'Entities: Number of annotation properties': 10
+  'Entities: Number of classes': 423
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
-  'Entities: Number of object properties': 115
+  'Entities: Number of object properties': 3
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 13222
-    ObjectAllValuesFrom: 3
-    ObjectHasSelf: 1
-    ObjectIntersectionOf: 358
-    ObjectSomeValuesFrom: 1040
-    ObjectUnionOf: 1
+    Class: 1584
+    ObjectIntersectionOf: 231
+    ObjectSomeValuesFrom: 691
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.556
+    _dashboard: 0.644
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
-    _reuse: 0.97
-    oboscore: 0.278
+    _reuse: 0.467
+    oboscore: 0.322
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 503
-    CARO: 13
-    CHEBI: 135
-    FOODON: 2
-    GO: 29
-    IAO: 651
-    NCBITaxon: 10632
-    PATO: 2
-    PECO: 229
-    PO: 1110
-    PSO: 905
-    RO: 1391
-    dc: 10
-    dc11: 3
-    foaf: 3
-    obo: 2
-    oboInOwl: 7652
-    owl: 100
-    prefix_unknown: 4
-    rdf: 19
-    rdfs: 3893
-    xsd: 801
+    BFO: 2
+    IAO: 230
+    NCBITaxon: 639
+    PO: 241
+    PSO: 702
+    RO: 694
+    dc: 4
+    dc11: 1
+    oboInOwl: 183
+    rdfs: 236
   'Info: Which ontologies use it?': []
-mirror_from: http://purl.obolibrary.org/obo/pso.owl
+mirror_from: http://purl.obolibrary.org/obo/pso/pso-base.owl
 namespace: pso
 results:
   FP01 Open:
-    comment: Missing ontology license.
+    comment: Ontology license 'https://creativecommons.org/licenses/by/4.0/' does
+      not match registry license 'http://creativecommons.org/licenses/by/3.0/'.
     status: ERROR
   FP02 Common Format:
     status: PASS
   FP03 URIs:
-    comment: 0 invalid IRIs. The Ontology IRI is not valid.
-    file: fp3
-    status: ERROR
+    status: PASS
   FP04 Versioning:
     comment: Version IRI does not resolve
     status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 2 missing definitions. See ROBOT Report for details.
+    comment: 4 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     status: PASS
@@ -103,26 +76,26 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    status: PASS
+    comment: 16 duplicate labels. See ROBOT Report for details.
+    status: ERROR
   FP16 Maintenance:
-    comment: last version (2020-05-19) is over two year(s) old
-    status: WARN
+    status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 3 errors, 2 warnings, 1 info messages.
+    comment: 16 errors, 4 warnings, 229 info messages.
     file: robot_report
     results:
-      ERROR: 3
-      INFO: 1
-      WARN: 2
+      ERROR: 16
+      INFO: 229
+      WARN: 4
     status: ERROR
-sha256_hash: 69eaba8261631741ed0c25927fba541c624758507d38f3cb5eb7ece941d79c15
+sha256_hash: 3f5fe443939765585106fe1cfc8b13226df0c5d7992132878ddcce701faef143
 summary:
   comment: 5 errors
   status: ERROR
   summary_count:
     ERROR: 5
     INFO: 0
-    WARN: 2
-version: http://purl.obolibrary.org/obo/pso/releases/2020-05-19/pso.owl
+    WARN: 1
+version: http://purl.obolibrary.org/obo/pso/releases/2023-11-14/pso-base.owl

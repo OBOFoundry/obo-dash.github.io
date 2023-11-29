@@ -1,10 +1,10 @@
-base_generated: false
+base_generated: true
 base_prefixes:
 - FBdv
 - FBDVALT
 - FBdv
 changed: false
-date: 2023-10-25 08:08:42.108601
+date: 2023-11-22 11:48:42.267009
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1192
@@ -28,12 +28,12 @@ metrics:
     ObjectSomeValuesFrom: 445
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.993
+    _dashboard: 0.86
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.016
     _impact_external: 0.25
     _reuse: 0.144
-    oboscore: 0.504
+    oboscore: 0.438
   'Info: How many externally documented uses?': 1
   'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
@@ -55,7 +55,7 @@ metrics:
   - dpo
   - fbcv
   - upheno
-mirror_from: http://purl.obolibrary.org/obo/fbdv/fbdv-base.owl
+mirror_from: http://purl.obolibrary.org/obo/fbdv.owl
 namespace: fbdv
 results:
   FP01 Open:
@@ -65,7 +65,8 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -90,10 +91,10 @@ results:
     status: PASS
 sha256_hash: b806499cca37f05c9d4041db0145e19d39017777d182473ae80cb361de1b7fc8
 summary:
-  comment: 1 info messages
-  status: INFO
+  comment: 1 errors
+  status: ERROR
   summary_count:
-    ERROR: 0
+    ERROR: 1
     INFO: 1
     WARN: 0
 version: http://purl.obolibrary.org/obo/fbdv/releases/2023-10-18/fbdv-base.owl
