@@ -1,10 +1,10 @@
-base_generated: true
+base_generated: false
 base_prefixes:
 - SYMP
 - SYMPALT
 - SYMP
 changed: false
-date: 2023-11-28 17:41:13.449044
+date: 2023-12-22 10:38:16.306810
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 4548
@@ -22,14 +22,14 @@ metrics:
     Class: 2803
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.882
+    _dashboard: 0.942
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.049
+    _impact: 0.044
     _impact_external: 0.25
     _reuse: 0.024
-    oboscore: 0.466
+    oboscore: 0.493
   'Info: How many externally documented uses?': 1
-  'Info: How many ontologies use it?': 9
+  'Info: How many ontologies use it?': 8
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -49,11 +49,10 @@ metrics:
   - cido
   - doid
   - epio
-  - eupath
   - genepio
   - ontoneo
   - scdo
-mirror_from: http://purl.obolibrary.org/obo/symp.owl
+mirror_from: http://purl.obolibrary.org/obo/symp/symp-base.owl
 namespace: symp
 results:
   FP01 Open:
@@ -82,7 +81,8 @@ results:
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
-    status: PASS
+    comment: last version (2022-11-30) is over one year(s) old
+    status: INFO
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
@@ -93,12 +93,12 @@ results:
       INFO: 1
       WARN: 478
     status: WARN
-sha256_hash: d7943a9ffc2bca6936d884fb2bd761469306f755bb5305e37e6a520e44257966
+sha256_hash: 6751b986c30c3988bc60633d383542707dfb59047744041d77a084d9732c09d6
 summary:
   comment: 2 warnings
   status: WARN
   summary_count:
     ERROR: 0
-    INFO: 1
+    INFO: 2
     WARN: 2
-version: http://purl.obolibrary.org/obo/symp/releases/2022-11-30/symp.owl
+version: http://purl.obolibrary.org/obo/symp/releases/2022-11-30/symp-base.owl

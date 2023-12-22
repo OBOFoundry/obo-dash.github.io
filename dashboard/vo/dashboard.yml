@@ -4,7 +4,7 @@ base_prefixes:
 - VOALT
 - VO
 changed: false
-date: 2023-11-28 17:45:34.679352
+date: 2023-12-22 10:42:37.641350
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 46860
@@ -47,14 +47,14 @@ metrics:
     ObjectUnionOf: 205
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.393
+    _dashboard: 0.571
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.077
-    _impact_external: 0
+    _impact: 0.071
+    _impact_external: 0.5
     _reuse: 0.166
-    oboscore: 0.235
-  'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 14
+    oboscore: 0.321
+  'Info: How many externally documented uses?': 4
+  'Info: How many ontologies use it?': 13
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -97,7 +97,6 @@ metrics:
   - apollo_sv
   - cido
   - cto
-  - eupath
   - genepio
   - oae
   - ohpi
@@ -111,10 +110,8 @@ mirror_from: http://purl.obolibrary.org/obo/vo.owl
 namespace: vo
 results:
   FP01 Open:
-    comment: License should use property 'http://purl.org/dc/terms/license'. Ontology
-      license 'http://creativecommons.org/licenses/by/4.0/' does not match registry
-      license 'http://creativecommons.org/licenses/by/3.0/'.
-    status: ERROR
+    comment: License should use property 'http://purl.org/dc/terms/license'.
+    status: WARN
   FP02 Common Format:
     status: PASS
   FP03 URIs:
@@ -133,11 +130,9 @@ results:
     file: fp7
     status: INFO
   FP08 Documented:
-    comment: Homepage URL (http://www.violinet.org/vaccineontology) does not resolve
-    status: ERROR
+    status: PASS
   FP09 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
+    status: PASS
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
@@ -158,10 +153,10 @@ results:
     status: ERROR
 sha256_hash: fe5b6d743948070b5a03ac2bfff36568bbc6f9484db2c94b14a51e13313751da
 summary:
-  comment: 8 errors
+  comment: 5 errors
   status: ERROR
   summary_count:
-    ERROR: 8
+    ERROR: 5
     INFO: 1
-    WARN: 0
+    WARN: 1
 version: null
