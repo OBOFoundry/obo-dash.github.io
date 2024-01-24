@@ -1,17 +1,6 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	duplicate_definition	OBCS:0000224	IAO:0000115	A data set that follows a probability distribution@en
-ERROR	duplicate_definition	OBCS:0000225	IAO:0000115	A data set that follows a probability distribution@en
-ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/obcs.owl	dc:title	
-ERROR	multiple_definitions	OBCS:0000240	IAO:0000115	An inferential statistical data analysis that  includes all randomized patients in the groups to which they were randomly assigned. The intent-to-treat analysis  is based on the initial treatment assignment and not on the treatment eventually received.  ITT analysis includes every subject who is randomized according to randomized treatment assignment. It ignores noncompliance, protocol deviations, withdrawal, and anything that happens after randomization.
-ERROR	multiple_definitions	OBCS:0000240	IAO:0000115	HL, QL, YH
-WARN	annotation_whitespace	OBCS:0000001	IAO:0000115	a data transformation that has input of mulitple data and report overall trend of the data. 
-WARN	annotation_whitespace	OBCS:0000002	IAO:0000119	WEB: http://en.wikipedia.org/wiki/Data_collection 
-WARN	annotation_whitespace	OBCS:0000058	IAO:0000115	A data item that measures the proportion of actual positives which are correctly identified as such (e.g. the percentage of sick people who are correctly identified as having the condition). 
-WARN	annotation_whitespace	OBCS:0000060	IAO:0000115	A data item that refers to the extent to which a concept conclusion or measurement is well-founded and corresponds accurately to the real world. 
 WARN	annotation_whitespace	OBCS:0000062	IAO:0000115	A plan specification that provides a detailed outline of which measurements will be taken at what times, on which material, in what manner, and by whom. Sampling plans should be designed in such a way that the resulting data will contain a representative sample of the parameters of interest and allow for all questions, as stated in the goals, to be answered. 
 WARN	annotation_whitespace	OBCS:0000118	IAO:0000115	A quantitative confidence value that expresses how many times more likely the data are under one model than the other. 
-WARN	annotation_whitespace	OBCS:0000121	IAO:0000118	"significantly statistical data analysis
-"
 WARN	annotation_whitespace	OBCS:0000124	IAO:0000115	A statistical data analysis objective where the aim is to make inference using population sample data. 
 WARN	annotation_whitespace	OBCS:0000126	IAO:0000119	WEB: http://en.wikipedia.org/wiki/Random_variable  
 WARN	annotation_whitespace	OBCS:0000127	IAO:0000115	An objective specification where the aim is to collect data. 
@@ -20,8 +9,6 @@ WARN	annotation_whitespace	OBCS:0000135	IAO:0000119	WEB: http://www.stats.gla.ac
 WARN	annotation_whitespace	OBCS:0000140	IAO:0000115	A normalization data transformation that used to create normalized gene expression level from microarray raw data. The raw intensity values are background corrected, log2 transformed and then quantile normalized in the RMA normalization process. 
 WARN	annotation_whitespace	OBCS:0000141	IAO:0000119	http://www.ncbi.nlm.nih.gov/pmc/articles/PMC33173/http://en.wikipedia.org/wiki/Significance_analysis_of_microarrays
 WARN	annotation_whitespace	OBCS:0000142	IAO:0000119	http://en.wikipedia.org/wiki/Signal-to-noise_ratiohttp://www.ncbi.nlm.nih.gov/pubmed/10521349
-WARN	annotation_whitespace	OBCS:0000146	IAO:0000115	"A contingency table with two rows and two columns that reports the number of false positives, false negatives, true positives, and true negatives. This allows more detailed analysis than mere proportion of correct guesses (accuracy). 
-"
 WARN	annotation_whitespace	OBCS:0000147	IAO:0000119	http://www.pnas.org/content/102/43/15545.abstract
 WARN	annotation_whitespace	OBCS:0000164	IAO:0000119	"Storey J.D. (2007) The optimal discovery procedure: A new approach to simultaneous significance testing, Journal of the Royal Statistical Society, Series B, 69: 347-368.
 Storey J.D., Dai J.Y., and Leek J.T. (2007) The optimal discovery procedure for large-scale significance testing, with applications to comparative microarray experiments, Biostatistics, 8: 414-432.
@@ -31,19 +18,28 @@ Storey J.D., Xiao W., Leek J.T., Tompkins R.G., and Davis R.W. (2005) Significan
 WARN	annotation_whitespace	OBCS:0000165	IAO:0000115	"A software that can be used to produce lists of differentially expressed genes with confidence measures attached. These lists are generated via a False Discovery Rate (FDR) method of controlling the false positives. Patterns from Gene Expression (PaGE) is more than a differential expression analysis tool.  PaGE is a tool to attach descriptive, dependable, and easily interpretable expression patterns to genes across multiple conditions, each represented by a set of replicated array experiments. 
 "
 WARN	annotation_whitespace	OBCS:0000165	IAO:0000116	The input consists of (replicated) intensities from a collection of array experiments from two or more conditions (or from a collection of direct comparisons on 2-channel arrays). The output consists of patterns, one for each row identifier in the data file. One condition is used as a reference to which the other types are compared. The length of a pattern equals the number of non-reference sample types. The symbols in the patterns are integers, where positive integers represent up-regulation as compared to the reference sample type and negative integers represent down-regulation. The patterns are based on the false discovery rates for each position in the pattern, so that the number of positive and negative symbols that appear in each position of the pattern is as descriptive as the data variability allows. The patterns generated are easily interpretable in that integers are used to represent different levels of up- or down-regulation as compared to the reference sample type. 
-WARN	annotation_whitespace	OBCS:0000166	IAO:0000119	"PMID:19553195
-Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription factor targets from ChIP-Seq data. Nucleic Acids Res., 37(17): e113. doi: 10.1093/nar/gkp536.
-"
 WARN	annotation_whitespace	OBCS:0000167	IAO:0000119	http://en.wikipedia.org/wiki/Peak_calling
 WARN	annotation_whitespace	OBCS:0000226	IAO:0000115	A data set that is an aggregate of numerical data item. 
-WARN	annotation_whitespace	OBCS:0000228	IAO:0000115	An confidence interval with 95 percent probability that the true population value can be found. 
 WARN	annotation_whitespace	OBCS:0000231	IAO:0000115	A rate of deaths (in general, or due to a specific cause) that in a particular population, scaled to the size of that population, per unit of time. 
 WARN	annotation_whitespace	OBCS:0000232	IAO:0000115	A rate of unit shif in a hospital. 
+WARN	annotation_whitespace	OBCS:0000264	IAO:0000115	A broad class of computational algorithms that rely on repeated random sampling to obtain numerical results.The goal of Monte Carlo analysis is to trace out the structure of the distributions of model output that results from specified uncertainty distributions of model inputs and model parameters.  
+WARN	annotation_whitespace	OBCS:0000330	IAO:0000115	Organizational uncertainty arose when information was lost or trapped owing to the local division of labor or the circumstances of alliances and collaborations. 
+WARN	annotation_whitespace	OBCS:0000331	IAO:0000115	Technical uncertainty developed as a result of inadequate tools or ambiguous information about techniques. Technical uncertainty arose from difficulties with subjects, equipment, and procedures, including the lack of standard  measurement techniques. 
+WARN	annotation_whitespace	OBCS:0000343	IAO:0000115	Reducible  ignorance may be resolved by conducting further research,  which implies that it might be possible to somehow achieve a  better understanding. 
+WARN	annotation_whitespace	OBCS:0000344	IAO:0000115	Irreducible ignorance applies when neither research nor development can provide sufficient knowledge about the essential relationships. 
+WARN	annotation_whitespace	OBCS:0000345	IAO:0000115	Total ignorance is the other extreme from determinism on the scale of uncertainty, which implies a deep level of uncertainty, to the extent that we do not even know that we do not know. 
+WARN	annotation_whitespace	OBCS:0000346	IAO:0000115	Context uncertainty includes uncertainty about the external economic, environmental, political, social, and technological situation that forms the context for the problem being examined. The context could fall within the past, the present, or the future. 
+WARN	annotation_whitespace	OBCS:0000351	IAO:0000115	Uncertainty about the external driving forces that produce changes within the system (the relevant scenario variables and policy variables) and the magnitude of the forces (the values of the scenario and policy variables). 
+WARN	annotation_whitespace	OBCS:0000352	IAO:0000115	Uncertainty about the systemdata that ‘drive’ themodel and typically quantify relevant features of the reference system and its behaviour (e.g. land-use maps, data on infrastructure (roads, houses)). Uncertainty about system data is generated by a lack of knowledge of the properties (including both the deterministic and the stochastic properties) of the underlying system and deficiencies in the description of the variability that can be an inherent feature of some of the phenomena under observation. 
+WARN	annotation_whitespace	OBCS:0000362	IAO:0000115	A belief is psychologically certain when the subject who has it is supremely convinced of its truth. Certainty in this sense is similar to incorrigibility, which is the property a belief has of being such that the subject is incapable of giving it up. But psychological certainty is not the same thing as incorrigibility. A belief can be certain in this sense without being incorrigible; this may happen, for example, when the subject receives a very compelling bit of counterevidence to the (previously) certain belief and gives it up for that reason. Moreover, a belief can be incorrigible without being psychologically certain. For example, a mother may be incapable of giving up the belief that her son did not commit a gruesome murder, and yet, compatible with that inextinguishable belief, she may be tortured by doubt. 
+WARN	annotation_whitespace	http://purl.obolibrary.org/obo/obcs.owl	dc11:contributor	Chris Stoeckert @en
 WARN	annotation_whitespace	http://purl.obolibrary.org/obo/obcs.owl	dc11:description	OBCS stands for the Ontology of Biological and Clinical Statistics. OBCS is an ontology in the domain of biological and clinical statistics. It is aligned with the Basic Formal Ontology (BFO) and the Ontology for Biomedical Investigations (OBI). OBCS imports all possible biostatistics terms in OBI and includes many additional biostatistics terms, some of which were proposed and discussed in the OBI face-to-face workshop in Ann Arbor in 2012.  @en
 WARN	duplicate_exact_synonym	OBCS:0000162	IAO:0000118	translation validity
 WARN	duplicate_exact_synonym	OBCS:0000163	IAO:0000118	translation validity
 WARN	duplicate_exact_synonym	OBCS:0000241	IAO:0000118	KS test
 WARN	duplicate_exact_synonym	OBCS:0000243	IAO:0000118	KS test
+WARN	duplicate_exact_synonym	OBCS:0000326	IAO:0000118	imprecision@en
+WARN	duplicate_exact_synonym	OBCS:0000327	IAO:0000118	imprecision@en
 WARN	duplicate_exact_synonym	OBCS:0000005	IAO:0000118	Gaussian distribution
 WARN	duplicate_exact_synonym	OBCS:0000211	IAO:0000118	Gaussian distribution
 WARN	duplicate_exact_synonym	OBCS:0000246	IAO:0000118	CMH test
@@ -54,24 +50,83 @@ WARN	equivalent_class_axiom_no_genus	OBCS:0000170	OBI:0000312	OBCS:0000169
 WARN	equivalent_class_axiom_no_genus	OBCS:0000224	OBCS:0000223	OBCS:0000010
 WARN	equivalent_class_axiom_no_genus	OBCS:0000225	OBCS:0000223	OBCS:0000005
 WARN	equivalent_class_axiom_no_genus	OBCS:0000230	OBI:0000293	OBI:0000078
-WARN	invalid_xref	OBCS:0000003	oboInOwl:hasDbXref	STATO_0000204
-WARN	invalid_xref	OBCS:0000004	oboInOwl:hasDbXref	STATO_0000268
-WARN	invalid_xref	OBCS:0000005	oboInOwl:hasDbXref	STATO_0000227
-WARN	invalid_xref	OBCS:0000006	oboInOwl:hasDbXref	STATO_0000059
 WARN	invalid_xref	OBCS:0000012	oboInOwl:hasDbXref	STATO_0000036
-WARN	invalid_xref	OBCS:0000015	oboInOwl:hasDbXref	STATO_0000029
-WARN	invalid_xref	OBCS:0000054	oboInOwl:hasDbXref	STATO_0000182
-WARN	invalid_xref	OBCS:0000058	oboInOwl:hasDbXref	STATO_0000233
-WARN	invalid_xref	OBCS:0000059	oboInOwl:hasDbXref	STATO_0000134
-WARN	invalid_xref	OBCS:0000078	oboInOwl:hasDbXref	STATO_0000053
-WARN	invalid_xref	OBCS:0000079	oboInOwl:hasDbXref	STATO_0000220
-WARN	invalid_xref	OBCS:0000119	oboInOwl:hasDbXref	STATO_0000229
-WARN	invalid_xref	OBCS:0000125	oboInOwl:hasDbXref	STATO_0000160
-WARN	invalid_xref	OBCS:0000146	oboInOwl:hasDbXref	STATO_0000138
 WARN	missing_definition	OBCS:0000020	IAO:0000115	
-INFO	lowercase_definition	OBCS:0000001	IAO:0000115	a data transformation that has input of mulitple data and report overall trend of the data. 
-INFO	lowercase_definition	OBCS:0000002	IAO:0000115	a planned process that gathers and measures information on variables of interest, in an established systematic fashion that enables one to answer stated research questions, test hypotheses, and evaluate outcomes. Data collection results in a collection of data.
-INFO	lowercase_definition	OBCS:0000193	IAO:0000115	an information content entity that refers to a number value of a data item.
-INFO	lowercase_definition	OBCS:0000221	IAO:0000115	an annotation property that represents a mathematical formula.
-INFO	lowercase_definition	OBCS:0000223	IAO:0000115	a relation between a data set and a probability distribution
-INFO	lowercase_definition	OBCS:0000227	IAO:0000115	a relation between a probability distribution and probability.
+WARN	missing_definition	OBCS:0000257	IAO:0000115	
+WARN	missing_definition	OBCS:0000258	IAO:0000115	
+WARN	missing_definition	OBCS:0000262	IAO:0000115	
+WARN	missing_definition	OBCS:0000271	IAO:0000115	
+WARN	missing_definition	OBCS:0000272	IAO:0000115	
+WARN	missing_definition	OBCS:0000273	IAO:0000115	
+WARN	missing_definition	OBCS:0000275	IAO:0000115	
+WARN	missing_definition	OBCS:0000276	IAO:0000115	
+WARN	missing_definition	OBCS:0000277	IAO:0000115	
+WARN	missing_definition	OBCS:0000278	IAO:0000115	
+WARN	missing_definition	OBCS:0000279	IAO:0000115	
+WARN	missing_definition	OBCS:0000280	IAO:0000115	
+WARN	missing_definition	OBCS:0000281	IAO:0000115	
+WARN	missing_definition	OBCS:0000282	IAO:0000115	
+WARN	missing_definition	OBCS:0000283	IAO:0000115	
+WARN	missing_definition	OBCS:0000284	IAO:0000115	
+WARN	missing_definition	OBCS:0000285	IAO:0000115	
+WARN	missing_definition	OBCS:0000286	IAO:0000115	
+WARN	missing_definition	OBCS:0000287	IAO:0000115	
+WARN	missing_definition	OBCS:0000288	IAO:0000115	
+WARN	missing_definition	OBCS:0000289	IAO:0000115	
+WARN	missing_definition	OBCS:0000290	IAO:0000115	
+WARN	missing_definition	OBCS:0000291	IAO:0000115	
+WARN	missing_definition	OBCS:0000292	IAO:0000115	
+WARN	missing_definition	OBCS:0000293	IAO:0000115	
+WARN	missing_definition	OBCS:0000294	IAO:0000115	
+WARN	missing_definition	OBCS:0000295	IAO:0000115	
+WARN	missing_definition	OBCS:0000296	IAO:0000115	
+WARN	missing_definition	OBCS:0000297	IAO:0000115	
+WARN	missing_definition	OBCS:0000298	IAO:0000115	
+WARN	missing_definition	OBCS:0000299	IAO:0000115	
+WARN	missing_definition	OBCS:0000300	IAO:0000115	
+WARN	missing_definition	OBCS:0000301	IAO:0000115	
+WARN	missing_definition	OBCS:0000302	IAO:0000115	
+WARN	missing_definition	OBCS:0000303	IAO:0000115	
+WARN	missing_definition	OBCS:0000304	IAO:0000115	
+WARN	missing_definition	OBCS:0000305	IAO:0000115	
+WARN	missing_definition	OBCS:0000306	IAO:0000115	
+WARN	missing_definition	OBCS:0000307	IAO:0000115	
+WARN	missing_definition	OBCS:0000308	IAO:0000115	
+WARN	missing_definition	OBCS:0000309	IAO:0000115	
+WARN	missing_definition	OBCS:0000310	IAO:0000115	
+WARN	missing_definition	OBCS:0000311	IAO:0000115	
+WARN	missing_definition	OBCS:0000312	IAO:0000115	
+WARN	missing_definition	OBCS:0000313	IAO:0000115	
+WARN	missing_definition	OBCS:0000314	IAO:0000115	
+WARN	missing_definition	OBCS:0000315	IAO:0000115	
+WARN	missing_definition	OBCS:0000316	IAO:0000115	
+WARN	missing_definition	OBCS:0000317	IAO:0000115	
+WARN	missing_definition	OBCS:0000318	IAO:0000115	
+WARN	missing_definition	OBCS:0000324	IAO:0000115	
+WARN	missing_definition	OBCS:0000325	IAO:0000115	
+WARN	missing_definition	OBCS:0000332	IAO:0000115	
+WARN	missing_definition	OBCS:0000333	IAO:0000115	
+WARN	missing_definition	OBCS:0000334	IAO:0000115	
+WARN	missing_definition	OBCS:0000335	IAO:0000115	
+WARN	missing_definition	OBCS:0000336	IAO:0000115	
+WARN	missing_definition	OBCS:0000337	IAO:0000115	
+WARN	missing_definition	OBCS:0000350	IAO:0000115	
+WARN	missing_definition	OBCS:0000353	IAO:0000115	
+WARN	missing_definition	OBCS:0000363	IAO:0000115	
+WARN	missing_definition	OBCS:0000364	IAO:0000115	
+WARN	missing_definition	OBCS:0000365	IAO:0000115	
+WARN	missing_definition	OBCS:0000366	IAO:0000115	
+WARN	missing_definition	OBCS:0000367	IAO:0000115	
+WARN	missing_definition	OBCS:0000368	IAO:0000115	
+WARN	missing_definition	OBCS:0000369	IAO:0000115	
+WARN	missing_definition	OBCS:0000370	IAO:0000115	
+WARN	missing_definition	OBCS:0000371	IAO:0000115	
+WARN	missing_definition	OBCS:0000372	IAO:0000115	
+WARN	missing_definition	OBCS:0000373	IAO:0000115	
+WARN	missing_definition	OBCS:0000374	IAO:0000115	
+INFO	lowercase_definition	OBCS:0000319	IAO:0000115	the chaotic and unpredictable nature of natural processes
+INFO	lowercase_definition	OBCS:0000320	IAO:0000115	‘non-rational’behaviour, discrepancies between what people say and what they actually do (cognitive dissonance), or deviations of ‘standard’ behavioural patterns (micro-level behaviour).
+INFO	lowercase_definition	OBCS:0000321	IAO:0000115	the chaotic and unpredictable nature of societal  processes (macro-level behaviour). The need to consider  societal and institutional processes as a major contributor  to uncertainty due to variability can be inferred from  various papers of Funtowicz, Ravetz, and de Marchi.
+INFO	lowercase_definition	OBCS:0000326	IAO:0000115	vagueness is associated with the lack of precise or sharp distinctions or boundaries
+INFO	lowercase_definition	OBCS:0000348	IAO:0000115	uncertainty about the form of the model itself. Model structure uncertainty arises from a lack of sufficient understanding of the system (past, present, or future) that is the subject of the policy analysis, including the behaviour of the system and the interrelationships among its elements.
+INFO	lowercase_definition	OBCS:0000349	IAO:0000115	uncertainty arising from the computer implementation of the model.Model technical uncertainty is the uncertainty generated  by software or hardware errors, i.e. hidden flaws in the  technical equipment. Software errors arise from bugs in  software, design errors in algorithms and typing errors in  model source code. Hardware errors arise from bugs, such as  the bug in the early version of the Pentium processor, which gave rise to numerical error in a broad range of floating-point calculations performed on the processor.

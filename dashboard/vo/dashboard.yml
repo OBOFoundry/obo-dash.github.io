@@ -4,93 +4,92 @@ base_prefixes:
 - VOALT
 - VO
 changed: false
-date: 2023-12-22 10:42:37.641350
+date: 2024-01-24 14:16:01.201636
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 46860
+    AnnotationAssertion: 54167
     AnnotationPropertyRangeOf: 1
     ClassAssertion: 173
-    Declaration: 8831
+    Declaration: 8672
     DifferentIndividuals: 2
     DisjointClasses: 24
-    EquivalentClasses: 492
+    EquivalentClasses: 392
     EquivalentObjectProperties: 2
     FunctionalObjectProperty: 1
     InverseFunctionalObjectProperty: 1
     InverseObjectProperties: 15
     IrrefexiveObjectProperty: 1
-    ObjectPropertyDomain: 27
-    ObjectPropertyRange: 27
+    ObjectPropertyDomain: 25
+    ObjectPropertyRange: 25
     Rule: 4
-    SubAnnotationPropertyOf: 31
-    SubClassOf: 18647
-    SubObjectPropertyOf: 65
+    SubAnnotationPropertyOf: 21
+    SubClassOf: 23099
+    SubObjectPropertyOf: 59
     SubPropertyChainOf: 7
     TransitiveObjectProperty: 6
-  'Axioms: Number of axioms': 75217
-  'Entities: % of entities reused': 16.56
-  'Entities: Number of annotation properties': 157
-  'Entities: Number of classes': 8377
+  'Axioms: Number of axioms': 86697
+  'Entities: % of entities reused': 15.01
+  'Entities: Number of annotation properties': 156
+  'Entities: Number of classes': 8227
   'Entities: Number of data properties': 0
-  'Entities: Number of individuals': 175
-  'Entities: Number of object properties': 119
+  'Entities: Number of individuals': 174
+  'Entities: Number of object properties': 110
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 46208
+    Class: 54818
     ObjectAllValuesFrom: 12
     ObjectComplementOf: 2
-    ObjectHasValue: 1446
-    ObjectIntersectionOf: 394
+    ObjectHasValue: 984
+    ObjectIntersectionOf: 267
     ObjectMinCardinality: 1
     ObjectOneOf: 3
-    ObjectSomeValuesFrom: 9378
-    ObjectUnionOf: 205
+    ObjectSomeValuesFrom: 10381
+    ObjectUnionOf: 17
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.571
+    _dashboard: 0.816
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.071
     _impact_external: 0.5
-    _reuse: 0.166
-    oboscore: 0.321
+    _reuse: 0.15
+    oboscore: 0.443
   'Info: How many externally documented uses?': 4
   'Info: How many ontologies use it?': 13
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 2300
-    BTO: 12
-    CHEBI: 172
-    CL: 27
-    DOID: 69
+    BFO: 2025
+    CHEBI: 169
+    CL: 48
+    DOID: 1213
     FMA: 4
-    GO: 41
-    IAO: 22313
-    IDO: 40
-    NCBITAXONALT: 430
-    NCBITaxon: 5274
+    GO: 35
+    IAO: 21333
+    IDO: 17
+    MONDO: 10
+    NCBITAXONALT: 436
+    NCBITaxon: 4993
     OAE: 11
-    OBI: 1746
-    OGG: 835
+    OBI: 1557
+    OGG: 833
     OGMS: 9
-    OMO: 47
-    OPL: 2882
+    OMO: 37
+    OPL: 1288
     PATO: 75
-    PR: 82
-    RO: 3900
-    UBERON: 110
-    VO: 44788
+    PR: 91
+    RO: 4210
+    UBERON: 152
+    VO: 54433
     dc: 39
-    dc11: 82
-    foaf: 5
-    obo: 124
-    oboInOwl: 4364
-    owl: 23
-    prefix_unknown: 3
+    dc11: 37
+    foaf: 27
+    obo: 183
+    oboInOwl: 12639
+    owl: 260
     protege: 1
     rdf: 9
-    rdfs: 16350
-    skos: 2
+    rdfs: 16213
+    skos: 4
     xsd: 6
   'Info: Which ontologies use it?':
   - ado
@@ -110,23 +109,21 @@ mirror_from: http://purl.obolibrary.org/obo/vo.owl
 namespace: vo
 results:
   FP01 Open:
-    comment: License should use property 'http://purl.org/dc/terms/license'.
-    status: WARN
+    status: PASS
   FP02 Common Format:
     status: PASS
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    comment: Missing version IRI
+    comment: Version IRI does not resolve
     status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 66 duplicate definitions. 39 multiple definitions. 5011 missing definitions.
-      See ROBOT Report for details.
-    status: ERROR
+    comment: 4851 missing definitions. See ROBOT Report for details.
+    status: WARN
   FP07 Relations:
-    comment: 39 non-RO properties used.
+    comment: 37 non-RO properties used.
     file: fp7
     status: INFO
   FP08 Documented:
@@ -136,27 +133,25 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 265 duplicate labels. 47 multiple labels. See ROBOT Report for details.
-    status: ERROR
+    status: PASS
   FP16 Maintenance:
-    comment: Missing version IRI to check date
-    status: ERROR
+    status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 428 errors, 5633 warnings, 515 info messages.
+    comment: 5461 warnings, 438 info messages.
     file: robot_report
     results:
-      ERROR: 428
-      INFO: 515
-      WARN: 5633
-    status: ERROR
-sha256_hash: fe5b6d743948070b5a03ac2bfff36568bbc6f9484db2c94b14a51e13313751da
+      ERROR: 0
+      INFO: 438
+      WARN: 5461
+    status: WARN
+sha256_hash: df0b38b046145613d717235afcffea1552b76e6bae8576ed46df3a6e7d35d17d
 summary:
-  comment: 5 errors
+  comment: 1 errors
   status: ERROR
   summary_count:
-    ERROR: 5
+    ERROR: 1
     INFO: 1
-    WARN: 1
-version: null
+    WARN: 2
+version: http://purl.obolibrary.org/obo/vo/2024-01-03/vo.owl

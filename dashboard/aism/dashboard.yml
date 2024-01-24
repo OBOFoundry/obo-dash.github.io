@@ -3,67 +3,68 @@ base_prefixes:
 - AISM
 - AISMALT
 - AISM
-changed: false
-date: 2023-12-21 11:32:23.388553
+changed: true
+date: 2024-01-22 19:53:24.684919
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 1396
-    Declaration: 735
+    AnnotationAssertion: 1648
+    Declaration: 867
     EquivalentClasses: 6
-    InverseObjectProperties: 1
+    InverseObjectProperties: 2
     ObjectPropertyDomain: 2
     ObjectPropertyRange: 2
     SubAnnotationPropertyOf: 1
-    SubClassOf: 2117
+    SubClassOf: 2450
+    SubDataPropertyOf: 4
     SubObjectPropertyOf: 4
     TransitiveObjectProperty: 2
-  'Axioms: Number of axioms': 4266
-  'Entities: % of entities reused': 19.76
-  'Entities: Number of annotation properties': 24
-  'Entities: Number of classes': 676
-  'Entities: Number of data properties': 0
+  'Axioms: Number of axioms': 4988
+  'Entities: % of entities reused': 19.06
+  'Entities: Number of annotation properties': 28
+  'Entities: Number of classes': 793
+  'Entities: Number of data properties': 6
   'Entities: Number of individuals': 0
-  'Entities: Number of object properties': 38
+  'Entities: Number of object properties': 43
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 5259
-    ObjectComplementOf: 10
-    ObjectIntersectionOf: 330
-    ObjectSomeValuesFrom: 1812
-    ObjectUnionOf: 9
+    Class: 6080
+    ObjectComplementOf: 18
+    ObjectIntersectionOf: 365
+    ObjectSomeValuesFrom: 2074
+    ObjectUnionOf: 10
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
     _dashboard: 0.727
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.016
     _impact_external: 0
-    _reuse: 0.198
+    _reuse: 0.191
     oboscore: 0.371
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    AISM: 5181
-    BFO: 694
-    BSPO: 418
-    BSPOALT: 9
+    AISM: 6028
+    BFO: 812
+    BSPO: 490
+    BSPOALT: 13
     CARO: 2
     CL: 13
-    IAO: 895
-    PATO: 127
+    IAO: 1025
+    PATO: 138
     PATOALT: 4
     PR: 2
-    RO: 825
-    UBERON: 83
-    dc: 127
-    dc11: 2769
+    RO: 851
+    UBERON: 99
+    dc: 196
+    dc11: 3282
     foaf: 2
     obo: 26
-    oboInOwl: 1012
+    oboInOwl: 1618
     owl: 1
-    rdf: 3277
-    rdfs: 637
+    rdf: 3848
+    rdfs: 755
     skos: 1
   'Info: Which ontologies use it?':
   - clao
@@ -83,11 +84,11 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 2 duplicate definitions.  4 missing definitions. See ROBOT Report for
+    comment: 4 duplicate definitions.  19 missing definitions. See ROBOT Report for
       details.
     status: ERROR
   FP07 Relations:
-    comment: 6 non-RO properties used.
+    comment: 13 non-RO properties used.
     file: fp7
     status: INFO
   FP08 Documented:
@@ -105,14 +106,14 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 4 errors, 8 warnings, 4 info messages.
+    comment: 6 errors, 23 warnings, 4 info messages.
     file: robot_report
     results:
-      ERROR: 4
+      ERROR: 6
       INFO: 4
-      WARN: 8
+      WARN: 23
     status: ERROR
-sha256_hash: 432bbb4f7d4b5b1227bb54a30df1f9035f7027afb88d557edae5a1fdaa6258a7
+sha256_hash: 8e5905ac26bae00b97fe7e498d5016bb2f87e7a57e1914aac96c000335f1da51
 summary:
   comment: 4 errors
   status: ERROR
@@ -120,4 +121,4 @@ summary:
     ERROR: 4
     INFO: 1
     WARN: 0
-version: http://purl.obolibrary.org/obo/aism/releases/2023-04-14/aism-base.owl
+version: http://purl.obolibrary.org/obo/aism/releases/2024-01-17/aism-base.owl

@@ -3,50 +3,50 @@ base_prefixes:
 - CHEBI
 - CHEBIALT
 - CHEBI
-changed: false
-date: 2023-12-21 11:46:10.639384
+changed: true
+date: 2024-01-22 20:07:08.341732
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 2956363
-    Declaration: 216193
+    AnnotationAssertion: 2958033
+    Declaration: 216302
     InverseObjectProperties: 1
     SubAnnotationPropertyOf: 6
-    SubClassOf: 366022
+    SubClassOf: 366348
     TransitiveObjectProperty: 2
-  'Axioms: Number of axioms': 3538587
+  'Axioms: Number of axioms': 3540692
   'Entities: % of entities reused': 0.02
   'Entities: Number of annotation properties': 37
-  'Entities: Number of classes': 216146
+  'Entities: Number of classes': 216255
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 10
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 948190
-    ObjectSomeValuesFrom: 91512
+    Class: 948951
+    ObjectSomeValuesFrom: 91606
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.593
+    _dashboard: 0.527
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.415
     _impact_external: 0.25
     _reuse: 0.0
-    oboscore: 0.504
+    oboscore: 0.471
   'Info: How many externally documented uses?': 2
   'Info: How many ontologies use it?': 76
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     BFO: 4010
-    CHEBI: 948190
-    CHEBIALT: 44178
-    IAO: 90467
-    RO: 43350
-    obo: 1274386
-    oboInOwl: 2077901
-    owl: 18636
-    rdfs: 197609
-    xsd: 578106
+    CHEBI: 948951
+    CHEBIALT: 44189
+    IAO: 90517
+    RO: 43433
+    obo: 1275107
+    oboInOwl: 2079182
+    owl: 18637
+    rdfs: 197717
+    xsd: 578512
   'Info: Which ontologies use it?':
   - ado
   - agro
@@ -135,11 +135,12 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 1409 duplicate definitions.  144192 missing definitions. See ROBOT Report
+    comment: 1429 duplicate definitions.  144252 missing definitions. See ROBOT Report
       for details.
     status: ERROR
   FP07 Relations:
@@ -161,19 +162,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 1415 errors, 165141 warnings, 163 info messages.
+    comment: 1435 errors, 165211 warnings, 165 info messages.
     file: robot_report
     results:
-      ERROR: 1415
-      INFO: 163
-      WARN: 165141
+      ERROR: 1435
+      INFO: 165
+      WARN: 165211
     status: ERROR
-sha256_hash: 9c005ba5635c647732edd5886b8a57c6dc26af8dad0d67215b893ccbdd64b0f3
+sha256_hash: 2e4a7f2db2e0872e6413b1d52ab596237c53f41a0c2ccb41395f40920024a960
 summary:
-  comment: 5 errors
+  comment: 6 errors
   status: ERROR
   summary_count:
-    ERROR: 5
+    ERROR: 6
     INFO: 1
     WARN: 0
-version: http://purl.obolibrary.org/obo/chebi/227/chebi.owl
+version: http://purl.obolibrary.org/obo/chebi/228/chebi.owl

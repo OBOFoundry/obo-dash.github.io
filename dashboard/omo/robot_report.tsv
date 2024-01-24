@@ -1,24 +1,4 @@
 Level	Rule Name	Subject	Property	Value
-WARN	annotation_whitespace	IAO:0000115	IAO:0000116	"2012-04-05: 
-Barry Smith
-
-The official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.
-
-Can you fix to something like:
-
-A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.
-
-Alan Ruttenberg
-
-Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. 
-
-On the specifics of the proposed definition:
-
-We don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. 
-
-Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
-
-We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  @en"
 WARN	annotation_whitespace	IAO:0000424	IAO:0000112	"ObjectProperty: RO_0002104
 Label: has plasma membrane part
 Annotations: IAO_0000424 \""http://purl.obolibrary.org/obo/BFO_0000051 some (http://purl.org/obo/owl/GO#GO_0005886 and http://purl.obolibrary.org/obo/BFO_0000051 some ?Y)\""
@@ -31,6 +11,7 @@ WARN	annotation_whitespace	IAO:0000597	IAO:0000112	"Datatype: idrange:1
 Annotations: 'has ID range allocated to': \""Chris Mungall\""
 EquivalentTo: xsd:integer[> 2151 , <= 2300]
 @en"
+WARN	annotation_whitespace	OMO:0001002	IAO:0000116	This obsolesence reason should be used conservatively. For example: Obsoleting class that describes a breed of cow based on a record in an existing database, that was later retracted as faulty (breed does not exist). Do not use this term to obsolete a historic concept (that was once valid, but not anymore). @en
 WARN	missing_definition	IAO:0000027	IAO:0000115	
 WARN	missing_definition	IAO:0000030	IAO:0000115	
 WARN	missing_definition	IAO:0000114	IAO:0000115	

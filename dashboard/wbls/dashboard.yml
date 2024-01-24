@@ -4,7 +4,7 @@ base_prefixes:
 - WBLSALT
 - WBls
 changed: false
-date: 2023-12-22 10:46:30.838430
+date: 2024-01-24 14:19:53.724868
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 5275
@@ -28,12 +28,12 @@ metrics:
     ObjectUnionOf: 19
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.993
+    _dashboard: 0.927
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.011
     _impact_external: 0.25
     _reuse: 0.042
-    oboscore: 0.502
+    oboscore: 0.469
   'Info: How many externally documented uses?': 1
   'Info: How many ontologies use it?': 2
   'Info: Logical consistency': true
@@ -62,7 +62,8 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -89,12 +90,12 @@ results:
       INFO: 1
       WARN: 0
     status: INFO
-sha256_hash: 8334efd8003e56ce52935171b35cbd8a41048068f13aeaa18e987607b1342975
+sha256_hash: 32e3096b0121852b6f9a72c02d4317379e766bff43c8372518c3a67732f17cc9
 summary:
-  comment: 1 info messages
-  status: INFO
+  comment: 1 errors
+  status: ERROR
   summary_count:
-    ERROR: 0
+    ERROR: 1
     INFO: 1
     WARN: 0
-version: http://purl.obolibrary.org/obo/wbls/releases/2023-09-26/wbls-base.owl
+version: http://purl.obolibrary.org/obo/wbls/releases/2024-01-16/wbls-base.owl

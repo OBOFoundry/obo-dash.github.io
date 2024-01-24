@@ -8,6 +8,8 @@ ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/xco.owl	dc:license
 ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/xco.owl	dc:title	
 WARN	duplicate_exact_synonym	XCO:0000876	oboInOwl:hasExactSynonym	PMID:7818325
 WARN	duplicate_exact_synonym	XCO:0000924	oboInOwl:hasExactSynonym	PMID:7818325
+WARN	duplicate_exact_synonym	XCO:0000845	oboInOwl:hasExactSynonym	PCN
+WARN	duplicate_exact_synonym	XCO:0001202	oboInOwl:hasExactSynonym	PCN
 WARN	duplicate_exact_synonym	XCO:0000698	oboInOwl:hasExactSynonym	Nelociguat
 WARN	duplicate_exact_synonym	XCO:0000700	oboInOwl:hasExactSynonym	Nelociguat
 WARN	duplicate_exact_synonym	XCO:0000714	oboInOwl:hasExactSynonym	EC 2.7.11.24 inhibitor
@@ -16,12 +18,12 @@ WARN	duplicate_label_synonym	XCO:0000809	oboInOwl:hasExactSynonym	2-methyl-6-(ph
 WARN	duplicate_label_synonym	XCO:0000959	oboInOwl:hasExactSynonym	Guanabenz
 WARN	duplicate_label_synonym	XCO:0001028	oboInOwl:hasExactSynonym	gene transfer of the EYFP gene using a lentivirus vector
 WARN	duplicate_label_synonym	XCO:0001064	oboInOwl:hasExactSynonym	5/6 nephrectomy
+WARN	duplicate_label_synonym	XCO:0001171	oboInOwl:hasExactSynonym	levofloxacin
 WARN	invalid_xref	XCO:0000121	oboInOwl:hasDbXref	chembl.compound:CHEMBL7890
 WARN	invalid_xref	XCO:0000121	oboInOwl:hasDbXref	pubchem.compound:39836
 WARN	invalid_xref	XCO:0000130	oboInOwl:hasDbXref	pubchem.compound:3821
 WARN	invalid_xref	XCO:0000131	oboInOwl:hasDbXref	chembl.compound:CHEMBL297362
 WARN	invalid_xref	XCO:0000131	oboInOwl:hasDbXref	pubchem.compound:5707
-WARN	invalid_xref	XCO:0000132	oboInOwl:hasDbXref	pubchem.compound:6077
 WARN	invalid_xref	XCO:0000137	oboInOwl:hasDbXref	pubchem.compound:6438387
 WARN	invalid_xref	XCO:0000138	oboInOwl:hasDbXref	pubchem.compound:6099
 WARN	invalid_xref	XCO:0000143	oboInOwl:hasDbXref	pubchem.compound:187
@@ -32,6 +34,7 @@ WARN	invalid_xref	XCO:0000218	oboInOwl:hasDbXref	pubchem.compound:452544
 WARN	invalid_xref	XCO:0000226	oboInOwl:hasDbXref	pubchem.compound:16129677
 WARN	invalid_xref	XCO:0000242	oboInOwl:hasDbXref	pubchem.compound:5781
 WARN	invalid_xref	XCO:0000272	oboInOwl:hasDbXref	pubchem.compound:137994
+WARN	invalid_xref	XCO:0000275	oboInOwl:hasDbXref	dextrose
 WARN	invalid_xref	XCO:0000321	oboInOwl:hasDbXref	chembl.compound:CHEMBL105608
 WARN	invalid_xref	XCO:0000321	oboInOwl:hasDbXref	pubchem.compound:5938
 WARN	invalid_xref	XCO:0000331	oboInOwl:hasDbXref	pubchem.compound:123790
@@ -41,11 +44,8 @@ WARN	invalid_xref	XCO:0000354	oboInOwl:hasDbXref	pubchem.compound:9562060
 WARN	invalid_xref	XCO:0000423	oboInOwl:hasDbXref	pubchem.compound:10281
 WARN	invalid_xref	XCO:0000608	oboInOwl:hasDbXref	pubchem.compound:5971
 WARN	invalid_xref	XCO:0000610	oboInOwl:hasDbXref	pubchem.compound:5288826
-WARN	invalid_xref	XCO:0000611	oboInOwl:hasDbXref	pubchem.compound:4485
-WARN	invalid_xref	XCO:0000612	oboInOwl:hasDbXref	pubchem.compound:16212950
 WARN	invalid_xref	XCO:0000613	oboInOwl:hasDbXref	pubchem.compound:5957
 WARN	invalid_xref	XCO:0000616	oboInOwl:hasDbXref	pubchem.compound:2520
-WARN	invalid_xref	XCO:0000617	oboInOwl:hasDbXref	pubchem.compound:5953
 WARN	invalid_xref	XCO:0000619	oboInOwl:hasDbXref	pubchem.compound:2724385
 WARN	invalid_xref	XCO:0000620	oboInOwl:hasDbXref	pubchem.compound:13342
 WARN	invalid_xref	XCO:0000629	oboInOwl:hasDbXref	pubchem.compound:636403
@@ -64,7 +64,9 @@ WARN	invalid_xref	XCO:0001056	oboInOwl:hasDbXref	GSE119482
 WARN	invalid_xref	XCO:0001070	oboInOwl:hasDbXref	EC 3.4.22.2
 WARN	invalid_xref	XCO:0001122	oboInOwl:hasDbXref	D014151
 WARN	invalid_xref	XCO:0001164	oboInOwl:hasDbXref	CID 3869
-WARN	missing_definition	XCO:0000016	IAO:0000115	
+WARN	invalid_xref	XCO:0001202	oboInOwl:hasDbXref	D010406
+WARN	invalid_xref	XCO:0001227	oboInOwl:hasDbXref	GSE121109
+WARN	invalid_xref	XCO:0001245	oboInOwl:hasDbXref	D000932
 WARN	missing_definition	XCO:0000033	IAO:0000115	
 WARN	missing_definition	XCO:0000034	IAO:0000115	
 WARN	missing_definition	XCO:0000035	IAO:0000115	
@@ -95,6 +97,9 @@ WARN	missing_obsolete_label	XCO:0000056	rdfs:label	naive control condition
 WARN	missing_obsolete_label	XCO:0000128	rdfs:label	drink with chemical additive
 WARN	missing_obsolete_label	XCO:0000129	rdfs:label	water with NG-Nitroarginine Methyl Ester
 WARN	missing_obsolete_label	XCO:0000573	rdfs:label	null
+WARN	missing_obsolete_label	XCO:0000582	rdfs:label	controlled content oral gavage
+WARN	missing_obsolete_label	XCO:0000583	rdfs:label	controlled omeprazole content  oral gavage
+WARN	missing_obsolete_label	XCO:0000584	rdfs:label	controlled cecal material content oral gavage
 WARN	missing_obsolete_label	XCO:0000791	rdfs:label	standard condition
+WARN	missing_obsolete_label	XCO:0001170	rdfs:label	levofloxacin
 INFO	missing_superclass	XCO:0000000	rdfs:subClassOf	
-INFO	missing_superclass	XCO:0001170	rdfs:subClassOf	
