@@ -4,62 +4,62 @@ base_prefixes:
 - HPALT
 - HP
 changed: false
-date: 2024-01-24 14:23:50.522889
+date: 2024-02-29 09:44:04.510033
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 120004
-    Declaration: 20455
-    EquivalentClasses: 6203
+    AnnotationAssertion: 121116
+    Declaration: 20677
+    EquivalentClasses: 6201
     SubAnnotationPropertyOf: 8
-    SubClassOf: 22258
+    SubClassOf: 22468
     SubPropertyChainOf: 1
-  'Axioms: Number of axioms': 168929
-  'Entities: % of entities reused': 10.69
+  'Axioms: Number of axioms': 170471
+  'Entities: % of entities reused': 10.58
   'Entities: Number of annotation properties': 48
-  'Entities: Number of classes': 20392
+  'Entities: Number of classes': 20614
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 16
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 91980
-    ObjectIntersectionOf: 8060
-    ObjectSomeValuesFrom: 20869
+    Class: 92613
+    ObjectIntersectionOf: 8057
+    ObjectSomeValuesFrom: 20862
     ObjectUnionOf: 48
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.933
+    _dashboard: 0.867
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.12
     _impact_external: 0.25
-    _reuse: 0.107
-    oboscore: 0.526
+    _reuse: 0.106
+    oboscore: 0.493
   'Info: How many externally documented uses?': 1
   'Info: How many ontologies use it?': 22
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 8025
+    BFO: 8022
     BSPO: 4
     CHEBI: 750
     CL: 393
     GO: 819
-    HP: 69391
+    HP: 70031
     HPALT: 15
     HsapDv: 20
-    IAO: 15707
+    IAO: 16032
     MPATH: 293
     NBO: 111
-    PATO: 12585
+    PATO: 12581
     PR: 123
-    RO: 12532
-    UBERON: 7497
-    dc: 13554
+    RO: 12528
+    UBERON: 7494
+    dc: 13894
     dc11: 4834
-    oboInOwl: 93292
-    owl: 389
-    rdf: 5812
-    rdfs: 22232
+    oboInOwl: 93524
+    owl: 403
+    rdf: 5907
+    rdfs: 22542
   'Info: Which ontologies use it?':
   - ado
   - aro
@@ -99,12 +99,13 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 2649 missing definitions. See ROBOT Report for details.
+    comment: 2650 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     status: PASS
   FP08 Documented:
-    status: PASS
+    comment: Homepage URL (http://www.human-phenotype-ontology.org/) does not resolve
+    status: ERROR
   FP09 Plurality of Users:
     status: PASS
   FP11 Locus of Authority:
@@ -116,19 +117,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 3652 warnings, 1 info messages.
+    comment: 3649 warnings, 1 info messages.
     file: robot_report
     results:
       ERROR: 0
       INFO: 1
-      WARN: 3652
+      WARN: 3649
     status: WARN
-sha256_hash: 2dfab7f65fac7ef6ef4654fb4276d3606e1c65ba35e8f5d13b3f8e75f16cb5ee
+sha256_hash: 86f4b61f86afc5484bc375ac42c169bc861567e545f283eea7710db56eb4229f
 summary:
-  comment: 3 warnings
-  status: WARN
+  comment: 1 errors
+  status: ERROR
   summary_count:
-    ERROR: 0
+    ERROR: 1
     INFO: 0
     WARN: 3
-version: http://purl.obolibrary.org/obo/hp/releases/2024-01-16/hp-base.owl
+version: http://purl.obolibrary.org/obo/hp/releases/2024-02-08/hp-base.owl

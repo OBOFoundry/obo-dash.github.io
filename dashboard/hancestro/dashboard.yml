@@ -3,27 +3,27 @@ base_prefixes:
 - HANCESTRO
 - HANCESTROALT
 - HANCESTRO
-changed: true
-date: 2024-01-22 20:34:16.293465
+changed: false
+date: 2024-02-22 11:15:43.993300
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 988
-    Declaration: 617
+    AnnotationAssertion: 1077
+    Declaration: 650
     DisjointClasses: 4
     EquivalentClasses: 2
     InverseObjectProperties: 3
     SubClassOf: 1124
-  'Axioms: Number of axioms': 2738
-  'Entities: % of entities reused': 43.76
+  'Axioms: Number of axioms': 2860
+  'Entities: % of entities reused': 46.62
   'Entities: Number of annotation properties': 20
-  'Entities: Number of classes': 585
+  'Entities: Number of classes': 618
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 9
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 2870
-    ObjectAllValuesFrom: 310
+    Class: 2905
+    ObjectAllValuesFrom: 309
     ObjectIntersectionOf: 2
     ObjectSomeValuesFrom: 232
     ObjectUnionOf: 1
@@ -33,26 +33,29 @@ metrics:
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.016
     _impact_external: 0.5
-    _reuse: 0.438
+    _reuse: 0.466
     oboscore: 0.482
   'Info: How many externally documented uses?': 3
   'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 31
-    GEO: 8
-    HANCESTRO: 2177
-    IAO: 77
+    BFO: 32
+    COB: 2
+    GAZ: 8
+    HANCESTRO: 1605
+    IAO: 107
+    NCIT: 242
+    OBI: 2
     RO: 240
-    dbpedia: 966
-    dc: 857
+    dbpedia: 1327
+    dc: 2
     dc11: 3
     oboInOwl: 312
-    owl: 10
+    owl: 38
     prefix_unknown: 1
-    rdf: 856
-    rdfs: 608
+    rdf: 1
+    rdfs: 637
     xsd: 2
   'Info: Which ontologies use it?':
   - foodon
@@ -72,7 +75,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 312 missing definitions. See ROBOT Report for details.
+    comment: 285 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     comment: 4 non-RO properties used.
@@ -91,14 +94,14 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 313 warnings, 1 info messages.
+    comment: 286 warnings, 0 info messages.
     file: robot_report
     results:
       ERROR: 0
-      INFO: 1
-      WARN: 313
+      INFO: 0
+      WARN: 286
     status: WARN
-sha256_hash: 188f152d63d4099d8dcfe201f43360ef86aad732399f1fbeee4d65d33ea874e9
+sha256_hash: 14a3bbfd304e367aa7a930ccf4545132c2d717a19342757e0651c0043179b378
 summary:
   comment: 2 warnings
   status: WARN
@@ -106,4 +109,4 @@ summary:
     ERROR: 0
     INFO: 1
     WARN: 2
-version: http://purl.obolibrary.org/obo/hancestro/releases/2023-10-13/hancestro-base.owl
+version: http://purl.obolibrary.org/obo/hancestro/releases/2024-02-07/hancestro-base.owl

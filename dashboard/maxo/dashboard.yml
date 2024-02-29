@@ -3,65 +3,65 @@ base_prefixes:
 - MAXO
 - MAXOALT
 - MAXO
-changed: true
-date: 2024-01-22 20:35:44.849150
+changed: false
+date: 2024-02-22 11:17:10.156230
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 12826
     Declaration: 2542
     EquivalentClasses: 851
-    SubClassOf: 1338
-  'Axioms: Number of axioms': 17557
-  'Entities: % of entities reused': 27.3
-  'Entities: Number of annotation properties': 26
-  'Entities: Number of classes': 2511
+    SubClassOf: 3497
+  'Axioms: Number of axioms': 19716
+  'Entities: % of entities reused': 27.34
+  'Entities: Number of annotation properties': 25
+  'Entities: Number of classes': 2512
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 9
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 7968
-    ObjectIntersectionOf: 1072
-    ObjectSomeValuesFrom: 1691
+    Class: 12501
+    ObjectIntersectionOf: 1286
+    ObjectSomeValuesFrom: 3196
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.882
+    _dashboard: 0.904
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.016
+    _impact: 0.022
     _impact_external: 0
     _reuse: 0.273
-    oboscore: 0.449
+    oboscore: 0.463
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 3
+  'Info: How many ontologies use it?': 4
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 517
-    CHEBI: 735
-    CL: 75
+    BFO: 1064
+    CHEBI: 1157
+    CL: 119
     COB: 2
-    FOODON: 98
-    HP: 92
+    FOODON: 102
+    HP: 131
     IAO: 1849
-    MAXO: 6422
-    MAXOALT: 1
+    MAXO: 10033
     NBO: 18
-    OBI: 14
-    PATO: 46
-    PR: 31
-    RO: 890
-    UBERON: 728
-    dc: 1082
-    dc11: 1795
+    OBI: 21
+    PATO: 90
+    PR: 49
+    RO: 1738
+    UBERON: 1182
+    dc: 1080
+    dc11: 1793
     obo: 808
-    oboInOwl: 5806
-    owl: 58
+    oboInOwl: 5810
+    owl: 59
     rdf: 357
-    rdfs: 1946
+    rdfs: 1945
   'Info: Which ontologies use it?':
   - ado
   - ecto
   - mondo
+  - oostt
 mirror_from: http://purl.obolibrary.org/obo/maxo/maxo-base.owl
 namespace: maxo
 results:
@@ -76,8 +76,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 1 missing definitions. See ROBOT Report for details.
-    status: WARN
+    status: PASS
   FP07 Relations:
     comment: 4 non-RO properties used.
     file: fp7
@@ -96,19 +95,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 2 warnings, 677 info messages.
+    comment: 1 warnings, 0 info messages.
     file: robot_report
     results:
       ERROR: 0
-      INFO: 677
-      WARN: 2
+      INFO: 0
+      WARN: 1
     status: WARN
-sha256_hash: 90107365ed8872e9b6d764e2f5a994591c37d6a4cedadbb2841b9014069c43b1
+sha256_hash: d4105ba3a981809dc93a33e076d8c13cc84deb1dc7550b7254f34f0e50a5c96b
 summary:
   comment: 1 errors
   status: ERROR
   summary_count:
     ERROR: 1
     INFO: 1
-    WARN: 2
-version: http://purl.obolibrary.org/obo/maxo/releases/2023-12-01/maxo-base.owl
+    WARN: 1
+version: http://purl.obolibrary.org/obo/maxo/releases/2024-02-05/maxo-base.owl

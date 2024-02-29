@@ -4,71 +4,72 @@ base_prefixes:
 - CIDOALT
 - CIDO
 changed: true
-date: 2024-01-22 20:08:06.581614
+date: 2024-02-21 10:45:42.809370
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 292195
+    AnnotationAssertion: 294606
     AnnotationPropertyDomain: 1
     AnnotationPropertyRangeOf: 15
-    ClassAssertion: 40
+    ClassAssertion: 43
     DataPropertyDomain: 1
     DataPropertyRange: 3
-    Declaration: 32665
-    EquivalentClasses: 573
+    Declaration: 32966
+    EquivalentClasses: 605
     EquivalentObjectProperties: 3
     FunctionalDataProperty: 1
     FunctionalObjectProperty: 3
-    InverseObjectProperties: 26
+    InverseFunctionalObjectProperty: 1
+    InverseObjectProperties: 28
     IrrefexiveObjectProperty: 1
     ObjectPropertyDomain: 76
-    ObjectPropertyRange: 78
+    ObjectPropertyRange: 77
     ReflexiveObjectProperty: 1
-    SubAnnotationPropertyOf: 20
-    SubClassOf: 81123
+    SubAnnotationPropertyOf: 24
+    SubClassOf: 82404
     SubDataPropertyOf: 4
-    SubObjectPropertyOf: 317
+    SubObjectPropertyOf: 315
     SymmetricObjectProperty: 4
-    TransitiveObjectProperty: 25
-  'Axioms: Number of axioms': 407175
-  'Entities: % of entities reused': 46.88
-  'Entities: Number of annotation properties': 172
-  'Entities: Number of classes': 31620
+    TransitiveObjectProperty: 26
+  'Axioms: Number of axioms': 411208
+  'Entities: % of entities reused': 47.37
+  'Entities: Number of annotation properties': 170
+  'Entities: Number of classes': 31924
   'Entities: Number of data properties': 25
-  'Entities: Number of individuals': 458
-  'Entities: Number of object properties': 384
+  'Entities: Number of individuals': 461
+  'Entities: Number of object properties': 381
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 195906
+    Class: 198897
     DataHasValue: 140
     DataMinCardinality: 1
     ObjectAllValuesFrom: 23
     ObjectComplementOf: 6
     ObjectExactCardinality: 1
-    ObjectHasValue: 28
-    ObjectIntersectionOf: 771
+    ObjectHasValue: 135
+    ObjectIntersectionOf: 935
     ObjectMinCardinality: 1
     ObjectOneOf: 2
-    ObjectSomeValuesFrom: 42058
-    ObjectUnionOf: 33
+    ObjectSomeValuesFrom: 42701
+    ObjectUnionOf: 30
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.467
+    _dashboard: 0.6
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.005
     _impact_external: 0
-    _reuse: 0.469
-    oboscore: 0.236
+    _reuse: 0.474
+    oboscore: 0.302
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     APOLLO_SV: 78
-    BFO: 1230
-    CHEBI: 13634
+    BFO: 1273
+    CHEBI: 13631
     CHEBIALT: 921
-    CIDO: 120936
-    CL: 28
+    CIDO: 120917
+    CL: 40
     CMO: 2
     DOID: 356
     DOIDALT: 2
@@ -76,45 +77,45 @@ metrics:
     ENVO: 50
     GAZ: 3
     GENO: 2
-    GO: 4434
+    GO: 4433
     HP: 879
-    IAO: 83071
+    IAO: 83992
     ICO: 3
     IDO: 66
     MPATH: 5
-    NCBITAXONALT: 1534
-    NCBITaxon: 8152
+    NCBITAXONALT: 1585
+    NCBITaxon: 8514
     NCIT: 87
     NDFRT: 15812
     OAE: 335
     OBCS: 47
-    OBI: 1984
+    OBI: 2309
     OBIB: 3
     OGG: 739
-    OGMS: 30
+    OGMS: 31
     OMIABIS: 11
     OMRSE: 27
     OPMI: 416
-    PATO: 86
-    PR: 69786
+    PATO: 79
+    PR: 69789
     PRALT: 10
-    RO: 37548
+    RO: 37897
     SO: 9
     SYMP: 2
     TRANS: 7
-    UBERON: 551
+    UBERON: 592
     UO: 12
-    VO: 2449
-    dc: 30
-    dc11: 310
-    foaf: 26
-    obo: 5352
-    oboInOwl: 102115
-    owl: 216
+    VO: 5119
+    dc: 34
+    dc11: 294
+    foaf: 19
+    obo: 5338
+    oboInOwl: 102955
+    owl: 214
     prefix_unknown: 75
     protege: 7
     rdf: 584
-    rdfs: 58603
+    rdfs: 59234
     skos: 5
     xsd: 145
   'Info: Which ontologies use it?':
@@ -129,8 +130,7 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    comment: Missing version IRI
-    status: ERROR
+    status: PASS
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -152,24 +152,23 @@ results:
     comment: 2 duplicate labels. 12 multiple labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
-    comment: Missing version IRI to check date
-    status: ERROR
+    status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 648 errors, 874 warnings, 21 info messages.
+    comment: 643 errors, 874 warnings, 21 info messages.
     file: robot_report
     results:
-      ERROR: 648
+      ERROR: 643
       INFO: 21
       WARN: 874
     status: ERROR
-sha256_hash: 621fd3ed22229cf364c3f22f1439b183d83b347c064b0635e494630cc8d31723
+sha256_hash: bb17610749edccc346921524ed1836475e91421fa1b391f90b9dc9c37691376a
 summary:
-  comment: 7 errors
+  comment: 5 errors
   status: ERROR
   summary_count:
-    ERROR: 7
+    ERROR: 5
     INFO: 0
     WARN: 0
-version: null
+version: http://purl.obolibrary.org/obo/cido/releases/2024-02-16/cido.owl
