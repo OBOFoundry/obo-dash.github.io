@@ -4,12 +4,12 @@ base_prefixes:
 - CDNOALT
 - CDNO
 changed: true
-date: 2024-02-21 10:31:54.078098
+date: 2024-03-26 15:04:37.571754
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 58
-    Declaration: 5
-  'Axioms: Number of axioms': 63
+    Declaration: 6
+  'Axioms: Number of axioms': 64
   'Entities: % of entities reused': 100.0
   'Entities: Number of annotation properties': 8
   'Entities: Number of classes': 0
@@ -18,14 +18,14 @@ metrics:
   'Entities: Number of object properties': 0
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used': {}
-  'Info: Does the ontology fall under OWL 2 DL?': false
+  'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.86
+    _dashboard: 0.8
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
     _reuse: 1.0
-    oboscore: 0.43
+    oboscore: 0.4
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
@@ -33,7 +33,7 @@ metrics:
   'Info: Usage of namespaces in axioms':
     IAO: 40
     dc: 1
-    dc11: 2
+    dc11: 3
     owl: 19
     rdfs: 1
   'Info: Which ontologies use it?':
@@ -50,7 +50,8 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -67,18 +68,17 @@ results:
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
-    comment: last version (2022-12-23) is over one year(s) old
-    status: INFO
+    status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
     status: PASS
-sha256_hash: 9d7c6ec57a94ec7cd0a6d11f5ff15b5efe8ae0034bb3a59d81e05a92260dd135
+sha256_hash: e05ea5f32d74d4c6bdc0349a21a818cfe03c4530a5d46c0cc65ecbda9092c3b3
 summary:
-  comment: 2 errors
+  comment: 3 errors
   status: ERROR
   summary_count:
-    ERROR: 2
-    INFO: 1
+    ERROR: 3
+    INFO: 0
     WARN: 0
-version: http://purl.obolibrary.org/obo/cdno/releases/2022-12-23/cdno-base.owl
+version: http://purl.obolibrary.org/obo/cdno/releases/2024-03-20/cdno-base.owl
