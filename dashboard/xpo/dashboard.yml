@@ -4,50 +4,51 @@ base_prefixes:
 - XPOALT
 - XPO
 changed: false
-date: 2024-03-28 14:08:04.237390
+date: 2024-04-25 09:48:31.176479
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 51356
-    Declaration: 22343
+    AnnotationAssertion: 53998
+    Declaration: 23409
     EquivalentClasses: 20340
-  'Axioms: Number of axioms': 94039
-  'Entities: % of entities reused': 8.99
-  'Entities: Number of annotation properties': 10
-  'Entities: Number of classes': 22330
+    SubClassOf: 55157
+  'Axioms: Number of axioms': 152904
+  'Entities: % of entities reused': 8.6
+  'Entities: Number of annotation properties': 14
+  'Entities: Number of classes': 23392
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 8
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 111818
-    ObjectIntersectionOf: 28462
-    ObjectSomeValuesFrom: 69168
-  'Info: Does the ontology fall under OWL 2 DL?': false
+    Class: 272003
+    ObjectIntersectionOf: 56924
+    ObjectSomeValuesFrom: 138336
+  'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.793
+    _dashboard: 0.8
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.005
     _impact_external: 0
-    _reuse: 0.09
-    oboscore: 0.399
+    _reuse: 0.086
+    oboscore: 0.403
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 26869
-    GO: 8329
-    IAO: 20341
-    NBO: 13
-    PATO: 40795
-    RO: 42307
-    XAO: 22000
-    XPO: 40680
+    BFO: 53735
+    GO: 16401
+    IAO: 20860
+    NBO: 21
+    PATO: 81474
+    RO: 84609
+    XAO: 42389
+    XPO: 131716
     dc: 1
-    dc11: 2
-    oboInOwl: 10678
-    owl: 1
-    rdfs: 20340
+    dc11: 3
+    oboInOwl: 10680
+    owl: 1064
+    rdfs: 21402
   'Info: Which ontologies use it?':
   - upheno
 mirror_from: http://purl.obolibrary.org/obo/xpo/xpo-base.owl
@@ -78,24 +79,23 @@ results:
     comment: 10 duplicate labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
-    comment: last version (2022-09-15) is over one year(s) old
-    status: INFO
+    status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 10 errors, 2 warnings, 20371 info messages.
+    comment: 11 errors, 2 warnings, 31 info messages.
     file: robot_report
     results:
-      ERROR: 10
-      INFO: 20371
+      ERROR: 11
+      INFO: 31
       WARN: 2
     status: ERROR
-sha256_hash: 229b3a9f26ccbfaa04bd96a645c1db9a79b259117d4b173ead43c7c2583dfaed
+sha256_hash: 4a79e3874bd6fd554be265f4e0713acbf18834413b3cc50502897f50c797dbda
 summary:
   comment: 3 errors
   status: ERROR
   summary_count:
     ERROR: 3
-    INFO: 1
+    INFO: 0
     WARN: 0
-version: http://purl.obolibrary.org/obo/xpo/releases/2022-09-15/xpo-base.owl
+version: http://purl.obolibrary.org/obo/xpo/releases/2024-04-18/xpo-base.owl

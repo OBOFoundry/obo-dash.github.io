@@ -12,6 +12,8 @@
       <div class="report_summary"><table class="table">
       <tr><th><b>Level</b></th><th><b>Number of errors</b></th></tr>
       
+      <tr><td>WARN</td><td>1</td></tr>
+      
       <tr><td>INFO</td><td>1</td></tr>
       
       </table></div>
@@ -19,11 +21,13 @@
       <div class="report_summary"><table class="table">
       <tr><th><b>Rule</b></th><th><b>Number of errors</b></th></tr>
       
+      <tr><td>missing_subset_declaration</td><td>1</td></tr>
+      
       <tr><td>missing_superclass</td><td>1</td></tr>
       
       </table></div>
       <p style="text-align:center; margin-top:-15px;">
-        <small>Click on any term to direct to the term page.</small>
+        <small>Click on any term to redirect to the term page.</small>
       </p>
       <table class="table">
         <tr>
@@ -37,52 +41,25 @@
           
             <th><b>Property</b></th>
           
-            <th><b>Value
-</b></th>
+            <th><b>Value</b></th>
           
-        </tr>
-        
-          
-          
-            
-          
-          <tr class="table-info">
-            <td>1</td>
-            
-              <td>
-              
-                INFO
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://robot.obolibrary.org/report_queries/missing_superclass">missing_superclass</a>
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://purl.obolibrary.org/obo/WBPhenotype_0000886">WBPhenotype:0000886</a>
-              
-              </td>
-            
-              <td>
-              
-                <a href="http://www.w3.org/2000/01/rdf-schema#subClassOf">rdfs:subClassOf</a>
-              
-              </td>
-            
-              <td>
-              
-                
-
-              
-              </td>
-            
+        </tr><tr class=table-warning>
+            <td>0</td>
+            <td>WARN
+            <td><a href="https://robot.obolibrary.org/report_queries/missing_subset_declaration" target="_blank" rel="noopener noreferrer">missing_subset_declaration</a></td>
+            <td>obo:wbphenotype#phenotype_slim_wb</td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" target="_blank" rel="noopener noreferrer">rdfs:subPropertyOf</a></td>
+            <td></td>
           </tr>
-        
-      </table>
+        <tr class=table-info>
+            <td>1</td>
+            <td>INFO
+            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/WBPhenotype_0000886" target="_blank" rel="noopener noreferrer">WBPhenotype:0000886</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
+            <td></td>
+          </tr>
+        </table>
     </div>
   </div>
 </div>

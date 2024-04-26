@@ -4,110 +4,48 @@ base_prefixes:
 - MSALT
 - MS
 changed: true
-date: 2024-03-26 15:52:55.996657
+date: 2024-04-24 13:44:06.732307
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 120723
-    AsymmetricObjectProperty: 2
-    ClassAssertion: 15
-    DataPropertyDomain: 5
-    DataPropertyRange: 4
-    Declaration: 15639
-    DisjointClasses: 399
-    EquivalentClasses: 6205
-    EquivalentObjectProperties: 26
-    FunctionalDataProperty: 3
-    FunctionalObjectProperty: 5
-    InverseFunctionalObjectProperty: 1
-    InverseObjectProperties: 59
-    IrrefexiveObjectProperty: 2
-    ObjectPropertyDomain: 98
-    ObjectPropertyRange: 89
-    Rule: 26
-    SubAnnotationPropertyOf: 95
-    SubClassOf: 31779
-    SubDataPropertyOf: 4
-    SubObjectPropertyOf: 312
-    SubPropertyChainOf: 121
-    SymmetricObjectProperty: 6
-    TransitiveObjectProperty: 30
-  'Axioms: Number of axioms': 175648
-  'Entities: % of entities reused': 78.01
-  'Entities: Number of annotation properties': 253
-  'Entities: Number of classes': 14999
-  'Entities: Number of data properties': 7
-  'Entities: Number of individuals': 14
-  'Entities: Number of object properties': 368
-  'Entities: Number of unsatisfiable classes': 16
+    AnnotationAssertion: 7758
+    Declaration: 3566
+    SubClassOf: 5799
+  'Axioms: Number of axioms': 17123
+  'Entities: % of entities reused': 3.36
+  'Entities: Number of annotation properties': 7
+  'Entities: Number of classes': 3552
+  'Entities: Number of data properties': 0
+  'Entities: Number of individuals': 0
+  'Entities: Number of object properties': 9
+  'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 99271
-    DataExactCardinality: 4
-    DataHasValue: 35
-    DataMinCardinality: 2
-    DataSomeValuesFrom: 3
-    ObjectAllValuesFrom: 122
-    ObjectComplementOf: 182
-    ObjectExactCardinality: 85
-    ObjectHasSelf: 1
-    ObjectIntersectionOf: 6555
-    ObjectMinCardinality: 59
-    ObjectOneOf: 1
-    ObjectSomeValuesFrom: 20209
-    ObjectUnionOf: 89
+    Class: 15150
+    ObjectSomeValuesFrom: 2289
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.52
+    _dashboard: 0.378
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.011
     _impact_external: 0
-    _reuse: 0.78
-    oboscore: 0.266
+    _reuse: 0.034
+    oboscore: 0.195
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 2
   'Info: Logical consistency': true
-  'Info: Syntax': RDF/XML Syntax
+  'Info: Syntax': OWL Functional Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 6092
-    BSPO: 137
-    CARO: 2
-    CHEBI: 3198
-    CHEBIALT: 131
-    CL: 5847
-    CLALT: 10
-    ENVO: 6
-    GO: 37009
-    GOALT: 38
-    IAO: 21264
-    MS: 13295
-    MSALT: 2174
-    NBO: 2
-    NCBITAXONALT: 121
-    NCBITaxon: 1082
-    NCIT: 45
-    OBI: 2439
-    OGMS: 3
-    PATO: 8666
-    PATOALT: 59
-    PCO: 32
-    PR: 1411
-    PRALT: 8
-    RO: 13314
-    SO: 8
-    STATO: 4247
-    UBERON: 21203
-    UO: 377
-    dc: 1124
-    dc11: 128
-    foaf: 378
-    obo: 4053
-    oboInOwl: 110501
-    owl: 1309
-    prefix_unknown: 17
-    protege: 2
-    rdf: 30338
-    rdfs: 16999
-    skos: 3
-    xsd: 3734
+    BFO: 162
+    IAO: 6956
+    MS: 13282
+    MSALT: 2136
+    NCIT: 14
+    STATO: 55
+    UO: 231
+    obo: 250
+    oboInOwl: 400
+    rdf: 3474
+    rdfs: 3881
+    xsd: 1318
   'Info: Which ontologies use it?':
   - chmo
   - cto
@@ -118,22 +56,23 @@ results:
     comment: Missing ontology license.
     status: ERROR
   FP02 Common Format:
-    status: PASS
+    comment: OWL syntax (OWL Functional Syntax), but should be RDF/XML
+    status: WARN
   FP03 URIs:
-    status: PASS
+    comment: 0 invalid IRIs. The Ontology IRI is not valid.
+    file: fp3
+    status: ERROR
   FP04 Versioning:
-    comment: Version IRI does not resolve
+    comment: Missing version IRI
     status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 87 duplicate definitions.  26 missing definitions. See ROBOT Report for
+    comment: 93 duplicate definitions.  19 missing definitions. See ROBOT Report for
       details.
     status: ERROR
   FP07 Relations:
-    comment: 10 non-RO properties used.
-    file: fp7
-    status: INFO
+    status: PASS
   FP08 Documented:
     status: PASS
   FP09 Plurality of Users:
@@ -142,27 +81,27 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 16 duplicate labels. See ROBOT Report for details.
+    comment: 18 duplicate labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
-    comment: Version IRI does not have date information
-    status: INFO
+    comment: Missing version IRI to check date
+    status: ERROR
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 273 errors, 311 warnings, 39 info messages.
+    comment: 112 errors, 32 warnings, 221 info messages.
     file: robot_report
     results:
-      ERROR: 273
-      INFO: 39
-      WARN: 311
+      ERROR: 112
+      INFO: 221
+      WARN: 32
     status: ERROR
-sha256_hash: a667a8b84189834706c18629f562912d9f74470925b174ad2266310a225c82c3
+sha256_hash: 7e039db41c077d536f5a3fc15f48194804f12efb4db67fa44e088ea2875c4efe
 summary:
-  comment: 6 errors
+  comment: 8 errors
   status: ERROR
   summary_count:
-    ERROR: 6
-    INFO: 2
-    WARN: 0
-version: http://purl.obolibrary.org/obo/ms/4.1.141/ms.owl
+    ERROR: 8
+    INFO: 0
+    WARN: 1
+version: null

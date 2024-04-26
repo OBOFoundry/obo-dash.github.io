@@ -4,7 +4,7 @@ base_prefixes:
 - OMRSEALT
 - OMRSE
 changed: false
-date: 2024-03-27 11:58:26.987464
+date: 2024-04-25 09:17:54.020027
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1493
@@ -38,13 +38,13 @@ metrics:
     ObjectUnionOf: 13
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.816
+    _dashboard: 0.949
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.098
-    _impact_external: 0
+    _impact: 0.097
+    _impact_external: 0.25
     _reuse: 0.251
-    oboscore: 0.457
-  'Info: How many externally documented uses?': 0
+    oboscore: 0.523
+  'Info: How many externally documented uses?': 2
   'Info: How many ontologies use it?': 18
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
@@ -101,8 +101,7 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    comment: Version IRI does not resolve
-    status: ERROR
+    status: PASS
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -115,8 +114,7 @@ results:
   FP08 Documented:
     status: PASS
   FP09 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
+    status: PASS
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
@@ -135,10 +133,10 @@ results:
     status: WARN
 sha256_hash: da96f3cd5e906cdabb50a0ae40d0ace07f6ac22e5cac5840e5e43892feca0b81
 summary:
-  comment: 2 errors
-  status: ERROR
+  comment: 2 warnings
+  status: WARN
   summary_count:
-    ERROR: 2
+    ERROR: 0
     INFO: 1
     WARN: 2
 version: http://purl.obolibrary.org/obo/omrse/releases/2024-03-22/omrse-base.owl
