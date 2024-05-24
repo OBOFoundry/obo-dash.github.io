@@ -4,43 +4,43 @@ base_prefixes:
 - OCCOALT
 - OCCO
 changed: false
-date: 2024-04-25 09:09:17.431411
+date: 2024-05-24 10:52:50.468276
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 5049
+    AnnotationAssertion: 22339
     AnnotationPropertyRangeOf: 1
-    ClassAssertion: 1622
-    Declaration: 1921
+    ClassAssertion: 19
+    Declaration: 1937
     DifferentIndividuals: 2
     DisjointClasses: 21
-    EquivalentClasses: 4
+    EquivalentClasses: 9
     FunctionalObjectProperty: 1
     InverseFunctionalObjectProperty: 1
     InverseObjectProperties: 14
     IrrefexiveObjectProperty: 1
-    ObjectPropertyAssertion: 1573
-    ObjectPropertyDomain: 14
-    ObjectPropertyRange: 15
+    ObjectPropertyDomain: 15
+    ObjectPropertyRange: 16
     Rule: 4
     SubAnnotationPropertyOf: 21
-    SubClassOf: 172
-    SubObjectPropertyOf: 11
+    SubClassOf: 12697
+    SubObjectPropertyOf: 10
     SubPropertyChainOf: 2
     TransitiveObjectProperty: 4
-  'Axioms: Number of axioms': 10453
+  'Axioms: Number of axioms': 37114
   'Entities: % of entities reused': 100.0
   'Entities: Number of annotation properties': 96
-  'Entities: Number of classes': 172
+  'Entities: Number of classes': 1791
   'Entities: Number of data properties': 1
-  'Entities: Number of individuals': 1623
-  'Entities: Number of object properties': 34
+  'Entities: Number of individuals': 20
+  'Entities: Number of object properties': 33
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 2219
+    Class: 26369
+    DataHasValue: 928
     ObjectComplementOf: 2
     ObjectIntersectionOf: 2
     ObjectOneOf: 3
-    ObjectSomeValuesFrom: 4
+    ObjectSomeValuesFrom: 9064
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
     _dashboard: 0.816
@@ -54,23 +54,24 @@ metrics:
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 289
-    IAO: 1576
+    BFO: 293
+    IAO: 9200
     NCBITAXONALT: 2
-    NCBITaxon: 3
+    NCBITaxon: 4
+    OBI: 7
     OMO: 34
-    OMRSE: 16
+    OMRSE: 19
     RO: 113
     dc: 32
-    dc11: 37
+    dc11: 36
     foaf: 2
-    obo: 11524
-    oboInOwl: 32
-    owl: 11
+    obo: 47175
+    oboInOwl: 231
+    owl: 10
     protege: 1
     rdf: 8
-    rdfs: 1989
-    xsd: 1
+    rdfs: 2005
+    xsd: 929
   'Info: Which ontologies use it?': []
 mirror_from: http://purl.obolibrary.org/obo/occo.owl
 namespace: occo
@@ -86,7 +87,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 7 missing definitions. See ROBOT Report for details.
+    comment: 585 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     comment: 4 non-RO properties used.
@@ -106,14 +107,14 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 8 warnings, 0 info messages.
+    comment: 1112 warnings, 0 info messages.
     file: robot_report
     results:
       ERROR: 0
       INFO: 0
-      WARN: 8
+      WARN: 1112
     status: WARN
-sha256_hash: 7fd1bc26af4b3a1a230dcbf5cbbcf3849d8681de3d14779631ee60f5b0dea0ee
+sha256_hash: f8c44a221f804d1298b1fc90ddf1eb54cae34ac2d0b810e1291b3556bc46af0e
 summary:
   comment: 1 errors
   status: ERROR
@@ -121,4 +122,4 @@ summary:
     ERROR: 1
     INFO: 1
     WARN: 2
-version: http://purl.obolibrary.org/obo/occo/2023-12-09/occo.owl
+version: http://purl.obolibrary.org/obo/occo/releases/2024-04-28/occo.owl

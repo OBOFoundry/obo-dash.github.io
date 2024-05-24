@@ -4,45 +4,45 @@ base_prefixes:
 - VTALT
 - VT
 changed: false
-date: 2024-04-25 09:43:23.680803
+date: 2024-05-24 11:26:43.489354
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 22799
-    Declaration: 3904
-    SubClassOf: 4452
+    AnnotationAssertion: 22929
+    Declaration: 3912
+    SubClassOf: 4463
     TransitiveObjectProperty: 1
-  'Axioms: Number of axioms': 31156
+  'Axioms: Number of axioms': 31305
   'Entities: % of entities reused': 0.64
   'Entities: Number of annotation properties': 23
-  'Entities: Number of classes': 3880
+  'Entities: Number of classes': 3888
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 2
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 12784
+    Class: 12814
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.793
+    _dashboard: 0.882
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.016
     _impact_external: 0.5
     _reuse: 0.006
-    oboscore: 0.405
+    oboscore: 0.449
   'Info: How many externally documented uses?': 3
   'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    IAO: 3879
-    VT: 12784
+    IAO: 3887
+    VT: 12814
     VTALT: 3
     dc: 1
     dc11: 3
-    oboInOwl: 18717
+    oboInOwl: 18839
     owl: 95
-    rdf: 3944
-    rdfs: 4070
+    rdf: 3952
+    rdfs: 4078
   'Info: Which ontologies use it?':
   - genepio
   - scdo
@@ -61,9 +61,8 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 2 duplicate definitions.  4 missing definitions. See ROBOT Report for
-      details.
-    status: ERROR
+    comment: 4 missing definitions. See ROBOT Report for details.
+    status: WARN
   FP07 Relations:
     comment: 2 non-RO properties used.
     file: fp7
@@ -81,19 +80,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 2 errors, 4 warnings, 1 info messages.
+    comment: 4 warnings, 1 info messages.
     file: robot_report
     results:
-      ERROR: 2
+      ERROR: 0
       INFO: 1
       WARN: 4
-    status: ERROR
-sha256_hash: 1e4c64d8be940d16b6fb7e76e03d10ee6355a969866a388161d2e18dd46ec87d
+    status: WARN
+sha256_hash: 864eb58b67c310badd0dd70bf0d58019e6acfa32b8531df286379fa8ebf4f343
 summary:
-  comment: 2 errors
-  status: ERROR
+  comment: 2 warnings
+  status: WARN
   summary_count:
-    ERROR: 2
+    ERROR: 0
     INFO: 1
-    WARN: 0
-version: http://purl.obolibrary.org/obo/vt/releases/2024-04-15/vt.owl
+    WARN: 2
+version: http://purl.obolibrary.org/obo/vt/releases/2024-05-15/vt.owl

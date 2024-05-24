@@ -1,15 +1,15 @@
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <title>ons Dashboard Report</title>
+    <title>afpo Dashboard Report</title>
 </head>
 <body>
     <div class="container">
         <div class="row" style="padding-top:30px;">
             <div class="col-md-2"></div>
             <div class="col-md-8">
-                <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/ons.html">ons</a></h1>
-                <p class="lead"><b>Version</b>: None</p>
-                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: 2024-04-25 09:18:03.873930</p>
+                <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/afpo.html">afpo</a></h1>
+                <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/afpo/releases/2024-03-21/afpo-base.owl</p>
+                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: 2024-05-23 17:23:47.962395</p>
                 <p class="lead" style="margin-top:-15px;"><a href="dashboard.yml">View dashboard results as YAML</a></p>
                 <p class="lead" style="margin-top:-15px;"><a href="../index.html">Go back to Overview</a></p>
                 <h3>Error Breakdown</h3>
@@ -19,7 +19,7 @@
                         
                     
                     <div class="alert alert-danger">
-                        <center><h3>ERROR - 6 errors</h3></center>
+                        <center><h3>ERROR - 1 errors</h3></center>
                     </div>
                 
                 <table class="table">
@@ -42,11 +42,11 @@
                                 
                                 
                             
-                            <td class="table-warning" style="text-align:center;">
-                                <img src="../assets/warning.svg" height="15px">
+                            <td class="table-success" style="text-align:center;">
+                                <img src="../assets/check.svg" height="15px">
                             </td>
                             
-                                <td>License should use property 'http://purl.org/dc/terms/license'.</td>
+                                <td></td>
                             
                             
                                 <td></td>
@@ -84,14 +84,14 @@
                                 
                                 
                             
-                            <td class="table-danger" style="text-align:center;">
-                                <img src="../assets/x.svg" height="15px">
+                            <td class="table-success" style="text-align:center;">
+                                <img src="../assets/check.svg" height="15px">
                             </td>
                             
-                                <td>0 invalid IRIs. The Ontology IRI is not valid.</td>
+                                <td></td>
                             
                             
-                                <td><a href="fp3.html">View URIs Report</a></td>
+                                <td></td>
                             
                         </tr>
                     
@@ -105,11 +105,11 @@
                                 
                                 
                             
-                            <td class="table-danger" style="text-align:center;">
-                                <img src="../assets/x.svg" height="15px">
+                            <td class="table-success" style="text-align:center;">
+                                <img src="../assets/check.svg" height="15px">
                             </td>
                             
-                                <td>Missing version IRI</td>
+                                <td></td>
                             
                             
                                 <td></td>
@@ -147,11 +147,11 @@
                                 
                                 
                             
-                            <td class="table-danger" style="text-align:center;">
-                                <img src="../assets/x.svg" height="15px">
+                            <td class="table-warning" style="text-align:center;">
+                                <img src="../assets/warning.svg" height="15px">
                             </td>
                             
-                                <td>5 duplicate definitions.  2 missing definitions. See ROBOT Report for details.</td>
+                                <td>106 missing definitions. See ROBOT Report for details.</td>
                             
                             
                                 <td></td>
@@ -168,14 +168,14 @@
                                 
                                 
                             
-                            <td class="table-success" style="text-align:center;">
-                                <img src="../assets/check.svg" height="15px">
+                            <td class="table-info" style="text-align:center;">
+                                <img src="../assets/info.svg" height="15px">
                             </td>
                             
-                                <td></td>
+                                <td>1 non-RO properties used.</td>
                             
                             
-                                <td></td>
+                                <td><a href="fp7.html">View Relations Report</a></td>
                             
                         </tr>
                     
@@ -273,11 +273,11 @@
                                 
                                 
                             
-                            <td class="table-danger" style="text-align:center;">
-                                <img src="../assets/x.svg" height="15px">
+                            <td class="table-success" style="text-align:center;">
+                                <img src="../assets/check.svg" height="15px">
                             </td>
                             
-                                <td>Missing version IRI to check date</td>
+                                <td></td>
                             
                             
                                 <td></td>
@@ -322,11 +322,11 @@
                           
                           
                       
-                      <td class="table-danger" style="text-align:center;">
-                          <img src="../assets/x.svg" height="15px">
+                      <td class="table-warning" style="text-align:center;">
+                          <img src="../assets/warning.svg" height="15px">
                       </td>
                       
-                          <td>17 errors, 52 warnings, 58 info messages.</td>
+                          <td>106 warnings, 3 info messages.</td>
                       
                       
                           <td><a href="robot_report.html">View ROBOT Report</a></td>
@@ -350,53 +350,11 @@
                                     <td>
                                         <ul>
                                             
-                                                <li>AnnotationAssertion: 76880</li>
+                                                <li>AnnotationAssertion: 8000</li>
                                             
-                                                <li>AnnotationPropertyRangeOf: 25</li>
+                                                <li>Declaration: 488</li>
                                             
-                                                <li>ClassAssertion: 177</li>
-                                            
-                                                <li>DataPropertyAssertion: 8</li>
-                                            
-                                                <li>DataPropertyDomain: 3</li>
-                                            
-                                                <li>DataPropertyRange: 3</li>
-                                            
-                                                <li>Declaration: 6460</li>
-                                            
-                                                <li>EquivalentClasses: 126</li>
-                                            
-                                                <li>EquivalentObjectProperties: 3</li>
-                                            
-                                                <li>FunctionalDataProperty: 2</li>
-                                            
-                                                <li>FunctionalObjectProperty: 3</li>
-                                            
-                                                <li>InverseFunctionalObjectProperty: 4</li>
-                                            
-                                                <li>InverseObjectProperties: 31</li>
-                                            
-                                                <li>IrrefexiveObjectProperty: 1</li>
-                                            
-                                                <li>ObjectPropertyAssertion: 28</li>
-                                            
-                                                <li>ObjectPropertyDomain: 40</li>
-                                            
-                                                <li>ObjectPropertyRange: 49</li>
-                                            
-                                                <li>SubAnnotationPropertyOf: 23</li>
-                                            
-                                                <li>SubClassOf: 8696</li>
-                                            
-                                                <li>SubDataPropertyOf: 1</li>
-                                            
-                                                <li>SubObjectPropertyOf: 55</li>
-                                            
-                                                <li>SubPropertyChainOf: 14</li>
-                                            
-                                                <li>SymmetricObjectProperty: 1</li>
-                                            
-                                                <li>TransitiveObjectProperty: 8</li>
+                                                <li>SubClassOf: 906</li>
                                             
                                         </ul>
                                     </td>
@@ -407,7 +365,7 @@
                                 <td>Axioms: Number of axioms</td>
                                 
                                 
-                                    <td>92641</td>
+                                    <td>9394</td>
                                 
                             </tr>
                         
@@ -415,7 +373,7 @@
                                 <td>Entities: % of entities reused</td>
                                 
                                 
-                                    <td>95.75</td>
+                                    <td>100.0</td>
                                 
                             </tr>
                         
@@ -423,7 +381,7 @@
                                 <td>Entities: Number of annotation properties</td>
                                 
                                 
-                                    <td>144</td>
+                                    <td>43</td>
                                 
                             </tr>
                         
@@ -431,7 +389,7 @@
                                 <td>Entities: Number of classes</td>
                                 
                                 
-                                    <td>6056</td>
+                                    <td>447</td>
                                 
                             </tr>
                         
@@ -439,7 +397,7 @@
                                 <td>Entities: Number of data properties</td>
                                 
                                 
-                                    <td>5</td>
+                                    <td>0</td>
                                 
                             </tr>
                         
@@ -447,7 +405,7 @@
                                 <td>Entities: Number of individuals</td>
                                 
                                 
-                                    <td>133</td>
+                                    <td>0</td>
                                 
                             </tr>
                         
@@ -455,7 +413,7 @@
                                 <td>Entities: Number of object properties</td>
                                 
                                 
-                                    <td>117</td>
+                                    <td>2</td>
                                 
                             </tr>
                         
@@ -474,27 +432,9 @@
                                     <td>
                                         <ul>
                                             
-                                                <li>Class: 24230</li>
+                                                <li>Class: 2259</li>
                                             
-                                                <li>DataMinCardinality: 2</li>
-                                            
-                                                <li>ObjectAllValuesFrom: 28</li>
-                                            
-                                                <li>ObjectComplementOf: 126</li>
-                                            
-                                                <li>ObjectExactCardinality: 3</li>
-                                            
-                                                <li>ObjectIntersectionOf: 201</li>
-                                            
-                                                <li>ObjectMaxCardinality: 1</li>
-                                            
-                                                <li>ObjectMinCardinality: 2</li>
-                                            
-                                                <li>ObjectOneOf: 1</li>
-                                            
-                                                <li>ObjectSomeValuesFrom: 1017</li>
-                                            
-                                                <li>ObjectUnionOf: 40</li>
+                                                <li>ObjectSomeValuesFrom: 485</li>
                                             
                                         </ul>
                                     </td>
@@ -505,7 +445,7 @@
                                 <td>Info: Does the ontology fall under OWL 2 DL?</td>
                                 
                                 
-                                    <td>False</td>
+                                    <td>True</td>
                                 
                             </tr>
                         
@@ -516,17 +456,17 @@
                                     <td>
                                         <ul>
                                             
-                                                <li>_dashboard: 0.511</li>
+                                                <li>_dashboard: 0.882</li>
                                             
                                                 <li>_formula: (1*impact+1*dashboard)/2</li>
                                             
-                                                <li>_impact: 0.016</li>
+                                                <li>_impact: 0.0</li>
                                             
                                                 <li>_impact_external: 0</li>
                                             
-                                                <li>_reuse: 0.958</li>
+                                                <li>_reuse: 1.0</li>
                                             
-                                                <li>oboscore: 0.264</li>
+                                                <li>oboscore: 0.441</li>
                                             
                                         </ul>
                                     </td>
@@ -545,7 +485,7 @@
                                 <td>Info: How many ontologies use it?</td>
                                 
                                 
-                                    <td>3</td>
+                                    <td>0</td>
                                 
                             </tr>
                         
@@ -572,109 +512,25 @@
                                     <td>
                                         <ul>
                                             
-                                                <li>BFO: 581</li>
+                                                <li>HANCESTRO: 486</li>
                                             
-                                                <li>CARO: 3</li>
+                                                <li>IAO: 324</li>
                                             
-                                                <li>CHEBI: 65</li>
+                                                <li>OBI: 6</li>
                                             
-                                                <li>CL: 14</li>
+                                                <li>dbpedia: 540</li>
                                             
-                                                <li>CMO: 14</li>
+                                                <li>dc: 99</li>
                                             
-                                                <li>EFO: 34</li>
+                                                <li>dc11: 1</li>
                                             
-                                                <li>ENVO: 3</li>
+                                                <li>obo: 8781</li>
                                             
-                                                <li>ERO: 7</li>
+                                                <li>oboInOwl: 409</li>
                                             
-                                                <li>FOODON: 11244</li>
+                                                <li>rdf: 291</li>
                                             
-                                                <li>GAZ: 4</li>
-                                            
-                                                <li>GENEPIO: 4</li>
-                                            
-                                                <li>GO: 458</li>
-                                            
-                                                <li>HP: 44</li>
-                                            
-                                                <li>IAO: 26483</li>
-                                            
-                                                <li>ICO: 13</li>
-                                            
-                                                <li>NCBITAXONALT: 68</li>
-                                            
-                                                <li>NCBITaxon: 8162</li>
-                                            
-                                                <li>NCIT: 536</li>
-                                            
-                                                <li>OBCS: 11</li>
-                                            
-                                                <li>OBI: 1937</li>
-                                            
-                                                <li>OBIB: 12</li>
-                                            
-                                                <li>OGMS: 34</li>
-                                            
-                                                <li>OHMI: 11</li>
-                                            
-                                                <li>OMIABIS: 6</li>
-                                            
-                                                <li>OMP: 82</li>
-                                            
-                                                <li>OMPALT: 3</li>
-                                            
-                                                <li>OMRSE: 2</li>
-                                            
-                                                <li>ONS: 1279</li>
-                                            
-                                                <li>PATO: 122</li>
-                                            
-                                                <li>PO: 17</li>
-                                            
-                                                <li>PR: 4</li>
-                                            
-                                                <li>RO: 905</li>
-                                            
-                                                <li>SIO: 187</li>
-                                            
-                                                <li>SO: 4</li>
-                                            
-                                                <li>STATO: 11</li>
-                                            
-                                                <li>UBERON: 114</li>
-                                            
-                                                <li>UO: 212</li>
-                                            
-                                                <li>VO: 4</li>
-                                            
-                                                <li>dc: 55</li>
-                                            
-                                                <li>dc11: 213</li>
-                                            
-                                                <li>efo: 358</li>
-                                            
-                                                <li>foaf: 3</li>
-                                            
-                                                <li>obo: 99</li>
-                                            
-                                                <li>oboInOwl: 41495</li>
-                                            
-                                                <li>owl: 34</li>
-                                            
-                                                <li>prefix_unknown: 73</li>
-                                            
-                                                <li>protege: 6</li>
-                                            
-                                                <li>rdf: 1</li>
-                                            
-                                                <li>rdfs: 8173</li>
-                                            
-                                                <li>schema: 32</li>
-                                            
-                                                <li>skos: 4</li>
-                                            
-                                                <li>xsd: 11</li>
+                                                <li>rdfs: 430</li>
                                             
                                         </ul>
                                     </td>
@@ -686,12 +542,6 @@
                                 
                                 
                                     <td><ul>
-                                        
-                                            <li>ado</li>
-                                        
-                                            <li>foodon</li>
-                                        
-                                            <li>one</li>
                                         
                                     </ul></td>
                                 

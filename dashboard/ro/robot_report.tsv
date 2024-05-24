@@ -1,5 +1,4 @@
 Level	Rule Name	Subject	Property	Value
-WARN	annotation_whitespace	RO:0002093	rdfs:comment	X ends_during Y iff: ((start(Y) before_or_simultaneous_with end(X)) AND end(X) before_or_simultaneous_with end(Y). @en
 WARN	annotation_whitespace	RO:0002101	IAO:0000115	"relationship between a neuron and a neuron projection bundle (e.g.- tract or nerve bundle) that one or more of its projections travels through.
 @en"
 WARN	annotation_whitespace	RO:0002103	IAO:0000115	Relation between an anatomical structure (including cells) and a neuron that chemically synapses to it. @en
@@ -79,6 +78,7 @@ WARN	missing_definition	RO:0002093	IAO:0000115
 WARN	missing_definition	RO:0002111	IAO:0000115	
 WARN	missing_definition	RO:0002159	IAO:0000115	
 WARN	missing_definition	RO:0002222	IAO:0000115	
+WARN	missing_definition	RO:0002259	IAO:0000115	
 WARN	missing_definition	RO:0002287	IAO:0000115	
 WARN	missing_definition	RO:0002297	IAO:0000115	
 WARN	missing_definition	RO:0002300	IAO:0000115	
@@ -96,13 +96,10 @@ WARN	missing_definition	RO:0002424	IAO:0000115
 WARN	missing_definition	RO:0002425	IAO:0000115	
 WARN	missing_definition	RO:0002426	IAO:0000115	
 WARN	missing_definition	RO:0002435	IAO:0000115	
-WARN	missing_definition	RO:0002444	IAO:0000115	
-WARN	missing_definition	RO:0002445	IAO:0000115	
 WARN	missing_definition	RO:0002447	IAO:0000115	
 WARN	missing_definition	RO:0002453	IAO:0000115	
 WARN	missing_definition	RO:0002455	IAO:0000115	
 WARN	missing_definition	RO:0002456	IAO:0000115	
-WARN	missing_definition	RO:0002457	IAO:0000115	
 WARN	missing_definition	RO:0002459	IAO:0000115	
 WARN	missing_definition	RO:0002460	IAO:0000115	
 WARN	missing_definition	RO:0002461	IAO:0000115	
@@ -113,9 +110,6 @@ WARN	missing_definition	RO:0002465	IAO:0000115
 WARN	missing_definition	RO:0002466	IAO:0000115	
 WARN	missing_definition	RO:0002467	IAO:0000115	
 WARN	missing_definition	RO:0002468	IAO:0000115	
-WARN	missing_definition	RO:0002469	IAO:0000115	
-WARN	missing_definition	RO:0002470	IAO:0000115	
-WARN	missing_definition	RO:0002471	IAO:0000115	
 WARN	missing_definition	RO:0002481	IAO:0000115	
 WARN	missing_definition	RO:0002482	IAO:0000115	
 WARN	missing_definition	RO:0002483	IAO:0000115	
@@ -131,8 +125,6 @@ WARN	missing_definition	RO:0002538	IAO:0000115
 WARN	missing_definition	RO:0002549	IAO:0000115	
 WARN	missing_definition	RO:0002550	IAO:0000115	
 WARN	missing_definition	RO:0002555	IAO:0000115	
-WARN	missing_definition	RO:0002556	IAO:0000115	
-WARN	missing_definition	RO:0002557	IAO:0000115	
 WARN	missing_definition	RO:0002559	IAO:0000115	
 WARN	missing_definition	RO:0002563	IAO:0000115	
 WARN	missing_definition	RO:0002564	IAO:0000115	
@@ -181,6 +173,8 @@ WARN	missing_definition	RO:0016001	IAO:0000115
 WARN	missing_definition	RO:0018030	IAO:0000115	
 WARN	missing_obsolete_label	RO:0004096	rdfs:label	DEPRECATED inheres in@en
 WARN	missing_obsolete_label	RO:0004097	rdfs:label	DEPRECATED bearer of@en
+WARN	missing_subset_declaration	RO:0002259	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:ro/subsets#ro-eco	rdfs:subPropertyOf	
 INFO	lowercase_definition	RO:0000052	IAO:0000115	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
 INFO	lowercase_definition	RO:0000056	IAO:0000115	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
 INFO	lowercase_definition	RO:0000057	IAO:0000115	a relation between a process and a continuant, in which the continuant is somehow involved in the process@en
@@ -198,3 +192,9 @@ INFO	lowercase_definition	RO:0001015	IAO:0000115	a relation between two independ
 INFO	lowercase_definition	RO:0001025	IAO:0000115	a relation between two independent continuants, the target and the location, in which the target is entirely within the location@en
 INFO	lowercase_definition	RO:0001901	IAO:0000115	"## Elucidation
 
+This is used when the statement/axiom is assumed to hold true &apos;eternally&apos;
+
+## How to interpret (informal)
+
+First the &quot;atemporal&quot; FOL is derived from the OWL using the standard
+interpretation. This axiom is temporalized by embedding the axiom
