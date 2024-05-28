@@ -14,9 +14,9 @@
       
       <tr><td>WARN</td><td>58</td></tr>
       
-      <tr><td>INFO</td><td>2</td></tr>
+      <tr><td>ERROR</td><td>2</td></tr>
       
-      <tr><td>ERROR</td><td>1</td></tr>
+      <tr><td>INFO</td><td>2</td></tr>
       
       </table></div>
       <h3>Error breakdown</h3>
@@ -28,6 +28,8 @@
       <tr><td>annotation_whitespace</td><td>8</td></tr>
       
       <tr><td>lowercase_definition</td><td>2</td></tr>
+      
+      <tr><td>deprecated_boolean_datatype</td><td>1</td></tr>
       
       <tr><td>duplicate_label</td><td>1</td></tr>
       
@@ -52,13 +54,21 @@
         </tr><tr class=table-danger>
             <td>0</td>
             <td>ERROR
+            <td><a href="http://robot.obolibrary.org/report_queries/deprecated_boolean_datatype" target="_blank" rel="noopener noreferrer">deprecated_boolean_datatype</a></td>
+            <td>obo:SLSO_0001140</td>
+            <td><a href="http://www.w3.org/2002/07/owl#deprecated" target="_blank" rel="noopener noreferrer">owl:deprecated</a></td>
+            <td>TRUE</td>
+          </tr>
+        <tr class=table-danger>
+            <td>1</td>
+            <td>ERROR
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label" target="_blank" rel="noopener noreferrer">duplicate_label</a></td>
             <td>obo:SLSO_0001080</td>
             <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
             <td>description</td>
           </tr>
         <tr class=table-warning>
-            <td>1</td>
+            <td>2</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td>obo:SLSO_0000026</td>
@@ -66,7 +76,7 @@
             <td>A federally funded facility where NASA activities are undertaken.  </td>
           </tr>
         <tr class=table-warning>
-            <td>2</td>
+            <td>3</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td>obo:SLSO_0000028</td>
@@ -74,7 +84,7 @@
             <td> \"By this definition no binary files are documents (we assume they become dataset files in NGLSDA)\"</td>
           </tr>
         <tr class=table-warning>
-            <td>3</td>
+            <td>4</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td>obo:SLSO_0001049</td>
@@ -82,7 +92,7 @@
             <td> This alphanumeric string is generated at data acquisition, and is used to uniquely identify the dataset.</td>
           </tr>
         <tr class=table-warning>
-            <td>4</td>
+            <td>5</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td>obo:SLSO_0001050</td>
@@ -90,7 +100,7 @@
             <td>ALSDA subject ID: Unique numeric identifier of  a group to which the subject belongs. Examples of subject  groups (Flight/Ground Control/Basal) </td>
           </tr>
         <tr class=table-warning>
-            <td>5</td>
+            <td>6</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td>obo:SLSO_0001061</td>
@@ -98,7 +108,7 @@
             <td> Available; Availability</td>
           </tr>
         <tr class=table-warning>
-            <td>6</td>
+            <td>7</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td>obo:SLSO_0001111</td>
@@ -106,7 +116,7 @@
             <td>NASA center of the biospecimen </td>
           </tr>
         <tr class=table-warning>
-            <td>7</td>
+            <td>8</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td>obo:SLSO_0001130</td>
@@ -114,7 +124,7 @@
             <td>Access restrictions for ordering/receiving the archived document. </td>
           </tr>
         <tr class=table-warning>
-            <td>8</td>
+            <td>9</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td>obo:SLSO_0001163</td>
@@ -122,7 +132,7 @@
             <td>Duty center of the NASA representative </td>
           </tr>
         <tr class=table-warning>
-            <td>9</td>
+            <td>10</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0000001</td>
@@ -130,7 +140,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>10</td>
+            <td>11</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0000002</td>
@@ -138,7 +148,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>11</td>
+            <td>12</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0000003</td>
@@ -146,7 +156,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>12</td>
+            <td>13</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0000004</td>
@@ -154,7 +164,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>13</td>
+            <td>14</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0000007</td>
@@ -162,7 +172,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>14</td>
+            <td>15</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0000008</td>
@@ -170,7 +180,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>15</td>
+            <td>16</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0000011</td>
@@ -178,7 +188,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>16</td>
+            <td>17</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0000012</td>
@@ -186,7 +196,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>17</td>
+            <td>18</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0000013</td>
@@ -194,7 +204,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>18</td>
+            <td>19</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0000014</td>
@@ -202,7 +212,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>19</td>
+            <td>20</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0000015</td>
@@ -210,7 +220,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>20</td>
+            <td>21</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0000016</td>
@@ -218,7 +228,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>21</td>
+            <td>22</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0000017</td>
@@ -226,7 +236,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>22</td>
+            <td>23</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0000018</td>
@@ -234,7 +244,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>23</td>
+            <td>24</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001060</td>
@@ -242,7 +252,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>24</td>
+            <td>25</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001069</td>
@@ -250,7 +260,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>25</td>
+            <td>26</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001072</td>
@@ -258,7 +268,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>26</td>
+            <td>27</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001077</td>
@@ -266,7 +276,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>27</td>
+            <td>28</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001081</td>
@@ -274,7 +284,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>28</td>
+            <td>29</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001087</td>
@@ -282,7 +292,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>29</td>
+            <td>30</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001089</td>
@@ -290,7 +300,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>30</td>
+            <td>31</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001090</td>
@@ -298,7 +308,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>31</td>
+            <td>32</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001092</td>
@@ -306,7 +316,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>32</td>
+            <td>33</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001093</td>
@@ -314,7 +324,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>33</td>
+            <td>34</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001096</td>
@@ -322,7 +332,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>34</td>
+            <td>35</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001097</td>
@@ -330,7 +340,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>35</td>
+            <td>36</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001098</td>
@@ -338,7 +348,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>36</td>
+            <td>37</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001100</td>
@@ -346,7 +356,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>37</td>
+            <td>38</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001107</td>
@@ -354,7 +364,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>38</td>
+            <td>39</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001109</td>
@@ -362,7 +372,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>39</td>
+            <td>40</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001113</td>
@@ -370,7 +380,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>40</td>
+            <td>41</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001114</td>
@@ -378,7 +388,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>41</td>
+            <td>42</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001119</td>
@@ -386,7 +396,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>42</td>
+            <td>43</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001120</td>
@@ -394,7 +404,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>43</td>
+            <td>44</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001129</td>
@@ -402,7 +412,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>44</td>
+            <td>45</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001131</td>
@@ -410,7 +420,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>45</td>
+            <td>46</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001140</td>
@@ -418,7 +428,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>46</td>
+            <td>47</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001143</td>
@@ -426,7 +436,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>47</td>
+            <td>48</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001144</td>
@@ -434,7 +444,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>48</td>
+            <td>49</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001147</td>
@@ -442,7 +452,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>49</td>
+            <td>50</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001149</td>
@@ -450,7 +460,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>50</td>
+            <td>51</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001150</td>
@@ -458,7 +468,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>51</td>
+            <td>52</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001153</td>
@@ -466,7 +476,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>52</td>
+            <td>53</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001154</td>
@@ -474,7 +484,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>53</td>
+            <td>54</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001155</td>
@@ -482,7 +492,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>54</td>
+            <td>55</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001157</td>
@@ -490,7 +500,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>55</td>
+            <td>56</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001165</td>
@@ -498,7 +508,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>56</td>
+            <td>57</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001166</td>
@@ -506,7 +516,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>57</td>
+            <td>58</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001170</td>
@@ -514,7 +524,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>58</td>
+            <td>59</td>
             <td>WARN
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:SLSO_0001171</td>
@@ -522,7 +532,7 @@
             <td></td>
           </tr>
         <tr class=table-info>
-            <td>59</td>
+            <td>60</td>
             <td>INFO
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td>obo:SLSO_0001049</td>
@@ -530,7 +540,7 @@
             <td> This alphanumeric string is generated at data acquisition, and is used to uniquely identify the dataset.</td>
           </tr>
         <tr class=table-info>
-            <td>60</td>
+            <td>61</td>
             <td>INFO
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td>obo:SLSO_0001101</td>
