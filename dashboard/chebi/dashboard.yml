@@ -4,49 +4,49 @@ base_prefixes:
 - CHEBIALT
 - CHEBI
 changed: true
-date: 2024-05-24 19:19:06.906252
+date: 2024-06-27 12:06:01.363397
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 3000274
-    Declaration: 219233
+    AnnotationAssertion: 3003026
+    Declaration: 219344
     InverseObjectProperties: 1
     SubAnnotationPropertyOf: 6
-    SubClassOf: 370469
+    SubClassOf: 370862
     TransitiveObjectProperty: 2
-  'Axioms: Number of axioms': 3589985
+  'Axioms: Number of axioms': 3593241
   'Entities: % of entities reused': 0.02
   'Entities: Number of annotation properties': 37
-  'Entities: Number of classes': 219186
+  'Entities: Number of classes': 219297
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 10
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 960124
-    ObjectSomeValuesFrom: 92310
+    Class: 961021
+    ObjectSomeValuesFrom: 92448
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.593
+    _dashboard: 0.66
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.403
+    _impact: 0.409
     _impact_external: 0.25
     _reuse: 0.0
-    oboscore: 0.498
+    oboscore: 0.534
   'Info: How many externally documented uses?': 2
-  'Info: How many ontologies use it?': 75
+  'Info: How many ontologies use it?': 76
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 4035
-    CHEBI: 960124
-    CHEBIALT: 44546
-    IAO: 90933
-    RO: 43755
-    obo: 1295205
-    oboInOwl: 2107364
-    owl: 18651
-    rdfs: 200635
-    xsd: 585168
+    BFO: 4041
+    CHEBI: 961021
+    CHEBIALT: 44572
+    IAO: 91018
+    RO: 43861
+    obo: 1295969
+    oboInOwl: 2110632
+    owl: 18652
+    rdfs: 200745
+    xsd: 586570
   'Info: Which ontologies use it?':
   - ado
   - agro
@@ -100,6 +100,7 @@ metrics:
   - omit
   - omp
   - one
+  - ons
   - opmi
   - ornaseq
   - ovae
@@ -138,7 +139,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 1533 duplicate definitions.  146782 missing definitions. See ROBOT Report
+    comment: 1559 duplicate definitions.  146806 missing definitions. See ROBOT Report
       for details.
     status: ERROR
   FP07 Relations:
@@ -152,27 +153,26 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 3 missing labels. See ROBOT Report for details.
-    status: ERROR
+    status: PASS
   FP16 Maintenance:
     comment: Version IRI does not have date information
     status: INFO
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 1539 errors, 167879 warnings, 168 info messages.
+    comment: 1562 errors, 168006 warnings, 169 info messages.
     file: robot_report
     results:
-      ERROR: 1539
-      INFO: 168
-      WARN: 167879
+      ERROR: 1562
+      INFO: 169
+      WARN: 168006
     status: ERROR
-sha256_hash: ab8249cdd1a24fee95e68e9e3311b8006171906c9f6de93a1f8a6301542c3845
+sha256_hash: 389ab07ce56c953f7d79fb967a153ce96274e6ab098fe447ff3c2df2f4b650ea
 summary:
-  comment: 5 errors
+  comment: 4 errors
   status: ERROR
   summary_count:
-    ERROR: 5
+    ERROR: 4
     INFO: 1
     WARN: 0
-version: http://purl.obolibrary.org/obo/chebi/233/chebi.owl
+version: http://purl.obolibrary.org/obo/chebi/234/chebi.owl

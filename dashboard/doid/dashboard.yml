@@ -4,52 +4,52 @@ base_prefixes:
 - DOIDALT
 - DOID
 changed: true
-date: 2024-05-24 19:23:36.023463
+date: 2024-06-27 12:11:49.390331
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 129742
-    Declaration: 15458
+    AnnotationAssertion: 129945
+    Declaration: 15483
     DisjointClasses: 26
-    EquivalentClasses: 728
+    EquivalentClasses: 729
     SubAnnotationPropertyOf: 18
-    SubClassOf: 20021
-  'Axioms: Number of axioms': 165993
-  'Entities: % of entities reused': 9.13
+    SubClassOf: 20073
+  'Axioms: Number of axioms': 166274
+  'Entities: % of entities reused': 9.11
   'Entities: Number of annotation properties': 55
-  'Entities: Number of classes': 15390
+  'Entities: Number of classes': 15415
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 15
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 58330
+    Class: 58461
     ObjectExactCardinality: 5
     ObjectIntersectionOf: 991
     ObjectMinCardinality: 3
-    ObjectSomeValuesFrom: 9435
+    ObjectSomeValuesFrom: 9456
     ObjectUnionOf: 117
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.949
+    _dashboard: 0.904
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.124
+    _impact: 0.129
     _impact_external: 0.5
     _reuse: 0.091
-    oboscore: 0.536
+    oboscore: 0.516
   'Info: How many externally documented uses?': 3
-  'Info: How many ontologies use it?': 23
+  'Info: How many ontologies use it?': 24
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     CHEBI: 205
     CL: 707
-    DOID: 47437
+    DOID: 47547
     DOIDALT: 36
     FOODON: 48
-    GENO: 3100
+    GENO: 3121
     HP: 923
-    IAO: 9859
-    IDO: 3480
+    IAO: 9884
+    IDO: 3501
     NCBITaxon: 751
     OBI: 5
     RO: 5736
@@ -59,19 +59,20 @@ metrics:
     TRANS: 218
     UBERON: 2085
     dc: 1
-    dc11: 8113
+    dc11: 8133
     obo: 1
-    oboInOwl: 111420
+    oboInOwl: 111578
     owl: 2484
-    rdf: 9832
-    rdfs: 15336
-    skos: 673
+    rdf: 9856
+    rdfs: 15361
+    skos: 693
   'Info: Which ontologies use it?':
   - ado
   - apollo_sv
   - aro
   - cido
   - clo
+  - cvdo
   - epio
   - genepio
   - gsso
@@ -123,19 +124,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 2341 warnings, 1 info messages.
+    comment: 1 errors, 2359 warnings, 1 info messages.
     file: robot_report
     results:
-      ERROR: 0
+      ERROR: 1
       INFO: 1
-      WARN: 2341
-    status: WARN
-sha256_hash: 173663536c77e7d929a05fde68060a770ae853029aa690165530acf51319a174
+      WARN: 2359
+    status: ERROR
+sha256_hash: eb2cd2383417a65bf4e93d919c708f4cb3f8e5cbe90a55749d99181b47596543
 summary:
-  comment: 2 warnings
-  status: WARN
+  comment: 1 errors
+  status: ERROR
   summary_count:
-    ERROR: 0
+    ERROR: 1
     INFO: 1
-    WARN: 2
-version: http://purl.obolibrary.org/obo/doid/releases/2024-04-30/doid-base.owl
+    WARN: 1
+version: http://purl.obolibrary.org/obo/doid/releases/2024-05-29/doid-base.owl

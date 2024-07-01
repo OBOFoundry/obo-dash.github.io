@@ -4,7 +4,8 @@ base_prefixes:
 - NCITALT
 - NCIT
 changed: false
-date: 2024-05-26 09:31:33.217875
+failure: failed_ontology_dashboard
+last_ontology_dashboard_run_failed: true
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 2807012
@@ -34,14 +35,11 @@ metrics:
     ObjectUnionOf: 155
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.593
-    _formula: (1*impact+1*dashboard)/2
-    _impact: 0.134
+    _impact: 0.145
     _impact_external: 0
     _reuse: 0.0
-    oboscore: 0.363
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 25
+  'Info: How many ontologies use it?': 27
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -74,6 +72,7 @@ metrics:
   - ms
   - ngbo
   - obib
+  - ons
   - ontoavida
   - opmi
   - ornaseq
@@ -81,56 +80,7 @@ metrics:
   - scdo
   - slso
   - txpo
+  - vo
 mirror_from: http://purl.obolibrary.org/obo/ncit.owl
 namespace: ncit
-results:
-  FP01 Open:
-    comment: Missing ontology license.
-    status: ERROR
-  FP02 Common Format:
-    status: PASS
-  FP03 URIs:
-    status: PASS
-  FP04 Versioning:
-    status: PASS
-  FP05 Scope:
-    status: PASS
-  FP06 Textual Definitions:
-    comment: 6721 duplicate definitions.  33536 missing definitions. See ROBOT Report
-      for details.
-    status: ERROR
-  FP07 Relations:
-    comment: 97 non-RO properties used.
-    file: fp7
-    status: INFO
-  FP08 Documented:
-    status: PASS
-  FP09 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
-  FP11 Locus of Authority:
-    status: PASS
-  FP12 Naming Conventions:
-    comment: 1690 duplicate labels. 2 missing labels. See ROBOT Report for details.
-    status: ERROR
-  FP16 Maintenance:
-    status: PASS
-  FP20 Responsiveness:
-    status: PASS
-  ROBOT Report:
-    comment: 18643 errors, 279776 warnings, 223 info messages.
-    file: robot_report
-    results:
-      ERROR: 18643
-      INFO: 223
-      WARN: 279776
-    status: ERROR
 sha256_hash: 6c44ad3e7768ac796d0be73de2d339710f004fbabf675d4126dd4ecf9ab31e55
-summary:
-  comment: 5 errors
-  status: ERROR
-  summary_count:
-    ERROR: 5
-    INFO: 1
-    WARN: 0
-version: http://purl.obolibrary.org/obo/ncit/releases/2024-05-07/ncit.owl

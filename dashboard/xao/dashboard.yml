@@ -4,7 +4,7 @@ base_prefixes:
 - XAOALT
 - XAO
 changed: false
-date: 2024-05-26 10:14:34.805449
+date: 2024-06-30 14:31:47.337161
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 10966
@@ -25,12 +25,12 @@ metrics:
     ObjectSomeValuesFrom: 5170
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.571
+    _dashboard: 0.682
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.016
     _impact_external: 0.25
     _reuse: 0.02
-    oboscore: 0.293
+    oboscore: 0.349
   'Info: How many externally documented uses?': 1
   'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
@@ -66,7 +66,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 6 missing definitions. See ROBOT Report for details.
+    comment: 2 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     comment: 3 labels match RO labels.
@@ -81,27 +81,26 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 4 missing labels. See ROBOT Report for details.
-    status: ERROR
+    status: PASS
   FP16 Maintenance:
     comment: last version (2022-08-29) is over one year(s) old
     status: INFO
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 4 errors, 12 warnings, 2 info messages.
+    comment: 11 warnings, 2 info messages.
     file: robot_report
     results:
-      ERROR: 4
+      ERROR: 0
       INFO: 2
-      WARN: 12
-    status: ERROR
+      WARN: 11
+    status: WARN
 sha256_hash: c440c3efb70a765ebadd8a0a931a35ec7e62289b03c704f1af4ba6ecdb2e5857
 summary:
-  comment: 5 errors
+  comment: 3 errors
   status: ERROR
   summary_count:
-    ERROR: 5
+    ERROR: 3
     INFO: 1
-    WARN: 1
+    WARN: 2
 version: http://purl.obolibrary.org/obo/xao/releases/2022-08-29/xao.owl

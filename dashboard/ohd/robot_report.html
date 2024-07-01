@@ -8,47 +8,45 @@
     <div class="col-md-12">
       <h1>ROBOT Report - ohd</h1>
       <p class="lead"><a href="robot_report.tsv">Download TSV</a></p>
+      
       <h3>Types of errors</h3>
       <div class="report_summary"><table class="table">
       <tr><th><b>Level</b></th><th><b>Number of errors</b></th></tr>
       
-      <tr><td>INFO</td><td>196</td></tr>
+      <tr><td>INFO</td><td>77</td></tr>
       
-      <tr><td>WARN</td><td>51</td></tr>
+      <tr><td>WARN</td><td>58</td></tr>
       
-      <tr><td>ERROR</td><td>5</td></tr>
+      <tr><td>ERROR</td><td>4</td></tr>
       
       </table></div>
       <h3>Error breakdown</h3>
       <div class="report_summary"><table class="table">
       <tr><th><b>Rule</b></th><th><b>Number of errors</b></th></tr>
       
-      <tr><td>missing_superclass</td><td>119</td></tr>
-      
       <tr><td>lowercase_definition</td><td>77</td></tr>
       
-      <tr><td>annotation_whitespace</td><td>24</td></tr>
+      <tr><td>annotation_whitespace</td><td>27</td></tr>
       
-      <tr><td>missing_definition</td><td>20</td></tr>
+      <tr><td>missing_definition</td><td>18</td></tr>
+      
+      <tr><td>invalid_xref</td><td>5</td></tr>
       
       <tr><td>missing_obsolete_label</td><td>5</td></tr>
       
-      <tr><td>missing_label</td><td>2</td></tr>
+      <tr><td>multiple_definitions</td><td>2</td></tr>
       
-      <tr><td>missing_ontology_description</td><td>1</td></tr>
+      <tr><td>multiple_labels</td><td>2</td></tr>
       
-      <tr><td>missing_ontology_license</td><td>1</td></tr>
-      
-      <tr><td>missing_ontology_title</td><td>1</td></tr>
+      <tr><td>equivalent_class_axiom_no_genus</td><td>2</td></tr>
       
       <tr><td>duplicate_label_synonym</td><td>1</td></tr>
-      
-      <tr><td>equivalent_class_axiom_no_genus</td><td>1</td></tr>
       
       </table></div>
       <p style="text-align:center; margin-top:-15px;">
         <small>Click on any term to redirect to the term page.</small>
       </p>
+      
       <table class="table">
         <tr>
           <th><b>Row</b></th>
@@ -65,47 +63,39 @@
           
         </tr><tr class=table-danger>
             <td>0</td>
-            <td>ERROR
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_label" target="_blank" rel="noopener noreferrer">missing_label</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000000" target="_blank" rel="noopener noreferrer">OHD:0000000</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
-            <td></td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/multiple_definitions" target="_blank" rel="noopener noreferrer">multiple_definitions</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/OHD_0000035" target="_blank" rel="noopener noreferrer">OHD:0000035</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
+            <td>A ceramic dental restoration material that contains a glassy alumino-silicate matrix in which are embedded several crystalline phases of feldspar, mullite, or quartz.</td>
           </tr>
         <tr class=table-danger>
             <td>1</td>
-            <td>ERROR
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_label" target="_blank" rel="noopener noreferrer">missing_label</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000234" target="_blank" rel="noopener noreferrer">OHD:0000234</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
-            <td></td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/multiple_definitions" target="_blank" rel="noopener noreferrer">multiple_definitions</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/OHD_0000035" target="_blank" rel="noopener noreferrer">OHD:0000035</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
+            <td>A ceramic material used for tooth-colored restorations.</td>
           </tr>
         <tr class=table-danger>
             <td>2</td>
-            <td>ERROR
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_ontology_description" target="_blank" rel="noopener noreferrer">missing_ontology_description</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ohd/ohd-base.owl" target="_blank" rel="noopener noreferrer">http://purl.obolibrary.org/obo/ohd/ohd-base.owl</a></td>
-            <td><a href="http://purl.org/dc/elements/1.1/description" target="_blank" rel="noopener noreferrer">dc:description</a></td>
-            <td></td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/multiple_labels" target="_blank" rel="noopener noreferrer">multiple_labels</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/OHD_0000191" target="_blank" rel="noopener noreferrer">OHD:0000191</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>dental restoration material role</td>
           </tr>
         <tr class=table-danger>
             <td>3</td>
-            <td>ERROR
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_ontology_license" target="_blank" rel="noopener noreferrer">missing_ontology_license</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ohd/ohd-base.owl" target="_blank" rel="noopener noreferrer">http://purl.obolibrary.org/obo/ohd/ohd-base.owl</a></td>
-            <td><a href="http://purl.org/dc/elements/1.1/license" target="_blank" rel="noopener noreferrer">dc:license</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-danger>
-            <td>4</td>
-            <td>ERROR
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_ontology_title" target="_blank" rel="noopener noreferrer">missing_ontology_title</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ohd/ohd-base.owl" target="_blank" rel="noopener noreferrer">http://purl.obolibrary.org/obo/ohd/ohd-base.owl</a></td>
-            <td><a href="http://purl.org/dc/elements/1.1/title" target="_blank" rel="noopener noreferrer">dc:title</a></td>
-            <td></td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/multiple_labels" target="_blank" rel="noopener noreferrer">multiple_labels</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/OHD_0000191" target="_blank" rel="noopener noreferrer">OHD:0000191</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>dental restoration material role@en</td>
           </tr>
         <tr class=table-warning>
-            <td>5</td>
-            <td>WARN
+            <td>4</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000006" target="_blank" rel="noopener noreferrer">OHD:0000006</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
@@ -113,8 +103,8 @@
 </td>
           </tr>
         <tr class=table-warning>
-            <td>6</td>
-            <td>WARN
+            <td>5</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000010" target="_blank" rel="noopener noreferrer">OHD:0000010</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
@@ -122,19 +112,8 @@
 @en</td>
           </tr>
         <tr class=table-warning>
-            <td>7</td>
-            <td>WARN
-            <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000010" target="_blank" rel="noopener noreferrer">OHD:0000010</a></td>
-            <td>dc11:source</td>
-            <td>Adapted from Mosby's definition of dentistry:
-The evaluation, diagnosis, and/or treatment (nonsurgical, surgical, or related procedures) of diseases, disorders, and/or conditions of the oral cavity, maxillofacial area, and/or the adjacent and associated structures and their impact on the body; provided by dental professionals, within the scope of his/her education, training, and experience, in accordance with the ethics of the profession and applicable law.
-(Mosby. Mosby's Dental Dictionary, 2nd Edition. Mosby, 102007. p. 173). 
-</td>
-          </tr>
-        <tr class=table-warning>
-            <td>8</td>
-            <td>WARN
+            <td>6</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000016" target="_blank" rel="noopener noreferrer">OHD:0000016</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000116" target="_blank" rel="noopener noreferrer">IAO:0000116</a></td>
@@ -142,8 +121,8 @@ The evaluation, diagnosis, and/or treatment (nonsurgical, surgical, or related p
 Professional prophylaxis, radiographs, sealants, and nonsurgical periodontal therapy are among the procedures performed by a hygienist. Most are licensed to administer local anesthesia, depending on applicable regulations in their area. They usually work for a dentist in a dental office or clinic under a form of supervision. In some locations hygienists are allowed to practice without a dentist's supervision. </td>
           </tr>
         <tr class=table-warning>
-            <td>9</td>
-            <td>WARN
+            <td>7</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000017" target="_blank" rel="noopener noreferrer">OHD:0000017</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
@@ -152,48 +131,48 @@ Professional prophylaxis, radiographs, sealants, and nonsurgical periodontal the
 </td>
           </tr>
         <tr class=table-warning>
-            <td>10</td>
-            <td>WARN
+            <td>8</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000019" target="_blank" rel="noopener noreferrer">OHD:0000019</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>A conversational, visual and tactile examination in which the clinician evaluates the status of the patient's medical, dental and oral health. @en</td>
           </tr>
         <tr class=table-warning>
-            <td>11</td>
-            <td>WARN
+            <td>9</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000026" target="_blank" rel="noopener noreferrer">OHD:0000026</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000116" target="_blank" rel="noopener noreferrer">IAO:0000116</a></td>
             <td>Bill Duncan 5/14/2012: We have added the necessary condtion that a missing tooth finding is about 'exactly 1 Secondary Dentition'.  </td>
           </tr>
         <tr class=table-warning>
-            <td>12</td>
-            <td>WARN
+            <td>10</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000031" target="_blank" rel="noopener noreferrer">OHD:0000031</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000116" target="_blank" rel="noopener noreferrer">IAO:0000116</a></td>
             <td> Titus Schleyer 3/4/2014: definition updated</td>
           </tr>
         <tr class=table-warning>
-            <td>13</td>
-            <td>WARN
+            <td>11</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000037" target="_blank" rel="noopener noreferrer">OHD:0000037</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>A material combination in which a moldable restorative material is placed directly into or on the tooth. The material then hardens and becomes (essentially) part of the tooth. </td>
           </tr>
         <tr class=table-warning>
-            <td>14</td>
-            <td>WARN
+            <td>12</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000038" target="_blank" rel="noopener noreferrer">OHD:0000038</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>A material combination in which a rigid piece of restoration material is attached to a tooth. The restoration is attached to the tooth by mechanical forces or some form of cement or glue. </td>
           </tr>
         <tr class=table-warning>
-            <td>15</td>
-            <td>WARN
+            <td>13</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000057" target="_blank" rel="noopener noreferrer">OHD:0000057</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
@@ -201,8 +180,8 @@ Professional prophylaxis, radiographs, sealants, and nonsurgical periodontal the
 </td>
           </tr>
         <tr class=table-warning>
-            <td>16</td>
-            <td>WARN
+            <td>14</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000057" target="_blank" rel="noopener noreferrer">OHD:0000057</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000119" target="_blank" rel="noopener noreferrer">IAO:0000119</a></td>
@@ -210,32 +189,64 @@ Professional prophylaxis, radiographs, sealants, and nonsurgical periodontal the
 </td>
           </tr>
         <tr class=table-warning>
-            <td>17</td>
-            <td>WARN
+            <td>15</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000092" target="_blank" rel="noopener noreferrer">OHD:0000092</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>This annotation is used to indicate that an individual is asserted to be a member of a class.  This is useful when needing to find only the non-inferred type of an individual, and not the all the inferred types.  For example, suppose x is a member of the class 'material entity' and 'material entity' is a subclass of 'independent continuant'.  This entails that x will be a member of 'independent continuant'.  However, by using this annotation to assert that x is a member of 'material entity', you can query for x's 'asserted type' and ignore the other inferred types in the class hierarchy.  </td>
           </tr>
         <tr class=table-warning>
-            <td>18</td>
-            <td>WARN
+            <td>16</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000100" target="_blank" rel="noopener noreferrer">OHD:0000100</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>A label naming a type of secondary tooth canonically found in humans, adopted by the American Dental Association, and commonly used as labels on odontograms (toothcharts) and clinical notes. The Universal Numbering System uses No. 1 through 32 for the 32 teeth in the permanent dentition, starting with 1 for the maxillary right third molar, going around the arch to the maxillary left third molar as 16; dropping down on the same side, the left mandibular third molar becomes 17, and then the numbers increase around the lower arch to 32, which is the lower right third molar. @en</td>
           </tr>
         <tr class=table-warning>
-            <td>19</td>
-            <td>WARN
+            <td>17</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000100" target="_blank" rel="noopener noreferrer">OHD:0000100</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000119" target="_blank" rel="noopener noreferrer">IAO:0000119</a></td>
             <td>Book:Scheid, Rickne. Woelfel's Dental Anatomy, 8th Edition. Lippincott Williams & Wilkins, 01/2011. pp. i - ii). @en</td>
           </tr>
         <tr class=table-warning>
+            <td>18</td>
+            <td>WARN</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/OHD_0000135" target="_blank" rel="noopener noreferrer">OHD:0000135</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/IAO_0000119" target="_blank" rel="noopener noreferrer">IAO:0000119</a></td>
+            <td> ISBN:1935201387#CDT 2011-2012 Current Dental Terminology, Chapter 1</td>
+          </tr>
+        <tr class=table-warning>
+            <td>19</td>
+            <td>WARN</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/OHD_0000136" target="_blank" rel="noopener noreferrer">OHD:0000136</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/IAO_0000119" target="_blank" rel="noopener noreferrer">IAO:0000119</a></td>
+            <td> ISBN:1935201387#CDT 2011-2012 Current Dental Terminology, Chapter 1</td>
+          </tr>
+        <tr class=table-warning>
             <td>20</td>
-            <td>WARN
+            <td>WARN</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/OHD_0000146" target="_blank" rel="noopener noreferrer">OHD:0000146</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/IAO_0000119" target="_blank" rel="noopener noreferrer">IAO:0000119</a></td>
+            <td> ISBN:1935201387#CDT 2011-2012 Current Dental Terminology, Chapter 1</td>
+          </tr>
+        <tr class=table-warning>
+            <td>21</td>
+            <td>WARN</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/OHD_0000156" target="_blank" rel="noopener noreferrer">OHD:0000156</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/IAO_0000119" target="_blank" rel="noopener noreferrer">IAO:0000119</a></td>
+            <td> ISBN:1935201387#CDT 2011-2012 Current Dental Terminology, Chapter 1</td>
+          </tr>
+        <tr class=table-warning>
+            <td>22</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000158" target="_blank" rel="noopener noreferrer">OHD:0000158</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
@@ -243,8 +254,8 @@ Professional prophylaxis, radiographs, sealants, and nonsurgical periodontal the
 </td>
           </tr>
         <tr class=table-warning>
-            <td>21</td>
-            <td>WARN
+            <td>23</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000164" target="_blank" rel="noopener noreferrer">OHD:0000164</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
@@ -252,8 +263,8 @@ Professional prophylaxis, radiographs, sealants, and nonsurgical periodontal the
 </td>
           </tr>
         <tr class=table-warning>
-            <td>22</td>
-            <td>WARN
+            <td>24</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000165" target="_blank" rel="noopener noreferrer">OHD:0000165</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
@@ -261,8 +272,8 @@ Professional prophylaxis, radiographs, sealants, and nonsurgical periodontal the
 </td>
           </tr>
         <tr class=table-warning>
-            <td>23</td>
-            <td>WARN
+            <td>25</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000202" target="_blank" rel="noopener noreferrer">OHD:0000202</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
@@ -271,32 +282,32 @@ Professional prophylaxis, radiographs, sealants, and nonsurgical periodontal the
 This includes an evaluation for oral cancer where indicated, the evaluation and recording of the patients dental and medical history and a general health assessment.  It may include the evaluation and recording of dental caries, missing or unerupted teeth, restorations, existing prostheses, occlusal relationships, periodontal conditions (including periodontal screening and/or charting), hard and soft tissue anomalies, etc. </td>
           </tr>
         <tr class=table-warning>
-            <td>24</td>
-            <td>WARN
+            <td>26</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000203" target="_blank" rel="noopener noreferrer">OHD:0000203</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>An oral evaluation performed on patients showing signs or symptoms of periodontal disease and for patients with risk factors for such disease, such as smoking or diabetes.  It includes evaluation of periodontal conditions, probing and charting, evaluation and recording of the patients dental and medical history and general health assessment.  It may include the evaluation and recording of dental caries, missing or unerupted teeth, restorations and occlusal relationships. </td>
           </tr>
         <tr class=table-warning>
-            <td>25</td>
-            <td>WARN
+            <td>27</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000302" target="_blank" rel="noopener noreferrer">OHD:0000302</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000116" target="_blank" rel="noopener noreferrer">IAO:0000116</a></td>
             <td>usually made of porcelain or plastic </td>
           </tr>
         <tr class=table-warning>
-            <td>26</td>
-            <td>WARN
+            <td>28</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000310" target="_blank" rel="noopener noreferrer">OHD:0000310</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a prosthesis that replaces one or more, but less than all, of the natural teeth and associated structures </td>
           </tr>
         <tr class=table-warning>
-            <td>27</td>
-            <td>WARN
+            <td>29</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000311" target="_blank" rel="noopener noreferrer">OHD:0000311</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000116" target="_blank" rel="noopener noreferrer">IAO:0000116</a></td>
@@ -305,8 +316,8 @@ Mosby's definition is not quite corrrect. The support could also include other t
 </td>
           </tr>
         <tr class=table-warning>
-            <td>28</td>
-            <td>WARN
+            <td>30</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000314" target="_blank" rel="noopener noreferrer">OHD:0000314</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000116" target="_blank" rel="noopener noreferrer">IAO:0000116</a></td>
@@ -315,240 +326,272 @@ Mosby's definition is not quite corrrect. The support could also include other t
 Prosthics may be either functional for non-functional. For example, a glass eye bears a prosthetic role, but it does not see. </td>
           </tr>
         <tr class=table-warning>
-            <td>29</td>
-            <td>WARN
+            <td>31</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000169" target="_blank" rel="noopener noreferrer">OHD:0000169</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000118" target="_blank" rel="noopener noreferrer">IAO:0000118</a></td>
             <td>resin onlay restoration procedure</td>
           </tr>
         <tr class=table-warning>
-            <td>30</td>
-            <td>WARN
+            <td>32</td>
+            <td>WARN</td>
+            <td><a href="https://robot.obolibrary.org/report_queries/equivalent_class_axiom_no_genus" target="_blank" rel="noopener noreferrer">equivalent_class_axiom_no_genus</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/OHD_0000000" target="_blank" rel="noopener noreferrer">OHD:0000000</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RO_0000087" target="_blank" rel="noopener noreferrer">RO:0000087</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/OHD_0000191" target="_blank" rel="noopener noreferrer">OHD:0000191</a></td>
+          </tr>
+        <tr class=table-warning>
+            <td>33</td>
+            <td>WARN</td>
             <td><a href="https://robot.obolibrary.org/report_queries/equivalent_class_axiom_no_genus" target="_blank" rel="noopener noreferrer">equivalent_class_axiom_no_genus</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000002" target="_blank" rel="noopener noreferrer">OHD:0000002</a></td>
             <td><a href="http://purl.obolibrary.org/obo/BFO_0000055" target="_blank" rel="noopener noreferrer">BFO:0000055</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000190" target="_blank" rel="noopener noreferrer">OHD:0000190</a></td>
           </tr>
         <tr class=table-warning>
-            <td>31</td>
-            <td>WARN
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000000" target="_blank" rel="noopener noreferrer">OHD:0000000</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
-            <td></td>
+            <td>34</td>
+            <td>WARN</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/invalid_xref" target="_blank" rel="noopener noreferrer">invalid_xref</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/OHD_0001005" target="_blank" rel="noopener noreferrer">OHD:0001005</a></td>
+            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasDbXref" target="_blank" rel="noopener noreferrer">oboInOwl:hasDbXref</a></td>
+            <td>ISO 4049:2009</td>
           </tr>
         <tr class=table-warning>
-            <td>32</td>
-            <td>WARN
+            <td>35</td>
+            <td>WARN</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/invalid_xref" target="_blank" rel="noopener noreferrer">invalid_xref</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/OHD_0001010" target="_blank" rel="noopener noreferrer">OHD:0001010</a></td>
+            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasDbXref" target="_blank" rel="noopener noreferrer">oboInOwl:hasDbXref</a></td>
+            <td>10.3390/dj10110208</td>
+          </tr>
+        <tr class=table-warning>
+            <td>36</td>
+            <td>WARN</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/invalid_xref" target="_blank" rel="noopener noreferrer">invalid_xref</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/OHD_0001019" target="_blank" rel="noopener noreferrer">OHD:0001019</a></td>
+            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasDbXref" target="_blank" rel="noopener noreferrer">oboInOwl:hasDbXref</a></td>
+            <td>ISBN: 978-81-312-3488-4</td>
+          </tr>
+        <tr class=table-warning>
+            <td>37</td>
+            <td>WARN</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/invalid_xref" target="_blank" rel="noopener noreferrer">invalid_xref</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/OHD_0001021" target="_blank" rel="noopener noreferrer">OHD:0001021</a></td>
+            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasDbXref" target="_blank" rel="noopener noreferrer">oboInOwl:hasDbXref</a></td>
+            <td>ISO standards 9917-1:2007</td>
+          </tr>
+        <tr class=table-warning>
+            <td>38</td>
+            <td>WARN</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/invalid_xref" target="_blank" rel="noopener noreferrer">invalid_xref</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/OHD_0001022" target="_blank" rel="noopener noreferrer">OHD:0001022</a></td>
+            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasDbXref" target="_blank" rel="noopener noreferrer">oboInOwl:hasDbXref</a></td>
+            <td>ISO standards 3107:2022</td>
+          </tr>
+        <tr class=table-warning>
+            <td>39</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000029" target="_blank" rel="noopener noreferrer">OHD:0000029</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>33</td>
-            <td>WARN
+            <td>40</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000030" target="_blank" rel="noopener noreferrer">OHD:0000030</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>34</td>
-            <td>WARN
+            <td>41</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000065" target="_blank" rel="noopener noreferrer">OHD:0000065</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>35</td>
-            <td>WARN
+            <td>42</td>
+            <td>WARN</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/OHD_0000147" target="_blank" rel="noopener noreferrer">OHD:0000147</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
+            <td></td>
+          </tr>
+        <tr class=table-warning>
+            <td>43</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000159" target="_blank" rel="noopener noreferrer">OHD:0000159</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>36</td>
-            <td>WARN
+            <td>44</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000162" target="_blank" rel="noopener noreferrer">OHD:0000162</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>37</td>
-            <td>WARN
+            <td>45</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000167" target="_blank" rel="noopener noreferrer">OHD:0000167</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>38</td>
-            <td>WARN
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000168" target="_blank" rel="noopener noreferrer">OHD:0000168</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-warning>
-            <td>39</td>
-            <td>WARN
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000191" target="_blank" rel="noopener noreferrer">OHD:0000191</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-warning>
-            <td>40</td>
-            <td>WARN
+            <td>46</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000192" target="_blank" rel="noopener noreferrer">OHD:0000192</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>41</td>
-            <td>WARN
+            <td>47</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000199" target="_blank" rel="noopener noreferrer">OHD:0000199</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>42</td>
-            <td>WARN
+            <td>48</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000208" target="_blank" rel="noopener noreferrer">OHD:0000208</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>43</td>
-            <td>WARN
+            <td>49</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000209" target="_blank" rel="noopener noreferrer">OHD:0000209</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>44</td>
-            <td>WARN
+            <td>50</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000210" target="_blank" rel="noopener noreferrer">OHD:0000210</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>45</td>
-            <td>WARN
+            <td>51</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000215" target="_blank" rel="noopener noreferrer">OHD:0000215</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>46</td>
-            <td>WARN
+            <td>52</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000254" target="_blank" rel="noopener noreferrer">OHD:0000254</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>47</td>
-            <td>WARN
+            <td>53</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000258" target="_blank" rel="noopener noreferrer">OHD:0000258</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>48</td>
-            <td>WARN
+            <td>54</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000295" target="_blank" rel="noopener noreferrer">OHD:0000295</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>49</td>
-            <td>WARN
+            <td>55</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000313" target="_blank" rel="noopener noreferrer">OHD:0000313</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>50</td>
-            <td>WARN
+            <td>56</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000316" target="_blank" rel="noopener noreferrer">OHD:0000316</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>51</td>
-            <td>WARN
+            <td>57</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label" target="_blank" rel="noopener noreferrer">missing_obsolete_label</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000141" target="_blank" rel="noopener noreferrer">OHD:0000141</a></td>
             <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
             <td>resin with predomitly base metal dental restoration</td>
           </tr>
         <tr class=table-warning>
-            <td>52</td>
-            <td>WARN
+            <td>58</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label" target="_blank" rel="noopener noreferrer">missing_obsolete_label</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000143" target="_blank" rel="noopener noreferrer">OHD:0000143</a></td>
             <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
             <td>porcelain fused to noble metal dental restoration material</td>
           </tr>
         <tr class=table-warning>
-            <td>53</td>
-            <td>WARN
+            <td>59</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label" target="_blank" rel="noopener noreferrer">missing_obsolete_label</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000144" target="_blank" rel="noopener noreferrer">OHD:0000144</a></td>
             <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
             <td>porcelain fused to high noble metal dental restoration material</td>
           </tr>
         <tr class=table-warning>
-            <td>54</td>
-            <td>WARN
+            <td>60</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label" target="_blank" rel="noopener noreferrer">missing_obsolete_label</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000145" target="_blank" rel="noopener noreferrer">OHD:0000145</a></td>
             <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
             <td>porcelain fused to predomitly base metal dental restoration material</td>
           </tr>
         <tr class=table-warning>
-            <td>55</td>
-            <td>WARN
+            <td>61</td>
+            <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label" target="_blank" rel="noopener noreferrer">missing_obsolete_label</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000188" target="_blank" rel="noopener noreferrer">OHD:0000188</a></td>
             <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
             <td>stainless steel with resin window dental restoration material</td>
           </tr>
         <tr class=table-info>
-            <td>56</td>
-            <td>INFO
+            <td>62</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000011" target="_blank" rel="noopener noreferrer">OHD:0000011</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>should use obi class with modifications to not include restriction that has specified output is a diagnosis, and/or subclass the obi class</td>
           </tr>
         <tr class=table-info>
-            <td>57</td>
-            <td>INFO
+            <td>63</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000014" target="_blank" rel="noopener noreferrer">OHD:0000014</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a data property that relates an individual patient to the literal string that represents the patient's id</td>
           </tr>
         <tr class=table-info>
-            <td>58</td>
-            <td>INFO
+            <td>64</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000015" target="_blank" rel="noopener noreferrer">OHD:0000015</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
@@ -557,16 +600,16 @@ Prosthics may be either functional for non-functional. For example, a glass eye 
 2. a process to the date on which it occrred</td>
           </tr>
         <tr class=table-info>
-            <td>59</td>
-            <td>INFO
+            <td>65</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000016" target="_blank" rel="noopener noreferrer">OHD:0000016</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a dental health care provider role that inheres in a person who is a licensed dental professional that specializes in preventative care</td>
           </tr>
         <tr class=table-info>
-            <td>60</td>
-            <td>INFO
+            <td>66</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000017" target="_blank" rel="noopener noreferrer">OHD:0000017</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
@@ -575,328 +618,328 @@ Prosthics may be either functional for non-functional. For example, a glass eye 
 </td>
           </tr>
         <tr class=table-info>
-            <td>61</td>
-            <td>INFO
+            <td>67</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000018" target="_blank" rel="noopener noreferrer">OHD:0000018</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a dental health care provider that bears a dentist role</td>
           </tr>
         <tr class=table-info>
-            <td>62</td>
-            <td>INFO
+            <td>68</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000020" target="_blank" rel="noopener noreferrer">OHD:0000020</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a dental health care provider that bears a dental hygienist role</td>
           </tr>
         <tr class=table-info>
-            <td>63</td>
-            <td>INFO
+            <td>69</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000028" target="_blank" rel="noopener noreferrer">OHD:0000028</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a missing tooth finding in which tooth 14 is found to be missing</td>
           </tr>
         <tr class=table-info>
-            <td>64</td>
-            <td>INFO
+            <td>70</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000032" target="_blank" rel="noopener noreferrer">OHD:0000032</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a dental exam which focuses on soft tissue in and near the mouth.</td>
           </tr>
         <tr class=table-info>
-            <td>65</td>
-            <td>INFO
+            <td>71</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000050" target="_blank" rel="noopener noreferrer">OHD:0000050</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a data property that relates an individual to the date on which the individual was born</td>
           </tr>
         <tr class=table-info>
-            <td>66</td>
-            <td>INFO
+            <td>72</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000051" target="_blank" rel="noopener noreferrer">OHD:0000051</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a health care provider that bears a dental health care provider role</td>
           </tr>
         <tr class=table-info>
-            <td>67</td>
-            <td>INFO
+            <td>73</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000052" target="_blank" rel="noopener noreferrer">OHD:0000052</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a health care provider role that inheres in a person who is licensed to provide dental health care</td>
           </tr>
         <tr class=table-info>
-            <td>68</td>
-            <td>INFO
+            <td>74</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000053" target="_blank" rel="noopener noreferrer">OHD:0000053</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>an annotation property that relates an individual to the data source that was used to extract information about the individual</td>
           </tr>
         <tr class=table-info>
-            <td>69</td>
-            <td>INFO
+            <td>75</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000059" target="_blank" rel="noopener noreferrer">OHD:0000059</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a missing tooth finding in which tooth 1 is found to be missing</td>
           </tr>
         <tr class=table-info>
-            <td>70</td>
-            <td>INFO
+            <td>76</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000060" target="_blank" rel="noopener noreferrer">OHD:0000060</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a missing tooth finding in which tooth 2 is found to be missing</td>
           </tr>
         <tr class=table-info>
-            <td>71</td>
-            <td>INFO
+            <td>77</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000061" target="_blank" rel="noopener noreferrer">OHD:0000061</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a missing tooth finding in which tooth 3 is found to be missing</td>
           </tr>
         <tr class=table-info>
-            <td>72</td>
-            <td>INFO
+            <td>78</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000062" target="_blank" rel="noopener noreferrer">OHD:0000062</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a missing tooth finding in which tooth 4 is found to be missing</td>
           </tr>
         <tr class=table-info>
-            <td>73</td>
-            <td>INFO
+            <td>79</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000063" target="_blank" rel="noopener noreferrer">OHD:0000063</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a missing tooth finding in which tooth 5 is found to be missing</td>
           </tr>
         <tr class=table-info>
-            <td>74</td>
-            <td>INFO
+            <td>80</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000064" target="_blank" rel="noopener noreferrer">OHD:0000064</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a missing tooth finding in which tooth 6 is found to be missing</td>
           </tr>
         <tr class=table-info>
-            <td>75</td>
-            <td>INFO
+            <td>81</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000066" target="_blank" rel="noopener noreferrer">OHD:0000066</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a missing tooth finding in which tooth 7 is found to be missing</td>
           </tr>
         <tr class=table-info>
-            <td>76</td>
-            <td>INFO
+            <td>82</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000067" target="_blank" rel="noopener noreferrer">OHD:0000067</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a missing tooth finding in which tooth 8 is found to be missing</td>
           </tr>
         <tr class=table-info>
-            <td>77</td>
-            <td>INFO
+            <td>83</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000068" target="_blank" rel="noopener noreferrer">OHD:0000068</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a missing tooth finding in which tooth 9 is found to be missing</td>
           </tr>
         <tr class=table-info>
-            <td>78</td>
-            <td>INFO
+            <td>84</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000069" target="_blank" rel="noopener noreferrer">OHD:0000069</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a missing tooth finding in which tooth 10 is found to be missing</td>
           </tr>
         <tr class=table-info>
-            <td>79</td>
-            <td>INFO
+            <td>85</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000070" target="_blank" rel="noopener noreferrer">OHD:0000070</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a missing tooth finding in which tooth 11 is found to be missing</td>
           </tr>
         <tr class=table-info>
-            <td>80</td>
-            <td>INFO
+            <td>86</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000071" target="_blank" rel="noopener noreferrer">OHD:0000071</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a missing tooth finding in which tooth 12 is found to be missing</td>
           </tr>
         <tr class=table-info>
-            <td>81</td>
-            <td>INFO
+            <td>87</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000072" target="_blank" rel="noopener noreferrer">OHD:0000072</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a missing tooth finding in which tooth 13 is found to be missing</td>
           </tr>
         <tr class=table-info>
-            <td>82</td>
-            <td>INFO
+            <td>88</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000073" target="_blank" rel="noopener noreferrer">OHD:0000073</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a missing tooth finding in which tooth 15 is found to be missing</td>
           </tr>
         <tr class=table-info>
-            <td>83</td>
-            <td>INFO
+            <td>89</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000074" target="_blank" rel="noopener noreferrer">OHD:0000074</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a missing tooth finding in which tooth 16 is found to be missing</td>
           </tr>
         <tr class=table-info>
-            <td>84</td>
-            <td>INFO
+            <td>90</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000075" target="_blank" rel="noopener noreferrer">OHD:0000075</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a missing tooth finding in which tooth 17 is found to be missing</td>
           </tr>
         <tr class=table-info>
-            <td>85</td>
-            <td>INFO
+            <td>91</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000076" target="_blank" rel="noopener noreferrer">OHD:0000076</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a missing tooth finding in which tooth 18 is found to be missing</td>
           </tr>
         <tr class=table-info>
-            <td>86</td>
-            <td>INFO
+            <td>92</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000077" target="_blank" rel="noopener noreferrer">OHD:0000077</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a missing tooth finding in which tooth 19 is found to be missing</td>
           </tr>
         <tr class=table-info>
-            <td>87</td>
-            <td>INFO
+            <td>93</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000078" target="_blank" rel="noopener noreferrer">OHD:0000078</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a missing tooth finding in which tooth 20 is found to be missing</td>
           </tr>
         <tr class=table-info>
-            <td>88</td>
-            <td>INFO
+            <td>94</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000079" target="_blank" rel="noopener noreferrer">OHD:0000079</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a missing tooth finding in which tooth 21 is found to be missing</td>
           </tr>
         <tr class=table-info>
-            <td>89</td>
-            <td>INFO
+            <td>95</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000080" target="_blank" rel="noopener noreferrer">OHD:0000080</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a missing tooth finding in which tooth 22 is found to be missing</td>
           </tr>
         <tr class=table-info>
-            <td>90</td>
-            <td>INFO
+            <td>96</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000081" target="_blank" rel="noopener noreferrer">OHD:0000081</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a missing tooth finding in which tooth 23 is found to be missing</td>
           </tr>
         <tr class=table-info>
-            <td>91</td>
-            <td>INFO
+            <td>97</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000082" target="_blank" rel="noopener noreferrer">OHD:0000082</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a missing tooth finding in which tooth 24 is found to be missing</td>
           </tr>
         <tr class=table-info>
-            <td>92</td>
-            <td>INFO
+            <td>98</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000083" target="_blank" rel="noopener noreferrer">OHD:0000083</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a missing tooth finding in which tooth 25 is found to be missing</td>
           </tr>
         <tr class=table-info>
-            <td>93</td>
-            <td>INFO
+            <td>99</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000084" target="_blank" rel="noopener noreferrer">OHD:0000084</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a missing tooth finding in which tooth 26 is found to be missing</td>
           </tr>
         <tr class=table-info>
-            <td>94</td>
-            <td>INFO
+            <td>100</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000085" target="_blank" rel="noopener noreferrer">OHD:0000085</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a missing tooth finding in which tooth 27 is found to be missing</td>
           </tr>
         <tr class=table-info>
-            <td>95</td>
-            <td>INFO
+            <td>101</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000086" target="_blank" rel="noopener noreferrer">OHD:0000086</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a missing tooth finding in which tooth 28 is found to be missing</td>
           </tr>
         <tr class=table-info>
-            <td>96</td>
-            <td>INFO
+            <td>102</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000087" target="_blank" rel="noopener noreferrer">OHD:0000087</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a missing tooth finding in which tooth 29 is found to be missing</td>
           </tr>
         <tr class=table-info>
-            <td>97</td>
-            <td>INFO
+            <td>103</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000088" target="_blank" rel="noopener noreferrer">OHD:0000088</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a missing tooth finding in which tooth 30 is found to be missing</td>
           </tr>
         <tr class=table-info>
-            <td>98</td>
-            <td>INFO
+            <td>104</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000089" target="_blank" rel="noopener noreferrer">OHD:0000089</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a missing tooth finding in which tooth 31 is found to be missing</td>
           </tr>
         <tr class=table-info>
-            <td>99</td>
-            <td>INFO
+            <td>105</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000090" target="_blank" rel="noopener noreferrer">OHD:0000090</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a missing tooth finding in which tooth 32 is found to be missing</td>
           </tr>
         <tr class=table-info>
-            <td>100</td>
-            <td>INFO
+            <td>106</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000097" target="_blank" rel="noopener noreferrer">OHD:0000097</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a data property in which the values provide information as to whether a patient is actively being cared for by the practicet; takes values \"active\" and \"inactive\"</td>
           </tr>
         <tr class=table-info>
-            <td>101</td>
-            <td>INFO
+            <td>107</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000165" target="_blank" rel="noopener noreferrer">OHD:0000165</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
@@ -904,788 +947,252 @@ Prosthics may be either functional for non-functional. For example, a glass eye 
 </td>
           </tr>
         <tr class=table-info>
-            <td>102</td>
-            <td>INFO
+            <td>108</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000170" target="_blank" rel="noopener noreferrer">OHD:0000170</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a dentist role that inheres in a person a dentist who practices as part of the dental team to provide educational, clinical and therapeutic patient services; and can provide basic preventive and restorative treatment to children and adults, and extractions of primary (baby) teeth under the supervision of a dentist</td>
           </tr>
         <tr class=table-info>
-            <td>103</td>
-            <td>INFO
+            <td>109</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000171" target="_blank" rel="noopener noreferrer">OHD:0000171</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a dentist role that inheres in a person who specializes in performing endodontic procedures</td>
           </tr>
         <tr class=table-info>
-            <td>104</td>
-            <td>INFO
+            <td>110</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000172" target="_blank" rel="noopener noreferrer">OHD:0000172</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a dentist role that inheres in a person who specializes in performing oral surgery</td>
           </tr>
         <tr class=table-info>
-            <td>105</td>
-            <td>INFO
+            <td>111</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000173" target="_blank" rel="noopener noreferrer">OHD:0000173</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a dentist role that inheres in a person who has received specialized training in treating disorders that cause orofacial pain, such as TMJ disorder (TMD)</td>
           </tr>
         <tr class=table-info>
-            <td>106</td>
-            <td>INFO
+            <td>112</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000174" target="_blank" rel="noopener noreferrer">OHD:0000174</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a dentist role that inheres in a person who specializes in the prevention and correction of irregular teeth, as by means of braces</td>
           </tr>
         <tr class=table-info>
-            <td>107</td>
-            <td>INFO
+            <td>113</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000175" target="_blank" rel="noopener noreferrer">OHD:0000175</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a dentist role that inheres in a person who specializes in children's oral health</td>
           </tr>
         <tr class=table-info>
-            <td>108</td>
-            <td>INFO
+            <td>114</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000176" target="_blank" rel="noopener noreferrer">OHD:0000176</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a dentist role that inheres in a person who specializes in the prevention, diagnosis, and treatment of periodontal disease, oral inflammation, and in the placement of dental implants</td>
           </tr>
         <tr class=table-info>
-            <td>109</td>
-            <td>INFO
+            <td>115</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000177" target="_blank" rel="noopener noreferrer">OHD:0000177</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a dentist role that inheres in a person who specializes in the aesthetic (cosmetic) restoration and replacement of teeth</td>
           </tr>
         <tr class=table-info>
-            <td>110</td>
-            <td>INFO
+            <td>116</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000178" target="_blank" rel="noopener noreferrer">OHD:0000178</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a health care provider role that inheres in a person who specializes in the protection, promotion, and optimization of health and abilities, prevention of illness and injury, alleviation of suffering through the diagnosis and treatment of human response, and advocacy in the care of individuals, families, communities, and populations</td>
           </tr>
         <tr class=table-info>
-            <td>111</td>
-            <td>INFO
+            <td>117</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000179" target="_blank" rel="noopener noreferrer">OHD:0000179</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a Homo sapiens that bears a health care provider role</td>
           </tr>
         <tr class=table-info>
-            <td>112</td>
-            <td>INFO
+            <td>118</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000180" target="_blank" rel="noopener noreferrer">OHD:0000180</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a health care provider that bears a registered nurse role</td>
           </tr>
         <tr class=table-info>
-            <td>113</td>
-            <td>INFO
+            <td>119</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000181" target="_blank" rel="noopener noreferrer">OHD:0000181</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a dental health care provider that bears a dental therapist role</td>
           </tr>
         <tr class=table-info>
-            <td>114</td>
-            <td>INFO
+            <td>120</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000182" target="_blank" rel="noopener noreferrer">OHD:0000182</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a dentists that bears a endodontist role</td>
           </tr>
         <tr class=table-info>
-            <td>115</td>
-            <td>INFO
+            <td>121</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000183" target="_blank" rel="noopener noreferrer">OHD:0000183</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a dentist that bears an oral surgeon role</td>
           </tr>
         <tr class=table-info>
-            <td>116</td>
-            <td>INFO
+            <td>122</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000184" target="_blank" rel="noopener noreferrer">OHD:0000184</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a dentist that bears an orofacial pain dentist role</td>
           </tr>
         <tr class=table-info>
-            <td>117</td>
-            <td>INFO
+            <td>123</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000185" target="_blank" rel="noopener noreferrer">OHD:0000185</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a dentist that bears an orthodontist role</td>
           </tr>
         <tr class=table-info>
-            <td>118</td>
-            <td>INFO
+            <td>124</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000186" target="_blank" rel="noopener noreferrer">OHD:0000186</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a dentist that bears a pediatric dentist role</td>
           </tr>
         <tr class=table-info>
-            <td>119</td>
-            <td>INFO
+            <td>125</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000187" target="_blank" rel="noopener noreferrer">OHD:0000187</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a dentist that bears a periodontist role</td>
           </tr>
         <tr class=table-info>
-            <td>120</td>
-            <td>INFO
+            <td>126</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000204" target="_blank" rel="noopener noreferrer">OHD:0000204</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a physical examination of the soft tissue of the mouth, including the lips, mucosa, hard and soft palate, tongue, and floor of mouth</td>
           </tr>
         <tr class=table-info>
-            <td>121</td>
-            <td>INFO
+            <td>127</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000205" target="_blank" rel="noopener noreferrer">OHD:0000205</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a physical examination of the soft tissue of the head and neck with attention to the temporomandibular joint area</td>
           </tr>
         <tr class=table-info>
-            <td>122</td>
-            <td>INFO
+            <td>128</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000212" target="_blank" rel="noopener noreferrer">OHD:0000212</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a role that inheres in a person who is licensed to provide health care</td>
           </tr>
         <tr class=table-info>
-            <td>123</td>
-            <td>INFO
+            <td>129</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000213" target="_blank" rel="noopener noreferrer">OHD:0000213</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a dentist that bears a prosthodontist role</td>
           </tr>
         <tr class=table-info>
-            <td>124</td>
-            <td>INFO
+            <td>130</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000216" target="_blank" rel="noopener noreferrer">OHD:0000216</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>relates a health care encounter such as a inpatient, outpatient, or hospital stay to the next such encounter for the same patient.</td>
           </tr>
         <tr class=table-info>
-            <td>125</td>
-            <td>INFO
+            <td>131</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000217" target="_blank" rel="noopener noreferrer">OHD:0000217</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>relates a health care encounter such as a inpatient, outpatient, or hospital stay to any subsequent such encounter for the same patient.</td>
           </tr>
         <tr class=table-info>
-            <td>126</td>
-            <td>INFO
+            <td>132</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000218" target="_blank" rel="noopener noreferrer">OHD:0000218</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a data property used to record the date of a patient's first dental visit</td>
           </tr>
         <tr class=table-info>
-            <td>127</td>
-            <td>INFO
+            <td>133</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000219" target="_blank" rel="noopener noreferrer">OHD:0000219</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a data property used to record the last date on which a patient had a dental visit</td>
           </tr>
         <tr class=table-info>
-            <td>128</td>
-            <td>INFO
+            <td>134</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000234" target="_blank" rel="noopener noreferrer">OHD:0000234</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a data property whose value is an ADA universal tooth number that represents a tooth which is missing from a dentition</td>
           </tr>
         <tr class=table-info>
-            <td>129</td>
-            <td>INFO
+            <td>135</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000301" target="_blank" rel="noopener noreferrer">OHD:0000301</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a processed material that bears a prothetic role</td>
           </tr>
         <tr class=table-info>
-            <td>130</td>
-            <td>INFO
+            <td>136</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000302" target="_blank" rel="noopener noreferrer">OHD:0000302</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a prosthesis that has been fabricated for use as a substitute for a natural tooth</td>
           </tr>
         <tr class=table-info>
-            <td>131</td>
-            <td>INFO
+            <td>137</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000310" target="_blank" rel="noopener noreferrer">OHD:0000310</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a prosthesis that replaces one or more, but less than all, of the natural teeth and associated structures </td>
           </tr>
         <tr class=table-info>
-            <td>132</td>
-            <td>INFO
+            <td>138</td>
+            <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/OHD_0000360" target="_blank" rel="noopener noreferrer">OHD:0000360</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>a data property whose value is an ADA universal tooth number that represents the tooth associated with a tooth root that is missing from a dentition</td>
-          </tr>
-        <tr class=table-info>
-            <td>133</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000008" target="_blank" rel="noopener noreferrer">OHD:0000008</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>134</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000012" target="_blank" rel="noopener noreferrer">OHD:0000012</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>135</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000018" target="_blank" rel="noopener noreferrer">OHD:0000018</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>136</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000020" target="_blank" rel="noopener noreferrer">OHD:0000020</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>137</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000022" target="_blank" rel="noopener noreferrer">OHD:0000022</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>138</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000023" target="_blank" rel="noopener noreferrer">OHD:0000023</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>139</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000030" target="_blank" rel="noopener noreferrer">OHD:0000030</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>140</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000039" target="_blank" rel="noopener noreferrer">OHD:0000039</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>141</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000040" target="_blank" rel="noopener noreferrer">OHD:0000040</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>142</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000041" target="_blank" rel="noopener noreferrer">OHD:0000041</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>143</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000042" target="_blank" rel="noopener noreferrer">OHD:0000042</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>144</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000045" target="_blank" rel="noopener noreferrer">OHD:0000045</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>145</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000046" target="_blank" rel="noopener noreferrer">OHD:0000046</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>146</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000047" target="_blank" rel="noopener noreferrer">OHD:0000047</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>147</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000049" target="_blank" rel="noopener noreferrer">OHD:0000049</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>148</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000051" target="_blank" rel="noopener noreferrer">OHD:0000051</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>149</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000054" target="_blank" rel="noopener noreferrer">OHD:0000054</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>150</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000055" target="_blank" rel="noopener noreferrer">OHD:0000055</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>151</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000094" target="_blank" rel="noopener noreferrer">OHD:0000094</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>152</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000095" target="_blank" rel="noopener noreferrer">OHD:0000095</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>153</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000096" target="_blank" rel="noopener noreferrer">OHD:0000096</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>154</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000098" target="_blank" rel="noopener noreferrer">OHD:0000098</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>155</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000099" target="_blank" rel="noopener noreferrer">OHD:0000099</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>156</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000138" target="_blank" rel="noopener noreferrer">OHD:0000138</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>157</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000139" target="_blank" rel="noopener noreferrer">OHD:0000139</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>158</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000140" target="_blank" rel="noopener noreferrer">OHD:0000140</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>159</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000142" target="_blank" rel="noopener noreferrer">OHD:0000142</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>160</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000148" target="_blank" rel="noopener noreferrer">OHD:0000148</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>161</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000149" target="_blank" rel="noopener noreferrer">OHD:0000149</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>162</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000150" target="_blank" rel="noopener noreferrer">OHD:0000150</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>163</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000151" target="_blank" rel="noopener noreferrer">OHD:0000151</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>164</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000152" target="_blank" rel="noopener noreferrer">OHD:0000152</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>165</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000153" target="_blank" rel="noopener noreferrer">OHD:0000153</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>166</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000154" target="_blank" rel="noopener noreferrer">OHD:0000154</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>167</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000155" target="_blank" rel="noopener noreferrer">OHD:0000155</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>168</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000158" target="_blank" rel="noopener noreferrer">OHD:0000158</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>169</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000159" target="_blank" rel="noopener noreferrer">OHD:0000159</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>170</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000160" target="_blank" rel="noopener noreferrer">OHD:0000160</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>171</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000161" target="_blank" rel="noopener noreferrer">OHD:0000161</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>172</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000162" target="_blank" rel="noopener noreferrer">OHD:0000162</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>173</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000163" target="_blank" rel="noopener noreferrer">OHD:0000163</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>174</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000164" target="_blank" rel="noopener noreferrer">OHD:0000164</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>175</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000166" target="_blank" rel="noopener noreferrer">OHD:0000166</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>176</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000167" target="_blank" rel="noopener noreferrer">OHD:0000167</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>177</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000169" target="_blank" rel="noopener noreferrer">OHD:0000169</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>178</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000179" target="_blank" rel="noopener noreferrer">OHD:0000179</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>179</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000180" target="_blank" rel="noopener noreferrer">OHD:0000180</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>180</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000181" target="_blank" rel="noopener noreferrer">OHD:0000181</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>181</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000182" target="_blank" rel="noopener noreferrer">OHD:0000182</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>182</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000183" target="_blank" rel="noopener noreferrer">OHD:0000183</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>183</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000184" target="_blank" rel="noopener noreferrer">OHD:0000184</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>184</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000185" target="_blank" rel="noopener noreferrer">OHD:0000185</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>185</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000186" target="_blank" rel="noopener noreferrer">OHD:0000186</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>186</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000187" target="_blank" rel="noopener noreferrer">OHD:0000187</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>187</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000189" target="_blank" rel="noopener noreferrer">OHD:0000189</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>188</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000192" target="_blank" rel="noopener noreferrer">OHD:0000192</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>189</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000193" target="_blank" rel="noopener noreferrer">OHD:0000193</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>190</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000194" target="_blank" rel="noopener noreferrer">OHD:0000194</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>191</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000195" target="_blank" rel="noopener noreferrer">OHD:0000195</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>192</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000210" target="_blank" rel="noopener noreferrer">OHD:0000210</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>193</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000213" target="_blank" rel="noopener noreferrer">OHD:0000213</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>194</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000220" target="_blank" rel="noopener noreferrer">OHD:0000220</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>195</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000231" target="_blank" rel="noopener noreferrer">OHD:0000231</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>196</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000233" target="_blank" rel="noopener noreferrer">OHD:0000233</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>197</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000235" target="_blank" rel="noopener noreferrer">OHD:0000235</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>198</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000236" target="_blank" rel="noopener noreferrer">OHD:0000236</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>199</td>
-            <td>INFO
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/OHD_0000237" target="_blank" rel="noopener noreferrer">OHD:0000237</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
           </tr>
         </table>
     </div>

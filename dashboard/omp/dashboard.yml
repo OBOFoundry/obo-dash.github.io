@@ -4,7 +4,7 @@ base_prefixes:
 - OMPALT
 - OMP
 changed: false
-date: 2024-05-26 09:44:52.005615
+date: 2024-06-29 16:03:25.731841
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 16190
@@ -32,12 +32,12 @@ metrics:
   'Info: Experimental OBO score':
     _dashboard: 0.467
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.011
+    _impact: 0.016
     _impact_external: 0
     _reuse: 0.125
-    oboscore: 0.239
+    oboscore: 0.242
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 2
+  'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -57,6 +57,7 @@ metrics:
   'Info: Which ontologies use it?':
   - genepio
   - mco
+  - ons
 mirror_from: http://purl.obolibrary.org/obo/omp.owl
 namespace: omp
 results:
@@ -73,7 +74,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 8 duplicate definitions.  261 missing definitions. See ROBOT Report for
+    comment: 8 duplicate definitions.  233 missing definitions. See ROBOT Report for
       details.
     status: ERROR
   FP07 Relations:
@@ -88,19 +89,19 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 23 duplicate labels. 28 missing labels. See ROBOT Report for details.
+    comment: 23 duplicate labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
     status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 62 errors, 342 warnings, 12 info messages.
+    comment: 34 errors, 311 warnings, 12 info messages.
     file: robot_report
     results:
-      ERROR: 62
+      ERROR: 34
       INFO: 12
-      WARN: 342
+      WARN: 311
     status: ERROR
 sha256_hash: 51712c406e266a1eb7115028aecc5389fbee50f6d5196af3d666ba9c600f3ca0
 summary:

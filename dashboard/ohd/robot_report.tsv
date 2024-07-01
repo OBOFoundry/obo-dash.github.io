@@ -1,17 +1,12 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	missing_label	OHD:0000000	rdfs:label	
-ERROR	missing_label	OHD:0000234	rdfs:label	
-ERROR	missing_ontology_description	http://purl.obolibrary.org/obo/ohd/ohd-base.owl	dc:description	
-ERROR	missing_ontology_license	http://purl.obolibrary.org/obo/ohd/ohd-base.owl	dc:license	
-ERROR	missing_ontology_title	http://purl.obolibrary.org/obo/ohd/ohd-base.owl	dc:title	
+ERROR	multiple_definitions	OHD:0000035	IAO:0000115	A ceramic dental restoration material that contains a glassy alumino-silicate matrix in which are embedded several crystalline phases of feldspar, mullite, or quartz.
+ERROR	multiple_definitions	OHD:0000035	IAO:0000115	A ceramic material used for tooth-colored restorations.
+ERROR	multiple_labels	OHD:0000191	rdfs:label	dental restoration material role
+ERROR	multiple_labels	OHD:0000191	rdfs:label	dental restoration material role@en
 WARN	annotation_whitespace	OHD:0000006	IAO:0000115	"A tooth restoration procedure in which a dental restoration material is placed into a site that is located in the crown of the tooth.
 "
 WARN	annotation_whitespace	OHD:0000010	IAO:0000115	"A clinical finding is a specified output of a dental exam and is about the oral cavity, maxillofacial area, and/or the adjacent and associated structures, or their parts, or pathological anatomical entities derived from them. The finding has a part that is about when the exam that led to the finding occured well as other data items specifying the nature of the finding.
 @en"
-WARN	annotation_whitespace	OHD:0000010	dc11:source	"Adapted from Mosby's definition of dentistry:
-The evaluation, diagnosis, and/or treatment (nonsurgical, surgical, or related procedures) of diseases, disorders, and/or conditions of the oral cavity, maxillofacial area, and/or the adjacent and associated structures and their impact on the body; provided by dental professionals, within the scope of his/her education, training, and experience, in accordance with the ethics of the profession and applicable law.
-(Mosby. Mosby's Dental Dictionary, 2nd Edition. Mosby, 102007. p. 173). 
-"
 WARN	annotation_whitespace	OHD:0000016	IAO:0000116	"Bill Duncan 09/30/2015:
 Professional prophylaxis, radiographs, sealants, and nonsurgical periodontal therapy are among the procedures performed by a hygienist. Most are licensed to administer local anesthesia, depending on applicable regulations in their area. They usually work for a dentist in a dental office or clinic under a form of supervision. In some locations hygienists are allowed to practice without a dentist's supervision. "
 WARN	annotation_whitespace	OHD:0000017	IAO:0000115	"a dental health care provider role that inheres in a person who is qualified by training and licensed by a state or region to diagnose and treat abnormalities of the teeth, gums, and underlying bone, including conditions caused by disease, trauma, and heredity
@@ -29,6 +24,10 @@ WARN	annotation_whitespace	OHD:0000057	IAO:0000119	"Mosby. Mosby's Dental Dictio
 WARN	annotation_whitespace	OHD:0000092	IAO:0000115	This annotation is used to indicate that an individual is asserted to be a member of a class.  This is useful when needing to find only the non-inferred type of an individual, and not the all the inferred types.  For example, suppose x is a member of the class 'material entity' and 'material entity' is a subclass of 'independent continuant'.  This entails that x will be a member of 'independent continuant'.  However, by using this annotation to assert that x is a member of 'material entity', you can query for x's 'asserted type' and ignore the other inferred types in the class hierarchy.  
 WARN	annotation_whitespace	OHD:0000100	IAO:0000115	A label naming a type of secondary tooth canonically found in humans, adopted by the American Dental Association, and commonly used as labels on odontograms (toothcharts) and clinical notes. The Universal Numbering System uses No. 1 through 32 for the 32 teeth in the permanent dentition, starting with 1 for the maxillary right third molar, going around the arch to the maxillary left third molar as 16; dropping down on the same side, the left mandibular third molar becomes 17, and then the numbers increase around the lower arch to 32, which is the lower right third molar. @en
 WARN	annotation_whitespace	OHD:0000100	IAO:0000119	Book:Scheid, Rickne. Woelfel's Dental Anatomy, 8th Edition. Lippincott Williams & Wilkins, 01/2011. pp. i - ii). @en
+WARN	annotation_whitespace	OHD:0000135	IAO:0000119	 ISBN:1935201387#CDT 2011-2012 Current Dental Terminology, Chapter 1
+WARN	annotation_whitespace	OHD:0000136	IAO:0000119	 ISBN:1935201387#CDT 2011-2012 Current Dental Terminology, Chapter 1
+WARN	annotation_whitespace	OHD:0000146	IAO:0000119	 ISBN:1935201387#CDT 2011-2012 Current Dental Terminology, Chapter 1
+WARN	annotation_whitespace	OHD:0000156	IAO:0000119	 ISBN:1935201387#CDT 2011-2012 Current Dental Terminology, Chapter 1
 WARN	annotation_whitespace	OHD:0000158	IAO:0000115	"A procelain fused to nobal metal crown restoration procedure that uses high noble metal as a substrate.
 "
 WARN	annotation_whitespace	OHD:0000164	IAO:0000115	"A crown restoration procedure in which the artifical crown used to restore the tooth is formed by cutting a window into a stainless steel prosthetic crown and filling the window with resin.
@@ -48,16 +47,20 @@ WARN	annotation_whitespace	OHD:0000314	IAO:0000116	"Bill Duncan / Alan Ruttenber
 
 Prosthics may be either functional for non-functional. For example, a glass eye bears a prosthetic role, but it does not see. "
 WARN	duplicate_label_synonym	OHD:0000169	IAO:0000118	resin onlay restoration procedure
+WARN	equivalent_class_axiom_no_genus	OHD:0000000	RO:0000087	OHD:0000191
 WARN	equivalent_class_axiom_no_genus	OHD:0000002	BFO:0000055	OHD:0000190
-WARN	missing_definition	OHD:0000000	IAO:0000115	
+WARN	invalid_xref	OHD:0001005	oboInOwl:hasDbXref	ISO 4049:2009
+WARN	invalid_xref	OHD:0001010	oboInOwl:hasDbXref	10.3390/dj10110208
+WARN	invalid_xref	OHD:0001019	oboInOwl:hasDbXref	ISBN: 978-81-312-3488-4
+WARN	invalid_xref	OHD:0001021	oboInOwl:hasDbXref	ISO standards 9917-1:2007
+WARN	invalid_xref	OHD:0001022	oboInOwl:hasDbXref	ISO standards 3107:2022
 WARN	missing_definition	OHD:0000029	IAO:0000115	
 WARN	missing_definition	OHD:0000030	IAO:0000115	
 WARN	missing_definition	OHD:0000065	IAO:0000115	
+WARN	missing_definition	OHD:0000147	IAO:0000115	
 WARN	missing_definition	OHD:0000159	IAO:0000115	
 WARN	missing_definition	OHD:0000162	IAO:0000115	
 WARN	missing_definition	OHD:0000167	IAO:0000115	
-WARN	missing_definition	OHD:0000168	IAO:0000115	
-WARN	missing_definition	OHD:0000191	IAO:0000115	
 WARN	missing_definition	OHD:0000192	IAO:0000115	
 WARN	missing_definition	OHD:0000199	IAO:0000115	
 WARN	missing_definition	OHD:0000208	IAO:0000115	
@@ -156,45 +159,3 @@ INFO	lowercase_definition	OHD:0000301	IAO:0000115	a processed material that bear
 INFO	lowercase_definition	OHD:0000302	IAO:0000115	a prosthesis that has been fabricated for use as a substitute for a natural tooth
 INFO	lowercase_definition	OHD:0000310	IAO:0000115	a prosthesis that replaces one or more, but less than all, of the natural teeth and associated structures 
 INFO	lowercase_definition	OHD:0000360	IAO:0000115	a data property whose value is an ADA universal tooth number that represents the tooth associated with a tooth root that is missing from a dentition
-INFO	missing_superclass	OHD:0000008	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000012	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000018	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000020	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000022	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000023	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000030	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000039	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000040	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000041	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000042	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000045	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000046	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000047	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000049	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000051	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000054	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000055	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000094	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000095	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000096	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000098	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000099	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000138	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000139	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000140	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000142	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000148	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000149	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000150	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000151	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000152	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000153	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000154	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000155	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000158	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000159	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000160	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000161	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000162	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000163	rdfs:subClassOf	
-INFO	missing_superclass	OHD:0000164	rdfs:subClassOf	

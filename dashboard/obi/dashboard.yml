@@ -4,93 +4,94 @@ base_prefixes:
 - OBIALT
 - OBI
 changed: false
-date: 2024-05-26 09:35:27.301120
+date: 2024-06-29 15:34:44.576111
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 26596
+    AnnotationAssertion: 27112
     ClassAssertion: 244
     DataPropertyDomain: 3
     DataPropertyRange: 1
-    Declaration: 4942
+    Declaration: 5085
     DisjointClasses: 21
-    EquivalentClasses: 1048
+    EquivalentClasses: 1085
     InverseObjectProperties: 5
     ObjectPropertyAssertion: 10
     ObjectPropertyDomain: 19
     ObjectPropertyRange: 18
     SubAnnotationPropertyOf: 4
-    SubClassOf: 5936
+    SubClassOf: 6016
     SubDataPropertyOf: 1
     SubObjectPropertyOf: 29
     SymmetricObjectProperty: 1
     TransitiveObjectProperty: 1
-  'Axioms: Number of axioms': 38879
-  'Entities: % of entities reused': 13.95
-  'Entities: Number of annotation properties': 53
-  'Entities: Number of classes': 4558
+  'Axioms: Number of axioms': 39655
+  'Entities: % of entities reused': 14.4
+  'Entities: Number of annotation properties': 52
+  'Entities: Number of classes': 4702
   'Entities: Number of data properties': 5
   'Entities: Number of individuals': 246
   'Entities: Number of object properties': 75
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 22350
+    Class: 22805
     DataMinCardinality: 3
     DataSomeValuesFrom: 5
-    ObjectAllValuesFrom: 78
-    ObjectComplementOf: 18
+    ObjectAllValuesFrom: 80
+    ObjectComplementOf: 19
     ObjectExactCardinality: 5
     ObjectHasValue: 132
-    ObjectIntersectionOf: 4566
+    ObjectIntersectionOf: 4630
     ObjectMaxCardinality: 1
     ObjectMinCardinality: 3
     ObjectOneOf: 1
-    ObjectSomeValuesFrom: 8833
-    ObjectUnionOf: 110
-  'Info: Does the ontology fall under OWL 2 DL?': false
+    ObjectSomeValuesFrom: 8915
+    ObjectUnionOf: 118
+  'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.971
+    _dashboard: 0.949
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.441
+    _impact: 0.446
     _impact_external: 0.5
-    _reuse: 0.139
-    oboscore: 0.706
+    _reuse: 0.144
+    oboscore: 0.698
   'Info: How many externally documented uses?': 5
-  'Info: How many ontologies use it?': 82
+  'Info: How many ontologies use it?': 83
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 2104
+    BFO: 2123
     CHEBI: 482
-    CHMO: 14
+    CHMO: 15
     CL: 208
     CLO: 38
     COB: 6
     ENVO: 3
     GAZ: 2
-    GO: 769
-    HP: 2
-    IAO: 23021
+    GO: 771
+    HP: 4
+    IAO: 23445
     IDO: 10
+    MRO: 74
     NCBITaxon: 167
     OBA: 47
-    OBI: 23986
-    OGMS: 33
+    OBI: 24363
+    OGMS: 34
     OMIABIS: 5
     OPL: 5
-    PATO: 121
-    PR: 143
-    RO: 2192
+    PATO: 123
+    PR: 146
+    RO: 2218
     SO: 31
-    UBERON: 309
+    UBERON: 338
     UO: 89
     dc: 2
     dc11: 83
     obo: 4
-    oboInOwl: 89
+    oboInOwl: 90
     owl: 128
     protege: 1
-    rdf: 3
-    rdfs: 4319
+    rdf: 2
+    rdfs: 4419
     xsd: 10
   'Info: Which ontologies use it?':
   - ado
@@ -151,6 +152,7 @@ metrics:
   - omit
   - omrse
   - one
+  - ons
   - ontoneo
   - oostt
   - opl
@@ -189,7 +191,8 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    status: PASS
+    comment: 3 missing definitions. See ROBOT Report for details.
+    status: WARN
   FP07 Relations:
     comment: 28 non-RO properties used.
     file: fp7
@@ -207,19 +210,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 85 warnings, 1291 info messages.
+    comment: 91 warnings, 1336 info messages.
     file: robot_report
     results:
       ERROR: 0
-      INFO: 1291
-      WARN: 85
+      INFO: 1336
+      WARN: 91
     status: WARN
-sha256_hash: 3d555c59a71ea5ec2e2705e03881bac8da5998244bcb191625fe0614cd2249e2
+sha256_hash: a288d7b9528f5249c98c938380a0a384d44415c4c79e4960cbbc1cbb46cbcec1
 summary:
-  comment: 1 warnings
+  comment: 2 warnings
   status: WARN
   summary_count:
     ERROR: 0
     INFO: 1
-    WARN: 1
-version: http://purl.obolibrary.org/obo/obi/2023-09-20/obi-base.owl
+    WARN: 2
+version: http://purl.obolibrary.org/obo/obi/2024-06-10/obi-base.owl
