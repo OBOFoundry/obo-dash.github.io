@@ -4,62 +4,110 @@ base_prefixes:
 - PCLALT
 - PCL
 changed: false
-failure: failed_ontology_dashboard
-last_ontology_dashboard_run_failed: true
+date: 2024-08-15 10:52:05.853421
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 535401
-    ClassAssertion: 3346
-    Declaration: 175160
-    EquivalentClasses: 1026
+    AnnotationAssertion: 535404
+    ClassAssertion: 3347
+    Declaration: 175158
+    EquivalentClasses: 1027
     ObjectPropertyAssertion: 1515
     SubClassOf: 178914
-  'Axioms: Number of axioms': 895362
+  'Axioms: Number of axioms': 895365
   'Entities: % of entities reused': 98.15
   'Entities: Number of annotation properties': 59
-  'Entities: Number of classes': 172792
+  'Entities: Number of classes': 172790
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 2299
   'Entities: Number of object properties': 14
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
     Class: 538778
-    ObjectHasValue: 2052
-    ObjectIntersectionOf: 3315
-    ObjectSomeValuesFrom: 10403
+    ObjectHasValue: 2054
+    ObjectIntersectionOf: 3316
+    ObjectSomeValuesFrom: 10405
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
+    _dashboard: 0.822
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
     _reuse: 0.982
+    oboscore: 0.411
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 1074
-    CL: 2296
+    BFO: 1072
+    CL: 2298
     GO: 18
-    IAO: 3418
-    NCBITaxon: 1030
+    IAO: 3420
+    NCBITaxon: 1031
     PATO: 73
-    PCL: 26934
+    PCL: 26935
     PR: 21
     PRALT: 1
-    RO: 9109
-    SO: 171176
+    RO: 9115
+    SO: 171173
     UBERON: 656
     dc: 19
     dc11: 7
-    obo: 8901
-    oboInOwl: 327951
+    obo: 8904
+    oboInOwl: 327954
     owl: 1341
-    prefix_unknown: 362953
-    rdf: 2241
-    rdfs: 177602
+    prefix_unknown: 362952
+    rdf: 2243
+    rdfs: 177601
     schema: 135
-    skos: 3211
+    skos: 3212
   'Info: Which ontologies use it?': []
 mirror_from: http://purl.obolibrary.org/obo/pcl/pcl-base.owl
 namespace: pcl
-sha256_hash: d01340a40ce5c007d5c1ba8c02720d2a1966bcc51fac8bd29f4dabda34f99c89
+results:
+  FP01 Open:
+    status: PASS
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    status: PASS
+  FP04 Versioning:
+    comment: Version IRI does not resolve
+    status: ERROR
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 941 missing definitions. See ROBOT Report for details.
+    status: WARN
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
+    status: ERROR
+  FP11 Locus of Authority:
+    status: PASS
+  FP12 Naming Conventions:
+    status: PASS
+  FP16 Maintenance:
+    status: PASS
+  FP20 Responsiveness:
+    status: PASS
+  ROBOT Report:
+    comment: 1708 warnings, 0 info messages.
+    file: robot_report
+    results:
+      ERROR: 0
+      INFO: 0
+      WARN: 1708
+    status: WARN
+sha256_hash: 02d333090bb3695e627e785912571fb5cd3d230cab880ec31b1c31ccfe3d6907
+summary:
+  comment: 2 errors
+  status: ERROR
+  summary_count:
+    ERROR: 2
+    INFO: 0
+    WARN: 2
+version: http://purl.obolibrary.org/obo/pcl/releases/2024-07-11/pcl-base.owl

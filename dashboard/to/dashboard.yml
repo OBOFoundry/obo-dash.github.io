@@ -4,7 +4,7 @@ base_prefixes:
 - TOALT
 - TO
 changed: false
-date: 2024-06-30 14:16:05.594823
+date: 2024-08-15 11:41:44.948634
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 37873
@@ -46,12 +46,12 @@ metrics:
     ObjectUnionOf: 2
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.816
+    _dashboard: 0.876
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.005
     _impact_external: 0.25
     _reuse: 0.691
-    oboscore: 0.41
+    oboscore: 0.441
   'Info: How many externally documented uses?': 2
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
@@ -96,8 +96,7 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    comment: Version IRI does not resolve
-    status: ERROR
+    status: PASS
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -116,7 +115,8 @@ results:
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
-    status: PASS
+    comment: last version (2023-07-17) is over one year(s) old
+    status: INFO
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
@@ -129,10 +129,10 @@ results:
     status: WARN
 sha256_hash: 69171de8c03fcec46048033ae1e9712cc7b38e0c177c5811d6f76a32fdc55714
 summary:
-  comment: 1 errors
-  status: ERROR
+  comment: 2 warnings
+  status: WARN
   summary_count:
-    ERROR: 1
-    INFO: 1
+    ERROR: 0
+    INFO: 2
     WARN: 2
 version: http://purl.obolibrary.org/obo/to/releases/2023-07-17/to.owl

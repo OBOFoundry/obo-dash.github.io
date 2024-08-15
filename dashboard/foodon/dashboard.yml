@@ -4,16 +4,16 @@ base_prefixes:
 - FOODONALT
 - FOODON
 changed: true
-date: 2024-06-27 12:26:43.125941
+date: 2024-08-04 12:01:31.080243
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 220470
+    AnnotationAssertion: 207233
     ClassAssertion: 22
     DataPropertyDomain: 4
     DataPropertyRange: 2
-    Declaration: 38332
+    Declaration: 39293
     DisjointClasses: 37
-    EquivalentClasses: 5336
+    EquivalentClasses: 5755
     FunctionalObjectProperty: 3
     InverseFunctionalObjectProperty: 1
     InverseObjectProperties: 28
@@ -21,28 +21,28 @@ metrics:
     ObjectPropertyDomain: 9
     ObjectPropertyRange: 10
     SubAnnotationPropertyOf: 5
-    SubClassOf: 53983
-    SubObjectPropertyOf: 143
+    SubClassOf: 55784
+    SubObjectPropertyOf: 142
     SubPropertyChainOf: 51
     SymmetricObjectProperty: 6
     TransitiveObjectProperty: 18
-  'Axioms: Number of axioms': 318465
-  'Entities: % of entities reused': 27.97
+  'Axioms: Number of axioms': 308408
+  'Entities: % of entities reused': 28.31
   'Entities: Number of annotation properties': 67
-  'Entities: Number of classes': 37633
+  'Entities: Number of classes': 38594
   'Entities: Number of data properties': 4
   'Entities: Number of individuals': 435
-  'Entities: Number of object properties': 195
+  'Entities: Number of object properties': 194
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 163827
+    Class: 169644
     DataHasValue: 2
-    ObjectAllValuesFrom: 222
-    ObjectComplementOf: 182
+    ObjectAllValuesFrom: 224
+    ObjectComplementOf: 184
     ObjectExactCardinality: 1
-    ObjectIntersectionOf: 7396
+    ObjectIntersectionOf: 7815
     ObjectMinCardinality: 1
-    ObjectSomeValuesFrom: 16405
+    ObjectSomeValuesFrom: 16853
     ObjectUnionOf: 103
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
@@ -50,7 +50,7 @@ metrics:
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.07
     _impact_external: 0
-    _reuse: 0.28
+    _reuse: 0.283
     oboscore: 0.329
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 13
@@ -58,13 +58,13 @@ metrics:
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     AGRO: 16
-    APOLLO_SV: 3
-    BFO: 4975
+    AfPO: 1228
+    BFO: 4823
     BTO: 7
     CARO: 2
     CDNO: 5930
     CEPH: 4
-    CHEBI: 8431
+    CHEBI: 8430
     CHEBIALT: 7
     CL: 2
     COB: 75
@@ -74,40 +74,40 @@ metrics:
     ENVOALT: 1
     FAO: 434
     FLOPO: 64
-    FOODON: 116116
+    FOODON: 120288
     GAZ: 1473
     GENEPIO: 8
     GO: 49
-    HANCESTRO: 997
-    IAO: 85817
-    NCBITaxon: 19808
-    NCIT: 241
-    OBI: 270
-    ONS: 275
-    PATO: 1913
+    HANCESTRO: 1023
+    IAO: 68428
+    NCBITaxon: 20292
+    NCIT: 236
+    OBI: 271
+    ONS: 259
+    PATO: 1923
     PATOALT: 1
     PCO: 2
-    PO: 1779
-    PR: 18
+    PO: 1817
+    PR: 5
     PRALT: 1
-    RO: 13748
+    RO: 14272
     SEPIO: 3
-    STATO: 7
-    UBERON: 1290
+    STATO: 4
+    UBERON: 1257
     UO: 343
-    dc: 15805
+    dc: 18767
     dc11: 4
     efo: 1
     foaf: 1
     obo: 26
-    oboInOwl: 68041
-    owl: 4376
+    oboInOwl: 68121
+    owl: 4412
     prefix_unknown: 46
-    rdf: 4325
-    rdfs: 52948
+    rdf: 4323
+    rdfs: 54025
     schema: 231
     xml: 1
-    xsd: 29
+    xsd: 28
   'Info: Which ontologies use it?':
   - ado
   - agro
@@ -132,12 +132,12 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    comment: Version IRI has neither a semantic version nor a date
+    comment: Version IRI does not resolve
     status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 506 duplicate definitions. 112 multiple definitions. 12068 missing definitions.
+    comment: 508 duplicate definitions. 106 multiple definitions. 12073 missing definitions.
       See ROBOT Report for details.
     status: ERROR
   FP07 Relations:
@@ -152,7 +152,7 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 26 multiple labels. 1 missing labels. See ROBOT Report for details.
+    comment: 22 multiple labels. 1 missing labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
     comment: Version IRI does not have date information
@@ -160,14 +160,14 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 737 errors, 14046 warnings, 374 info messages.
+    comment: 677 errors, 16149 warnings, 375 info messages.
     file: robot_report
     results:
-      ERROR: 737
-      INFO: 374
-      WARN: 14046
+      ERROR: 677
+      INFO: 375
+      WARN: 16149
     status: ERROR
-sha256_hash: 98854b07fa1f3366fd0cd4e01e1c249e4c23dac3f15907f2921e128b6e67cd3c
+sha256_hash: 5872c8f534a46a4965760dcce28e42fdd291988114aa36b175a0ced3fd06a432
 summary:
   comment: 5 errors
   status: ERROR
@@ -175,4 +175,4 @@ summary:
     ERROR: 5
     INFO: 2
     WARN: 0
-version: https://github.com/FoodOntology/foodon/releases/download/v2024-03-26/foodon.owl
+version: https://github.com/FoodOntology/foodon/releases/download/v2024-07-12/foodon.owl
