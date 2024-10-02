@@ -4,7 +4,7 @@ base_prefixes:
 - FOODONALT
 - FOODON
 changed: true
-date: 2024-08-04 12:01:31.080243
+date: 2024-10-01 16:34:33.361019
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 207233
@@ -49,16 +49,15 @@ metrics:
     _dashboard: 0.587
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.07
-    _impact_external: 0
+    _impact_external: 0.5
     _reuse: 0.283
     oboscore: 0.329
-  'Info: How many externally documented uses?': 0
+  'Info: How many externally documented uses?': 3
   'Info: How many ontologies use it?': 13
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     AGRO: 16
-    AfPO: 1228
     BFO: 4823
     BTO: 7
     CARO: 2
@@ -99,7 +98,7 @@ metrics:
     dc11: 4
     efo: 1
     foaf: 1
-    obo: 26
+    obo: 1254
     oboInOwl: 68121
     owl: 4412
     prefix_unknown: 46
@@ -126,7 +125,9 @@ mirror_from: http://purl.obolibrary.org/obo/foodon.owl
 namespace: foodon
 results:
   FP01 Open:
-    status: PASS
+    comment: Ontology license 'https://creativecommons.org/licenses/by/3.0/' does
+      not match registry license 'http://creativecommons.org/licenses/by/4.0/'.
+    status: ERROR
   FP02 Common Format:
     status: PASS
   FP03 URIs:
@@ -147,8 +148,7 @@ results:
   FP08 Documented:
     status: PASS
   FP09 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
+    status: PASS
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
@@ -160,12 +160,12 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 677 errors, 16149 warnings, 375 info messages.
+    comment: 677 errors, 16330 warnings, 375 info messages.
     file: robot_report
     results:
       ERROR: 677
       INFO: 375
-      WARN: 16149
+      WARN: 16330
     status: ERROR
 sha256_hash: 5872c8f534a46a4965760dcce28e42fdd291988114aa36b175a0ced3fd06a432
 summary:

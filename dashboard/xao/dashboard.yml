@@ -3,50 +3,51 @@ base_prefixes:
 - XAO
 - XAOALT
 - XAO
-changed: false
-date: 2024-08-15 11:57:41.045828
+changed: true
+date: 2024-10-01 17:56:56.062870
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 10966
-    Declaration: 1817
+    AnnotationAssertion: 11277
+    Declaration: 1873
     SubAnnotationPropertyOf: 5
-    SubClassOf: 6918
+    SubClassOf: 7157
     TransitiveObjectProperty: 3
-  'Axioms: Number of axioms': 19709
+  'Axioms: Number of axioms': 20315
   'Entities: % of entities reused': 2.03
-  'Entities: Number of annotation properties': 37
-  'Entities: Number of classes': 1775
+  'Entities: Number of annotation properties': 38
+  'Entities: Number of classes': 1830
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 5
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 15611
-    ObjectSomeValuesFrom: 5170
+    Class: 16144
+    ObjectSomeValuesFrom: 5352
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.682
+    _dashboard: 0.578
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.016
     _impact_external: 0.25
     _reuse: 0.02
-    oboscore: 0.349
+    oboscore: 0.297
   'Info: How many externally documented uses?': 1
   'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 1193
-    IAO: 1747
-    RO: 680
-    XAO: 15611
-    XAOALT: 3316
+    BFO: 1237
+    IAO: 1802
+    OMO: 2
+    RO: 710
+    XAO: 16144
+    XAOALT: 3421
     dc: 2
     dc11: 2
-    oboInOwl: 9251
-    owl: 49
-    rdfs: 1813
-    xsd: 1736
+    oboInOwl: 9513
+    owl: 50
+    rdf: 1790
+    rdfs: 1867
   'Info: Which ontologies use it?':
   - cob
   - upheno
@@ -66,7 +67,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 2 missing definitions. See ROBOT Report for details.
+    comment: 5 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     comment: 3 labels match RO labels.
@@ -81,26 +82,26 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    status: PASS
+    comment: 4 missing labels. See ROBOT Report for details.
+    status: ERROR
   FP16 Maintenance:
-    comment: last version (2022-08-29) is over one year(s) old
-    status: INFO
+    status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 11 warnings, 2 info messages.
+    comment: 4 errors, 10 warnings, 2 info messages.
     file: robot_report
     results:
-      ERROR: 0
+      ERROR: 4
       INFO: 2
-      WARN: 11
-    status: WARN
-sha256_hash: c440c3efb70a765ebadd8a0a931a35ec7e62289b03c704f1af4ba6ecdb2e5857
+      WARN: 10
+    status: ERROR
+sha256_hash: 35db632535cc255ec039b61fd77ba0c5a171d35fe50ed0017ea01b74280816e3
 summary:
-  comment: 3 errors
+  comment: 5 errors
   status: ERROR
   summary_count:
-    ERROR: 3
-    INFO: 1
-    WARN: 2
-version: http://purl.obolibrary.org/obo/xao/releases/2022-08-29/xao.owl
+    ERROR: 5
+    INFO: 0
+    WARN: 1
+version: http://purl.obolibrary.org/obo/xao/releases/2024-09-03/xao.owl

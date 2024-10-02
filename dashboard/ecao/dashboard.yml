@@ -4,44 +4,44 @@ base_prefixes:
 - ECAOALT
 - ECAO
 changed: true
-date: 2024-08-04 11:56:40.552118
+date: 2024-10-01 16:29:45.700396
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 2892
-    Declaration: 921
-    SubClassOf: 2968
-  'Axioms: Number of axioms': 6781
-  'Entities: % of entities reused': 1.83
+    AnnotationAssertion: 2949
+    Declaration: 940
+    SubClassOf: 3754
+  'Axioms: Number of axioms': 7643
+  'Entities: % of entities reused': 1.8
   'Entities: Number of annotation properties': 9
-  'Entities: Number of classes': 912
+  'Entities: Number of classes': 931
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 5
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 6848
-    ObjectSomeValuesFrom: 2131
+    Class: 8439
+    ObjectSomeValuesFrom: 2917
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.733
+    _dashboard: 0.667
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
     _reuse: 0.018
-    oboscore: 0.366
+    oboscore: 0.334
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 894
-    ECAO: 6843
-    IAO: 572
-    RO: 1242
+    BFO: 913
+    ECAO: 8434
+    IAO: 591
+    RO: 2009
     UBERON: 5
     oboInOwl: 503
-    prefix_unknown: 910
-    rdfs: 911
+    prefix_unknown: 929
+    rdfs: 930
   'Info: Which ontologies use it?': []
 mirror_from: http://purl.obolibrary.org/obo/ecao/ecao-base.owl
 namespace: ecao
@@ -71,25 +71,26 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    status: PASS
+    comment: 2 duplicate labels. See ROBOT Report for details.
+    status: ERROR
   FP16 Maintenance:
     status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 10 errors, 675 warnings, 15 info messages.
+    comment: 6 errors, 588 warnings, 14 info messages.
     file: robot_report
     results:
-      ERROR: 10
-      INFO: 15
-      WARN: 675
+      ERROR: 6
+      INFO: 14
+      WARN: 588
     status: ERROR
-sha256_hash: c711e59589b05ac73e3cc326a363c1d01bf3567e523b99957f5d6344e186c6d2
+sha256_hash: 2e1a161b9291d17243e1e322b3f80560f556ad1e41b0983dcfc781b5ccbf843f
 summary:
-  comment: 4 errors
+  comment: 5 errors
   status: ERROR
   summary_count:
-    ERROR: 4
+    ERROR: 5
     INFO: 0
     WARN: 0
-version: http://purl.obolibrary.org/obo/ecao/releases/2024-07-25/ecao-base.owl
+version: http://purl.obolibrary.org/obo/ecao/releases/2024-08-22/ecao-base.owl

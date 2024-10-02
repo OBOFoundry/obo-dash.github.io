@@ -3,85 +3,85 @@ base_prefixes:
 - PR
 - PRALT
 - PR
-changed: false
-date: 2024-08-15 11:39:35.711210
+changed: true
+date: 2024-10-01 17:43:09.071660
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 2847930
-    Declaration: 360870
+    AnnotationAssertion: 2848599
+    Declaration: 360941
     DisjointClasses: 122
-    EquivalentClasses: 127151
+    EquivalentClasses: 127167
     ObjectPropertyDomain: 1
     ObjectPropertyRange: 1
     SubAnnotationPropertyOf: 9
-    SubClassOf: 928206
+    SubClassOf: 928440
     SubObjectPropertyOf: 3
     SymmetricObjectProperty: 1
     TransitiveObjectProperty: 5
-  'Axioms: Number of axioms': 4264299
+  'Axioms: Number of axioms': 4265289
   'Entities: % of entities reused': 28.52
   'Entities: Number of annotation properties': 37
-  'Entities: Number of classes': 360814
+  'Entities: Number of classes': 360885
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 23
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 2634889
+    Class: 2635486
     ObjectAllValuesFrom: 4
     ObjectComplementOf: 4
     ObjectExactCardinality: 1251
-    ObjectIntersectionOf: 126972
+    ObjectIntersectionOf: 126988
     ObjectMaxCardinality: 9
     ObjectMinCardinality: 49
-    ObjectSomeValuesFrom: 633418
+    ObjectSomeValuesFrom: 633564
     ObjectUnionOf: 179
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.876
+    _dashboard: 0.787
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.226
     _impact_external: 0.25
     _reuse: 0.285
-    oboscore: 0.551
+    oboscore: 0.507
   'Info: How many externally documented uses?': 2
   'Info: How many ontologies use it?': 42
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 46922
-    BIRDGENE: 2253
-    CHEBI: 482
+    BFO: 46945
+    BIRDGENE: 2293
+    CHEBI: 439
     CL: 14
     EGGENE: 16190
     ENSEMBLEGENOMEID: 1162
-    ENSEMBLEID: 936
+    ENSEMBLEID: 930
     FBgn: 18351
-    GENENAMES: 80544
+    GENENAMES: 80548
     GNO: 11666
-    GO: 2449
-    IAO: 359951
-    MGI: 68728
-    MOD: 38697
-    NCBIGENE: 22904
-    NCBITaxon: 437642
+    GO: 2469
+    IAO: 360043
+    MGI: 68741
+    MOD: 38720
+    NCBIGENE: 22900
+    NCBITaxon: 437736
     OBI: 6
     OGG: 56
-    PR: 1597785
-    PRALT: 148551
-    RO: 439001
-    SO: 107320
-    SPOMBE: 23948
+    PR: 1598187
+    PRALT: 148577
+    RO: 439097
+    SO: 107346
+    SPOMBE: 23949
     WBGene: 22117
     ZFIN_GENE: 14623
     dictyGene: 20785
-    obo: 4411
-    oboInOwl: 3464691
-    owl: 5446
-    prefix_unknown: 80048
-    rdfs: 738047
-    rgd: 33339
-    xsd: 1130989
+    obo: 4416
+    oboInOwl: 3465598
+    owl: 5457
+    prefix_unknown: 80056
+    rdfs: 738208
+    rgd: 33353
+    xsd: 1131293
     yeastgenome: 28420
   'Info: Which ontologies use it?':
   - ado
@@ -140,8 +140,9 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 51 missing definitions. See ROBOT Report for details.
-    status: WARN
+    comment: 2 duplicate definitions.  51 missing definitions. See ROBOT Report for
+      details.
+    status: ERROR
   FP07 Relations:
     comment: 6 non-RO properties used.
     file: fp7
@@ -160,19 +161,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 1451 warnings, 0 info messages.
+    comment: 2 errors, 62 warnings, 0 info messages.
     file: robot_report
     results:
-      ERROR: 0
+      ERROR: 2
       INFO: 0
-      WARN: 1451
-    status: WARN
-sha256_hash: 2fc51a65a8123231420601e5c865298116ded9670d0d9bd65aa3bb9139d0d1c1
+      WARN: 62
+    status: ERROR
+sha256_hash: a608de4889d92d487473ad282d51534da044fbd3e2b9f911c3210486ab79d000
 summary:
-  comment: 2 warnings
-  status: WARN
+  comment: 2 errors
+  status: ERROR
   summary_count:
-    ERROR: 0
+    ERROR: 2
     INFO: 2
-    WARN: 2
-version: http://purl.obolibrary.org/obo/pr/69.0/pr.owl
+    WARN: 0
+version: http://purl.obolibrary.org/obo/pr/70.0/pr.owl
