@@ -4,7 +4,7 @@ base_prefixes:
 - TOALT
 - TO
 changed: true
-date: 2024-10-30 20:43:20.060161
+date: 2025-01-16 04:03:25.634272
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 37873
@@ -12,7 +12,7 @@ metrics:
     Declaration: 5537
     DifferentIndividuals: 1
     DisjointClasses: 50
-    EquivalentClasses: 988
+    EquivalentClasses: 985
     FunctionalObjectProperty: 2
     InverseFunctionalObjectProperty: 1
     InverseObjectProperties: 32
@@ -26,7 +26,7 @@ metrics:
     SubPropertyChainOf: 71
     SymmetricObjectProperty: 3
     TransitiveObjectProperty: 18
-  'Axioms: Number of axioms': 53358
+  'Axioms: Number of axioms': 53355
   'Entities: % of entities reused': 69.09
   'Entities: Number of annotation properties': 70
   'Entities: Number of classes': 5291
@@ -35,23 +35,23 @@ metrics:
   'Entities: Number of object properties': 169
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 25591
+    Class: 25582
     ObjectAllValuesFrom: 8
     ObjectComplementOf: 2
     ObjectHasSelf: 1
-    ObjectIntersectionOf: 1185
+    ObjectIntersectionOf: 1182
     ObjectMinCardinality: 1
     ObjectOneOf: 1
-    ObjectSomeValuesFrom: 3100
+    ObjectSomeValuesFrom: 3097
     ObjectUnionOf: 2
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.764
+    _dashboard: 0.876
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.005
     _impact_external: 0.25
     _reuse: 0.691
-    oboscore: 0.385
+    oboscore: 0.441
   'Info: How many externally documented uses?': 2
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
@@ -68,12 +68,12 @@ metrics:
     NCBITaxon: 333
     OBI: 8
     OMO: 2
-    PATO: 1559
+    PATO: 1556
     PECO: 436
-    PO: 8952
+    PO: 8949
     POALT: 36
-    RO: 2415
-    TO: 6831
+    RO: 2412
+    TO: 6828
     TOALT: 28
     UBERON: 16
     dc: 3
@@ -100,7 +100,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 119 missing definitions. See ROBOT Report for details.
+    comment: 111 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     comment: 12 non-RO properties used.
@@ -113,27 +113,26 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 8 missing labels. See ROBOT Report for details.
-    status: ERROR
+    status: PASS
   FP16 Maintenance:
     comment: last version (2023-07-17) is over one year(s) old
     status: INFO
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 8 errors, 126 warnings, 0 info messages.
+    comment: 111 warnings, 0 info messages.
     file: robot_report
     results:
-      ERROR: 8
+      ERROR: 0
       INFO: 0
-      WARN: 126
-    status: ERROR
+      WARN: 111
+    status: WARN
 sha256_hash: 69171de8c03fcec46048033ae1e9712cc7b38e0c177c5811d6f76a32fdc55714
 summary:
-  comment: 2 errors
-  status: ERROR
+  comment: 2 warnings
+  status: WARN
   summary_count:
-    ERROR: 2
+    ERROR: 0
     INFO: 2
-    WARN: 1
+    WARN: 2
 version: http://purl.obolibrary.org/obo/to/releases/2023-07-17/to.owl

@@ -4,7 +4,7 @@ base_prefixes:
 - APOALT
 - APO
 changed: true
-date: 2024-10-30 17:49:39.189356
+date: 2025-01-13 22:00:20.000293
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 3781
@@ -25,12 +25,12 @@ metrics:
   'Info: Experimental OBO score':
     _dashboard: 0.667
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.0
+    _impact: 0.005
     _impact_external: 0
     _reuse: 0.469
-    oboscore: 0.334
+    oboscore: 0.336
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 0
+  'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -42,7 +42,8 @@ metrics:
     owl: 311
     rdfs: 389
     xsd: 326
-  'Info: Which ontologies use it?': []
+  'Info: Which ontologies use it?':
+  - upheno
 mirror_from: http://purl.obolibrary.org/obo/apo.owl
 namespace: apo
 results:
@@ -57,7 +58,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 2 duplicate definitions.  41 missing definitions. See ROBOT Report for
+    comment: 2 duplicate definitions.  36 missing definitions. See ROBOT Report for
       details.
     status: ERROR
   FP07 Relations:
@@ -70,19 +71,19 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 4 duplicate labels. 5 missing labels. See ROBOT Report for details.
+    comment: 4 duplicate labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
     status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 11 errors, 79 warnings, 4 info messages.
+    comment: 6 errors, 69 warnings, 4 info messages.
     file: robot_report
     results:
-      ERROR: 11
+      ERROR: 6
       INFO: 4
-      WARN: 79
+      WARN: 69
     status: ERROR
 sha256_hash: 935a5c3e518b1d93ea8cc20033eb9c86101e16dc9afe6230c6df3f0f418cf133
 summary:

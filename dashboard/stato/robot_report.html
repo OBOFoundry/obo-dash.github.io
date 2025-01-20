@@ -13,20 +13,24 @@
       <div class="report_summary"><table class="table">
       <tr><th><b>Level</b></th><th><b>Number of errors</b></th></tr>
       
-      <tr><td>INFO</td><td>381</td></tr>
+      <tr><td>INFO</td><td>383</td></tr>
       
-      <tr><td>WARN</td><td>16</td></tr>
+      <tr><td>WARN</td><td>20</td></tr>
       
       </table></div>
       <h3>Error breakdown</h3>
       <div class="report_summary"><table class="table">
       <tr><th><b>Rule</b></th><th><b>Number of errors</b></th></tr>
       
-      <tr><td>lowercase_definition</td><td>381</td></tr>
+      <tr><td>lowercase_definition</td><td>383</td></tr>
       
-      <tr><td>equivalent_class_axiom_no_genus</td><td>14</td></tr>
+      <tr><td>equivalent_class_axiom_no_genus</td><td>15</td></tr>
       
       <tr><td>duplicate_exact_synonym</td><td>2</td></tr>
+      
+      <tr><td>multiple_equivalent_classes</td><td>2</td></tr>
+      
+      <tr><td>equivalent_pair</td><td>1</td></tr>
       
       </table></div>
       <p style="text-align:center; margin-top:-15px;">
@@ -53,7 +57,7 @@
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000636" target="_blank" rel="noopener noreferrer">STATO:0000636</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000118" target="_blank" rel="noopener noreferrer">IAO:0000118</a></td>
-            <td>NNS</td>
+            <td></td>
           </tr>
         <tr class=table-warning>
             <td>1</td>
@@ -61,7 +65,7 @@
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000637" target="_blank" rel="noopener noreferrer">STATO:0000637</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000118" target="_blank" rel="noopener noreferrer">IAO:0000118</a></td>
-            <td>NNS</td>
+            <td></td>
           </tr>
         <tr class=table-warning>
             <td>2</td>
@@ -175,8 +179,40 @@
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000403" target="_blank" rel="noopener noreferrer">STATO:0000403</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000039" target="_blank" rel="noopener noreferrer">STATO:0000039</a></td>
           </tr>
-        <tr class=table-info>
+        <tr class=table-warning>
             <td>16</td>
+            <td>WARN</td>
+            <td><a href="https://robot.obolibrary.org/report_queries/equivalent_class_axiom_no_genus" target="_blank" rel="noopener noreferrer">equivalent_class_axiom_no_genus</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/STATO_0000697" target="_blank" rel="noopener noreferrer">STATO:0000697</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/OBI_0000417" target="_blank" rel="noopener noreferrer">OBI:0000417</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/STATO_0000173" target="_blank" rel="noopener noreferrer">STATO:0000173</a></td>
+          </tr>
+        <tr class=table-warning>
+            <td>17</td>
+            <td>WARN</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/equivalent_pair" target="_blank" rel="noopener noreferrer">equivalent_pair</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/STATO_0000247" target="_blank" rel="noopener noreferrer">STATO:0000247</a></td>
+            <td><a href="http://www.w3.org/2002/07/owl#equivalentClass" target="_blank" rel="noopener noreferrer">owl:equivalentClass</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/STATO_0000697" target="_blank" rel="noopener noreferrer">STATO:0000697</a></td>
+          </tr>
+        <tr class=table-warning>
+            <td>18</td>
+            <td>WARN</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/multiple_equivalent_classes" target="_blank" rel="noopener noreferrer">multiple_equivalent_classes</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/STATO_0000247" target="_blank" rel="noopener noreferrer">STATO:0000247</a></td>
+            <td><a href="http://www.w3.org/2002/07/owl#equivalentClass" target="_blank" rel="noopener noreferrer">owl:equivalentClass</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/STATO_0000697" target="_blank" rel="noopener noreferrer">STATO:0000697</a></td>
+          </tr>
+        <tr class=table-warning>
+            <td>19</td>
+            <td>WARN</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/multiple_equivalent_classes" target="_blank" rel="noopener noreferrer">multiple_equivalent_classes</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/STATO_0000247" target="_blank" rel="noopener noreferrer">STATO:0000247</a></td>
+            <td><a href="http://www.w3.org/2002/07/owl#equivalentClass" target="_blank" rel="noopener noreferrer">owl:equivalentClass</a></td>
+            <td>blank node</td>
+          </tr>
+        <tr class=table-info>
+            <td>20</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000001" target="_blank" rel="noopener noreferrer">STATO:0000001</a></td>
@@ -184,7 +220,7 @@
             <td>property to indicate that a design declares a variable; the inverse property is 'is declared by'@en</td>
           </tr>
         <tr class=table-info>
-            <td>17</td>
+            <td>21</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000002" target="_blank" rel="noopener noreferrer">STATO:0000002</a></td>
@@ -192,7 +228,7 @@
             <td>an electronic file is an information content entity which conforms to a specification or format and which is meant to hold data and information in digital form, accessible to software agents@en</td>
           </tr>
         <tr class=table-info>
-            <td>18</td>
+            <td>22</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000003" target="_blank" rel="noopener noreferrer">STATO:0000003</a></td>
@@ -200,7 +236,7 @@
             <td>a balanced design is a an experimental design where all experimental group have the an equal number of subject observations@en</td>
           </tr>
         <tr class=table-info>
-            <td>19</td>
+            <td>23</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000004" target="_blank" rel="noopener noreferrer">STATO:0000004</a></td>
@@ -208,7 +244,7 @@
             <td>property to indicate the variables declared by a design; the inverse property is 'declares'@en</td>
           </tr>
         <tr class=table-info>
-            <td>20</td>
+            <td>24</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000005" target="_blank" rel="noopener noreferrer">STATO:0000005</a></td>
@@ -216,7 +252,7 @@
             <td>a single factor design is a study design which declares exactly 1 independent variable@en</td>
           </tr>
         <tr class=table-info>
-            <td>21</td>
+            <td>25</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000006" target="_blank" rel="noopener noreferrer">STATO:0000006</a></td>
@@ -224,7 +260,7 @@
             <td>x-axis is a cartesian coordinate axis which is orthogonal to the y-axis and the z-axis@en</td>
           </tr>
         <tr class=table-info>
-            <td>22</td>
+            <td>26</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000007" target="_blank" rel="noopener noreferrer">STATO:0000007</a></td>
@@ -232,7 +268,7 @@
             <td>an axis is a line graph used as reference line for the measurement of coordinates.@en</td>
           </tr>
         <tr class=table-info>
-            <td>23</td>
+            <td>27</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000008" target="_blank" rel="noopener noreferrer">STATO:0000008</a></td>
@@ -240,7 +276,7 @@
             <td>y-axis is a cartesian coordinate axis which is orthogonal to the x-axis and the z-axis@en</td>
           </tr>
         <tr class=table-info>
-            <td>24</td>
+            <td>28</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000011" target="_blank" rel="noopener noreferrer">STATO:0000011</a></td>
@@ -248,7 +284,7 @@
             <td>a cartesian axis is one of 3 the axis in a cartesian coordinate system defining a referential in 3 dimensions. each of the axis is orthogonal to the other 2@en</td>
           </tr>
         <tr class=table-info>
-            <td>25</td>
+            <td>29</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000012" target="_blank" rel="noopener noreferrer">STATO:0000012</a></td>
@@ -256,7 +292,7 @@
             <td>z-axis is a cartesian coordinate axis which is orthogonal to the x-axis and the y-axis@en</td>
           </tr>
         <tr class=table-info>
-            <td>26</td>
+            <td>30</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000013" target="_blank" rel="noopener noreferrer">STATO:0000013</a></td>
@@ -264,7 +300,7 @@
             <td>a 2 dimensional cartesian coordinate system is a cartesian coordinate system which defines 2 orthogonal one dimensional axes and which may be used to describe a 2 dimensional spatial region.</td>
           </tr>
         <tr class=table-info>
-            <td>27</td>
+            <td>31</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000019" target="_blank" rel="noopener noreferrer">STATO:0000019</a></td>
@@ -272,7 +308,7 @@
             <td>normal distribution hypothesis is a goodness of fit hypothesis stating that the distribution computed from the sample population fits a normal distribution.@en</td>
           </tr>
         <tr class=table-info>
-            <td>28</td>
+            <td>32</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000021" target="_blank" rel="noopener noreferrer">STATO:0000021</a></td>
@@ -280,7 +316,7 @@
             <td>a confidence interval which covers 90% of the sampling distribution, meaning that there is a 90% risk of false positive (type I error)@en</td>
           </tr>
         <tr class=table-info>
-            <td>29</td>
+            <td>33</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000024" target="_blank" rel="noopener noreferrer">STATO:0000024</a></td>
@@ -288,7 +324,7 @@
             <td>a three dimensional cartesian coordinate system is a cartesian coordinate system which defines 3 orthogonal one dimensional axes and which may be used to describe a 3 dimensional spatial region.</td>
           </tr>
         <tr class=table-info>
-            <td>30</td>
+            <td>34</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000027" target="_blank" rel="noopener noreferrer">STATO:0000027</a></td>
@@ -296,7 +332,7 @@
             <td>linkage between 2 categorical variable test is a statistical test which evaluates if there is an association between a predictor variable assuming discrete values and a response variable also assuming discrete values@en</td>
           </tr>
         <tr class=table-info>
-            <td>31</td>
+            <td>35</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000028" target="_blank" rel="noopener noreferrer">STATO:0000028</a></td>
@@ -304,7 +340,7 @@
             <td>measure of variation or statistical dispersion is a data item which describes how much a theoritical distribution or dataset is spread.@en</td>
           </tr>
         <tr class=table-info>
-            <td>32</td>
+            <td>36</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000029" target="_blank" rel="noopener noreferrer">STATO:0000029</a></td>
@@ -312,7 +348,7 @@
             <td>a measure of central tendency is a data item which attempts to describe a set of data by identifying the value of its centre.@en</td>
           </tr>
         <tr class=table-info>
-            <td>33</td>
+            <td>37</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000031" target="_blank" rel="noopener noreferrer">STATO:0000031</a></td>
@@ -320,7 +356,7 @@
             <td>binary classification (or binomial classification) is a data transformation which aims to cast members of a set into 2 disjoint groups depending on whether the element have a given property/feature or not.@en</td>
           </tr>
         <tr class=table-info>
-            <td>34</td>
+            <td>38</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000032" target="_blank" rel="noopener noreferrer">STATO:0000032</a></td>
@@ -328,7 +364,7 @@
             <td>an alternative term used for STATO statistical ontology and ISA team@en</td>
           </tr>
         <tr class=table-info>
-            <td>35</td>
+            <td>39</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000034" target="_blank" rel="noopener noreferrer">STATO:0000034</a></td>
@@ -336,7 +372,7 @@
             <td>a model parameter is a data item which is part of a model and which is meant to characterize an theoritecal or unknown population. a model parameter may be estimated by considering the properties of samples presumably taken from the theoritecal population@en</td>
           </tr>
         <tr class=table-info>
-            <td>36</td>
+            <td>40</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000035" target="_blank" rel="noopener noreferrer">STATO:0000035</a></td>
@@ -344,7 +380,7 @@
             <td>the range is a measure of variation which describes the difference between the lowest score and the highest score in a set of numbers (a data set)</td>
           </tr>
         <tr class=table-info>
-            <td>37</td>
+            <td>41</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000038" target="_blank" rel="noopener noreferrer">STATO:0000038</a></td>
@@ -352,7 +388,7 @@
             <td>a set of 2 subjects which result from a pairing process which assigns subject to a set based on a pairing rule/criteria@en</td>
           </tr>
         <tr class=table-info>
-            <td>38</td>
+            <td>42</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000039" target="_blank" rel="noopener noreferrer">STATO:0000039</a></td>
@@ -360,7 +396,7 @@
             <td>a statistic is a measurement datum to describe a dataset or a variable. It is generated by a calculation on set of observed data.@en</td>
           </tr>
         <tr class=table-info>
-            <td>39</td>
+            <td>43</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000040" target="_blank" rel="noopener noreferrer">STATO:0000040</a></td>
@@ -368,7 +404,7 @@
             <td>an MA plot is a scatter plot of the log intensity ratios M = log_2(T/R) versus the average log intensities A = log_2(T*T)/2, where T and R represent the signal intensities in the test and reference channels respectively.@en</td>
           </tr>
         <tr class=table-info>
-            <td>40</td>
+            <td>44</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000041" target="_blank" rel="noopener noreferrer">STATO:0000041</a></td>
@@ -376,7 +412,7 @@
             <td>a R command syntax or link to a R documentation in support of Statistical Ontology Classes or Data Transformations@en</td>
           </tr>
         <tr class=table-info>
-            <td>41</td>
+            <td>45</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000043" target="_blank" rel="noopener noreferrer">STATO:0000043</a></td>
@@ -384,7 +420,7 @@
             <td>a false positive rate whose value is 5 per cent@en</td>
           </tr>
         <tr class=table-info>
-            <td>42</td>
+            <td>46</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000044" target="_blank" rel="noopener noreferrer">STATO:0000044</a></td>
@@ -392,7 +428,7 @@
             <td>one-way anova is an analysis of variance where the different groups being compared are associated with the factor levels of only one independent variable. The null hypothesis is an absence of difference between the means calculated for each of the groups. The test assumes normality and equivariance of the data.@en</td>
           </tr>
         <tr class=table-info>
-            <td>43</td>
+            <td>47</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000045" target="_blank" rel="noopener noreferrer">STATO:0000045</a></td>
@@ -400,7 +436,7 @@
             <td>two-way anova is an analysis of variance where the different groups being compared are associated the factor levels of exatly 2 independent variables. The null hypothesis is an absence of difference between the means calculated for each of the groups. The test assumes normality and equivariance of the data.@en</td>
           </tr>
         <tr class=table-info>
-            <td>44</td>
+            <td>48</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000046" target="_blank" rel="noopener noreferrer">STATO:0000046</a></td>
@@ -408,7 +444,7 @@
             <td>a block design is a kind of study design which declares a blocking variable (also known as nuisance variable) in order to account for a known source of variation and reduce its impact on the acquisition of the signal@en</td>
           </tr>
         <tr class=table-info>
-            <td>45</td>
+            <td>49</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000047" target="_blank" rel="noopener noreferrer">STATO:0000047</a></td>
@@ -416,7 +452,7 @@
             <td>a count is a data item denoted by an integer and representing the number of instances or occurences of an entity@en</td>
           </tr>
         <tr class=table-info>
-            <td>46</td>
+            <td>50</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000050" target="_blank" rel="noopener noreferrer">STATO:0000050</a></td>
@@ -424,7 +460,7 @@
             <td>signal to noise ratio is a measurement datum comparing the amount of meaningful, useful or interesting data (the signal) to the amount of irrelevant or false data (the noise). Depending on the field and domain of application, different variables will be used to determinate a 'signal to noise ratio'. In statistics, the definition of signal to noise ratio is the ratio of the mean of a measurement to its standard deviation. It thus corresponds to the inverse of the coefficient of variation@en</td>
           </tr>
         <tr class=table-info>
-            <td>47</td>
+            <td>51</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000053" target="_blank" rel="noopener noreferrer">STATO:0000053</a></td>
@@ -432,7 +468,7 @@
             <td>a false positive rate is a data item which accounts for the proportion of incorrect rejection of a true null hypothesis.@en</td>
           </tr>
         <tr class=table-info>
-            <td>48</td>
+            <td>52</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000054" target="_blank" rel="noopener noreferrer">STATO:0000054</a></td>
@@ -440,7 +476,7 @@
             <td>homoskedasticity states that all variances under consideration are homogenous.@en</td>
           </tr>
         <tr class=table-info>
-            <td>49</td>
+            <td>53</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000055" target="_blank" rel="noopener noreferrer">STATO:0000055</a></td>
@@ -448,7 +484,7 @@
             <td>chromosome coordinate system is a genomic coordinate which uses chromosome of a particular assembly build process to define start and end positions. This coordinate system is unstable and will change with each new genome sequence assembly build.@en</td>
           </tr>
         <tr class=table-info>
-            <td>50</td>
+            <td>54</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000056" target="_blank" rel="noopener noreferrer">STATO:0000056</a></td>
@@ -456,7 +492,7 @@
             <td>a null hypothesis which states that no linkage exists between 2 categorical variables@en</td>
           </tr>
         <tr class=table-info>
-            <td>51</td>
+            <td>55</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000058" target="_blank" rel="noopener noreferrer">STATO:0000058</a></td>
@@ -464,7 +500,7 @@
             <td>goodness of fit hypothesis is a null hypothesis stating that the distribution computed from the sample population fits a theoretical distribution or that a dataset can be correctly explained by a model@en</td>
           </tr>
         <tr class=table-info>
-            <td>52</td>
+            <td>56</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000059" target="_blank" rel="noopener noreferrer">STATO:0000059</a></td>
@@ -472,7 +508,7 @@
             <td>the Student's t distribution is a continuous probability distribution which  arises when estimating the mean of a normally distributed population in situations where the sample size is small and population standard deviation is unknown.@en</td>
           </tr>
         <tr class=table-info>
-            <td>53</td>
+            <td>57</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000060" target="_blank" rel="noopener noreferrer">STATO:0000060</a></td>
@@ -480,7 +516,7 @@
             <td>hypergeometric distribution is a probability distribution that describes the probability of  k successes in n draws from a finite population of size  N containing  K successes without replacement@en</td>
           </tr>
         <tr class=table-info>
-            <td>54</td>
+            <td>58</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000062" target="_blank" rel="noopener noreferrer">STATO:0000062</a></td>
@@ -488,7 +524,7 @@
             <td>is a null hypothesis stating that there are no difference observed across a series of measurements made one same subject.@en</td>
           </tr>
         <tr class=table-info>
-            <td>55</td>
+            <td>59</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000063" target="_blank" rel="noopener noreferrer">STATO:0000063</a></td>
@@ -496,7 +532,7 @@
             <td>genomic coordinate datum is a data item which denotes a genomic position expressed using a genomic coordinate system@en</td>
           </tr>
         <tr class=table-info>
-            <td>56</td>
+            <td>60</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000064" target="_blank" rel="noopener noreferrer">STATO:0000064</a></td>
@@ -504,7 +540,7 @@
             <td>sequence read count is a data item determining how many sequence reads have been generated by a DNA sequencing assay for a given stretch of DNA</td>
           </tr>
         <tr class=table-info>
-            <td>57</td>
+            <td>61</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000067" target="_blank" rel="noopener noreferrer">STATO:0000067</a></td>
@@ -512,7 +548,7 @@
             <td>a continuous probability distribution is a probability distribution which is defined by a probability density function@en</td>
           </tr>
         <tr class=table-info>
-            <td>58</td>
+            <td>62</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000071" target="_blank" rel="noopener noreferrer">STATO:0000071</a></td>
@@ -520,15 +556,15 @@
             <td>reaction rate is a measurement datum which represents the speed of a chemical reaction turning reactive species into product species of event (i.e the number of such conversions)s occuring over a time interval@en</td>
           </tr>
         <tr class=table-info>
-            <td>59</td>
+            <td>63</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000072" target="_blank" rel="noopener noreferrer">STATO:0000072</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
-            <td>substrate concentration is a scalar measurement datum which denotes the amount of molecular entity   involved in an enzymatic reaction (or catalytic chemical reaction) and whose role in that reaction is as substrate.@en</td>
+            <td>substrate concentration is a scalar measurement datum which denotes the amount of molecular entity involved in an enzymatic reaction (or catalytic chemical reaction) and whose role in that reaction is as substrate.@en</td>
           </tr>
         <tr class=table-info>
-            <td>60</td>
+            <td>64</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000075" target="_blank" rel="noopener noreferrer">STATO:0000075</a></td>
@@ -536,7 +572,7 @@
             <td>a rarefaction curve is a graph used for estimating species richness in ecology studies@en</td>
           </tr>
         <tr class=table-info>
-            <td>61</td>
+            <td>65</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000080" target="_blank" rel="noopener noreferrer">STATO:0000080</a></td>
@@ -545,7 +581,7 @@
 This test maybe used to, for instance, ensure that the conditions of applications of ANOVA are met.@en</td>
           </tr>
         <tr class=table-info>
-            <td>62</td>
+            <td>66</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000082" target="_blank" rel="noopener noreferrer">STATO:0000082</a></td>
@@ -553,7 +589,7 @@ This test maybe used to, for instance, ensure that the conditions of application
             <td>a fixed effect model is a statistical model which represents the observed quantities in terms of explanatory variables that are treated as if the quantities were non-random.@en</td>
           </tr>
         <tr class=table-info>
-            <td>63</td>
+            <td>67</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000084" target="_blank" rel="noopener noreferrer">STATO:0000084</a></td>
@@ -561,7 +597,7 @@ This test maybe used to, for instance, ensure that the conditions of application
             <td>multinomial logistic regression model is a model which attempts to explain data distribution associated with *polychotomous* response/dependent variable in terms of values assumed by the independent variable uses a function of predictor/independent variable(s): the function used in this instance of regression modeling is probit function.@en</td>
           </tr>
         <tr class=table-info>
-            <td>64</td>
+            <td>68</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000085" target="_blank" rel="noopener noreferrer">STATO:0000085</a></td>
@@ -569,7 +605,7 @@ This test maybe used to, for instance, ensure that the conditions of application
             <td>effect size estimate is a data item about the direction and strength of the consequences of a causative agent as explored by statistical methods. Those methods produce estimates of the effect size, e.g. confidence interval@en</td>
           </tr>
         <tr class=table-info>
-            <td>65</td>
+            <td>69</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000086" target="_blank" rel="noopener noreferrer">STATO:0000086</a></td>
@@ -577,7 +613,7 @@ This test maybe used to, for instance, ensure that the conditions of application
             <td>an F-test is a statistical test which evaluates that the computed test statistics follows an F-distribution under the null hypothesis. The F-test is sensitive to departure from normality. F-test arise when decomposing the variability in a data set in terms of sum of squares.@en</td>
           </tr>
         <tr class=table-info>
-            <td>66</td>
+            <td>70</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000087" target="_blank" rel="noopener noreferrer">STATO:0000087</a></td>
@@ -585,7 +621,7 @@ This test maybe used to, for instance, ensure that the conditions of application
             <td>a polychotomous variable  is a categorical variable  which is defined to have minimally 2 categories or possible values@en</td>
           </tr>
         <tr class=table-info>
-            <td>67</td>
+            <td>71</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000088" target="_blank" rel="noopener noreferrer">STATO:0000088</a></td>
@@ -593,7 +629,7 @@ This test maybe used to, for instance, ensure that the conditions of application
             <td>statistical sample size is a count evaluating the number of individual experimental units@en</td>
           </tr>
         <tr class=table-info>
-            <td>68</td>
+            <td>72</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000089" target="_blank" rel="noopener noreferrer">STATO:0000089</a></td>
@@ -601,7 +637,7 @@ This test maybe used to, for instance, ensure that the conditions of application
             <td>a case-control study design is a observation study design which assess the risk of particular outcome (a trait or a disease) associated with an event (either an exposure or endogenous factor). A case-control study design therefore declares an exposure variable which is dichotomous in nature (exposed/non-exposed) and an outcome variable, which is also dichotomous (case or control), thus giving the name to the design. During the execution of the design, a case control study defines a population and counts the events to determine their frequency.@en</td>
           </tr>
         <tr class=table-info>
-            <td>69</td>
+            <td>73</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000090" target="_blank" rel="noopener noreferrer">STATO:0000090</a></td>
@@ -609,7 +645,7 @@ This test maybe used to, for instance, ensure that the conditions of application
             <td>a dichotomous variable  is a categorical variable  which is defined to have only 2 categories or possible values@en</td>
           </tr>
         <tr class=table-info>
-            <td>70</td>
+            <td>74</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000095" target="_blank" rel="noopener noreferrer">STATO:0000095</a></td>
@@ -617,7 +653,7 @@ This test maybe used to, for instance, ensure that the conditions of application
             <td>paired t-test is a statistical test which is specifically designed to analysis differences between paired observations in the case of studies realizing repeated measures design with only 2 repeated measurements per subject (before and after treatment for example)@en</td>
           </tr>
         <tr class=table-info>
-            <td>71</td>
+            <td>75</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000096" target="_blank" rel="noopener noreferrer">STATO:0000096</a></td>
@@ -625,7 +661,7 @@ This test maybe used to, for instance, ensure that the conditions of application
             <td>stratification is a planned process which executes a stratification rule using as input a population and assign it member to mutually exclusive subpopulation based on the values defined by the stratification rule@en</td>
           </tr>
         <tr class=table-info>
-            <td>72</td>
+            <td>76</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000099" target="_blank" rel="noopener noreferrer">STATO:0000099</a></td>
@@ -633,7 +669,7 @@ This test maybe used to, for instance, ensure that the conditions of application
             <td>a random effect(s) model, also called a variance components model, is a kind of hierarchical linear model. It assumes that the dataset being analysed consists of a hierarchy of different populations whose differences relate to that hierarchy.@en</td>
           </tr>
         <tr class=table-info>
-            <td>73</td>
+            <td>77</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000100" target="_blank" rel="noopener noreferrer">STATO:0000100</a></td>
@@ -646,7 +682,7 @@ A standardized mean difference is a statistic that is a difference between two m
 The term Standardized Mean Difference is a description of the concept without an explicit type of statistical measure of dispersion. If the statistical measure of dispersion is specified, then a type (child term) of Standardized Mean Difference is preferred.@en</td>
           </tr>
         <tr class=table-info>
-            <td>74</td>
+            <td>78</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000101" target="_blank" rel="noopener noreferrer">STATO:0000101</a></td>
@@ -654,7 +690,7 @@ The term Standardized Mean Difference is a description of the concept without an
             <td>the relationship between a fraction and the number above the line@en</td>
           </tr>
         <tr class=table-info>
-            <td>75</td>
+            <td>79</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000102" target="_blank" rel="noopener noreferrer">STATO:0000102</a></td>
@@ -662,7 +698,7 @@ The term Standardized Mean Difference is a description of the concept without an
             <td>relationship between a planned process and the plan specification that it carries out; it is defined as equivalent to the composed relationship (realizes o concretizes)@en</td>
           </tr>
         <tr class=table-info>
-            <td>76</td>
+            <td>80</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000103" target="_blank" rel="noopener noreferrer">STATO:0000103</a></td>
@@ -670,7 +706,7 @@ The term Standardized Mean Difference is a description of the concept without an
             <td>the multinomial distribution is a probability distribution which gives the probability of any particular combination of numbers of successes for various categories defined in the context of  n independent trials each of which leads to a success for exactly one of k categories, with each category having a given fixed success probability.@en</td>
           </tr>
         <tr class=table-info>
-            <td>77</td>
+            <td>81</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000105" target="_blank" rel="noopener noreferrer">STATO:0000105</a></td>
@@ -678,7 +714,7 @@ The term Standardized Mean Difference is a description of the concept without an
             <td>log signal intensity ratio is a data item which corresponding the logarithmitic base 2 of the ratio between 2 signal intensity, each corresponding to a condition.@en</td>
           </tr>
         <tr class=table-info>
-            <td>78</td>
+            <td>82</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000106" target="_blank" rel="noopener noreferrer">STATO:0000106</a></td>
@@ -686,7 +722,7 @@ The term Standardized Mean Difference is a description of the concept without an
             <td>probit regression model is a model which attempts to explain data distribution associated with *dichotomous* response/dependent variable in terms of values assumed by the independent variable uses a function of predictor/independent variable(s): the function used in this instance of regression modeling is the probit function aka the quantile function, i.e., the inverse cumulative distribution function (CDF), associated with the standard normal distribution.@en</td>
           </tr>
         <tr class=table-info>
-            <td>79</td>
+            <td>83</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000107" target="_blank" rel="noopener noreferrer">STATO:0000107</a></td>
@@ -694,7 +730,7 @@ The term Standardized Mean Difference is a description of the concept without an
             <td>a statistical model is an information content entity which is a formalization of relationships between variables in the form of mathematical equations. A statistical model describes how one or more random variables are related to one or more other variables. The model is statistical as the variables are not deterministically but stochastically related.@en</td>
           </tr>
         <tr class=table-info>
-            <td>80</td>
+            <td>84</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000108" target="_blank" rel="noopener noreferrer">STATO:0000108</a></td>
@@ -703,7 +739,7 @@ The term Standardized Mean Difference is a description of the concept without an
 linear regression modeling makes a number of assumptions, which includes homoskedasticity (constance of variance)@en</td>
           </tr>
         <tr class=table-info>
-            <td>81</td>
+            <td>85</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000109" target="_blank" rel="noopener noreferrer">STATO:0000109</a></td>
@@ -711,7 +747,7 @@ linear regression modeling makes a number of assumptions, which includes homoske
             <td>multinomial logistic regression model is a model which attempts to explain data distribution associated with *polychotomous* response/dependent variable in terms of values assumed by the independent variable uses a function of predictor/independent variable(s): the function used in this instance of regression modeling is logistic function.@en</td>
           </tr>
         <tr class=table-info>
-            <td>82</td>
+            <td>86</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000111" target="_blank" rel="noopener noreferrer">STATO:0000111</a></td>
@@ -719,7 +755,7 @@ linear regression modeling makes a number of assumptions, which includes homoske
             <td>a sequence read is a DNA sequence data which is generated by a DNA sequencer@en</td>
           </tr>
         <tr class=table-info>
-            <td>83</td>
+            <td>87</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000112" target="_blank" rel="noopener noreferrer">STATO:0000112</a></td>
@@ -729,7 +765,7 @@ Known caveats: If high precision studies really are different from low precision
 Funnel plot was introduced by Light and Palmer in 1984.@en</td>
           </tr>
         <tr class=table-info>
-            <td>84</td>
+            <td>88</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000113" target="_blank" rel="noopener noreferrer">STATO:0000113</a></td>
@@ -737,7 +773,7 @@ Funnel plot was introduced by Light and Palmer in 1984.@en</td>
             <td>variance is a data item about a random variable or probability distribution. it is equivalent to the square of the standard deviation.  It is one of several descriptors of a probability distribution, describing how far the numbers lie from the mean (expected value).The variance is the second moment of a distribution.@en</td>
           </tr>
         <tr class=table-info>
-            <td>85</td>
+            <td>89</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000114" target="_blank" rel="noopener noreferrer">STATO:0000114</a></td>
@@ -745,7 +781,7 @@ Funnel plot was introduced by Light and Palmer in 1984.@en</td>
             <td>relationship between an element and a set it belongs to@en</td>
           </tr>
         <tr class=table-info>
-            <td>86</td>
+            <td>90</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000115" target="_blank" rel="noopener noreferrer">STATO:0000115</a></td>
@@ -753,7 +789,7 @@ Funnel plot was introduced by Light and Palmer in 1984.@en</td>
             <td>relationship between a set and one of its elements@en</td>
           </tr>
         <tr class=table-info>
-            <td>87</td>
+            <td>91</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000116" target="_blank" rel="noopener noreferrer">STATO:0000116</a></td>
@@ -761,7 +797,7 @@ Funnel plot was introduced by Light and Palmer in 1984.@en</td>
             <td>the process of using statistical analysis for interpreting and communicating \"what the data say\".@en</td>
           </tr>
         <tr class=table-info>
-            <td>88</td>
+            <td>92</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000117" target="_blank" rel="noopener noreferrer">STATO:0000117</a></td>
@@ -769,7 +805,7 @@ Funnel plot was introduced by Light and Palmer in 1984.@en</td>
             <td>a discrete probability distribution is a probability distribution which is defined by a probability mass function where the random variable can only assume a finite number of values or infinitely countable values@en</td>
           </tr>
         <tr class=table-info>
-            <td>89</td>
+            <td>93</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000118" target="_blank" rel="noopener noreferrer">STATO:0000118</a></td>
@@ -777,7 +813,7 @@ Funnel plot was introduced by Light and Palmer in 1984.@en</td>
             <td>ranking is a data transformation which turns a non-ordinal variable into a Ordinal variable by sorting the values of the input variable and replacing their value by their position in the sorting result@en</td>
           </tr>
         <tr class=table-info>
-            <td>90</td>
+            <td>94</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000119" target="_blank" rel="noopener noreferrer">STATO:0000119</a></td>
@@ -785,7 +821,7 @@ Funnel plot was introduced by Light and Palmer in 1984.@en</td>
             <td>model parameter estimation is a data transformation that finds parameter values (the model parameter estimates) most compatible with the data as judged by the model.@en</td>
           </tr>
         <tr class=table-info>
-            <td>91</td>
+            <td>95</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000120" target="_blank" rel="noopener noreferrer">STATO:0000120</a></td>
@@ -796,7 +832,7 @@ form a polygon shape. Next to that, a one-dimensional scatter plot shows all the
 The name beanplot stems from green beans. The density shape can be seen as the pod of a green bean, while the scatter plot shows the seeds inside the pod.@en</td>
           </tr>
         <tr class=table-info>
-            <td>92</td>
+            <td>96</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000121" target="_blank" rel="noopener noreferrer">STATO:0000121</a></td>
@@ -804,7 +840,7 @@ The name beanplot stems from green beans. The density shape can be seen as the p
             <td>the objective of a data transformation to evaluate a null hypothesis of absence of linkage between variables.@en</td>
           </tr>
         <tr class=table-info>
-            <td>93</td>
+            <td>97</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000122" target="_blank" rel="noopener noreferrer">STATO:0000122</a></td>
@@ -812,7 +848,7 @@ The name beanplot stems from green beans. The density shape can be seen as the p
             <td>a pedigree chart is a graph which plots parent child relations@en</td>
           </tr>
         <tr class=table-info>
-            <td>94</td>
+            <td>98</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000123" target="_blank" rel="noopener noreferrer">STATO:0000123</a></td>
@@ -820,7 +856,7 @@ The name beanplot stems from green beans. The density shape can be seen as the p
             <td>r2 is a correlation coefficient which is computed over the frequency of 2 dichotomous variable and is used as a measure of Linkage Disequilibrium and as input data item to the creation of an LD plot@en</td>
           </tr>
         <tr class=table-info>
-            <td>95</td>
+            <td>99</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000124" target="_blank" rel="noopener noreferrer">STATO:0000124</a></td>
@@ -828,7 +864,7 @@ The name beanplot stems from green beans. The density shape can be seen as the p
             <td>a stratification rule/criteria is a criteria used to determine population strata so that a stratification process implementing the rule can result in any member of the total population being assigned to one and only one stratum@en</td>
           </tr>
         <tr class=table-info>
-            <td>96</td>
+            <td>100</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000126" target="_blank" rel="noopener noreferrer">STATO:0000126</a></td>
@@ -837,7 +873,7 @@ The name beanplot stems from green beans. The density shape can be seen as the p
 It is a popular method for visualizing differential occurence of variables between 2 conditions.@en</td>
           </tr>
         <tr class=table-info>
-            <td>97</td>
+            <td>101</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000127" target="_blank" rel="noopener noreferrer">STATO:0000127</a></td>
@@ -845,7 +881,7 @@ It is a popular method for visualizing differential occurence of variables betwe
             <td>a confidence interval which covers 99% of the sampling distribution, meaning that there is a 1% risk of false positive (type I error)@en</td>
           </tr>
         <tr class=table-info>
-            <td>98</td>
+            <td>102</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000130" target="_blank" rel="noopener noreferrer">STATO:0000130</a></td>
@@ -853,7 +889,7 @@ It is a popular method for visualizing differential occurence of variables betwe
             <td>the Breslow-Day test is a statistical test which evaluates if the odds ratios are homogenous across N 2x2 contingency tables, for instance several 2x2 contingency tables associated with different strata of a stratified population when evaluating the relationship between exposure and outcome or associated with the different samples coming from several centres in a multicentric study in clinical trial context.@en</td>
           </tr>
         <tr class=table-info>
-            <td>99</td>
+            <td>103</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000131" target="_blank" rel="noopener noreferrer">STATO:0000131</a></td>
@@ -861,7 +897,7 @@ It is a popular method for visualizing differential occurence of variables betwe
             <td>a sphericity test is a null hypothesis statistical testing procedure which posits a null hypothesis of equality of the variances of the differences between levels of the repeated measures factor@en</td>
           </tr>
         <tr class=table-info>
-            <td>100</td>
+            <td>104</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000134" target="_blank" rel="noopener noreferrer">STATO:0000134</a></td>
@@ -869,7 +905,7 @@ It is a popular method for visualizing differential occurence of variables betwe
             <td>specificity is a measurement datum qualifying a binary classification test and is computed by substracting the false positive rate to the integral numeral 1@en</td>
           </tr>
         <tr class=table-info>
-            <td>101</td>
+            <td>105</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000135" target="_blank" rel="noopener noreferrer">STATO:0000135</a></td>
@@ -885,7 +921,7 @@ In other words, SSMD is the average fold change (on the log scale) penalized by 
 For quality control, one index for the quality of an HTS assay is the magnitude of difference between a positive control and a negative reference in an assay plate. For hit selection, the size of effects of a compound (i.e., a small molecule or an siRNA) is represented by the magnitude of difference between the compound and a negative reference. SSMD directly measures the magnitude of difference between two groups. Therefore, SSMD can be used for both quality control and hit selection in HTS experiments.@en</td>
           </tr>
         <tr class=table-info>
-            <td>102</td>
+            <td>106</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000137" target="_blank" rel="noopener noreferrer">STATO:0000137</a></td>
@@ -893,7 +929,7 @@ For quality control, one index for the quality of an HTS assay is the magnitude 
             <td>an homoskedasticity test is a statistical test aiming at evaluate if the variances from several random samples are similar@en</td>
           </tr>
         <tr class=table-info>
-            <td>103</td>
+            <td>107</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000138" target="_blank" rel="noopener noreferrer">STATO:0000138</a></td>
@@ -901,7 +937,7 @@ For quality control, one index for the quality of an HTS assay is the magnitude 
             <td>a 2x2 contingency table is a contingency table build for 2 dichotomous variables (i.e. 2 categorical variables, each with only 2 possible outcomes). It is the simplest of contingency tables@en</td>
           </tr>
         <tr class=table-info>
-            <td>104</td>
+            <td>108</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000139" target="_blank" rel="noopener noreferrer">STATO:0000139</a></td>
@@ -909,7 +945,7 @@ For quality control, one index for the quality of an HTS assay is the magnitude 
             <td>a subject pairing is a planned process which executes a pairing rule and results in the creation of sets of 2 subjects meeting the pairing criteria@en</td>
           </tr>
         <tr class=table-info>
-            <td>105</td>
+            <td>109</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000140" target="_blank" rel="noopener noreferrer">STATO:0000140</a></td>
@@ -921,7 +957,7 @@ The table also contains marginal total (marginal sums) and grand total of the oc
 The term contingency table was first used by Karl Pearson in \"On the Theory of Contingency and Its Relation to Association and Normal Correlation\", part of the Drapers' Company Research Memoirs Biometric Series I published in 1904.@en</td>
           </tr>
         <tr class=table-info>
-            <td>106</td>
+            <td>110</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000141" target="_blank" rel="noopener noreferrer">STATO:0000141</a></td>
@@ -929,7 +965,7 @@ The term contingency table was first used by Karl Pearson in \"On the Theory of 
             <td>acute toxicity study is an investigation which use interventions organized according to a factorial design and a parallel group design to observe the effect of use of high dose xenobiotics in animal models or cellular models@en</td>
           </tr>
         <tr class=table-info>
-            <td>107</td>
+            <td>111</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000144" target="_blank" rel="noopener noreferrer">STATO:0000144</a></td>
@@ -937,7 +973,7 @@ The term contingency table was first used by Karl Pearson in \"On the Theory of 
             <td>a model parameter estimate is a data item which results from a model parameter estimation process and which provides a numerical value about a model parameter.@en</td>
           </tr>
         <tr class=table-info>
-            <td>108</td>
+            <td>112</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000145" target="_blank" rel="noopener noreferrer">STATO:0000145</a></td>
@@ -959,7 +995,7 @@ If an element of x is not integer, the result of dgeom is zero, with a warning.
 The quantile is defined as the smallest value x such that F(x) ≥ p, where F is the distribution function.@en</td>
           </tr>
         <tr class=table-info>
-            <td>109</td>
+            <td>113</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000146" target="_blank" rel="noopener noreferrer">STATO:0000146</a></td>
@@ -967,7 +1003,7 @@ The quantile is defined as the smallest value x such that F(x) ≥ p, where F is
             <td>a null hypothesis stating that there are differences observed between group of subjects@en</td>
           </tr>
         <tr class=table-info>
-            <td>110</td>
+            <td>114</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000149" target="_blank" rel="noopener noreferrer">STATO:0000149</a></td>
@@ -975,7 +1011,7 @@ The quantile is defined as the smallest value x such that F(x) ≥ p, where F is
             <td>binomial logistic regression model is a model which attempts to explain data distribution associated with *dichotomous* response/dependent variable in terms of values assumed by the independent variable uses a function of predictor/independent variable(s): the function used in this instance of regression modeling is logistic function.@en</td>
           </tr>
         <tr class=table-info>
-            <td>111</td>
+            <td>115</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000150" target="_blank" rel="noopener noreferrer">STATO:0000150</a></td>
@@ -983,7 +1019,7 @@ The quantile is defined as the smallest value x such that F(x) ≥ p, where F is
             <td>a minimum value is a data item which denotes the smallest value found in a dataset or resulting from a calculation.@en</td>
           </tr>
         <tr class=table-info>
-            <td>112</td>
+            <td>116</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000151" target="_blank" rel="noopener noreferrer">STATO:0000151</a></td>
@@ -991,7 +1027,7 @@ The quantile is defined as the smallest value x such that F(x) ≥ p, where F is
             <td>maximum value is a data item which denotes the largest value found in a dataset or resulting from a calculation.@en</td>
           </tr>
         <tr class=table-info>
-            <td>113</td>
+            <td>117</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000152" target="_blank" rel="noopener noreferrer">STATO:0000152</a></td>
@@ -999,7 +1035,7 @@ The quantile is defined as the smallest value x such that F(x) ≥ p, where F is
             <td>a quartile is a quantile which splits data into sections accrued of 25% of data, so the first quartile delineates 25% of the data, the second quartile delineates 50% of the data and the third quartile, 75 % of the data@en</td>
           </tr>
         <tr class=table-info>
-            <td>114</td>
+            <td>118</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000154" target="_blank" rel="noopener noreferrer">STATO:0000154</a></td>
@@ -1008,7 +1044,7 @@ The quantile is defined as the smallest value x such that F(x) ≥ p, where F is
 Typically violin plots will include a marker for the median of the data and a box indicating the interquartile range, as in standard box plots.@en</td>
           </tr>
         <tr class=table-info>
-            <td>115</td>
+            <td>119</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000155" target="_blank" rel="noopener noreferrer">STATO:0000155</a></td>
@@ -1016,7 +1052,7 @@ Typically violin plots will include a marker for the median of the data and a bo
             <td>meta-analysis is a data transformation which uses the effect size estimates from several independent quantitative scientific studies addressing the same question in order to assess finding consistency.@en</td>
           </tr>
         <tr class=table-info>
-            <td>116</td>
+            <td>120</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000156" target="_blank" rel="noopener noreferrer">STATO:0000156</a></td>
@@ -1024,7 +1060,7 @@ Typically violin plots will include a marker for the median of the data and a bo
             <td>the Scheffe test is a data transformation which evaluates all possible contrasts and adjusting the levels significance by accounting for multiple comparison. The test is therefore conservative. Confidence intervals can be constructed for the corresponding linear regression.  It was developped by  American statistician Henry  Scheffe in 1959.@en</td>
           </tr>
         <tr class=table-info>
-            <td>117</td>
+            <td>121</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000157" target="_blank" rel="noopener noreferrer">STATO:0000157</a></td>
@@ -1032,7 +1068,7 @@ Typically violin plots will include a marker for the median of the data and a bo
             <td>the LSD test  is a statistical test for multiple comparisons of treatments by means of least significant difference following an ANOVA analysis</td>
           </tr>
         <tr class=table-info>
-            <td>118</td>
+            <td>122</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000158" target="_blank" rel="noopener noreferrer">STATO:0000158</a></td>
@@ -1040,7 +1076,7 @@ Typically violin plots will include a marker for the median of the data and a bo
             <td>a null hypothesis which states that a linkage exists between 2 categorical variables@en</td>
           </tr>
         <tr class=table-info>
-            <td>119</td>
+            <td>123</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000161" target="_blank" rel="noopener noreferrer">STATO:0000161</a></td>
@@ -1048,7 +1084,7 @@ Typically violin plots will include a marker for the median of the data and a bo
             <td>variable distribution is data item which denotes the spatial resolution of data point making up a variable. variable distribution may be compared to a known probability distribution using goodness of fit test or plotting a quantile-quantile plot for visual assessment of the fit.@en</td>
           </tr>
         <tr class=table-info>
-            <td>120</td>
+            <td>124</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000162" target="_blank" rel="noopener noreferrer">STATO:0000162</a></td>
@@ -1056,7 +1092,7 @@ Typically violin plots will include a marker for the median of the data and a bo
             <td>the role played by an entity part of study group as defined by an experimental design and realized in a data analysis and data interpretation@en</td>
           </tr>
         <tr class=table-info>
-            <td>121</td>
+            <td>125</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000163" target="_blank" rel="noopener noreferrer">STATO:0000163</a></td>
@@ -1064,7 +1100,7 @@ Typically violin plots will include a marker for the median of the data and a bo
             <td>trimmed mean or truncated mean is a measure of central tendency which involves the calculation of the mean after discarding given parts of a probability distribution or sample at the high and low end, and typically discarding an equal amount of both@en</td>
           </tr>
         <tr class=table-info>
-            <td>122</td>
+            <td>126</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000165" target="_blank" rel="noopener noreferrer">STATO:0000165</a></td>
@@ -1072,7 +1108,7 @@ Typically violin plots will include a marker for the median of the data and a bo
             <td>a pie chart is a graph in which a circular graph is divided into sector illustrating numerical proportion, meaning that the arc length of each sector (and consequently its central angle and area), is proportional to the quantity it represents.@en</td>
           </tr>
         <tr class=table-info>
-            <td>123</td>
+            <td>127</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000166" target="_blank" rel="noopener noreferrer">STATO:0000166</a></td>
@@ -1080,7 +1116,7 @@ Typically violin plots will include a marker for the median of the data and a bo
             <td>the bart chart is a graph resulting from plotting rectangular bars with lengths proportional to the values that they represent.</td>
           </tr>
         <tr class=table-info>
-            <td>124</td>
+            <td>128</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000167" target="_blank" rel="noopener noreferrer">STATO:0000167</a></td>
@@ -1088,7 +1124,7 @@ Typically violin plots will include a marker for the median of the data and a bo
             <td>the first quartile is a quartile which splits the lower 25 % of the data@en</td>
           </tr>
         <tr class=table-info>
-            <td>125</td>
+            <td>129</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000168" target="_blank" rel="noopener noreferrer">STATO:0000168</a></td>
@@ -1096,7 +1132,7 @@ Typically violin plots will include a marker for the median of the data and a bo
             <td>a real time quantitative pcr plot is a line graph which plots the signal fluorescence intensity as a function of the number of PCR cycle@en</td>
           </tr>
         <tr class=table-info>
-            <td>126</td>
+            <td>130</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000170" target="_blank" rel="noopener noreferrer">STATO:0000170</a></td>
@@ -1104,7 +1140,7 @@ Typically violin plots will include a marker for the median of the data and a bo
             <td>the first quartile is a quartile which splits the 75 % of the data@en</td>
           </tr>
         <tr class=table-info>
-            <td>127</td>
+            <td>131</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000173" target="_blank" rel="noopener noreferrer">STATO:0000173</a></td>
@@ -1113,7 +1149,7 @@ Typically violin plots will include a marker for the median of the data and a bo
 For example, do people of different countries have the same proportion of smokers to non-smokers@en</td>
           </tr>
         <tr class=table-info>
-            <td>128</td>
+            <td>132</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000175" target="_blank" rel="noopener noreferrer">STATO:0000175</a></td>
@@ -1121,7 +1157,7 @@ For example, do people of different countries have the same proportion of smoker
             <td>confidence interval calculation is a data transformation which determines a confidence interval for a given statistical parameter@en</td>
           </tr>
         <tr class=table-info>
-            <td>129</td>
+            <td>133</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000176" target="_blank" rel="noopener noreferrer">STATO:0000176</a></td>
@@ -1129,7 +1165,7 @@ For example, do people of different countries have the same proportion of smoker
             <td>t-statistic is a statistic computed from observations and used to produce a p-value in statistical test when compared to a Student's t distribution.@en</td>
           </tr>
         <tr class=table-info>
-            <td>130</td>
+            <td>134</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000177" target="_blank" rel="noopener noreferrer">STATO:0000177</a></td>
@@ -1137,7 +1173,7 @@ For example, do people of different countries have the same proportion of smoker
             <td>the beta distribution is a continuous probability distributions defined on the interval [0, 1] parametrized by two positive shape parameters, denoted by α and β, that appear as exponents of the random variable and control the shape of the distribution@en</td>
           </tr>
         <tr class=table-info>
-            <td>131</td>
+            <td>135</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000180" target="_blank" rel="noopener noreferrer">STATO:0000180</a></td>
@@ -1145,7 +1181,7 @@ For example, do people of different countries have the same proportion of smoker
             <td>standard normal distribution is a normal distribution with variance = 1 and mean=0@en</td>
           </tr>
         <tr class=table-info>
-            <td>132</td>
+            <td>136</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000183" target="_blank" rel="noopener noreferrer">STATO:0000183</a></td>
@@ -1153,7 +1189,7 @@ For example, do people of different countries have the same proportion of smoker
             <td>sphericity testing objective is a statistical objective of a data transformation which aims to test a null hypothesis of sphericity holds.@en</td>
           </tr>
         <tr class=table-info>
-            <td>133</td>
+            <td>137</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000185" target="_blank" rel="noopener noreferrer">STATO:0000185</a></td>
@@ -1161,7 +1197,7 @@ For example, do people of different countries have the same proportion of smoker
             <td>a 2 by n contingency table is a contingency table built for one dichotomous variable (a categorical variable with only 2 outcomes) and one polychotomous variable (a polychomotomous variable with at least 2 outcomes)@en</td>
           </tr>
         <tr class=table-info>
-            <td>134</td>
+            <td>138</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000188" target="_blank" rel="noopener noreferrer">STATO:0000188</a></td>
@@ -1169,7 +1205,7 @@ For example, do people of different countries have the same proportion of smoker
             <td>average log signal intensity is a data time which corresponds to the sum of 2 distinct logarithm base 2 transformed signal intensity, each corresponding to a distinct condition of signal acquisition, divided by 2.@en</td>
           </tr>
         <tr class=table-info>
-            <td>135</td>
+            <td>139</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000191" target="_blank" rel="noopener noreferrer">STATO:0000191</a></td>
@@ -1177,7 +1213,7 @@ For example, do people of different countries have the same proportion of smoker
             <td>a goodness of fit statistical test is a statistical test which aim to evaluate if a sample distribution can be considered equivalent to a theoretical distribution used as input@en</td>
           </tr>
         <tr class=table-info>
-            <td>136</td>
+            <td>140</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000192" target="_blank" rel="noopener noreferrer">STATO:0000192</a></td>
@@ -1185,7 +1221,7 @@ For example, do people of different countries have the same proportion of smoker
             <td>a cartesian product is a data transformation which operates on a n Sets to produce a set of all possible ordered n-tuples where each element of the tuple comes from a Set</td>
           </tr>
         <tr class=table-info>
-            <td>137</td>
+            <td>141</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000193" target="_blank" rel="noopener noreferrer">STATO:0000193</a></td>
@@ -1193,7 +1229,7 @@ For example, do people of different countries have the same proportion of smoker
             <td>is a population whose individual members realize (may be expressed as) a combination of  inclusion rule values specifications or resulting from a sampling process (e.g. recruitment followed by randomization to group) on which a number of measurements will be carried out, which may be used as input to statistical tests and statistical inference.</td>
           </tr>
         <tr class=table-info>
-            <td>138</td>
+            <td>142</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000194" target="_blank" rel="noopener noreferrer">STATO:0000194</a></td>
@@ -1201,7 +1237,7 @@ For example, do people of different countries have the same proportion of smoker
             <td>self explanatory@en</td>
           </tr>
         <tr class=table-info>
-            <td>139</td>
+            <td>143</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000197" target="_blank" rel="noopener noreferrer">STATO:0000197</a></td>
@@ -1209,7 +1245,7 @@ For example, do people of different countries have the same proportion of smoker
             <td>a genomic coordinate system is a coordinate system to describe position of sequence on a genomic scaffold (assembly of chromosome, contig....)@en</td>
           </tr>
         <tr class=table-info>
-            <td>140</td>
+            <td>144</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000198" target="_blank" rel="noopener noreferrer">STATO:0000198</a></td>
@@ -1217,7 +1253,7 @@ For example, do people of different countries have the same proportion of smoker
             <td>a statistical test which makes no assumption about the underlying data distribution@en</td>
           </tr>
         <tr class=table-info>
-            <td>141</td>
+            <td>145</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000199" target="_blank" rel="noopener noreferrer">STATO:0000199</a></td>
@@ -1226,7 +1262,7 @@ For example, do people of different countries have the same proportion of smoker
 The test works by assessing if a Wishart-distributed covariance matrix (or transformation thereof) is proportional to a given matrix.@en</td>
           </tr>
         <tr class=table-info>
-            <td>142</td>
+            <td>146</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000200" target="_blank" rel="noopener noreferrer">STATO:0000200</a></td>
@@ -1234,7 +1270,7 @@ The test works by assessing if a Wishart-distributed covariance matrix (or trans
             <td>the statistical test power is data item which is about a statistical test and is obtained by subtracting the false negative rate (type II error rate) to 1. The power of a statistical test is the probability that it will correctly lead to the rejection of a false null hypothesis (Greene 2000). The statistical power is the ability of a test to detect an effect, if the effect actually exists (High 2000).@en</td>
           </tr>
         <tr class=table-info>
-            <td>143</td>
+            <td>147</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000202" target="_blank" rel="noopener noreferrer">STATO:0000202</a></td>
@@ -1242,7 +1278,7 @@ The test works by assessing if a Wishart-distributed covariance matrix (or trans
             <td>within subject comparison statistical test is a kind of statistical test which evaluates if a change occurs within one experimental unit over time following a treatment or an event@en</td>
           </tr>
         <tr class=table-info>
-            <td>144</td>
+            <td>148</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000203" target="_blank" rel="noopener noreferrer">STATO:0000203</a></td>
@@ -1250,7 +1286,7 @@ The test works by assessing if a Wishart-distributed covariance matrix (or trans
             <td>a cohort is a study group population where the members are human beings which meet inclusion criteria and undergo a longitudinal design@en</td>
           </tr>
         <tr class=table-info>
-            <td>145</td>
+            <td>149</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000204" target="_blank" rel="noopener noreferrer">STATO:0000204</a></td>
@@ -1258,7 +1294,7 @@ The test works by assessing if a Wishart-distributed covariance matrix (or trans
             <td>the F-distribution is a continuous probability distribution which arises in the testing of whether two observed samples have the same variance.@en</td>
           </tr>
         <tr class=table-info>
-            <td>146</td>
+            <td>150</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000207" target="_blank" rel="noopener noreferrer">STATO:0000207</a></td>
@@ -1266,7 +1302,7 @@ The test works by assessing if a Wishart-distributed covariance matrix (or trans
             <td>a planned process which etablishes and states the different  hypothesis to be evaluated during a null hypothesis statistical test@en</td>
           </tr>
         <tr class=table-info>
-            <td>147</td>
+            <td>151</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000209" target="_blank" rel="noopener noreferrer">STATO:0000209</a></td>
@@ -1274,7 +1310,7 @@ The test works by assessing if a Wishart-distributed covariance matrix (or trans
             <td>area under curve is a measurement datum which corresponds to the surface define by the x-axis and bound by the line graph represented in a 2 dimensional plot resulting from an integration or integrative calculus. The interpretation of this measurement datum depends on the variables plotted in the graph@en</td>
           </tr>
         <tr class=table-info>
-            <td>148</td>
+            <td>152</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000210" target="_blank" rel="noopener noreferrer">STATO:0000210</a></td>
@@ -1282,7 +1318,7 @@ The test works by assessing if a Wishart-distributed covariance matrix (or trans
             <td>is a data item formed by dividing the fluorescence intensity obtained in one channel to that obtained in the other channel, typically the case when considering 2-color microarray data when imaging is done for Cy3 and Cy5 dyes.@en</td>
           </tr>
         <tr class=table-info>
-            <td>149</td>
+            <td>153</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000211" target="_blank" rel="noopener noreferrer">STATO:0000211</a></td>
@@ -1290,7 +1326,7 @@ The test works by assessing if a Wishart-distributed covariance matrix (or trans
             <td>odds ratio homogeneity hypothesis is a null hypothesis stating that all odds ratio are homogenous, that is remain within the same range.@en</td>
           </tr>
         <tr class=table-info>
-            <td>150</td>
+            <td>154</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000212" target="_blank" rel="noopener noreferrer">STATO:0000212</a></td>
@@ -1298,7 +1334,7 @@ The test works by assessing if a Wishart-distributed covariance matrix (or trans
             <td>a tetrachoric correlation coefficient is a polychoric correlation coefficient for 2 dichotomous variables used as proxy for correlation between 2 continuous latent variables.@en</td>
           </tr>
         <tr class=table-info>
-            <td>151</td>
+            <td>155</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000213" target="_blank" rel="noopener noreferrer">STATO:0000213</a></td>
@@ -1306,7 +1342,7 @@ The test works by assessing if a Wishart-distributed covariance matrix (or trans
             <td>discretization as a processing converting a continuous variable into a polychotomous variable by concretizing a set of discretization rules@en</td>
           </tr>
         <tr class=table-info>
-            <td>152</td>
+            <td>156</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000214" target="_blank" rel="noopener noreferrer">STATO:0000214</a></td>
@@ -1314,7 +1350,7 @@ The test works by assessing if a Wishart-distributed covariance matrix (or trans
             <td>a confidence interval which covers 50% of the sampling distribution, meaning that there is a 50% risk of false positive (type I error)@en</td>
           </tr>
         <tr class=table-info>
-            <td>153</td>
+            <td>157</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000215" target="_blank" rel="noopener noreferrer">STATO:0000215</a></td>
@@ -1322,7 +1358,7 @@ The test works by assessing if a Wishart-distributed covariance matrix (or trans
             <td>probit regression model is a model which attempts to explain data distribution associated with *ordinal* response/dependent variable in terms of values assumed by the independent variable uses a function of predictor/independent variable(s): the function used in this instance of regression modeling is the ordered probit function.@en</td>
           </tr>
         <tr class=table-info>
-            <td>154</td>
+            <td>158</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000216" target="_blank" rel="noopener noreferrer">STATO:0000216</a></td>
@@ -1330,7 +1366,7 @@ The test works by assessing if a Wishart-distributed covariance matrix (or trans
             <td>a stratum population is a population resulting from a population stratification prior to sampling process which aims to produce homogenous subpopulations from an heterogeneous population by applying one or more stratification criteria@en</td>
           </tr>
         <tr class=table-info>
-            <td>155</td>
+            <td>159</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000217" target="_blank" rel="noopener noreferrer">STATO:0000217</a></td>
@@ -1338,7 +1374,7 @@ The test works by assessing if a Wishart-distributed covariance matrix (or trans
             <td>a null hypothesis which states that a given matrix is proportional to a Wishart-distributed covariance matrix@en</td>
           </tr>
         <tr class=table-info>
-            <td>156</td>
+            <td>160</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000219" target="_blank" rel="noopener noreferrer">STATO:0000219</a></td>
@@ -1346,7 +1382,7 @@ The test works by assessing if a Wishart-distributed covariance matrix (or trans
             <td>a real time pcr standard curve is a line graph which plots the fluorescence intensity signal as a function of the concentration of a sample used as reference  and used to determine relative abundance of test samples@en</td>
           </tr>
         <tr class=table-info>
-            <td>157</td>
+            <td>161</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000220" target="_blank" rel="noopener noreferrer">STATO:0000220</a></td>
@@ -1354,7 +1390,7 @@ The test works by assessing if a Wishart-distributed covariance matrix (or trans
             <td>the false negative rate is a data item which denotes the proportion of missed detection of elements known to be meeting the detection criteria@en</td>
           </tr>
         <tr class=table-info>
-            <td>158</td>
+            <td>162</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000221" target="_blank" rel="noopener noreferrer">STATO:0000221</a></td>
@@ -1362,7 +1398,7 @@ The test works by assessing if a Wishart-distributed covariance matrix (or trans
             <td>a random variable (or aleatory variable or stochastic variable) in probability and statistics,  is a variable whose value is subject to variations due to chance (i.e. randomness, in a mathematical sense)@en</td>
           </tr>
         <tr class=table-info>
-            <td>159</td>
+            <td>163</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000222" target="_blank" rel="noopener noreferrer">STATO:0000222</a></td>
@@ -1370,7 +1406,7 @@ The test works by assessing if a Wishart-distributed covariance matrix (or trans
             <td>graeco-latin square design is_a study design which allows in its simpler form controlling 3 levels of nuisance variables (also known as blocking variables). The 3 nuisance factors are divided into a tabular grid with the property that each row and each column receive each treatment exactly once.@en</td>
           </tr>
         <tr class=table-info>
-            <td>160</td>
+            <td>164</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000223" target="_blank" rel="noopener noreferrer">STATO:0000223</a></td>
@@ -1378,7 +1414,7 @@ The test works by assessing if a Wishart-distributed covariance matrix (or trans
             <td>group assignment based on blocking variable specification is a kind of group assignment process which takes into account the levels assumed by a blocking variable to allocate subjects or experimental units to a treatment group@en</td>
           </tr>
         <tr class=table-info>
-            <td>161</td>
+            <td>165</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000227" target="_blank" rel="noopener noreferrer">STATO:0000227</a></td>
@@ -1387,7 +1423,7 @@ The test works by assessing if a Wishart-distributed covariance matrix (or trans
 http://mathworld.wolfram.com/NormalDistribution.html@en</td>
           </tr>
         <tr class=table-info>
-            <td>162</td>
+            <td>166</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000228" target="_blank" rel="noopener noreferrer">STATO:0000228</a></td>
@@ -1395,7 +1431,7 @@ http://mathworld.wolfram.com/NormalDistribution.html@en</td>
             <td>ordinal variable is a categorical variable where  the discrete possible values are ordered or  correspond to an implicit ranking@en</td>
           </tr>
         <tr class=table-info>
-            <td>163</td>
+            <td>167</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000230" target="_blank" rel="noopener noreferrer">STATO:0000230</a></td>
@@ -1403,7 +1439,7 @@ http://mathworld.wolfram.com/NormalDistribution.html@en</td>
             <td>the expected value (or expectation, mathematical expectation, EV, mean, or the first moment) of a random variable is a data item which corresponds to the weighted average of all possible values that this random variable can take on. The weights used in computing this average correspond to the probabilities in case of a discrete random variable, or densities in case of a continuous random variable. From a rigorous theoretical standpoint, the expected value is the integral of the random variable with respect to its probability measure.@en</td>
           </tr>
         <tr class=table-info>
-            <td>164</td>
+            <td>168</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000231" target="_blank" rel="noopener noreferrer">STATO:0000231</a></td>
@@ -1411,7 +1447,7 @@ http://mathworld.wolfram.com/NormalDistribution.html@en</td>
             <td>a confidence interval which covers 95% of the sampling distribution, meaning that there is a 5% risk of false positive (type I error). If the number of observations made is large enough, the sampling distribution can be assumed to be normal, which entails that 95% of the sampling distributions falls within roughly2 (1.96) standard deviations from the mean.@en</td>
           </tr>
         <tr class=table-info>
-            <td>165</td>
+            <td>169</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000232" target="_blank" rel="noopener noreferrer">STATO:0000232</a></td>
@@ -1419,7 +1455,7 @@ http://mathworld.wolfram.com/NormalDistribution.html@en</td>
             <td>number of PCR cycle is a count which enumerates how many iterations of 'annealing, renaturation, amplification,' rounds (or cycles) are performed during a polymerase chain reaction (PCR) or an assay relying on PCR.@en</td>
           </tr>
         <tr class=table-info>
-            <td>166</td>
+            <td>170</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000233" target="_blank" rel="noopener noreferrer">STATO:0000233</a></td>
@@ -1427,7 +1463,7 @@ http://mathworld.wolfram.com/NormalDistribution.html@en</td>
             <td>sensitivity is a measurement datum qualifying a binary classification test and is computed by substracting the false negative rate to the integral numeral 1@en</td>
           </tr>
         <tr class=table-info>
-            <td>167</td>
+            <td>171</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000234" target="_blank" rel="noopener noreferrer">STATO:0000234</a></td>
@@ -1435,7 +1471,7 @@ http://mathworld.wolfram.com/NormalDistribution.html@en</td>
             <td>a residual is a data item which is the output of an error estimate or model fitting process and which is an observable estimate of the unobservable error@en</td>
           </tr>
         <tr class=table-info>
-            <td>168</td>
+            <td>172</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000236" target="_blank" rel="noopener noreferrer">STATO:0000236</a></td>
@@ -1443,7 +1479,7 @@ http://mathworld.wolfram.com/NormalDistribution.html@en</td>
             <td>the coefficient of variation is a normalized measure of dispersion of a probability distribution of frequency distribution.@en</td>
           </tr>
         <tr class=table-info>
-            <td>169</td>
+            <td>173</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000238" target="_blank" rel="noopener noreferrer">STATO:0000238</a></td>
@@ -1451,7 +1487,7 @@ http://mathworld.wolfram.com/NormalDistribution.html@en</td>
             <td>high content screening is a kind of investigation which uses a standardized cellular assays to test the effect of substances (RNAi or small molecules) held in libraries on a cellular phenotype. it relies on microscopy imaging and or flow-cytometry, robotic handling to ensure fast and high-throughput.@en</td>
           </tr>
         <tr class=table-info>
-            <td>170</td>
+            <td>174</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000239" target="_blank" rel="noopener noreferrer">STATO:0000239</a></td>
@@ -1459,7 +1495,7 @@ http://mathworld.wolfram.com/NormalDistribution.html@en</td>
             <td>high throughput screening is a kind of investigation which uses a standardized  assays (cell based, enzymatic or chemometric) to test the effect of substances (RNAi or small molecules) held in libraries on a very specific and measureable outcome (e.g fluorence intensity). it relies on robotic handling to ensure fast and high-throughput in assay performance, data acquisition and hit selection.@en</td>
           </tr>
         <tr class=table-info>
-            <td>171</td>
+            <td>175</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000242" target="_blank" rel="noopener noreferrer">STATO:0000242</a></td>
@@ -1467,7 +1503,7 @@ http://mathworld.wolfram.com/NormalDistribution.html@en</td>
             <td>statistical error is an data item denoting the amount by which an observation differs from the expected value, being based on the whole statistical population from which the statistical unit was chosen randomly@en</td>
           </tr>
         <tr class=table-info>
-            <td>172</td>
+            <td>176</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000243" target="_blank" rel="noopener noreferrer">STATO:0000243</a></td>
@@ -1475,7 +1511,7 @@ http://mathworld.wolfram.com/NormalDistribution.html@en</td>
             <td>a box plot is a graph which plots datasets relying on their quartiles and the interquartile range to create the box and the whiskers.@en</td>
           </tr>
         <tr class=table-info>
-            <td>173</td>
+            <td>177</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000244" target="_blank" rel="noopener noreferrer">STATO:0000244</a></td>
@@ -1483,7 +1519,7 @@ http://mathworld.wolfram.com/NormalDistribution.html@en</td>
             <td>(Rn +) − (Rn −), where Rn + = (emission intensity of reporter dye)/(emission intensity of passive reference dye) in PCR with template and Rn − = (emission intensity of reporter dye)/(emission intensity of passive reference dye) in PCR without template or early cycles of a real-time reaction. Ct = threshold cycle, i.e., cycle at which a statistically significant increase in ΔRn is first detected@en</td>
           </tr>
         <tr class=table-info>
-            <td>174</td>
+            <td>178</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000247" target="_blank" rel="noopener noreferrer">STATO:0000247</a></td>
@@ -1491,7 +1527,7 @@ http://mathworld.wolfram.com/NormalDistribution.html@en</td>
             <td>odds ratio homogeneity test is a statistical test which aims to evaluate that null the hypothesis of consistency odds ratio accross different strata of population is true or not@en</td>
           </tr>
         <tr class=table-info>
-            <td>175</td>
+            <td>179</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000248" target="_blank" rel="noopener noreferrer">STATO:0000248</a></td>
@@ -1499,7 +1535,7 @@ http://mathworld.wolfram.com/NormalDistribution.html@en</td>
             <td>a blocking variable is a independent variable which is used in a blocking process part of an experiment with the purpose of maximizing the signal coming from the main variable.</td>
           </tr>
         <tr class=table-info>
-            <td>176</td>
+            <td>180</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000249" target="_blank" rel="noopener noreferrer">STATO:0000249</a></td>
@@ -1507,7 +1543,7 @@ http://mathworld.wolfram.com/NormalDistribution.html@en</td>
             <td>a DNA microarray hybridization is an assay relying on nucleic acid hybridization , which uses a DNA microarray device and a nucleic acid as input. It precedes a data acquisition process@en</td>
           </tr>
         <tr class=table-info>
-            <td>177</td>
+            <td>181</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000250" target="_blank" rel="noopener noreferrer">STATO:0000250</a></td>
@@ -1515,7 +1551,7 @@ http://mathworld.wolfram.com/NormalDistribution.html@en</td>
             <td>group comparison objective is a data transformation objective which aims to determine if 2 or more study group differ with respect to the signal of a response variable@en</td>
           </tr>
         <tr class=table-info>
-            <td>178</td>
+            <td>182</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000252" target="_blank" rel="noopener noreferrer">STATO:0000252</a></td>
@@ -1523,7 +1559,7 @@ http://mathworld.wolfram.com/NormalDistribution.html@en</td>
             <td>a categorical variable  is a variable  which that can only assume a finite number  of value and cast observation in a small number of categories@en</td>
           </tr>
         <tr class=table-info>
-            <td>179</td>
+            <td>183</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000253" target="_blank" rel="noopener noreferrer">STATO:0000253</a></td>
@@ -1531,7 +1567,7 @@ http://mathworld.wolfram.com/NormalDistribution.html@en</td>
             <td>the objective of a data transformation to test a null hypothesis of absence of difference within subject holds.@en</td>
           </tr>
         <tr class=table-info>
-            <td>180</td>
+            <td>184</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000255" target="_blank" rel="noopener noreferrer">STATO:0000255</a></td>
@@ -1539,7 +1575,7 @@ http://mathworld.wolfram.com/NormalDistribution.html@en</td>
             <td>the objective of a data transformation to test a null hypothesis of absence of difference withing subject holds.@en</td>
           </tr>
         <tr class=table-info>
-            <td>181</td>
+            <td>185</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000256" target="_blank" rel="noopener noreferrer">STATO:0000256</a></td>
@@ -1547,7 +1583,7 @@ http://mathworld.wolfram.com/NormalDistribution.html@en</td>
             <td>a manhattan plot for gwas is a kind of scatter plot used to facilitate presentation of genome-wide association study (GWAS) data. Genomic coordinates are displayed along the X-axis, with the negative logarithm of the association P-value for each single nucleotide polymorphism displayed on the Y-axis.@en</td>
           </tr>
         <tr class=table-info>
-            <td>182</td>
+            <td>186</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000258" target="_blank" rel="noopener noreferrer">STATO:0000258</a></td>
@@ -1555,7 +1591,7 @@ http://mathworld.wolfram.com/NormalDistribution.html@en</td>
             <td>a variable is a data item which can assume any of a set of values, either as determined by an agent or as randomly occuring through observation.@en</td>
           </tr>
         <tr class=table-info>
-            <td>183</td>
+            <td>187</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000259" target="_blank" rel="noopener noreferrer">STATO:0000259</a></td>
@@ -1563,7 +1599,7 @@ http://mathworld.wolfram.com/NormalDistribution.html@en</td>
             <td>the relationship between a fraction and the number below the line (or divisor)@en</td>
           </tr>
         <tr class=table-info>
-            <td>184</td>
+            <td>188</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000260" target="_blank" rel="noopener noreferrer">STATO:0000260</a></td>
@@ -1573,7 +1609,7 @@ repeated measure ANOVA is sensitive to departure from normality (evaluation usin
 Departure from sphericity (evaluation  using Mauchly'test)  used to be an issue which is now handled robustly by modern tools such as R's lme4 or nlme, which accommodate dependence assumptions other than sphericity.@en</td>
           </tr>
         <tr class=table-info>
-            <td>185</td>
+            <td>189</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000264" target="_blank" rel="noopener noreferrer">STATO:0000264</a></td>
@@ -1581,7 +1617,7 @@ Departure from sphericity (evaluation  using Mauchly'test)  used to be an issue 
             <td>a factor level combination is one a possible sets of factor levels resulting from the cartesian product of sets of factor and their levels as defined in a factorial design@en</td>
           </tr>
         <tr class=table-info>
-            <td>186</td>
+            <td>190</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000267" target="_blank" rel="noopener noreferrer">STATO:0000267</a></td>
@@ -1589,7 +1625,7 @@ Departure from sphericity (evaluation  using Mauchly'test)  used to be an issue 
             <td>grouped bar chart is a kind of bar chart which juxtaposes the  discrete values for each of the possible value of a given categorical variable, thus providing  within group comparison. Grouped bar charts are good for comparing between each element in the categories, and comparing elements across categories. However, the grouping can make it harder to tell the difference between the total of each group.@en</td>
           </tr>
         <tr class=table-info>
-            <td>187</td>
+            <td>191</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000269" target="_blank" rel="noopener noreferrer">STATO:0000269</a></td>
@@ -1597,7 +1633,7 @@ Departure from sphericity (evaluation  using Mauchly'test)  used to be an issue 
             <td>polychoric correlation coefficient is a correlation coefficient which is computed over 2 variables to characterise an association by proxy with 2  (latent) variables which are assumed to be continuous and normally distributed.@en</td>
           </tr>
         <tr class=table-info>
-            <td>188</td>
+            <td>192</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000270" target="_blank" rel="noopener noreferrer">STATO:0000270</a></td>
@@ -1605,7 +1641,7 @@ Departure from sphericity (evaluation  using Mauchly'test)  used to be an issue 
             <td>a full factorial design is a factorial design which ensures that all possible factor level combinations are defined and used so all between group differences can be explored@en</td>
           </tr>
         <tr class=table-info>
-            <td>189</td>
+            <td>193</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000271" target="_blank" rel="noopener noreferrer">STATO:0000271</a></td>
@@ -1613,7 +1649,7 @@ Departure from sphericity (evaluation  using Mauchly'test)  used to be an issue 
             <td>permutation numbering is a data tranformation allowing to count the number of possible permutations of elements in a set of size n, each element occurring exactly once. This number is factorial n.@en</td>
           </tr>
         <tr class=table-info>
-            <td>190</td>
+            <td>194</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000274" target="_blank" rel="noopener noreferrer">STATO:0000274</a></td>
@@ -1621,7 +1657,7 @@ Departure from sphericity (evaluation  using Mauchly'test)  used to be an issue 
             <td>receiver operational characteristics curve is a graphical plot which illustrates the performance of a binary classifier system as its discrimination threshold (aka cut-off point) is varied by plotting  sensitivity vs (1 − specificity)@en</td>
           </tr>
         <tr class=table-info>
-            <td>191</td>
+            <td>195</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000277" target="_blank" rel="noopener noreferrer">STATO:0000277</a></td>
@@ -1629,7 +1665,7 @@ Departure from sphericity (evaluation  using Mauchly'test)  used to be an issue 
             <td>hit selection is a planned process which in screening processes such as high-throughput screening, lead to the identification of perturbing agent which cause the typical signal generated by a standardized assay to significantly differ from the negative control. The selection hitself results from meeting or exceeding selection threshold (for instance 6 sigma from the mean or SSMD value beyond 5 when compared to positive controls or below -5 when compared to negative controls@en</td>
           </tr>
         <tr class=table-info>
-            <td>192</td>
+            <td>196</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000278" target="_blank" rel="noopener noreferrer">STATO:0000278</a></td>
@@ -1637,7 +1673,7 @@ Departure from sphericity (evaluation  using Mauchly'test)  used to be an issue 
             <td>pairing rule is a rule which specifies the criteria for deciding on how to associated any 2 entities.@en</td>
           </tr>
         <tr class=table-info>
-            <td>193</td>
+            <td>197</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000279" target="_blank" rel="noopener noreferrer">STATO:0000279</a></td>
@@ -1645,7 +1681,7 @@ Departure from sphericity (evaluation  using Mauchly'test)  used to be an issue 
             <td>between group comparison statistical test is a statistical test which aims to detect difference  between the means computing for each of the study group populations@en</td>
           </tr>
         <tr class=table-info>
-            <td>194</td>
+            <td>198</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000281" target="_blank" rel="noopener noreferrer">STATO:0000281</a></td>
@@ -1653,49 +1689,12 @@ Departure from sphericity (evaluation  using Mauchly'test)  used to be an issue 
             <td>a false positive rate whose value is 1 per cent@en</td>
           </tr>
         <tr class=table-info>
-            <td>195</td>
+            <td>199</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/STATO_0000283" target="_blank" rel="noopener noreferrer">STATO:0000283</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>negative binomial probability distribution is a discrete probability distribution of the number of successes in a sequence of Bernoulli trials before a specified (non-random) number of failures (denoted r) occur. The negative binomial distribution, also known as the Pascal distribution or Pólya distribution, gives the probability of  r-1 successes and x  failures in x+r-1 trials, and success on the (x+r)th trial.@en</td>
-          </tr>
-        <tr class=table-info>
-            <td>196</td>
-            <td>INFO</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/STATO_0000285" target="_blank" rel="noopener noreferrer">STATO:0000285</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
-            <td>hypergeometric test is a null hypothesis test which evaluates if a random variable follows a hypergeometric distribution. It is a test of goodness of fit to that distribution. The test is suited for situation aimed at assessing cases of sampling from a finite set without replacements. For instance, testing for enrichment or depletion of elements (e.g GO categories, genes)@en</td>
-          </tr>
-        <tr class=table-info>
-            <td>197</td>
-            <td>INFO</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/STATO_0000286" target="_blank" rel="noopener noreferrer">STATO:0000286</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
-            <td>a one-tailed test is a statistical test which, assuming an unskewed probability distribution, allocates all of the significance level to evaluate only one hypothesis to explain a difference.
-The one-tailed test provides more power to detect an effect in one direction by not testing the effect in the other direction.
-one-tailed test should be preceded by two-tailed test in order to avoid missing out on detecting alternate effect explaining an observed difference.@en</td>
-          </tr>
-        <tr class=table-info>
-            <td>198</td>
-            <td>INFO</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/STATO_0000287" target="_blank" rel="noopener noreferrer">STATO:0000287</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
-            <td>a two tailed test is a statistical test which assess the null hypothesis of absence of difference assuming a symmetric (not skewed) underlying probability distribution by allocating half of the significance level selected to each of the direction of change which could explain a difference (for example, a difference can be an excess or a loss).@en</td>
-          </tr>
-        <tr class=table-info>
-            <td>199</td>
-            <td>INFO</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/STATO_0000289" target="_blank" rel="noopener noreferrer">STATO:0000289</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
-            <td>a design matrix is an information content entity which denotes a study design. The design matrix is a n by m matrix where n the number of rows, corresponds to the number of observations (4 rows if quadruplicates) and where m, the number of columns corresponds to the number of independent variables. Each element in the matrix correspond to a discretized value representing one of the factor levels for a given factor.
-A design matrix can be used as input to statistical modeling or statistical analysis.
-
-The design matrix contains data on the independent variables (also called explanatory variables) in statistical models which attempt to explain observed data on a response variable (often called a dependent variable) in terms of the explanatory variables. The theory relating to such models makes substantial use of matrix manipulations involving the design matrix: see for example linear regression. A notable feature of the concept of a design matrix is that it is able to represent a number of different experimental designs and statistical models, e.g., ANOVA, ANCOVA, and linear regression@en</td>
           </tr>
         </table>
     </div>

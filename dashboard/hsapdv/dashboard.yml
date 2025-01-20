@@ -3,49 +3,48 @@ base_prefixes:
 - HsapDv
 - HsapDv
 changed: true
-date: 2024-10-30 19:01:49.404919
+date: 2025-01-13 22:41:08.641506
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 2252
-    Declaration: 300
+    AnnotationAssertion: 2257
+    Declaration: 302
     SubAnnotationPropertyOf: 1
-    SubClassOf: 698
+    SubClassOf: 701
     SubObjectPropertyOf: 1
     TransitiveObjectProperty: 2
-  'Axioms: Number of axioms': 3254
-  'Entities: % of entities reused': 14.8
-  'Entities: Number of annotation properties': 39
-  'Entities: Number of classes': 259
+  'Axioms: Number of axioms': 3264
+  'Entities: % of entities reused': 15.03
+  'Entities: Number of annotation properties': 40
+  'Entities: Number of classes': 260
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 3
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 1655
-    ObjectSomeValuesFrom: 461
-  'Info: Does the ontology fall under OWL 2 DL?': false
+    Class: 1662
+    ObjectSomeValuesFrom: 463
+  'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.533
+    _dashboard: 0.511
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.027
     _impact_external: 0
-    _reuse: 0.148
-    oboscore: 0.28
+    _reuse: 0.15
+    oboscore: 0.269
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 5
   'Info: Logical consistency': true
-  'Info: Syntax': RDF/XML Syntax
+  'Info: Syntax': OWL Functional Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 246
-    HSAPDVALT: 559
-    HsapDv: 1655
-    IAO: 272
+    BFO: 248
+    HSAPDVALT: 568
+    HsapDv: 1662
+    IAO: 274
     RO: 222
-    obo: 8
-    oboInOwl: 1375
+    oboInOwl: 1376
     owl: 22
-    rdfs: 347
-    xsd: 291
+    rdf: 292
+    rdfs: 350
   'Info: Which ontologies use it?':
   - geno
   - hp
@@ -59,11 +58,14 @@ results:
     comment: Missing ontology license.
     status: ERROR
   FP02 Common Format:
-    status: PASS
+    comment: OWL syntax (OWL Functional Syntax), but should be RDF/XML
+    status: WARN
   FP03 URIs:
-    status: PASS
+    comment: 0 invalid IRIs. The Ontology IRI is not valid.
+    file: fp3
+    status: ERROR
   FP04 Versioning:
-    comment: Missing version IRI
+    comment: Version IRI does not resolve
     status: ERROR
   FP05 Scope:
     status: PASS
@@ -82,24 +84,23 @@ results:
     comment: 10 duplicate labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
-    comment: Missing version IRI to check date
-    status: ERROR
+    status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 13 errors, 24 warnings, 1 info messages.
+    comment: 10 errors, 24 warnings, 1 info messages.
     file: robot_report
     results:
-      ERROR: 13
+      ERROR: 10
       INFO: 1
       WARN: 24
     status: ERROR
-sha256_hash: 270902d52a0643f2234a177809a74b0becaa5f1d0f4c38547eec00cff65d5057
+sha256_hash: 3fc0dd9a0e68666e95ab8cfc06a81658cab5db61bccf3089662a9ecb61ba7ce6
 summary:
   comment: 6 errors
   status: ERROR
   summary_count:
     ERROR: 6
     INFO: 0
-    WARN: 0
-version: null
+    WARN: 1
+version: http://purl.obolibrary.org/obo/life-stages/releases/2025-01-08/components/hsapdv.owl

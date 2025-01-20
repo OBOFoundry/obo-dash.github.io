@@ -4,7 +4,7 @@ base_prefixes:
 - WBPHENOTYPEALT
 - WBPhenotype
 changed: true
-date: 2024-10-30 20:56:48.215109
+date: 2025-01-16 04:21:17.395058
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 13102
@@ -25,12 +25,12 @@ metrics:
     ObjectSomeValuesFrom: 6150
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.978
+    _dashboard: 0.911
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.011
     _impact_external: 0.25
     _reuse: 0.208
-    oboscore: 0.494
+    oboscore: 0.461
   'Info: How many externally documented uses?': 2
   'Info: How many ontologies use it?': 2
   'Info: Logical consistency': true
@@ -68,7 +68,8 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -95,12 +96,12 @@ results:
       INFO: 1
       WARN: 1
     status: WARN
-sha256_hash: cc600fc2e20b126609f46208a42a18565f5e55397f2708d7e83c3d6b4352679e
+sha256_hash: 69161ec5325df43bf7fb40bcd05615e73609fa99aec67b61549b05f86c4baf5c
 summary:
-  comment: 1 warnings
-  status: WARN
+  comment: 1 errors
+  status: ERROR
   summary_count:
-    ERROR: 0
+    ERROR: 1
     INFO: 0
     WARN: 1
-version: http://purl.obolibrary.org/obo/wbphenotype/releases/2024-09-26/wbphenotype-base.owl
+version: http://purl.obolibrary.org/obo/wbphenotype/releases/2025-01-02/wbphenotype-base.owl

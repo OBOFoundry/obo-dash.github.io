@@ -7,4 +7,4 @@ OBODASH="sh odk.sh obodash"
 #rm -rf dashboard ontologies
 #mkdir -p dashboard ontologies
 #$OBODASH refresh -B
-$OBODASH -C dashboard-config.yml
+time $OBODASH -C dashboard-config.yml

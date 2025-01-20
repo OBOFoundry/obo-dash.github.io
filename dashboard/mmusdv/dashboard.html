@@ -8,8 +8,8 @@
             <div class="col-md-2"></div>
             <div class="col-md-8">
                 <h1>Dashboard Report - <a href="http://obofoundry.org/ontology/mmusdv.html">mmusdv</a></h1>
-                <p class="lead"><b>Version</b>: None</p>
-                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: 2024-10-30 19:21:20.087911</p>
+                <p class="lead"><b>Version</b>: http://purl.obolibrary.org/obo/life-stages/releases/2025-01-08/components/mmusdv.owl</p>
+                <p class="lead" style="margin-top:-15px;"><b>Date run</b>: 2025-01-13 22:43:27.203873</p>
                 <p class="lead" style="margin-top:-15px;"><a href="dashboard.yml">View dashboard results as YAML</a></p>
                 <p class="lead" style="margin-top:-15px;"><a href="../index.html">Go back to Overview</a></p>
                 <h3>Error Breakdown</h3>
@@ -63,11 +63,11 @@
                                 
                                 
                             
-                            <td class="table-success" style="text-align:center;">
-                                <img src="../assets/check.svg" height="15px">
+                            <td class="table-warning" style="text-align:center;">
+                                <img src="../assets/warning.svg" height="15px">
                             </td>
                             
-                                <td></td>
+                                <td>OWL syntax (OWL Functional Syntax), but should be RDF/XML</td>
                             
                             
                                 <td></td>
@@ -84,14 +84,14 @@
                                 
                                 
                             
-                            <td class="table-success" style="text-align:center;">
-                                <img src="../assets/check.svg" height="15px">
+                            <td class="table-danger" style="text-align:center;">
+                                <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td></td>
+                                <td>0 invalid IRIs. The Ontology IRI is not valid.</td>
                             
                             
-                                <td></td>
+                                <td><a href="fp3.html">View URIs Report</a></td>
                             
                         </tr>
                     
@@ -109,7 +109,7 @@
                                 <img src="../assets/x.svg" height="15px">
                             </td>
                             
-                                <td>Missing version IRI</td>
+                                <td>Version IRI does not resolve</td>
                             
                             
                                 <td></td>
@@ -273,11 +273,11 @@
                                 
                                 
                             
-                            <td class="table-danger" style="text-align:center;">
-                                <img src="../assets/x.svg" height="15px">
+                            <td class="table-success" style="text-align:center;">
+                                <img src="../assets/check.svg" height="15px">
                             </td>
                             
-                                <td>Missing version IRI to check date</td>
+                                <td></td>
                             
                             
                                 <td></td>
@@ -326,7 +326,7 @@
                           <img src="../assets/x.svg" height="15px">
                       </td>
                       
-                          <td>9 errors, 48 warnings, 2 info messages.</td>
+                          <td>6 errors, 48 warnings, 2 info messages.</td>
                       
                       
                           <td><a href="robot_report.html">View ROBOT Report</a></td>
@@ -350,9 +350,9 @@
                                     <td>
                                         <ul>
                                             
-                                                <li>AnnotationAssertion: 1646</li>
+                                                <li>AnnotationAssertion: 1647</li>
                                             
-                                                <li>Declaration: 216</li>
+                                                <li>Declaration: 217</li>
                                             
                                                 <li>SubAnnotationPropertyOf: 1</li>
                                             
@@ -371,7 +371,7 @@
                                 <td>Axioms: Number of axioms</td>
                                 
                                 
-                                    <td>2254</td>
+                                    <td>2256</td>
                                 
                             </tr>
                         
@@ -379,7 +379,7 @@
                                 <td>Entities: % of entities reused</td>
                                 
                                 
-                                    <td>19.09</td>
+                                    <td>19.46</td>
                                 
                             </tr>
                         
@@ -387,7 +387,7 @@
                                 <td>Entities: Number of annotation properties</td>
                                 
                                 
-                                    <td>36</td>
+                                    <td>37</td>
                                 
                             </tr>
                         
@@ -451,7 +451,7 @@
                                 <td>Info: Does the ontology fall under OWL 2 DL?</td>
                                 
                                 
-                                    <td>False</td>
+                                    <td>True</td>
                                 
                             </tr>
                         
@@ -462,7 +462,7 @@
                                     <td>
                                         <ul>
                                             
-                                                <li>_dashboard: 0.533</li>
+                                                <li>_dashboard: 0.511</li>
                                             
                                                 <li>_formula: (1*impact+1*dashboard)/2</li>
                                             
@@ -470,9 +470,9 @@
                                             
                                                 <li>_impact_external: 0</li>
                                             
-                                                <li>_reuse: 0.191</li>
+                                                <li>_reuse: 0.195</li>
                                             
-                                                <li>oboscore: 0.267</li>
+                                                <li>oboscore: 0.256</li>
                                             
                                         </ul>
                                     </td>
@@ -507,7 +507,7 @@
                                 <td>Info: Syntax</td>
                                 
                                 
-                                    <td>RDF/XML Syntax</td>
+                                    <td>OWL Functional Syntax</td>
                                 
                             </tr>
                         
@@ -520,7 +520,7 @@
                                             
                                                 <li>BFO: 138</li>
                                             
-                                                <li>IAO: 191</li>
+                                                <li>IAO: 192</li>
                                             
                                                 <li>MMUSDVALT: 409</li>
                                             
@@ -532,9 +532,9 @@
                                             
                                                 <li>owl: 45</li>
                                             
-                                                <li>rdfs: 279</li>
+                                                <li>rdf: 208</li>
                                             
-                                                <li>xsd: 208</li>
+                                                <li>rdfs: 280</li>
                                             
                                         </ul>
                                     </td>

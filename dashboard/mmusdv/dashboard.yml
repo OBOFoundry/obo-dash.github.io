@@ -3,18 +3,18 @@ base_prefixes:
 - MmusDv
 - MmusDv
 changed: true
-date: 2024-10-30 19:21:20.087911
+date: 2025-01-13 22:43:27.203873
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 1646
-    Declaration: 216
+    AnnotationAssertion: 1647
+    Declaration: 217
     SubAnnotationPropertyOf: 1
     SubClassOf: 388
     SubObjectPropertyOf: 1
     TransitiveObjectProperty: 2
-  'Axioms: Number of axioms': 2254
-  'Entities: % of entities reused': 19.09
-  'Entities: Number of annotation properties': 36
+  'Axioms: Number of axioms': 2256
+  'Entities: % of entities reused': 19.46
+  'Entities: Number of annotation properties': 37
   'Entities: Number of classes': 178
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
@@ -23,28 +23,28 @@ metrics:
   'Info: Breakdown of OWL class expressions used':
     Class: 954
     ObjectSomeValuesFrom: 255
-  'Info: Does the ontology fall under OWL 2 DL?': false
+  'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.533
+    _dashboard: 0.511
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
-    _reuse: 0.191
-    oboscore: 0.267
+    _reuse: 0.195
+    oboscore: 0.256
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
-  'Info: Syntax': RDF/XML Syntax
+  'Info: Syntax': OWL Functional Syntax
   'Info: Usage of namespaces in axioms':
     BFO: 138
-    IAO: 191
+    IAO: 192
     MMUSDVALT: 409
     MmusDv: 954
     RO: 124
     oboInOwl: 967
     owl: 45
-    rdfs: 279
-    xsd: 208
+    rdf: 208
+    rdfs: 280
   'Info: Which ontologies use it?': []
 mirror_from: http://purl.obolibrary.org/obo/mmusdv.owl
 namespace: mmusdv
@@ -53,11 +53,14 @@ results:
     comment: Missing ontology license.
     status: ERROR
   FP02 Common Format:
-    status: PASS
+    comment: OWL syntax (OWL Functional Syntax), but should be RDF/XML
+    status: WARN
   FP03 URIs:
-    status: PASS
+    comment: 0 invalid IRIs. The Ontology IRI is not valid.
+    file: fp3
+    status: ERROR
   FP04 Versioning:
-    comment: Missing version IRI
+    comment: Version IRI does not resolve
     status: ERROR
   FP05 Scope:
     status: PASS
@@ -76,24 +79,23 @@ results:
     comment: 6 duplicate labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
-    comment: Missing version IRI to check date
-    status: ERROR
+    status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 9 errors, 48 warnings, 2 info messages.
+    comment: 6 errors, 48 warnings, 2 info messages.
     file: robot_report
     results:
-      ERROR: 9
+      ERROR: 6
       INFO: 2
       WARN: 48
     status: ERROR
-sha256_hash: 8227a82624aee6f9f0f8349746798ed7df09f32a94e64354d095fe99896fed0b
+sha256_hash: 602690db09252b43ca2175b96f3b5308735024667b44d1c4633e8e948759738a
 summary:
   comment: 6 errors
   status: ERROR
   summary_count:
     ERROR: 6
     INFO: 0
-    WARN: 0
-version: null
+    WARN: 1
+version: http://purl.obolibrary.org/obo/life-stages/releases/2025-01-08/components/mmusdv.owl
