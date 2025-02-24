@@ -4,10 +4,10 @@ base_prefixes:
 - T4FSALT
 - T4FS
 changed: true
-date: 2025-01-16 04:03:11.696021
+date: 2025-02-22 20:58:52.699077
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 2528
+    AnnotationAssertion: 2812
     ClassAssertion: 18
     Declaration: 643
     DifferentIndividuals: 2
@@ -21,7 +21,7 @@ metrics:
     Rule: 4
     SubClassOf: 683
     SubObjectPropertyOf: 8
-  'Axioms: Number of axioms': 3945
+  'Axioms: Number of axioms': 4229
   'Entities: % of entities reused': 14.46
   'Entities: Number of annotation properties': 37
   'Entities: Number of classes': 564
@@ -39,19 +39,19 @@ metrics:
     ObjectUnionOf: 2
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.653
+    _dashboard: 0.727
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.011
     _impact_external: 0.5
     _reuse: 0.145
-    oboscore: 0.332
+    oboscore: 0.369
   'Info: How many externally documented uses?': 3
   'Info: How many ontologies use it?': 2
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     BFO: 115
-    IAO: 2302
+    IAO: 2578
     OMO: 3
     RO: 58
     T4FS: 2076
@@ -63,7 +63,7 @@ metrics:
     owl: 5
     protege: 1
     rdf: 409
-    rdfs: 686
+    rdfs: 694
     xsd: 1
   'Info: Which ontologies use it?':
   - genepio
@@ -78,8 +78,7 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    comment: Version IRI does not resolve
-    status: ERROR
+    status: PASS
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -97,27 +96,26 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 2 duplicate labels. See ROBOT Report for details.
+    comment: 2 duplicate labels. 14 multiple labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
-    comment: last version (2023-03-02) is over one year(s) old
-    status: INFO
+    status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 4 errors, 70 warnings, 0 info messages.
+    comment: 18 errors, 70 warnings, 1 info messages.
     file: robot_report
     results:
-      ERROR: 4
-      INFO: 0
+      ERROR: 18
+      INFO: 1
       WARN: 70
     status: ERROR
-sha256_hash: b3435607750e648f4a755b1dda26c7659102d837239165b2448f71189b90ef9e
+sha256_hash: 11a3ada96ac23df1cbe9175c7f6946337c3c4b6d6d297f837548fe38a4d18278
 summary:
-  comment: 4 errors
+  comment: 3 errors
   status: ERROR
   summary_count:
-    ERROR: 4
-    INFO: 2
+    ERROR: 3
+    INFO: 1
     WARN: 0
-version: http://purl.obolibrary.org/obo/t4fs/releases/2023-03-02/t4fs.owl
+version: http://purl.obolibrary.org/obo/t4fs/releases/2025-02-09/t4fs.owl

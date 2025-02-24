@@ -4,7 +4,7 @@ base_prefixes:
 - XAOALT
 - XAO
 changed: true
-date: 2025-01-16 04:21:28.924470
+date: 2025-02-22 21:16:45.883163
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 11277
@@ -25,14 +25,14 @@ metrics:
     ObjectSomeValuesFrom: 5352
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.689
+    _dashboard: 0.756
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.011
+    _impact: 0.005
     _impact_external: 0.25
     _reuse: 0.02
-    oboscore: 0.35
+    oboscore: 0.381
   'Info: How many externally documented uses?': 1
-  'Info: How many ontologies use it?': 2
+  'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -49,7 +49,6 @@ metrics:
     rdf: 1790
     rdfs: 1867
   'Info: Which ontologies use it?':
-  - cob
   - xpo
 mirror_from: http://purl.obolibrary.org/obo/xao.owl
 namespace: xao
@@ -73,9 +72,7 @@ results:
     file: fp7
     status: ERROR
   FP08 Documented:
-    comment: Homepage URL (http://www.xenbase.org/anatomy/xao.do?method=display) does
-      not resolve
-    status: ERROR
+    status: PASS
   FP09 Plurality of Users:
     status: PASS
   FP11 Locus of Authority:
@@ -96,10 +93,10 @@ results:
     status: WARN
 sha256_hash: 35db632535cc255ec039b61fd77ba0c5a171d35fe50ed0017ea01b74280816e3
 summary:
-  comment: 3 errors
+  comment: 2 errors
   status: ERROR
   summary_count:
-    ERROR: 3
+    ERROR: 2
     INFO: 0
     WARN: 2
 version: http://purl.obolibrary.org/obo/xao/releases/2024-09-03/xao.owl

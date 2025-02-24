@@ -4,86 +4,49 @@ base_prefixes:
 - COBALT
 - COB
 changed: true
-date: 2025-01-13 22:19:30.771017
+date: 2025-02-20 16:22:55.089524
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 218
-    DataPropertyDomain: 3
-    DataPropertyRange: 2
-    Declaration: 216
-    DisjointClasses: 10
-    EquivalentClasses: 64
-    EquivalentObjectProperties: 19
-    InverseFunctionalObjectProperty: 1
-    InverseObjectProperties: 9
-    ObjectPropertyDomain: 6
-    ObjectPropertyRange: 2
-    SubClassOf: 120
-    SubDataPropertyOf: 2
-    SubObjectPropertyOf: 6
-    SubPropertyChainOf: 1
-    TransitiveObjectProperty: 1
-  'Axioms: Number of axioms': 680
-  'Entities: % of entities reused': 55.26
-  'Entities: Number of annotation properties': 22
-  'Entities: Number of classes': 153
-  'Entities: Number of data properties': 5
+    AnnotationAssertion: 62
+    DataPropertyDomain: 2
+    Declaration: 49
+    DisjointClasses: 3
+    SubClassOf: 20
+  'Axioms: Number of axioms': 136
+  'Entities: % of entities reused': 44.44
+  'Entities: Number of annotation properties': 10
+  'Entities: Number of classes': 27
+  'Entities: Number of data properties': 4
   'Entities: Number of individuals': 0
-  'Entities: Number of object properties': 43
+  'Entities: Number of object properties': 11
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 550
-    DataHasValue: 2
-    ObjectAllValuesFrom: 3
-    ObjectIntersectionOf: 3
-    ObjectSomeValuesFrom: 34
-    ObjectUnionOf: 2
+    Class: 75
+    ObjectIntersectionOf: 1
+    ObjectSomeValuesFrom: 9
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.822
+    _dashboard: 0.882
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.043
     _impact_external: 0
-    _reuse: 0.553
-    oboscore: 0.432
+    _reuse: 0.444
+    oboscore: 0.463
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 8
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 30
-    CARO: 4
-    CHEBI: 20
-    CL: 6
-    COB: 579
-    DRON: 2
-    ENVO: 6
-    GEO: 2
-    GO: 8
-    IAO: 65
-    MOP: 2
-    NCBITaxon: 5
-    OBI: 32
-    OGMS: 6
-    PATO: 6
-    PCO: 2
-    PO: 8
-    PR: 2
-    RO: 14
-    SEPIO: 2
-    SO: 8
-    STATO: 2
-    UBERON: 6
-    XAO: 2
-    ZFA: 2
-    dc: 5
-    dc11: 4
-    owl: 14
-    prefix_unknown: 334
-    rdf: 111
-    rdfs: 108
-    skos: 5
-    xsd: 4
+    BFO: 18
+    CHEBI: 4
+    COB: 67
+    IAO: 23
+    OBI: 8
+    RO: 4
+    dc: 3
+    dc11: 1
+    owl: 9
+    rdfs: 33
   'Info: Which ontologies use it?':
   - foodon
   - hancestro
@@ -107,12 +70,12 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 86 missing definitions. See ROBOT Report for details.
+    comment: 10 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
-    comment: 13 labels match RO labels. 14 non-RO properties used.
+    comment: 8 non-RO properties used.
     file: fp7
-    status: ERROR
+    status: INFO
   FP08 Documented:
     status: PASS
   FP09 Plurality of Users:
@@ -127,19 +90,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 127 warnings, 2 info messages.
+    comment: 10 warnings, 1 info messages.
     file: robot_report
     results:
       ERROR: 0
-      INFO: 2
-      WARN: 127
+      INFO: 1
+      WARN: 10
     status: WARN
-sha256_hash: 48008b3958303ca3b8373a4395950c7bb9a1b4034a587d883435dc08d4203104
+sha256_hash: 77d7d3de2fa019b1320cb47085dab583771f580b304ee9afb4f7b213dd30f8a7
 summary:
-  comment: 2 errors
+  comment: 1 errors
   status: ERROR
   summary_count:
-    ERROR: 2
-    INFO: 0
+    ERROR: 1
+    INFO: 1
     WARN: 2
-version: http://purl.obolibrary.org/obo/cob/releases/2024-09-20/cob-base.owl
+version: http://purl.obolibrary.org/obo/cob/releases/2025-01-23/cob-base.owl
