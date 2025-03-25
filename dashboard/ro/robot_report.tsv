@@ -46,7 +46,7 @@ WARN	annotation_whitespace	RO:0002356	IAO:0000115	The relationship linking a cel
 WARN	annotation_whitespace	RO:0002402	IAO:0000115	p has direct input c iff c is a participanti n p, c is present at the end of p, and c is not present at the beginning of c. 
 WARN	annotation_whitespace	RO:0002504	IAO:0000116	This is a very strong relation. Often we will not have enough evidence to know for sure that there are no species within a lineage that lack the structure - loss is common in evolution. However, there are some statements we can make with confidence - no vertebrate lineage could persist without a brain or a heart. All primates are limbed. 
 WARN	annotation_whitespace	RO:0002514	IAO:0000115	A relation that holds between two entities that have the property of being sequences or having sequences. 
-WARN	annotation_whitespace	RO:0002535	IAO:0000232	This properties were created originally for the annotation of developmental or life cycle stages, such as for example Carnegie Stage 20 in humans. 
+WARN	annotation_whitespace	RO:0002535	IAO:0000232	This property was originally created for the annotation of developmental or life cycle stages, such as for example Carnegie Stage 20 in humans. 
 WARN	annotation_whitespace	RO:HOM0000036	oboInOwl:hasExactSynonym	many:many homology 
 WARN	annotation_whitespace	http://purl.obolibrary.org/obo/ro/ro-base.owl	foaf:homepage	https://github.com/oborel/obo-relations/^^http://www.w3.org/2001/XMLSchema#anyURI
 WARN	duplicate_exact_synonym	RO:0002599	IAO:0000118	
@@ -78,7 +78,6 @@ WARN	missing_definition	RO:0002093	IAO:0000115
 WARN	missing_definition	RO:0002111	IAO:0000115	
 WARN	missing_definition	RO:0002159	IAO:0000115	
 WARN	missing_definition	RO:0002222	IAO:0000115	
-WARN	missing_definition	RO:0002259	IAO:0000115	
 WARN	missing_definition	RO:0002287	IAO:0000115	
 WARN	missing_definition	RO:0002297	IAO:0000115	
 WARN	missing_definition	RO:0002300	IAO:0000115	
@@ -124,7 +123,6 @@ WARN	missing_definition	RO:0002537	IAO:0000115
 WARN	missing_definition	RO:0002538	IAO:0000115	
 WARN	missing_definition	RO:0002549	IAO:0000115	
 WARN	missing_definition	RO:0002550	IAO:0000115	
-WARN	missing_definition	RO:0002555	IAO:0000115	
 WARN	missing_definition	RO:0002559	IAO:0000115	
 WARN	missing_definition	RO:0002563	IAO:0000115	
 WARN	missing_definition	RO:0002564	IAO:0000115	
@@ -173,7 +171,6 @@ WARN	missing_definition	RO:0016001	IAO:0000115
 WARN	missing_definition	RO:0018030	IAO:0000115	
 WARN	missing_obsolete_label	RO:0004096	rdfs:label	DEPRECATED inheres in@en
 WARN	missing_obsolete_label	RO:0004097	rdfs:label	DEPRECATED bearer of@en
-WARN	missing_subset_declaration	RO:0002259	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	obo:ro/subsets#ro-eco	rdfs:subPropertyOf	
 INFO	lowercase_definition	RO:0000052	IAO:0000115	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
 INFO	lowercase_definition	RO:0000056	IAO:0000115	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
@@ -198,3 +195,6 @@ This is used when the statement/axiom is assumed to hold true &apos;eternally&ap
 
 First the &quot;atemporal&quot; FOL is derived from the OWL using the standard
 interpretation. This axiom is temporalized by embedding the axiom
+within a for-all-times quantified sentence. The t argument is added to
+all instantiation predicates and predicates that use this relation.
+

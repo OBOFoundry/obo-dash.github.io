@@ -2,163 +2,102 @@ base_generated: true
 base_prefixes:
 - ONTONEO
 - ONTONEO
-changed: true
-date: 2025-02-21 18:23:48.836499
+changed: false
+failure: inconsistent_ontology
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 15595
-    AnnotationPropertyRangeOf: 12
+    AnnotationAssertion: 13715
+    AnnotationPropertyRangeOf: 8
     AsymmetricObjectProperty: 5
-    ClassAssertion: 14
-    DataPropertyDomain: 5
+    ClassAssertion: 143
+    DataPropertyDomain: 1
     DataPropertyRange: 1
-    Declaration: 2429
-    DisjointClasses: 27
+    Declaration: 2189
+    DisjointClasses: 21
     DisjointObjectProperties: 2
-    EquivalentClasses: 135
-    FunctionalDataProperty: 4
-    FunctionalObjectProperty: 6
-    InverseObjectProperties: 77
+    EquivalentClasses: 53
+    FunctionalDataProperty: 1
+    FunctionalObjectProperty: 7
+    InverseFunctionalObjectProperty: 1
+    InverseObjectProperties: 79
     IrrefexiveObjectProperty: 5
-    ObjectPropertyDomain: 15
-    ObjectPropertyRange: 13
-    SubAnnotationPropertyOf: 68
-    SubClassOf: 2292
-    SubObjectPropertyOf: 409
-    SubPropertyChainOf: 101
-    SymmetricObjectProperty: 14
-    TransitiveObjectProperty: 35
-  'Axioms: Number of axioms': 21264
+    ObjectPropertyAssertion: 152
+    ObjectPropertyDomain: 35
+    ObjectPropertyRange: 36
+    SubAnnotationPropertyOf: 62
+    SubClassOf: 1778
+    SubObjectPropertyOf: 423
+    SubPropertyChainOf: 107
+    SymmetricObjectProperty: 15
+    TransitiveObjectProperty: 43
+  'Axioms: Number of axioms': 18882
   'Entities: % of entities reused': 100.0
   'Entities: Number of annotation properties': 176
-  'Entities: Number of classes': 1801
-  'Entities: Number of data properties': 8
-  'Entities: Number of individuals': 17
-  'Entities: Number of object properties': 444
-  'Entities: Number of unsatisfiable classes': 23
+  'Entities: Number of classes': 1420
+  'Entities: Number of data properties': 3
+  'Entities: Number of individuals': 142
+  'Entities: Number of object properties': 442
+  'Entities: Number of unsatisfiable classes': -1
   'Info: Breakdown of OWL class expressions used':
-    Class: 7154
+    Class: 5592
     DataMinCardinality: 2
-    ObjectAllValuesFrom: 11
-    ObjectComplementOf: 1
+    ObjectAllValuesFrom: 10
+    ObjectComplementOf: 3
     ObjectExactCardinality: 2
-    ObjectIntersectionOf: 232
+    ObjectIntersectionOf: 140
     ObjectMinCardinality: 1
-    ObjectOneOf: 2
-    ObjectSomeValuesFrom: 940
-    ObjectUnionOf: 12
+    ObjectSomeValuesFrom: 629
+    ObjectUnionOf: 10
   'Info: Does the ontology fall under OWL 2 DL?': false
-  'Info: Experimental OBO score':
-    _dashboard: 0.504
-    _formula: (1*impact+1*dashboard)/2
-    _impact: 0.0
-    _impact_external: 0
-    _reuse: 1.0
-    oboscore: 0.252
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 0
-  'Info: Logical consistency': true
+  'Info: Logical consistency': false
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     BAO: 4
-    BCGO: 17
-    BFO: 750
-    CARO: 1
-    CL: 31
+    BCGO: 23
+    BFO: 547
+    CARO: 20
+    CL: 54
     CLALT: 8
-    CMO: 23
-    CVDO: 16
-    DOID: 670
-    DOIDALT: 6
-    EFO: 31
-    ERO: 23
-    FMA: 1828
-    GO: 462
-    HP: 305
-    IAO: 5343
+    CMO: 29
+    CVDO: 15
+    DOID: 517
+    EFO: 90
+    ERO: 16
+    FMA: 1654
+    GO: 99
+    HP: 66
+    IAO: 4712
+    IDO: 2
     IDOMAL: 7
-    MP: 153
-    MPATH: 26
-    NCBITaxon: 44
-    OAE: 207
-    OBI: 183
-    OGMS: 140
-    OMIABIS: 21
-    OMRSE: 144
-    PATO: 580
-    PATOALT: 66
-    RO: 1913
-    SIO: 46
-    SYMP: 632
-    UBERON: 225
+    MP: 20
+    NCBITaxon: 47
+    OAE: 27
+    OBI: 206
+    OGMS: 197
+    OMIABIS: 22
+    OMRSE: 148
+    PATO: 175
+    PATOALT: 25
+    RO: 1929
+    SIO: 61
+    SYMP: 625
+    UBERON: 99
     UPHENO: 1
-    VO: 58
-    dc11: 53
-    efo: 1
-    foaf: 20
-    obo: 1790
-    oboInOwl: 6587
-    owl: 25
-    prefix_unknown: 33
-    protege: 37
-    rdf: 12
-    rdfs: 3475
-    xsd: 78
-  'Info: Which ontologies use it?': []
+    VO: 56
+    dc: 21
+    dc11: 92
+    efo: 19
+    foaf: 22
+    obo: 2742
+    oboInOwl: 4766
+    owl: 22
+    prefix_unknown: 40
+    protege: 2
+    rdf: 59
+    rdfs: 3640
+    skos: 2
+    xsd: 24
 mirror_from: http://purl.obolibrary.org/obo/ontoneo.owl
 namespace: ontoneo
-results:
-  FP01 Open:
-    comment: License should use property 'http://purl.org/dc/terms/license'. Ontology
-      license 'http://creativecommons.org/licenses/by/4.0/' does not match registry
-      license 'http://creativecommons.org/licenses/by/3.0/'.
-    status: ERROR
-  FP02 Common Format:
-    status: PASS
-  FP03 URIs:
-    status: PASS
-  FP04 Versioning:
-    status: PASS
-  FP05 Scope:
-    status: PASS
-  FP06 Textual Definitions:
-    comment: 199 duplicate definitions. 447 multiple definitions. 59 missing definitions.
-      See ROBOT Report for details.
-    status: ERROR
-  FP07 Relations:
-    comment: 5 non-RO properties used.
-    file: fp7
-    status: INFO
-  FP08 Documented:
-    comment: Homepage URL (ontoneo.com) does not resolve
-    status: ERROR
-  FP09 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
-  FP11 Locus of Authority:
-    status: PASS
-  FP12 Naming Conventions:
-    comment: 8 duplicate labels. 473 multiple labels. See ROBOT Report for details.
-    status: ERROR
-  FP16 Maintenance:
-    comment: last version (2021-04-29) is over two year(s) old
-    status: WARN
-  FP20 Responsiveness:
-    status: PASS
-  ROBOT Report:
-    comment: 1130 errors, 68 warnings, 28 info messages.
-    file: robot_report
-    results:
-      ERROR: 1130
-      INFO: 28
-      WARN: 68
-    status: ERROR
-sha256_hash: 3420ced72b05e098b81d91daf9652ba1ac4b5b612c53277b42b3ba4b9b6d91e5
-summary:
-  comment: 6 errors
-  status: ERROR
-  summary_count:
-    ERROR: 6
-    INFO: 1
-    WARN: 1
-version: http://purl.obolibrary.org/obo/ontoneo/releases/2021-04-29/ontoneo.owl
+sha256_hash: 03dae64d1982dd779e5a415e9d6c229374d2a736d5ba399fd578b27c47c11dcd

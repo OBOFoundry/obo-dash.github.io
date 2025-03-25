@@ -3,49 +3,51 @@ base_prefixes:
 - PPO
 - PPOALT
 - PPO
-changed: true
-date: 2025-02-22 20:09:37.610738
+changed: false
+date: 2025-03-25 15:04:56.655343
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 1752
-    ClassAssertion: 235
+    AnnotationAssertion: 1880
+    ClassAssertion: 234
     DataPropertyDomain: 4
     DataPropertyRange: 4
-    Declaration: 938
+    Declaration: 964
     DifferentIndividuals: 1
-    DisjointClasses: 75
-    EquivalentClasses: 167
+    DisjointClasses: 76
+    EquivalentClasses: 173
     FunctionalObjectProperty: 2
     InverseFunctionalObjectProperty: 1
     InverseObjectProperties: 35
     IrrefexiveObjectProperty: 1
-    ObjectPropertyAssertion: 14
-    ObjectPropertyDomain: 46
-    ObjectPropertyRange: 43
+    ObjectPropertyAssertion: 10
+    ObjectPropertyDomain: 48
+    ObjectPropertyRange: 45
     Rule: 19
     SubAnnotationPropertyOf: 2
-    SubClassOf: 969
-    SubObjectPropertyOf: 151
-    SubPropertyChainOf: 61
+    SubClassOf: 1011
+    SubObjectPropertyOf: 153
+    SubPropertyChainOf: 69
     SymmetricObjectProperty: 3
     TransitiveObjectProperty: 18
-  'Axioms: Number of axioms': 4541
-  'Entities: % of entities reused': 71.46
-  'Entities: Number of annotation properties': 12
-  'Entities: Number of classes': 543
+  'Axioms: Number of axioms': 4753
+  'Entities: % of entities reused': 71.5
+  'Entities: Number of annotation properties': 15
+  'Entities: Number of classes': 569
   'Entities: Number of data properties': 4
-  'Entities: Number of individuals': 240
-  'Entities: Number of object properties': 143
+  'Entities: Number of individuals': 234
+  'Entities: Number of object properties': 146
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 3696
-    ObjectAllValuesFrom: 69
-    ObjectComplementOf: 166
+    Class: 3841
+    ObjectAllValuesFrom: 70
+    ObjectComplementOf: 169
+    ObjectExactCardinality: 1
     ObjectHasSelf: 1
-    ObjectIntersectionOf: 381
+    ObjectIntersectionOf: 394
+    ObjectMinCardinality: 1
     ObjectOneOf: 3
-    ObjectSomeValuesFrom: 889
-    ObjectUnionOf: 20
+    ObjectSomeValuesFrom: 915
+    ObjectUnionOf: 23
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
     _dashboard: 0.638
@@ -59,23 +61,23 @@ metrics:
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BCO: 20
-    BFO: 290
+    BFO: 306
     GO: 150
-    IAO: 1042
+    IAO: 1145
     NCBITaxon: 27
-    OBI: 1027
+    OBI: 1043
     OMO: 2
-    PATO: 7
-    PO: 902
-    PPO: 2233
-    RO: 1045
-    UBERON: 42
+    PATO: 20
+    PO: 967
+    PPO: 2265
+    RO: 1080
+    UBERON: 68
     dc: 3
     dc11: 1
-    owl: 8
+    foaf: 2
+    owl: 9
     rdf: 7
-    rdfs: 960
+    rdfs: 983
     xsd: 4
   'Info: Which ontologies use it?': []
 mirror_from: http://purl.obolibrary.org/obo/ppo.owl
@@ -95,7 +97,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 19 missing definitions. See ROBOT Report for details.
+    comment: 15 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     comment: 13 non-RO properties used.
@@ -115,14 +117,14 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 6 errors, 20 warnings, 7 info messages.
+    comment: 7 errors, 16 warnings, 7 info messages.
     file: robot_report
     results:
-      ERROR: 6
+      ERROR: 7
       INFO: 7
-      WARN: 20
+      WARN: 16
     status: ERROR
-sha256_hash: 0b887cc092b7df338eab458ac7ff414dc2ce4326bbaeabfe384e34702c180272
+sha256_hash: 3e754e659e1a44d3b36e5fadd453ef49fcdacd560b100f0cad695ac20f48ca14
 summary:
   comment: 4 errors
   status: ERROR
@@ -130,4 +132,4 @@ summary:
     ERROR: 4
     INFO: 1
     WARN: 1
-version: http://purl.obolibrary.org/obo/ppo/releases/2024-07-09/ppo.owl
+version: http://purl.obolibrary.org/obo/ppo/releases/2025-03-13/ppo.owl
