@@ -4,43 +4,43 @@ base_prefixes:
 - RSALT
 - RS
 changed: false
-date: 2025-03-25 15:53:00.369335
+date: 2025-05-29 17:14:39.204788
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 32114
-    Declaration: 5388
+    AnnotationAssertion: 32354
+    Declaration: 5428
     SubAnnotationPropertyOf: 1
-    SubClassOf: 7209
-  'Axioms: Number of axioms': 44712
-  'Entities: % of entities reused': 0.43
+    SubClassOf: 7248
+  'Axioms: Number of axioms': 45031
+  'Entities: % of entities reused': 0.42
   'Entities: Number of annotation properties': 22
-  'Entities: Number of classes': 5366
+  'Entities: Number of classes': 5406
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 1
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 19784
+    Class: 19902
     ObjectSomeValuesFrom: 6
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.52
+    _dashboard: 0.453
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.005
     _impact_external: 0
     _reuse: 0.004
-    oboscore: 0.263
+    oboscore: 0.229
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     IAO: 118
-    RS: 19784
+    RS: 19902
     RSALT: 9
-    oboInOwl: 26701
+    oboInOwl: 26901
     owl: 19
-    rdfs: 5360
+    rdfs: 5400
     xsd: 62
   'Info: Which ontologies use it?':
   - epio
@@ -60,7 +60,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 40 duplicate definitions.  5272 missing definitions. See ROBOT Report
+    comment: 40 duplicate definitions.  5312 missing definitions. See ROBOT Report
       for details.
     status: ERROR
   FP07 Relations:
@@ -68,7 +68,9 @@ results:
     file: fp7
     status: INFO
   FP08 Documented:
-    status: PASS
+    comment: Homepage URL (http://rgd.mcw.edu/rgdweb/search/strains.html) does not
+      resolve
+    status: ERROR
   FP09 Plurality of Users:
     comment: Missing usages
     status: ERROR
@@ -83,19 +85,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 51 errors, 5274 warnings, 5 info messages.
+    comment: 51 errors, 5314 warnings, 5 info messages.
     file: robot_report
     results:
       ERROR: 51
       INFO: 5
-      WARN: 5274
+      WARN: 5314
     status: ERROR
-sha256_hash: c7a783c7d393f0677e24b045fc45781a09a72a156809c4fb7046521aec4ece20
+sha256_hash: b9fbf33cef01a234b5e20672945ef60102188709f6dbc9a7fc51ba96bd278bcd
 summary:
-  comment: 6 errors
+  comment: 7 errors
   status: ERROR
   summary_count:
-    ERROR: 6
+    ERROR: 7
     INFO: 2
     WARN: 0
-version: http://purl.obolibrary.org/obo/rs/6.244/rs.owl
+version: http://purl.obolibrary.org/obo/rs/6.248/rs.owl

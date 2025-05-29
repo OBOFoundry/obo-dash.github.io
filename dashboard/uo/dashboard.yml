@@ -4,7 +4,7 @@ base_prefixes:
 - UOALT
 - UO
 changed: false
-date: 2025-03-25 15:57:07.633459
+date: 2025-05-29 17:18:45.634598
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1407
@@ -26,14 +26,14 @@ metrics:
     ObjectSomeValuesFrom: 162
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.571
+    _dashboard: 0.556
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.161
+    _impact: 0.166
     _impact_external: 0
     _reuse: 0.011
-    oboscore: 0.366
+    oboscore: 0.361
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 30
+  'Info: How many ontologies use it?': 31
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -45,6 +45,7 @@ metrics:
   - agro
   - apollo_sv
   - cheminf
+  - chmo
   - cido
   - dideo
   - dron
@@ -103,8 +104,8 @@ results:
     comment: 4 duplicate labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
-    comment: last version (2023-05-25) is over one year(s) old
-    status: INFO
+    comment: last version (2023-05-25) is over two year(s) old
+    status: WARN
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
@@ -121,6 +122,6 @@ summary:
   status: ERROR
   summary_count:
     ERROR: 5
-    INFO: 1
-    WARN: 1
+    INFO: 0
+    WARN: 2
 version: http://purl.obolibrary.org/obo/uo/releases/2023-05-25/uo.owl

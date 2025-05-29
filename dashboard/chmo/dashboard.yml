@@ -4,61 +4,85 @@ base_prefixes:
 - CHMOALT
 - CHMO
 changed: true
-date: 2025-03-21 12:40:26.056942
+date: 2025-05-26 14:05:33.053481
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 21198
-    Declaration: 3164
-    DisjointClasses: 1
-    EquivalentClasses: 102
-    ObjectPropertyDomain: 4
-    ObjectPropertyRange: 4
-    SubAnnotationPropertyOf: 1
-    SubClassOf: 3358
-    SubObjectPropertyOf: 9
-    TransitiveObjectProperty: 1
-  'Axioms: Number of axioms': 27842
-  'Entities: % of entities reused': 6.51
-  'Entities: Number of annotation properties': 37
-  'Entities: Number of classes': 3100
+    AnnotationAssertion: 24382
+    AnnotationPropertyRangeOf: 1
+    ClassAssertion: 131
+    Declaration: 3540
+    DifferentIndividuals: 2
+    DisjointClasses: 24
+    EquivalentClasses: 154
+    FunctionalObjectProperty: 1
+    InverseFunctionalObjectProperty: 1
+    InverseObjectProperties: 14
+    IrrefexiveObjectProperty: 1
+    ObjectPropertyDomain: 24
+    ObjectPropertyRange: 23
+    SubAnnotationPropertyOf: 29
+    SubClassOf: 3677
+    SubObjectPropertyOf: 29
+    SubPropertyChainOf: 1
+    TransitiveObjectProperty: 8
+  'Axioms: Number of axioms': 32042
+  'Entities: % of entities reused': 16.57
+  'Entities: Number of annotation properties': 125
+  'Entities: Number of classes': 3231
   'Entities: Number of data properties': 0
-  'Entities: Number of individuals': 0
-  'Entities: Number of object properties': 27
+  'Entities: Number of individuals': 131
+  'Entities: Number of object properties': 56
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 10136
-    ObjectIntersectionOf: 102
-    ObjectSomeValuesFrom: 388
+    Class: 11305
+    ObjectAllValuesFrom: 19
+    ObjectIntersectionOf: 165
+    ObjectMinCardinality: 2
+    ObjectOneOf: 3
+    ObjectSomeValuesFrom: 536
+    ObjectUnionOf: 18
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.727
+    _dashboard: 0.593
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.048
     _impact_external: 0
-    _reuse: 0.065
-    oboscore: 0.388
+    _reuse: 0.166
+    oboscore: 0.321
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 9
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 361
-    CHEBI: 107
-    CHMO: 9614
-    CHMOALT: 5
-    FIX: 81
-    IAO: 3220
-    MS: 7
-    OBCS: 4
-    OBI: 356
-    REX: 1
-    RO: 7
-    dc: 1
-    dc11: 2
-    oboInOwl: 17820
-    owl: 122
-    rdf: 2910
-    rdfs: 3065
+    BFO: 660
+    CHEBI: 126
+    CHEBIALT: 6
+    CHMO: 9540
+    CHMOALT: 4
+    CL: 6
+    GO: 19
+    IAO: 5935
+    MS: 4
+    NCBITaxon: 6
+    OBCS: 68
+    OBI: 1272
+    OMO: 35
+    PATO: 26
+    PATOALT: 2
+    PR: 3
+    RO: 186
+    UBERON: 8
+    UO: 176
+    dc: 44
+    dc11: 24
+    foaf: 2
+    obo: 103
+    oboInOwl: 18284
+    owl: 41
+    protege: 1
+    rdf: 3084
+    rdfs: 3609
+    xsd: 1
   'Info: Which ontologies use it?':
   - dideo
   - genepio
@@ -84,8 +108,9 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 42 missing definitions. See ROBOT Report for details.
-    status: WARN
+    comment: 8 multiple definitions. 42 missing definitions. See ROBOT Report for
+      details.
+    status: ERROR
   FP07 Relations:
     comment: 5 non-RO properties used.
     file: fp7
@@ -98,26 +123,26 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    status: PASS
+    comment: 6 multiple labels. See ROBOT Report for details.
+    status: ERROR
   FP16 Maintenance:
-    comment: last version (2022-04-19) is over two year(s) old
-    status: WARN
+    status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 203 warnings, 0 info messages.
+    comment: 14 errors, 249 warnings, 0 info messages.
     file: robot_report
     results:
-      ERROR: 0
+      ERROR: 14
       INFO: 0
-      WARN: 203
-    status: WARN
-sha256_hash: 24c727e9ac706cc4a9a5af11f8819963d474715f9aee53aea2c5a7f5b60a42e7
+      WARN: 249
+    status: ERROR
+sha256_hash: 54bfb926e983f33ee96fc6f3c13ef60b833c94ca776957ae9203b39f2e3ae2ce
 summary:
-  comment: 2 errors
+  comment: 5 errors
   status: ERROR
   summary_count:
-    ERROR: 2
+    ERROR: 5
     INFO: 1
-    WARN: 3
-version: http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl
+    WARN: 0
+version: http://purl.obolibrary.org/obo/chmo/releases/2025-01-22/chmo.owl
