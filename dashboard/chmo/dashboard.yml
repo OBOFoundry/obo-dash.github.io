@@ -1,88 +1,59 @@
-base_generated: true
+base_generated: false
 base_prefixes:
 - CHMO
 - CHMOALT
 - CHMO
 changed: true
-date: 2025-05-26 14:05:33.053481
+date: 2025-06-28 16:08:37.425282
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 24382
-    AnnotationPropertyRangeOf: 1
-    ClassAssertion: 131
-    Declaration: 3540
-    DifferentIndividuals: 2
-    DisjointClasses: 24
-    EquivalentClasses: 154
-    FunctionalObjectProperty: 1
-    InverseFunctionalObjectProperty: 1
-    InverseObjectProperties: 14
-    IrrefexiveObjectProperty: 1
-    ObjectPropertyDomain: 24
-    ObjectPropertyRange: 23
-    SubAnnotationPropertyOf: 29
-    SubClassOf: 3677
-    SubObjectPropertyOf: 29
-    SubPropertyChainOf: 1
-    TransitiveObjectProperty: 8
-  'Axioms: Number of axioms': 32042
-  'Entities: % of entities reused': 16.57
-  'Entities: Number of annotation properties': 125
-  'Entities: Number of classes': 3231
+    AnnotationAssertion: 20715
+    Declaration: 3047
+    DisjointClasses: 1
+    EquivalentClasses: 101
+    ObjectPropertyDomain: 4
+    ObjectPropertyRange: 4
+    SubClassOf: 3261
+    SubObjectPropertyOf: 2
+  'Axioms: Number of axioms': 27135
+  'Entities: % of entities reused': 3.08
+  'Entities: Number of annotation properties': 25
+  'Entities: Number of classes': 3002
   'Entities: Number of data properties': 0
-  'Entities: Number of individuals': 131
-  'Entities: Number of object properties': 56
+  'Entities: Number of individuals': 0
+  'Entities: Number of object properties': 24
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 11305
-    ObjectAllValuesFrom: 19
-    ObjectIntersectionOf: 165
-    ObjectMinCardinality: 2
-    ObjectOneOf: 3
-    ObjectSomeValuesFrom: 536
-    ObjectUnionOf: 18
+    Class: 9841
+    ObjectIntersectionOf: 101
+    ObjectSomeValuesFrom: 340
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.593
+    _dashboard: 0.727
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.048
     _impact_external: 0
-    _reuse: 0.166
-    oboscore: 0.321
+    _reuse: 0.031
+    oboscore: 0.388
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 9
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 660
-    CHEBI: 126
-    CHEBIALT: 6
+    BFO: 275
+    CHEBI: 54
     CHMO: 9540
-    CHMOALT: 4
-    CL: 6
-    GO: 19
-    IAO: 5935
-    MS: 4
-    NCBITaxon: 6
-    OBCS: 68
-    OBI: 1272
-    OMO: 35
-    PATO: 26
-    PATOALT: 2
-    PR: 3
-    RO: 186
-    UBERON: 8
-    UO: 176
-    dc: 44
-    dc11: 24
-    foaf: 2
-    obo: 103
-    oboInOwl: 18284
-    owl: 41
-    protege: 1
-    rdf: 3084
-    rdfs: 3609
-    xsd: 1
+    CHMOALT: 2
+    IAO: 3011
+    MS: 3
+    OBI: 313
+    RO: 2
+    dc: 4
+    dc11: 2
+    oboInOwl: 17672
+    owl: 39
+    rdf: 2885
+    rdfs: 2969
   'Info: Which ontologies use it?':
   - dideo
   - genepio
@@ -93,7 +64,7 @@ metrics:
   - proco
   - rbo
   - scdo
-mirror_from: http://purl.obolibrary.org/obo/chmo.owl
+mirror_from: http://purl.obolibrary.org/obo/chmo/chmo-base.owl
 namespace: chmo
 results:
   FP01 Open:
@@ -103,12 +74,11 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    comment: Version IRI does not resolve
-    status: ERROR
+    status: PASS
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 8 multiple definitions. 42 missing definitions. See ROBOT Report for
+    comment: 8 multiple definitions. 41 missing definitions. See ROBOT Report for
       details.
     status: ERROR
   FP07 Relations:
@@ -137,12 +107,12 @@ results:
       INFO: 0
       WARN: 249
     status: ERROR
-sha256_hash: 54bfb926e983f33ee96fc6f3c13ef60b833c94ca776957ae9203b39f2e3ae2ce
+sha256_hash: 49c173ad29ce467b2d2e04f6a94a8e4ea70411353e0a74603524c2c3e1ea9728
 summary:
-  comment: 5 errors
+  comment: 4 errors
   status: ERROR
   summary_count:
-    ERROR: 5
+    ERROR: 4
     INFO: 1
     WARN: 0
-version: http://purl.obolibrary.org/obo/chmo/releases/2025-01-22/chmo.owl
+version: http://purl.obolibrary.org/obo/chmo/releases/2025-01-22/chmo-base.owl

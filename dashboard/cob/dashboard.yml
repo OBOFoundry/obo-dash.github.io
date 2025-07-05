@@ -4,7 +4,7 @@ base_prefixes:
 - COBALT
 - COB
 changed: true
-date: 2025-05-26 14:08:38.173656
+date: 2025-07-01 22:45:10.848605
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 61
@@ -26,12 +26,12 @@ metrics:
     ObjectSomeValuesFrom: 9
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.882
+    _dashboard: 0.816
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.043
     _impact_external: 0
     _reuse: 0.446
-    oboscore: 0.463
+    oboscore: 0.429
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 8
   'Info: Logical consistency': true
@@ -67,7 +67,8 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -98,12 +99,12 @@ results:
       INFO: 1
       WARN: 10
     status: WARN
-sha256_hash: 70d5272a7ead301c620474fe0f4a17cb492b1ab81aedd2201a2e9fab7404a27a
+sha256_hash: 7e2015ce1520cab1f970bc2792df0c197db4897d54d2ea66b504aad643465ef3
 summary:
-  comment: 1 errors
+  comment: 2 errors
   status: ERROR
   summary_count:
-    ERROR: 1
+    ERROR: 2
     INFO: 1
     WARN: 2
-version: http://purl.obolibrary.org/obo/cob/releases/2025-02-20/cob-base.owl
+version: http://purl.obolibrary.org/obo/cob/releases/2025-06-30/cob-base.owl

@@ -4,47 +4,49 @@ base_prefixes:
 - AROALT
 - ARO
 changed: true
-date: 2025-05-26 13:50:28.115247
+date: 2025-06-28 15:53:32.064583
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 43238
-    Declaration: 8551
-    SubClassOf: 14861
-  'Axioms: Number of axioms': 66650
+    AnnotationAssertion: 44562
+    Declaration: 8614
+    SubClassOf: 14883
+  'Axioms: Number of axioms': 68059
   'Entities: % of entities reused': 0.51
   'Entities: Number of annotation properties': 13
-  'Entities: Number of classes': 8526
+  'Entities: Number of classes': 8582
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
-  'Entities: Number of object properties': 12
+  'Entities: Number of object properties': 19
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 38248
-    ObjectSomeValuesFrom: 6226
+    Class: 38348
+    ObjectSomeValuesFrom: 6184
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.467
+    _dashboard: 0.438
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.016
     _impact_external: 0
     _reuse: 0.005
-    oboscore: 0.242
+    oboscore: 0.227
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
-  'Info: Syntax': RDF/XML Syntax
+  'Info: Syntax': OWL/XML Syntax
   'Info: Usage of namespaces in axioms':
-    ARO: 38203
+    ARO: 43661
+    BFO: 347
     DOID: 21
     HP: 2
-    IAO: 8527
+    IAO: 8583
     NCIT: 14
-    RO: 6238
+    RO: 497
     SYMP: 2
     UBERON: 6
-    oboInOwl: 36706
-    rdf: 4042
-    rdfs: 8547
+    obo: 1
+    oboInOwl: 37934
+    rdf: 4060
+    rdfs: 8602
   'Info: Which ontologies use it?':
   - genepio
   - iceo
@@ -56,7 +58,8 @@ results:
     comment: Missing ontology license.
     status: ERROR
   FP02 Common Format:
-    status: PASS
+    comment: OWL syntax (OWL/XML Syntax), but should be RDF/XML
+    status: WARN
   FP03 URIs:
     comment: 0 invalid IRIs. The Ontology IRI is not valid.
     file: fp3
@@ -67,10 +70,12 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 316 duplicate definitions.   See ROBOT Report for details.
+    comment: 314 duplicate definitions.   See ROBOT Report for details.
     status: ERROR
   FP07 Relations:
-    status: PASS
+    comment: 7 non-RO properties used.
+    file: fp7
+    status: INFO
   FP08 Documented:
     status: PASS
   FP09 Plurality of Users:
@@ -86,19 +91,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 316 errors, 6054 warnings, 388 info messages.
+    comment: 314 errors, 6066 warnings, 388 info messages.
     file: robot_report
     results:
-      ERROR: 316
+      ERROR: 314
       INFO: 388
-      WARN: 6054
+      WARN: 6066
     status: ERROR
-sha256_hash: 2254a65a212c5a3d43c3e21d688775960bb969c48840dd1ca9c6c05e9b661a27
+sha256_hash: 3fc5498de236452861123528e09f8bbf30b331e80b696d65b24ec3a8048ee01f
 summary:
   comment: 7 errors
   status: ERROR
   summary_count:
     ERROR: 7
-    INFO: 0
-    WARN: 0
+    INFO: 1
+    WARN: 1
 version: null

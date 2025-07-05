@@ -4,7 +4,7 @@ base_prefixes:
 - HAOALT
 - HAO
 changed: true
-date: 2025-05-26 14:41:15.059733
+date: 2025-06-28 16:41:36.745457
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 10514
@@ -29,12 +29,12 @@ metrics:
     ObjectSomeValuesFrom: 5202
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.527
+    _dashboard: 0.578
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
     _reuse: 0.518
-    oboscore: 0.264
+    oboscore: 0.289
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
@@ -73,8 +73,7 @@ results:
   FP07 Relations:
     status: PASS
   FP08 Documented:
-    comment: Homepage URL (http://hymao.org) does not resolve
-    status: ERROR
+    status: PASS
   FP09 Plurality of Users:
     comment: Missing usages
     status: ERROR
@@ -84,8 +83,8 @@ results:
     comment: 110 duplicate labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
-    comment: last version (2023-06-01) is over one year(s) old
-    status: INFO
+    comment: last version (2023-06-01) is over two year(s) old
+    status: WARN
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
@@ -98,10 +97,10 @@ results:
     status: ERROR
 sha256_hash: 14539ee4e4b5848c20bdb4d71eacface0a139213bdc3ebf358671ead62cf2d29
 summary:
-  comment: 6 errors
+  comment: 5 errors
   status: ERROR
   summary_count:
-    ERROR: 6
-    INFO: 1
-    WARN: 0
+    ERROR: 5
+    INFO: 0
+    WARN: 1
 version: http://purl.obolibrary.org/obo/hao/2023-06-01/hao.owl

@@ -13,7 +13,7 @@
       <div class="report_summary"><table class="table">
       <tr><th><b>Level</b></th><th><b>Number of errors</b></th></tr>
       
-      <tr><td>ERROR</td><td>82</td></tr>
+      <tr><td>ERROR</td><td>86</td></tr>
       
       <tr><td>WARN</td><td>80</td></tr>
       
@@ -34,9 +34,13 @@
       
       <tr><td>duplicate_exact_synonym</td><td>16</td></tr>
       
+      <tr><td>lowercase_definition</td><td>10</td></tr>
+      
       <tr><td>missing_definition</td><td>10</td></tr>
       
-      <tr><td>lowercase_definition</td><td>10</td></tr>
+      <tr><td>multiple_definitions</td><td>2</td></tr>
+      
+      <tr><td>multiple_labels</td><td>2</td></tr>
       
       <tr><td>equivalent_class_axiom_no_genus</td><td>2</td></tr>
       
@@ -717,8 +721,40 @@
             <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
             <td>as low as reasonably achievable</td>
           </tr>
-        <tr class=table-warning>
+        <tr class=table-danger>
             <td>82</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/multiple_definitions" target="_blank" rel="noopener noreferrer">multiple_definitions</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_00010021" target="_blank" rel="noopener noreferrer">RBO:00010021</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
+            <td>Radon dosimeters are radiation dosimeters used to measure the presence and concentration of radon gas (Rn-222), a radioactive noble gas that can accumulate in buildings and pose health risks. Different types of radon detectors use various detection methods, based on the radioactive decay products of radon.</td>
+          </tr>
+        <tr class=table-danger>
+            <td>83</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/multiple_definitions" target="_blank" rel="noopener noreferrer">multiple_definitions</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_00010021" target="_blank" rel="noopener noreferrer">RBO:00010021</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
+            <td>The atomic mass (ma or m) is the mass of an atom.  The protons and neutrons of the nucleus account for nearly all of the total mass of atoms, with the electrons and nuclear binding energy making minor contributions.  It is measured in Daltons (unit).</td>
+          </tr>
+        <tr class=table-danger>
+            <td>84</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/multiple_labels" target="_blank" rel="noopener noreferrer">multiple_labels</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_00010021" target="_blank" rel="noopener noreferrer">RBO:00010021</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>mass number</td>
+          </tr>
+        <tr class=table-danger>
+            <td>85</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/multiple_labels" target="_blank" rel="noopener noreferrer">multiple_labels</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_00010021" target="_blank" rel="noopener noreferrer">RBO:00010021</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>radon dosimeter</td>
+          </tr>
+        <tr class=table-warning>
+            <td>86</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00000073" target="_blank" rel="noopener noreferrer">RBO:00000073</a></td>
@@ -726,7 +762,7 @@
             <td>Radiation response modifiers are agents that alter tumor or normal tissue response to radiation, such as radiation sensitizers and radiation protectors. </td>
           </tr>
         <tr class=table-warning>
-            <td>83</td>
+            <td>87</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005004" target="_blank" rel="noopener noreferrer">RBO:00005004</a></td>
@@ -734,7 +770,7 @@
             <td>An atomic nucleus with 26 protons and 30 neutrons </td>
           </tr>
         <tr class=table-warning>
-            <td>84</td>
+            <td>88</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005004" target="_blank" rel="noopener noreferrer">RBO:00005004</a></td>
@@ -742,7 +778,7 @@
             <td>Fe-56 ion;Fe-56 nucleus;Fe-56 </td>
           </tr>
         <tr class=table-warning>
-            <td>85</td>
+            <td>89</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005005" target="_blank" rel="noopener noreferrer">RBO:00005005</a></td>
@@ -750,7 +786,7 @@
             <td>An atomic nucleus with 14 protons and 14 neutrons </td>
           </tr>
         <tr class=table-warning>
-            <td>86</td>
+            <td>90</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005005" target="_blank" rel="noopener noreferrer">RBO:00005005</a></td>
@@ -758,7 +794,7 @@
             <td>Si-28 ion;Si-28 nucleus;Si-28 </td>
           </tr>
         <tr class=table-warning>
-            <td>87</td>
+            <td>91</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005006" target="_blank" rel="noopener noreferrer">RBO:00005006</a></td>
@@ -766,7 +802,7 @@
             <td>An atomic nucleus with 6 protons and 6 neutrons </td>
           </tr>
         <tr class=table-warning>
-            <td>88</td>
+            <td>92</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005006" target="_blank" rel="noopener noreferrer">RBO:00005006</a></td>
@@ -774,7 +810,7 @@
             <td>C-12 ion;C-12 nucleus;C-12 </td>
           </tr>
         <tr class=table-warning>
-            <td>89</td>
+            <td>93</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005007" target="_blank" rel="noopener noreferrer">RBO:00005007</a></td>
@@ -782,7 +818,7 @@
             <td>An atomic nucleus with 2 protons and 2 neutrons </td>
           </tr>
         <tr class=table-warning>
-            <td>90</td>
+            <td>94</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005007" target="_blank" rel="noopener noreferrer">RBO:00005007</a></td>
@@ -790,7 +826,7 @@
             <td>He-4 ion;He-4 nucleus;He-4 </td>
           </tr>
         <tr class=table-warning>
-            <td>91</td>
+            <td>95</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005008" target="_blank" rel="noopener noreferrer">RBO:00005008</a></td>
@@ -798,7 +834,7 @@
             <td>An atomic nucleus with 10 protons and 10 neutrons </td>
           </tr>
         <tr class=table-warning>
-            <td>92</td>
+            <td>96</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005008" target="_blank" rel="noopener noreferrer">RBO:00005008</a></td>
@@ -806,7 +842,7 @@
             <td>Ne-20 ion;Ne-20 nucleus;Ne-20 </td>
           </tr>
         <tr class=table-warning>
-            <td>93</td>
+            <td>97</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005048" target="_blank" rel="noopener noreferrer">RBO:00005048</a></td>
@@ -814,7 +850,7 @@
             <td>An atomic nucleus with 41 protons and 52 neutrons </td>
           </tr>
         <tr class=table-warning>
-            <td>94</td>
+            <td>98</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005048" target="_blank" rel="noopener noreferrer">RBO:00005048</a></td>
@@ -822,7 +858,7 @@
             <td>Nb-93 ion;Nb-93 nucleus;Nb-93 </td>
           </tr>
         <tr class=table-warning>
-            <td>95</td>
+            <td>99</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005049" target="_blank" rel="noopener noreferrer">RBO:00005049</a></td>
@@ -830,7 +866,7 @@
             <td>An atomic nucleus with 47 protons and 60 neutrons </td>
           </tr>
         <tr class=table-warning>
-            <td>96</td>
+            <td>100</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005049" target="_blank" rel="noopener noreferrer">RBO:00005049</a></td>
@@ -838,7 +874,7 @@
             <td>Ag-107 ion;Ag-107 nucleus;Ag-107 </td>
           </tr>
         <tr class=table-warning>
-            <td>97</td>
+            <td>101</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005050" target="_blank" rel="noopener noreferrer">RBO:00005050</a></td>
@@ -846,7 +882,7 @@
             <td>An atomic nucleus with 54 protons and 75 neutrons </td>
           </tr>
         <tr class=table-warning>
-            <td>98</td>
+            <td>102</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005050" target="_blank" rel="noopener noreferrer">RBO:00005050</a></td>
@@ -854,7 +890,7 @@
             <td>Xe-129 ion;Xe-129 nucleus;Xe-129 </td>
           </tr>
         <tr class=table-warning>
-            <td>99</td>
+            <td>103</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005051" target="_blank" rel="noopener noreferrer">RBO:00005051</a></td>
@@ -862,7 +898,7 @@
             <td>An atomic nucleus with 73 protons and 108 neutrons </td>
           </tr>
         <tr class=table-warning>
-            <td>100</td>
+            <td>104</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005051" target="_blank" rel="noopener noreferrer">RBO:00005051</a></td>
@@ -870,7 +906,7 @@
             <td>Ta-181 ion;Ta-181 nucleus;Ta-181 </td>
           </tr>
         <tr class=table-warning>
-            <td>101</td>
+            <td>105</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005052" target="_blank" rel="noopener noreferrer">RBO:00005052</a></td>
@@ -878,7 +914,7 @@
             <td>An atomic nucleus with 79 protons and 118 neutrons </td>
           </tr>
         <tr class=table-warning>
-            <td>102</td>
+            <td>106</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005052" target="_blank" rel="noopener noreferrer">RBO:00005052</a></td>
@@ -886,7 +922,7 @@
             <td>Au-197 ion;Au-197 nucleus;Au-197 </td>
           </tr>
         <tr class=table-warning>
-            <td>103</td>
+            <td>107</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005053" target="_blank" rel="noopener noreferrer">RBO:00005053</a></td>
@@ -894,7 +930,7 @@
             <td>An atomic nucleus with 7 protons and 7 neutrons </td>
           </tr>
         <tr class=table-warning>
-            <td>104</td>
+            <td>108</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005053" target="_blank" rel="noopener noreferrer">RBO:00005053</a></td>
@@ -902,7 +938,7 @@
             <td>N-14 ion;N-14 nucleus;N-14 </td>
           </tr>
         <tr class=table-warning>
-            <td>105</td>
+            <td>109</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005054" target="_blank" rel="noopener noreferrer">RBO:00005054</a></td>
@@ -910,7 +946,7 @@
             <td>An atomic nucleus with 8 protons and 8 neutrons </td>
           </tr>
         <tr class=table-warning>
-            <td>106</td>
+            <td>110</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005054" target="_blank" rel="noopener noreferrer">RBO:00005054</a></td>
@@ -918,7 +954,7 @@
             <td>O-16 ion;O-16 nucleus;O-16 </td>
           </tr>
         <tr class=table-warning>
-            <td>107</td>
+            <td>111</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005055" target="_blank" rel="noopener noreferrer">RBO:00005055</a></td>
@@ -926,7 +962,7 @@
             <td>An atomic nucleus with 18 protons and 22 neutrons </td>
           </tr>
         <tr class=table-warning>
-            <td>108</td>
+            <td>112</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005055" target="_blank" rel="noopener noreferrer">RBO:00005055</a></td>
@@ -934,7 +970,7 @@
             <td>Ar-40  ion;Ar-40  nucleus;Ar-40  </td>
           </tr>
         <tr class=table-warning>
-            <td>109</td>
+            <td>113</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005056" target="_blank" rel="noopener noreferrer">RBO:00005056</a></td>
@@ -942,7 +978,7 @@
             <td>An atomic nucleus with 22 protons and 26 neutrons </td>
           </tr>
         <tr class=table-warning>
-            <td>110</td>
+            <td>114</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005056" target="_blank" rel="noopener noreferrer">RBO:00005056</a></td>
@@ -950,7 +986,7 @@
             <td>Ti-48  ion;Ti-48  nucleus;Ti-48  </td>
           </tr>
         <tr class=table-warning>
-            <td>111</td>
+            <td>115</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005057" target="_blank" rel="noopener noreferrer">RBO:00005057</a></td>
@@ -958,7 +994,7 @@
             <td>An atomic nucleus with 36 protons and 48 neutrons </td>
           </tr>
         <tr class=table-warning>
-            <td>112</td>
+            <td>116</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005057" target="_blank" rel="noopener noreferrer">RBO:00005057</a></td>
@@ -966,7 +1002,7 @@
             <td>Kr-84 ion;Kr-84 nucleus;Kr-84 </td>
           </tr>
         <tr class=table-warning>
-            <td>113</td>
+            <td>117</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00015018" target="_blank" rel="noopener noreferrer">RBO:00015018</a></td>
@@ -974,7 +1010,7 @@
             <td> Mice exposed to external radiation from a Sr source.</td>
           </tr>
         <tr class=table-warning>
-            <td>114</td>
+            <td>118</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00015052" target="_blank" rel="noopener noreferrer">RBO:00015052</a></td>
@@ -982,135 +1018,135 @@
             <td>A senolytic is a type of drug or compound that selectively induces the death, removal or both of senescent cells�cells that have stopped dividing but often remain metabolically active, often secreting inflammatory and harmful molecules. These cells accumulate with age and contribute to aging-related diseases, chronic inflammation, and tissue dysfunction. </td>
           </tr>
         <tr class=table-warning>
-            <td>115</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/RBO_00010019" target="_blank" rel="noopener noreferrer">RBO:00010019</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/IAO_0000118" target="_blank" rel="noopener noreferrer">IAO:0000118</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-warning>
-            <td>116</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/RBO_00010019" target="_blank" rel="noopener noreferrer">RBO:00010019</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-warning>
-            <td>117</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/RBO_010019" target="_blank" rel="noopener noreferrer">RBO:010019</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/IAO_0000118" target="_blank" rel="noopener noreferrer">IAO:0000118</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-warning>
-            <td>118</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/RBO_010019" target="_blank" rel="noopener noreferrer">RBO:010019</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-warning>
             <td>119</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/RBO_00010013" target="_blank" rel="noopener noreferrer">RBO:00010013</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_00010019" target="_blank" rel="noopener noreferrer">RBO:00010019</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000118" target="_blank" rel="noopener noreferrer">IAO:0000118</a></td>
-            <td></td>
+            <td>RBE</td>
           </tr>
         <tr class=table-warning>
             <td>120</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/RBO_00010013" target="_blank" rel="noopener noreferrer">RBO:00010013</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_00010019" target="_blank" rel="noopener noreferrer">RBO:00010019</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td></td>
+            <td>RBE</td>
           </tr>
         <tr class=table-warning>
             <td>121</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/RBO_010013" target="_blank" rel="noopener noreferrer">RBO:010013</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_010019" target="_blank" rel="noopener noreferrer">RBO:010019</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000118" target="_blank" rel="noopener noreferrer">IAO:0000118</a></td>
-            <td></td>
+            <td>RBE</td>
           </tr>
         <tr class=table-warning>
             <td>122</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/RBO_010013" target="_blank" rel="noopener noreferrer">RBO:010013</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_010019" target="_blank" rel="noopener noreferrer">RBO:010019</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td></td>
+            <td>RBE</td>
           </tr>
         <tr class=table-warning>
             <td>123</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/RBO_00010006" target="_blank" rel="noopener noreferrer">RBO:00010006</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_00010013" target="_blank" rel="noopener noreferrer">RBO:00010013</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000118" target="_blank" rel="noopener noreferrer">IAO:0000118</a></td>
-            <td></td>
+            <td>LET</td>
           </tr>
         <tr class=table-warning>
             <td>124</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/RBO_00010006" target="_blank" rel="noopener noreferrer">RBO:00010006</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_00010013" target="_blank" rel="noopener noreferrer">RBO:00010013</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td></td>
+            <td>LET</td>
           </tr>
         <tr class=table-warning>
             <td>125</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/RBO_010006" target="_blank" rel="noopener noreferrer">RBO:010006</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_010013" target="_blank" rel="noopener noreferrer">RBO:010013</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000118" target="_blank" rel="noopener noreferrer">IAO:0000118</a></td>
-            <td></td>
+            <td>LET</td>
           </tr>
         <tr class=table-warning>
             <td>126</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/RBO_010006" target="_blank" rel="noopener noreferrer">RBO:010006</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_010013" target="_blank" rel="noopener noreferrer">RBO:010013</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td></td>
+            <td>LET</td>
           </tr>
         <tr class=table-warning>
             <td>127</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/RBO_00010000" target="_blank" rel="noopener noreferrer">RBO:00010000</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_00010006" target="_blank" rel="noopener noreferrer">RBO:00010006</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000118" target="_blank" rel="noopener noreferrer">IAO:0000118</a></td>
-            <td></td>
+            <td>delta electron</td>
           </tr>
         <tr class=table-warning>
             <td>128</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/RBO_00010000" target="_blank" rel="noopener noreferrer">RBO:00010000</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_00010006" target="_blank" rel="noopener noreferrer">RBO:00010006</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td></td>
+            <td>delta electron</td>
           </tr>
         <tr class=table-warning>
             <td>129</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/RBO_010000" target="_blank" rel="noopener noreferrer">RBO:010000</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_010006" target="_blank" rel="noopener noreferrer">RBO:010006</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000118" target="_blank" rel="noopener noreferrer">IAO:0000118</a></td>
-            <td></td>
+            <td>delta electron</td>
           </tr>
         <tr class=table-warning>
             <td>130</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/RBO_010000" target="_blank" rel="noopener noreferrer">RBO:010000</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_010006" target="_blank" rel="noopener noreferrer">RBO:010006</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td></td>
+            <td>delta electron</td>
           </tr>
         <tr class=table-warning>
             <td>131</td>
+            <td>WARN</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_00010000" target="_blank" rel="noopener noreferrer">RBO:00010000</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/IAO_0000118" target="_blank" rel="noopener noreferrer">IAO:0000118</a></td>
+            <td>ALARA</td>
+          </tr>
+        <tr class=table-warning>
+            <td>132</td>
+            <td>WARN</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_00010000" target="_blank" rel="noopener noreferrer">RBO:00010000</a></td>
+            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
+            <td>ALARA</td>
+          </tr>
+        <tr class=table-warning>
+            <td>133</td>
+            <td>WARN</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_010000" target="_blank" rel="noopener noreferrer">RBO:010000</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/IAO_0000118" target="_blank" rel="noopener noreferrer">IAO:0000118</a></td>
+            <td>ALARA</td>
+          </tr>
+        <tr class=table-warning>
+            <td>134</td>
+            <td>WARN</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_010000" target="_blank" rel="noopener noreferrer">RBO:010000</a></td>
+            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
+            <td>ALARA</td>
+          </tr>
+        <tr class=table-warning>
+            <td>135</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005003" target="_blank" rel="noopener noreferrer">RBO:00005003</a></td>
@@ -1118,135 +1154,135 @@
             <td>charged particle</td>
           </tr>
         <tr class=table-warning>
-            <td>132</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/RBO_00000116" target="_blank" rel="noopener noreferrer">RBO:00000116</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/IAO_0000118" target="_blank" rel="noopener noreferrer">IAO:0000118</a></td>
-            <td>ionising radiation</td>
-          </tr>
-        <tr class=table-warning>
-            <td>133</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/RBO_00000116" target="_blank" rel="noopener noreferrer">RBO:00000116</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>ionising radiation</td>
-          </tr>
-        <tr class=table-warning>
-            <td>134</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/RBO_00010000" target="_blank" rel="noopener noreferrer">RBO:00010000</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/IAO_0000118" target="_blank" rel="noopener noreferrer">IAO:0000118</a></td>
-            <td>ALARA</td>
-          </tr>
-        <tr class=table-warning>
-            <td>135</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/RBO_00010000" target="_blank" rel="noopener noreferrer">RBO:00010000</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>ALARA</td>
-          </tr>
-        <tr class=table-warning>
             <td>136</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/RBO_00010006" target="_blank" rel="noopener noreferrer">RBO:00010006</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_00000116" target="_blank" rel="noopener noreferrer">RBO:00000116</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000118" target="_blank" rel="noopener noreferrer">IAO:0000118</a></td>
-            <td>delta electron</td>
+            <td>ionising radiation</td>
           </tr>
         <tr class=table-warning>
             <td>137</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/RBO_00010006" target="_blank" rel="noopener noreferrer">RBO:00010006</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_00000116" target="_blank" rel="noopener noreferrer">RBO:00000116</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>delta electron</td>
+            <td>ionising radiation</td>
           </tr>
         <tr class=table-warning>
             <td>138</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/RBO_00010013" target="_blank" rel="noopener noreferrer">RBO:00010013</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_00010000" target="_blank" rel="noopener noreferrer">RBO:00010000</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000118" target="_blank" rel="noopener noreferrer">IAO:0000118</a></td>
-            <td>LET</td>
+            <td>ALARA</td>
           </tr>
         <tr class=table-warning>
             <td>139</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/RBO_00010013" target="_blank" rel="noopener noreferrer">RBO:00010013</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_00010000" target="_blank" rel="noopener noreferrer">RBO:00010000</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>LET</td>
+            <td>ALARA</td>
           </tr>
         <tr class=table-warning>
             <td>140</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/RBO_00010019" target="_blank" rel="noopener noreferrer">RBO:00010019</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_00010006" target="_blank" rel="noopener noreferrer">RBO:00010006</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000118" target="_blank" rel="noopener noreferrer">IAO:0000118</a></td>
-            <td>RBE</td>
+            <td>delta electron</td>
           </tr>
         <tr class=table-warning>
             <td>141</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/RBO_00010019" target="_blank" rel="noopener noreferrer">RBO:00010019</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_00010006" target="_blank" rel="noopener noreferrer">RBO:00010006</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>RBE</td>
+            <td>delta electron</td>
           </tr>
         <tr class=table-warning>
             <td>142</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/RBO_010000" target="_blank" rel="noopener noreferrer">RBO:010000</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_00010013" target="_blank" rel="noopener noreferrer">RBO:00010013</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000118" target="_blank" rel="noopener noreferrer">IAO:0000118</a></td>
-            <td>ALARA</td>
+            <td>LET</td>
           </tr>
         <tr class=table-warning>
             <td>143</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/RBO_010000" target="_blank" rel="noopener noreferrer">RBO:010000</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_00010013" target="_blank" rel="noopener noreferrer">RBO:00010013</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>ALARA</td>
+            <td>LET</td>
           </tr>
         <tr class=table-warning>
             <td>144</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/RBO_010006" target="_blank" rel="noopener noreferrer">RBO:010006</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_00010019" target="_blank" rel="noopener noreferrer">RBO:00010019</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000118" target="_blank" rel="noopener noreferrer">IAO:0000118</a></td>
-            <td>delta electron</td>
+            <td>RBE</td>
           </tr>
         <tr class=table-warning>
             <td>145</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/RBO_010006" target="_blank" rel="noopener noreferrer">RBO:010006</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_00010019" target="_blank" rel="noopener noreferrer">RBO:00010019</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>delta electron</td>
+            <td>RBE</td>
           </tr>
         <tr class=table-warning>
             <td>146</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/RBO_010013" target="_blank" rel="noopener noreferrer">RBO:010013</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_010000" target="_blank" rel="noopener noreferrer">RBO:010000</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000118" target="_blank" rel="noopener noreferrer">IAO:0000118</a></td>
-            <td>LET</td>
+            <td>ALARA</td>
           </tr>
         <tr class=table-warning>
             <td>147</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_010000" target="_blank" rel="noopener noreferrer">RBO:010000</a></td>
+            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
+            <td>ALARA</td>
+          </tr>
+        <tr class=table-warning>
+            <td>148</td>
+            <td>WARN</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_010006" target="_blank" rel="noopener noreferrer">RBO:010006</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/IAO_0000118" target="_blank" rel="noopener noreferrer">IAO:0000118</a></td>
+            <td>delta electron</td>
+          </tr>
+        <tr class=table-warning>
+            <td>149</td>
+            <td>WARN</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_010006" target="_blank" rel="noopener noreferrer">RBO:010006</a></td>
+            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
+            <td>delta electron</td>
+          </tr>
+        <tr class=table-warning>
+            <td>150</td>
+            <td>WARN</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/RBO_010013" target="_blank" rel="noopener noreferrer">RBO:010013</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/IAO_0000118" target="_blank" rel="noopener noreferrer">IAO:0000118</a></td>
+            <td>LET</td>
+          </tr>
+        <tr class=table-warning>
+            <td>151</td>
+            <td>WARN</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_010013" target="_blank" rel="noopener noreferrer">RBO:010013</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
             <td>LET</td>
           </tr>
         <tr class=table-warning>
-            <td>148</td>
+            <td>152</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_010019" target="_blank" rel="noopener noreferrer">RBO:010019</a></td>
@@ -1254,7 +1290,7 @@
             <td>RBE</td>
           </tr>
         <tr class=table-warning>
-            <td>149</td>
+            <td>153</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_010019" target="_blank" rel="noopener noreferrer">RBO:010019</a></td>
@@ -1262,7 +1298,7 @@
             <td>RBE</td>
           </tr>
         <tr class=table-warning>
-            <td>150</td>
+            <td>154</td>
             <td>WARN</td>
             <td><a href="https://robot.obolibrary.org/report_queries/equivalent_class_axiom_no_genus" target="_blank" rel="noopener noreferrer">equivalent_class_axiom_no_genus</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00015009" target="_blank" rel="noopener noreferrer">RBO:00015009</a></td>
@@ -1270,7 +1306,7 @@
             <td><a href="http://purl.obolibrary.org/obo/RBO_00015011" target="_blank" rel="noopener noreferrer">RBO:00015011</a></td>
           </tr>
         <tr class=table-warning>
-            <td>151</td>
+            <td>155</td>
             <td>WARN</td>
             <td><a href="https://robot.obolibrary.org/report_queries/equivalent_class_axiom_no_genus" target="_blank" rel="noopener noreferrer">equivalent_class_axiom_no_genus</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00015022" target="_blank" rel="noopener noreferrer">RBO:00015022</a></td>
@@ -1278,7 +1314,7 @@
             <td><a href="http://purl.obolibrary.org/obo/RBO_00015009" target="_blank" rel="noopener noreferrer">RBO:00015009</a></td>
           </tr>
         <tr class=table-warning>
-            <td>152</td>
+            <td>156</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00000077" target="_blank" rel="noopener noreferrer">RBO:00000077</a></td>
@@ -1286,7 +1322,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>153</td>
+            <td>157</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00000078" target="_blank" rel="noopener noreferrer">RBO:00000078</a></td>
@@ -1294,7 +1330,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>154</td>
+            <td>158</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00000079" target="_blank" rel="noopener noreferrer">RBO:00000079</a></td>
@@ -1302,7 +1338,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>155</td>
+            <td>159</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00000080" target="_blank" rel="noopener noreferrer">RBO:00000080</a></td>
@@ -1310,7 +1346,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>156</td>
+            <td>160</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00000081" target="_blank" rel="noopener noreferrer">RBO:00000081</a></td>
@@ -1318,7 +1354,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>157</td>
+            <td>161</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00000118" target="_blank" rel="noopener noreferrer">RBO:00000118</a></td>
@@ -1326,7 +1362,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>158</td>
+            <td>162</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00000119" target="_blank" rel="noopener noreferrer">RBO:00000119</a></td>
@@ -1334,7 +1370,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>159</td>
+            <td>163</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00000123" target="_blank" rel="noopener noreferrer">RBO:00000123</a></td>
@@ -1342,7 +1378,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>160</td>
+            <td>164</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00000124" target="_blank" rel="noopener noreferrer">RBO:00000124</a></td>
@@ -1350,7 +1386,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>161</td>
+            <td>165</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00015022" target="_blank" rel="noopener noreferrer">RBO:00015022</a></td>
@@ -1358,7 +1394,7 @@
             <td></td>
           </tr>
         <tr class=table-info>
-            <td>162</td>
+            <td>166</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00000044" target="_blank" rel="noopener noreferrer">RBO:00000044</a></td>
@@ -1366,7 +1402,7 @@
             <td>a self-contained unit of a spacecraft</td>
           </tr>
         <tr class=table-info>
-            <td>163</td>
+            <td>167</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00000120" target="_blank" rel="noopener noreferrer">RBO:00000120</a></td>
@@ -1374,7 +1410,7 @@
             <td>electromagnetic radiation with photon energies greater than approximately 100 keV</td>
           </tr>
         <tr class=table-info>
-            <td>164</td>
+            <td>168</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005073" target="_blank" rel="noopener noreferrer">RBO:00005073</a></td>
@@ -1382,7 +1418,7 @@
             <td>http://www.theratronics.ca/PDFs/GC40_BTMB_8008GC40E_2_v112013_webSECURE.pdf</td>
           </tr>
         <tr class=table-info>
-            <td>165</td>
+            <td>169</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005075" target="_blank" rel="noopener noreferrer">RBO:00005075</a></td>
@@ -1390,7 +1426,7 @@
             <td>https://www.crr.columbia.edu/services/ion-beam-and-neutron-core-facility</td>
           </tr>
         <tr class=table-info>
-            <td>166</td>
+            <td>170</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005076" target="_blank" rel="noopener noreferrer">RBO:00005076</a></td>
@@ -1398,7 +1434,7 @@
             <td>https://www.nasa.gov/feature/ames/nasa-small-business-partnership-prepares-drone-for-30-day-science-flights</td>
           </tr>
         <tr class=table-info>
-            <td>167</td>
+            <td>171</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005077" target="_blank" rel="noopener noreferrer">RBO:00005077</a></td>
@@ -1406,7 +1442,7 @@
             <td>https://www.nasa.gov/centers/armstrong/aircraft/ER-2/index.html</td>
           </tr>
         <tr class=table-info>
-            <td>168</td>
+            <td>172</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005078" target="_blank" rel="noopener noreferrer">RBO:00005078</a></td>
@@ -1414,7 +1450,7 @@
             <td>https://airbornescience.nasa.gov/aircraft/WB-57_-_JSC</td>
           </tr>
         <tr class=table-info>
-            <td>169</td>
+            <td>173</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005079" target="_blank" rel="noopener noreferrer">RBO:00005079</a></td>
@@ -1422,7 +1458,7 @@
             <td>doi: 10.2349/biij.2.1.e1</td>
           </tr>
         <tr class=table-info>
-            <td>170</td>
+            <td>174</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00005080" target="_blank" rel="noopener noreferrer">RBO:00005080</a></td>
@@ -1430,7 +1466,7 @@
             <td>https://precisionxray.com/x-rad/xrad-320/</td>
           </tr>
         <tr class=table-info>
-            <td>171</td>
+            <td>175</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/RBO_00015037" target="_blank" rel="noopener noreferrer">RBO:00015037</a></td>
