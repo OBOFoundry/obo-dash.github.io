@@ -13,9 +13,9 @@
       <div class="report_summary"><table class="table">
       <tr><th><b>Level</b></th><th><b>Number of errors</b></th></tr>
       
-      <tr><td>WARN</td><td>87</td></tr>
+      <tr><td>WARN</td><td>88</td></tr>
       
-      <tr><td>INFO</td><td>24</td></tr>
+      <tr><td>INFO</td><td>6</td></tr>
       
       </table></div>
       <h3>Error breakdown</h3>
@@ -23,8 +23,6 @@
       <tr><th><b>Rule</b></th><th><b>Number of errors</b></th></tr>
       
       <tr><td>missing_definition</td><td>76</td></tr>
-      
-      <tr><td>missing_superclass</td><td>18</td></tr>
       
       <tr><td>invalid_xref</td><td>6</td></tr>
       
@@ -35,6 +33,8 @@
       <tr><td>duplicate_label_synonym</td><td>2</td></tr>
       
       <tr><td>equivalent_class_axiom_no_genus</td><td>1</td></tr>
+      
+      <tr><td>missing_subset_declaration</td><td>1</td></tr>
       
       </table></div>
       <p style="text-align:center; margin-top:-15px;">
@@ -751,8 +751,16 @@
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
-        <tr class=table-info>
+        <tr class=table-warning>
             <td>87</td>
+            <td>WARN</td>
+            <td><a href="https://robot.obolibrary.org/report_queries/missing_subset_declaration" target="_blank" rel="noopener noreferrer">missing_subset_declaration</a></td>
+            <td>obo:geno#agr_zyg</td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" target="_blank" rel="noopener noreferrer">rdfs:subPropertyOf</a></td>
+            <td></td>
+          </tr>
+        <tr class=table-info>
+            <td>88</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/GENO_0000111" target="_blank" rel="noopener noreferrer">GENO:0000111</a></td>
@@ -760,7 +768,7 @@
             <td>a population of homo sapiens grouped together in virtue of their sharing some commonality (either an inherent attribute or an externally assigned role)</td>
           </tr>
         <tr class=table-info>
-            <td>88</td>
+            <td>89</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/GENO_0000513" target="_blank" rel="noopener noreferrer">GENO:0000513</a></td>
@@ -768,7 +776,7 @@
             <td>a sequence attribute of a chromosome or chromosomal region that has been abnormally duplicated or lost, as the result of a non-disjunction event or unbalanced translocation.</td>
           </tr>
         <tr class=table-info>
-            <td>89</td>
+            <td>90</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/GENO_0000602" target="_blank" rel="noopener noreferrer">GENO:0000602</a></td>
@@ -776,7 +784,7 @@
             <td>an allelic state where a single allele exists at a particular location in the organellar genome (mitochondrial or plastid) of a cell/organism.</td>
           </tr>
         <tr class=table-info>
-            <td>90</td>
+            <td>91</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/GENO_0000603" target="_blank" rel="noopener noreferrer">GENO:0000603</a></td>
@@ -784,7 +792,7 @@
             <td>an allelic state where more than one type of allele exists at a particular location in the organellar genome (mitochondrial or plastid) of a cell/organism.</td>
           </tr>
         <tr class=table-info>
-            <td>91</td>
+            <td>92</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/GENO_0000608" target="_blank" rel="noopener noreferrer">GENO:0000608</a></td>
@@ -792,156 +800,12 @@
             <td>a relation to link a single locus complement to its zygosity.</td>
           </tr>
         <tr class=table-info>
-            <td>92</td>
+            <td>93</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/GENO_0000634" target="_blank" rel="noopener noreferrer">GENO:0000634</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>relation between an molecular agent and its molecular target</td>
-          </tr>
-        <tr class=table-info>
-            <td>93</td>
-            <td>INFO</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/GENO_0000009" target="_blank" rel="noopener noreferrer">GENO:0000009</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>94</td>
-            <td>INFO</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/GENO_0000017" target="_blank" rel="noopener noreferrer">GENO:0000017</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>95</td>
-            <td>INFO</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/GENO_0000030" target="_blank" rel="noopener noreferrer">GENO:0000030</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>96</td>
-            <td>INFO</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/GENO_0000036" target="_blank" rel="noopener noreferrer">GENO:0000036</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>97</td>
-            <td>INFO</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/GENO_0000047" target="_blank" rel="noopener noreferrer">GENO:0000047</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>98</td>
-            <td>INFO</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/GENO_0000054" target="_blank" rel="noopener noreferrer">GENO:0000054</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>99</td>
-            <td>INFO</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/GENO_0000057" target="_blank" rel="noopener noreferrer">GENO:0000057</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>100</td>
-            <td>INFO</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/GENO_0000460" target="_blank" rel="noopener noreferrer">GENO:0000460</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>101</td>
-            <td>INFO</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/GENO_0000494" target="_blank" rel="noopener noreferrer">GENO:0000494</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>102</td>
-            <td>INFO</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/GENO_0000512" target="_blank" rel="noopener noreferrer">GENO:0000512</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>103</td>
-            <td>INFO</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/GENO_0000666" target="_blank" rel="noopener noreferrer">GENO:0000666</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>104</td>
-            <td>INFO</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/GENO_0000720" target="_blank" rel="noopener noreferrer">GENO:0000720</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>105</td>
-            <td>INFO</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/GENO_0000721" target="_blank" rel="noopener noreferrer">GENO:0000721</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>106</td>
-            <td>INFO</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/GENO_0000722" target="_blank" rel="noopener noreferrer">GENO:0000722</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>107</td>
-            <td>INFO</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/GENO_0000777" target="_blank" rel="noopener noreferrer">GENO:0000777</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>108</td>
-            <td>INFO</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/GENO_0000779" target="_blank" rel="noopener noreferrer">GENO:0000779</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>109</td>
-            <td>INFO</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/GENO_0000823" target="_blank" rel="noopener noreferrer">GENO:0000823</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-info>
-            <td>110</td>
-            <td>INFO</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/GENO_0000885" target="_blank" rel="noopener noreferrer">GENO:0000885</a></td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
-            <td></td>
           </tr>
         </table>
     </div>

@@ -13,9 +13,11 @@
       <div class="report_summary"><table class="table">
       <tr><th><b>Level</b></th><th><b>Number of errors</b></th></tr>
       
-      <tr><td>INFO</td><td>1653</td></tr>
+      <tr><td>WARN</td><td>2146</td></tr>
       
-      <tr><td>WARN</td><td>927</td></tr>
+      <tr><td>INFO</td><td>1655</td></tr>
+      
+      <tr><td>ERROR</td><td>33</td></tr>
       
       </table></div>
       <h3>Error breakdown</h3>
@@ -24,11 +26,19 @@
       
       <tr><td>lowercase_definition</td><td>1653</td></tr>
       
+      <tr><td>missing_definition</td><td>1227</td></tr>
+      
       <tr><td>duplicate_label_synonym</td><td>910</td></tr>
+      
+      <tr><td>misused_obsolete_label</td><td>29</td></tr>
       
       <tr><td>duplicate_exact_synonym</td><td>8</td></tr>
       
-      <tr><td>missing_definition</td><td>8</td></tr>
+      <tr><td>duplicate_label</td><td>2</td></tr>
+      
+      <tr><td>missing_label</td><td>2</td></tr>
+      
+      <tr><td>missing_superclass</td><td>2</td></tr>
       
       <tr><td>missing_subset_declaration</td><td>1</td></tr>
       
@@ -51,8 +61,272 @@
           
             <th><b>Value</b></th>
           
-        </tr><tr class=table-warning>
+        </tr><tr class=table-danger>
             <td>0</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label" target="_blank" rel="noopener noreferrer">duplicate_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0076905" target="_blank" rel="noopener noreferrer">UPHENO:0076905</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>decreased inflammatory response</td>
+          </tr>
+        <tr class=table-danger>
+            <td>1</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label" target="_blank" rel="noopener noreferrer">duplicate_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/UPHENO_7000646" target="_blank" rel="noopener noreferrer">UPHENO:7000646</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>decreased inflammatory response</td>
+          </tr>
+        <tr class=table-danger>
+            <td>2</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/missing_label" target="_blank" rel="noopener noreferrer">missing_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0016048" target="_blank" rel="noopener noreferrer">UPHENO:0016048</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td></td>
+          </tr>
+        <tr class=table-danger>
+            <td>3</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/missing_label" target="_blank" rel="noopener noreferrer">missing_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0056750" target="_blank" rel="noopener noreferrer">UPHENO:0056750</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td></td>
+          </tr>
+        <tr class=table-danger>
+            <td>4</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/misused_obsolete_label" target="_blank" rel="noopener noreferrer">misused_obsolete_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0006900" target="_blank" rel="noopener noreferrer">UPHENO:0006900</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>obsolete mitochondrial respirasome phenotype</td>
+          </tr>
+        <tr class=table-danger>
+            <td>5</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/misused_obsolete_label" target="_blank" rel="noopener noreferrer">misused_obsolete_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0049627" target="_blank" rel="noopener noreferrer">UPHENO:0049627</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>obsolete organic hydroxy compound metabolic process phenotype</td>
+          </tr>
+        <tr class=table-danger>
+            <td>6</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/misused_obsolete_label" target="_blank" rel="noopener noreferrer">misused_obsolete_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0049779" target="_blank" rel="noopener noreferrer">UPHENO:0049779</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>obsolete organonitrogen compound metabolic process phenotype</td>
+          </tr>
+        <tr class=table-danger>
+            <td>7</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/misused_obsolete_label" target="_blank" rel="noopener noreferrer">misused_obsolete_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0049785" target="_blank" rel="noopener noreferrer">UPHENO:0049785</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>obsolete organonitrogen compound biosynthetic process phenotype</td>
+          </tr>
+        <tr class=table-danger>
+            <td>8</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/misused_obsolete_label" target="_blank" rel="noopener noreferrer">misused_obsolete_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0049895" target="_blank" rel="noopener noreferrer">UPHENO:0049895</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>obsolete response to organonitrogen compound phenotype</td>
+          </tr>
+        <tr class=table-danger>
+            <td>9</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/misused_obsolete_label" target="_blank" rel="noopener noreferrer">misused_obsolete_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0050025" target="_blank" rel="noopener noreferrer">UPHENO:0050025</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>obsolete regulation of cellular metabolic process phenotype</td>
+          </tr>
+        <tr class=table-danger>
+            <td>10</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/misused_obsolete_label" target="_blank" rel="noopener noreferrer">misused_obsolete_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0050081" target="_blank" rel="noopener noreferrer">UPHENO:0050081</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>obsolete response to organic cyclic compound phenotype</td>
+          </tr>
+        <tr class=table-danger>
+            <td>11</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/misused_obsolete_label" target="_blank" rel="noopener noreferrer">misused_obsolete_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0050091" target="_blank" rel="noopener noreferrer">UPHENO:0050091</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>obsolete cellular catabolic process phenotype</td>
+          </tr>
+        <tr class=table-danger>
+            <td>12</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/misused_obsolete_label" target="_blank" rel="noopener noreferrer">misused_obsolete_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0050099" target="_blank" rel="noopener noreferrer">UPHENO:0050099</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>obsolete cellular biosynthetic process phenotype</td>
+          </tr>
+        <tr class=table-danger>
+            <td>13</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/misused_obsolete_label" target="_blank" rel="noopener noreferrer">misused_obsolete_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0050113" target="_blank" rel="noopener noreferrer">UPHENO:0050113</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>obsolete cellular metabolic process phenotype</td>
+          </tr>
+        <tr class=table-danger>
+            <td>14</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/misused_obsolete_label" target="_blank" rel="noopener noreferrer">misused_obsolete_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0050238" target="_blank" rel="noopener noreferrer">UPHENO:0050238</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>obsolete organic hydroxy compound biosynthetic process phenotype</td>
+          </tr>
+        <tr class=table-danger>
+            <td>15</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/misused_obsolete_label" target="_blank" rel="noopener noreferrer">misused_obsolete_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0050655" target="_blank" rel="noopener noreferrer">UPHENO:0050655</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>obsolete mucopolysaccharide metabolic process phenotype</td>
+          </tr>
+        <tr class=table-danger>
+            <td>16</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/misused_obsolete_label" target="_blank" rel="noopener noreferrer">misused_obsolete_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0050784" target="_blank" rel="noopener noreferrer">UPHENO:0050784</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>obsolete regulation of cellular biosynthetic process phenotype</td>
+          </tr>
+        <tr class=table-danger>
+            <td>17</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/misused_obsolete_label" target="_blank" rel="noopener noreferrer">misused_obsolete_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0050832" target="_blank" rel="noopener noreferrer">UPHENO:0050832</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>obsolete cellular lipid metabolic process phenotype</td>
+          </tr>
+        <tr class=table-danger>
+            <td>18</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/misused_obsolete_label" target="_blank" rel="noopener noreferrer">misused_obsolete_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0051227" target="_blank" rel="noopener noreferrer">UPHENO:0051227</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>obsolete chondroitin sulfate proteoglycan biosynthetic process, chain elongation phenotype</td>
+          </tr>
+        <tr class=table-danger>
+            <td>19</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/misused_obsolete_label" target="_blank" rel="noopener noreferrer">misused_obsolete_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0051237" target="_blank" rel="noopener noreferrer">UPHENO:0051237</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>obsolete regulation of telomerase activity phenotype</td>
+          </tr>
+        <tr class=table-danger>
+            <td>20</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/misused_obsolete_label" target="_blank" rel="noopener noreferrer">misused_obsolete_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0051543" target="_blank" rel="noopener noreferrer">UPHENO:0051543</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>obsolete chondroitin sulfate metabolic process phenotype</td>
+          </tr>
+        <tr class=table-danger>
+            <td>21</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/misused_obsolete_label" target="_blank" rel="noopener noreferrer">misused_obsolete_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0051545" target="_blank" rel="noopener noreferrer">UPHENO:0051545</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>obsolete chondroitin sulfate biosynthetic process phenotype</td>
+          </tr>
+        <tr class=table-danger>
+            <td>22</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/misused_obsolete_label" target="_blank" rel="noopener noreferrer">misused_obsolete_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0059810" target="_blank" rel="noopener noreferrer">UPHENO:0059810</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>obsolete organonitrogen compound biosynthetic process in blood phenotype</td>
+          </tr>
+        <tr class=table-danger>
+            <td>23</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/misused_obsolete_label" target="_blank" rel="noopener noreferrer">misused_obsolete_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0059813" target="_blank" rel="noopener noreferrer">UPHENO:0059813</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>obsolete organonitrogen compound metabolic process in blood phenotype</td>
+          </tr>
+        <tr class=table-danger>
+            <td>24</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/misused_obsolete_label" target="_blank" rel="noopener noreferrer">misused_obsolete_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0059822" target="_blank" rel="noopener noreferrer">UPHENO:0059822</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>obsolete cellular biosynthetic process in blood phenotype</td>
+          </tr>
+        <tr class=table-danger>
+            <td>25</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/misused_obsolete_label" target="_blank" rel="noopener noreferrer">misused_obsolete_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0059851" target="_blank" rel="noopener noreferrer">UPHENO:0059851</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>obsolete cellular metabolic process in blood phenotype</td>
+          </tr>
+        <tr class=table-danger>
+            <td>26</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/misused_obsolete_label" target="_blank" rel="noopener noreferrer">misused_obsolete_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0080026" target="_blank" rel="noopener noreferrer">UPHENO:0080026</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>obsolete RNA polymerase II activity phenotype</td>
+          </tr>
+        <tr class=table-danger>
+            <td>27</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/misused_obsolete_label" target="_blank" rel="noopener noreferrer">misused_obsolete_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0083115" target="_blank" rel="noopener noreferrer">UPHENO:0083115</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>obsolete actin phosphorylation phenotype</td>
+          </tr>
+        <tr class=table-danger>
+            <td>28</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/misused_obsolete_label" target="_blank" rel="noopener noreferrer">misused_obsolete_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0083211" target="_blank" rel="noopener noreferrer">UPHENO:0083211</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>obsolete negative regulation of chemorepellent activity phenotype</td>
+          </tr>
+        <tr class=table-danger>
+            <td>29</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/misused_obsolete_label" target="_blank" rel="noopener noreferrer">misused_obsolete_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0083212" target="_blank" rel="noopener noreferrer">UPHENO:0083212</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>obsolete positive regulation of chemorepellent activity phenotype</td>
+          </tr>
+        <tr class=table-danger>
+            <td>30</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/misused_obsolete_label" target="_blank" rel="noopener noreferrer">misused_obsolete_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0083214" target="_blank" rel="noopener noreferrer">UPHENO:0083214</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>obsolete regulation of chemorepellent activity phenotype</td>
+          </tr>
+        <tr class=table-danger>
+            <td>31</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/misused_obsolete_label" target="_blank" rel="noopener noreferrer">misused_obsolete_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0088235" target="_blank" rel="noopener noreferrer">UPHENO:0088235</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>obsolete 5-methylcytosine metabolic process phenotype</td>
+          </tr>
+        <tr class=table-danger>
+            <td>32</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/misused_obsolete_label" target="_blank" rel="noopener noreferrer">misused_obsolete_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0088240" target="_blank" rel="noopener noreferrer">UPHENO:0088240</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td>obsolete NADH metabolic process phenotype</td>
+          </tr>
+        <tr class=table-warning>
+            <td>33</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0080524" target="_blank" rel="noopener noreferrer">UPHENO:0080524</a></td>
@@ -60,7 +334,7 @@
             <td>bone rib</td>
           </tr>
         <tr class=table-warning>
-            <td>1</td>
+            <td>34</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0081403" target="_blank" rel="noopener noreferrer">UPHENO:0081403</a></td>
@@ -68,7 +342,7 @@
             <td>bone rib</td>
           </tr>
         <tr class=table-warning>
-            <td>2</td>
+            <td>35</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0080515" target="_blank" rel="noopener noreferrer">UPHENO:0080515</a></td>
@@ -76,7 +350,7 @@
             <td>bone humerus</td>
           </tr>
         <tr class=table-warning>
-            <td>3</td>
+            <td>36</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0081409" target="_blank" rel="noopener noreferrer">UPHENO:0081409</a></td>
@@ -84,7 +358,7 @@
             <td>bone humerus</td>
           </tr>
         <tr class=table-warning>
-            <td>4</td>
+            <td>37</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0080477" target="_blank" rel="noopener noreferrer">UPHENO:0080477</a></td>
@@ -92,7 +366,7 @@
             <td>bone epiphysis of first metatarsal bone</td>
           </tr>
         <tr class=table-warning>
-            <td>5</td>
+            <td>38</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0081408" target="_blank" rel="noopener noreferrer">UPHENO:0081408</a></td>
@@ -100,7 +374,7 @@
             <td>bone epiphysis of first metatarsal bone</td>
           </tr>
         <tr class=table-warning>
-            <td>6</td>
+            <td>39</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0080438" target="_blank" rel="noopener noreferrer">UPHENO:0080438</a></td>
@@ -108,7 +382,7 @@
             <td>bone anatomical entity</td>
           </tr>
         <tr class=table-warning>
-            <td>7</td>
+            <td>40</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0081401" target="_blank" rel="noopener noreferrer">UPHENO:0081401</a></td>
@@ -116,7 +390,7 @@
             <td>bone anatomical entity</td>
           </tr>
         <tr class=table-warning>
-            <td>8</td>
+            <td>41</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0067991" target="_blank" rel="noopener noreferrer">UPHENO:0067991</a></td>
@@ -124,7 +398,7 @@
             <td>increased level of hydroxyproline in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>9</td>
+            <td>42</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0067992" target="_blank" rel="noopener noreferrer">UPHENO:0067992</a></td>
@@ -132,7 +406,7 @@
             <td>increased level of leucine in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>10</td>
+            <td>43</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0067993" target="_blank" rel="noopener noreferrer">UPHENO:0067993</a></td>
@@ -140,7 +414,7 @@
             <td>increased level of iron atom in intestine</td>
           </tr>
         <tr class=table-warning>
-            <td>11</td>
+            <td>44</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0067994" target="_blank" rel="noopener noreferrer">UPHENO:0067994</a></td>
@@ -148,7 +422,7 @@
             <td>increased level of glycogen in liver</td>
           </tr>
         <tr class=table-warning>
-            <td>12</td>
+            <td>45</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0067995" target="_blank" rel="noopener noreferrer">UPHENO:0067995</a></td>
@@ -156,7 +430,7 @@
             <td>increased level of glutamine in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>13</td>
+            <td>46</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0067996" target="_blank" rel="noopener noreferrer">UPHENO:0067996</a></td>
@@ -164,7 +438,7 @@
             <td>increased level of creatine in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>14</td>
+            <td>47</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0067997" target="_blank" rel="noopener noreferrer">UPHENO:0067997</a></td>
@@ -172,7 +446,7 @@
             <td>increased level of chemical entity in muscle organ</td>
           </tr>
         <tr class=table-warning>
-            <td>15</td>
+            <td>48</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0067998" target="_blank" rel="noopener noreferrer">UPHENO:0067998</a></td>
@@ -180,7 +454,7 @@
             <td>increased level of chemical entity in feces</td>
           </tr>
         <tr class=table-warning>
-            <td>16</td>
+            <td>49</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068000" target="_blank" rel="noopener noreferrer">UPHENO:0068000</a></td>
@@ -188,7 +462,7 @@
             <td>increased level of chemical entity in plasma membrane</td>
           </tr>
         <tr class=table-warning>
-            <td>17</td>
+            <td>50</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068001" target="_blank" rel="noopener noreferrer">UPHENO:0068001</a></td>
@@ -196,7 +470,7 @@
             <td>increased level of copper(0) in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>18</td>
+            <td>51</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068002" target="_blank" rel="noopener noreferrer">UPHENO:0068002</a></td>
@@ -204,7 +478,7 @@
             <td>increased level of chemical entity in lysosome</td>
           </tr>
         <tr class=table-warning>
-            <td>19</td>
+            <td>52</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068003" target="_blank" rel="noopener noreferrer">UPHENO:0068003</a></td>
@@ -212,7 +486,7 @@
             <td>increased level of myoglobin in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>20</td>
+            <td>53</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068004" target="_blank" rel="noopener noreferrer">UPHENO:0068004</a></td>
@@ -220,7 +494,7 @@
             <td>increased level of progesterone in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>21</td>
+            <td>54</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068005" target="_blank" rel="noopener noreferrer">UPHENO:0068005</a></td>
@@ -228,7 +502,7 @@
             <td>increased level of tumor necrosis factor in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>22</td>
+            <td>55</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068008" target="_blank" rel="noopener noreferrer">UPHENO:0068008</a></td>
@@ -236,7 +510,7 @@
             <td>increased level of adrenaline in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>23</td>
+            <td>56</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068010" target="_blank" rel="noopener noreferrer">UPHENO:0068010</a></td>
@@ -244,7 +518,7 @@
             <td>increased level of chloride in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>24</td>
+            <td>57</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068011" target="_blank" rel="noopener noreferrer">UPHENO:0068011</a></td>
@@ -252,7 +526,7 @@
             <td>increased level of glycerol in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>25</td>
+            <td>58</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068013" target="_blank" rel="noopener noreferrer">UPHENO:0068013</a></td>
@@ -260,7 +534,7 @@
             <td>increased level of cystathionine in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>26</td>
+            <td>59</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068018" target="_blank" rel="noopener noreferrer">UPHENO:0068018</a></td>
@@ -268,7 +542,7 @@
             <td>increased level of copper atom in brainstem</td>
           </tr>
         <tr class=table-warning>
-            <td>27</td>
+            <td>60</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068019" target="_blank" rel="noopener noreferrer">UPHENO:0068019</a></td>
@@ -276,7 +550,7 @@
             <td>increased level of proline in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>28</td>
+            <td>61</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068021" target="_blank" rel="noopener noreferrer">UPHENO:0068021</a></td>
@@ -284,7 +558,7 @@
             <td>increased level of sphingolipid in plasma membrane</td>
           </tr>
         <tr class=table-warning>
-            <td>29</td>
+            <td>62</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068023" target="_blank" rel="noopener noreferrer">UPHENO:0068023</a></td>
@@ -292,7 +566,7 @@
             <td>increased level of methylmalonic acid in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>30</td>
+            <td>63</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068024" target="_blank" rel="noopener noreferrer">UPHENO:0068024</a></td>
@@ -300,7 +574,7 @@
             <td>increased level of uric acid in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>31</td>
+            <td>64</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068026" target="_blank" rel="noopener noreferrer">UPHENO:0068026</a></td>
@@ -308,7 +582,7 @@
             <td>increased level of aldosterone in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>32</td>
+            <td>65</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068027" target="_blank" rel="noopener noreferrer">UPHENO:0068027</a></td>
@@ -316,7 +590,7 @@
             <td>increased level of corticotropin in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>33</td>
+            <td>66</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068028" target="_blank" rel="noopener noreferrer">UPHENO:0068028</a></td>
@@ -324,7 +598,7 @@
             <td>increased level of protein polypeptide chain in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>34</td>
+            <td>67</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068030" target="_blank" rel="noopener noreferrer">UPHENO:0068030</a></td>
@@ -332,7 +606,7 @@
             <td>increased level of histamine in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>35</td>
+            <td>68</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068033" target="_blank" rel="noopener noreferrer">UPHENO:0068033</a></td>
@@ -340,7 +614,7 @@
             <td>increased level of interferon gamma in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>36</td>
+            <td>69</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068034" target="_blank" rel="noopener noreferrer">UPHENO:0068034</a></td>
@@ -348,7 +622,7 @@
             <td>increased level of ghrelin in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>37</td>
+            <td>70</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068035" target="_blank" rel="noopener noreferrer">UPHENO:0068035</a></td>
@@ -356,7 +630,7 @@
             <td>increased level of sulfoglycosphingolipid in brain</td>
           </tr>
         <tr class=table-warning>
-            <td>38</td>
+            <td>71</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068036" target="_blank" rel="noopener noreferrer">UPHENO:0068036</a></td>
@@ -364,7 +638,7 @@
             <td>increased level of hydrogencarbonate in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>39</td>
+            <td>72</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068037" target="_blank" rel="noopener noreferrer">UPHENO:0068037</a></td>
@@ -372,7 +646,7 @@
             <td>increased level of histidine in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>40</td>
+            <td>73</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068038" target="_blank" rel="noopener noreferrer">UPHENO:0068038</a></td>
@@ -380,7 +654,7 @@
             <td>increased level of glutamate dehydrogenase 1, mitochondrial in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>41</td>
+            <td>74</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068042" target="_blank" rel="noopener noreferrer">UPHENO:0068042</a></td>
@@ -388,7 +662,7 @@
             <td>increased level of threonine in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>42</td>
+            <td>75</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068044" target="_blank" rel="noopener noreferrer">UPHENO:0068044</a></td>
@@ -396,7 +670,7 @@
             <td>increased level of sterol in brain</td>
           </tr>
         <tr class=table-warning>
-            <td>43</td>
+            <td>76</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068045" target="_blank" rel="noopener noreferrer">UPHENO:0068045</a></td>
@@ -404,7 +678,7 @@
             <td>increased level of mineralocorticoid in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>44</td>
+            <td>77</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068046" target="_blank" rel="noopener noreferrer">UPHENO:0068046</a></td>
@@ -412,7 +686,7 @@
             <td>increased level of glycosaminoglycan in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>45</td>
+            <td>78</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068047" target="_blank" rel="noopener noreferrer">UPHENO:0068047</a></td>
@@ -420,7 +694,7 @@
             <td>increased level of lipid in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>46</td>
+            <td>79</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068049" target="_blank" rel="noopener noreferrer">UPHENO:0068049</a></td>
@@ -428,7 +702,7 @@
             <td>increased level of chemical entity in blood plasma</td>
           </tr>
         <tr class=table-warning>
-            <td>47</td>
+            <td>80</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068054" target="_blank" rel="noopener noreferrer">UPHENO:0068054</a></td>
@@ -436,7 +710,7 @@
             <td>increased level of glucose in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>48</td>
+            <td>81</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068055" target="_blank" rel="noopener noreferrer">UPHENO:0068055</a></td>
@@ -444,15 +718,15 @@
             <td>increased level of triglyceride in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>49</td>
+            <td>82</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068056" target="_blank" rel="noopener noreferrer">UPHENO:0068056</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of insulin gene translation product in blood</td>
+            <td>increased level of preproinsulin in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>50</td>
+            <td>83</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068057" target="_blank" rel="noopener noreferrer">UPHENO:0068057</a></td>
@@ -460,7 +734,7 @@
             <td>increased level of triglyceride in liver</td>
           </tr>
         <tr class=table-warning>
-            <td>51</td>
+            <td>84</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068059" target="_blank" rel="noopener noreferrer">UPHENO:0068059</a></td>
@@ -468,7 +742,7 @@
             <td>increased level of citrate(3-) in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>52</td>
+            <td>85</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068061" target="_blank" rel="noopener noreferrer">UPHENO:0068061</a></td>
@@ -476,7 +750,7 @@
             <td>increased level of glycogen in brain</td>
           </tr>
         <tr class=table-warning>
-            <td>53</td>
+            <td>86</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068063" target="_blank" rel="noopener noreferrer">UPHENO:0068063</a></td>
@@ -484,7 +758,7 @@
             <td>increased level of potassium atom in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>54</td>
+            <td>87</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068064" target="_blank" rel="noopener noreferrer">UPHENO:0068064</a></td>
@@ -492,7 +766,7 @@
             <td>increased level of chemical entity in bodily fluid</td>
           </tr>
         <tr class=table-warning>
-            <td>55</td>
+            <td>88</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068065" target="_blank" rel="noopener noreferrer">UPHENO:0068065</a></td>
@@ -500,7 +774,7 @@
             <td>increased level of rac-lactic acid in bodily fluid</td>
           </tr>
         <tr class=table-warning>
-            <td>56</td>
+            <td>89</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068066" target="_blank" rel="noopener noreferrer">UPHENO:0068066</a></td>
@@ -508,7 +782,7 @@
             <td>increased level of glycogen in cardiac muscle tissue</td>
           </tr>
         <tr class=table-warning>
-            <td>57</td>
+            <td>90</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068068" target="_blank" rel="noopener noreferrer">UPHENO:0068068</a></td>
@@ -516,7 +790,7 @@
             <td>increased level of parathyroid hormone in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>58</td>
+            <td>91</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068069" target="_blank" rel="noopener noreferrer">UPHENO:0068069</a></td>
@@ -524,7 +798,7 @@
             <td>increased level of interleukin-10 in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>59</td>
+            <td>92</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068074" target="_blank" rel="noopener noreferrer">UPHENO:0068074</a></td>
@@ -532,7 +806,7 @@
             <td>increased level of leptin in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>60</td>
+            <td>93</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068075" target="_blank" rel="noopener noreferrer">UPHENO:0068075</a></td>
@@ -540,7 +814,7 @@
             <td>increased level of noradrenaline in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>61</td>
+            <td>94</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068077" target="_blank" rel="noopener noreferrer">UPHENO:0068077</a></td>
@@ -548,7 +822,7 @@
             <td>increased level of corticosterone in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>62</td>
+            <td>95</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068078" target="_blank" rel="noopener noreferrer">UPHENO:0068078</a></td>
@@ -556,7 +830,7 @@
             <td>increased level of dicarboxylic acid in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>63</td>
+            <td>96</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068081" target="_blank" rel="noopener noreferrer">UPHENO:0068081</a></td>
@@ -564,7 +838,7 @@
             <td>increased level of lysine in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>64</td>
+            <td>97</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068083" target="_blank" rel="noopener noreferrer">UPHENO:0068083</a></td>
@@ -572,7 +846,7 @@
             <td>increased level of glucocorticoid in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>65</td>
+            <td>98</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068093" target="_blank" rel="noopener noreferrer">UPHENO:0068093</a></td>
@@ -580,7 +854,7 @@
             <td>increased level of ammonium in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>66</td>
+            <td>99</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068097" target="_blank" rel="noopener noreferrer">UPHENO:0068097</a></td>
@@ -588,7 +862,7 @@
             <td>increased level of protein in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>67</td>
+            <td>100</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068098" target="_blank" rel="noopener noreferrer">UPHENO:0068098</a></td>
@@ -596,15 +870,15 @@
             <td>increased level of interleukin-7 in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>68</td>
+            <td>101</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068100" target="_blank" rel="noopener noreferrer">UPHENO:0068100</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of insulin gene translation product in urine</td>
+            <td>increased level of preproinsulin in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>69</td>
+            <td>102</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068101" target="_blank" rel="noopener noreferrer">UPHENO:0068101</a></td>
@@ -612,7 +886,7 @@
             <td>increased level of glycogen in skeletal muscle tissue</td>
           </tr>
         <tr class=table-warning>
-            <td>70</td>
+            <td>103</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068103" target="_blank" rel="noopener noreferrer">UPHENO:0068103</a></td>
@@ -620,7 +894,7 @@
             <td>increased level of pro-glucagon in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>71</td>
+            <td>104</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068106" target="_blank" rel="noopener noreferrer">UPHENO:0068106</a></td>
@@ -628,7 +902,7 @@
             <td>increased level of renin in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>72</td>
+            <td>105</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068107" target="_blank" rel="noopener noreferrer">UPHENO:0068107</a></td>
@@ -636,7 +910,7 @@
             <td>increased level of isoleucine in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>73</td>
+            <td>106</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068109" target="_blank" rel="noopener noreferrer">UPHENO:0068109</a></td>
@@ -644,7 +918,7 @@
             <td>increased level of chemical entity in brainstem</td>
           </tr>
         <tr class=table-warning>
-            <td>74</td>
+            <td>107</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068110" target="_blank" rel="noopener noreferrer">UPHENO:0068110</a></td>
@@ -652,7 +926,7 @@
             <td>increased level of chemical entity in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>75</td>
+            <td>108</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068111" target="_blank" rel="noopener noreferrer">UPHENO:0068111</a></td>
@@ -660,7 +934,7 @@
             <td>increased level of copper atom in kidney</td>
           </tr>
         <tr class=table-warning>
-            <td>76</td>
+            <td>109</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068113" target="_blank" rel="noopener noreferrer">UPHENO:0068113</a></td>
@@ -668,7 +942,7 @@
             <td>increased level of valine in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>77</td>
+            <td>110</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068114" target="_blank" rel="noopener noreferrer">UPHENO:0068114</a></td>
@@ -676,7 +950,7 @@
             <td>increased level of sodium atom in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>78</td>
+            <td>111</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068116" target="_blank" rel="noopener noreferrer">UPHENO:0068116</a></td>
@@ -684,7 +958,7 @@
             <td>increased level of copper atom in liver</td>
           </tr>
         <tr class=table-warning>
-            <td>79</td>
+            <td>112</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068117" target="_blank" rel="noopener noreferrer">UPHENO:0068117</a></td>
@@ -692,7 +966,7 @@
             <td>increased level of elastin in aorta</td>
           </tr>
         <tr class=table-warning>
-            <td>80</td>
+            <td>113</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068119" target="_blank" rel="noopener noreferrer">UPHENO:0068119</a></td>
@@ -700,7 +974,7 @@
             <td>increased level of interferon beta 1 in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>81</td>
+            <td>114</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068121" target="_blank" rel="noopener noreferrer">UPHENO:0068121</a></td>
@@ -708,7 +982,7 @@
             <td>increased level of alkaline phosphatase, tissue-nonspecific isozyme in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>82</td>
+            <td>115</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068126" target="_blank" rel="noopener noreferrer">UPHENO:0068126</a></td>
@@ -716,7 +990,7 @@
             <td>increased level of fatty acid in muscle organ</td>
           </tr>
         <tr class=table-warning>
-            <td>83</td>
+            <td>116</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068130" target="_blank" rel="noopener noreferrer">UPHENO:0068130</a></td>
@@ -724,7 +998,7 @@
             <td>increased level of phosphate in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>84</td>
+            <td>117</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068132" target="_blank" rel="noopener noreferrer">UPHENO:0068132</a></td>
@@ -732,7 +1006,7 @@
             <td>increased level of hemoglobin in blood plasma</td>
           </tr>
         <tr class=table-warning>
-            <td>85</td>
+            <td>118</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068133" target="_blank" rel="noopener noreferrer">UPHENO:0068133</a></td>
@@ -740,7 +1014,7 @@
             <td>increased level of cholesterol in liver</td>
           </tr>
         <tr class=table-warning>
-            <td>86</td>
+            <td>119</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068134" target="_blank" rel="noopener noreferrer">UPHENO:0068134</a></td>
@@ -748,7 +1022,7 @@
             <td>increased level of calcium atom in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>87</td>
+            <td>120</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068135" target="_blank" rel="noopener noreferrer">UPHENO:0068135</a></td>
@@ -756,7 +1030,7 @@
             <td>increased level of interleukin-1 in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>88</td>
+            <td>121</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068137" target="_blank" rel="noopener noreferrer">UPHENO:0068137</a></td>
@@ -764,7 +1038,7 @@
             <td>increased level of hydroxyproline in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>89</td>
+            <td>122</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068140" target="_blank" rel="noopener noreferrer">UPHENO:0068140</a></td>
@@ -772,7 +1046,7 @@
             <td>increased level of interleukin-17 in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>90</td>
+            <td>123</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068142" target="_blank" rel="noopener noreferrer">UPHENO:0068142</a></td>
@@ -780,7 +1054,7 @@
             <td>increased level of phytosterols in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>91</td>
+            <td>124</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068143" target="_blank" rel="noopener noreferrer">UPHENO:0068143</a></td>
@@ -788,7 +1062,7 @@
             <td>increased level of arginine in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>92</td>
+            <td>125</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068144" target="_blank" rel="noopener noreferrer">UPHENO:0068144</a></td>
@@ -796,7 +1070,7 @@
             <td>increased level of organic acid in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>93</td>
+            <td>126</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068145" target="_blank" rel="noopener noreferrer">UPHENO:0068145</a></td>
@@ -804,7 +1078,7 @@
             <td>increased level of cholesterol in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>94</td>
+            <td>127</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068146" target="_blank" rel="noopener noreferrer">UPHENO:0068146</a></td>
@@ -812,7 +1086,7 @@
             <td>increased level of alanine in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>95</td>
+            <td>128</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068148" target="_blank" rel="noopener noreferrer">UPHENO:0068148</a></td>
@@ -820,7 +1094,7 @@
             <td>increased level of orotic acid in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>96</td>
+            <td>129</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068150" target="_blank" rel="noopener noreferrer">UPHENO:0068150</a></td>
@@ -828,7 +1102,7 @@
             <td>increased level of gamma-aminobutyric acid in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>97</td>
+            <td>130</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068152" target="_blank" rel="noopener noreferrer">UPHENO:0068152</a></td>
@@ -836,7 +1110,7 @@
             <td>increased level of taurine in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>98</td>
+            <td>131</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068153" target="_blank" rel="noopener noreferrer">UPHENO:0068153</a></td>
@@ -844,7 +1118,7 @@
             <td>increased level of sulfate in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>99</td>
+            <td>132</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068157" target="_blank" rel="noopener noreferrer">UPHENO:0068157</a></td>
@@ -852,7 +1126,7 @@
             <td>increased level of creatine in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>100</td>
+            <td>133</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068158" target="_blank" rel="noopener noreferrer">UPHENO:0068158</a></td>
@@ -860,7 +1134,7 @@
             <td>increased level of hemoglobin in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>101</td>
+            <td>134</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068160" target="_blank" rel="noopener noreferrer">UPHENO:0068160</a></td>
@@ -868,7 +1142,7 @@
             <td>increased level of vasopressin in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>102</td>
+            <td>135</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068162" target="_blank" rel="noopener noreferrer">UPHENO:0068162</a></td>
@@ -876,7 +1150,7 @@
             <td>increased level of proline in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>103</td>
+            <td>136</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068164" target="_blank" rel="noopener noreferrer">UPHENO:0068164</a></td>
@@ -884,7 +1158,7 @@
             <td>increased level of lipid in feces</td>
           </tr>
         <tr class=table-warning>
-            <td>104</td>
+            <td>137</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068165" target="_blank" rel="noopener noreferrer">UPHENO:0068165</a></td>
@@ -892,7 +1166,7 @@
             <td>increased level of lactate in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>105</td>
+            <td>138</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068166" target="_blank" rel="noopener noreferrer">UPHENO:0068166</a></td>
@@ -900,7 +1174,7 @@
             <td>increased level of uric acid in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>106</td>
+            <td>139</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068167" target="_blank" rel="noopener noreferrer">UPHENO:0068167</a></td>
@@ -908,7 +1182,7 @@
             <td>increased level of Follicle stimulating hormone in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>107</td>
+            <td>140</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068169" target="_blank" rel="noopener noreferrer">UPHENO:0068169</a></td>
@@ -916,7 +1190,7 @@
             <td>increased level of amino acid in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>108</td>
+            <td>141</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068170" target="_blank" rel="noopener noreferrer">UPHENO:0068170</a></td>
@@ -924,7 +1198,7 @@
             <td>increased level of methylmalonic acid in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>109</td>
+            <td>142</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068171" target="_blank" rel="noopener noreferrer">UPHENO:0068171</a></td>
@@ -932,7 +1206,7 @@
             <td>increased level of tyrosine in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>110</td>
+            <td>143</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068172" target="_blank" rel="noopener noreferrer">UPHENO:0068172</a></td>
@@ -940,7 +1214,7 @@
             <td>increased level of dopamine in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>111</td>
+            <td>144</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068173" target="_blank" rel="noopener noreferrer">UPHENO:0068173</a></td>
@@ -948,7 +1222,7 @@
             <td>increased level of magnesium atom in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>112</td>
+            <td>145</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068175" target="_blank" rel="noopener noreferrer">UPHENO:0068175</a></td>
@@ -956,7 +1230,7 @@
             <td>increased level of ornithine in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>113</td>
+            <td>146</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068176" target="_blank" rel="noopener noreferrer">UPHENO:0068176</a></td>
@@ -964,7 +1238,7 @@
             <td>increased level of hydrogencarbonate in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>114</td>
+            <td>147</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068177" target="_blank" rel="noopener noreferrer">UPHENO:0068177</a></td>
@@ -972,7 +1246,7 @@
             <td>increased level of glutamine in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>115</td>
+            <td>148</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068179" target="_blank" rel="noopener noreferrer">UPHENO:0068179</a></td>
@@ -980,7 +1254,7 @@
             <td>increased level of thyroid stimulating hormone in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>116</td>
+            <td>149</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068181" target="_blank" rel="noopener noreferrer">UPHENO:0068181</a></td>
@@ -988,7 +1262,7 @@
             <td>increased level of Luteinizing hormone in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>117</td>
+            <td>150</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068182" target="_blank" rel="noopener noreferrer">UPHENO:0068182</a></td>
@@ -996,7 +1270,7 @@
             <td>increased level of histidine in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>118</td>
+            <td>151</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068184" target="_blank" rel="noopener noreferrer">UPHENO:0068184</a></td>
@@ -1004,7 +1278,7 @@
             <td>increased level of glycine in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>119</td>
+            <td>152</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068187" target="_blank" rel="noopener noreferrer">UPHENO:0068187</a></td>
@@ -1012,7 +1286,7 @@
             <td>increased level of threonine in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>120</td>
+            <td>153</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068191" target="_blank" rel="noopener noreferrer">UPHENO:0068191</a></td>
@@ -1020,7 +1294,7 @@
             <td>increased level of 17beta-hydroxy-5alpha-androstan-3-one in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>121</td>
+            <td>154</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068192" target="_blank" rel="noopener noreferrer">UPHENO:0068192</a></td>
@@ -1028,7 +1302,7 @@
             <td>increased level of copper atom in brain</td>
           </tr>
         <tr class=table-warning>
-            <td>122</td>
+            <td>155</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068193" target="_blank" rel="noopener noreferrer">UPHENO:0068193</a></td>
@@ -1036,7 +1310,7 @@
             <td>increased level of zinc atom in brain</td>
           </tr>
         <tr class=table-warning>
-            <td>123</td>
+            <td>156</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068195" target="_blank" rel="noopener noreferrer">UPHENO:0068195</a></td>
@@ -1044,7 +1318,7 @@
             <td>increased level of cystine in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>124</td>
+            <td>157</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068198" target="_blank" rel="noopener noreferrer">UPHENO:0068198</a></td>
@@ -1052,7 +1326,7 @@
             <td>increased level of cholesterol in brain</td>
           </tr>
         <tr class=table-warning>
-            <td>125</td>
+            <td>158</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068199" target="_blank" rel="noopener noreferrer">UPHENO:0068199</a></td>
@@ -1060,7 +1334,7 @@
             <td>increased level of aldosterone in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>126</td>
+            <td>159</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068202" target="_blank" rel="noopener noreferrer">UPHENO:0068202</a></td>
@@ -1068,7 +1342,7 @@
             <td>increased level of interleukin-21 in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>127</td>
+            <td>160</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068204" target="_blank" rel="noopener noreferrer">UPHENO:0068204</a></td>
@@ -1076,15 +1350,15 @@
             <td>increased level of glucose in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>128</td>
+            <td>161</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068205" target="_blank" rel="noopener noreferrer">UPHENO:0068205</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of interleukin-16 in blood</td>
+            <td>increased level of pro-interleukin-16 in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>129</td>
+            <td>162</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068206" target="_blank" rel="noopener noreferrer">UPHENO:0068206</a></td>
@@ -1092,7 +1366,7 @@
             <td>increased level of interleukin-15 in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>130</td>
+            <td>163</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068207" target="_blank" rel="noopener noreferrer">UPHENO:0068207</a></td>
@@ -1100,7 +1374,7 @@
             <td>increased level of interleukin-18 in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>131</td>
+            <td>164</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068210" target="_blank" rel="noopener noreferrer">UPHENO:0068210</a></td>
@@ -1108,7 +1382,7 @@
             <td>increased level of homocysteine in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>132</td>
+            <td>165</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068211" target="_blank" rel="noopener noreferrer">UPHENO:0068211</a></td>
@@ -1116,7 +1390,7 @@
             <td>increased level of interleukin-1 beta in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>133</td>
+            <td>166</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068212" target="_blank" rel="noopener noreferrer">UPHENO:0068212</a></td>
@@ -1124,7 +1398,7 @@
             <td>increased level of interleukin-1 alpha in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>134</td>
+            <td>167</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068213" target="_blank" rel="noopener noreferrer">UPHENO:0068213</a></td>
@@ -1132,7 +1406,7 @@
             <td>increased level of 11-deoxycorticosterone in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>135</td>
+            <td>168</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068215" target="_blank" rel="noopener noreferrer">UPHENO:0068215</a></td>
@@ -1140,7 +1414,7 @@
             <td>increased level of carnitine in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>136</td>
+            <td>169</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068216" target="_blank" rel="noopener noreferrer">UPHENO:0068216</a></td>
@@ -1148,7 +1422,7 @@
             <td>increased level of copper atom in intestine</td>
           </tr>
         <tr class=table-warning>
-            <td>137</td>
+            <td>170</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068217" target="_blank" rel="noopener noreferrer">UPHENO:0068217</a></td>
@@ -1156,7 +1430,7 @@
             <td>increased level of progesterone in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>138</td>
+            <td>171</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068219" target="_blank" rel="noopener noreferrer">UPHENO:0068219</a></td>
@@ -1164,7 +1438,7 @@
             <td>increased level of glutathione in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>139</td>
+            <td>172</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068223" target="_blank" rel="noopener noreferrer">UPHENO:0068223</a></td>
@@ -1172,7 +1446,7 @@
             <td>increased level of corticosterone in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>140</td>
+            <td>173</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068224" target="_blank" rel="noopener noreferrer">UPHENO:0068224</a></td>
@@ -1180,7 +1454,7 @@
             <td>increased level of lysine in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>141</td>
+            <td>174</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068226" target="_blank" rel="noopener noreferrer">UPHENO:0068226</a></td>
@@ -1188,7 +1462,7 @@
             <td>increased level of creatinine in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>142</td>
+            <td>175</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068228" target="_blank" rel="noopener noreferrer">UPHENO:0068228</a></td>
@@ -1196,7 +1470,7 @@
             <td>increased level of citrulline in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>143</td>
+            <td>176</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068233" target="_blank" rel="noopener noreferrer">UPHENO:0068233</a></td>
@@ -1204,7 +1478,7 @@
             <td>increased level of chloride in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>144</td>
+            <td>177</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068234" target="_blank" rel="noopener noreferrer">UPHENO:0068234</a></td>
@@ -1212,7 +1486,7 @@
             <td>increased level of glycerol in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>145</td>
+            <td>178</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068235" target="_blank" rel="noopener noreferrer">UPHENO:0068235</a></td>
@@ -1220,7 +1494,7 @@
             <td>increased level of cystathionine in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>146</td>
+            <td>179</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068238" target="_blank" rel="noopener noreferrer">UPHENO:0068238</a></td>
@@ -1228,7 +1502,7 @@
             <td>increased level of adrenaline in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>147</td>
+            <td>180</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068239" target="_blank" rel="noopener noreferrer">UPHENO:0068239</a></td>
@@ -1236,7 +1510,7 @@
             <td>increased level of catecholamine in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>148</td>
+            <td>181</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068240" target="_blank" rel="noopener noreferrer">UPHENO:0068240</a></td>
@@ -1244,7 +1518,7 @@
             <td>increased level of phospholipid in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>149</td>
+            <td>182</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068242" target="_blank" rel="noopener noreferrer">UPHENO:0068242</a></td>
@@ -1252,7 +1526,7 @@
             <td>increased level of nitrite in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>150</td>
+            <td>183</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068248" target="_blank" rel="noopener noreferrer">UPHENO:0068248</a></td>
@@ -1260,7 +1534,7 @@
             <td>increased level of chemical entity in kidney</td>
           </tr>
         <tr class=table-warning>
-            <td>151</td>
+            <td>184</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068249" target="_blank" rel="noopener noreferrer">UPHENO:0068249</a></td>
@@ -1268,7 +1542,7 @@
             <td>increased level of chemical entity in pancreas</td>
           </tr>
         <tr class=table-warning>
-            <td>152</td>
+            <td>185</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068250" target="_blank" rel="noopener noreferrer">UPHENO:0068250</a></td>
@@ -1276,7 +1550,7 @@
             <td>increased level of selenium atom in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>153</td>
+            <td>186</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068251" target="_blank" rel="noopener noreferrer">UPHENO:0068251</a></td>
@@ -1284,7 +1558,7 @@
             <td>increased level of chemical entity in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>154</td>
+            <td>187</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068253" target="_blank" rel="noopener noreferrer">UPHENO:0068253</a></td>
@@ -1292,7 +1566,7 @@
             <td>increased level of low-density lipoprotein cholesterol in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>155</td>
+            <td>188</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068254" target="_blank" rel="noopener noreferrer">UPHENO:0068254</a></td>
@@ -1300,7 +1574,7 @@
             <td>increased level of high-density lipoprotein cholesterol in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>156</td>
+            <td>189</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068255" target="_blank" rel="noopener noreferrer">UPHENO:0068255</a></td>
@@ -1308,7 +1582,7 @@
             <td>increased level of very-low-density lipoprotein cholesterol in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>157</td>
+            <td>190</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068256" target="_blank" rel="noopener noreferrer">UPHENO:0068256</a></td>
@@ -1316,7 +1590,7 @@
             <td>increased level of chemical entity in liver</td>
           </tr>
         <tr class=table-warning>
-            <td>158</td>
+            <td>191</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068258" target="_blank" rel="noopener noreferrer">UPHENO:0068258</a></td>
@@ -1324,7 +1598,7 @@
             <td>increased level of very-low-density lipoprotein triglyceride in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>159</td>
+            <td>192</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068259" target="_blank" rel="noopener noreferrer">UPHENO:0068259</a></td>
@@ -1332,7 +1606,7 @@
             <td>increased level of thyroxine in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>160</td>
+            <td>193</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068260" target="_blank" rel="noopener noreferrer">UPHENO:0068260</a></td>
@@ -1340,7 +1614,7 @@
             <td>increased level of gastrin in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>161</td>
+            <td>194</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068261" target="_blank" rel="noopener noreferrer">UPHENO:0068261</a></td>
@@ -1348,7 +1622,7 @@
             <td>increased level of methionine in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>162</td>
+            <td>195</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068263" target="_blank" rel="noopener noreferrer">UPHENO:0068263</a></td>
@@ -1356,7 +1630,7 @@
             <td>increased level of testosterone in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>163</td>
+            <td>196</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068264" target="_blank" rel="noopener noreferrer">UPHENO:0068264</a></td>
@@ -1364,7 +1638,7 @@
             <td>increased level of ethylmalonic acid in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>164</td>
+            <td>197</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068266" target="_blank" rel="noopener noreferrer">UPHENO:0068266</a></td>
@@ -1372,7 +1646,7 @@
             <td>increased level of urate salt in urine</td>
           </tr>
         <tr class=table-warning>
-            <td>165</td>
+            <td>198</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068269" target="_blank" rel="noopener noreferrer">UPHENO:0068269</a></td>
@@ -1380,276 +1654,12 @@
             <td>increased level of aspartate aminotransferase, cytoplasmic in blood</td>
           </tr>
         <tr class=table-warning>
-            <td>166</td>
+            <td>199</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068271" target="_blank" rel="noopener noreferrer">UPHENO:0068271</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
             <td>increased level of tryptophan in urine</td>
-          </tr>
-        <tr class=table-warning>
-            <td>167</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068273" target="_blank" rel="noopener noreferrer">UPHENO:0068273</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of interleukin-5 in blood</td>
-          </tr>
-        <tr class=table-warning>
-            <td>168</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068274" target="_blank" rel="noopener noreferrer">UPHENO:0068274</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of interleukin-4 in blood</td>
-          </tr>
-        <tr class=table-warning>
-            <td>169</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068275" target="_blank" rel="noopener noreferrer">UPHENO:0068275</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of interleukin-6 in blood</td>
-          </tr>
-        <tr class=table-warning>
-            <td>170</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068277" target="_blank" rel="noopener noreferrer">UPHENO:0068277</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of ammonia in blood</td>
-          </tr>
-        <tr class=table-warning>
-            <td>171</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068279" target="_blank" rel="noopener noreferrer">UPHENO:0068279</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of interleukin-3 in blood</td>
-          </tr>
-        <tr class=table-warning>
-            <td>172</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068280" target="_blank" rel="noopener noreferrer">UPHENO:0068280</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of calcium atom in blood</td>
-          </tr>
-        <tr class=table-warning>
-            <td>173</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068282" target="_blank" rel="noopener noreferrer">UPHENO:0068282</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of iron atom in pancreas</td>
-          </tr>
-        <tr class=table-warning>
-            <td>174</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068283" target="_blank" rel="noopener noreferrer">UPHENO:0068283</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of oxalate in urine</td>
-          </tr>
-        <tr class=table-warning>
-            <td>175</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068284" target="_blank" rel="noopener noreferrer">UPHENO:0068284</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of vasopressin in blood</td>
-          </tr>
-        <tr class=table-warning>
-            <td>176</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068285" target="_blank" rel="noopener noreferrer">UPHENO:0068285</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of iron atom in blood</td>
-          </tr>
-        <tr class=table-warning>
-            <td>177</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068286" target="_blank" rel="noopener noreferrer">UPHENO:0068286</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of iron atom in kidney</td>
-          </tr>
-        <tr class=table-warning>
-            <td>178</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068287" target="_blank" rel="noopener noreferrer">UPHENO:0068287</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of valine in blood</td>
-          </tr>
-        <tr class=table-warning>
-            <td>179</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068289" target="_blank" rel="noopener noreferrer">UPHENO:0068289</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of prolactin in blood</td>
-          </tr>
-        <tr class=table-warning>
-            <td>180</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068290" target="_blank" rel="noopener noreferrer">UPHENO:0068290</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of glutaric acid in urine</td>
-          </tr>
-        <tr class=table-warning>
-            <td>181</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068291" target="_blank" rel="noopener noreferrer">UPHENO:0068291</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of iron atom in liver</td>
-          </tr>
-        <tr class=table-warning>
-            <td>182</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068293" target="_blank" rel="noopener noreferrer">UPHENO:0068293</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of estradiol in blood</td>
-          </tr>
-        <tr class=table-warning>
-            <td>183</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068294" target="_blank" rel="noopener noreferrer">UPHENO:0068294</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of insulin-like growth factor I in blood</td>
-          </tr>
-        <tr class=table-warning>
-            <td>184</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068295" target="_blank" rel="noopener noreferrer">UPHENO:0068295</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of magnesium atom in blood</td>
-          </tr>
-        <tr class=table-warning>
-            <td>185</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068296" target="_blank" rel="noopener noreferrer">UPHENO:0068296</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of potassium atom in urine</td>
-          </tr>
-        <tr class=table-warning>
-            <td>186</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068299" target="_blank" rel="noopener noreferrer">UPHENO:0068299</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of prostaglandin in urine</td>
-          </tr>
-        <tr class=table-warning>
-            <td>187</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068301" target="_blank" rel="noopener noreferrer">UPHENO:0068301</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of taurine in blood</td>
-          </tr>
-        <tr class=table-warning>
-            <td>188</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068302" target="_blank" rel="noopener noreferrer">UPHENO:0068302</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of sulfate in blood</td>
-          </tr>
-        <tr class=table-warning>
-            <td>189</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068303" target="_blank" rel="noopener noreferrer">UPHENO:0068303</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of chemical entity in aorta</td>
-          </tr>
-        <tr class=table-warning>
-            <td>190</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068304" target="_blank" rel="noopener noreferrer">UPHENO:0068304</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of chemical entity in heart</td>
-          </tr>
-        <tr class=table-warning>
-            <td>191</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068305" target="_blank" rel="noopener noreferrer">UPHENO:0068305</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of atrial natriuretic factor in blood</td>
-          </tr>
-        <tr class=table-warning>
-            <td>192</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068306" target="_blank" rel="noopener noreferrer">UPHENO:0068306</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of corticoliberin in blood</td>
-          </tr>
-        <tr class=table-warning>
-            <td>193</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068307" target="_blank" rel="noopener noreferrer">UPHENO:0068307</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of dopamine in blood</td>
-          </tr>
-        <tr class=table-warning>
-            <td>194</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068308" target="_blank" rel="noopener noreferrer">UPHENO:0068308</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of glycine in blood</td>
-          </tr>
-        <tr class=table-warning>
-            <td>195</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068309" target="_blank" rel="noopener noreferrer">UPHENO:0068309</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of noradrenaline in urine</td>
-          </tr>
-        <tr class=table-warning>
-            <td>196</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068310" target="_blank" rel="noopener noreferrer">UPHENO:0068310</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of arginine in blood</td>
-          </tr>
-        <tr class=table-warning>
-            <td>197</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068312" target="_blank" rel="noopener noreferrer">UPHENO:0068312</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of phenylalanine in blood</td>
-          </tr>
-        <tr class=table-warning>
-            <td>198</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068315" target="_blank" rel="noopener noreferrer">UPHENO:0068315</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of chemical entity in cardiac muscle tissue</td>
-          </tr>
-        <tr class=table-warning>
-            <td>199</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/UPHENO_0068316" target="_blank" rel="noopener noreferrer">UPHENO:0068316</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>increased level of chemical entity in skeletal muscle tissue</td>
           </tr>
         </table>
     </div>

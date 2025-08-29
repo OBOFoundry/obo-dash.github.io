@@ -13,24 +13,28 @@
       <div class="report_summary"><table class="table">
       <tr><th><b>Level</b></th><th><b>Number of errors</b></th></tr>
       
-      <tr><td>INFO</td><td>279</td></tr>
+      <tr><td>INFO</td><td>264</td></tr>
       
-      <tr><td>WARN</td><td>274</td></tr>
+      <tr><td>WARN</td><td>261</td></tr>
+      
+      <tr><td>ERROR</td><td>2</td></tr>
       
       </table></div>
       <h3>Error breakdown</h3>
       <div class="report_summary"><table class="table">
       <tr><th><b>Rule</b></th><th><b>Number of errors</b></th></tr>
       
-      <tr><td>missing_superclass</td><td>260</td></tr>
+      <tr><td>missing_superclass</td><td>249</td></tr>
       
-      <tr><td>missing_definition</td><td>220</td></tr>
+      <tr><td>missing_definition</td><td>206</td></tr>
       
       <tr><td>duplicate_scoped_synonym</td><td>39</td></tr>
       
-      <tr><td>lowercase_definition</td><td>19</td></tr>
+      <tr><td>lowercase_definition</td><td>15</td></tr>
       
-      <tr><td>missing_subset_declaration</td><td>11</td></tr>
+      <tr><td>missing_subset_declaration</td><td>12</td></tr>
+      
+      <tr><td>missing_label</td><td>2</td></tr>
       
       <tr><td>annotation_whitespace</td><td>2</td></tr>
       
@@ -57,8 +61,24 @@
           
             <th><b>Value</b></th>
           
-        </tr><tr class=table-warning>
+        </tr><tr class=table-danger>
             <td>0</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/missing_label" target="_blank" rel="noopener noreferrer">missing_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_02000139" target="_blank" rel="noopener noreferrer">ENVO:02000139</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td></td>
+          </tr>
+        <tr class=table-danger>
+            <td>1</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/missing_label" target="_blank" rel="noopener noreferrer">missing_label</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_02000145" target="_blank" rel="noopener noreferrer">ENVO:02000145</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#label" target="_blank" rel="noopener noreferrer">rdfs:label</a></td>
+            <td></td>
+          </tr>
+        <tr class=table-warning>
+            <td>2</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/ENVO_01000350" target="_blank" rel="noopener noreferrer">ENVO:01000350</a></td>
@@ -67,7 +87,7 @@
 </td>
           </tr>
         <tr class=table-warning>
-            <td>1</td>
+            <td>3</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/annotation_whitespace" target="_blank" rel="noopener noreferrer">annotation_whitespace</a></td>
             <td><a href="http://purl.obolibrary.org/obo/ENVO_01000402" target="_blank" rel="noopener noreferrer">ENVO:01000402</a></td>
@@ -76,119 +96,119 @@
 </td>
           </tr>
         <tr class=table-warning>
-            <td>2</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000029" target="_blank" rel="noopener noreferrer">ENVO:00000029</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasNarrowSynonym</a></td>
-            <td>narrows</td>
-          </tr>
-        <tr class=table-warning>
-            <td>3</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000029" target="_blank" rel="noopener noreferrer">ENVO:00000029</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasRelatedSynonym</a></td>
-            <td>narrows</td>
-          </tr>
-        <tr class=table-warning>
             <td>4</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000033" target="_blank" rel="noopener noreferrer">ENVO:00000033</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000029" target="_blank" rel="noopener noreferrer">ENVO:00000029</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasNarrowSynonym</a></td>
-            <td>pool (water body)</td>
+            <td>narrows</td>
           </tr>
         <tr class=table-warning>
             <td>5</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000033" target="_blank" rel="noopener noreferrer">ENVO:00000033</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000029" target="_blank" rel="noopener noreferrer">ENVO:00000029</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasRelatedSynonym</a></td>
-            <td>pool (water body)</td>
+            <td>narrows</td>
           </tr>
         <tr class=table-warning>
             <td>6</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000054" target="_blank" rel="noopener noreferrer">ENVO:00000054</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>salt marsh</td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000033" target="_blank" rel="noopener noreferrer">ENVO:00000033</a></td>
+            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasNarrowSynonym</a></td>
+            <td>pool (water body)</td>
           </tr>
         <tr class=table-warning>
             <td>7</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000054" target="_blank" rel="noopener noreferrer">ENVO:00000054</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000033" target="_blank" rel="noopener noreferrer">ENVO:00000033</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasRelatedSynonym</a></td>
-            <td>salt marsh</td>
+            <td>pool (water body)</td>
           </tr>
         <tr class=table-warning>
             <td>8</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000084" target="_blank" rel="noopener noreferrer">ENVO:00000084</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000054" target="_blank" rel="noopener noreferrer">ENVO:00000054</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>pass</td>
+            <td>salt marsh</td>
           </tr>
         <tr class=table-warning>
             <td>9</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000084" target="_blank" rel="noopener noreferrer">ENVO:00000084</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000054" target="_blank" rel="noopener noreferrer">ENVO:00000054</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasRelatedSynonym</a></td>
-            <td>pass</td>
+            <td>salt marsh</td>
           </tr>
         <tr class=table-warning>
             <td>10</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000146" target="_blank" rel="noopener noreferrer">ENVO:00000146</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000084" target="_blank" rel="noopener noreferrer">ENVO:00000084</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>snowfield</td>
+            <td>pass</td>
           </tr>
         <tr class=table-warning>
             <td>11</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000146" target="_blank" rel="noopener noreferrer">ENVO:00000146</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000084" target="_blank" rel="noopener noreferrer">ENVO:00000084</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasRelatedSynonym</a></td>
-            <td>snowfield</td>
+            <td>pass</td>
           </tr>
         <tr class=table-warning>
             <td>12</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000192" target="_blank" rel="noopener noreferrer">ENVO:00000192</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000146" target="_blank" rel="noopener noreferrer">ENVO:00000146</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>mud flat</td>
+            <td>snowfield</td>
           </tr>
         <tr class=table-warning>
             <td>13</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000192" target="_blank" rel="noopener noreferrer">ENVO:00000192</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000146" target="_blank" rel="noopener noreferrer">ENVO:00000146</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasRelatedSynonym</a></td>
-            <td>mud flat</td>
+            <td>snowfield</td>
           </tr>
         <tr class=table-warning>
             <td>14</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000234" target="_blank" rel="noopener noreferrer">ENVO:00000234</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasBroadSynonym</a></td>
-            <td>lake</td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000192" target="_blank" rel="noopener noreferrer">ENVO:00000192</a></td>
+            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
+            <td>mud flat</td>
           </tr>
         <tr class=table-warning>
             <td>15</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000192" target="_blank" rel="noopener noreferrer">ENVO:00000192</a></td>
+            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasRelatedSynonym</a></td>
+            <td>mud flat</td>
+          </tr>
+        <tr class=table-warning>
+            <td>16</td>
+            <td>WARN</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000234" target="_blank" rel="noopener noreferrer">ENVO:00000234</a></td>
+            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasBroadSynonym</a></td>
+            <td>lake</td>
+          </tr>
+        <tr class=table-warning>
+            <td>17</td>
+            <td>WARN</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/ENVO_00000234" target="_blank" rel="noopener noreferrer">ENVO:00000234</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasRelatedSynonym</a></td>
             <td>lake</td>
           </tr>
         <tr class=table-warning>
-            <td>16</td>
+            <td>18</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/ENVO_00000264" target="_blank" rel="noopener noreferrer">ENVO:00000264</a></td>
@@ -196,7 +216,7 @@
             <td>mount</td>
           </tr>
         <tr class=table-warning>
-            <td>17</td>
+            <td>19</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/ENVO_00000264" target="_blank" rel="noopener noreferrer">ENVO:00000264</a></td>
@@ -204,111 +224,111 @@
             <td>mount</td>
           </tr>
         <tr class=table-warning>
-            <td>18</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000292" target="_blank" rel="noopener noreferrer">ENVO:00000292</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>divide</td>
-          </tr>
-        <tr class=table-warning>
-            <td>19</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000292" target="_blank" rel="noopener noreferrer">ENVO:00000292</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasRelatedSynonym</a></td>
-            <td>divide</td>
-          </tr>
-        <tr class=table-warning>
             <td>20</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000342" target="_blank" rel="noopener noreferrer">ENVO:00000342</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000292" target="_blank" rel="noopener noreferrer">ENVO:00000292</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>icecap dome</td>
+            <td>divide</td>
           </tr>
         <tr class=table-warning>
             <td>21</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000342" target="_blank" rel="noopener noreferrer">ENVO:00000342</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasNarrowSynonym</a></td>
-            <td>icecap dome</td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000292" target="_blank" rel="noopener noreferrer">ENVO:00000292</a></td>
+            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasRelatedSynonym</a></td>
+            <td>divide</td>
           </tr>
         <tr class=table-warning>
             <td>22</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000444" target="_blank" rel="noopener noreferrer">ENVO:00000444</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000342" target="_blank" rel="noopener noreferrer">ENVO:00000342</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>clearing</td>
+            <td>icecap dome</td>
           </tr>
         <tr class=table-warning>
             <td>23</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000444" target="_blank" rel="noopener noreferrer">ENVO:00000444</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasRelatedSynonym</a></td>
-            <td>clearing</td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000342" target="_blank" rel="noopener noreferrer">ENVO:00000342</a></td>
+            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasNarrowSynonym</a></td>
+            <td>icecap dome</td>
           </tr>
         <tr class=table-warning>
             <td>24</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000482" target="_blank" rel="noopener noreferrer">ENVO:00000482</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000444" target="_blank" rel="noopener noreferrer">ENVO:00000444</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>ocean floor@en</td>
+            <td>clearing</td>
           </tr>
         <tr class=table-warning>
             <td>25</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000482" target="_blank" rel="noopener noreferrer">ENVO:00000482</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000444" target="_blank" rel="noopener noreferrer">ENVO:00000444</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasRelatedSynonym</a></td>
-            <td>ocean floor@en</td>
+            <td>clearing</td>
           </tr>
         <tr class=table-warning>
             <td>26</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000504" target="_blank" rel="noopener noreferrer">ENVO:00000504</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000482" target="_blank" rel="noopener noreferrer">ENVO:00000482</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>intermittent pool</td>
+            <td>ocean floor@en</td>
           </tr>
         <tr class=table-warning>
             <td>27</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000504" target="_blank" rel="noopener noreferrer">ENVO:00000504</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasNarrowSynonym</a></td>
-            <td>intermittent pool</td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000482" target="_blank" rel="noopener noreferrer">ENVO:00000482</a></td>
+            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasRelatedSynonym</a></td>
+            <td>ocean floor@en</td>
           </tr>
         <tr class=table-warning>
             <td>28</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/ENVO_00000504" target="_blank" rel="noopener noreferrer">ENVO:00000504</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasRelatedSynonym</a></td>
+            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
             <td>intermittent pool</td>
           </tr>
         <tr class=table-warning>
             <td>29</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000508" target="_blank" rel="noopener noreferrer">ENVO:00000508</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000504" target="_blank" rel="noopener noreferrer">ENVO:00000504</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasNarrowSynonym</a></td>
-            <td>bench</td>
+            <td>intermittent pool</td>
           </tr>
         <tr class=table-warning>
             <td>30</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000504" target="_blank" rel="noopener noreferrer">ENVO:00000504</a></td>
+            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasRelatedSynonym</a></td>
+            <td>intermittent pool</td>
+          </tr>
+        <tr class=table-warning>
+            <td>31</td>
+            <td>WARN</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000508" target="_blank" rel="noopener noreferrer">ENVO:00000508</a></td>
+            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasNarrowSynonym</a></td>
+            <td>bench</td>
+          </tr>
+        <tr class=table-warning>
+            <td>32</td>
+            <td>WARN</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/ENVO_00000508" target="_blank" rel="noopener noreferrer">ENVO:00000508</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasRelatedSynonym</a></td>
             <td>bench</td>
           </tr>
         <tr class=table-warning>
-            <td>31</td>
+            <td>33</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/ENVO_00000517" target="_blank" rel="noopener noreferrer">ENVO:00000517</a></td>
@@ -316,7 +336,7 @@
             <td>lost river</td>
           </tr>
         <tr class=table-warning>
-            <td>32</td>
+            <td>34</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/ENVO_00000517" target="_blank" rel="noopener noreferrer">ENVO:00000517</a></td>
@@ -324,39 +344,39 @@
             <td>lost river</td>
           </tr>
         <tr class=table-warning>
-            <td>33</td>
+            <td>35</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/ENVO_00000531" target="_blank" rel="noopener noreferrer">ENVO:00000531</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
             <td>icecap depression</td>
-          </tr>
-        <tr class=table-warning>
-            <td>34</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000531" target="_blank" rel="noopener noreferrer">ENVO:00000531</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasRelatedSynonym</a></td>
-            <td>icecap depression</td>
-          </tr>
-        <tr class=table-warning>
-            <td>35</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000539" target="_blank" rel="noopener noreferrer">ENVO:00000539</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasBroadSynonym</a></td>
-            <td>sill</td>
           </tr>
         <tr class=table-warning>
             <td>36</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000531" target="_blank" rel="noopener noreferrer">ENVO:00000531</a></td>
+            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasRelatedSynonym</a></td>
+            <td>icecap depression</td>
+          </tr>
+        <tr class=table-warning>
+            <td>37</td>
+            <td>WARN</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000539" target="_blank" rel="noopener noreferrer">ENVO:00000539</a></td>
+            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasBroadSynonym</a></td>
+            <td>sill</td>
+          </tr>
+        <tr class=table-warning>
+            <td>38</td>
+            <td>WARN</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/ENVO_00000539" target="_blank" rel="noopener noreferrer">ENVO:00000539</a></td>
             <td><a href="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasRelatedSynonym</a></td>
             <td>sill</td>
           </tr>
         <tr class=table-warning>
-            <td>37</td>
+            <td>39</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/ENVO_00000547" target="_blank" rel="noopener noreferrer">ENVO:00000547</a></td>
@@ -364,7 +384,7 @@
             <td>water hole</td>
           </tr>
         <tr class=table-warning>
-            <td>38</td>
+            <td>40</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/ENVO_00000547" target="_blank" rel="noopener noreferrer">ENVO:00000547</a></td>
@@ -372,7 +392,7 @@
             <td>water hole</td>
           </tr>
         <tr class=table-warning>
-            <td>39</td>
+            <td>41</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/ENVO_01000547" target="_blank" rel="noopener noreferrer">ENVO:01000547</a></td>
@@ -380,7 +400,7 @@
             <td>glaze</td>
           </tr>
         <tr class=table-warning>
-            <td>40</td>
+            <td>42</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_scoped_synonym" target="_blank" rel="noopener noreferrer">duplicate_scoped_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/ENVO_01000547" target="_blank" rel="noopener noreferrer">ENVO:01000547</a></td>
@@ -388,7 +408,7 @@
             <td>glaze</td>
           </tr>
         <tr class=table-warning>
-            <td>41</td>
+            <td>43</td>
             <td>WARN</td>
             <td><a href="https://robot.obolibrary.org/report_queries/equivalent_class_axiom_no_genus" target="_blank" rel="noopener noreferrer">equivalent_class_axiom_no_genus</a></td>
             <td><a href="http://purl.obolibrary.org/obo/ENVO_01001151" target="_blank" rel="noopener noreferrer">ENVO:01001151</a></td>
@@ -396,7 +416,7 @@
             <td><a href="http://purl.obolibrary.org/obo/ENVO_01001146" target="_blank" rel="noopener noreferrer">ENVO:01001146</a></td>
           </tr>
         <tr class=table-warning>
-            <td>42</td>
+            <td>44</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/invalid_xref" target="_blank" rel="noopener noreferrer">invalid_xref</a></td>
             <td><a href="http://purl.obolibrary.org/obo/ENVO_01001644" target="_blank" rel="noopener noreferrer">ENVO:01001644</a></td>
@@ -404,7 +424,7 @@
             <td>Carbonate which is formed as the result of some biological process.</td>
           </tr>
         <tr class=table-warning>
-            <td>43</td>
+            <td>45</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/ENVO_00000004" target="_blank" rel="noopener noreferrer">ENVO:00000004</a></td>
@@ -412,26 +432,10 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>44</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000105" target="_blank" rel="noopener noreferrer">ENVO:00000105</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-warning>
-            <td>45</td>
-            <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000118" target="_blank" rel="noopener noreferrer">ENVO:00000118</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-warning>
             <td>46</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000120" target="_blank" rel="noopener noreferrer">ENVO:00000120</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000077" target="_blank" rel="noopener noreferrer">ENVO:00000077</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -439,7 +443,7 @@
             <td>47</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000159" target="_blank" rel="noopener noreferrer">ENVO:00000159</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000105" target="_blank" rel="noopener noreferrer">ENVO:00000105</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -447,7 +451,7 @@
             <td>48</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000160" target="_blank" rel="noopener noreferrer">ENVO:00000160</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000118" target="_blank" rel="noopener noreferrer">ENVO:00000118</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -455,7 +459,7 @@
             <td>49</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000161" target="_blank" rel="noopener noreferrer">ENVO:00000161</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000120" target="_blank" rel="noopener noreferrer">ENVO:00000120</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -463,7 +467,7 @@
             <td>50</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000162" target="_blank" rel="noopener noreferrer">ENVO:00000162</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000159" target="_blank" rel="noopener noreferrer">ENVO:00000159</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -471,7 +475,7 @@
             <td>51</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000163" target="_blank" rel="noopener noreferrer">ENVO:00000163</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000160" target="_blank" rel="noopener noreferrer">ENVO:00000160</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -479,7 +483,7 @@
             <td>52</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000193" target="_blank" rel="noopener noreferrer">ENVO:00000193</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000161" target="_blank" rel="noopener noreferrer">ENVO:00000161</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -487,7 +491,7 @@
             <td>53</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000288" target="_blank" rel="noopener noreferrer">ENVO:00000288</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000162" target="_blank" rel="noopener noreferrer">ENVO:00000162</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -495,7 +499,7 @@
             <td>54</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000344" target="_blank" rel="noopener noreferrer">ENVO:00000344</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000163" target="_blank" rel="noopener noreferrer">ENVO:00000163</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -503,7 +507,7 @@
             <td>55</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000345" target="_blank" rel="noopener noreferrer">ENVO:00000345</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000193" target="_blank" rel="noopener noreferrer">ENVO:00000193</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -511,7 +515,7 @@
             <td>56</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000346" target="_blank" rel="noopener noreferrer">ENVO:00000346</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000288" target="_blank" rel="noopener noreferrer">ENVO:00000288</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -519,7 +523,7 @@
             <td>57</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000347" target="_blank" rel="noopener noreferrer">ENVO:00000347</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000344" target="_blank" rel="noopener noreferrer">ENVO:00000344</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -527,7 +531,7 @@
             <td>58</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000348" target="_blank" rel="noopener noreferrer">ENVO:00000348</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000345" target="_blank" rel="noopener noreferrer">ENVO:00000345</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -535,7 +539,7 @@
             <td>59</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000532" target="_blank" rel="noopener noreferrer">ENVO:00000532</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000346" target="_blank" rel="noopener noreferrer">ENVO:00000346</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -543,7 +547,7 @@
             <td>60</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000534" target="_blank" rel="noopener noreferrer">ENVO:00000534</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000347" target="_blank" rel="noopener noreferrer">ENVO:00000347</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -551,7 +555,7 @@
             <td>61</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002040" target="_blank" rel="noopener noreferrer">ENVO:00002040</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000348" target="_blank" rel="noopener noreferrer">ENVO:00000348</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -559,7 +563,7 @@
             <td>62</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002043" target="_blank" rel="noopener noreferrer">ENVO:00002043</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000532" target="_blank" rel="noopener noreferrer">ENVO:00000532</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -567,7 +571,7 @@
             <td>63</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002046" target="_blank" rel="noopener noreferrer">ENVO:00002046</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00000534" target="_blank" rel="noopener noreferrer">ENVO:00000534</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -575,7 +579,7 @@
             <td>64</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002049" target="_blank" rel="noopener noreferrer">ENVO:00002049</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002040" target="_blank" rel="noopener noreferrer">ENVO:00002040</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -583,7 +587,7 @@
             <td>65</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002057" target="_blank" rel="noopener noreferrer">ENVO:00002057</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002043" target="_blank" rel="noopener noreferrer">ENVO:00002043</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -591,7 +595,7 @@
             <td>66</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002058" target="_blank" rel="noopener noreferrer">ENVO:00002058</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002046" target="_blank" rel="noopener noreferrer">ENVO:00002046</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -599,7 +603,7 @@
             <td>67</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002118" target="_blank" rel="noopener noreferrer">ENVO:00002118</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002049" target="_blank" rel="noopener noreferrer">ENVO:00002049</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -607,7 +611,7 @@
             <td>68</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002127" target="_blank" rel="noopener noreferrer">ENVO:00002127</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002057" target="_blank" rel="noopener noreferrer">ENVO:00002057</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -615,7 +619,7 @@
             <td>69</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002129" target="_blank" rel="noopener noreferrer">ENVO:00002129</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002058" target="_blank" rel="noopener noreferrer">ENVO:00002058</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -623,7 +627,7 @@
             <td>70</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002134" target="_blank" rel="noopener noreferrer">ENVO:00002134</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002118" target="_blank" rel="noopener noreferrer">ENVO:00002118</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -631,7 +635,7 @@
             <td>71</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002135" target="_blank" rel="noopener noreferrer">ENVO:00002135</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002127" target="_blank" rel="noopener noreferrer">ENVO:00002127</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -639,7 +643,7 @@
             <td>72</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002136" target="_blank" rel="noopener noreferrer">ENVO:00002136</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002129" target="_blank" rel="noopener noreferrer">ENVO:00002129</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -647,7 +651,7 @@
             <td>73</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002138" target="_blank" rel="noopener noreferrer">ENVO:00002138</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002134" target="_blank" rel="noopener noreferrer">ENVO:00002134</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -655,7 +659,7 @@
             <td>74</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002142" target="_blank" rel="noopener noreferrer">ENVO:00002142</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002135" target="_blank" rel="noopener noreferrer">ENVO:00002135</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -663,7 +667,7 @@
             <td>75</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002148" target="_blank" rel="noopener noreferrer">ENVO:00002148</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002136" target="_blank" rel="noopener noreferrer">ENVO:00002136</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -671,7 +675,7 @@
             <td>76</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002154" target="_blank" rel="noopener noreferrer">ENVO:00002154</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002138" target="_blank" rel="noopener noreferrer">ENVO:00002138</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -679,7 +683,7 @@
             <td>77</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002155" target="_blank" rel="noopener noreferrer">ENVO:00002155</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002142" target="_blank" rel="noopener noreferrer">ENVO:00002142</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -687,7 +691,7 @@
             <td>78</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002157" target="_blank" rel="noopener noreferrer">ENVO:00002157</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002148" target="_blank" rel="noopener noreferrer">ENVO:00002148</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -695,7 +699,7 @@
             <td>79</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002158" target="_blank" rel="noopener noreferrer">ENVO:00002158</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002154" target="_blank" rel="noopener noreferrer">ENVO:00002154</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -703,7 +707,7 @@
             <td>80</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002159" target="_blank" rel="noopener noreferrer">ENVO:00002159</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002155" target="_blank" rel="noopener noreferrer">ENVO:00002155</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -711,7 +715,7 @@
             <td>81</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002167" target="_blank" rel="noopener noreferrer">ENVO:00002167</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002157" target="_blank" rel="noopener noreferrer">ENVO:00002157</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -719,7 +723,7 @@
             <td>82</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002168" target="_blank" rel="noopener noreferrer">ENVO:00002168</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002158" target="_blank" rel="noopener noreferrer">ENVO:00002158</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -727,7 +731,7 @@
             <td>83</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002169" target="_blank" rel="noopener noreferrer">ENVO:00002169</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002159" target="_blank" rel="noopener noreferrer">ENVO:00002159</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -735,7 +739,7 @@
             <td>84</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002171" target="_blank" rel="noopener noreferrer">ENVO:00002171</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002167" target="_blank" rel="noopener noreferrer">ENVO:00002167</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -743,7 +747,7 @@
             <td>85</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002176" target="_blank" rel="noopener noreferrer">ENVO:00002176</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002168" target="_blank" rel="noopener noreferrer">ENVO:00002168</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -751,7 +755,7 @@
             <td>86</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002177" target="_blank" rel="noopener noreferrer">ENVO:00002177</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002169" target="_blank" rel="noopener noreferrer">ENVO:00002169</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -759,7 +763,7 @@
             <td>87</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002179" target="_blank" rel="noopener noreferrer">ENVO:00002179</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002171" target="_blank" rel="noopener noreferrer">ENVO:00002171</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -767,7 +771,7 @@
             <td>88</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002184" target="_blank" rel="noopener noreferrer">ENVO:00002184</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002176" target="_blank" rel="noopener noreferrer">ENVO:00002176</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -775,7 +779,7 @@
             <td>89</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002186" target="_blank" rel="noopener noreferrer">ENVO:00002186</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002177" target="_blank" rel="noopener noreferrer">ENVO:00002177</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -783,7 +787,7 @@
             <td>90</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002192" target="_blank" rel="noopener noreferrer">ENVO:00002192</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002179" target="_blank" rel="noopener noreferrer">ENVO:00002179</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -791,7 +795,7 @@
             <td>91</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002193" target="_blank" rel="noopener noreferrer">ENVO:00002193</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002184" target="_blank" rel="noopener noreferrer">ENVO:00002184</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -799,7 +803,7 @@
             <td>92</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002194" target="_blank" rel="noopener noreferrer">ENVO:00002194</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002186" target="_blank" rel="noopener noreferrer">ENVO:00002186</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -807,7 +811,7 @@
             <td>93</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002195" target="_blank" rel="noopener noreferrer">ENVO:00002195</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002192" target="_blank" rel="noopener noreferrer">ENVO:00002192</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -815,7 +819,7 @@
             <td>94</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002206" target="_blank" rel="noopener noreferrer">ENVO:00002206</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002193" target="_blank" rel="noopener noreferrer">ENVO:00002193</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -823,7 +827,7 @@
             <td>95</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002207" target="_blank" rel="noopener noreferrer">ENVO:00002207</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002194" target="_blank" rel="noopener noreferrer">ENVO:00002194</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -831,7 +835,7 @@
             <td>96</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002212" target="_blank" rel="noopener noreferrer">ENVO:00002212</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002195" target="_blank" rel="noopener noreferrer">ENVO:00002195</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -839,7 +843,7 @@
             <td>97</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002228" target="_blank" rel="noopener noreferrer">ENVO:00002228</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002206" target="_blank" rel="noopener noreferrer">ENVO:00002206</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -847,7 +851,7 @@
             <td>98</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002266" target="_blank" rel="noopener noreferrer">ENVO:00002266</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002207" target="_blank" rel="noopener noreferrer">ENVO:00002207</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -855,7 +859,7 @@
             <td>99</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002272" target="_blank" rel="noopener noreferrer">ENVO:00002272</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002212" target="_blank" rel="noopener noreferrer">ENVO:00002212</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -863,7 +867,7 @@
             <td>100</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002276" target="_blank" rel="noopener noreferrer">ENVO:00002276</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002228" target="_blank" rel="noopener noreferrer">ENVO:00002228</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -871,7 +875,7 @@
             <td>101</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002873" target="_blank" rel="noopener noreferrer">ENVO:00002873</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002266" target="_blank" rel="noopener noreferrer">ENVO:00002266</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -879,7 +883,7 @@
             <td>102</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002926" target="_blank" rel="noopener noreferrer">ENVO:00002926</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002272" target="_blank" rel="noopener noreferrer">ENVO:00002272</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -887,7 +891,7 @@
             <td>103</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00003032" target="_blank" rel="noopener noreferrer">ENVO:00003032</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002276" target="_blank" rel="noopener noreferrer">ENVO:00002276</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -895,7 +899,7 @@
             <td>104</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00003045" target="_blank" rel="noopener noreferrer">ENVO:00003045</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002873" target="_blank" rel="noopener noreferrer">ENVO:00002873</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -903,7 +907,7 @@
             <td>105</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00003071" target="_blank" rel="noopener noreferrer">ENVO:00003071</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00002926" target="_blank" rel="noopener noreferrer">ENVO:00002926</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -911,7 +915,7 @@
             <td>106</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00003096" target="_blank" rel="noopener noreferrer">ENVO:00003096</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00003032" target="_blank" rel="noopener noreferrer">ENVO:00003032</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -919,7 +923,7 @@
             <td>107</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00003097" target="_blank" rel="noopener noreferrer">ENVO:00003097</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00003045" target="_blank" rel="noopener noreferrer">ENVO:00003045</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -927,7 +931,7 @@
             <td>108</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00003859" target="_blank" rel="noopener noreferrer">ENVO:00003859</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00003065" target="_blank" rel="noopener noreferrer">ENVO:00003065</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -935,7 +939,7 @@
             <td>109</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00003870" target="_blank" rel="noopener noreferrer">ENVO:00003870</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00003071" target="_blank" rel="noopener noreferrer">ENVO:00003071</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -943,7 +947,7 @@
             <td>110</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00003884" target="_blank" rel="noopener noreferrer">ENVO:00003884</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00003096" target="_blank" rel="noopener noreferrer">ENVO:00003096</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -951,7 +955,7 @@
             <td>111</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00003900" target="_blank" rel="noopener noreferrer">ENVO:00003900</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00003097" target="_blank" rel="noopener noreferrer">ENVO:00003097</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -959,7 +963,7 @@
             <td>112</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00003903" target="_blank" rel="noopener noreferrer">ENVO:00003903</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00003859" target="_blank" rel="noopener noreferrer">ENVO:00003859</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -967,7 +971,7 @@
             <td>113</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00003908" target="_blank" rel="noopener noreferrer">ENVO:00003908</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00003870" target="_blank" rel="noopener noreferrer">ENVO:00003870</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -975,7 +979,7 @@
             <td>114</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00003927" target="_blank" rel="noopener noreferrer">ENVO:00003927</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00003884" target="_blank" rel="noopener noreferrer">ENVO:00003884</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -983,7 +987,7 @@
             <td>115</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00003965" target="_blank" rel="noopener noreferrer">ENVO:00003965</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00003900" target="_blank" rel="noopener noreferrer">ENVO:00003900</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -991,7 +995,7 @@
             <td>116</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00003978" target="_blank" rel="noopener noreferrer">ENVO:00003978</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00003903" target="_blank" rel="noopener noreferrer">ENVO:00003903</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -999,7 +1003,7 @@
             <td>117</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00005788" target="_blank" rel="noopener noreferrer">ENVO:00005788</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00003908" target="_blank" rel="noopener noreferrer">ENVO:00003908</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1007,7 +1011,7 @@
             <td>118</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00005793" target="_blank" rel="noopener noreferrer">ENVO:00005793</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00003927" target="_blank" rel="noopener noreferrer">ENVO:00003927</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1015,7 +1019,7 @@
             <td>119</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00005794" target="_blank" rel="noopener noreferrer">ENVO:00005794</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00003965" target="_blank" rel="noopener noreferrer">ENVO:00003965</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1023,7 +1027,7 @@
             <td>120</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00005796" target="_blank" rel="noopener noreferrer">ENVO:00005796</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00003978" target="_blank" rel="noopener noreferrer">ENVO:00003978</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1031,7 +1035,7 @@
             <td>121</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00005798" target="_blank" rel="noopener noreferrer">ENVO:00005798</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00005788" target="_blank" rel="noopener noreferrer">ENVO:00005788</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1039,7 +1043,7 @@
             <td>122</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_00005799" target="_blank" rel="noopener noreferrer">ENVO:00005799</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00005793" target="_blank" rel="noopener noreferrer">ENVO:00005793</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1047,7 +1051,7 @@
             <td>123</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_0010003" target="_blank" rel="noopener noreferrer">ENVO:0010003</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00005794" target="_blank" rel="noopener noreferrer">ENVO:00005794</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1055,7 +1059,7 @@
             <td>124</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000084" target="_blank" rel="noopener noreferrer">ENVO:01000084</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00005796" target="_blank" rel="noopener noreferrer">ENVO:00005796</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1063,7 +1067,7 @@
             <td>125</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000085" target="_blank" rel="noopener noreferrer">ENVO:01000085</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00005798" target="_blank" rel="noopener noreferrer">ENVO:00005798</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1071,7 +1075,7 @@
             <td>126</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000086" target="_blank" rel="noopener noreferrer">ENVO:01000086</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_00005799" target="_blank" rel="noopener noreferrer">ENVO:00005799</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1079,7 +1083,7 @@
             <td>127</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000087" target="_blank" rel="noopener noreferrer">ENVO:01000087</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_0010003" target="_blank" rel="noopener noreferrer">ENVO:0010003</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1087,7 +1091,7 @@
             <td>128</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000088" target="_blank" rel="noopener noreferrer">ENVO:01000088</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000084" target="_blank" rel="noopener noreferrer">ENVO:01000084</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1095,7 +1099,7 @@
             <td>129</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000089" target="_blank" rel="noopener noreferrer">ENVO:01000089</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000085" target="_blank" rel="noopener noreferrer">ENVO:01000085</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1103,7 +1107,7 @@
             <td>130</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000090" target="_blank" rel="noopener noreferrer">ENVO:01000090</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000086" target="_blank" rel="noopener noreferrer">ENVO:01000086</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1111,7 +1115,7 @@
             <td>131</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000091" target="_blank" rel="noopener noreferrer">ENVO:01000091</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000087" target="_blank" rel="noopener noreferrer">ENVO:01000087</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1119,7 +1123,7 @@
             <td>132</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000092" target="_blank" rel="noopener noreferrer">ENVO:01000092</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000088" target="_blank" rel="noopener noreferrer">ENVO:01000088</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1127,7 +1131,7 @@
             <td>133</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000093" target="_blank" rel="noopener noreferrer">ENVO:01000093</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000089" target="_blank" rel="noopener noreferrer">ENVO:01000089</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1135,7 +1139,7 @@
             <td>134</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000095" target="_blank" rel="noopener noreferrer">ENVO:01000095</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000090" target="_blank" rel="noopener noreferrer">ENVO:01000090</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1143,7 +1147,7 @@
             <td>135</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000096" target="_blank" rel="noopener noreferrer">ENVO:01000096</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000091" target="_blank" rel="noopener noreferrer">ENVO:01000091</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1151,7 +1155,7 @@
             <td>136</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000097" target="_blank" rel="noopener noreferrer">ENVO:01000097</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000092" target="_blank" rel="noopener noreferrer">ENVO:01000092</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1159,7 +1163,7 @@
             <td>137</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000101" target="_blank" rel="noopener noreferrer">ENVO:01000101</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000093" target="_blank" rel="noopener noreferrer">ENVO:01000093</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1167,7 +1171,7 @@
             <td>138</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000102" target="_blank" rel="noopener noreferrer">ENVO:01000102</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000095" target="_blank" rel="noopener noreferrer">ENVO:01000095</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1175,7 +1179,7 @@
             <td>139</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000144" target="_blank" rel="noopener noreferrer">ENVO:01000144</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000096" target="_blank" rel="noopener noreferrer">ENVO:01000096</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1183,7 +1187,7 @@
             <td>140</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000145" target="_blank" rel="noopener noreferrer">ENVO:01000145</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000097" target="_blank" rel="noopener noreferrer">ENVO:01000097</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1191,7 +1195,7 @@
             <td>141</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000146" target="_blank" rel="noopener noreferrer">ENVO:01000146</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000101" target="_blank" rel="noopener noreferrer">ENVO:01000101</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1199,7 +1203,7 @@
             <td>142</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000147" target="_blank" rel="noopener noreferrer">ENVO:01000147</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000102" target="_blank" rel="noopener noreferrer">ENVO:01000102</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1207,7 +1211,7 @@
             <td>143</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000148" target="_blank" rel="noopener noreferrer">ENVO:01000148</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000144" target="_blank" rel="noopener noreferrer">ENVO:01000144</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1215,7 +1219,7 @@
             <td>144</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000149" target="_blank" rel="noopener noreferrer">ENVO:01000149</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000145" target="_blank" rel="noopener noreferrer">ENVO:01000145</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1223,7 +1227,7 @@
             <td>145</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000195" target="_blank" rel="noopener noreferrer">ENVO:01000195</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000146" target="_blank" rel="noopener noreferrer">ENVO:01000146</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1231,7 +1235,7 @@
             <td>146</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000218" target="_blank" rel="noopener noreferrer">ENVO:01000218</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000147" target="_blank" rel="noopener noreferrer">ENVO:01000147</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1239,7 +1243,7 @@
             <td>147</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000338" target="_blank" rel="noopener noreferrer">ENVO:01000338</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000148" target="_blank" rel="noopener noreferrer">ENVO:01000148</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1247,7 +1251,7 @@
             <td>148</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000400" target="_blank" rel="noopener noreferrer">ENVO:01000400</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000149" target="_blank" rel="noopener noreferrer">ENVO:01000149</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1255,7 +1259,7 @@
             <td>149</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000403" target="_blank" rel="noopener noreferrer">ENVO:01000403</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000192" target="_blank" rel="noopener noreferrer">ENVO:01000192</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1263,7 +1267,7 @@
             <td>150</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000418" target="_blank" rel="noopener noreferrer">ENVO:01000418</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000193" target="_blank" rel="noopener noreferrer">ENVO:01000193</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1271,7 +1275,7 @@
             <td>151</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000432" target="_blank" rel="noopener noreferrer">ENVO:01000432</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000195" target="_blank" rel="noopener noreferrer">ENVO:01000195</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1279,7 +1283,7 @@
             <td>152</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000433" target="_blank" rel="noopener noreferrer">ENVO:01000433</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000218" target="_blank" rel="noopener noreferrer">ENVO:01000218</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1287,7 +1291,7 @@
             <td>153</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000471" target="_blank" rel="noopener noreferrer">ENVO:01000471</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000338" target="_blank" rel="noopener noreferrer">ENVO:01000338</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1295,7 +1299,7 @@
             <td>154</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000478" target="_blank" rel="noopener noreferrer">ENVO:01000478</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000391" target="_blank" rel="noopener noreferrer">ENVO:01000391</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1303,7 +1307,7 @@
             <td>155</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000508" target="_blank" rel="noopener noreferrer">ENVO:01000508</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000400" target="_blank" rel="noopener noreferrer">ENVO:01000400</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1311,7 +1315,7 @@
             <td>156</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000549" target="_blank" rel="noopener noreferrer">ENVO:01000549</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000403" target="_blank" rel="noopener noreferrer">ENVO:01000403</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1319,7 +1323,7 @@
             <td>157</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000558" target="_blank" rel="noopener noreferrer">ENVO:01000558</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000418" target="_blank" rel="noopener noreferrer">ENVO:01000418</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1327,7 +1331,7 @@
             <td>158</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000599" target="_blank" rel="noopener noreferrer">ENVO:01000599</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000432" target="_blank" rel="noopener noreferrer">ENVO:01000432</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1335,7 +1339,7 @@
             <td>159</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000636" target="_blank" rel="noopener noreferrer">ENVO:01000636</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000433" target="_blank" rel="noopener noreferrer">ENVO:01000433</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1343,7 +1347,7 @@
             <td>160</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000642" target="_blank" rel="noopener noreferrer">ENVO:01000642</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000434" target="_blank" rel="noopener noreferrer">ENVO:01000434</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1351,7 +1355,7 @@
             <td>161</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000643" target="_blank" rel="noopener noreferrer">ENVO:01000643</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000435" target="_blank" rel="noopener noreferrer">ENVO:01000435</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1359,7 +1363,7 @@
             <td>162</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000693" target="_blank" rel="noopener noreferrer">ENVO:01000693</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000471" target="_blank" rel="noopener noreferrer">ENVO:01000471</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1367,7 +1371,7 @@
             <td>163</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000695" target="_blank" rel="noopener noreferrer">ENVO:01000695</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000478" target="_blank" rel="noopener noreferrer">ENVO:01000478</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1375,7 +1379,7 @@
             <td>164</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000793" target="_blank" rel="noopener noreferrer">ENVO:01000793</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000508" target="_blank" rel="noopener noreferrer">ENVO:01000508</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1383,7 +1387,7 @@
             <td>165</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000795" target="_blank" rel="noopener noreferrer">ENVO:01000795</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000549" target="_blank" rel="noopener noreferrer">ENVO:01000549</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1391,7 +1395,7 @@
             <td>166</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000803" target="_blank" rel="noopener noreferrer">ENVO:01000803</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000558" target="_blank" rel="noopener noreferrer">ENVO:01000558</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1399,7 +1403,7 @@
             <td>167</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000834" target="_blank" rel="noopener noreferrer">ENVO:01000834</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000599" target="_blank" rel="noopener noreferrer">ENVO:01000599</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1407,7 +1411,7 @@
             <td>168</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000837" target="_blank" rel="noopener noreferrer">ENVO:01000837</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000636" target="_blank" rel="noopener noreferrer">ENVO:01000636</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1415,7 +1419,7 @@
             <td>169</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000838" target="_blank" rel="noopener noreferrer">ENVO:01000838</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000642" target="_blank" rel="noopener noreferrer">ENVO:01000642</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1423,7 +1427,7 @@
             <td>170</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000929" target="_blank" rel="noopener noreferrer">ENVO:01000929</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000643" target="_blank" rel="noopener noreferrer">ENVO:01000643</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1431,7 +1435,7 @@
             <td>171</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001003" target="_blank" rel="noopener noreferrer">ENVO:01001003</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000693" target="_blank" rel="noopener noreferrer">ENVO:01000693</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1439,7 +1443,7 @@
             <td>172</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001189" target="_blank" rel="noopener noreferrer">ENVO:01001189</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000695" target="_blank" rel="noopener noreferrer">ENVO:01000695</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1447,7 +1451,7 @@
             <td>173</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001193" target="_blank" rel="noopener noreferrer">ENVO:01001193</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000793" target="_blank" rel="noopener noreferrer">ENVO:01000793</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1455,7 +1459,7 @@
             <td>174</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001239" target="_blank" rel="noopener noreferrer">ENVO:01001239</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000795" target="_blank" rel="noopener noreferrer">ENVO:01000795</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1463,7 +1467,7 @@
             <td>175</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001391" target="_blank" rel="noopener noreferrer">ENVO:01001391</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000803" target="_blank" rel="noopener noreferrer">ENVO:01000803</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1471,7 +1475,7 @@
             <td>176</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001392" target="_blank" rel="noopener noreferrer">ENVO:01001392</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000834" target="_blank" rel="noopener noreferrer">ENVO:01000834</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1479,7 +1483,7 @@
             <td>177</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001393" target="_blank" rel="noopener noreferrer">ENVO:01001393</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000837" target="_blank" rel="noopener noreferrer">ENVO:01000837</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1487,7 +1491,7 @@
             <td>178</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001394" target="_blank" rel="noopener noreferrer">ENVO:01001394</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000838" target="_blank" rel="noopener noreferrer">ENVO:01000838</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1495,7 +1499,7 @@
             <td>179</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001471" target="_blank" rel="noopener noreferrer">ENVO:01001471</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01000929" target="_blank" rel="noopener noreferrer">ENVO:01000929</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1503,7 +1507,7 @@
             <td>180</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001472" target="_blank" rel="noopener noreferrer">ENVO:01001472</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001003" target="_blank" rel="noopener noreferrer">ENVO:01001003</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1511,7 +1515,7 @@
             <td>181</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001473" target="_blank" rel="noopener noreferrer">ENVO:01001473</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001189" target="_blank" rel="noopener noreferrer">ENVO:01001189</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1519,7 +1523,7 @@
             <td>182</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001474" target="_blank" rel="noopener noreferrer">ENVO:01001474</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001193" target="_blank" rel="noopener noreferrer">ENVO:01001193</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1527,7 +1531,7 @@
             <td>183</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001494" target="_blank" rel="noopener noreferrer">ENVO:01001494</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001239" target="_blank" rel="noopener noreferrer">ENVO:01001239</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1535,7 +1539,7 @@
             <td>184</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001511" target="_blank" rel="noopener noreferrer">ENVO:01001511</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001391" target="_blank" rel="noopener noreferrer">ENVO:01001391</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1543,7 +1547,7 @@
             <td>185</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001606" target="_blank" rel="noopener noreferrer">ENVO:01001606</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001392" target="_blank" rel="noopener noreferrer">ENVO:01001392</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1551,7 +1555,7 @@
             <td>186</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001644" target="_blank" rel="noopener noreferrer">ENVO:01001644</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001393" target="_blank" rel="noopener noreferrer">ENVO:01001393</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1559,7 +1563,7 @@
             <td>187</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001788" target="_blank" rel="noopener noreferrer">ENVO:01001788</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001394" target="_blank" rel="noopener noreferrer">ENVO:01001394</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1567,7 +1571,7 @@
             <td>188</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001820" target="_blank" rel="noopener noreferrer">ENVO:01001820</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001471" target="_blank" rel="noopener noreferrer">ENVO:01001471</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1575,7 +1579,7 @@
             <td>189</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001847" target="_blank" rel="noopener noreferrer">ENVO:01001847</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001472" target="_blank" rel="noopener noreferrer">ENVO:01001472</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1583,7 +1587,7 @@
             <td>190</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001849" target="_blank" rel="noopener noreferrer">ENVO:01001849</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001473" target="_blank" rel="noopener noreferrer">ENVO:01001473</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1591,7 +1595,7 @@
             <td>191</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001877" target="_blank" rel="noopener noreferrer">ENVO:01001877</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001474" target="_blank" rel="noopener noreferrer">ENVO:01001474</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1599,7 +1603,7 @@
             <td>192</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001899" target="_blank" rel="noopener noreferrer">ENVO:01001899</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001494" target="_blank" rel="noopener noreferrer">ENVO:01001494</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1607,7 +1611,7 @@
             <td>193</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001931" target="_blank" rel="noopener noreferrer">ENVO:01001931</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001511" target="_blank" rel="noopener noreferrer">ENVO:01001511</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1615,7 +1619,7 @@
             <td>194</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001932" target="_blank" rel="noopener noreferrer">ENVO:01001932</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001606" target="_blank" rel="noopener noreferrer">ENVO:01001606</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1623,7 +1627,7 @@
             <td>195</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001933" target="_blank" rel="noopener noreferrer">ENVO:01001933</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001644" target="_blank" rel="noopener noreferrer">ENVO:01001644</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1631,7 +1635,7 @@
             <td>196</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001934" target="_blank" rel="noopener noreferrer">ENVO:01001934</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001787" target="_blank" rel="noopener noreferrer">ENVO:01001787</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1639,7 +1643,7 @@
             <td>197</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001935" target="_blank" rel="noopener noreferrer">ENVO:01001935</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001788" target="_blank" rel="noopener noreferrer">ENVO:01001788</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1647,7 +1651,7 @@
             <td>198</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001936" target="_blank" rel="noopener noreferrer">ENVO:01001936</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001789" target="_blank" rel="noopener noreferrer">ENVO:01001789</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
@@ -1655,7 +1659,7 @@
             <td>199</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001938" target="_blank" rel="noopener noreferrer">ENVO:01001938</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/ENVO_01001807" target="_blank" rel="noopener noreferrer">ENVO:01001807</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>

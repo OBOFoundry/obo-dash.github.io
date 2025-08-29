@@ -4,7 +4,7 @@ base_prefixes:
 - DISDRIVALT
 - DISDRIV
 changed: true
-date: 2025-06-28 16:12:24.043990
+date: 2025-08-19 19:03:47.241593
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 295
@@ -22,12 +22,12 @@ metrics:
     Class: 247
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.889
+    _dashboard: 0.822
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0.25
     _reuse: 0.918
-    oboscore: 0.445
+    oboscore: 0.411
   'Info: How many externally documented uses?': 1
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
@@ -70,7 +70,8 @@ results:
   FP07 Relations:
     status: PASS
   FP08 Documented:
-    status: PASS
+    comment: Homepage URL (http://www.disease-ontology.org) does not resolve
+    status: ERROR
   FP09 Plurality of Users:
     status: PASS
   FP11 Locus of Authority:
@@ -91,10 +92,10 @@ results:
     status: WARN
 sha256_hash: 3edbc5f7b9319c65535fa1b5b05debb17d6eaa744d97491822f2c1106429fe59
 summary:
-  comment: 2 warnings
-  status: WARN
+  comment: 1 errors
+  status: ERROR
   summary_count:
-    ERROR: 0
+    ERROR: 1
     INFO: 0
     WARN: 2
 version: http://purl.obolibrary.org/obo/disdriv/releases/2025-03-20/disdriv.owl

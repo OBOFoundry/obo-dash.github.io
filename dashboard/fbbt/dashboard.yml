@@ -4,58 +4,57 @@ base_prefixes:
 - FBBTALT
 - FBbt
 changed: true
-date: 2025-06-28 16:27:15.334870
+date: 2025-08-19 19:21:12.995329
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 267142
-    Declaration: 29130
+    AnnotationAssertion: 267365
+    Declaration: 29180
     DisjointClasses: 62
-    EquivalentClasses: 6853
-    SubClassOf: 159922
-  'Axioms: Number of axioms': 463109
+    EquivalentClasses: 6891
+    SubClassOf: 153082
+  'Axioms: Number of axioms': 456580
   'Entities: % of entities reused': 1.69
   'Entities: Number of annotation properties': 33
-  'Entities: Number of classes': 29061
+  'Entities: Number of classes': 29111
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 40
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 371462
-    ObjectIntersectionOf: 7449
-    ObjectSomeValuesFrom: 100053
+    Class: 357991
+    ObjectIntersectionOf: 7510
+    ObjectSomeValuesFrom: 93129
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.956
+    _dashboard: 0.867
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.011
+    _impact: 0.005
     _impact_external: 0.25
     _reuse: 0.017
-    oboscore: 0.483
+    oboscore: 0.436
   'Info: How many externally documented uses?': 2
-  'Info: How many ontologies use it?': 2
+  'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 10504
+    BFO: 10527
     CARO: 6
-    CL: 88
+    CL: 207
     FBBTALT: 1
-    FBbt: 364560
-    FBgn: 811
-    GO: 919
-    IAO: 42842
+    FBbt: 350931
+    FBgn: 830
+    GO: 942
+    IAO: 42890
     NCBITaxon: 5
-    PATO: 5038
-    RO: 88483
-    dc: 46123
+    PATO: 5035
+    RO: 81506
+    dc: 46108
     dc11: 1
-    oboInOwl: 219852
-    owl: 1601
-    rdf: 71915
-    rdfs: 44179
+    oboInOwl: 219961
+    owl: 1618
+    rdf: 71926
+    rdfs: 44252
   'Info: Which ontologies use it?':
-  - caro
   - dpo
 mirror_from: http://purl.obolibrary.org/obo/fbbt/fbbt-base.owl
 namespace: fbbt
@@ -71,8 +70,9 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 36 missing definitions. See ROBOT Report for details.
-    status: WARN
+    comment: 2 duplicate definitions.  36 missing definitions. See ROBOT Report for
+      details.
+    status: ERROR
   FP07 Relations:
     status: PASS
   FP08 Documented:
@@ -88,19 +88,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 1350 warnings, 0 info messages.
+    comment: 2 errors, 1350 warnings, 0 info messages.
     file: robot_report
     results:
-      ERROR: 0
+      ERROR: 2
       INFO: 0
       WARN: 1350
-    status: WARN
-sha256_hash: b5fe38802a37e72db99b6e224707d1f6bc2c7287fb18a39465e0988fa49f6ff0
+    status: ERROR
+sha256_hash: c3a77ff9b19a947c473372921f739ad6ae6bfd5fd6bb6c6c513dd947e1fec0e1
 summary:
-  comment: 2 warnings
-  status: WARN
+  comment: 2 errors
+  status: ERROR
   summary_count:
-    ERROR: 0
+    ERROR: 2
     INFO: 0
-    WARN: 2
-version: http://purl.obolibrary.org/obo/fbbt/releases/2025-05-29/fbbt-base.owl
+    WARN: 0
+version: http://purl.obolibrary.org/obo/fbbt/releases/2025-08-07/fbbt-base.owl

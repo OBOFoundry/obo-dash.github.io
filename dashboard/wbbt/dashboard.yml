@@ -4,16 +4,16 @@ base_prefixes:
 - WBBTALT
 - WBbt
 changed: true
-date: 2025-06-30 20:21:07.783402
+date: 2025-08-21 20:10:59.403545
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 33165
-    Declaration: 7587
+    Declaration: 7588
     EquivalentClasses: 11
     SubClassOf: 15273
     TransitiveObjectProperty: 1
-  'Axioms: Number of axioms': 56037
-  'Entities: % of entities reused': 0.47
+  'Axioms: Number of axioms': 56038
+  'Entities: % of entities reused': 0.46
   'Entities: Number of annotation properties': 27
   'Entities: Number of classes': 7555
   'Entities: Number of data properties': 0
@@ -24,14 +24,14 @@ metrics:
     Class: 38134
     ObjectSomeValuesFrom: 6927
     ObjectUnionOf: 11
-  'Info: Does the ontology fall under OWL 2 DL?': false
+  'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.86
+    _dashboard: 0.793
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.005
     _impact_external: 0.25
     _reuse: 0.005
-    oboscore: 0.432
+    oboscore: 0.399
   'Info: How many externally documented uses?': 1
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
@@ -43,7 +43,7 @@ metrics:
     WBBTALT: 1
     WBbt: 38134
     dc: 1
-    dc11: 3
+    dc11: 4
     oboInOwl: 24290
     owl: 794
     rdf: 6540
@@ -61,7 +61,8 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -92,12 +93,12 @@ results:
       INFO: 4744
       WARN: 292
     status: ERROR
-sha256_hash: 4b106918367d1bb682ae031f3474c81126a311efe28c29d67288e144739fe721
+sha256_hash: 1e7d86e334fe2c54ad9dc4be1c2f9dc384226f88618b47dfdcb92c590a2a56e3
 summary:
-  comment: 2 errors
+  comment: 3 errors
   status: ERROR
   summary_count:
-    ERROR: 2
+    ERROR: 3
     INFO: 1
     WARN: 0
-version: http://purl.obolibrary.org/obo/wbbt/releases/2025-03-26/wbbt-base.owl
+version: http://purl.obolibrary.org/obo/wbbt/releases/2025-08-19/wbbt-base.owl

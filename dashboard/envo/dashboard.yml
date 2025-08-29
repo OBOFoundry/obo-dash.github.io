@@ -4,73 +4,73 @@ base_prefixes:
 - ENVOALT
 - ENVO
 changed: true
-date: 2025-06-28 16:24:44.823701
+date: 2025-08-19 19:18:45.513031
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 25054
-    ClassAssertion: 53
-    Declaration: 5124
+    AnnotationAssertion: 24471
+    ClassAssertion: 47
+    Declaration: 4967
     DisjointClasses: 20
-    DisjointUnion: 3
-    EquivalentClasses: 895
+    DisjointUnion: 1
+    EquivalentClasses: 787
     ObjectPropertyAssertion: 36
-    SubAnnotationPropertyOf: 37
-    SubClassOf: 6450
+    SubAnnotationPropertyOf: 24
+    SubClassOf: 6333
     SubObjectPropertyOf: 2
-  'Axioms: Number of axioms': 37674
-  'Entities: % of entities reused': 11.54
-  'Entities: Number of annotation properties': 95
-  'Entities: Number of classes': 4906
+  'Axioms: Number of axioms': 36688
+  'Entities: % of entities reused': 11.68
+  'Entities: Number of annotation properties': 81
+  'Entities: Number of classes': 4771
   'Entities: Number of data properties': 0
-  'Entities: Number of individuals': 50
-  'Entities: Number of object properties': 75
+  'Entities: Number of individuals': 44
+  'Entities: Number of object properties': 73
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 21690
+    Class: 20953
     ObjectAllValuesFrom: 1
     ObjectComplementOf: 24
-    ObjectIntersectionOf: 1536
+    ObjectIntersectionOf: 1424
     ObjectMinCardinality: 15
-    ObjectSomeValuesFrom: 4267
-    ObjectUnionOf: 308
-  'Info: Does the ontology fall under OWL 2 DL?': true
+    ObjectSomeValuesFrom: 4157
+    ObjectUnionOf: 281
+  'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.949
+    _dashboard: 0.838
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.16
     _impact_external: 0.75
-    _reuse: 0.115
-    oboscore: 0.554
+    _reuse: 0.117
+    oboscore: 0.499
   'Info: How many externally documented uses?': 6
   'Info: How many ontologies use it?': 30
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 1423
-    CHEBI: 676
-    ENVO: 20045
+    BFO: 1412
+    CHEBI: 677
+    ENVO: 19279
     ENVOALT: 49
     FAO: 4
     FOODON: 8
     GO: 22
-    IAO: 4897
-    NCBITaxon: 92
-    OBI: 29
+    IAO: 4761
+    NCBITaxon: 90
+    OBI: 26
     OMO: 2
-    PATO: 874
+    PATO: 856
     PCO: 27
     PO: 19
-    RO: 2929
+    RO: 2829
     UBERON: 95
-    dc: 120
-    dc11: 1415
+    dc: 8
+    dc11: 1200
     foaf: 1
     obo: 2
-    oboInOwl: 16676
-    owl: 449
+    oboInOwl: 16720
+    owl: 448
     prefix_unknown: 15
-    rdf: 3491
-    rdfs: 5788
+    rdf: 7651
+    rdfs: 5587
     xsd: 2
   'Info: Which ontologies use it?':
   - agro
@@ -117,7 +117,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 220 missing definitions. See ROBOT Report for details.
+    comment: 206 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     comment: 5 non-RO properties used.
@@ -130,25 +130,26 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    status: PASS
+    comment: 2 missing labels. See ROBOT Report for details.
+    status: ERROR
   FP16 Maintenance:
     status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 274 warnings, 279 info messages.
+    comment: 2 errors, 261 warnings, 264 info messages.
     file: robot_report
     results:
-      ERROR: 0
-      INFO: 279
-      WARN: 274
-    status: WARN
-sha256_hash: 0ad01d8aa335f8ae78c8eec27f1a518b52586e1cf8f9b8bf344028c0d2f1ed52
+      ERROR: 2
+      INFO: 264
+      WARN: 261
+    status: ERROR
+sha256_hash: c5c23cc89d1abb4edcb3cc94c18db32759a5666bc538c855b8d2aeaf13ed322f
 summary:
-  comment: 2 warnings
-  status: WARN
+  comment: 2 errors
+  status: ERROR
   summary_count:
-    ERROR: 0
+    ERROR: 2
     INFO: 1
-    WARN: 2
-version: http://purl.obolibrary.org/obo/envo/releases/2025-02-05/envo-base.owl
+    WARN: 1
+version: http://purl.obolibrary.org/obo/envo/releases/2025-08-19/envo-base.owl
