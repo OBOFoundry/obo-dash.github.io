@@ -4,13 +4,13 @@ base_prefixes:
 - PECOALT
 - PECO
 changed: true
-date: 2025-08-21 19:02:05.996574
+date: 2025-10-07 21:32:11.512750
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 15765
     Declaration: 3280
     DisjointClasses: 8
-    EquivalentClasses: 285
+    EquivalentClasses: 282
     FunctionalObjectProperty: 2
     InverseObjectProperties: 19
     ObjectPropertyDomain: 22
@@ -21,7 +21,7 @@ metrics:
     SubPropertyChainOf: 42
     SymmetricObjectProperty: 3
     TransitiveObjectProperty: 12
-  'Axioms: Number of axioms': 25125
+  'Axioms: Number of axioms': 25122
   'Entities: % of entities reused': 82.53
   'Entities: Number of annotation properties': 27
   'Entities: Number of classes': 3136
@@ -30,27 +30,27 @@ metrics:
   'Entities: Number of object properties': 119
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 15108
+    Class: 15099
     ObjectHasSelf: 1
-    ObjectIntersectionOf: 295
+    ObjectIntersectionOf: 292
     ObjectMinCardinality: 3
-    ObjectSomeValuesFrom: 1765
+    ObjectSomeValuesFrom: 1762
     ObjectUnionOf: 2
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.704
+    _dashboard: 0.638
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.016
     _impact_external: 0
     _reuse: 0.825
-    oboscore: 0.36
+    oboscore: 0.327
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 3
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     BFO: 326
-    CHEBI: 8956
+    CHEBI: 8953
     CHEBIALT: 547
     ENVO: 750
     ENVOALT: 4
@@ -61,8 +61,8 @@ metrics:
     NCBITaxon: 839
     PATO: 118
     PCO: 21
-    PECO: 2429
-    RO: 1737
+    PECO: 2423
+    RO: 1734
     oboInOwl: 17715
     owl: 1203
     prefix_unknown: 3
@@ -93,7 +93,8 @@ results:
   FP07 Relations:
     status: PASS
   FP08 Documented:
-    status: PASS
+    comment: Homepage URL (http://planteome.org/) does not resolve
+    status: ERROR
   FP09 Plurality of Users:
     comment: Missing usages
     status: ERROR
@@ -116,10 +117,10 @@ results:
     status: ERROR
 sha256_hash: bc2603e444c8017dc96683eaf8a23e091135dfeeb7e4b3dd43d1a05ce77da0dc
 summary:
-  comment: 3 errors
+  comment: 4 errors
   status: ERROR
   summary_count:
-    ERROR: 3
+    ERROR: 4
     INFO: 1
     WARN: 1
 version: http://purl.obolibrary.org/obo/peco/releases/2023-11-10/peco.owl

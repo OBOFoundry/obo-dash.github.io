@@ -14,4 +14,4 @@ docker run -e ROBOT_JAVA_ARGS='-Xmx58G' -e JAVA_OPTS='-Xmx58G' \
   -v $PWD/dashboard-config.yml:/tools/dashboard-config.yml \
   -v $PWD/ontologies:/tools/ontologies \
   -v $PWD/sparql:/tools/sparql \
-  -w /work --rm -ti anitacaron/obo-dashboard:v0.1 "$@"
+  -w /work --rm -ti anitacaron/obo-dashboard:latest "$@"

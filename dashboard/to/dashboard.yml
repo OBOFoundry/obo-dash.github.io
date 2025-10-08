@@ -3,8 +3,8 @@ base_prefixes:
 - TO
 - TOALT
 - TO
-changed: true
-date: 2025-08-21 19:53:20.610143
+changed: false
+date: 2025-10-07 22:23:26.586937
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 37930
@@ -12,7 +12,7 @@ metrics:
     Declaration: 5584
     DifferentIndividuals: 1
     DisjointClasses: 51
-    EquivalentClasses: 1018
+    EquivalentClasses: 1005
     FunctionalObjectProperty: 3
     InverseFunctionalObjectProperty: 1
     InverseObjectProperties: 32
@@ -25,7 +25,7 @@ metrics:
     SubPropertyChainOf: 71
     SymmetricObjectProperty: 4
     TransitiveObjectProperty: 18
-  'Axioms: Number of axioms': 53645
+  'Axioms: Number of axioms': 53632
   'Entities: % of entities reused': 69.08
   'Entities: Number of annotation properties': 72
   'Entities: Number of classes': 5336
@@ -34,30 +34,30 @@ metrics:
   'Entities: Number of object properties': 169
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 26023
+    Class: 25971
     ObjectAllValuesFrom: 8
     ObjectComplementOf: 2
     ObjectHasSelf: 1
-    ObjectIntersectionOf: 1211
+    ObjectIntersectionOf: 1185
     ObjectMinCardinality: 2
     ObjectOneOf: 1
-    ObjectSomeValuesFrom: 3173
+    ObjectSomeValuesFrom: 3147
     ObjectUnionOf: 3
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.793
+    _dashboard: 0.727
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.005
     _impact_external: 0.25
     _reuse: 0.691
-    oboscore: 0.399
+    oboscore: 0.366
   'Info: How many externally documented uses?': 2
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 1543
-    CHEBI: 5052
+    BFO: 1530
+    CHEBI: 5039
     CHEBIALT: 279
     ENVO: 425
     GO: 1465
@@ -65,12 +65,12 @@ metrics:
     NCBITaxon: 405
     OBI: 13
     OMO: 2
-    PATO: 1570
+    PATO: 1557
     PECO: 512
-    PO: 9032
+    PO: 9019
     POALT: 36
-    RO: 2490
-    TO: 6838
+    RO: 2477
+    TO: 6825
     TOALT: 28
     UBERON: 106
     dc: 5
@@ -105,7 +105,8 @@ results:
     file: fp7
     status: INFO
   FP08 Documented:
-    status: PASS
+    comment: Homepage URL (http://browser.planteome.org/amigo) does not resolve
+    status: ERROR
   FP09 Plurality of Users:
     status: PASS
   FP11 Locus of Authority:
@@ -126,10 +127,10 @@ results:
     status: ERROR
 sha256_hash: 4f2e80d212d63d5be162572a9d3f1516c995cc85aff77342eba50367c9be1941
 summary:
-  comment: 2 errors
+  comment: 3 errors
   status: ERROR
   summary_count:
-    ERROR: 2
+    ERROR: 3
     INFO: 1
     WARN: 0
 version: http://purl.obolibrary.org/obo/to/releases/2025-05-20/to.owl
