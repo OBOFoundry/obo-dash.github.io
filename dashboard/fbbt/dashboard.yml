@@ -4,34 +4,34 @@ base_prefixes:
 - FBBTALT
 - FBbt
 changed: true
-date: 2025-09-22 14:36:07.879077
+date: 2025-11-08 20:08:57.988539
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 267365
-    Declaration: 29180
+    AnnotationAssertion: 267836
+    Declaration: 29206
     DisjointClasses: 62
-    EquivalentClasses: 6891
+    EquivalentClasses: 6901
     SubClassOf: 153082
-  'Axioms: Number of axioms': 456580
+  'Axioms: Number of axioms': 457087
   'Entities: % of entities reused': 1.69
   'Entities: Number of annotation properties': 33
-  'Entities: Number of classes': 29111
+  'Entities: Number of classes': 29137
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 40
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 357991
-    ObjectIntersectionOf: 7510
-    ObjectSomeValuesFrom: 93129
+    Class: 358050
+    ObjectIntersectionOf: 7520
+    ObjectSomeValuesFrom: 93135
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.867
+    _dashboard: 0.956
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.005
     _impact_external: 0.25
     _reuse: 0.017
-    oboscore: 0.436
+    oboscore: 0.48
   'Info: How many externally documented uses?': 2
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
@@ -39,21 +39,21 @@ metrics:
   'Info: Usage of namespaces in axioms':
     BFO: 10527
     CARO: 6
-    CL: 207
+    CL: 206
     FBBTALT: 1
-    FBbt: 350931
+    FBbt: 350990
     FBgn: 830
-    GO: 942
-    IAO: 42890
+    GO: 948
+    IAO: 43121
     NCBITaxon: 5
-    PATO: 5035
-    RO: 81506
-    dc: 46108
+    PATO: 5030
+    RO: 81512
+    dc: 46160
     dc11: 1
-    oboInOwl: 219961
-    owl: 1618
-    rdf: 71926
-    rdfs: 44252
+    oboInOwl: 220367
+    owl: 1629
+    rdf: 72202
+    rdfs: 44292
   'Info: Which ontologies use it?':
   - dpo
 mirror_from: http://purl.obolibrary.org/obo/fbbt/fbbt-base.owl
@@ -70,9 +70,8 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 2 duplicate definitions.  36 missing definitions. See ROBOT Report for
-      details.
-    status: ERROR
+    comment: 36 missing definitions. See ROBOT Report for details.
+    status: WARN
   FP07 Relations:
     status: PASS
   FP08 Documented:
@@ -88,19 +87,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 2 errors, 1350 warnings, 0 info messages.
+    comment: 1350 warnings, 0 info messages.
     file: robot_report
     results:
-      ERROR: 2
+      ERROR: 0
       INFO: 0
       WARN: 1350
-    status: ERROR
-sha256_hash: c3a77ff9b19a947c473372921f739ad6ae6bfd5fd6bb6c6c513dd947e1fec0e1
+    status: WARN
+sha256_hash: 6da5101a7af91b8ec4f606ea0b9df4686a738f8e29fccc9eb42535d79f4dac28
 summary:
-  comment: 2 errors
-  status: ERROR
+  comment: 2 warnings
+  status: WARN
   summary_count:
-    ERROR: 2
+    ERROR: 0
     INFO: 0
-    WARN: 0
-version: http://purl.obolibrary.org/obo/fbbt/releases/2025-08-07/fbbt-base.owl
+    WARN: 2
+version: http://purl.obolibrary.org/obo/fbbt/releases/2025-10-16/fbbt-base.owl

@@ -4,65 +4,65 @@ base_prefixes:
 - CLALT
 - CL
 changed: true
-date: 2025-09-22 14:13:21.684744
+date: 2025-11-08 19:50:46.935293
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 20658
-    Declaration: 5160
+    AnnotationAssertion: 21458
+    Declaration: 5231
     DisjointClasses: 40
-    EquivalentClasses: 1851
+    EquivalentClasses: 1853
     SubAnnotationPropertyOf: 6
-    SubClassOf: 8600
-  'Axioms: Number of axioms': 36315
+    SubClassOf: 8795
+  'Axioms: Number of axioms': 37383
   'Entities: % of entities reused': 34.04
   'Entities: Number of annotation properties': 55
-  'Entities: Number of classes': 4930
+  'Entities: Number of classes': 5001
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 130
   'Entities: Number of object properties': 50
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 29110
+    Class: 29598
     ObjectHasSelf: 1
     ObjectHasValue: 260
-    ObjectIntersectionOf: 1884
-    ObjectSomeValuesFrom: 7287
+    ObjectIntersectionOf: 1886
+    ObjectSomeValuesFrom: 7414
     ObjectUnionOf: 4
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.949
+    _dashboard: 0.882
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.273
+    _impact: 0.271
     _impact_external: 0.75
     _reuse: 0.34
-    oboscore: 0.611
+    oboscore: 0.577
   'Info: How many externally documented uses?': 7
   'Info: How many ontologies use it?': 51
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 2216
-    CL: 21435
+    BFO: 2254
+    CL: 21756
     CLALT: 14
-    GO: 1616
-    IAO: 3703
-    NCBITaxon: 154
+    GO: 1623
+    IAO: 3776
+    NCBITaxon: 235
     OBI: 251
-    PATO: 343
-    PR: 2968
-    RO: 4407
+    PATO: 347
+    PR: 2992
+    RO: 4554
     STATO: 231
-    UBERON: 3140
-    dc: 2428
-    dc11: 35
-    foaf: 146
+    UBERON: 3173
+    dc: 2707
+    dc11: 39
+    foaf: 150
     obo: 872
-    oboInOwl: 14049
-    owl: 281
-    prefix_unknown: 896
-    rdf: 5986
-    rdfs: 5360
-    skos: 193
+    oboInOwl: 14533
+    owl: 283
+    prefix_unknown: 895
+    rdf: 6517
+    rdfs: 5836
+    skos: 192
     xsd: 233
   'Info: Which ontologies use it?':
   - ado
@@ -126,11 +126,12 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 108 missing definitions. See ROBOT Report for details.
+    comment: 107 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     comment: 3 non-RO properties used.
@@ -149,19 +150,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 109 warnings, 6 info messages.
+    comment: 110 warnings, 6 info messages.
     file: robot_report
     results:
       ERROR: 0
       INFO: 6
-      WARN: 109
+      WARN: 110
     status: WARN
-sha256_hash: 3e2785a1ff9d98bb42ec40132e4d74a582601ea504ca3332adcdb87b01c7c78b
+sha256_hash: 0ae28d75f05175c77ebdf2b9b53bf4ebf55dcd869867f5e38a4e46a53653abe9
 summary:
-  comment: 2 warnings
-  status: WARN
+  comment: 1 errors
+  status: ERROR
   summary_count:
-    ERROR: 0
+    ERROR: 1
     INFO: 1
     WARN: 2
-version: http://purl.obolibrary.org/obo/cl/releases/2025-07-30/cl-base.owl
+version: http://purl.obolibrary.org/obo/cl/releases/2025-11-03/cl-base.owl
