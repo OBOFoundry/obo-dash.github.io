@@ -4,7 +4,7 @@ base_prefixes:
 - OBIBALT
 - OBIB
 changed: true
-date: 2025-11-10 00:35:20.339515
+date: 2025-12-11 01:31:33.915034
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 12863
@@ -50,12 +50,12 @@ metrics:
     ObjectUnionOf: 48
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.838
+    _dashboard: 0.771
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.053
     _impact_external: 0.5
     _reuse: 0.667
-    oboscore: 0.446
+    oboscore: 0.412
   'Info: How many externally documented uses?': 3
   'Info: How many ontologies use it?': 10
   'Info: Logical consistency': true
@@ -128,7 +128,8 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -160,10 +161,10 @@ results:
     status: INFO
 sha256_hash: 596d0be49bf485b06919ec898381eea21715d7c584dd41fb26f6828927f21616
 summary:
-  comment: 1 errors
+  comment: 2 errors
   status: ERROR
   summary_count:
-    ERROR: 1
+    ERROR: 2
     INFO: 1
     WARN: 1
 version: http://purl.obolibrary.org/obo/obib/2023-04-05/obib.owl

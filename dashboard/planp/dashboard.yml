@@ -4,7 +4,7 @@ base_prefixes:
 - PLANPALT
 - PLANP
 changed: true
-date: 2025-11-10 01:11:12.679752
+date: 2025-12-11 02:19:07.485950
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 2029
@@ -24,12 +24,12 @@ metrics:
     ObjectSomeValuesFrom: 1949
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.822
+    _dashboard: 0.756
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
     _reuse: 0.481
-    oboscore: 0.411
+    oboscore: 0.378
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
@@ -57,7 +57,8 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -89,10 +90,10 @@ results:
     status: ERROR
 sha256_hash: 150cc5376e1943096ff888f893240db4731d3bc3540366435535cb1bc55e208d
 summary:
-  comment: 2 errors
+  comment: 3 errors
   status: ERROR
   summary_count:
-    ERROR: 2
+    ERROR: 3
     INFO: 0
     WARN: 2
 version: http://purl.obolibrary.org/obo/planp/releases/2020-03-28/planp-base.owl

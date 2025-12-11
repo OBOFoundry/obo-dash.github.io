@@ -4,7 +4,7 @@ base_prefixes:
 - TRANSALT
 - TRANS
 changed: true
-date: 2025-11-10 02:02:18.193564
+date: 2025-12-11 03:11:35.802289
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 152
@@ -22,12 +22,12 @@ metrics:
     Class: 97
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.904
+    _dashboard: 0.838
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.032
     _impact_external: 0.25
     _reuse: 0.364
-    oboscore: 0.468
+    oboscore: 0.435
   'Info: How many externally documented uses?': 1
   'Info: How many ontologies use it?': 6
   'Info: Logical consistency': true
@@ -59,7 +59,8 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -89,10 +90,10 @@ results:
     status: INFO
 sha256_hash: 9565a4bc7d461fb8c4686867c0d93d6ff08f0790b1b87d2e016a62a93333cb90
 summary:
-  comment: 1 warnings
-  status: WARN
+  comment: 1 errors
+  status: ERROR
   summary_count:
-    ERROR: 0
+    ERROR: 1
     INFO: 1
     WARN: 1
 version: http://purl.obolibrary.org/obo/trans/releases/2022-10-10/trans.owl

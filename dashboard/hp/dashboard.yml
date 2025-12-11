@@ -4,61 +4,61 @@ base_prefixes:
 - HPALT
 - HP
 changed: true
-date: 2025-11-10 02:26:18.540015
+date: 2025-12-11 03:34:58.042534
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 125974
-    Declaration: 21938
-    EquivalentClasses: 6246
+    AnnotationAssertion: 126675
+    Declaration: 22078
+    EquivalentClasses: 6244
     SubAnnotationPropertyOf: 8
-    SubClassOf: 29876
-  'Axioms: Number of axioms': 184042
-  'Entities: % of entities reused': 9.9
+    SubClassOf: 30010
+  'Axioms: Number of axioms': 185015
+  'Entities: % of entities reused': 9.84
   'Entities: Number of annotation properties': 43
-  'Entities: Number of classes': 21883
+  'Entities: Number of classes': 22023
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 16
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 123847
-    ObjectIntersectionOf: 16435
-    ObjectSomeValuesFrom: 42227
+    Class: 124243
+    ObjectIntersectionOf: 16431
+    ObjectSomeValuesFrom: 42215
     ObjectUnionOf: 94
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.933
+    _dashboard: 0.867
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.112
+    _impact: 0.117
     _impact_external: 0.25
-    _reuse: 0.099
-    oboscore: 0.523
+    _reuse: 0.098
+    oboscore: 0.492
   'Info: How many externally documented uses?': 1
-  'Info: How many ontologies use it?': 21
+  'Info: How many ontologies use it?': 22
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 16391
+    BFO: 16387
     BSPO: 6
     CHEBI: 1630
     CL: 658
     GO: 1232
-    HP: 80295
+    HP: 80703
     HPALT: 17
     HsapDv: 30
-    IAO: 18460
+    IAO: 18680
     MPATH: 554
     NBO: 97
-    PATO: 25064
+    PATO: 25056
     PR: 211
-    RO: 25217
-    UBERON: 14076
-    dc: 15238
-    dc11: 4924
-    oboInOwl: 93553
-    owl: 501
-    rdf: 6765
-    rdfs: 24283
+    RO: 25209
+    UBERON: 14072
+    dc: 15378
+    dc11: 4990
+    oboInOwl: 93692
+    owl: 510
+    rdf: 6836
+    rdfs: 24478
   'Info: Which ontologies use it?':
   - ado
   - aro
@@ -67,6 +67,7 @@ metrics:
   - cido
   - doid
   - epio
+  - exmo
   - genepio
   - gsso
   - htn
@@ -93,11 +94,12 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 2568 missing definitions. See ROBOT Report for details.
+    comment: 2561 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     status: PASS
@@ -114,19 +116,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 3616 warnings, 7 info messages.
+    comment: 3605 warnings, 7 info messages.
     file: robot_report
     results:
       ERROR: 0
       INFO: 7
-      WARN: 3616
+      WARN: 3605
     status: WARN
-sha256_hash: 318c76de06046636fa0f253825f11135bfb88415217ce357da304a52e0402215
+sha256_hash: 4eb139d99ed3ee05355fd0f5e02ff7925b00c1246bed9ccb06ba998f5f3b9a21
 summary:
-  comment: 3 warnings
-  status: WARN
+  comment: 1 errors
+  status: ERROR
   summary_count:
-    ERROR: 0
+    ERROR: 1
     INFO: 0
     WARN: 3
-version: http://purl.obolibrary.org/obo/hp/releases/2025-10-22/hp-base.owl
+version: http://purl.obolibrary.org/obo/hp/releases/2025-11-24/hp-base.owl

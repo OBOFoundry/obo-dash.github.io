@@ -4,7 +4,7 @@ base_prefixes:
 - ONTOAVIDAALT
 - ONTOAVIDA
 changed: true
-date: 2025-11-10 01:07:03.283257
+date: 2025-12-11 02:14:39.571185
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1441
@@ -39,12 +39,12 @@ metrics:
     ObjectSomeValuesFrom: 6
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.904
+    _dashboard: 0.838
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0.25
     _reuse: 0.063
-    oboscore: 0.452
+    oboscore: 0.419
   'Info: How many externally documented uses?': 1
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
@@ -76,7 +76,8 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -102,10 +103,10 @@ results:
     status: PASS
 sha256_hash: 3da46c81ccb8c5219fe9a5a1ca083dab351c29f4c83dd3bac9555594593629d6
 summary:
-  comment: 1 warnings
-  status: WARN
+  comment: 1 errors
+  status: ERROR
   summary_count:
-    ERROR: 0
+    ERROR: 1
     INFO: 1
     WARN: 1
 version: http://purl.obolibrary.org/obo/ontoavida/releases/2022-03-15/ontoavida.owl

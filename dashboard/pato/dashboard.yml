@@ -4,7 +4,7 @@ base_prefixes:
 - PATOALT
 - PATO
 changed: true
-date: 2025-11-10 01:07:42.027444
+date: 2025-12-11 02:15:37.707248
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 17378
@@ -30,14 +30,14 @@ metrics:
     ObjectSomeValuesFrom: 372
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.956
+    _dashboard: 0.889
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.447
+    _impact: 0.452
     _impact_external: 0.25
     _reuse: 0.019
-    oboscore: 0.702
+    oboscore: 0.67
   'Info: How many externally documented uses?': 1
-  'Info: How many ontologies use it?': 84
+  'Info: How many ontologies use it?': 85
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -78,6 +78,7 @@ metrics:
   - ecto
   - envo
   - epio
+  - exmo
   - fbbt
   - flopo
   - foodon
@@ -150,7 +151,8 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -180,10 +182,10 @@ results:
     status: WARN
 sha256_hash: 5a490426a99d490cb9de3a2a698f840d6ad679999544c10ba0f2925c1bbf0a64
 summary:
-  comment: 2 warnings
-  status: WARN
+  comment: 1 errors
+  status: ERROR
   summary_count:
-    ERROR: 0
+    ERROR: 1
     INFO: 0
     WARN: 2
 version: http://purl.obolibrary.org/obo/pato/releases/2025-05-14/pato-base.owl

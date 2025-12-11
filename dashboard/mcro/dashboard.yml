@@ -4,10 +4,10 @@ base_prefixes:
 - MCROALT
 - MCRO
 changed: true
-date: 2025-11-08 20:25:03.617655
+date: 2025-12-09 20:58:27.848271
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 5479
+    AnnotationAssertion: 5480
     AnnotationPropertyDomain: 1
     AnnotationPropertyRangeOf: 3
     ClassAssertion: 20
@@ -34,7 +34,7 @@ metrics:
     SubPropertyChainOf: 15
     SymmetricObjectProperty: 6
     TransitiveObjectProperty: 9
-  'Axioms: Number of axioms': 8938
+  'Axioms: Number of axioms': 8939
   'Entities: % of entities reused': 95.85
   'Entities: Number of annotation properties': 111
   'Entities: Number of classes': 938
@@ -58,12 +58,12 @@ metrics:
     ObjectUnionOf: 42
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.838
+    _dashboard: 0.964
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0.25
     _reuse: 0.958
-    oboscore: 0.419
+    oboscore: 0.482
   'Info: How many externally documented uses?': 1
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
@@ -85,7 +85,7 @@ metrics:
     efo: 17
     foaf: 5
     oboInOwl: 33
-    owl: 34
+    owl: 35
     prefix_unknown: 177
     protege: 1
     prov: 911
@@ -98,9 +98,7 @@ mirror_from: http://purl.obolibrary.org/obo/mcro/mcro-base.owl
 namespace: mcro
 results:
   FP01 Open:
-    comment: Ontology license 'https://creativecommons.org/licenses/by/3.0/' does
-      not match registry license 'https://creativecommons.org/licenses/by/4.0/'.
-    status: ERROR
+    status: PASS
   FP02 Common Format:
     status: PASS
   FP03 URIs:
@@ -112,9 +110,9 @@ results:
   FP06 Textual Definitions:
     status: PASS
   FP07 Relations:
-    comment: 1 labels match RO labels. 129 non-RO properties used.
+    comment: 129 non-RO properties used.
     file: fp7
-    status: ERROR
+    status: INFO
   FP08 Documented:
     status: PASS
   FP09 Plurality of Users:
@@ -136,12 +134,12 @@ results:
       INFO: 11
       WARN: 0
     status: INFO
-sha256_hash: 1a8122b09d85bd00251cb1f7afd3ef528d786e2ff8ba9baf06e8239c5b5cfa95
+sha256_hash: 27eae4075e1355e110a1a2a7a2718f952ca4d00223bc2259f9d8ee205dbc2ff6
 summary:
-  comment: 2 errors
-  status: ERROR
+  comment: 1 warnings
+  status: WARN
   summary_count:
-    ERROR: 2
-    INFO: 1
+    ERROR: 0
+    INFO: 2
     WARN: 1
 version: http://purl.obolibrary.org/obo/mcro/releases/2023-03-07/mcro.owl
