@@ -4,17 +4,17 @@ base_prefixes:
 - COBALT
 - COB
 changed: true
-date: 2025-12-09 20:26:45.547890
+date: 2026-02-24 23:01:59.587958
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 61
     DataPropertyDomain: 2
-    Declaration: 51
+    Declaration: 52
     DisjointClasses: 3
     SubClassOf: 21
-  'Axioms: Number of axioms': 138
-  'Entities: % of entities reused': 44.64
-  'Entities: Number of annotation properties': 10
+  'Axioms: Number of axioms': 139
+  'Entities: % of entities reused': 45.61
+  'Entities: Number of annotation properties': 11
   'Entities: Number of classes': 29
   'Entities: Number of data properties': 4
   'Entities: Number of individuals': 0
@@ -26,14 +26,14 @@ metrics:
     ObjectSomeValuesFrom: 9
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.816
+    _dashboard: 0.949
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.048
-    _impact_external: 0
-    _reuse: 0.446
-    oboscore: 0.432
-  'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 9
+    _impact: 0.058
+    _impact_external: 0.25
+    _reuse: 0.456
+    oboscore: 0.503
+  'Info: How many externally documented uses?': 1
+  'Info: How many ontologies use it?': 11
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -44,15 +44,17 @@ metrics:
     OBI: 8
     RO: 4
     UBERON: 3
-    dc: 3
+    dc: 4
     dc11: 1
     owl: 9
     rdfs: 31
   'Info: Which ontologies use it?':
   - foodon
   - maxo
+  - mro
   - obi
   - ons
+  - pbpko
   - peco
   - pr
   - rbo
@@ -68,8 +70,7 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    comment: Version IRI does not resolve
-    status: ERROR
+    status: PASS
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -82,8 +83,7 @@ results:
   FP08 Documented:
     status: PASS
   FP09 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
+    status: PASS
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
@@ -100,12 +100,12 @@ results:
       INFO: 1
       WARN: 10
     status: WARN
-sha256_hash: 7e2015ce1520cab1f970bc2792df0c197db4897d54d2ea66b504aad643465ef3
+sha256_hash: b9a9b31d0f7c2996c8c8c569dacac15cf20abd5b57e5c70a89263e6160885a1c
 summary:
-  comment: 2 errors
-  status: ERROR
+  comment: 2 warnings
+  status: WARN
   summary_count:
-    ERROR: 2
+    ERROR: 0
     INFO: 1
     WARN: 2
-version: http://purl.obolibrary.org/obo/cob/releases/2025-06-30/cob-base.owl
+version: http://purl.obolibrary.org/obo/cob/releases/2025-12-12/cob-base.owl

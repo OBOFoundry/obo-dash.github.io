@@ -4,49 +4,49 @@ base_prefixes:
 - OMRSEALT
 - OMRSE
 changed: true
-date: 2025-12-11 02:14:25.029446
+date: 2026-02-25 13:04:06.320718
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 3580
+    AnnotationAssertion: 3643
     AsymmetricObjectProperty: 2
     ClassAssertion: 417
     DataPropertyDomain: 2
     DataPropertyRange: 2
-    Declaration: 873
+    Declaration: 881
     DisjointClasses: 1
-    EquivalentClasses: 27
+    EquivalentClasses: 29
     InverseObjectProperties: 3
     ObjectPropertyDomain: 8
     ObjectPropertyRange: 8
-    SubClassOf: 505
+    SubClassOf: 512
     SubObjectPropertyOf: 6
-  'Axioms: Number of axioms': 5434
-  'Entities: % of entities reused': 12.46
-  'Entities: Number of annotation properties': 30
-  'Entities: Number of classes': 385
+  'Axioms: Number of axioms': 5514
+  'Entities: % of entities reused': 12.68
+  'Entities: Number of annotation properties': 32
+  'Entities: Number of classes': 390
   'Entities: Number of data properties': 2
   'Entities: Number of individuals': 417
-  'Entities: Number of object properties': 44
+  'Entities: Number of object properties': 45
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 2012
+    Class: 2034
     ObjectAllValuesFrom: 22
     ObjectComplementOf: 9
     ObjectExactCardinality: 1
-    ObjectIntersectionOf: 104
+    ObjectIntersectionOf: 103
     ObjectMinCardinality: 2
-    ObjectSomeValuesFrom: 297
+    ObjectSomeValuesFrom: 295
     ObjectUnionOf: 17
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.882
+    _dashboard: 0.949
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.09
+    _impact: 0.095
     _impact_external: 0.25
-    _reuse: 0.125
-    oboscore: 0.486
+    _reuse: 0.127
+    oboscore: 0.522
   'Info: How many externally documented uses?': 2
-  'Info: How many ontologies use it?': 17
+  'Info: How many ontologies use it?': 18
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -54,23 +54,23 @@ metrics:
     BFO: 197
     GEO: 2
     GO: 2
-    IAO: 1400
+    IAO: 1425
     MF: 2
     NCBITaxon: 31
     OAE: 4
-    OBI: 72
+    OBI: 70
     OBIB: 10
-    OGMS: 17
-    OMRSE: 3566
+    OGMS: 19
+    OMRSE: 3580
     OOSTT: 3
     PCO: 3
-    RO: 160
+    RO: 162
     dc: 17
-    dc11: 340
-    oboInOwl: 64
-    owl: 65
+    dc11: 351
+    oboInOwl: 88
+    owl: 69
     rdf: 1
-    rdfs: 875
+    rdfs: 881
     xsd: 2
   'Info: Which ontologies use it?':
   - apollo_sv
@@ -89,6 +89,7 @@ metrics:
   - ons
   - oostt
   - opmi
+  - pbpko
   - pdro
 mirror_from: http://purl.obolibrary.org/obo/omrse/omrse-base.owl
 namespace: omrse
@@ -100,12 +101,11 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    comment: Version IRI does not resolve
-    status: ERROR
+    status: PASS
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 76 missing definitions. See ROBOT Report for details.
+    comment: 68 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     comment: 15 non-RO properties used.
@@ -124,19 +124,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 86 warnings, 8 info messages.
+    comment: 78 warnings, 7 info messages.
     file: robot_report
     results:
       ERROR: 0
-      INFO: 8
-      WARN: 86
+      INFO: 7
+      WARN: 78
     status: WARN
-sha256_hash: fd5f500e170d75c10ff4fab5c6957131124f205283cdfbafad7d53205b33b30f
+sha256_hash: 99005a8dc339aef6e79896d8c5f375e94800480e1edfef38ef2e357b72bc656c
 summary:
-  comment: 1 errors
-  status: ERROR
+  comment: 2 warnings
+  status: WARN
   summary_count:
-    ERROR: 1
+    ERROR: 0
     INFO: 1
     WARN: 2
-version: http://purl.obolibrary.org/obo/omrse/releases/2025-08-13/omrse-base.owl
+version: http://purl.obolibrary.org/obo/omrse/releases/2026-01-06/omrse-base.owl

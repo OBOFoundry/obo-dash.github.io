@@ -13,22 +13,22 @@
       <div class="report_summary"><table class="table">
       <tr><th><b>Level</b></th><th><b>Number of errors</b></th></tr>
       
-      <tr><td>WARN</td><td>24</td></tr>
+      <tr><td>INFO</td><td>9</td></tr>
       
-      <tr><td>INFO</td><td>6</td></tr>
+      <tr><td>WARN</td><td>3</td></tr>
       
       </table></div>
       <h3>Error breakdown</h3>
       <div class="report_summary"><table class="table">
       <tr><th><b>Rule</b></th><th><b>Number of errors</b></th></tr>
       
-      <tr><td>missing_subset_declaration</td><td>20</td></tr>
-      
       <tr><td>lowercase_definition</td><td>6</td></tr>
       
-      <tr><td>duplicate_label_synonym</td><td>2</td></tr>
+      <tr><td>missing_superclass</td><td>3</td></tr>
       
-      <tr><td>missing_synonymtype_declaration</td><td>2</td></tr>
+      <tr><td>missing_definition</td><td>2</td></tr>
+      
+      <tr><td>duplicate_label_synonym</td><td>1</td></tr>
       
       </table></div>
       <p style="text-align:center; margin-top:-15px;">
@@ -60,189 +60,21 @@
         <tr class=table-warning>
             <td>1</td>
             <td>WARN</td>
-            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
-            <td><a href="http://purl.obolibrary.org/obo/GO_1905057" target="_blank" rel="noopener noreferrer">GO:1905057</a></td>
-            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
-            <td>voltage-gated calcium channel activity involved in regulation of postsynaptic cytosolic calcium levels</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
+            <td>obo:go#syngo_official_label</td>
+            <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
+            <td></td>
           </tr>
         <tr class=table-warning>
             <td>2</td>
             <td>WARN</td>
-            <td><a href="https://robot.obolibrary.org/report_queries/missing_subset_declaration" target="_blank" rel="noopener noreferrer">missing_subset_declaration</a></td>
-            <td>obo:go#gocheck_do_not_annotate</td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" target="_blank" rel="noopener noreferrer">rdfs:subPropertyOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-warning>
-            <td>3</td>
-            <td>WARN</td>
-            <td><a href="https://robot.obolibrary.org/report_queries/missing_subset_declaration" target="_blank" rel="noopener noreferrer">missing_subset_declaration</a></td>
-            <td>obo:go#gocheck_obsoletion_candidate</td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" target="_blank" rel="noopener noreferrer">rdfs:subPropertyOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-warning>
-            <td>4</td>
-            <td>WARN</td>
-            <td><a href="https://robot.obolibrary.org/report_queries/missing_subset_declaration" target="_blank" rel="noopener noreferrer">missing_subset_declaration</a></td>
-            <td>obo:go#goslim_agr</td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" target="_blank" rel="noopener noreferrer">rdfs:subPropertyOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-warning>
-            <td>5</td>
-            <td>WARN</td>
-            <td><a href="https://robot.obolibrary.org/report_queries/missing_subset_declaration" target="_blank" rel="noopener noreferrer">missing_subset_declaration</a></td>
-            <td>obo:go#goslim_candida</td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" target="_blank" rel="noopener noreferrer">rdfs:subPropertyOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-warning>
-            <td>6</td>
-            <td>WARN</td>
-            <td><a href="https://robot.obolibrary.org/report_queries/missing_subset_declaration" target="_blank" rel="noopener noreferrer">missing_subset_declaration</a></td>
-            <td>obo:go#goslim_chembl</td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" target="_blank" rel="noopener noreferrer">rdfs:subPropertyOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-warning>
-            <td>7</td>
-            <td>WARN</td>
-            <td><a href="https://robot.obolibrary.org/report_queries/missing_subset_declaration" target="_blank" rel="noopener noreferrer">missing_subset_declaration</a></td>
-            <td>obo:go#goslim_drosophila</td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" target="_blank" rel="noopener noreferrer">rdfs:subPropertyOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-warning>
-            <td>8</td>
-            <td>WARN</td>
-            <td><a href="https://robot.obolibrary.org/report_queries/missing_subset_declaration" target="_blank" rel="noopener noreferrer">missing_subset_declaration</a></td>
-            <td>obo:go#goslim_euk_cellular_processes_ribbon</td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" target="_blank" rel="noopener noreferrer">rdfs:subPropertyOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-warning>
-            <td>9</td>
-            <td>WARN</td>
-            <td><a href="https://robot.obolibrary.org/report_queries/missing_subset_declaration" target="_blank" rel="noopener noreferrer">missing_subset_declaration</a></td>
-            <td>obo:go#goslim_flybase_ribbon</td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" target="_blank" rel="noopener noreferrer">rdfs:subPropertyOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-warning>
-            <td>10</td>
-            <td>WARN</td>
-            <td><a href="https://robot.obolibrary.org/report_queries/missing_subset_declaration" target="_blank" rel="noopener noreferrer">missing_subset_declaration</a></td>
-            <td>obo:go#goslim_generic</td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" target="_blank" rel="noopener noreferrer">rdfs:subPropertyOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-warning>
-            <td>11</td>
-            <td>WARN</td>
-            <td><a href="https://robot.obolibrary.org/report_queries/missing_subset_declaration" target="_blank" rel="noopener noreferrer">missing_subset_declaration</a></td>
-            <td>obo:go#goslim_metagenomics</td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" target="_blank" rel="noopener noreferrer">rdfs:subPropertyOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-warning>
-            <td>12</td>
-            <td>WARN</td>
-            <td><a href="https://robot.obolibrary.org/report_queries/missing_subset_declaration" target="_blank" rel="noopener noreferrer">missing_subset_declaration</a></td>
-            <td>obo:go#goslim_mouse</td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" target="_blank" rel="noopener noreferrer">rdfs:subPropertyOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-warning>
-            <td>13</td>
-            <td>WARN</td>
-            <td><a href="https://robot.obolibrary.org/report_queries/missing_subset_declaration" target="_blank" rel="noopener noreferrer">missing_subset_declaration</a></td>
-            <td>obo:go#goslim_pir</td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" target="_blank" rel="noopener noreferrer">rdfs:subPropertyOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-warning>
-            <td>14</td>
-            <td>WARN</td>
-            <td><a href="https://robot.obolibrary.org/report_queries/missing_subset_declaration" target="_blank" rel="noopener noreferrer">missing_subset_declaration</a></td>
-            <td>obo:go#goslim_plant</td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" target="_blank" rel="noopener noreferrer">rdfs:subPropertyOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-warning>
-            <td>15</td>
-            <td>WARN</td>
-            <td><a href="https://robot.obolibrary.org/report_queries/missing_subset_declaration" target="_blank" rel="noopener noreferrer">missing_subset_declaration</a></td>
-            <td>obo:go#goslim_plant_ribbon</td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" target="_blank" rel="noopener noreferrer">rdfs:subPropertyOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-warning>
-            <td>16</td>
-            <td>WARN</td>
-            <td><a href="https://robot.obolibrary.org/report_queries/missing_subset_declaration" target="_blank" rel="noopener noreferrer">missing_subset_declaration</a></td>
-            <td>obo:go#goslim_pombe</td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" target="_blank" rel="noopener noreferrer">rdfs:subPropertyOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-warning>
-            <td>17</td>
-            <td>WARN</td>
-            <td><a href="https://robot.obolibrary.org/report_queries/missing_subset_declaration" target="_blank" rel="noopener noreferrer">missing_subset_declaration</a></td>
-            <td>obo:go#goslim_prokaryote</td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" target="_blank" rel="noopener noreferrer">rdfs:subPropertyOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-warning>
-            <td>18</td>
-            <td>WARN</td>
-            <td><a href="https://robot.obolibrary.org/report_queries/missing_subset_declaration" target="_blank" rel="noopener noreferrer">missing_subset_declaration</a></td>
-            <td>obo:go#goslim_prokaryote_ribbon</td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" target="_blank" rel="noopener noreferrer">rdfs:subPropertyOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-warning>
-            <td>19</td>
-            <td>WARN</td>
-            <td><a href="https://robot.obolibrary.org/report_queries/missing_subset_declaration" target="_blank" rel="noopener noreferrer">missing_subset_declaration</a></td>
-            <td>obo:go#goslim_synapse</td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" target="_blank" rel="noopener noreferrer">rdfs:subPropertyOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-warning>
-            <td>20</td>
-            <td>WARN</td>
-            <td><a href="https://robot.obolibrary.org/report_queries/missing_subset_declaration" target="_blank" rel="noopener noreferrer">missing_subset_declaration</a></td>
-            <td>obo:go#goslim_virus</td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" target="_blank" rel="noopener noreferrer">rdfs:subPropertyOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-warning>
-            <td>21</td>
-            <td>WARN</td>
-            <td><a href="https://robot.obolibrary.org/report_queries/missing_subset_declaration" target="_blank" rel="noopener noreferrer">missing_subset_declaration</a></td>
-            <td>obo:go#goslim_yeast</td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" target="_blank" rel="noopener noreferrer">rdfs:subPropertyOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-warning>
-            <td>22</td>
-            <td>WARN</td>
-            <td>missing_synonymtype_declaration</td>
-            <td>obo:go#syngo_official_label</td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" target="_blank" rel="noopener noreferrer">rdfs:subPropertyOf</a></td>
-            <td></td>
-          </tr>
-        <tr class=table-warning>
-            <td>23</td>
-            <td>WARN</td>
-            <td>missing_synonymtype_declaration</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td>obo:go#systematic_synonym</td>
-            <td><a href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" target="_blank" rel="noopener noreferrer">rdfs:subPropertyOf</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td></td>
           </tr>
         <tr class=table-info>
-            <td>24</td>
+            <td>3</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/GO_0004690" target="_blank" rel="noopener noreferrer">GO:0004690</a></td>
@@ -250,7 +82,7 @@
             <td>cNMP-dependent catalysis of the reaction: ATP + a protein = ADP + a phosphoprotein.</td>
           </tr>
         <tr class=table-info>
-            <td>25</td>
+            <td>4</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/GO_0004691" target="_blank" rel="noopener noreferrer">GO:0004691</a></td>
@@ -258,7 +90,7 @@
             <td>cAMP-dependent catalysis of the reaction: ATP + a protein = ADP + a phosphoprotein.</td>
           </tr>
         <tr class=table-info>
-            <td>26</td>
+            <td>5</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/GO_0004692" target="_blank" rel="noopener noreferrer">GO:0004692</a></td>
@@ -266,7 +98,7 @@
             <td>cGMP dependent catalysis of the reaction: ATP + a protein = ADP + a phosphoprotein.</td>
           </tr>
         <tr class=table-info>
-            <td>27</td>
+            <td>6</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/GO_0019283" target="_blank" rel="noopener noreferrer">GO:0019283</a></td>
@@ -274,7 +106,7 @@
             <td>he chemical reactions and pathways resulting in the formation of L-methionine from L-homoserine, via the intermediates O-phospho-L-homoserine and cystathionine.</td>
           </tr>
         <tr class=table-info>
-            <td>28</td>
+            <td>7</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/GO_0042719" target="_blank" rel="noopener noreferrer">GO:0042719</a></td>
@@ -282,12 +114,36 @@
             <td>mitochondrial protein-containing complex localised in the mitochondrial inner membrane space that chaperones proteins to the TIM22 complex for insertion into the mitochondrial inner membrane.</td>
           </tr>
         <tr class=table-info>
-            <td>29</td>
+            <td>8</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/lowercase_definition" target="_blank" rel="noopener noreferrer">lowercase_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/GO_0106430" target="_blank" rel="noopener noreferrer">GO:0106430</a></td>
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>(S)-dihydroorotate + a quinone = orotate + a quinol.</td>
+          </tr>
+        <tr class=table-info>
+            <td>9</td>
+            <td>INFO</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/GO_0003674" target="_blank" rel="noopener noreferrer">GO:0003674</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
+            <td></td>
+          </tr>
+        <tr class=table-info>
+            <td>10</td>
+            <td>INFO</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/GO_0005575" target="_blank" rel="noopener noreferrer">GO:0005575</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
+            <td></td>
+          </tr>
+        <tr class=table-info>
+            <td>11</td>
+            <td>INFO</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/GO_0008150" target="_blank" rel="noopener noreferrer">GO:0008150</a></td>
+            <td><a href="http://www.w3.org/2000/01/rdf-schema#subClassOf" target="_blank" rel="noopener noreferrer">rdfs:subClassOf</a></td>
+            <td></td>
           </tr>
         </table>
     </div>

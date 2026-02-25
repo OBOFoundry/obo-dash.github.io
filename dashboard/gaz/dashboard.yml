@@ -1,3 +1,122 @@
+base_generated: true
+base_prefixes:
+- GAZ
+- GAZALT
+- GAZ
 changed: true
-failure: failed_sha256_hash
+date: 2026-02-25 10:08:53.903278
+metrics:
+  'Axioms: Breakdown of axiom types':
+    AnnotationAssertion: 4875408
+    Declaration: 668886
+    ObjectPropertyAssertion: 796571
+    SubAnnotationPropertyOf: 6
+    SubClassOf: 1460125
+    TransitiveObjectProperty: 6
+  'Axioms: Number of axioms': 7801002
+  'Entities: % of entities reused': 0.0
+  'Entities: Number of annotation properties': 33
+  'Entities: Number of classes': 668839
+  'Entities: Number of data properties': 0
+  'Entities: Number of individuals': 660755
+  'Entities: Number of object properties': 15
+  'Entities: Number of unsatisfiable classes': 0
+  'Info: Breakdown of OWL class expressions used':
+    Class: 3589088
+    ObjectSomeValuesFrom: 796664
+  'Info: Does the ontology fall under OWL 2 DL?': true
+  'Info: Experimental OBO score':
+    _dashboard: 0.4
+    _formula: (1*impact+1*dashboard)/2
+    _impact: 0.095
+    _impact_external: 0
+    _reuse: 0.0
+    oboscore: 0.247
+  'Info: How many externally documented uses?': 0
+  'Info: How many ontologies use it?': 18
+  'Info: Logical consistency': true
+  'Info: Syntax': RDF/XML Syntax
+  'Info: Usage of namespaces in axioms':
+    GAZ: 4528871
+    IAO: 531508
+    obo: 1593268
+    oboInOwl: 2881256
+    owl: 658678
+    prefix_unknown: 663649
+    rdfs: 666361
+    skos: 668839
+    xsd: 523373
+  'Info: Which ontologies use it?':
+  - agro
+  - cido
+  - dideo
+  - duo
+  - foodon
+  - genepio
+  - gsso
+  - hancestro
+  - hso
+  - htn
+  - ico
+  - ngbo
+  - obi
+  - one
+  - opmi
+  - pbpko
+  - psdo
+  - scdo
+mirror_from: http://purl.obolibrary.org/obo/gaz.owl
 namespace: gaz
+results:
+  FP01 Open:
+    comment: Missing ontology license.
+    status: ERROR
+  FP02 Common Format:
+    status: PASS
+  FP03 URIs:
+    comment: 0 invalid IRIs. The Ontology IRI is not valid.
+    file: fp3
+    status: ERROR
+  FP04 Versioning:
+    comment: Missing version IRI
+    status: ERROR
+  FP05 Scope:
+    status: PASS
+  FP06 Textual Definitions:
+    comment: 429282 duplicate definitions.  2307 missing definitions. See ROBOT Report
+      for details.
+    status: ERROR
+  FP07 Relations:
+    status: PASS
+  FP08 Documented:
+    status: PASS
+  FP09 Plurality of Users:
+    comment: Missing usages
+    status: ERROR
+  FP11 Locus of Authority:
+    status: PASS
+  FP12 Naming Conventions:
+    comment: 139546 duplicate labels. See ROBOT Report for details.
+    status: ERROR
+  FP16 Maintenance:
+    comment: Missing version IRI to check date
+    status: ERROR
+  FP20 Responsiveness:
+    status: PASS
+  ROBOT Report:
+    comment: 568840 errors, 23295 warnings, 40 info messages.
+    file: robot_report
+    results:
+      ERROR: 568840
+      INFO: 40
+      WARN: 23295
+    status: ERROR
+sha256_hash: 3961bb86e7b2c364d76ed03cf8b36aac3080b99d8bf578d62bcdc27f702bcc6f
+summary:
+  comment: 8 errors
+  status: ERROR
+  summary_count:
+    ERROR: 8
+    INFO: 0
+    WARN: 0
+version: null

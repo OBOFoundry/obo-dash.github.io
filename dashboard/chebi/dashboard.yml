@@ -4,51 +4,51 @@ base_prefixes:
 - CHEBIALT
 - CHEBI
 changed: true
-date: 2025-12-09 20:23:00.007831
+date: 2026-02-24 23:01:04.897991
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 3195274
-    Declaration: 224140
+    AnnotationAssertion: 3199659
+    Declaration: 224487
     InverseObjectProperties: 1
     SubAnnotationPropertyOf: 6
-    SubClassOf: 379291
+    SubClassOf: 379961
     TransitiveObjectProperty: 2
-  'Axioms: Number of axioms': 3798714
+  'Axioms: Number of axioms': 3804116
   'Entities: % of entities reused': 0.03
   'Entities: Number of annotation properties': 43
-  'Entities: Number of classes': 224092
+  'Entities: Number of classes': 224439
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 9
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 982674
-    ObjectSomeValuesFrom: 94603
+    Class: 984361
+    ObjectSomeValuesFrom: 94730
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.756
+    _dashboard: 0.816
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.415
+    _impact: 0.413
     _impact_external: 0.25
     _reuse: 0.0
-    oboscore: 0.586
+    oboscore: 0.614
   'Info: How many externally documented uses?': 2
   'Info: How many ontologies use it?': 78
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 4104
-    CHEBI: 982674
-    IAO: 93584
-    RO: 90512
+    BFO: 4109
+    CHEBI: 984361
+    IAO: 93824
+    RO: 90634
     dc: 3
     foaf: 1
     obo: 12
-    oboInOwl: 2671879
-    owl: 19374
-    prefix_unknown: 1349173
-    rdf: 895411
-    rdfs: 204745
+    oboInOwl: 2674957
+    owl: 19383
+    prefix_unknown: 1350971
+    rdf: 896396
+    rdfs: 205081
   'Info: Which ontologies use it?':
   - ado
   - agro
@@ -79,7 +79,6 @@ metrics:
   - fypo
   - genepio
   - geno
-  - go
   - gsso
   - hp
   - iceo
@@ -108,6 +107,7 @@ metrics:
   - opmi
   - ornaseq
   - ovae
+  - pbpko
   - pdro
   - peco
   - phipo
@@ -138,12 +138,12 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    comment: Missing version IRI
+    comment: Version IRI does not resolve
     status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 149883 missing definitions. See ROBOT Report for details.
+    comment: 149997 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     status: PASS
@@ -156,24 +156,24 @@ results:
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
-    comment: Missing version IRI to check date
-    status: ERROR
+    comment: Version IRI does not have date information
+    status: INFO
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 400001 warnings, 938 info messages.
+    comment: 400208 warnings, 960 info messages.
     file: robot_report
     results:
       ERROR: 0
-      INFO: 938
-      WARN: 400001
+      INFO: 960
+      WARN: 400208
     status: WARN
-sha256_hash: 75679f3e08dec31f926c56b29ef251bbde91236b19c428bf561743d9db8f8cb7
+sha256_hash: 88137e701c4e4a1727d2558ca5b76fb016869676ee2032e112cc58e9d7b03943
 summary:
-  comment: 2 errors
+  comment: 1 errors
   status: ERROR
   summary_count:
-    ERROR: 2
-    INFO: 0
+    ERROR: 1
+    INFO: 1
     WARN: 2
-version: null
+version: http://purl.obolibrary.org/obo/chebi/249/chebi.owl
