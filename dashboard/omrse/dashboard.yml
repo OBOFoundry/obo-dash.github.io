@@ -4,32 +4,32 @@ base_prefixes:
 - OMRSEALT
 - OMRSE
 changed: true
-date: 2026-02-25 13:04:06.320718
+date: 2026-03-18 08:46:30.484764
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 3643
+    AnnotationAssertion: 3689
     AsymmetricObjectProperty: 2
     ClassAssertion: 417
     DataPropertyDomain: 2
     DataPropertyRange: 2
-    Declaration: 881
+    Declaration: 891
     DisjointClasses: 1
     EquivalentClasses: 29
     InverseObjectProperties: 3
     ObjectPropertyDomain: 8
     ObjectPropertyRange: 8
-    SubClassOf: 512
+    SubClassOf: 519
     SubObjectPropertyOf: 6
-  'Axioms: Number of axioms': 5514
-  'Entities: % of entities reused': 12.68
-  'Entities: Number of annotation properties': 32
-  'Entities: Number of classes': 390
+  'Axioms: Number of axioms': 5577
+  'Entities: % of entities reused': 12.87
+  'Entities: Number of annotation properties': 35
+  'Entities: Number of classes': 397
   'Entities: Number of data properties': 2
   'Entities: Number of individuals': 417
   'Entities: Number of object properties': 45
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 2034
+    Class: 2055
     ObjectAllValuesFrom: 22
     ObjectComplementOf: 9
     ObjectExactCardinality: 1
@@ -41,55 +41,48 @@ metrics:
   'Info: Experimental OBO score':
     _dashboard: 0.949
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.095
+    _impact: 0.053
     _impact_external: 0.25
-    _reuse: 0.127
-    oboscore: 0.522
+    _reuse: 0.129
+    oboscore: 0.501
   'Info: How many externally documented uses?': 2
-  'Info: How many ontologies use it?': 18
+  'Info: How many ontologies use it?': 10
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     APOLLO_SV: 6
     BFO: 197
+    COB: 20
     GEO: 2
     GO: 2
-    IAO: 1425
+    IAO: 1443
     MF: 2
     NCBITaxon: 31
     OAE: 4
-    OBI: 70
+    OBI: 50
     OBIB: 10
     OGMS: 19
-    OMRSE: 3580
+    OMRSE: 3599
     OOSTT: 3
     PCO: 3
     RO: 162
-    dc: 17
-    dc11: 351
-    oboInOwl: 88
-    owl: 69
+    dc: 40
+    dc11: 338
+    oboInOwl: 94
+    owl: 70
     rdf: 1
-    rdfs: 881
+    rdfs: 897
     xsd: 2
   'Info: Which ontologies use it?':
   - apollo_sv
-  - cido
-  - cto
-  - gecko
-  - genepio
   - gsso
-  - htn
-  - ico
-  - ngbo
   - obib
   - occo
   - ohd
-  - one
   - ons
+  - ontoneo
   - oostt
   - opmi
-  - pbpko
   - pdro
 mirror_from: http://purl.obolibrary.org/obo/omrse/omrse-base.owl
 namespace: omrse
@@ -105,7 +98,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 68 missing definitions. See ROBOT Report for details.
+    comment: 66 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     comment: 15 non-RO properties used.
@@ -124,14 +117,14 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 78 warnings, 7 info messages.
+    comment: 67 warnings, 0 info messages.
     file: robot_report
     results:
       ERROR: 0
-      INFO: 7
-      WARN: 78
+      INFO: 0
+      WARN: 67
     status: WARN
-sha256_hash: 99005a8dc339aef6e79896d8c5f375e94800480e1edfef38ef2e357b72bc656c
+sha256_hash: e91f78c56f2d752ce48de50d00c392ccbfc9eb2471b886a9d326032d0194ff83
 summary:
   comment: 2 warnings
   status: WARN
@@ -139,4 +132,4 @@ summary:
     ERROR: 0
     INFO: 1
     WARN: 2
-version: http://purl.obolibrary.org/obo/omrse/releases/2026-01-06/omrse-base.owl
+version: http://purl.obolibrary.org/obo/omrse/releases/2026-03-05/omrse-base.owl

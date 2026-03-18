@@ -4,63 +4,62 @@ base_prefixes:
 - RBOALT
 - RBO
 changed: true
-date: 2026-02-25 13:05:28.889734
+date: 2026-03-18 08:46:49.835944
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 1606
-    ClassAssertion: 31
+    AnnotationAssertion: 1619
+    ClassAssertion: 32
     DataPropertyDomain: 1
     DataPropertyRange: 1
-    Declaration: 529
+    Declaration: 536
     EquivalentClasses: 2
-    SubClassOf: 448
-  'Axioms: Number of axioms': 2618
-  'Entities: % of entities reused': 13.81
+    SubClassOf: 453
+  'Axioms: Number of axioms': 2644
+  'Entities: % of entities reused': 14.0
   'Entities: Number of annotation properties': 18
-  'Entities: Number of classes': 479
+  'Entities: Number of classes': 484
   'Entities: Number of data properties': 1
-  'Entities: Number of individuals': 31
-  'Entities: Number of object properties': 4
+  'Entities: Number of individuals': 32
+  'Entities: Number of object properties': 5
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 1411
-    ObjectAllValuesFrom: 1
+    Class: 1427
+    ObjectAllValuesFrom: 3
     ObjectSomeValuesFrom: 6
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.727
+    _dashboard: 0.66
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.011
+    _impact: 0.005
     _impact_external: 0
-    _reuse: 0.138
-    oboscore: 0.369
+    _reuse: 0.14
+    oboscore: 0.333
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 2
+  'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 19
+    BFO: 22
     CHEBI: 19
     CHMO: 4
     COB: 7
     DOID: 2
     ENVO: 27
     GO: 4
-    IAO: 1041
-    OBI: 27
-    PATO: 24
-    RBO: 1319
+    IAO: 1046
+    OBI: 28
+    PATO: 27
+    RBO: 1332
     RO: 8
-    UBERON: 2
+    UBERON: 3
     UO: 6
     dc: 1
     dc11: 3
     oboInOwl: 73
-    owl: 53
-    rdfs: 468
+    owl: 55
+    rdfs: 474
     xsd: 1
   'Info: Which ontologies use it?':
-  - genepio
   - slso
 mirror_from: http://purl.obolibrary.org/obo/rbo/rbo-base.owl
 namespace: rbo
@@ -72,7 +71,8 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -90,26 +90,26 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 44 duplicate labels. 2 multiple labels. See ROBOT Report for details.
+    comment: 48 duplicate labels. 4 multiple labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
     status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 95 errors, 108 warnings, 8 info messages.
+    comment: 102 errors, 110 warnings, 8 info messages.
     file: robot_report
     results:
-      ERROR: 95
+      ERROR: 102
       INFO: 8
-      WARN: 108
+      WARN: 110
     status: ERROR
-sha256_hash: 534b972bcb84ce167ea0e98cb3827ae3ae15f4025b15e91ff457edfdab9523ca
+sha256_hash: 38402d2518ec9730d103fade216debd818f19d4d9300ba17df344403af5dcca3
 summary:
-  comment: 4 errors
+  comment: 5 errors
   status: ERROR
   summary_count:
-    ERROR: 4
+    ERROR: 5
     INFO: 1
     WARN: 0
-version: http://purl.obolibrary.org/obo/rbo/releases/2026-01-15/rbo-base.owl
+version: http://purl.obolibrary.org/obo/rbo/releases/2026-03-05/rbo-base.owl

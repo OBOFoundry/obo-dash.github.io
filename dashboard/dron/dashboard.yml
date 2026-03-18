@@ -4,69 +4,64 @@ base_prefixes:
 - DRONALT
 - DRON
 changed: true
-date: 2026-02-24 23:24:28.418667
+date: 2026-03-18 08:19:56.268460
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 881109
-    Declaration: 762512
+    AnnotationAssertion: 893912
+    Declaration: 773079
     EquivalentClasses: 75
-    SubClassOf: 1541322
-  'Axioms: Number of axioms': 3185018
-  'Entities: % of entities reused': 0.41
-  'Entities: Number of annotation properties': 17
-  'Entities: Number of classes': 762483
+    SubClassOf: 1562921
+  'Axioms: Number of axioms': 3229987
+  'Entities: % of entities reused': 0.4
+  'Entities: Number of annotation properties': 18
+  'Entities: Number of classes': 773049
   'Entities: Number of data properties': 1
   'Entities: Number of individuals': 7
   'Entities: Number of object properties': 8
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 4179547
-    DataHasValue: 48001
+    Class: 4235374
+    DataHasValue: 48176
     ObjectAllValuesFrom: 1
-    ObjectHasValue: 48001
-    ObjectIntersectionOf: 191188
-    ObjectSomeValuesFrom: 1129514
+    ObjectHasValue: 48176
+    ObjectIntersectionOf: 192307
+    ObjectSomeValuesFrom: 1142654
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
     _dashboard: 0.844
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.069
+    _impact: 0.032
     _impact_external: 0.25
     _reuse: 0.004
-    oboscore: 0.457
+    oboscore: 0.438
   'Info: How many externally documented uses?': 1
-  'Info: How many ontologies use it?': 13
+  'Info: How many ontologies use it?': 6
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 143144
-    CHEBI: 110504
-    DRON: 3968627
-    IAO: 61695
-    OBI: 337899
+    BFO: 144088
+    CHEBI: 111185
+    COB: 3740
+    DRON: 4023028
+    IAO: 61902
+    OBI: 336237
     OGMS: 2
-    PATO: 48002
-    RO: 795313
-    UO: 48008
+    PATO: 48177
+    RO: 806390
+    UO: 48183
     dc: 120
     dc11: 1
-    owl: 13368
-    rdfs: 759483
-    xsd: 48001
+    oboInOwl: 1808
+    owl: 13400
+    rdfs: 770026
+    xsd: 48176
   'Info: Which ontologies use it?':
-  - ado
   - apollo_sv
   - cido
-  - cto
   - dideo
-  - fideo
-  - foodon
-  - mpio
   - obib
   - ohmi
-  - opmi
   - pdro
-  - scdo
 mirror_from: http://purl.obolibrary.org/obo/dron/dron-base.owl
 namespace: dron
 results:
@@ -81,7 +76,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 745980 missing definitions. See ROBOT Report for details.
+    comment: 756512 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     status: PASS
@@ -92,22 +87,21 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 108 duplicate labels. 21 multiple labels. 1 missing labels. See ROBOT
-      Report for details.
+    comment: 32 duplicate labels. See ROBOT Report for details.
     status: ERROR
   FP16 Maintenance:
     status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 150 errors, 745990 warnings, 2 info messages.
+    comment: 32 errors, 756512 warnings, 2 info messages.
     file: robot_report
     results:
-      ERROR: 150
+      ERROR: 32
       INFO: 2
-      WARN: 745990
+      WARN: 756512
     status: ERROR
-sha256_hash: f2904ff128b1dda1960a89a476508f5a975d9065789c6469263cbc7ab4d4e17d
+sha256_hash: a8aee69e8ea4a47fed867e67c0dfe15968c28efc312ac77a69f8debfe518c546
 summary:
   comment: 2 errors
   status: ERROR
@@ -115,4 +109,4 @@ summary:
     ERROR: 2
     INFO: 0
     WARN: 1
-version: http://purl.obolibrary.org/obo/dron/releases/2025-12-19/dron-base.owl
+version: http://purl.obolibrary.org/obo/dron/releases/2026-03-04/dron-base.owl

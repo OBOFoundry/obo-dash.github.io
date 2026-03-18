@@ -4,108 +4,72 @@ base_prefixes:
 - VOALT
 - VO
 changed: true
-date: 2026-02-25 13:07:44.459279
+date: 2026-03-18 08:48:20.843898
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 108781
-    AnnotationPropertyRangeOf: 1
-    ClassAssertion: 589
-    Declaration: 15669
-    DifferentIndividuals: 2
-    DisjointClasses: 21
-    EquivalentClasses: 2787
-    FunctionalObjectProperty: 1
-    InverseFunctionalObjectProperty: 1
-    InverseObjectProperties: 18
-    IrrefexiveObjectProperty: 1
-    ObjectPropertyDomain: 33
-    ObjectPropertyRange: 33
-    Rule: 4
-    SubAnnotationPropertyOf: 37
-    SubClassOf: 108366
-    SubObjectPropertyOf: 65
-    SubPropertyChainOf: 7
-    TransitiveObjectProperty: 8
-  'Axioms: Number of axioms': 236424
-  'Entities: % of entities reused': 8.96
-  'Entities: Number of annotation properties': 164
-  'Entities: Number of classes': 14788
+    AnnotationAssertion: 95007
+    ClassAssertion: 570
+    Declaration: 14269
+    EquivalentClasses: 2656
+    ObjectPropertyDomain: 10
+    ObjectPropertyRange: 9
+    SubAnnotationPropertyOf: 4
+    SubClassOf: 106682
+    SubObjectPropertyOf: 15
+  'Axioms: Number of axioms': 219222
+  'Entities: % of entities reused': 4.16
+  'Entities: Number of annotation properties': 51
+  'Entities: Number of classes': 14192
   'Entities: Number of data properties': 0
-  'Entities: Number of individuals': 590
-  'Entities: Number of object properties': 122
+  'Entities: Number of individuals': 570
+  'Entities: Number of object properties': 73
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 230856
-    ObjectAllValuesFrom: 12
-    ObjectComplementOf: 2
-    ObjectHasValue: 9820
-    ObjectIntersectionOf: 2811
+    Class: 225818
+    ObjectHasValue: 9819
+    ObjectIntersectionOf: 2675
     ObjectMinCardinality: 1
-    ObjectOneOf: 3
-    ObjectSomeValuesFrom: 72424
-    ObjectUnionOf: 11
-  'Info: Does the ontology fall under OWL 2 DL?': true
+    ObjectSomeValuesFrom: 72030
+    ObjectUnionOf: 5
+  'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
     _dashboard: 0.882
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.069
+    _impact: 0.021
     _impact_external: 0.5
-    _reuse: 0.09
-    oboscore: 0.476
+    _reuse: 0.042
+    oboscore: 0.452
   'Info: How many externally documented uses?': 4
-  'Info: How many ontologies use it?': 13
+  'Info: How many ontologies use it?': 4
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 940
-    CHEBI: 167
-    CL: 80
-    DOID: 11512
-    FMA: 4
-    GO: 35
-    IAO: 40228
-    IDO: 20
-    MONDO: 109
-    NCBITAXONALT: 445
-    NCBITaxon: 25475
-    NCIT: 6
-    OAE: 11
-    OBI: 1535
-    OGG: 938
-    OGMS: 9
-    OMO: 39
-    OPL: 1288
-    OPMI: 12
-    PATO: 75
-    PR: 401
-    RO: 30511
-    UBERON: 142
-    VO: 276691
-    dc: 48
-    dc11: 50
-    foaf: 24
-    obo: 183
-    oboInOwl: 23404
-    owl: 433
-    protege: 1
-    rdf: 9
-    rdfs: 18817
-    skos: 11
-    xsd: 6
+    BFO: 462
+    CHEBI: 88
+    DOID: 10955
+    FMA: 2
+    IAO: 35812
+    IDO: 1
+    MONDO: 103
+    NCBITaxon: 23761
+    NCIT: 4
+    OAE: 1
+    OBI: 1148
+    OGG: 793
+    OPL: 119
+    OPMI: 3
+    PATO: 19
+    PR: 326
+    RO: 29976
+    VO: 276370
+    oboInOwl: 16080
+    owl: 435
+    rdfs: 17275
   'Info: Which ontologies use it?':
-  - ado
   - apollo_sv
   - cido
-  - cto
-  - genepio
   - oae
-  - ohpi
-  - one
-  - ons
-  - opmi
   - ovae
-  - pbpko
-  - scdo
 mirror_from: http://purl.obolibrary.org/obo/vo.owl
 namespace: vo
 results:
@@ -120,7 +84,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 10694 missing definitions. See ROBOT Report for details.
+    comment: 10690 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     comment: 42 non-RO properties used.
@@ -139,14 +103,14 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 13138 warnings, 382 info messages.
+    comment: 13132 warnings, 373 info messages.
     file: robot_report
     results:
       ERROR: 0
-      INFO: 382
-      WARN: 13138
+      INFO: 373
+      WARN: 13132
     status: WARN
-sha256_hash: 42fdbdd9d68e2ab3e67b7d5978f64d905a4a53e6492c4d930399a222649c3f5d
+sha256_hash: 153f1fb0afa02895eb1af11af5236e2a32e856e7a56d33765ccfa0da81cac5b0
 summary:
   comment: 2 warnings
   status: WARN
@@ -154,4 +118,4 @@ summary:
     ERROR: 0
     INFO: 1
     WARN: 2
-version: http://purl.obolibrary.org/obo/vo/releases/2026-01-23/vo.owl
+version: http://purl.obolibrary.org/obo/vo/releases/2026-03-06/vo.owl

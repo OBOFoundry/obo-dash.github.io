@@ -4,100 +4,68 @@ base_prefixes:
 - OHMIALT
 - OHMI
 changed: true
-date: 2026-02-25 13:03:58.781102
+date: 2026-03-18 08:46:20.631334
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 8532
-    ClassAssertion: 15
-    DataPropertyDomain: 3
-    DataPropertyRange: 2
-    Declaration: 1508
-    EquivalentClasses: 395
-    EquivalentObjectProperties: 10
-    FunctionalDataProperty: 1
-    FunctionalObjectProperty: 2
-    InverseObjectProperties: 30
-    IrrefexiveObjectProperty: 1
-    ObjectPropertyDomain: 38
-    ObjectPropertyRange: 36
-    SubAnnotationPropertyOf: 14
-    SubClassOf: 2245
-    SubDataPropertyOf: 2
-    SubObjectPropertyOf: 122
-    SubPropertyChainOf: 34
-    SymmetricObjectProperty: 1
-    TransitiveObjectProperty: 23
-  'Axioms: Number of axioms': 13014
-  'Entities: % of entities reused': 56.64
-  'Entities: Number of annotation properties': 78
-  'Entities: Number of classes': 1286
-  'Entities: Number of data properties': 4
-  'Entities: Number of individuals': 12
-  'Entities: Number of object properties': 131
+    AnnotationAssertion: 3112
+    Declaration: 670
+    EquivalentClasses: 373
+    InverseObjectProperties: 2
+    ObjectPropertyDomain: 7
+    ObjectPropertyRange: 5
+    SubClassOf: 1406
+    SubObjectPropertyOf: 27
+  'Axioms: Number of axioms': 5602
+  'Entities: % of entities reused': 36.73
+  'Entities: Number of annotation properties': 17
+  'Entities: Number of classes': 998
+  'Entities: Number of data properties': 0
+  'Entities: Number of individuals': 0
+  'Entities: Number of object properties': 42
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 8331
-    DataMinCardinality: 2
-    ObjectAllValuesFrom: 13
-    ObjectComplementOf: 2
-    ObjectIntersectionOf: 1271
-    ObjectMinCardinality: 3
-    ObjectOneOf: 1
-    ObjectSomeValuesFrom: 2968
-    ObjectUnionOf: 12
+    Class: 5832
+    ObjectAllValuesFrom: 1
+    ObjectIntersectionOf: 1227
+    ObjectMinCardinality: 1
+    ObjectSomeValuesFrom: 2752
+    ObjectUnionOf: 2
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.689
+    _dashboard: 0.756
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.011
+    _impact: 0.005
     _impact_external: 0
-    _reuse: 0.566
-    oboscore: 0.35
+    _reuse: 0.367
+    oboscore: 0.381
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 2
+  'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 884
-    CARO: 8
-    CHEBI: 33
-    CL: 14
-    CMO: 17
-    DOID: 629
-    DRON: 3
-    ENVO: 15
-    GO: 18
-    HP: 11
-    IAO: 5066
-    IDO: 3
-    INO: 6
-    MONDO: 23
-    NCBITaxon: 2739
-    OBI: 526
-    OGG: 5
-    OHMI: 4887
-    PATO: 15
-    PCO: 19
-    PR: 3
-    RO: 1481
-    SO: 5
-    UBERON: 674
-    UO: 3
-    UPHENO: 7
-    dc: 2
-    dc11: 93
-    foaf: 11
-    obo: 43
-    oboInOwl: 1492
-    owl: 21
-    protege: 2
-    rdf: 1
-    rdfs: 1861
-    skos: 6
-    xsd: 2
+    BFO: 603
+    CARO: 3
+    DOID: 399
+    DRON: 1
+    ENVO: 1
+    GO: 1
+    IAO: 2119
+    INO: 2
+    MONDO: 20
+    NCBITaxon: 1332
+    OBI: 13
+    OGG: 1
+    OHMI: 4833
+    PATO: 4
+    PCO: 6
+    RO: 972
+    UBERON: 595
+    UPHENO: 1
+    obo: 1
+    owl: 1
+    rdfs: 890
   'Info: Which ontologies use it?':
   - ohd
-  - ons
 mirror_from: http://purl.obolibrary.org/obo/ohmi.owl
 namespace: ohmi
 results:
@@ -108,12 +76,11 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    comment: Version IRI does not resolve
-    status: ERROR
+    status: PASS
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 13 missing definitions. See ROBOT Report for details.
+    comment: 15 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     comment: 3 labels match RO labels. 28 non-RO properties used.
@@ -133,19 +100,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 14 warnings, 194 info messages.
+    comment: 17 warnings, 194 info messages.
     file: robot_report
     results:
       ERROR: 0
       INFO: 194
-      WARN: 14
+      WARN: 17
     status: WARN
-sha256_hash: 471240f0d5c5eb3ae72f434f31db6133467c1bab02e690be7c80f1fb3fc4bad1
+sha256_hash: cc934aa334a3bb05a650a23abb9f4a3f3386d44f061a2b93f0132f468916444d
 summary:
-  comment: 3 errors
+  comment: 2 errors
   status: ERROR
   summary_count:
-    ERROR: 3
+    ERROR: 2
     INFO: 0
     WARN: 2
-version: http://purl.obolibrary.org/obo/ohmi/2025-12-28/ohmi.owl
+version: http://purl.obolibrary.org/obo/ohmi/releases/2026-03-15/ohmi.owl

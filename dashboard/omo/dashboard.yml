@@ -4,20 +4,18 @@ base_prefixes:
 - IAOALT
 - OMO
 changed: true
-date: 2025-12-11 02:01:56.210227
+date: 2026-03-18 08:46:24.178606
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 523
-    AnnotationPropertyRangeOf: 1
+    AnnotationAssertion: 503
     ClassAssertion: 19
-    Declaration: 125
-    DifferentIndividuals: 2
+    Declaration: 98
     EquivalentClasses: 3
-    SubAnnotationPropertyOf: 18
+    SubAnnotationPropertyOf: 14
     SubClassOf: 26
-  'Axioms: Number of axioms': 717
-  'Entities: % of entities reused': 26.52
-  'Entities: Number of annotation properties': 82
+  'Axioms: Number of axioms': 663
+  'Entities: % of entities reused': 15.52
+  'Entities: Number of annotation properties': 66
   'Entities: Number of classes': 27
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 20
@@ -26,28 +24,26 @@ metrics:
   'Info: Breakdown of OWL class expressions used':
     Class: 101
     ObjectOneOf: 3
-  'Info: Does the ontology fall under OWL 2 DL?': true
+  'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.822
+    _dashboard: 0.889
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.947
+    _impact: 0.942
     _impact_external: 0.25
-    _reuse: 0.265
-    oboscore: 0.884
+    _reuse: 0.155
+    oboscore: 0.915
   'Info: How many externally documented uses?': 1
   'Info: How many ontologies use it?': 178
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    IAO: 555
-    OMO: 36
-    dc: 35
-    dc11: 29
-    oboInOwl: 27
+    IAO: 526
+    OMO: 37
+    dc: 32
+    dc11: 14
+    oboInOwl: 15
     owl: 1
-    protege: 1
-    rdfs: 123
-    xsd: 1
+    rdfs: 115
   'Info: Which ontologies use it?':
   - ado
   - afpo
@@ -62,11 +58,8 @@ metrics:
   - bmont
   - bspo
   - bto
-  - cdao
   - cdno
   - chebi
-  - cheminf
-  - chiro
   - chmo
   - cido
   - cio
@@ -95,20 +88,18 @@ metrics:
   - ecto
   - emapa
   - envo
-  - epio
   - exmo
   - exo
   - fao
   - fbbt
   - fbcv
   - fbdv
-  - fideo
   - flopo
-  - fobi
   - foodon
   - fovt
   - fypo
   - gallont
+  - gaz
   - gecko
   - genepio
   - geno
@@ -118,6 +109,7 @@ metrics:
   - gsso
   - hancestro
   - hao
+  - hom
   - hp
   - hsapdv
   - hso
@@ -129,6 +121,7 @@ metrics:
   - ino
   - labo
   - lepao
+  - ma
   - maxo
   - mco
   - mcro
@@ -148,6 +141,7 @@ metrics:
   - mro
   - ms
   - nbo
+  - ncbitaxon
   - ncit
   - ncro
   - ngbo
@@ -171,12 +165,14 @@ metrics:
   - one
   - ons
   - ontoavida
+  - ontoneo
   - oostt
   - opl
   - opmi
   - ornaseq
   - ovae
   - pato
+  - pbpko
   - pcl
   - pco
   - pdro
@@ -203,7 +199,6 @@ metrics:
   - so
   - spd
   - stato
-  - swo
   - symp
   - t4fs
   - taxrank
@@ -212,6 +207,7 @@ metrics:
   - tto
   - txpo
   - uberon
+  - uo
   - upheno
   - vbo
   - vo
@@ -237,8 +233,7 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    comment: Version IRI does not resolve
-    status: ERROR
+    status: PASS
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -266,12 +261,12 @@ results:
       INFO: 1
       WARN: 13
     status: WARN
-sha256_hash: 779c51183f570ef260bf8c2048d567be95bfa605f0427c5d06451f6abef06071
+sha256_hash: 63f93cd3a5ab1f54e397455ea25d5a9fd813b568d3fe5e327fe520b142488c2f
 summary:
-  comment: 1 errors
-  status: ERROR
+  comment: 2 warnings
+  status: WARN
   summary_count:
-    ERROR: 1
+    ERROR: 0
     INFO: 0
     WARN: 2
-version: http://purl.obolibrary.org/obo/omo/releases/2025-06-18/omo.owl
+version: http://purl.obolibrary.org/obo/omo/releases/2026-03-16/omo.owl
