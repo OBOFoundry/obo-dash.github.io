@@ -3,78 +3,49 @@ base_prefixes:
 - MFOMD
 - MFOMDALT
 - MFOMD
-changed: true
+changed: false
 date: 2025-12-09 20:58:46.101518
+failure: failed_ontology_dashboard
+last_ontology_dashboard_run_failed: true
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 5739
-    AnnotationPropertyRangeOf: 1
-    ClassAssertion: 19
-    Declaration: 1038
-    DifferentIndividuals: 2
-    DisjointClasses: 21
-    EquivalentClasses: 6
-    InverseObjectProperties: 2
-    SubAnnotationPropertyOf: 18
-    SubClassOf: 940
-    SubObjectPropertyOf: 2
-    SubPropertyChainOf: 1
-    TransitiveObjectProperty: 5
-  'Axioms: Number of axioms': 7794
-  'Entities: % of entities reused': 86.6
-  'Entities: Number of annotation properties': 102
-  'Entities: Number of classes': 879
+    AnnotationAssertion: 387
+    Declaration: 140
+    DisjointClasses: 2
+    SubAnnotationPropertyOf: 2
+    SubClassOf: 139
+  'Axioms: Number of axioms': 670
+  'Entities: % of entities reused': 19.08
+  'Entities: Number of annotation properties': 19
+  'Entities: Number of classes': 148
   'Entities: Number of data properties': 0
-  'Entities: Number of individuals': 19
-  'Entities: Number of object properties': 41
+  'Entities: Number of individuals': 0
+  'Entities: Number of object properties': 4
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 2826
-    ObjectAllValuesFrom: 1
-    ObjectComplementOf: 1
-    ObjectIntersectionOf: 1
-    ObjectMinCardinality: 1
-    ObjectOneOf: 5
-    ObjectSomeValuesFrom: 22
-  'Info: Does the ontology fall under OWL 2 DL?': true
+    Class: 416
+    ObjectSomeValuesFrom: 5
+  'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.444
-    _formula: (1*impact+1*dashboard)/2
-    _impact: 0.021
+    _impact: 0.011
     _impact_external: 0
-    _reuse: 0.866
-    oboscore: 0.233
+    _reuse: 0.191
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 4
+  'Info: How many ontologies use it?': 2
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 306
-    DOID: 675
-    DOIDALT: 33
-    GO: 738
-    IAO: 2470
-    IDO: 7
-    MF: 313
-    MFOMD: 522
-    NBO: 44
-    OBI: 12
-    OGMS: 327
-    OMO: 6
-    dc: 1
-    dc11: 29
-    foaf: 2
-    obo: 13
-    oboInOwl: 2446
-    owl: 75
-    prefix_unknown: 53
-    protege: 1
-    rdf: 6
-    rdfs: 1244
-    xsd: 334
+    BFO: 4
+    DOID: 20
+    IAO: 161
+    MF: 1
+    MFOMD: 429
+    OGMS: 5
+    obo: 1
+    oboInOwl: 14
+    rdfs: 184
+    xsd: 1
   'Info: Which ontologies use it?':
-  - ado
-  - epio
   - gsso
   - mondo
 mirror_from: http://purl.obolibrary.org/obo/mfomd.owl

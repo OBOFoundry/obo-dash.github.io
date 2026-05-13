@@ -4,53 +4,42 @@ base_prefixes:
 - DISDRIVALT
 - DISDRIV
 changed: true
-date: 2025-12-09 20:27:31.187704
+date: 2026-05-08 17:42:17.471437
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 295
-    Declaration: 96
-    SubClassOf: 82
-  'Axioms: Number of axioms': 473
-  'Entities: % of entities reused': 91.84
-  'Entities: Number of annotation properties': 10
-  'Entities: Number of classes': 83
+    AnnotationAssertion: 24
+    Declaration: 8
+    SubClassOf: 7
+  'Axioms: Number of axioms': 39
+  'Entities: % of entities reused': 55.56
+  'Entities: Number of annotation properties': 9
+  'Entities: Number of classes': 8
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
-  'Entities: Number of object properties': 4
+  'Entities: Number of object properties': 0
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 247
-  'Info: Does the ontology fall under OWL 2 DL?': true
+    Class: 22
+  'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.889
+    _dashboard: 0.927
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.0
+    _impact: 0.005
     _impact_external: 0.25
-    _reuse: 0.918
-    oboscore: 0.445
+    _reuse: 0.556
+    oboscore: 0.466
   'Info: How many externally documented uses?': 1
-  'Info: How many ontologies use it?': 0
+  'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 2
-    CHEBI: 127
-    DISDRIV: 50
-    ENVO: 7
-    ExO: 11
-    FOODON: 5
-    IAO: 90
-    NCBITaxon: 4
-    NCIT: 33
-    OMIT: 8
-    RO: 2
-    dc: 1
-    dc11: 2
-    obo: 2
-    oboInOwl: 204
-    rdf: 89
-    rdfs: 96
-  'Info: Which ontologies use it?': []
+    DISDRIV: 22
+    IAO: 8
+    oboInOwl: 16
+    rdf: 8
+    rdfs: 8
+  'Info: Which ontologies use it?':
+  - doid
 mirror_from: http://purl.obolibrary.org/obo/disdriv.owl
 namespace: disdriv
 results:
@@ -65,8 +54,7 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 1 missing definitions. See ROBOT Report for details.
-    status: WARN
+    status: PASS
   FP07 Relations:
     status: PASS
   FP08 Documented:
@@ -82,19 +70,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 1 warnings, 1 info messages.
+    comment: 1 info messages.
     file: robot_report
     results:
       ERROR: 0
       INFO: 1
-      WARN: 1
-    status: WARN
-sha256_hash: 3edbc5f7b9319c65535fa1b5b05debb17d6eaa744d97491822f2c1106429fe59
+      WARN: 0
+    status: INFO
+sha256_hash: fd45c6fa849ca2667bd31bb65fc3d8c56e2b55a9f18a16cdc109de35548aabd3
 summary:
-  comment: 2 warnings
-  status: WARN
+  comment: 1 info messages
+  status: INFO
   summary_count:
     ERROR: 0
-    INFO: 0
-    WARN: 2
-version: http://purl.obolibrary.org/obo/disdriv/releases/2025-03-20/disdriv.owl
+    INFO: 1
+    WARN: 0
+version: http://purl.obolibrary.org/obo/disdriv/releases/2026-03-31/disdriv.owl

@@ -4,56 +4,58 @@ base_prefixes:
 - FOVTALT
 - FOVT
 changed: true
-date: 2025-12-09 20:44:46.232248
+date: 2026-05-08 17:47:42.666223
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 6599
-    Declaration: 1343
-    EquivalentClasses: 493
-    SubClassOf: 1142
-  'Axioms: Number of axioms': 9577
-  'Entities: % of entities reused': 21.24
-  'Entities: Number of annotation properties': 24
-  'Entities: Number of classes': 1313
+    AnnotationAssertion: 6909
+    Declaration: 1411
+    EquivalentClasses: 506
+    SubClassOf: 1195
+  'Axioms: Number of axioms': 10021
+  'Entities: % of entities reused': 21.99
+  'Entities: Number of annotation properties': 25
+  'Entities: Number of classes': 1376
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
-  'Entities: Number of object properties': 11
+  'Entities: Number of object properties': 15
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 5292
-    ObjectIntersectionOf: 640
-    ObjectSomeValuesFrom: 1378
+    Class: 5501
+    ObjectIntersectionOf: 653
+    ObjectSomeValuesFrom: 1400
+    ObjectUnionOf: 1
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.711
+    _dashboard: 0.8
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
-    _reuse: 0.212
-    oboscore: 0.355
+    _reuse: 0.22
+    oboscore: 0.4
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 144
+    BFO: 145
     BSPO: 293
     CARO: 1
-    FOVT: 2790
-    IAO: 2184
+    FOVT: 2927
+    GO: 6
+    IAO: 2284
     NCBITaxon: 4
-    OBA: 216
-    OBAALT: 181
-    PATO: 867
-    RO: 960
-    UBERON: 1331
-    dc: 1040
-    dc11: 21
+    OBA: 226
+    OBAALT: 264
+    PATO: 881
+    RO: 977
+    UBERON: 1368
+    dc: 1126
+    dc11: 1
     obo: 1
-    oboInOwl: 3880
+    oboInOwl: 3975
     owl: 93
-    rdf: 2024
-    rdfs: 1244
+    rdf: 2110
+    rdfs: 1311
   'Info: Which ontologies use it?': []
 mirror_from: http://purl.obolibrary.org/obo/fovt/fovt-base.owl
 namespace: fovt
@@ -65,12 +67,11 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    comment: Version IRI does not resolve
-    status: ERROR
+    status: PASS
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 65 duplicate definitions. 6 multiple definitions. 6 missing definitions.
+    comment: 71 duplicate definitions. 6 multiple definitions. 4 missing definitions.
       See ROBOT Report for details.
     status: ERROR
   FP07 Relations:
@@ -85,24 +86,23 @@ results:
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
-    comment: last version (2023-05-31) is over two year(s) old
-    status: WARN
+    status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 71 errors, 78 warnings, 363 info messages.
+    comment: 77 errors, 76 warnings, 362 info messages.
     file: robot_report
     results:
-      ERROR: 71
-      INFO: 363
-      WARN: 78
+      ERROR: 77
+      INFO: 362
+      WARN: 76
     status: ERROR
-sha256_hash: 5296d0fb987aab28b76333611b5a74aac9213c0f54aaebce2cf41030575045dc
+sha256_hash: f2e81f37919523eb11db152fc6aadcc139a89e2006065b5b536158df6e5f417b
 summary:
-  comment: 4 errors
+  comment: 3 errors
   status: ERROR
   summary_count:
-    ERROR: 4
+    ERROR: 3
     INFO: 0
-    WARN: 1
-version: http://purl.obolibrary.org/obo/fovt/releases/2023-05-31/fovt-base.owl
+    WARN: 0
+version: http://purl.obolibrary.org/obo/fovt/releases/2026-03-19/fovt-base.owl
