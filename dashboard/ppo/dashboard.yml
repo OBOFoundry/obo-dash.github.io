@@ -4,72 +4,61 @@ base_prefixes:
 - PPOALT
 - PPO
 changed: true
-date: 2025-12-11 02:19:29.464620
+date: 2026-05-14 14:56:29.721019
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 2353
+    AnnotationAssertion: 1095
     DataPropertyDomain: 4
     DataPropertyRange: 4
-    Declaration: 610
-    DisjointClasses: 93
-    EquivalentClasses: 213
-    FunctionalObjectProperty: 1
-    InverseFunctionalObjectProperty: 1
-    InverseObjectProperties: 11
-    ObjectPropertyDomain: 20
-    ObjectPropertyRange: 19
-    SubAnnotationPropertyOf: 7
-    SubClassOf: 1032
-    SubObjectPropertyOf: 26
-    SubPropertyChainOf: 9
-    SymmetricObjectProperty: 1
-    TransitiveObjectProperty: 9
-  'Axioms: Number of axioms': 4413
-  'Entities: % of entities reused': 37.56
-  'Entities: Number of annotation properties': 28
-  'Entities: Number of classes': 544
+    Declaration: 416
+    DisjointClasses: 90
+    EquivalentClasses: 227
+    InverseObjectProperties: 3
+    ObjectPropertyDomain: 8
+    ObjectPropertyRange: 8
+    SubAnnotationPropertyOf: 3
+    SubClassOf: 811
+    SubObjectPropertyOf: 4
+    TransitiveObjectProperty: 2
+  'Axioms: Number of axioms': 2675
+  'Entities: % of entities reused': 12.42
+  'Entities: Number of annotation properties': 12
+  'Entities: Number of classes': 438
   'Entities: Number of data properties': 4
   'Entities: Number of individuals': 0
-  'Entities: Number of object properties': 36
+  'Entities: Number of object properties': 18
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 3821
-    ObjectAllValuesFrom: 88
-    ObjectComplementOf: 165
-    ObjectIntersectionOf: 542
-    ObjectSomeValuesFrom: 1074
+    Class: 3286
+    ObjectAllValuesFrom: 90
+    ObjectComplementOf: 181
+    ObjectIntersectionOf: 588
+    ObjectSomeValuesFrom: 1076
     ObjectUnionOf: 19
-  'Info: Does the ontology fall under OWL 2 DL?': true
+  'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.638
+    _dashboard: 0.593
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
-    _reuse: 0.376
-    oboscore: 0.319
+    _reuse: 0.124
+    oboscore: 0.296
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 165
-    GO: 130
-    IAO: 744
-    OBI: 26
-    OMO: 2
-    PATO: 6
-    PO: 1057
-    POALT: 6
-    PPO: 3238
-    RO: 512
-    UBERON: 29
-    dc: 3
-    dc11: 1
-    foaf: 2
-    oboInOwl: 1521
+    BFO: 4
+    GO: 6
+    IAO: 549
+    OBI: 3
+    PATO: 4
+    PO: 518
+    PPO: 3537
+    RO: 430
+    UBERON: 4
     owl: 25
-    rdf: 475
-    rdfs: 790
+    rdfs: 528
     xsd: 4
   'Info: Which ontologies use it?': []
 mirror_from: http://purl.obolibrary.org/obo/ppo.owl
@@ -89,8 +78,9 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 14 missing definitions. See ROBOT Report for details.
-    status: WARN
+    comment: 2 duplicate definitions.  10 missing definitions. See ROBOT Report for
+      details.
+    status: ERROR
   FP07 Relations:
     comment: 13 non-RO properties used.
     file: fp7
@@ -109,19 +99,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 25 errors, 14 warnings, 24 info messages.
+    comment: 27 errors, 10 warnings, 24 info messages.
     file: robot_report
     results:
-      ERROR: 25
+      ERROR: 27
       INFO: 24
-      WARN: 14
+      WARN: 10
     status: ERROR
-sha256_hash: eecb1cb7ec087af450a3328d577efedcaac910e6fcd751a81cbd8e694341be55
+sha256_hash: d446d6a6dba36d7686535bf9d7b4be0a6a956dcd2f7b9d90a1872fdfc7124bc1
 summary:
-  comment: 4 errors
+  comment: 5 errors
   status: ERROR
   summary_count:
-    ERROR: 4
+    ERROR: 5
     INFO: 1
-    WARN: 1
-version: http://purl.obolibrary.org/obo/ppo/releases/2025-06-16/ppo.owl
+    WARN: 0
+version: http://purl.obolibrary.org/obo/ppo/releases/2026-05-06/ppo.owl

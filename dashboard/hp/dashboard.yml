@@ -4,7 +4,7 @@ base_prefixes:
 - HPALT
 - HP
 changed: true
-date: 2026-02-25 13:10:12.033611
+date: 2026-05-14 18:06:40.604403
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 130171
@@ -29,12 +29,12 @@ metrics:
   'Info: Experimental OBO score':
     _dashboard: 0.933
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.122
+    _impact: 0.058
     _impact_external: 0.25
     _reuse: 0.098
-    oboscore: 0.528
+    oboscore: 0.496
   'Info: How many externally documented uses?': 1
-  'Info: How many ontologies use it?': 23
+  'Info: How many ontologies use it?': 11
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
@@ -60,35 +60,23 @@ metrics:
     rdf: 6872
     rdfs: 24581
   'Info: Which ontologies use it?':
-  - ado
-  - aro
-  - bmont
-  - chiro
   - cido
   - doid
-  - epio
-  - exmo
-  - genepio
   - gsso
   - htn
   - maxo
   - mondo
   - oba
   - obi
-  - ohmi
-  - one
   - ons
-  - oostt
-  - opmi
-  - pbpko
   - scdo
   - txpo
 mirror_from: http://purl.obolibrary.org/obo/hp/hp-base.owl
 namespace: hp
 results:
   FP01 Open:
-    comment: Registry license 'https://hpo.jax.org/app/license' is not a valid open
-      license.
+    comment: 'Registry license ''https://hpo.jax.org/app/license'' is not one of the
+      two open licenses approved by the OBO Foundry in Principle 1: CC0 and CC-BY.'
     status: WARN
   FP02 Common Format:
     status: PASS
