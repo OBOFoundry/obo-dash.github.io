@@ -3,8 +3,8 @@ base_prefixes:
 - EXMO
 - EXMOALT
 - EXMO
-changed: false
-date: 2025-12-09 20:40:23.059497
+changed: true
+date: 2026-06-11 20:13:29.586099
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 631
@@ -26,9 +26,12 @@ metrics:
     ObjectSomeValuesFrom: 36
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.749
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.0
     _impact_external: 0
     _reuse: 1.0
+    oboscore: 0.374
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 0
   'Info: Logical consistency': true
@@ -75,7 +78,8 @@ results:
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
-    status: PASS
+    comment: last version (2025-06-05) is over one year(s) old
+    status: INFO
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
@@ -86,12 +90,12 @@ results:
       INFO: 17
       WARN: 23
     status: WARN
-sha256_hash: c00feabc14fb4f3199968d611d6e9754dd49baff5bff52d0b6e9153205c4bfd8
+sha256_hash: fb50ade98271ed4e2fdd2f1e9f00010354fbd5743846f5f939edade225e49142
 summary:
   comment: 2 errors
   status: ERROR
   summary_count:
     ERROR: 2
-    INFO: 0
+    INFO: 1
     WARN: 2
 version: http://purl.obolibrary.org/obo/exmo/2025-06-05/exmo.owl
