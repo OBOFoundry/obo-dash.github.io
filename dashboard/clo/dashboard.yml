@@ -3,62 +3,63 @@ base_prefixes:
 - CLO
 - CLOALT
 - CLO
-changed: false
-date: 2025-12-09 20:26:19.899878
+changed: true
+date: 2026-07-18 13:12:06.517380
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 170744
+    AnnotationAssertion: 171110
     ClassAssertion: 8
-    Declaration: 39115
-    EquivalentClasses: 722
-    ObjectPropertyDomain: 2
-    ObjectPropertyRange: 2
-    SubClassOf: 60680
-    SubObjectPropertyOf: 15
-  'Axioms: Number of axioms': 271288
-  'Entities: % of entities reused': 2.57
-  'Entities: Number of annotation properties': 31
-  'Entities: Number of classes': 40071
+    Declaration: 39117
+    EquivalentClasses: 726
+    ObjectPropertyDomain: 1
+    ObjectPropertyRange: 6
+    SubClassOf: 63172
+    SubObjectPropertyOf: 13
+  'Axioms: Number of axioms': 274153
+  'Entities: % of entities reused': 2.52
+  'Entities: Number of annotation properties': 33
+  'Entities: Number of classes': 40053
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 8
-  'Entities: Number of object properties': 33
+  'Entities: Number of object properties': 31
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 172760
+    Class: 177745
     ObjectAllValuesFrom: 3
-    ObjectHasValue: 1630
-    ObjectIntersectionOf: 12410
-    ObjectSomeValuesFrom: 33994
-    ObjectUnionOf: 1
+    ObjectHasValue: 1629
+    ObjectIntersectionOf: 12398
+    ObjectSomeValuesFrom: 34010
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.749
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.021
     _impact_external: 0
-    _reuse: 0.026
+    _reuse: 0.025
+    oboscore: 0.385
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 4
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 7802
-    CHEBI: 2
-    CL: 6415
-    CLO: 157907
-    DOID: 5184
-    EFO: 4729
-    GO: 12
-    IAO: 73025
-    NCBITaxon: 7581
-    OBI: 2939
+    BFO: 7782
+    CL: 6425
+    CLO: 162423
+    COB: 13
+    DDANAT: 2
+    DOID: 9912
+    GO: 10
+    IAO: 73300
+    MONDO: 1
+    NCBITaxon: 7587
+    OBI: 2932
     PATO: 6
-    RO: 8233
-    UBERON: 5524
-    ebicellline: 10
-    efo: 8
-    oboInOwl: 14
-    owl: 1
-    rdf: 2
-    rdfs: 96385
+    RO: 8660
+    UBERON: 5533
+    oboInOwl: 4
+    owl: 132
+    rdf: 1
+    rdfs: 96423
   'Info: Which ontologies use it?':
   - dideo
   - genepio
@@ -68,27 +69,24 @@ mirror_from: http://purl.obolibrary.org/obo/clo.owl
 namespace: clo
 results:
   FP01 Open:
-    comment: Missing ontology license.
+    comment: Ontology license 'http://creativecommons.org/licenses/by/4.0/' does not
+      match registry license 'http://creativecommons.org/licenses/by/3.0/'.
     status: ERROR
   FP02 Common Format:
     status: PASS
   FP03 URIs:
-    comment: 0 invalid IRIs. The Ontology IRI is not valid.
-    file: fp3
-    status: ERROR
+    status: PASS
   FP04 Versioning:
-    comment: Missing version IRI
-    status: ERROR
+    status: PASS
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 507 duplicate definitions. 6 multiple definitions. 36253 missing definitions.
-      See ROBOT Report for details.
-    status: ERROR
+    comment: 36178 missing definitions. See ROBOT Report for details.
+    status: WARN
   FP07 Relations:
-    comment: 1 labels match RO labels. 16 non-RO properties used.
+    comment: 16 non-RO properties used.
     file: fp7
-    status: ERROR
+    status: INFO
   FP08 Documented:
     status: PASS
   FP09 Plurality of Users:
@@ -97,27 +95,25 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 83 duplicate labels. See ROBOT Report for details.
-    status: ERROR
+    status: PASS
   FP16 Maintenance:
-    comment: Missing version IRI to check date
-    status: ERROR
+    status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 608 errors, 36738 warnings, 201 info messages.
+    comment: 36613 warnings, 180 info messages.
     file: robot_report
     results:
-      ERROR: 608
-      INFO: 201
-      WARN: 36738
-    status: ERROR
-sha256_hash: 9e1feb0fb2cad4a71956c5f186c33a0801b3de8e83da52757d3916f0212c5b06
+      ERROR: 0
+      INFO: 180
+      WARN: 36613
+    status: WARN
+sha256_hash: 64b8167d3bdf789d902906053fcec29c0644d34e22378032fa0d2e03915d8920
 summary:
-  comment: 9 errors
+  comment: 2 errors
   status: ERROR
   summary_count:
-    ERROR: 9
-    INFO: 0
-    WARN: 0
-version: null
+    ERROR: 2
+    INFO: 1
+    WARN: 2
+version: http://purl.obolibrary.org/obo/clo/releases/2026-06-19/clo.owl

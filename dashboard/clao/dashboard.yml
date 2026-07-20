@@ -3,52 +3,57 @@ base_prefixes:
 - CLAO
 - CLAOALT
 - CLAO
-changed: false
-date: 2025-12-09 20:24:52.632277
+changed: true
+date: 2026-07-18 13:09:27.145795
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 6208
+    AnnotationAssertion: 6218
     AsymmetricObjectProperty: 2
-    Declaration: 1558
+    Declaration: 1567
     SubAnnotationPropertyOf: 1
-    SubClassOf: 2717
+    SubClassOf: 2729
     SubObjectPropertyOf: 8
     SymmetricObjectProperty: 1
     TransitiveObjectProperty: 3
-  'Axioms: Number of axioms': 10498
-  'Entities: % of entities reused': 2.49
+  'Axioms: Number of axioms': 10529
+  'Entities: % of entities reused': 2.86
   'Entities: Number of annotation properties': 22
-  'Entities: Number of classes': 1516
+  'Entities: Number of classes': 1521
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
-  'Entities: Number of object properties': 26
+  'Entities: Number of object properties': 29
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 6978
+    Class: 7007
     ObjectIntersectionOf: 30
-    ObjectSomeValuesFrom: 1221
+    ObjectSomeValuesFrom: 1229
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.66
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.005
     _impact_external: 0
-    _reuse: 0.025
+    _reuse: 0.029
+    oboscore: 0.333
   'Info: How many externally documented uses?': 0
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
     AISM: 271
-    BFO: 797
-    CLAO: 7074
-    IAO: 1531
+    BFO: 804
+    CLAO: 7075
+    HAO: 4
+    IAO: 1532
     PATO: 6
     RO: 366
-    dc: 793
-    dc11: 380
-    oboInOwl: 3404
+    dc: 794
+    dc11: 381
+    obo: 28
+    oboInOwl: 3407
     owl: 22
-    rdf: 1014
-    rdfs: 1664
+    rdf: 1016
+    rdfs: 1672
   'Info: Which ontologies use it?':
   - lepao
 mirror_from: http://purl.obolibrary.org/obo/clao/clao-base.owl
@@ -63,15 +68,16 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 2 duplicate definitions.  15 missing definitions. See ROBOT Report for
-      details.
+    comment: 2 duplicate definitions. 2 multiple definitions. 16 missing definitions.
+      See ROBOT Report for details.
     status: ERROR
   FP07 Relations:
-    comment: 14 non-RO properties used.
+    comment: 17 non-RO properties used.
     file: fp7
     status: INFO
   FP08 Documented:
@@ -84,24 +90,23 @@ results:
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
-    comment: last version (2021-09-27) is over two year(s) old
-    status: WARN
+    status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 23 errors, 34 warnings, 1 info messages.
+    comment: 25 errors, 36 warnings, 1 info messages.
     file: robot_report
     results:
-      ERROR: 23
+      ERROR: 25
       INFO: 1
-      WARN: 34
+      WARN: 36
     status: ERROR
-sha256_hash: f999596bd9196262f3511221ef9475c0189d2deff33d75b8cfa4ee2c2a86d923
+sha256_hash: 47ad28b704bf5e748fea03232cd62814fa5a26f3f3d60c76ad1b024b23c6771b
 summary:
-  comment: 4 errors
+  comment: 5 errors
   status: ERROR
   summary_count:
-    ERROR: 4
+    ERROR: 5
     INFO: 1
-    WARN: 1
-version: http://purl.obolibrary.org/obo/clao/releases/2021-09-27/clao-base.owl
+    WARN: 0
+version: http://purl.obolibrary.org/obo/clao/releases/2026-06-16/clao-base.owl

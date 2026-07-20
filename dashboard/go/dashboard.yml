@@ -4,51 +4,51 @@ base_prefixes:
 - GOALT
 - GO
 changed: true
-date: 2026-06-11 20:19:29.222526
+date: 2026-07-18 13:26:17.317125
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 472337
-    Declaration: 51991
+    AnnotationAssertion: 472470
+    Declaration: 51999
     DisjointClasses: 29
-    EquivalentClasses: 9312
+    EquivalentClasses: 9307
     SubAnnotationPropertyOf: 24
-    SubClassOf: 74018
-  'Axioms: Number of axioms': 607711
+    SubClassOf: 74033
+  'Axioms: Number of axioms': 607862
   'Entities: % of entities reused': 0.09
-  'Entities: Number of annotation properties': 61
-  'Entities: Number of classes': 51967
+  'Entities: Number of annotation properties': 60
+  'Entities: Number of classes': 51975
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 8
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 228084
-    ObjectIntersectionOf: 9312
-    ObjectSomeValuesFrom: 25612
+    Class: 228107
+    ObjectIntersectionOf: 9307
+    ObjectSomeValuesFrom: 25601
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.889
+    _dashboard: 0.822
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.34
     _impact_external: 0.5
     _reuse: 0.001
-    oboscore: 0.615
+    oboscore: 0.581
   'Info: How many externally documented uses?': 5
   'Info: How many ontologies use it?': 65
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 9275
-    GO: 228084
+    BFO: 9273
+    GO: 228107
     GOALT: 48
-    IAO: 78074
-    RO: 16318
+    IAO: 78144
+    RO: 16309
     obo: 1
-    oboInOwl: 429269
-    owl: 13704
-    rdf: 131841
-    rdfs: 68620
-    skos: 14629
+    oboInOwl: 429181
+    owl: 13730
+    rdf: 131717
+    rdfs: 68589
+    skos: 14663
   'Info: Which ontologies use it?':
   - ado
   - amphx
@@ -125,7 +125,8 @@ results:
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    status: PASS
+    comment: Version IRI does not resolve
+    status: ERROR
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
@@ -146,19 +147,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 4 warnings, 8 info messages.
+    comment: 3 warnings, 8 info messages.
     file: robot_report
     results:
       ERROR: 0
       INFO: 8
-      WARN: 4
+      WARN: 3
     status: WARN
-sha256_hash: 593f2d719cc49ccba54a1c710e3ad320186b34f70ad8883063b5f8f160172fcd
+sha256_hash: 6200169cab2fe30be09aac3cf9c96a84e3193b6a3c6d6e0e53dd05bce74e395c
 summary:
-  comment: 2 warnings
-  status: WARN
+  comment: 1 errors
+  status: ERROR
   summary_count:
-    ERROR: 0
+    ERROR: 1
     INFO: 0
     WARN: 2
-version: http://purl.obolibrary.org/obo/go/releases/2026-05-19/go.owl
+version: http://purl.obolibrary.org/obo/go/releases/2026-06-15/go.owl

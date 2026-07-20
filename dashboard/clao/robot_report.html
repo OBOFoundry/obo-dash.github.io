@@ -13,9 +13,9 @@
       <div class="report_summary"><table class="table">
       <tr><th><b>Level</b></th><th><b>Number of errors</b></th></tr>
       
-      <tr><td>WARN</td><td>34</td></tr>
+      <tr><td>WARN</td><td>36</td></tr>
       
-      <tr><td>ERROR</td><td>23</td></tr>
+      <tr><td>ERROR</td><td>25</td></tr>
       
       <tr><td>INFO</td><td>1</td></tr>
       
@@ -28,13 +28,17 @@
       
       <tr><td>duplicate_exact_synonym</td><td>16</td></tr>
       
-      <tr><td>missing_definition</td><td>15</td></tr>
+      <tr><td>missing_definition</td><td>16</td></tr>
       
       <tr><td>deprecated_class_reference</td><td>3</td></tr>
       
       <tr><td>missing_obsolete_label</td><td>3</td></tr>
       
       <tr><td>duplicate_definition</td><td>2</td></tr>
+      
+      <tr><td>multiple_definitions</td><td>2</td></tr>
+      
+      <tr><td>duplicate_label_synonym</td><td>1</td></tr>
       
       <tr><td>missing_superclass</td><td>1</td></tr>
       
@@ -241,8 +245,24 @@
             <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
             <td>The cuticular depression that is circular.@en</td>
           </tr>
-        <tr class=table-warning>
+        <tr class=table-danger>
             <td>23</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/multiple_definitions" target="_blank" rel="noopener noreferrer">multiple_definitions</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/CLAO_0001098" target="_blank" rel="noopener noreferrer">CLAO:0001098</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
+            <td>A sensillum with a long, unicellular, setiform outgrowth that is strongly chitinized.</td>
+          </tr>
+        <tr class=table-danger>
+            <td>24</td>
+            <td>ERROR</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/multiple_definitions" target="_blank" rel="noopener noreferrer">multiple_definitions</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/CLAO_0001098" target="_blank" rel="noopener noreferrer">CLAO:0001098</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
+            <td>The unicellular cuticular evagination that constitutes a sclerite with its base surrounded by socket membrane.</td>
+          </tr>
+        <tr class=table-warning>
+            <td>25</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0000637" target="_blank" rel="noopener noreferrer">CLAO:0000637</a></td>
@@ -250,7 +270,7 @@
             <td>S5</td>
           </tr>
         <tr class=table-warning>
-            <td>24</td>
+            <td>26</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0000638" target="_blank" rel="noopener noreferrer">CLAO:0000638</a></td>
@@ -258,7 +278,7 @@
             <td>s5</td>
           </tr>
         <tr class=table-warning>
-            <td>25</td>
+            <td>27</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0000635" target="_blank" rel="noopener noreferrer">CLAO:0000635</a></td>
@@ -266,7 +286,7 @@
             <td>S4</td>
           </tr>
         <tr class=table-warning>
-            <td>26</td>
+            <td>28</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0000636" target="_blank" rel="noopener noreferrer">CLAO:0000636</a></td>
@@ -274,7 +294,7 @@
             <td>s4</td>
           </tr>
         <tr class=table-warning>
-            <td>27</td>
+            <td>29</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0000633" target="_blank" rel="noopener noreferrer">CLAO:0000633</a></td>
@@ -282,7 +302,7 @@
             <td>S3</td>
           </tr>
         <tr class=table-warning>
-            <td>28</td>
+            <td>30</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0000634" target="_blank" rel="noopener noreferrer">CLAO:0000634</a></td>
@@ -290,7 +310,7 @@
             <td>s3</td>
           </tr>
         <tr class=table-warning>
-            <td>29</td>
+            <td>31</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0000631" target="_blank" rel="noopener noreferrer">CLAO:0000631</a></td>
@@ -298,7 +318,7 @@
             <td>S2</td>
           </tr>
         <tr class=table-warning>
-            <td>30</td>
+            <td>32</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0000632" target="_blank" rel="noopener noreferrer">CLAO:0000632</a></td>
@@ -306,7 +326,7 @@
             <td>s2</td>
           </tr>
         <tr class=table-warning>
-            <td>31</td>
+            <td>33</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0000629" target="_blank" rel="noopener noreferrer">CLAO:0000629</a></td>
@@ -314,7 +334,7 @@
             <td>S1</td>
           </tr>
         <tr class=table-warning>
-            <td>32</td>
+            <td>34</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0000630" target="_blank" rel="noopener noreferrer">CLAO:0000630</a></td>
@@ -322,7 +342,7 @@
             <td>s1</td>
           </tr>
         <tr class=table-warning>
-            <td>33</td>
+            <td>35</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0000466" target="_blank" rel="noopener noreferrer">CLAO:0000466</a></td>
@@ -330,7 +350,7 @@
             <td>D3@en</td>
           </tr>
         <tr class=table-warning>
-            <td>34</td>
+            <td>36</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0000467" target="_blank" rel="noopener noreferrer">CLAO:0000467</a></td>
@@ -338,7 +358,7 @@
             <td>d3@en</td>
           </tr>
         <tr class=table-warning>
-            <td>35</td>
+            <td>37</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0000464" target="_blank" rel="noopener noreferrer">CLAO:0000464</a></td>
@@ -346,7 +366,7 @@
             <td>D2@en</td>
           </tr>
         <tr class=table-warning>
-            <td>36</td>
+            <td>38</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0000465" target="_blank" rel="noopener noreferrer">CLAO:0000465</a></td>
@@ -354,7 +374,7 @@
             <td>d2@en</td>
           </tr>
         <tr class=table-warning>
-            <td>37</td>
+            <td>39</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0000462" target="_blank" rel="noopener noreferrer">CLAO:0000462</a></td>
@@ -362,7 +382,7 @@
             <td>D1@en</td>
           </tr>
         <tr class=table-warning>
-            <td>38</td>
+            <td>40</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/duplicate_exact_synonym" target="_blank" rel="noopener noreferrer">duplicate_exact_synonym</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0000463" target="_blank" rel="noopener noreferrer">CLAO:0000463</a></td>
@@ -370,7 +390,15 @@
             <td>d1@en</td>
           </tr>
         <tr class=table-warning>
-            <td>39</td>
+            <td>41</td>
+            <td>WARN</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/duplicate_label_synonym" target="_blank" rel="noopener noreferrer">duplicate_label_synonym</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/CLAO_0001023" target="_blank" rel="noopener noreferrer">CLAO:0001023</a></td>
+            <td><a href="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" target="_blank" rel="noopener noreferrer">oboInOwl:hasExactSynonym</a></td>
+            <td>carina</td>
+          </tr>
+        <tr class=table-warning>
+            <td>42</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0000089" target="_blank" rel="noopener noreferrer">CLAO:0000089</a></td>
@@ -378,7 +406,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>40</td>
+            <td>43</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0000090" target="_blank" rel="noopener noreferrer">CLAO:0000090</a></td>
@@ -386,7 +414,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>41</td>
+            <td>44</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0000091" target="_blank" rel="noopener noreferrer">CLAO:0000091</a></td>
@@ -394,7 +422,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>42</td>
+            <td>45</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0000106" target="_blank" rel="noopener noreferrer">CLAO:0000106</a></td>
@@ -402,7 +430,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>43</td>
+            <td>46</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0000192" target="_blank" rel="noopener noreferrer">CLAO:0000192</a></td>
@@ -410,7 +438,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>44</td>
+            <td>47</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0000232" target="_blank" rel="noopener noreferrer">CLAO:0000232</a></td>
@@ -418,7 +446,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>45</td>
+            <td>48</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0000233" target="_blank" rel="noopener noreferrer">CLAO:0000233</a></td>
@@ -426,7 +454,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>46</td>
+            <td>49</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0000244" target="_blank" rel="noopener noreferrer">CLAO:0000244</a></td>
@@ -434,7 +462,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>47</td>
+            <td>50</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0000254" target="_blank" rel="noopener noreferrer">CLAO:0000254</a></td>
@@ -442,7 +470,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>48</td>
+            <td>51</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0000307" target="_blank" rel="noopener noreferrer">CLAO:0000307</a></td>
@@ -450,7 +478,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>49</td>
+            <td>52</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0000321" target="_blank" rel="noopener noreferrer">CLAO:0000321</a></td>
@@ -458,7 +486,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>50</td>
+            <td>53</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0000696" target="_blank" rel="noopener noreferrer">CLAO:0000696</a></td>
@@ -466,7 +494,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>51</td>
+            <td>54</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0000734" target="_blank" rel="noopener noreferrer">CLAO:0000734</a></td>
@@ -474,7 +502,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>52</td>
+            <td>55</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0000898" target="_blank" rel="noopener noreferrer">CLAO:0000898</a></td>
@@ -482,7 +510,7 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>53</td>
+            <td>56</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0001174" target="_blank" rel="noopener noreferrer">CLAO:0001174</a></td>
@@ -490,7 +518,15 @@
             <td></td>
           </tr>
         <tr class=table-warning>
-            <td>54</td>
+            <td>57</td>
+            <td>WARN</td>
+            <td><a href="http://robot.obolibrary.org/report_queries/missing_definition" target="_blank" rel="noopener noreferrer">missing_definition</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/CLAO_0001592" target="_blank" rel="noopener noreferrer">CLAO:0001592</a></td>
+            <td><a href="http://purl.obolibrary.org/obo/IAO_0000115" target="_blank" rel="noopener noreferrer">IAO:0000115</a></td>
+            <td></td>
+          </tr>
+        <tr class=table-warning>
+            <td>58</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label" target="_blank" rel="noopener noreferrer">missing_obsolete_label</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0000010" target="_blank" rel="noopener noreferrer">CLAO:0000010</a></td>
@@ -498,7 +534,7 @@
             <td>lateral eye</td>
           </tr>
         <tr class=table-warning>
-            <td>55</td>
+            <td>59</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label" target="_blank" rel="noopener noreferrer">missing_obsolete_label</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0000850" target="_blank" rel="noopener noreferrer">CLAO:0000850</a></td>
@@ -506,7 +542,7 @@
             <td>left antenna</td>
           </tr>
         <tr class=table-warning>
-            <td>56</td>
+            <td>60</td>
             <td>WARN</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_obsolete_label" target="_blank" rel="noopener noreferrer">missing_obsolete_label</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0000851" target="_blank" rel="noopener noreferrer">CLAO:0000851</a></td>
@@ -514,7 +550,7 @@
             <td>rigth antenna</td>
           </tr>
         <tr class=table-info>
-            <td>57</td>
+            <td>61</td>
             <td>INFO</td>
             <td><a href="http://robot.obolibrary.org/report_queries/missing_superclass" target="_blank" rel="noopener noreferrer">missing_superclass</a></td>
             <td><a href="http://purl.obolibrary.org/obo/CLAO_0001571" target="_blank" rel="noopener noreferrer">CLAO:0001571</a></td>
