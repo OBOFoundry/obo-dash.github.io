@@ -4,44 +4,44 @@ base_prefixes:
 - VTALT
 - VT
 changed: true
-date: 2026-07-18 13:44:43.341873
+date: 2026-09-16 20:06:17.987451
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 27636
-    Declaration: 4088
-    SubClassOf: 4751
+    AnnotationAssertion: 27942
+    Declaration: 4135
+    SubClassOf: 4806
     TransitiveObjectProperty: 1
-  'Axioms: Number of axioms': 36476
-  'Entities: % of entities reused': 0.66
+  'Axioms: Number of axioms': 36884
+  'Entities: % of entities reused': 0.65
   'Entities: Number of annotation properties': 24
-  'Entities: Number of classes': 4086
+  'Entities: Number of classes': 4133
   'Entities: Number of data properties': 0
   'Entities: Number of individuals': 0
   'Entities: Number of object properties': 2
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 13588
+    Class: 13745
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
-    _dashboard: 0.882
+    _dashboard: 0.793
     _formula: (1*impact+1*dashboard)/2
     _impact: 0.005
     _impact_external: 0.5
     _reuse: 0.007
-    oboscore: 0.444
+    oboscore: 0.399
   'Info: How many externally documented uses?': 3
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    IAO: 4083
-    VT: 13588
+    IAO: 4131
+    VT: 13745
     VTALT: 3
-    dc: 371
-    oboInOwl: 22971
+    dc: 418
+    oboInOwl: 23183
     owl: 94
-    rdf: 4148
-    rdfs: 4269
+    rdfs: 4316
+    xsd: 4196
   'Info: Which ontologies use it?':
   - scdo
 mirror_from: http://purl.obolibrary.org/obo/vt.owl
@@ -58,8 +58,9 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 5 missing definitions. See ROBOT Report for details.
-    status: WARN
+    comment: 2 duplicate definitions.  4 missing definitions. See ROBOT Report for
+      details.
+    status: ERROR
   FP07 Relations:
     comment: 2 non-RO properties used.
     file: fp7
@@ -77,19 +78,19 @@ results:
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 5 warnings, 1 info messages.
+    comment: 2 errors, 4 warnings, 1 info messages.
     file: robot_report
     results:
-      ERROR: 0
+      ERROR: 2
       INFO: 1
-      WARN: 5
-    status: WARN
-sha256_hash: d522377ad114d52515154cd649d97d5568b7db9a3d56179e94ee3ecbd5a46834
+      WARN: 4
+    status: ERROR
+sha256_hash: ea62e6be147aeda4c9112d7dc62b0ffbb1ae1139c727f81e9ce60a28a14f717e
 summary:
-  comment: 2 warnings
-  status: WARN
+  comment: 2 errors
+  status: ERROR
   summary_count:
-    ERROR: 0
+    ERROR: 2
     INFO: 1
-    WARN: 2
-version: http://purl.obolibrary.org/obo/vt/releases/2026-07-14/vt.owl
+    WARN: 0
+version: http://purl.obolibrary.org/obo/vt/releases/2026-09-09/vt.owl

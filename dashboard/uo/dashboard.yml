@@ -4,84 +4,69 @@ base_prefixes:
 - UOALT
 - UO
 changed: true
-date: 2026-02-25 13:06:29.857712
+date: 2026-09-16 20:05:54.289733
 metrics:
   'Axioms: Breakdown of axiom types':
     AnnotationAssertion: 1412
-    Declaration: 856
-    EquivalentClasses: 356
-    SubClassOf: 673
-  'Axioms: Number of axioms': 3297
-  'Entities: % of entities reused': 1.28
-  'Entities: Number of annotation properties': 8
+    Declaration: 859
+    EquivalentClasses: 355
+    SubClassOf: 672
+  'Axioms: Number of axioms': 3298
+  'Entities: % of entities reused': 1.74
+  'Entities: Number of annotation properties': 12
   'Entities: Number of classes': 574
   'Entities: Number of data properties': 0
-  'Entities: Number of individuals': 276
+  'Entities: Number of individuals': 275
   'Entities: Number of object properties': 1
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 2436
+    Class: 2433
     ObjectIntersectionOf: 80
-    ObjectOneOf: 276
+    ObjectOneOf: 275
     ObjectSomeValuesFrom: 160
   'Info: Does the ontology fall under OWL 2 DL?': true
   'Info: Experimental OBO score':
-    _dashboard: 0.667
+    _dashboard: 0.822
     _formula: (1*impact+1*dashboard)/2
-    _impact: 0.164
+    _impact: 0.073
     _impact_external: 0
-    _reuse: 0.013
-    oboscore: 0.416
+    _reuse: 0.017
+    oboscore: 0.447
   'Info: How many externally documented uses?': 0
-  'Info: How many ontologies use it?': 31
+  'Info: How many ontologies use it?': 14
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    IAO: 409
-    UO: 2988
+    IAO: 411
+    UO: 2983
+    dc: 3
     dc11: 1
     obo: 161
-    oboInOwl: 828
+    oboInOwl: 827
     owl: 1
     rdf: 396
     rdfs: 574
   'Info: Which ontologies use it?':
   - agro
   - apollo_sv
-  - cheminf
-  - cido
   - dideo
   - dron
-  - duo
-  - foodon
   - genepio
   - geo
-  - htn
   - iao
-  - ico
   - mcro
   - ms
-  - obcs
   - obi
-  - obib
-  - ohmi
-  - ohpi
-  - one
   - ons
-  - oostt
-  - opmi
-  - pbpko
   - pdro
-  - psdo
   - rbo
   - scdo
-  - stato
-  - swo
 mirror_from: http://purl.obolibrary.org/obo/uo/uo-base.owl
 namespace: uo
 results:
   FP01 Open:
-    comment: Missing ontology license.
+    comment: Ontology license 'https://creativecommons.org/licenses/by/4.0/' does
+      not match registry license 'http://creativecommons.org/licenses/by/3.0/'.
     status: ERROR
   FP02 Common Format:
     status: PASS
@@ -92,9 +77,8 @@ results:
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 4 duplicate definitions.  166 missing definitions. See ROBOT Report for
-      details.
-    status: ERROR
+    comment: 166 missing definitions. See ROBOT Report for details.
+    status: WARN
   FP07 Relations:
     status: PASS
   FP08 Documented:
@@ -105,26 +89,25 @@ results:
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
-    comment: 4 duplicate labels. See ROBOT Report for details.
-    status: ERROR
+    status: PASS
   FP16 Maintenance:
     status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 13 errors, 323 warnings, 2 info messages.
+    comment: 320 warnings, 2 info messages.
     file: robot_report
     results:
-      ERROR: 13
+      ERROR: 0
       INFO: 2
-      WARN: 323
-    status: ERROR
-sha256_hash: 9e00af47cc51fcb2b017014f3ee58d5292b80a3fdb1e0a70672ac45904f887dc
+      WARN: 320
+    status: WARN
+sha256_hash: 09e665d10a57825cee7dacf7670799c80cc11d19f60a93e810a76d7f0593be2b
 summary:
-  comment: 5 errors
+  comment: 2 errors
   status: ERROR
   summary_count:
-    ERROR: 5
+    ERROR: 2
     INFO: 0
-    WARN: 0
-version: http://purl.obolibrary.org/obo/uo/releases/2026-01-16/uo-base.owl
+    WARN: 2
+version: http://purl.obolibrary.org/obo/uo/releases/2026-07-31/uo-base.owl

@@ -45,6 +45,8 @@ ERROR	deprecated_class_reference	RBO:010017	rdfs:subClassOf	PATO:0001018
 ERROR	deprecated_class_reference	RBO:010018	rdfs:subClassOf	OBI:0001909
 ERROR	deprecated_class_reference	RBO:010019	rdfs:subClassOf	IAO:0000109
 ERROR	deprecated_class_reference	RBO:010020	rdfs:subClassOf	PATO:0001018
+ERROR	duplicate_definition	RBO:00005058	IAO:0000115	The atomic mass (ma or m) is the mass of an atom.  The protons and neutrons of the nucleus account for nearly all of the total mass of atoms, with the electrons and nuclear binding energy making minor contributions.  It is measured in Daltons (unit).
+ERROR	duplicate_definition	RBO:00010021	IAO:0000115	The atomic mass (ma or m) is the mass of an atom.  The protons and neutrons of the nucleus account for nearly all of the total mass of atoms, with the electrons and nuclear binding energy making minor contributions.  It is measured in Daltons (unit).
 ERROR	duplicate_label	RBO:00002011	rdfs:label	unplanned naturally occurring radiation exposure
 ERROR	duplicate_label	RBO:00002121	rdfs:label	unplanned naturally occurring radiation exposure
 ERROR	duplicate_label	RBO:00010020	rdfs:label	tissue equivalence
@@ -67,6 +69,7 @@ ERROR	duplicate_label	RBO:00010014	rdfs:label	organ dose
 ERROR	duplicate_label	RBO:010014	rdfs:label	organ dose
 ERROR	duplicate_label	RBO:00000106	rdfs:label	nuclear accident study
 ERROR	duplicate_label	RBO:00002047	rdfs:label	nuclear accident study
+ERROR	duplicate_label	RBO:00005058	rdfs:label	mass number
 ERROR	duplicate_label	RBO:00010021	rdfs:label	mass number
 ERROR	duplicate_label	RBO:00010066	rdfs:label	mass number
 ERROR	duplicate_label	RBO:00010012	rdfs:label	heavy ion
@@ -81,8 +84,6 @@ ERROR	duplicate_label	RBO:00010008	rdfs:label	excess lifetime risk of cancer
 ERROR	duplicate_label	RBO:010008	rdfs:label	excess lifetime risk of cancer
 ERROR	duplicate_label	RBO:00000084	rdfs:label	environmental study
 ERROR	duplicate_label	RBO:00002022	rdfs:label	environmental study
-ERROR	duplicate_label	RBO:00010064	rdfs:label	energy deposition event
-ERROR	duplicate_label	RBO:00015021	rdfs:label	energy deposition event
 ERROR	duplicate_label	RBO:00010007	rdfs:label	dose equivalent
 ERROR	duplicate_label	RBO:010007	rdfs:label	dose equivalent
 ERROR	duplicate_label	RBO:00010006	rdfs:label	delta ray
@@ -93,14 +94,13 @@ ERROR	duplicate_label	RBO:00010002	rdfs:label	biodosimetry
 ERROR	duplicate_label	RBO:010002	rdfs:label	biodosimetry
 ERROR	duplicate_label	RBO:00010000	rdfs:label	as low as reasonably achievable
 ERROR	duplicate_label	RBO:010000	rdfs:label	as low as reasonably achievable
-ERROR	multiple_definitions	RBO:00000111	IAO:0000115	A set of behaviours that have some socially agreed upon function and for which there is an accepted code of norms. This may refer to a role within an organisation or within society as a whole. For example a Professionâ€ can be defined as a cluster of occupational roles, or roles in which the incumbents perform certain functions valued in the organisation or society.
-ERROR	multiple_definitions	RBO:00000111	IAO:0000115	A set of behaviours that have some socially agreed upon function and for which there is an accepted code of norms. This may refer to a role within an organisation or within society as a whole. For example a Profession” can be defined as a cluster of occupational roles, or roles in which the incumbents perform certain functions valued in the organisation or society.
+ERROR	duplicate_label	RBO:00120002	rdfs:label	All kinds of radiation multipurpose irradiation facility
+ERROR	duplicate_label	RBO:00120040	rdfs:label	All kinds of radiation multipurpose irradiation facility
+ERROR	missing_label	RBO:00120061	rdfs:label	
 ERROR	multiple_definitions	RBO:00010021	IAO:0000115	Radon dosimeters are radiation dosimeters used to measure the presence and concentration of radon gas (Rn-222), a radioactive noble gas that can accumulate in buildings and pose health risks. Different types of radon detectors use various detection methods, based on the radioactive decay products of radon.
 ERROR	multiple_definitions	RBO:00010021	IAO:0000115	The atomic mass (ma or m) is the mass of an atom.  The protons and neutrons of the nucleus account for nearly all of the total mass of atoms, with the electrons and nuclear binding energy making minor contributions.  It is measured in Daltons (unit).
 ERROR	multiple_labels	RBO:00010021	rdfs:label	mass number
 ERROR	multiple_labels	RBO:00010021	rdfs:label	radon dosimeter
-ERROR	multiple_labels	RBO:00015021	rdfs:label	energy deposition
-ERROR	multiple_labels	RBO:00015021	rdfs:label	energy deposition event
 WARN	annotation_whitespace	RBO:00000073	IAO:0000115	Radiation response modifiers are agents that alter tumor or normal tissue response to radiation, such as radiation sensitizers and radiation protectors. 
 WARN	annotation_whitespace	RBO:00005004	IAO:0000115	An atomic nucleus with 26 protons and 30 neutrons 
 WARN	annotation_whitespace	RBO:00005004	IAO:0000118	Fe-56 ion;Fe-56 nucleus;Fe-56 
@@ -138,7 +138,10 @@ WARN	annotation_whitespace	RBO:00005080	IAO:0000115	A specific instance of an X-
 WARN	annotation_whitespace	RBO:00010051	IAO:0000115	 The radiation environment at the surface of the Earth, consisting of particles originating in space which are sufficiently energetic and/or weakly interacting with the Earth's magnetic field and atmosphere to reach the surface; particles produced by interactions of space radiation with the Earth's atmosphere; decays of naturally occurring radioactive elements on the surface; and anthropogenic radiation. The composition and strength of the radiation at a given point on the Earth's surface depends on factors including altitude, the composition of the surface material, and the temporal variation in incident space radiation, e.g. with solar cycle.
 WARN	annotation_whitespace	RBO:00015018	IAO:0000112	 Mice exposed to external radiation from a Sr source.
 WARN	annotation_whitespace	RBO:00015052	IAO:0000115	A senolytic is a type of drug or compound that selectively induces the death, removal or both of senescent cells—cells that have stopped dividing but often remain metabolically active, often secreting inflammatory and harmful molecules. These cells accumulate with age and contribute to aging-related diseases, chronic inflammation, and tissue dysfunction. 
+WARN	duplicate_exact_synonym	RBO:00010055	IAO:0000118	microdosimetry
+WARN	duplicate_exact_synonym	RBO:00015003	IAO:0000118	microdosimetry
 WARN	duplicate_label_synonym	RBO:00005003	IAO:0000118	charged particle
+WARN	duplicate_label_synonym	RBO:00015010	IAO:0000118	nanodosimetry
 WARN	duplicate_scoped_synonym	RBO:00000116	IAO:0000118	ionising radiation
 WARN	duplicate_scoped_synonym	RBO:00000116	oboInOwl:hasExactSynonym	ionising radiation
 WARN	duplicate_scoped_synonym	RBO:00010000	IAO:0000118	ALARA
@@ -166,6 +169,18 @@ WARN	missing_definition	RBO:00000080	IAO:0000115
 WARN	missing_definition	RBO:00000081	IAO:0000115	
 WARN	missing_definition	RBO:00000118	IAO:0000115	
 WARN	missing_definition	RBO:00000119	IAO:0000115	
+WARN	missing_definition	RBO:00011000	IAO:0000115	
+WARN	missing_definition	RBO:00011001	IAO:0000115	
+WARN	missing_definition	RBO:00011002	IAO:0000115	
+WARN	missing_definition	RBO:00011003	IAO:0000115	
+WARN	missing_definition	RBO:00011004	IAO:0000115	
+WARN	missing_definition	RBO:00011005	IAO:0000115	
+WARN	missing_definition	RBO:00011006	IAO:0000115	
+WARN	missing_definition	RBO:00011007	IAO:0000115	
+WARN	missing_definition	RBO:00011008	IAO:0000115	
+WARN	missing_definition	RBO:00011009	IAO:0000115	
+WARN	missing_definition	RBO:00011010	IAO:0000115	
+WARN	missing_definition	RBO:00011011	IAO:0000115	
 WARN	missing_definition	RBO:00015022	IAO:0000115	
 WARN	missing_obsolete_label	RBO:00000017	rdfs:label	earth surface
 WARN	missing_obsolete_label	RBO:00000018	rdfs:label	earth atmosphere
@@ -183,18 +198,3 @@ WARN	missing_obsolete_label	RBO:00005019	rdfs:label	lunar surface
 WARN	missing_obsolete_label	RBO:00005020	rdfs:label	cis-mars space
 WARN	missing_obsolete_label	RBO:00005021	rdfs:label	mars orbit
 WARN	missing_obsolete_label	RBO:00005022	rdfs:label	mars surface
-WARN	missing_obsolete_label	RBO:00005023	rdfs:label	interplanetary space
-WARN	missing_obsolete_label	RBO:00005024	rdfs:label	planet surface
-WARN	missing_obsolete_label	RBO:00005066	rdfs:label	miligray per second
-WARN	missing_obsolete_label	RBO:00005073	rdfs:label	Gammacell 40
-WARN	missing_obsolete_label	RBO:00005079	rdfs:label	Faxitron CP160
-WARN	missing_obsolete_label	RBO:00005080	rdfs:label	X-Rad320
-WARN	missing_obsolete_label	RBO:00010063	rdfs:label	nanometric volume
-WARN	missing_obsolete_label	RBO:00015014	rdfs:label	micrometric volume
-WARN	missing_obsolete_label	RBO:00015046	rdfs:label	space radiation environment
-WARN	missing_obsolete_label	RBO:010000	rdfs:label	as low as reasonably achievable
-WARN	missing_obsolete_label	RBO:010001	rdfs:label	radiation attenuation
-WARN	missing_obsolete_label	RBO:010002	rdfs:label	biodosimetry
-WARN	missing_obsolete_label	RBO:010003	rdfs:label	bystander effect
-WARN	missing_obsolete_label	RBO:010006	rdfs:label	delta ray
-WARN	missing_obsolete_label	RBO:010007	rdfs:label	dose equivalent

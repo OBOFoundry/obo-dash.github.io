@@ -3,50 +3,58 @@ base_prefixes:
 - FLOPO
 - FLOPOALT
 - FLOPO
-changed: false
-date: 2025-12-09 20:43:35.215704
-failure: missing_metrics_file
+changed: true
+date: 2026-09-16 19:18:36.425109
 metrics:
   'Axioms: Breakdown of axiom types':
-    AnnotationAssertion: 25298
-    Declaration: 24201
+    AnnotationAssertion: 51775
+    Declaration: 24690
     DisjointClasses: 1
-    EquivalentClasses: 23150
-    SubClassOf: 345
-  'Axioms: Number of axioms': 72995
-  'Entities: % of entities reused': 3.27
-  'Entities: Number of annotation properties': 5
-  'Entities: Number of classes': 25005
+    EquivalentClasses: 23120
+    SubClassOf: 1170
+  'Axioms: Number of axioms': 100756
+  'Entities: % of entities reused': 3.4
+  'Entities: Number of annotation properties': 17
+  'Entities: Number of classes': 25529
   'Entities: Number of data properties': 1
   'Entities: Number of individuals': 0
-  'Entities: Number of object properties': 4
+  'Entities: Number of object properties': 8
   'Entities: Number of unsatisfiable classes': 0
   'Info: Breakdown of OWL class expressions used':
-    Class: 94342
+    Class: 96395
     DataHasValue: 6
     DataSomeValuesFrom: 3
-    ObjectIntersectionOf: 23160
-    ObjectSomeValuesFrom: 46566
+    ObjectAllValuesFrom: 1
+    ObjectExactCardinality: 2
+    ObjectIntersectionOf: 23124
+    ObjectSomeValuesFrom: 46829
+    ObjectUnionOf: 7
   'Info: Does the ontology fall under OWL 2 DL?': false
   'Info: Experimental OBO score':
+    _dashboard: 0.882
+    _formula: (1*impact+1*dashboard)/2
     _impact: 0.005
-    _impact_external: 0
-    _reuse: 0.033
-  'Info: How many externally documented uses?': 0
+    _impact_external: 0.25
+    _reuse: 0.034
+    oboscore: 0.444
+  'Info: How many externally documented uses?': 1
   'Info: How many ontologies use it?': 1
   'Info: Logical consistency': true
   'Info: Syntax': RDF/XML Syntax
   'Info: Usage of namespaces in axioms':
-    BFO: 23415
-    FLOPO: 48052
-    IAO: 6
-    PATO: 23150
+    BFO: 23382
+    FLOPO: 49509
+    GO: 1
+    IAO: 24410
+    PATO: 23778
     PATOALT: 1
-    PO: 23150
-    RO: 23150
-    oboInOwl: 60
-    owl: 1030
-    rdfs: 24202
+    PO: 23117
+    RO: 23116
+    dc: 1444
+    obo: 333
+    oboInOwl: 63
+    owl: 1166
+    rdfs: 24692
     xsd: 9
   'Info: Which ontologies use it?':
   - foodon
@@ -54,19 +62,17 @@ mirror_from: http://purl.obolibrary.org/obo/flopo.owl
 namespace: flopo
 results:
   FP01 Open:
-    comment: Missing ontology license.
-    status: ERROR
+    status: PASS
   FP02 Common Format:
     status: PASS
   FP03 URIs:
     status: PASS
   FP04 Versioning:
-    comment: Missing version IRI
-    status: ERROR
+    status: PASS
   FP05 Scope:
     status: PASS
   FP06 Textual Definitions:
-    comment: 23221 missing definitions. See ROBOT Report for details.
+    comment: 85 missing definitions. See ROBOT Report for details.
     status: WARN
   FP07 Relations:
     comment: 1 non-RO properties used.
@@ -75,31 +81,29 @@ results:
   FP08 Documented:
     status: PASS
   FP09 Plurality of Users:
-    comment: Missing usages
-    status: ERROR
+    status: PASS
   FP11 Locus of Authority:
     status: PASS
   FP12 Naming Conventions:
     status: PASS
   FP16 Maintenance:
-    comment: Missing version IRI to check date
-    status: ERROR
+    status: PASS
   FP20 Responsiveness:
     status: PASS
   ROBOT Report:
-    comment: 68 errors, 24196 warnings, 22882 info messages.
+    comment: 1092 warnings, 22688 info messages.
     file: robot_report
     results:
-      ERROR: 68
-      INFO: 22882
-      WARN: 24196
-    status: ERROR
-sha256_hash: d92658f74cab222f7b51c889862ac16b6209c506678bf5b993c6a3f0e48295a8
+      ERROR: 0
+      INFO: 22688
+      WARN: 1092
+    status: WARN
+sha256_hash: ff74353b4231164ecac4b3056e1e6a1658dd6f47eeab09edabc669101b663329
 summary:
-  comment: 5 errors
-  status: ERROR
+  comment: 2 warnings
+  status: WARN
   summary_count:
-    ERROR: 5
+    ERROR: 0
     INFO: 1
-    WARN: 1
-version: null
+    WARN: 2
+version: http://purl.obolibrary.org/obo/flopo/releases/2026-07-31/flopo.owl
